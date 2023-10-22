@@ -1,0 +1,22 @@
+{
+  "name": "eks-distro-kubernetes-csi-external-provisioner-1.23",
+  "secfixes": {
+    "0": [
+      "CVE-2020-8552"
+    ],
+    "1.23.28-r0": [
+      "CVE-2022-41723"
+    ],
+    "1.23.32-r0": [
+      "CVE-2023-39325",
+      "CVE-2023-3978"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}
