@@ -1,0 +1,119 @@
+{
+  "id": "GHSA-qh9q-34h6-hcv9",
+  "modified": "2023-04-11T01:16:57.463412Z",
+  "published": "2021-10-12T18:48:24Z",
+  "aliases": [
+    "CVE-2021-40978"
+  ],
+  "summary": "Directory traversal in mkdocs",
+  "details": "The mkdocs 1.2.2 built-in dev-server allows directory traversal using the port 8000, enabling remote exploitation to obtain :sensitive information.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "mkdocs",
+        "purl": "pkg:pypi/mkdocs"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.2.3"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.1",
+        "0.10",
+        "0.11",
+        "0.11.1",
+        "0.12.0",
+        "0.12.1",
+        "0.12.2",
+        "0.13.0",
+        "0.13.1",
+        "0.13.2",
+        "0.13.3",
+        "0.14.0",
+        "0.15.0",
+        "0.15.1",
+        "0.15.2",
+        "0.15.3",
+        "0.16.0",
+        "0.16.1",
+        "0.16.2",
+        "0.16.3",
+        "0.17.0",
+        "0.17.1",
+        "0.17.2",
+        "0.17.3",
+        "0.17.4",
+        "0.17.5",
+        "0.2",
+        "0.3",
+        "0.4",
+        "0.5",
+        "0.6",
+        "0.7",
+        "0.8",
+        "0.9",
+        "1.0",
+        "1.0.1",
+        "1.0.2",
+        "1.0.3",
+        "1.0.4",
+        "1.0a1",
+        "1.0b1",
+        "1.0rc1",
+        "1.1",
+        "1.1.1",
+        "1.1.2",
+        "1.2",
+        "1.2.1",
+        "1.2.2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/10/GHSA-qh9q-34h6-hcv9/GHSA-qh9q-34h6-hcv9.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-40978"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mkdocs/mkdocs/issues/2601"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/nisdn/CVE-2021-40978/issues/1"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mkdocs/mkdocs/pull/2604"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mkdocs/mkdocs/pull/2604/commits/cddc453c9d49298e60e7d56fb71130c151cbcbe5"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/mkdocs/mkdocs"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mkdocs/mkdocs/releases/tag/1.2.3"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/nisdn/CVE-2021-40978"
+    }
+  ]
+}

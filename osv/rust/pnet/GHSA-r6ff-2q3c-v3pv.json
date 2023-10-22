@@ -1,0 +1,55 @@
+{
+  "id": "GHSA-r6ff-2q3c-v3pv",
+  "modified": "2021-08-09T17:13:06Z",
+  "published": "2021-08-25T21:00:01Z",
+  "summary": "Compiler optimisation leads to SEGFAULT",
+  "details": "Affected versions of the `pnet` crate were optimized out by compiler, which caused dereference of uninitialized file descriptor which caused segfault.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "crates.io",
+        "name": "pnet",
+        "purl": "pkg:cargo/pnet"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "0.27.2"
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "pnet::transport::IcmpTransportChannelIterator"
+        ]
+      },
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2021/08/GHSA-r6ff-2q3c-v3pv/GHSA-r6ff-2q3c-v3pv.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/libpnet/libpnet/issues/449"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/libpnet/libpnet/pull/455"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/libpnet/libpnet"
+    },
+    {
+      "type": "WEB",
+      "url": "https://rustsec.org/advisories/RUSTSEC-2019-0037.html"
+    }
+  ]
+}
