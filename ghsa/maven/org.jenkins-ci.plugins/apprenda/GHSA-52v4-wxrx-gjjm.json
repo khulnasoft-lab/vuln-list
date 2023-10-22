@@ -1,0 +1,56 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2022-09-23T13:22:28Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.jenkins-ci.plugins:apprenda"
+  },
+  "Advisory": {
+    "DatabaseId": 192402,
+    "Id": "GSA_kwCzR0hTQS01MnY0LXd4cngtZ2pqbc4AAu-S",
+    "GhsaId": "GHSA-52v4-wxrx-gjjm",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2022-41251"
+      },
+      {
+        "Url": "https://www.jenkins.io/security/advisory/2022-09-21/#SECURITY-2710"
+      },
+      {
+        "Url": "http://www.openwall.com/lists/oss-security/2022/09/21/5"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-52v4-wxrx-gjjm"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-52v4-wxrx-gjjm"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2022-41251"
+      }
+    ],
+    "Description": "A missing permission check in Jenkins Apprenda Plugin 2.2.0 and earlier allows users with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-09-22T00:00:26Z",
+    "Severity": "MODERATE",
+    "Summary": "Jenkins Apprenda Plugin has Missing Authorization vulnerability",
+    "UpdatedAt": "2023-01-31T05:04:31Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 2.2.0"
+    }
+  ]
+}

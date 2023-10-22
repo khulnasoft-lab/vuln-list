@@ -1,0 +1,53 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2022-09-16T17:08:25Z",
+  "Package": {
+    "Ecosystem": "COMPOSER",
+    "Name": "unisharp/laravel-filemanager"
+  },
+  "Advisory": {
+    "DatabaseId": 191685,
+    "Id": "GSA_kwCzR0hTQS01bTJoLTdyZjItcnB4Ns4AAuzF",
+    "GhsaId": "GHSA-5m2h-7rf2-rpx6",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2022-40734"
+      },
+      {
+        "Url": "https://github.com/UniSharp/laravel-filemanager/issues/1150"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-5m2h-7rf2-rpx6"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-5m2h-7rf2-rpx6"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2022-40734"
+      }
+    ],
+    "Description": "UniSharp laravel-filemanager (aka Laravel Filemanager) through 2.5.1 allows download?working_dir=%2F.. directory traversal to read arbitrary files, as exploited in the wild in June 2022.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-09-15T00:00:14Z",
+    "Severity": "MODERATE",
+    "Summary": "UniSharp Laravel Filemanager directory traversal vulnerability",
+    "UpdatedAt": "2023-01-28T05:02:52Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 2.5.1"
+    }
+  ]
+}

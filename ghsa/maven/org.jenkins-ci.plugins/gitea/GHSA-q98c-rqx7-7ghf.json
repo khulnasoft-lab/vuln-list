@@ -1,0 +1,56 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2022-09-15T01:29:27Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.jenkins-ci.plugins:gitea"
+  },
+  "Advisory": {
+    "DatabaseId": 175355,
+    "Id": "GSA_kwCzR0hTQS1xOThjLXJxeDctN2doZs4AAqz7",
+    "GhsaId": "GHSA-q98c-rqx7-7ghf",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2019-10330"
+      },
+      {
+        "Url": "https://jenkins.io/security/advisory/2019-05-31/#SECURITY-1046"
+      },
+      {
+        "Url": "http://www.openwall.com/lists/oss-security/2019/05/31/2"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-q98c-rqx7-7ghf"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-q98c-rqx7-7ghf"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2019-10330"
+      }
+    ],
+    "Description": "Jenkins Gitea Plugin prior to 1.1.2 did not implement trusted revisions, allowing attackers without commit access to the Git repo to change Jenkinsfiles even if Jenkins is configured to consider them to be untrusted.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-05-24T22:00:03Z",
+    "Severity": "HIGH",
+    "Summary": "Improper handling of untrusted branches in Gitea Jenkins Plugin",
+    "UpdatedAt": "2023-02-01T05:08:42Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.1.2"
+      },
+      "VulnerableVersionRange": "\u003c 1.1.2"
+    }
+  ]
+}

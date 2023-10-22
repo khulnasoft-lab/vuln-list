@@ -1,0 +1,56 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2022-12-15T17:08:05Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.jvnet.hudson.plugins:jabber"
+  },
+  "Advisory": {
+    "DatabaseId": 163714,
+    "Id": "GSA_kwCzR0hTQS03OXI1LXJocnctN3B2aM4AAn-C",
+    "GhsaId": "GHSA-79r5-rhrw-7pvh",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2021-21634"
+      },
+      {
+        "Url": "https://www.jenkins.io/security/advisory/2021-03-30/#SECURITY-2162"
+      },
+      {
+        "Url": "http://www.openwall.com/lists/oss-security/2021/03/30/1"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-79r5-rhrw-7pvh"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-79r5-rhrw-7pvh"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2021-21634"
+      }
+    ],
+    "Description": "Jabber (XMPP) notifier and control Plugin 1.41 and earlier stores passwords unencrypted in its global configuration file `hudson.plugins.jabber.im.transport.JabberPublisher.xml` on the Jenkins controller as part of its configuration.\n\nThese passwords can be viewed by users with access to the Jenkins controller file system.\n\nJabber (XMPP) notifier and control Plugin 1.42 stores passwords encrypted once its configuration is saved again.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-05-24T17:45:47Z",
+    "Severity": "LOW",
+    "Summary": "Passwords stored in plain text by Jenkins Jabber (XMPP) notifier and control Plugin",
+    "UpdatedAt": "2023-01-31T05:06:26Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 3.3,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.42"
+      },
+      "VulnerableVersionRange": "\u003c= 1.41"
+    }
+  ]
+}

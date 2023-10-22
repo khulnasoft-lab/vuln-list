@@ -1,0 +1,56 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2023-05-19T23:46:19Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.jenkins-ci.plugins:jira-ext"
+  },
+  "Advisory": {
+    "DatabaseId": 132994,
+    "Id": "GSA_kwCzR0hTQS1jaG04LXdwM2gtZjRtM84AAgeC",
+    "GhsaId": "GHSA-chm8-wp3h-f4m3",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2019-10302"
+      },
+      {
+        "Url": "https://jenkins.io/security/advisory/2019-04-17/#SECURITY-836"
+      },
+      {
+        "Url": "http://www.securityfocus.com/bid/108045"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-chm8-wp3h-f4m3"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-chm8-wp3h-f4m3"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2019-10302"
+      }
+    ],
+    "Description": "Jenkins jira-ext Plugin 0.8 and earlier stored credentials unencrypted in its global configuration file `hudson.plugins.jira.JiraProjectProperty.xml` on the Jenkins controller. These credentials could be viewed by users with access to the Jenkins controller file system.\n\njira-ext Plugin version 0.9 stores credentials encrypted.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-05-24T16:43:53Z",
+    "Severity": "LOW",
+    "Summary": "Jenkins jira-ext Plugin stores credentials unencrypted",
+    "UpdatedAt": "2023-05-19T23:46:19Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 3.3,
+      "VectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.9"
+      },
+      "VulnerableVersionRange": "\u003c 0.9"
+    }
+  ]
+}

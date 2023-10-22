@@ -1,0 +1,53 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2022-07-05T22:59:49Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.jenkins-ci.plugins:beaker-builder"
+  },
+  "Advisory": {
+    "DatabaseId": 184099,
+    "Id": "GSA_kwCzR0hTQS14ZmpxLTVtNHctY2M2aM4AAs8j",
+    "GhsaId": "GHSA-xfjq-5m4w-cc6h",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2022-34208"
+      },
+      {
+        "Url": "https://www.jenkins.io/security/advisory/2022-06-22/#SECURITY-2248"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-xfjq-5m4w-cc6h"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-xfjq-5m4w-cc6h"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2022-34208"
+      }
+    ],
+    "Description": "A missing permission check in Jenkins Beaker builder Plugin 1.10 and earlier allows attackers with Overall/Read permission to connect to an attacker-specified URL.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-06-24T00:00:32Z",
+    "Severity": "MODERATE",
+    "Summary": "Missing Authorization in Jenkins Beaker builder Plugin",
+    "UpdatedAt": "2023-01-27T05:05:19Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 1.10"
+    }
+  ]
+}
