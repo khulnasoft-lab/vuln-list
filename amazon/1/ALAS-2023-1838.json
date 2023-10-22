@@ -1,0 +1,208 @@
+{
+  "id": "ALAS-2023-1838",
+  "title": "Amazon Linux AMI 2014.03 - ALAS-2023-1838: important priority package update for kernel",
+  "issued": {
+    "date": "2023-09-27 22:15"
+  },
+  "updated": {
+    "date": "2023-10-06 00:53"
+  },
+  "severity": "important",
+  "description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2023-4921:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: sch_qfq component can be exploited to achieve local privilege escalation.\n\nWhen the plug qdisc is used as a class of the qfq qdisc, sending network packets triggers use-after-free in qfq_dequeue() due to the incorrect .peek handler of sch_plug and lack of error checking in agg_dequeue().\n\nWe recommend upgrading past commit 8fc134fee27f2263988ae38920bc03da416b03d8.\n\nCVE-2023-4623:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: sch_hfsc (HFSC qdisc traffic control) component can be exploited to achieve local privilege escalation.\n\nIf a class with a link-sharing curve (i.e. with the HFSC_FSC flag set) has a parent without a link-sharing curve, then init_vf() will call vttree_insert() on the parent, but vttree_remove() will be skipped in update_vf(). This leaves a dangling pointer that can cause a use-after-free.\n\nWe recommend upgrading past commit b3d26c5702c7d6c45456326e56d2ccf3f103e60f.\n\nCVE-2023-4622:\n\tA use-after-free vulnerability in the Linux kernel's af_unix component can be exploited to achieve local privilege escalation.\n\nThe unix_stream_sendpage() function tries to add data to the last skb in the peer's recv queue without locking the queue. Thus there is a race where unix_stream_sendpage() could access an skb locklessly that is being released by garbage collection, resulting in use-after-free.\n\nWe recommend upgrading past commit 790c2f9d15b594350ae9bca7b236f2b1859de02c.\n\nCVE-2023-4207:\n\tA use-after-free vulnerability in the Linux kernel's net/sched: cls_fw component can be exploited to achieve local privilege escalation.\n\nWhen fw_change() is called on an existing filter, the whole tcf_result struct is always copied into the new instance of the filter. This causes a problem when updating a filter bound to a class, as tcf_unbind_filter() is always called on the old instance in the success path, decreasing filter_cnt of the still referenced class and allowing it to be deleted, leading to a use-after-free.\n\nWe recommend upgrading past commit 76e42ae831991c828cffa8c37736ebfb831ad5ec.\n\nCVE-2023-3772:\n\tA flaw was found in the Linux kernel's IP framework for transforming packets (XFRM subsystem). This issue may allow a malicious user with CAP_NET_ADMIN privileges to directly dereference a NULL pointer in xfrm_update_ae_params(), leading to a possible kernel crash and denial of service.\n",
+  "packages": [
+    {
+      "name": "kernel-tools-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-tools-debuginfo-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "perf",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/perf-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-debuginfo-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-tools-devel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-tools-devel-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-tools",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-tools-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-headers",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-headers-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-devel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-devel-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-debuginfo-common-x86_64",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/kernel-debuginfo-common-x86_64-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "perf-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "x86_64",
+      "filename": "Packages/perf-debuginfo-4.14.326-171.539.amzn1.x86_64.rpm"
+    },
+    {
+      "name": "kernel-tools",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-tools-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "perf",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/perf-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-headers",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-headers-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-debuginfo-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-debuginfo-common-i686",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-debuginfo-common-i686-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-tools-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-tools-debuginfo-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-devel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-devel-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "perf-debuginfo",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/perf-debuginfo-4.14.326-171.539.amzn1.i686.rpm"
+    },
+    {
+      "name": "kernel-tools-devel",
+      "epoch": "0",
+      "version": "4.14.326",
+      "release": "171.539.amzn1",
+      "arch": "i686",
+      "filename": "Packages/kernel-tools-devel-4.14.326-171.539.amzn1.i686.rpm"
+    }
+  ],
+  "references": [
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-3772",
+      "id": "CVE-2023-3772",
+      "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4207",
+      "id": "CVE-2023-4207",
+      "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4622",
+      "id": "CVE-2023-4622",
+      "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4623",
+      "id": "CVE-2023-4623",
+      "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4921",
+      "id": "CVE-2023-4921",
+      "type": "cve"
+    }
+  ],
+  "cveids": [
+    "CVE-2023-3772",
+    "CVE-2023-4207",
+    "CVE-2023-4622",
+    "CVE-2023-4623",
+    "CVE-2023-4921"
+  ]
+}
