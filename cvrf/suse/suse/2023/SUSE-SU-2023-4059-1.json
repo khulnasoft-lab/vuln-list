@@ -1,0 +1,747 @@
+{
+  "Title": "Security update for samba",
+  "Tracking": {
+    "ID": "SUSE-SU-2023:4059-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2023-10-12T08:03:22Z",
+    "CurrentReleaseDate": "2023-10-12T08:03:22Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2023-10-12T08:03:22Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "Security update for samba",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "This update for samba fixes the following issues:\n\n- CVE-2023-4091: Fixed a bug where a client can truncate file with read-only permissions. (bsc#1215904)\n- CVE-2023-42669: Fixed a bug in 'rpcecho' development server which allows Denial of Service via sleep() call on AD DC. (bso#1215905)\n- CVE-2023-4154: Fixed a bug in dirsync which allows SYSTEM access with only 'GUID_DRS_GET_CHANGES' right. (bsc#1215908)\n",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "Image SLES15-SP4-SAP-Azure-LI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-LI-BYOS-Production-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production-2023-4059,SUSE-2023-4059,SUSE-SLE-Micro-5.3-2023-4059,SUSE-SLE-Micro-5.4-2023-4059,SUSE-SLE-Module-Basesystem-15-SP4-2023-4059,SUSE-SLE-Product-HA-15-SP4-2023-4059,openSUSE-SLE-15.4-2023-4059",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Availability Extension 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-pcp-pmda-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-doc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-test-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "openSUSE Leap 15.4",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/update/announcement/2023/suse-su-20234059-1/",
+      "Description": "Link for SUSE-SU-2023:4059-1"
+    },
+    {
+      "URL": "https://lists.suse.com/pipermail/sle-security-updates/2023-October/016646.html",
+      "Description": "E-Mail link for SUSE-SU-2023:4059-1"
+    },
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1213940",
+      "Description": "SUSE Bug 1213940"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215904",
+      "Description": "SUSE Bug 1215904"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215905",
+      "Description": "SUSE Bug 1215905"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215908",
+      "Description": "SUSE Bug 1215908"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-4091/",
+      "Description": "SUSE CVE CVE-2023-4091 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-4154/",
+      "Description": "SUSE CVE CVE-2023-4154 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-42669/",
+      "Description": "SUSE CVE CVE-2023-42669 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2023-4091",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-4091.html",
+          "Description": "CVE-2023-4091"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215904",
+          "Description": "SUSE Bug 1215904"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-pcp-pmda-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-doc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-test-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2023-4154",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-4154.html",
+          "Description": "CVE-2023-4154"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215908",
+          "Description": "SUSE Bug 1215908"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-pcp-pmda-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-doc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-test-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2023-42669",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-42669.html",
+          "Description": "CVE-2023-42669"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215905",
+          "Description": "SUSE Bug 1215905"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-LI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Micro 5.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:ctdb-pcp-pmda-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ceph-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-devel-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-doc-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-gpupdate-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-libs-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-python3-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-test-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-tool-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "openSUSE Leap 15.4:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

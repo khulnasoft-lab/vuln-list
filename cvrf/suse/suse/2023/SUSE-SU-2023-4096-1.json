@@ -1,0 +1,1543 @@
+{
+  "Title": "Security update for samba",
+  "Tracking": {
+    "ID": "SUSE-SU-2023:4096-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2023-10-17T13:04:24Z",
+    "CurrentReleaseDate": "2023-10-17T13:04:24Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2023-10-17T13:04:24Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "Security update for samba",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "This update for samba fixes the following issues:\n\n- CVE-2023-4091: Fixed a bug where a client can truncate file with read-only permissions. (bsc#1215904)\n- CVE-2023-42669: Fixed a bug in 'rpcecho' development server which allows Denial of Service via sleep() call on AD DC. (bso#1215905)\n- CVE-2023-4154: Fixed a bug in dirsync which allows SYSTEM access with only 'GUID_DRS_GET_CHANGES' right. (bsc#1215908)\n",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "SUSE-2023-4096,SUSE-SLE-Product-HA-15-SP3-2023-4096,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4096,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4096,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4096,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4096,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4096,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4096,SUSE-SUSE-MicroOS-5.2-2023-4096,SUSE-Storage-7.1-2023-4096",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Availability Extension 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/update/announcement/2023/suse-su-20234096-1/",
+      "Description": "Link for SUSE-SU-2023:4096-1"
+    },
+    {
+      "URL": "https://lists.suse.com/pipermail/sle-updates/2023-October/032195.html",
+      "Description": "E-Mail link for SUSE-SU-2023:4096-1"
+    },
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215904",
+      "Description": "SUSE Bug 1215904"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215905",
+      "Description": "SUSE Bug 1215905"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215908",
+      "Description": "SUSE Bug 1215908"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-4091/",
+      "Description": "SUSE CVE CVE-2023-4091 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-4154/",
+      "Description": "SUSE CVE CVE-2023-4154 page"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-42669/",
+      "Description": "SUSE CVE CVE-2023-42669 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2023-4091",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-4091.html",
+          "Description": "CVE-2023-4091"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215904",
+          "Description": "SUSE Bug 1215904"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "SUSE Enterprise Storage 7.1:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP3:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Micro 5.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2023-4154",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "important"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-4154.html",
+          "Description": "CVE-2023-4154"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215908",
+          "Description": "SUSE Bug 1215908"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "SUSE Enterprise Storage 7.1:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP3:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Micro 5.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    },
+    {
+      "CVE": "CVE-2023-42669",
+      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-42669.html",
+          "Description": "CVE-2023-42669"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215905",
+          "Description": "SUSE Bug 1215905"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "SUSE Enterprise Storage 7.1:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Enterprise Storage 7.1:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Availability Extension 15 SP3:ctdb-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Micro 5.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Proxy 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy-python3-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:libsamba-policy0-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ad-dc-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ceph-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-client-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-devel-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-dsdb-modules-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-gpupdate-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-ldb-ldap-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-libs-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-python3-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-tool-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-32bit-4.15.13+git.691.3d3cea0641-150300.3.63.1",
+            "SUSE Manager Server 4.2:samba-winbind-libs-4.15.13+git.691.3d3cea0641-150300.3.63.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}

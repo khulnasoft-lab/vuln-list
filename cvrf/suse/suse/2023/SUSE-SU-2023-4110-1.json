@@ -1,0 +1,1485 @@
+{
+  "Title": "Security update for glibc",
+  "Tracking": {
+    "ID": "SUSE-SU-2023:4110-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2023-10-18T10:47:00Z",
+    "CurrentReleaseDate": "2023-10-18T10:47:00Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2023-10-18T10:47:00Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "Security update for glibc",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "This update for glibc fixes the following issues:\n\nSecurity issue fixed:\n\n- CVE-2023-4813: Fixed a potential use-after-free in gaih_inet() (bsc#1215286, BZ #28931)\n\nAlso a regression from a previous update was fixed:\n\n- elf: Align argument of __munmap to page size (bsc#1215891, BZ #28676)\n",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "Container bci/dotnet-aspnet:6.0-2023-4110,Container bci/dotnet-aspnet:latest-2023-4110,Container bci/dotnet-runtime:6.0-2023-4110,Container bci/dotnet-runtime:latest-2023-4110,Container bci/dotnet-sdk:6.0-2023-4110,Container bci/dotnet-sdk:latest-2023-4110,Container rancher/elemental-teal-channel:latest-2023-4110,Container rancher/elemental-teal-iso/5.4:latest-2023-4110,Container rancher/elemental-teal-rt-channel:latest-2023-4110,Container rancher/elemental-teal-rt/5.4:latest-2023-4110,Container rancher/elemental-teal/5.4:latest-2023-4110,Container suse/sle-micro-rancher/5.2:latest-2023-4110,Container suse/sle-micro-rancher/5.3:latest-2023-4110,Container suse/sle-micro-rancher/5.4:latest-2023-4110,Container suse/sle-micro/5.1/toolbox:latest-2023-4110,Container suse/sle-micro/5.2/toolbox:latest-2023-4110,Container suse/sle-micro/5.3/toolbox:latest-2023-4110,Container suse/sle-micro/5.4/toolbox:latest-2023-4110,Container suse/sle-micro/5.5/toolbox:latest-2023-4110,Image SLES15-SP4-Micro-5-4-BYOS-2023-4110,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-4110,Image SLES15-SP4-Micro-5-4-GCE-2023-4110,Image SLES15-SP5-BYOS-EC2-2023-4110,Image SLES15-SP5-EC2-2023-4110,Image SLES15-SP5-HPC-BYOS-EC2-2023-4110,Image SLES15-SP5-Hardened-BYOS-EC2-2023-4110,Image SLES15-SP5-SAP-BYOS-EC2-2023-4110,Image SLES15-SP5-SAP-Hardened-BYOS-EC2-2023-4110,Image SLES15-SP5-SAPCAL-EC2-2023-4110,SUSE-2023-4110,SUSE-SLE-Micro-5.3-2023-4110,SUSE-SLE-Micro-5.4-2023-4110,SUSE-SLE-Micro-5.5-2023-4110,SUSE-SLE-Module-Basesystem-15-SP4-2023-4110,SUSE-SLE-Module-Basesystem-15-SP5-2023-4110,SUSE-SLE-Module-Development-Tools-15-SP4-2023-4110,SUSE-SLE-Module-Development-Tools-15-SP5-2023-4110,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4110,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4110,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4110,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4110,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4110,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4110,SUSE-SUSE-MicroOS-5.1-2023-4110,SUSE-SUSE-MicroOS-5.2-2023-4110,SUSE-Storage-7.1-2023-4110",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-aspnet:6.0",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-aspnet:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-runtime:6.0",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-runtime:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-sdk:6.0",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container bci/dotnet-sdk:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-channel:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-channel:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-iso/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-iso/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-rt-channel:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-rt-channel:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-rt/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal-rt/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container rancher/elemental-teal/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.2:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.2:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.3:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.3:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro-rancher/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.1/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.1/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.2/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.2/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.3/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.3/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.4/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.4/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.5/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Container suse/sle-micro/5.5/toolbox:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-HPC-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAP-Hardened-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "Image SLES15-SP5-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Enterprise Storage 7.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.1",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Module for Development Tools 15 SP5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server 15 SP3-LTSS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-static-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-utils-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Server for SAP Applications 15 SP3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Proxy 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-devel-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-extra-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-i18ndata-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-info-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-lang-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-locale-base-32bit-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "glibc-profile-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "nscd-2.31-150300.63.1",
+        "RelatesToProductReference": "SUSE Manager Server 4.2",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/update/announcement/2023/suse-su-20234110-1/",
+      "Description": "Link for SUSE-SU-2023:4110-1"
+    },
+    {
+      "URL": "https://lists.suse.com/pipermail/sle-security-updates/2023-October/016723.html",
+      "Description": "E-Mail link for SUSE-SU-2023:4110-1"
+    },
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215286",
+      "Description": "SUSE Bug 1215286"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1215891",
+      "Description": "SUSE Bug 1215891"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-4813/",
+      "Description": "SUSE CVE CVE-2023-4813 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2023-4813",
+      "Description": "A flaw was found in glibc. In an uncommon situation, the gaih_inet function may use memory that has been freed, resulting in an application crash. This issue is only exploitable when the getaddrinfo function is called and the hosts database in /etc/nsswitch.conf is configured with SUCCESS=continue or SUCCESS=merge.",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-4813.html",
+          "Description": "CVE-2023-4813"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1215286",
+          "Description": "SUSE Bug 1215286"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "Container bci/dotnet-aspnet:6.0:glibc-2.31-150300.63.1",
+            "Container bci/dotnet-aspnet:latest:glibc-2.31-150300.63.1",
+            "Container bci/dotnet-runtime:6.0:glibc-2.31-150300.63.1",
+            "Container bci/dotnet-runtime:latest:glibc-2.31-150300.63.1",
+            "Container bci/dotnet-sdk:6.0:glibc-2.31-150300.63.1",
+            "Container bci/dotnet-sdk:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal-channel:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal-channel:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container rancher/elemental-teal-iso/5.4:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal-iso/5.4:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container rancher/elemental-teal-rt-channel:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal-rt-channel:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container rancher/elemental-teal-rt/5.4:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal-rt/5.4:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container rancher/elemental-teal/5.4:latest:glibc-2.31-150300.63.1",
+            "Container rancher/elemental-teal/5.4:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.2:latest:glibc-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.2:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.3:latest:glibc-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.3:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.4:latest:glibc-2.31-150300.63.1",
+            "Container suse/sle-micro-rancher/5.4:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro/5.1/toolbox:latest:glibc-locale-2.31-150300.63.1",
+            "Container suse/sle-micro/5.1/toolbox:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro/5.2/toolbox:latest:glibc-locale-2.31-150300.63.1",
+            "Container suse/sle-micro/5.2/toolbox:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro/5.3/toolbox:latest:glibc-locale-2.31-150300.63.1",
+            "Container suse/sle-micro/5.3/toolbox:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro/5.4/toolbox:latest:glibc-locale-2.31-150300.63.1",
+            "Container suse/sle-micro/5.4/toolbox:latest:glibc-locale-base-2.31-150300.63.1",
+            "Container suse/sle-micro/5.5/toolbox:latest:glibc-locale-2.31-150300.63.1",
+            "Container suse/sle-micro/5.5/toolbox:latest:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-GCE:glibc-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-GCE:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-GCE:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS:glibc-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-GCE:glibc-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-GCE:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP4-Micro-5-4-GCE:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-BYOS-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-BYOS-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-BYOS-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-BYOS-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-BYOS-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-32bit-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-devel-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-HPC-BYOS-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-Hardened-BYOS-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-Hardened-BYOS-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-Hardened-BYOS-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-Hardened-BYOS-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-Hardened-BYOS-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:glibc-32bit-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-BYOS-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:glibc-32bit-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-SAP-Hardened-BYOS-EC2:nscd-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-32bit-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-devel-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-i18ndata-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-locale-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:glibc-locale-base-2.31-150300.63.1",
+            "Image SLES15-SP5-SAPCAL-EC2:nscd-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-32bit-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-devel-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-extra-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-info-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-lang-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-locale-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-profile-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:glibc-utils-2.31-150300.63.1",
+            "SUSE Enterprise Storage 7.1:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-ESPOS:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise High Performance Computing 15 SP3-LTSS:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.1:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.1:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.1:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.1:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.2:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.2:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.2:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.2:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.3:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.3:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.3:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.3:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.4:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.4:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.4:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.4:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.5:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.5:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.5:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Micro 5.5:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP4:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Basesystem 15 SP5:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP4:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP4:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP4:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP5:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP5:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise Module for Development Tools 15 SP5:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server 15 SP3-LTSS:nscd-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-devel-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-devel-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-devel-static-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-extra-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-info-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-lang-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-locale-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-profile-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:glibc-utils-2.31-150300.63.1",
+            "SUSE Linux Enterprise Server for SAP Applications 15 SP3:nscd-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-32bit-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-devel-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-extra-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-info-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-lang-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-locale-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:glibc-profile-2.31-150300.63.1",
+            "SUSE Manager Proxy 4.2:nscd-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-32bit-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-devel-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-extra-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-i18ndata-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-info-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-lang-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-locale-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-locale-base-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-locale-base-32bit-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:glibc-profile-2.31-150300.63.1",
+            "SUSE Manager Server 4.2:nscd-2.31-150300.63.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}
