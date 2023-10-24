@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-07-31T20:46:49Z",
+  "UpdatedAt": "2023-10-24T13:25:44Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "openssl"
@@ -53,6 +53,9 @@
         "Url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/openssl/CVE-2017-14033.yml"
       },
       {
+        "Url": "https://github.com/ruby/openssl/commit/36bf7f403ebb6cefcaa1e7af9d8ec99e6b4bc1ed"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-v6rp-3r3v-hf4p"
       }
     ],
@@ -66,12 +69,12 @@
         "Value": "CVE-2017-14033"
       }
     ],
-    "Description": "The decode method in the OpenSSL::ASN1 module in Ruby before 2.2.8, 2.3.x before 2.3.5, and 2.4.x through 2.4.1 allows attackers to cause a denial of service (interpreter crash) via a crafted string.",
+    "Description": "The decode method in the `OpenSSL::ASN1` module in Ruby before 2.2.8, 2.3.x before 2.3.5, and 2.4.x through 2.4.1 allows attackers to cause a denial of service (interpreter crash) via a crafted string. The `openssl` gem that contains this module is patched in version 2.0.0.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T02:03:26Z",
     "Severity": "HIGH",
     "Summary": "Ruby OpenSSL DoS Vulnerability",
-    "UpdatedAt": "2023-07-31T20:46:49Z",
+    "UpdatedAt": "2023-10-24T13:25:44Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -81,7 +84,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.2.8"
+        "Identifier": "2.0.0"
       },
       "VulnerableVersionRange": "\u003c 2.0.0"
     }
