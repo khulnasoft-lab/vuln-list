@@ -33,12 +33,12 @@
         "Value": "CVE-2022-23631"
       }
     ],
-    "Description": "### Impact\n\nThis is critical vulnerability, as it allows to run arbitrary code on any server using superjson input, including a Blitz.js server, without prior authentication or knowledge. Attackers gain full control over the server so they could steal and manipulate data or attack further systems. The only requirement is that the server implements at least one endpoint which uses superjson during request processing. In the case of Blitz.js, it would be at least one RPC call. \n\n### Patches\nThis has been patched in superjson 1.8.1 and Blitz.js 0.45.3. \n\nIf you are unable to upgrade to Blitz.js 0.45.3 in a timely manner, you can instead upgrade only superjson to version 1.8.1 using yarn resolutions are similar. Blitz versions \u003c 0.45.3 are only affected because they used superjson versions \u003c 1.8.1.\n\n### Workarounds\nNone\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in https://github.com/blitz-js/superjson\n* Email us at b@bayer.ws\n",
+    "Description": "### Impact\n\nThis is critical vulnerability, as it allows to run arbitrary code on any server using superjson input, including a Blitz.js server, without prior authentication or knowledge. Attackers gain full control over the server so they could steal and manipulate data or attack further systems. The only requirement is that the server implements at least one endpoint which uses superjson during request processing. In the case of Blitz.js, it would be at least one RPC call. \n\n### Patches\nThis has been patched in superjson 1.8.1 and Blitz.js 0.45.3. \n\nIf you are unable to upgrade to Blitz.js 0.45.3 in a timely manner, you can instead upgrade only superjson to version 1.8.1 using yarn resolutions are similar. Blitz versions \u003c 0.45.3 are only affected because they used superjson versions \u003c 1.8.1.\n\n### Workarounds\nNone\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in https://github.com/blitz-js/superjson\n* Email us at b@bayer.ws\n\n### References\n* https://www.sonarsource.com/blog/blitzjs-prototype-pollution/",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-09T22:20:49Z",
     "Severity": "CRITICAL",
     "Summary": "Prototype Pollution leading to Remote Code Execution in superjson",
-    "UpdatedAt": "2023-02-10T14:40:11Z",
+    "UpdatedAt": "2023-10-23T19:20:22Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9,
