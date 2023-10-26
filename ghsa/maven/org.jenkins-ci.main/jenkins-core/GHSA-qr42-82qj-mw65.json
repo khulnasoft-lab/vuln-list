@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-06-28T22:59:13Z",
+  "UpdatedAt": "2023-10-26T16:18:01Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -20,6 +20,18 @@
         "Url": "https://www.tenable.com/security/research/tra-2019-35"
       },
       {
+        "Url": "https://access.redhat.com/errata/RHSA-2019:2503"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2019:2548"
+      },
+      {
+        "Url": "http://www.openwall.com/lists/oss-security/2019/07/17/2"
+      },
+      {
+        "Url": "http://www.securityfocus.com/bid/109299"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-qr42-82qj-mw65"
       }
     ],
@@ -33,12 +45,12 @@
         "Value": "CVE-2019-10352"
       }
     ],
-    "Description": "A path traversal vulnerability in Jenkins 2.185 and earlier, LTS 2.176.1 and earlier in core/src/main/java/hudson/model/FileParameterValue.java allowed attackers with Job/Configure permission to define a file parameter with a file name outside the intended directory, resulting in an arbitrary file write on the Jenkins master when scheduling a build.",
+    "Description": "A path traversal vulnerability in Jenkins 2.185 and earlier, LTS 2.176.1 and earlier in `core/src/main/java/hudson/model/FileParameterValue.java` allowed attackers with Job/Configure permission to define a file parameter with a file name outside the intended directory, resulting in an arbitrary file write on the Jenkins master when scheduling a build.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T16:50:30Z",
     "Severity": "MODERATE",
     "Summary": "Improper Limitation of a Pathname to a Restricted Directory in Jenkins",
-    "UpdatedAt": "2023-01-27T05:02:25Z",
+    "UpdatedAt": "2023-10-26T16:18:01Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

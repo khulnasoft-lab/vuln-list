@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-03-03T23:12:55Z",
+  "UpdatedAt": "2023-10-26T16:22:00Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:google-kubernetes-engine"
@@ -33,12 +33,12 @@
         "Value": "CVE-2019-10365"
       }
     ],
-    "Description": "Google Kubernetes Engine Plugin created a temporary file named `.kube…config` containing a temporary access token in the project workspace. This allowed the file to be accessed via workspace browsers, or accidentally archived, disclosing the token.\n\nThis temporary file is now created outside the regular project workspace.",
+    "Description": "Jenkins Google Kubernetes Engine Plugin 0.6.2 and earlier created a temporary file named `.kube…config` containing a temporary access token in the project workspace, where it could be accessed by users with Job/Read permission.\n\nThis temporary file is now created outside the regular project workspace.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T16:51:51Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins Google Kubernetes Engine Plugin vulnerable to Exposure of Resource to Wrong Sphere",
-    "UpdatedAt": "2023-03-03T23:12:55Z",
+    "UpdatedAt": "2023-10-26T16:22:00Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

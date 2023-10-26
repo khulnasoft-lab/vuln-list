@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-06-29T21:40:17Z",
+  "UpdatedAt": "2023-10-26T13:29:38Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "jupyter-server"
@@ -20,6 +20,12 @@
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/jupyter-server/PYSEC-2022-211.yaml"
       },
       {
+        "Url": "https://github.com/jupyter-server/jupyter_server/commit/3485007abbb459585357212dcaa20521989272e8"
+      },
+      {
+        "Url": "https://github.com/jupyter-server/jupyter_server/commit/877da10cd0d7ae45f8b1e385fa1f5a335e7adf1f"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-q874-g24w-4q9g"
       }
     ],
@@ -37,8 +43,8 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-06-16T23:13:57Z",
     "Severity": "HIGH",
-    "Summary": "Token bruteforcing",
-    "UpdatedAt": "2023-01-27T05:04:17Z",
+    "Summary": "Jupyter server Token bruteforcing",
+    "UpdatedAt": "2023-10-26T13:29:38Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.1,
@@ -48,9 +54,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.17.0"
+        "Identifier": "2.0.0a1"
       },
-      "VulnerableVersionRange": "\u003e= 0, \u003c 1.17.0"
+      "VulnerableVersionRange": "= 2.0.0a0"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.17.1"
+      },
+      "VulnerableVersionRange": "\u003e= 0, \u003c 1.17.1"
     }
   ]
 }

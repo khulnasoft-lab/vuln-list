@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2023-05-19T23:46:19Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-10-26T15:33:49Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:jira-ext"
@@ -33,16 +33,16 @@
         "Value": "CVE-2019-10302"
       }
     ],
-    "Description": "Jenkins jira-ext Plugin 0.8 and earlier stored credentials unencrypted in its global configuration file `hudson.plugins.jira.JiraProjectProperty.xml` on the Jenkins controller. These credentials could be viewed by users with access to the Jenkins controller file system.\n\njira-ext Plugin version 0.9 stores credentials encrypted.",
+    "Description": "Jenkins jira-ext Plugin 0.8 and earlier stored credentials unencrypted in its global configuration file `hudson.plugins.jira.JiraProjectProperty.xml` on the Jenkins master. These credentials could be viewed by users with access to the Jenkins master file system.\n\njira-ext Plugin version 0.9 stores credentials encrypted.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T16:43:53Z",
-    "Severity": "LOW",
+    "Severity": "HIGH",
     "Summary": "Jenkins jira-ext Plugin stores credentials unencrypted",
-    "UpdatedAt": "2023-05-19T23:46:19Z",
+    "UpdatedAt": "2023-10-26T15:33:49Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.3,
-      "VectorString": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 8.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
