@@ -50,6 +50,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package zlib is earlier than 1.2.13-2, affected by CVE-2023-45853",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31500000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31500001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31500002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package vim is earlier than 9.0.2010-1, affected by CVE-2023-5535",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31499000",
       "Version": "0",
@@ -6686,7 +6698,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package hdf5 is installed with version 1.12.1-12 or earlier",
+      "Comment": "Package hdf5 is earlier than 1.12.1-13, affected by CVE-2021-37501",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13349000",
       "Version": "0",
       "Object": {
