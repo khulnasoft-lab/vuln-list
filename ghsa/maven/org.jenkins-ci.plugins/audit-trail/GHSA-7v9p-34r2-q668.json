@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-21T16:49:29Z",
+  "UpdatedAt": "2023-10-27T11:36:01Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:audit-trail"
@@ -33,12 +33,12 @@
         "Value": "CVE-2020-2288"
       }
     ],
-    "Description": "Audit Trail Plugin uses regular expressions to match requested URLs whose dispatch should be logged.\n\nIn Audit Trail Plugin 3.6 and earlier, the default regular expression pattern could be bypassed in many cases by adding a suffix to the URL that would be ignored during request handling.\n\nAudit Trail Plugin 3.7 changes the default regular expression pattern so that it allows for arbitrary suffixes. It automatically will replace previous default patterns with the new, more complete default pattern.\n\nAdditionally, an administrative monitor is shown if a user-specified pattern is found to be bypassable through crafted URLs and form validation was improved to recognize patterns that would not match requests with arbitrary suffixes.",
+    "Description": "Jenkins Audit Trail Plugin uses regular expressions to match requested URLs whose dispatch should be logged.\n\nIn Jenkins Audit Trail Plugin 3.6 and earlier, the default regular expression pattern could be bypassed in many cases by adding a suffix to the URL that would be ignored during request handling.\n\nJenkins Audit Trail Plugin 3.7 changes the default regular expression pattern so that it allows for arbitrary suffixes. It automatically will replace previous default patterns with the new, more complete default pattern.\n\nAdditionally, an administrative monitor is shown if a user-specified pattern is found to be bypassable through crafted URLs and form validation was improved to recognize patterns that would not match requests with arbitrary suffixes.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:30:18Z",
     "Severity": "MODERATE",
     "Summary": "Incorrect default pattern in Jenkins Audit Trail Plugin",
-    "UpdatedAt": "2023-01-29T05:05:55Z",
+    "UpdatedAt": "2023-10-27T11:36:01Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,

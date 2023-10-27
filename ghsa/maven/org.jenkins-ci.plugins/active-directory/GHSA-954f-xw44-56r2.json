@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2023-05-24T13:34:37Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2023-10-27T12:05:50Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:active-directory"
@@ -36,13 +36,13 @@
     "Description": "Jenkins Active Directory Plugin implements two separate modes: Integration with ADSI on Windows, and an OS agnostic LDAP-based mode. Optionally, to reduce lookup time, a cache can be configured to remember user lookups and user authentications.\n\nIn Active Directory Plugin prior to 2.20 and 2.16.1, when run in Windows/ADSI mode, the provided password was not used when looking up an applicable cache entry. This allows attackers to log in as any user using any password while a successful authentication of that user is still in the cache.\n\nAs a workaround for this issue, the cache can be disabled.\n\nActive Directory Plugin 2.20 and 2.16.1 includes the provided password in cache entry lookup.\n\nAdditionally, the Java system property `hudson.plugins.active_directory.CacheUtil.noCacheAuth` can be set to `true` to no longer cache user authentications.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:33:07Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Authentication cache in Active Directory Jenkins Plugin allows logging in with any password",
-    "UpdatedAt": "2023-05-24T13:34:37Z",
+    "UpdatedAt": "2023-10-27T12:05:50Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.8,
-      "VectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

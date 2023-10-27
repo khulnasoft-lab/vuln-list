@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2023-05-23T21:27:26Z",
+  "UpdatedAt": "2023-10-27T12:01:20Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:active-directory"
@@ -36,12 +36,12 @@
         "Value": "CVE-2020-2299"
       }
     ],
-    "Description": "Jenkins Active Directory Plugin implements two separate modes: Integration with ADSI on Windows, and an OS agnostic LDAP-based mode.\n\nThe LDAP-based mode in Active Directory Plugin starting in version 1.44 and prior to versions 2.16.1 and 2.20 shares code between user lookup and user authentication and distinguishes these behaviors through the use of a magic constant used in place of a real password. This allows attackers to log in as any user if the magic constant is used as the password in Active Directory Plugin prior to 2.16.1 and 220.\n\nActive Directory Plugin 2.16.1 and 2.20 no longer uses a magic constant to distinguish between user lookup and user authentication.",
+    "Description": "Jenkins Active Directory Plugin implements two separate modes: Integration with ADSI on Windows, and an OS agnostic LDAP-based mode.\n\nThe LDAP-based mode in Active Directory Plugin starting in version 1.44 and prior to versions 2.16.1 and 2.20 shares code between user lookup and user authentication and distinguishes these behaviors through the use if a magic constant used in place of a real password. This allows attackers to log in as any user if the magic constant is used as the password in Active Directory Plugin prior to 2.16.1 and 220.\n\nActive Directory Plugin 2.16.1 and 2.20 no longer uses a magic constant to distinguish between user lookup and user authentication.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:33:07Z",
     "Severity": "CRITICAL",
     "Summary": "Improper Authentication in Jenkins Active Directory Plugin",
-    "UpdatedAt": "2023-05-23T21:27:26Z",
+    "UpdatedAt": "2023-10-27T12:01:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,

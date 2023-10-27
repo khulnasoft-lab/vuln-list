@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-21T18:27:44Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T11:50:51Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:release"
@@ -20,6 +20,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2020/10/08/5"
       },
       {
+        "Url": "https://github.com/jenkinsci/release-plugin/commit/99814a0c82f5edf34ad297c2e98af9315bc6b5c2"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-vmg8-g8j3-m355"
       }
     ],
@@ -36,13 +39,13 @@
     "Description": "Jenkins Release Plugin 2.10.2 and earlier does not escape the release version in badge tooltip, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with Release/Release permission.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:30:18Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Stored XSS vulnerability in Jenkins Release Plugin",
-    "UpdatedAt": "2023-01-29T05:05:56Z",
+    "UpdatedAt": "2023-10-27T11:50:51Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

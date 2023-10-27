@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2023-05-24T13:37:53Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T11:43:02Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:mercurial"
@@ -36,13 +36,13 @@
     "Description": "Jenkins Mercurial Plugin prior to 2.12, 2.10.1, 2.9.1, and 2.8.1 does not configure its XML changelog parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control an agent process to have Jenkins parse a crafted changelog file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nMercurial Plugin 2.12, 2.10.1, 2.9.1, and 2.8.1 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:33:07Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "XXE vulnerability in Jenkins Mercurial Plugin",
-    "UpdatedAt": "2023-05-24T13:37:53Z",
+    "UpdatedAt": "2023-10-27T11:43:02Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.8,
-      "VectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
