@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2022-12-13T16:41:12Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T14:08:04Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -36,13 +36,13 @@
     "Description": "Jenkins 2.286 and earlier, LTS 2.277.1 and earlier does not validate the type of object created after loading the data submitted to the `config.xml` REST API endpoint of a node.\n\nThis allows attackers with Computer/Configure permission to replace a node with one of a different type.\n\nJenkins 2.287, LTS 2.277.2 validates the type of object created and rejects objects of unexpected types.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:46:47Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Lack of type validation in agent related REST API in Jenkins",
-    "UpdatedAt": "2023-01-29T05:05:36Z",
+    "UpdatedAt": "2023-10-27T14:08:04Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N"
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
     }
   },
   "Versions": [

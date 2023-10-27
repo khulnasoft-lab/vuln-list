@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2022-12-13T15:31:00Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:45:16Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -33,13 +33,13 @@
     "Description": "Jenkins includes a static list of URLs that are always accessible even without Overall/Read permission, such as the login form. These URLs are excluded from an otherwise universal permission check.\n\nJenkins 2.274 and earlier, LTS 2.263.1 and earlier does not correctly compare requested URLs with that list.\n\nThis allows attackers without Overall/Read permission to access plugin-provided URLs with any of the following prefixes if no other permissions are required:\n- `accessDenied`\n- `error`\n- `instance-identity`\n- `login`\n- `logout`\n- `oops`\n- `securityRealm`\n- `signup`\n- `tcpSlaveAgentListener`\n\nFor example, a plugin contributing the path `loginFoo/` would have URLs in that space accessible without the default Overall/Read permission check.\n\nThe Jenkins security team is not aware of any affected plugins as of the publication of this advisory.\n\nThe comparison of requested URLs with the list of always accessible URLs has been fixed to only allow access to the specific listed URLs in Jenkins 2.275, LTS 2.263.2.\n\nIn case this change causes problems, additional paths can be made accessible without Overall/Read permissions: The [Java system property](https://www.jenkins.io/doc/book/managing/system-properties/) `jenkins.model.Jenkins.additionalReadablePaths` is a comma-separated list of additional path prefixes to allow access to.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:39:12Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Missing permission check for paths with specific prefix in Jenkins",
-    "UpdatedAt": "2023-01-29T05:04:40Z",
+    "UpdatedAt": "2023-10-27T13:45:16Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.7,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 5.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [

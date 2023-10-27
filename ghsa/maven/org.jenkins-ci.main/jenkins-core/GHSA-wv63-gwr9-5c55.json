@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-06-23T06:51:16Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:21:02Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -33,13 +33,13 @@
     "Description": "Jenkins 2.274 and earlier, LTS 2.263.1 and earlier does not escape button labels in the Jenkins UI.\n\nThis results in a cross-site scripting vulnerability exploitable by attackers with the ability to control button labels. An example of buttons with a user-controlled label are the buttons of the Pipeline `input` step.\n\nJenkins 2.275, LTS 2.263.2 escapes button labels in the Jenkins UI.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:39:12Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Stored XSS vulnerability in Jenkins button labels",
-    "UpdatedAt": "2023-01-29T05:05:36Z",
+    "UpdatedAt": "2023-10-27T13:21:02Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-12-15T16:31:40Z",
+  "UpdatedAt": "2023-10-27T16:04:08Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:azure-ad"
@@ -33,12 +33,12 @@
         "Value": "CVE-2021-21679"
       }
     ],
-    "Description": "An extension point in Jenkins allows selectively disabling cross-site request forgery (CSRF) protection for specific URLs. Azure AD Plugin implements this extension point for URLs used by a JavaScript component.\n\nIn Azure AD Plugin 179.vf6841393099e and earlier this implementation is too permissive, allowing attackers to craft URLs that would bypass the CSRF protection of any target URL.\n\nThis vulnerability was originally introduced in Azure AD Plugin 164.v5b48baa961d2.\n\nAzure AD Plugin 180.v8b1e80e6f242 no longer allows bypassing CSRF protection for URLs used by the JavaScript component. Instead, that component was reconfigured to pass the expected CSRF token.",
+    "Description": "An extension point in Jenkins allows selectively disabling cross-site request forgery (CSRF) protection for specific URLs. Jenkins Azure AD Plugin implements this extension point for URLs used by a JavaScript component.\n\nIn Jenkins Azure AD Plugin 179.vf6841393099e and earlier this implementation is too permissive, allowing attackers to craft URLs that would bypass the CSRF protection of any target URL.\n\nThis vulnerability was originally introduced in Azure AD Plugin 164.v5b48baa961d2.\n\nAzure AD Plugin 180.v8b1e80e6f242 no longer allows bypassing CSRF protection for URLs used by the JavaScript component. Instead, that component was reconfigured to pass the expected CSRF token.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T19:12:36Z",
     "Severity": "HIGH",
     "Summary": "Jenkins Azure AD Plugin allows bypassing CSRF protection for any URL",
-    "UpdatedAt": "2023-01-31T05:06:04Z",
+    "UpdatedAt": "2023-10-27T16:04:08Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,

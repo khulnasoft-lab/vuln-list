@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-13T14:56:21Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:25:23Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -30,16 +30,16 @@
         "Value": "CVE-2021-21610"
       }
     ],
-    "Description": "Jenkins allows administrators to choose the markup formatter to use for descriptions of jobs, builds, views, etc. displayed in Jenkins. When editing such a description, users can choose to have Jenkins render a formatted preview of the description they entered.\n\nJenkins 2.274 and earlier, LTS 2.263.1 and earlier does not implement any restrictions for the URL rendering the formatted preview of markup passed as a query parameter. This results in a reflected cross-site scripting (XSS) vulnerability if the configured markup formatter does not prohibit unsafe elements (JavaScript) in markup, like [Anything Goes Formatter Plugin](https://plugins.jenkins.io/anything-goes-formatter/).\n\nJenkins 2.275, LTS 2.263.2 requires that preview URLs are accessed using POST and sets Content-Security-Policy headers that prevent execution of unsafe elements when the URL is accessed directly.\\n\\nIn case of problems with this change, these protections can be disabled by setting the [Java system properties](https://www.jenkins.io/doc/book/managing/system-properties/) `hudson.markup.MarkupFormatter.previewsAllowGET` to `true` and/or `hudson.markup.MarkupFormatter.previewsSetCSP` to `false`. Doing either is discouraged.",
+    "Description": "Jenkins allows administrators to choose the markup formatter to use for descriptions of jobs, builds, views, etc. displayed in Jenkins. When editing such a description, users can choose to have Jenkins render a formatted preview of the description they entered.\n\nJenkins 2.274 and earlier, LTS 2.263.1 and earlier does not implement any restrictions for the URL rendering the formatted preview of markup passed as a query parameter. This results in a reflected cross-site scripting (XSS) vulnerability if the configured markup formatter does not prohibit unsafe elements (JavaScript) in markup, like [Anything Goes Formatter Plugin](https://plugins.jenkins.io/anything-goes-formatter/).\n\nJenkins 2.275, LTS 2.263.2 requires that preview URLs are accessed using POST and sets Content-Security-Policy headers that prevent execution of unsafe elements when the URL is accessed directly.\n\nIn case of problems with this change, these protections can be disabled by setting the [Java system properties](https://www.jenkins.io/doc/book/managing/system-properties/) `hudson.markup.MarkupFormatter.previewsAllowGET` to `true` and/or `hudson.markup.MarkupFormatter.previewsSetCSP` to `false`. Doing either is discouraged.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:39:13Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Reflected XSS vulnerability in Jenkins markup formatter preview",
-    "UpdatedAt": "2023-01-29T05:04:40Z",
+    "UpdatedAt": "2023-10-27T13:25:23Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 6.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

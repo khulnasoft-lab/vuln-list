@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2022-05-04T20:57:41Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-10-27T16:44:31Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.jenkins.plugins:autonomiq"
@@ -33,16 +33,16 @@
         "Value": "CVE-2022-25194"
       }
     ],
-    "Description": "autonomiq Plugin 1.15 and earlier does not perform a permission check in an HTTP endpoint.\n\nThis allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified username and password.\n\nAdditionally, this HTTP endpoint does not require POST requests, resulting in a cross-site request forgery (CSRF) vulnerability.",
+    "Description": "Jenkins autonomiq Plugin 1.15 and earlier does not perform a permission check in an HTTP endpoint.\n\nThis allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified username and password.\n\nAdditionally, this HTTP endpoint does not require POST requests, resulting in a cross-site request forgery (CSRF) vulnerability.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-16T00:01:23Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "CSRF vulnerability in Jenkins autonomiq plugin",
-    "UpdatedAt": "2023-02-03T05:06:23Z",
+    "UpdatedAt": "2023-10-27T16:44:31Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 4.3,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N"
+      "Score": 8.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

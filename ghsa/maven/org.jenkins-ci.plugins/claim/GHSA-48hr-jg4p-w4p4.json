@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-21T05:04:30Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:39:47Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:claim"
@@ -33,16 +33,16 @@
         "Value": "CVE-2021-21619"
       }
     ],
-    "Description": "Claim Plugin 2.18.1 and earlier does not escape the user display name shown in claims.\n\nThis results in a cross-site scripting (XSS) vulnerability exploitable by attackers who are able to control the display names of Jenkins users, either via the security realm, or directly inside Jenkins.\n\nEveryone with a Jenkins account can change their own display name.\\n\\nClaim Plugin 2.18.2 escapes the user display name shown in claims.",
+    "Description": "Jenkins Claim Plugin 2.18.1 and earlier does not escape the user display name shown in claims.\n\nThis results in a stored cross-site scripting (XSS) vulnerability exploitable by attackers who are able to control the display names of Jenkins users, either via the security realm, or directly inside Jenkins.\n\nEveryone with a Jenkins account can change their own display name.\\n\\nClaim Plugin 2.18.2 escapes the user display name shown in claims.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:43:01Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "XSS vulnerability in Jenkins Claim Plugin",
-    "UpdatedAt": "2023-01-29T05:04:56Z",
+    "UpdatedAt": "2023-10-27T13:39:47Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

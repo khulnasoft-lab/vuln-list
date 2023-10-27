@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-11-30T20:39:50Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T16:59:14Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:dashboard-view"
@@ -39,13 +39,13 @@
     "Description": "Jenkins Dashboard View Plugin 2.18 and earlier does not perform URL validation for the Iframe Portlet's Iframe source URL, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers able to configure views.\n\nDashboard View Plugin 2.18.1 performs URL validation for the Iframe Portlet’s Iframe source URL.\nAdditionally, Dashboard View Plugin 2.18.1 sets the sandbox attribute for the iframe to restrict the included page.\n\nIn case of problems, the [Java system property](https://www.jenkins.io/doc/book/managing/system-properties/) `hudson.plugins.view.dashboard.core.IframePortlet.sandboxAttributeValue` can be used to customize the sandbox attribute value. The Java system property `hudson.plugins.view.dashboard.core.IframePortlet.doNotUseSandbox` can be used to disable the sandbox completely.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-03-16T00:00:45Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Stored Cross-site Scripting vulnerability in Jenkins Dashboard View Plugin",
-    "UpdatedAt": "2023-02-02T05:05:35Z",
+    "UpdatedAt": "2023-10-27T16:59:14Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

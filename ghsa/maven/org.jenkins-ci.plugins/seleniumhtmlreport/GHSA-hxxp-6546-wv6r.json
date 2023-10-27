@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2021-07-01T20:14:51Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T15:58:04Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:seleniumhtmlreport"
@@ -39,16 +39,16 @@
         "Value": "CVE-2021-21672"
       }
     ],
-    "Description": "Selenium HTML report Plugin 1.0 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to control the report files parsed using this plugin to have Jenkins parse a crafted report file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nSelenium HTML report Plugin 1.1 disables external entity resolution for its XML parser.",
+    "Description": "Jenkins Selenium HTML report Plugin 1.0 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to control the report files parsed using this plugin to have Jenkins parse a crafted report file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nJenkins Selenium HTML report Plugin 1.1 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-07-02T18:36:13Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "XXE vulnerability in Jenkins Selenium HTML report Plugin",
-    "UpdatedAt": "2023-01-31T05:04:36Z",
+    "UpdatedAt": "2023-10-27T15:58:04Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [

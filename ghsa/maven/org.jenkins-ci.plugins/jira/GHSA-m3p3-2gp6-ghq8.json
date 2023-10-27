@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-02T21:26:56Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T17:10:59Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:jira"
@@ -36,13 +36,13 @@
     "Description": "Jenkins Jira Plugin 3.7 and earlier, except 3.6.1, does not escape the name and description of Jira Issue and Jira Release Version parameters on views displaying parameters, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with Item/Configure permission.\n\nExploitation of this vulnerability requires that parameters are listed on another page, like the \\\"Build With Parameters\\\" and \\\"Parameters\\\" pages provided by Jenkins (core), and that those pages are not hardened to prevent exploitation. Jenkins (core) has prevented exploitation of vulnerabilities of this kind on the \\\"Build With Parameters\\\" and \\\"Parameters\\\" pages since 2.44 and LTS 2.32.2 as part of the [SECURITY-353 / CVE-2017-2601](https://www.jenkins.io/security/advisory/2017-02-01/#persisted-cross-site-scripting-vulnerability-in-parameter-names-and-descriptions) fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-04-13T00:00:17Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Stored Cross-site Scripting vulnerability in Jenkins Jira Plugin",
-    "UpdatedAt": "2023-01-27T05:08:30Z",
+    "UpdatedAt": "2023-10-27T17:10:59Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

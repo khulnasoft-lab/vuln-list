@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-08-26T16:28:20Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2023-10-27T15:23:33Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:generic-webhook-trigger"
@@ -36,16 +36,16 @@
         "Value": "CVE-2021-21669"
       }
     ],
-    "Description": "Generic Webhook Trigger Plugin 1.72 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to call webhooks configured to extract parameters using XPath to have Jenkins parse a crafted XML request body that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nGeneric Webhook Trigger Plugin 1.74 disables external entity resolution for its XML parser.",
+    "Description": "Jenkins Generic Webhook Trigger Plugin 1.72 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to call webhooks configured to extract parameters using XPath to have Jenkins parse a crafted XML request body that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nJenkins Generic Webhook Trigger Plugin 1.74 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T19:05:40Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "XXE vulnerability in Jenkins Generic Webhook Trigger Plugin",
-    "UpdatedAt": "2023-01-29T05:04:56Z",
+    "UpdatedAt": "2023-10-27T15:23:33Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

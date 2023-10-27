@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-15T17:25:40Z",
+  "UpdatedAt": "2023-10-27T14:11:54Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:dependency-track"
@@ -33,16 +33,16 @@
         "Value": "CVE-2021-21632"
       }
     ],
-    "Description": "OWASP Dependency-Track Plugin 3.1.0 and earlier does not perform permission checks in several HTTP endpoints.\n\nThis allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified credentials IDs obtained through another method, capturing \\\"Secret text\\\" credentials stored in Jenkins. If no credentials ID is specified, the globally configured credential is used, if set up, and can likewise be captured.\n\nOWASP Dependency-Track Plugin 3.1.1 requires appropriate permissions for the affected HTTP endpoints.",
+    "Description": "Jenkins OWASP Dependency-Track Plugin 3.1.0 and earlier does not perform permission checks in several HTTP endpoints.\n\nThis allows attackers with Overall/Read permission to connect to an attacker-specified URL using attacker-specified credentials IDs obtained through another method, capturing \\\"Secret text\\\" credentials stored in Jenkins. If no credentials ID is specified, the globally configured credential is used, if set up, and can likewise be captured.\n\nJenkins OWASP Dependency-Track Plugin 3.1.1 requires appropriate permissions for the affected HTTP endpoints.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:45:46Z",
     "Severity": "MODERATE",
     "Summary": "Missing permission checks in Jenkins OWASP Dependency-Track Plugin allow capturing credentials",
-    "UpdatedAt": "2023-01-31T05:06:25Z",
+    "UpdatedAt": "2023-10-27T14:11:54Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 5.4,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-13T18:55:05Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-10-27T13:41:58Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:configurationslicing"
@@ -33,24 +33,24 @@
         "Value": "CVE-2021-21617"
       }
     ],
-    "Description": "Configuration Slicing Plugin 1.51 and earlier does not require POST requests for the form submission endpoint reconfiguring slices, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nThis vulnerability allows attackers to apply different slice configurations to attacker-specified jobs.\n\nConfiguration Slicing Plugin 1.52 requires POST requests for the affected HTTP endpoint.",
+    "Description": "Jenkins Configuration Slicing Plugin 1.51 and earlier does not require POST requests for the form submission endpoint reconfiguring slices, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nThis vulnerability allows attackers to apply different slice configurations to attacker-specified jobs.\n\nJenkins Configuration Slicing Plugin 1.52 requires POST requests for the affected HTTP endpoint.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:43:00Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "CSRF vulnerability in Jenkins Configuration Slicing Plugin",
-    "UpdatedAt": "2023-01-29T05:04:59Z",
+    "UpdatedAt": "2023-10-27T13:41:58Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 6.4,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:H/A:L"
+      "Score": 8.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.0.3"
+        "Identifier": "1.52"
       },
-      "VulnerableVersionRange": "\u003c= 2.0.2"
+      "VulnerableVersionRange": "\u003c= 1.51"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2022-06-02T15:51:27Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-10-27T17:19:31Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:git"
@@ -36,16 +36,16 @@
         "Value": "CVE-2022-30947"
       }
     ],
-    "Description": "SCMs support a number of different URL schemes, including local file system paths (e.g. using `file:` URLs).\n\nHistorically in Jenkins, only agents checked out from SCM, and if multiple projects share the same agent, there is no expected isolation between builds besides using different workspaces unless overridden. Some Pipeline-related features check out SCMs from the Jenkins controller as well.\n\nThis allows attackers able to configure pipelines to check out some SCM repositories stored on the Jenkins controller’s file system using local paths as SCM URLs, obtaining limited information about other projects' SCM contents.",
+    "Description": "Jenkins SCMs support a number of different URL schemes, including local file system paths (e.g. using `file:` URLs).\n\nHistorically in Jenkins, only agents checked out from SCM, and if multiple projects share the same agent, there is no expected isolation between builds besides using different workspaces unless overridden. Some Pipeline-related features check out SCMs from the Jenkins controller as well.\n\nThis allows attackers able to configure pipelines to check out some SCM repositories stored on the Jenkins controller’s file system using local paths as SCM URLs, obtaining limited information about other projects' SCM contents.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-18T00:00:39Z",
-    "Severity": "LOW",
+    "Severity": "HIGH",
     "Summary": "Path traversal in Jenkins Git Plugin",
-    "UpdatedAt": "2023-01-28T05:02:33Z",
+    "UpdatedAt": "2023-10-27T17:19:31Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.7,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

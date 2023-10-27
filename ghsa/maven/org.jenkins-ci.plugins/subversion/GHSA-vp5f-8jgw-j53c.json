@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-21T19:39:29Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:04:40Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:subversion"
@@ -33,16 +33,16 @@
         "Value": "CVE-2020-2304"
       }
     ],
-    "Description": "Subversion Plugin 2.13.1 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control an agent process to have Jenkins parse a crafted changelog file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nSubversion Plugin 2.13.2 disables external entity resolution for its XML parser.",
+    "Description": "Jenkins Subversion Plugin 2.13.1 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control an agent process to have Jenkins parse a crafted changelog file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nJenkins Subversion Plugin 2.13.2 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:33:07Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "XXE vulnerability in Jenkins Subversion Plugin",
-    "UpdatedAt": "2023-01-29T05:06:20Z",
+    "UpdatedAt": "2023-10-27T13:04:40Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

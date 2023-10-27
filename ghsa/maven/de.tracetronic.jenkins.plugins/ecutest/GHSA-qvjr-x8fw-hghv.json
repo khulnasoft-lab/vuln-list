@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2022-12-13T18:50:24Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T13:26:56Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "de.tracetronic.jenkins.plugins:ecutest"
@@ -30,16 +30,16 @@
         "Value": "CVE-2021-21612"
       }
     ],
-    "Description": "TraceTronic ECU-TEST Plugin 2.23.1 and earlier stores credentials unencrypted in its global configuration file `de.tracetronic.jenkins.plugins.ecutest.report.atx.installation.ATXInstallation.xml` on the Jenkins controller as part of its configuration.\n\nThese credentials can be viewed by users with access to the Jenkins controller file system.\n\nTraceTronic ECU-TEST Plugin 2.24 adds a new option type for sensitive options. Previously stored credentials are migrated to that option type on Jenkins startup.",
+    "Description": "Jenkins TraceTronic ECU-TEST Plugin 2.23.1 and earlier stores credentials unencrypted in its global configuration file `de.tracetronic.jenkins.plugins.ecutest.report.atx.installation.ATXInstallation.xml` on the Jenkins controller as part of its configuration.\n\nThese credentials can be viewed by users with access to the Jenkins controller file system.\n\nJenkins TraceTronic ECU-TEST Plugin 2.24 adds a new option type for sensitive options. Previously stored credentials are migrated to that option type on Jenkins startup.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:39:13Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Credentials stored in plain text by Jenkins TraceTronic ECU-TEST Plugin",
-    "UpdatedAt": "2023-01-29T05:04:56Z",
+    "UpdatedAt": "2023-10-27T13:26:56Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.3,
-      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 5.5,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

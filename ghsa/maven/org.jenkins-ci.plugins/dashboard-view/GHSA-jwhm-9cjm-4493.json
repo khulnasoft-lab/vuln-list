@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2023-05-24T14:40:36Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T14:30:12Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:dashboard-view"
@@ -36,13 +36,13 @@
     "Description": "Jenkins Dashboard View Plugin prior to 2.16 and 2.12.1 does not escape URLs referenced in Image Dashboard Portlets, resulting in a stored cross-site scripting (XSS) vulnerability exploitable by attackers with View/Configure permission.\n\nAs part of this fix, the property for image URLs was changed from `url` to `imageUrl`. Existing [Configuration as Code](https://plugins.jenkins.io/configuration-as-code/) configurations are still supported, but exports will emit the new property.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-06-16T17:24:41Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Cross-site Scripting in Jenkins Dashboard View Plugin",
-    "UpdatedAt": "2023-05-24T14:40:37Z",
+    "UpdatedAt": "2023-10-27T14:30:12Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [

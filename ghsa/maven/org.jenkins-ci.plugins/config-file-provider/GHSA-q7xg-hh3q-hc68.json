@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-12-13T19:17:13Z",
+  "UpdatedAt": "2023-10-27T14:19:50Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:config-file-provider"
@@ -33,16 +33,16 @@
         "Value": "CVE-2021-21642"
       }
     ],
-    "Description": "Config File Provider Plugin 3.7.0 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to define Maven configuration files to have Jenkins parse a crafted configuration file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nConfig File Provider Plugin 3.7.1 disables external entity resolution for its XML parser.",
+    "Description": "Jenkins Config File Provider Plugin 3.7.0 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers with the ability to define Maven configuration files to have Jenkins parse a crafted configuration file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nJenkins Config File Provider Plugin 3.7.1 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:48:06Z",
     "Severity": "HIGH",
     "Summary": "XML External Entity Reference vulnerability in Jenkins Config File Provider Plugin",
-    "UpdatedAt": "2023-01-29T05:04:59Z",
+    "UpdatedAt": "2023-10-27T14:19:50Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      "Score": 8.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [

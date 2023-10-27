@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-12-16T20:45:29Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2023-10-27T15:29:59Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -36,13 +36,13 @@
     "Description": "Agents are allowed some limited access to files on the Jenkins controller file system. The directories agents are allowed to access in Jenkins 2.318 and earlier, LTS 2.303.2 and earlier include the directories storing build-related information, intended to allow agents to store build-related metadata during build execution. As a consequence, this allows any agent to read and write the contents of any build directory stored in Jenkins with very few restrictions (`build.xml` and some Pipeline-related metadata).\n\nJenkins 2.319, LTS 2.303.3 prevents agents from accessing contents of build directories unless it’s for builds currently running on the agent attempting to access the directory.\n\nUpdate [Pipeline: Nodes and Processes](https://plugins.jenkins.io/workflow-durable-task-step/) to version 2.40 or newer for Jenkins to associate Pipeline `node` blocks with the agent they’re running on for this fix.\n\nIf you are unable to immediately upgrade to Jenkins 2.319, LTS 2.303.3, you can install the [Remoting Security Workaround Plugin](https://www.jenkins.io/redirect/remoting-security-workaround/). It will prevent all agent-to-controller file access using `FilePath` APIs. Because it is more restrictive than Jenkins 2.319, LTS 2.303.3, more plugins are incompatible with it. Make sure to read the plugin documentation before installing it.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T19:19:43Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Agent-to-controller access control allows reading/writing most content of build directories in Jenkins",
-    "UpdatedAt": "2023-02-01T05:06:51Z",
+    "UpdatedAt": "2023-10-27T15:29:59Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.9,
-      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:L"
+      "Score": 9.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [

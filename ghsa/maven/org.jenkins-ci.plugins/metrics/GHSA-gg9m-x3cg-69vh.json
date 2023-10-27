@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2023-05-24T17:49:08Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T16:17:45Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:metrics"
@@ -36,16 +36,16 @@
         "Value": "CVE-2022-20621"
       }
     ],
-    "Description": "Jenkins Metrics Plugin 4.0.2.8 and earlier stores access keys unencrypted in its global configuration file `jenkins.metrics.api.MetricsAccessKey.xml` on the Jenkins controller as part of its configuration.\n\nThis access key can be viewed by users with access to the Jenkins controller file system.\n\nMetrics Plugin 4.0.2.8.1 stores access key encrypted once its configuration is saved again.\n\nAdditionally, the token value is only displayed once when it is generated.",
+    "Description": "Jenkins Metrics Plugin 4.0.2.8 and earlier stores an access key unencrypted in its global configuration file `jenkins.metrics.api.MetricsAccessKey.xml` on the Jenkins controller as part of its configuration.\n\nThis access key can be viewed by users with access to the Jenkins controller file system.\n\nJenkins Metrics Plugin 4.0.2.8.1 stores access key encrypted once its configuration is saved again.\n\nAdditionally, the token value is only displayed once when it is generated.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-01-13T00:00:57Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Access key stored in plain text by Jenkins Metrics Plugin",
-    "UpdatedAt": "2023-05-24T17:49:08Z",
+    "UpdatedAt": "2023-10-27T16:17:45Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.3,
-      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 5.5,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

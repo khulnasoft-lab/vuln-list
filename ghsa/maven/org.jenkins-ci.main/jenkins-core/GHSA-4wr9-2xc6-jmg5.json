@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-12-24T05:05:16Z",
+  "UpdatedAt": "2023-10-27T15:36:01Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -33,12 +33,12 @@
         "Value": "CVE-2021-21671"
       }
     ],
-    "Description": "Jenkins 2.299 and earlier, LTS 2.289.1 and earlier does not invalidate the existing session on login. This allows attackers to use social engineering techniques to gain administrator access to Jenkins.\n\nThis vulnerability was introduced in Jenkins 2.266 and LTS 2.277.1.\n\nJenkins 2.300, LTS 2.289.2 invalidates the existing session on login.\n\nIn case of problems, administrators can choose a different implementation by setting the [Java system property `hudson.security.SecurityRealm.sessionFixationProtectionMode`](https://www.jenkins.io/doc/book/managing/system-properties/#hudson-security-securityrealm-sessionfixationprotectionmode) to `2`, or disable the fix entirely by setting that system property to `0`.",
+    "Description": "Jenkins 2.299 and earlier, LTS 2.289.1 and earlier does not invalidate the previous session on login. This allows attackers to use social engineering techniques to gain administrator access to Jenkins.\n\nThis vulnerability was introduced in Jenkins 2.266 and LTS 2.277.1.\n\nJenkins 2.300, LTS 2.289.2 invalidates the previous session on login.\n\nIn case of problems, administrators can choose a different implementation by setting the [Java system property `hudson.security.SecurityRealm.sessionFixationProtectionMode`](https://www.jenkins.io/doc/book/managing/system-properties/#hudson-security-securityrealm-sessionfixationprotectionmode) to `2`, or disable the fix entirely by setting that system property to `0`.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T19:06:36Z",
     "Severity": "HIGH",
     "Summary": "Session fixation vulnerability in Jenkins",
-    "UpdatedAt": "2023-02-01T05:06:52Z",
+    "UpdatedAt": "2023-10-27T15:36:01Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,

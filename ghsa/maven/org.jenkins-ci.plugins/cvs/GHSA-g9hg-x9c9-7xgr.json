@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-12-24T05:05:00Z",
+  "UpdatedAt": "2023-10-27T13:17:27Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:cvs"
@@ -33,16 +33,16 @@
         "Value": "CVE-2020-2324"
       }
     ],
-    "Description": "CVS Plugin 2.16 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control an agent process to have Jenkins parse a crafted changelog file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nCVS Plugin 2.17 disables external entity resolution for its XML parser.",
+    "Description": "Jenkins CVS Plugin 2.16 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control an agent process to have Jenkins parse a crafted changelog file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nJenkins CVS Plugin 2.17 disables external entity resolution for its XML parser.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:35:09Z",
     "Severity": "HIGH",
     "Summary": "XXE vulnerability in Jenkins CVS Plugin",
-    "UpdatedAt": "2023-02-01T05:06:51Z",
+    "UpdatedAt": "2023-10-27T13:17:27Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.1,
-      "VectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

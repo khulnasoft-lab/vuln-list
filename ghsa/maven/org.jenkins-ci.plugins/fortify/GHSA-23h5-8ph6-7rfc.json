@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-01T23:05:06Z",
+  "UpdatedAt": "2023-10-27T16:24:33Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:fortify"
@@ -36,12 +36,12 @@
         "Value": "CVE-2022-25188"
       }
     ],
-    "Description": "Fortify Plugin 20.2.34 and earlier does not sanitize the `appName` and `appVersion` parameters of its Pipeline steps, which are used to write to files inside build directories.\n\nThis allows attackers with Item/Configure permission to write or overwrite `.xml` files on the Jenkins controller file system with content not controllable by the attacker.\n\nFortify Plugin 20.2.35 sanitizes the `appName` and `appVersion` parameters of its Pipeline steps when determining the resulting filename.",
+    "Description": "Jenkins Fortify Plugin 20.2.34 and earlier does not sanitize the `appName` and `appVersion` parameters of its Pipeline steps, which are used to write to files inside build directories.\n\nThis allows attackers with Item/Configure permission to write or overwrite `.xml` files on the Jenkins controller file system with content not controllable by the attacker.\n\nJenkins Fortify Plugin 20.2.35 sanitizes the `appName` and `appVersion` parameters of its Pipeline steps when determining the resulting filename.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-16T00:01:27Z",
     "Severity": "MODERATE",
     "Summary": "Path traversal vulnerability in Jenkins Fortify Plugin",
-    "UpdatedAt": "2023-02-03T05:06:39Z",
+    "UpdatedAt": "2023-10-27T16:24:33Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

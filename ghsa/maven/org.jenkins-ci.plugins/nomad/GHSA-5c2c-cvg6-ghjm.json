@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2023-10-03T13:37:42Z",
   "Package": {
     "Ecosystem": "MAVEN",
@@ -36,16 +36,16 @@
         "Value": "CVE-2021-21681"
       }
     ],
-    "Description": "Nomad Plugin 0.7.4 and earlier stores the passwords to authenticate against the Docker registry unencrypted in the global `config.xml` file on the Jenkins controller as part of its worker templates configuration.\n\nThese passwords can be viewed by users with access to the Jenkins controller file system.\n\nNomad Plugin 0.7.5 stores the Docker passwords encrypted. This change is effective after Jenkins restarts.",
+    "Description": "Jenkins Nomad Plugin 0.7.4 and earlier stores the passwords to authenticate against the Docker registry unencrypted in the global `config.xml` file on the Jenkins controller as part of its worker templates configuration.\n\nThese passwords can be viewed by users with access to the Jenkins controller file system.\n\nJenkins Nomad Plugin 0.7.5 stores the Docker passwords encrypted. This change is effective after Jenkins restarts.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T19:12:36Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Password stored in plain text by Jenkins Nomad Plugin",
-    "UpdatedAt": "2023-10-03T13:37:42Z",
+    "UpdatedAt": "2023-10-27T15:59:41Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.3,
-      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
+      "Score": 5.5,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
