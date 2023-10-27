@@ -5,10 +5,10 @@
     "date": "2020-07-31 19:22"
   },
   "updated": {
-    "date": "2020-08-05 06:35"
+    "date": "2023-10-25 21:40"
   },
   "severity": "medium",
-  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2020-8492:\n\tPython 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct Regular Expression Denial of Service (ReDoS) attacks against a client because of urllib.request.AbstractBasicAuthHandler catastrophic backtracking.\n1809065: CVE-2020-8492 python: wrong backtracking in urllib.request.AbstractBasicAuthHandler allows for a ReDoS\n",
+  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-48560:\n\tA use-after-free exists in Python through 3.9 via heappushpop in heapq.\n\nCVE-2020-8492:\n\tPython 2.7 through 2.7.17, 3.5 through 3.5.9, 3.6 through 3.6.10, 3.7 through 3.7.6, and 3.8 through 3.8.1 allows an HTTP server to conduct Regular Expression Denial of Service (ReDoS) attacks against a client because of urllib.request.AbstractBasicAuthHandler catastrophic backtracking.\n",
   "packages": [
     {
       "name": "python",
@@ -400,9 +400,15 @@
       "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2020-8492",
       "id": "CVE-2020-8492",
       "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-48560",
+      "id": "CVE-2022-48560",
+      "type": "cve"
     }
   ],
   "cveids": [
-    "CVE-2020-8492"
+    "CVE-2020-8492",
+    "CVE-2022-48560"
   ]
 }

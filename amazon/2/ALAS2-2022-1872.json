@@ -5,10 +5,10 @@
     "date": "2022-10-31 19:40"
   },
   "updated": {
-    "date": "2023-10-12 15:08"
+    "date": "2023-10-25 21:40"
   },
   "severity": "important",
-  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-2868:\n\tlibtiff's tiffcrop utility has a improper input validation flaw that can lead to out of bounds read and ultimately cause a crash if an attacker is able to supply a crafted file to tiffcrop.\n\nCVE-2022-2867:\n\tA flaw was found in libtiffs tiffcrop utility that has a uint32_t underflow that can lead to an out-of-bounds read and write. This flaw allows an attacker who supplies a crafted file to tiffcrop to cause a crash or, in some cases, further exploitation.\n",
+  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2022-2869:\n\tA flaw was found in libtiff's tiffcrop tool that has a uint32_t underflow, which leads to an out-of-bounds read and write in the extractContigSamples8bits routine. This flaw allows an attacker who supplies a crafted file to tiffcrop to trick a user into opening the crafted file with tiffcrop, causing a crash or potential further exploitations.\n\nCVE-2022-2868:\n\tlibtiff's tiffcrop utility has a improper input validation flaw that can lead to out of bounds read and ultimately cause a crash if an attacker is able to supply a crafted file to tiffcrop.\n\nCVE-2022-2867:\n\tA flaw was found in libtiffs tiffcrop utility that has a uint32_t underflow that can lead to an out-of-bounds read and write. This flaw allows an attacker who supplies a crafted file to tiffcrop to cause a crash or, in some cases, further exploitation.\n",
   "packages": [
     {
       "name": "libtiff",
@@ -141,10 +141,16 @@
       "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2868",
       "id": "CVE-2022-2868",
       "type": "cve"
+    },
+    {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-2869",
+      "id": "CVE-2022-2869",
+      "type": "cve"
     }
   ],
   "cveids": [
     "CVE-2022-2867",
-    "CVE-2022-2868"
+    "CVE-2022-2868",
+    "CVE-2022-2869"
   ]
 }
