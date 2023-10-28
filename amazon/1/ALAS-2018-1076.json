@@ -5,10 +5,10 @@
     "date": "2018-09-05 20:42"
   },
   "updated": {
-    "date": "2018-09-06 22:03"
+    "date": "2023-10-25 21:00"
   },
   "severity": "important",
-  "description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3191:\n\tThe compile_branch function in pcre_compile.c in PCRE 8.x before 8.39 and pcre2_compile.c in PCRE2 before 10.22 mishandles patterns containing an (*ACCEPT) substring in conjunction with nested parentheses, which allows remote attackers to execute arbitrary code or cause a denial of service (stack-based buffer overflow) via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror, aka ZDI-CAN-3542.\n1311503: \nCVE-2016-3191 pcre: workspace overflow for (*ACCEPT) with deeply nested parentheses (8.39/13, 10.22/12)\n",
+  "description": "Package updates are available for Amazon Linux AMI that fix the following vulnerabilities:\nCVE-2016-3191:\n\tThe compile_branch function in pcre_compile.c in PCRE 8.x before 8.39 and pcre2_compile.c in PCRE2 before 10.22 mishandles patterns containing an (*ACCEPT) substring in conjunction with nested parentheses, which allows remote attackers to execute arbitrary code or cause a denial of service (stack-based buffer overflow) via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror, aka ZDI-CAN-3542.\n\nCVE-2015-8391:\n\tThe pcre_compile function in pcre_compile.c in PCRE before 8.38 mishandles certain [: nesting, which allows remote attackers to cause a denial of service (CPU consumption) or possibly have unspecified other impact via a crafted regular expression, as demonstrated by a JavaScript RegExp object encountered by Konqueror.\n",
   "packages": [
     {
       "name": "pcre",
@@ -93,12 +93,18 @@
   ],
   "references": [
     {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-8391",
+      "id": "CVE-2015-8391",
+      "type": "cve"
+    },
+    {
       "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-3191",
       "id": "CVE-2016-3191",
       "type": "cve"
     }
   ],
   "cveids": [
+    "CVE-2015-8391",
     "CVE-2016-3191"
   ]
 }
