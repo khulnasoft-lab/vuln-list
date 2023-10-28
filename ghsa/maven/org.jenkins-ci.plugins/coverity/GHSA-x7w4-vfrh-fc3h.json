@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-08-10T18:23:03Z",
+  "UpdatedAt": "2023-10-27T20:44:00Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:coverity"
@@ -20,6 +20,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2022/07/27/1"
       },
       {
+        "Url": "https://www.jenkins.io/security/advisory/2022-07-27/#SECURITY-2790%20%281%29"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x7w4-vfrh-fc3h"
       }
     ],
@@ -33,12 +36,12 @@
         "Value": "CVE-2022-36919"
       }
     ],
-    "Description": "A missing permission check in Jenkins Coverity Plugin 1.11.4 and earlier allows attackers with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins.",
+    "Description": "Jenkins Coverity Plugin 1.11.4 and earlier does not perform a permission check in an HTTP endpoint.\n\nThis allows attackers with Overall/Read permission to enumerate credentials IDs of credentials stored in Jenkins. Those can be used as part of an attack to capture the credentials using another vulnerability.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:42Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins Coverity Plugin allows attackers with Overall/Read permission to enumerate credentials IDs",
-    "UpdatedAt": "2023-01-30T05:01:00Z",
+    "UpdatedAt": "2023-10-27T20:44:00Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

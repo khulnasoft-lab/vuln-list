@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-13T15:44:05Z",
+  "UpdatedAt": "2023-10-27T20:00:57Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:opsgenie"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-34804"
       }
     ],
-    "Description": "Jenkins OpsGenie Plugin 1.9 and earlier transmits API keys in plain text as part of the global Jenkins configuration form and job configuration forms, potentially resulting in their exposure.",
+    "Description": "Jenkins OpsGenie Plugin 1.9 and earlier stores API keys unencrypted in its global configuration file `com.opsgenie.integration.jenkins.OpsGenieNotifier.xml` and in job `config.xml` files on the Jenkins controller as part of its configuration.\n\nAdditionally, they are transmitted in plain text as part of the respective configuration forms.\n\nThese API keys can be viewed by users with Item/Extended Read permission (job `config.xml` only) or access to the Jenkins controller file system (both).\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-01T00:01:08Z",
     "Severity": "MODERATE",
-    "Summary": "Cleartext Transmission of Sensitive Information in Jenkins OpsGenie Plugin",
-    "UpdatedAt": "2023-01-27T05:05:06Z",
+    "Summary": "Jenkins OpsGenie Plugin vulnerable to Cleartext Transmission of Sensitive Information",
+    "UpdatedAt": "2023-10-27T20:00:57Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

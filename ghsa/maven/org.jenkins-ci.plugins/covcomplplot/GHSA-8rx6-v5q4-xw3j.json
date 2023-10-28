@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-04-07T21:59:31Z",
+  "UpdatedAt": "2023-10-27T19:23:07Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:covcomplplot"
@@ -33,16 +33,16 @@
         "Value": "CVE-2022-28154"
       }
     ],
-    "Description": "Jenkins Coverage/Complexity Scatter Plot Plugin 1.1.1 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.",
+    "Description": "Jenkins Coverage/Complexity Scatter Plot Plugin 1.1.1 and earlier does not configure its XML parser to prevent XML external entity (XXE) attacks.\n\nThis allows attackers able to control the input files for the 'Public Coverage / Complexity Scatter Plot' post-build step to have Jenkins parse a crafted file that uses external entities for extraction of secrets from the Jenkins controller or server-side request forgery.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-03-30T00:00:23Z",
     "Severity": "HIGH",
-    "Summary": "XML External Entity Reference in Jenkins Coverage/Complexity Scatter Plot Plugin",
-    "UpdatedAt": "2023-01-27T05:01:09Z",
+    "Summary": "enkins Coverage/Complexity Scatter Plot Plugin XML External Entity Reference vulnerability",
+    "UpdatedAt": "2023-10-27T19:23:07Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N"
+      "Score": 7.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
     }
   },
   "Versions": [

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-12T18:15:49Z",
+  "UpdatedAt": "2023-10-27T20:10:49Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:xpath-config-viewer"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-34813"
       }
     ],
-    "Description": "A missing permission check in Jenkins XPath Configuration Viewer Plugin 1.1.1 and earlier allows attackers with Overall/Read permission to create and delete XPath expressions.",
+    "Description": "Jenkins XPath Configuration Viewer Plugin 1.1.1 and earlier does not perform permission checks in several HTTP endpoints.\n\nThis allows attackers with Overall/Read permission to create and delete XPath expressions.\n\nAdditionally, these HTTP endpoints do not require POST requests, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-01T00:01:08Z",
     "Severity": "MODERATE",
-    "Summary": "Missing Authorization in Jenkins XPath Configuration Viewer Plugin",
-    "UpdatedAt": "2023-01-27T05:05:06Z",
+    "Summary": "Jenkins XPath Configuration Viewer Plugin Missing Authorization vulnerability",
+    "UpdatedAt": "2023-10-27T20:10:49Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

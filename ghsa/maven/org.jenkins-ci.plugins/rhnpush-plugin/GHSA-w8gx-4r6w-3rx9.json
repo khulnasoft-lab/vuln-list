@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-08-10T21:20:56Z",
+  "UpdatedAt": "2023-10-27T20:39:28Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:rhnpush-plugin"
@@ -33,12 +33,12 @@
         "Value": "CVE-2022-36892"
       }
     ],
-    "Description": "Jenkins rhnpush-plugin Plugin 0.5.1 and earlier does not perform a permission check in a method implementing form validation, allowing attackers with Item/Read permission but without Item/Workspace or Item/Configure permission to check whether attacker-specified file patterns match workspace contents.",
+    "Description": "Jenkins rhnpush-plugin Plugin 0.5.1 and earlier does not perform a permission check in a method implementing form validation.\n\nThis allows attackers with Item/Read permission but without Item/Workspace or Item/Configure permission to check whether attacker-specified file patterns match workspace contents. A sequence of requests can be used to effectively list workspace contents.\n\nrhnpush-plugin Plugin 0.5.2 requires Item/Workspace permission to validate patterns with workspace contents.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:42Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins rhnpush-plugin does not perform a permission check in a method implementing form validation",
-    "UpdatedAt": "2023-01-30T05:00:59Z",
+    "UpdatedAt": "2023-10-27T20:39:28Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

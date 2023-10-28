@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-06-20T22:39:16Z",
+  "UpdatedAt": "2023-10-27T19:10:34Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins.workflow:workflow-cps-global-lib"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-25181"
       }
     ],
-    "Description": "A sandbox bypass vulnerability in Jenkins Pipeline: Shared Groovy Libraries Plugin 552.vd9cc05b8a2e1 and earlier allows attackers with Item/Configure permission to execute arbitrary code in the context of the Jenkins controller JVM through crafted SCM contents, if a global Pipeline library already exists.",
+    "Description": "Jenkins Pipeline: Deprecated Groovy Libraries Plugin 552.vd9cc05b8a2e1 and earlier uses the same workspace directory for all checkouts of Pipeline libraries with the same name regardless of the SCM being used and the source of the library configuration.\n\nThis allows attackers with Item/Configure permission to execute arbitrary code in the context of the Jenkins controller JVM through crafted SCM contents, if a global Pipeline library already exists.\n\nPipeline: Deprecated Groovy Libraries Plugin 561.va_ce0de3c2d69 uses distinct checkout directories per SCM for Pipeline libraries.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-16T00:01:32Z",
     "Severity": "HIGH",
-    "Summary": "Protection Mechanism Failure in Jenkins Pipeline: Shared Groovy Libraries Plugin",
-    "UpdatedAt": "2023-01-27T05:00:35Z",
+    "Summary": "Jenkins Pipeline: Deprecated Groovy Libraries Plugin Protection Mechanism Failure",
+    "UpdatedAt": "2023-10-27T19:10:34Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,

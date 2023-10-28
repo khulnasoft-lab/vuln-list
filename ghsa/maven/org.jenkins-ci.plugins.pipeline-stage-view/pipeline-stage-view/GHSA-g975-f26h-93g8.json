@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-01-31T21:18:57Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-10-27T20:58:16Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins.pipeline-stage-view:pipeline-stage-view"
@@ -33,16 +33,16 @@
         "Value": "CVE-2022-43408"
       }
     ],
-    "Description": "Jenkins Pipeline: Stage View Plugin 2.26 and earlier does not correctly encode the ID of `input` steps when using it to generate URLs to proceed or abort Pipeline builds, allowing attackers able to configure Pipelines to specify `input` step IDs resulting in URLs that would bypass the CSRF protection of any target URL in Jenkins. Pipeline: Stage View Plugin 2.27 correctly encodes the ID of input steps when using it to generate URLs to proceed or abort Pipeline builds.",
+    "Description": "Jenkins Pipeline: Stage View Plugin provides a visualization of Pipeline builds. It also allows users to interact with `input` steps from Pipeline: Input Step Plugin.\n\nPipeline: Stage View Plugin 2.26 and earlier does not correctly encode the ID of `input` steps when using it to generate URLs to proceed or abort Pipeline builds.\n\nThis allows attackers able to configure Pipelines to specify `input` step IDs resulting in URLs that would bypass the CSRF protection of any target URL in Jenkins.\n\nPipeline: Stage View Plugin 2.27 correctly encodes the ID of `input` steps when using it to generate URLs to proceed or abort Pipeline builds.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-10-19T19:00:18Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Jenkins Pipeline: Stage View Plugin allows CSRF protection bypass of any target URL in Jenkins",
-    "UpdatedAt": "2023-01-31T21:18:57Z",
+    "UpdatedAt": "2023-10-27T20:58:16Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 6.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
+      "Score": 8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

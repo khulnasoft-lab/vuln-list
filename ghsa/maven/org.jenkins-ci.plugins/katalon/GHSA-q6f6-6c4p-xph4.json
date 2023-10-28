@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-10-19T21:23:59Z",
+  "UpdatedAt": "2023-10-27T20:55:16Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:katalon"
@@ -33,12 +33,12 @@
         "Value": "CVE-2022-43416"
       }
     ],
-    "Description": "Jenkins Katalon Plugin 1.0.32 and earlier implements an agent/controller message that does not limit where it can be executed and allows invoking Katalon with configurable arguments, allowing attackers able to control agent processes to invoke Katalon on the Jenkins controller with attacker-controlled version, install location, and arguments, and attackers additionally able to create files on the Jenkins controller (e.g., attackers with Item/Configure permission could archive artifacts) to invoke arbitrary OS commands. Katalon Plugin 1.0.33 changes the message type to controller-to-agent, preventing execution on the controller.\n\n",
+    "Description": "Jenkins Katalon Plugin 1.0.32 and earlier implements an agent/controller message that does not limit where it can be executed and allows invoking Katalon with configurable arguments.\n\nIt allows attackers able to control agent processes to invoke Katalon on the Jenkins controller with attacker-controlled version, install location, and arguments. Attackers additionally able to create files on the Jenkins controller (e.g., attackers with Item/Configure permission could archive artifacts) can invoke arbitrary OS commands.\n\nKatalon Plugin 1.0.33 changes the message type to controller-to-agent, preventing execution on the controller.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-10-19T19:00:18Z",
     "Severity": "HIGH",
     "Summary": "Jenkins Katalon Plugin vulnerable to Protection Mechanism Failure",
-    "UpdatedAt": "2023-02-02T05:08:14Z",
+    "UpdatedAt": "2023-10-27T20:55:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-09-23T13:32:18Z",
+  "UpdatedAt": "2023-10-27T20:54:30Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:extreme-feedback"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-41242"
       }
     ],
-    "Description": "A missing permission check in Jenkins extreme-feedback Plugin 1.7 and earlier allows attackers with Overall/Read permission to discover information about job names attached to lamps, discover MAC and IP addresses of existing lamps, and rename lamps.",
+    "Description": "Jenkins extreme-feedback Plugin 1.7 and earlier does not perform a permission check in an HTTP endpoint.\n\nThis allows attackers with Overall/Read permission to discover information about job names attached to lamps, discover MAC and IP addresses of existing lamps, and rename lamps.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-09-22T00:00:28Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins extreme-feedback Plugin vulnerable to Missing Authorization",
-    "UpdatedAt": "2023-01-31T05:03:54Z",
+    "UpdatedAt": "2023-10-27T20:54:30Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-08-11T15:17:02Z",
+  "UpdatedAt": "2023-10-27T20:38:44Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:deployer-framework"
@@ -33,12 +33,12 @@
         "Value": "CVE-2022-36891"
       }
     ],
-    "Description": "A missing permission check in Jenkins Deployer Framework Plugin 85.v1d1888e8c021 and earlier allows attackers with Item/Read permission but without Deploy Now/Deploy permission to read deployment logs.",
+    "Description": "Jenkins Deployer Framework Plugin 85.v1d1888e8c021 and earlier does not perform a permission check in an HTTP endpoint.\n\nThis allows attackers with Item/Read permission to read deployment logs.\n\nDeployer Framework Plugin 86.v7b_a_4a_55b_f3ec requires Deploy Now/Deploy permission to read deployment logs.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:42Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins Deployer Framework Plugin allows attackers with Item/Read permission to read deployment logs",
-    "UpdatedAt": "2023-01-31T05:01:32Z",
+    "UpdatedAt": "2023-10-27T20:38:44Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

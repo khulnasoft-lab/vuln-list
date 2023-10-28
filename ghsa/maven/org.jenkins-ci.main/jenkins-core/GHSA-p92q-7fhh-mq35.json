@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-01-21T14:10:42Z",
+  "UpdatedAt": "2023-10-27T19:01:59Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.main:jenkins-core"
@@ -42,12 +42,12 @@
         "Value": "CVE-2022-20612"
       }
     ],
-    "Description": "A cross-site request forgery (CSRF) vulnerability in Jenkins 2.329 and earlier, LTS 2.319.1 and earlier allows attackers to trigger build of job without parameters when no security realm is set.",
+    "Description": "Jenkins 2.329 and earlier, LTS 2.319.1 and earlier does not require POST requests for the HTTP endpoint handling manual build requests when no security realm is set, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nThis vulnerability allows attackers to trigger build of job without parameters.\n\nJenkins 2.330, LTS 2.319.2 requires POST requests for the affected HTTP endpoint.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-01-21T23:37:57Z",
     "Severity": "MODERATE",
     "Summary": "Cross-Site Request Forgery in Jenkins",
-    "UpdatedAt": "2023-02-03T05:04:19Z",
+    "UpdatedAt": "2023-10-27T19:01:59Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

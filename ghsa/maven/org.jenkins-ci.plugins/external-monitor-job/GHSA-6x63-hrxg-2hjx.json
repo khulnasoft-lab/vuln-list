@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-08-11T15:15:04Z",
+  "UpdatedAt": "2023-10-27T20:43:13Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:external-monitor-job"
@@ -33,12 +33,12 @@
         "Value": "CVE-2022-36886"
       }
     ],
-    "Description": "A cross-site request forgery (CSRF) vulnerability in Jenkins External Monitor Job Type Plugin 191.v363d0d1efdf8 and earlier allows attackers to create runs of an external job. This can lead to Cross-Site Request Forgery (CSRF).",
+    "Description": "Jenkins External Monitor Job Type Plugin 191.v363d0d1efdf8 and earlier does not require POST requests for an HTTP endpoint, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nThis vulnerability allows attackers to create runs of an external job.\n\nExternal Monitor Job Type Plugin 192.ve979ca_8b_3ccd requires POST requests for the affected HTTP endpoint.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:43Z",
     "Severity": "MODERATE",
     "Summary": "External Monitor Job Type Plugin does not require POST requests for an HTTP endpoint",
-    "UpdatedAt": "2023-01-31T05:01:32Z",
+    "UpdatedAt": "2023-10-27T20:43:13Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

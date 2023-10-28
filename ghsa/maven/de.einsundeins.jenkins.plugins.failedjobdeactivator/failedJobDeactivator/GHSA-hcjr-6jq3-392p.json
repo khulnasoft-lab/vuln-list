@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-12T15:28:34Z",
+  "UpdatedAt": "2023-10-27T20:12:54Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "de.einsundeins.jenkins.plugins.failedjobdeactivator:failedJobDeactivator"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-34818"
       }
     ],
-    "Description": "Jenkins Failed Job Deactivator Plugin 1.2.1 and earlier does not perform permission checks in several views and HTTP endpoints, allowing attackers with Overall/Read permission to disable jobs.",
+    "Description": "Jenkins Failed Job Deactivator Plugin 1.2.1 and earlier does not perform permission checks in several views and HTTP endpoints.\n\nThis allows attackers with Overall/Read permission to disable jobs.\n\nAdditionally, these endpoints do not require POST requests, resulting in a cross-site request forgery (CSRF) vulnerability.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-01T00:01:08Z",
     "Severity": "MODERATE",
-    "Summary": " Missing Authorization in Jenkins Failed Job Deactivator Plugin",
-    "UpdatedAt": "2023-01-27T05:05:20Z",
+    "Summary": "Jenkins Failed Job Deactivator Plugin Missing Authorization vulnerability",
+    "UpdatedAt": "2023-10-27T20:12:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-08-10T18:20:39Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2023-10-27T20:14:35Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "com.compuware.jenkins:compuware-zadviser-api"
@@ -33,16 +33,16 @@
         "Value": "CVE-2022-36900"
       }
     ],
-    "Description": "Jenkins Compuware zAdviser API Plugin 1.0.3 and earlier does not restrict execution of a controller/agent message to agents, allowing attackers able to control agent processes to retrieve Java system properties.",
+    "Description": "Jenkins Compuware zAdviser API Plugin defines a controller/agent message that retrieves Java system properties.\n\nCompuware zAdviser API Plugin 1.0.3 and earlier does not restrict execution of the controller/agent message to agents. This allows attackers able to control agent processes to retrieve Java system properties.\n\nCompuware zAdviser API Plugin 1.0.4 does not allow the affected controller/agent message to be submitted by agents for execution on the controller.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:42Z",
-    "Severity": "HIGH",
-    "Summary": "Jenkins Compuware zAdviser API Plugin before 1.0.4 vulnerable to protection mechanism failure",
-    "UpdatedAt": "2023-01-30T05:01:00Z",
+    "Severity": "MODERATE",
+    "Summary": "Jenkins Compuware zAdviser API Plugin vulnerable to protection mechanism failure",
+    "UpdatedAt": "2023-10-27T20:14:35Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.2,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:H/A:N"
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [

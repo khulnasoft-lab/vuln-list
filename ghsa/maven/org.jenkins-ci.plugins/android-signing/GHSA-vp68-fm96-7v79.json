@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-08-11T15:52:29Z",
+  "UpdatedAt": "2023-10-27T20:48:06Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:android-signing"
@@ -33,12 +33,12 @@
         "Value": "CVE-2022-36915"
       }
     ],
-    "Description": "Jenkins Android Signing Plugin 2.2.5 and earlier does not perform a permission check in a method implementing form validation, allowing attackers with Item/Read permission but without Item/Workspace or Item/Configure permission to check whether attacker-specified file patterns match workspace contents.",
+    "Description": "Jenkins Android Signing Plugin 2.2.5 and earlier does not perform a permission check in a method implementing form validation.\n\nThis allows attackers with Item/Read permission but without Item/Workspace or Item/Configure permission to check whether attacker-specified file patterns match workspace contents. A sequence of requests can be used to effectively list workspace contents.\n\nAs of publication of this advisory, there is no fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-07-28T00:00:42Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins Android Signing Plugin allows attackers to check whether attacker-specified file patterns match workspace contents",
-    "UpdatedAt": "2023-01-31T05:01:56Z",
+    "UpdatedAt": "2023-10-27T20:48:06Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

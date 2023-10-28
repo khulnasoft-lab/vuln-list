@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-06-20T22:47:17Z",
+  "UpdatedAt": "2023-10-27T19:14:19Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins.workflow:workflow-cps"
@@ -30,12 +30,12 @@
         "Value": "CVE-2022-25180"
       }
     ],
-    "Description": "Jenkins Pipeline: Groovy Plugin 2648.va9433432b33c and earlier includes password parameters from the original build in replayed builds, allowing attackers with Run/Replay permission to obtain the values of password parameters passed to previous builds of a Pipeline.",
+    "Description": "Jenkins Pipeline: Groovy Plugin 2648.va9433432b33c and earlier includes password parameters from the original build in replayed builds.\n\nThis allows attackers with Run/Replay permission to obtain the values of password parameters passed to previous builds of a Pipeline.\n\nPipeline: Groovy Plugin 2656.vf7a_e7b_75a_457 does not allow builds containing password parameters to be replayed.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-16T00:01:32Z",
     "Severity": "MODERATE",
-    "Summary": "Insufficiently Protected Credentials in Jenkins Pipeline: Groovy Plugin",
-    "UpdatedAt": "2023-07-11T13:39:59Z",
+    "Summary": "Jenkins Pipeline: Groovy Plugin has Insufficiently Protected Credentials",
+    "UpdatedAt": "2023-10-27T19:14:19Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,
@@ -45,7 +45,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2648.2651.v230593e03e9f"
+        "Identifier": "2656.vf7a_e7b_75a_457"
       },
       "VulnerableVersionRange": "\u003c= 2648.va9433432b33c"
     }
