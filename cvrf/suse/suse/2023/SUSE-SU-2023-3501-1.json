@@ -31,13 +31,18 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-3501,SUSE-SLE-Module-Public-Cloud-12-2023-3501",
+      "Text": "Image SLES12-SP5-EC2-SAP-On-Demand-2023-3501,SUSE-2023-3501,SUSE-SLE-Module-Public-Cloud-12-2023-3501",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "amazon-ssm-agent-3.1.1260.0-4.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "amazon-ssm-agent-3.1.1260.0-4.33.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Public Cloud 12",

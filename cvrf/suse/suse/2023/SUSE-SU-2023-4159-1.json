@@ -31,13 +31,18 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4159,SUSE-SLE-SERVER-12-SP5-2023-4159",
+      "Text": "Image SLES12-SP5-EC2-SAP-On-Demand-2023-4159,SUSE-2023-4159,SUSE-SLE-SERVER-12-SP5-2023-4159",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "suse-module-tools-12.13-3.11.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "suse-module-tools-12.13-3.11.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Server 12 SP5",
@@ -112,6 +117,7 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-SAP-On-Demand:suse-module-tools-12.13-3.11.1",
             "SUSE Linux Enterprise Server 12 SP5:suse-module-tools-12.13-3.11.1",
             "SUSE Linux Enterprise Server for SAP Applications 12 SP5:suse-module-tools-12.13-3.11.1"
           ]
@@ -142,6 +148,7 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-SAP-On-Demand:suse-module-tools-12.13-3.11.1",
             "SUSE Linux Enterprise Server 12 SP5:suse-module-tools-12.13-3.11.1",
             "SUSE Linux Enterprise Server for SAP Applications 12 SP5:suse-module-tools-12.13-3.11.1"
           ]

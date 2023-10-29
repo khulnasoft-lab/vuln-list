@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4085,Image SLES12-SP5-Azure-HPC-BYOS-2023-4085,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4085,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4085,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4085,Image SLES12-SP5-GCE-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4085,SUSE-2023-4085,SUSE-SLE-SERVER-12-SP5-2023-4085",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4085,Image SLES12-SP5-Azure-HPC-BYOS-2023-4085,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4085,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4085,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4085,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4085,Image SLES12-SP5-GCE-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4085,SUSE-2023-4085,SUSE-SLE-SERVER-12-SP5-2023-4085",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -111,6 +111,26 @@
       {
         "ProductReference": "grub2-x86_64-efi-2.02-169.1",
         "RelatesToProductReference": "Image SLES12-SP5-Azure-Standard-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -291,7 +311,7 @@
   "Vulnerabilities": [
     {
       "CVE": "CVE-2023-4692",
-      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Description": "An out-of-bounds write flaw was found in grub2's NTFS filesystem driver. This issue may allow an attacker to present a specially crafted NTFS filesystem image, leading to grub's heap metadata corruption. In some circumstances, the attack may also corrupt the UEFI firmware heap metadata. As a result, arbitrary code execution and secure boot protection bypass may be achieved.",
       "Threats": [
         {
           "Type": "Impact",
@@ -327,6 +347,10 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-xen-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-x86_64-efi-2.02-169.1",
@@ -361,7 +385,7 @@
     },
     {
       "CVE": "CVE-2023-4693",
-      "Description": "** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.",
+      "Description": "An out-of-bounds read flaw was found on grub2's NTFS filesystem driver. This issue may allow a physically present attacker to present a specially crafted NTFS file system image to read arbitrary memory locations. A successful attack allows sensitive data cached in memory or EFI variable values to be leaked, presenting a high Confidentiality risk.",
       "Threats": [
         {
           "Type": "Impact",
@@ -397,6 +421,10 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-xen-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-x86_64-efi-2.02-169.1",

@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4001,Image SLES12-SP5-Azure-HPC-BYOS-2023-4001,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4001,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4001,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4001,Image SLES12-SP5-GCE-BYOS-2023-4001,Image SLES12-SP5-GCE-SAP-BYOS-2023-4001,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4001,SUSE-2023-4001,SUSE-SLE-SERVER-12-SP5-2023-4001,SUSE-SLE-WE-12-SP5-2023-4001",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4001,Image SLES12-SP5-Azure-HPC-BYOS-2023-4001,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4001,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4001,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4001,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4001,Image SLES12-SP5-GCE-BYOS-2023-4001,Image SLES12-SP5-GCE-SAP-BYOS-2023-4001,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4001,SUSE-2023-4001,SUSE-SLE-SERVER-12-SP5-2023-4001,SUSE-SLE-WE-12-SP5-2023-4001",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -136,6 +136,26 @@
       {
         "ProductReference": "python-xml-2.7.18-33.26.1",
         "RelatesToProductReference": "Image SLES12-SP5-Azure-Standard-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpython2_7-1_0-2.7.18-33.26.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python-2.7.18-33.26.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python-base-2.7.18-33.26.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python-xml-2.7.18-33.26.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -429,6 +449,10 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-2.7.18-33.26.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-base-2.7.18-33.26.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-xml-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:libpython2_7-1_0-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-base-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-xml-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:libpython2_7-1_0-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:python-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:python-base-2.7.18-33.26.1",
@@ -520,6 +544,10 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-2.7.18-33.26.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-base-2.7.18-33.26.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:python-xml-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:libpython2_7-1_0-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-base-2.7.18-33.26.1",
+            "Image SLES12-SP5-EC2-SAP-On-Demand:python-xml-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:libpython2_7-1_0-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:python-2.7.18-33.26.1",
             "Image SLES12-SP5-GCE-BYOS:python-base-2.7.18-33.26.1",

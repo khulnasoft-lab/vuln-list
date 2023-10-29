@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4155,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-4155",
+      "Text": "Container bci/node:16-2023-4155,SUSE-2023-4155,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-4155",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "nodejs16-16.20.2-150400.3.27.2",
+        "RelatesToProductReference": "Container bci/node:16",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "npm16-16.20.2-150400.3.27.2",
+        "RelatesToProductReference": "Container bci/node:16",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "nodejs16-16.20.2-150400.3.27.2",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Web and Scripting 15 SP4",
@@ -113,7 +123,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -130,6 +140,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:16:nodejs16-16.20.2-150400.3.27.2",
+            "Container bci/node:16:npm16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-devel-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-docs-16.20.2-150400.3.27.2",
@@ -145,7 +157,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -162,6 +174,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:16:nodejs16-16.20.2-150400.3.27.2",
+            "Container bci/node:16:npm16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-devel-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-docs-16.20.2-150400.3.27.2",
@@ -226,6 +240,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:16:nodejs16-16.20.2-150400.3.27.2",
+            "Container bci/node:16:npm16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-devel-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-docs-16.20.2-150400.3.27.2",
@@ -241,7 +257,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "low"
         }
       ],
       "References": [
@@ -258,6 +274,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:16:nodejs16-16.20.2-150400.3.27.2",
+            "Container bci/node:16:npm16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-devel-16.20.2-150400.3.27.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs16-docs-16.20.2-150400.3.27.2",

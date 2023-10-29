@@ -31,13 +31,18 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-EC2-SAP-On-Demand-2023-4199,SUSE-2023-4199,SUSE-SLE-SDK-12-SP5-2023-4199,SUSE-SLE-SERVER-12-SP5-2023-4199",
+      "Text": "Container suse/sles12sp5:latest-2023-4199,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4199,SUSE-2023-4199,SUSE-SLE-SDK-12-SP5-2023-4199,SUSE-SLE-SERVER-12-SP5-2023-4199",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libnghttp2-14-1.39.2-3.13.1",
+        "RelatesToProductReference": "Container suse/sles12sp5:latest",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libnghttp2-14-1.39.2-3.13.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
@@ -152,6 +157,7 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/sles12sp5:latest:libnghttp2-14-1.39.2-3.13.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libnghttp2-14-1.39.2-3.13.1",
             "SUSE Linux Enterprise Server 12 SP5:libnghttp2-14-1.39.2-3.13.1",
             "SUSE Linux Enterprise Server 12 SP5:libnghttp2-14-32bit-1.39.2-3.13.1",
