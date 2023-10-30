@@ -1,0 +1,56 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2023-10-30T14:53:06Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "io.jenkins.plugins:teams-webhook-trigger"
+  },
+  "Advisory": {
+    "DatabaseId": 223948,
+    "Id": "GSA_kwCzR0hTQS0yeHBxLTU5NTItMzh3M84AA2rM",
+    "GhsaId": "GHSA-2xpq-5952-38w3",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2023-46658"
+      },
+      {
+        "Url": "https://www.jenkins.io/security/advisory/2023-10-25/#SECURITY-2876"
+      },
+      {
+        "Url": "http://www.openwall.com/lists/oss-security/2023/10/25/2"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-2xpq-5952-38w3"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-2xpq-5952-38w3"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2023-46658"
+      }
+    ],
+    "Description": "Jenkins MSTeams Webhook Trigger Plugin 0.1.1 and earlier uses a non-constant time comparison function when checking whether the provided and expected webhook token are equal, potentially allowing attackers to use statistical methods to obtain a valid webhook token.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2023-10-25T18:32:25Z",
+    "Severity": "LOW",
+    "Summary": "Jenkins MSTeams Webhook Trigger Plugin uses non-constant time webhook token comparison ",
+    "UpdatedAt": "2023-10-30T14:53:06Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 0.1.1"
+    }
+  ]
+}
