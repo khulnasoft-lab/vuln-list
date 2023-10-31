@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2023-08-22T18:38:12Z",
+  "UpdatedAt": "2023-10-30T20:15:57Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "langchain"
@@ -20,6 +20,15 @@
         "Url": "https://github.com/langchain-ai/langchain/pull/5640"
       },
       {
+        "Url": "https://github.com/langchain-ai/langchain/pull/12427"
+      },
+      {
+        "Url": "https://github.com/langchain-ai/langchain/commit/cadfce295f8a33828fc635c2e5ea28b883e5c992"
+      },
+      {
+        "Url": "https://github.com/langchain-ai/langchain/releases/tag/v0.0.325"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-prgp-w7vf-ch62"
       }
     ],
@@ -33,12 +42,12 @@
         "Value": "CVE-2023-39659"
       }
     ],
-    "Description": "An issue in langchain langchain-ai v.0.0.232 and before allows a remote attacker to execute arbitrary code via a crafted script to the PythonAstREPLTool._run component.",
+    "Description": "An issue in langchain langchain-ai before version 0.0.325 allows a remote attacker to execute arbitrary code via a crafted script to the PythonAstREPLTool._run component.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-08-15T18:31:32Z",
     "Severity": "CRITICAL",
     "Summary": "LangChain vulnerable to arbitrary code execution",
-    "UpdatedAt": "2023-08-22T18:38:12Z",
+    "UpdatedAt": "2023-10-30T20:15:57Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -48,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "0.0.325"
       },
-      "VulnerableVersionRange": "\u003c= 0.0.232"
+      "VulnerableVersionRange": "\u003c 0.0.325"
     }
   ]
 }
