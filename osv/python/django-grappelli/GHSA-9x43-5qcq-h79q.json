@@ -1,11 +1,11 @@
 {
   "id": "GHSA-9x43-5qcq-h79q",
-  "modified": "2023-10-24T02:01:34.965754Z",
+  "modified": "2023-10-31T22:17:22.660401Z",
   "published": "2023-10-22T21:36:10Z",
   "aliases": [
     "CVE-2021-46898"
   ],
-  "summary": " in django-grappelli",
+  "summary": "Django Grappelli Open Redirect vulnerability",
   "details": "views/switch.py in django-grappelli (aka Django Grappelli) before 2.15.2 attempts to prevent external redirection with startswith(\"/\") but this does not consider a protocol-relative URL (e.g., //example.com) attack.",
   "affected": [
     {
