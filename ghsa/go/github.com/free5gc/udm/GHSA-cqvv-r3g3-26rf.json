@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-10-24T02:00:11Z",
   "Package": {
     "Ecosystem": "GO",
@@ -39,13 +39,13 @@
     "Description": "pkg/suci/suci.go in free5GC udm before 1.2.0, when Go before 1.19 is used, allows an Invalid Curve Attack because it may compute a shared secret via an uncompressed public key that has not been validated. An attacker can send arbitrary SUCIs to the UDM, which tries to decrypt them via both its private key and the attacker's public key.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-23T03:30:30Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "free5GC udm vulnerable to Invalid Curve Attack",
-    "UpdatedAt": "2023-10-24T02:00:11Z",
+    "UpdatedAt": "2023-10-31T22:07:51Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

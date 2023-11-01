@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-10-11T20:35:44Z",
   "Package": {
     "Ecosystem": "GO",
@@ -32,6 +32,12 @@
         "Url": "https://pkg.go.dev/vuln/GO-2023-2102"
       },
       {
+        "Url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/CLB4TW7KALB3EEQWNWCN7OUIWWVWWCG2/"
+      },
+      {
+        "Url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/KSEGD2IWKNUO3DWY4KQGUQM5BISRWHQE/"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4374-p667-p6c8"
       }
     ],
@@ -48,13 +54,13 @@
     "Description": "A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing.\n\nWith the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection.\n\nThis issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2.\n\nThe default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-11T20:35:43Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "HTTP/2 rapid reset can cause excessive work in net/http",
-    "UpdatedAt": "2023-10-13T22:54:53Z",
+    "UpdatedAt": "2023-10-31T21:44:23Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
