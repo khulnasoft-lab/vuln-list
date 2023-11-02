@@ -36,16 +36,16 @@
         "Value": "CVE-2023-46654"
       }
     ],
-    "Description": "Jenkins CloudBees CD Plugin 1.1.32 and earlier follows symbolic links to locations outside of the expected directory during the cleanup process of the 'CloudBees CD - Publish Artifact' post-build step, allowing attackers able to configure jobs to delete arbitrary files on the Jenkins controller file system.",
+    "Description": "In Jenkins CloudBees CD Plugin, artifacts that were previously copied from an agent to the controller are deleted after publishing by the 'CloudBees CD - Publish Artifact' post-build step.\n\nCloudBees CD Plugin 1.1.32 and earlier follows symbolic links to locations outside of the expected directory during this cleanup process.\n\nThis allows attackers able to configure jobs to delete arbitrary files on the Jenkins controller file system.\n\nCloudBees CD Plugin 1.1.33 deletes symbolic links without following them.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-25T18:32:25Z",
     "Severity": "HIGH",
     "Summary": "Jenkins CloudBees CD Plugin vulnerable to arbitrary file deletion",
-    "UpdatedAt": "2023-10-30T14:57:15Z",
+    "UpdatedAt": "2023-11-02T16:50:00Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

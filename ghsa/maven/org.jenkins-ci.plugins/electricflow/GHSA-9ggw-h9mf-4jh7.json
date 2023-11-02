@@ -36,16 +36,16 @@
         "Value": "CVE-2023-46655"
       }
     ],
-    "Description": "Jenkins CloudBees CD Plugin 1.1.32 and earlier follows symbolic links to locations outside of the directory from which artifacts are published during the `CloudBees CD - Publish Artifact` post-build step, allowing attackers able to configure jobs to publish arbitrary files from the Jenkins controller file system to the previously configured CloudBees CD server.",
+    "Description": "Jenkins CloudBees CD Plugin temporarily copies files from an agent workspace to the controller in preparation for publishing them in the 'CloudBees CD - Publish Artifact' post-build step.\n\nCloudBees CD Plugin 1.1.32 and earlier follows symbolic links to locations outside of the temporary directory on the controller when collecting the list of files to publish.\n\nThis allows attackers able to configure jobs to publish arbitrary files from the Jenkins controller file system to the previously configured CloudBees CD server.\n\nCloudBees CD Plugin 1.1.33 ensures that only files located within the expected directory are published.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-25T18:32:25Z",
     "Severity": "MODERATE",
     "Summary": "Jenkins CloudBees CD Plugin vulnerable to arbitrary file read",
-    "UpdatedAt": "2023-10-30T15:02:07Z",
+    "UpdatedAt": "2023-11-02T16:50:55Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
