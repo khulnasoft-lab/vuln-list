@@ -5,10 +5,10 @@
     "date": "2023-10-16 13:45"
   },
   "updated": {
-    "date": "2023-10-16 23:33"
+    "date": "2023-10-30 23:58"
   },
   "severity": "important",
-  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-44487:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-39323:\n\tLine directives (\"//line\") can be used to bypass the restrictions on \"//go:cgo_\" directives, allowing blocked linker and compiler flags to be passed during compilation. This can result in unexpected execution of arbitrary code when running \"go build\". The line directive requires the absolute path of the file in which the directive lives, which makes exploiting this issue significantly more complex.\n",
+  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-44487:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-39325:\n\tThe HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.\n\nCVE-2023-39323:\n\tLine directives (\"//line\") can be used to bypass the restrictions on \"//go:cgo_\" directives, allowing blocked linker and compiler flags to be passed during compilation. This can result in unexpected execution of arbitrary code when running \"go build\". The line directive requires the absolute path of the file in which the directive lives, which makes exploiting this issue significantly more complex.\n\nCVE-2023-39318:\n\tThe html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in \u003cscript\u003e contexts. This may cause the template parser to improperly interpret the contents of \u003cscript\u003e contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n",
   "packages": [
     {
       "name": "golang",
@@ -93,6 +93,11 @@
   ],
   "references": [
     {
+      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39318",
+      "id": "CVE-2023-39318",
+      "type": "cve"
+    },
+    {
       "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39323",
       "id": "CVE-2023-39323",
       "type": "cve"
@@ -109,6 +114,7 @@
     }
   ],
   "cveids": [
+    "CVE-2023-39318",
     "CVE-2023-39323",
     "CVE-2023-39325",
     "CVE-2023-44487"
