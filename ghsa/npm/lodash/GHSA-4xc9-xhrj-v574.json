@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2019-02-07T18:04:34Z",
+  "UpdatedAt": "2023-11-01T21:21:16Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "lodash"
@@ -24,6 +24,9 @@
       },
       {
         "Url": "https://security.netapp.com/advisory/ntap-20190919-0004/"
+      },
+      {
+        "Url": "https://github.com/lodash/lodash/commit/90e6199a161b6445b01454517b40ef65ebecd2ad"
       }
     ],
     "Identifiers": [
@@ -36,12 +39,12 @@
         "Value": "CVE-2018-16487"
       }
     ],
-    "Description": "Versions of `lodash` before 4.17.5 are vulnerable to prototype pollution. \n\nThe vulnerable functions are 'defaultsDeep', 'merge', and 'mergeWith' which allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.\n\n\n\n\n## Recommendation\n\nUpdate to version 4.17.11 or later.",
+    "Description": "Versions of `lodash` before 4.17.11 are vulnerable to prototype pollution. \n\nThe vulnerable functions are 'defaultsDeep', 'merge', and 'mergeWith' which allow a malicious user to modify the prototype of `Object` via `{constructor: {prototype: {...}}}` causing the addition or modification of an existing property that will exist on all objects.\n\n\n\n\n## Recommendation\n\nUpdate to version 4.17.11 or later.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-02-07T18:16:48Z",
     "Severity": "HIGH",
     "Summary": "Prototype Pollution in lodash",
-    "UpdatedAt": "2023-01-09T05:02:32Z",
+    "UpdatedAt": "2023-11-01T23:00:56Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
