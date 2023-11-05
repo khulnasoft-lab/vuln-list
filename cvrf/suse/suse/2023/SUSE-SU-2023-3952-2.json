@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-3952,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-3952,Image SLES15-SP4-CHOST-BYOS-Azure-2023-3952,Image SLES15-SP4-CHOST-BYOS-GCE-2023-3952,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-3952,Image SLES15-SP4-Micro-5-4-GCE-2023-3952,Image SLES15-SP5-BYOS-EC2-2023-3952,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-3952,Image SLES15-SP5-CHOST-BYOS-Azure-2023-3952,Image SLES15-SP5-CHOST-BYOS-EC2-2023-3952,Image SLES15-SP5-CHOST-BYOS-GCE-2023-3952,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-3952,Image SLES15-SP5-EC2-2023-3952,Image SLES15-SP5-HPC-BYOS-EC2-2023-3952,Image SLES15-SP5-Hardened-BYOS-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-2023-3952,Image SLES15-SP5-Micro-5-5-Azure-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-Azure-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-GCE-2023-3952,Image SLES15-SP5-Micro-5-5-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-GCE-2023-3952,Image SLES15-SP5-SAP-BYOS-EC2-2023-3952,Image SLES15-SP5-SAP-Hardened-BYOS-EC2-2023-3952,Image SLES15-SP5-SAPCAL-EC2-2023-3952,SUSE-2023-3952,SUSE-SLE-Micro-5.5-2023-3952",
+      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-3952,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-3952,Image SLES15-SP4-CHOST-BYOS-Azure-2023-3952,Image SLES15-SP4-CHOST-BYOS-EC2-2023-3952,Image SLES15-SP4-CHOST-BYOS-GCE-2023-3952,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-3952,Image SLES15-SP4-Micro-5-3-BYOS-2023-3952,Image SLES15-SP4-Micro-5-3-BYOS-Azure-2023-3952,Image SLES15-SP4-Micro-5-3-BYOS-EC2-2023-3952,Image SLES15-SP4-Micro-5-3-BYOS-GCE-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-Azure-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-3952,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-3952,Image SLES15-SP4-Micro-5-4-GCE-2023-3952,Image SLES15-SP5-BYOS-EC2-2023-3952,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-3952,Image SLES15-SP5-CHOST-BYOS-Azure-2023-3952,Image SLES15-SP5-CHOST-BYOS-EC2-2023-3952,Image SLES15-SP5-CHOST-BYOS-GCE-2023-3952,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-3952,Image SLES15-SP5-EC2-2023-3952,Image SLES15-SP5-HPC-BYOS-EC2-2023-3952,Image SLES15-SP5-Hardened-BYOS-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-2023-3952,Image SLES15-SP5-Micro-5-5-Azure-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-Azure-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-BYOS-GCE-2023-3952,Image SLES15-SP5-Micro-5-5-EC2-2023-3952,Image SLES15-SP5-Micro-5-5-GCE-2023-3952,Image SLES15-SP5-SAP-BYOS-EC2-2023-3952,Image SLES15-SP5-SAP-Hardened-BYOS-EC2-2023-3952,Image SLES15-SP5-SAPCAL-EC2-2023-3952,SUSE-2023-3952,SUSE-SLE-Micro-5.5-2023-3952",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -55,6 +55,11 @@
       },
       {
         "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
         "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
         "RelationType": "Default Component Of"
       },
@@ -65,7 +70,32 @@
       },
       {
         "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
         "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "runc-1.1.8-150000.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
         "RelationType": "Default Component Of"
       },
       {

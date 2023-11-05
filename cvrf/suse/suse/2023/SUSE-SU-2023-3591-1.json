@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sle-micro-rancher/5.4:latest-2023-3591,Container suse/sle-micro/5.4/toolbox:latest-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-3591,Image SLES15-SP4-Micro-5-4-GCE-2023-3591,SUSE-2023-3591,SUSE-SLE-Micro-5.4-2023-3591",
+      "Text": "Container suse/sle-micro-rancher/5.4:latest-2023-3591,Container suse/sle-micro/5.4/toolbox:latest-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-Azure-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-3591,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-3591,Image SLES15-SP4-Micro-5-4-GCE-2023-3591,SUSE-2023-3591,SUSE-SLE-Micro-5.4-2023-3591",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -66,6 +66,16 @@
       {
         "ProductReference": "shadow-4.8.1-150400.3.3.1",
         "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "login_defs-4.8.1-150400.3.3.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "shadow-4.8.1-150400.3.3.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
         "RelationType": "Default Component Of"
       },
       {
@@ -160,6 +170,8 @@
             "Container suse/sle-micro-rancher/5.4:latest:shadow-4.8.1-150400.3.3.1",
             "Container suse/sle-micro/5.4/toolbox:latest:login_defs-4.8.1-150400.3.3.1",
             "Container suse/sle-micro/5.4/toolbox:latest:shadow-4.8.1-150400.3.3.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:login_defs-4.8.1-150400.3.3.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:shadow-4.8.1-150400.3.3.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:login_defs-4.8.1-150400.3.3.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:shadow-4.8.1-150400.3.3.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:login_defs-4.8.1-150400.3.3.1",

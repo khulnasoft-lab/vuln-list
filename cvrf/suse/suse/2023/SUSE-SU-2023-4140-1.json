@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sle-micro-rancher/5.3:latest-2023-4140,Container suse/sle-micro-rancher/5.4:latest-2023-4140,Image SLES15-SP4-CHOST-BYOS-2023-4140,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4140,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4140,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4140,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-4140,Image SLES15-SP4-Micro-5-4-GCE-2023-4140,SUSE-2023-4140,SUSE-SLE-Micro-5.3-2023-4140,SUSE-SLE-Micro-5.4-2023-4140,SUSE-SLE-Module-Basesystem-15-SP4-2023-4140,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2023-4140,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4140",
+      "Text": "Container suse/sle-micro-rancher/5.3:latest-2023-4140,Container suse/sle-micro-rancher/5.4:latest-2023-4140,Image SLES15-SP4-CHOST-BYOS-2023-4140,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4140,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4140,Image SLES15-SP4-CHOST-BYOS-EC2-2023-4140,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4140,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4140,Image SLES15-SP4-Micro-5-3-BYOS-2023-4140,Image SLES15-SP4-Micro-5-3-BYOS-Azure-2023-4140,Image SLES15-SP4-Micro-5-3-BYOS-EC2-2023-4140,Image SLES15-SP4-Micro-5-3-BYOS-GCE-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-Azure-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-4140,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-4140,Image SLES15-SP4-Micro-5-4-GCE-2023-4140,SUSE-2023-4140,SUSE-SLE-Micro-5.3-2023-4140,SUSE-SLE-Micro-5.4-2023-4140,SUSE-SLE-Module-Basesystem-15-SP4-2023-4140,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2023-4140,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4140",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -84,6 +84,11 @@
         "RelationType": "Default Component Of"
       },
       {
+        "ProductReference": "grub2-x86_64-xen-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
         "ProductReference": "grub2-2.06-150400.11.38.1",
         "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-Aliyun",
         "RelationType": "Default Component Of"
@@ -110,52 +115,152 @@
       },
       {
         "ProductReference": "grub2-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-EC2",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-EC2",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
-        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-EC2",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "grub2-x86_64-xen-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-CHOST-BYOS-SAP-CCloud",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
         "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150400.11.38.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-Azure",
         "RelationType": "Default Component Of"
       },
       {
@@ -399,6 +504,10 @@
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-x86_64-xen-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
@@ -408,6 +517,24 @@
             "Image SLES15-SP4-CHOST-BYOS:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
@@ -418,7 +545,6 @@
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
-            "Image SLES15-SP4-Micro-5-4-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
@@ -485,6 +611,10 @@
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS-EC2:grub2-x86_64-xen-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
@@ -494,6 +624,24 @@
             "Image SLES15-SP4-CHOST-BYOS:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-CHOST-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-CHOST-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-EC2:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-3-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-i386-pc-2.06-150400.11.38.1",
+            "Image SLES15-SP4-Micro-5-4-BYOS-Azure:grub2-x86_64-efi-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:grub2-x86_64-efi-2.06-150400.11.38.1",
@@ -504,7 +652,6 @@
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:grub2-x86_64-efi-2.06-150400.11.38.1",
-            "Image SLES15-SP4-Micro-5-4-BYOS:grub2-x86_64-xen-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-i386-pc-2.06-150400.11.38.1",
             "Image SLES15-SP4-Micro-5-4-GCE:grub2-x86_64-efi-2.06-150400.11.38.1",
