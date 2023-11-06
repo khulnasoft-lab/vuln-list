@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-4055,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4055,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4055,Image SLES15-SP4-CHOST-BYOS-EC2-2023-4055,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4055,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-Azure-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-EC2-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-GCE-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-Azure-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-4055,Image SLES15-SP4-Micro-5-4-GCE-2023-4055,Image SLES15-SP4-SAP-Azure-LI-BYOS-2023-4055,Image SLES15-SP4-SAP-Azure-LI-BYOS-Production-2023-4055,Image SLES15-SP4-SAP-Azure-VLI-BYOS-2023-4055,Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production-2023-4055,SUSE-2023-4055,SUSE-SLE-Micro-5.3-2023-4055,SUSE-SLE-Micro-5.4-2023-4055,SUSE-SLE-Module-Basesystem-15-SP4-2023-4055,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4055,openSUSE-SLE-15.4-2023-4055",
+      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-4055,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4055,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4055,Image SLES15-SP4-CHOST-BYOS-EC2-2023-4055,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4055,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-Azure-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-EC2-2023-4055,Image SLES15-SP4-Micro-5-3-BYOS-GCE-2023-4055,Image SLES15-SP4-Micro-5-4-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-Azure-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-EC2-2023-4055,Image SLES15-SP4-Micro-5-4-BYOS-GCE-2023-4055,Image SLES15-SP4-Micro-5-4-EC2-2023-4055,Image SLES15-SP4-Micro-5-4-GCE-2023-4055,Image SLES15-SP4-SAP-Azure-LI-BYOS-2023-4055,Image SLES15-SP4-SAP-Azure-LI-BYOS-Production-2023-4055,Image SLES15-SP4-SAP-Azure-VLI-BYOS-2023-4055,Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production-2023-4055,SUSE-2023-4055,SUSE-SLE-Micro-5.3-2023-4055,SUSE-SLE-Micro-5.4-2023-4055,SUSE-SLE-Module-Basesystem-15-SP4-2023-4055,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4055,openSUSE-SLE-15.4-2023-4055",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -110,6 +110,16 @@
       },
       {
         "ProductReference": "xen-libs-4.16.5_06-150400.4.37.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-tools-domU-4.16.5_06-150400.4.37.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_06-150400.4.37.1",
         "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS",
         "RelationType": "Default Component Of"
       },
@@ -131,6 +141,16 @@
       {
         "ProductReference": "xen-libs-4.16.5_06-150400.4.37.1",
         "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_06-150400.4.37.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-tools-domU-4.16.5_06-150400.4.37.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-4-EC2",
         "RelationType": "Default Component Of"
       },
       {
@@ -333,7 +353,11 @@
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-GCE:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
@@ -401,7 +425,11 @@
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-GCE:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
@@ -469,7 +497,11 @@
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-GCE:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
@@ -537,7 +569,11 @@
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-GCE:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
@@ -605,7 +641,11 @@
             "Image SLES15-SP4-Micro-5-4-BYOS-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS-GCE:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4-EC2:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-Micro-5-4-GCE:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-libs-4.16.5_06-150400.4.37.1",
+            "Image SLES15-SP4-Micro-5-4:xen-tools-domU-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS:xen-libs-4.16.5_06-150400.4.37.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production:xen-libs-4.16.5_06-150400.4.37.1",
