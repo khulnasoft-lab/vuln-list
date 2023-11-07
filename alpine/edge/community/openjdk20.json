@@ -1,11 +1,13 @@
 {
-  "name": "py3-werkzeug",
+  "name": "openjdk20",
   "secfixes": {
-    "2.2.2-r0": [
-      "CVE-2022-29361"
-    ],
-    "2.3.7-r0": [
-      "CVE-2023-46136"
+    "20.0.1_p9-r0": [
+      "CVE-2023-21930",
+      "CVE-2023-21967",
+      "CVE-2023-21939",
+      "CVE-2023-21938",
+      "CVE-2023-21968",
+      "CVE-2023-21937"
     ]
   },
   "apkurl": "{{urlprefix}}/{{distroversion}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
@@ -14,11 +16,12 @@
     "armhf",
     "armv7",
     "ppc64le",
+    "riscv64",
     "s390x",
     "x86",
     "x86_64"
   ],
   "urlprefix": "https://dl-cdn.alpinelinux.org/alpine",
   "reponame": "community",
-  "distroversion": "v3.18"
+  "distroversion": "edge"
 }
