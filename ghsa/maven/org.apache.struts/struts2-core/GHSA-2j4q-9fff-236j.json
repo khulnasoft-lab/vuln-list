@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-07-31T22:46:21Z",
+  "UpdatedAt": "2023-11-07T19:13:20Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.apache.struts:struts-master"
+    "Name": "org.apache.struts:struts2-core"
   },
   "Advisory": {
     "DatabaseId": 118914,
@@ -23,6 +23,9 @@
         "Url": "https://web.archive.org/web/20210801130539/http://www.securitytracker.com/id/1035272"
       },
       {
+        "Url": "https://github.com/apache/struts/blob/f511034acd7b97e07d281169b38e2af40c94903d/core/src/main/java/org/apache/struts2/interceptor/I18nInterceptor.java"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-2j4q-9fff-236j"
       }
     ],
@@ -36,12 +39,12 @@
         "Value": "CVE-2016-2162"
       }
     ],
-    "Description": "Apache Struts 2.x before 2.3.25 does not sanitize text in the Locale object constructed by I18NInterceptor, which might allow remote attackers to conduct cross-site scripting (XSS) attacks via unspecified vectors involving language display.",
+    "Description": "Apache Struts 2.x before 2.3.28 does not sanitize text in the Locale object constructed by I18NInterceptor, which might allow remote attackers to conduct cross-site scripting (XSS) attacks via unspecified vectors involving language display.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:42:59Z",
     "Severity": "MODERATE",
     "Summary": "Apache Struts XSS Vulnerability",
-    "UpdatedAt": "2023-07-31T22:46:21Z",
+    "UpdatedAt": "2023-11-07T19:13:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -51,9 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.3.25"
+        "Identifier": "2.3.28"
       },
-      "VulnerableVersionRange": "\u003e= 2.0, \u003c 2.3.25"
+      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c 2.3.28"
     }
   ]
 }

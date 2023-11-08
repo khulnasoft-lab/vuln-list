@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-07-31T22:49:39Z",
+  "UpdatedAt": "2023-11-07T20:11:10Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "phpmyadmin/phpmyadmin"
@@ -38,6 +38,18 @@
         "Url": "http://www.phpmyadmin.net/home_page/security/PMASA-2016-4.php"
       },
       {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/2369daa7f5f550797f560e6b46a021e4558c2d72"
+      },
+      {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/5530a72e162fab442218486a90ff3365c96fde98"
+      },
+      {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/6a96e67487f2faecb4de4204fee9b96b94020720"
+      },
+      {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/8b6737735be5787d0b98c6cdfe2c7e3131b1bc95"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4gmg-gwjh-3mmr"
       }
     ],
@@ -51,12 +63,12 @@
         "Value": "CVE-2016-1927"
       }
     ],
-    "Description": "The suggestPassword function in js/functions.js in phpMyAdmin 4.0.x before 4.0.10.13, 4.4.x before 4.4.15.3, and 4.5.x before 4.5.4 relies on the Math.random JavaScript function, which makes it easier for remote attackers to guess passwords via a brute-force approach.",
+    "Description": "The `suggestPassword` function in `js/functions.js` in phpMyAdmin 4.0.x before 4.0.10.13, 4.4.x before 4.4.15.3, and 4.5.x before 4.5.4 relies on the `Math.random` JavaScript function, which makes it easier for remote attackers to guess passwords via a brute-force approach.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:43:03Z",
     "Severity": "HIGH",
     "Summary": "phpMyAdmin Cryptographic Vulnerability",
-    "UpdatedAt": "2023-07-31T22:49:39Z",
+    "UpdatedAt": "2023-11-07T20:11:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -68,19 +80,19 @@
       "FirstPatchedVersion": {
         "Identifier": "4.5.4"
       },
-      "VulnerableVersionRange": "\u003e= 4.5, \u003c 4.5.4"
+      "VulnerableVersionRange": "\u003e= 4.5.0, \u003c 4.5.4"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "4.4.15.3"
       },
-      "VulnerableVersionRange": "\u003e= 4.4, \u003c 4.4.15.3"
+      "VulnerableVersionRange": "\u003e= 4.4.0, \u003c 4.4.15.3"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "4.0.10.13"
       },
-      "VulnerableVersionRange": "\u003e= 4.0, \u003c 4.0.10.13"
+      "VulnerableVersionRange": "\u003e= 4.0.0, \u003c 4.0.10.13"
     }
   ]
 }
