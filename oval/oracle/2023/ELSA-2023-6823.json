@@ -20,104 +20,210 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
-            "Operator": "OR",
+            "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
+                "Operator": "OR",
+                "Criterias": [
                   {
-                    "Comment": "python3 is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3 is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3 is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-debug is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-debug is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3-debug is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-devel is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-devel is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-idle is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-idle is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-idle is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3-idle is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-libs is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-libs is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3-libs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-test is earlier than 0:3.6.8-21.0.1.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-test is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-test is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "python3-test is signed with the Oracle Linux 7 key"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-tkinter is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-tkinter is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python3-tkinter is earlier than 0:3.6.8-21.0.1.el7_9"
-                  },
-                  {
-                    "Comment": "python3-tkinter is signed with the Oracle Linux 7 key"
-                  }
-                ]
+                ],
+                "Criterions": null
               }
             ],
-            "Criterions": null
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3 is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-debug is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-devel is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-idle is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-idle is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-libs is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-test is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-test is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-tkinter is earlier than 0:3.6.8-21.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "python3-tkinter is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is x86_64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [
@@ -135,6 +241,6 @@
     }
   ],
   "Issued": {
-    "Date": "2023-11-08"
+    "Date": "2023-11-09"
   }
 }
