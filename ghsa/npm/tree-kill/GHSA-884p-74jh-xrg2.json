@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-03-30T21:46:35Z",
+  "UpdatedAt": "2023-11-08T20:04:43Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "tree-kill"
@@ -14,10 +14,13 @@
         "Url": "https://hackerone.com/reports/701183"
       },
       {
-        "Url": "https://www.npmjs.com/advisories/1432"
+        "Url": "https://github.com/pkrumins/node-tree-kill/commit/deee138a8cbc918463d8af5ce8c2bec33c3fd164"
       },
       {
-        "Url": "https://github.com/pkrumins/node-tree-kill/commit/deee138a8cbc918463d8af5ce8c2bec33c3fd164"
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2019-15599"
+      },
+      {
+        "Url": "https://github.com/pkrumins/node-tree-kill/releases/tag/v1.2.2"
       },
       {
         "Url": "https://github.com/advisories/GHSA-884p-74jh-xrg2"
@@ -27,6 +30,10 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-884p-74jh-xrg2"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2019-15599"
       }
     ],
     "Description": "Versions of `tree-kill` prior to 1.2.2 are vulnerable to Command Injection. The package fails to sanitize values passed to the  `kill` function. If this value is user-controlled it  may allow attackers to run arbitrary commands in the server. The issue only affects Windows systems.\n\n\n## Recommendation\n\nUpgrade to version 1.2.2 or later.",
@@ -34,7 +41,7 @@
     "PublishedAt": "2020-09-04T16:57:20Z",
     "Severity": "HIGH",
     "Summary": "Command Injection in tree-kill",
-    "UpdatedAt": "2023-03-30T21:46:35Z",
+    "UpdatedAt": "2023-11-08T20:05:24Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
