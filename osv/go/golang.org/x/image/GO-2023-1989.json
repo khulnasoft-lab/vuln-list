@@ -1,9 +1,10 @@
 {
   "id": "GO-2023-1989",
-  "modified": "2023-08-02T20:33:39Z",
+  "modified": "2023-11-09T18:56:13Z",
   "published": "2023-08-02T15:06:02Z",
   "aliases": [
-    "CVE-2023-29408"
+    "CVE-2023-29408",
+    "GHSA-x92r-3vfx-4cv3"
   ],
   "summary": "Excessive resource consumption in golang.org/x/image/tiff",
   "details": "The TIFF decoder does not place a limit on the size of compressed tile data. A maliciously-crafted image can exploit this to cause a small image (both in terms of pixel width/height, and encoded size) to make the decoder decode large amounts of compressed data, consuming excessive memory and CPU.",
