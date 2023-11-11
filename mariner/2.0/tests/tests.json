@@ -2,6 +2,42 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package PyYAML is earlier than 5.4.1-1, affected by CVE-2020-1747",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31783000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31783001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31783002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package PyYAML is earlier than 5.4.1-1, affected by CVE-2020-14343",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31782000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31782001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31782002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package traceroute is earlier than 2.1.3-1, affected by CVE-2023-46316",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31746000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31746001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31746002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package kubernetes is earlier than 1.28.3-1, affected by CVE-2020-8554",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31731000",
       "Version": "1",
@@ -22,6 +58,30 @@
       },
       "State": {
         "StateRef": "oval:com.microsoft.cbl-mariner:ste:31730002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package frr is earlier than 8.5.3-3, affected by CVE-2023-46753",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31728000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31728001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31728002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package frr is earlier than 8.5.3-3, affected by CVE-2023-46752",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31700000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31700001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31700002"
       }
     },
     {
@@ -6926,7 +6986,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.18.8-3 or earlier",
+      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13730000",
       "Version": "0",
       "Object": {
@@ -8270,7 +8330,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is installed with version 8.0.33-1 or earlier",
+      "Comment": "Package mysql is installed with version 8.0.34-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13172000",
       "Version": "0",
       "Object": {
@@ -8870,7 +8930,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:12989000",
       "Version": "0",
       "Object": {
@@ -9458,7 +9518,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11614000",
       "Version": "0",
       "Object": {
@@ -10106,7 +10166,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11484000",
       "Version": "0",
       "Object": {
@@ -11210,7 +11270,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.18.8-3 or earlier",
+      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11130000",
       "Version": "0",
       "Object": {
@@ -11918,7 +11978,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:10903000",
       "Version": "0",
       "Object": {
@@ -11930,7 +11990,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:10902000",
       "Version": "0",
       "Object": {
@@ -11942,7 +12002,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:10901000",
       "Version": "0",
       "Object": {
@@ -12422,7 +12482,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:10761000",
       "Version": "0",
       "Object": {
@@ -16418,7 +16478,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is installed with version 5.15.135.1-2 or earlier",
+      "Comment": "Package kernel is installed with version 5.15.137.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:9301000",
       "Version": "0",
       "Object": {
