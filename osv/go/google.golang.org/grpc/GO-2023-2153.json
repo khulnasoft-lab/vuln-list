@@ -1,9 +1,12 @@
 {
   "id": "GO-2023-2153",
-  "modified": "2023-11-01T22:39:27Z",
+  "modified": "2023-11-09T18:59:58Z",
   "published": "2023-11-01T22:39:27Z",
   "aliases": [
     "GHSA-m425-mq94-257g"
+  ],
+  "related": [
+    "CVE-2023-44487"
   ],
   "summary": "denial of service from HTTP/2 Rapid Reset in google.golang.org/grpc",
   "details": "An attacker can send HTTP/2 requests, cancel them, and send subsequent requests. This is valid by the HTTP/2 protocol, but would cause the gRPC-Go server to launch more concurrent method handlers than the configured maximum stream limit, `grpc.MaxConcurrentStreams`. This results in a denial of service due to resource consumption.",
