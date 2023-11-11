@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-10-24T01:36:13Z",
+  "UpdatedAt": "2023-11-11T05:04:05Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "langchain"
@@ -17,6 +17,12 @@
         "Url": "https://gist.github.com/rharang/d265f46fc3161b31ac2e81db44d662e1"
       },
       {
+        "Url": "https://github.com/langchain-ai/langchain/pull/12747"
+      },
+      {
+        "Url": "https://github.com/langchain-ai/langchain/releases/tag/v0.0.329"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6h8p-4hx9-w66c"
       }
     ],
@@ -30,12 +36,12 @@
         "Value": "CVE-2023-32786"
       }
     ],
-    "Description": "In Langchain through 0.0.155, prompt injection allows an attacker to force the service to retrieve data from an arbitrary URL, essentially providing SSRF and potentially injecting content into downstream tasks.",
+    "Description": "In Langchain before 0.0.329, prompt injection allows an attacker to force the service to retrieve data from an arbitrary URL, essentially providing SSRF and potentially injecting content into downstream tasks.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-21T00:30:47Z",
     "Severity": "HIGH",
     "Summary": "Langchain Server-Side Request Forgery vulnerability",
-    "UpdatedAt": "2023-11-02T21:07:36Z",
+    "UpdatedAt": "2023-11-11T05:04:05Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -45,9 +51,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "0.0.329"
       },
-      "VulnerableVersionRange": "\u003c= 0.0.155"
+      "VulnerableVersionRange": "\u003c 0.0.329"
     }
   ]
 }
