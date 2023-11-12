@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sles12sp5:latest-2023-4216,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4216,SUSE-2023-4216,SUSE-SLE-SDK-12-SP5-2023-4216,SUSE-SLE-SERVER-12-SP5-2023-4216",
+      "Text": "Container suse/sles12sp5:latest-2023-4216,Image SLES12-SP5-EC2-BYOS-2023-4216,Image SLES12-SP5-EC2-ECS-On-Demand-2023-4216,Image SLES12-SP5-EC2-On-Demand-2023-4216,Image SLES12-SP5-EC2-SAP-BYOS-2023-4216,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4216,Image SLES12-SP5-GCE-On-Demand-2023-4216,SUSE-2023-4216,SUSE-SLE-SDK-12-SP5-2023-4216,SUSE-SLE-SERVER-12-SP5-2023-4216",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -45,7 +45,32 @@
       },
       {
         "ProductReference": "libz1-1.2.11-11.37.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.11-11.37.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.11-11.37.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.11-11.37.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.11-11.37.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.11-11.37.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -162,7 +187,12 @@
           "Type": "Fixed",
           "ProductID": [
             "Container suse/sles12sp5:latest:libz1-1.2.11-11.37.1",
+            "Image SLES12-SP5-EC2-BYOS:libz1-1.2.11-11.37.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libz1-1.2.11-11.37.1",
+            "Image SLES12-SP5-EC2-On-Demand:libz1-1.2.11-11.37.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libz1-1.2.11-11.37.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libz1-1.2.11-11.37.1",
+            "Image SLES12-SP5-GCE-On-Demand:libz1-1.2.11-11.37.1",
             "SUSE Linux Enterprise Server 12 SP5:libz1-1.2.11-11.37.1",
             "SUSE Linux Enterprise Server 12 SP5:libz1-32bit-1.2.11-11.37.1",
             "SUSE Linux Enterprise Server 12 SP5:zlib-devel-1.2.11-11.37.1",

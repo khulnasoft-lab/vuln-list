@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sles12sp5:latest-2023-3405,Image SLES12-SP5-Azure-BYOS-2023-3405,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3405,Image SLES12-SP5-Azure-HPC-BYOS-2023-3405,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3405,Image SLES12-SP5-Azure-SAP-BYOS-2023-3405,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3405,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3405,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3405,Image SLES12-SP5-GCE-BYOS-2023-3405,Image SLES12-SP5-GCE-SAP-BYOS-2023-3405,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3405,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3405,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3405,SUSE-2023-3405,SUSE-SLE-SERVER-12-SP5-2023-3405",
+      "Text": "Container suse/sles12sp5:latest-2023-3405,Image SLES12-SP5-Azure-BYOS-2023-3405,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3405,Image SLES12-SP5-Azure-HPC-BYOS-2023-3405,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3405,Image SLES12-SP5-Azure-SAP-BYOS-2023-3405,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3405,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3405,Image SLES12-SP5-EC2-BYOS-2023-3405,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3405,Image SLES12-SP5-EC2-On-Demand-2023-3405,Image SLES12-SP5-EC2-SAP-BYOS-2023-3405,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3405,Image SLES12-SP5-GCE-BYOS-2023-3405,Image SLES12-SP5-GCE-On-Demand-2023-3405,Image SLES12-SP5-GCE-SAP-BYOS-2023-3405,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3405,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3405,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3405,SUSE-2023-3405,SUSE-SLE-SERVER-12-SP5-2023-3405",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -80,12 +80,37 @@
       },
       {
         "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ca-certificates-mozilla-2.62-12.43.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
         "RelationType": "Default Component Of"
       },
       {

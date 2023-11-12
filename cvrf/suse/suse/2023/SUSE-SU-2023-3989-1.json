@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3989,Image SLES12-SP5-Azure-HPC-BYOS-2023-3989,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3989,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3989,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3989,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3989,Image SLES12-SP5-GCE-BYOS-2023-3989,Image SLES12-SP5-GCE-SAP-BYOS-2023-3989,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3989,SUSE-2023-3989,SUSE-SLE-SDK-12-SP5-2023-3989,SUSE-SLE-SERVER-12-SP5-2023-3989",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3989,Image SLES12-SP5-Azure-HPC-BYOS-2023-3989,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3989,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3989,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3989,Image SLES12-SP5-EC2-BYOS-2023-3989,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3989,Image SLES12-SP5-EC2-On-Demand-2023-3989,Image SLES12-SP5-EC2-SAP-BYOS-2023-3989,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3989,Image SLES12-SP5-GCE-BYOS-2023-3989,Image SLES12-SP5-GCE-On-Demand-2023-3989,Image SLES12-SP5-GCE-SAP-BYOS-2023-3989,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3989,SUSE-2023-3989,SUSE-SLE-SDK-12-SP5-2023-3989,SUSE-SLE-SERVER-12-SP5-2023-3989",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -95,6 +95,51 @@
       },
       {
         "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-xcb1-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
@@ -116,6 +161,16 @@
       {
         "ProductReference": "libX11-data-1.6.2-12.33.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -278,11 +333,22 @@
             "Image SLES12-SP5-Azure-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",
@@ -343,11 +409,22 @@
             "Image SLES12-SP5-Azure-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",
@@ -408,11 +485,22 @@
             "Image SLES12-SP5-Azure-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-On-Demand:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-BYOS:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-GCE-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libX11-xcb1-1.6.2-12.33.1",

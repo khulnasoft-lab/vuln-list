@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-BYOS-2023-3431,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3431,Image SLES12-SP5-Azure-HPC-BYOS-2023-3431,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3431,Image SLES12-SP5-Azure-SAP-BYOS-2023-3431,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3431,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3431,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3431,Image SLES12-SP5-GCE-BYOS-2023-3431,Image SLES12-SP5-GCE-SAP-BYOS-2023-3431,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3431,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3431,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3431,SUSE-2023-3431,SUSE-SLE-SERVER-12-SP5-2023-3431",
+      "Text": "Image SLES12-SP5-Azure-BYOS-2023-3431,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3431,Image SLES12-SP5-Azure-HPC-BYOS-2023-3431,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3431,Image SLES12-SP5-Azure-SAP-BYOS-2023-3431,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3431,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3431,Image SLES12-SP5-EC2-BYOS-2023-3431,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3431,Image SLES12-SP5-EC2-On-Demand-2023-3431,Image SLES12-SP5-EC2-SAP-BYOS-2023-3431,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3431,Image SLES12-SP5-GCE-BYOS-2023-3431,Image SLES12-SP5-GCE-On-Demand-2023-3431,Image SLES12-SP5-GCE-SAP-BYOS-2023-3431,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3431,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3431,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3431,SUSE-2023-3431,SUSE-SLE-SERVER-12-SP5-2023-3431",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -75,12 +75,37 @@
       },
       {
         "ProductReference": "gawk-4.1.0-5.3.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gawk-4.1.0-5.3.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gawk-4.1.0-5.3.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gawk-4.1.0-5.3.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gawk-4.1.0-5.3.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "gawk-4.1.0-5.3.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gawk-4.1.0-5.3.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -168,8 +193,13 @@
             "Image SLES12-SP5-Azure-SAP-BYOS:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-Azure-SAP-On-Demand:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:gawk-4.1.0-5.3.1",
+            "Image SLES12-SP5-EC2-BYOS:gawk-4.1.0-5.3.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:gawk-4.1.0-5.3.1",
+            "Image SLES12-SP5-EC2-On-Demand:gawk-4.1.0-5.3.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-GCE-BYOS:gawk-4.1.0-5.3.1",
+            "Image SLES12-SP5-GCE-On-Demand:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:gawk-4.1.0-5.3.1",
             "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:gawk-4.1.0-5.3.1",

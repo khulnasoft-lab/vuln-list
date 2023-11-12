@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-SAP-On-Demand-2023-3962,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3962,Image SLES12-SP5-GCE-SAP-BYOS-2023-3962,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3962,SUSE-2023-3962,SUSE-SLE-SDK-12-SP5-2023-3962,SUSE-SLE-SERVER-12-SP5-2023-3962",
+      "Text": "Image SLES12-SP5-Azure-SAP-On-Demand-2023-3962,Image SLES12-SP5-EC2-SAP-BYOS-2023-3962,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3962,Image SLES12-SP5-GCE-SAP-BYOS-2023-3962,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3962,SUSE-2023-3962,SUSE-SLE-SDK-12-SP5-2023-3962,SUSE-SLE-SERVER-12-SP5-2023-3962",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -41,6 +41,11 @@
       {
         "ProductReference": "libXpm4-3.5.11-6.10.1",
         "RelatesToProductReference": "Image SLES12-SP5-Azure-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libXpm4-3.5.11-6.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
         "RelationType": "Default Component Of"
       },
       {
@@ -123,7 +128,7 @@
   "Vulnerabilities": [
     {
       "CVE": "CVE-2023-43788",
-      "Description": "A vulnerability was found in libXpm due to a boundary condition within the XpmCreateXpmImageFromBuffer() function. This flaw allows a local to trigger an out-of-bounds read error and read the contents of memory on the system.",
+      "Description": "A vulnerability was found in libXpm due to a boundary condition within the XpmCreateXpmImageFromBuffer() function. This flaw allows a local attacker to trigger an out-of-bounds read error and read the contents of memory on the system.",
       "Threats": [
         {
           "Type": "Impact",
@@ -149,6 +154,7 @@
           "Type": "Fixed",
           "ProductID": [
             "Image SLES12-SP5-Azure-SAP-On-Demand:libXpm4-3.5.11-6.10.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libXpm4-3.5.11-6.10.1",
@@ -191,6 +197,7 @@
           "Type": "Fixed",
           "ProductID": [
             "Image SLES12-SP5-Azure-SAP-On-Demand:libXpm4-3.5.11-6.10.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:libXpm4-3.5.11-6.10.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libXpm4-3.5.11-6.10.1",

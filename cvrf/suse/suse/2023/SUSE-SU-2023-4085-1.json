@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4085,Image SLES12-SP5-Azure-HPC-BYOS-2023-4085,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4085,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4085,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4085,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4085,Image SLES12-SP5-GCE-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4085,SUSE-2023-4085,SUSE-SLE-SERVER-12-SP5-2023-4085",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-4085,Image SLES12-SP5-Azure-HPC-BYOS-2023-4085,Image SLES12-SP5-Azure-HPC-On-Demand-2023-4085,Image SLES12-SP5-Azure-SAP-On-Demand-2023-4085,Image SLES12-SP5-Azure-Standard-On-Demand-2023-4085,Image SLES12-SP5-EC2-BYOS-2023-4085,Image SLES12-SP5-EC2-ECS-On-Demand-2023-4085,Image SLES12-SP5-EC2-On-Demand-2023-4085,Image SLES12-SP5-EC2-SAP-BYOS-2023-4085,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4085,Image SLES12-SP5-GCE-BYOS-2023-4085,Image SLES12-SP5-GCE-On-Demand-2023-4085,Image SLES12-SP5-GCE-SAP-BYOS-2023-4085,Image SLES12-SP5-GCE-SAP-On-Demand-2023-4085,SUSE-2023-4085,SUSE-SLE-SERVER-12-SP5-2023-4085",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -115,6 +115,86 @@
       },
       {
         "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-xen-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
         "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-On-Demand",
         "RelationType": "Default Component Of"
       },
@@ -146,6 +226,21 @@
       {
         "ProductReference": "grub2-x86_64-efi-2.02-169.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.02-169.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
         "RelationType": "Default Component Of"
       },
       {
@@ -347,6 +442,22 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-x86_64-xen-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-efi-2.02-169.1",
@@ -354,6 +465,9 @@
             "Image SLES12-SP5-GCE-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-x86_64-efi-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-x86_64-efi-2.02-169.1",
@@ -421,6 +535,22 @@
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-Azure-Standard-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-BYOS:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-On-Demand:grub2-x86_64-xen-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:grub2-x86_64-xen-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:grub2-x86_64-efi-2.02-169.1",
@@ -428,6 +558,9 @@
             "Image SLES12-SP5-GCE-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-BYOS:grub2-x86_64-efi-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-i386-pc-2.02-169.1",
+            "Image SLES12-SP5-GCE-On-Demand:grub2-x86_64-efi-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-i386-pc-2.02-169.1",
             "Image SLES12-SP5-GCE-SAP-BYOS:grub2-x86_64-efi-2.02-169.1",

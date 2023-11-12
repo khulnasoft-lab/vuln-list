@@ -31,13 +31,58 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4349,SUSE-SLE-HA-12-SP5-2023-4349,SUSE-SLE-Live-Patching-12-SP5-2023-4349,SUSE-SLE-SDK-12-SP5-2023-4349,SUSE-SLE-SERVER-12-SP5-2023-4349,SUSE-SLE-WE-12-SP5-2023-4349",
+      "Text": "Image SLES12-SP5-EC2-BYOS-2023-4349,Image SLES12-SP5-EC2-ECS-On-Demand-2023-4349,Image SLES12-SP5-EC2-On-Demand-2023-4349,Image SLES12-SP5-EC2-SAP-BYOS-2023-4349,Image SLES12-SP5-GCE-On-Demand-2023-4349,SUSE-2023-4349,SUSE-SLE-HA-12-SP5-2023-4349,SUSE-SLE-Live-Patching-12-SP5-2023-4349,SUSE-SLE-SDK-12-SP5-2023-4349,SUSE-SLE-SERVER-12-SP5-2023-4349,SUSE-SLE-WE-12-SP5-2023-4349",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "kernel-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-ECS-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "cluster-md-kmp-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "dlm-kmp-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "gfs2-kmp-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ocfs2-kmp-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-EC2-SAP-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-4.12.14-122.183.1",
+        "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "cluster-md-kmp-default-4.12.14-122.183.1",
         "RelatesToProductReference": "SUSE Linux Enterprise High Availability Extension 12 SP5",
@@ -284,6 +329,15 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:cluster-md-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:dlm-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:gfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:ocfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-GCE-On-Demand:kernel-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:cluster-md-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:dlm-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:gfs2-kmp-default-4.12.14-122.183.1",
@@ -338,6 +392,15 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:cluster-md-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:dlm-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:gfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:ocfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-GCE-On-Demand:kernel-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:cluster-md-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:dlm-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:gfs2-kmp-default-4.12.14-122.183.1",
@@ -392,6 +455,15 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:cluster-md-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:dlm-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:gfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:ocfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-GCE-On-Demand:kernel-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:cluster-md-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:dlm-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:gfs2-kmp-default-4.12.14-122.183.1",
@@ -446,6 +518,15 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-EC2-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-ECS-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-On-Demand:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:cluster-md-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:dlm-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:gfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:kernel-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-EC2-SAP-BYOS:ocfs2-kmp-default-4.12.14-122.183.1",
+            "Image SLES12-SP5-GCE-On-Demand:kernel-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:cluster-md-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:dlm-kmp-default-4.12.14-122.183.1",
             "SUSE Linux Enterprise High Availability Extension 12 SP5:gfs2-kmp-default-4.12.14-122.183.1",
