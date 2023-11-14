@@ -1,6 +1,6 @@
 {
   "id": "GHSA-hrfv-mqp8-q5rw",
-  "modified": "2023-11-11T05:25:00.813891Z",
+  "modified": "2023-11-13T21:16:00.331474Z",
   "published": "2023-10-25T14:22:59Z",
   "aliases": [
     "CVE-2023-46136"
@@ -19,10 +19,41 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "0"
+              "introduced": "3.0.0"
             },
             {
               "fixed": "3.0.1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "3.0.0"
+      ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "werkzeug.sansio.multipart.MultipartDecoder._parse_data"
+        ]
+      },
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/10/GHSA-hrfv-mqp8-q5rw/GHSA-hrfv-mqp8-q5rw.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "werkzeug",
+        "purl": "pkg:pypi/werkzeug"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.3.8"
             }
           ]
         }
@@ -116,9 +147,7 @@
         "2.3.4",
         "2.3.5",
         "2.3.6",
-        "2.3.7",
-        "2.3.8",
-        "3.0.0"
+        "2.3.7"
       ],
       "ecosystem_specific": {
         "affected_functions": [
@@ -126,7 +155,6 @@
         ]
       },
       "database_specific": {
-        "last_known_affected_version_range": "\u003c= 3.0.0",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/10/GHSA-hrfv-mqp8-q5rw/GHSA-hrfv-mqp8-q5rw.json"
       }
     }
@@ -143,6 +171,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/pallets/werkzeug/commit/b1916c0c083e0be1c9d887ee2f3d696922bfc5c1"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pallets/werkzeug/commit/f2300208d5e2a5076cbbb4c2aad71096fd040ef9"
     },
     {
       "type": "WEB",
