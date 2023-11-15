@@ -1,9 +1,10 @@
 {
   "id": "GHSA-47wv-vhj2-g66m",
-  "modified": "2023-04-11T01:21:29.606864Z",
+  "modified": "2023-11-08T04:07:31.934342Z",
   "published": "2022-03-29T19:18:32Z",
   "aliases": [
-    "CVE-2022-0315"
+    "CVE-2022-0315",
+    "PYSEC-2022-175"
   ],
   "summary": "Use of insecure temporary file in Horovod",
   "details": "### Impact\nThe insecure `tempfile.mktemp()` is used when Horovod is run in an LSF job with `jsrun`. In that situation, a jsrun rank file is created with `mktemp`, which could be hijacked by another process to read or manipulate the content.\n\nThis issue does not impact the use of MPI, Gloo, Spark or Ray.\n\n### Patches\nThe problem has been fixed in [b96ecae4](https://github.com/horovod/horovod/commit/b96ecae4dc69fc0a83c7c2d3f1dde600c20a1b41).\n\n### Workarounds\nThe rank file is not created when `binding_args` are provided in the `Settings` instance.\n\n### References\nPlease see https://github.com/horovod/horovod/pull/3358 for details.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [https://github.com/horovod/horovod](https://github.com/horovod/horovod/issues/new/choose)",

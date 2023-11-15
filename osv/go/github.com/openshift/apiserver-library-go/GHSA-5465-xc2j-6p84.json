@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5465-xc2j-6p84",
-  "modified": "2023-02-08T21:36:10Z",
+  "modified": "2023-11-08T04:11:06.568971Z",
   "published": "2023-01-26T21:30:20Z",
   "aliases": [
-    "CVE-2023-0229"
+    "CVE-2023-0229",
+    "GO-2023-1549"
   ],
   "summary": "github.com/openshift/apiserver-library-go Improper Input Validation vulnerability",
   "details": "A flaw was found in github.com/openshift/apiserver-library-go, used in OpenShift 4.12 and 4.11, that contains an issue that can allow low-privileged users to set the seccomp profile for pods they control to \"unconfined.\" By default, the seccomp profile used in the restricted-v2 Security Context Constraint (SCC) is \"runtime/default,\" allowing users to disable seccomp for pods they can create and modify.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-jq4v-f5q6-mjqq",
-  "modified": "2023-09-05T15:15:42.954204Z",
+  "modified": "2023-11-08T04:05:32.182293Z",
   "published": "2021-03-22T16:53:53Z",
   "aliases": [
-    "CVE-2021-28957"
+    "CVE-2021-28957",
+    "PYSEC-2021-19"
   ],
   "summary": "lxml vulnerable to Cross-Site Scripting ",
   "details": "An XSS vulnerability was discovered in the python `lxml` clean module versions before 4.6.3. When disabling `the safe_attrs_only` and `forms` arguments, the `Cleaner` class does not remove the `formaction` attribute allowing for JS to bypass the sanitizer. A remote attacker could exploit this flaw to run arbitrary JS code on users who interact with incorrectly sanitized HTML. This issue is patched in `lxml` 4.6.3.",

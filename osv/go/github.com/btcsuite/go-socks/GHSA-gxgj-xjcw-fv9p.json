@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gxgj-xjcw-fv9p",
-  "modified": "2023-01-09T21:48:38Z",
+  "modified": "2023-11-08T03:57:13.970387Z",
   "published": "2022-12-28T00:30:23Z",
   "aliases": [
-    "CVE-2013-10005"
+    "CVE-2013-10005",
+    "GO-2020-0024"
   ],
   "summary": "socks Infinite Loop vulnerability",
   "details": "The `RemoteAddr` and `LocalAddr` methods on the returned `net.Conn` may call themselves, leading to an infinite loop which will crash the program due to a stack overflow.",

@@ -1,11 +1,11 @@
 {
   "id": "PYSEC-2020-151",
-  "modified": "2020-07-29T19:15:00Z",
+  "modified": "2023-11-08T04:04:05.317553Z",
   "published": "2020-07-27T12:15:00Z",
   "aliases": [
     "CVE-2020-7695",
-    "SNYK-PYTHON-UVICORN-570471",
-    "GHSA-f97h-2pfx-f59f"
+    "GHSA-f97h-2pfx-f59f",
+    "SNYK-PYTHON-UVICORN-570471"
   ],
   "details": "Uvicorn before 0.11.7 is vulnerable to HTTP response splitting. CRLF sequences are not escaped in the value of HTTP headers. Attackers can exploit this to add arbitrary headers to HTTP responses, or even return an arbitrary response body, whenever crafted input is used to construct HTTP headers.",
   "affected": [

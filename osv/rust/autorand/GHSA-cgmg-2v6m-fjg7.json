@@ -1,9 +1,10 @@
 {
   "id": "GHSA-cgmg-2v6m-fjg7",
-  "modified": "2021-08-19T18:53:20Z",
+  "modified": "2023-11-08T04:03:41.720212Z",
   "published": "2021-08-25T20:50:41Z",
   "aliases": [
-    "CVE-2020-36210"
+    "CVE-2020-36210",
+    "RUSTSEC-2020-0103"
   ],
   "summary": "Free of uninitialized memory in autorand",
   "details": "An issue was discovered in the autorand crate before 0.2.3 for Rust. Because of impl Random on arrays, uninitialized memory can be dropped when a panic occurs, leading to memory corruption.",

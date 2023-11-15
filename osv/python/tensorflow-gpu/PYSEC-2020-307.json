@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2020-307",
-  "modified": "2021-12-09T06:35:12.356862Z",
+  "modified": "2023-11-08T04:02:32.660918Z",
   "published": "2020-09-25T19:15:00Z",
   "aliases": [
+    "BIT-2020-15192",
+    "BIT-tensorflow-2020-15192",
     "CVE-2020-15192",
-    "GHSA-8fxw-76px-3rxv"
+    "GHSA-8fxw-76px-3rxv",
+    "PYSEC-2020-115",
+    "PYSEC-2020-272"
   ],
   "details": "In Tensorflow before versions 2.2.1 and 2.3.1, if a user passes a list of strings to `dlpack.to_dlpack` there is a memory leak following an expected validation failure. The issue occurs because the `status` argument during validation failures is not properly checked. Since each of the above methods can return an error status, the `status` value must be checked before continuing. The issue is patched in commit 22e07fb204386768e5bcbea563641ea11f96ceb8 and is released in TensorFlow versions 2.2.1, or 2.3.1.",
   "affected": [

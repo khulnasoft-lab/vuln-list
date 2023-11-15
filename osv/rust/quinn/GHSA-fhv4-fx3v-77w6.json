@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fhv4-fx3v-77w6",
-  "modified": "2023-06-13T20:31:29Z",
+  "modified": "2023-11-08T04:05:27.971319Z",
   "published": "2021-08-25T20:52:05Z",
   "aliases": [
-    "CVE-2021-28036"
+    "CVE-2021-28036",
+    "RUSTSEC-2021-0035"
   ],
   "summary": "quinn invalidly assumes the memory layout of std::net::SocketAddr",
   "details": "The quinn crate has assumed std::net::SocketAddrV4 and std::net::SocketAddrV6 have the same memory layout as the system C representation sockaddr. It has simply casted the pointers to convert the socket addresses to the system representation. The standard library does not say anything about the memory layout, and this will cause invalid memory access if the standard library changes the implementation. No warnings or errors will be emitted once the change happens.",

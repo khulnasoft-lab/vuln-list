@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mm4m-qg48-f7wc",
-  "modified": "2022-06-14T20:12:33Z",
+  "modified": "2023-11-08T04:02:21.747761Z",
   "published": "2021-08-25T21:01:29Z",
   "aliases": [
-    "CVE-2020-13759"
+    "CVE-2020-13759",
+    "RUSTSEC-2020-0157"
   ],
   "summary": "Improper Synchronization and Race Condition in vm-memory",
   "details": "rust-vmm vm-memory before 0.1.1 and 0.2.x before 0.2.1 allows attackers to cause a denial of service (loss of IP networking) because read_obj and write_obj do not properly access memory. This affects aarch64 (with musl or glibc) and x86_64 (with musl).",

@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-397",
-  "modified": "2021-11-13T06:52:42.949977Z",
+  "modified": "2023-11-08T04:06:55.146068Z",
   "published": "2021-11-05T21:15:00Z",
   "aliases": [
+    "BIT-2021-41204",
+    "BIT-tensorflow-2021-41204",
     "CVE-2021-41204",
-    "GHSA-786j-5qwq-r36x"
+    "GHSA-786j-5qwq-r36x",
+    "PYSEC-2021-614",
+    "PYSEC-2021-812"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions during TensorFlow's Grappler optimizer phase, constant folding might attempt to deep copy a resource tensor. This results in a segfault, as these tensors are supposed to not change. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

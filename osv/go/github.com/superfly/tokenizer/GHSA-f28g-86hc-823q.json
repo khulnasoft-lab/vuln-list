@@ -1,7 +1,10 @@
 {
   "id": "GHSA-f28g-86hc-823q",
-  "modified": "2023-07-13T19:56:19Z",
+  "modified": "2023-11-08T04:18:43.284844Z",
   "published": "2023-07-13T19:56:19Z",
+  "aliases": [
+    "GO-2023-1914"
+  ],
   "summary": "Tokenizer vulnerable to client brute-force of token secrets",
   "details": "### Impact\n\nAuthorized clients, having an `inject_processor` secret, could brute-force the secret token value by abusing the `fmt` parameter to the `Proxy-Tokenizer` header.\n\n### Patches\n\nThis was fixed in https://github.com/superfly/tokenizer/pull/8 and further mitigated in https://github.com/superfly/tokenizer/pull/9.",
   "affected": [

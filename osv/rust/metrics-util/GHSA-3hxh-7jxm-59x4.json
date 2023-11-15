@@ -1,7 +1,12 @@
 {
   "id": "GHSA-3hxh-7jxm-59x4",
-  "modified": "2022-06-17T00:13:03Z",
+  "modified": "2023-11-08T04:07:22.868706Z",
   "published": "2022-06-17T00:13:03Z",
+  "aliases": [
+    "CVE-2021-45704",
+    "GHSA-cwvc-87xq-pc5m",
+    "RUSTSEC-2021-0113"
+  ],
   "summary": "AtomicBucket\u003cT\u003e unconditionally implements Send/Sync",
   "details": "In the affected versions of the crate, `AtomicBucket\u003cT\u003e` unconditionally implements `Send`/`Sync` traits. Therefore, users can create a data race to the inner\n`T: !Sync` by using the `AtomicBucket::data_with()` API.\nSuch data races can potentially cause memory corruption or other undefined behavior.\n\nThe flaw was fixed in commit 8e6daab by adding appropriate Send/Sync bounds to the Send/Sync impl of struct `Block\u003cT\u003e` (which is a data type contained inside `AtomicBucket\u003cT\u003e`).\n",
   "affected": [

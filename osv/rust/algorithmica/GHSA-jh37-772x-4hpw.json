@@ -1,9 +1,10 @@
 {
   "id": "GHSA-jh37-772x-4hpw",
-  "modified": "2021-08-24T19:12:12Z",
+  "modified": "2023-11-08T04:05:51.884944Z",
   "published": "2021-08-25T21:01:52Z",
   "aliases": [
-    "CVE-2021-31996"
+    "CVE-2021-31996",
+    "RUSTSEC-2021-0053"
   ],
   "summary": "Double free in algorithmica",
   "details": "An issue was discovered in the algorithmica crate through 2021-03-07 for Rust. In the affected versions of this crate, `merge_sort::merge()` wildly duplicates and drops ownership of `T` without guarding against double-free. Due to such implementation, simply invoking `merge_sort::merge()` on `Vec\u003cT: Drop\u003e` can cause **double free** bugs.\n",

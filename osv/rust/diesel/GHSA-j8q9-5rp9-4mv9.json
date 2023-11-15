@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j8q9-5rp9-4mv9",
-  "modified": "2022-06-16T23:50:24Z",
+  "modified": "2023-11-08T04:05:29.499484Z",
   "published": "2022-05-24T17:44:31Z",
   "aliases": [
-    "CVE-2021-28305"
+    "CVE-2021-28305",
+    "RUSTSEC-2021-0037"
   ],
   "summary": "Fix a use-after-free bug in diesels Sqlite backend",
   "details": "An issue was discovered in the diesel crate before 1.4.6 for Rust. There is a use-after-free in the SQLite backend because the semantics of sqlite3_column_name are not followed.",

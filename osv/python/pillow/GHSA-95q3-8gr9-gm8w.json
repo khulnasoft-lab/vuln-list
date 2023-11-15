@@ -1,9 +1,12 @@
 {
   "id": "GHSA-95q3-8gr9-gm8w",
-  "modified": "2023-10-25T05:32:55.868291Z",
+  "modified": "2023-11-08T04:05:26.995740Z",
   "published": "2021-03-18T19:54:43Z",
   "aliases": [
-    "CVE-2021-27923"
+    "BIT-2021-27923",
+    "BIT-pillow-2021-27923",
+    "CVE-2021-27923",
+    "PYSEC-2021-42"
   ],
   "summary": "Pillow Denial of Service by Uncontrolled Resource Consumption",
   "details": "Pillow before 8.1.1 allows attackers to cause a denial of service (memory consumption) because the reported size of a contained image is not properly checked for an ICO container, and thus an attempted memory allocation can be very large.",

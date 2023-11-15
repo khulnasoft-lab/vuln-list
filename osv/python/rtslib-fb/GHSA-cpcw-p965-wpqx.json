@@ -1,9 +1,10 @@
 {
   "id": "GHSA-cpcw-p965-wpqx",
-  "modified": "2023-08-02T22:49:20.822710Z",
+  "modified": "2023-11-08T04:02:25.004540Z",
   "published": "2022-05-24T17:21:16Z",
   "aliases": [
-    "CVE-2020-14019"
+    "CVE-2020-14019",
+    "PYSEC-2020-250"
   ],
   "summary": "rtslib-fb weak permissions for /etc/target/saveconfig.json file",
   "details": "Python rtslib-fb through 2.1.72 has weak permissions for `/etc/target/saveconfig.json` because shutil.copyfile (instead of shutil.copy) is used, and thus permissions are not preserved.",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-c92w-72c5-9x59",
-  "modified": "2023-02-08T00:31:28Z",
+  "modified": "2023-11-08T04:00:43.469724Z",
   "published": "2022-05-24T17:00:21Z",
   "aliases": [
-    "CVE-2019-10223"
+    "CVE-2019-10223",
+    "CVE-2019-17110",
+    "GHSA-2v6x-frw8-7r7f",
+    "GO-2022-0621"
   ],
   "summary": "kube-state-metrics may expose secret content in metrics",
   "details": "A security issue was discovered in the kube-state-metrics versions v1.7.0 and v1.7.1. An experimental feature was added to the v1.7.0 release that enabled annotations to be exposed as metrics. By default, the kube-state-metrics metrics only expose metadata about Secrets. However, a combination of the default `kubectl` behavior and this new feature can cause the entire secret content to end up in metric labels thus inadvertently exposing the secret content in metrics. This feature has been reverted and released as the v1.7.2 release. If you are running the v1.7.0 or v1.7.1 release, please upgrade to the v1.7.2 release as soon as possible.",

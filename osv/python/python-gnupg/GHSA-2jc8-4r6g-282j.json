@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2jc8-4r6g-282j",
-  "modified": "2020-06-16T20:52:26Z",
+  "modified": "2023-11-08T03:57:35.672992Z",
   "published": "2018-11-06T23:13:02Z",
   "aliases": [
-    "CVE-2014-1928"
+    "CVE-2014-1928",
+    "PYSEC-2014-91"
   ],
   "summary": "Moderate severity vulnerability that affects python-gnupg",
   "details": "The shell_quote function in python-gnupg 0.3.5 does not properly escape characters, which allows context-dependent attackers to execute arbitrary code via shell metacharacters in unspecified vectors, as demonstrated using \"\\\" (backslash) characters to form multi-command sequences, a different vulnerability than CVE-2014-1927.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-7323.",

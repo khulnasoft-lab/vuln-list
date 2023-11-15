@@ -1,9 +1,10 @@
 {
   "id": "GHSA-v542-8q9x-cffc",
-  "modified": "2023-10-26T05:26:41.664566Z",
+  "modified": "2023-11-08T04:03:35.366407Z",
   "published": "2021-03-19T21:29:02Z",
   "aliases": [
-    "CVE-2020-35681"
+    "CVE-2020-35681",
+    "PYSEC-2021-113"
   ],
   "summary": "Django Channels leakage of session identifiers using legacy AsgiHandler",
   "details": "Django Channels 3.x before 3.0.3 allows remote attackers to obtain sensitive information from a different request scope. The legacy channels.http.AsgiHandler class, used for handling HTTP type requests in an ASGI environment prior to Django 3.0, did not correctly separate request scopes in Channels 3.0. In many cases this would result in a crash but, with correct timing, responses could be sent to the wrong client, resulting in potential leakage of session identifiers and other sensitive data. Note that this affects only the legacy Channels provided class, and not Django's similar ASGIHandler, available from Django 3.0.",

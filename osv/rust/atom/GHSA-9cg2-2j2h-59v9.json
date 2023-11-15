@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9cg2-2j2h-59v9",
-  "modified": "2023-06-13T16:47:45Z",
+  "modified": "2023-11-08T04:03:38.113208Z",
   "published": "2021-08-25T20:49:11Z",
   "aliases": [
-    "CVE-2020-35897"
+    "CVE-2020-35897",
+    "RUSTSEC-2020-0044"
   ],
   "summary": "Data races in atom",
   "details": "The atom crate contains a security issue revolving around its implementation of the Send trait. It incorrectly allows any arbitrary type to be sent across threads potentially leading to use-after-free issues through memory races.",

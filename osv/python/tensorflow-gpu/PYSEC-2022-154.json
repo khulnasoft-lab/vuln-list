@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-154",
-  "modified": "2022-05-23T17:22:17.175044Z",
+  "modified": "2023-11-08T04:08:24.070362Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23590",
+    "BIT-tensorflow-2022-23590",
     "CVE-2022-23590",
-    "GHSA-pqrv-8r2f-7278"
+    "GHSA-pqrv-8r2f-7278",
+    "PYSEC-2022-99"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. A `GraphDef` from a TensorFlow `SavedModel` can be maliciously altered to cause a TensorFlow process to crash due to encountering a `StatusOr` value that is an error and forcibly extracting the value from it. We have patched the issue in multiple GitHub commits and these will be included in TensorFlow 2.8.0 and TensorFlow 2.7.1, as both are affected.",
   "affected": [

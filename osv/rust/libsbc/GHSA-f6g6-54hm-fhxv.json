@@ -1,9 +1,10 @@
 {
   "id": "GHSA-f6g6-54hm-fhxv",
-  "modified": "2021-08-18T19:58:56Z",
+  "modified": "2023-11-08T04:03:44.964292Z",
   "published": "2021-08-25T20:59:02Z",
   "aliases": [
-    "CVE-2020-36440"
+    "CVE-2020-36440",
+    "RUSTSEC-2020-0120"
   ],
   "summary": "Data races in libsbc",
   "details": "Affected versions of this crate implements `Send` for `Decoder\u003cR\u003e` for any `R: Read`. This allows `Decoder\u003cR\u003e` to contain `R: !Send` and carry (move) it to another thread.\n\nThis can result in undefined behavior such as memory corruption from data race on `R`, or dropping `R = MutexGuard\u003c_\u003e` from a thread that didn't lock the mutex.\n\nThe flaw was corrected in commit a34d6e1 by adding trait bound `R: Send` to the `Send` impl for `Decoder\u003cR\u003e`.",

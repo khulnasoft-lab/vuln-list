@@ -1,9 +1,10 @@
 {
   "id": "GHSA-64j8-7gp2-xjx5",
-  "modified": "2023-06-13T22:26:24Z",
+  "modified": "2023-11-08T04:03:39.649741Z",
   "published": "2021-08-25T20:50:28Z",
   "aliases": [
-    "CVE-2020-35924"
+    "CVE-2020-35924",
+    "RUSTSEC-2020-0087"
   ],
   "summary": "Data races in try-mutex",
   "details": "Affected versions of this crate unconditionally implemented Sync trait for TryMutex\u003cT\u003e type. This allows users to put non-Send T type in TryMutex and send it to another thread, which can cause a data race. The flaw was corrected in the 0.3.0 release by adding T: Send bound for the Sync trait implementation.",

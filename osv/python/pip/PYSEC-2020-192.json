@@ -3,9 +3,6 @@
   "modified": "2023-03-14T07:01:09.418765Z",
   "published": "2020-09-04T20:15:00Z",
   "withdrawn": "2023-03-14T07:01:09.418765Z",
-  "aliases": [
-    "CVE-2019-20916"
-  ],
   "details": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py.",
   "affected": [
     {

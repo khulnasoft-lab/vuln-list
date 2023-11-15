@@ -1,9 +1,16 @@
 {
   "id": "GHSA-p4g4-wgrh-qrg2",
-  "modified": "2023-10-02T13:55:51Z",
+  "modified": "2023-11-08T04:02:29.429483Z",
   "published": "2023-02-07T22:59:30Z",
   "aliases": [
-    "CVE-2020-15106"
+    "BIT-2020-15106",
+    "BIT-2020-15112",
+    "BIT-etcd-2020-15106",
+    "BIT-etcd-2020-15112",
+    "CVE-2020-15106",
+    "CVE-2020-15112",
+    "GHSA-m332-53r6-2w93",
+    "GO-2020-0005"
   ],
   "summary": "Panic due to malformed WALs in go.etcd.io/etcd",
   "details": "### Vulnerability type\nData Validation\n\n### Detail\nThe size of a record is stored in the length field of a WAL file and no additional validation is done on this data. Therefore, it is possible to forge an extremely large frame size that can unintentionally panic at the expense of any RAFT participant trying to decode the WAL.\n\n### Specific Go Packages Affected\ngithub.com/etcd-io/etcd/wal\n\n### References\nFind out more on this vulnerability in the [security audit report](https://github.com/etcd-io/etcd/blob/master/security/SECURITY_AUDIT.pdf)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Contact the [etcd security committee](https://github.com/etcd-io/etcd/blob/master/security/security-release-process.md#product-security-committee-psc)",

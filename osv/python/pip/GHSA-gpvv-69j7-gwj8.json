@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gpvv-69j7-gwj8",
-  "modified": "2023-04-11T01:40:20.838139Z",
+  "modified": "2023-11-08T04:01:31.361287Z",
   "published": "2021-06-09T17:35:04Z",
   "aliases": [
-    "CVE-2019-20916"
+    "CVE-2019-20916",
+    "PYSEC-2020-173"
   ],
   "summary": "Path Traversal in pip",
   "details": "The pip package before 19.2 for Python allows Directory Traversal when a URL is given in an install command, because a Content-Disposition header can have ../ in a filename, as demonstrated by overwriting the /root/.ssh/authorized_keys file. This occurs in _download_http_url in _internal/download.py. A fix was committed 6704f2ace.",

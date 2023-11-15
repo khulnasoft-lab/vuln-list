@@ -1,10 +1,11 @@
 {
   "id": "GO-2020-0011",
-  "modified": "2022-08-29T16:50:59Z",
+  "modified": "2023-11-08T03:58:37.812163Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
     "CVE-2016-9122",
-    "GHSA-77gc-fj98-665h"
+    "GHSA-77gc-fj98-665h",
+    "GO-2022-0945"
   ],
   "details": "When decrypting JsonWebEncryption objects with multiple recipients\nor JsonWebSignature objects with multiple signatures the Decrypt\nand Verify methods do not indicate which recipient or signature was\nvalid. This may lead a caller to rely on protected headers from an\ninvalid recipient or signature.\n",
   "affected": [

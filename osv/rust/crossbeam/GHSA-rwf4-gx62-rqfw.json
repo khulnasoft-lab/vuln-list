@@ -1,7 +1,10 @@
 {
   "id": "GHSA-rwf4-gx62-rqfw",
-  "modified": "2022-06-08T22:28:27Z",
+  "modified": "2023-11-08T04:22:56.497356Z",
   "published": "2022-06-08T22:28:27Z",
+  "aliases": [
+    "RUSTSEC-2022-0029"
+  ],
   "summary": "`MsQueue` `push`/`pop` use the wrong orderings",
   "details": "Affected versions of this crate use orderings which are too weak to support this data structure.\nIt is likely this has caused memory corruption in the wild: \u003chttps://github.com/crossbeam-rs/crossbeam/issues/97#issuecomment-412785919\u003e.\n",
   "affected": [

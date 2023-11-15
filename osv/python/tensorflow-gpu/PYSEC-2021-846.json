@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-846",
-  "modified": "2021-12-13T06:20:52.754328Z",
+  "modified": "2023-11-08T04:06:54.591328Z",
   "published": "2021-11-05T20:15:00Z",
   "aliases": [
+    "BIT-2021-41195",
+    "BIT-tensorflow-2021-41195",
     "CVE-2021-41195",
-    "GHSA-cq76-mxrc-vchh"
+    "GHSA-cq76-mxrc-vchh",
+    "PYSEC-2021-842",
+    "PYSEC-2021-844"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the implementation of `tf.math.segment_*` operations results in a `CHECK`-fail related abort (and denial of service) if a segment id in `segment_ids` is large. This is similar to CVE-2021-29584 (and similar other reported vulnerabilities in TensorFlow, localized to specific APIs): the implementation (both on CPU and GPU) computes the output shape using `AddDim`. However, if the number of elements in the tensor overflows an `int64_t` value, `AddDim` results in a `CHECK` failure which provokes a `std::abort`. Instead, code should use `AddDimWithStatus`. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

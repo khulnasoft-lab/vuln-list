@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fhvc-gp6c-h2wx",
-  "modified": "2023-06-13T20:33:52Z",
+  "modified": "2023-11-08T04:05:22.958536Z",
   "published": "2021-08-25T20:52:23Z",
   "aliases": [
-    "CVE-2021-26953"
+    "CVE-2021-26953",
+    "RUSTSEC-2021-0017"
   ],
   "summary": "Read on uninitialized buffer in postscript",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided Read implementation.\n\nArbitrary Read implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.\n\nThis flaw was fixed in commit `8026286` by zero-initializing the buffer before handing to a user-provided Read.",

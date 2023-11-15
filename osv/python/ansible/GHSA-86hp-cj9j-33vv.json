@@ -1,9 +1,10 @@
 {
   "id": "GHSA-86hp-cj9j-33vv",
-  "modified": "2023-04-11T01:42:57.190720Z",
+  "modified": "2023-11-08T04:02:42.821758Z",
   "published": "2021-04-07T20:33:26Z",
   "aliases": [
-    "CVE-2020-1753"
+    "CVE-2020-1753",
+    "PYSEC-2020-210"
   ],
   "summary": "Insertion of Sensitive Information into Log File, Invocation of Process Using Visible Sensitive Information, and \tExposure of Sensitive Information to an Unauthorized Actor in Ansible",
   "details": "A security flaw was found in Ansible Engine, all Ansible 2.7.x versions prior to 2.7.17, all Ansible 2.8.x versions prior to 2.8.11 and all Ansible 2.9.x versions prior to 2.9.7, when managing kubernetes using the k8s module. Sensitive parameters such as passwords and tokens are passed to kubectl from the command line, not using an environment variable or an input configuration file. This will disclose passwords and tokens from process list and no_log directive from debug module would not have any effect making these secrets being disclosed on stdout and log files.",

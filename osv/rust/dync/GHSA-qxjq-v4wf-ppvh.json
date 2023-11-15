@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qxjq-v4wf-ppvh",
-  "modified": "2023-06-13T17:12:14Z",
+  "modified": "2023-11-08T04:03:38.488178Z",
   "published": "2021-08-25T20:49:47Z",
   "aliases": [
-    "CVE-2020-35903"
+    "CVE-2020-35903",
+    "RUSTSEC-2020-0050"
   ],
   "summary": "Out of bounds read in dync",
   "details": "VecCopy::data is created as a Vec of u8 but can be used to store and retrieve elements of different types leading to misaligned access.\n\nThe issue was resolved in v0.5.0 by replacing data being stored by Vec\u003cu8\u003e with a custom managed pointer. Elements are now stored and retrieved using types with proper alignment corresponding to original types.",

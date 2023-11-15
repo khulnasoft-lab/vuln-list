@@ -1,9 +1,13 @@
 {
   "id": "GHSA-jpgg-cp2x-qrw3",
-  "modified": "2023-08-29T18:58:37Z",
+  "modified": "2023-11-08T04:07:05.900365Z",
   "published": "2022-12-28T00:30:23Z",
   "aliases": [
-    "CVE-2021-4236"
+    "CVE-2021-4236",
+    "CVE-2021-4237",
+    "GHSA-5gjg-jgh4-gppm",
+    "GO-2021-0107",
+    "GO-2022-0385"
   ],
   "summary": "ecnepsnai/web vulnerable to Uncontrolled Resource Consumption",
   "details": "Web Sockets do not execute any AuthenticateMethod methods which may be set, leading to a nil pointer dereference if the returned UserData pointer is assumed to be non-nil, or authentication bypass. This issue only affects WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly use WebSockets are not vulnerable.",

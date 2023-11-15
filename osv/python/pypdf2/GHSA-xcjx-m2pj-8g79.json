@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xcjx-m2pj-8g79",
-  "modified": "2023-06-12T17:02:28.044917Z",
+  "modified": "2023-11-08T04:08:38.867416Z",
   "published": "2022-04-22T20:54:41Z",
   "aliases": [
-    "CVE-2022-24859"
+    "CVE-2022-24859",
+    "PYSEC-2022-194"
   ],
   "summary": "Manipulated inline images can cause Infinite Loop in PyPDF2",
   "details": "### Impact\n\nAn attacker who uses this vulnerability can craft a PDF which leads to an infinite loop if the PyPDF2 user wrote the following code:\n\n```python\nfrom PyPDF2 import PdfFileReader, PdfFileWriter\nfrom PyPDF2.pdf import ContentStream\n\nreader = PdfFileReader(\"malicious.pdf\", strict=False)\nfor page in reader.pages:\n    ContentStream(page.getContents(), reader)\n```\n\n### Patches\n\n[`PyPDF2==1.27.5`](https://pypi.org/project/PyPDF2) and later are patched.\n\nCredits to [Sebastian Krause](https://github.com/sekrause) for finding ([issue](https://github.com/py-pdf/PyPDF2/issues/329)) and fixing ([PR](https://github.com/py-pdf/PyPDF2/pull/740)) it.\n",

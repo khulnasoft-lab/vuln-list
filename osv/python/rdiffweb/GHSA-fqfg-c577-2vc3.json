@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fqfg-c577-2vc3",
-  "modified": "2023-04-11T01:37:43.660879Z",
+  "modified": "2023-11-08T04:09:40.213888Z",
   "published": "2022-09-30T00:00:20Z",
   "aliases": [
-    "CVE-2022-3364"
+    "CVE-2022-3364",
+    "PYSEC-2022-298"
   ],
   "summary": " rdiffweb's unlimited length Fullname field can lead to DoS",
   "details": "rdiffweb prior to 2.5.0a3 does not validate email length, allowing users to insert an email longer than 255 characters. If a user signs up with an email with a length of 1 million or more characters and logs in, withdraws, or changes their email, the server may cause denial of service due to overload. ",

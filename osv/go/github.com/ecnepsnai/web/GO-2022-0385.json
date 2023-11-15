@@ -1,10 +1,13 @@
 {
   "id": "GO-2022-0385",
-  "modified": "2022-08-29T16:50:59Z",
+  "modified": "2023-11-08T04:07:05.900365Z",
   "published": "2022-07-01T20:11:02Z",
   "aliases": [
+    "CVE-2021-4236",
     "CVE-2021-4237",
-    "GHSA-5gjg-jgh4-gppm"
+    "GHSA-5gjg-jgh4-gppm",
+    "GHSA-jpgg-cp2x-qrw3",
+    "GO-2021-0107"
   ],
   "details": "The AuthenticateMethod authentication hook is not called for WebSocket\nconnections, allowing unauthenticated access.\n\nThis issue only affects WebSockets with an AuthenticateMethod hook.\nRequest handlers that do not explicitly use WebSockets are not\nvulnerable.\n",
   "affected": [

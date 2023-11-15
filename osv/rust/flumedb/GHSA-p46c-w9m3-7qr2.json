@@ -1,9 +1,11 @@
 {
   "id": "GHSA-p46c-w9m3-7qr2",
-  "modified": "2023-06-13T18:08:03Z",
+  "modified": "2023-11-08T04:07:21.677152Z",
   "published": "2022-01-06T22:18:35Z",
   "aliases": [
-    "CVE-2021-45684"
+    "CVE-2021-45684",
+    "GHSA-p56p-gq3f-whg8",
+    "RUSTSEC-2021-0086"
   ],
   "summary": "Use of Uninitialized Resource in flumedb.",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided Read implementation. There are two of such cases (go_offset_log::read_entry() \u0026 offset_log::read_entry()).\n\nArbitrary Read implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.",

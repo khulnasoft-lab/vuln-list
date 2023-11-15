@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rh89-x75f-rh3c",
-  "modified": "2023-06-13T18:43:22Z",
+  "modified": "2023-11-08T04:01:14.285412Z",
   "published": "2021-08-25T20:44:00Z",
   "aliases": [
-    "CVE-2019-15553"
+    "CVE-2019-15553",
+    "RUSTSEC-2019-0011"
   ],
   "summary": "Exposure of uninitialized memory in memoffset",
   "details": "Affected versions of this crate caused traps and/or memory unsafety by zero-initializing references. They also could lead to uninitialized memory being dropped if the field for which the offset is requested was behind a deref coercion, and that deref coercion caused a panic. The flaw was corrected by using MaybeUninit.",

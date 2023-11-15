@@ -1,9 +1,12 @@
 {
   "id": "GHSA-j3w8-2p2h-mrr9",
-  "modified": "2023-11-05T05:35:43.042783Z",
+  "modified": "2023-11-08T04:13:29.516183Z",
   "published": "2023-10-14T12:30:23Z",
   "aliases": [
-    "CVE-2023-42792"
+    "BIT-2023-42792",
+    "BIT-airflow-2023-42792",
+    "CVE-2023-42792",
+    "PYSEC-2023-203"
   ],
   "summary": "Apache Airflow vulnerable to privilege escalation",
   "details": "Apache Airflow, in versions prior to 2.7.2, contains a security vulnerability that allows an authenticated user with limited access to some DAGs, to craft a request that could give the user write access to various DAG resources for DAGs that the user had no access to, thus, enabling the user to clear DAGs they shouldn't.\n\nUsers of Apache Airflow are strongly advised to upgrade to version 2.7.2 or newer to mitigate the risk associated with this vulnerability.",

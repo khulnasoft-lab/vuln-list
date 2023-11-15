@@ -1,9 +1,11 @@
 {
   "id": "GHSA-f97h-2pfx-f59f",
-  "modified": "2023-04-11T01:42:40.074161Z",
+  "modified": "2023-11-08T04:04:05.317553Z",
   "published": "2020-07-29T18:07:20Z",
   "aliases": [
-    "CVE-2020-7695"
+    "CVE-2020-7695",
+    "PYSEC-2020-151",
+    "SNYK-PYTHON-UVICORN-570471"
   ],
   "summary": "HTTP response splitting in uvicorn",
   "details": "Uvicorn before 0.11.7 is vulnerable to HTTP response splitting. CRLF sequences are not escaped in the value of HTTP headers. Attackers can exploit exploit this to add arbitrary headers to HTTP responses, or even return an arbitrary response body, whenever crafted input is used to construct HTTP headers.",

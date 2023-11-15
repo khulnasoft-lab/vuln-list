@@ -1,9 +1,11 @@
 {
   "id": "GHSA-9423-6c93-gpp8",
-  "modified": "2023-08-29T23:36:50Z",
+  "modified": "2023-11-08T04:04:03.670410Z",
   "published": "2021-06-23T17:13:29Z",
   "aliases": [
-    "CVE-2020-7667"
+    "CVE-2020-7667",
+    "GO-2020-0042",
+    "SNYK-GOLANG-GITHUBCOMSASSOFTWAREGORPMUTILSCPIO-570427"
   ],
   "summary": "github.com/sassoftware/go-rpmutils Arbitrary File Write via Archive Extraction (Zip Slip)",
   "details": "The CPIO extraction functionality doesn't sanitize the paths of the archived files for leading and non-leading `..` which leads in file extraction outside of the current directory. Note, the fixing commit was applied to all affected versions which were re-released.",

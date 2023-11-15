@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-114",
-  "modified": "2022-03-09T00:18:24.359111Z",
+  "modified": "2023-11-08T04:08:10.086926Z",
   "published": "2022-02-03T13:15:00Z",
   "aliases": [
+    "BIT-2022-21735",
+    "BIT-tensorflow-2022-21735",
     "CVE-2022-21735",
-    "GHSA-87v6-crgm-2gfj"
+    "GHSA-87v6-crgm-2gfj",
+    "PYSEC-2022-59"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `FractionalMaxPool` can be made to crash a TensorFlow process via a division by 0. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

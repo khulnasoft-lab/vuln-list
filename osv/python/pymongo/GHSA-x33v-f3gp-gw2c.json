@@ -1,9 +1,10 @@
 {
   "id": "GHSA-x33v-f3gp-gw2c",
-  "modified": "2023-04-11T01:26:30.954564Z",
+  "modified": "2023-11-08T03:57:17.791634Z",
   "published": "2022-05-14T02:10:10Z",
   "aliases": [
-    "CVE-2013-2132"
+    "CVE-2013-2132",
+    "PYSEC-2013-30"
   ],
   "summary": "Use of NullPointerException Catch to Detect NULL Pointer Dereference in Pymongo",
   "details": "bson/_cbsonmodule.c in the mongo-python-driver (aka. pymongo) before 2.5.2, as used in MongoDB, allows context-dependent attackers to cause a denial of service (NULL pointer dereference and crash) via vectors related to decoding of an \"invalid DBRef.\"",

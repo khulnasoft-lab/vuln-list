@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rv8h-p43r-4x5r",
-  "modified": "2023-10-22T05:46:26.562093Z",
+  "modified": "2023-11-08T03:57:22.530712Z",
   "published": "2022-05-17T03:46:28Z",
   "aliases": [
-    "CVE-2013-4347"
+    "CVE-2013-4347",
+    "PYSEC-2014-86"
   ],
   "summary": "SimpleGeo python-oauth2 vulnerable to the use of Insufficiently Random Values to generate nonces",
   "details": "The (1) make_nonce, (2) generate_nonce, and (3) generate_verifier functions in SimpleGeo python-oauth2 uses weak random numbers to generate nonces, which makes it easier for remote attackers to guess the nonce via a brute force attack.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qj3v-q2vj-4c8h",
-  "modified": "2021-08-18T21:27:27Z",
+  "modified": "2023-11-08T04:06:26.167178Z",
   "published": "2021-08-25T20:55:58Z",
   "aliases": [
-    "CVE-2021-38194"
+    "CVE-2021-38194",
+    "RUSTSEC-2021-0075"
   ],
   "summary": "Calculation error in ark-r1cs-std",
   "details": "An issue was discovered in the ark-r1cs-std crate before 0.3.1 for Rust. It does not enforce any constraints in the FieldVar::mul_by_inverse method. Thus, a prover can produce a proof that is unsound but is nonetheless verified.",

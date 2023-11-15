@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3933-wvjf-pcvc",
-  "modified": "2023-06-13T20:06:37Z",
+  "modified": "2023-11-08T04:03:35.973145Z",
   "published": "2021-08-25T20:46:16Z",
   "aliases": [
-    "CVE-2020-35859"
+    "CVE-2020-35859",
+    "RUSTSEC-2020-0004"
   ],
   "summary": "Out of bounds access in lucet-runtime-internals",
   "details": "An embedding using affected versions of lucet-runtime configured to use non-default Wasm globals sizes of more than 4KiB, or compiled in debug mode without optimizations, could leak data from the signal handler stack to guest programs. This can potentially cause data from the embedding host to leak to guest programs or cause corruption of guest program memory. This flaw was resolved by correcting the sigstack allocation logic.",

@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-739",
-  "modified": "2021-12-09T06:35:34.219918Z",
+  "modified": "2023-11-08T04:05:42.449168Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29613",
+    "BIT-tensorflow-2021-29613",
     "CVE-2021-29613",
-    "GHSA-vvg4-vgrv-xfr7"
+    "GHSA-vvg4-vgrv-xfr7",
+    "PYSEC-2021-250",
+    "PYSEC-2021-541"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. Incomplete validation in `tf.raw_ops.CTCLoss` allows an attacker to trigger an OOB read from heap. The fix will be included in TensorFlow 2.5.0. We will also cherrypick these commits on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-817",
-  "modified": "2021-12-09T06:35:42.682170Z",
+  "modified": "2023-11-08T04:06:55.579368Z",
   "published": "2021-11-05T20:15:00Z",
   "aliases": [
+    "BIT-2021-41210",
+    "BIT-tensorflow-2021-41210",
     "CVE-2021-41210",
-    "GHSA-m342-ff57-4jcc"
+    "GHSA-m342-ff57-4jcc",
+    "PYSEC-2021-402",
+    "PYSEC-2021-619"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the shape inference functions for `SparseCountSparseOutput` can trigger a read outside of bounds of heap allocated array. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fj24-ghp9-39v3",
-  "modified": "2023-10-27T05:31:37.769297Z",
+  "modified": "2023-11-08T03:57:21.468737Z",
   "published": "2022-05-14T02:03:36Z",
   "aliases": [
-    "CVE-2013-4259"
+    "CVE-2013-4259",
+    "PYSEC-2013-1"
   ],
   "summary": "Ansible uses a socket with predictable filename in /tmp",
   "details": "runner/connection_plugins/ssh.py in Ansible before 1.2.3, when using ControlPersist, allows local users to redirect a ssh session via a symlink attack on a socket file with a predictable name in /tmp/.",

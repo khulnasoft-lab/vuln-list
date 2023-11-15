@@ -1,9 +1,12 @@
 {
   "id": "GHSA-2gwj-7jmv-h26r",
-  "modified": "2023-09-05T19:31:20.342896Z",
+  "modified": "2023-11-08T04:09:04.007677Z",
   "published": "2022-04-13T00:00:33Z",
   "aliases": [
-    "CVE-2022-28346"
+    "BIT-2022-28346",
+    "BIT-django-2022-28346",
+    "CVE-2022-28346",
+    "PYSEC-2022-190"
   ],
   "summary": "SQL Injection in Django",
   "details": "An issue was discovered in Django 2.2 before 2.2.28, 3.2 before 3.2.13, and 4.0 before 4.0.4. `QuerySet.annotate()`, `aggregate()`, and `extra()` methods are subject to SQL injection in column aliases via a crafted dictionary (with dictionary expansion) as the passed `**kwargs`.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-p28m-34f6-967q",
-  "modified": "2023-10-28T05:35:30.309776Z",
+  "modified": "2023-11-08T03:59:40.132715Z",
   "published": "2018-10-10T16:10:38Z",
   "aliases": [
-    "CVE-2018-1000807"
+    "CVE-2018-1000807",
+    "PYSEC-2018-23"
   ],
   "summary": "PyOpenSSL Use-After-Free vulnerability",
   "details": "It was discovered that pyOpenSSL incorrectly handled memory when handling X509 objects. A remote attacker could use this issue to cause pyOpenSSL to crash, resulting in a denial of service, or possibly execute arbitrary code. This attack appears to be exploitable via Depends on the calling application and if it retains a reference to the memory. This vulnerability appears to have been fixed in 17.5.0.",

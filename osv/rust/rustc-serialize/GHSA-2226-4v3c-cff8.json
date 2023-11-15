@@ -1,7 +1,10 @@
 {
   "id": "GHSA-2226-4v3c-cff8",
-  "modified": "2022-06-17T00:18:24Z",
+  "modified": "2023-11-08T04:13:48.926151Z",
   "published": "2022-06-17T00:18:24Z",
+  "aliases": [
+    "RUSTSEC-2022-0004"
+  ],
   "summary": "Stack overflow in rustc_serialize when parsing deeply nested JSON",
   "details": "When parsing JSON using `json::Json::from_str`, there is no limit to the depth of the stack, therefore deeply nested objects can cause a stack overflow, which aborts the process.\n\nExample code that triggers the vulnerability is\n\n```rust\nfn main() {\n    let _ = rustc_serialize::json::Json::from_str(\u0026\"[0,[\".repeat(10000));\n}\n```\n\n[serde](https://crates.io/crates/serde) is recommended as a replacement to rustc_serialize.\n",
   "affected": [

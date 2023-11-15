@@ -1,9 +1,13 @@
 {
   "id": "GHSA-mwgj-7x7j-6966",
-  "modified": "2023-04-13T22:33:14.128678Z",
+  "modified": "2023-11-08T04:05:14.356894Z",
   "published": "2021-09-13T20:06:14Z",
   "aliases": [
-    "CVE-2021-24040"
+    "CVE-2021-24040",
+    "CVE-2021-39207",
+    "GHSA-m87f-9fvv-2mgg",
+    "PYSEC-2021-330",
+    "PYSEC-2021-334"
   ],
   "summary": "Deserialization of Untrusted Data in ParlAI",
   "details": "Due to use of unsafe YAML deserialization logic, an attacker with the ability to modify local YAML configuration files could provide malicious input, resulting in remote code execution or similar risks. This issue affects ParlAI prior to v1.1.0.",

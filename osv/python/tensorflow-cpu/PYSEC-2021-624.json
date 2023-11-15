@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-624",
-  "modified": "2021-12-09T06:35:09.664583Z",
+  "modified": "2023-11-08T04:06:55.884754Z",
   "published": "2021-11-05T21:15:00Z",
   "aliases": [
+    "BIT-2021-41215",
+    "BIT-tensorflow-2021-41215",
     "CVE-2021-41215",
-    "GHSA-x3v8-c8qx-3j3r"
+    "GHSA-x3v8-c8qx-3j3r",
+    "PYSEC-2021-407",
+    "PYSEC-2021-822"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the shape inference code for `DeserializeSparse` can trigger a null pointer dereference. This is because the shape inference function assumes that the `serialize_sparse` tensor is a tensor with positive rank (and having `3` as the last dimension). The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

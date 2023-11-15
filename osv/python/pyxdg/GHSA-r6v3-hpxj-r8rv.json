@@ -1,9 +1,11 @@
 {
   "id": "GHSA-r6v3-hpxj-r8rv",
-  "modified": "2023-04-11T01:57:36.723033Z",
+  "modified": "2023-11-08T04:01:06.312371Z",
   "published": "2019-06-07T20:56:27Z",
   "aliases": [
-    "CVE-2019-12761"
+    "CVE-2019-12761",
+    "PYSEC-2019-199",
+    "SNYK-PYTHON-PYXDG-174562"
   ],
   "summary": "Code Injection in PyXDG",
   "details": "A code injection issue was discovered in PyXDG before 0.26 via crafted Python code in a Category element of a Menu XML document in a .menu file. XDG_CONFIG_DIRS must be set up to trigger xdg.Menu.parse parsing within the directory containing this file. This is due to a lack of sanitization in xdg/Menu.py before an eval call.",

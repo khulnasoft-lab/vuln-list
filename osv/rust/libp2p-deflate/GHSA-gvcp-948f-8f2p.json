@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gvcp-948f-8f2p",
-  "modified": "2021-08-18T19:04:08Z",
+  "modified": "2023-11-08T04:03:45.145642Z",
   "published": "2021-08-25T20:59:04Z",
   "aliases": [
-    "CVE-2020-36443"
+    "CVE-2020-36443",
+    "RUSTSEC-2020-0123"
   ],
   "summary": "Use of Uninitialized Resource in libp2p-deflate",
   "details": "An issue was discovered in the libp2p-deflate crate before 0.27.1 for Rust. An uninitialized buffer is passed to AsyncRead::poll_read(), which is a user-provided trait function.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hm9r-7f84-25c9",
-  "modified": "2023-11-13T20:46:43.224778Z",
+  "modified": "2023-11-13T20:56:26.139084Z",
   "published": "2023-11-12T15:30:20Z",
   "aliases": [
-    "CVE-2023-47037"
+    "CVE-2023-47037",
+    "PYSEC-2023-232"
   ],
   "summary": "Apache Airflow allows authenticated and DAG-view authorized users to modify some DAG run detail values when submitting notes",
   "details": "Apache Airflow, versions before 2.7.3, is affected by a vulnerability that allows authenticated and DAG-view authorized Users to modify some DAG run detail values when submitting notes. This could have them alter details such as configuration parameters, start date, etc.  Users should upgrade to version 2.7.3 or later which has removed the vulnerability.\n",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6jmw-6mxw-w4jc",
-  "modified": "2023-09-14T16:41:57Z",
+  "modified": "2023-11-08T04:13:15.681149Z",
   "published": "2023-09-13T15:31:14Z",
   "aliases": [
-    "CVE-2023-39914"
+    "CVE-2023-39914",
+    "RUSTSEC-2023-0062"
   ],
   "summary": "BER/CER/DER decoder panics on invalid input",
   "details": "NLnet Labs’ bcder library up to and including version 0.7.2 panics while decoding certain invalid input data rather than rejecting the data with an error. This can affect both the actual decoding stage as well as accessing content of types that utilized delayed decoding.",

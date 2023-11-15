@@ -1,9 +1,14 @@
 {
   "id": "GHSA-wvjw-p9f5-vq28",
-  "modified": "2023-04-11T01:33:44.919340Z",
+  "modified": "2023-11-08T04:05:42.818050Z",
   "published": "2021-05-21T14:29:02Z",
   "aliases": [
-    "CVE-2021-29619"
+    "BIT-2021-29619",
+    "BIT-tensorflow-2021-29619",
+    "CVE-2021-29619",
+    "PYSEC-2021-256",
+    "PYSEC-2021-547",
+    "PYSEC-2021-745"
   ],
   "summary": "Segfault in `tf.raw_ops.SparseCountSparseOutput`",
   "details": "### Impact\nPassing invalid arguments (e.g., discovered via fuzzing) to `tf.raw_ops.SparseCountSparseOutput` results in segfault.\n\n### Patches\nWe have patched the issue in GitHub commit [82e6203221865de4008445b13c69b6826d2b28d9](https://github.com/tensorflow/tensorflow/commit/82e6203221865de4008445b13c69b6826d2b28d9).\n\nThe fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.\n\n### For more information\nPlease consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8mpq-fmr3-6jxv",
-  "modified": "2023-09-29T15:43:23Z",
+  "modified": "2023-11-08T03:57:49.708284Z",
   "published": "2022-05-24T16:44:07Z",
   "aliases": [
-    "CVE-2015-1340"
+    "CVE-2015-1340",
+    "GO-2021-0071"
   ],
   "summary": "LXD vulnerable to Race Condition",
   "details": "LXD before version 0.19-0ubuntu5 `doUidshiftIntoContainer()` has an unsafe `Chmod()` call that races against the stat in the `Filepath.Walk()` function. A symbolic link created in that window could cause any file on the system to have any mode of the attacker's choice.\n\n### Specific Go Packages Affected\ngithub.com/lxc/lxd/shared",

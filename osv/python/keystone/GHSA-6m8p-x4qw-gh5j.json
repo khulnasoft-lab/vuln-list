@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6m8p-x4qw-gh5j",
-  "modified": "2023-04-11T01:44:25.102854Z",
+  "modified": "2023-11-08T04:02:11.225655Z",
   "published": "2021-06-09T17:34:09Z",
   "aliases": [
-    "CVE-2020-12690"
+    "CVE-2020-12690",
+    "PYSEC-2020-54"
   ],
   "summary": "Insufficient Session Expiration in OpenStack Keystone",
   "details": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. The list of roles provided for an OAuth1 access token is silently ignored. Thus, when an access token is used to request a keystone token, the keystone token contains every role assignment the creator had for the project. This results in the provided keystone token having more role assignments than the creator intended, possibly giving unintended escalated access.",

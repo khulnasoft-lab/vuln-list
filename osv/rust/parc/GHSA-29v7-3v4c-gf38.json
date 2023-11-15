@@ -1,9 +1,11 @@
 {
   "id": "GHSA-29v7-3v4c-gf38",
-  "modified": "2023-06-13T20:11:11Z",
+  "modified": "2023-11-08T04:03:45.827550Z",
   "published": "2021-08-25T20:57:24Z",
   "aliases": [
-    "CVE-2020-36454"
+    "CVE-2020-36454",
+    "GHSA-xwxc-j97j-84gf",
+    "RUSTSEC-2020-0134"
   ],
   "summary": "Data races in parc",
   "details": "In the affected versions of this crate, LockWeak\u003cT\u003e unconditionally implemented Send with no trait bounds on T. LockWeak\u003cT\u003e doesn't own T and only provides \u0026T. This allows concurrent access to a non-Sync T, which can cause undefined behavior like data races.",

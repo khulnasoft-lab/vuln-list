@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3m3h-v9hv-9j4h",
-  "modified": "2023-04-11T01:40:23.586275Z",
+  "modified": "2023-11-08T04:05:19.796793Z",
   "published": "2021-12-02T17:49:40Z",
   "aliases": [
-    "CVE-2021-25986"
+    "CVE-2021-25986",
+    "PYSEC-2021-850"
   ],
   "summary": "Cross-site Scripting in django-wiki",
   "details": "In Django-wiki, versions 0.0.20 to 0.7.8 are vulnerable to Stored Cross-Site Scripting (XSS) in Notifications Section. An attacker who has access to edit pages can inject JavaScript payload in the title field. When a victim gets a notification regarding the changes made in the application, the payload in the notification panel renders and loads external JavaScript.",

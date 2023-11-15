@@ -1,9 +1,10 @@
 {
   "id": "GHSA-37jj-wp7g-7wj4",
-  "modified": "2021-08-19T17:53:09Z",
+  "modified": "2023-11-08T04:05:20.783188Z",
   "published": "2021-08-25T20:53:12Z",
   "aliases": [
-    "CVE-2021-26305"
+    "CVE-2021-26305",
+    "RUSTSEC-2021-0012"
   ],
   "summary": "Read of uninitialized memory in cdr",
   "details": "An issue was discovered in Deserializer::read_vec in the cdr crate before 0.2.4 for Rust. A user-provided Read implementation can gain access to the old contents of newly allocated heap memory, violating soundness.",

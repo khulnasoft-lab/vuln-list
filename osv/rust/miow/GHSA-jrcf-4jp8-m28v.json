@@ -1,9 +1,10 @@
 {
   "id": "GHSA-jrcf-4jp8-m28v",
-  "modified": "2023-06-13T18:42:34Z",
+  "modified": "2023-11-08T04:03:39.469693Z",
   "published": "2021-08-25T20:50:35Z",
   "aliases": [
-    "CVE-2020-35921"
+    "CVE-2020-35921",
+    "RUSTSEC-2020-0080"
   ],
   "summary": "miow invalidly assumes the memory layout of std::net::SocketAddr",
   "details": "The miow crate has assumed std::net::SocketAddrV4 and std::net::SocketAddrV6 have the same memory layout as the system C representation sockaddr. It has simply casted the pointers to convert the socket addresses to the system representation. The standard library does not say anything about the memory layout, and this will cause invalid memory access if the standard library changes the implementation. No warnings or errors will be emitted once the change happens.",

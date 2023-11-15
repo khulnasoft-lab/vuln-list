@@ -1,9 +1,10 @@
 {
   "id": "GHSA-www2-v7xj-xrc6",
-  "modified": "2023-08-23T22:48:02.366540Z",
+  "modified": "2023-11-08T04:00:10.720105Z",
   "published": "2018-12-12T15:52:07Z",
   "aliases": [
-    "CVE-2018-20060"
+    "CVE-2018-20060",
+    "PYSEC-2018-32"
   ],
   "summary": "Exposure of Sensitive Information to an Unauthorized Actor in urllib3",
   "details": "urllib3 before version 1.23 does not remove the Authorization HTTP header when following a cross-origin redirect (i.e., a redirect that differs in host, port, or scheme). This can allow for credentials in the Authorization header to be exposed to unintended hosts or transmitted in cleartext.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xfhg-9pjg-xg7g",
-  "modified": "2023-05-11T14:25:42.096018Z",
+  "modified": "2023-11-08T04:07:06.578141Z",
   "published": "2022-08-26T00:03:30Z",
   "aliases": [
-    "CVE-2021-42521"
+    "CVE-2021-42521",
+    "PYSEC-2022-255"
   ],
   "summary": "VTK NULL pointer dereference vulnerability",
   "details": "There is a NULL pointer dereference vulnerability in VTK, and it lies in IO/Infovis/vtkXMLTreeReader.cxx. The vendor didn't check the return value of libxml2 API 'xmlDocGetRootElement', and try to dereference it. It is unsafe as the return value can be NULL and that NULL pointer dereference may crash the application.",

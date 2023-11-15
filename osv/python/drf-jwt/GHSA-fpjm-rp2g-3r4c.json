@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fpjm-rp2g-3r4c",
-  "modified": "2023-04-11T01:43:41.221314Z",
+  "modified": "2023-11-08T04:01:58.465385Z",
   "published": "2020-06-05T16:09:34Z",
   "aliases": [
-    "CVE-2020-10594"
+    "CVE-2020-10594",
+    "PYSEC-2020-40"
   ],
   "summary": "Django Rest Framework jwt allows obtaining new token from notionally invalidated token",
   "details": "An issue was discovered in drf-jwt 1.15.x before 1.15.1. It allows attackers with access to a notionally invalidated token to obtain a new, working token via the refresh endpoint, because the blacklist protection mechanism is incompatible with the token-refresh feature. NOTE: drf-jwt is a fork of jpadilla/django-rest-framework-jwt, which is unmaintained.",

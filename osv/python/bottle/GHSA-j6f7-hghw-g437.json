@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j6f7-hghw-g437",
-  "modified": "2023-04-11T01:33:24.446392Z",
+  "modified": "2023-11-08T03:58:39.635834Z",
   "published": "2022-05-17T03:05:15Z",
   "aliases": [
-    "CVE-2016-9964"
+    "CVE-2016-9964",
+    "PYSEC-2016-24"
   ],
   "summary": "bottle.py vulnerable to CRLF Injection",
   "details": "bottle.py is a fast and simple micro-framework for python web-applications. redirect() in bottle.py in bottle 0.12.10 doesn't filter a \"\\r\\n\" sequence, which leads to a CRLF attack, as demonstrated by a redirect(\"233\\r\\nSet-Cookie: name=salt\") call.",

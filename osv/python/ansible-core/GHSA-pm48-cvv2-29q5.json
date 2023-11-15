@@ -1,9 +1,10 @@
 {
   "id": "GHSA-pm48-cvv2-29q5",
-  "modified": "2023-10-21T05:19:09.806759Z",
+  "modified": "2023-11-08T04:01:11.322338Z",
   "published": "2022-05-24T16:58:01Z",
   "aliases": [
-    "CVE-2019-14846"
+    "CVE-2019-14846",
+    "PYSEC-2019-4"
   ],
   "summary": "Ansible Uses Plugins That Disclose Credentials",
   "details": "Ansible, all ansible_engine-2.x versions and ansible_engine-3.x up to ansible_engine-3.5, was logging at the DEBUG level which lead to a disclosure of credentials if a plugin used a library that logged credentials at the DEBUG level. This flaw does not affect Ansible modules, as those are executed in a separate process.",

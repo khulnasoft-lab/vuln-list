@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r8g9-w4f3-9crm",
-  "modified": "2023-10-25T05:33:24.086514Z",
+  "modified": "2023-11-08T04:01:17.071800Z",
   "published": "2022-05-24T16:55:55Z",
   "aliases": [
-    "CVE-2019-16226"
+    "CVE-2019-16226",
+    "PYSEC-2019-238"
   ],
   "summary": "LMDB invalid write ",
   "details": "An issue was discovered in py-lmdb 0.97. `mdb_node_del` does not validate a `memmove` in the case of an unexpected `node-\u003emn_hi`, leading to an invalid write operation.",

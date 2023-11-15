@@ -1,9 +1,10 @@
 {
   "id": "GHSA-62xg-239j-vxg7",
-  "modified": "2023-04-11T01:42:40.982708Z",
+  "modified": "2023-11-08T03:56:54.616477Z",
   "published": "2022-05-02T04:00:27Z",
   "aliases": [
-    "CVE-2009-5011"
+    "CVE-2009-5011",
+    "PYSEC-2010-8"
   ],
   "summary": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') in pyftpdlib",
   "details": "Race condition in the FTPHandler class in ftpserver.py in pyftpdlib before 0.5.2 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the getpeername function having an ENOTCONN error, a different vulnerability than CVE-2010-3494.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qc36-q22q-cjw3",
-  "modified": "2021-08-18T18:52:26Z",
+  "modified": "2023-11-08T04:06:25.799670Z",
   "published": "2021-07-12T17:03:27Z",
   "aliases": [
-    "CVE-2021-38189"
+    "CVE-2021-38189",
+    "RUSTSEC-2021-0069"
   ],
   "summary": "SMTP command injection in lettre",
   "details": "### Impact\n\nAffected versions of lettre allowed SMTP command injection through an attacker's controlled message body. The module for escaping lines starting with a period wouldn't catch a period that was placed after a double CRLF sequence, allowing the attacker to end the current message and write arbitrary SMTP commands after it.\n\n### Fix\n\nThe flaw is fixed by correctly handling consecutive CRLF sequences.\n\n### References\n\n* [RUSTSEC-2021-0069](https://rustsec.org/advisories/RUSTSEC-2021-0069.html)\n\n\n\n",

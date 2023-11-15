@@ -1,9 +1,12 @@
 {
   "id": "GHSA-m6h2-jx9v-58w6",
-  "modified": "2023-04-11T01:29:34.260929Z",
+  "modified": "2023-11-08T04:06:10.742516Z",
   "published": "2021-08-30T16:25:57Z",
   "aliases": [
-    "CVE-2021-35936"
+    "BIT-2021-35936",
+    "BIT-airflow-2021-35936",
+    "CVE-2021-35936",
+    "PYSEC-2021-122"
   ],
   "summary": "Missing Authorization in Apache Airflow",
   "details": "If remote logging is not used, the worker (in the case of CeleryExecutor) or the scheduler (in the case of LocalExecutor) runs a Flask logging server and is listening on a specific port and also binds on 0.0.0.0 by default. This logging server had no authentication and allows reading log files of DAG jobs. This issue affects Apache Airflow \u003c 2.1.2.",

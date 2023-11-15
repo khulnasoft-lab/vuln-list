@@ -1,9 +1,13 @@
 {
   "id": "GO-2021-0225",
-  "modified": "2022-05-13T18:33:00Z",
+  "modified": "2023-11-08T04:02:39.558192Z",
   "published": "2022-01-13T03:44:52Z",
   "aliases": [
-    "CVE-2020-16845"
+    "BIT-2020-16845",
+    "BIT-golang-2020-16845",
+    "CVE-2020-16845",
+    "GHSA-q6gq-997w-f55g",
+    "GO-2021-0142"
   ],
   "details": "Certain invalid inputs to ReadUvarint or ReadVarint could cause those\nfunctions to read an unlimited number of bytes from the ByteReader argument\nbefore returning an error. This could lead to processing more input than\nexpected when the caller is reading directly from a network and depends on\nReadUvarint and ReadVarint only consuming a small, bounded number of bytes,\neven from invalid inputs.\n\nWith the update, ReadUvarint and ReadVarint now always return after consuming\na bounded number of bytes (specifically, MaxVarintLen64, which is 10). The\nresult being returned has not changed; the functions merely detect and return\nsome errors without reading as much input.\n",
   "affected": [

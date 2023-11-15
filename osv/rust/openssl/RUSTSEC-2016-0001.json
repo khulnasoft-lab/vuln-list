@@ -1,10 +1,13 @@
 {
   "id": "RUSTSEC-2016-0001",
-  "modified": "2023-06-13T13:10:24Z",
+  "modified": "2023-11-08T03:58:21.575910Z",
   "published": "2016-11-05T12:00:00Z",
   "aliases": [
     "CVE-2016-10931",
     "GHSA-34p9-f4q3-c4r7"
+  ],
+  "related": [
+    "RUSTSEC-2016-0002"
   ],
   "summary": "SSL/TLS MitM vulnerability due to insecure defaults",
   "details": "All versions of rust-openssl prior to 0.9.0 contained numerous insecure defaults\nincluding off-by-default certificate verification and no API to perform hostname\nverification.\n\nUnless configured correctly by a developer, these defaults could allow an attacker\nto perform man-in-the-middle attacks.\n\nThe problem was addressed in newer versions by enabling certificate verification\nby default and exposing APIs to perform hostname verification. Use the\n`SslConnector` and `SslAcceptor` types to take advantage of these new features\n(as opposed to the lower-level `SslContext` type).",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fpxm-fprw-6hxj",
-  "modified": "2023-11-01T06:17:06.923063Z",
+  "modified": "2023-11-08T04:08:15.057201Z",
   "published": "2022-06-25T07:21:19Z",
   "aliases": [
-    "CVE-2022-22967"
+    "CVE-2022-22967",
+    "PYSEC-2022-210"
   ],
   "summary": "Salt's PAM auth fails to reject locked accounts",
   "details": "An issue was discovered in SaltStack Salt in versions before 3002.9, 3003.5, 3004.2. PAM auth fails to reject locked accounts, which allows a previously authorized user whose account is locked still run Salt commands when their account is locked. This affects both local shell accounts with an active session and salt-api users that authenticate via PAM eauth.",

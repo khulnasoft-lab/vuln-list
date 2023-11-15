@@ -3,9 +3,6 @@
   "modified": "2023-06-22T16:29:43.777510Z",
   "published": "2020-10-05T13:15:00Z",
   "withdrawn": "2023-05-30T03:49:00Z",
-  "aliases": [
-    "CVE-2020-25636"
-  ],
   "details": "A flaw was found in Ansible Base when using the aws_ssm connection plugin as there is no namespace separation for file transfers. Files are written directly to the root bucket, making possible to have collisions when running multiple ansible processes. This issue affects mainly the service availability.",
   "affected": [
     {

@@ -1,7 +1,10 @@
 {
   "id": "GHSA-255r-3prx-mf99",
-  "modified": "2023-03-22T22:21:49Z",
+  "modified": "2023-11-08T04:13:53.714604Z",
   "published": "2023-03-22T22:21:49Z",
+  "aliases": [
+    "RUSTSEC-2022-0092"
+  ],
   "summary": "`rmp-serde` `Raw` and `RawRef` may crash when receiving invalid UTF-8",
   "details": "It was found that `Raw::from_utf8` expects valid UTF-8. If invalid UTF-8 is received it can cause the process to crash.\n",
   "affected": [

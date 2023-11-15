@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j52m-489x-v634",
-  "modified": "2023-06-13T17:45:35Z",
+  "modified": "2023-11-08T04:01:22.077424Z",
   "published": "2021-08-25T20:44:13Z",
   "aliases": [
-    "CVE-2019-16880"
+    "CVE-2019-16880",
+    "RUSTSEC-2019-0021"
   ],
   "summary": "Double free in linea",
   "details": "Affected versions of this crate did not properly implements the Matrix::zip_elements method, which causes an double free when the given trait implementation might panic. This allows an attacker to corrupt or take control of the memory.",

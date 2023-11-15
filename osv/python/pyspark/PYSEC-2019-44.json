@@ -3,9 +3,6 @@
   "modified": "2023-03-14T07:01:09.349985Z",
   "published": "2019-08-07T17:15:00Z",
   "withdrawn": "2023-03-14T07:01:09.349985Z",
-  "aliases": [
-    "CVE-2019-10099"
-  ],
   "details": "Prior to Spark 2.3.3, in certain situations Spark would write user data to local disk unencrypted, even if spark.io.encryption.enabled=true. This includes cached blocks that are fetched to disk (controlled by spark.maxRemoteBlockSizeFetchToMem); in SparkR, using parallelize; in Pyspark, using broadcast and parallelize; and use of python udfs.",
   "affected": [
     {

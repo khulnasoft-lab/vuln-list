@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5mqj-xc49-246p",
-  "modified": "2023-03-22T21:49:43Z",
+  "modified": "2023-11-08T04:12:09.294390Z",
   "published": "2023-03-22T21:23:25Z",
   "aliases": [
-    "CVE-2023-28119"
+    "CVE-2023-28119",
+    "GO-2023-1664"
   ],
   "summary": "crewjam/saml vulnerable to Denial Of Service Via Deflate Decompression Bomb",
   "details": "Our use of flate.NewReader does not limit the size of the input. The user could pass more than 1 MB of data in the HTTP request to the processing functions, which will be decompressed server-side using the Deflate algorithm. Therefore, after repeating the same request multiple times, it is possible to achieve a reliable crash since the operating system kills the process.\n",

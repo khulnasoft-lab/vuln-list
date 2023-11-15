@@ -1,10 +1,10 @@
 {
   "id": "RUSTSEC-2019-0035",
-  "modified": "2021-10-19T22:14:35Z",
+  "modified": "2023-11-08T04:03:10.161773Z",
   "published": "2019-04-19T12:00:00Z",
   "aliases": [
-    "GHSA-mmc9-pwm7-qj5w",
-    "CVE-2020-25576"
+    "CVE-2020-25576",
+    "GHSA-mmc9-pwm7-qj5w"
   ],
   "summary": "Unaligned memory access",
   "details": "Affected versions of this crate violated alignment when casting byte slices to\ninteger slices, resulting in undefined behavior.\n\nThe flaw was corrected by Ralf Jung and Diggory Hardy.",

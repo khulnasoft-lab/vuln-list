@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6j58-grhv-2769",
-  "modified": "2023-04-11T01:43:39.715984Z",
+  "modified": "2023-11-08T04:06:47.591366Z",
   "published": "2022-08-25T00:00:27Z",
   "aliases": [
-    "CVE-2021-4041"
+    "CVE-2021-4041",
+    "PYSEC-2022-253"
   ],
   "summary": "ansible-runner vulnerable to shell command injection",
   "details": "A flaw was found in ansible-runner. An improper escaping of the shell command, while calling the ansible_runner.interface.run_command, can lead to parameters getting executed as host's shell command. A developer could unintentionally write code that gets executed in the host rather than the virtual environment.",

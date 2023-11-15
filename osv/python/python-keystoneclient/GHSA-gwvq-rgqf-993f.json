@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gwvq-rgqf-993f",
-  "modified": "2023-08-04T21:09:29.635694Z",
+  "modified": "2023-11-08T03:57:31.384306Z",
   "published": "2022-05-17T00:13:54Z",
   "aliases": [
-    "CVE-2014-0105"
+    "CVE-2014-0105",
+    "PYSEC-2014-70"
   ],
   "summary": "python-keystoneclient vulnerable to context confusion in Keystone auth_token middleware",
   "details": "A context confusion vulnerability was identified in Keystone auth_token middleware (shipped in python-keystoneclient) before 0.7.0. By doing repeated requests, with sufficient load on the target system, an authenticated user may in certain situations assume another authenticated user's complete identity and multi-tenant authorizations, potentially resulting in a privilege escalation. Note that it is related to a bad interaction between eventlet and python-memcached that should be avoided if the calling process already monkey-patches \"thread\" to use eventlet. Only keystone middleware setups using auth_token with memcache are vulnerable.",

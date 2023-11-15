@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vcg8-98q8-g7mj",
-  "modified": "2023-04-11T01:49:28.787107Z",
+  "modified": "2023-11-08T04:02:41.272964Z",
   "published": "2021-04-07T21:47:31Z",
   "aliases": [
-    "CVE-2020-1740"
+    "CVE-2020-1740",
+    "PYSEC-2020-12"
   ],
   "summary": "Exposure of Sensitive Information to an Unauthorized Actor and Insecure Temporary File in Ansible",
   "details": "A flaw was found in Ansible Engine when using Ansible Vault for editing encrypted files. When a user executes \"ansible-vault edit\", another user on the same computer can read the old and new secret, as it is created in a temporary file with mkstemp and the returned file descriptor is closed and the method write_data is called to write the existing secret in the file. This method will delete the file before recreating it insecurely. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",

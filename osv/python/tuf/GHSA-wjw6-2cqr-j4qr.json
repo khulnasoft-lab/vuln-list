@@ -1,9 +1,12 @@
 {
   "id": "GHSA-wjw6-2cqr-j4qr",
-  "modified": "2023-04-11T01:49:03.835127Z",
+  "modified": "2023-11-08T04:06:52.291043Z",
   "published": "2021-10-19T20:14:36Z",
   "aliases": [
-    "CVE-2021-41131"
+    "CVE-2021-41131",
+    "CVE-2021-41150",
+    "GHSA-r56q-vv3c-6g9c",
+    "PYSEC-2021-376"
   ],
   "summary": "Client metadata path-traversal",
   "details": "### Impact\nIn both clients (`tuf/client` and `tuf/ngclient`), there is a path traversal vulnerability that in the worst case can overwrite files ending in `.json` anywhere on the client system on a call to `get_one_valid_targetinfo()`. It occurs because the rolename is used to form the filename, and may contain path traversal characters (ie `../../name.json`).\n\nThe impact is mitigated by a few facts:\n* It only affects implementations that allow arbitrary rolename selection for delegated targets metadata\n* The attack requires the ability to A) insert new metadata for the path-traversing role and B) get the role delegated by an existing targets metadata\n* The written file content is heavily restricted since it needs to be a valid, signed targets file. The file extension is always .json.\n\n### Patches\nA fix is available in version 0.19 or newer.\n\n### Workarounds\nNone that do not require code changes. Clients can restrict the allowed character set for rolenames, or they can store metadata in files named in a way that is not vulnerable: neither of these approaches is possible without modifying python-tuf.\n\n### References\n- [The issue where this was discovered](https://github.com/theupdateframework/python-tuf/issues/1527)\n- [Proof of Concept demonstrating the flaw](https://github.com/jku/path-traversal-poc)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [python-tuf](https://github.com/theupdateframework/python-tuf/issues)\n* Contact the maintainers by email or Slack\n",

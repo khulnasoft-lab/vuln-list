@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-104",
-  "modified": "2022-03-09T00:18:22.994300Z",
+  "modified": "2023-11-08T04:08:09.477708Z",
   "published": "2022-02-03T13:15:00Z",
   "aliases": [
+    "BIT-2022-21725",
+    "BIT-tensorflow-2022-21725",
     "CVE-2022-21725",
-    "GHSA-v3f7-j968-4h5f"
+    "GHSA-v3f7-j968-4h5f",
+    "PYSEC-2022-49"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. The estimator for the cost of some convolution operations can be made to execute a division by 0. The function fails to check that the stride argument is strictly positive. Hence, the fix is to add a check for the stride argument to ensure it is valid. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

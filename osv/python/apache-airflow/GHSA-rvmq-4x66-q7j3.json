@@ -1,9 +1,12 @@
 {
   "id": "GHSA-rvmq-4x66-q7j3",
-  "modified": "2023-10-22T05:31:28.219949Z",
+  "modified": "2023-11-08T04:02:08.304809Z",
   "published": "2020-07-27T16:57:33Z",
   "aliases": [
-    "CVE-2020-11978"
+    "BIT-2020-11978",
+    "BIT-airflow-2020-11978",
+    "CVE-2020-11978",
+    "PYSEC-2020-14"
   ],
   "summary": "Remote code execution in Apache Airflow",
   "details": "An issue was found in Apache Airflow versions 1.10.10 and below. A remote code/command injection vulnerability was discovered in one of the example DAGs shipped with Airflow which would allow any authenticated user to run arbitrary commands as the user running airflow worker/scheduler (depending on the executor in use). If you already have examples disabled by setting load_examples=False in the config then you are not vulnerable.",

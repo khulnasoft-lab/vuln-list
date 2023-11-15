@@ -1,9 +1,10 @@
 {
   "id": "GHSA-cv7x-6rc6-pq5v",
-  "modified": "2023-06-13T17:00:36Z",
+  "modified": "2023-11-08T04:05:16.917657Z",
   "published": "2021-08-25T20:53:05Z",
   "aliases": [
-    "CVE-2021-25907"
+    "CVE-2021-25907",
+    "RUSTSEC-2021-0010"
   ],
   "summary": "Double free in containers",
   "details": "Upon panic in a user-provided function f, fn mutate() \u0026 fn mutate2 drops twice a same object.\n\nAffected versions of this crate did not guard against double drop while temporarily duplicating an object's ownership with ptr::read().\n\nDropping a same object can result in memory corruption.\n\nThe flaw was corrected in version \"0.9.11\" by fixing the code to abort upon panic.",

@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-616",
-  "modified": "2021-12-09T06:35:08.527679Z",
+  "modified": "2023-11-08T04:06:55.331354Z",
   "published": "2021-11-05T22:15:00Z",
   "aliases": [
+    "BIT-2021-41207",
+    "BIT-tensorflow-2021-41207",
     "CVE-2021-41207",
-    "GHSA-7v94-64hj-m82h"
+    "GHSA-7v94-64hj-m82h",
+    "PYSEC-2021-399",
+    "PYSEC-2021-814"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the implementation of `ParallelConcat` misses some input validation and can produce a division by 0. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

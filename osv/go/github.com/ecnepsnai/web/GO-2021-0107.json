@@ -1,11 +1,13 @@
 {
   "id": "GO-2021-0107",
-  "modified": "2023-06-12T18:45:41Z",
+  "modified": "2023-11-08T04:07:05.900365Z",
   "published": "2021-07-28T18:08:05Z",
   "aliases": [
     "CVE-2021-4236",
+    "CVE-2021-4237",
     "GHSA-5gjg-jgh4-gppm",
-    "GHSA-jpgg-cp2x-qrw3"
+    "GHSA-jpgg-cp2x-qrw3",
+    "GO-2022-0385"
   ],
   "summary": "Panic or authentication bypass in github.com/ecnepsnai/web",
   "details": "Web Sockets do not execute any AuthenticateMethod methods which may be set, leading to a nil pointer dereference if the returned UserData pointer is assumed to be non-nil, or authentication bypass.\n\nThis issue only affects WebSockets with an AuthenticateMethod hook. Request handlers that do not explicitly use WebSockets are not vulnerable.",

@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2017-4",
-  "modified": "2021-07-02T02:41:33.938371Z",
+  "modified": "2023-11-08T03:59:25.112147Z",
   "published": "2017-11-21T17:29:00Z",
   "aliases": [
-    "CVE-2017-7550"
+    "CVE-2017-7550",
+    "GHSA-588w-w6mv-3cw5"
   ],
   "details": "A flaw was found in the way Ansible (2.3.x before 2.3.3, and 2.4.x before 2.4.1) passed certain parameters to the jenkins_plugin module. Remote attackers could use this flaw to expose sensitive information from a remote host's logs. This flaw was fixed by not allowing passwords to be specified in the \"params\" argument, and noting this in the module documentation.",
   "affected": [

@@ -1,9 +1,11 @@
 {
   "id": "GHSA-qwvx-c8j7-5g75",
-  "modified": "2023-06-13T22:01:48Z",
+  "modified": "2023-11-08T04:07:22.808476Z",
   "published": "2022-01-06T22:09:19Z",
   "aliases": [
-    "CVE-2021-45703"
+    "CVE-2021-45703",
+    "GHSA-6692-8qqf-79jc",
+    "RUSTSEC-2021-0112"
   ],
   "summary": "Use of Uninitialized Resource in tectonic_xdv",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided Read implementation.\n\nArbitrary Read implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.\n\nThe problem was fixed in commit `cdff034` by zero-initializing the buffer before passing it to a user-provided Read implementation.",

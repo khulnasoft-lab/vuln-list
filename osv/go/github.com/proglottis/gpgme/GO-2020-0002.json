@@ -1,10 +1,12 @@
 {
   "id": "GO-2020-0002",
-  "modified": "2022-08-29T16:50:59Z",
+  "modified": "2023-11-08T04:04:19.530670Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
     "CVE-2020-8945",
-    "GHSA-m6wg-2mwg-4rfq"
+    "GHSA-m6wg-2mwg-4rfq",
+    "GO-2020-0031",
+    "GO-2021-0096"
   ],
   "details": "The Data, Context, or Key finalizers might run during or before GPGME\noperations. This will release the C structures that are still in use, leading\nto crashes and potentially code execution through a use-after-free.\n",
   "affected": [

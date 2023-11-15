@@ -1,9 +1,11 @@
 {
   "id": "GHSA-55m5-whcv-c49c",
-  "modified": "2023-06-13T20:53:48Z",
+  "modified": "2023-11-08T04:00:14.788260Z",
   "published": "2022-01-06T22:20:28Z",
   "aliases": [
-    "CVE-2018-25023"
+    "CVE-2018-25023",
+    "GHSA-66p5-j55p-32r9",
+    "RUSTSEC-2018-0018"
   ],
   "summary": "Use of Uninitialized Resource in smallvec",
   "details": "Affected versions of this crate called mem::uninitialized() to create values of a user-supplied type T. This is unsound e.g. if T is a reference type (which must be non-null and thus may not remain uninitialized). The flaw was corrected by avoiding the use of mem::uninitialized(), using MaybeUninit instead.",

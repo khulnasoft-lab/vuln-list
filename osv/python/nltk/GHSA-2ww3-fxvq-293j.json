@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2ww3-fxvq-293j",
-  "modified": "2023-08-30T22:47:36.900996Z",
+  "modified": "2023-11-08T04:06:27.021117Z",
   "published": "2021-09-29T17:14:53Z",
   "aliases": [
-    "CVE-2021-3828"
+    "CVE-2021-3828",
+    "PYSEC-2021-356"
   ],
   "summary": "NLTK Vulnerable to REDoS",
   "details": "The nltk package is vulnerable to ReDoS (regular expression denial of service). An attacker that is able to provide as an input to the [`_read_comparison_block()`](https://github.com/nltk/nltk/blob/23f4b1c4b4006b0cb3ec278e801029557cec4e82/nltk/corpus/reader/comparative_sents.py#L259) function in the file `nltk/corpus/reader/comparative_sents.py` may cause an application to consume an excessive amount of CPU.",

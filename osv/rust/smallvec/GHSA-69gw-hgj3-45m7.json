@@ -1,9 +1,10 @@
 {
   "id": "GHSA-69gw-hgj3-45m7",
-  "modified": "2023-06-13T21:37:37Z",
+  "modified": "2023-11-08T04:01:14.344753Z",
   "published": "2021-08-25T20:43:58Z",
   "aliases": [
-    "CVE-2019-15554"
+    "CVE-2019-15554",
+    "RUSTSEC-2019-0012"
   ],
   "summary": "Memory corruption in smallvec",
   "details": "Attempting to call grow on a spilled SmallVec with a value less than the current capacity causes corruption of memory allocator data structures. An attacker that controls the value passed to grow may exploit this flaw to obtain memory contents or gain remote code execution.",

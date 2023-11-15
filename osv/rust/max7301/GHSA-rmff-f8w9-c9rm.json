@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rmff-f8w9-c9rm",
-  "modified": "2021-08-18T19:14:45Z",
+  "modified": "2023-11-08T04:03:46.931470Z",
   "published": "2021-08-25T20:59:22Z",
   "aliases": [
-    "CVE-2020-36472"
+    "CVE-2020-36472",
+    "RUSTSEC-2020-0152"
   ],
   "summary": "Data races in max7301",
   "details": "The `ImmediateIO` and `TransactionalIO` types implement `Sync` for all contained\n`Expander\u003cEI\u003e` types regardless of if the `Expander` itself is safe to use\nacross threads.\n\nAs the `IO` types allow retrieving the `Expander`, this can lead to non-thread\nsafe types being sent across threads as part of the `Expander` leading to data\nraces.\n",

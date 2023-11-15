@@ -1,9 +1,12 @@
 {
   "id": "GHSA-4hq8-gmxx-h6w9",
-  "modified": "2023-02-07T21:30:32Z",
+  "modified": "2023-11-08T04:03:22.552077Z",
   "published": "2021-06-23T17:29:42Z",
   "aliases": [
-    "CVE-2020-27846"
+    "BIT-2020-27846",
+    "BIT-grafana-2020-27846",
+    "CVE-2020-27846",
+    "GO-2021-0058"
   ],
   "summary": "XML Processing error in github.com/crewjam/saml",
   "details": "### Impact\n\nThere are three vulnerabilities in the go `encoding/xml` package that can allow an attacker to forge part of a signed XML document. For details on this vulnerability see [xml-roundtrip-validator](https://github.com/mattermost/xml-roundtrip-validator)\n\n### Patches\n\nIn version 0.4.3, all XML input is validated prior to being parsed.",

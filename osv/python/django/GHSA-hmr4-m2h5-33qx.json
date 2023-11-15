@@ -1,9 +1,12 @@
 {
   "id": "GHSA-hmr4-m2h5-33qx",
-  "modified": "2023-08-23T16:51:13.153474Z",
+  "modified": "2023-11-08T04:03:59.451644Z",
   "published": "2020-02-11T21:03:20Z",
   "aliases": [
-    "CVE-2020-7471"
+    "BIT-2020-7471",
+    "BIT-django-2020-7471",
+    "CVE-2020-7471",
+    "PYSEC-2020-35"
   ],
   "summary": "SQL injection in Django",
   "details": "Django 1.11 before 1.11.28, 2.2 before 2.2.10, and 3.0 before 3.0.3 allows SQL Injection if untrusted data is used as a StringAgg delimiter (e.g., in Django applications that offer downloads of data as a series of rows with a user-specified column delimiter). By passing a suitably crafted delimiter to a contrib.postgres.aggregates.StringAgg instance, it was possible to break escaping and inject malicious SQL.",

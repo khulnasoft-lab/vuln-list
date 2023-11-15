@@ -1,9 +1,12 @@
 {
   "id": "GO-2021-0143",
-  "modified": "2022-05-13T18:33:00Z",
+  "modified": "2023-11-08T04:03:07.820421Z",
   "published": "2022-02-17T18:15:47Z",
   "aliases": [
-    "CVE-2020-24553"
+    "BIT-2020-24553",
+    "BIT-golang-2020-24553",
+    "CVE-2020-24553",
+    "GO-2021-0226"
   ],
   "details": "When a Handler does not explicitly set the Content-Type header,\nthe net/http/cgi and net/http/fcgi packages default to \"text/html\",\nwhich can cause a Cross-Site Scripting vulnerability if an attacker\ncan control any part of the contents of a response.\n",
   "affected": [

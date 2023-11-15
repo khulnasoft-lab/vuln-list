@@ -1,7 +1,12 @@
 {
   "id": "GHSA-r6ff-2q3c-v3pv",
-  "modified": "2021-08-09T17:13:06Z",
+  "modified": "2023-11-08T04:01:32.674538Z",
   "published": "2021-08-25T21:00:01Z",
+  "aliases": [
+    "CVE-2019-25054",
+    "GHSA-24g6-5rx7-58wj",
+    "RUSTSEC-2019-0037"
+  ],
   "summary": "Compiler optimisation leads to SEGFAULT",
   "details": "Affected versions of the `pnet` crate were optimized out by compiler, which caused dereference of uninitialized file descriptor which caused segfault.",
   "affected": [

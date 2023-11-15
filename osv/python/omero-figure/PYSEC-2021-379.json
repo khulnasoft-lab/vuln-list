@@ -1,10 +1,11 @@
 {
   "id": "PYSEC-2021-379",
-  "modified": "2021-10-24T23:24:38.547709Z",
+  "modified": "2023-11-08T04:06:52.354646Z",
   "published": "2021-10-14T16:15:00Z",
   "aliases": [
     "CVE-2021-41132",
-    "GHSA-g67g-hvc3-xmvf"
+    "GHSA-g67g-hvc3-xmvf",
+    "PYSEC-2021-372"
   ],
   "details": "OMERO.web provides a web based client and plugin infrastructure. In versions prior to 5.11.0, a variety of templates do not perform proper sanitization through HTML escaping. Due to the lack of sanitization and use of ``jQuery.html()``, there are a whole host of cross-site scripting possibilities with specially crafted input to a variety of fields. This issue is patched in version 5.11.0. There are no known workarounds aside from upgrading.",
   "affected": [

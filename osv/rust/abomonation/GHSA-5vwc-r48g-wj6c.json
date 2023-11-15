@@ -1,9 +1,11 @@
 {
   "id": "GHSA-5vwc-r48g-wj6c",
-  "modified": "2023-06-13T16:03:48Z",
+  "modified": "2023-11-08T04:07:23.115580Z",
   "published": "2022-01-06T22:08:22Z",
   "aliases": [
-    "CVE-2021-45708"
+    "CVE-2021-45708",
+    "GHSA-hfxp-p695-629x",
+    "RUSTSEC-2021-0120"
   ],
   "summary": "Abomonation transmutes \u0026T to and from \u0026[u8] without sufficient constraints",
   "details": "An issue was discovered in the abomonation crate through version 0.7.3 for Rust. Because transmute operations are insufficiently constrained, there can be an information leak or ASLR bypass.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-f997-8gxg-r354",
-  "modified": "2022-05-05T18:16:25Z",
+  "modified": "2023-11-08T04:03:46.074313Z",
   "published": "2021-08-25T20:58:09Z",
   "aliases": [
-    "CVE-2020-36458"
+    "CVE-2020-36458",
+    "RUSTSEC-2020-0138"
   ],
   "summary": "Data races in lexer",
   "details": "lexer is a plugin based lexical reader.Affected versions of this crate implements Sync for ReaderResult\u003cT, E\u003e with the trait bound T: Send, E: Send. Since matching on the public enum ReaderResult\u003cT, E\u003e provides access to \u0026T \u0026 \u0026E, allowing data race to a non-Sync type T or E. This can result in a memory corruption when multiple threads concurrently access \u0026T or \u0026E. Suggested fix for the bug is change the trait bounds imposed on T \u0026 E to be T: Sync, E: Sync.",

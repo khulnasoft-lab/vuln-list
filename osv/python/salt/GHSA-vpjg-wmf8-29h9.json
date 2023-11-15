@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vpjg-wmf8-29h9",
-  "modified": "2023-11-05T05:19:57.941549Z",
+  "modified": "2023-11-08T04:11:22.748477Z",
   "published": "2023-09-05T12:30:16Z",
   "aliases": [
-    "CVE-2023-20897"
+    "CVE-2023-20897",
+    "PYSEC-2023-166"
   ],
   "summary": "Salt vulnerable to denial of service",
   "details": "Salt masters prior to 3005.2 or 3006.2 contain a DOS in minion return. After receiving several bad packets on the request server equal to the number of worker threads, the master will become unresponsive to return requests until restarted.\n",

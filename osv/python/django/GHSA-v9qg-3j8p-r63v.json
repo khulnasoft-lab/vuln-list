@@ -1,9 +1,10 @@
 {
   "id": "GHSA-v9qg-3j8p-r63v",
-  "modified": "2023-04-11T01:24:17.617147Z",
+  "modified": "2023-11-08T04:01:09.464696Z",
   "published": "2019-08-06T01:43:31Z",
   "aliases": [
-    "CVE-2019-14235"
+    "CVE-2019-14235",
+    "PYSEC-2019-14"
   ],
   "summary": "Uncontrolled Recursion in Django",
   "details": "An issue was discovered in Django 1.11.x before 1.11.23, 2.1.x before 2.1.11, and 2.2.x before 2.2.4. If passed certain inputs, django.utils.encoding.uri_to_iri could lead to significant memory usage due to a recursion when repercent-encoding invalid UTF-8 octet sequences.",

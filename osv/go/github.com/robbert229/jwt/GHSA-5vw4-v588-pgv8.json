@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5vw4-v588-pgv8",
-  "modified": "2023-01-10T16:02:05Z",
+  "modified": "2023-11-08T03:57:48.842446Z",
   "published": "2022-12-28T00:30:23Z",
   "aliases": [
-    "CVE-2015-10004"
+    "CVE-2015-10004",
+    "GO-2020-0023"
   ],
   "summary": "robbert229/jwt's token validation methods vulnerable to a timing side-channel during HMAC comparison",
   "details": "Token validation methods are susceptible to a timing side-channel during HMAC comparison. With a large enough number of requests over a low latency connection, an attacker may use this to determine the expected HMAC.",

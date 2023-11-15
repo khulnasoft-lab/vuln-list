@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hw4g-fhcp-x5mq",
-  "modified": "2023-04-11T01:24:27.307440Z",
+  "modified": "2023-11-08T03:56:57.186012Z",
   "published": "2022-05-17T05:47:39Z",
   "aliases": [
-    "CVE-2010-3494"
+    "CVE-2010-3494",
+    "PYSEC-2010-11"
   ],
   "summary": "Concurrent Execution using Shared Resource with Improper Synchronization in pyftpdlib",
   "details": "Race condition in the FTPHandler class in ftpserver.py in pyftpdlib before 0.5.2 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected value of None for the address, or an ECONNABORTED, EAGAIN, or EWOULDBLOCK error, a related issue to CVE-2010-3492.",

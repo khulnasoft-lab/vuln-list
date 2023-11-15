@@ -1,11 +1,11 @@
 {
   "id": "PYSEC-2022-226",
-  "modified": "2022-07-14T05:11:54.875994Z",
+  "modified": "2023-11-08T04:08:45.680545Z",
   "published": "2022-07-12T15:15:00Z",
   "aliases": [
     "CVE-2022-25303",
-    "SNYK-PYTHON-WHOOGLESEARCH-2803306",
-    "GHSA-mxvc-fwgx-j778"
+    "GHSA-mxvc-fwgx-j778",
+    "SNYK-PYTHON-WHOOGLESEARCH-2803306"
   ],
   "details": "The package whoogle-search before 0.7.2 are vulnerable to Cross-site Scripting (XSS) via the query string parameter q. In the case where it does not contain the http string, it is used to build the error_message that is then rendered in the error.html template, using the [flask.render_template](https://flask.palletsprojects.com/en/2.1.x/api/flask.render_template) function. However, the error_message is rendered using the [| safe filter](https://jinja.palletsprojects.com/en/3.1.x/templates/working-with-automatic-escaping), meaning the user input is not escaped.",
   "affected": [

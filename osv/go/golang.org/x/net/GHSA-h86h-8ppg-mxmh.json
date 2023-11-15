@@ -1,9 +1,12 @@
 {
   "id": "GHSA-h86h-8ppg-mxmh",
-  "modified": "2023-10-02T16:31:17Z",
+  "modified": "2023-11-08T04:05:48.956064Z",
   "published": "2022-05-24T19:03:29Z",
   "aliases": [
-    "CVE-2021-31525"
+    "BIT-2021-31525",
+    "BIT-golang-2021-31525",
+    "CVE-2021-31525",
+    "GO-2022-0236"
   ],
   "summary": "golang.org/x/net/http/httpguts vulnerable to Uncontrolled Recursion",
   "details": "golang.org/x/net/http/httpguts in Go before 1.15.12 and 1.16.x before 1.16.4 allows remote attackers to cause a denial of service (panic) via a large header to ReadRequest or ReadResponse. Server, Transport, and Client can each be affected in some configurations.",

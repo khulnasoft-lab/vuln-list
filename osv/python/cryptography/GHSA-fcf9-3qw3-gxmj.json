@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fcf9-3qw3-gxmj",
-  "modified": "2023-04-11T01:25:48.872125Z",
+  "modified": "2023-11-08T03:59:44.669160Z",
   "published": "2018-07-31T18:28:09Z",
   "aliases": [
-    "CVE-2018-10903"
+    "CVE-2018-10903",
+    "PYSEC-2018-52"
   ],
   "summary": "High severity vulnerability that affects cryptography",
   "details": "A flaw was found in python-cryptography versions between \u003e=1.9.0 and \u003c2.3. The finalize_with_tag API did not enforce a minimum tag length. If a user did not validate the input length prior to passing it to finalize_with_tag an attacker could craft an invalid payload with a shortened tag (e.g. 1 byte) such that they would have a 1 in 256 chance of passing the MAC check. GCM tag forgeries can cause key leakage.",

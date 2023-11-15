@@ -1,9 +1,10 @@
 {
   "id": "GHSA-w578-j992-554x",
-  "modified": "2023-08-23T22:48:32.607497Z",
+  "modified": "2023-11-08T03:59:24.627719Z",
   "published": "2018-09-06T03:28:50Z",
   "aliases": [
-    "CVE-2017-7481"
+    "CVE-2017-7481",
+    "PYSEC-2018-41"
   ],
   "summary": "Ansible fails to properly mark lookup-plugin results as unsafe",
   "details": "Ansible before versions 2.3.1.0 and 2.4.0.0 fails to properly mark lookup-plugin results as unsafe. If an attacker could control the results of lookup() calls, they could inject Unicode strings to be parsed by the jinja2 templating system, resulting in code execution. By default, the jinja2 templating language is now marked as 'unsafe' and is not evaluated.",

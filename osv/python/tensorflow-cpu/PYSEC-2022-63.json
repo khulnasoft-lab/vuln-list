@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-63",
-  "modified": "2022-03-09T00:17:31.682282Z",
+  "modified": "2023-11-08T04:08:10.330130Z",
   "published": "2022-02-03T14:15:00Z",
   "aliases": [
+    "BIT-2022-21739",
+    "BIT-tensorflow-2022-21739",
     "CVE-2022-21739",
-    "GHSA-3mw4-6rj6-74g5"
+    "GHSA-3mw4-6rj6-74g5",
+    "PYSEC-2022-118"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `QuantizedMaxPool` has an undefined behavior where user controlled inputs can trigger a reference binding to null pointer. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

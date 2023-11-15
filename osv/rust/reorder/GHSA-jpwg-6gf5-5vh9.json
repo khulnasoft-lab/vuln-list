@@ -1,9 +1,12 @@
 {
   "id": "GHSA-jpwg-6gf5-5vh9",
-  "modified": "2023-06-13T20:49:19Z",
+  "modified": "2023-11-08T04:05:44.188314Z",
   "published": "2021-08-25T20:54:10Z",
   "aliases": [
-    "CVE-2021-29942"
+    "CVE-2021-29941",
+    "CVE-2021-29942",
+    "GHSA-3h87-v52r-p9rg",
+    "RUSTSEC-2021-0050"
   ],
   "summary": "Out of bounds write in reorder",
   "details": "swap_index takes an iterator and swaps the items with their corresponding indexes. It reserves capacity and sets the length of the vector based on the .len() method of the iterator.\n\nIf the len() returned by the iterator is larger than the actual number of elements yielded, then swap_index creates a vector containing uninitialized members. If the len() returned by the iterator is smaller than the actual number of members yielded, then swap_index can write out of bounds past its allocated vector.\n\nAs noted by the Rust documentation, len() and size_hint() are primarily meant for optimization and incorrect values from their implementations should not lead to memory safety violations.\n",

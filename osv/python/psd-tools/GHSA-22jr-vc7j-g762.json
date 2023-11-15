@@ -1,9 +1,10 @@
 {
   "id": "GHSA-22jr-vc7j-g762",
-  "modified": "2023-08-30T23:01:08.112249Z",
+  "modified": "2023-11-08T04:01:58.343121Z",
   "published": "2020-03-16T22:46:19Z",
   "aliases": [
-    "CVE-2020-10571"
+    "CVE-2020-10571",
+    "PYSEC-2020-91"
   ],
   "summary": "Potential buffer overflow in psd-tools",
   "details": "### Impact\nAn issue was discovered in psd-tools before 1.9.4. The Cython implementation of RLE decoding did not check for malformed PSD input data during decoding to the PIL.Image or NumPy format, leading to a Buffer Overflow.\n\n### Patches\nUsers of psd-tools version v1.8.37 to v1.9.3 should upgrade to v1.9.4.\n\n### Workarounds\nWithout Cython present on installation, buffer overflow does not occur but IndexError will be thrown. However, already installed psd-tools with Cython extention should be upgraded.\n\n### References\nhttps://github.com/psd-tools/psd-tools/pull/198\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [psd-tools](https://github.com/psd-tools/psd-tools/issues)",

@@ -1,9 +1,11 @@
 {
   "id": "GHSA-ff2r-xpwq-6whj",
-  "modified": "2023-06-13T17:10:49Z",
+  "modified": "2023-11-08T04:07:21.997465Z",
   "published": "2022-01-06T22:12:14Z",
   "aliases": [
-    "CVE-2021-45689"
+    "CVE-2021-45689",
+    "GHSA-28p5-7rg4-8v99",
+    "RUSTSEC-2021-0091"
   ],
   "summary": "Use of Uninitialized Resource in gfx-auxil",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided Read implementation.\n\nArbitrary Read implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.",

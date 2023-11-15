@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3w8g-xr3f-2mp8",
-  "modified": "2021-08-24T18:08:59Z",
+  "modified": "2023-11-08T04:06:25.921387Z",
   "published": "2021-08-25T20:55:49Z",
   "aliases": [
-    "CVE-2021-38190"
+    "CVE-2021-38190",
+    "RUSTSEC-2021-0070"
   ],
   "summary": "Out of bounds write in nalgebra",
   "details": "The `Deserialize` implementation for `VecStorage` did not maintain the invariant that the number of elements must equal `nrows * ncols`. Deserialization of specially crafted inputs could allow memory access beyond allocation of the vector.\n\nThis flaw was introduced in v0.11.0 ([`086e6e`](https://github.com/dimforge/nalgebra/commit/086e6e719f53fecba6dadad2e953a487976387f5)) due to the addition of an automatically derived implementation of `Deserialize` for `MatrixVec`. `MatrixVec` was later renamed to `VecStorage` in v0.16.13 ([`0f66403`](https://github.com/dimforge/nalgebra/commit/0f66403cbbe9eeac15cedd8a906c0d6a3d8841f2)) and continued to use the automatically derived implementation of `Deserialize`.",

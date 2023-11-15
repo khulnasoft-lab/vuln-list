@@ -1,9 +1,10 @@
 {
   "id": "GHSA-968f-66r5-5v74",
-  "modified": "2023-08-23T00:18:17.948530Z",
+  "modified": "2023-11-08T04:01:21.767656Z",
   "published": "2020-01-06T18:44:21Z",
   "aliases": [
-    "CVE-2019-16789"
+    "CVE-2019-16789",
+    "PYSEC-2019-138"
   ],
   "summary": "HTTP Request Smuggling in Waitress: Invalid whitespace characters in headers (Follow-up)",
   "details": "### Impact\n\nThe patches introduced to fix https://github.com/Pylons/waitress/security/advisories/GHSA-m5ff-3wj3-8ph4 were not complete and still would allow an attacker to smuggle requests/split a HTTP request with invalid data.\n\nThis updates the existing CVE with ID: CVE-2019-16789\n\n### Patches\n\nWaitress version 1.4.2 has been updated to now validate HTTP headers better to avoid the issue, completely fixing all known issues with whitespace.\n\n### Workarounds\n\nThere are no work-arounds, upgrading to Waitress 1.4.2 is highly recommended.\n\n### References\n\nSee https://github.com/Pylons/waitress/security/advisories/GHSA-m5ff-3wj3-8ph4 for more information on the security issue.\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* open an issue at https://github.com/Pylons/waitress/issues (if not sensitive or security related)\n* email the Pylons Security mailing list: pylons-project-security@googlegroups.com (if security related)",

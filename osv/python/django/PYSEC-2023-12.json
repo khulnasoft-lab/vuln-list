@@ -1,9 +1,12 @@
 {
   "id": "PYSEC-2023-12",
-  "modified": "2023-05-04T03:49:45.437728Z",
+  "modified": "2023-11-08T04:11:43.579773Z",
   "published": "2023-02-01T19:15:00Z",
   "aliases": [
-    "CVE-2023-23969"
+    "BIT-2023-23969",
+    "BIT-django-2023-23969",
+    "CVE-2023-23969",
+    "GHSA-q2jf-h9jm-m7p4"
   ],
   "details": "In Django 3.2 before 3.2.17, 4.0 before 4.0.9, and 4.1 before 4.1.6, the parsed values of Accept-Language headers are cached in order to avoid repetitive parsing. This leads to a potential denial-of-service vector via excessive memory usage if the raw value of Accept-Language headers is very large.",
   "affected": [

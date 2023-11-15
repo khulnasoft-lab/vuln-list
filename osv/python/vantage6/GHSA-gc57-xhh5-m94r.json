@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gc57-xhh5-m94r",
-  "modified": "2023-11-05T05:23:02.506408Z",
+  "modified": "2023-11-08T04:13:26.700629Z",
   "published": "2023-10-13T19:29:13Z",
   "aliases": [
-    "CVE-2023-41882"
+    "CVE-2023-41882",
+    "PYSEC-2023-201"
   ],
   "summary": "Improper Access Control in vantage6",
   "details": "### Impact\nThe endpoint /api/collaboration/{id}/task is used to collect all tasks from a certain collaboration. To get such tasks, a user should have permission to view the collaboration and to view the tasks in it. However, currently it is only checked if the user has permission to view the collaboration.\n\n### Patches\nNo\n\n### Workarounds\nNone\n\n### References\nNone \n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [vantage6@iknl.nl](mailto:vantage6@iknl.nl)\n",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-56wv-2wr9-3h9r",
-  "modified": "2023-10-29T05:31:49.977549Z",
+  "modified": "2023-11-08T04:02:10.552763Z",
   "published": "2021-10-12T16:30:37Z",
   "aliases": [
-    "CVE-2020-12607"
+    "CVE-2020-12607",
+    "PYSEC-2020-42"
   ],
   "summary": "Improper Verification of Cryptographic Signature in fastecdsa",
   "details": "An issue was discovered in fastecdsa before 2.1.2. When using the NIST P-256 curve in the ECDSA implementation, the point at infinity is mishandled. This means that for an extreme value in k and s\u003csup\u003e-1\u003c/sup\u003e, the signature verification fails even if the signature is correct. This behavior is not solely a usability problem. There are some threat models where an attacker can benefit by successfully guessing users for whom signature verification will fail.",

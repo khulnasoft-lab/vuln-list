@@ -1,11 +1,11 @@
 {
   "id": "PYSEC-2022-204",
-  "modified": "2022-06-08T10:35:31.256727Z",
+  "modified": "2023-11-08T04:08:29.124993Z",
   "published": "2022-06-08T08:15:00Z",
   "aliases": [
     "CVE-2022-24065",
-    "SNYK-PYTHON-COOKIECUTTER-2414281",
-    "GHSA-f4q6-9qm4-h8j4"
+    "GHSA-f4q6-9qm4-h8j4",
+    "SNYK-PYTHON-COOKIECUTTER-2414281"
   ],
   "details": "The package cookiecutter before 2.1.1 are vulnerable to Command Injection via hg argument injection. When calling the cookiecutter function from Python code with the checkout parameter, it is passed to the hg checkout command in a way that additional flags can be set. The additional flags can be used to perform a command injection.",
   "affected": [

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8wxf-c45w-g66g",
-  "modified": "2023-04-11T01:38:50.689119Z",
+  "modified": "2023-11-08T04:09:39.541853Z",
   "published": "2022-09-30T00:00:47Z",
   "aliases": [
-    "CVE-2022-3326"
+    "CVE-2022-3326",
+    "PYSEC-2022-297"
   ],
   "summary": "rdiffweb vulnerable to password complexity bypass leading to weak passwords",
   "details": "ikus060/rdiffweb prior to 2.4.9 allows a user to set there password to all spaces. While rdiffweb has a password policy requiring passwords to be between 8 and 128 characters, it does not validate the password entropy, allowing users to bypass password complexity requirements with weak passwords. This issue has been fixed in version 2.4.9. No workarounds are known to exist.",

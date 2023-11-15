@@ -1,9 +1,11 @@
 {
   "id": "GHSA-24g6-5rx7-58wj",
-  "modified": "2022-01-07T16:13:36Z",
+  "modified": "2023-11-08T04:01:32.674538Z",
   "published": "2022-01-06T22:18:07Z",
   "aliases": [
-    "CVE-2019-25054"
+    "CVE-2019-25054",
+    "GHSA-r6ff-2q3c-v3pv",
+    "RUSTSEC-2019-0037"
   ],
   "summary": "Missing Initialization of Resource in pnet",
   "details": "An issue was discovered in the pnet crate before 0.27.2 for Rust. There is a segmentation fault (upon attempted dereference of an uninitialized descriptor) because of an erroneous IcmpTransportChannelIterator compiler optimization.",

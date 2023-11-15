@@ -1,9 +1,10 @@
 {
   "id": "GHSA-p75j-wc34-527c",
-  "modified": "2023-04-11T01:47:02.870442Z",
+  "modified": "2023-11-08T04:00:43.347494Z",
   "published": "2021-10-12T16:31:59Z",
   "aliases": [
-    "CVE-2019-10217"
+    "CVE-2019-10217",
+    "PYSEC-2019-3"
   ],
   "summary": "Exposure of Sensitive Information to an Unauthorized Actor in ansible",
   "details": "A flaw was found in ansible 2.8.0 before 2.8.4. Fields managing sensitive data should be set as such by no_log feature. Some of these fields in GCP modules are not set properly. service_account_contents() which is common class for all gcp modules is not setting no_log to True. Any sensitive data managed by that function would be leak as an output when running ansible playbooks.",

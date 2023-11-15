@@ -1,9 +1,12 @@
 {
   "id": "GHSA-9g2w-5f3v-mfmm",
-  "modified": "2023-04-11T01:33:18.185450Z",
+  "modified": "2023-11-08T04:02:08.547861Z",
   "published": "2020-07-27T16:57:33Z",
   "aliases": [
-    "CVE-2020-11982"
+    "BIT-2020-11982",
+    "BIT-airflow-2020-11982",
+    "CVE-2020-11982",
+    "PYSEC-2020-16"
   ],
   "summary": "Insecure default config of Celery worker in Apache Airflow",
   "details": "An issue was found in Apache Airflow versions 1.10.10 and below. When using CeleryExecutor, if an attack can connect to the broker (Redis, RabbitMQ) directly, it was possible to insert a malicious payload directly to the broker which could lead to a deserialization attack (and thus remote code execution) on the Worker.",

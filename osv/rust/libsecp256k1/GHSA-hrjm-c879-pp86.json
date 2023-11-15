@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hrjm-c879-pp86",
-  "modified": "2023-08-25T00:12:24Z",
+  "modified": "2023-11-08T04:01:32.045348Z",
   "published": "2021-08-25T20:46:46Z",
   "aliases": [
-    "CVE-2019-25003"
+    "CVE-2019-25003",
+    "RUSTSEC-2019-0027"
   ],
   "summary": "libsecp256k1 contains side-channel timing attack",
   "details": "Versions of libsecp256k1 prior to 0.3.1 did not execute `Scalar::check_overflow` in constant time. This allows an attacker to potentially leak information via a timing attack. The flaw was corrected by modifying `Scalar::check_overflow` to execute in constant time.",

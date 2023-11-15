@@ -1,9 +1,12 @@
 {
   "id": "GHSA-3gh2-xw74-jmcw",
-  "modified": "2023-04-11T01:41:15.661207Z",
+  "modified": "2023-11-08T04:04:20.259521Z",
   "published": "2020-06-05T14:52:07Z",
   "aliases": [
-    "CVE-2020-9402"
+    "BIT-2020-9402",
+    "BIT-django-2020-9402",
+    "CVE-2020-9402",
+    "PYSEC-2020-36"
   ],
   "summary": "SQL injection in Django",
   "details": "Django 1.11 before 1.11.29, 2.2 before 2.2.11, and 3.0 before 3.0.4 allows SQL Injection if untrusted data is used as a tolerance parameter in GIS functions and aggregates on Oracle. By passing a suitably crafted tolerance to GIS functions and aggregates on Oracle, it was possible to break escaping and inject malicious SQL.",

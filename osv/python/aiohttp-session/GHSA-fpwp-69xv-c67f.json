@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fpwp-69xv-c67f",
-  "modified": "2023-10-23T05:41:13.979148Z",
+  "modified": "2023-11-08T03:59:38.712396Z",
   "published": "2018-09-13T15:46:40Z",
   "aliases": [
-    "CVE-2018-1000519"
+    "CVE-2018-1000519",
+    "PYSEC-2018-80"
   ],
   "summary": "aiohttp-session Session Fixation vulnerability",
   "details": "The pypi package aiohttp-session before 2.4.0 contained a Session Fixation vulnerability in `load_session` function for RedisStorage that can result in Session Hijacking. This attack appear to be exploitable via Any method that allows setting session cookies (`?session=\u003c\u003e`, or meta tags or script tags with Set-Cookie).",

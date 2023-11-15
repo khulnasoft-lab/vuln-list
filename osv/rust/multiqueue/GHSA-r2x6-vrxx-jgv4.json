@@ -1,9 +1,11 @@
 {
   "id": "GHSA-r2x6-vrxx-jgv4",
-  "modified": "2023-06-13T18:34:57Z",
+  "modified": "2023-11-08T04:03:46.381332Z",
   "published": "2021-08-25T20:58:07Z",
   "aliases": [
-    "CVE-2020-36463"
+    "CVE-2020-36463",
+    "GHSA-jf43-3v8j-qwwr",
+    "RUSTSEC-2020-0143"
   ],
   "summary": "Data races in multiqueue",
   "details": "Affected versions of this crate unconditionally implemented Send for types used in queue implementations (InnerSend\u003cRW, T\u003e, InnerRecv\u003cRW, T\u003e, FutInnerSend\u003cRW, T\u003e, FutInnerRecv\u003cRW, T\u003e). This allows users to send non-Send types to other threads, which can lead to data race bugs or other undefined behavior.",

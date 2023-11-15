@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8xgx-75qw-6268",
-  "modified": "2022-06-08T22:33:10Z",
+  "modified": "2023-11-08T03:56:50.024917Z",
   "published": "2022-05-01T18:45:58Z",
   "aliases": [
-    "CVE-2007-6741"
+    "CVE-2007-6741",
+    "PYSEC-2010-25"
   ],
   "summary": "Improper privilege management in pyftpdlib",
   "details": "The ftp_PORT function in FTPServer.py in pyftpdlib before 0.2.0 does not prevent TCP connections to privileged ports if the destination IP address matches the source IP address of the connection from the FTP client, which might allow remote authenticated users to conduct FTP bounce attacks via crafted FTP data, as demonstrated by an FTP bounce attack against a NAT server, a related issue to CVE-1999-0017.",

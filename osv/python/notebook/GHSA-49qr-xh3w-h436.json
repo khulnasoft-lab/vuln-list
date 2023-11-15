@@ -1,9 +1,10 @@
 {
   "id": "GHSA-49qr-xh3w-h436",
-  "modified": "2023-10-26T05:21:45.911604Z",
+  "modified": "2023-11-08T04:00:07.633078Z",
   "published": "2018-11-21T22:15:47Z",
   "aliases": [
-    "CVE-2018-19351"
+    "CVE-2018-19351",
+    "PYSEC-2018-17"
   ],
   "summary": "Jupyter Notebook XSS via untrusted notebooks",
   "details": "Jupyter Notebook before 5.7.1 allows XSS via an untrusted notebook because nbconvert responses are considered to have the same origin as the notebook server. In other words, nbconvert endpoints can execute JavaScript with access to the server API. In notebook/nbconvert/handlers.py, NbconvertFileHandler and NbconvertPostHandler do not set a Content Security Policy to prevent this.",

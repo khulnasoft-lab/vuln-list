@@ -1,9 +1,12 @@
 {
   "id": "GHSA-4r78-hx75-jjj2",
-  "modified": "2023-02-07T22:44:43Z",
+  "modified": "2023-11-08T04:00:04.569776Z",
   "published": "2022-05-13T01:19:29Z",
   "aliases": [
-    "CVE-2018-17847"
+    "CVE-2018-17847",
+    "CVE-2018-17848",
+    "GHSA-mv93-wvcp-7m7r",
+    "GO-2022-0197"
   ],
   "summary": "golang.org/x/net/html has Improper Restriction of Operations within the Bounds of a Memory Buffer",
   "details": "The html package (aka `x/net/html`) through 2018-09-25 in Go mishandles `\u003csvg\u003e\u003ctemplate\u003e\u003cdesc\u003e\u003ct\u003e\u003csvg\u003e\u003c/template\u003e`, leading to a `panic: runtime error` (index out of range) in `(*nodeStack).pop` in node.go, called from `(*parser).clearActiveFormattingElements`, during an `html.Parse` call.",

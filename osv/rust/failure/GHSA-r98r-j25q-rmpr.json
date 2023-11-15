@@ -1,9 +1,13 @@
 {
   "id": "GHSA-r98r-j25q-rmpr",
-  "modified": "2023-08-25T00:12:20Z",
+  "modified": "2023-11-08T04:01:32.420171Z",
   "published": "2021-08-25T20:46:38Z",
   "aliases": [
-    "CVE-2019-25010"
+    "CVE-2019-25010",
+    "CVE-2020-25575",
+    "GHSA-jq66-xh47-j9f3",
+    "RUSTSEC-2019-0036",
+    "RUSTSEC-2020-0036"
   ],
   "summary": "Rust Failure Crate Vulnerable to Type confusion",
   "details": "Safe Rust code can implement malfunctioning `__private_get_type_id__` and cause type confusion when downcasting, which is an undefined behavior.\n\nUsers who derive Fail trait are not affected.",

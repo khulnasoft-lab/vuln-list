@@ -1,7 +1,10 @@
 {
   "id": "GHSA-2qv5-7mw5-j3cg",
-  "modified": "2023-04-03T22:53:18Z",
+  "modified": "2023-11-08T04:14:12.609447Z",
   "published": "2023-04-03T22:53:18Z",
+  "aliases": [
+    "RUSTSEC-2023-0031"
+  ],
   "summary": "spin-rs initialisation failure in `Once::try_call_once` can lead to undefined behaviour for other initialisers",
   "details": "`Once::try_call_once` is unsound if invoked more than once concurrently and any call fails to initialise successfully.\n",
   "affected": [

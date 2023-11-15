@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2xpj-f5g2-8p7m",
-  "modified": "2023-10-29T05:24:54.116014Z",
+  "modified": "2023-11-08T04:02:41.394352Z",
   "published": "2021-04-20T16:30:51Z",
   "aliases": [
-    "CVE-2020-17446"
+    "CVE-2020-17446",
+    "PYSEC-2020-24"
   ],
   "summary": "Asyncpg Arbitrary Code Execution Via Access to an Uninitialized Pointer",
   "details": "asyncpg before 0.21.0 allows a malicious PostgreSQL server to trigger a crash or execute arbitrary code (on a database client) via a crafted server response, because of access to an uninitialized pointer in the array data decoder.",

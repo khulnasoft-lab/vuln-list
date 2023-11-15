@@ -1,10 +1,10 @@
 {
   "id": "RUSTSEC-2022-0066",
-  "modified": "2022-11-02T22:38:38Z",
+  "modified": "2023-11-08T04:10:17.959579Z",
   "published": "2022-10-30T12:00:00Z",
   "aliases": [
-    "GHSA-9398-5ghf-7pr6",
-    "CVE-2022-39294"
+    "CVE-2022-39294",
+    "GHSA-9398-5ghf-7pr6"
   ],
   "summary": "Denial of Service from unchecked request length",
   "details": "Prior to version 0.4.2, `conduit-hyper` did not check any limit on a request's\nlength before calling `hyper::body::to_bytes`. An attacker could send a\nmalicious request with an abnormally large `Content-Length`, which could lead\nto a panic if memory allocation failed for that request.\n\nIn version 0.4.2, `conduit-hyper` sets an internal limit of 128 MiB per\nrequest, otherwise returning status 400 (\"Bad Request\").",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vg35-vc9f-q7x2",
-  "modified": "2023-04-11T01:24:14.024341Z",
+  "modified": "2023-11-08T04:00:41.268550Z",
   "published": "2019-07-26T16:09:54Z",
   "aliases": [
-    "CVE-2019-1010268"
+    "CVE-2019-1010268",
+    "PYSEC-2019-184"
   ],
   "summary": "Improper Restriction of XML External Entity Reference in ladon",
   "details": "Ladon since 0.6.1 (since ebef0aae48af78c159b6fce81bc6f5e7e0ddb059) is affected by: XML External Entity (XXE). The impact is: Information Disclosure, reading files and reaching internal network endpoints. The component is: SOAP request handlers. For instance: https://bitbucket.org/jakobsg/ladon/src/42944fc012a3a48214791c120ee5619434505067/src/ladon/interfaces/soap.py#lines-688. The attack vector is: Send a specially crafted SOAP call.",

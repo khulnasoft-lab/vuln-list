@@ -1,9 +1,12 @@
 {
   "id": "PYSEC-2020-95",
-  "modified": "2021-04-02T12:15:00Z",
+  "modified": "2023-11-08T04:04:20.624478Z",
   "published": "2020-06-23T22:15:00Z",
   "aliases": [
-    "CVE-2020-9480"
+    "BIT-2020-9480",
+    "BIT-spark-2020-9480",
+    "CVE-2020-9480",
+    "GHSA-wgx7-jwwm-cgjv"
   ],
   "details": "In Apache Spark 2.4.5 and earlier, a standalone resource manager's master may be configured to require authentication (spark.authenticate) via a shared secret. When enabled, however, a specially-crafted RPC to the master can succeed in starting an application's resources on the Spark cluster, even without the shared key. This can be leveraged to execute shell commands on the host machine. This does not affect Spark clusters using other resource managers (YARN, Mesos, etc).",
   "affected": [

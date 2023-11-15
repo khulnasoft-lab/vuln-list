@@ -1,9 +1,10 @@
 {
   "id": "GHSA-w942-gw6m-p62c",
-  "modified": "2023-08-30T11:40:58Z",
+  "modified": "2023-11-08T04:03:33.317330Z",
   "published": "2021-06-23T17:53:05Z",
   "aliases": [
-    "CVE-2020-35380"
+    "CVE-2020-35380",
+    "GO-2021-0059"
   ],
   "summary": "Denial of service in GJSON",
   "details": "GJSON before 1.6.4 allows attackers to cause a denial of service via crafted JSON. Due to improper bounds checking, maliciously crafted JSON objects can cause an out-of-bounds panic. If parsing user input, this may be used as a denial of service vector.",

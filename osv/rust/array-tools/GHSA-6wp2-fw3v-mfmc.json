@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6wp2-fw3v-mfmc",
-  "modified": "2021-08-24T18:54:26Z",
+  "modified": "2023-11-08T04:03:45.705412Z",
   "published": "2021-08-25T20:57:19Z",
   "aliases": [
-    "CVE-2020-36452"
+    "CVE-2020-36452",
+    "RUSTSEC-2020-0132"
   ],
   "summary": "Memory corruption in array-tools",
   "details": "An issue was discovered in the array-tools crate before 0.3.2 for Rust. Affected versions of this crate don't guard against panics, so that partially uninitialized buffer is dropped when user-provided `T::clone()` panics in `FixedCapacityDequeLike\u003cT, A\u003e::clone()`. This causes memory corruption.\n",

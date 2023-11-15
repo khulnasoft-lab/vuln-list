@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qwmp-2cf2-g9g6",
-  "modified": "2023-04-11T01:31:19.129466Z",
+  "modified": "2023-11-08T04:10:26.104708Z",
   "published": "2022-12-23T00:30:23Z",
   "aliases": [
-    "CVE-2022-40898"
+    "CVE-2022-40898",
+    "PYSEC-2022-43017"
   ],
   "summary": "pypa/wheel vulnerable to Regular Expression denial of service (ReDoS)",
   "details": "Python Packaging Authority (PyPA) Wheel is a reference implementation of the Python wheel packaging standard. Wheel 0.37.1 and earlier are vulnerable to a Regular Expression denial of service via attacker controlled input to the wheel cli. The vulnerable regex is used to verify the validity of Wheel file names. This has been patched in version 0.38.1.",

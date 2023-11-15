@@ -1,9 +1,10 @@
 {
   "id": "GHSA-jwph-qp5h-f9wj",
-  "modified": "2021-08-24T18:33:33Z",
+  "modified": "2023-11-08T04:03:45.582098Z",
   "published": "2021-08-25T20:59:18Z",
   "aliases": [
-    "CVE-2020-36450"
+    "CVE-2020-36450",
+    "RUSTSEC-2020-0130"
   ],
   "summary": "Data races in bunch",
   "details": "An issue was discovered in the bunch crate through 2020-11-12 for Rust. \nAffected versions of this crate unconditionally implements `Send`/`Sync` for `Bunch\u003cT\u003e`.\nThis allows users to insert `T: !Sync` to `Bunch\u003cT\u003e`. It is possible to create a data race to a `T: !Sync` by invoking the `Bunch::get()` API (which returns `\u0026T`) from multiple threads. It is also possible to send `T: !Send` to other threads by inserting `T` inside `Bunch\u003cT\u003e` and sending `Bunch\u003cT\u003e` to another thread, allowing to create a data race by inserting types like `T = Rc\u003c_\u003e`.\n\nSuch data races can lead to memory corruption.",

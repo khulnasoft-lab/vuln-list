@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5cgx-vhfp-6cf9",
-  "modified": "2023-10-02T11:38:19Z",
+  "modified": "2023-11-08T04:04:17.363667Z",
   "published": "2022-02-15T01:57:18Z",
   "aliases": [
-    "CVE-2020-8568"
+    "CVE-2020-8568",
+    "GO-2022-0629"
   ],
   "summary": "Directory traversal in Kubernetes Secrets Store CSI Driver",
   "details": "Kubernetes Secrets Store CSI Driver versions v0.0.15 and v0.0.16 allow an attacker who can modify a `SecretProviderClassPodStatus/Status` resource the ability to write content to the host filesystem and sync file contents to Kubernetes Secrets. This includes paths under `var/lib/kubelet/pods` that contain other Kubernetes Secrets.\n\n### Specific Go Packages Affected\nsigs.k8s.io/secrets-store-csi-driver/controllers\nsigs.k8s.io/secrets-store-csi-driver/pkg/rotation\nsigs.k8s.io/secrets-store-csi-driver/pkg/secrets-store",

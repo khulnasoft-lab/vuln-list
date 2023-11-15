@@ -1,9 +1,10 @@
 {
   "id": "GHSA-p9m5-3hj7-cp5r",
-  "modified": "2023-06-13T17:24:56Z",
+  "modified": "2023-11-08T04:03:38.673466Z",
   "published": "2022-05-24T17:37:49Z",
   "aliases": [
-    "CVE-2020-35907"
+    "CVE-2020-35907",
+    "RUSTSEC-2020-0061"
   ],
   "summary": "futures_task::noop_waker_ref can segfault due to dereferencing a NULL pointer",
   "details": "Affected versions of the crate used a UnsafeCell in thread-local storage to return a noop waker reference, assuming that the reference would never be returned from another thread.\n\nThis resulted in a segmentation fault crash if Waker::wake_by_ref() was called on a waker returned from another thread due to it attempting to dereference a pointer that wasn't accessible from the main thread.",

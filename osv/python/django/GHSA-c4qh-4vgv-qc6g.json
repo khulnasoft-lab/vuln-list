@@ -1,9 +1,10 @@
 {
   "id": "GHSA-c4qh-4vgv-qc6g",
-  "modified": "2023-11-06T05:21:45.430474Z",
+  "modified": "2023-11-08T04:01:09.281488Z",
   "published": "2019-08-06T01:43:29Z",
   "aliases": [
-    "CVE-2019-14232"
+    "CVE-2019-14232",
+    "PYSEC-2019-11"
   ],
   "summary": "Django Denial-of-service in django.utils.text.Truncator",
   "details": "An issue was discovered in Django 1.11.x before 1.11.23, 2.1.x before 2.1.11, and 2.2.x before 2.2.4. If `django.utils.text.Truncator`'s `chars()` and `words()` methods were passed the `html=True` argument, they were extremely slow to evaluate certain inputs due to a catastrophic backtracking vulnerability in a regular expression. The `chars()` and `words()` methods are used to implement the `truncatechars_htm`l and `truncatewords_html` template filters, which were thus vulnerable.",

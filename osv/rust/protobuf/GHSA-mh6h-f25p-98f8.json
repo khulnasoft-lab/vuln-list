@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mh6h-f25p-98f8",
-  "modified": "2023-06-13T20:32:32Z",
+  "modified": "2023-11-08T04:01:13.796697Z",
   "published": "2021-08-25T20:44:05Z",
   "aliases": [
-    "CVE-2019-15544"
+    "CVE-2019-15544",
+    "RUSTSEC-2019-0003"
   ],
   "summary": "Uncontrolled memory consumption in protobuf",
   "details": "Affected versions of this crate called Vec::reserve() on user-supplied input. This allows an attacker to cause an Out of Memory condition while calling the vulnerable method on untrusted data.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-625g-gx8c-xcmg",
-  "modified": "2023-08-16T21:51:04.109453Z",
+  "modified": "2023-11-08T03:57:33.409616Z",
   "published": "2022-05-14T02:09:22Z",
   "aliases": [
-    "CVE-2014-0482"
+    "CVE-2014-0482",
+    "PYSEC-2014-6"
   ],
   "summary": "Django Middleware Enables Session Hijacking",
   "details": "The `contrib.auth.middleware.RemoteUserMiddleware` middleware in Django before 1.4.14, 1.5.x before 1.5.9, 1.6.x before 1.6.6, and 1.7 before release candidate 3, when using the `contrib.auth.backends.RemoteUserBackend` backend, allows remote authenticated users to hijack web sessions via vectors related to the `REMOTE_USER` header.",

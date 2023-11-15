@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-89",
-  "modified": "2022-03-09T00:17:34.891439Z",
+  "modified": "2023-11-08T04:08:23.448722Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23580",
+    "BIT-tensorflow-2022-23580",
     "CVE-2022-23580",
-    "GHSA-627q-g293-49q7"
+    "GHSA-627q-g293-49q7",
+    "PYSEC-2022-144"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. During shape inference, TensorFlow can allocate a large vector based on a value from a tensor controlled by the user. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

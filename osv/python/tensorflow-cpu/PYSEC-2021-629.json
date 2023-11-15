@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-629",
-  "modified": "2021-12-09T06:35:10.358368Z",
+  "modified": "2023-11-08T04:06:56.193622Z",
   "published": "2021-11-05T23:15:00Z",
   "aliases": [
+    "BIT-2021-41220",
+    "BIT-tensorflow-2021-41220",
     "CVE-2021-41220",
-    "GHSA-gpfh-jvf9-7wg5"
+    "GHSA-gpfh-jvf9-7wg5",
+    "PYSEC-2021-412",
+    "PYSEC-2021-827"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the async implementation of `CollectiveReduceV2` suffers from a memory leak and a use after free. This occurs due to the asynchronous computation and the fact that objects that have been `std::move()`d from are still accessed. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, as this version is the only one that is also affected.",
   "affected": [

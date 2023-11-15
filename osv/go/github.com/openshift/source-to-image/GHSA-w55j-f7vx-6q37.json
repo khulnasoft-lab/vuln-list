@@ -1,9 +1,10 @@
 {
   "id": "GHSA-w55j-f7vx-6q37",
-  "modified": "2023-10-02T11:55:19Z",
+  "modified": "2023-11-08T03:59:45.036679Z",
   "published": "2023-02-06T23:49:46Z",
   "aliases": [
-    "CVE-2018-1103"
+    "CVE-2018-1103",
+    "GO-2020-0026"
   ],
   "summary": "Openshift Enterprise source-to-image vulnerable to Arbitrary File Write via Archive Extraction (Zip Slip)",
   "details": "Openshift Enterprise source-to-image before version 1.1.10 is vulnerable to an improper validation of user input. An attacker who could trick a user into using the command to copy files locally, from a pod, could override files outside of the target directory of the command.\n\n### Specific Go Packages Affected\ngithub.com/openshift/source-to-image/pkg/tar",

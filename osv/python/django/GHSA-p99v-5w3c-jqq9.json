@@ -1,9 +1,12 @@
 {
   "id": "GHSA-p99v-5w3c-jqq9",
-  "modified": "2023-10-24T05:33:46.836847Z",
+  "modified": "2023-11-08T04:06:05.560835Z",
   "published": "2021-06-10T17:21:12Z",
   "aliases": [
-    "CVE-2021-33571"
+    "BIT-2021-33571",
+    "BIT-django-2021-33571",
+    "CVE-2021-33571",
+    "PYSEC-2021-99"
   ],
   "summary": "Django Access Control Bypass possibly leading to SSRF, RFI, and LFI attacks ",
   "details": "In Django 2.2 before 2.2.24, 3.x before 3.1.12, and 3.2 before 3.2.4, URLValidator, validate_ipv4_address, and validate_ipv46_address do not prohibit leading zero characters in octal literals. This may allow a bypass of access control that is based on IP addresses. (validate_ipv4_address and validate_ipv46_address are unaffected with Python 3.9.5+..) .",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-wpjr-j57x-wxfw",
-  "modified": "2023-09-05T14:25:29.657991Z",
+  "modified": "2023-11-08T04:02:13.113526Z",
   "published": "2020-06-05T16:20:44Z",
   "aliases": [
-    "CVE-2020-13254"
+    "BIT-2020-13254",
+    "BIT-django-2020-13254",
+    "CVE-2020-13254",
+    "PYSEC-2020-31"
   ],
   "summary": "Data leakage via cache key collision in Django",
   "details": "An issue was discovered in Django version 2.2 before 2.2.13 and 3.0 before 3.0.7. In cases where a memcached backend does not perform key validation, passing malformed cache keys could result in a key collision, and potential data leakage.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5rrv-m36h-qwf8",
-  "modified": "2023-06-13T16:55:57Z",
+  "modified": "2023-11-08T04:01:16.223940Z",
   "published": "2021-08-25T20:44:40Z",
   "aliases": [
-    "CVE-2019-16140"
+    "CVE-2019-16140",
+    "RUSTSEC-2019-0016"
   ],
   "summary": "Use-after-free in chttp",
   "details": "The From implementation for Vec was not properly implemented, returning a vector backed by freed memory. This could lead to memory corruption or be exploited to cause undefined behavior.\n\nA fix was published in version 0.1.3.",

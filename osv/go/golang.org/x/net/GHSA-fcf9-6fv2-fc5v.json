@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fcf9-6fv2-fc5v",
-  "modified": "2023-02-08T00:36:45Z",
+  "modified": "2023-11-08T04:00:02.974369Z",
   "published": "2022-05-13T01:19:23Z",
   "aliases": [
-    "CVE-2018-17143"
+    "CVE-2018-17143",
+    "GO-2022-0193"
   ],
   "summary": "golang.org/x/net/html has Improper Restriction of Operations within the Bounds of a Memory Buffer",
   "details": "The html package (aka x/net/html) through 2018-09-17 in Go mishandles \u003ctemplate\u003e\u003ctBody\u003e\u003cisindex/action=0\u003e, leading to a \"panic: runtime error\" in inBodyIM in parse.go during an html.Parse call.",

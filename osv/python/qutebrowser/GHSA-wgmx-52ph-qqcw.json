@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wgmx-52ph-qqcw",
-  "modified": "2023-10-21T05:18:40.542497Z",
+  "modified": "2023-11-08T03:59:44.485677Z",
   "published": "2018-10-10T16:05:23Z",
   "aliases": [
-    "CVE-2018-10895"
+    "CVE-2018-10895",
+    "PYSEC-2018-27"
   ],
   "summary": "Qutebrowser CSRF Vulnerability",
   "details": "qutebrowser before version 1.4.1 is vulnerable to a cross-site request forgery flaw that allows websites to access `qute://*` URLs. A malicious website could exploit this to load a `qute://settings/set` URL, which then sets `editor.command` to a bash script, resulting in arbitrary code execution.",

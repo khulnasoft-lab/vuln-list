@@ -1,9 +1,11 @@
 {
   "id": "GHSA-9783-42pm-x5jq",
-  "modified": "2023-06-13T17:22:23Z",
+  "modified": "2023-11-08T04:07:21.801873Z",
   "published": "2022-01-06T22:13:58Z",
   "aliases": [
-    "CVE-2021-45686"
+    "CVE-2021-45686",
+    "GHSA-r67p-m7g9-gxw6",
+    "RUSTSEC-2021-0088"
   ],
   "summary": "Use of Uninitialized Resource in csv-sniffer.",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided Read implementation (within fn preamble_skipcount()).\n\nArbitrary Read implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer. Reading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.",

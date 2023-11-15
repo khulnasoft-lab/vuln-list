@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9pqx-g3jh-qpqq",
-  "modified": "2022-06-16T23:22:40Z",
+  "modified": "2023-11-08T04:03:35.548248Z",
   "published": "2022-05-24T17:37:21Z",
   "aliases": [
-    "CVE-2020-35711"
+    "CVE-2020-35711",
+    "RUSTSEC-2020-0091"
   ],
   "summary": "Dangling reference in `access::Map` with Constant",
   "details": "An issue has been discovered in the arc-swap crate before 0.4.8 (and 1.x before 1.1.0) for Rust. Use of arc_swap::access::Map with the Constant test helper (or with a user-supplied implementation of the Access trait) could sometimes lead to dangling references being returned by the map.",

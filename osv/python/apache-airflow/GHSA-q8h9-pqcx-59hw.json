@@ -1,9 +1,12 @@
 {
   "id": "GHSA-q8h9-pqcx-59hw",
-  "modified": "2023-04-11T01:24:56.968246Z",
+  "modified": "2023-11-08T04:10:10.888059Z",
   "published": "2022-09-03T00:00:25Z",
   "aliases": [
-    "CVE-2022-38170"
+    "BIT-2022-38170",
+    "BIT-airflow-2022-38170",
+    "CVE-2022-38170",
+    "PYSEC-2022-261"
   ],
   "summary": "Apache Airflow exposes arbitrary file content",
   "details": "In Apache Airflow prior to 2.3.4, an insecure umask was configured for numerous Airflow components when running with the `--daemon` flag which could result in a race condition giving world-writable files in the Airflow home directory and allowing local users to expose arbitrary file contents via the webserver.",

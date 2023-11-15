@@ -1,9 +1,10 @@
 {
   "id": "GHSA-7j36-gc4r-9x3r",
-  "modified": "2023-06-13T16:57:55Z",
+  "modified": "2023-11-08T04:01:16.163639Z",
   "published": "2021-08-25T20:44:48Z",
   "aliases": [
-    "CVE-2019-16139"
+    "CVE-2019-16139",
+    "RUSTSEC-2019-0015"
   ],
   "summary": "Out of bounds access in compact_arena",
   "details": "Affected versions of this crate did not properly implement the generativity, because the invariant lifetimes were not necessarily dropped.\n\nThis allows an attacker to mix up two arenas, using indices created from one arena with another one. This might lead to an out-of-bounds read or write access into the memory reserved for the arena.\n\nThe flaw was corrected by implementing generativity correctly in version 0.4.0.",

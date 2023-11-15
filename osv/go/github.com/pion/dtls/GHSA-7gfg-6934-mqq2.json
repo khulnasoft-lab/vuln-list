@@ -1,9 +1,10 @@
 {
   "id": "GHSA-7gfg-6934-mqq2",
-  "modified": "2023-02-14T00:18:06Z",
+  "modified": "2023-11-08T04:01:31.054282Z",
   "published": "2021-06-29T21:34:57Z",
   "aliases": [
-    "CVE-2019-20786"
+    "CVE-2019-20786",
+    "GO-2020-0038"
   ],
   "summary": "Improper Authenication in Pion DTLS",
   "details": "handleIncomingPacket in conn.go in Pion DTLS before 1.5.2 lacks a check for application data with epoch 0, which allows remote attackers to inject arbitrary unencrypted data after handshake completion.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fgv8-vj5c-2ppq",
-  "modified": "2023-02-24T17:01:49Z",
+  "modified": "2023-11-08T04:01:22.263630Z",
   "published": "2022-02-22T15:38:08Z",
   "aliases": [
-    "CVE-2019-16884"
+    "CVE-2019-16884",
+    "GO-2021-0085"
   ],
   "summary": "Incorrect Authorization in runc",
   "details": "runc through 1.0.0-rc8, as used in Docker through 19.03.2-ce and other products, allows AppArmor restriction bypass because libcontainer/rootfs_linux.go incorrectly checks mount targets, and thus a malicious Docker image can mount over a /proc directory.",

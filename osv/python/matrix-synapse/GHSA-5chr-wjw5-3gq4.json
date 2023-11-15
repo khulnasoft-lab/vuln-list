@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5chr-wjw5-3gq4",
-  "modified": "2023-11-03T21:48:57.757584Z",
+  "modified": "2023-11-08T04:13:36.773420Z",
   "published": "2023-10-10T21:27:53Z",
   "aliases": [
-    "CVE-2023-45129"
+    "CVE-2023-45129",
+    "PYSEC-2023-199"
   ],
   "summary": "matrix-synapse vulnerable to denial of service due to malicious server ACL events",
   "details": "### Impact\nA malicious server ACL event can impact performance temporarily or permanently leading to a persistent denial of service.\n\nHomeservers running on a closed federation (which presumably do not need to use server ACLs) are not affected.\n\n### Patches\nServer administrators are advised to upgrade to Synapse 1.94.0 or later.\n\n### Workarounds\nRooms with malicious server ACL events can be [purged and blocked](https://matrix-org.github.io/synapse/latest/admin_api/rooms.html#version-2-new-version) using the admin API.\n",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-q4mp-jvh2-76fj",
-  "modified": "2023-04-11T01:49:33.632802Z",
+  "modified": "2023-11-08T04:10:50.699646Z",
   "published": "2022-11-14T12:00:15Z",
   "aliases": [
-    "CVE-2022-45199"
+    "BIT-2022-45199",
+    "BIT-pillow-2022-45199",
+    "CVE-2022-45199",
+    "PYSEC-2022-42980"
   ],
   "summary": "Pillow subject to DoS via SAMPLESPERPIXEL tag",
   "details": "Pillow starting with 9.2.0 and prior to 9.3.0 allows denial of service via SAMPLESPERPIXEL. A large value in the SAMPLESPERPIXEL tag could lead to a memory and runtime DOS in TiffImagePlugin.py when setting up the context for image decoding. This issue has been patched in version 9.3.0.",

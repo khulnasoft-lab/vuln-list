@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-513",
-  "modified": "2021-12-09T06:34:56.553875Z",
+  "modified": "2023-11-08T04:05:40.706106Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29585",
+    "BIT-tensorflow-2021-29585",
     "CVE-2021-29585",
-    "GHSA-mv78-g7wq-mhp4"
+    "GHSA-mv78-g7wq-mhp4",
+    "PYSEC-2021-222",
+    "PYSEC-2021-711"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. The TFLite computation for size of output after padding, `ComputeOutSize`(https://github.com/tensorflow/tensorflow/blob/0c9692ae7b1671c983569e5d3de5565843d500cf/tensorflow/lite/kernels/padding.h#L43-L55), does not check that the `stride` argument is not 0 before doing the division. Users can craft special models such that `ComputeOutSize` is called with `stride` set to 0. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

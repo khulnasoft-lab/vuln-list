@@ -1,9 +1,11 @@
 {
   "id": "GHSA-vpqp-hx68-p2wx",
-  "modified": "2023-04-11T01:48:37.808194Z",
+  "modified": "2023-11-08T03:57:18.590032Z",
   "published": "2022-05-14T01:08:23Z",
   "aliases": [
-    "CVE-2013-2217"
+    "CVE-2013-2217",
+    "PYSEC-2013-32",
+    "PYSEC-2013-33"
   ],
   "summary": "Improper Link Resolution Before File Access in Suds",
   "details": "cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.",

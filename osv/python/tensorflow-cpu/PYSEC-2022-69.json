@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-69",
-  "modified": "2022-03-09T00:17:32.438434Z",
+  "modified": "2023-11-08T04:08:22.214210Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23560",
+    "BIT-tensorflow-2022-23560",
     "CVE-2022-23560",
-    "GHSA-4hvf-hxvg-f67v"
+    "GHSA-4hvf-hxvg-f67v",
+    "PYSEC-2022-124"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. An attacker can craft a TFLite model that would allow limited reads and writes outside of arrays in TFLite. This exploits missing validation in the conversion from sparse tensors to dense tensors. The fix is included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range. Users are advised to upgrade as soon as possible.",
   "affected": [

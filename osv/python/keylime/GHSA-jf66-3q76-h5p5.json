@@ -1,9 +1,11 @@
 {
   "id": "GHSA-jf66-3q76-h5p5",
-  "modified": "2023-04-11T01:32:57.533522Z",
+  "modified": "2023-11-08T04:07:44.863203Z",
   "published": "2022-05-05T15:59:35Z",
   "aliases": [
-    "CVE-2022-1053"
+    "CVE-2022-1053",
+    "GHSA-jf66-3q76-h5p5,",
+    "PYSEC-2022-184"
   ],
   "summary": "Tenant and Verifier might not use the same registrar data",
   "details": "Keylime does not enforce that the agent registrar data is the same when the tenant uses it for validation of the EK and identity quote and the verifier for validating the integrity quote. This allows an attacker to use one AK, EK pair from a real TPM to pass EK validation and give the verifier an AK of a software TPM. A successful attack breaks the entire chain of trust because a not validated AK is used by the verifier. This issue is worse if the validation happens first and then the agent gets added to the verifier because the timing is easier and the verifier does not validate the regcount entry being equal to 1. At this time, there are no known workaround.",

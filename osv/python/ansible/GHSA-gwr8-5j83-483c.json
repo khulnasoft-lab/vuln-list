@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gwr8-5j83-483c",
-  "modified": "2023-04-11T01:39:33.175136Z",
+  "modified": "2023-11-08T04:01:12.322226Z",
   "published": "2021-04-20T16:44:22Z",
   "aliases": [
-    "CVE-2019-14904"
+    "CVE-2019-14904",
+    "PYSEC-2020-161"
   ],
   "summary": "OS Command Injection and Improper Input Validation in ansible",
   "details": "A flaw was found in the solaris_zone module from the Ansible Community modules. When setting the name for the zone on the Solaris host, the zone name is checked by listing the process with the 'ps' bare command on the remote machine. An attacker could take advantage of this flaw by crafting the name of the zone and executing arbitrary commands in the remote host. Ansible Engine 2.7.15, 2.8.7, and 2.9.2 as well as previous versions are affected.",

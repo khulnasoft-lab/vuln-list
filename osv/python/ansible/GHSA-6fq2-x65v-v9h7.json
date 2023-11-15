@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6fq2-x65v-v9h7",
-  "modified": "2023-10-28T05:35:45.136170Z",
+  "modified": "2023-11-08T04:01:11.443931Z",
   "published": "2022-05-24T17:02:07Z",
   "aliases": [
-    "CVE-2019-14856"
+    "CVE-2019-14856",
+    "PYSEC-2019-146"
   ],
   "summary": "Ansible password prompts could expose passwords",
   "details": "A data disclosure flaw was found in ansible. Password prompts in ansible-playbook and ansible-cli tools could expose passwords with special characters as they are not properly wrapped. A password with special characters is exposed starting with the first of these special characters. The highest threat from this vulnerability is to data confidentiality.\n\nThis CVE exists due to an incomplete fix for CVE-2019-10206.",

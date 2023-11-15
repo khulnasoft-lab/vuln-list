@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9mxw-4856-9cm5",
-  "modified": "2023-06-13T20:46:48Z",
+  "modified": "2023-11-08T04:03:41.476758Z",
   "published": "2021-08-25T20:50:51Z",
   "aliases": [
-    "CVE-2020-36206"
+    "CVE-2020-36206",
+    "RUSTSEC-2020-0098"
   ],
   "summary": "Data races in rusb",
   "details": "Affected versions of rusb did not require UsbContext to implement Send and Sync. However, through Device and DeviceHandle it is possible to use UsbContexts across threads. This issue allows non-thread safe UsbContext types to be used concurrently leading to data races and memory corruption. The issue was fixed by adding Send and Sync bounds to UsbContext.",

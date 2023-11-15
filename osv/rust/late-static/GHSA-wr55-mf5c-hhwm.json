@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wr55-mf5c-hhwm",
-  "modified": "2023-06-13T18:16:02Z",
+  "modified": "2023-11-08T04:03:41.659377Z",
   "published": "2021-08-25T20:50:44Z",
   "aliases": [
-    "CVE-2020-36209"
+    "CVE-2020-36209",
+    "RUSTSEC-2020-0102"
   ],
   "summary": "Data races in late-static",
   "details": "Affected versions of this crate implemented Sync for LateStatic with T: Send, so that it is possible to create a data race to a type T: Send + !Sync (e.g. Cell\u003cT\u003e).\n\nThis can result in a memory corruption or other kinds of undefined behavior.\n\nThe flaw was corrected in commit 11f396c by replacing the T: Send bound to T: Sync bound in the Sync impl for LateStatic\u003cT\u003e.",

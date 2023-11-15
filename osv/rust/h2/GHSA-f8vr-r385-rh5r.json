@@ -1,9 +1,10 @@
 {
   "id": "GHSA-f8vr-r385-rh5r",
-  "modified": "2023-05-01T21:22:01Z",
+  "modified": "2023-11-08T04:12:03.011700Z",
   "published": "2023-04-11T15:30:30Z",
   "aliases": [
-    "CVE-2023-26964"
+    "CVE-2023-26964",
+    "RUSTSEC-2023-0034"
   ],
   "summary": "h2 vulnerable to denial of service",
   "details": "Hyper is an HTTP library for Rust and h2 is an HTTP 2.0 client \u0026 server implementation for Rust. An issue was discovered in h2 v0.2.4 when processing header frames. It incorrectly processes the HTTP2 `RST_STREAM` frames by not always releasing the memory immediately upon receiving the reset frame, leading to stream stacking. As a result, the memory and CPU usage are high which can lead to a Denial of Service (DoS).\n\nThis issue affects users only when dealing with http2 connections.",

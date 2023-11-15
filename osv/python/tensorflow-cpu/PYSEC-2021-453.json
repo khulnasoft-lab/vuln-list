@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-453",
-  "modified": "2021-12-09T06:34:47.241877Z",
+  "modified": "2023-11-08T04:05:36.997985Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29525",
+    "BIT-tensorflow-2021-29525",
     "CVE-2021-29525",
-    "GHSA-xm2v-8rrw-w9pm"
+    "GHSA-xm2v-8rrw-w9pm",
+    "PYSEC-2021-162",
+    "PYSEC-2021-651"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. An attacker can trigger a division by 0 in `tf.raw_ops.Conv2DBackpropInput`. This is because the implementation(https://github.com/tensorflow/tensorflow/blob/b40060c9f697b044e3107917c797ba052f4506ab/tensorflow/core/kernels/conv_grad_input_ops.h#L625-L655) does a division by a quantity that is controlled by the caller. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

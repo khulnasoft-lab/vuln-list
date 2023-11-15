@@ -1,9 +1,12 @@
 {
   "id": "GHSA-53qw-q765-4fww",
-  "modified": "2023-10-26T05:31:30.290959Z",
+  "modified": "2023-11-08T04:07:19.952781Z",
   "published": "2022-01-12T19:20:53Z",
   "aliases": [
-    "CVE-2021-45115"
+    "BIT-2021-45115",
+    "BIT-django-2021-45115",
+    "CVE-2021-45115",
+    "PYSEC-2022-1"
   ],
   "summary": "Denial-of-service in Django",
   "details": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. `UserAttributeSimilarityValidator` incurred significant overhead in evaluating a submitted password that was artificially large in relation to the comparison values. In a situation where access to user registration was unrestricted, this provided a potential vector for a denial-of-service attack.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mh33-7rrq-662w",
-  "modified": "2023-10-28T05:33:57.782809Z",
+  "modified": "2023-11-08T04:01:00.967964Z",
   "published": "2019-04-19T16:55:10Z",
   "aliases": [
-    "CVE-2019-11324"
+    "CVE-2019-11324",
+    "PYSEC-2019-133"
   ],
   "summary": "Improper Certificate Validation in urllib3",
   "details": "The urllib3 library before 1.24.2 for Python mishandles certain cases where the desired set of CA certificates is different from the OS store of CA certificates, which results in SSL connections succeeding in situations where a verification failure is the correct outcome. This is related to use of the `ssl_context`, `ca_certs`, or `ca_certs_dir` argument.",

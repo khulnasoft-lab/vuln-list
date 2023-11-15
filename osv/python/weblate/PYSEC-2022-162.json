@@ -1,11 +1,16 @@
 {
   "id": "PYSEC-2022-162",
-  "modified": "2022-03-11T17:35:01.661733Z",
+  "modified": "2023-11-08T04:08:28.138220Z",
   "published": "2022-03-04T17:15:00Z",
   "aliases": [
+    "BIT-2022-23915",
+    "BIT-weblate-2022-23915",
+    "CVE-2022-23915",
     "CVE-2022-24727",
     "GHSA-3872-f48p-pxqj",
-    "GHSA-h2g5-2rhx-ffgj"
+    "GHSA-h2g5-2rhx-ffgj",
+    "PYSEC-2022-31",
+    "SNYK-PYTHON-WEBLATE-2414088"
   ],
   "details": "Weblate is a web based localization tool with tight version control integration. Prior to version 4.11.1, Weblate didn't properly sanitize some arguments passed to Git and Mercurial, allowing them to change their behavior in an unintended way. Instances where untrusted users cannot create new components are not affected. The issues were fixed in the 4.11.1 release.",
   "affected": [

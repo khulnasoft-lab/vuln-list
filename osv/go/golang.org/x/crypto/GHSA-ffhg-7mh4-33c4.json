@@ -1,9 +1,10 @@
 {
   "id": "GHSA-ffhg-7mh4-33c4",
-  "modified": "2023-02-16T00:14:18Z",
+  "modified": "2023-11-08T04:04:19.836328Z",
   "published": "2021-05-18T15:29:31Z",
   "aliases": [
-    "CVE-2020-9283"
+    "CVE-2020-9283",
+    "GO-2020-0012"
   ],
   "summary": "Improper Verification of Cryptographic Signature in golang.org/x/crypto",
   "details": "golang.org/x/crypto before v0.0.0-20200220183623-bac4c82f6975 for Go allows a panic during signature verification in the golang.org/x/crypto/ssh package. A client can attack an SSH server that accepts public keys. Also, a server can attack any SSH client.",

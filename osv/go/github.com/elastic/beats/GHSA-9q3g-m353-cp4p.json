@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9q3g-m353-cp4p",
-  "modified": "2023-02-07T22:14:30Z",
+  "modified": "2023-11-08T03:58:49.660533Z",
   "published": "2022-02-15T01:57:18Z",
   "aliases": [
-    "CVE-2017-11480"
+    "CVE-2017-11480",
+    "GO-2022-0643"
   ],
   "summary": "Denial of Service in Packetbeat",
   "details": "Packetbeat versions prior to 5.6.4 and 6.0.0 are affected by a denial of service flaw in the PostgreSQL protocol handler. If Packetbeat is listening for PostgreSQL traffic and a user is able to send arbitrary network traffic to the monitored port, the attacker could prevent Packetbeat from properly logging other PostgreSQL traffic.",

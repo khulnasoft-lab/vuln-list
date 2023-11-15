@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2019-195",
-  "modified": "2021-08-27T03:22:16.533972Z",
+  "modified": "2023-11-08T04:01:04.477994Z",
   "published": "2019-11-08T19:15:00Z",
   "aliases": [
-    "CVE-2019-12408"
+    "CVE-2019-12408",
+    "GHSA-8cw2-jv5c-c825"
   ],
   "details": "It was discovered that the C++ implementation (which underlies the R, Python and Ruby implementations) of Apache Arrow 0.14.0 to 0.14.1 had a uninitialized memory bug when building arrays with null values in some cases. This can lead to uninitialized memory being unintentionally shared if Arrow Arrays are transmitted over the wire (for instance with Flight) or persisted in the streaming IPC and file formats.",
   "affected": [

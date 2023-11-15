@@ -1,9 +1,10 @@
 {
   "id": "GHSA-x2xx-jw5m-5j86",
-  "modified": "2023-10-23T05:34:47.645980Z",
+  "modified": "2023-11-08T04:10:11.619734Z",
   "published": "2022-09-14T00:00:42Z",
   "aliases": [
-    "CVE-2022-38307"
+    "CVE-2022-38307",
+    "PYSEC-2022-275"
   ],
   "summary": "LIEF contains segmentation violation",
   "details": "LIEF commit 5d1d643 was discovered to contain a segmentation violation via the function `LIEF::MachO::SegmentCommand::file_offset()` at `/MachO/SegmentCommand.cpp`. Commit 7acf0bc4224081d4f425fcc8b2e361b95291d878 contains a patch.",

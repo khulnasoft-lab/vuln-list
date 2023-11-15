@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9j8q-m9x5-9g6j",
-  "modified": "2021-08-24T18:52:16Z",
+  "modified": "2023-11-08T04:03:45.205946Z",
   "published": "2021-08-25T20:59:11Z",
   "aliases": [
-    "CVE-2020-36444"
+    "CVE-2020-36444",
+    "RUSTSEC-2020-0124"
   ],
   "summary": "Data races in async-coap",
   "details": "An issue was discovered in the async-coap crate through 2020-12-08 for Rust. \nAffected versions of this crate implement Send/Sync for `ArcGuard\u003cRC, T\u003e` with no trait bounds on `RC`. This allows users to send `RC: !Send` to other threads and also allows users to concurrently access `Rc: !Sync` from multiple threads.\n\nThis can result in memory corruption from data race or other undefined behavior caused by sending `T: !Send` to other threads (e.g. dropping `MutexGuard\u003cT\u003e` in another thread that didn't lock its mutex).\n",

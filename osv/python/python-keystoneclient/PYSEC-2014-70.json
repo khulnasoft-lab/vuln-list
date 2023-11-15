@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2014-70",
-  "modified": "2021-07-25T23:34:52.050807Z",
+  "modified": "2023-11-08T03:57:31.384306Z",
   "published": "2014-04-15T14:55:00Z",
   "aliases": [
-    "CVE-2014-0105"
+    "CVE-2014-0105",
+    "GHSA-gwvq-rgqf-993f"
   ],
   "details": "The auth_token middleware in the OpenStack Python client library for Keystone (aka python-keystoneclient) before 0.7.0 does not properly retrieve user tokens from memcache, which allows remote authenticated users to gain privileges in opportunistic circumstances via a large number of requests, related to an \"interaction between eventlet and python-memcached.\"",
   "affected": [

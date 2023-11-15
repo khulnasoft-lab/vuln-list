@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fx2v-qfhr-4chv",
-  "modified": "2023-03-07T20:37:09Z",
+  "modified": "2023-11-08T04:12:04.357925Z",
   "published": "2023-03-07T20:37:09Z",
   "aliases": [
-    "CVE-2023-27475"
+    "CVE-2023-27475",
+    "GO-2023-1611"
   ],
   "summary": "Goutil vulnerable to path traversal when unzipping files",
   "details": "### Impact\n\nZipSlip issue when use fsutil package to unzip files.\nWhen users use fsutil.Unzip to unzip zip files from a malicious attacker, they may be vulnerable to path traversal. \n\n### Patches\n\nIt has been fixed in v0.6.0, Please upgrade version to v0.6.0 or above.\n\n### Workarounds\nNo, users have to upgrade version.",

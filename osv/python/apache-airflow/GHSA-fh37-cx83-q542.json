@@ -1,9 +1,12 @@
 {
   "id": "GHSA-fh37-cx83-q542",
-  "modified": "2023-04-11T01:48:16.121389Z",
+  "modified": "2023-11-08T04:05:21.972307Z",
   "published": "2021-06-18T18:30:11Z",
   "aliases": [
-    "CVE-2021-26697"
+    "BIT-2021-26697",
+    "BIT-airflow-2021-26697",
+    "CVE-2021-26697",
+    "PYSEC-2021-3"
   ],
   "summary": "Improper Authentication in Apache Airflow",
   "details": "The lineage endpoint of the deprecated Experimental API was not protected by authentication in Airflow 2.0.0. This allowed unauthenticated users to hit that endpoint. This is low-severity issue as the attacker needs to be aware of certain parameters to pass to that endpoint and even after can just get some metadata about a DAG and a Task. This issue only affects Apache Airflow 2.0.0.",

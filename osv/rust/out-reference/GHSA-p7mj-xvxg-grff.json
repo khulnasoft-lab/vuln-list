@@ -1,7 +1,10 @@
 {
   "id": "GHSA-p7mj-xvxg-grff",
-  "modified": "2023-03-13T20:49:24Z",
+  "modified": "2023-11-08T04:21:31.675352Z",
   "published": "2023-03-13T20:49:24Z",
+  "aliases": [
+    "RUSTSEC-2021-0152"
+  ],
   "summary": "`out_reference::Out::from_raw` should be `unsafe`",
   "details": "`Out::from_raw` in affected versions allows writing a value to invalid memory address without requiring `unsafe`.\n\nThe soundness issue has been addressed by making `Out::from_raw` an unsafe function.\n",
   "affected": [

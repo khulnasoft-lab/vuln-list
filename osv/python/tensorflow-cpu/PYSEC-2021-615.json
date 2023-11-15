@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-615",
-  "modified": "2021-12-09T06:35:08.369063Z",
+  "modified": "2023-11-08T04:06:55.207907Z",
   "published": "2021-11-05T21:15:00Z",
   "aliases": [
+    "BIT-2021-41205",
+    "BIT-tensorflow-2021-41205",
     "CVE-2021-41205",
-    "GHSA-49rx-x2rw-pc6f"
+    "GHSA-49rx-x2rw-pc6f",
+    "PYSEC-2021-398",
+    "PYSEC-2021-813"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions the shape inference functions for the `QuantizeAndDequantizeV*` operations can trigger a read outside of bounds of heap allocated array. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

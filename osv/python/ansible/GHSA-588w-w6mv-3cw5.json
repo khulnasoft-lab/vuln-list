@@ -1,9 +1,10 @@
 {
   "id": "GHSA-588w-w6mv-3cw5",
-  "modified": "2023-04-11T01:47:43.075075Z",
+  "modified": "2023-11-08T03:59:25.112147Z",
   "published": "2022-05-13T01:06:04Z",
   "aliases": [
-    "CVE-2017-7550"
+    "CVE-2017-7550",
+    "PYSEC-2017-4"
   ],
   "summary": "Ansible Insertion of Sensitive Information into Log File vulnerability",
   "details": "A flaw was found in the way Ansible (2.3.x before 2.3.3, and 2.4.x before 2.4.1) passed certain parameters to the jenkins_plugin module. Remote attackers could use this flaw to expose sensitive information from a remote host's logs. This flaw was fixed by not allowing passwords to be specified in the \"params\" argument, and noting this in the module documentation.",

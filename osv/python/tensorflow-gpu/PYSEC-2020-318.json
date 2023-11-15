@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2020-318",
-  "modified": "2021-12-09T06:35:13.671465Z",
+  "modified": "2023-11-08T04:02:33.331842Z",
   "published": "2020-09-25T19:15:00Z",
   "aliases": [
+    "BIT-2020-15203",
+    "BIT-tensorflow-2020-15203",
     "CVE-2020-15203",
-    "GHSA-xmq7-7fxm-rr79"
+    "GHSA-xmq7-7fxm-rr79",
+    "PYSEC-2020-126",
+    "PYSEC-2020-283"
   ],
   "details": "In Tensorflow before versions 1.15.4, 2.0.3, 2.1.2, 2.2.1 and 2.3.1, by controlling the `fill` argument of tf.strings.as_string, a malicious attacker is able to trigger a format string vulnerability due to the way the internal format use in a `printf` call is constructed. This may result in segmentation fault. The issue is patched in commit 33be22c65d86256e6826666662e40dbdfe70ee83, and is released in TensorFlow versions 1.15.4, 2.0.3, 2.1.2, 2.2.1, or 2.3.1.",
   "affected": [

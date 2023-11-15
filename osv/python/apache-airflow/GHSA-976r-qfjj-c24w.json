@@ -1,9 +1,12 @@
 {
   "id": "GHSA-976r-qfjj-c24w",
-  "modified": "2023-08-30T21:47:37.794426Z",
+  "modified": "2023-11-08T04:02:08.487159Z",
   "published": "2020-07-27T16:57:33Z",
   "aliases": [
-    "CVE-2020-11981"
+    "BIT-2020-11981",
+    "BIT-airflow-2020-11981",
+    "CVE-2020-11981",
+    "PYSEC-2020-15"
   ],
   "summary": "Command injection via Celery broker in Apache Airflow",
   "details": "An issue was found in Apache Airflow versions 1.10.10 and below. When using CeleryExecutor, if an attacker can connect to the broker (Redis, RabbitMQ) directly, it is possible to inject commands, resulting in the celery worker running arbitrary commands.",

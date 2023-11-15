@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6cm4-gm85-972c",
-  "modified": "2023-04-11T01:49:28.561840Z",
+  "modified": "2023-11-08T04:07:19.703295Z",
   "published": "2022-02-20T00:00:35Z",
   "aliases": [
-    "CVE-2021-45082"
+    "CVE-2021-45082",
+    "PYSEC-2022-37"
   ],
   "summary": "Command Injection in Cobbler",
   "details": "An issue was discovered in Cobbler through 3.3.0. In the templar.py file, the function check_for_invalid_imports can allow Cheetah code to import Python modules via the \"#from MODULE import\" substring. (Only lines beginning with #import are blocked.)",

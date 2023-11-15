@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-128",
-  "modified": "2022-03-09T00:18:26.187094Z",
+  "modified": "2023-11-08T04:08:22.459227Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23564",
+    "BIT-tensorflow-2022-23564",
     "CVE-2022-23564",
-    "GHSA-8rcj-c8pj-v3m3"
+    "GHSA-8rcj-c8pj-v3m3",
+    "PYSEC-2022-73"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. When decoding a resource handle tensor from protobuf, a TensorFlow process can encounter cases where a `CHECK` assertion is invalidated based on user controlled arguments. This allows attackers to cause denial of services in TensorFlow processes. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

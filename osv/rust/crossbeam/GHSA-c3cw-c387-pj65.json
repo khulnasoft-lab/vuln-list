@@ -1,9 +1,10 @@
 {
   "id": "GHSA-c3cw-c387-pj65",
-  "modified": "2023-06-13T17:11:24Z",
+  "modified": "2023-11-08T04:00:13.679223Z",
   "published": "2021-08-25T20:43:21Z",
   "aliases": [
-    "CVE-2018-20996"
+    "CVE-2018-20996",
+    "RUSTSEC-2018-0009"
   ],
   "summary": "Double free in crossbeam",
   "details": "Even if an element is popped from a queue, crossbeam would run its destructor inside the epoch-based garbage collector. This is a source of double frees.\n\nThe flaw was corrected by wrapping elements inside queues in a ManuallyDrop.",

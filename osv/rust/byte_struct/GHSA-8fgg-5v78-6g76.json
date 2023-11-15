@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8fgg-5v78-6g76",
-  "modified": "2022-05-04T03:04:59Z",
+  "modified": "2023-11-08T04:05:27.850049Z",
   "published": "2021-08-25T20:52:03Z",
   "aliases": [
-    "CVE-2021-28033"
+    "CVE-2021-28033",
+    "RUSTSEC-2021-0032"
   ],
   "summary": "Deserializing an array can free uninitialized memory in byte_struct",
   "details": "Byte_struct stack and unpack structure as raw bytes with packed or bit field layout. An issue was discovered in the byte_struct crate before 0.6.1 for Rust. There can be a drop of uninitialized memory if a certain deserialization method panics.",

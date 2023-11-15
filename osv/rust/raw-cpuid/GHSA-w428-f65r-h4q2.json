@@ -1,9 +1,11 @@
 {
   "id": "GHSA-w428-f65r-h4q2",
-  "modified": "2022-01-07T17:23:21Z",
+  "modified": "2023-11-08T04:07:21.872047Z",
   "published": "2022-01-06T22:13:12Z",
   "aliases": [
-    "CVE-2021-45687"
+    "CVE-2021-45687",
+    "GHSA-jf5h-cf95-w759",
+    "RUSTSEC-2021-0089"
   ],
   "summary": "Deserialization of Untrusted Data in rust-cpuid",
   "details": "An issue was discovered in the raw-cpuid crate before 9.1.1 for Rust. If the serialize feature is used (which is not the the default), a Deserialize operation may lack sufficient validation, leading to memory corruption or a panic.",

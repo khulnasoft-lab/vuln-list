@@ -1,9 +1,12 @@
 {
   "id": "GHSA-8c5j-9r9f-c6w8",
-  "modified": "2023-08-08T21:04:12.670239Z",
+  "modified": "2023-11-08T04:07:20.013062Z",
   "published": "2022-01-12T19:21:10Z",
   "aliases": [
-    "CVE-2021-45116"
+    "BIT-2021-45116",
+    "BIT-django-2021-45116",
+    "CVE-2021-45116",
+    "PYSEC-2022-2"
   ],
   "summary": "Information disclosure in Django",
   "details": "An issue was discovered in Django 2.2 before 2.2.26, 3.2 before 3.2.11, and 4.0 before 4.0.1. Due to leveraging the Django Template Language's variable resolution logic, the dictsort template filter was potentially vulnerable to information disclosure, or an unintended method call, if passed a suitably crafted key.",

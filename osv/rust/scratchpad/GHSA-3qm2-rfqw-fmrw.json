@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3qm2-rfqw-fmrw",
-  "modified": "2023-06-13T20:40:29Z",
+  "modified": "2023-11-08T04:05:27.727053Z",
   "published": "2022-05-24T17:43:48Z",
   "aliases": [
-    "CVE-2021-28031"
+    "CVE-2021-28031",
+    "RUSTSEC-2021-0030"
   ],
   "summary": "move_elements can double-free objects on panic",
   "details": "Affected versions of scratchpad used ptr::read to read elements while calling a user provided function f on them. Since the pointer read duplicates ownership, a panic inside the user provided f function could cause a double free when unwinding.\n\nThe flaw was fixed in commit `891561bea` by removing the unsafe block and using a plain iterator.",

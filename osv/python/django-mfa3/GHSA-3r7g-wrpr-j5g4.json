@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3r7g-wrpr-j5g4",
-  "modified": "2023-04-11T01:38:01.672424Z",
+  "modified": "2023-11-08T04:08:38.744135Z",
   "published": "2022-04-22T20:48:28Z",
   "aliases": [
-    "CVE-2022-24857"
+    "CVE-2022-24857",
+    "PYSEC-2022-192"
   ],
   "summary": "Improper Authentication in django-mfa3",
   "details": "### Impact\n\ndjango-mfa3 is a library that implements multi factor authentication for the django web framework. It achieves this by modifying the regular login view. Django however has a second login view for its admin area. This second login view was not modified, so the multi factor authentication can be bypassed.\n\nYou are affected if you have activated both django-mfa3 (\u003c 0.5.0) and django.contrib.admin and have not taken any other measures to prevent users from accessing the admin login view.\n\n### Patches\n\nThe issue has been fixed in django-mfa3 0.5.0.\n\n### Workarounds\n\nIt is possible to work around the issue by overwriting the admin login route, e.g. by adding the following URL definition *before* the admin routes:\n\n    url('admin/login/', lambda request: redirect(settings.LOGIN_URL)\n\n### References\n\n- [django-mfa3 changelog](https://github.com/xi/django-mfa3/blob/main/CHANGES.md#050-2022-04-15)\n",

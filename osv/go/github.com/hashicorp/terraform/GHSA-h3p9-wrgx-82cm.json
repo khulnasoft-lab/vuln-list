@@ -1,9 +1,10 @@
 {
   "id": "GHSA-h3p9-wrgx-82cm",
-  "modified": "2023-09-29T15:41:15Z",
+  "modified": "2023-11-08T04:01:28.294029Z",
   "published": "2021-05-18T18:18:50Z",
   "aliases": [
-    "CVE-2019-19316"
+    "CVE-2019-19316",
+    "GHSA-4rvg-555h-r626"
   ],
   "summary": "Use of a Broken or Risky Cryptographic Algorithm in Terraform",
   "details": "When using the Azure backend with a shared access signature (SAS), Terraform versions prior to 0.12.17 may transmit the token and state snapshot using cleartext HTTP.\n\n### Specific Go Packages Affected\ngithub.com/hashicorp/terraform/backend/remote-state/azure",

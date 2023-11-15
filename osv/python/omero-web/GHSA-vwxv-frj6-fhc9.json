@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vwxv-frj6-fhc9",
-  "modified": "2023-07-13T20:04:08.362737Z",
+  "modified": "2023-11-08T04:04:11.500694Z",
   "published": "2022-05-24T17:20:49Z",
   "aliases": [
-    "CVE-2020-7932"
+    "CVE-2020-7932",
+    "PYSEC-2020-244"
   ],
   "summary": "OMERO-web Sensitive Data Exposure",
   "details": "OMERO.web before 5.6.3 optionally allows sensitive data elements (e.g., a session key) to be passed as URL query parameters. If an attacker tricks a user into clicking a malicious link in OMERO.web, the information in the query parameters may be exposed in the Referer header seen by the target. Information in the URL path such as object IDs may also be exposed.",

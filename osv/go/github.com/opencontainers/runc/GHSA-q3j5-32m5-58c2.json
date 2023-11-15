@@ -1,9 +1,10 @@
 {
   "id": "GHSA-q3j5-32m5-58c2",
-  "modified": "2021-10-05T16:34:17Z",
+  "modified": "2023-11-08T03:58:27.268108Z",
   "published": "2021-12-20T18:21:34Z",
   "aliases": [
-    "CVE-2016-3697"
+    "CVE-2016-3697",
+    "GO-2021-0070"
   ],
   "summary": "Privilege Elevation in runc",
   "details": "libcontainer/user/user.go in runC before 0.1.0, as used in Docker before 1.11.2, improperly treats a numeric UID as a potential username, which allows local users to gain privileges via a numeric username in the password file in a container.",

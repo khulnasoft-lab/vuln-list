@@ -1,9 +1,13 @@
 {
   "id": "GHSA-c7vm-f5p4-8fqh",
-  "modified": "2023-04-11T01:49:11.564371Z",
+  "modified": "2023-11-08T04:03:14.681832Z",
   "published": "2020-11-18T21:06:36Z",
   "aliases": [
-    "CVE-2020-26215"
+    "BIT-2020-26215",
+    "BIT-jupyter-base-notebook-2020-26215",
+    "BIT-jupyter-notebook-2020-26215",
+    "CVE-2020-26215",
+    "PYSEC-2020-215"
   ],
   "summary": "Open redirect in Jupyter Notebook",
   "details": "[localhost](http://localhost:8888)\n\n### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nOpen redirect vulnerability - a maliciously crafted link to a notebook server could redirect the browser to a different website.\n\nAll notebook servers are technically affected, however, these maliciously crafted links can only be reasonably made for known notebook server hosts. A link to your notebook server may *appear* safe, but ultimately redirect to a spoofed server on the public internet.\n\n### Patches\n\n_Has the problem been patched? What versions should users upgrade to?_\n\nPatched in notebook 6.1.5\n\n\n### References\n\n[OWASP page on open redirects](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)\n\n### For more information\n\nIf you have any questions or comments about this advisory, or vulnerabilities to report, please email our security list [security@ipython.org](mailto:security@ipython.org).\n\nCredit: zhuonan li of Alibaba Application Security Team",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-hvqc-pc78-x9wh",
-  "modified": "2023-06-13T20:30:27Z",
+  "modified": "2023-11-08T04:05:20.849093Z",
   "published": "2021-08-25T20:53:10Z",
   "aliases": [
-    "CVE-2021-26306"
+    "CVE-2021-26306",
+    "CVE-2021-26307",
+    "GHSA-jrf8-cmgg-gv2m",
+    "RUSTSEC-2021-0013"
   ],
   "summary": "Soundness issue in raw-cpuid",
   "details": "VendorInfo::as_string(), SoCVendorBrand::as_string(), and ExtendedFunctionInfo::processor_brand_string() construct byte slices using std::slice::from_raw_parts(), with data coming from #[repr(Rust)] structs. This is always undefined behavior.\nThis flaw has been fixed in v9.0.0, by making the relevant structs #[repr(C)].",

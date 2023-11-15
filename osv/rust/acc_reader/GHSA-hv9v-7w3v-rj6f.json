@@ -1,7 +1,14 @@
 {
   "id": "GHSA-hv9v-7w3v-rj6f",
-  "modified": "2023-06-13T16:02:49Z",
+  "modified": "2023-11-08T04:03:47.175334Z",
   "published": "2022-06-16T23:38:37Z",
+  "aliases": [
+    "CVE-2020-36513",
+    "CVE-2020-36514",
+    "GHSA-799f-r78p-gq9c",
+    "GHSA-p4cr-64x4-f92f",
+    "RUSTSEC-2020-0155"
+  ],
   "summary": "`Read` on uninitialized buffer in `fill_buf()` and `read_up_to()`",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided `Read` implementation.\n\nArbitrary `Read` implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer.\n\nReading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.\n",
   "affected": [

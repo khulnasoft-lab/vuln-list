@@ -1,9 +1,10 @@
 {
   "id": "GHSA-462w-v97r-4m45",
-  "modified": "2023-10-29T05:22:14.414170Z",
+  "modified": "2023-11-08T04:00:58.644982Z",
   "published": "2019-04-10T14:30:24Z",
   "aliases": [
-    "CVE-2019-10906"
+    "CVE-2019-10906",
+    "PYSEC-2019-217"
   ],
   "summary": "Jinja2 sandbox escape via string formatting",
   "details": "In Pallets Jinja before 2.10.1, `str.format_map` allows a sandbox escape.\n\nThe sandbox is used to restrict what code can be evaluated when rendering untrusted, user-provided templates. Due to the way string formatting works in Python, the `str.format_map` method could be used to escape the sandbox.\n\nThis issue was previously addressed for the `str.format` method in Jinja 2.8.1, which discusses the issue in detail. However, the less-common `str.format_map` method was overlooked. This release applies the same sandboxing to both methods.\n\nIf you cannot upgrade Jinja, you can override the `is_safe_attribute` method on the sandbox and explicitly disallow the `format_map` method on string objects.",

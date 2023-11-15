@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2grh-hm3w-w7hv",
-  "modified": "2023-06-13T22:08:56Z",
+  "modified": "2023-11-08T04:06:25.982475Z",
   "published": "2021-08-25T20:55:51Z",
   "aliases": [
-    "CVE-2021-38191"
+    "CVE-2021-38191",
+    "RUSTSEC-2021-0072"
   ],
   "summary": "Race condition in tokio",
   "details": "When aborting a task with JoinHandle::abort, the future is dropped in the thread calling abort if the task is not currently being executed. This is incorrect for tasks spawned on a LocalSet. This can easily result in race conditions as many projects use Rc or RefCell in their Tokio tasks for better performance.",

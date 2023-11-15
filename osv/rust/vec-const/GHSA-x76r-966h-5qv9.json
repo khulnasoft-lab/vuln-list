@@ -1,9 +1,11 @@
 {
   "id": "GHSA-x76r-966h-5qv9",
-  "modified": "2022-01-07T16:19:25Z",
+  "modified": "2023-11-08T04:07:21.429742Z",
   "published": "2022-01-06T22:15:56Z",
   "aliases": [
-    "CVE-2021-45680"
+    "CVE-2021-45680",
+    "GHSA-jmwx-r3gq-qq3p",
+    "RUSTSEC-2021-0082"
   ],
   "summary": "Out-of-bounds Write in vec-const",
   "details": "An issue was discovered in the vec-const crate before 2.0.0 for Rust. It tries to construct a Vec from a pointer to a const slice, leading to memory corruption.",

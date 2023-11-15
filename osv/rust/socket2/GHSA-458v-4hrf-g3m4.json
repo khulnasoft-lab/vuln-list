@@ -1,9 +1,13 @@
 {
   "id": "GHSA-458v-4hrf-g3m4",
-  "modified": "2021-08-24T17:42:57Z",
+  "modified": "2023-11-08T04:03:39.408679Z",
   "published": "2021-08-25T20:50:37Z",
   "aliases": [
-    "CVE-2020-35920"
+    "CVE-2020-35919",
+    "CVE-2020-35920",
+    "GHSA-c79c-gwph-gqfm",
+    "RUSTSEC-2020-0078",
+    "RUSTSEC-2020-0079"
   ],
   "summary": "socket2 invalidly assumes the memory layout of std::net::SocketAddr",
   "details": "The socket2 crate has assumed `std::net::SocketAddrV4` and `std::net::SocketAddrV6` have the same memory layout as the system C representation `sockaddr`. It has simply casted the pointers to convert the socket addresses to the system representation. The standard library does not say anything about the memory layout, and this will cause invalid memory access if the standard library changes the implementation. No warnings or errors will be emitted once the change happens.\n",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-h98h-8mxr-m8gx",
-  "modified": "2023-04-11T01:21:22.412051Z",
+  "modified": "2023-11-08T04:00:14.358694Z",
   "published": "2020-05-13T16:01:35Z",
   "aliases": [
-    "CVE-2018-21233"
+    "CVE-2018-21233",
+    "PYSEC-2020-253",
+    "PYSEC-2020-269",
+    "PYSEC-2020-304"
   ],
   "summary": "Out-of-bounds read in TensorFlow possibly causing disclosure of the contents of process memory.",
   "details": "TensorFlow before 1.7.0 has an integer overflow that causes an out-of-bounds read, possibly causing disclosure of the contents of process memory. This occurs in the DecodeBmp feature of the BMP decoder in core/kernels/decode_bmp_op.cc.",

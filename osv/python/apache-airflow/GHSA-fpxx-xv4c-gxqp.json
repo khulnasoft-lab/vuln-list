@@ -3,7 +3,10 @@
   "modified": "2023-11-10T05:37:42.116287Z",
   "published": "2023-10-14T12:30:23Z",
   "aliases": [
-    "CVE-2023-45348"
+    "BIT-2023-45348",
+    "BIT-airflow-2023-45348",
+    "CVE-2023-45348",
+    "PYSEC-2023-204"
   ],
   "summary": "Apache Airflow vulnerable to sensitive information exposure when expose-config is set to non-sensitive-only",
   "details": "Apache Airflow, versions 2.7.0 and 2.7.1, is affected by a vulnerability that allows an authenticated user to retrieve sensitive configuration information when the `expose_config` option is set to `non-sensitive-only`. The `expose_config` option is `False` by default. It is recommended to upgrade to a version that is not affected.",

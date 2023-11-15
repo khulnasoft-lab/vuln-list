@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fvx8-v524-8579",
-  "modified": "2023-10-29T05:25:16.574325Z",
+  "modified": "2023-11-08T04:02:41.879489Z",
   "published": "2021-06-04T21:46:52Z",
   "aliases": [
-    "CVE-2020-17495"
+    "CVE-2020-17495",
+    "PYSEC-2020-38"
   ],
   "summary": "django-celery-results Stores Sensitive Information In Cleartext",
   "details": "django-celery-results prior to 2.4.0 stores task results in the database. Among the data it stores are the variables passed into the tasks. The variables may contain sensitive cleartext information that does not belong unencrypted in the database.\n\nIn version 2.4.0 this is no longer the default behaviour but can be re-enabled with the `result_extended` flag in which case care should be taken to ensure any sensitive variables are scrubbed - see [here](https://github.com/celery/django-celery-results/issues/154#issuecomment-734706270) for an example.",

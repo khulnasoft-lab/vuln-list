@@ -1,9 +1,12 @@
 {
   "id": "GHSA-hjfx-8p6c-g7gx",
-  "modified": "2023-10-25T05:32:01.834804Z",
+  "modified": "2023-11-08T04:05:31.445154Z",
   "published": "2021-06-08T18:49:20Z",
   "aliases": [
-    "CVE-2021-28678"
+    "BIT-2021-28678",
+    "BIT-pillow-2021-28678",
+    "CVE-2021-28678",
+    "PYSEC-2021-94"
   ],
   "summary": "Insufficient Verification of Data Authenticity in Pillow",
   "details": "An issue was discovered in Pillow before 8.2.0. For BLP data, BlpImagePlugin did not properly check that reads (after jumping to file offsets) returned data. This could lead to a DoS where the decoder could be run a large number of times on empty data.",

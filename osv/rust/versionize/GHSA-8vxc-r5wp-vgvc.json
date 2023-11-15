@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8vxc-r5wp-vgvc",
-  "modified": "2023-03-24T22:00:05Z",
+  "modified": "2023-11-08T04:12:11.444949Z",
   "published": "2023-03-24T22:00:05Z",
   "aliases": [
-    "CVE-2023-28448"
+    "CVE-2023-28448",
+    "RUSTSEC-2023-0030"
   ],
   "summary": "Versionize::deserialize implementation for FamStructWrapper\u003cT\u003e is lacking bound checks, potentially leading to out of bounds memory accesses",
   "details": "### Impact\n\nAn issue was discovered in the `Versionize::deserialize` implementation provided by the `versionize` crate for `vmm_sys_util::fam::FamStructWrapper`, which can lead to out of bounds memory accesses.\n\n### Patches\n\nThe impact started with version 0.1.1. The issue was corrected in version 0.1.10 by inserting a check that verifies, for any deserialized header, the lengths of compared flexible arrays are equal and aborting deserialization otherwise.\n\n### Workarounds\n\\-\n\n### References\n- https://github.com/firecracker-microvm/versionize/pull/53",

@@ -1,9 +1,11 @@
 {
   "id": "GHSA-q4xr-rc97-m4xx",
-  "modified": "2023-10-23T05:32:53.786034Z",
+  "modified": "2023-11-08T04:05:12.931743Z",
   "published": "2022-01-06T22:22:02Z",
   "aliases": [
-    "CVE-2021-23727"
+    "CVE-2021-23727",
+    "PYSEC-2021-858",
+    "SNYK-PYTHON-CELERY-2314953"
   ],
   "summary": "OS Command Injection in celery",
   "details": "This affects the package celery before 5.2.2. It by default trusts the messages and metadata stored in backends (result stores). When reading task metadata from the backend, the data is deserialized. Given that an attacker can gain access to, or somehow manipulate the metadata within a celery backend, they could trigger a stored command injection vulnerability and potentially gain further access to the system.",

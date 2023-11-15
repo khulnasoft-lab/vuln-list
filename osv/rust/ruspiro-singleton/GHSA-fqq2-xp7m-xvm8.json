@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fqq2-xp7m-xvm8",
-  "modified": "2021-08-24T17:45:32Z",
+  "modified": "2023-11-08T04:03:44.661151Z",
   "published": "2021-08-25T20:58:19Z",
   "aliases": [
-    "CVE-2020-36435"
+    "CVE-2020-36435",
+    "RUSTSEC-2020-0115"
   ],
   "summary": "Data race in ruspiro-singleton",
   "details": "`Singleton\u003cT\u003e` is meant to be a static object that can be initialized lazily. In\norder to satisfy the requirement that `static` items must implement `Sync`,\n`Singleton` implemented both `Sync` and `Send` unconditionally.\n\nThis allows for a bug where non-`Sync` types such as `Cell` can be used in\nsingletons and cause data races in concurrent programs.\n\nThe flaw was corrected in commit `b0d2bd20e` by adding trait bounds, requiring\nthe contaiend type to implement `Sync`.\n",

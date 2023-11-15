@@ -1,11 +1,11 @@
 {
   "id": "PYSEC-2021-337",
-  "modified": "2021-09-26T23:32:30.327481Z",
+  "modified": "2023-11-08T04:05:07.511361Z",
   "published": "2021-07-05T11:15:00Z",
   "aliases": [
     "CVE-2021-23401",
-    "SNYK-PYTHON-FLASKUSER-1293188",
-    "GHSA-4298-89hc-6rfv"
+    "GHSA-4298-89hc-6rfv",
+    "SNYK-PYTHON-FLASKUSER-1293188"
   ],
   "details": "This affects all versions of package Flask-User. When using the make_safe_url function, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as /////evil.com/path or \\\\\\evil.com/path. This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using 'autocorrect_location_header=False.",
   "affected": [

@@ -1,9 +1,11 @@
 {
   "id": "GHSA-6cr6-fmvc-vw2p",
-  "modified": "2023-02-09T21:41:23Z",
+  "modified": "2023-11-08T04:07:06.025033Z",
   "published": "2022-12-28T00:30:23Z",
   "aliases": [
-    "CVE-2021-4239"
+    "CVE-2021-4239",
+    "GHSA-g9mp-8g3h-3c5c",
+    "GO-2022-0425"
   ],
   "summary": "Noise vulnerable to denial of service",
   "details": "Noise is a Go implementation of the Noise Protocol Framework. The Noise protocol implementation suffers from weakened cryptographic security after encrypting 2^64 messages, and a potential denial of service attack. After 2^64 (~18.4 quintillion) messages are encrypted with the Encrypt function, the nonce counter will wrap around, causing multiple messages to be encrypted with the same key and nonce. In a separate issue, the Decrypt function increments the nonce state even when it fails to decrypt a message. If an attacker can provide an invalid input to the Decrypt function, this will cause the nonce state to desynchronize between the peers, resulting in a failure to encrypt all subsequent messages.",

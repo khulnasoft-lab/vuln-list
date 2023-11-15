@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rw2c-c256-3r53",
-  "modified": "2023-06-13T18:08:34Z",
+  "modified": "2023-11-08T04:03:41.965428Z",
   "published": "2021-08-25T20:51:52Z",
   "aliases": [
-    "CVE-2020-36215"
+    "CVE-2020-36215",
+    "RUSTSEC-2020-0107"
   ],
   "summary": "Data races in hashconsing",
   "details": "Affected versions of hashconsing implements Send/Sync for its HConsed type without restricting it to Sendable types and Syncable types. This allows non-Sync types such as Cell to be shared across threads leading to undefined behavior and memory corruption in concurrent programs.",

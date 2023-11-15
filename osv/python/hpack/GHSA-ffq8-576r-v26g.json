@@ -1,9 +1,10 @@
 {
   "id": "GHSA-ffq8-576r-v26g",
-  "modified": "2023-10-23T05:32:16.248873Z",
+  "modified": "2023-11-08T03:58:32.800713Z",
   "published": "2019-07-05T21:11:05Z",
   "aliases": [
-    "CVE-2016-6581"
+    "CVE-2016-6581",
+    "PYSEC-2017-87"
   ],
   "summary": "HPACK Denial of Service vulnerability (HPACK Bomb)",
   "details": "A HTTP/2 implementation built using any version of the Python HPACK library between v1.0.0 and v2.2.0 could be targeted for a denial of service attack, specifically a so-called \"HPACK Bomb\" attack. This attack occurs when an attacker inserts a header field that is exactly the size of the HPACK dynamic header table into the dynamic header table. The attacker can then send a header block that is simply repeated requests to expand that field in the dynamic table. This can lead to a gigantic compression ratio of 4,096 or better, meaning that 16kB of data can decompress to 64MB of data on the target machine.",

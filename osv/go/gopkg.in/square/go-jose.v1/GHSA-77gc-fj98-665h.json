@@ -1,9 +1,11 @@
 {
   "id": "GHSA-77gc-fj98-665h",
-  "modified": "2023-08-30T10:22:12Z",
+  "modified": "2023-11-08T03:58:37.812163Z",
   "published": "2021-05-18T19:15:09Z",
   "aliases": [
-    "CVE-2016-9122"
+    "CVE-2016-9122",
+    "GO-2020-0011",
+    "GO-2022-0945"
   ],
   "summary": "Go JOSE Signature Validation Bypass",
   "details": "Go JOSE before 1.1.0 suffers from multiple signatures exploitation. The go-jose library supports messages with multiple signatures. However, when validating a signed message the API did not indicate which signature was valid, which could potentially lead to confusion. For example, users of the library might mistakenly read protected header values from an attached signature that was different from the one originally validated",

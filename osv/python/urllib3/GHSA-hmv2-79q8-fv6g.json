@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hmv2-79q8-fv6g",
-  "modified": "2023-04-11T01:39:00.257981Z",
+  "modified": "2023-11-08T04:03:58.967412Z",
   "published": "2021-04-30T17:31:43Z",
   "aliases": [
-    "CVE-2020-7212"
+    "CVE-2020-7212",
+    "PYSEC-2020-149"
   ],
   "summary": "Uncontrolled Resource Consumption in urllib3",
   "details": "The _encode_invalid_chars function in util/url.py in the urllib3 library 1.25.2 through 1.25.7 for Python allows a denial of service (CPU consumption) because of an inefficient algorithm. The percent_encodings array contains all matches of percent encodings. It is not deduplicated. For a URL of length N, the size of percent_encodings may be up to O(N). The next step (normalize existing percent-encoded bytes) also takes up to O(N) for each step, so the total time is O(N^2). If percent_encodings were deduplicated, the time to compute _encode_invalid_chars would be O(kN), where k is at most 484 ((10+6*2)^2).",

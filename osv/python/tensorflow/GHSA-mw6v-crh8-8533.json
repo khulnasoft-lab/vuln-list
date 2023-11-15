@@ -1,9 +1,12 @@
 {
   "id": "GHSA-mw6v-crh8-8533",
-  "modified": "2023-10-22T05:31:55.550319Z",
+  "modified": "2023-11-08T04:00:23.059640Z",
   "published": "2019-04-30T15:36:41Z",
   "aliases": [
-    "CVE-2018-7575"
+    "CVE-2018-7575",
+    "PYSEC-2019-205",
+    "PYSEC-2019-223",
+    "PYSEC-2019-230"
   ],
   "summary": "Integer Overflow or Wraparound in Google TensorFlow",
   "details": "### Issue Description\nGoogle TensorFlow 1.7.x and earlier is affected by a Buffer Overflow vulnerability. The type of exploitation is context-dependent. The block size in meta file might contain a large int64 value which causes an integer overflow upon addition. Subsequent code using n as index may cause an out-of-bounds read.\n\n### Impact\nA maliciously crafted meta checkpoint could be used to cause the TensorFlow process to perform an out of bounds read on in process memory.\n",

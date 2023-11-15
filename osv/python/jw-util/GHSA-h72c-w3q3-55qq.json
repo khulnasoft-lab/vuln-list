@@ -1,9 +1,10 @@
 {
   "id": "GHSA-h72c-w3q3-55qq",
-  "modified": "2023-03-11T05:41:20.806621Z",
+  "modified": "2023-11-08T04:02:19.226419Z",
   "published": "2021-06-02T21:45:12Z",
   "aliases": [
-    "CVE-2020-13388"
+    "CVE-2020-13388",
+    "PYSEC-2020-341"
   ],
   "summary": "OS Command Injection in jw.util",
   "details": "An exploitable vulnerability exists in the configuration-loading functionality of the jw.util package before 2.3 for Python. When loading a configuration with FromString or FromStream with YAML, one can execute arbitrary Python code, resulting in OS command execution, because safe_load is not used.",

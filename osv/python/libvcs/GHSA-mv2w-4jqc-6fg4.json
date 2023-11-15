@@ -1,9 +1,11 @@
 {
   "id": "GHSA-mv2w-4jqc-6fg4",
-  "modified": "2023-04-11T01:30:54.823671Z",
+  "modified": "2023-11-08T04:08:04.530929Z",
   "published": "2022-03-15T00:00:53Z",
   "aliases": [
-    "CVE-2022-21187"
+    "CVE-2022-21187",
+    "PYSEC-2022-163",
+    "SNYK-PYTHON-LIBVCS-2421204"
   ],
   "summary": "Command injection in libvcs and vcspull",
   "details": "The package libvcs before 0.11.1 are vulnerable to Command Injection via argument injection. When calling the update_repo function (when using hg), the url parameter is passed to the hg clone command. By injecting some hg options it was possible to get arbitrary command execution.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mj63-64x7-57xf",
-  "modified": "2023-08-07T11:31:47.961638Z",
+  "modified": "2023-11-08T04:05:50.911520Z",
   "published": "2021-06-18T18:43:14Z",
   "aliases": [
-    "CVE-2021-31800"
+    "CVE-2021-31800",
+    "PYSEC-2021-17"
   ],
   "summary": "Path traversal in impacket",
   "details": "Multiple path traversal vulnerabilities exist in smbserver.py in Impacket before 0.9.23. An attacker that connects to a running smbserver instance can list and write to arbitrary files via ../ directory traversal. This could potentially be abused to achieve arbitrary code execution by replacing /etc/shadow or an SSH authorized key.",

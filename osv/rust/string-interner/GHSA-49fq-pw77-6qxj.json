@@ -1,9 +1,10 @@
 {
   "id": "GHSA-49fq-pw77-6qxj",
-  "modified": "2023-06-13T21:55:41Z",
+  "modified": "2023-11-08T04:01:22.202134Z",
   "published": "2021-08-25T20:44:15Z",
   "aliases": [
-    "CVE-2019-16882"
+    "CVE-2019-16882",
+    "RUSTSEC-2019-0023"
   ],
   "summary": "Use after free in string-interner",
   "details": "Affected versions of this crate did not clone contained strings when an interner is cloned. Interners have raw pointers to the contained strings, and they keep pointing the strings which the old interner owns, after the interner is cloned. If a new cloned interner is alive and the old original interner is dead, the new interner has dangling pointers to the old interner's storage, which is already dropped.\n\nThis allows an attacker to read the already freed memory. The dangling pointers are used by the interners to check a string is already interned. An attacker can do brute force attack to get the data pointed by the dangling pointer.",

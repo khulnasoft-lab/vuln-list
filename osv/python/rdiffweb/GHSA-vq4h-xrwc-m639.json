@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vq4h-xrwc-m639",
-  "modified": "2023-04-11T01:45:21.850109Z",
+  "modified": "2023-11-08T04:09:35.265975Z",
   "published": "2022-09-16T00:00:39Z",
   "aliases": [
-    "CVE-2022-3221"
+    "CVE-2022-3221",
+    "PYSEC-2022-278"
   ],
   "summary": "rdiffweb CSRF vulnerability in profile's SSH keys can lead to unauthorized access",
   "details": "rdiffweb prior to 2.4.3 is vulnerable to Cross-Site Request Forgery (CSRF). While adding SSH public keys to the profile, the server accepts the GET request, which results in adding an SSH public key to the profile and leads to unauthorized access to the system and backups. Version 2.4.3 contains a patch for this issue.",

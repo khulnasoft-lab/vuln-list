@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2wrh-6pvc-2jm9",
-  "modified": "2023-10-13T23:10:21Z",
+  "modified": "2023-11-08T04:13:15.499029Z",
   "published": "2023-08-02T21:30:20Z",
   "aliases": [
-    "CVE-2023-3978"
+    "CVE-2023-3978",
+    "GO-2023-1988"
   ],
   "summary": "Improper rendering of text nodes in golang.org/x/net/html",
   "details": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack. ",

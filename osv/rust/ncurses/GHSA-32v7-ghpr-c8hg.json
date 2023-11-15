@@ -1,9 +1,12 @@
 {
   "id": "GHSA-32v7-ghpr-c8hg",
-  "modified": "2023-06-13T18:30:35Z",
+  "modified": "2023-11-08T04:01:13.981343Z",
   "published": "2021-08-25T20:58:47Z",
   "aliases": [
-    "CVE-2019-15547"
+    "CVE-2019-15547",
+    "CVE-2019-15548",
+    "GHSA-g7r5-x7cr-vm3v",
+    "RUSTSEC-2019-0006"
   ],
   "summary": "Mishandling of format strings in ncurses",
   "details": "ncurses exposes functions from the ncurses library which:\n* Pass buffers without length to C functions that may write an arbitrary amount of data, leading to a buffer overflow. (instr, mvwinstr, etc)\n* Passes rust \u0026str to strings expecting C format arguments, allowing hostile input to execute a format string attack, which trivially allows writing arbitrary data to stack memory (functions in the printw family).\n",

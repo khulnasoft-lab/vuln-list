@@ -1,11 +1,11 @@
 {
   "id": "PYSEC-2021-96",
-  "modified": "2021-06-15T05:47:49.199835Z",
+  "modified": "2023-11-08T04:05:07.026421Z",
   "published": "2021-06-11T00:15:00Z",
   "aliases": [
     "CVE-2021-23393",
-    "SNYK-PYTHON-FLASKUNCHAINED-1293189",
-    "GHSA-pjc4-3w99-j7v4"
+    "GHSA-pjc4-3w99-j7v4",
+    "SNYK-PYTHON-FLASKUNCHAINED-1293189"
   ],
   "details": "This affects the package Flask-Unchained before 0.9.0. When using the the _validate_redirect_url function, it is possible to bypass URL validation and redirect a user to an arbitrary URL by providing multiple back slashes such as \\\\\\evil.com/path. This vulnerability is only exploitable if an alternative WSGI server other than Werkzeug is used, or the default behaviour of Werkzeug is modified using 'autocorrect_location_header=False.",
   "affected": [

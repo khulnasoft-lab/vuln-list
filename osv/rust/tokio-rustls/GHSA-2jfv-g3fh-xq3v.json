@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2jfv-g3fh-xq3v",
-  "modified": "2023-06-13T21:56:58Z",
+  "modified": "2023-11-08T04:03:36.949759Z",
   "published": "2021-08-25T20:46:54Z",
   "aliases": [
-    "CVE-2020-35875"
+    "CVE-2020-35875",
+    "RUSTSEC-2020-0019"
   ],
   "summary": "Excessive memory usage in tokio-rustls",
   "details": "tokio-rustls does not call process_new_packets immediately after read, so the expected termination condition wants_read always returns true. As long as new incoming data arrives faster than it is processed and the reader does not return pending, data will be buffered. This may cause DoS.",

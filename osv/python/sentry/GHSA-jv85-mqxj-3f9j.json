@@ -1,9 +1,10 @@
 {
   "id": "GHSA-jv85-mqxj-3f9j",
-  "modified": "2023-04-11T01:38:46.647514Z",
+  "modified": "2023-11-08T04:08:18.870844Z",
   "published": "2022-12-12T21:27:09Z",
   "aliases": [
-    "CVE-2022-23485"
+    "CVE-2022-23485",
+    "PYSEC-2022-43011"
   ],
   "summary": "Sentry vulnerable to invite code reuse via cookie manipulation",
   "details": "With a known valid invite link (i.e. not already accepted or expired) an unauthenticated attacker can manipulate the cookie to allow the same invite link to be reused on multiple accounts when joining an organization.\n\n### Impact\nAn attacker with a valid invite link can create multiple users and join the organization from which the invite link was generated.\n\n### Patches\nThis issue was patched in version 22.11.0.\n\n### Workarounds\nSentry SaaS customers do not need to take action.\n\nSelf-hosted Sentry installs can disable the invite functionality until they are ready to deploy the patched version by editing their `sentry.conf.py` file (usually located at `~/.sentry/`).\n\n1. Add the following line into `sentry.conf.py`:\n\n    ```python\n     SENTRY_FEATURES[\"organizations:invite-members\"] = False\n    ```\n2. Restart the Sentry web service.\n\n    ```\n    docker compose restart web\n    ```\n\n### For more information\nIf you have any questions or comments about this advisory:\n* [Visit our FAQs on this CVE](https://help.sentry.io/account/security/cve-2022-23485-faqs/)\n* Open an issue in [getsentry/sentry](http://github.com/getsentry/sentry)\n* Email us at security[@]sentry.io\n",

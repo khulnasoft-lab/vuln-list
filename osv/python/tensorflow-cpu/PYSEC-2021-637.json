@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-637",
-  "modified": "2021-12-09T06:35:11.562556Z",
+  "modified": "2023-11-08T04:06:56.689384Z",
   "published": "2021-11-05T23:15:00Z",
   "aliases": [
+    "BIT-2021-41228",
+    "BIT-tensorflow-2021-41228",
     "CVE-2021-41228",
-    "GHSA-3rcw-9p9x-582v"
+    "GHSA-3rcw-9p9x-582v",
+    "PYSEC-2021-420",
+    "PYSEC-2021-835"
   ],
   "details": "TensorFlow is an open source platform for machine learning. In affected versions TensorFlow's `saved_model_cli` tool is vulnerable to a code injection as it calls `eval` on user supplied strings. This can be used by attackers to run arbitrary code on the plaform where the CLI tool runs. However, given that the tool is always run manually, the impact of this is not severe. We have patched this by adding a `safe` flag which defaults to `True` and an explicit warning for users. The fix will be included in TensorFlow 2.7.0. We will also cherrypick this commit on TensorFlow 2.6.1, TensorFlow 2.5.2, and TensorFlow 2.4.4, as these are also affected and still in supported range.",
   "affected": [

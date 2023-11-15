@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-129",
-  "modified": "2022-03-09T00:18:26.310749Z",
+  "modified": "2023-11-08T04:08:22.523504Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23565",
+    "BIT-tensorflow-2022-23565",
     "CVE-2022-23565",
-    "GHSA-4v5p-v5h9-6xjx"
+    "GHSA-4v5p-v5h9-6xjx",
+    "PYSEC-2022-74"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. An attacker can trigger denial of service via assertion failure by altering a `SavedModel` on disk such that `AttrDef`s of some operation are duplicated. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

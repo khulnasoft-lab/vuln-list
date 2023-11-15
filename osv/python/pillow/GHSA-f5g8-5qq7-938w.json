@@ -1,9 +1,12 @@
 {
   "id": "GHSA-f5g8-5qq7-938w",
-  "modified": "2023-09-04T16:45:50.726638Z",
+  "modified": "2023-11-08T04:03:34.994731Z",
   "published": "2021-03-18T19:55:41Z",
   "aliases": [
-    "CVE-2020-35653"
+    "BIT-2020-35653",
+    "BIT-pillow-2020-35653",
+    "CVE-2020-35653",
+    "PYSEC-2021-69"
   ],
   "summary": "Pillow Out-of-bounds Read",
   "details": "In Pillow before 8.1.0, PcxDecode has a buffer over-read when decoding a crafted PCX file because the user-supplied stride value is trusted for buffer calculations.",

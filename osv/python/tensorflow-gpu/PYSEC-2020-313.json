@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2020-313",
-  "modified": "2021-12-09T06:35:13.097348Z",
+  "modified": "2023-11-08T04:02:33.026145Z",
   "published": "2020-09-25T19:15:00Z",
   "aliases": [
+    "BIT-2020-15198",
+    "BIT-tensorflow-2020-15198",
     "CVE-2020-15198",
-    "GHSA-jc87-6vpp-7ff3"
+    "GHSA-jc87-6vpp-7ff3",
+    "PYSEC-2020-121",
+    "PYSEC-2020-278"
   ],
   "details": "In Tensorflow before version 2.3.1, the `SparseCountSparseOutput` implementation does not validate that the input arguments form a valid sparse tensor. In particular, there is no validation that the `indices` tensor has the same shape as the `values` one. The values in these tensors are always accessed in parallel. Thus, a shape mismatch can result in accesses outside the bounds of heap allocated buffers. The issue is patched in commit 3cbb917b4714766030b28eba9fb41bb97ce9ee02 and is released in TensorFlow version 2.3.1.",
   "affected": [

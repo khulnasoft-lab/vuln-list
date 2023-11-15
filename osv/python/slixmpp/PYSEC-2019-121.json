@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2019-121",
-  "modified": "2020-08-24T17:37:00Z",
+  "modified": "2023-11-08T04:00:35.596587Z",
   "published": "2019-02-04T21:29:00Z",
   "aliases": [
-    "CVE-2019-1000021"
+    "CVE-2019-1000021",
+    "GHSA-4g62-mfwx-4q48"
   ],
   "details": "slixmpp version before commit 7cd73b594e8122dddf847953fcfc85ab4d316416 contains an incorrect Access Control vulnerability in XEP-0223 plugin (Persistent Storage of Private Data via PubSub) options profile, used for the configuration of default access model that can result in all of the contacts of the victim can see private data having been published to a PEP node. This attack appears to be exploitable if the user of this library publishes any private data on PEP, the node isn't configured to be private. This vulnerability appears to have been fixed in commit 7cd73b594e8122dddf847953fcfc85ab4d316416 which is included in slixmpp 1.4.2.",
   "affected": [

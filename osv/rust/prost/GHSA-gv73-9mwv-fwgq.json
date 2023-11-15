@@ -1,9 +1,10 @@
 {
   "id": "GHSA-gv73-9mwv-fwgq",
-  "modified": "2023-06-13T20:33:10Z",
+  "modified": "2023-11-08T04:03:35.913705Z",
   "published": "2021-08-25T20:46:11Z",
   "aliases": [
-    "CVE-2020-35858"
+    "CVE-2020-35858",
+    "RUSTSEC-2020-0002"
   ],
   "summary": "Out of bounds write in prost",
   "details": "Affected versions of this crate contained a bug in which decoding untrusted input could overflow the stack. On architectures with stack probes (like x86), this can be used for denial of service attacks, while on architectures without stack probes (like ARM) overflowing the stack is unsound and can result in potential memory corruption (or even RCE).",

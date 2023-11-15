@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vjrq-cg9x-rfjp",
-  "modified": "2023-06-13T17:03:43Z",
+  "modified": "2023-11-08T03:59:16.406669Z",
   "published": "2021-08-25T20:43:02Z",
   "aliases": [
-    "CVE-2017-18589"
+    "CVE-2017-18589",
+    "RUSTSEC-2017-0005"
   ],
   "summary": "Improper Input Validation in cookie",
   "details": "Affected versions of this crate use the time crate and the method Duration::seconds to parse the Max-Age duration cookie setting. This method will panic if the value is greater than 2^64/1000 and less than or equal to 2^64, which can result in denial of service for a client or server.\n\nThis flaw was corrected by explicitly checking for the Max-Age being in this integer range and clamping the value to the maximum duration value.",

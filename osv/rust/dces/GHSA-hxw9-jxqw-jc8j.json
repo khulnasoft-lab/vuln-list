@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hxw9-jxqw-jc8j",
-  "modified": "2021-08-24T18:21:21Z",
+  "modified": "2023-11-08T04:03:46.135327Z",
   "published": "2021-08-25T20:58:05Z",
   "aliases": [
-    "CVE-2020-36459"
+    "CVE-2020-36459",
+    "RUSTSEC-2020-0139"
   ],
   "summary": "Data races in dces",
   "details": "An issue was discovered in the dces crate through 2020-12-09 for Rust. The World type is marked as Send but lacks bounds on its EntityStore and ComponentStore. This allows non-thread safe `EntityStore` and `ComponentStore`s to be sent\nacross threads and cause data races.\n",

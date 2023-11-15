@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-515",
-  "modified": "2021-12-09T06:34:56.873016Z",
+  "modified": "2023-11-08T04:05:40.831096Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29587",
+    "BIT-tensorflow-2021-29587",
     "CVE-2021-29587",
-    "GHSA-j7rm-8ww4-xx2g"
+    "GHSA-j7rm-8ww4-xx2g",
+    "PYSEC-2021-224",
+    "PYSEC-2021-713"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. The `Prepare` step of the `SpaceToDepth` TFLite operator does not check for 0 before division(https://github.com/tensorflow/tensorflow/blob/5f7975d09eac0f10ed8a17dbb6f5964977725adc/tensorflow/lite/kernels/space_to_depth.cc#L63-L67). An attacker can craft a model such that `params-\u003eblock_size` would be zero. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

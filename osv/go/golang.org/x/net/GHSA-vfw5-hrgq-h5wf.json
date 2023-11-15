@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vfw5-hrgq-h5wf",
-  "modified": "2023-09-25T17:33:10Z",
+  "modified": "2023-11-08T04:00:04.510801Z",
   "published": "2023-09-25T17:33:10Z",
   "aliases": [
-    "CVE-2018-17846"
+    "CVE-2018-17846",
+    "GO-2020-0014"
   ],
   "summary": "x/net/html Vulnerable to DoS During HTML Parsing",
   "details": "The html package (aka x/net/html) through 2018-09-25 in Go mishandles `\u003ctable\u003e\u003cmath\u003e\u003cselect\u003e\u003cmi\u003e\u003cselect\u003e\u003c/table\u003e`, leading to an infinite loop during an `html.Parse` call because `inSelectIM` and `inSelectInTableIM` do not comply with a specification.",

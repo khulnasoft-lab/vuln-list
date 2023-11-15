@@ -1,9 +1,10 @@
 {
   "id": "GHSA-pq64-v7f5-gqh8",
-  "modified": "2023-10-22T05:32:03.972469Z",
+  "modified": "2023-11-08T04:05:24.065715Z",
   "published": "2021-03-29T16:33:03Z",
   "aliases": [
-    "CVE-2021-27291"
+    "CVE-2021-27291",
+    "PYSEC-2021-141"
   ],
   "summary": "Pygments vulnerable to Regular Expression Denial of Service (ReDoS)",
   "details": "In pygments 1.1+, fixed in 2.7.4, the lexers used to parse programming languages rely heavily on regular expressions. Some of the regular expressions have exponential or cubic worst-case complexity and are vulnerable to ReDoS. By crafting malicious input, an attacker can cause a denial of service.",

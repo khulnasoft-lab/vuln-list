@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mpg6-rgp4-35rr",
-  "modified": "2023-04-11T01:50:44.534684Z",
+  "modified": "2023-11-08T03:56:54.553892Z",
   "published": "2022-05-02T04:00:27Z",
   "aliases": [
-    "CVE-2009-5010"
+    "CVE-2009-5010",
+    "PYSEC-2010-7"
   ],
   "summary": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') in pyftpdlib",
   "details": "Race condition in the FTPHandler class in ftpserver.py in pyftpdlib before 0.5.1 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected return value of None, a different vulnerability than CVE-2010-3494.",

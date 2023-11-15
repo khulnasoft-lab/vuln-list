@@ -1,9 +1,19 @@
 {
   "id": "GHSA-4wjj-jwc9-2x96",
-  "modified": "2022-09-16T21:56:51Z",
+  "modified": "2023-11-08T04:09:15.359127Z",
   "published": "2022-09-14T00:00:48Z",
   "aliases": [
-    "CVE-2022-2989"
+    "CVE-2022-2989",
+    "CVE-2022-2990",
+    "CVE-2022-2995",
+    "CVE-2022-36109",
+    "CVE-2023-25173",
+    "GHSA-fjm8-m7m6-2fjp",
+    "GHSA-hmfx-3pcx-653p",
+    "GHSA-phjr-8j92-w5v7",
+    "GHSA-rc4r-wh2q-q6c4",
+    "GO-2022-1008",
+    "GO-2023-1574"
   ],
   "summary": "Podman's incorrect handling of the supplementary groups may lead to data disclosure, modification",
   "details": "An incorrect handling of the supplementary groups in the Podman container engine might lead to the sensitive information disclosure or possible data modification if an attacker has direct access to the affected container where supplementary groups are used to set access permissions and is able to execute a binary code in that container.",

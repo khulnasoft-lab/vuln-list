@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2rcm-phc9-3945",
-  "modified": "2023-10-29T05:37:42.569694Z",
+  "modified": "2023-11-08T03:59:40.194341Z",
   "published": "2018-10-10T16:10:23Z",
   "aliases": [
-    "CVE-2018-1000808"
+    "CVE-2018-1000808",
+    "PYSEC-2018-24"
   ],
   "summary": "Pyopenssl Incorrect Memory Management",
   "details": "It was discovered that pyOpenSSL incorrectly handled memory when performing operations on a PKCS #12 store. A remote attacker could possibly use this issue to cause pyOpenSSL to consume resources, resulting in a denial of service.\n\nThis attack appear to be exploitable via Depends upon calling application, however it could be as simple as initiating a TLS connection that would cause the calling application to reload certificates from a PKCS #12 store. This vulnerability appears to have been fixed in 17.5.0.",

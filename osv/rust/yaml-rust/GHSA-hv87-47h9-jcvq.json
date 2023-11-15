@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hv87-47h9-jcvq",
-  "modified": "2023-06-13T22:23:08Z",
+  "modified": "2023-11-08T04:00:13.493088Z",
   "published": "2021-08-25T20:43:13Z",
   "aliases": [
-    "CVE-2018-20993"
+    "CVE-2018-20993",
+    "RUSTSEC-2018-0006"
   ],
   "summary": "Uncontrolled recursion in rust-yaml",
   "details": "Affected versions of this crate did not prevent deep recursion while deserializing data structures. This allows an attacker to make a YAML file with deeply nested structures that causes an abort while deserializing it. The flaw was corrected by checking the recursion depth.",

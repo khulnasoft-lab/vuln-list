@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qqc5-rgcc-cjqh",
-  "modified": "2023-08-30T11:37:11Z",
+  "modified": "2023-11-08T04:04:54.317159Z",
   "published": "2021-05-18T18:34:18Z",
   "aliases": [
-    "CVE-2021-22133"
+    "CVE-2021-22133",
+    "GO-2022-0706"
   ],
   "summary": "Information Disclosure in go.elastic.co/apm",
   "details": "The Elastic APM agent for Go versions before 1.11.0 can leak sensitive HTTP header information when logging the details during an application panic. Normally, the APM agent will sanitize sensitive HTTP header details before sending the information to the APM server. During an application panic it is possible the headers will not be sanitized before being sent.",

@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2013-21",
-  "modified": "2021-07-15T02:22:09.088856Z",
+  "modified": "2023-11-08T03:57:25.573130Z",
   "published": "2013-10-04T17:55:00Z",
   "aliases": [
-    "CVE-2013-6044"
+    "CVE-2013-6044",
+    "GHSA-9cwg-mhxf-hh59"
   ],
   "details": "The is_safe_url function in utils/http.py in Django 1.4.x before 1.4.6, 1.5.x before 1.5.2, and 1.6 before beta 2 treats a URL's scheme as safe even if it is not HTTP or HTTPS, which might introduce cross-site scripting (XSS) or other vulnerabilities into Django applications that use this function, as demonstrated by \"the login view in django.contrib.auth.views\" and the javascript: scheme.",
   "affected": [

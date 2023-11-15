@@ -1,9 +1,12 @@
 {
   "id": "GHSA-m6wg-2mwg-4rfq",
-  "modified": "2023-02-14T00:12:15Z",
+  "modified": "2023-11-08T04:04:19.530670Z",
   "published": "2021-05-18T15:29:42Z",
   "aliases": [
-    "CVE-2020-8945"
+    "CVE-2020-8945",
+    "GO-2020-0002",
+    "GO-2020-0031",
+    "GO-2021-0096"
   ],
   "summary": "GPGME Go wrapper contains Use After Free",
   "details": "The proglottis Go wrapper before 0.1.1 for the GPGME library has a use-after-free, as demonstrated by use for container image pulls by Docker or CRI-O. This leads to a crash or potential code execution during GPG signature verification.",

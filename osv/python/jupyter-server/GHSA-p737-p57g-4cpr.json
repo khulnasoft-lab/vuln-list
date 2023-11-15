@@ -1,9 +1,10 @@
 {
   "id": "GHSA-p737-p57g-4cpr",
-  "modified": "2023-04-11T01:27:08.584500Z",
+  "modified": "2023-11-08T04:08:35.307839Z",
   "published": "2022-03-25T19:20:39Z",
   "aliases": [
-    "CVE-2022-24757"
+    "CVE-2022-24757",
+    "PYSEC-2022-179"
   ],
   "summary": "Insertion of Sensitive Information into Log File in Jupyter notebook",
   "details": "### Impact\n_What kind of vulnerability is it?_\n\nAnytime a 5xx error is triggered, the auth cookie and other header values are recorded in Jupyter Server logs by default. Considering these logs do not require root access, an attacker can monitor these logs, steal sensitive auth/cookie information, and gain access to the Jupyter server.\n\n### Patches\n_Has the problem been patched? What versions should users upgrade to?_\n\nUpgrade to Jupyter Server version 1.15.4\n\n### For more information\n\nIf you have any questions or comments about this advisory, or vulnerabilities to report, please email our security list [security@ipython.org](mailto:security@ipython.org).\n\nCredit: @3coins for reporting. Thank you!\n\n",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j3q4-gmj4-mj95",
-  "modified": "2023-04-11T01:37:38.189281Z",
+  "modified": "2023-11-08T04:09:37.277679Z",
   "published": "2022-09-25T00:00:27Z",
   "aliases": [
-    "CVE-2022-3269"
+    "CVE-2022-3269",
+    "PYSEC-2022-290"
   ],
   "summary": "rdiffweb vulnerable to account access via session fixation",
   "details": "rdiffweb prior to 2.4.7 fails to invalidate session cookies on logout, leading to session fixation and allowing an attacker to access a users account. After logging in and logging out, the application continues to use the preauthentication cookies. The cookies remain the same after closing the browser and after password reset. The same cookies are reassigned for additional user logins which can lead to session fixation. An attacker can gain unauthorized access to the account of users who are using the same browser as long as a single session cookie persists on that browser once the attacker obtains a session cookie through another attack. This issue is patched in version 2.4.7. There are no known workarounds.\n",

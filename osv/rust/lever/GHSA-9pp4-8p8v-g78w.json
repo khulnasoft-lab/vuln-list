@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9pp4-8p8v-g78w",
-  "modified": "2021-08-18T20:22:32Z",
+  "modified": "2023-11-08T04:03:46.012738Z",
   "published": "2021-08-25T20:57:26Z",
   "aliases": [
-    "CVE-2020-36457"
+    "CVE-2020-36457",
+    "RUSTSEC-2020-0137"
   ],
   "summary": "Data races in lever",
   "details": "An issue was discovered in the lever crate before 0.1.1 for Rust. AtomicBox\u003cT\u003e implements the Send and Sync traits for all types T. This allows non-Send types such as Rc and non-Sync types such as Cell to be used across thread boundaries which can trigger undefined behavior and memory corruption.",

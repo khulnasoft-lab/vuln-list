@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8q59-q68h-6hv4",
-  "modified": "2023-07-06T19:48:37.618816Z",
+  "modified": "2023-11-08T04:02:26.414885Z",
   "published": "2021-03-25T21:26:26Z",
   "aliases": [
-    "CVE-2020-14343"
+    "CVE-2020-14343",
+    "PYSEC-2021-142"
   ],
   "summary": "Improper Input Validation in PyYAML",
   "details": "A vulnerability was discovered in the PyYAML library in versions before 5.4, where it is susceptible to arbitrary code execution when it processes untrusted YAML files through the full_load method or with the FullLoader loader. Applications that use the library to process untrusted input may be vulnerable to this flaw. This flaw allows an attacker to execute arbitrary code on the system by abusing the python/object/new constructor. This flaw is due to an incomplete fix for CVE-2020-1747.",

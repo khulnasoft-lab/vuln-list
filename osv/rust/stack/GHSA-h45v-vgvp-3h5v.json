@@ -1,9 +1,10 @@
 {
   "id": "GHSA-h45v-vgvp-3h5v",
-  "modified": "2023-06-13T20:54:35Z",
+  "modified": "2023-11-08T04:03:37.990860Z",
   "published": "2021-08-25T20:49:13Z",
   "aliases": [
-    "CVE-2020-35895"
+    "CVE-2020-35895",
+    "RUSTSEC-2020-0042"
   ],
   "summary": "Out-of-bounds write in stack",
   "details": "ArrayVec::insert allows insertion of an element into the array object into the specified index. Due to a missing check on the upperbound of this index, it is possible to write out of bounds.",

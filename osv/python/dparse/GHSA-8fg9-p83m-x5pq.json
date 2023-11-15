@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8fg9-p83m-x5pq",
-  "modified": "2023-07-12T14:26:28.134682Z",
+  "modified": "2023-11-08T04:10:17.529680Z",
   "published": "2022-09-27T15:28:00Z",
   "aliases": [
-    "CVE-2022-39280"
+    "CVE-2022-39280",
+    "PYSEC-2022-301"
   ],
   "summary": "ReDoS issue in dparse",
   "details": "### Impact\ndparse versions prior to 0.5.1 contain a regular expression that is vulnerable to [ReDoS](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS) (Regular Expression Denial of Service).\n\nAll users parsing index server URLs with dparse are impacted by this vulnerability.\n\n### Patches\nThe Patch is applied in the `0.5.2` version, all users are recommended to upgrade as soon as possible.\n\n### Workarounds\nAvoid passing index server URLs in the source file to be parsed.\n\n### References\n[https://github.com/pyupio/dparse/tree/security/remove-intensive-regex](https://github.com/pyupio/dparse/tree/security/remove-intensive-regex)\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [support@pyup.io](mailto:support@pyup.io)\n",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-34p9-f4q3-c4r7",
-  "modified": "2023-06-13T20:14:09Z",
+  "modified": "2023-11-08T03:58:21.575910Z",
   "published": "2021-08-25T20:43:11Z",
   "aliases": [
-    "CVE-2016-10931"
+    "CVE-2016-10931",
+    "RUSTSEC-2016-0001"
   ],
   "summary": "Improper Certificate Validation in openssl",
   "details": "All versions of rust-openssl prior to 0.9.0 contained numerous insecure defaults including off-by-default certificate verification and no API to perform hostname verification. Unless configured correctly by a developer, these defaults could allow an attacker to perform man-in-the-middle attacks. The problem was addressed in newer versions by enabling certificate verification by default and exposing APIs to perform hostname verification. Use the SslConnector and SslAcceptor types to take advantage of these new features (as opposed to the lower-level SslContext type).",

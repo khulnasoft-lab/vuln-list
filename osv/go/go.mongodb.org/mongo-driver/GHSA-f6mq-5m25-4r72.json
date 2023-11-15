@@ -1,9 +1,11 @@
 {
   "id": "GHSA-f6mq-5m25-4r72",
-  "modified": "2023-08-30T00:18:26Z",
+  "modified": "2023-11-08T04:04:37.294514Z",
   "published": "2021-06-15T16:08:16Z",
   "aliases": [
-    "CVE-2021-20329"
+    "CVE-2021-20329",
+    "GO-2021-0111",
+    "GO-2021-0112"
   ],
   "summary": "go.mongodb.org/mongo-driver improperly validates cstrings when marshalling Go objects into BSON",
   "details": "Specific cstrings input may not be properly validated in the MongoDB Go Driver when marshalling Go objects into BSON. A malicious user could use a Go object with specific string to potentially inject additional fields into marshalled documents. This issue affects all MongoDB GO Drivers up to (and including) 1.5.0.",

@@ -1,9 +1,12 @@
 {
   "id": "PYSEC-2023-202",
-  "modified": "2023-10-18T20:24:08.482939Z",
+  "modified": "2023-11-08T04:13:29.455581Z",
   "published": "2023-10-14T10:15:00Z",
   "aliases": [
-    "CVE-2023-42780"
+    "BIT-2023-42780",
+    "BIT-airflow-2023-42780",
+    "CVE-2023-42780",
+    "GHSA-cgx2-rrmr-jx43"
   ],
   "details": "Apache Airflow, versions prior to 2.7.2, contains a security vulnerability that allows authenticated users of Airflow to list warnings for all DAGs, even if the user had no permission to see those DAGs. It would reveal the dag_ids and the stack-traces of import errors for those DAGs with import errors.\nUsers of Apache Airflow are advised to upgrade to version 2.7.2 or newer to mitigate the risk associated with this vulnerability.\n\n",
   "affected": [

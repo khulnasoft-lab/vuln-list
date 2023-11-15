@@ -1,9 +1,12 @@
 {
   "id": "GHSA-47fc-vmwq-366v",
-  "modified": "2023-04-11T01:47:44.878356Z",
+  "modified": "2023-11-08T04:10:54.188354Z",
   "published": "2022-11-26T03:30:27Z",
   "aliases": [
-    "CVE-2022-45907"
+    "BIT-2022-45907",
+    "BIT-pytorch-2022-45907",
+    "CVE-2022-45907",
+    "PYSEC-2022-43015"
   ],
   "summary": "PyTorch vulnerable to arbitrary code execution",
   "details": "In PyTorch before trunk/89695, torch.jit.annotations.parse_type_line can cause arbitrary code execution because eval is used unsafely. The fix for this issue is available in version 1.13.1. There is a release checker in [issue #89855](https://github.com/pytorch/pytorch/issues/89855).",

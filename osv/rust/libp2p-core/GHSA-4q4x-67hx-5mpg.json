@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4q4x-67hx-5mpg",
-  "modified": "2023-06-13T17:43:58Z",
+  "modified": "2023-11-08T04:01:13.857415Z",
   "published": "2021-08-25T20:44:08Z",
   "aliases": [
-    "CVE-2019-15545"
+    "CVE-2019-15545",
+    "RUSTSEC-2019-0004"
   ],
   "summary": "Failure to properly verify ed25519 signatures in libp2p-core",
   "details": "Affected versions of this crate did not properly verify ed25519 signatures. Any signature with a correct length was considered valid. This allows an attacker to impersonate any node identity.",

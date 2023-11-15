@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vw39-2wj9-4q86",
-  "modified": "2023-04-11T01:46:55.892270Z",
+  "modified": "2023-11-08T04:10:40.067362Z",
   "published": "2022-10-11T19:00:29Z",
   "aliases": [
-    "CVE-2022-42731"
+    "CVE-2022-42731",
+    "PYSEC-2022-303"
   ],
   "summary": "django-mfa2 vulnerable to MFA Replay attack",
   "details": "mfa/FIDO2.py in django-mfa2 before 2.5.1 and 2.6.x before 2.6.1 allows a replay attack that could be used to register another device for a user. The device registration challenge is not invalidated after usage.",

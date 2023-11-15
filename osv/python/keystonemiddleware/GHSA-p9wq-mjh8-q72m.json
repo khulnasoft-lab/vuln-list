@@ -1,9 +1,11 @@
 {
   "id": "GHSA-p9wq-mjh8-q72m",
-  "modified": "2023-04-11T01:44:41.156200Z",
+  "modified": "2023-11-08T03:57:51.242911Z",
   "published": "2022-05-17T03:17:26Z",
   "aliases": [
-    "CVE-2015-1852"
+    "CVE-2015-1852",
+    "PYSEC-2015-30",
+    "PYSEC-2015-31"
   ],
   "summary": "OpenStack keystonemiddleware and python-keystoneclient vulnerable to man-in-the-middle attacks",
   "details": "The s3_token middleware in OpenStack keystonemiddleware before 1.6.0 and python-keystoneclient before 1.4.0 disables certification verification when the \"insecure\" option is set in a paste configuration (paste.ini) file regardless of the value, which allows remote attackers to conduct man-in-the-middle attacks via a crafted certificate, a different vulnerability than CVE-2014-7144.",

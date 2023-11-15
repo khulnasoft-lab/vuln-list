@@ -1,9 +1,10 @@
 {
   "id": "GHSA-69vj-xx27-g45w",
-  "modified": "2023-06-13T18:12:42Z",
+  "modified": "2023-11-08T04:03:42.027833Z",
   "published": "2021-08-25T20:51:49Z",
   "aliases": [
-    "CVE-2020-36216"
+    "CVE-2020-36216",
+    "RUSTSEC-2020-0108"
   ],
   "summary": "Data race in eventio",
   "details": "Input\u003cR\u003e implements Send without requiring R: Send.\n\nAffected versions of this crate allows users to send non-Send types to other threads, which can lead to undefined behavior such as data race and memory corruption.\n\nThe flaw was corrected in version 0.5.1 by adding R: Send bound to the Send impl of Input\u003cR\u003e.",

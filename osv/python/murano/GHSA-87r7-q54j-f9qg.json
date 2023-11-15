@@ -1,9 +1,10 @@
 {
   "id": "GHSA-87r7-q54j-f9qg",
-  "modified": "2023-07-31T23:16:41.812695Z",
+  "modified": "2023-11-08T03:58:29.862710Z",
   "published": "2022-05-17T03:48:22Z",
   "aliases": [
-    "CVE-2016-4972"
+    "CVE-2016-4972",
+    "PYSEC-2016-22"
   ],
   "summary": "OpenStack Murano Code Execution",
   "details": "OpenStack Murano before 1.0.3 (liberty) and 2.x before 2.0.1 (mitaka), Murano-dashboard before 1.0.3 (liberty) and 2.x before 2.0.1 (mitaka), and python-muranoclient before 0.7.3 (liberty) and 0.8.x before 0.8.5 (mitaka) improperly use loaders inherited from yaml.Loader when parsing MuranoPL and UI files, which allows remote attackers to create arbitrary Python objects and execute arbitrary code via crafted extended YAML tags in UI definitions in packages.",

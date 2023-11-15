@@ -1,9 +1,10 @@
 {
   "id": "GHSA-39xg-8p43-h76x",
-  "modified": "2023-06-13T20:28:35Z",
+  "modified": "2023-11-08T04:03:41.295805Z",
   "published": "2021-08-25T20:51:40Z",
   "aliases": [
-    "CVE-2020-36203"
+    "CVE-2020-36203",
+    "RUSTSEC-2020-0094"
   ],
   "summary": "Data races in reffers",
   "details": "ARefss\u003c'a, V\u003e is a type that is assumed to contain objects that are Send + Sync.\n\nIn the affected versions of this crate, Send/Sync traits are unconditionally implemented for ARefss\u003c'a, V\u003e.\n\nBy using the ARefss::map() API, we can insert a !Send or !Sync object into ARefss\u003c'a, V\u003e. After that, it is possible to create a data race to the inner object of ARefss\u003c'a, V\u003e, which can lead to undefined behavior \u0026 memory corruption.\n\nThe flaw was corrected in commit `6dd7ca0` by adding trait bound V: Send + Sync to ARefss::map() API.",

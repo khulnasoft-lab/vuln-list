@@ -1,9 +1,10 @@
 {
   "id": "RUSTSEC-2023-0062",
-  "modified": "2023-09-13T15:52:21Z",
+  "modified": "2023-11-08T04:13:15.681149Z",
   "published": "2023-09-13T12:00:00Z",
   "aliases": [
-    "CVE-2023-39914"
+    "CVE-2023-39914",
+    "GHSA-6jmw-6mxw-w4jc"
   ],
   "summary": "BER/CER/DER decoder panics on invalid input",
   "details": "Due to insufficient checking of input data, decoding certain data sequences\ncan lead to _bcder_ panicking rather than returning an error. This can affect\nboth the actual decoding stage as well as accessing content of types that\nutilized delayed decoding.\n\nbcder 0.7.3 fixes these issues by more thoroughly checking inputs and\nreturning errors as expected.",

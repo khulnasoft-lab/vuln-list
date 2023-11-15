@@ -1,9 +1,12 @@
 {
   "id": "GHSA-qm57-vhq3-3fwf",
-  "modified": "2023-04-11T01:42:12.950404Z",
+  "modified": "2023-11-08T04:05:52.629930Z",
   "published": "2021-06-09T17:14:51Z",
   "aliases": [
-    "CVE-2021-32052"
+    "BIT-2021-32052",
+    "BIT-django-2021-32052",
+    "CVE-2021-32052",
+    "PYSEC-2021-8"
   ],
   "summary": "Header injection possible in Django",
   "details": "In Django 2.2 before 2.2.22, 3.1 before 3.1.10, and 3.2 before 3.2.2 (with Python 3.9.5+), URLValidator does not prohibit newlines and tabs (unless the URLField form field is used). If an application uses values with newlines in an HTTP response, header injection can occur. Django itself is unaffected because HttpResponse prohibits newlines in HTTP headers.",

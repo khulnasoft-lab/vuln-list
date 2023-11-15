@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3x58-8qmv-wqw5",
-  "modified": "2023-10-28T05:34:15.615030Z",
+  "modified": "2023-11-08T03:59:55.586388Z",
   "published": "2022-05-13T01:49:58Z",
   "aliases": [
-    "CVE-2018-14523"
+    "CVE-2018-14523",
+    "PYSEC-2018-63"
   ],
   "summary": "Aubio is vulnerable to out of bound read when samplerate \u003e 50kHz",
   "details": "An issue was discovered in aubio 0.4.6. A buffer over-read can occur in `new_aubio_pitchyinfft` in `pitch/pitchyinfft.c` when the samplerate of the input file is larger than 50kHz.",

@@ -1,9 +1,12 @@
 {
   "id": "GHSA-39qc-96h7-956f",
-  "modified": "2023-09-29T17:03:45Z",
+  "modified": "2023-11-08T04:01:47.101318Z",
   "published": "2022-05-24T16:53:19Z",
   "aliases": [
-    "CVE-2019-9514"
+    "CVE-2019-9512",
+    "CVE-2019-9514",
+    "GHSA-hgr8-6h9x-f7q9",
+    "GO-2022-0536"
   ],
   "summary": "golang.org/x/net/http vulnerable to a reset flood",
   "details": "Some HTTP/2 implementations are vulnerable to a reset flood, potentially leading to a denial of service. Servers that accept direct connections from untrusted clients could be remotely made to allocate an unlimited amount of memory, until the program crashes. The attacker opens a number of streams and sends an invalid request over each stream that should solicit a stream of RST_STREAM frames from the peer. Depending on how the peer queues the RST_STREAM frames, this can consume excess memory, CPU, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2",

@@ -1,9 +1,12 @@
 {
   "id": "GO-2020-0018",
-  "modified": "2022-08-29T16:50:59Z",
+  "modified": "2023-11-08T04:06:09.768106Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
-    "CVE-2021-3538"
+    "CVE-2021-3538",
+    "GHSA-33m6-q9v5-62r7",
+    "GO-2022-0244",
+    "SNYK-GOLANG-GITHUBCOMSATORIGOUUID-72488"
   ],
   "details": "UUIDs generated using NewV1 and NewV4 may not read the expected\nnumber of random bytes. These UUIDs may contain a significantly smaller\namount of entropy than expected, possibly leading to collisions.\n",
   "affected": [

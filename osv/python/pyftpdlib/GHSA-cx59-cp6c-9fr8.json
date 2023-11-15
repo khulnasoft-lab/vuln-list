@@ -1,9 +1,10 @@
 {
   "id": "GHSA-cx59-cp6c-9fr8",
-  "modified": "2022-06-08T22:33:05Z",
+  "modified": "2023-11-08T03:56:49.963389Z",
   "published": "2022-05-01T18:45:58Z",
   "aliases": [
-    "CVE-2007-6740"
+    "CVE-2007-6740",
+    "PYSEC-2010-24"
   ],
   "summary": "pyftpdlib vulnerable to allocation of resources without limits",
   "details": "The ftp_STOU function in FTPServer.py in pyftpdlib before 0.2.0 does not limit the number of attempts to discover a unique filename, which might allow remote authenticated users to cause a denial of service via a STOU command.",

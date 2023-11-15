@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6g87-ff9q-v847",
-  "modified": "2023-10-22T05:31:02.266865Z",
+  "modified": "2023-11-08T03:59:38.649508Z",
   "published": "2018-09-17T20:46:52Z",
   "aliases": [
-    "CVE-2018-1000518"
+    "CVE-2018-1000518",
+    "PYSEC-2018-79"
   ],
   "summary": "websockets is vulnerable to denial of service by memory exhaustion",
   "details": "The Python websockets library version 4 contains a CWE-409: Improper Handling of Highly Compressed Data (Data Amplification) vulnerability in Servers and clients, unless configured with compression=None that can result in Denial of Service by memory exhaustion. This attack appears to be exploitable via sending a specially crafted frame on an established connection. This vulnerability appears to have been fixed in version 5.0",

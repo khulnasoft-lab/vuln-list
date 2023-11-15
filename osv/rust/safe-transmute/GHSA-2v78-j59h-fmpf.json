@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2v78-j59h-fmpf",
-  "modified": "2023-06-13T21:04:31Z",
+  "modified": "2023-11-08T04:00:13.925381Z",
   "published": "2021-08-25T20:43:23Z",
   "aliases": [
-    "CVE-2018-21000"
+    "CVE-2018-21000",
+    "RUSTSEC-2018-0013"
   ],
   "summary": "Heap overflow or corruption in safe-transmute",
   "details": "Affected versions of this crate switched the length and capacity arguments in the Vec::from_raw_parts() constructor, which could lead to memory corruption or data leakage.",

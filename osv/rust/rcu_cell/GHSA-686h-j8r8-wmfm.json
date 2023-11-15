@@ -1,9 +1,10 @@
 {
   "id": "GHSA-686h-j8r8-wmfm",
-  "modified": "2021-08-24T17:53:47Z",
+  "modified": "2023-11-08T04:03:45.643060Z",
   "published": "2021-08-25T20:57:14Z",
   "aliases": [
-    "CVE-2020-36451"
+    "CVE-2020-36451",
+    "RUSTSEC-2020-0131"
   ],
   "summary": "Data races in rcu_cell",
   "details": "Affected versions of this crate unconditionally implement Send/Sync for `RcuCell\u003cT\u003e`.\nThis allows users to send `T: !Send` to other threads (while `T` enclosed within `RcuCell\u003cT\u003e`), and allows users to concurrently access `T: !Sync` by using the APIs of `RcuCell\u003cT\u003e` that provide access to `\u0026T`.\n\nThis can result in memory corruption caused by data races.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rpxm-vmr7-5f5f",
-  "modified": "2021-08-24T18:24:04Z",
+  "modified": "2023-11-08T04:03:45.276409Z",
   "published": "2021-08-25T20:59:15Z",
   "aliases": [
-    "CVE-2020-36445"
+    "CVE-2020-36445",
+    "RUSTSEC-2020-0125"
   ],
   "summary": "Data races in convec",
   "details": "Affected versions of this crate unconditionally implement Send/Sync for `ConVec\u003cT\u003e`.\nThis allows users to insert `T` that is not Send or not Sync.\n\nThis allows users to create data races by using non-Send types like `Arc\u003cCell\u003c_\u003e\u003e` or `Rc\u003c_\u003e` as `T` in `ConVec\u003cT\u003e`. It is also possible to create data races by using types like `Cell\u003c_\u003e` or `RefCell\u003c_\u003e` as `T` (types that are `Send` but not `Sync`).\nSuch data races can lead to memory corruption.",

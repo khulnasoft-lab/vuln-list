@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-126",
-  "modified": "2022-03-09T00:18:25.916972Z",
+  "modified": "2023-11-08T04:08:22.336710Z",
   "published": "2022-02-04T23:15:00Z",
   "aliases": [
+    "BIT-2022-23562",
+    "BIT-tensorflow-2022-23562",
     "CVE-2022-23562",
-    "GHSA-qx3f-p745-w4hr"
+    "GHSA-qx3f-p745-w4hr",
+    "PYSEC-2022-71"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `Range` suffers from integer overflows. These can trigger undefined behavior or, in some scenarios, extremely large allocations. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

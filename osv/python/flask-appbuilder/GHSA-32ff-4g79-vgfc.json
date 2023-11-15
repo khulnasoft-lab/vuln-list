@@ -1,9 +1,10 @@
 {
   "id": "GHSA-32ff-4g79-vgfc",
-  "modified": "2023-04-11T01:24:14.557918Z",
+  "modified": "2023-11-08T04:09:28.894172Z",
   "published": "2022-07-29T22:28:12Z",
   "aliases": [
-    "CVE-2022-31177"
+    "CVE-2022-31177",
+    "PYSEC-2022-247"
   ],
   "summary": "Flask-AppBuilder before v4.1.3 allows inference of sensitive information through query strings",
   "details": "### Impact\nAn authenticated Admin user could craft HTTP requests to filter users by their salted and hashed passwords strings. These filters could be made by using partial hashed password strings. The response would not include the hashed passwords, but an attacker could infer partial password hashes and their respective users.\n\nOnly when using `AUTH_DB` database authentication option.\n\n### Patches\nFixed on 4.1.3\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [example link to repo](http://example.com)\n* Email us at [example email address](mailto:example@example.com)\n",

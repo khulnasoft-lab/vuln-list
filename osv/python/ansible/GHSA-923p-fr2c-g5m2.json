@@ -1,9 +1,10 @@
 {
   "id": "GHSA-923p-fr2c-g5m2",
-  "modified": "2023-04-11T01:46:34.612758Z",
+  "modified": "2023-11-08T04:02:41.211588Z",
   "published": "2021-04-07T20:30:44Z",
   "aliases": [
-    "CVE-2020-1739"
+    "CVE-2020-1739",
+    "PYSEC-2020-11"
   ],
   "summary": "Exposure of Sensitive Information to an Unauthorized Actor in Ansible",
   "details": "A flaw was found in Ansible 2.7.16 and prior, 2.8.8 and prior, and 2.9.5 and prior when a password is set with the argument \"password\" of svn module, it is used on svn command line, disclosing to other users within the same node. An attacker could take advantage by reading the cmdline file from that particular PID on the procfs.",

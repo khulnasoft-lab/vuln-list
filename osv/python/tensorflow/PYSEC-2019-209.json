@@ -1,10 +1,12 @@
 {
   "id": "PYSEC-2019-209",
-  "modified": "2021-08-27T03:22:22.453759Z",
+  "modified": "2023-11-08T04:01:21.393349Z",
   "published": "2019-12-16T21:15:00Z",
   "aliases": [
     "CVE-2019-16778",
-    "GHSA-844w-j86r-4x2j"
+    "GHSA-844w-j86r-4x2j",
+    "PYSEC-2019-227",
+    "PYSEC-2019-234"
   ],
   "details": "In TensorFlow before 1.15, a heap buffer overflow in UnsortedSegmentSum can be produced when the Index template argument is int32. In this case data_size and num_segments fields are truncated from int64 to int32 and can produce negative numbers, resulting in accessing out of bounds heap memory. This is unlikely to be exploitable and was detected and fixed internally in TensorFlow 1.15 and 2.0.",
   "affected": [

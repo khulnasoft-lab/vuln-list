@@ -1,7 +1,10 @@
 {
   "id": "GHSA-2jq9-6xx7-3h29",
-  "modified": "2023-06-13T22:08:06Z",
+  "modified": "2023-11-08T04:14:07.505706Z",
   "published": "2022-08-11T18:10:52Z",
+  "aliases": [
+    "RUSTSEC-2018-0022"
+  ],
   "summary": "`temporary` makes use of uninitialized memory",
   "details": "Uninitialized memory is used as a RNG seed in temporary. This has been resolved in the 0.6.4 release. The crate is not intended to be used outside of a testing environment. For a general purpose crate to create temporary directories, [`tempfile`](https://crates.io/crates/tempfile) is an alternative for this crate.\n",
   "affected": [

@@ -1,9 +1,11 @@
 {
   "id": "PYSEC-2023-227",
-  "modified": "2023-11-03T10:29:41.505456Z",
+  "modified": "2023-11-10T08:11:29.510057Z",
   "published": "2023-11-03T05:15:00Z",
   "aliases": [
-    "CVE-2023-44271"
+    "BIT-pillow-2023-44271",
+    "CVE-2023-44271",
+    "GHSA-8ghj-p4vj-mr35"
   ],
   "details": "An issue was discovered in Pillow before 10.0.0. It is a Denial of Service that uncontrollably allocates memory to process a given task, potentially causing a service to crash by having it run out of memory. This occurs for truetype in ImageFont when textlength in an ImageDraw instance operates on a long text argument.",
   "affected": [

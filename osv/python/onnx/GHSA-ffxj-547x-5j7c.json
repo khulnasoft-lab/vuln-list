@@ -1,9 +1,10 @@
 {
   "id": "GHSA-ffxj-547x-5j7c",
-  "modified": "2023-04-11T01:35:01.926893Z",
+  "modified": "2023-11-08T04:08:50.586068Z",
   "published": "2023-01-26T21:30:25Z",
   "aliases": [
-    "CVE-2022-25882"
+    "CVE-2022-25882",
+    "PYSEC-2023-38"
   ],
   "summary": "Directory Traversal in onnx",
   "details": "Versions of the package onnx before 1.13.0 are vulnerable to Directory Traversal as the external_data field of the tensor proto can have a path to the file which is outside the model current directory or user-provided directory, for example \"../../../etc/passwd\"",

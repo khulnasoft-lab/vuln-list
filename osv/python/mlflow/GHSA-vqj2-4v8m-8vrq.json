@@ -1,9 +1,12 @@
 {
   "id": "GHSA-vqj2-4v8m-8vrq",
-  "modified": "2023-04-11T01:30:19.474902Z",
+  "modified": "2023-11-08T04:07:39.308405Z",
   "published": "2022-02-24T00:00:54Z",
   "aliases": [
-    "CVE-2022-0736"
+    "BIT-2022-0736",
+    "BIT-mlflow-2022-0736",
+    "CVE-2022-0736",
+    "PYSEC-2022-28"
   ],
   "summary": "Insecure Temporary File in mlflow",
   "details": "mlflow prior to 1.23.1 contains an insecure temporary file. The insecure function `tempfile.mktemp()` is deprecated and `mkstemp()` should be used instead.",

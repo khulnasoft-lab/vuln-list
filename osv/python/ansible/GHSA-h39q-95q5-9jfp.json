@@ -1,9 +1,10 @@
 {
   "id": "GHSA-h39q-95q5-9jfp",
-  "modified": "2023-10-21T05:27:23.936030Z",
+  "modified": "2023-11-08T04:02:40.844542Z",
   "published": "2022-02-09T00:11:19Z",
   "aliases": [
-    "CVE-2020-1734"
+    "CVE-2020-1734",
+    "PYSEC-2020-6"
   ],
   "summary": "OS Command Injection in ansible",
   "details": "A flaw was found in the pipe lookup plugin of ansible. Arbitrary commands can be run, when the pipe lookup plugin uses subprocess.Popen() with shell=True, by overwriting ansible facts and the variable is not escaped by quote plugin. An attacker could take advantage and run arbitrary commands by overwriting the ansible facts.",

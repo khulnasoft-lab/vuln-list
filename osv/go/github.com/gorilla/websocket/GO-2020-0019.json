@@ -1,10 +1,11 @@
 {
   "id": "GO-2020-0019",
-  "modified": "2023-06-12T18:45:41Z",
+  "modified": "2023-11-08T04:03:22.368470Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
     "CVE-2020-27813",
-    "GHSA-3xh2-74w9-5vxm"
+    "GHSA-3xh2-74w9-5vxm",
+    "GHSA-jf24-p9p9-4rjh"
   ],
   "summary": "Integer overflow in github.com/gorilla/websocket",
   "details": "An attacker can craft malicious WebSocket frames that cause an integer overflow in a variable which tracks the number of bytes remaining. This may cause the server or client to get stuck attempting to read frames in a loop, which can be used as a denial of service vector.",

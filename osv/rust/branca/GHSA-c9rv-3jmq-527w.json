@@ -1,9 +1,10 @@
 {
   "id": "GHSA-c9rv-3jmq-527w",
-  "modified": "2023-06-13T17:09:32Z",
+  "modified": "2023-11-08T04:03:39.346637Z",
   "published": "2021-08-25T20:49:50Z",
   "aliases": [
-    "CVE-2020-35918"
+    "CVE-2020-35918",
+    "RUSTSEC-2020-0075"
   ],
   "summary": "Unexpected panic when decoding tokens in branca",
   "details": "Prior to 0.10.0 it was possible to have both decoding functions panic unexpectedly, by supplying tokens with an incorrect base62 encoding.\nThe documentation stated that an error should have been reported instead.",

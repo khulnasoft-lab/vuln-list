@@ -1,9 +1,10 @@
 {
   "id": "GHSA-q89x-f52w-6hj2",
-  "modified": "2023-06-13T17:39:45Z",
+  "modified": "2023-11-08T03:59:16.284067Z",
   "published": "2021-08-25T20:43:04Z",
   "aliases": [
-    "CVE-2017-18587"
+    "CVE-2017-18587",
+    "RUSTSEC-2017-0002"
   ],
   "summary": "Headers containing newline characters can split messages in hyper",
   "details": "Serializing of headers to the socket did not filter the values for newline bytes (\\r or \\n), which allowed for header values to split a request or response. People would not likely include newlines in the headers in their own applications, so the way for most people to exploit this is if an application constructs headers based on unsanitized user input.\n\nThis issue was fixed by replacing all newline characters with a space during serialization of a header value.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5xm4-jmpw-p6j3",
-  "modified": "2023-10-23T05:41:01.467246Z",
+  "modified": "2023-11-08T03:57:41.970518Z",
   "published": "2022-05-17T19:57:32Z",
   "aliases": [
-    "CVE-2014-4660"
+    "CVE-2014-4660",
+    "PYSEC-2020-202"
   ],
   "summary": "Ansible discloses credential information",
   "details": "Ansible before 1.5.5 constructs filenames containing user and password fields on the basis of deb lines in `sources.list`, which might allow local users to obtain sensitive credential information in opportunistic circumstances by leveraging existence of a file that uses the `deb http://user:pass@server:port/` format.",

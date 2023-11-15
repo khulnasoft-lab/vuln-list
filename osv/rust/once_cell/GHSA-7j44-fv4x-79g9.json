@@ -1,9 +1,10 @@
 {
   "id": "GHSA-7j44-fv4x-79g9",
-  "modified": "2023-06-13T19:58:10Z",
+  "modified": "2023-11-08T04:01:16.284220Z",
   "published": "2021-08-25T20:44:18Z",
   "aliases": [
-    "CVE-2019-16141"
+    "CVE-2019-16141",
+    "RUSTSEC-2019-0017"
   ],
   "summary": "Improper Input Validation in once_cell",
   "details": "If during the first dereference of Lazy the initialization function panics, subsequent dereferences will execute std::hints::unreachable_unchecked. Applications with panic = \"abort\" are not affected, as there will be no subsequent dereferences.",

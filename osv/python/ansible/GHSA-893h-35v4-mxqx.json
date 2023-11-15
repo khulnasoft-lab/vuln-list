@@ -1,9 +1,10 @@
 {
   "id": "GHSA-893h-35v4-mxqx",
-  "modified": "2023-10-21T05:37:12.376181Z",
+  "modified": "2023-11-08T04:02:41.028950Z",
   "published": "2021-04-20T16:43:33Z",
   "aliases": [
-    "CVE-2020-1737"
+    "CVE-2020-1737",
+    "PYSEC-2020-9"
   ],
   "summary": "Path Traversal in Ansible",
   "details": "A flaw was found in Ansible 2.7.17 and prior, 2.8.9 and prior, and 2.9.6 and prior when using the Extract-Zip function from the win_unzip module as the extracted file(s) are not checked if they belong to the destination folder. An attacker could take advantage of this flaw by crafting an archive anywhere in the file system, using a path traversal. This issue is fixed in 2.10.",

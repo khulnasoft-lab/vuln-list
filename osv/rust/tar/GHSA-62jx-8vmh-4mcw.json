@@ -1,9 +1,10 @@
 {
   "id": "GHSA-62jx-8vmh-4mcw",
-  "modified": "2023-06-13T22:04:07Z",
+  "modified": "2023-11-08T04:06:27.878399Z",
   "published": "2021-08-25T20:58:23Z",
   "aliases": [
-    "CVE-2021-38511"
+    "CVE-2021-38511",
+    "RUSTSEC-2021-0080"
   ],
   "summary": "Links in archive can create arbitrary directories",
   "details": "When unpacking a tarball that contains a symlink the tar crate may create directories outside of the directory it's supposed to unpack into. The function errors when it's trying to create a file, but the folders are already created at this point.",

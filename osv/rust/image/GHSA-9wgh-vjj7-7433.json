@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9wgh-vjj7-7433",
-  "modified": "2023-06-13T18:17:31Z",
+  "modified": "2023-11-08T04:03:39.222638Z",
   "published": "2021-08-25T20:49:54Z",
   "aliases": [
-    "CVE-2020-35916"
+    "CVE-2020-35916",
+    "RUSTSEC-2020-0073"
   ],
   "summary": "Mutable reference with immutable provenance in image",
   "details": "A mutable reference to a struct was constructed by dereferencing a pointer obtained from slice::as_ptr. Instead, slice::as_mut_ptr should have been called on the mutable slice argument. The former performs an implicit reborrow as an immutable shared reference which does not allow writing through the derived pointer.",

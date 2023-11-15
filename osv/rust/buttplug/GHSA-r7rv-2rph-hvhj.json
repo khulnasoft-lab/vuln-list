@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r7rv-2rph-hvhj",
-  "modified": "2021-08-19T18:48:19Z",
+  "modified": "2023-11-08T04:03:42.151494Z",
   "published": "2021-08-25T20:51:45Z",
   "aliases": [
-    "CVE-2020-36218"
+    "CVE-2020-36218",
+    "RUSTSEC-2020-0112"
   ],
   "summary": "Improper synchronization in buttplug",
   "details": "An issue was discovered in the buttplug crate before 1.0.4 for Rust. ButtplugFutureStateShared does not properly consider (!Send|!Sync) objects, leading to a data race.",

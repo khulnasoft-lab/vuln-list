@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r88r-gmrh-7j83",
-  "modified": "2023-01-10T15:50:24Z",
+  "modified": "2023-11-08T04:07:05.773168Z",
   "published": "2022-12-28T00:30:23Z",
   "aliases": [
-    "CVE-2021-4235"
+    "CVE-2021-4235",
+    "GO-2021-0061"
   ],
   "summary": "YAML Go package vulnerable to denial of service",
   "details": "Due to unbounded alias chasing, a maliciously crafted YAML file can cause the system to consume significant system resources. If parsing user input, this may be used as a denial of service vector.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-77rm-9x9h-xj3g",
-  "modified": "2023-10-22T05:46:19.985760Z",
+  "modified": "2023-11-08T04:05:00.833167Z",
   "published": "2022-01-27T00:01:15Z",
   "aliases": [
-    "CVE-2021-22570"
+    "CVE-2021-22570",
+    "PYSEC-2022-48"
   ],
   "summary": "NULL Pointer Dereference in Protocol Buffers",
   "details": "Nullptr dereference when a null char is present in a proto symbol. The symbol is parsed incorrectly, leading to an unchecked call into the proto file's name during generation of the resulting error message. Since the symbol is incorrectly parsed, the file is nullptr. We recommend upgrading to version 3.15.0 or greater.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-rh4w-94hh-9943",
-  "modified": "2023-06-13T17:24:13Z",
+  "modified": "2023-11-08T04:03:38.548968Z",
   "published": "2022-05-24T17:37:49Z",
   "aliases": [
-    "CVE-2020-35905"
+    "CVE-2020-35905",
+    "RUSTSEC-2020-0059"
   ],
   "summary": "MutexGuard::map can cause a data race in safe code",
   "details": "Affected versions of the crate had a Send/Sync implementation for MappedMutexGuard that only considered variance on T, while MappedMutexGuard dereferenced to U.\n\nThis could of led to data races in safe Rust code when a closure used in MutexGuard::map() returns U that is unrelated to T.\n\nThe issue was fixed by fixing Send and Sync implementations, and by adding a PhantomData\u003c\u0026'a mut U\u003e marker to the MappedMutexGuard type to tell the compiler that the guard is over U too.",

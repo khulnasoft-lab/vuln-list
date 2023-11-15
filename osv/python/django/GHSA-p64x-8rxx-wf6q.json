@@ -1,9 +1,12 @@
 {
   "id": "GHSA-p64x-8rxx-wf6q",
-  "modified": "2023-08-24T23:48:01.180584Z",
+  "modified": "2023-11-08T04:09:45.271446Z",
   "published": "2022-07-05T00:00:53Z",
   "aliases": [
-    "CVE-2022-34265"
+    "BIT-2022-34265",
+    "BIT-django-2022-34265",
+    "CVE-2022-34265",
+    "PYSEC-2022-213"
   ],
   "summary": "Django `Trunc()` and `Extract()` database functions vulnerable to SQL Injection",
   "details": "An issue was discovered in Django 3.2 before 3.2.14 and 4.0 before 4.0.6. The `Trunc()` and `Extract()` database functions are subject to SQL injection if untrusted data is used as a kind/lookup_name value. Applications that constrain the lookup name and kind choice to a known safe list are unaffected.",

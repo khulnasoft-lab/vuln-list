@@ -1,9 +1,11 @@
 {
   "id": "GHSA-g67g-hvc3-xmvf",
-  "modified": "2023-10-22T05:32:45.944480Z",
+  "modified": "2023-11-08T04:06:52.354646Z",
   "published": "2021-10-14T21:19:23Z",
   "aliases": [
-    "CVE-2021-41132"
+    "CVE-2021-41132",
+    "PYSEC-2021-372",
+    "PYSEC-2021-379"
   ],
   "summary": "Inconsistent input sanitisation leads to XSS vectors",
   "details": "### Background\n\nA variety of templates do not perform proper sanitization through HTML escaping.\nDue to the lack of sanitization and use of ``jQuery.html()``, there are a whole host of XSS possibilities with specially crafted input to a variety of fields.\n\n### Impact\n\nOMERO.web before 5.11.0 and OMERO.figure before 4.4.1.\n\n### Patches\nUsers should upgrade OMERO.web to 5.11.0 or higher and OMERO.figure to 4.4.1 or higher.",

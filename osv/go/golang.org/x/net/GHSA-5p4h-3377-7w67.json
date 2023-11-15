@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5p4h-3377-7w67",
-  "modified": "2023-02-08T00:38:17Z",
+  "modified": "2023-11-08T04:00:02.792019Z",
   "published": "2022-05-13T01:19:22Z",
   "aliases": [
-    "CVE-2018-17075"
+    "CVE-2018-17075",
+    "GO-2021-0078"
   ],
   "summary": "golang.org/x/net/html NULL Pointer Dereference vulnerability",
   "details": "The html package (aka x/net/html) before 2018-07-13 in Go mishandles \"in frameset\" insertion mode, leading to a \"panic: runtime error\" for html.Parse of \u003ctemplate\u003e\u003cobject\u003e, \u003ctemplate\u003e\u003capplet\u003e, or \u003ctemplate\u003e\u003cmarquee\u003e. This is related to HTMLTreeBuilder.cpp in WebKit.",

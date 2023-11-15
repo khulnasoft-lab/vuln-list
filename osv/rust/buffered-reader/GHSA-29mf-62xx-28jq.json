@@ -1,7 +1,10 @@
 {
   "id": "GHSA-29mf-62xx-28jq",
-  "modified": "2023-06-06T01:58:41Z",
+  "modified": "2023-11-08T04:14:00.299540Z",
   "published": "2023-06-06T01:58:41Z",
+  "aliases": [
+    "RUSTSEC-2023-0039"
+  ],
   "summary": "buffered-reader vulnerable to out-of-bounds array access leading to panic",
   "details": "Affected versions of the crate have a bug where attacker-controlled input can result in the use of an out-of-bound array index. Rust\ndetects the use of the out-of-bound index and causes the application to panic.  An attacker may be able to use this to cause a denial-of-service.  However, it is not possible for an attacker to read from or write to the application's address space.\n",
   "affected": [

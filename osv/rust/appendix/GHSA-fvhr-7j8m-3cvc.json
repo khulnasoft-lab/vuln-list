@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fvhr-7j8m-3cvc",
-  "modified": "2021-08-24T19:08:25Z",
+  "modified": "2023-11-08T04:03:46.748675Z",
   "published": "2021-08-25T20:57:02Z",
   "aliases": [
-    "CVE-2020-36469"
+    "CVE-2020-36469",
+    "RUSTSEC-2020-0149"
   ],
   "summary": "Data races in appendix",
   "details": "The `appendix` crate implements a key-value mapping data structure called\n`Index\u003cK, V\u003e` that is stored on disk. The crate allows for any type to inhabit\nthe generic `K` and `V` type parameters and implements Send and Sync for them\nunconditionally.\n\nUsing a type that is not marked as `Send` or `Sync` with `Index` can allow it\nto be used across multiple threads leading to data races. Additionally using\nreference types for the keys or values will lead to the segmentation faults\nin the crate's code.",

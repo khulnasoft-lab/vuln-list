@@ -1,9 +1,14 @@
 {
   "id": "GHSA-mmq6-q8r3-48fm",
-  "modified": "2023-04-11T01:26:35.847982Z",
+  "modified": "2023-11-08T04:05:42.695601Z",
   "published": "2021-05-21T14:28:50Z",
   "aliases": [
-    "CVE-2021-29617"
+    "BIT-2021-29617",
+    "BIT-tensorflow-2021-29617",
+    "CVE-2021-29617",
+    "PYSEC-2021-254",
+    "PYSEC-2021-545",
+    "PYSEC-2021-743"
   ],
   "summary": "Crash in `tf.strings.substr` due to `CHECK`-fail",
   "details": "### Impact\nAn attacker can cause a denial of service via `CHECK`-fail in  `tf.strings.substr` with invalid arguments:\n\n```python \nimport tensorflow as tf\ntf.strings.substr(input='abc', len=1, pos=[1,-1])\n```\n\n```python\nimport tensorflow as tf\ntf.strings.substr(input='abc', len=1, pos=[1,2])\n```\n\n### Patches\nWe have received a patch for the issue in GitHub commit [890f7164b70354c57d40eda52dcdd7658677c09f](https://github.com/tensorflow/tensorflow/commit/890f7164b70354c57d40eda52dcdd7658677c09f).\n\nThe fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.\n\n### For more information\nPlease consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.\n\n### Attribution\nThis vulnerability has been reported in [#46900](https://github.com/tensorflow/issues/46900) and fixed in [#46974](https://github.com/tensorflow/issues/46974).",

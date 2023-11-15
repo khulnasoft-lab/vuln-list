@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-688",
-  "modified": "2021-12-09T06:35:25.478301Z",
+  "modified": "2023-11-08T04:05:39.287225Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29562",
+    "BIT-tensorflow-2021-29562",
     "CVE-2021-29562",
-    "GHSA-36vm-xw34-x4pj"
+    "GHSA-36vm-xw34-x4pj",
+    "PYSEC-2021-199",
+    "PYSEC-2021-490"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. An attacker can cause a denial of service by exploiting a `CHECK`-failure coming from the implementation of `tf.raw_ops.IRFFT`. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

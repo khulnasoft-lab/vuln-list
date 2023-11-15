@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qpjr-ch72-2qq4",
-  "modified": "2023-06-13T20:35:06Z",
+  "modified": "2023-11-08T04:01:22.139199Z",
   "published": "2021-08-25T20:45:17Z",
   "aliases": [
-    "CVE-2019-16881"
+    "CVE-2019-16881",
+    "RUSTSEC-2019-0022"
   ],
   "summary": "Use after free in portaudio-rs",
   "details": "Affected versions of this crate is not panic safe within callback functions stream_callback and stream_finished_callback. The call to user-provided closure might panic before a mem::forget call, which then causes a use after free that grants attacker to control the callback function pointer. This allows an attacker to construct an arbitrary code execution .",

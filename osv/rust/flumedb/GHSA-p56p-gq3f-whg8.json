@@ -1,7 +1,12 @@
 {
   "id": "GHSA-p56p-gq3f-whg8",
-  "modified": "2022-06-16T23:54:46Z",
+  "modified": "2023-11-08T04:07:21.677152Z",
   "published": "2022-06-16T23:54:46Z",
+  "aliases": [
+    "CVE-2021-45684",
+    "GHSA-p46c-w9m3-7qr2",
+    "RUSTSEC-2021-0086"
+  ],
   "summary": "`Read` on uninitialized buffer may cause UB ( `read_entry()` )",
   "details": "Affected versions of this crate passes an uninitialized buffer to a user-provided `Read` implementation.\nThere are two of such cases (`go_offset_log::read_entry()` \u0026 `offset_log::read_entry()`).\n\nArbitrary `Read` implementations can read from the uninitialized buffer (memory exposure) and also can return incorrect number of bytes written to the buffer.\nReading from uninitialized memory produces undefined values that can quickly invoke undefined behavior.\n",
   "affected": [

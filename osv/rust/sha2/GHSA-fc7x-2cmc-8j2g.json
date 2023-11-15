@@ -1,9 +1,11 @@
 {
   "id": "GHSA-fc7x-2cmc-8j2g",
-  "modified": "2023-06-13T20:41:36Z",
+  "modified": "2023-11-08T04:07:22.441009Z",
   "published": "2022-01-06T22:10:26Z",
   "aliases": [
-    "CVE-2021-45696"
+    "CVE-2021-45696",
+    "GHSA-xpww-g9jx-hp8r",
+    "RUSTSEC-2021-0100"
   ],
   "summary": "Incorrect hash in sha2",
   "details": "The v0.9.7 release of the sha2 crate introduced a new AVX2-accelerated backend which was automatically enabled for all x86/x86_64 CPUs where AVX2 support was autodetected at runtime.\n\nThis backend was buggy and would miscompute results for long messages (i.e. messages spanning multiple SHA blocks).\n\nThe crate has since been yanked, but any users who upgraded to v0.9.7 should immediately upgrade to v0.9.8 and recompute any hashes which were previously computed by v0.9.7.",

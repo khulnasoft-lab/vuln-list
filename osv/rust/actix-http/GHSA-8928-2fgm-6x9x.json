@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8928-2fgm-6x9x",
-  "modified": "2021-08-18T20:13:40Z",
+  "modified": "2023-11-08T04:06:27.940101Z",
   "published": "2021-08-25T20:58:21Z",
   "aliases": [
-    "CVE-2021-38512"
+    "CVE-2021-38512",
+    "RUSTSEC-2021-0081"
   ],
   "summary": "HTTP Request Smuggling in actix-http",
   "details": "Affected versions of this crate did not properly detect invalid requests that could allow HTTP/1 request smuggling (HRS) attacks when running alongside a vulnerable front-end proxy server. This can result in leaked internal and/or user data, including credentials, when the front-end proxy is also vulnerable.\n\nPopular front-end proxies and load balancers already mitigate HRS attacks so it is recommended that they are also kept up to date; check your specific set up. You should upgrade even if the front-end proxy receives exclusively HTTP/2 traffic and connects to the back-end using HTTP/1; several downgrade attacks are known that can also expose HRS vulnerabilities.",

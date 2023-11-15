@@ -1,10 +1,14 @@
 {
   "id": "PYSEC-2021-454",
-  "modified": "2021-12-09T06:34:47.426864Z",
+  "modified": "2023-11-08T04:05:37.059131Z",
   "published": "2021-05-14T20:15:00Z",
   "aliases": [
+    "BIT-2021-29526",
+    "BIT-tensorflow-2021-29526",
     "CVE-2021-29526",
-    "GHSA-4vf2-4xcg-65cx"
+    "GHSA-4vf2-4xcg-65cx",
+    "PYSEC-2021-163",
+    "PYSEC-2021-652"
   ],
   "details": "TensorFlow is an end-to-end open source platform for machine learning. An attacker can trigger a division by 0 in `tf.raw_ops.Conv2D`. This is because the implementation(https://github.com/tensorflow/tensorflow/blob/988087bd83f144af14087fe4fecee2d250d93737/tensorflow/core/kernels/conv_ops.cc#L261-L263) does a division by a quantity that is controlled by the caller. The fix will be included in TensorFlow 2.5.0. We will also cherrypick this commit on TensorFlow 2.4.2, TensorFlow 2.3.3, TensorFlow 2.2.3 and TensorFlow 2.1.4, as these are also affected and still in supported range.",
   "affected": [

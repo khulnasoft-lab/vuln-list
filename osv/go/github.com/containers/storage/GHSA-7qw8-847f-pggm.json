@@ -1,9 +1,10 @@
 {
   "id": "GHSA-7qw8-847f-pggm",
-  "modified": "2023-02-14T17:41:32Z",
+  "modified": "2023-11-08T04:04:36.808520Z",
   "published": "2021-05-10T19:35:07Z",
   "aliases": [
-    "CVE-2021-20291"
+    "CVE-2021-20291",
+    "GO-2021-0100"
   ],
   "summary": "Improper Locking in github.com/containers/storage",
   "details": "A deadlock vulnerability was found in `github.com/containers/storage` in versions before 1.28.1. When a container image is processed, each layer is unpacked using `tar`. If one of those layers is not a valid `tar` archive this causes an error leading to an unexpected situation where the code indefinitely waits for the tar unpacked stream, which never finishes. An attacker could use this vulnerability to craft a malicious image, which when downloaded and stored by an application using containers/storage, would then cause a deadlock leading to a Denial of Service (DoS).",

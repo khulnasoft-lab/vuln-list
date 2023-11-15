@@ -1,10 +1,13 @@
 {
   "id": "PYSEC-2022-64",
-  "modified": "2022-03-09T00:17:31.800762Z",
+  "modified": "2023-11-08T04:08:10.452279Z",
   "published": "2022-02-03T15:15:00Z",
   "aliases": [
+    "BIT-2022-21740",
+    "BIT-tensorflow-2022-21740",
     "CVE-2022-21740",
-    "GHSA-44qp-9wwf-734r"
+    "GHSA-44qp-9wwf-734r",
+    "PYSEC-2022-119"
   ],
   "details": "Tensorflow is an Open Source Machine Learning Framework. The implementation of `SparseCountSparseOutput` is vulnerable to a heap overflow. The fix will be included in TensorFlow 2.8.0. We will also cherrypick this commit on TensorFlow 2.7.1, TensorFlow 2.6.3, and TensorFlow 2.5.3, as these are also affected and still in supported range.",
   "affected": [

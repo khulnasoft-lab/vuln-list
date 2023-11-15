@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4mjx-2gh5-ph8h",
-  "modified": "2022-10-10T21:07:47Z",
+  "modified": "2023-11-08T04:10:17.897125Z",
   "published": "2022-10-10T21:07:47Z",
   "aliases": [
-    "CVE-2022-39292"
+    "CVE-2022-39292",
+    "RUSTSEC-2022-0087"
   ],
   "summary": "Exposure of sensitive Slack webhook URLs in debug logs and traces",
   "details": "### Impact\n\nDebug logs expose sensitive URLs for Slack webhooks that contain private information.\n\n### Patches\nThe problem is fixed in v1.3.2 which redacts sensitive URLs for webhooks.\n\n### Workarounds\nDisabling/filtering debug logs in case you use Slack webhooks using tracing log level and filters.\n\n### References\nhttps://github.com/abdolence/slack-morphism-rust/releases/tag/v1.3.2\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n* Open an issue in [repo](https://github.com/abdolence/slack-morphism-rust)\n* Read our [security policy](https://github.com/abdolence/slack-morphism-rust/blob/master/SECURITY.md)\n\n",
