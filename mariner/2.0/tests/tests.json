@@ -38,6 +38,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2023-46853",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31732000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31732001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31732002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package kubernetes is earlier than 1.28.3-1, affected by CVE-2020-8554",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31731000",
       "Version": "1",
@@ -70,6 +82,18 @@
       },
       "State": {
         "StateRef": "oval:com.microsoft.cbl-mariner:ste:31728002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2023-46852",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31716000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31716001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31716002"
       }
     },
     {
@@ -16358,7 +16382,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package memcached is installed with version 1.6.13-3 or earlier",
+      "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2022-26635",
       "ID": "oval:com.microsoft.cbl-mariner:tst:9342000",
       "Version": "0",
       "Object": {
