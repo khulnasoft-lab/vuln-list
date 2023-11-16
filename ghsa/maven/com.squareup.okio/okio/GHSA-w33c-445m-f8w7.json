@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-07-13T17:01:49Z",
+  "UpdatedAt": "2023-11-16T15:23:03Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "com.squareup.okio:okio"
@@ -18,6 +18,18 @@
       },
       {
         "Url": "https://research.jfrog.com/vulnerabilities/okio-gzip-source-unhandled-exception-dos-xray-523195/"
+      },
+      {
+        "Url": "https://github.com/square/okio/pull/1280"
+      },
+      {
+        "Url": "https://github.com/square/okio/pull/1334"
+      },
+      {
+        "Url": "https://github.com/square/okio/commit/b4fa875dc24950680c386e4b1c593660ce4f7839"
+      },
+      {
+        "Url": "https://github.com/square/okio/blob/master/CHANGELOG.md#version-1176"
       },
       {
         "Url": "https://github.com/advisories/GHSA-w33c-445m-f8w7"
@@ -38,7 +50,7 @@
     "PublishedAt": "2023-07-12T21:30:50Z",
     "Severity": "MODERATE",
     "Summary": "Okio Signed to Unsigned Conversion Error vulnerability",
-    "UpdatedAt": "2023-11-05T05:03:00Z",
+    "UpdatedAt": "2023-11-16T15:23:03Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.9,
@@ -48,9 +60,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.17.6"
+      },
+      "VulnerableVersionRange": "\u003c 1.17.6"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "3.4.0"
       },
-      "VulnerableVersionRange": "\u003c 3.4.0"
+      "VulnerableVersionRange": "\u003e= 2.0.0-RC1, \u003c 3.4.0"
     }
   ]
 }
