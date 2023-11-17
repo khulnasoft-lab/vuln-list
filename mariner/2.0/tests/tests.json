@@ -2,6 +2,30 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package multus is earlier than 3.8-12, affected by CVE-2023-39325",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31859000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31859001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31859002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package kured is earlier than 1.9.1-14, affected by CVE-2023-39325",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:31857000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31857001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:31857002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package PyYAML is earlier than 5.4.1-1, affected by CVE-2020-1747",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31783000",
       "Version": "1",
@@ -40,7 +64,7 @@
       "Check": "at least one",
       "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2023-46853",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31732000",
-      "Version": "0",
+      "Version": "1",
       "Object": {
         "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31732001"
       },
@@ -88,7 +112,7 @@
       "Check": "at least one",
       "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2023-46852",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31716000",
-      "Version": "0",
+      "Version": "1",
       "Object": {
         "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:31716001"
       },
@@ -7010,7 +7034,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
+      "Comment": "Package golang is installed with version 1.20.10-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13730000",
       "Version": "0",
       "Object": {
@@ -11294,7 +11318,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
+      "Comment": "Package golang is installed with version 1.20.10-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11130000",
       "Version": "0",
       "Object": {
@@ -16384,7 +16408,7 @@
       "Check": "at least one",
       "Comment": "Package memcached is earlier than 1.6.22-1, affected by CVE-2022-26635",
       "ID": "oval:com.microsoft.cbl-mariner:tst:9342000",
-      "Version": "0",
+      "Version": "1",
       "Object": {
         "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:9342001"
       },
