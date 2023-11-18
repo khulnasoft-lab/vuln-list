@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "CRITICAL",
   "UpdatedAt": "2023-09-09T05:03:49Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -26,6 +26,9 @@
         "Url": "https://github.com/langchain-ai/langchain/pull/6992"
       },
       {
+        "Url": "https://github.com/hwchase17/langchain/issues/4833"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x32c-59v5-h7fg"
       }
     ],
@@ -39,16 +42,16 @@
         "Value": "CVE-2023-34540"
       }
     ],
-    "Description": "Langchain 0.0.171 is vulnerable to Arbitrary Code Execution via command injection in the `jira.run()` command",
+    "Description": "Langchain 0.0.171 is vulnerable to Arbitrary Code Execution via command injection in the `jira.run()` command. This is related to the `jira.run('other'` substring.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-06-14T15:30:39Z",
-    "Severity": "MODERATE",
+    "Severity": "CRITICAL",
     "Summary": "Langchain OS Command Injection vulnerability",
-    "UpdatedAt": "2023-11-05T05:01:32Z",
+    "UpdatedAt": "2023-11-17T22:28:31Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
