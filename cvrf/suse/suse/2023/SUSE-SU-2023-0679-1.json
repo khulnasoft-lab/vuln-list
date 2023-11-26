@@ -31,13 +31,28 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-679,SUSE-2023-679,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2023-679",
+      "Text": "Image SLES15-SP4-Manager-Server-4-3-2023-679,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-679,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-679,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-679,SUSE-2023-679,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2023-679",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "woodstox-4.4.2-150400.3.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "woodstox-4.4.2-150400.3.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "woodstox-4.4.2-150400.3.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "woodstox-4.4.2-150400.3.6.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
@@ -111,10 +126,13 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:woodstox-4.4.2-150400.3.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:woodstox-4.4.2-150400.3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:woodstox-4.4.2-150400.3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:woodstox-4.4.2-150400.3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:woodstox-4.4.2-150400.3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:woodstox-4.4.2-150400.3.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:woodstox-4.4.2-150400.3.6.1",
             "SUSE Manager Server Module 4.3:woodstox-4.4.2-150400.3.6.1"
           ]
         }

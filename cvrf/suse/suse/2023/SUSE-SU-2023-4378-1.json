@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sle-micro-rancher/5.3:latest-2023-4378,Container suse/sle-micro-rancher/5.4:latest-2023-4378,SUSE-2023-4378,SUSE-SLE-Micro-5.3-2023-4378,SUSE-SLE-Micro-5.4-2023-4378,SUSE-SLE-Module-Basesystem-15-SP4-2023-4378,SUSE-SLE-Module-Development-Tools-15-SP4-2023-4378,SUSE-SLE-Module-Legacy-15-SP4-2023-4378,SUSE-SLE-Module-Live-Patching-15-SP4-2023-4378,SUSE-SLE-Product-HA-15-SP4-2023-4378,SUSE-SLE-Product-WE-15-SP4-2023-4378,openSUSE-Leap-Micro-5.3-2023-4378,openSUSE-Leap-Micro-5.4-2023-4378,openSUSE-SLE-15.4-2023-4378",
+      "Text": "Container suse/sle-micro-rancher/5.3:latest-2023-4378,Container suse/sle-micro-rancher/5.4:latest-2023-4378,Image SLES15-SP4-Manager-Server-4-3-2023-4378,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4378,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4378,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4378,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4378,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4378,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4378,SUSE-2023-4378,SUSE-SLE-Micro-5.3-2023-4378,SUSE-SLE-Micro-5.4-2023-4378,SUSE-SLE-Module-Basesystem-15-SP4-2023-4378,SUSE-SLE-Module-Development-Tools-15-SP4-2023-4378,SUSE-SLE-Module-Legacy-15-SP4-2023-4378,SUSE-SLE-Module-Live-Patching-15-SP4-2023-4378,SUSE-SLE-Product-HA-15-SP4-2023-4378,SUSE-SLE-Product-WE-15-SP4-2023-4378,openSUSE-Leap-Micro-5.3-2023-4378,openSUSE-Leap-Micro-5.4-2023-4378,openSUSE-SLE-15.4-2023-4378",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -46,6 +46,41 @@
       {
         "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
         "RelatesToProductReference": "Container suse/sle-micro-rancher/5.4:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "kernel-default-5.14.21-150400.24.97.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
         "RelationType": "Default Component Of"
       },
       {
@@ -671,6 +706,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -794,6 +836,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -917,6 +966,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -1044,6 +1100,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -1167,6 +1230,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -1290,6 +1360,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",
@@ -1417,6 +1494,13 @@
           "ProductID": [
             "Container suse/sle-micro-rancher/5.3:latest:kernel-default-5.14.21-150400.24.97.1",
             "Container suse/sle-micro-rancher/5.4:latest:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:kernel-default-5.14.21-150400.24.97.1",
+            "Image SLES15-SP4-Manager-Server-4-3:kernel-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:cluster-md-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:dlm-kmp-default-5.14.21-150400.24.97.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:gfs2-kmp-default-5.14.21-150400.24.97.1",

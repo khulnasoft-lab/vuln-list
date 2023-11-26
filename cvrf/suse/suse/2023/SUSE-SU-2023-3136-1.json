@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-3136,SUSE-2023-3136",
+      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2023-3136,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2023-3136,Image SLES15-SP4-Manager-Server-4-3-2023-3136,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-3136,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-3136,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-3136,SUSE-2023-3136",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -61,6 +61,21 @@
       {
         "ProductReference": "release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "release-notes-susemanager-4.3.7-150400.3.72.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "release-notes-susemanager-4.3.7-150400.3.72.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "release-notes-susemanager-4.3.7-150400.3.72.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -304,10 +319,13 @@
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:release-notes-susemanager-4.3.7-150400.3.72.1",
-            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1"
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3:release-notes-susemanager-4.3.7-150400.3.72.1"
           ]
         }
       ],
@@ -341,10 +359,13 @@
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:release-notes-susemanager-4.3.7-150400.3.72.1",
-            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1"
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3:release-notes-susemanager-4.3.7-150400.3.72.1"
           ]
         }
       ],
@@ -378,10 +399,13 @@
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:release-notes-susemanager-proxy-4.3.7-150400.3.58.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:release-notes-susemanager-4.3.7-150400.3.72.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:release-notes-susemanager-4.3.7-150400.3.72.1",
-            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1"
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:release-notes-susemanager-4.3.7-150400.3.72.1",
+            "Image SLES15-SP4-Manager-Server-4-3:release-notes-susemanager-4.3.7-150400.3.72.1"
           ]
         }
       ],

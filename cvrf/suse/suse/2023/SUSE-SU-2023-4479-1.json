@@ -31,13 +31,68 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4479,SUSE-2023-4479,SUSE-SLE-Module-Basesystem-15-SP4-2023-4479,SUSE-SLE-Module-Legacy-15-SP5-2023-4479,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4479,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4479,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4479,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4479,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4479,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4479,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4479,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4479,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4479,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4479,SUSE-Storage-7.1-2023-4479,openSUSE-SLE-15.4-2023-4479,openSUSE-SLE-15.5-2023-4479",
+      "Text": "Container suse/postgres:14-2023-4479,Image SLES15-SP4-Manager-Server-4-3-2023-4479,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4479,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4479,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4479,SUSE-2023-4479,SUSE-SLE-Module-Basesystem-15-SP4-2023-4479,SUSE-SLE-Module-Legacy-15-SP5-2023-4479,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4479,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4479,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4479,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4479,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4479,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4479,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4479,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4479,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4479,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4479,SUSE-Storage-7.1-2023-4479,openSUSE-SLE-15.4-2023-4479,openSUSE-SLE-15.5-2023-4479",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "postgresql14-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Container suse/postgres:14",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Container suse/postgres:14",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.10-150200.5.36.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "postgresql14-14.10-150200.5.36.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
@@ -775,6 +830,14 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/postgres:14:postgresql14-14.10-150200.5.36.1",
+            "Container suse/postgres:14:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-server-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-server-14.10-150200.5.36.1",
@@ -787,6 +850,9 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-server-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-contrib-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-devel-14.10-150200.5.36.1",
@@ -919,7 +985,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "critical"
         }
       ],
       "References": [
@@ -936,6 +1002,14 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/postgres:14:postgresql14-14.10-150200.5.36.1",
+            "Container suse/postgres:14:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-server-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-server-14.10-150200.5.36.1",
@@ -948,6 +1022,9 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-server-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-contrib-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-devel-14.10-150200.5.36.1",
@@ -1080,7 +1157,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": [
@@ -1097,6 +1174,14 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/postgres:14:postgresql14-14.10-150200.5.36.1",
+            "Container suse/postgres:14:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-server-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-server-14.10-150200.5.36.1",
@@ -1109,6 +1194,9 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-contrib-14.10-150200.5.36.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-server-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-contrib-14.10-150200.5.36.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-server-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-contrib-14.10-150200.5.36.1",
             "SUSE Enterprise Storage 7.1:postgresql14-devel-14.10-150200.5.36.1",

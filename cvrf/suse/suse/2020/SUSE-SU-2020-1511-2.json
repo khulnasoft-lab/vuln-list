@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/openjdk-devel:11-2020-1511,Container bci/openjdk:11-2020-1511,Container bci/openjdk:latest-2020-1511,Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server-2020-1511,Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server-2020-1511,Image SLES15-SP1-Manager-4-0-GCE-BYOS-Server-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2020-1511,SUSE-2020-1511,SUSE-SLE-Module-Packagehub-Subpackages-15-SP1-2020-1511",
+      "Text": "Container bci/openjdk-devel:11-2020-1511,Container bci/openjdk:11-2020-1511,Container bci/openjdk:latest-2020-1511,Image SLES15-SP1-Manager-4-0-Azure-BYOS-Server-2020-1511,Image SLES15-SP1-Manager-4-0-EC2-HVM-BYOS-Server-2020-1511,Image SLES15-SP1-Manager-4-0-GCE-BYOS-Server-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2020-1511,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2020-1511,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2020-1511,Image SLES15-SP4-Manager-Server-4-3-2020-1511,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2020-1511,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2020-1511,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2020-1511,SUSE-2020-1511,SUSE-SLE-Module-Packagehub-Subpackages-15-SP1-2020-1511",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -161,6 +161,36 @@
       {
         "ProductReference": "java-11-openjdk-headless-11.0.7.0-3.42.4",
         "RelatesToProductReference": "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-headless-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-headless-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "java-11-openjdk-headless-11.0.7.0-3.42.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -337,6 +367,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -345,6 +379,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -403,6 +439,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -411,6 +451,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -469,6 +511,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -477,6 +523,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -535,6 +583,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -543,6 +595,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -597,6 +651,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -605,6 +663,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -659,6 +719,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -667,6 +731,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -721,6 +787,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -729,6 +799,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -787,6 +859,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -795,6 +871,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -853,6 +931,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -861,6 +943,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -919,6 +1003,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -927,6 +1015,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -985,6 +1075,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -993,6 +1087,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -1047,6 +1143,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -1055,6 +1155,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }
@@ -1113,6 +1215,10 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:java-11-openjdk-11.0.7.0-3.42.4",
@@ -1121,6 +1227,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-11.0.7.0-3.42.4",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:java-11-openjdk-headless-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-11.0.7.0-3.42.4",
+            "Image SLES15-SP4-Manager-Server-4-3:java-11-openjdk-headless-11.0.7.0-3.42.4",
             "SUSE Linux Enterprise Module for Package Hub 15 SP1:java-11-openjdk-javadoc-11.0.7.0-3.42.4"
           ]
         }

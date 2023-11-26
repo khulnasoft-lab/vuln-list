@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/postgres:12-2023-569,Container suse/postgres:13-2023-569,Container suse/postgres:14-2023-569,Container suse/postgres:latest-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-569,SUSE-2023-569,SUSE-SLE-Module-Basesystem-15-SP4-2023-569,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-569,SUSE-SLE-Module-Server-Applications-15-SP4-2023-569,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-569,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-569,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-569,SUSE-SLE-Product-RT-15-SP3-2023-569,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-569,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-569,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-569,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-569,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-569,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-569,SUSE-Storage-7-2023-569,SUSE-Storage-7.1-2023-569,openSUSE-SLE-15.4-2023-569",
+      "Text": "Container suse/postgres:12-2023-569,Container suse/postgres:13-2023-569,Container suse/postgres:14-2023-569,Container suse/postgres:latest-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2023-569,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2023-569,Image SLES15-SP4-Manager-Server-4-3-2023-569,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-569,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-569,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-569,SUSE-2023-569,SUSE-SLE-Module-Basesystem-15-SP4-2023-569,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-569,SUSE-SLE-Module-Server-Applications-15-SP4-2023-569,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-569,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-569,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-569,SUSE-SLE-Product-RT-15-SP3-2023-569,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-569,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-569,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-569,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-569,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-569,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-569,SUSE-Storage-7-2023-569,SUSE-Storage-7.1-2023-569,openSUSE-SLE-15.4-2023-569",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -81,6 +81,21 @@
       {
         "ProductReference": "libpq5-15.2-150200.5.6.1",
         "RelatesToProductReference": "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-15.2-150200.5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-15.2-150200.5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-15.2-150200.5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -815,10 +830,13 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:libpq5-15.2-150200.5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-15.2-150200.5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libpq5-15.2-150200.5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:libpq5-15.2-150200.5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libpq5-15.2-150200.5.6.1",
             "SUSE Enterprise Storage 7.1:libecpg6-15.2-150200.5.6.1",
             "SUSE Enterprise Storage 7.1:libpq5-15.2-150200.5.6.1",
             "SUSE Enterprise Storage 7.1:postgresql15-15.2-150200.5.6.1",

@@ -31,13 +31,18 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4492,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-4492,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-4492,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-4492",
+      "Text": "Container suse/sle15:15.1-2023-4492,SUSE-2023-4492,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-4492,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-4492,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-4492",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libnghttp2-14-1.40.0-150000.3.17.1",
+        "RelatesToProductReference": "Container suse/sle15:15.1",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libnghttp2-14-1.40.0-150000.3.17.1",
         "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS",
@@ -197,6 +202,7 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/sle15:15.1:libnghttp2-14-1.40.0-150000.3.17.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:libnghttp2-14-1.40.0-150000.3.17.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:libnghttp2-14-32bit-1.40.0-150000.3.17.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:libnghttp2-devel-1.40.0-150000.3.17.1",

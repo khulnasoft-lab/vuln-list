@@ -31,13 +31,68 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4517,SUSE-SLE-Micro-5.3-2023-4517,SUSE-SLE-Micro-5.4-2023-4517,SUSE-SLE-Micro-5.5-2023-4517,SUSE-SLE-Module-Basesystem-15-SP4-2023-4517,SUSE-SLE-Module-Basesystem-15-SP5-2023-4517,openSUSE-Leap-Micro-5.3-2023-4517,openSUSE-Leap-Micro-5.4-2023-4517,openSUSE-SLE-15.4-2023-4517,openSUSE-SLE-15.5-2023-4517",
+      "Text": "Container bci/python:3-2023-4517,Container suse/389-ds:latest-2023-4517,Container suse/manager/4.3/proxy-httpd:latest-2023-4517,Container suse/manager/4.3/proxy-tftpd:latest-2023-4517,Image SLES15-SP4-Manager-Server-4-3-2023-4517,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4517,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4517,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4517,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4517,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4517,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4517,SUSE-2023-4517,SUSE-SLE-Micro-5.3-2023-4517,SUSE-SLE-Micro-5.4-2023-4517,SUSE-SLE-Micro-5.5-2023-4517,SUSE-SLE-Module-Basesystem-15-SP4-2023-4517,SUSE-SLE-Module-Basesystem-15-SP5-2023-4517,openSUSE-Leap-Micro-5.3-2023-4517,openSUSE-Leap-Micro-5.4-2023-4517,openSUSE-SLE-15.4-2023-4517,openSUSE-SLE-15.5-2023-4517",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Container bci/python:3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Container suse/389-ds:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Container suse/manager/4.3/proxy-httpd:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Container suse/manager/4.3/proxy-tftpd:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "python3-setuptools-44.1.1-150400.9.6.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
@@ -171,6 +226,17 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/python:3:python3-setuptools-44.1.1-150400.9.6.1",
+            "Container suse/389-ds:latest:python3-setuptools-44.1.1-150400.9.6.1",
+            "Container suse/manager/4.3/proxy-httpd:latest:python3-setuptools-44.1.1-150400.9.6.1",
+            "Container suse/manager/4.3/proxy-tftpd:latest:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-setuptools-44.1.1-150400.9.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:python3-setuptools-44.1.1-150400.9.6.1",
             "SUSE Linux Enterprise Micro 5.3:python3-setuptools-44.1.1-150400.9.6.1",
             "SUSE Linux Enterprise Micro 5.4:python3-setuptools-44.1.1-150400.9.6.1",
             "SUSE Linux Enterprise Micro 5.5:python3-setuptools-44.1.1-150400.9.6.1",

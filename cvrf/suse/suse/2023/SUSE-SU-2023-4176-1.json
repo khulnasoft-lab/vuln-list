@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/ruby:latest-2023-4176,Container suse/rmt-server:latest-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-Azure-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-EC2-HVM-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-GCE-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-Azure-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-EC2-HVM-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-GCE-2023-4176,SUSE-2023-4176,SUSE-SLE-Module-Basesystem-15-SP4-2023-4176,SUSE-SLE-Module-Basesystem-15-SP5-2023-4176,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-4176,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4176,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4176,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4176,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4176,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4176,SUSE-Storage-7.1-2023-4176,openSUSE-SLE-15.4-2023-4176,openSUSE-SLE-15.5-2023-4176",
+      "Text": "Container bci/ruby:latest-2023-4176,Container suse/rmt-server:latest-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-Azure-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-EC2-HVM-2023-4176,Image SLES15-SP3-Micro-5-1-BYOS-GCE-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-Azure-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-EC2-HVM-2023-4176,Image SLES15-SP3-Micro-5-2-BYOS-GCE-2023-4176,Image SLES15-SP4-Manager-Server-4-3-2023-4176,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4176,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4176,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4176,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4176,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4176,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4176,SUSE-2023-4176,SUSE-SLE-Module-Basesystem-15-SP4-2023-4176,SUSE-SLE-Module-Basesystem-15-SP5-2023-4176,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-4176,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4176,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4176,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4176,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4176,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4176,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4176,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4176,SUSE-Storage-7.1-2023-4176,openSUSE-SLE-15.4-2023-4176,openSUSE-SLE-15.5-2023-4176",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -161,6 +161,111 @@
       {
         "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
         "RelatesToProductReference": "Image SLES15-SP3-Micro-5-2-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libruby2_5-2_5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "ruby2.5-stdlib-2.5.9-150000.4.29.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
         "RelationType": "Default Component Of"
       },
       {
@@ -705,6 +810,27 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-stdlib-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-devel-2.5.9-150000.4.29.1",
@@ -847,6 +973,27 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-stdlib-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-devel-2.5.9-150000.4.29.1",
@@ -993,6 +1140,27 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-stdlib-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-devel-2.5.9-150000.4.29.1",
@@ -1139,6 +1307,27 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3-BYOS:ruby2.5-stdlib-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libruby2_5-2_5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-2.5.9-150000.4.29.1",
+            "Image SLES15-SP4-Manager-Server-4-3:ruby2.5-stdlib-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:libruby2_5-2_5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-2.5.9-150000.4.29.1",
             "SUSE Enterprise Storage 7.1:ruby2.5-devel-2.5.9-150000.4.29.1",

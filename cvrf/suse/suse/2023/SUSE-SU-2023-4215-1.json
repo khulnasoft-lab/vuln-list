@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/bci-init:latest-2023-4215,Container bci/bci-minimal:latest-2023-4215,Container bci/dotnet-aspnet:6.0-2023-4215,Container bci/dotnet-aspnet:latest-2023-4215,Container bci/dotnet-runtime:6.0-2023-4215,Container bci/dotnet-runtime:latest-2023-4215,Container bci/dotnet-sdk:6.0-2023-4215,Container bci/dotnet-sdk:latest-2023-4215,Container bci/golang:1.19-openssl-2023-4215,Container bci/golang:1.20-2023-4215,Container bci/golang:latest-2023-4215,Container bci/nodejs:latest-2023-4215,Container bci/openjdk-devel:11-2023-4215,Container bci/openjdk-devel:latest-2023-4215,Container bci/openjdk:11-2023-4215,Container bci/openjdk:latest-2023-4215,Container bci/php-apache:8-2023-4215,Container bci/php-fpm:8-2023-4215,Container bci/php:8-2023-4215,Container bci/python:3-2023-4215,Container bci/python:latest-2023-4215,Container bci/ruby:latest-2023-4215,Container bci/rust:1.72-2023-4215,Container bci/rust:latest-2023-4215,Container suse/389-ds:latest-2023-4215,Container suse/git:latest-2023-4215,Container suse/helm:latest-2023-4215,Container suse/nginx:latest-2023-4215,Container suse/pcp:latest-2023-4215,Container suse/postgres:latest-2023-4215,Container suse/registry:latest-2023-4215,Container suse/rmt-server:latest-2023-4215,Container suse/sle-micro/5.5/toolbox:latest-2023-4215,Container suse/sle15:15.5-2023-4215,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4215,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4215,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4215,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4215,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4215,SUSE-2023-4215,SUSE-SLE-Micro-5.5-2023-4215,SUSE-SLE-Module-Basesystem-15-SP5-2023-4215,SUSE-SLE-Module-Development-Tools-15-SP5-2023-4215,openSUSE-SLE-15.5-2023-4215",
+      "Text": "Container bci/bci-init:latest-2023-4215,Container bci/bci-minimal:latest-2023-4215,Container bci/dotnet-aspnet:6.0-2023-4215,Container bci/dotnet-aspnet:latest-2023-4215,Container bci/dotnet-runtime:6.0-2023-4215,Container bci/dotnet-runtime:latest-2023-4215,Container bci/dotnet-sdk:6.0-2023-4215,Container bci/dotnet-sdk:latest-2023-4215,Container bci/golang:1.20-2023-4215,Container bci/golang:1.20-openssl-2023-4215,Container bci/golang:latest-2023-4215,Container bci/node:18-2023-4215,Container bci/nodejs:latest-2023-4215,Container bci/openjdk-devel:11-2023-4215,Container bci/openjdk-devel:latest-2023-4215,Container bci/openjdk:11-2023-4215,Container bci/openjdk:latest-2023-4215,Container bci/php-apache:8-2023-4215,Container bci/php-fpm:8-2023-4215,Container bci/php:8-2023-4215,Container bci/python:3-2023-4215,Container bci/python:latest-2023-4215,Container bci/ruby:latest-2023-4215,Container bci/rust:1.72-2023-4215,Container bci/rust:latest-2023-4215,Container suse/389-ds:latest-2023-4215,Container suse/git:latest-2023-4215,Container suse/helm:latest-2023-4215,Container suse/nginx:latest-2023-4215,Container suse/pcp:latest-2023-4215,Container suse/postgres:latest-2023-4215,Container suse/registry:latest-2023-4215,Container suse/rmt-server:latest-2023-4215,Container suse/sle-micro/5.5/toolbox:latest-2023-4215,Container suse/sle15:15.5-2023-4215,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4215,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4215,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4215,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4215,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4215,SUSE-2023-4215,SUSE-SLE-Micro-5.5-2023-4215,SUSE-SLE-Module-Basesystem-15-SP5-2023-4215,SUSE-SLE-Module-Development-Tools-15-SP5-2023-4215,openSUSE-SLE-15.5-2023-4215",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -80,27 +80,32 @@
       },
       {
         "ProductReference": "libz1-1.2.13-150500.4.3.1",
-        "RelatesToProductReference": "Container bci/golang:1.19-openssl",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "zlib-devel-1.2.13-150500.4.3.1",
-        "RelatesToProductReference": "Container bci/golang:1.19-openssl",
-        "RelationType": "Default Component Of"
-      },
-      {
-        "ProductReference": "libz1-1.2.13-150500.4.3.1",
         "RelatesToProductReference": "Container bci/golang:1.20",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "libz1-1.2.13-150500.4.3.1",
+        "RelatesToProductReference": "Container bci/golang:1.20-openssl",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "zlib-devel-1.2.13-150500.4.3.1",
+        "RelatesToProductReference": "Container bci/golang:1.20-openssl",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.13-150500.4.3.1",
         "RelatesToProductReference": "Container bci/golang:latest",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "zlib-devel-1.2.13-150500.4.3.1",
         "RelatesToProductReference": "Container bci/golang:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.13-150500.4.3.1",
+        "RelatesToProductReference": "Container bci/node:18",
         "RelationType": "Default Component Of"
       },
       {
@@ -394,11 +399,12 @@
             "Container bci/dotnet-runtime:latest:libz1-1.2.13-150500.4.3.1",
             "Container bci/dotnet-sdk:6.0:libz1-1.2.13-150500.4.3.1",
             "Container bci/dotnet-sdk:latest:libz1-1.2.13-150500.4.3.1",
-            "Container bci/golang:1.19-openssl:libz1-1.2.13-150500.4.3.1",
-            "Container bci/golang:1.19-openssl:zlib-devel-1.2.13-150500.4.3.1",
+            "Container bci/golang:1.20-openssl:libz1-1.2.13-150500.4.3.1",
+            "Container bci/golang:1.20-openssl:zlib-devel-1.2.13-150500.4.3.1",
             "Container bci/golang:1.20:libz1-1.2.13-150500.4.3.1",
             "Container bci/golang:latest:libz1-1.2.13-150500.4.3.1",
             "Container bci/golang:latest:zlib-devel-1.2.13-150500.4.3.1",
+            "Container bci/node:18:libz1-1.2.13-150500.4.3.1",
             "Container bci/nodejs:latest:libz1-1.2.13-150500.4.3.1",
             "Container bci/openjdk-devel:11:libz1-1.2.13-150500.4.3.1",
             "Container bci/openjdk-devel:latest:libz1-1.2.13-150500.4.3.1",

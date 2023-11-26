@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/postgres:10-2021-3759,Container suse/postgres:12-2021-3759,Container suse/postgres:13-2021-3759,Container suse/postgres:14-2021-3759,Container suse/postgres:latest-2021-3759,Container trento/trento-db:latest-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-3759,SUSE-2021-3759,SUSE-SLE-Module-Basesystem-15-SP2-2021-3759,SUSE-SLE-Module-Basesystem-15-SP3-2021-3759,SUSE-SLE-Module-Packagehub-Subpackages-15-SP2-2021-3759,SUSE-SLE-Module-Packagehub-Subpackages-15-SP3-2021-3759,SUSE-SLE-Module-Server-Applications-15-SP2-2021-3759,SUSE-SLE-Module-Server-Applications-15-SP3-2021-3759",
+      "Text": "Container suse/postgres:10-2021-3759,Container suse/postgres:12-2021-3759,Container suse/postgres:13-2021-3759,Container suse/postgres:14-2021-3759,Container suse/postgres:latest-2021-3759,Container trento/trento-db:latest-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-3759,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-3759,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-3759,Image SLES15-SP4-Manager-Server-4-3-2021-3759,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-3759,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-3759,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-3759,SUSE-2021-3759,SUSE-SLE-Module-Basesystem-15-SP2-2021-3759,SUSE-SLE-Module-Basesystem-15-SP3-2021-3759,SUSE-SLE-Module-Packagehub-Subpackages-15-SP2-2021-3759,SUSE-SLE-Module-Packagehub-Subpackages-15-SP3-2021-3759,SUSE-SLE-Module-Server-Applications-15-SP2-2021-3759,SUSE-SLE-Module-Server-Applications-15-SP3-2021-3759",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -116,6 +116,66 @@
       {
         "ProductReference": "libpq5-14.1-5.6.1",
         "RelatesToProductReference": "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-contrib-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql14-server-14.1-5.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -405,6 +465,14 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure:libpq5-14.1-5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:libpq5-14.1-5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-server-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-server-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libpq5-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-contrib-14.1-5.6.1",
@@ -421,6 +489,10 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-contrib-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-server-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-server-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-32bit-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:postgresql14-14.1-5.6.1",
@@ -492,6 +564,14 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure:libpq5-14.1-5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:libpq5-14.1-5.6.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql14-server-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:postgresql14-server-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:libpq5-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:postgresql14-contrib-14.1-5.6.1",
@@ -508,6 +588,10 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-contrib-14.1-5.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql14-server-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:libpq5-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-contrib-14.1-5.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3:postgresql14-server-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-32bit-14.1-5.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:postgresql14-14.1-5.6.1",

@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-4480,SUSE-SLE-Module-Toolchain-12-2023-4480,SUSE-SLE-SERVER-12-SP5-2023-4480",
+      "Text": "Container suse/sles12sp5:latest-2023-4480,SUSE-2023-4480,SUSE-SLE-Module-Toolchain-12-2023-4480,SUSE-SLE-SERVER-12-SP5-2023-4480",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libgcc_s1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Container suse/sles12sp5:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libstdc++6-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Container suse/sles12sp5:latest",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "cpp13-13.2.1+git7813-1.10.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Toolchain 12",
@@ -452,6 +462,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container suse/sles12sp5:latest:libgcc_s1-13.2.1+git7813-1.10.1",
+            "Container suse/sles12sp5:latest:libstdc++6-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cpp13-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-gcc13-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-newlib13-devel-13.2.1+git7813-1.10.1",

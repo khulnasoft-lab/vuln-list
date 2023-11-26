@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2023-2390,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2023-2390,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-2390,SUSE-2023-2390,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-2390,SUSE-SLE-Module-Web-Scripting-15-SP5-2023-2390,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-2390,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-2390,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-2390,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-2390,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-2390,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-2390,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-2390,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-2390,SUSE-Storage-7-2023-2390,SUSE-Storage-7.1-2023-2390,openSUSE-SLE-15.4-2023-2390,openSUSE-SLE-15.5-2023-2390",
+      "Text": "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2023-2390,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2023-2390,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2023-2390,Image SLES15-SP4-Manager-Server-4-3-2023-2390,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-2390,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-2390,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-2390,SUSE-2023-2390,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-2390,SUSE-SLE-Module-Web-Scripting-15-SP5-2023-2390,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-2390,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-2390,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-2390,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-2390,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-2390,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-2390,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-2390,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-2390,SUSE-Storage-7-2023-2390,SUSE-Storage-7.1-2023-2390,openSUSE-SLE-15.4-2023-2390,openSUSE-SLE-15.5-2023-2390",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -51,6 +51,21 @@
       {
         "ProductReference": "apache-commons-fileupload-1.5-150200.3.9.1",
         "RelatesToProductReference": "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache-commons-fileupload-1.5-150200.3.9.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache-commons-fileupload-1.5-150200.3.9.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache-commons-fileupload-1.5-150200.3.9.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -212,10 +227,13 @@
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE:apache-commons-fileupload-1.5-150200.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:apache-commons-fileupload-1.5-150200.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:apache-commons-fileupload-1.5-150200.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:apache-commons-fileupload-1.5-150200.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3:apache-commons-fileupload-1.5-150200.3.9.1",
             "SUSE Enterprise Storage 7.1:apache-commons-fileupload-1.5-150200.3.9.1",
             "SUSE Enterprise Storage 7:apache-commons-fileupload-1.5-150200.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP2-LTSS:apache-commons-fileupload-1.5-150200.3.9.1",

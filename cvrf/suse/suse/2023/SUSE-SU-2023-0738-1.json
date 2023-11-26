@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/nodejs:latest-2023-738,SUSE-2023-738,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-738,openSUSE-SLE-15.4-2023-738",
+      "Text": "Container bci/node:18-2023-738,Container bci/nodejs:latest-2023-738,SUSE-2023-738,SUSE-SLE-Module-Web-Scripting-15-SP4-2023-738,openSUSE-SLE-15.4-2023-738",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "nodejs18-18.14.2-150400.9.6.2",
+        "RelatesToProductReference": "Container bci/node:18",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "npm18-18.14.2-150400.9.6.2",
+        "RelatesToProductReference": "Container bci/node:18",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "nodejs18-18.14.2-150400.9.6.2",
         "RelatesToProductReference": "Container bci/nodejs:latest",
@@ -173,6 +183,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:18:nodejs18-18.14.2-150400.9.6.2",
+            "Container bci/node:18:npm18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:nodejs18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:npm18-18.14.2-150400.9.6.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs18-18.14.2-150400.9.6.2",
@@ -212,6 +224,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:18:nodejs18-18.14.2-150400.9.6.2",
+            "Container bci/node:18:npm18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:nodejs18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:npm18-18.14.2-150400.9.6.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs18-18.14.2-150400.9.6.2",
@@ -251,6 +265,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:18:nodejs18-18.14.2-150400.9.6.2",
+            "Container bci/node:18:npm18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:nodejs18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:npm18-18.14.2-150400.9.6.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs18-18.14.2-150400.9.6.2",
@@ -290,6 +306,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:18:nodejs18-18.14.2-150400.9.6.2",
+            "Container bci/node:18:npm18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:nodejs18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:npm18-18.14.2-150400.9.6.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs18-18.14.2-150400.9.6.2",
@@ -329,6 +347,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container bci/node:18:nodejs18-18.14.2-150400.9.6.2",
+            "Container bci/node:18:npm18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:nodejs18-18.14.2-150400.9.6.2",
             "Container bci/nodejs:latest:npm18-18.14.2-150400.9.6.2",
             "SUSE Linux Enterprise Module for Web and Scripting 15 SP4:nodejs18-18.14.2-150400.9.6.2",
