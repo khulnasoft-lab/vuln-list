@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-09-13T17:26:55Z",
+  "UpdatedAt": "2023-11-27T23:03:28Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "com.fasterxml.jackson.core:jackson-databind"
@@ -114,12 +114,12 @@
         "Value": "CVE-2019-14439"
       }
     ],
-    "Description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2, 2.8.11.14, 2.7.9.6, and 2.6.7.3. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.",
+    "Description": "A Polymorphic Typing issue was discovered in FasterXML jackson-databind 2.x before 2.9.9.2, 2.8.11.4, 2.7.9.6, and 2.6.7.3. This occurs when Default Typing is enabled (either globally or for a specific property) for an externally exposed JSON endpoint and the service has the logback jar in the classpath.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-08-01T19:18:06Z",
     "Severity": "HIGH",
     "Summary": "Deserialization of untrusted data in FasterXML jackson-databind",
-    "UpdatedAt": "2023-09-13T17:26:55Z",
+    "UpdatedAt": "2023-11-27T23:03:29Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -127,6 +127,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.8.11.4"
+      },
+      "VulnerableVersionRange": "\u003e= 2.8.0, \u003c 2.8.11.4"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.6.7.3"
@@ -138,12 +144,6 @@
         "Identifier": "2.7.9.6"
       },
       "VulnerableVersionRange": "\u003e= 2.7.0, \u003c 2.7.9.6"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "2.8.11.14"
-      },
-      "VulnerableVersionRange": "\u003e= 2.8.0, \u003c 2.8.11.14"
     },
     {
       "FirstPatchedVersion": {

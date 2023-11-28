@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-02-14T00:43:33Z",
+  "UpdatedAt": "2023-11-27T22:41:52Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "phpmyadmin/phpmyadmin"
@@ -17,6 +17,12 @@
         "Url": "https://www.phpmyadmin.net/security/PMASA-2023-1/"
       },
       {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/53f70fd7f3b388639922e6cc1ca51fbe890c91cc"
+      },
+      {
+        "Url": "https://github.com/phpmyadmin/phpmyadmin/commit/efa2406695551667f726497750d3db91fb6f662e"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6hr3-44gx-g6wh"
       }
     ],
@@ -30,12 +36,12 @@
         "Value": "CVE-2023-25727"
       }
     ],
-    "Description": "In phpMyAdmin before 4.9.11 and 5.x before 5.2.1, an authenticated user can trigger XSS by uploading a crafted .sql file through the drag-and-drop interface. By disabling the configuration directive `$cfg['enable_drag_drop_import']`, users will be unable to use the drag and drop upload which would protect against the vulnerability.",
+    "Description": "In phpMyAdmin before 4.9.11 and 5.x before 5.2.1, an authenticated user can trigger Cross-site Scripting (XSS) by uploading a crafted .sql file through the drag-and-drop interface. By disabling the configuration directive `$cfg['enable_drag_drop_import']`, users will be unable to use the drag and drop upload which would protect against the vulnerability.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-02-13T06:30:59Z",
     "Severity": "MODERATE",
-    "Summary": "XSS vulnerability in drag-and-drop upload of phpMyAdmin",
-    "UpdatedAt": "2023-02-23T21:32:14Z",
+    "Summary": "Cross-site Scripting vulnerability in drag-and-drop upload of phpMyAdmin",
+    "UpdatedAt": "2023-11-27T22:41:52Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
