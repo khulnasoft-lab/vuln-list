@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2023-11-21T23:50:03Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -33,13 +33,13 @@
     "Description": "### Impact\nWhen credentials are provided while creating an OnboardingTask they may be visible via the Job Results view under the Additional Data tab as args for the Celery Task execution. This only applies to OnboardingTasks that are created with credentials specified while on v2.0.0-2.0.2 of Nautobot Device Onboarding. This advisory does not apply earlier version or when using NAPALM_USERNAME \u0026 NAPALM_PASSWORD from nautobot_config.py\n\n### Patches\nv3.0.0\n\n### Workarounds\nNone\n\n### Recommendations\n* Delete all Job Results for any onboarding task to remove clear text credentials from database entries that were run while on v2.0.X\n* Upgrade to v3.0.0\n* Rotate any exposed credential\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-11-21T23:50:02Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Clear Text Credentials Exposed via Onboarding Task",
-    "UpdatedAt": "2023-11-27T15:25:14Z",
+    "UpdatedAt": "2023-11-30T19:07:25Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 5.7,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
