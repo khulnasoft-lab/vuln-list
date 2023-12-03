@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP2-Manager-4-1-Proxy-BYOS-Azure-2021-906,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-EC2-HVM-2021-906,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-GCE-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-906,Image SLES15-SP4-Manager-Server-4-3-2021-906,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-906,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-906,SUSE-2021-906,SUSE-SLE-Module-SUSE-Manager-Proxy-4.1-2021-906,SUSE-SLE-Module-SUSE-Manager-Server-4.1-2021-906",
+      "Text": "Image SLES15-SP2-Manager-4-1-Proxy-BYOS-Azure-2021-906,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-EC2-HVM-2021-906,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-GCE-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-906,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-906,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-906,Image SLES15-SP4-Manager-Server-4-3-2021-906,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-906,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-906,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-906,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2021-906,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2021-906,SUSE-2021-906,SUSE-SLE-Module-SUSE-Manager-Proxy-4.1-2021-906,SUSE-SLE-Module-SUSE-Manager-Server-4.1-2021-906",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -1104,6 +1104,36 @@
         "RelationType": "Default Component Of"
       },
       {
+        "ProductReference": "xpp3-1.1.4c-11.2.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xpp3-minimal-1.1.4c-11.2.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xstream-1.4.15-3.5.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xpp3-1.1.4c-11.2.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xpp3-minimal-1.1.4c-11.2.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xstream-1.4.15-3.5.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
         "ProductReference": "mgr-osad-4.1.5-2.9.4",
         "RelatesToProductReference": "SUSE Manager Proxy Module 4.1",
         "RelationType": "Default Component Of"
@@ -1850,6 +1880,12 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xstream-1.4.15-3.5.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xstream-1.4.15-3.5.2",
@@ -2164,6 +2200,12 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xstream-1.4.15-3.5.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xstream-1.4.15-3.5.2",
@@ -2478,6 +2520,12 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xstream-1.4.15-3.5.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xstream-1.4.15-3.5.2",
@@ -2788,6 +2836,12 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:xstream-1.4.15-3.5.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xpp3-minimal-1.1.4c-11.2.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:xstream-1.4.15-3.5.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xpp3-minimal-1.1.4c-11.2.2",
             "Image SLES15-SP4-Manager-Server-4-3:xstream-1.4.15-3.5.2",

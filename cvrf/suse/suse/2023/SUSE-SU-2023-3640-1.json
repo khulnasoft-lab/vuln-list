@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sles12sp5:latest-2023-3640,Image SLES12-SP5-Azure-BYOS-2023-3640,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3640,Image SLES12-SP5-Azure-HPC-BYOS-2023-3640,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3640,Image SLES12-SP5-Azure-SAP-BYOS-2023-3640,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3640,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3640,Image SLES12-SP5-EC2-BYOS-2023-3640,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3640,Image SLES12-SP5-EC2-On-Demand-2023-3640,Image SLES12-SP5-EC2-SAP-BYOS-2023-3640,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3640,Image SLES12-SP5-GCE-BYOS-2023-3640,Image SLES12-SP5-GCE-On-Demand-2023-3640,Image SLES12-SP5-GCE-SAP-BYOS-2023-3640,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3640,SUSE-2023-3640,SUSE-SLE-Module-Toolchain-12-2023-3640,SUSE-SLE-SERVER-12-SP5-2023-3640",
+      "Text": "Container suse/sles12sp5:latest-2023-3640,Image SLES12-SP5-Azure-BYOS-2023-3640,Image SLES12-SP5-Azure-Basic-On-Demand-2023-3640,Image SLES12-SP5-Azure-HPC-BYOS-2023-3640,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3640,Image SLES12-SP5-Azure-SAP-BYOS-2023-3640,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3640,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3640,Image SLES12-SP5-EC2-BYOS-2023-3640,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3640,Image SLES12-SP5-EC2-On-Demand-2023-3640,Image SLES12-SP5-EC2-SAP-BYOS-2023-3640,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3640,Image SLES12-SP5-GCE-BYOS-2023-3640,Image SLES12-SP5-GCE-On-Demand-2023-3640,Image SLES12-SP5-GCE-SAP-BYOS-2023-3640,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3640,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3640,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3640,SUSE-2023-3640,SUSE-SLE-Module-Toolchain-12-2023-3640,SUSE-SLE-SERVER-12-SP5-2023-3640",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -206,6 +206,66 @@
       {
         "ProductReference": "libstdc++6-12.3.0+git1204-1.13.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-SAP-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libatomic1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgcc_s1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgomp1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libitm1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "liblsan0-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libstdc++6-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libatomic1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgcc_s1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgomp1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libitm1-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "liblsan0-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libstdc++6-12.3.0+git1204-1.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
         "RelationType": "Default Component Of"
       },
       {
@@ -620,6 +680,18 @@
             "Image SLES12-SP5-GCE-SAP-BYOS:libstdc++6-12.3.0+git1204-1.13.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libgcc_s1-12.3.0+git1204-1.13.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libstdc++6-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libatomic1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libgcc_s1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libgomp1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libitm1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:liblsan0-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libstdc++6-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libatomic1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libgcc_s1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libgomp1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libitm1-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:liblsan0-12.3.0+git1204-1.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libstdc++6-12.3.0+git1204-1.13.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cpp12-12.3.0+git1204-1.13.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-gcc12-12.3.0+git1204-1.13.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-newlib12-devel-12.3.0+git1204-1.13.1",

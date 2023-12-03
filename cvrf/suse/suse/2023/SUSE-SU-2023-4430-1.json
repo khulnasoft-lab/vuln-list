@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/php-apache:8-2023-4430,Container suse/manager/4.3/proxy-httpd:latest-2023-4430,Container suse/registry:latest-2023-4430,Image SLES15-SP4-Manager-Server-4-3-2023-4430,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4430,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4430,SUSE-2023-4430,SUSE-SLE-Module-Basesystem-15-SP4-2023-4430,SUSE-SLE-Module-Basesystem-15-SP5-2023-4430,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4430,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4430,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4430,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4430,openSUSE-SLE-15.4-2023-4430,openSUSE-SLE-15.5-2023-4430",
+      "Text": "Container bci/php-apache:8-2023-4430,Container suse/manager/4.3/proxy-httpd:latest-2023-4430,Container suse/registry:latest-2023-4430,Image SLES15-SP4-Manager-Server-4-3-2023-4430,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4430,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4430,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4430,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2023-4430,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2023-4430,Image SLES15-SP4-SAP-2023-4430,Image SLES15-SP4-SAP-Azure-2023-4430,Image SLES15-SP4-SAP-EC2-2023-4430,Image SLES15-SP4-SAP-GCE-2023-4430,Image SLES15-SP4-SAPCAL-2023-4430,Image SLES15-SP4-SAPCAL-Azure-2023-4430,Image SLES15-SP4-SAPCAL-EC2-2023-4430,Image SLES15-SP4-SAPCAL-GCE-2023-4430,SUSE-2023-4430,SUSE-SLE-Module-Basesystem-15-SP4-2023-4430,SUSE-SLE-Module-Basesystem-15-SP5-2023-4430,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4430,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4430,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4430,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4430,openSUSE-SLE-15.4-2023-4430,openSUSE-SLE-15.5-2023-4430",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -176,6 +176,156 @@
       {
         "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-prefork-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "apache2-utils-2.4.51-150400.6.14.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
         "RelationType": "Default Component Of"
       },
       {
@@ -378,6 +528,10 @@
         {
           "URL": "https://bugzilla.suse.com/1216424",
           "Description": "SUSE Bug 1216424"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217549",
+          "Description": "SUSE Bug 1217549"
         }
       ],
       "ProductStatuses": [
@@ -409,9 +563,39 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:apache2-2.4.51-150400.6.14.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:apache2-prefork-2.4.51-150400.6.14.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:apache2-utils-2.4.51-150400.6.14.1",
             "Image SLES15-SP4-Manager-Server-4-3:apache2-2.4.51-150400.6.14.1",
             "Image SLES15-SP4-Manager-Server-4-3:apache2-prefork-2.4.51-150400.6.14.1",
             "Image SLES15-SP4-Manager-Server-4-3:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-Azure:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-Azure:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-Azure:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-EC2:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-EC2:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-EC2:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-GCE:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-GCE:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP-GCE:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAP:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-Azure:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-Azure:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-Azure:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-EC2:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-EC2:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-EC2:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-GCE:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-GCE:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL-GCE:apache2-utils-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL:apache2-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL:apache2-prefork-2.4.51-150400.6.14.1",
+            "Image SLES15-SP4-SAPCAL:apache2-utils-2.4.51-150400.6.14.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP4:apache2-2.4.51-150400.6.14.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP4:apache2-prefork-2.4.51-150400.6.14.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP4:apache2-utils-2.4.51-150400.6.14.1",

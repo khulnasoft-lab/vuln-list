@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3989,Image SLES12-SP5-Azure-HPC-BYOS-2023-3989,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3989,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3989,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3989,Image SLES12-SP5-EC2-BYOS-2023-3989,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3989,Image SLES12-SP5-EC2-On-Demand-2023-3989,Image SLES12-SP5-EC2-SAP-BYOS-2023-3989,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3989,Image SLES12-SP5-GCE-BYOS-2023-3989,Image SLES12-SP5-GCE-On-Demand-2023-3989,Image SLES12-SP5-GCE-SAP-BYOS-2023-3989,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3989,SUSE-2023-3989,SUSE-SLE-SDK-12-SP5-2023-3989,SUSE-SLE-SERVER-12-SP5-2023-3989",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3989,Image SLES12-SP5-Azure-HPC-BYOS-2023-3989,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3989,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3989,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3989,Image SLES12-SP5-EC2-BYOS-2023-3989,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3989,Image SLES12-SP5-EC2-On-Demand-2023-3989,Image SLES12-SP5-EC2-SAP-BYOS-2023-3989,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3989,Image SLES12-SP5-GCE-BYOS-2023-3989,Image SLES12-SP5-GCE-On-Demand-2023-3989,Image SLES12-SP5-GCE-SAP-BYOS-2023-3989,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3989,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3989,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3989,SUSE-2023-3989,SUSE-SLE-SDK-12-SP5-2023-3989,SUSE-SLE-SERVER-12-SP5-2023-3989",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -205,6 +205,36 @@
       },
       {
         "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-xcb1-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-data-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-xcb1-1.6.2-12.33.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libX11-6-1.6.2-12.33.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Server 12 SP5",
         "RelationType": "Default Component Of"
       },
@@ -355,6 +385,12 @@
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-32bit-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-data-1.6.2-12.33.1",
@@ -431,6 +467,12 @@
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-32bit-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-data-1.6.2-12.33.1",
@@ -507,6 +549,12 @@
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-6-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-data-1.6.2-12.33.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-6-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-data-1.6.2-12.33.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libX11-xcb1-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-6-32bit-1.6.2-12.33.1",
             "SUSE Linux Enterprise Server 12 SP5:libX11-data-1.6.2-12.33.1",

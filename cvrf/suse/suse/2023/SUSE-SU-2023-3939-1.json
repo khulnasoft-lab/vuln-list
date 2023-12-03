@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3939,Image SLES12-SP5-Azure-HPC-BYOS-2023-3939,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3939,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3939,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3939,Image SLES12-SP5-EC2-BYOS-2023-3939,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3939,Image SLES12-SP5-EC2-On-Demand-2023-3939,Image SLES12-SP5-EC2-SAP-BYOS-2023-3939,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3939,Image SLES12-SP5-GCE-BYOS-2023-3939,Image SLES12-SP5-GCE-On-Demand-2023-3939,Image SLES12-SP5-GCE-SAP-BYOS-2023-3939,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3939,SUSE-2023-3939,SUSE-SLE-Module-Web-Scripting-12-2023-3939,SUSE-SLE-SDK-12-SP5-2023-3939,SUSE-SLE-SERVER-12-SP5-2023-3939",
+      "Text": "Image SLES12-SP5-Azure-Basic-On-Demand-2023-3939,Image SLES12-SP5-Azure-HPC-BYOS-2023-3939,Image SLES12-SP5-Azure-HPC-On-Demand-2023-3939,Image SLES12-SP5-Azure-SAP-On-Demand-2023-3939,Image SLES12-SP5-Azure-Standard-On-Demand-2023-3939,Image SLES12-SP5-EC2-BYOS-2023-3939,Image SLES12-SP5-EC2-ECS-On-Demand-2023-3939,Image SLES12-SP5-EC2-On-Demand-2023-3939,Image SLES12-SP5-EC2-SAP-BYOS-2023-3939,Image SLES12-SP5-EC2-SAP-On-Demand-2023-3939,Image SLES12-SP5-GCE-BYOS-2023-3939,Image SLES12-SP5-GCE-On-Demand-2023-3939,Image SLES12-SP5-GCE-SAP-BYOS-2023-3939,Image SLES12-SP5-GCE-SAP-On-Demand-2023-3939,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3939,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3939,SUSE-2023-3939,SUSE-SLE-Module-Web-Scripting-12-2023-3939,SUSE-SLE-SDK-12-SP5-2023-3939,SUSE-SLE-SERVER-12-SP5-2023-3939",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -275,6 +275,46 @@
       },
       {
         "ProductReference": "libpython3_4m1_0-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-base-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-curses-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpython3_4m1_0-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-base-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-curses-3.4.10-25.116.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpython3_4m1_0-3.4.10-25.116.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Web and Scripting 12",
         "RelationType": "Default Component Of"
       },
@@ -423,6 +463,10 @@
         {
           "URL": "https://bugzilla.suse.com/1214692",
           "Description": "SUSE Bug 1214692"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217524",
+          "Description": "SUSE Bug 1217524"
         }
       ],
       "ProductStatuses": [
@@ -476,6 +520,14 @@
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-3.4.10-25.116.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-base-3.4.10-25.116.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-curses-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libpython3_4m1_0-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-base-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-curses-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libpython3_4m1_0-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-base-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-curses-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:libpython3_4m1_0-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:python3-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:python3-base-3.4.10-25.116.1",
@@ -571,6 +623,14 @@
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-3.4.10-25.116.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-base-3.4.10-25.116.1",
             "Image SLES12-SP5-GCE-SAP-On-Demand:python3-curses-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libpython3_4m1_0-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-base-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:python3-curses-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libpython3_4m1_0-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-base-3.4.10-25.116.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:python3-curses-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:libpython3_4m1_0-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:python3-3.4.10-25.116.1",
             "SUSE Linux Enterprise Module for Web and Scripting 12:python3-base-3.4.10-25.116.1",

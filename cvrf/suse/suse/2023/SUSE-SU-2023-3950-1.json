@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-3950,SUSE-SLE-SDK-12-SP5-2023-3950,SUSE-SLE-SERVER-12-SP5-2023-3950",
+      "Text": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3950,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3950,SUSE-2023-3950,SUSE-SLE-SDK-12-SP5-2023-3950,SUSE-SLE-SERVER-12-SP5-2023-3950",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "MozillaFirefox-115.3.1-112.185.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "MozillaFirefox-115.3.1-112.185.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "MozillaFirefox-115.3.1-112.185.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Server 12 SP5",
@@ -123,12 +133,18 @@
         {
           "URL": "https://bugzilla.suse.com/1215814",
           "Description": "SUSE Bug 1215814"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217559",
+          "Description": "SUSE Bug 1217559"
         }
       ],
       "ProductStatuses": [
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:MozillaFirefox-115.3.1-112.185.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:MozillaFirefox-115.3.1-112.185.1",
             "SUSE Linux Enterprise Server 12 SP5:MozillaFirefox-115.3.1-112.185.1",
             "SUSE Linux Enterprise Server 12 SP5:MozillaFirefox-devel-115.3.1-112.185.1",
             "SUSE Linux Enterprise Server 12 SP5:MozillaFirefox-translations-common-115.3.1-112.185.1",

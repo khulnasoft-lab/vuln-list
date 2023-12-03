@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sle-micro-rancher/5.2:latest-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-Azure-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-EC2-HVM-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-GCE-2023-4130,SUSE-2023-4130,SUSE-SLE-Module-SUSE-Manager-Proxy-4.2-2023-4130,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4130,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4130,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4130,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4130,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4130,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4130,SUSE-SUSE-MicroOS-5.2-2023-4130,SUSE-Storage-7.1-2023-4130",
+      "Text": "Container suse/sle-micro-rancher/5.2:latest-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-Azure-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-EC2-HVM-2023-4130,Image SLES15-SP3-Micro-5-2-BYOS-GCE-2023-4130,Image SLES15-SP3-SAP-Azure-LI-BYOS-Production-2023-4130,Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production-2023-4130,SUSE-2023-4130,SUSE-SLE-Module-SUSE-Manager-Proxy-4.2-2023-4130,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4130,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4130,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4130,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4130,SUSE-SLE-Product-SUSE-Manager-Proxy-4.2-2023-4130,SUSE-SLE-Product-SUSE-Manager-Server-4.2-2023-4130,SUSE-SUSE-MicroOS-5.2-2023-4130,SUSE-Storage-7.1-2023-4130",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -101,6 +101,36 @@
       {
         "ProductReference": "grub2-x86_64-efi-2.04-150300.22.43.1",
         "RelatesToProductReference": "Image SLES15-SP3-Micro-5-2-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.04-150300.22.43.1",
+        "RelatesToProductReference": "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production",
         "RelationType": "Default Component Of"
       },
       {
@@ -487,6 +517,10 @@
         {
           "URL": "https://bugzilla.suse.com/1217434",
           "Description": "SUSE Bug 1217434"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217555",
+          "Description": "SUSE Bug 1217555"
         }
       ],
       "ProductStatuses": [
@@ -506,6 +540,12 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-2.04-150300.22.43.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-i386-pc-2.04-150300.22.43.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-x86_64-efi-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-i386-pc-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-x86_64-efi-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-i386-pc-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-x86_64-efi-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-arm64-efi-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-i386-pc-2.04-150300.22.43.1",
@@ -613,6 +653,12 @@
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-2.04-150300.22.43.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-i386-pc-2.04-150300.22.43.1",
             "Image SLES15-SP3-Micro-5-2-BYOS-GCE:grub2-x86_64-efi-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-i386-pc-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-LI-BYOS-Production:grub2-x86_64-efi-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-i386-pc-2.04-150300.22.43.1",
+            "Image SLES15-SP3-SAP-Azure-VLI-BYOS-Production:grub2-x86_64-efi-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-arm64-efi-2.04-150300.22.43.1",
             "SUSE Enterprise Storage 7.1:grub2-i386-pc-2.04-150300.22.43.1",

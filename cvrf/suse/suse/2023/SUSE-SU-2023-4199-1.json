@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sles12sp5:latest-2023-4199,Image SLES12-SP5-EC2-BYOS-2023-4199,Image SLES12-SP5-EC2-ECS-On-Demand-2023-4199,Image SLES12-SP5-EC2-On-Demand-2023-4199,Image SLES12-SP5-EC2-SAP-BYOS-2023-4199,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4199,Image SLES12-SP5-GCE-On-Demand-2023-4199,SUSE-2023-4199,SUSE-SLE-SDK-12-SP5-2023-4199,SUSE-SLE-SERVER-12-SP5-2023-4199",
+      "Text": "Container suse/sles12sp5:latest-2023-4199,Image SLES12-SP5-EC2-BYOS-2023-4199,Image SLES12-SP5-EC2-ECS-On-Demand-2023-4199,Image SLES12-SP5-EC2-On-Demand-2023-4199,Image SLES12-SP5-EC2-SAP-BYOS-2023-4199,Image SLES12-SP5-EC2-SAP-On-Demand-2023-4199,Image SLES12-SP5-GCE-On-Demand-2023-4199,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-4199,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-4199,SUSE-2023-4199,SUSE-SLE-SDK-12-SP5-2023-4199,SUSE-SLE-SERVER-12-SP5-2023-4199",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -71,6 +71,16 @@
       {
         "ProductReference": "libnghttp2-14-1.39.2-3.13.1",
         "RelatesToProductReference": "Image SLES12-SP5-GCE-On-Demand",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libnghttp2-14-1.39.2-3.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libnghttp2-14-1.39.2-3.13.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
         "RelationType": "Default Component Of"
       },
       {
@@ -189,6 +199,8 @@
             "Image SLES12-SP5-EC2-SAP-BYOS:libnghttp2-14-1.39.2-3.13.1",
             "Image SLES12-SP5-EC2-SAP-On-Demand:libnghttp2-14-1.39.2-3.13.1",
             "Image SLES12-SP5-GCE-On-Demand:libnghttp2-14-1.39.2-3.13.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libnghttp2-14-1.39.2-3.13.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libnghttp2-14-1.39.2-3.13.1",
             "SUSE Linux Enterprise Server 12 SP5:libnghttp2-14-1.39.2-3.13.1",
             "SUSE Linux Enterprise Server 12 SP5:libnghttp2-14-32bit-1.39.2-3.13.1",
             "SUSE Linux Enterprise Server for SAP Applications 12 SP5:libnghttp2-14-1.39.2-3.13.1",

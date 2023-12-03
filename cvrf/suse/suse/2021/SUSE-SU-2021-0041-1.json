@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-41,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-41,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-41,Image SLES15-SP4-Manager-Server-4-3-2021-41,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-41,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-41,SUSE-2021-41,SUSE-SLE-Module-Web-Scripting-15-SP2-2021-41",
+      "Text": "Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-41,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-41,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-41,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-41,Image SLES15-SP4-Manager-Server-4-3-2021-41,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-41,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-41,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-41,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2021-41,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2021-41,SUSE-2021-41,SUSE-SLE-Module-Web-Scripting-15-SP2-2021-41",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -365,6 +365,56 @@
       },
       {
         "ProductReference": "tomcat-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-el-3_0-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-jsp-2_3-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-lib-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-servlet-4_0-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-el-3_0-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-jsp-2_3-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-lib-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-servlet-4_0-api-9.0.36-3.18.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "tomcat-9.0.36-3.18.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Web and Scripting 15 SP2",
         "RelationType": "Default Component Of"
       },
@@ -510,6 +560,16 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:tomcat-jsp-2_3-api-9.0.36-3.18.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:tomcat-lib-9.0.36-3.18.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:tomcat-servlet-4_0-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:tomcat-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:tomcat-el-3_0-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:tomcat-jsp-2_3-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:tomcat-lib-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:tomcat-servlet-4_0-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:tomcat-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:tomcat-el-3_0-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:tomcat-jsp-2_3-api-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:tomcat-lib-9.0.36-3.18.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:tomcat-servlet-4_0-api-9.0.36-3.18.1",
             "Image SLES15-SP4-Manager-Server-4-3:tomcat-9.0.36-3.18.1",
             "Image SLES15-SP4-Manager-Server-4-3:tomcat-el-3_0-api-9.0.36-3.18.1",
             "Image SLES15-SP4-Manager-Server-4-3:tomcat-jsp-2_3-api-9.0.36-3.18.1",

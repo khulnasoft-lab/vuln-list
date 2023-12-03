@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sles12sp5:latest-2023-4480,SUSE-2023-4480,SUSE-SLE-Module-Toolchain-12-2023-4480,SUSE-SLE-SERVER-12-SP5-2023-4480",
+      "Text": "Container suse/sles12sp5:latest-2023-4480,Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-4480,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-4480,SUSE-2023-4480,SUSE-SLE-Module-Toolchain-12-2023-4480,SUSE-SLE-SERVER-12-SP5-2023-4480",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -46,6 +46,66 @@
       {
         "ProductReference": "libstdc++6-13.2.1+git7813-1.10.1",
         "RelatesToProductReference": "Container suse/sles12sp5:latest",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libatomic1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgcc_s1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgomp1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libitm1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "liblsan0-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libstdc++6-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libatomic1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgcc_s1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libgomp1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libitm1-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "liblsan0-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libstdc++6-13.2.1+git7813-1.10.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
         "RelationType": "Default Component Of"
       },
       {
@@ -464,6 +524,18 @@
           "ProductID": [
             "Container suse/sles12sp5:latest:libgcc_s1-13.2.1+git7813-1.10.1",
             "Container suse/sles12sp5:latest:libstdc++6-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libatomic1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libgcc_s1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libgomp1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libitm1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:liblsan0-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libstdc++6-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libatomic1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libgcc_s1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libgomp1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libitm1-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:liblsan0-13.2.1+git7813-1.10.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libstdc++6-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cpp13-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-gcc13-13.2.1+git7813-1.10.1",
             "SUSE Linux Enterprise Module for Toolchain 12:cross-nvptx-newlib13-devel-13.2.1+git7813-1.10.1",

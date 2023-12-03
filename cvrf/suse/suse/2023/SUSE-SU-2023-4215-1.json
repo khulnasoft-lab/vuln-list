@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container bci/bci-init:latest-2023-4215,Container bci/bci-minimal:latest-2023-4215,Container bci/dotnet-aspnet:6.0-2023-4215,Container bci/dotnet-aspnet:latest-2023-4215,Container bci/dotnet-runtime:6.0-2023-4215,Container bci/dotnet-runtime:latest-2023-4215,Container bci/dotnet-sdk:6.0-2023-4215,Container bci/dotnet-sdk:latest-2023-4215,Container bci/golang:1.20-2023-4215,Container bci/golang:1.20-openssl-2023-4215,Container bci/golang:latest-2023-4215,Container bci/node:18-2023-4215,Container bci/nodejs:latest-2023-4215,Container bci/openjdk-devel:11-2023-4215,Container bci/openjdk-devel:latest-2023-4215,Container bci/openjdk:11-2023-4215,Container bci/openjdk:latest-2023-4215,Container bci/php-apache:8-2023-4215,Container bci/php-fpm:8-2023-4215,Container bci/php:8-2023-4215,Container bci/python:3-2023-4215,Container bci/python:latest-2023-4215,Container bci/ruby:latest-2023-4215,Container bci/rust:1.72-2023-4215,Container bci/rust:latest-2023-4215,Container suse/389-ds:latest-2023-4215,Container suse/git:latest-2023-4215,Container suse/helm:latest-2023-4215,Container suse/nginx:latest-2023-4215,Container suse/pcp:latest-2023-4215,Container suse/postgres:latest-2023-4215,Container suse/registry:latest-2023-4215,Container suse/rmt-server:latest-2023-4215,Container suse/sle-micro/5.5/toolbox:latest-2023-4215,Container suse/sle15:15.5-2023-4215,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4215,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4215,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4215,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4215,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4215,SUSE-2023-4215,SUSE-SLE-Micro-5.5-2023-4215,SUSE-SLE-Module-Basesystem-15-SP5-2023-4215,SUSE-SLE-Module-Development-Tools-15-SP5-2023-4215,openSUSE-SLE-15.5-2023-4215",
+      "Text": "Container bci/bci-init:latest-2023-4215,Container bci/bci-minimal:latest-2023-4215,Container bci/dotnet-aspnet:6.0-2023-4215,Container bci/dotnet-aspnet:latest-2023-4215,Container bci/dotnet-runtime:6.0-2023-4215,Container bci/dotnet-runtime:latest-2023-4215,Container bci/dotnet-sdk:6.0-2023-4215,Container bci/dotnet-sdk:latest-2023-4215,Container bci/golang:1.20-2023-4215,Container bci/golang:1.20-openssl-2023-4215,Container bci/golang:latest-2023-4215,Container bci/node:18-2023-4215,Container bci/nodejs:latest-2023-4215,Container bci/openjdk-devel:11-2023-4215,Container bci/openjdk-devel:latest-2023-4215,Container bci/openjdk:11-2023-4215,Container bci/openjdk:latest-2023-4215,Container bci/php-apache:8-2023-4215,Container bci/php-fpm:8-2023-4215,Container bci/php:8-2023-4215,Container bci/python:3-2023-4215,Container bci/python:latest-2023-4215,Container bci/ruby:latest-2023-4215,Container bci/rust:1.73-2023-4215,Container bci/rust:latest-2023-4215,Container suse/389-ds:latest-2023-4215,Container suse/git:latest-2023-4215,Container suse/helm:latest-2023-4215,Container suse/nginx:latest-2023-4215,Container suse/pcp:latest-2023-4215,Container suse/postgres:15-2023-4215,Container suse/registry:latest-2023-4215,Container suse/rmt-server:latest-2023-4215,Container suse/sle-micro/5.5/toolbox:latest-2023-4215,Container suse/sle15:15.5-2023-4215,Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4215,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4215,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4215,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4215,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4215,Image SLES15-SP5-Micro-5-5-2023-4215,Image SLES15-SP5-Micro-5-5-Azure-2023-4215,SUSE-2023-4215,SUSE-SLE-Micro-5.5-2023-4215,SUSE-SLE-Module-Basesystem-15-SP5-2023-4215,SUSE-SLE-Module-Development-Tools-15-SP5-2023-4215,openSUSE-SLE-15.5-2023-4215",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -165,7 +165,7 @@
       },
       {
         "ProductReference": "libz1-1.2.13-150500.4.3.1",
-        "RelatesToProductReference": "Container bci/rust:1.72",
+        "RelatesToProductReference": "Container bci/rust:1.73",
         "RelationType": "Default Component Of"
       },
       {
@@ -200,7 +200,7 @@
       },
       {
         "ProductReference": "libz1-1.2.13-150500.4.3.1",
-        "RelatesToProductReference": "Container suse/postgres:latest",
+        "RelatesToProductReference": "Container suse/postgres:15",
         "RelationType": "Default Component Of"
       },
       {
@@ -246,6 +246,16 @@
       {
         "ProductReference": "libz1-1.2.13-150500.4.3.1",
         "RelatesToProductReference": "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.13-150500.4.3.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libz1-1.2.13-150500.4.3.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5-Azure",
         "RelationType": "Default Component Of"
       },
       {
@@ -416,14 +426,14 @@
             "Container bci/python:3:libz1-1.2.13-150500.4.3.1",
             "Container bci/python:latest:libz1-1.2.13-150500.4.3.1",
             "Container bci/ruby:latest:libz1-1.2.13-150500.4.3.1",
-            "Container bci/rust:1.72:libz1-1.2.13-150500.4.3.1",
+            "Container bci/rust:1.73:libz1-1.2.13-150500.4.3.1",
             "Container bci/rust:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/389-ds:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/git:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/helm:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/nginx:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/pcp:latest:libz1-1.2.13-150500.4.3.1",
-            "Container suse/postgres:latest:libz1-1.2.13-150500.4.3.1",
+            "Container suse/postgres:15:libz1-1.2.13-150500.4.3.1",
             "Container suse/registry:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/rmt-server:latest:libz1-1.2.13-150500.4.3.1",
             "Container suse/sle-micro/5.5/toolbox:latest:libz1-1.2.13-150500.4.3.1",
@@ -433,6 +443,8 @@
             "Image SLES15-SP5-CHOST-BYOS-EC2:libz1-1.2.13-150500.4.3.1",
             "Image SLES15-SP5-CHOST-BYOS-GCE:libz1-1.2.13-150500.4.3.1",
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:libz1-1.2.13-150500.4.3.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:libz1-1.2.13-150500.4.3.1",
+            "Image SLES15-SP5-Micro-5-5:libz1-1.2.13-150500.4.3.1",
             "SUSE Linux Enterprise Micro 5.5:libz1-1.2.13-150500.4.3.1",
             "SUSE Linux Enterprise Micro 5.5:zlib-devel-1.2.13-150500.4.3.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP5:libminizip1-1.2.13-150500.4.3.1",

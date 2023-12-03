@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/postgres:10-2021-175,Container suse/postgres:12-2021-175,Container suse/postgres:13-2021-175,Container suse/postgres:14-2021-175,Container suse/postgres:latest-2021-175,Container trento/trento-db:latest-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-175,Image SLES15-SP4-Manager-Server-4-3-2021-175,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-175,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-175,SUSE-2021-175,SUSE-SLE-Module-Basesystem-15-SP2-2021-175,SUSE-SLE-Module-Packagehub-Subpackages-15-SP2-2021-175,SUSE-SLE-Module-Server-Applications-15-SP2-2021-175",
+      "Text": "Container suse/postgres:10-2021-175,Container suse/postgres:12-2021-175,Container suse/postgres:13-2021-175,Container suse/postgres:14-2021-175,Container suse/postgres:15-2021-175,Container suse/postgres:latest-2021-175,Container trento/trento-db:latest-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2021-175,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2021-175,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2021-175,Image SLES15-SP4-Manager-Server-4-3-2021-175,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2021-175,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2021-175,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2021-175,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2021-175,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2021-175,SUSE-2021-175,SUSE-SLE-Module-Basesystem-15-SP2-2021-175,SUSE-SLE-Module-Packagehub-Subpackages-15-SP2-2021-175,SUSE-SLE-Module-Server-Applications-15-SP2-2021-175",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -66,6 +66,11 @@
       {
         "ProductReference": "libpq5-13.1-5.3.15",
         "RelatesToProductReference": "Container suse/postgres:14",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-13.1-5.3.15",
+        "RelatesToProductReference": "Container suse/postgres:15",
         "RelationType": "Default Component Of"
       },
       {
@@ -231,6 +236,16 @@
       {
         "ProductReference": "libpq5-13.1-5.3.15",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-13.1-5.3.15",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-13.1-5.3.15",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -426,6 +441,7 @@
             "Container suse/postgres:13:postgresql13-13.1-5.3.15",
             "Container suse/postgres:13:postgresql13-server-13.1-5.3.15",
             "Container suse/postgres:14:libpq5-13.1-5.3.15",
+            "Container suse/postgres:15:libpq5-13.1-5.3.15",
             "Container suse/postgres:latest:libpq5-13.1-5.3.15",
             "Container trento/trento-db:latest:libpq5-13.1-5.3.15",
             "Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure:libpq5-13.1-5.3.15",
@@ -458,6 +474,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-32bit-13.1-5.3.15",
@@ -516,6 +534,7 @@
             "Container suse/postgres:13:postgresql13-13.1-5.3.15",
             "Container suse/postgres:13:postgresql13-server-13.1-5.3.15",
             "Container suse/postgres:14:libpq5-13.1-5.3.15",
+            "Container suse/postgres:15:libpq5-13.1-5.3.15",
             "Container suse/postgres:latest:libpq5-13.1-5.3.15",
             "Container trento/trento-db:latest:libpq5-13.1-5.3.15",
             "Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure:libpq5-13.1-5.3.15",
@@ -548,6 +567,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-32bit-13.1-5.3.15",
@@ -610,6 +631,7 @@
             "Container suse/postgres:13:postgresql13-13.1-5.3.15",
             "Container suse/postgres:13:postgresql13-server-13.1-5.3.15",
             "Container suse/postgres:14:libpq5-13.1-5.3.15",
+            "Container suse/postgres:15:libpq5-13.1-5.3.15",
             "Container suse/postgres:latest:libpq5-13.1-5.3.15",
             "Container trento/trento-db:latest:libpq5-13.1-5.3.15",
             "Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure:libpq5-13.1-5.3.15",
@@ -642,6 +664,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-13.1-5.3.15",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-13.1-5.3.15",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-13.1-5.3.15",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:libpq5-32bit-13.1-5.3.15",

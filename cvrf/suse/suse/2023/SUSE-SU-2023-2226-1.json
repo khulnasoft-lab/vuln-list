@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/sle15:15.1-2023-2226,Image SLES15-SP1-SAP-Azure-LI-BYOS-Production-2023-2226,Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production-2023-2226,SUSE-2023-2226,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-2226,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-2226,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-2226,SUSE-Storage-6-2023-2226",
+      "Text": "Container caasp/v4/cilium-operator:1.6.6-2023-2226,Container caasp/v4/cilium:1.6.6-2023-2226,Container suse/sle15:15.1-2023-2226,Image SLES15-SP1-SAP-Azure-LI-BYOS-Production-2023-2226,Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production-2023-2226,SUSE-2023-2226,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-2226,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-2226,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-2226,SUSE-Storage-6-2023-2226",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libcurl4-7.60.0-150000.51.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium-operator:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libcurl4-7.60.0-150000.51.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libcurl4-7.60.0-150000.51.1",
         "RelatesToProductReference": "Container suse/sle15:15.1",
@@ -267,6 +277,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -316,6 +328,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -365,6 +379,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -414,6 +430,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -463,6 +481,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -512,6 +532,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -561,6 +583,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -610,6 +634,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -659,6 +685,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",
@@ -708,6 +736,8 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libcurl4-7.60.0-150000.51.1",
+            "Container caasp/v4/cilium:1.6.6:libcurl4-7.60.0-150000.51.1",
             "Container suse/sle15:15.1:libcurl4-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:curl-7.60.0-150000.51.1",
             "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:libcurl4-7.60.0-150000.51.1",

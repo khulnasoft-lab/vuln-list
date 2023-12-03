@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/rmt-mariadb:latest-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-Azure-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-EC2-HVM-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-GCE-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-Azure-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-EC2-HVM-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-GCE-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2020-2828,Image SLES15-SP4-Manager-Server-4-3-2020-2828,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2020-2828,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2020-2828,SUSE-2020-2828,SUSE-SLE-Module-Basesystem-15-SP2-2020-2828",
+      "Text": "Container suse/rmt-mariadb:latest-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-Azure-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-EC2-HVM-2020-2828,Image SLES15-SP2-Manager-4-1-Proxy-BYOS-GCE-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-Azure-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-EC2-HVM-2020-2828,Image SLES15-SP2-Manager-4-1-Server-BYOS-GCE-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-Azure-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-EC2-HVM-2020-2828,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-GCE-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2020-2828,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2020-2828,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2020-2828,Image SLES15-SP4-Manager-Server-4-3-2020-2828,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2020-2828,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2020-2828,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2020-2828,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2020-2828,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2020-2828,SUSE-2020-2828,SUSE-SLE-Module-Basesystem-15-SP2-2020-2828",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -160,6 +160,16 @@
       },
       {
         "ProductReference": "perl-DBI-1.642-3.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "perl-DBI-1.642-3.6.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "perl-DBI-1.642-3.6.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Module for Basesystem 15 SP2",
         "RelationType": "Default Component Of"
       }
@@ -234,6 +244,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:perl-DBI-1.642-3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:perl-DBI-1.642-3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:perl-DBI-1.642-3.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:perl-DBI-1.642-3.6.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:perl-DBI-1.642-3.6.1",
             "Image SLES15-SP4-Manager-Server-4-3:perl-DBI-1.642-3.6.1",
             "SUSE Linux Enterprise Module for Basesystem 15 SP2:perl-DBI-1.642-3.6.1"
           ]

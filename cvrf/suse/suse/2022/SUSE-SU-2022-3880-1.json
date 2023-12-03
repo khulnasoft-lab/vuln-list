@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-Manager-Server-4-3-2022-3880,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2022-3880,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2022-3880,SUSE-2022-3880,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2022-3880",
+      "Text": "Image SLES15-SP4-Manager-Server-4-3-2022-3880,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2022-3880,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2022-3880,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2022-3880,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2022-3880,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2022-3880,SUSE-2022-3880,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2022-3880",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -215,6 +215,56 @@
       },
       {
         "ProductReference": "spacewalk-java-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-config-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-lib-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-taskomatic-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-config-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-lib-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-taskomatic-4.3.39-150400.3.11.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-java-4.3.39-150400.3.11.1",
         "RelatesToProductReference": "SUSE Manager Server Module 4.3",
         "RelationType": "Default Component Of"
       },
@@ -332,6 +382,16 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-lib-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-taskomatic-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-config-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-lib-4.3.39-150400.3.11.1",
@@ -400,6 +460,16 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-lib-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-taskomatic-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-config-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-lib-4.3.39-150400.3.11.1",
@@ -468,6 +538,16 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-lib-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:spacewalk-taskomatic-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-config-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-lib-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-java-postgresql-4.3.39-150400.3.11.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:spacewalk-taskomatic-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-config-4.3.39-150400.3.11.1",
             "Image SLES15-SP4-Manager-Server-4-3:spacewalk-java-lib-4.3.39-150400.3.11.1",

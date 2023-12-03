@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-3941,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-3941,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-3941,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-3941",
+      "Text": "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production-2023-3941,Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production-2023-3941,SUSE-2023-3941,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-3941,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-3941,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-3941",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "MozillaFirefox-115.3.1-150000.150.110.1",
+        "RelatesToProductReference": "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "MozillaFirefox-115.3.1-150000.150.110.1",
+        "RelatesToProductReference": "Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "MozillaFirefox-115.3.1-150000.150.110.1",
         "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS",
@@ -148,12 +158,18 @@
         {
           "URL": "https://bugzilla.suse.com/1215814",
           "Description": "SUSE Bug 1215814"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217559",
+          "Description": "SUSE Bug 1217559"
         }
       ],
       "ProductStatuses": [
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES15-SP1-SAP-Azure-LI-BYOS-Production:MozillaFirefox-115.3.1-150000.150.110.1",
+            "Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production:MozillaFirefox-115.3.1-150000.150.110.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:MozillaFirefox-115.3.1-150000.150.110.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:MozillaFirefox-devel-115.3.1-150000.150.110.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:MozillaFirefox-translations-common-115.3.1-150000.150.110.1",

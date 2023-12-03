@@ -31,13 +31,23 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-3690,SUSE-SLE-SDK-12-SP5-2023-3690,SUSE-SLE-SERVER-12-SP5-2023-3690,SUSE-SLE-WE-12-SP5-2023-3690",
+      "Text": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production-2023-3690,Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production-2023-3690,SUSE-2023-3690,SUSE-SLE-SDK-12-SP5-2023-3690,SUSE-SLE-SERVER-12-SP5-2023-3690,SUSE-SLE-WE-12-SP5-2023-3690",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libcares2-1.9.1-9.18.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libcares2-1.9.1-9.18.1",
+        "RelatesToProductReference": "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libcares2-1.9.1-9.18.1",
         "RelatesToProductReference": "SUSE Linux Enterprise Server 12 SP5",
@@ -100,12 +110,18 @@
         {
           "URL": "https://bugzilla.suse.com/1214674",
           "Description": "SUSE Bug 1214674"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217664",
+          "Description": "SUSE Bug 1217664"
         }
       ],
       "ProductStatuses": [
         {
           "Type": "Fixed",
           "ProductID": [
+            "Image SLES12-SP5-SAP-Azure-LI-BYOS-Production:libcares2-1.9.1-9.18.1",
+            "Image SLES12-SP5-SAP-Azure-VLI-BYOS-Production:libcares2-1.9.1-9.18.1",
             "SUSE Linux Enterprise Server 12 SP5:libcares2-1.9.1-9.18.1",
             "SUSE Linux Enterprise Server for SAP Applications 12 SP5:libcares2-1.9.1-9.18.1",
             "SUSE Linux Enterprise Software Development Kit 12 SP5:libcares-devel-1.9.1-9.18.1",

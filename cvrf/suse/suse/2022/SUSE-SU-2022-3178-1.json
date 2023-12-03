@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-Azure-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-EC2-HVM-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-GCE-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2022-3178,Image SLES15-SP4-Manager-Server-4-3-2022-3178,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2022-3178,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2022-3178,SUSE-2022-3178,SUSE-SLE-Manager-Tools-15-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.1-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.2-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.1-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.2-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2022-3178,SUSE-SLE-Product-HPC-15-2022-3178,SUSE-SLE-Product-SLES-15-2022-3178,SUSE-SLE-Product-SLES_SAP-15-2022-3178,openSUSE-SLE-15.3-2022-3178,openSUSE-SLE-15.4-2022-3178",
+      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-Azure-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-EC2-HVM-2022-3178,Image SLES15-SP3-Manager-4-2-Proxy-BYOS-GCE-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-Azure-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-EC2-HVM-2022-3178,Image SLES15-SP3-Manager-4-2-Server-BYOS-GCE-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2022-3178,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2022-3178,Image SLES15-SP4-Manager-Server-4-3-2022-3178,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2022-3178,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2022-3178,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2022-3178,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2022-3178,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2022-3178,SUSE-2022-3178,SUSE-SLE-Manager-Tools-15-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.1-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.2-2022-3178,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.1-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.2-2022-3178,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2022-3178,SUSE-SLE-Product-HPC-15-2022-3178,SUSE-SLE-Product-SLES-15-2022-3178,SUSE-SLE-Product-SLES_SAP-15-2022-3178,openSUSE-SLE-15.3-2022-3178,openSUSE-SLE-15.4-2022-3178",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -126,6 +126,16 @@
       {
         "ProductReference": "python3-hwdata-2.3.5-150000.3.9.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-hwdata-2.3.5-150000.3.9.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-hwdata-2.3.5-150000.3.9.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -605,6 +615,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -715,6 +727,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -829,6 +843,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -939,6 +955,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -1049,6 +1067,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -1159,6 +1179,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
@@ -1269,6 +1291,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-hwdata-2.3.5-150000.3.9.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-hwdata-2.3.5-150000.3.9.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-hwdata-2.3.5-150000.3.9.1",
             "SUSE Linux Enterprise High Performance Computing 15-ESPOS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",
             "SUSE Linux Enterprise High Performance Computing 15-LTSS:golang-github-prometheus-node_exporter-1.3.0-150000.3.15.1",

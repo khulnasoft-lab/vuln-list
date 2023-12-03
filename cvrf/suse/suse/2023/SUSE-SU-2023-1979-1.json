@@ -31,13 +31,28 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "SUSE-2023-1979,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-1979,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-1979,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-1979",
+      "Text": "Container caasp/v4/cilium:1.6.6-2023-1979,SUSE-2023-1979,SUSE-SLE-Product-HPC-15-SP1-LTSS-2023-1979,SUSE-SLE-Product-SLES-15-SP1-LTSS-2023-1979,SUSE-SLE-Product-SLES_SAP-15-SP1-2023-1979",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libprotobuf-c-devel-1.3.0-150000.3.3.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libprotobuf-c1-1.3.0-150000.3.3.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "protobuf-c-1.3.0-150000.3.3.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libprotobuf-c-devel-1.3.0-150000.3.3.1",
         "RelatesToProductReference": "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS",
@@ -116,6 +131,9 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium:1.6.6:libprotobuf-c-devel-1.3.0-150000.3.3.1",
+            "Container caasp/v4/cilium:1.6.6:libprotobuf-c1-1.3.0-150000.3.3.1",
+            "Container caasp/v4/cilium:1.6.6:protobuf-c-1.3.0-150000.3.3.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:libprotobuf-c-devel-1.3.0-150000.3.3.1",
             "SUSE Linux Enterprise High Performance Computing 15 SP1-LTSS:libprotobuf-c1-1.3.0-150000.3.3.1",
             "SUSE Linux Enterprise Server 15 SP1-LTSS:libprotobuf-c-devel-1.3.0-150000.3.3.1",

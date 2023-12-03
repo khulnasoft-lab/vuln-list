@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4141,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4141,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4141,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4141,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4141,SUSE-2023-4141,SUSE-SLE-Micro-5.5-2023-4141,SUSE-SLE-Module-Basesystem-15-SP5-2023-4141,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4141",
+      "Text": "Image SLES15-SP5-CHOST-BYOS-Aliyun-2023-4141,Image SLES15-SP5-CHOST-BYOS-Azure-2023-4141,Image SLES15-SP5-CHOST-BYOS-EC2-2023-4141,Image SLES15-SP5-CHOST-BYOS-GCE-2023-4141,Image SLES15-SP5-CHOST-BYOS-SAP-CCloud-2023-4141,Image SLES15-SP5-Micro-5-5-2023-4141,Image SLES15-SP5-Micro-5-5-Azure-2023-4141,SUSE-2023-4141,SUSE-SLE-Micro-5.5-2023-4141,SUSE-SLE-Module-Basesystem-15-SP5-2023-4141,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4141",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -111,6 +111,36 @@
       {
         "ProductReference": "grub2-x86_64-efi-2.06-150500.29.8.1",
         "RelatesToProductReference": "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-i386-pc-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "grub2-x86_64-efi-2.06-150500.29.8.1",
+        "RelatesToProductReference": "Image SLES15-SP5-Micro-5-5-Azure",
         "RelationType": "Default Component Of"
       },
       {
@@ -251,6 +281,10 @@
         {
           "URL": "https://bugzilla.suse.com/1217434",
           "Description": "SUSE Bug 1217434"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1217555",
+          "Description": "SUSE Bug 1217555"
         }
       ],
       "ProductStatuses": [
@@ -272,6 +306,12 @@
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-2.06-150500.29.8.1",
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-i386-pc-2.06-150500.29.8.1",
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-x86_64-efi-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-i386-pc-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-x86_64-efi-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-i386-pc-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-x86_64-efi-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-arm64-efi-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-i386-pc-2.06-150500.29.8.1",
@@ -331,6 +371,12 @@
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-2.06-150500.29.8.1",
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-i386-pc-2.06-150500.29.8.1",
             "Image SLES15-SP5-CHOST-BYOS-SAP-CCloud:grub2-x86_64-efi-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-i386-pc-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5-Azure:grub2-x86_64-efi-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-i386-pc-2.06-150500.29.8.1",
+            "Image SLES15-SP5-Micro-5-5:grub2-x86_64-efi-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-arm64-efi-2.06-150500.29.8.1",
             "SUSE Linux Enterprise Micro 5.5:grub2-i386-pc-2.06-150500.29.8.1",

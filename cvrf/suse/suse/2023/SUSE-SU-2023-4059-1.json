@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-4059,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4059,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4059,Image SLES15-SP4-CHOST-BYOS-EC2-2023-4059,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4059,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4059,Image SLES15-SP4-Manager-Server-4-3-2023-4059,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4059,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4059,Image SLES15-SP4-SAP-Azure-LI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-LI-BYOS-Production-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production-2023-4059,SUSE-2023-4059,SUSE-SLE-Micro-5.3-2023-4059,SUSE-SLE-Micro-5.4-2023-4059,SUSE-SLE-Module-Basesystem-15-SP4-2023-4059,SUSE-SLE-Product-HA-15-SP4-2023-4059,openSUSE-SLE-15.4-2023-4059",
+      "Text": "Image SLES15-SP4-CHOST-BYOS-2023-4059,Image SLES15-SP4-CHOST-BYOS-Aliyun-2023-4059,Image SLES15-SP4-CHOST-BYOS-Azure-2023-4059,Image SLES15-SP4-CHOST-BYOS-EC2-2023-4059,Image SLES15-SP4-CHOST-BYOS-GCE-2023-4059,Image SLES15-SP4-CHOST-BYOS-SAP-CCloud-2023-4059,Image SLES15-SP4-Manager-Server-4-3-2023-4059,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4059,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4059,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4059,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2023-4059,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2023-4059,Image SLES15-SP4-SAP-2023-4059,Image SLES15-SP4-SAP-Azure-2023-4059,Image SLES15-SP4-SAP-Azure-LI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-LI-BYOS-Production-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-2023-4059,Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production-2023-4059,Image SLES15-SP4-SAP-EC2-2023-4059,Image SLES15-SP4-SAP-GCE-2023-4059,Image SLES15-SP4-SAPCAL-2023-4059,Image SLES15-SP4-SAPCAL-Azure-2023-4059,Image SLES15-SP4-SAPCAL-EC2-2023-4059,Image SLES15-SP4-SAPCAL-GCE-2023-4059,SUSE-2023-4059,SUSE-SLE-Micro-5.3-2023-4059,SUSE-SLE-Micro-5.4-2023-4059,SUSE-SLE-Module-Basesystem-15-SP4-2023-4059,SUSE-SLE-Product-HA-15-SP4-2023-4059,openSUSE-SLE-15.4-2023-4059",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -104,6 +104,56 @@
         "RelationType": "Default Component Of"
       },
       {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
         "ProductReference": "ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
         "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-LI-BYOS",
         "RelationType": "Default Component Of"
@@ -161,6 +211,126 @@
       {
         "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
         "RelatesToProductReference": "Image SLES15-SP4-SAP-Azure-VLI-BYOS-Production",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAP-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+        "RelatesToProductReference": "Image SLES15-SP4-SAPCAL-GCE",
         "RelationType": "Default Component Of"
       },
       {
@@ -543,6 +713,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
@@ -556,6 +728,38 @@
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
@@ -656,6 +860,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
@@ -669,6 +875,38 @@
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
@@ -769,6 +1007,8 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-Manager-Server-4-3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-LI-BYOS-Production:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
@@ -782,6 +1022,38 @@
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "Image SLES15-SP4-SAP-Azure-VLI-BYOS:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAP:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-Azure:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-EC2:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL-GCE:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
+            "Image SLES15-SP4-SAPCAL:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise High Availability Extension 15 SP4:ctdb-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-client-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",
             "SUSE Linux Enterprise Micro 5.3:samba-libs-4.15.13+git.691.3d3cea0641-150400.3.31.1",

@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Image SLES15-SP4-Manager-Server-4-3-2023-2263,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-2263,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-2263,SUSE-2023-2263,openSUSE-SLE-15.5-2023-2263",
+      "Text": "Image SLES15-SP4-Manager-Server-4-3-2023-2263,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-2263,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-2263,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2023-2263,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2023-2263,SUSE-2023-2263,openSUSE-SLE-15.5-2023-2263",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -51,6 +51,16 @@
       {
         "ProductReference": "python3-Flask-1.0.4-150400.3.3.1",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-Flask-1.0.4-150400.3.3.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-Flask-1.0.4-150400.3.3.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -113,6 +123,8 @@
           "ProductID": [
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:python3-Flask-1.0.4-150400.3.3.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-ltd:python3-Flask-1.0.4-150400.3.3.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:python3-Flask-1.0.4-150400.3.3.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:python3-Flask-1.0.4-150400.3.3.1",
             "Image SLES15-SP4-Manager-Server-4-3:python3-Flask-1.0.4-150400.3.3.1",
             "openSUSE Leap 15.5:python3-Flask-1.0.4-150400.3.3.1",
             "openSUSE Leap 15.5:python3-Flask-doc-1.0.4-150400.3.3.1"

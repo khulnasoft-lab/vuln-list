@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/postgres:14-2023-4495,Container suse/postgres:latest-2023-4495,Image SLES15-SP4-Manager-Server-4-3-2023-4495,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4495,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4495,SUSE-2023-4495,SUSE-SLE-Module-Basesystem-15-SP4-2023-4495,SUSE-SLE-Module-Basesystem-15-SP5-2023-4495,SUSE-SLE-Module-Legacy-15-SP4-2023-4495,SUSE-SLE-Module-Legacy-15-SP5-2023-4495,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4495,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4495,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4495,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4495,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4495,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4495,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4495,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4495,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4495,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4495,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4495,SUSE-Storage-7.1-2023-4495,openSUSE-SLE-15.4-2023-4495,openSUSE-SLE-15.5-2023-4495",
+      "Text": "Container suse/postgres:14-2023-4495,Container suse/postgres:15-2023-4495,Image SLES15-SP4-Manager-Server-4-3-2023-4495,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2023-4495,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2023-4495,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2023-4495,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2023-4495,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2023-4495,SUSE-2023-4495,SUSE-SLE-Module-Basesystem-15-SP4-2023-4495,SUSE-SLE-Module-Basesystem-15-SP5-2023-4495,SUSE-SLE-Module-Legacy-15-SP4-2023-4495,SUSE-SLE-Module-Legacy-15-SP5-2023-4495,SUSE-SLE-Module-Packagehub-Subpackages-15-SP4-2023-4495,SUSE-SLE-Module-Packagehub-Subpackages-15-SP5-2023-4495,SUSE-SLE-Module-Server-Applications-15-SP4-2023-4495,SUSE-SLE-Module-Server-Applications-15-SP5-2023-4495,SUSE-SLE-Product-HPC-15-SP2-LTSS-2023-4495,SUSE-SLE-Product-HPC-15-SP3-ESPOS-2023-4495,SUSE-SLE-Product-HPC-15-SP3-LTSS-2023-4495,SUSE-SLE-Product-SLES-15-SP2-LTSS-2023-4495,SUSE-SLE-Product-SLES-15-SP3-LTSS-2023-4495,SUSE-SLE-Product-SLES_SAP-15-SP2-2023-4495,SUSE-SLE-Product-SLES_SAP-15-SP3-2023-4495,SUSE-Storage-7.1-2023-4495,openSUSE-SLE-15.4-2023-4495,openSUSE-SLE-15.5-2023-4495",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -55,17 +55,17 @@
       },
       {
         "ProductReference": "libpq5-16.1-150200.5.7.1",
-        "RelatesToProductReference": "Container suse/postgres:latest",
+        "RelatesToProductReference": "Container suse/postgres:15",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "postgresql15-15.5-150200.5.19.1",
-        "RelatesToProductReference": "Container suse/postgres:latest",
+        "RelatesToProductReference": "Container suse/postgres:15",
         "RelationType": "Default Component Of"
       },
       {
         "ProductReference": "postgresql15-server-15.5-150200.5.19.1",
-        "RelatesToProductReference": "Container suse/postgres:latest",
+        "RelatesToProductReference": "Container suse/postgres:15",
         "RelationType": "Default Component Of"
       },
       {
@@ -206,6 +206,46 @@
       {
         "ProductReference": "postgresql-server-16-150400.4.9.2",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-16.1-150200.5.7.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-contrib-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-server-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-llc",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libpq5-16.1-150200.5.7.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-contrib-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "postgresql-server-16-150400.4.9.2",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd",
         "RelationType": "Default Component Of"
       },
       {
@@ -1869,9 +1909,9 @@
             "Container suse/postgres:14:libpq5-16.1-150200.5.7.1",
             "Container suse/postgres:14:postgresql-16-150400.4.9.2",
             "Container suse/postgres:14:postgresql-server-16-150400.4.9.2",
-            "Container suse/postgres:latest:libpq5-16.1-150200.5.7.1",
-            "Container suse/postgres:latest:postgresql15-15.5-150200.5.19.1",
-            "Container suse/postgres:latest:postgresql15-server-15.5-150200.5.19.1",
+            "Container suse/postgres:15:libpq5-16.1-150200.5.7.1",
+            "Container suse/postgres:15:postgresql15-15.5-150200.5.19.1",
+            "Container suse/postgres:15:postgresql15-server-15.5-150200.5.19.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-contrib-16-150400.4.9.2",
@@ -1896,6 +1936,14 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-contrib-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-server-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-contrib-16-150400.4.9.2",
@@ -2245,9 +2293,9 @@
             "Container suse/postgres:14:libpq5-16.1-150200.5.7.1",
             "Container suse/postgres:14:postgresql-16-150400.4.9.2",
             "Container suse/postgres:14:postgresql-server-16-150400.4.9.2",
-            "Container suse/postgres:latest:libpq5-16.1-150200.5.7.1",
-            "Container suse/postgres:latest:postgresql15-15.5-150200.5.19.1",
-            "Container suse/postgres:latest:postgresql15-server-15.5-150200.5.19.1",
+            "Container suse/postgres:15:libpq5-16.1-150200.5.7.1",
+            "Container suse/postgres:15:postgresql15-15.5-150200.5.19.1",
+            "Container suse/postgres:15:postgresql15-server-15.5-150200.5.19.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-contrib-16-150400.4.9.2",
@@ -2272,6 +2320,14 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-contrib-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-server-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-contrib-16-150400.4.9.2",
@@ -2621,9 +2677,9 @@
             "Container suse/postgres:14:libpq5-16.1-150200.5.7.1",
             "Container suse/postgres:14:postgresql-16-150400.4.9.2",
             "Container suse/postgres:14:postgresql-server-16-150400.4.9.2",
-            "Container suse/postgres:latest:libpq5-16.1-150200.5.7.1",
-            "Container suse/postgres:latest:postgresql15-15.5-150200.5.19.1",
-            "Container suse/postgres:latest:postgresql15-server-15.5-150200.5.19.1",
+            "Container suse/postgres:15:libpq5-16.1-150200.5.7.1",
+            "Container suse/postgres:15:postgresql15-15.5-150200.5.19.1",
+            "Container suse/postgres:15:postgresql15-server-15.5-150200.5.19.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-Azure-llc:postgresql-contrib-16-150400.4.9.2",
@@ -2648,6 +2704,14 @@
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-contrib-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3-BYOS:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-llc:postgresql-server-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:libpq5-16.1-150200.5.7.1",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-contrib-16-150400.4.9.2",
+            "Image SLES15-SP4-Manager-Server-4-3-EC2-ltd:postgresql-server-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:libpq5-16.1-150200.5.7.1",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-16-150400.4.9.2",
             "Image SLES15-SP4-Manager-Server-4-3:postgresql-contrib-16-150400.4.9.2",

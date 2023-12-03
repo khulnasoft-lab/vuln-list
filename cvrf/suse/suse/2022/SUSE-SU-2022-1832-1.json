@@ -31,13 +31,33 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container caasp/v4/helm-tiller:2.16.12-2022-1832,Container suse/sle15:15.0-2022-1832,Container suse/sle15:15.1-2022-1832,Image SLES15-SP1-CHOST-BYOS-Azure-2022-1832,Image SLES15-SP1-CHOST-BYOS-EC2-2022-1832,Image SLES15-SP1-CHOST-BYOS-GCE-2022-1832,Image SLES15-SP1-SAP-Azure-LI-BYOS-Production-2022-1832,Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production-2022-1832,Image SLES15-SP1-SAPCAL-Azure-2022-1832,Image SLES15-SP1-SAPCAL-EC2-HVM-2022-1832,Image SLES15-SP1-SAPCAL-GCE-2022-1832,SUSE-2022-1832,SUSE-SLE-Product-HPC-15-2022-1832,SUSE-SLE-Product-HPC-15-SP1-ESPOS-2022-1832,SUSE-SLE-Product-HPC-15-SP1-LTSS-2022-1832,SUSE-SLE-Product-SLES-15-2022-1832,SUSE-SLE-Product-SLES-15-SP1-BCL-2022-1832,SUSE-SLE-Product-SLES-15-SP1-LTSS-2022-1832,SUSE-SLE-Product-SLES_SAP-15-2022-1832,SUSE-SLE-Product-SLES_SAP-15-SP1-2022-1832,SUSE-Storage-6-2022-1832",
+      "Text": "Container caasp/v4/cilium-operator:1.6.6-2022-1832,Container caasp/v4/cilium:1.6.6-2022-1832,Container caasp/v4/helm-tiller:2.16.12-2022-1832,Container suse/sle15:15.0-2022-1832,Container suse/sle15:15.1-2022-1832,Image SLES15-SP1-CHOST-BYOS-Azure-2022-1832,Image SLES15-SP1-CHOST-BYOS-EC2-2022-1832,Image SLES15-SP1-CHOST-BYOS-GCE-2022-1832,Image SLES15-SP1-SAP-Azure-LI-BYOS-Production-2022-1832,Image SLES15-SP1-SAP-Azure-VLI-BYOS-Production-2022-1832,Image SLES15-SP1-SAPCAL-Azure-2022-1832,Image SLES15-SP1-SAPCAL-EC2-HVM-2022-1832,Image SLES15-SP1-SAPCAL-GCE-2022-1832,SUSE-2022-1832,SUSE-SLE-Product-HPC-15-2022-1832,SUSE-SLE-Product-HPC-15-SP1-ESPOS-2022-1832,SUSE-SLE-Product-HPC-15-SP1-LTSS-2022-1832,SUSE-SLE-Product-SLES-15-2022-1832,SUSE-SLE-Product-SLES-15-SP1-BCL-2022-1832,SUSE-SLE-Product-SLES-15-SP1-LTSS-2022-1832,SUSE-SLE-Product-SLES_SAP-15-2022-1832,SUSE-SLE-Product-SLES_SAP-15-SP1-2022-1832,SUSE-Storage-6-2022-1832",
       "Title": "Patchnames",
       "Type": "Details"
     }
   ],
   "ProductTree": {
     "Relationships": [
+      {
+        "ProductReference": "libldap-2_4-2-2.4.46-150000.9.71.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium-operator:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libldap-data-2.4.46-150000.9.71.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium-operator:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libldap-2_4-2-2.4.46-150000.9.71.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "libldap-data-2.4.46-150000.9.71.1",
+        "RelatesToProductReference": "Container caasp/v4/cilium:1.6.6",
+        "RelationType": "Default Component Of"
+      },
       {
         "ProductReference": "libldap-2_4-2-2.4.46-150000.9.71.1",
         "RelatesToProductReference": "Container caasp/v4/helm-tiller:2.16.12",
@@ -744,6 +764,10 @@
         {
           "Type": "Fixed",
           "ProductID": [
+            "Container caasp/v4/cilium-operator:1.6.6:libldap-2_4-2-2.4.46-150000.9.71.1",
+            "Container caasp/v4/cilium-operator:1.6.6:libldap-data-2.4.46-150000.9.71.1",
+            "Container caasp/v4/cilium:1.6.6:libldap-2_4-2-2.4.46-150000.9.71.1",
+            "Container caasp/v4/cilium:1.6.6:libldap-data-2.4.46-150000.9.71.1",
             "Container caasp/v4/helm-tiller:2.16.12:libldap-2_4-2-2.4.46-150000.9.71.1",
             "Container caasp/v4/helm-tiller:2.16.12:libldap-data-2.4.46-150000.9.71.1",
             "Container suse/sle15:15.0:libldap-2_4-2-2.4.46-150000.9.71.1",
