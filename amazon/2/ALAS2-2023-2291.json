@@ -8,7 +8,7 @@
     "date": "2023-10-19 23:40"
   },
   "severity": "important",
-  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-5129:\n\tWith a specially crafted WebP lossless file, libwebp may write data out of bounds to the heap.\n\nThe ReadHuffmanCodes() function allocates the HuffmanCode buffer with a size that comes from an array of precomputed sizes: kTableSize. The color_cache_bits value defines which size to use.\n\nThe kTableSize array only takes into account sizes for 8-bit first-level table lookups but not second-level table lookups. libwebp allows codes that are up to 15-bit (MAX_ALLOWED_CODE_LENGTH). When BuildHuffmanTable() attempts to fill the second-level tables it may write data out-of-bounds. The OOB write to the undersized array happens in ReplicateValue.\n\nCVE-2023-4863:\n\tHeap buffer overflow in WebP in Google Chrome prior to 116.0.5845.187 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)\n",
+  "description": "Package updates are available for Amazon Linux 2 that fix the following vulnerabilities:\nCVE-2023-4863:\n\tHeap buffer overflow in WebP in Google Chrome prior to 116.0.5845.187 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)\n",
   "packages": [
     {
       "name": "thunderbird",
@@ -48,15 +48,9 @@
       "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-4863",
       "id": "CVE-2023-4863",
       "type": "cve"
-    },
-    {
-      "href": "http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-5129",
-      "id": "CVE-2023-5129",
-      "type": "cve"
     }
   ],
   "cveids": [
-    "CVE-2023-4863",
-    "CVE-2023-5129"
+    "CVE-2023-4863"
   ]
 }
