@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-11-28T17:43:32Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-12-05T00:26:11Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "phpseclib/phpseclib"
@@ -33,16 +33,16 @@
         "Value": "CVE-2023-49316"
       }
     ],
-    "Description": "In Math/BinaryField.php in phpseclib before 3.0.34, excessively large degrees in binary fields can lead to a denial of service.",
+    "Description": "In Math/BinaryField.php in phpseclib 3 before 3.0.34, excessively large degrees in binary fields can lead to a denial of service.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-11-27T18:31:14Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "phpseclib vulnerable to denial of service",
-    "UpdatedAt": "2023-11-28T17:43:32Z",
+    "UpdatedAt": "2023-12-05T00:26:11Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
@@ -50,7 +50,7 @@
       "FirstPatchedVersion": {
         "Identifier": "3.0.34"
       },
-      "VulnerableVersionRange": "\u003c 3.0.34"
+      "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.0.34"
     }
   ]
 }
