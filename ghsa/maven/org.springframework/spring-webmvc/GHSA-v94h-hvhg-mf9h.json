@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-11-28T20:53:36Z",
   "Package": {
     "Ecosystem": "MAVEN",
@@ -36,13 +36,13 @@
     "Description": "In Spring Framework versions 6.0.0 - 6.0.13, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  io.micrometer:micrometer-core is on the classpath\n  *  an ObservationRegistry is configured in the application to record observations\n\n\nTypically, Spring Boot applications need the org.springframework.boot:spring-boot-actuator dependency to meet all conditions.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-11-28T09:30:27Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Spring Framework vulnerable to denial of service",
-    "UpdatedAt": "2023-11-28T20:53:36Z",
+    "UpdatedAt": "2023-12-05T21:44:47Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 5.3,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
