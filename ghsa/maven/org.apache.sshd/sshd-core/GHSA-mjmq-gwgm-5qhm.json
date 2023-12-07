@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-08-21T13:55:25Z",
+  "UpdatedAt": "2023-12-07T18:20:05Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.sshd:sshd-core"
@@ -29,6 +29,9 @@
         "Url": "https://github.com/apache/mina-sshd/commit/10de190e7d3f9189deb76b8d08c72334a1fe2df0"
       },
       {
+        "Url": "https://github.com/apache/mina-sshd/commit/c20739b43aab0f7bf2ccad982a6cb37b9d5a8a0b"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-mjmq-gwgm-5qhm"
       }
     ],
@@ -42,12 +45,12 @@
         "Value": "CVE-2023-35887"
       }
     ],
-    "Description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Software Foundation Apache MINA.\n\nIn SFTP servers implemented using Apache MINA SSHD that use a RootedFileSystem, logged users may be able to discover \"exists/does not exist\" information about items outside the rooted tree via paths including parent navigation (\"..\") beyond the root, or involving symlinks.\n\nThis issue affects Apache MINA: from 1.0 before 2.10. Users are recommended to upgrade to 2.10\n\nUntil version 2.1.0, some of the code affected by this vulnerability appeared in org.apache.sshd:sshd-core. Version 2.1.0 contains a [commit](https://github.com/apache/mina-sshd/commit/10de190e7d3f9189deb76b8d08c72334a1fe2df0) where the code was moved to the package org.apache.sshd:sshd-common, which did not exist until version 2.1.0.\n",
+    "Description": "Exposure of Sensitive Information to an Unauthorized Actor vulnerability in Apache Software Foundation Apache MINA.\n\nIn SFTP servers implemented using Apache MINA SSHD that use a RootedFileSystem, logged users may be able to discover \"exists/does not exist\" information about items outside the rooted tree via paths including parent navigation (\"..\") beyond the root, or involving symlinks.\n\nThis issue affects Apache MINA: from 1.0 before 2.9.3 Users are recommended to upgrade to 2.9.3\n\nUntil version 2.1.0, some of the code affected by this vulnerability appeared in org.apache.sshd:sshd-core. Version 2.1.0 contains a [commit](https://github.com/apache/mina-sshd/commit/10de190e7d3f9189deb76b8d08c72334a1fe2df0) where the code was moved to the package org.apache.sshd:sshd-common, which did not exist until version 2.1.0.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-07-10T18:30:49Z",
     "Severity": "MODERATE",
     "Summary": "Apache MINA SSHD information disclosure vulnerability",
-    "UpdatedAt": "2023-11-06T05:03:36Z",
+    "UpdatedAt": "2023-12-07T18:20:05Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5,
@@ -57,7 +60,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.10.0"
+        "Identifier": "2.1.0"
       },
       "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 2.1.0"
     }
