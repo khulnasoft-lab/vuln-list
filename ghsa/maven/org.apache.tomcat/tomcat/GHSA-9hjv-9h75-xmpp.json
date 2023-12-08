@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-06T20:06:43Z",
+  "UpdatedAt": "2023-12-08T20:08:37Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat:tomcat"
@@ -101,6 +101,24 @@
         "Url": "http://www.ubuntu.com/usn/USN-3024-1"
       },
       {
+        "Url": "https://bto.bluecoat.com/security-advisory/sa118"
+      },
+      {
+        "Url": "https://lists.apache.org/thread.html/343558d982879bf88ec20dbf707f8c11255f8e219e81d45c4f8d0551%40%3Cdev.tomcat.apache.org%3E"
+      },
+      {
+        "Url": "https://lists.apache.org/thread.html/r9136ff5b13e4f1941360b5a309efee2c114a14855578c3a2cbe5d19c%40%3Cdev.tomcat.apache.org%3E"
+      },
+      {
+        "Url": "https://web.archive.org/web/20160314101138/http://www.securityfocus.com/bid/83326"
+      },
+      {
+        "Url": "https://web.archive.org/web/20160404202803/http://www.securitytracker.com/id/1035069"
+      },
+      {
+        "Url": "http://rhn.redhat.com/errata/RHSA-2016-1089.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9hjv-9h75-xmpp"
       }
     ],
@@ -114,12 +132,12 @@
         "Value": "CVE-2016-0763"
       }
     ],
-    "Description": "The setGlobalContext method in org/apache/naming/factory/ResourceLinkFactory.java in Apache Tomcat 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M3 does not consider whether ResourceLinkFactory.setGlobalContext callers are authorized, which allows remote authenticated users to bypass intended SecurityManager restrictions and read or write to arbitrary application data, or cause a denial of service (application disruption), via a web application that sets a crafted global context.",
+    "Description": "The `setGlobalContext` method in `org/apache/naming/factory/ResourceLinkFactory.java` in Apache Tomcat 7.x before 7.0.68, 8.x before 8.0.31, and 9.x before 9.0.0.M3 does not consider whether ResourceLinkFactory.setGlobalContext callers are authorized, which allows remote authenticated users to bypass intended SecurityManager restrictions and read or write to arbitrary application data, or cause a denial of service (application disruption), via a web application that sets a crafted global context.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T01:18:35Z",
     "Severity": "MODERATE",
     "Summary": "Improper Verification of Source of a Communication Channel in Apache Tomcat",
-    "UpdatedAt": "2023-01-27T05:02:37Z",
+    "UpdatedAt": "2023-12-08T20:08:37Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.3,
