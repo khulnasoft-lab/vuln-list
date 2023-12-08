@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2023-12-05T18:15:03Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -36,13 +36,13 @@
     "Description": "### Impact\n\nUnhandled errors in API requests include traceback information, which can include path information. There is no known mechanism by which to trigger these errors without authentication, so the paths revealed are not considered particularly sensitive, given that the requesting user has arbitrary execution permissions already in the same environment.\n\n### Patches\n\njupyter-server PATCHED_VERSION no longer includes traceback information in JSON error responses. For compatibility, the traceback field is present, but always empty.\n\n### Workarounds\n\nNone",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-12-05T18:15:02Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "jupyter-server errors include tracebacks with path information",
-    "UpdatedAt": "2023-12-05T18:15:03Z",
+    "UpdatedAt": "2023-12-07T23:06:52Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 3.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N"
+      "Score": 4.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [
