@@ -86,6 +86,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package kubernetes is earlier than 1.28.4-1, affected by CVE-2023-5528",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:32005000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:32005001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:32005002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package kured is earlier than 1.13.2-1, affected by CVE-2022-21698",
       "ID": "oval:com.microsoft.cbl-mariner:tst:31981000",
       "Version": "1",
@@ -4994,6 +5006,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package helm is earlier than 3.13.2-1, affected by CVE-2023-2253",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:27027000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:27027001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:27027002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package kata-containers-cc is earlier than 0.4.1-2, affected by CVE-2023-2650",
       "ID": "oval:com.microsoft.cbl-mariner:tst:27009000",
       "Version": "0",
@@ -7922,7 +7946,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.18.8-3 or earlier",
+      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13730000",
       "Version": "0",
       "Object": {
@@ -12206,7 +12230,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.18.8-3 or earlier",
+      "Comment": "Package golang is installed with version 1.17.13-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11130000",
       "Version": "0",
       "Object": {
