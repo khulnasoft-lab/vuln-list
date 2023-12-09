@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2021-04-12T18:23:32Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2023-12-08T23:07:35Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat.embed:tomcat-embed-core"
@@ -68,9 +68,6 @@
         "Url": "http://lists.opensuse.org/opensuse-security-announce/2020-01/msg00013.html"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/108874"
-      },
-      {
         "Url": "https://www.oracle.com/security-alerts/cpuApr2021.html"
       },
       {
@@ -89,6 +86,9 @@
         "Url": "https://lists.apache.org/thread.html/raba0fabaf4d56d4325ab2aca8814f0b30a237ab83d8106b115ee279a%40%3Cdev.tomcat.apache.org%3E"
       },
       {
+        "Url": "https://web.archive.org/web/20200227033743/http://www.securityfocus.com/bid/108874"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-q4hg-rmq2-52q9"
       }
     ],
@@ -105,9 +105,9 @@
     "Description": "The fix for CVE-2019-0199 was incomplete and did not address HTTP/2 connection window exhaustion on write in Apache Tomcat versions 9.0.0.M1 to 9.0.19 and 8.5.0 to 8.5.40 . By not sending WINDOW_UPDATE messages for the connection window (stream 0) clients were able to cause server-side threads to block eventually leading to thread exhaustion and a DoS.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-06-26T01:09:40Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Improper Locking in Apache Tomcat",
-    "UpdatedAt": "2023-12-08T18:30:37Z",
+    "UpdatedAt": "2023-12-08T23:07:35Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,

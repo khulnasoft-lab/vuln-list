@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2019-04-18T14:27:25Z",
+  "UpdatedAt": "2023-12-08T23:08:56Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat.embed:tomcat-embed-core"
@@ -21,9 +21,6 @@
       },
       {
         "Url": "https://codewhitesec.blogspot.com/2016/02/java-and-command-line-injections-in-windows.html"
-      },
-      {
-        "Url": "https://github.com/advisories/GHSA-8vmx-qmch-mpqg"
       },
       {
         "Url": "https://lists.apache.org/thread.html/1dd0a59c1295cc08ce4c9e7edae5ad2268acc9ba55adcefa0532e5ba@%3Cdev.tomcat.apache.org%3E"
@@ -110,9 +107,6 @@
         "Url": "http://seclists.org/fulldisclosure/2019/May/4"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/107906"
-      },
-      {
         "Url": "https://lists.apache.org/thread.html/1dd0a59c1295cc08ce4c9e7edae5ad2268acc9ba55adcefa0532e5ba%40%3Cdev.tomcat.apache.org%3E"
       },
       {
@@ -159,6 +153,12 @@
       },
       {
         "Url": "https://lists.apache.org/thread.html/raba0fabaf4d56d4325ab2aca8814f0b30a237ab83d8106b115ee279a%40%3Cdev.tomcat.apache.org%3E"
+      },
+      {
+        "Url": "https://web.archive.org/web/20200227030103/http://www.securityfocus.com/bid/107906"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-8vmx-qmch-mpqg"
       }
     ],
     "Identifiers": [
@@ -175,8 +175,8 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-04-18T14:27:35Z",
     "Severity": "HIGH",
-    "Summary": "High severity vulnerability that affects org.apache.tomcat.embed:tomcat-embed-core",
-    "UpdatedAt": "2023-12-08T18:30:37Z",
+    "Summary": "Apache Tomcat OS Command Injection vulnerability",
+    "UpdatedAt": "2023-12-08T23:08:56Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.1,
@@ -184,6 +184,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "9.0.17"
+      },
+      "VulnerableVersionRange": "\u003e= 9.0.0.M1, \u003c 9.0.17"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "7.0.94"
@@ -195,12 +201,6 @@
         "Identifier": "8.5.40"
       },
       "VulnerableVersionRange": "\u003e= 8.0.0, \u003c 8.5.40"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "9.0.17"
-      },
-      "VulnerableVersionRange": "\u003e= 9.0.0, \u003c 9.0.17"
     }
   ]
 }
