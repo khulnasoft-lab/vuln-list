@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8j98-cjfr-qx3h",
-  "modified": "2023-12-05T23:58:15.968029Z",
+  "modified": "2023-12-11T15:56:20.742463Z",
   "published": "2023-12-05T23:30:56Z",
   "aliases": [
-    "CVE-2023-49292"
+    "CVE-2023-49292",
+    "GO-2023-2380"
   ],
   "summary": "github.com/ecies/go vulnerable to possible private key restoration",
   "details": "### Impact\nIf functions `Encapsulate()`, `Decapsulate()` and `ECDH()` could be called by an attacker, he could recover any private key that he interacts with.\n\n### Patches\nPatched in v2.0.8\n\n### Workarounds\nYou could manually check public key by calling `IsOnCurve()` function from secp256k1 libraries.\n\n### References\nhttps://github.com/ashutosh1206/Crypton/blob/master/Diffie-Hellman-Key-Exchange/Attack-Invalid-Curve-Point/README.md\n",
