@@ -1,12 +1,12 @@
 {
   "id": "GO-2023-2000",
-  "modified": "2023-12-06T01:03:11.028821Z",
+  "modified": "2023-12-13T17:45:38Z",
   "published": "2023-08-08T23:49:18Z",
   "aliases": [
     "CVE-2023-39533",
     "GHSA-876p-8259-xjgg"
   ],
-  "summary": "Large RSA keys can cause high resource usage in core/crypto package",
+  "summary": "Large RSA keys can cause high resource usage in github.com/libp2p/go-libp2p",
   "details": "Large RSA keys can lead to resource exhaustion attacks.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to \u003c= 8192 bits.",
   "affected": [
     {
