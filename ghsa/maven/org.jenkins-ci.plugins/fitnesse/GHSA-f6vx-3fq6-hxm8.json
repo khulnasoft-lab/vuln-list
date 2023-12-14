@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-20T17:40:05Z",
+  "UpdatedAt": "2023-12-14T10:20:02Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:fitnesse"
@@ -20,6 +20,15 @@
         "Url": "http://www.openwall.com/lists/oss-security/2020/04/07/3"
       },
       {
+        "Url": "https://github.com/jenkinsci/fitnesse-plugin/commit/309d40212338ad6e388f61892e4386f6645438a9"
+      },
+      {
+        "Url": "https://github.com/jenkinsci/fitnesse-plugin/commit/a49167115cc0a3dfca1c139c2c277a7c5c06074d"
+      },
+      {
+        "Url": "https://github.com/jenkinsci/fitnesse-plugin/commit/db72cc49b5cb8a33359805a86a841851673def2d"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-f6vx-3fq6-hxm8"
       }
     ],
@@ -33,12 +42,12 @@
         "Value": "CVE-2020-2175"
       }
     ],
-    "Description": "FitNesse Plugin 1.31 and earlier does not correctly escape report contents before showing them on the Jenkins UI.\n\nThis results in a stored cross-site scripting (XSS) vulnerability exploitable by users able to control the XML input files processed by the plugin.\n\nFitNesse Plugin 1.33 escapes content from XML input files before rendering it on the Jenkins UI.",
+    "Description": "Jenkins FitNesse Plugin 1.31 and earlier does not correctly escape report contents before showing them on the Jenkins UI.\n\nThis results in a stored cross-site scripting (XSS) vulnerability exploitable by users able to control the XML input files processed by the plugin.\n\nJenkins FitNesse Plugin 1.32 escapes content from XML input files before rendering it on the Jenkins UI.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:13:39Z",
     "Severity": "MODERATE",
     "Summary": "Stored XSS vulnerability in Jenkins FitNesse Plugin",
-    "UpdatedAt": "2023-01-29T05:01:03Z",
+    "UpdatedAt": "2023-12-14T10:20:02Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
@@ -48,7 +57,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.33"
+        "Identifier": "1.32"
       },
       "VulnerableVersionRange": "\u003c= 1.31"
     }

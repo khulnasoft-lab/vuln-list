@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-24T05:05:16Z",
+  "UpdatedAt": "2023-12-14T09:28:43Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:ec2"
@@ -20,6 +20,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2020/05/06/3"
       },
       {
+        "Url": "https://github.com/jenkinsci/ec2-plugin/commit/4c9f03ae202e4730fd54eda40771fa4d3873e358"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-q8qq-2p5p-rg44"
       }
     ],
@@ -33,12 +36,12 @@
         "Value": "CVE-2020-2185"
       }
     ],
-    "Description": "Amazon EC2 Plugin 1.50.1 and earlier does not use SSH host key validation when connecting to agents. This lack of validation could be abused using a man-in-the-middle attack to intercept these connections to build agents.\n\nAmazon EC2 Plugin 1.50.2 provides strategies for performing host key validation for administrators to select the one that meets their security needs. It includes assistance for administrators to migrate to a new, more secure strategy. For more information see [the plugin documentation](https://github.com/jenkinsci/ec2-plugin/#securing-the-connection-to-unix-amis).",
+    "Description": "Jenkins Amazon EC2 Plugin 1.50.1 and earlier does not use SSH host key validation when connecting to agents. This lack of validation could be abused using a man-in-the-middle attack to intercept these connections to build agents.\n\nJenkins Amazon EC2 Plugin 1.50.2 provides strategies for performing host key validation for administrators to select the one that meets their security needs. It includes assistance for administrators to migrate to a new, more secure strategy. For more information see [the plugin documentation](https://github.com/jenkinsci/ec2-plugin/#securing-the-connection-to-unix-amis).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:17:14Z",
     "Severity": "MODERATE",
-    "Summary": "Missing SSH host key validation in Amazon EC2 Plugin",
-    "UpdatedAt": "2023-02-01T05:06:34Z",
+    "Summary": "Missing SSH host key validation in Jenkins Amazon EC2 Plugin",
+    "UpdatedAt": "2023-12-14T09:28:43Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.6,

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-12-29T00:27:02Z",
+  "UpdatedAt": "2023-12-14T09:36:04Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:fortify-on-demand-uploader"
@@ -20,6 +20,12 @@
         "Url": "http://www.openwall.com/lists/oss-security/2020/07/02/7"
       },
       {
+        "Url": "https://github.com/jenkinsci/fortify-on-demand-uploader-plugin/commit/006c2336d578010be707ac029fe6b8cb3497bbc9"
+      },
+      {
+        "Url": "https://github.com/jenkinsci/fortify-on-demand-uploader-plugin/commit/28932f7c5ff18f87d4b3a480225fb0827591776b"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-fhmf-xf2q-4m8p"
       }
     ],
@@ -33,12 +39,12 @@
         "Value": "CVE-2020-2204"
       }
     ],
-    "Description": "A missing permission check in Jenkins Fortify on Demand Plugin 5.0.1 and earlier allows attackers with Overall/Read permission to connect to the globally configured Fortify on Demand endpoint using attacker-specified credentials IDs.\n\nThis form validation method requires appropriate permission in Fortify on Demand Plugin 6.0.0.",
+    "Description": "A missing permission check in Jenkins Fortify on Demand Plugin 5.0.1 and earlier allows attackers with Overall/Read permission to connect to the globally configured Fortify on Demand endpoint using attacker-specified credentials IDs.\n\nThis form validation method requires appropriate permission in Fortify on Demand Plugin 6.0.1.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:22:19Z",
     "Severity": "MODERATE",
     "Summary": "Missing permission checks in Jenkins Fortify on Demand Plugin",
-    "UpdatedAt": "2023-10-26T22:45:20Z",
+    "UpdatedAt": "2023-12-14T09:36:04Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
@@ -48,7 +54,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "6.0.0"
+        "Identifier": "6.0.1"
       },
       "VulnerableVersionRange": "\u003c= 5.0.1"
     }
