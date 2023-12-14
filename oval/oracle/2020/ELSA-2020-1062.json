@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1062.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1062.html",
       "ID": "ELSA-2020-1062"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-3814.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-3814.html",
       "ID": "CVE-2019-3814"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-7524.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-7524.html",
       "ID": "CVE-2019-7524"
     }
   ],
@@ -42,18 +42,6 @@
                       },
                       {
                         "Comment": "dovecot is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dovecot-devel is earlier than 1:2.2.36-6.el7"
-                      },
-                      {
-                        "Comment": "dovecot-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -92,6 +80,18 @@
                         "Comment": "dovecot-pigeonhole is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dovecot-devel is earlier than 1:2.2.36-6.el7"
+                      },
+                      {
+                        "Comment": "dovecot-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -114,10 +114,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "dovecot is earlier than 1:2.2.36-6.el7"
+                        "Comment": "dovecot-devel is earlier than 1:2.2.36-6.el7"
                       },
                       {
-                        "Comment": "dovecot is signed with the Oracle Linux 7 key"
+                        "Comment": "dovecot-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -126,10 +126,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "dovecot-devel is earlier than 1:2.2.36-6.el7"
+                        "Comment": "dovecot is earlier than 1:2.2.36-6.el7"
                       },
                       {
-                        "Comment": "dovecot-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "dovecot is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -193,16 +193,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-3814.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-3814.html",
       "ID": "CVE-2019-3814"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-7524.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-7524.html",
       "ID": "CVE-2019-7524"
     }
   ],
   "Issued": {
-    "Date": "2020-04-06"
+    "Date": "2020-04-08"
   }
 }

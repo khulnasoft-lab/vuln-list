@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2021-4033:  binutils security update (MODERATE)",
-  "Description": "[2.27-44.base.0.3.1]\n- Forward-port patches to 2.27-44.base.1\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[2.27-44.base.0.2.1]\n- Forward-port patches to 2.27-44.base.1\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[2.27-44.base.1]\n- Add ability to control the display of unicode characters.  (#2009168)",
+  "Description": "[2.27-44.base.0.2.1]\n- Forward-port patches to 2.27-44.base.1\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[2.27-44.base.1]\n- Add ability to control the display of unicode characters.  (#2009168)\n\n[2.27-44.base.0.2]\n- Merge the following patch set:\n  [2.27-43.base.0.2\n  - Complete the backport of upstream commit a5def14f1ca70e14d9433cb229c9369fa3051598\n    Add a test for R_386_GOT32/R_386_GOT32X IFUNC reloc error\n    [Orabug 27930573]\n  - Backports with binutils-aarch64-gold-check-MOVW_xABS-relocations-for-plt.patch:\n    7ae39e2d406d - Check if symbols with MOVW_.ABS relocations require PLT entries.\n    [Orabug: 28829875]\n  - Reverts the following RH patches to re-enable ifunc tests:\n    Patch25: binutils-2.27-skip-ld-aarch64-ifunc-exec-tests.patch\n    Patch27: binutils-2.27-remove-pr19784-test.patch\n  - Backports the following patches with binutils-aarch64-ifunc-relocations.patch\n    to fix 'FAIL: Run pr18841 with libpr18841c.so'\n    f2e6a8430e72 - [AArch64] Fix PR18841 ifunc relocation ordering\n    545bc2b377db - [AArch64] Skip IFUNC relocations in debug sections\n    [Orabug: 26880935]\n  - Backports following patch with binutils-aarch64-stub-alignment.patch:\n    9a2ebffd4dd9 - Ensure 8-byte alignment for AArch64 stubs.\n  - Backports following patch with binutils-aarch64-pr19327.patch:\n    d68f19767dfb - [AArch64] Use SYMBOL_REFERENCES_LOCAL in one symbol check\n    [Orabug: 27025570]",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-4033.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4033.html",
       "ID": "ELSA-2021-4033"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-42574.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-42574.html",
       "ID": "CVE-2021-42574"
     }
   ],
@@ -116,7 +116,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-42574.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-42574.html",
       "ID": "CVE-2021-42574"
     }
   ],

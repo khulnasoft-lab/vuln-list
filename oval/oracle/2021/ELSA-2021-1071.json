@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1071.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1071.html",
       "ID": "ELSA-2021-1071"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-27363.html",
-      "ID": "CVE-2021-27363"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-27364.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-27364.html",
       "ID": "CVE-2021-27364"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-27365.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-27363.html",
+      "ID": "CVE-2021-27363"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-27365.html",
       "ID": "CVE-2021-27365"
     }
   ],
@@ -35,6 +35,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1160.24.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -160,18 +172,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1160.24.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-1160.24.1.el7"
                   },
                   {
@@ -212,21 +212,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-27363.html",
-      "ID": "CVE-2021-27363"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-27364.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-27364.html",
       "ID": "CVE-2021-27364"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-27365.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-27363.html",
+      "ID": "CVE-2021-27363"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-27365.html",
       "ID": "CVE-2021-27365"
     }
   ],
   "Issued": {
-    "Date": "2021-04-07"
+    "Date": "2021-04-06"
   }
 }

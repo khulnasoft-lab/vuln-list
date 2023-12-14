@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-2040.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-2040.html",
       "ID": "ELSA-2020-2040"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-12519.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-12519.html",
       "ID": "CVE-2019-12519"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-12525.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-12525.html",
       "ID": "CVE-2019-12525"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-11945.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11945.html",
       "ID": "CVE-2020-11945"
     }
   ],
@@ -95,6 +95,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-15.el7_8.1"
+                      },
+                      {
+                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "squid is earlier than 7:3.5.20-15.el7_8.1"
                       },
                       {
@@ -111,18 +123,6 @@
                       },
                       {
                         "Comment": "squid-migration-script is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-15.el7_8.1"
-                      },
-                      {
-                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -150,21 +150,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-12519.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-12519.html",
       "ID": "CVE-2019-12519"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-12525.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-12525.html",
       "ID": "CVE-2019-12525"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-11945.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11945.html",
       "ID": "CVE-2020-11945"
     }
   ],
   "Issued": {
-    "Date": "2020-05-07"
+    "Date": "2020-05-06"
   }
 }

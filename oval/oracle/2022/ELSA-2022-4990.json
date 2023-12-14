@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4990:  cups security update (IMPORTANT)",
-  "Description": "[1:2.3.3op2-13.1]\n- CVE-2022-26691 cups: authorization bypass when using 'local' authorization",
+  "Description": "[1:2.3.3op2-13.1]\n- CVE-2022-26691 cups: authorization bypass when using 'local' authorization\n\n[1:2.3.3op2-13]\n- 1964975 - added fix for uninit jump into the leaks patch\n\n[1:2.3.3op2-12]\n- 1964975 - memory leaks in http_tls_upgrade() and _cupsEncodeOption()\n\n[1:2.3.3op2-11]\n- 1935051 - [FIPS] cups library can use sha-1 and uses internal MD5\n\n[1:2.3.3op2-11]\n- 2018951 - RFE: Implement TimeoutStartSec configuration during build\n\n[1:2.3.3op2-11]\n- 2018955 - RFE: Implement IdleExitTimeout configuration during build\n\n[1:2.3.3op2-11]\n- 2019842 - Add more warning messages about drivers going deprecated\n\n[1:2.3.3op2-10]\n- 2022365 - Annocheck fails due incorrect flags during compilation/linking\n\n[1:2.3.3op2-9]\n- 2018948 - Unauthenticated users can't move print jobs in Web UI\n- 1999955 - Printing of banner before PCL file only prints banner\n- 2006713 - Trying to restart and hold a job doesn't work\n\n[1:2.3.3op2-8]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[1:2.3.3op2-7]\n- 1949067 - Print queue is paused after ipp backend ends with CUPS_BACKEND_STOP\n\n[1:2.3.3op2-6]\n- 1960160 - PreserveJobHistory/JobFiles aren't applied after the first cupsd restart right after successful print\n\n[1:2.3.3op2-5]\n- 1949053 - CUPS doesn't start if sssd starts after cupsd\n\n[1:2.3.3op2-4]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[1:2.3.3op2-3]\n- add [Job N] in logs for better debugging\n\n[1:2.3.3op2-2]\n- Rebuilt for updated systemd-rpm-macros\n  See https://pagure.io/fesco/issue/2583.\n\n[1:2.3.3op2-1]\n- 1923828 - cups-2.3.3op2 is available\n\n[1:2.3.3op1-4]\n- fix for CVE-2020-10001\n- recommend nss-mdns for Fedora to have a working default for now\n- 1921881 - [abrt] cups: __strcmp_avx2(): help.cgi killed by SIGSEGV\n- 1909980 - cupsd crashes on parsing malformed Brother PPD\n\n[1:2.3.3op1-3]\n- remove nss-mdns dependency - let the user decide whether use resolved or nss-mdns\n- remove cups dependency on cups-ipptool - actually not needed\n\n[1:2.3.3op1-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[1:2.3.3op1-1]\n- 2.3.3op1\n\n[1:2.3.3-20]\n- make unit files writeable by root\n- remove %post scriptlet - it is covered by drop-in now\n- remove cups-filter-debug.patch\n- backport cups-synconclose.patch from upstream\n\n[1:2.3.3-20]\n- remove downstream autostart patch - use systemd drop-in\n\n[1:2.3.3-20]\n- fix memory leak during device discovery\n- remove logrotate patches and support - journal is now default\n- remove eggcups patch - seems to cause no harm\n- journal is in Fedora for long time - no need to mention it is Fedora syslog\n- fix packaging of printerapp manpages\n- wheel is now in system groups by default\n- remove old scripts for older migrations\n- CREDITS is now in markdown format, so we don't need to convert\n- fix requires on nss-mdns for cups-printerapp\n- take SNMP OID from upstream\n- rename unit files and update their patches\n\n[1:2.3.3-19]\n- 1897023 - Cups service restart sequence during upgrade incorrect\n\n[1:2.3.3-18]\n- 1892426 - Crash:free(): invalid pointer in cups backend\n\n[1:2.3.3-17]\n- make is no longer in buildroot\n\n[1:2.3.3-16]\n- backport cups-ipptool-mdns-uri.patch from upstream\n- backport cups-prioritize-print-color-mode.patch from upstream\n\n[1:2.3.3-14]\n- revert previous commit - resolved doesn't work with avahi due missing link\n  in NetworkManager\n\n[1:2.3.3-14]\n- MDNS resolving should be done by systemd-resolved now\n\n[1:2.3.3-14]\n- CUPS exception isn't in spdx database, use only ASL 2.0\n\n[1:2.3.3-13]\n- own 'new' directories\n\n[1:2.3.3-12]\n- typo in DESTDIR during 'make install'\n\n[1:2.3.3-11]\n- Second attempt - Rebuilt for\n  https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[1:2.3.3-10]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[1:2.3.3-9]\n- use %make_build and %make_install macros\n\n[1:2.3.3-8]\n- 1848575 - [cups, cups-filters] PPD generators creates invalid cupsManualCopies entry\n\n[1:2.3.3-7]\n- spec cleanup\n\n[1:2.3.3-6]\n- fix patch errors in failover patch\n- cgi script creates a bad uri in web ui\n- ipptool doesn't support mdns uris\n\n[1:2.3.3-5]\n- remove os ci tests, we use baseos ci",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-4990.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4990.html",
       "ID": "ELSA-2022-4990"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-26691.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26691.html",
       "ID": "CVE-2022-26691"
     }
   ],
@@ -145,18 +145,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-libs is earlier than 1:2.3.3op2-13.el9_0.1"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "cups is earlier than 1:2.3.3op2-13.el9_0.1"
                       },
                       {
@@ -235,6 +223,18 @@
                         "Comment": "cups-printerapp is signed with the Oracle Linux 9 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-libs is earlier than 1:2.3.3op2-13.el9_0.1"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -260,7 +260,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-26691.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26691.html",
       "ID": "CVE-2022-26691"
     }
   ],

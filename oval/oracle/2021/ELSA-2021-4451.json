@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-4451.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4451.html",
       "ID": "ELSA-2021-4451"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20232.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20232.html",
       "ID": "CVE-2021-20232"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3580.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3580.html",
       "ID": "CVE-2021-3580"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20231.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20231.html",
       "ID": "CVE-2021-20231"
     }
   ],
@@ -38,6 +38,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gnutls is earlier than 0:3.6.16-4.el8"
+                      },
+                      {
+                        "Comment": "gnutls is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -91,34 +103,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nettle-devel is earlier than 0:3.4.1-7.el8"
-                      },
-                      {
-                        "Comment": "nettle-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gnutls is earlier than 0:3.6.16-4.el8"
-                      },
-                      {
-                        "Comment": "gnutls is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "nettle is earlier than 0:3.4.1-7.el8"
                       },
                       {
                         "Comment": "nettle is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nettle-devel is earlier than 0:3.4.1-7.el8"
+                      },
+                      {
+                        "Comment": "nettle-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -155,18 +155,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nettle is earlier than 0:3.4.1-7.el8"
-                      },
-                      {
-                        "Comment": "nettle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gnutls-c++ is earlier than 0:3.6.16-4.el8"
                       },
                       {
@@ -207,6 +195,18 @@
                       },
                       {
                         "Comment": "gnutls-utils is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nettle is earlier than 0:3.4.1-7.el8"
+                      },
+                      {
+                        "Comment": "nettle is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -246,21 +246,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20232.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20232.html",
       "ID": "CVE-2021-20232"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3580.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3580.html",
       "ID": "CVE-2021-3580"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20231.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20231.html",
       "ID": "CVE-2021-20231"
     }
   ],
   "Issued": {
-    "Date": "2021-11-16"
+    "Date": "2021-11-14"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1389.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1389.html",
       "ID": "ELSA-2021-1389"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-25692.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25692.html",
       "ID": "CVE-2020-25692"
     }
   ],
@@ -109,6 +109,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "openldap-servers-sql is earlier than 0:2.4.44-23.el7_9"
+                      },
+                      {
+                        "Comment": "openldap-servers-sql is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "openldap is earlier than 0:2.4.44-23.el7_9"
                       },
                       {
@@ -151,18 +163,6 @@
                         "Comment": "openldap-servers is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap-servers-sql is earlier than 0:2.4.44-23.el7_9"
-                      },
-                      {
-                        "Comment": "openldap-servers-sql is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -171,6 +171,28 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "openldap is earlier than 0:2.4.44-23.el7_9"
+                  },
+                  {
+                    "Comment": "openldap is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -188,7 +210,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-25692.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25692.html",
       "ID": "CVE-2020-25692"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-1397.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1397.html",
       "ID": "ELSA-2014-1397"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3634.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3634.html",
       "ID": "CVE-2014-3634"
     }
   ],
@@ -34,6 +34,78 @@
                   },
                   {
                     "Comment": "rsyslog is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-gnutls is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-gnutls is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-gssapi is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-gssapi is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-mmjsonparse is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-mmjsonparse is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-mysql is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-mysql is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-pgsql is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-pgsql is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "rsyslog-relp is earlier than 0:7.4.7-7.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "rsyslog-relp is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -78,30 +150,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "rsyslog-gnutls is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-gnutls is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "rsyslog-gssapi is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-gssapi is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "rsyslog-libdbi is earlier than 0:7.4.7-7.0.1.el7_0"
                   },
                   {
@@ -126,18 +174,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "rsyslog-mmjsonparse is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-mmjsonparse is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "rsyslog-mmnormalize is earlier than 0:7.4.7-7.0.1.el7_0"
                   },
                   {
@@ -154,42 +190,6 @@
                   },
                   {
                     "Comment": "rsyslog-mmsnmptrapd is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "rsyslog-mysql is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-mysql is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "rsyslog-pgsql is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-pgsql is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "rsyslog-relp is earlier than 0:7.4.7-7.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "rsyslog-relp is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -238,7 +238,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3634.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3634.html",
       "ID": "CVE-2014-3634"
     }
   ],

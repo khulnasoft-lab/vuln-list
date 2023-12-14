@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-0913.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-0913.html",
       "ID": "ELSA-2018-0913"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-1063.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1063.html",
       "ID": "CVE-2018-1063"
     }
   ],
@@ -93,10 +93,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "policycoreutils-restorecond is earlier than 0:2.5-22.0.1.el7"
+                        "Comment": "policycoreutils-sandbox is earlier than 0:2.5-22.0.1.el7"
                       },
                       {
-                        "Comment": "policycoreutils-restorecond is signed with the Oracle Linux 7 key"
+                        "Comment": "policycoreutils-sandbox is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -105,10 +105,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "policycoreutils-sandbox is earlier than 0:2.5-22.0.1.el7"
+                        "Comment": "policycoreutils-restorecond is earlier than 0:2.5-22.0.1.el7"
                       },
                       {
-                        "Comment": "policycoreutils-sandbox is signed with the Oracle Linux 7 key"
+                        "Comment": "policycoreutils-restorecond is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -128,6 +128,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "policycoreutils-restorecond is earlier than 0:2.5-22.0.1.el7"
+                      },
+                      {
+                        "Comment": "policycoreutils-restorecond is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -193,18 +205,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "policycoreutils-restorecond is earlier than 0:2.5-22.0.1.el7"
-                      },
-                      {
-                        "Comment": "policycoreutils-restorecond is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "policycoreutils-sandbox is earlier than 0:2.5-22.0.1.el7"
                       },
                       {
@@ -236,11 +236,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-1063.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1063.html",
       "ID": "CVE-2018-1063"
     }
   ],
   "Issued": {
-    "Date": "2018-04-16"
+    "Date": "2018-04-12"
   }
 }

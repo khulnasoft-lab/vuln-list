@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-5460:  bind9.16 security update (IMPORTANT)",
-  "Description": "[32:9.16.23-14.2]\n- stack exhaustion in control channel code may lead to DoS (CVE-2023-3341)",
+  "Description": "[32:9.16.23-14.2]\n- stack exhaustion in control channel code may lead to DoS (CVE-2023-3341)\n\n[32:9.16.23-14.1]\n- Improve RBT overmem cache cleaning (CVE-2023-2828)",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5460.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5460.html",
       "ID": "ELSA-2023-5460"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3341.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3341.html",
       "ID": "CVE-2023-3341"
     }
   ],
@@ -28,6 +28,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-devel is earlier than 32:9.16.23-0.14.el8_8.2"
+                      },
+                      {
+                        "Comment": "bind9.16-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-doc is earlier than 32:9.16.23-0.14.el8_8.2"
+                      },
+                      {
+                        "Comment": "bind9.16-doc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -57,34 +81,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bind9.16-devel is earlier than 32:9.16.23-0.14.el8_8.2"
-                      },
-                      {
-                        "Comment": "bind9.16-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind9.16-dnssec-utils is earlier than 32:9.16.23-0.14.el8_8.2"
                       },
                       {
                         "Comment": "bind9.16-dnssec-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16-doc is earlier than 32:9.16.23-0.14.el8_8.2"
-                      },
-                      {
-                        "Comment": "bind9.16-doc is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -157,46 +157,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.14.el8_8.2"
-                      },
-                      {
-                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.14.el8_8.2"
-                      },
-                      {
-                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind9.16-devel is earlier than 32:9.16.23-0.14.el8_8.2"
                       },
                       {
                         "Comment": "bind9.16-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16-dnssec-utils is earlier than 32:9.16.23-0.14.el8_8.2"
-                      },
-                      {
-                        "Comment": "bind9.16-dnssec-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -221,6 +185,42 @@
                       },
                       {
                         "Comment": "bind9.16-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.14.el8_8.2"
+                      },
+                      {
+                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.14.el8_8.2"
+                      },
+                      {
+                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-dnssec-utils is earlier than 32:9.16.23-0.14.el8_8.2"
+                      },
+                      {
+                        "Comment": "bind9.16-dnssec-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -284,7 +284,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3341.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3341.html",
       "ID": "CVE-2023-3341"
     }
   ],

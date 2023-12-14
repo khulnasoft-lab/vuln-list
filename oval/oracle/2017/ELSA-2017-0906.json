@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-0906.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-0906.html",
       "ID": "ELSA-2017-0906"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-0736.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-0736.html",
       "ID": "CVE-2016-0736"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-2161.html",
-      "ID": "CVE-2016-2161"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8743.html",
+      "ID": "CVE-2016-8743"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-8743.html",
-      "ID": "CVE-2016-8743"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-2161.html",
+      "ID": "CVE-2016-2161"
     }
   ],
   "Criteria": {
@@ -88,6 +88,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "mod_ssl is earlier than 1:2.4.6-45.0.1.el7_3.4"
+                  },
+                  {
+                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "mod_ldap is earlier than 0:2.4.6-45.0.1.el7_3.4"
                   },
                   {
@@ -118,18 +130,6 @@
                     "Comment": "mod_session is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "mod_ssl is earlier than 1:2.4.6-45.0.1.el7_3.4"
-                  },
-                  {
-                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -152,18 +152,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-0736.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-0736.html",
       "ID": "CVE-2016-0736"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-2161.html",
-      "ID": "CVE-2016-2161"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8743.html",
+      "ID": "CVE-2016-8743"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-8743.html",
-      "ID": "CVE-2016-8743"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-2161.html",
+      "ID": "CVE-2016-2161"
     }
   ],
   "Issued": {

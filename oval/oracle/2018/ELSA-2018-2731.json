@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-2731.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-2731.html",
       "ID": "ELSA-2018-2731"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-10873.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-10873.html",
       "ID": "CVE-2018-10873"
     }
   ],
@@ -45,6 +45,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "spice-gtk3 is earlier than 0:0.34-3.el7_5.2"
+                      },
+                      {
+                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-server is earlier than 0:0.14.0-2.0.2.el7_5.5"
+                      },
+                      {
+                        "Comment": "spice-server is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "spice-glib-devel is earlier than 0:0.34-3.el7_5.2"
                       },
                       {
@@ -69,18 +93,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-gtk3 is earlier than 0:0.34-3.el7_5.2"
-                      },
-                      {
-                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "spice-gtk3-devel is earlier than 0:0.34-3.el7_5.2"
                       },
                       {
@@ -97,18 +109,6 @@
                       },
                       {
                         "Comment": "spice-gtk3-vala is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-server is earlier than 0:0.14.0-2.0.2.el7_5.5"
-                      },
-                      {
-                        "Comment": "spice-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -145,18 +145,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-glib is earlier than 0:0.34-3.el7_5.2"
-                      },
-                      {
-                        "Comment": "spice-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "spice-glib-devel is earlier than 0:0.34-3.el7_5.2"
                       },
                       {
@@ -173,18 +161,6 @@
                       },
                       {
                         "Comment": "spice-gtk-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-gtk3 is earlier than 0:0.34-3.el7_5.2"
-                      },
-                      {
-                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -217,10 +193,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-server is earlier than 0:0.14.0-2.el7_5.5"
+                        "Comment": "spice-server-devel is earlier than 0:0.14.0-2.el7_5.5"
                       },
                       {
-                        "Comment": "spice-server is signed with the Oracle Linux 7 key"
+                        "Comment": "spice-server-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -229,10 +205,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-server-devel is earlier than 0:0.14.0-2.el7_5.5"
+                        "Comment": "spice-glib is earlier than 0:0.34-3.el7_5.2"
                       },
                       {
-                        "Comment": "spice-server-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "spice-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-gtk3 is earlier than 0:0.34-3.el7_5.2"
+                      },
+                      {
+                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-server is earlier than 0:0.14.0-2.el7_5.5"
+                      },
+                      {
+                        "Comment": "spice-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -260,7 +260,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-10873.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-10873.html",
       "ID": "CVE-2018-10873"
     }
   ],

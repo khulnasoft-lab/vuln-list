@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-9100.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9100.html",
       "ID": "ELSA-2021-9100"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3177.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3177.html",
       "ID": "CVE-2021-3177"
     }
   ],
@@ -37,6 +37,30 @@
                       },
                       {
                         "Comment": "platform-python is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-libs is earlier than 0:3.6.8-31.0.3.el8"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-test is earlier than 0:3.6.8-31.0.3.el8"
+                      },
+                      {
+                        "Comment": "python3-test is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -73,30 +97,6 @@
                       },
                       {
                         "Comment": "python3-idle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-libs is earlier than 0:3.6.8-31.0.3.el8"
-                      },
-                      {
-                        "Comment": "python3-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-test is earlier than 0:3.6.8-31.0.3.el8"
-                      },
-                      {
-                        "Comment": "python3-test is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -145,6 +145,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-libs is earlier than 0:3.6.8-31.0.3.el8"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-test is earlier than 0:3.6.8-31.0.3.el8"
+                      },
+                      {
+                        "Comment": "python3-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "platform-python-debug is earlier than 0:3.6.8-31.0.3.el8"
                       },
                       {
@@ -173,30 +197,6 @@
                       },
                       {
                         "Comment": "python3-idle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-libs is earlier than 0:3.6.8-31.0.3.el8"
-                      },
-                      {
-                        "Comment": "python3-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-test is earlier than 0:3.6.8-31.0.3.el8"
-                      },
-                      {
-                        "Comment": "python3-test is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -236,7 +236,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3177.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3177.html",
       "ID": "CVE-2021-3177"
     }
   ],

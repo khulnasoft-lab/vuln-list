@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-2664.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-2664.html",
       "ID": "ELSA-2020-2664"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-12888.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12888.html",
       "ID": "CVE-2020-12888"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1127.13.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -150,18 +162,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1127.13.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-1127.13.1.el7"
                   },
                   {
@@ -202,7 +202,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-12888.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12888.html",
       "ID": "CVE-2020-12888"
     }
   ],

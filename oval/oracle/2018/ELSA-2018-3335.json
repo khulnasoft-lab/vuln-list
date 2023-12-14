@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-3335.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3335.html",
       "ID": "ELSA-2018-3335"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-4463.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-4463.html",
       "ID": "CVE-2016-4463"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "xerces-c is earlier than 0:3.1.1-9.el7"
-                      },
-                      {
-                        "Comment": "xerces-c is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "xerces-c-devel is earlier than 0:3.1.1-9.el7"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "xerces-c-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xerces-c is earlier than 0:3.1.1-9.el7"
+                      },
+                      {
+                        "Comment": "xerces-c is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-4463.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-4463.html",
       "ID": "CVE-2016-4463"
     }
   ],
   "Issued": {
-    "Date": "2018-11-05"
+    "Date": "2018-11-02"
   }
 }

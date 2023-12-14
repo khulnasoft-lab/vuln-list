@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-2335.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2335.html",
       "ID": "ELSA-2017-2335"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-7537.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-7537.html",
       "ID": "CVE-2017-7537"
     }
   ],
@@ -66,18 +66,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "pki-javadoc is earlier than 0:10.4.1-11.el7"
-                  },
-                  {
-                    "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "pki-kra is earlier than 0:10.4.1-11.el7"
                   },
                   {
@@ -120,6 +108,18 @@
                     "Comment": "pki-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "pki-javadoc is earlier than 0:10.4.1-11.el7"
+                  },
+                  {
+                    "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -142,11 +142,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-7537.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-7537.html",
       "ID": "CVE-2017-7537"
     }
   ],
   "Issued": {
-    "Date": "2017-08-09"
+    "Date": "2017-08-08"
   }
 }

@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2012-1256.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2012-1256.html",
       "ID": "ELSA-2012-1256"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-4405.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4405.html",
       "ID": "CVE-2012-4405"
     }
   ],
@@ -325,6 +325,28 @@
                     "Comment": "Oracle Linux arch is i686"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ghostscript is earlier than 0:8.70-14.el6_3.1"
+                      },
+                      {
+                        "Comment": "ghostscript is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is sparc64"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -343,7 +365,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-4405.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4405.html",
       "ID": "CVE-2012-4405"
     }
   ],

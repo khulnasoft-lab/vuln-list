@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-3651.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3651.html",
       "ID": "ELSA-2018-3651"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-14633.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14633.html",
       "ID": "CVE-2018-14633"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-14646.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14646.html",
       "ID": "CVE-2018-14646"
     }
   ],
@@ -155,18 +155,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.1.3.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-957.1.3.el7"
                   },
                   {
@@ -183,6 +171,18 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.1.3.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -207,12 +207,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-14633.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14633.html",
       "ID": "CVE-2018-14633"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-14646.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14646.html",
       "ID": "CVE-2018-14646"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-0592.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-0592.html",
       "ID": "ELSA-2018-0592"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-8088.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-8088.html",
       "ID": "CVE-2018-8088"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "slf4j is earlier than 0:1.7.4-4.el7_4"
-                      },
-                      {
-                        "Comment": "slf4j is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -61,6 +49,18 @@
                       },
                       {
                         "Comment": "slf4j-manual is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "slf4j is earlier than 0:1.7.4-4.el7_4"
+                      },
+                      {
+                        "Comment": "slf4j is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "slf4j is earlier than 0:1.7.4-4.el7_4"
-                      },
-                      {
-                        "Comment": "slf4j is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "slf4j-javadoc is earlier than 0:1.7.4-4.el7_4"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "slf4j-manual is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "slf4j is earlier than 0:1.7.4-4.el7_4"
+                      },
+                      {
+                        "Comment": "slf4j is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,7 +140,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-8088.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-8088.html",
       "ID": "CVE-2018-8088"
     }
   ],

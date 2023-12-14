@@ -1,29 +1,29 @@
 {
   "Title": "ELSA-2013-1292:  kernel security and bug fix update (MODERATE)",
-  "Description": "kernel\n[2.6.18-348.18.1]\n- [net] be2net: enable polling prior enabling interrupts globally (Ivan Vecera) [1005239 987539]\n- [kernel] signals: stop info leak via tkill and tgkill syscalls (Oleg Nesterov) [970874 970875] {CVE-2013-2141}\n- [net] ipv6: do udp_push_pending_frames AF_INET sock pending data (Jiri Benc) [987647 987648] {CVE-2013-4162}\n- [mm] use-after-free in madvise_remove() (Jacob Tanenbaum) [849735 849736] {CVE-2012-3511}\n- [fs] autofs: remove autofs dentry mount check (Ian Kent) [1001488 928098]\n\n[2.6.18-348.17.1]\n- [net] be2net: Fix to avoid hardware workaround when not needed (Ivan Vecera) [999819 995961]\n- [net] be2net: Mark checksum fail for IP fragmented packets (Ivan Vecera) [983864 956322]\n- [net] be2net: Avoid double insertion of vlan tags (Ivan Vecera) [983864 956322]\n- [net] be2net: disable TX in be_close() (Ivan Vecera) [983864 956322]\n- [net] be2net: fix EQ from getting full while cleaning RX CQ (Ivan Vecera) [983864 956322]\n- [net] be2net: avoid napi_disable() when not enabled (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix receive Multicast Packets w/ Promiscuous mode (Ivan Vecera) [983864 956322]\n- [net] be2net: Fixed memory leak (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix PVID tag offload for packets w/ inline VLAN tag (Ivan Vecera) [983864 956322]\n- [net] be2net: fix a Tx stall bug caused by a specific ipv6 packet (Ivan Vecera) [983864 956322]\n- [net] be2net: Remove an incorrect pvid check in Tx (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix issues in error recovery with wrong queue state (Ivan Vecera) [983864 956322]\n- [net] netpoll: revert 6bdb7fe3104 and fix be_poll() instead (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix to parse RSS hash Receive completions correctly (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix cleanup path when EQ creation fails (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix Endian (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix to trim skb for padded vlan packets (Ivan Vecera) [983864 956322]\n- [net] be2net: Explicitly clear reserved field in Tx Descriptor (Ivan Vecera) [983864 956322]\n- [net] be2net: remove unnecessary usage of unlikely() (Ivan Vecera) [983864 956322]\n- [net] be2net: do not modify PCI MaxReadReq size (Ivan Vecera) [983864 956322]\n- [net] be2net: cleanup be_vid_config() (Ivan Vecera) [983864 956322]\n- [net] be2net: don't call vid_config() when there no vlan config (Ivan Vecera) [983864 956322]\n- [net] be2net: Ignore status of some ioctls during driver load (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix wrong status getting returned for MCC commands (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix VLAN/multicast packet reception (Ivan Vecera) [983864 956322]\n- [net] be2net: fix wrong frag_idx reported by RX CQ (Ivan Vecera) [983864 956322]",
+  "Description": "kernel\n[2.6.18-348.18.1.el5]\n- [net] be2net: enable polling prior enabling interrupts globally (Ivan Vecera) [1005239 987539]\n- [kernel] signals: stop info leak via tkill and tgkill syscalls (Oleg Nesterov) [970874 970875] {CVE-2013-2141}\n- [net] ipv6: do udp_push_pending_frames AF_INET sock pending data (Jiri Benc) [987647 987648] {CVE-2013-4162}\n- [mm] use-after-free in madvise_remove() (Jacob Tanenbaum) [849735 849736] {CVE-2012-3511}\n- [fs] autofs: remove autofs dentry mount check (Ian Kent) [1001488 928098]\n\n[2.6.18-348.17.1.el5]\n- [net] be2net: Fix to avoid hardware workaround when not needed (Ivan Vecera) [999819 995961]\n- [net] be2net: Mark checksum fail for IP fragmented packets (Ivan Vecera) [983864 956322]\n- [net] be2net: Avoid double insertion of vlan tags (Ivan Vecera) [983864 956322]\n- [net] be2net: disable TX in be_close() (Ivan Vecera) [983864 956322]\n- [net] be2net: fix EQ from getting full while cleaning RX CQ (Ivan Vecera) [983864 956322]\n- [net] be2net: avoid napi_disable() when not enabled (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix receive Multicast Packets w/ Promiscuous mode (Ivan Vecera) [983864 956322]\n- [net] be2net: Fixed memory leak (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix PVID tag offload for packets w/ inline VLAN tag (Ivan Vecera) [983864 956322]\n- [net] be2net: fix a Tx stall bug caused by a specific ipv6 packet (Ivan Vecera) [983864 956322]\n- [net] be2net: Remove an incorrect pvid check in Tx (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix issues in error recovery with wrong queue state (Ivan Vecera) [983864 956322]\n- [net] netpoll: revert 6bdb7fe3104 and fix be_poll() instead (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix to parse RSS hash Receive completions correctly (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix cleanup path when EQ creation fails (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix Endian (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix to trim skb for padded vlan packets (Ivan Vecera) [983864 956322]\n- [net] be2net: Explicitly clear reserved field in Tx Descriptor (Ivan Vecera) [983864 956322]\n- [net] be2net: remove unnecessary usage of unlikely() (Ivan Vecera) [983864 956322]\n- [net] be2net: do not modify PCI MaxReadReq size (Ivan Vecera) [983864 956322]\n- [net] be2net: cleanup be_vid_config() (Ivan Vecera) [983864 956322]\n- [net] be2net: don't call vid_config() when there no vlan config (Ivan Vecera) [983864 956322]\n- [net] be2net: Ignore status of some ioctls during driver load (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix wrong status getting returned for MCC commands (Ivan Vecera) [983864 956322]\n- [net] be2net: Fix VLAN/multicast packet reception (Ivan Vecera) [983864 956322]\n- [net] be2net: fix wrong frag_idx reported by RX CQ (Ivan Vecera) [983864 956322]",
   "Platform": [
     "Oracle Linux 5"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-1292.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-1292.html",
       "ID": "ELSA-2013-1292"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3511.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3511.html",
       "ID": "CVE-2012-3511"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-2141.html",
-      "ID": "CVE-2013-2141"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4162.html",
+      "ID": "CVE-2013-4162"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4162.html",
-      "ID": "CVE-2013-4162"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2141.html",
+      "ID": "CVE-2013-2141"
     }
   ],
   "Criteria": {
@@ -646,18 +646,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3511.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3511.html",
       "ID": "CVE-2012-3511"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-2141.html",
-      "ID": "CVE-2013-2141"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4162.html",
+      "ID": "CVE-2013-4162"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4162.html",
-      "ID": "CVE-2013-4162"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2141.html",
+      "ID": "CVE-2013-2141"
     }
   ],
   "Issued": {

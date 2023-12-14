@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1072.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1072.html",
       "ID": "ELSA-2021-1072"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20277.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20277.html",
       "ID": "CVE-2021-20277"
     }
   ],
@@ -33,18 +33,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ldb-tools is earlier than 0:1.5.4-2.el7_9"
-                      },
-                      {
-                        "Comment": "ldb-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libldb is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
@@ -57,10 +45,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libldb-devel is earlier than 0:1.5.4-2.el7_9"
+                        "Comment": "pyldb is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
-                        "Comment": "libldb-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -69,10 +57,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "pyldb is earlier than 0:1.5.4-2.el7_9"
+                        "Comment": "ldb-tools is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
-                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
+                        "Comment": "ldb-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libldb-devel is earlier than 0:1.5.4-2.el7_9"
+                      },
+                      {
+                        "Comment": "libldb-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -121,18 +121,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libldb is earlier than 0:1.5.4-2.el7_9"
-                      },
-                      {
-                        "Comment": "libldb is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libldb-devel is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
@@ -145,10 +133,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "pyldb is earlier than 0:1.5.4-2.el7_9"
+                        "Comment": "pyldb-devel is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
-                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
+                        "Comment": "pyldb-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -157,10 +145,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "pyldb-devel is earlier than 0:1.5.4-2.el7_9"
+                        "Comment": "libldb is earlier than 0:1.5.4-2.el7_9"
                       },
                       {
-                        "Comment": "pyldb-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "libldb is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "pyldb is earlier than 0:1.5.4-2.el7_9"
+                      },
+                      {
+                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -188,11 +188,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20277.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20277.html",
       "ID": "CVE-2021-20277"
     }
   ],
   "Issued": {
-    "Date": "2021-04-08"
+    "Date": "2021-04-06"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-6523.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-6523.html",
       "ID": "ELSA-2022-6523"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-38013.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38013.html",
       "ID": "CVE-2022-38013"
     }
   ],
@@ -25,18 +25,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "dotnet-sdk-3.1-source-built-artifacts is earlier than 0:3.1.423-1.0.1.el8_6"
-                  },
-                  {
-                    "Comment": "dotnet-sdk-3.1-source-built-artifacts is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -114,6 +102,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "dotnet-sdk-3.1-source-built-artifacts is earlier than 0:3.1.423-1.0.1.el8_6"
+                  },
+                  {
+                    "Comment": "dotnet-sdk-3.1-source-built-artifacts is signed with the Oracle Linux 8 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "dotnet-targeting-pack-3.1 is earlier than 0:3.1.29-1.0.1.el8_6"
                   },
                   {
@@ -154,11 +154,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-38013.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38013.html",
       "ID": "CVE-2022-38013"
     }
   ],
   "Issued": {
-    "Date": "2022-09-15"
+    "Date": "2022-09-14"
   }
 }

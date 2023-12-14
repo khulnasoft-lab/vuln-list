@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2692.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2692.html",
       "ID": "ELSA-2019-2692"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-9511.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-9511.html",
       "ID": "CVE-2019-9511"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-9513.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-9513.html",
       "ID": "CVE-2019-9513"
     }
   ],
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libnghttp2 is earlier than 0:1.33.0-1.el8_0.1"
-                      },
-                      {
-                        "Comment": "libnghttp2 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -66,6 +54,18 @@
                       },
                       {
                         "Comment": "nghttp2 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnghttp2 is earlier than 0:1.33.0-1.el8_0.1"
+                      },
+                      {
+                        "Comment": "libnghttp2 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -145,12 +145,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-9511.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-9511.html",
       "ID": "CVE-2019-9511"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-9513.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-9513.html",
       "ID": "CVE-2019-9513"
     }
   ],

@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-3057.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-3057.html",
       "ID": "ELSA-2021-3057"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22555.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22555.html",
       "ID": "CVE-2021-22555"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3609.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3609.html",
       "ID": "CVE-2021-3609"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22543.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22543.html",
       "ID": "CVE-2021-22543"
     }
   ],
@@ -38,6 +38,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.12.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -91,18 +103,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.12.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.12.1.el8_4"
                       },
                       {
@@ -138,6 +138,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.12.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -347,18 +359,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.12.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.12.1.el8_4"
                       },
                       {
@@ -402,17 +402,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22555.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22555.html",
       "ID": "CVE-2021-22555"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3609.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3609.html",
       "ID": "CVE-2021-3609"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22543.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22543.html",
       "ID": "CVE-2021-22543"
     }
   ],

@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2010-0859.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2010-0859.html",
       "ID": "ELSA-2010-0859"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2010-3702.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-3702.html",
       "ID": "CVE-2010-3702"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2010-3703.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-3703.html",
       "ID": "CVE-2010-3703"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2010-3704.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-3704.html",
       "ID": "CVE-2010-3704"
     }
   ],
@@ -279,6 +279,70 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler is earlier than 0:0.12.4-3.el6_0.1"
+                      },
+                      {
+                        "Comment": "poppler is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-glib is earlier than 0:0.12.4-3.el6_0.1"
+                      },
+                      {
+                        "Comment": "poppler-glib is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-qt4 is earlier than 0:0.12.4-3.el6_0.1"
+                      },
+                      {
+                        "Comment": "poppler-qt4 is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-utils is earlier than 0:0.12.4-3.el6_0.1"
+                      },
+                      {
+                        "Comment": "poppler-utils is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -294,17 +358,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2010-3702.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-3702.html",
       "ID": "CVE-2010-3702"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2010-3703.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-3703.html",
       "ID": "CVE-2010-3703"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2010-3704.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-3704.html",
       "ID": "CVE-2010-3704"
     }
   ],

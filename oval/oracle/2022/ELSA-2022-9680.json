@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-9680:  httpd security update (IMPORTANT)",
-  "Description": "[2.4.51-7.0.2]\n- mod_proxy: ap_proxy_http_request() to clear hop-by-hop first and\n  fixup last [CVE-2022-31813][Orabug: 34381949]",
+  "Description": "[2.4.51-7.0.2]\n- mod_proxy: ap_proxy_http_request() to clear hop-by-hop first and\n  fixup last [CVE-2022-31813][Orabug: 34381949]\n\n[2.4.51-7.0.1]\n- Replace index.html with Oracle's index page oracle_index.html.\n\n[2.4.51-7]\n- Resolves: #2065250 - CVE-2022-22720 httpd: HTTP request smuggling\n  vulnerability in Apache HTTP Server 2.4.52 and earlier\n\n[2.4.51-6]\n- Resolves: #2035031 - CVE-2021-44224 httpd: possible NULL dereference or SSRF\n  in forward proxy configurations\n\n[2.4.51-5]\n- Resolves: #2035064 - CVE-2021-44790 httpd: mod_lua: possible buffer overflow\n  when parsing multipart content\n\n[2.4.51-4]\n- Use NAME from os-release(5) for vendor string\n  Resolves: #2029071 - httpd on CentOS identifies as RHEL\n\n[2.4.51-3]\n- add fixes for static analyzer issues (#1938740)\n\n[2.4.51-2]\n- Resolves: #2005416 - httpd default configuration changes\n\n[2.4.51-1]\n- new version 2.4.51 (#2011090)\n\n[2.4.49-1]\n- new version 2.4.49 (#2005339)\n\n[2.4.48-18]\n- Resolves: #2004143 - RFE: mod_ssl: allow sending multiple CA names which\n  differ only in case\n\n[2.4.48-17]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[2.4.48-16]\n- Resolves: #1956386 - Apache trademark update - new logo\n\n[2.4.48-14]\n- Rebuild to pick up new build flags from redhat-rpm-config (#1984652)\n\n[2.4.48-13]\n- mod_ssl: OpenSSL 3 compatibility update (#1986822)\n\n[2.4.48-12]\n- mod_ssl: add SSLKEYLOGFILE support (#1982656)\n\n[2.4.48-11]\n- mod_cgid: fix doubled script timeout (#1977234)\n\n[2.4.48-10]\n- fix release in ServerTokens Full-Release (#1932442)\n\n[2.4.48-9]\n- use OOMPolicy=continue in httpd.service, httpd@.service (#1947475)\n\n[2.4.48-8]\n- Resolves: #1950021 - [RFE] Update httpd directive SSLProxyMachineCertificateFile\n  to be able to handle certs without matching private key\n\n[2.4.48-7]\n- Resolves: #1950011 - unorderly connection close when client attempts\n  renegotiation\n\n[2.4.48-6]\n- Resolves: #1932442 - 'ServerTokens Full-Release' support\n\n[2.4.48-5]\n- mod_ssl: fix loading encrypted privkeys with OpenSSL 3.0 (#1976080)\n\n[2.4.48-4]\n- add OpenSSL v3 compatibility fixes (#1975201)\n\n[2.4.48-3]\n- Rebuilt for RHEL 9 BETA for openssl 3.0\n  Related: rhbz#1971065\n\n[2.4.48-2]\n- Resolves: #1947099 - centralizing default index.html for httpd\n\n[2.4.48-1]\n- new version 2.4.48\n- Resolves: #1952817 - rebase to 2.4.48\n\n[2.4.46-15]\n- Resolves: #1949606 - RFE: httpd, add IP_FREEBIND support for Listen\n\n[2.4.46-14]\n- Resolves: #1949969 - httpd : mod_proxy should allow to specify\n  Proxy-Authorization in ProxyRemote directive\n\n[2.4.46-13]\n- Resolves: #1952546 - mod_proxy_wstunnel.html is a malformed XML\n\n[2.4.46-12]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[2.4.46-11]\n- Resolves: #1947496 - [RFE] ProxyWebsocketIdleTimeout from httpd mod_proxy_wstunnel\n\n[2.4.46-10]\n- Resolves: #1934739 - Apache trademark update - new logo\n\n[2.4.46-9]\n- Resolves: #1914182 - RFE: CustomLog should be able to use journald\n\n[2.4.46-8]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[2.4.46-7]\n- prevent htcacheclean from while break when first file processed\n\n[2.4.46-6]\n- move mod_lua to a subpackage\n- Recommends: both mod_lua and mod_http2\n\n[2.4.46-5]\n- add %_httpd_requires to macros\n\n[2.4.46-4]\n- use make macros (Tom Stellard)\n\n[2.4.46-3]\n- strip /usr/bin/apxs CFLAGS further\n\n[2.4.46-2]\n- sanitize CFLAGS used by /usr/bin/apxs by default (#1873020)\n- add /httpd/build/vendor-apxs which exposes full CFLAGS\n- redefine _httpd_apxs RPM macro to use vendor-apxs\n\n[2.4.46-1]\n- new version 2.4.46\n- remove obsolete parts of this spec file\n- fix systemd detection patch",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-9680.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9680.html",
       "ID": "ELSA-2022-9680"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-31813.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-31813.html",
       "ID": "CVE-2022-31813"
     }
   ],
@@ -308,7 +308,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-31813.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-31813.html",
       "ID": "CVE-2022-31813"
     }
   ],

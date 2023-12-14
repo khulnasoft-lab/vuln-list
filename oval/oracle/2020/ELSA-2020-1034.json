@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1034.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1034.html",
       "ID": "ELSA-2020-1034"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-10245.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-10245.html",
       "ID": "CVE-2016-10245"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "doxygen is earlier than 1:1.8.5-4.el7"
-                      },
-                      {
-                        "Comment": "doxygen is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "doxygen-doxywizard is earlier than 1:1.8.5-4.el7"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "doxygen-latex is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "doxygen is earlier than 1:1.8.5-4.el7"
+                      },
+                      {
+                        "Comment": "doxygen is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-10245.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-10245.html",
       "ID": "CVE-2016-10245"
     }
   ],
   "Issued": {
-    "Date": "2020-04-06"
+    "Date": "2020-04-08"
   }
 }

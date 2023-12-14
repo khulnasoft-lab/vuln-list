@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-0818.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-0818.html",
       "ID": "ELSA-2019-0818"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-6974.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-6974.html",
       "ID": "CVE-2019-6974"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-7221.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-7221.html",
       "ID": "CVE-2019-7221"
     }
   ],
@@ -155,18 +155,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.12.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-957.12.1.el7"
                   },
                   {
@@ -183,6 +171,18 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.12.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -207,12 +207,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-6974.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-6974.html",
       "ID": "CVE-2019-6974"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-7221.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-7221.html",
       "ID": "CVE-2019-7221"
     }
   ],

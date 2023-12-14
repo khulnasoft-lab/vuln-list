@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-2610.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2610.html",
       "ID": "ELSA-2016-2610"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-7795.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-7795.html",
       "ID": "CVE-2016-7795"
     }
   ],
@@ -78,18 +78,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "systemd-journal-gateway is earlier than 0:219-30.0.1.el7_3.3"
-                  },
-                  {
-                    "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "systemd-libs is earlier than 0:219-30.0.1.el7_3.3"
                   },
                   {
@@ -144,6 +132,18 @@
                     "Comment": "systemd-sysv is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "systemd-journal-gateway is earlier than 0:219-30.0.1.el7_3.3"
+                  },
+                  {
+                    "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -166,11 +166,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-7795.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-7795.html",
       "ID": "CVE-2016-7795"
     }
   ],
   "Issued": {
-    "Date": "2016-11-09"
+    "Date": "2016-11-07"
   }
 }

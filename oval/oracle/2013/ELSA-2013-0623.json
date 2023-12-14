@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0623.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0623.html",
       "ID": "ELSA-2013-0623"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3546.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3546.html",
       "ID": "CVE-2012-3546"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-4534.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4534.html",
       "ID": "CVE-2012-4534"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-5885.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5885.html",
       "ID": "CVE-2012-5885"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-5886.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5886.html",
       "ID": "CVE-2012-5886"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-5887.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5887.html",
       "ID": "CVE-2012-5887"
     }
   ],
@@ -189,6 +189,82 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "tomcat6-el-2.1-api is earlier than 0:6.0.24-52.el6_4"
+                      },
+                      {
+                        "Comment": "tomcat6-el-2.1-api is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "tomcat6-jsp-2.1-api is earlier than 0:6.0.24-52.el6_4"
+                      },
+                      {
+                        "Comment": "tomcat6-jsp-2.1-api is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "tomcat6-lib is earlier than 0:6.0.24-52.el6_4"
+                      },
+                      {
+                        "Comment": "tomcat6-lib is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "tomcat6-servlet-2.5-api is earlier than 0:6.0.24-52.el6_4"
+                      },
+                      {
+                        "Comment": "tomcat6-servlet-2.5-api is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "tomcat6 is earlier than 0:6.0.24-52.el6_4"
+                      },
+                      {
+                        "Comment": "tomcat6 is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "tomcat6-admin-webapps is earlier than 0:6.0.24-52.el6_4"
                       },
                       {
@@ -304,27 +380,27 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3546.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3546.html",
       "ID": "CVE-2012-3546"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-4534.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4534.html",
       "ID": "CVE-2012-4534"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-5885.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5885.html",
       "ID": "CVE-2012-5885"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-5886.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5886.html",
       "ID": "CVE-2012-5886"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-5887.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5887.html",
       "ID": "CVE-2012-5887"
     }
   ],

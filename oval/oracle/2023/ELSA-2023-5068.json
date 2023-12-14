@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-5068:  linux-firmware security update (MODERATE)",
-  "Description": "[20230516-999.27.git6c9e0ed5.el9]\n- Update firmware for qat_4xxx devices (Orabug: 35811008)\n\n[20230516-999.26.git6c9e0ed5.el9]\n- Run dracut -f in %posttrans instead of %post (Orabug: 35661938)\n- Drop latest AMD microcode commits to family 19 file to include Milan microcode but not Genoa (Orabug: 35708511)\n\n[20230516-999.25.git6c9e0ed5.el9]\n- Add missing amd-ucode/ files to nano and core rpm (Orabug: 35642190)\n- Add posttrans scriptlet to reload microcode on AMD (Orabug: 35636951)\n- Recreate initramfs for AMD systems (Orabug: 35636951)\n\n[20230516-999.24.git6c9e0ed5.el7]\n- 8a07fa49 linux-firmware: Update AMD fam19h cpu microcode (Orabug: 35659485)\n\n[20230516-999.23.git6c9e0ed5.el9]\n- Firmware files need to be uncompressed for early kernel load to work\n- Resolves Zenbleed (Orabug: 35650345) {CVE-2023-20593}",
+  "Description": "[20230516-999.27.git6c9e0ed5.el9]\n- Update firmware for qat_4xxx devices (Orabug: 35811008)",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5068.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5068.html",
       "ID": "ELSA-2023-5068"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-20593.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-20593.html",
       "ID": "CVE-2023-20593"
     }
   ],
@@ -692,7 +692,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-20593.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-20593.html",
       "ID": "CVE-2023-20593"
     }
   ],

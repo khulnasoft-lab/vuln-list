@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4634.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4634.html",
       "ID": "ELSA-2020-4634"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-17546.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-17546.html",
       "ID": "CVE-2019-17546"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libtiff-tools is earlier than 0:4.0.9-18.el8"
+                      },
+                      {
+                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -49,18 +61,6 @@
                       },
                       {
                         "Comment": "libtiff-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libtiff-tools is earlier than 0:4.0.9-18.el8"
-                      },
-                      {
-                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -85,6 +85,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libtiff-tools is earlier than 0:4.0.9-18.el8"
+                      },
+                      {
+                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libtiff is earlier than 0:4.0.9-18.el8"
                       },
                       {
@@ -101,18 +113,6 @@
                       },
                       {
                         "Comment": "libtiff-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libtiff-tools is earlier than 0:4.0.9-18.el8"
-                      },
-                      {
-                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -140,7 +140,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-17546.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-17546.html",
       "ID": "CVE-2019-17546"
     }
   ],

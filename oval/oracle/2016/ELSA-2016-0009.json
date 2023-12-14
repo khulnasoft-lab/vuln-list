@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2016-0009:  libldb security update (MODERATE)",
-  "Description": "[1.1.13-3.1]\n- Resolves: rhbz#1290712 - CVE-2015-5330 libldb: samba: Remote memory read\n                           in Samba LDAP server [rhel-7.2.z]\n- Remove the patch from the previous commit, it doesn't fix a remotely\n  eploitable issue. Add patches from upstream #11636 instead.",
+  "Description": "[1.1.20-1.2]\n- Resolves: rhbz#1290714 - CVE-2015-5330 libldb: samba: Remote memory read\n                           in Samba LDAP server [rhel-7.2.z]\n- Remove the patch from the previous commit, it doesn't fix a remotely\n  eploitable issue. Add patches from upstream #11636 instead.\n\n[1.1.20-1.1]\n- Resolves: rhbz#1290714 - CVE-2015-5330 libldb: samba: Remote memory read\n                           in Samba LDAP server [rhel-7.2.z]",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-0009.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0009.html",
       "ID": "ELSA-2016-0009"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-3223.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3223.html",
       "ID": "CVE-2015-3223"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-5330.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5330.html",
       "ID": "CVE-2015-5330"
     }
   ],
@@ -207,18 +207,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ldb-tools is earlier than 0:1.1.20-1.el7_2.2"
-                      },
-                      {
-                        "Comment": "ldb-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libldb is earlier than 0:1.1.20-1.el7_2.2"
                       },
                       {
@@ -231,10 +219,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libldb-devel is earlier than 0:1.1.20-1.el7_2.2"
+                        "Comment": "pyldb is earlier than 0:1.1.20-1.el7_2.2"
                       },
                       {
-                        "Comment": "libldb-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -243,10 +231,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "pyldb is earlier than 0:1.1.20-1.el7_2.2"
+                        "Comment": "ldb-tools is earlier than 0:1.1.20-1.el7_2.2"
                       },
                       {
-                        "Comment": "pyldb is signed with the Oracle Linux 7 key"
+                        "Comment": "ldb-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libldb-devel is earlier than 0:1.1.20-1.el7_2.2"
+                      },
+                      {
+                        "Comment": "libldb-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -286,12 +286,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-3223.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3223.html",
       "ID": "CVE-2015-3223"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-5330.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5330.html",
       "ID": "CVE-2015-5330"
     }
   ],

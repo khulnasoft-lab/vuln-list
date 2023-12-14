@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-1396.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-1396.html",
       "ID": "ELSA-2018-1396"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-1064.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1064.html",
       "ID": "CVE-2018-1064"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-5748.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-5748.html",
       "ID": "CVE-2018-5748"
     }
   ],
@@ -30,6 +30,54 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-daemon-lxc is earlier than 0:3.9.0-14.el7_5.4"
+                  },
+                  {
+                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-lock-sanlock is earlier than 0:3.9.0-14.el7_5.4"
+                  },
+                  {
+                    "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-login-shell is earlier than 0:3.9.0-14.el7_5.4"
+                  },
+                  {
+                    "Comment": "libvirt-login-shell is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-nss is earlier than 0:3.9.0-14.el7_5.4"
+                  },
+                  {
+                    "Comment": "libvirt-nss is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -311,18 +359,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "libvirt-daemon-lxc is earlier than 0:3.9.0-14.el7_5.4"
-                  },
-                  {
-                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "libvirt-devel is earlier than 0:3.9.0-14.el7_5.4"
                   },
                   {
@@ -353,42 +389,6 @@
                     "Comment": "libvirt-libs is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-lock-sanlock is earlier than 0:3.9.0-14.el7_5.4"
-                  },
-                  {
-                    "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-login-shell is earlier than 0:3.9.0-14.el7_5.4"
-                  },
-                  {
-                    "Comment": "libvirt-login-shell is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-nss is earlier than 0:3.9.0-14.el7_5.4"
-                  },
-                  {
-                    "Comment": "libvirt-nss is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -411,12 +411,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-1064.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1064.html",
       "ID": "CVE-2018-1064"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-5748.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-5748.html",
       "ID": "CVE-2018-5748"
     }
   ],

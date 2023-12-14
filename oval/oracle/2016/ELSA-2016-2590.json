@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-2590.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2590.html",
       "ID": "ELSA-2016-2590"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-2774.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-2774.html",
       "ID": "CVE-2016-2774"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "dhcp-devel is earlier than 12:4.2.5-47.0.1.el7"
+                  },
+                  {
+                    "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -66,18 +78,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "dhcp-devel is earlier than 12:4.2.5-47.0.1.el7"
-                  },
-                  {
-                    "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "dhcp-libs is earlier than 12:4.2.5-47.0.1.el7"
                   },
                   {
@@ -106,11 +106,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-2774.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-2774.html",
       "ID": "CVE-2016-2774"
     }
   ],
   "Issued": {
-    "Date": "2016-11-09"
+    "Date": "2016-11-07"
   }
 }

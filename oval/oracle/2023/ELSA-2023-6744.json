@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-6744.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-6744.html",
       "ID": "ELSA-2023-6744"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3961.html",
-      "ID": "CVE-2023-3961"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-4091.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-4091.html",
       "ID": "CVE-2023-4091"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-42669.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3961.html",
+      "ID": "CVE-2023-3961"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-42669.html",
       "ID": "CVE-2023-42669"
     }
   ],
@@ -55,18 +55,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libnetapi-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "libnetapi-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libsmbclient is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
@@ -79,34 +67,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libwbclient is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -139,46 +103,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-samba-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "python3-samba-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-samba-test is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "python3-samba-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "samba is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
                         "Comment": "samba is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-client is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-client is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -259,30 +187,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "samba-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-krb5-printing is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-krb5-printing is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "samba-ldb-ldap-modules is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
@@ -299,6 +203,126 @@
                       },
                       {
                         "Comment": "samba-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-tools is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-tools is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-usershares is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-usershares is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind-modules is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind-modules is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnetapi-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libnetapi-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-samba-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "python3-samba-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-samba-test is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "python3-samba-test is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -343,10 +367,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "samba-tools is earlier than 0:4.18.6-101.el9_3"
+                        "Comment": "samba-client is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
-                        "Comment": "samba-tools is signed with the Oracle Linux 9 key"
+                        "Comment": "samba-client is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -355,10 +379,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "samba-usershares is earlier than 0:4.18.6-101.el9_3"
+                        "Comment": "samba-krb5-printing is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
-                        "Comment": "samba-usershares is signed with the Oracle Linux 9 key"
+                        "Comment": "samba-krb5-printing is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -371,18 +395,6 @@
                       },
                       {
                         "Comment": "samba-vfs-iouring is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -407,18 +419,6 @@
                       },
                       {
                         "Comment": "samba-winbind-krb5-locator is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind-modules is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind-modules is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -443,10 +443,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libnetapi is earlier than 0:4.18.6-101.el9_3"
+                        "Comment": "samba-client is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
-                        "Comment": "libnetapi is signed with the Oracle Linux 9 key"
+                        "Comment": "samba-client is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -455,10 +455,70 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libnetapi-devel is earlier than 0:4.18.6-101.el9_3"
+                        "Comment": "samba-krb5-printing is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
-                        "Comment": "libnetapi-devel is signed with the Oracle Linux 9 key"
+                        "Comment": "samba-krb5-printing is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-iouring is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind-clients is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind-clients is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind-krb5-locator is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind-krb5-locator is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winexe is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winexe is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnetapi is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libnetapi is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -479,34 +539,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libwbclient is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -539,46 +575,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-samba-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "python3-samba-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-samba-test is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "python3-samba-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "samba is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
                         "Comment": "samba is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-client is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-client is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -659,30 +659,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "samba-devel is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-krb5-printing is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-krb5-printing is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "samba-ldb-ldap-modules is earlier than 0:4.18.6-101.el9_3"
                       },
                       {
@@ -699,6 +675,126 @@
                       },
                       {
                         "Comment": "samba-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-tools is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-tools is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-usershares is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-usershares is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-winbind-modules is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-winbind-modules is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnetapi-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libnetapi-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-samba-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "python3-samba-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-samba-test is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "python3-samba-test is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-devel is earlier than 0:4.18.6-101.el9_3"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -735,102 +831,6 @@
                       },
                       {
                         "Comment": "samba-test-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-tools is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-tools is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-usershares is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-usershares is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-iouring is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind-clients is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind-clients is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind-krb5-locator is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind-krb5-locator is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winbind-modules is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winbind-modules is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-winexe is earlier than 0:4.18.6-101.el9_3"
-                      },
-                      {
-                        "Comment": "samba-winexe is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -858,17 +858,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3961.html",
-      "ID": "CVE-2023-3961"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-4091.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-4091.html",
       "ID": "CVE-2023-4091"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-42669.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3961.html",
+      "ID": "CVE-2023-3961"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-42669.html",
       "ID": "CVE-2023-42669"
     }
   ],

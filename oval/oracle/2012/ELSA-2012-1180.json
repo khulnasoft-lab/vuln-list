@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2012-1180.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2012-1180.html",
       "ID": "ELSA-2012-1180"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-2896.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2896.html",
       "ID": "CVE-2011-2896"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3403.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3403.html",
       "ID": "CVE-2012-3403"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3481.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3481.html",
       "ID": "CVE-2012-3481"
     }
   ],
@@ -183,6 +183,58 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gimp is earlier than 2:2.6.9-4.el6_3.3"
+                      },
+                      {
+                        "Comment": "gimp is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gimp-help-browser is earlier than 2:2.6.9-4.el6_3.3"
+                      },
+                      {
+                        "Comment": "gimp-help-browser is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gimp-libs is earlier than 2:2.6.9-4.el6_3.3"
+                      },
+                      {
+                        "Comment": "gimp-libs is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -198,17 +250,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-2896.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2896.html",
       "ID": "CVE-2011-2896"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3403.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3403.html",
       "ID": "CVE-2012-3403"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3481.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3481.html",
       "ID": "CVE-2012-3481"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0505.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0505.html",
       "ID": "ELSA-2013-0505"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-5643.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5643.html",
       "ID": "CVE-2012-5643"
     }
   ],
@@ -65,6 +65,28 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "squid is earlier than 7:3.1.10-16.el6"
+                  },
+                  {
+                    "Comment": "squid is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -80,7 +102,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-5643.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5643.html",
       "ID": "CVE-2012-5643"
     }
   ],

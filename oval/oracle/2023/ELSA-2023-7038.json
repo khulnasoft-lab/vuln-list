@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-7038.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-7038.html",
       "ID": "ELSA-2023-7038"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-28100.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-28100.html",
       "ID": "CVE-2023-28100"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-28101.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-28101.html",
       "ID": "CVE-2023-28101"
     }
   ],
@@ -38,10 +38,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flatpak-devel is earlier than 0:1.10.8-1.el8"
+                        "Comment": "flatpak is earlier than 0:1.10.8-1.el8"
                       },
                       {
-                        "Comment": "flatpak-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "flatpak is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -50,10 +50,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flatpak is earlier than 0:1.10.8-1.el8"
+                        "Comment": "flatpak-devel is earlier than 0:1.10.8-1.el8"
                       },
                       {
-                        "Comment": "flatpak is signed with the Oracle Linux 8 key"
+                        "Comment": "flatpak-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -138,18 +138,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flatpak-session-helper is earlier than 0:1.10.8-1.el8"
-                      },
-                      {
-                        "Comment": "flatpak-session-helper is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "flatpak-libs is earlier than 0:1.10.8-1.el8"
                       },
                       {
@@ -166,6 +154,18 @@
                       },
                       {
                         "Comment": "flatpak-selinux is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-session-helper is earlier than 0:1.10.8-1.el8"
+                      },
+                      {
+                        "Comment": "flatpak-session-helper is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -193,12 +193,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-28100.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-28100.html",
       "ID": "CVE-2023-28100"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-28101.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-28101.html",
       "ID": "CVE-2023-28101"
     }
   ],

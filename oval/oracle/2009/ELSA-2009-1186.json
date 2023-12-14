@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2009-1186.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2009-1186.html",
       "ID": "ELSA-2009-1186"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2009-2404.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2009-2404.html",
       "ID": "CVE-2009-2404"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2009-2408.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2009-2408.html",
       "ID": "CVE-2009-2408"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2009-2409.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2009-2409.html",
       "ID": "CVE-2009-2409"
     }
   ],
@@ -131,6 +131,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nss is earlier than 0:3.12.3.99.3-1.0.1.el5_3.2"
+                      },
+                      {
+                        "Comment": "nss is signed with the Oracle Linux 5 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-tools is earlier than 0:3.12.3.99.3-1.0.1.el5_3.2"
+                      },
+                      {
+                        "Comment": "nss-tools is signed with the Oracle Linux 5 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "nspr is earlier than 0:4.7.4-1.el5_3.1"
                       },
                       {
@@ -155,18 +179,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nss is earlier than 0:3.12.3.99.3-1.0.1.el5_3.2"
-                      },
-                      {
-                        "Comment": "nss is signed with the Oracle Linux 5 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "nss-devel is earlier than 0:3.12.3.99.3-1.0.1.el5_3.2"
                       },
                       {
@@ -183,18 +195,6 @@
                       },
                       {
                         "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 5 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-tools is earlier than 0:3.12.3.99.3-1.0.1.el5_3.2"
-                      },
-                      {
-                        "Comment": "nss-tools is signed with the Oracle Linux 5 key"
                       }
                     ]
                   }
@@ -310,17 +310,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2009-2404.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2009-2404.html",
       "ID": "CVE-2009-2404"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2009-2408.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2009-2408.html",
       "ID": "CVE-2009-2408"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2009-2409.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2009-2409.html",
       "ID": "CVE-2009-2409"
     }
   ],

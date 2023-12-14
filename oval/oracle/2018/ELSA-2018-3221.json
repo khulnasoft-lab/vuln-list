@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-3221.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3221.html",
       "ID": "ELSA-2018-3221"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-3735.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3735.html",
       "ID": "CVE-2017-3735"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-0739.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0739.html",
       "ID": "CVE-2018-0739"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-0732.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0732.html",
       "ID": "CVE-2018-0732"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-0737.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0737.html",
       "ID": "CVE-2018-0737"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-0495.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0495.html",
       "ID": "CVE-2018-0495"
     }
   ],
@@ -129,6 +129,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "openssl-perl is earlier than 1:1.0.2k-16.0.1.el7"
+                      },
+                      {
+                        "Comment": "openssl-perl is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssl-static is earlier than 1:1.0.2k-16.0.1.el7"
+                      },
+                      {
+                        "Comment": "openssl-static is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "openssl is earlier than 1:1.0.2k-16.0.1.el7"
                       },
                       {
@@ -159,30 +183,6 @@
                         "Comment": "openssl-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssl-perl is earlier than 1:1.0.2k-16.0.1.el7"
-                      },
-                      {
-                        "Comment": "openssl-perl is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssl-static is earlier than 1:1.0.2k-16.0.1.el7"
-                      },
-                      {
-                        "Comment": "openssl-static is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -208,31 +208,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-3735.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3735.html",
       "ID": "CVE-2017-3735"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-0739.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0739.html",
       "ID": "CVE-2018-0739"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-0732.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0732.html",
       "ID": "CVE-2018-0732"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-0737.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0737.html",
       "ID": "CVE-2018-0737"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-0495.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0495.html",
       "ID": "CVE-2018-0495"
     }
   ],
   "Issued": {
-    "Date": "2018-11-05"
+    "Date": "2018-11-02"
   }
 }

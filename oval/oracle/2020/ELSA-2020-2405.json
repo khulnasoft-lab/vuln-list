@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-2405.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-2405.html",
       "ID": "ELSA-2020-2405"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-13398.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13398.html",
       "ID": "CVE-2020-13398"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "freerdp-devel is earlier than 0:2.0.0-4.rc4.el7_8.1"
-                      },
-                      {
-                        "Comment": "freerdp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "freerdp-libs is earlier than 0:2.0.0-4.rc4.el7_8.1"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "libwinpr is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "freerdp-devel is earlier than 0:2.0.0-4.rc4.el7_8.1"
+                      },
+                      {
+                        "Comment": "freerdp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -109,10 +109,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "freerdp is earlier than 0:2.0.0-4.rc4.el7_8.1"
+                        "Comment": "freerdp-devel is earlier than 0:2.0.0-4.rc4.el7_8.1"
                       },
                       {
-                        "Comment": "freerdp is signed with the Oracle Linux 7 key"
+                        "Comment": "freerdp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -121,10 +121,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "freerdp-devel is earlier than 0:2.0.0-4.rc4.el7_8.1"
+                        "Comment": "freerdp is earlier than 0:2.0.0-4.rc4.el7_8.1"
                       },
                       {
-                        "Comment": "freerdp-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "freerdp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -188,7 +188,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-13398.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13398.html",
       "ID": "CVE-2020-13398"
     }
   ],

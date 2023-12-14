@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-1457.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-1457.html",
       "ID": "ELSA-2013-1457"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4242.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4242.html",
       "ID": "CVE-2013-4242"
     }
   ],
@@ -206,6 +206,28 @@
                 "Operator": "AND",
                 "Criterias": [
                   {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgcrypt is earlier than 0:1.4.5-11.el6_4"
+                      },
+                      {
+                        "Comment": "libgcrypt is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is sparc64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
                     "Operator": "OR",
                     "Criterias": [
                       {
@@ -241,28 +263,6 @@
                     "Comment": "Oracle Linux arch is i686"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libgcrypt is earlier than 0:1.4.5-11.el6_4"
-                      },
-                      {
-                        "Comment": "libgcrypt is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is sparc64"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -281,7 +281,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4242.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4242.html",
       "ID": "CVE-2013-4242"
     }
   ],

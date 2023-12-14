@@ -8,78 +8,78 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-1292.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-1292.html",
       "ID": "ELSA-2016-1292"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1834.html",
-      "ID": "CVE-2016-1834"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1836.html",
-      "ID": "CVE-2016-1836"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1838.html",
-      "ID": "CVE-2016-1838"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1839.html",
-      "ID": "CVE-2016-1839"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1840.html",
-      "ID": "CVE-2016-1840"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-3705.html",
-      "ID": "CVE-2016-3705"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-4448.html",
-      "ID": "CVE-2016-4448"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1762.html",
-      "ID": "CVE-2016-1762"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1833.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1833.html",
       "ID": "CVE-2016-1833"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1835.html",
-      "ID": "CVE-2016-1835"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1834.html",
+      "ID": "CVE-2016-1834"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1837.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1837.html",
       "ID": "CVE-2016-1837"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-3627.html",
-      "ID": "CVE-2016-3627"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1838.html",
+      "ID": "CVE-2016-1838"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-4447.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-3705.html",
+      "ID": "CVE-2016-3705"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-4447.html",
       "ID": "CVE-2016-4447"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-4449.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-4448.html",
+      "ID": "CVE-2016-4448"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-4449.html",
       "ID": "CVE-2016-4449"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-3627.html",
+      "ID": "CVE-2016-3627"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1839.html",
+      "ID": "CVE-2016-1839"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1762.html",
+      "ID": "CVE-2016-1762"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1835.html",
+      "ID": "CVE-2016-1835"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1836.html",
+      "ID": "CVE-2016-1836"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1840.html",
+      "ID": "CVE-2016-1840"
     }
   ],
   "Criteria": {
@@ -246,6 +246,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "libxml2-static is earlier than 0:2.9.1-6.0.1.el7_2.3"
+                          },
+                          {
+                            "Comment": "libxml2-static is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "libxml2 is earlier than 0:2.9.1-6.0.1.el7_2.3"
                           },
                           {
@@ -274,18 +286,6 @@
                           },
                           {
                             "Comment": "libxml2-python is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libxml2-static is earlier than 0:2.9.1-6.0.1.el7_2.3"
-                          },
-                          {
-                            "Comment": "libxml2-static is signed with the Oracle Linux 7 key"
                           }
                         ]
                       }
@@ -310,6 +310,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "libxml2-static is earlier than 0:2.9.1-6.0.1.el7_2.3"
+                          },
+                          {
+                            "Comment": "libxml2-static is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "libxml2 is earlier than 0:2.9.1-6.0.1.el7_2.3"
                           },
                           {
@@ -338,18 +350,6 @@
                           },
                           {
                             "Comment": "libxml2-python is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libxml2-static is earlier than 0:2.9.1-6.0.1.el7_2.3"
-                          },
-                          {
-                            "Comment": "libxml2-static is signed with the Oracle Linux 7 key"
                           }
                         ]
                       }
@@ -380,73 +380,73 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1834.html",
-      "ID": "CVE-2016-1834"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1836.html",
-      "ID": "CVE-2016-1836"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1838.html",
-      "ID": "CVE-2016-1838"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1839.html",
-      "ID": "CVE-2016-1839"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1840.html",
-      "ID": "CVE-2016-1840"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-3705.html",
-      "ID": "CVE-2016-3705"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-4448.html",
-      "ID": "CVE-2016-4448"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1762.html",
-      "ID": "CVE-2016-1762"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1833.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1833.html",
       "ID": "CVE-2016-1833"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1835.html",
-      "ID": "CVE-2016-1835"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1834.html",
+      "ID": "CVE-2016-1834"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1837.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1837.html",
       "ID": "CVE-2016-1837"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-3627.html",
-      "ID": "CVE-2016-3627"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1838.html",
+      "ID": "CVE-2016-1838"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-4447.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-3705.html",
+      "ID": "CVE-2016-3705"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-4447.html",
       "ID": "CVE-2016-4447"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-4449.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-4448.html",
+      "ID": "CVE-2016-4448"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-4449.html",
       "ID": "CVE-2016-4449"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-3627.html",
+      "ID": "CVE-2016-3627"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1839.html",
+      "ID": "CVE-2016-1839"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1762.html",
+      "ID": "CVE-2016-1762"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1835.html",
+      "ID": "CVE-2016-1835"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1836.html",
+      "ID": "CVE-2016-1836"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1840.html",
+      "ID": "CVE-2016-1840"
     }
   ],
   "Issued": {

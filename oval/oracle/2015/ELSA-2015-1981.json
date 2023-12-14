@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2015-1981:  nss, nss-util, and nspr security update (CRITICAL)",
-  "Description": "nspr\n[4.10.8-2]\n- Resolves: Bug 1269360 - CVE-2015-7183\n- nspr: heap-buffer overflow in PL_ARENA_ALLOCATE can lead to crash (under ASAN), potential memory corruption\n\nnss\n[3.19.1-5.0.1]\n- Added nss-vendor.patch to change vendor\n\n[3.19.1-5]\n- Rebuild against updated NSPR\n\n[3.19.1-4]\n- Sync up with the rhel-6.6 branch\n- Resolves: Bug 1224450\n\nnss-util\n[3.19.1-2]\n- Resolves: Bug 1269355 - CVE-2015-7182 CVE-2015-7181",
+  "Description": "nspr\n[4.10.8-2]\n- Resolves: Bug 1269362 - CVE-2015-7183\n- nspr: heap-buffer overflow in PL_ARENA_ALLOCATE can lead to crash (under ASAN), potential memory corruption\n\nnss\n[3.19.1-7.0.1]\n- Added nss-vendor.patch to change vendor\n\n[3.19.1-7.el7_2]\n- Rebuild against updated NSPR\n\n[3.19.1-7.el7_1.1]\n- Rebuild against updated NSPR\n\n[3.19.1-6]\n- experimental build\n\nnss-util\n[3.19.1-4]\n- Resolves: Bug 1269357 - CVE-2015-7182 CVE-2015-7181",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,22 +8,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-1981.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-1981.html",
       "ID": "ELSA-2015-1981"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-7181.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-7181.html",
       "ID": "CVE-2015-7181"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-7182.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-7182.html",
       "ID": "CVE-2015-7182"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-7183.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-7183.html",
       "ID": "CVE-2015-7183"
     }
   ],
@@ -332,6 +332,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nss-util is earlier than 0:3.19.1-4.el7_1"
+                      },
+                      {
+                        "Comment": "nss-util is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-util-devel is earlier than 0:3.19.1-4.el7_1"
+                      },
+                      {
+                        "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "nss is earlier than 0:3.19.1-7.0.1.el7_1.2"
                       },
                       {
@@ -348,18 +372,6 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.19.1-7.0.1.el7_1.2"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -392,22 +404,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nss-util is earlier than 0:3.19.1-4.el7_1"
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.19.1-7.0.1.el7_1.2"
                       },
                       {
-                        "Comment": "nss-util is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-util-devel is earlier than 0:3.19.1-4.el7_1"
-                      },
-                      {
-                        "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -435,17 +435,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-7181.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-7181.html",
       "ID": "CVE-2015-7181"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-7182.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-7182.html",
       "ID": "CVE-2015-7182"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-7183.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-7183.html",
       "ID": "CVE-2015-7183"
     }
   ],

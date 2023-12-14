@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-7624.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-7624.html",
       "ID": "ELSA-2022-7624"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-21708.html",
-      "ID": "CVE-2021-21708"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-31625.html",
+      "ID": "CVE-2022-31625"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-31625.html",
-      "ID": "CVE-2022-31625"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-21708.html",
+      "ID": "CVE-2021-21708"
     }
   ],
   "Criteria": {
@@ -81,6 +81,78 @@
                           },
                           {
                             "Comment": "libzip-tools is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pear is earlier than 1:1.10.13-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pear is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-apcu is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-apcu is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-apcu-devel is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-apcu-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-rrd is earlier than 0:2.0.3-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-rrd is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-xdebug3 is earlier than 0:3.1.2-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-xdebug3 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-zip is earlier than 0:1.19.2-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-zip is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -321,78 +393,6 @@
                           },
                           {
                             "Comment": "php-pdo is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pear is earlier than 1:1.10.13-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pear is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-apcu is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-apcu is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-apcu-devel is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-apcu-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-rrd is earlier than 0:2.0.3-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-rrd is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-xdebug3 is earlier than 0:3.1.2-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-xdebug3 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-zip is earlier than 0:1.19.2-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-zip is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -535,6 +535,78 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "php-pear is earlier than 1:1.10.13-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pear is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-apcu is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-apcu is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-apcu-devel is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-apcu-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-rrd is earlier than 0:2.0.3-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-rrd is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-xdebug3 is earlier than 0:3.1.2-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-xdebug3 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "php-pecl-zip is earlier than 0:1.19.2-1.module+el8.6.0+20568+84712317"
+                          },
+                          {
+                            "Comment": "php-pecl-zip is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "php is earlier than 0:8.0.20-2.module+el8.7.0+20803+bb5ab920"
                           },
                           {
@@ -775,78 +847,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "php-pear is earlier than 1:1.10.13-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pear is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-apcu is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-apcu is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-apcu-devel is earlier than 0:5.1.20-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-apcu-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-rrd is earlier than 0:2.0.3-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-rrd is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-xdebug3 is earlier than 0:3.1.2-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-xdebug3 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "php-pecl-zip is earlier than 0:1.19.2-1.module+el8.6.0+20568+84712317"
-                          },
-                          {
-                            "Comment": "php-pecl-zip is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "php-pgsql is earlier than 0:8.0.20-2.module+el8.7.0+20803+bb5ab920"
                           },
                           {
@@ -933,16 +933,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-21708.html",
-      "ID": "CVE-2021-21708"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-31625.html",
+      "ID": "CVE-2022-31625"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-31625.html",
-      "ID": "CVE-2022-31625"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-21708.html",
+      "ID": "CVE-2021-21708"
     }
   ],
   "Issued": {
-    "Date": "2022-11-15"
+    "Date": "2022-11-14"
   }
 }

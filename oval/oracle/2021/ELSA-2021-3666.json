@@ -7,48 +7,48 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-3666.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-3666.html",
       "ID": "ELSA-2021-3666"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3672.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3672.html",
       "ID": "CVE-2021-3672"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22930.html",
-      "ID": "CVE-2021-22930"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22931.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22931.html",
       "ID": "CVE-2021-22931"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22939.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22939.html",
       "ID": "CVE-2021-22939"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-22940.html",
-      "ID": "CVE-2021-22940"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-23343.html",
+      "ID": "CVE-2021-23343"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-32803.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-32803.html",
       "ID": "CVE-2021-32803"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-32804.html",
-      "ID": "CVE-2021-32804"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22930.html",
+      "ID": "CVE-2021-22930"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-23343.html",
-      "ID": "CVE-2021-23343"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22940.html",
+      "ID": "CVE-2021-22940"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-32804.html",
+      "ID": "CVE-2021-32804"
     }
   ],
   "Criteria": {
@@ -66,6 +66,18 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:23-3.module+el8.3.0+7818+6cd30d85"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -123,18 +135,6 @@
                           },
                           {
                             "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:23-3.module+el8.3.0+7818+6cd30d85"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -181,6 +181,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "nodejs-packaging is earlier than 0:23-3.module+el8.3.0+7818+6cd30d85"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "nodejs is earlier than 1:14.17.5-1.module+el8.4.0+20313+f90c2973"
                           },
                           {
@@ -241,18 +253,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "nodejs-packaging is earlier than 0:23-3.module+el8.3.0+7818+6cd30d85"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "npm is earlier than 1:6.14.14-1.14.17.5.1.module+el8.4.0+20313+f90c2973"
                           },
                           {
@@ -291,43 +291,43 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3672.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3672.html",
       "ID": "CVE-2021-3672"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22930.html",
-      "ID": "CVE-2021-22930"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22931.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22931.html",
       "ID": "CVE-2021-22931"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22939.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22939.html",
       "ID": "CVE-2021-22939"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-22940.html",
-      "ID": "CVE-2021-22940"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-23343.html",
+      "ID": "CVE-2021-23343"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-32803.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-32803.html",
       "ID": "CVE-2021-32803"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-32804.html",
-      "ID": "CVE-2021-32804"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22930.html",
+      "ID": "CVE-2021-22930"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-23343.html",
-      "ID": "CVE-2021-23343"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22940.html",
+      "ID": "CVE-2021-22940"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-32804.html",
+      "ID": "CVE-2021-32804"
     }
   ],
   "Issued": {

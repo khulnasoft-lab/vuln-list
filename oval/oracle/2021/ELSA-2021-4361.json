@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-4361.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4361.html",
       "ID": "ELSA-2021-4361"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-13529.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13529.html",
       "ID": "CVE-2020-13529"
     }
   ],
@@ -28,30 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.32.10-4.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.32.10-4.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -85,6 +61,18 @@
                       },
                       {
                         "Comment": "NetworkManager-bluetooth is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.32.10-4.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -133,6 +121,18 @@
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.32.10-4.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -229,18 +229,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.32.10-4.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "NetworkManager is earlier than 1:1.32.10-4.0.1.el8"
                       },
                       {
@@ -269,6 +257,18 @@
                       },
                       {
                         "Comment": "NetworkManager-bluetooth is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.32.10-4.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -317,6 +317,18 @@
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.32.10-4.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -391,18 +403,6 @@
                         "Comment": "NetworkManager-wwan is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.32.10-4.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -428,11 +428,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-13529.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13529.html",
       "ID": "CVE-2020-13529"
     }
   ],
   "Issued": {
-    "Date": "2021-11-16"
+    "Date": "2021-11-14"
   }
 }

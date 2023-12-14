@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-3104.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-3104.html",
       "ID": "ELSA-2023-3104"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-2491.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-2491.html",
       "ID": "CVE-2023-2491"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "emacs-filesystem is earlier than 1:26.1-10.el8_8.2"
+                      },
+                      {
+                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -49,18 +61,6 @@
                       },
                       {
                         "Comment": "emacs-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "emacs-filesystem is earlier than 1:26.1-10.el8_8.2"
-                      },
-                      {
-                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -121,6 +121,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "emacs-filesystem is earlier than 1:26.1-10.el8_8.2"
+                      },
+                      {
+                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "emacs is earlier than 1:26.1-10.el8_8.2"
                       },
                       {
@@ -137,18 +149,6 @@
                       },
                       {
                         "Comment": "emacs-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "emacs-filesystem is earlier than 1:26.1-10.el8_8.2"
-                      },
-                      {
-                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -212,11 +212,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-2491.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-2491.html",
       "ID": "CVE-2023-2491"
     }
   ],
   "Issued": {
-    "Date": "2023-05-25"
+    "Date": "2023-05-24"
   }
 }

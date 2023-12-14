@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-1766.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-1766.html",
       "ID": "ELSA-2022-1766"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-25633.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-25633.html",
       "ID": "CVE-2021-25633"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-25635.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-25635.html",
       "ID": "CVE-2021-25635"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-25634.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-25634.html",
       "ID": "CVE-2021-25634"
     }
   ],
@@ -38,6 +38,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreoffice-sdk is earlier than 1:6.4.7.2-10.0.1.el8"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreoffice-sdk-doc is earlier than 1:6.4.7.2-10.0.1.el8"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -187,30 +211,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libreoffice-sdk is earlier than 1:6.4.7.2-10.0.1.el8"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreoffice-sdk-doc is earlier than 1:6.4.7.2-10.0.1.el8"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libreoffice-ure is earlier than 1:6.4.7.2-10.0.1.el8"
                       },
                       {
@@ -258,6 +258,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreoffice-sdk is earlier than 1:6.4.7.2-10.0.1.el8"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreoffice-sdk-doc is earlier than 1:6.4.7.2-10.0.1.el8"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -2207,30 +2231,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libreoffice-sdk is earlier than 1:6.4.7.2-10.0.1.el8"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreoffice-sdk-doc is earlier than 1:6.4.7.2-10.0.1.el8"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libreoffice-ure is earlier than 1:6.4.7.2-10.0.1.el8"
                       },
                       {
@@ -2334,21 +2334,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-25633.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-25633.html",
       "ID": "CVE-2021-25633"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-25635.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-25635.html",
       "ID": "CVE-2021-25635"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-25634.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-25634.html",
       "ID": "CVE-2021-25634"
     }
   ],
   "Issued": {
-    "Date": "2022-05-17"
+    "Date": "2022-05-15"
   }
 }

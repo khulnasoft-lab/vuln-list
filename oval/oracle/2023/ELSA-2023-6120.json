@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-6120:  nginx:1.22 security update (MODERATE)",
-  "Description": "[1:1.22.1-3.0.1.1]\n- Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (CVE-2023-44487)",
+  "Description": "[1:1.22.1-3.0.1.1]\n- Multiple HTTP/2 enabled web servers are vulnerable to a DDoS attack (CVE-2023-44487)\n\n[1:1.22.1-3.0.1]\n- Reference oracle-indexhtml within Requires [Orabug: 33802044]\n- Remove Red Hat references [Orabug: 29498217]\n\n[1:1.22.1-3]\n- Resolves: #2150932 - No logrotating nginx logs from nginx:1.22\n\n[1:1.22.1-2]\n- Require pcre2-devel instead of pcre-devel in -mod-devel subpackage\n  Resolves: rhbz#2149965\n\n[1:1.22.1-1]\n- Resolves: #2096174 - RFE: add nginx:1.22 module stream\n- switch to pcre2\n- add stream_geoip_module and stream_realip_module\n- enable kTLS support\n\n[1:1.20.1-13]\n- Resolves: #2099752 - nginx minimisation for ubi-micro\n\n[1:1.20.1-11]\n- Resolves: #2028781 - Protocol : TLSv1.3 missing in rhel9\n\n[1:1.20.1-10]\n- Resolves: #1975747 - CVE-2021-3618 nginx: ALPACA: Application Layer Protocol\n  Confusion - Analyzing and Mitigating Cracks in TLS Authentication\n\n[1:1.20.1-9]\n- add delaycompress to logrotate config (#2015250)",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-6120.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-6120.html",
       "ID": "ELSA-2023-6120"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-44487.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-44487.html",
       "ID": "CVE-2023-44487"
     }
   ],
@@ -308,7 +308,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-44487.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-44487.html",
       "ID": "CVE-2023-44487"
     }
   ],

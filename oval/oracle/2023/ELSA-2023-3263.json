@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-3263.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-3263.html",
       "ID": "ELSA-2023-3263"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-25652.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-25652.html",
       "ID": "CVE-2023-25652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-29007.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-29007.html",
       "ID": "CVE-2023-29007"
     }
   ],
@@ -33,30 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "git is earlier than 0:1.8.3.1-25.el7_9"
-                      },
-                      {
-                        "Comment": "git is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "perl-Git is earlier than 0:1.8.3.1-25.el7_9"
-                      },
-                      {
-                        "Comment": "perl-Git is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -78,6 +54,18 @@
                       },
                       {
                         "Comment": "emacs-git-el is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "git is earlier than 0:1.8.3.1-25.el7_9"
+                      },
+                      {
+                        "Comment": "git is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -234,6 +222,18 @@
                       },
                       {
                         "Comment": "gitweb is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "perl-Git is earlier than 0:1.8.3.1-25.el7_9"
+                      },
+                      {
+                        "Comment": "perl-Git is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -294,6 +294,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "git is earlier than 0:1.8.3.1-25.el7_9"
+                      },
+                      {
+                        "Comment": "git is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "git-all is earlier than 0:1.8.3.1-25.el7_9"
                       },
                       {
@@ -450,34 +462,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "perl-Git-SVN is earlier than 0:1.8.3.1-25.el7_9"
-                      },
-                      {
-                        "Comment": "perl-Git-SVN is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "git is earlier than 0:1.8.3.1-25.el7_9"
-                      },
-                      {
-                        "Comment": "git is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perl-Git is earlier than 0:1.8.3.1-25.el7_9"
                       },
                       {
                         "Comment": "perl-Git is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "perl-Git-SVN is earlier than 0:1.8.3.1-25.el7_9"
+                      },
+                      {
+                        "Comment": "perl-Git-SVN is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -505,12 +505,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-25652.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-25652.html",
       "ID": "CVE-2023-25652"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-29007.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-29007.html",
       "ID": "CVE-2023-29007"
     }
   ],

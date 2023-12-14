@@ -7,52 +7,52 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1804.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1804.html",
       "ID": "ELSA-2021-1804"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14361.html",
-      "ID": "CVE-2020-14361"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14363.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14363.html",
       "ID": "CVE-2020-14363"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14345.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14345.html",
       "ID": "CVE-2020-14345"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14346.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14346.html",
       "ID": "CVE-2020-14346"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14362.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14361.html",
+      "ID": "CVE-2020-14361"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14362.html",
       "ID": "CVE-2020-14362"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14360.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14360.html",
       "ID": "CVE-2020-14360"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-25712.html",
-      "ID": "CVE-2020-25712"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14347.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14347.html",
       "ID": "CVE-2020-14347"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14344.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25712.html",
+      "ID": "CVE-2020-25712"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14344.html",
       "ID": "CVE-2020-14344"
     }
   ],
@@ -68,6 +68,78 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libinput-devel is earlier than 0:1.16.3-1.el8"
+                      },
+                      {
+                        "Comment": "libinput-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwacom-devel is earlier than 0:1.6-2.el8"
+                      },
+                      {
+                        "Comment": "libwacom-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libOSMesa-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libOSMesa-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libgbm-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libgbm-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -253,18 +325,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libinput-devel is earlier than 0:1.16.3-1.el8"
-                      },
-                      {
-                        "Comment": "libinput-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libinput-utils is earlier than 0:1.16.3-1.el8"
                       },
                       {
@@ -293,174 +353,6 @@
                       },
                       {
                         "Comment": "libwacom-data is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwacom-devel is earlier than 0:1.6-2.el8"
-                      },
-                      {
-                        "Comment": "libwacom-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-dri-drivers is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-dri-drivers is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-filesystem is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-filesystem is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libEGL is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libEGL is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libEGL-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libEGL-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libGL is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libGL is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libGL-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libGL-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libOSMesa is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libOSMesa is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libOSMesa-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libOSMesa-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libgbm is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libgbm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libgbm-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libgbm-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libglapi is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libglapi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libxatracker is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libxatracker is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-vdpau-drivers is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-vdpau-drivers is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -565,10 +457,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.10-1.el8"
+                        "Comment": "mesa-dri-drivers is earlier than 0:20.3.3-2.el8"
                       },
                       {
-                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "mesa-dri-drivers is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -577,10 +469,118 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.10-1.el8"
+                        "Comment": "mesa-filesystem is earlier than 0:20.3.3-2.el8"
                       },
                       {
-                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 8 key"
+                        "Comment": "mesa-filesystem is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libEGL is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libEGL is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libEGL-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libEGL-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libGL is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libGL is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libGL-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libGL-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libOSMesa is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libOSMesa is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libgbm is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libgbm is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libglapi is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libglapi is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libxatracker is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libxatracker is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-vdpau-drivers is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-vdpau-drivers is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -600,6 +600,78 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libinput-devel is earlier than 0:1.16.3-1.el8"
+                      },
+                      {
+                        "Comment": "libinput-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwacom-devel is earlier than 0:1.6-2.el8"
+                      },
+                      {
+                        "Comment": "libwacom-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libOSMesa-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libOSMesa-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mesa-libgbm-devel is earlier than 0:20.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "mesa-libgbm-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -785,18 +857,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libinput-devel is earlier than 0:1.16.3-1.el8"
-                      },
-                      {
-                        "Comment": "libinput-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libinput-utils is earlier than 0:1.16.3-1.el8"
                       },
                       {
@@ -833,10 +893,94 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libwacom-devel is earlier than 0:1.6-2.el8"
+                        "Comment": "xorg-x11-drivers is earlier than 0:7.7-30.el8"
                       },
                       {
-                        "Comment": "libwacom-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "xorg-x11-drivers is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xdmx is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xdmx is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xvfb is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xvfb is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xwayland is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.10-1.el8"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -929,34 +1073,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mesa-libOSMesa-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libOSMesa-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "mesa-libgbm is earlier than 0:20.3.3-2.el8"
                       },
                       {
                         "Comment": "mesa-libgbm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mesa-libgbm-devel is earlier than 0:20.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "mesa-libgbm-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -1019,126 +1139,6 @@
                         "Comment": "mesa-vulkan-drivers is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-drivers is earlier than 0:7.7-30.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-drivers is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xdmx is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xdmx is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xvfb is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xvfb is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xwayland is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.10-1.el8"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -1164,51 +1164,51 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14361.html",
-      "ID": "CVE-2020-14361"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14363.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14363.html",
       "ID": "CVE-2020-14363"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14345.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14345.html",
       "ID": "CVE-2020-14345"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14346.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14346.html",
       "ID": "CVE-2020-14346"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14362.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14361.html",
+      "ID": "CVE-2020-14361"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14362.html",
       "ID": "CVE-2020-14362"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14360.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14360.html",
       "ID": "CVE-2020-14360"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-25712.html",
-      "ID": "CVE-2020-25712"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14347.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14347.html",
       "ID": "CVE-2020-14347"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14344.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25712.html",
+      "ID": "CVE-2020-25712"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14344.html",
       "ID": "CVE-2020-14344"
     }
   ],
   "Issued": {
-    "Date": "2021-05-25"
+    "Date": "2021-05-23"
   }
 }

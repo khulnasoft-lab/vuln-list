@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5726.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5726.html",
       "ID": "ELSA-2020-5726"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10749.html",
-      "ID": "CVE-2020-10749"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-13379.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13379.html",
       "ID": "CVE-2020-13379"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8555.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8555.html",
       "ID": "CVE-2020-8555"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10749.html",
+      "ID": "CVE-2020-10749"
     }
   ],
   "Criteria": {
@@ -40,10 +40,22 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "grafana is earlier than 0:6.7.4-1.0.1.el7"
+                    "Comment": "kubernetes-cni is earlier than 0:0.7.1-1.0.1.el7"
                   },
                   {
-                    "Comment": "grafana is signed with the Oracle Linux 7 key"
+                    "Comment": "kubernetes-cni is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kubernetes-cni-plugins is earlier than 0:0.8.6-1.0.2.el7"
+                  },
+                  {
+                    "Comment": "kubernetes-cni-plugins is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -53,18 +65,6 @@
                 "Criterions": [
                   {
                     "Comment": "kubeadm is earlier than 0:1.14.9-1.0.4.el7"
-                  },
-                  {
-                    "Comment": "kubeadm is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubeadm is earlier than 0:1.17.6-1.0.2.el7"
                   },
                   {
                     "Comment": "kubeadm is signed with the Oracle Linux 7 key"
@@ -88,18 +88,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kubectl is earlier than 0:1.17.6-1.0.2.el7"
-                  },
-                  {
-                    "Comment": "kubectl is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "kubelet is earlier than 0:1.14.9-1.0.4.el7"
                   },
                   {
@@ -112,34 +100,46 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "grafana is earlier than 0:6.7.4-1.0.1.el7"
+                  },
+                  {
+                    "Comment": "grafana is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kubeadm is earlier than 0:1.17.6-1.0.2.el7"
+                  },
+                  {
+                    "Comment": "kubeadm is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kubectl is earlier than 0:1.17.6-1.0.2.el7"
+                  },
+                  {
+                    "Comment": "kubectl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "kubelet is earlier than 0:1.17.6-1.0.2.el7"
                   },
                   {
                     "Comment": "kubelet is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubernetes-cni is earlier than 0:0.7.1-1.0.1.el7"
-                  },
-                  {
-                    "Comment": "kubernetes-cni is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubernetes-cni-plugins is earlier than 0:0.8.6-1.0.2.el7"
-                  },
-                  {
-                    "Comment": "kubernetes-cni-plugins is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -248,18 +248,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10749.html",
-      "ID": "CVE-2020-10749"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-13379.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13379.html",
       "ID": "CVE-2020-13379"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8555.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8555.html",
       "ID": "CVE-2020-8555"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10749.html",
+      "ID": "CVE-2020-10749"
     }
   ],
   "Issued": {

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1384.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1384.html",
       "ID": "ELSA-2021-1384"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-25648.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25648.html",
       "ID": "CVE-2020-25648"
     }
   ],
@@ -57,18 +57,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-7.el7_9"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "nss-sysinit is earlier than 0:3.53.1-7.el7_9"
                       },
                       {
@@ -85,6 +73,18 @@
                       },
                       {
                         "Comment": "nss-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-7.el7_9"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -109,6 +109,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-7.el7_9"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "nss is earlier than 0:3.53.1-7.el7_9"
                       },
                       {
@@ -125,18 +137,6 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-7.el7_9"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -173,6 +173,58 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss is earlier than 0:3.53.1-7.el7_9"
+                      },
+                      {
+                        "Comment": "nss is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-sysinit is earlier than 0:3.53.1-7.el7_9"
+                      },
+                      {
+                        "Comment": "nss-sysinit is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-tools is earlier than 0:3.53.1-7.el7_9"
+                      },
+                      {
+                        "Comment": "nss-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -188,7 +240,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-25648.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25648.html",
       "ID": "CVE-2020-25648"
     }
   ],

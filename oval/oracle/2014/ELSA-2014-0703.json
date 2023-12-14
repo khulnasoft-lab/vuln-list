@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-0703.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-0703.html",
       "ID": "ELSA-2014-0703"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-6371.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-6371.html",
       "ID": "CVE-2013-6371"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-6370.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-6370.html",
       "ID": "CVE-2013-6370"
     }
   ],
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "json-c is earlier than 0:0.11-4.el7_0"
-                      },
-                      {
-                        "Comment": "json-c is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -66,6 +54,18 @@
                       },
                       {
                         "Comment": "json-c-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "json-c is earlier than 0:0.11-4.el7_0"
+                      },
+                      {
+                        "Comment": "json-c is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -130,6 +130,28 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "json-c is earlier than 0:0.11-4.el7_0"
+                  },
+                  {
+                    "Comment": "json-c is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -145,16 +167,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-6371.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-6371.html",
       "ID": "CVE-2013-6371"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-6370.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-6370.html",
       "ID": "CVE-2013-6370"
     }
   ],
   "Issued": {
-    "Date": "2014-07-23"
+    "Date": "2014-07-20"
   }
 }

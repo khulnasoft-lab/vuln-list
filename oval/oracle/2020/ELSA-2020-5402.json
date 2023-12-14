@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5402.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5402.html",
       "ID": "ELSA-2020-5402"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-0452.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0452.html",
       "ID": "CVE-2020-0452"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libexif is earlier than 0:0.6.22-2.el7_9"
-                      },
-                      {
-                        "Comment": "libexif is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libexif-devel is earlier than 0:0.6.22-2.el7_9"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "libexif-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libexif is earlier than 0:0.6.22-2.el7_9"
+                      },
+                      {
+                        "Comment": "libexif is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,7 +140,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-0452.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0452.html",
       "ID": "CVE-2020-0452"
     }
   ],

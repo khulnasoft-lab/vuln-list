@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-12835.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12835.html",
       "ID": "ELSA-2023-12835"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-0330.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-0330.html",
       "ID": "CVE-2023-0330"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3180.html",
-      "ID": "CVE-2023-3180"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3301.html",
+      "ID": "CVE-2023-3301"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3301.html",
-      "ID": "CVE-2023-3301"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3180.html",
+      "ID": "CVE-2023-3180"
     }
   ],
   "Criteria": {
@@ -38,18 +38,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-28.el7"
-                      },
-                      {
-                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -167,6 +155,18 @@
                       },
                       {
                         "Comment": "qemu-system-aarch64-core is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-28.el7"
+                      },
+                      {
+                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -306,18 +306,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-0330.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-0330.html",
       "ID": "CVE-2023-0330"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3180.html",
-      "ID": "CVE-2023-3180"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3301.html",
+      "ID": "CVE-2023-3301"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3301.html",
-      "ID": "CVE-2023-3301"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3180.html",
+      "ID": "CVE-2023-3180"
     }
   ],
   "Issued": {

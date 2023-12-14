@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4001.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4001.html",
       "ID": "ELSA-2020-4001"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-0556.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0556.html",
       "ID": "CVE-2020-0556"
     }
   ],
@@ -45,6 +45,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bluez-libs is earlier than 0:5.44-7.el7"
+                      },
+                      {
+                        "Comment": "bluez-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bluez-cups is earlier than 0:5.44-7.el7"
                       },
                       {
@@ -61,18 +73,6 @@
                       },
                       {
                         "Comment": "bluez-hid2hci is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bluez-libs is earlier than 0:5.44-7.el7"
-                      },
-                      {
-                        "Comment": "bluez-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -109,18 +109,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bluez is earlier than 0:5.44-7.el7"
-                      },
-                      {
-                        "Comment": "bluez is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bluez-cups is earlier than 0:5.44-7.el7"
                       },
                       {
@@ -145,10 +133,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bluez-libs is earlier than 0:5.44-7.el7"
+                        "Comment": "bluez-libs-devel is earlier than 0:5.44-7.el7"
                       },
                       {
-                        "Comment": "bluez-libs is signed with the Oracle Linux 7 key"
+                        "Comment": "bluez-libs-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -157,10 +145,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bluez-libs-devel is earlier than 0:5.44-7.el7"
+                        "Comment": "bluez is earlier than 0:5.44-7.el7"
                       },
                       {
-                        "Comment": "bluez-libs-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "bluez is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bluez-libs is earlier than 0:5.44-7.el7"
+                      },
+                      {
+                        "Comment": "bluez-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -188,7 +188,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-0556.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0556.html",
       "ID": "CVE-2020-0556"
     }
   ],

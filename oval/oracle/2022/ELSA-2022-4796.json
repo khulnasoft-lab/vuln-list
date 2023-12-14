@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4796:  nodejs:16 security update (IMPORTANT)",
-  "Description": "nodejs\n[1:16.14.0-4]\n- Apply lock file validation fixes\n- Resolves CVE-2021-43616\n- Resolves: RHBZ#2070012",
+  "Description": "nodejs\nnodejs-nodemon\nnodejs-packaging\n[25-1\t]\n- Fix incorrect bundled library detection for Requires\n\n[24-1]\n- Check node_modules_prod for bundled dependencies\n\n[23-3]\n- Updated\n- Removed pathfix.py\n\n[23-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild\n\n[23-1]\n- Ensure nodejs(engine) is required for packages with no dependencies\n\n[22-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild\n\n[22-1]\n- Refactor nodejs.req in more idiomatic Python\n- Treat only external dependency links as un-bundled\n\n[21-1]\n- Refactor nodejs.prov in more idiomatic Python\n\n[20-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild\n\n[20-1]\n- Fix handling of ^ dependencies for multiversion modules\n\n[18-1]\n- Handle =, \u003e= and \u003c= dependencies for multiversion modules",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-4796.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4796.html",
       "ID": "ELSA-2022-4796"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-43616.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-43616.html",
       "ID": "CVE-2021-43616"
     }
   ],
@@ -256,7 +256,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-43616.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-43616.html",
       "ID": "CVE-2021-43616"
     }
   ],

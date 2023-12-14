@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2143.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2143.html",
       "ID": "ELSA-2019-2143"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-15473.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15473.html",
       "ID": "CVE-2018-15473"
     }
   ],
@@ -57,18 +57,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-cavs is earlier than 0:7.4p1-21.el7"
-                      },
-                      {
-                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openssh-clients is earlier than 0:7.4p1-21.el7"
                       },
                       {
@@ -93,10 +81,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-ldap is earlier than 0:7.4p1-21.el7"
+                        "Comment": "openssh-server is earlier than 0:7.4p1-21.el7"
                       },
                       {
-                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -105,10 +93,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-server is earlier than 0:7.4p1-21.el7"
+                        "Comment": "openssh-cavs is earlier than 0:7.4p1-21.el7"
                       },
                       {
-                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-ldap is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -157,6 +157,54 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "openssh-cavs is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-ldap is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-server-sysvinit is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh-server-sysvinit is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "pam_ssh_agent_auth is earlier than 0:0.10.3-2.21.el7"
+                      },
+                      {
+                        "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "openssh is earlier than 0:7.4p1-21.el7"
                       },
                       {
@@ -173,18 +221,6 @@
                       },
                       {
                         "Comment": "openssh-askpass is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssh-cavs is earlier than 0:7.4p1-21.el7"
-                      },
-                      {
-                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -217,10 +253,50 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-ldap is earlier than 0:7.4p1-21.el7"
+                        "Comment": "openssh-server is earlier than 0:7.4p1-21.el7"
                       },
                       {
-                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-clients is earlier than 0:7.4p1-21.el7"
+                      },
+                      {
+                        "Comment": "openssh-clients is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -235,30 +311,6 @@
                         "Comment": "openssh-server is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssh-server-sysvinit is earlier than 0:7.4p1-21.el7"
-                      },
-                      {
-                        "Comment": "openssh-server-sysvinit is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "pam_ssh_agent_auth is earlier than 0:0.10.3-2.21.el7"
-                      },
-                      {
-                        "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -266,7 +318,7 @@
             ],
             "Criterions": [
               {
-                "Comment": "Oracle Linux arch is x86_64"
+                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -284,11 +336,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-15473.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15473.html",
       "ID": "CVE-2018-15473"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

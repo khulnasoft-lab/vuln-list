@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-0221.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0221.html",
       "ID": "ELSA-2021-0221"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3156.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3156.html",
       "ID": "CVE-2021-3156"
     }
   ],
@@ -73,10 +73,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "sudo is earlier than 0:1.8.23-10.el7_9.1"
+                        "Comment": "sudo-devel is earlier than 0:1.8.23-10.el7_9.1"
                       },
                       {
-                        "Comment": "sudo is signed with the Oracle Linux 7 key"
+                        "Comment": "sudo-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -85,10 +85,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "sudo-devel is earlier than 0:1.8.23-10.el7_9.1"
+                        "Comment": "sudo is earlier than 0:1.8.23-10.el7_9.1"
                       },
                       {
-                        "Comment": "sudo-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "sudo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -99,6 +99,28 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "sudo is earlier than 0:1.8.23-10.el7_9.1"
+                  },
+                  {
+                    "Comment": "sudo is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -116,7 +138,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3156.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3156.html",
       "ID": "CVE-2021-3156"
     }
   ],

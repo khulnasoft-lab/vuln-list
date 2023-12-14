@@ -1,5 +1,5 @@
 {
-  "Title": "ELSA-2012-2044: Unbreakable Enterprise kernel security update (MODERATE)",
+  "Title": "ELSA-2012-2044: Unbreakable Enterprise kernel Security update (MODERATE)",
   "Description": "[2.6.32-300.39.1]\n- hugepages: fix use after free bug in 'quota' handling [15842385] {CVE-2012-2133}\n- mm: Hold a file reference in madvise_remove [15842884] {CVE-2012-3511}\n- udf: Fortify loading of sparing table [15843730] {CVE-2012-3400}\n- udf: Avoid run away loop when partition table length is corrupt [15843730] {CVE-2012-3400}",
   "Platform": [
     "Oracle Linux 5",
@@ -8,22 +8,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2012-2044.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2012-2044.html",
       "ID": "ELSA-2012-2044"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-2133.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-2133.html",
       "ID": "CVE-2012-2133"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3400.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3400.html",
       "ID": "CVE-2012-3400"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3511.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3511.html",
       "ID": "CVE-2012-3511"
     }
   ],
@@ -119,18 +119,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.39.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "mlnx_en-2.6.32-300.39.1.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -171,6 +159,18 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-300.39.1.el5uekdebug is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.39.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -267,18 +267,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.39.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "mlnx_en-2.6.32-300.39.1.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -319,6 +307,18 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-300.39.1.el5uekdebug is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.39.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -661,21 +661,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-2133.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-2133.html",
       "ID": "CVE-2012-2133"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3400.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3400.html",
       "ID": "CVE-2012-3400"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3511.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3511.html",
       "ID": "CVE-2012-3511"
     }
   ],
   "Issued": {
-    "Date": "2012-11-08"
+    "Date": "2012-11-07"
   }
 }

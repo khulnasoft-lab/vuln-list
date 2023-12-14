@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2011-1349.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-1349.html",
       "ID": "ELSA-2011-1349"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-3378.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-3378.html",
       "ID": "CVE-2011-3378"
     }
   ],
@@ -161,34 +161,10 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rpm-apidocs is earlier than 0:4.4.2.3-22.0.1.el5_7.2"
-                          },
-                          {
-                            "Comment": "rpm-apidocs is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "rpm-build is earlier than 0:4.4.2.3-22.0.1.el5_7.2"
                           },
                           {
                             "Comment": "rpm-build is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rpm-devel is earlier than 0:4.4.2.3-22.0.1.el5_7.2"
-                          },
-                          {
-                            "Comment": "rpm-devel is signed with the Oracle Linux 5 key"
                           }
                         ]
                       },
@@ -213,6 +189,30 @@
                           },
                           {
                             "Comment": "rpm-python is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rpm-apidocs is earlier than 0:4.4.2.3-22.0.1.el5_7.2"
+                          },
+                          {
+                            "Comment": "rpm-apidocs is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rpm-devel is earlier than 0:4.4.2.3-22.0.1.el5_7.2"
+                          },
+                          {
+                            "Comment": "rpm-devel is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -559,7 +559,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-3378.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-3378.html",
       "ID": "CVE-2011-3378"
     }
   ],

@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4025.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4025.html",
       "ID": "ELSA-2020-4025"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-0569.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0569.html",
       "ID": "CVE-2020-0569"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-0570.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0570.html",
       "ID": "CVE-2020-0570"
     }
   ],
@@ -74,30 +74,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-doc is earlier than 0:5.9.7-4.el7"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qt5-qtbase-examples is earlier than 0:5.9.7-4.el7"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-examples is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-qtbase-gui is earlier than 0:5.9.7-4.el7"
                       },
                       {
@@ -146,10 +122,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.9.7-4.el7"
+                        "Comment": "qt5-rpm-macros is earlier than 0:5.9.7-4.el7"
                       },
                       {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 7 key"
+                        "Comment": "qt5-rpm-macros is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -158,10 +134,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-rpm-macros is earlier than 0:5.9.7-4.el7"
+                        "Comment": "qt5-qtbase-doc is earlier than 0:5.9.7-4.el7"
                       },
                       {
-                        "Comment": "qt5-rpm-macros is signed with the Oracle Linux 7 key"
+                        "Comment": "qt5-qtbase-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-examples is earlier than 0:5.9.7-4.el7"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-examples is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.9.7-4.el7"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -181,6 +181,42 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-doc is earlier than 0:5.9.7-4.el7"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-examples is earlier than 0:5.9.7-4.el7"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-examples is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.9.7-4.el7"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -222,30 +258,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-doc is earlier than 0:5.9.7-4.el7"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qt5-qtbase-examples is earlier than 0:5.9.7-4.el7"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-examples is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-qtbase-gui is earlier than 0:5.9.7-4.el7"
                       },
                       {
@@ -294,18 +306,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.9.7-4.el7"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-rpm-macros is earlier than 0:5.9.7-4.el7"
                       },
                       {
@@ -337,12 +337,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-0569.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0569.html",
       "ID": "CVE-2020-0569"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-0570.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0570.html",
       "ID": "CVE-2020-0570"
     }
   ],

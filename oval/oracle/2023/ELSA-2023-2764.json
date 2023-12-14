@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-2764.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2764.html",
       "ID": "ELSA-2023-2764"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-45061.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-45061.html",
       "ID": "CVE-2022-45061"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10735.html",
-      "ID": "CVE-2020-10735"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-28861.html",
+      "ID": "CVE-2021-28861"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-28861.html",
-      "ID": "CVE-2021-28861"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10735.html",
+      "ID": "CVE-2020-10735"
     }
   ],
   "Criteria": {
@@ -101,6 +101,18 @@
                               },
                               {
                                 "Comment": "python39-idna is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-lxml is earlier than 0:4.6.5-1.module+el8.6.0+20625+ee813db2"
+                              },
+                              {
+                                "Comment": "python39-lxml is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -289,6 +301,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python39-setuptools is earlier than 0:50.3.2-4.module+el8.5.0+20364+c7fe1181"
+                              },
+                              {
+                                "Comment": "python39-setuptools is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python39-setuptools-wheel is earlier than 0:50.3.2-4.module+el8.5.0+20364+c7fe1181"
                               },
                               {
@@ -349,6 +373,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python39-wheel-wheel is earlier than 1:0.35.1-4.module+el8.5.0+20364+c7fe1181"
+                              },
+                              {
+                                "Comment": "python39-wheel-wheel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python39 is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
                               },
                               {
@@ -397,18 +433,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-lxml is earlier than 0:4.6.5-1.module+el8.6.0+20625+ee813db2"
-                              },
-                              {
-                                "Comment": "python39-lxml is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "python39-mod_wsgi is earlier than 0:4.7.1-5.module+el8.7.0+20870+babacad2"
                               },
                               {
@@ -433,18 +457,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-setuptools is earlier than 0:50.3.2-4.module+el8.5.0+20364+c7fe1181"
-                              },
-                              {
-                                "Comment": "python39-setuptools is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "python39-test is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
                               },
                               {
@@ -461,18 +473,6 @@
                               },
                               {
                                 "Comment": "python39-tkinter is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-wheel-wheel is earlier than 1:0.35.1-4.module+el8.5.0+20364+c7fe1181"
-                              },
-                              {
-                                "Comment": "python39-wheel-wheel is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -593,6 +593,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python39-pybind11 is earlier than 0:2.7.1-1.module+el8.6.0+20625+ee813db2"
+                              },
+                              {
+                                "Comment": "python39-pybind11 is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python39-pybind11-devel is earlier than 0:2.7.1-1.module+el8.6.0+20625+ee813db2"
                               },
                               {
@@ -635,18 +647,6 @@
                                 "Comment": "python39-wcwidth is signed with the Oracle Linux 8 key"
                               }
                             ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-pybind11 is earlier than 0:2.7.1-1.module+el8.6.0+20625+ee813db2"
-                              },
-                              {
-                                "Comment": "python39-pybind11 is signed with the Oracle Linux 8 key"
-                              }
-                            ]
                           }
                         ],
                         "Criterions": null
@@ -680,18 +680,6 @@
                       {
                         "Operator": "OR",
                         "Criterias": [
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39 is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
-                              },
-                              {
-                                "Comment": "python39 is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
                           {
                             "Operator": "AND",
                             "Criterias": null,
@@ -733,10 +721,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-idle is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                                "Comment": "python39-cryptography is earlier than 0:3.3.1-2.module+el8.4.0+20109+b7b1db01"
                               },
                               {
-                                "Comment": "python39-idle is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-cryptography is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -745,10 +733,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-libs is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                                "Comment": "python39-idna is earlier than 0:2.10-3.module+el8.4.0+20109+b7b1db01"
                               },
                               {
-                                "Comment": "python39-libs is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-idna is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -805,10 +793,46 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python39-pip is earlier than 0:20.2.4-7.module+el8.6.0+20625+ee813db2"
+                              },
+                              {
+                                "Comment": "python39-pip is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python39-pip-wheel is earlier than 0:20.2.4-7.module+el8.6.0+20625+ee813db2"
                               },
                               {
                                 "Comment": "python39-pip-wheel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-ply is earlier than 0:3.11-10.module+el8.4.0+20109+b7b1db01"
+                              },
+                              {
+                                "Comment": "python39-ply is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-psutil is earlier than 0:5.8.0-4.module+el8.4.0+20109+b7b1db01"
+                              },
+                              {
+                                "Comment": "python39-psutil is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -841,6 +865,42 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python39-psycopg2-tests is earlier than 0:2.8.6-2.module+el8.4.0+20109+b7b1db01"
+                              },
+                              {
+                                "Comment": "python39-psycopg2-tests is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-pycparser is earlier than 0:2.20-3.module+el8.4.0+20109+b7b1db01"
+                              },
+                              {
+                                "Comment": "python39-pycparser is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-pysocks is earlier than 0:1.7.1-4.module+el8.4.0+20109+b7b1db01"
+                              },
+                              {
+                                "Comment": "python39-pysocks is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python39-pyyaml is earlier than 0:5.4.1-1.module+el8.5.0+20364+c7fe1181"
                               },
                               {
@@ -865,10 +925,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-rpm-macros is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                                "Comment": "python39-scipy is earlier than 0:1.5.4-3.module+el8.4.0+20109+b7b1db01"
                               },
                               {
-                                "Comment": "python39-rpm-macros is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-scipy is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -901,10 +961,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-tkinter is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                                "Comment": "python39-six is earlier than 0:1.15.0-3.module+el8.4.0+20109+b7b1db01"
                               },
                               {
-                                "Comment": "python39-tkinter is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-six is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -961,10 +1021,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-cryptography is earlier than 0:3.3.1-2.module+el8.4.0+20109+b7b1db01"
+                                "Comment": "python39 is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
                               },
                               {
-                                "Comment": "python39-cryptography is signed with the Oracle Linux 8 key"
+                                "Comment": "python39 is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -985,10 +1045,22 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-idna is earlier than 0:2.10-3.module+el8.4.0+20109+b7b1db01"
+                                "Comment": "python39-idle is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
                               },
                               {
-                                "Comment": "python39-idna is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-idle is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-libs is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                              },
+                              {
+                                "Comment": "python39-libs is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1009,94 +1081,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python39-pip is earlier than 0:20.2.4-7.module+el8.6.0+20625+ee813db2"
+                                "Comment": "python39-rpm-macros is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
                               },
                               {
-                                "Comment": "python39-pip is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-ply is earlier than 0:3.11-10.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-ply is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-psutil is earlier than 0:5.8.0-4.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-psutil is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-psycopg2-tests is earlier than 0:2.8.6-2.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-psycopg2-tests is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-pycparser is earlier than 0:2.20-3.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-pycparser is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-pysocks is earlier than 0:1.7.1-4.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-pysocks is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-scipy is earlier than 0:1.5.4-3.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-scipy is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python39-six is earlier than 0:1.15.0-3.module+el8.4.0+20109+b7b1db01"
-                              },
-                              {
-                                "Comment": "python39-six is signed with the Oracle Linux 8 key"
+                                "Comment": "python39-rpm-macros is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1109,6 +1097,18 @@
                               },
                               {
                                 "Comment": "python39-test is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python39-tkinter is earlier than 0:3.9.16-1.module+el8.8.0+21002+9d0e08bf"
+                              },
+                              {
+                                "Comment": "python39-tkinter is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -1318,21 +1318,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-45061.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-45061.html",
       "ID": "CVE-2022-45061"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10735.html",
-      "ID": "CVE-2020-10735"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-28861.html",
+      "ID": "CVE-2021-28861"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-28861.html",
-      "ID": "CVE-2021-28861"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10735.html",
+      "ID": "CVE-2020-10735"
     }
   ],
   "Issued": {
-    "Date": "2023-05-23"
+    "Date": "2023-05-20"
   }
 }

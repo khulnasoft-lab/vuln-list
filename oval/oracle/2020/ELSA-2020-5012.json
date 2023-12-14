@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5012.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5012.html",
       "ID": "ELSA-2020-5012"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14352.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14352.html",
       "ID": "CVE-2020-14352"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "librepo is earlier than 0:1.8.1-8.el7_9"
-                      },
-                      {
-                        "Comment": "librepo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "librepo-devel is earlier than 0:1.8.1-8.el7_9"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "python-librepo is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "librepo is earlier than 0:1.8.1-8.el7_9"
+                      },
+                      {
+                        "Comment": "librepo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14352.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14352.html",
       "ID": "CVE-2020-14352"
     }
   ],
   "Issued": {
-    "Date": "2020-11-12"
+    "Date": "2020-11-11"
   }
 }

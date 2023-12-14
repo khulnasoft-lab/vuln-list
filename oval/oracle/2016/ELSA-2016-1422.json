@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-1422.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-1422.html",
       "ID": "ELSA-2016-1422"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5387.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5387.html",
       "ID": "CVE-2016-5387"
     }
   ],
@@ -78,6 +78,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "mod_ssl is earlier than 1:2.4.6-40.0.1.el7_2.4"
+                  },
+                  {
+                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "mod_ldap is earlier than 0:2.4.6-40.0.1.el7_2.4"
                   },
                   {
@@ -108,18 +120,6 @@
                     "Comment": "mod_session is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "mod_ssl is earlier than 1:2.4.6-40.0.1.el7_2.4"
-                  },
-                  {
-                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -142,7 +142,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5387.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5387.html",
       "ID": "CVE-2016-5387"
     }
   ],

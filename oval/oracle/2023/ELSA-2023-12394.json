@@ -2,29 +2,197 @@
   "Title": "ELSA-2023-12394: Unbreakable Enterprise kernel security update (IMPORTANT)",
   "Description": "",
   "Platform": [
-    "Oracle Linux 7",
-    "Oracle Linux 8"
+    "Oracle Linux 8",
+    "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-12394.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12394.html",
       "ID": "ELSA-2023-12394"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-30456.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-30456.html",
       "ID": "CVE-2023-30456"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-32233.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-32233.html",
       "ID": "CVE-2023-32233"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-debug is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-debug is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-debug-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-doc is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is aarch64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-debug is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-debug is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-debug-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-doc is earlier than 0:5.4.17-2136.320.7.el8uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is x86_64"
+                  }
+                ]
+              }
+            ],
+            "Criterions": null
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 8 is installed"
+          }
+        ]
+      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -252,174 +420,6 @@
             "Comment": "Oracle Linux 7 is installed"
           }
         ]
-      },
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "OR",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-debug is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-debug is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-debug-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-doc is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is aarch64"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-debug is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-debug is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-debug-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-devel is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-doc is earlier than 0:5.4.17-2136.320.7.el8uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is x86_64"
-                  }
-                ]
-              }
-            ],
-            "Criterions": null
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 8 is installed"
-          }
-        ]
       }
     ],
     "Criterions": null
@@ -428,12 +428,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-30456.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-30456.html",
       "ID": "CVE-2023-30456"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-32233.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-32233.html",
       "ID": "CVE-2023-32233"
     }
   ],

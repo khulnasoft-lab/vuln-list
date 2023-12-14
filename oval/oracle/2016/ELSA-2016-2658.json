@@ -1,156 +1,46 @@
 {
   "Title": "ELSA-2016-2658:  java-1.7.0-openjdk security update (IMPORTANT)",
-  "Description": "[1:1.7.0.121-2.6.8.0.0.1]\n- Update DISTRO_NAME in specfile\n\n[1:1.7.0.121-2.6.8.0]\n- Turn off HotSpot bootstrap to see if it resolves build issues.\n- Resolves: rhbz#1381990\n\n[1:1.7.0.121-2.6.8.0]\n- Bump to 2.6.8 and u121b00.\n- Drop patches (S7081817, S8140344, S8145017 and S8162344) applied upstream.\n- Update md5sum list with checksum for the new java.security file.\n- Resolves: rhbz#1381990",
+  "Description": "[1:1.7.0.121-2.6.8.0.0.1]\n- Update DISTRO_NAME in specfile\n\n[1:1.7.0.121-2.6.8.0]\n- Turn off HotSpot bootstrap to see if it resolves build issues.\n- Resolves: rhbz#1381990\n\n[1:1.7.0.121-2.6.8.0]\n- Bump to 2.6.8 and u121b00.\n- Drop patches (S7081817, S8140344, S8145017 and S8162344) applied upstream.\n- Update md5sum list with checksum for the new java.security file.\n- Resolves: rhbz#1381990\n\n[1:1.7.0.111-2.6.7.7]\n- Rebuild java-1.7.0-openjdk for GCC aarch64 stack epilogue code generation fix (RH1372747)\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.6]\n- declared check_sum_presented_in_spec and used in prep and check\n- it is checking that latest packed java.security is mentioned in listing\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.6]\n- New variable, @prefix@, needs to be substituted in tapsets (rhbz1371005)\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.5]\n- Change to disable RC4 did not add MD5 checksum of previous java.security file from 2016/01\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.4]\n- Require a version of java-1.7.0-openjdk-devel with a working jar uf\n- Use readlink rather than a wildcard to resolve the system JDK directory\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.3]\n- Add additional changes to 8162344 to fix issues which only show up on a full build.\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.3]\n- Bump to jdk7u111 b01 to fix TCK regressions (7081817 \u0026 8162344)\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.2]\n- Reset permissions of resources.jar to avoid it only being readable by root (PR1437).\n- Resolves: rhbz#1350042\n\n[1:1.7.0.111-2.6.7.1]\n- Bump to 2.6.7 and u111b00.\n- Update SystemTap bundle with fix for PR3091/RH1204159\n- Drop patches (PR2938, PR2939, PR3012, PR3013 and PR1437) applied upstream.\n- Resolves: rhbz#1350042\n\n[1:1.7.0.101-2.6.6.6]\n- Add fix for PR1437 which reapplies 7175845 fix lost in merge.\n- Resolves: rhbz#1207129\n\n[1:1.7.0.101-2.6.6.6]\n- Add fix for 8069181/PR3012 and pre-requisites from PR3013.\n- Add bug information for backports from last CPU.\n- Resolves: rhbz#1015612\n\n[1:1.7.0.101-2.6.6.4]\n- luascripts extracted and used from separate package\n- added requirement on at least build time nss\n- added --family and dependence on chkconfig \u003e=1.7\n- in adition, family is restricted by arch\n- Resolves: rhbz#1296441\n- Resolves: rhbz#1296413\n\n[1:1.7.0.101-2.6.6.3]\n- added requires for copy-jdk-configs, to help with https://projects.engineering.redhat.com/browse/RCM-3654\n- Resolves: rhbz#1296441\n\n[1:1.7.0.101-2.6.6.2]\n- added Patch666 fontpath.patch to fix tck regressions\n- Resolves: rhbz#1325428\n\n[1:1.7.0.101-2.6.6.1]\n- Fix ztos handling in templateTable_ppc_64.cpp to be same as others in 7.\n- Resolves: rhbz#1325428\n\n[1:1.7.0.101-2.6.6.1]\n- Bump to 2.6.6 and u101b00.\n- Drop AArch64 patch (PR2914) included in 2.6.6\n- Drop a leading zero from the priority as the update version is now three digits\n- Update PR2809 patch to apply against 2.6.6.\n- Resolves: rhbz#1325428\n\n[1:1.7.0.99-2.6.5.5]\n- Backout S4858370.\n- Resolves: rhbz#1284948\n\n[1:1.7.0.99-2.6.5.4]\n- Replace 8146709 backout with fix from Andrew Haley\n- Resolves: rhbz#1310061\n\n[1:1.7.0.99-2.6.5.3]\n- Backout 8146709 to try and fix build on AArch64\n- Resolves: rhbz#1310061\n\n[1:1.7.0.99-2.6.5.2]\n- Add fix for S4858370.\n- Resolves: rhbz#1284948\n\n[1:1.7.0.99-2.6.5.1]\n- Bump to 2.6.5 and u99b00.\n- Correct check for fsg.sh in tarball creation script\n- Drop AArch64 ADRP backports (8143067, 8146709) included in 2.6.5\n- Resolves: rhbz#1320659\n\n[1:1.7.0.95-2.6.4.3]\n- Add AArch64 ADRP backports\n- Resolves: rhbz#1310061\n\n[1:1.7.0.95-2.6.4.2]\n- Disable RC4 by default.\n- Resolves: rhbz#1302385\n\n[1:1.7.0.95-2.6.4.1]\n- Bump to 2.6.4 and u95b00.\n- Backport tarball creation script from OpenJDK 8 RPMs and update fsg.sh to work with it.\n- Drop 8072932or8074489 patch as applied upstream in u91b01.\n- Add MD5 checksums for last two version of the java.security file.\n- Correct date of ChangeLog entry below.\n- Resolves: rhbz#1295769\n\n[1:1.7.0.91-2.6.2.4]\n- fixed headless to become headless again\n - jre/lib/archinstall/libjavagtk.so\n - jre/bin/policytool\n - jre-abrt/lib/archinstall/libjavagtk.so\n - all three added to not headless exclude list\n- see rhbz1141123\n- Resolves: rhbz#1278987\n\n[1:1.7.0.91-2.6.2.3]\n- added and applied patch500 8072932or8074489.patch to fix tck failure\n- Resolves: rhbz#1271923\n\n[1:1.7.0.91-2.6.2.2]\n- Turn off deletion of in-tree LCMS sources as we now need them.\n- Resolves: rhbz#1271923\n\n[1:1.7.0.91-2.6.2.1]\n- Bump to 2.6.2 and u91b00.\n- Disable system LCMS 2 for now until security of it can be verified.\n- Drop patches for PR2560/RH1245855 as now applied upstream.\n- Sync minor changes from RHEL 6 spec file.\n- Resolves: rhbz#1271923\n\n[1:1.7.0.85-2.6.1.7]\n- removed link to soundfont. Unused in rhel7 and will be fixed upstream\n- Resolves: rhbz#1257653\n\n[1:1.7.0.85-2.6.1.6]\n- bumped release to allow update testing of previous chnageset\n- Resolves: rhbz#1235159\n\n[1:1.7.0.85-2.6.1.5]\n- removed rm -rf in headless post\n- Resolves: rhbz#1235159\n\n[1:1.7.0.85-2.6.1.4]\n- Backport JDWP null fixes.\n- Resolves: rhbz#1245855\n\n[1:1.7.0.85-2.6.1.3]\n- Backport fixes for debugger crash\n- Resolves: rhbz#1245855\n\n[1:1.7.0.85-2.6.1.2]\n- Bump upstream tarball to u25b01 to fix issue with 8075374 backport.\n- Resolves: rhbz#1235159\n\n[1:1.7.0.85-2.6.1.1]\n- Update OpenJDK tarball so correct version is used.\n- Resolves: rhbz#1235159\n\n[1:1.7.0.85-2.6.1.0]\n- Add additional java.security md5sum from January CPU\n- Resolves: rhbz#1235159\n\n[1:1.7.0.85-2.6.1.0]\n- Bump to 2.6.1 and u85b00.\n- Resolves: rhbz#1235159\n\n[1:1.7.0.80-2.6.0.1]\n- Pass SYSTEM_GSETTINGS='true' to the OpenJDK build to explicitly enable the GSettings API.\n- Resolves: rhbz#1194226\n\n[1:1.7.0.80-2.6.0.0]\n- Add GConf2-devel dependency for native proxy fallback support.\n- Remove libxslt dependency pulled in from IcedTea builds.\n- Reduce redhat-lsb dependency to redhat-lsb-core (lsb_release)\n- Resolves: rhbz#1194226\n\n[1:1.7.0.80-2.6.0.0]\n- Bump to 2.6.0 and u80b32.\n- Drop upstreamed patches and separate AArch64 HotSpot.\n- Add dependencies on pcsc-lite-devel (PR2496) and lksctp-tools-devel (PR2446)\n- Only run -Xshare:dump on JIT archs other than power64 as port lacks support\n- Update remove-intree-libraries script to cover LCMS and PCSC headers.\n- Resolves: rhbz#1194226\n\n[1:1.7.0.79-2.5.5.4]\n- Fix name resolution when /etc/resolv.conf lists an IPv6 nameserver\n- Resolves: rhbz#1203666\n\n[1:1.7.0.79-2.5.5.3]\n- Re-based SunEC changes onto latest RPM from private branch\n- Resolves: rhbz#1121210\n\n[1:1.7.0.79-2.5.5.2]\n- Fix crash on ppc64le when running Apache Oozie\n- Resolves: rhbz#1201393\n\n[1:1.7.0.79-2.5.5.1]\n- repacked sources\n- Resolves: rhbz#1209073\n\n[1:1.7.0.79-2.5.5.0]\n- Bump to 2.5.5 using OpenJDK 7u79 b14.\n- Update OpenJDK tarball creation comments\n- Remove test case for RH1191652 now fix has been verified.\n- Drop AArch64 version of RH1191652 HotSpot patch as included upstream.\n- Resolves: rhbz#1209073\n\n[1:1.7.0.75-2.5.4.7]\n- ppc64le now has pulseaudio\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.6]\n- Fix use of unapproved bug ID (resolved as duplicate) in changelog entry.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.6]\n- Provide AArch64 version of RH1191652 HotSpot patch.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Turn off hsbootstrap on all archs\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add missing bracket.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Turn off hsbootstrap on all archs\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add missing bracket.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Ensure VM directory exists before copying libjvm.so\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix path to libjvm.so used in hsbootstrap to a more general one.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix hsbootstrap option on ppc64le where JDK_TO_BUILD_WITH is changed.\n- Print uname to feedback to upstream OpenJDK.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Test a hsbootstrap build on ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Adjust archbuild instead as JDK build is now using ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add ppc64le defines for javax.sound\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add jvm.cfg for ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Adjust archbuild instead as JDK build is now using ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add ppc64le defines for javax.sound\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add jvm.cfg for ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Add patch for RH1191652 on the JDK side\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Adjust archinstall and ppc64le workaround to establish jre/lib/ppc64le\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix patch for RH1191652 to override LIBARCH on ppc64le as there is no BUILDARCH\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix patch for RH1191652 to apply against 2.5 (original against HEAD)\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix patch for RH1191652 to override LIBARCH on ppc64le as there is no BUILDARCH\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Fix patch for RH1191652 to apply against 2.5 (original against HEAD)\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.5]\n- Use arch name of ppc64le on ppc64le rather than ppc64.\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.4]\n- Symlink ppc64 directory to ppc64le\n- Run test application to print architecture-specific paths stored in the JDK\n- Resolves: rhbz#1191652\n\n[1:1.7.0.75-2.5.4.3]\n- removed source14 remove-origin-from-rpaths (1169097)\n- removed build requirement for chrpath\n- Resolves: rhbz#1180298\n\n[1:1.7.0.75-2.5.4.2]\n- Replace unmodified java.security file via headless post scriptlet.\n- Resolves: rhbz#1180298\n\n[1:1.7.0.75-2.5.4.1]\n- Fix macro expansion in changelog\n- Resolves: rhbz#1180298\n\n[1:1.7.0.75-2.5.4.1]\n- Fix elliptic curve list as part of fsg.sh\n- Resolves: rhbz#1180298\n\n[1:1.7.0.75-2.5.4.1]\n- Bump release so that the RHEL 7.1 version is built on AArch64.\n- Resolves: rhbz#1180298\n\n[1:1.7.0.75-2.5.4.0]\n- Bump to 2.5.4 using OpenJDK 7u75 b13.\n- Bump AArch64 port to 2.6.0pre17.\n- Fix abrt_friendly_hs_log_jdk7.patch to apply again and enable on all archs.\n- Remove OpenJDK 8 / AArch64 version of PStack patch as this is no longer needed.\n- Resolves: rhbz#1180298\n\n[1:1.7.0.71-2.5.3.4]\n- aarch64 sources updated to most recent stable tag\n- adapted patch4030 PStack-808293-aarch64.patch\n- removed upstreamed CPU patches (patch500-509, 20141014*)\n- Resolves: rhbz#1125260\n\n[1:1.7.0.71-2.5.3.3]\n- Set ENABLE_FULL_DEBUG_SYMBOLS=0 for aarch64 to retain debuginfo in files.\n- Resolves: rhbz#1148894\n\n[1:1.7.0.71-2.5.3.2]\n- Add HS security patches for aarch64.\n- Resolves: rhbz#1148894\n\n[1:1.7.0.71-2.5.3.1]\n- Bump to 2.5.3 for latest security fixes.\n- Remove obsolete patches and CFLAGS which are now upstream.\n- Add hsbootstrap option to pre-build HotSpot when required.\n- Resolves: rhbz#1148894\n\n[1.7.0.65-2.5.1.12]\n- Bump release for self-build.\n- Resolves: RHBZ#1125557.\n\n[1.7.0.65-2.5.1.11]\n- Add hotspot compiler flag -fno-tree-vectorize which fixes the segfault in\n  the bytecode verifier on ppc/ppc64.\n\n[1.7.0.65-2.5.1.10]\n- Add patches for PPC zero build.\n- Fixes stack overflow problem. See RHBZ#1015432.\n- Fixes missing memory barrier in Atomic::xchg*\n- Fixes missing PPC32/PPC64 defines for Zero builds on power.\n\n[1.7.0.65-2.5.1.9]\n- Remove obsolete PPC/PPC64 patches.\n\n[1.7.0.65-2.5.1.8]\n- Update aarch64 port to jdk7u60_b04_aarch64_834\n- Resolves: rhbz#1082779\n\n[1.7.0.65-2.5.1.7]\n- added and applied patch666 stackoverflow-ppc32_64-20140828.patch\n- returned ppc (rebuild in brew must be done by 2.4.x)\n- Resolves: rhbz#1125557\n\n[1.7.0.65-2.5.1.6]\n- added ExcludeArch: ppc\n- Resolves: rhbz#1125557\n\n[1:1.7.0.65-2.5.1.5]\n- Add workaround to build on ppc64le where arch directory is still ppc64le, not ppc64\n- Resolves: rhbz#1125557\n\n[1.7.0.65-2.5.1.4]\n- Bump release to build package on aarch64\n- Resolves: rhbz#1082779\n\n[1.7.0.65-2.5.1.3]\n- Update aarch64 to latest version\n- Resolves: rhbz#1082779\n\n[1:1.7.0.65-2.5.1.3]\n- NSS_LIBS should be set from nss pkgconfig, not nss-softokn\n- Resolves: rhbz#1121210\n\n[1.7.0.65-2.5.1.2]\n- added and applied fix for samrtcard io patch405, pr1864_smartcardIO.patch\n- Resolves: rhbz#1115877\n\n[1.7.0.65-2.5.1.1]\n- updated to security patched icedtea7-forest-2.5.1\n- Resolves: rhbz#1115877\n\n[1.7.0.60-2.5.0.3]\n- updated to icedtea7-forest-2.5.0 (rh1114934)\n- Resolves: rhbz#1099566\n\n[1:1.7.0.60-2.5.0.2]\n- Add nss-softokn dependency for SunEC provider\n- Resolves: rhbz#1121210\n\n[1:1.7.0.60-2.5.0.1]\n- Enable SunEC provider with system NSS support.\n- Resolves: rhbz#1121210\n\n[1.7.0.55-2.4.7.2]\n- Remove NSS patches. Issues with PKCS11 provider mean it shouldn't be enabled.\n- Always setup nss.cfg and depend on nss-devel at build-time to do so.\n- This allows users who wish to use PKCS11+NSS to just add it to java.security.\n- Patches to PKCS11 provider will be included upstream in 2.4.8 (ETA July 2014)\n- Resolves: rhbz#1099565\n\n[1.7.0.55-2.4.7.0.el7]\n- bumped to future icedtea-forest 2.4.7\n- updatever set to 55, buildver se to 13, release reset to 0\n- removed upstreamed patch402 gstackbounds.patch\n- removed Requires: rhino, BuildRequires is enough\n- ppc64 repalced by power64 macro\n- patch111 applied as dry-run (6.6 forward port)\n- nss enabled, but notused as default (6.6 forward port)\n- Resolves: rhbz#1099565\n\n[1.7.0.51-2.4.5.5.el7]\n- added OrderWithRequires on headless where possible\n- Resolves: rhbz#1038092\n\n[1.7.0.51-2.4.5.3.el7]\n- synced lua script from fedora.\n- Resolves: rhbz#1038092\n\n[1.7.0.51-2.4.5.2.el7]\n- added fstack-protector-strong to CFLAGS\n- Resolves: rhbz#1070816\n\n[1.7.0.51-2.4.5.1.el7]\n- diabled NSS. Missuisng 1038092 for it as it is in hurry.\n- Related: rhbz#1038092\n\n[1.7.0.51-2.4.5.0.el7]\n- updated to icedtea 2.4.5 + sync with f21\n - http://blog.fuseyism.com/index.php/2014/01/29/icedtea-2-4-5-released/\n- removed buildRequires: pulseaudio \u003e= 0.9.11, as not neccessary\n -  but kept libs-devel)\n- removed upstreamed or unwonted patches (thanx to gnu_andrew to pointing them out)\n - patch410 1015432.patch (upstreamed)\n - patch411 1029588.patch\n - patch412 zero-x32.diff\n - patch104 java-1.7.0-ppc-zero-jdk.patch\n - patch105 java-1.7.0-ppc-zero-hotspot.patch\n- patch402 gstackbounds.patch and patch403 PStack-808293.patch applied always\n (again thanx to gnu_andrew)\n- merged other gnu_andrew's changes\n - FT2_CFLAGS and FT2_LIBS hardoced values replaced by correct pkg-config calls\n - buildver bumbed to 31\n- added build requires  nss-devel\n- removed build requires mercurial\n- added JRE_RELEASE_VERSION and ALT_PARALLEL_COMPILE_JOBS into make call\n- Related: rhbz1038092\n\n[1.7.0.51-2.4.4.1]\n- Mass rebuild 2014-01-24\n\n[1.7.0.51-2.4.4.0.el7]\n- updated to security icedtea 2.4.4\n - icedtea_version set to 2.4.4\n - updatever bumped to       51\n - release reset to 0\n- sync with fedora\n - added and applied patch411 1029588.patch (rh 1029588)\n - added aand applied patch410, 1015432 (rh 1015432)\n - and so removed patch121 FixPPC64StackOverflow.patch\n- added patch412 zero-x32.diff to try to fix zero builds build\n- Resolves: rhbz#1053280\n\n[1.7.0.45-2.4.3.5.el7]\n- Mass rebuild 2013-12-27\n\n[1.7.0.40-2.4.3.4.fel7]\n- Removed obsoletes for java-1.6.0-openjdk* ,  until decided its presence in el7\n- Resolves:rhbz#1018680\n\n[1.7.0.40-2.4.3.3.fel7]\n- just bumped release, need to confirm, that   patch121, FixPPC64StackOverflow.patch\n  really works\n- Resolves:rhbz#1018680\n\n[1.7.0.40-2.4.3.2.fel7]\n- added and applied patch121, FixPPC64StackOverflow.patch\n- all redundant ppc64 strings replaced by power64 macro\n- Resolves:rhbz#1018680\n\n[1.7.0.40-2.4.3.1.fel7]\n- updated to new  CPU sources 2.4.3\n- Resolves:rhbz#1018680\n\n[1.7.0.40-2.4.3.0.fel7]\n- updated to latest CPU sources 2.4.3\n- Resolves:rhbz#1018680\n\n[1.7.0.40-2.4.2.12.fel7]\n- jdk splitted to headless and rest\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.11.fel7]\n- another tapset fix\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.10.fel7]\n- abrt changed to soft dependece\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.9.el7]\n- renamed tapset source to be 'versioned'\n- improved agent placement\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.8.el7]\n- updated tapset to current head (825824)\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.7.el7]\n- fixed incorrect  _jvmdir/jre-javaver_origin to  _jvmdir/jre-javaver-origin link\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.6.el7]\n- syncing with f20 - abrt connector\n- Resolves:rhbz#875408\n\n[1.7.0.40-2.4.2.3.el7]\n- syncing with f19/rhel-6.5\n- Resolves:rhbz#875408\n\n[1.7.0.25-2.3.12.3.el7]\n- Removed obsoletes for java-1.6.0-openjdk*\n\n[1.7.0.25-2.3.12.2.el7]\n- refreshed icedtea7-forest 2.3.12\n- fix broken jre_exports alternatives links (thanx to orion bug #979128)\n\n[1.7.0.25-2.3.11.0.el7]\n- added new alternatives jre-1.7.0-openjdk and java-1.7.0-openjdk\n- finally merged arm and main source tarballs\n- updated to icedtea 2.3.11\n - http://blog.fuseyism.com/index.php/2013/07/25/icedtea-2-3-11-released/\n- added removal of new jre-1.7.0-openjdk and java-1.7.0-openjdk alternatives\n- removed patch 400, rhino for 2.1 and other 2.1 conditional stuff\n- removed patch 103 arm-fixes.patch\n- removed 'dir' from files which was duplicating jre in sdk\n\n[1.7.0.25-2.3.10.6.el7]\n- jrelnk is now just lnk, everything is pointing through jredir\n\n[1.7.0.25-2.3.10.6.el7]\n- minor cleaning\n- sdklnk removed, and substitued by  sdkdir\n\n[1.7.0.25-2.3.10.5.fel7]\n- moved to xz compression of sources\n- updated 2.1 tarball\n\n[1.7.0.25-2.3.10.4.el7]\n- Sync with upstream IcedTea7-forest 2.3.10 tag\n- Fixes regressions as introduced with 1.7.0.25-2.3.10.3.el6:\n  rhbz#978005, rhbz#977979, rhbz#976693, IcedTeaBZ#1487.\n- all patch commands repalced by patch macro\n  - updated java-1.7.0-openjdk-ppc-zero-hotspot.patch to pass without loose patching\n\n[1.7.0.25-2.3.10.3.el7]\n- update of IcedTea7-forest 2.3.10 tarball\n- removed patch1000 MBeanFix.patch to fix regressions caused by security patches\n\n[1.7.0.25-2.3.10.2.el7]\n- added patch1000 MBeanFix.patch to fix regressions caused by security patches\n\n[1.7.0.25-2.3.10.1.el7]\n- arm tarball updated to 2.1.9\n- build bumped to 25\n\n[1.7.0.19-2.3.10.0.el7]\n- fixed RH972717 by enabling patch110 java-1.7.0-openjdk-nss-icedtea-e9c857dcb964.patch\n- temporarly swithced to intree lcms as it have security fixes (patch 500)\n - added  GENSRCDIR='/home/ksharma/errata_processing/work/el7/test/generated.build' to be able to\n - removed (build)requires  lcms2(-devel)\n- Updated to latest IcedTea7-forest 2.3.10\n\n[1.7.0.19-2.3.9.14.fc19]\n- Added client/server directories so they can be owned\n- Renamed patch 107 to 200\n- Added nss support from 6.5\n- Added fix for RH857717, owned /etc/.java/ and /etc/.java/.systemPrefs\n- Removed ant-nodeps, should not be needed\n\n[1.7.0.19-2.3.9.13.el7]\n- javadoc put into fully versioned directory, but without arch (to be kept noarch)\n - uniquejavadocdir\n- updated to latest 2.3.9 tarball - fixing the rhbz#967436\n\n[1.7.0.19-2.3.9.12.el7]\n- Allowed multiple OpenJDKs to be installed in parallel\n- Removed archname\n- Added arch to all, not only multilib arches\n- uniquesuffix is now holding fully versioned name\n- Intorduced source11 remove-buildids.sh\n\n[1.7.0.19-2.3.9.12.el7]\n- Replace %{name} with %{uniquesuffix} where it's used as a unique suffix.\n\n* Thu May 16 2013 Jiri Vanek \u003cjvanek@redhat.com\u003e\n- added variable arm_arches as restriction to some cases of not jit_arches\n\n* Tue May 14 2013 Jiri Vanek \u003cjvanek@redhat.com\u003e\n- patch402 gstackbounds.patch applied only to jit arches\n- patch403 PStack-808293.patch likewise\n\n* Mon May 13 2013 Jiri Vanek \u003cjvanek@redhat.com\u003e\n- initial, not buildable, sync with f19",
   "Platform": [
-    "Oracle Linux 7",
     "Oracle Linux 5",
-    "Oracle Linux 6"
+    "Oracle Linux 6",
+    "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-2658.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2658.html",
       "ID": "ELSA-2016-2658"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5542.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5542.html",
       "ID": "CVE-2016-5542"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5554.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5554.html",
       "ID": "CVE-2016-5554"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5582.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5582.html",
       "ID": "CVE-2016-5582"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5597.html",
-      "ID": "CVE-2016-5597"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5573.html",
+      "ID": "CVE-2016-5573"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5573.html",
-      "ID": "CVE-2016-5573"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5597.html",
+      "ID": "CVE-2016-5597"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-accessibility is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-demo is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-devel is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-headless is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-headless is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-javadoc is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-javadoc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.7.0-openjdk-src is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.7.0-openjdk-src is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 7 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -486,6 +376,116 @@
             "Comment": "Oracle Linux 6 is installed"
           }
         ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-devel is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-headless is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-accessibility is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-demo is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-demo is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-javadoc is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-javadoc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.7.0-openjdk-src is earlier than 1:1.7.0.121-2.6.8.0.0.1.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.7.0-openjdk-src is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 7 is installed"
+          }
+        ]
       }
     ],
     "Criterions": null
@@ -494,31 +494,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5542.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5542.html",
       "ID": "CVE-2016-5542"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5554.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5554.html",
       "ID": "CVE-2016-5554"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5582.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5582.html",
       "ID": "CVE-2016-5582"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5597.html",
-      "ID": "CVE-2016-5597"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5573.html",
+      "ID": "CVE-2016-5573"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5573.html",
-      "ID": "CVE-2016-5573"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5597.html",
+      "ID": "CVE-2016-5597"
     }
   ],
   "Issued": {
-    "Date": "2016-11-09"
+    "Date": "2016-11-07"
   }
 }

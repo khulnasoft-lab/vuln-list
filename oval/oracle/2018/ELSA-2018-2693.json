@@ -7,33 +7,33 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "http://linux.oracle.com/errata/ELSA-2018-2693.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-2693.html",
       "ID": "ELSA-2018-2693"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2018-12376.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-16541.html",
+      "ID": "CVE-2017-16541"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12376.html",
       "ID": "CVE-2018-12376"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2018-12377.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12377.html",
       "ID": "CVE-2018-12377"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2018-12378.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12378.html",
       "ID": "CVE-2018-12378"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2018-12379.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12379.html",
       "ID": "CVE-2018-12379"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2017-16541.html",
-      "ID": "CVE-2017-16541"
     }
   ],
   "Criteria": {
@@ -41,13 +41,23 @@
     "Criterias": [
       {
         "Operator": "AND",
-        "Criterias": null,
+        "Criterias": [
+          {
+            "Operator": "AND",
+            "Criterias": null,
+            "Criterions": [
+              {
+                "Comment": "firefox is earlier than 0:60.2.0-1.0.1.el6"
+              },
+              {
+                "Comment": "firefox is signed with the Oracle Linux 6 key"
+              }
+            ]
+          }
+        ],
         "Criterions": [
           {
-            "Comment": "firefox is earlier than 0:60.2.0-1.0.1.el6"
-          },
-          {
-            "Comment": "firefox is signed with the Oracle Linux 6 key"
+            "Comment": "Oracle Linux arch is x86_64"
           }
         ]
       }
@@ -62,31 +72,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2018-12376.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-16541.html",
+      "ID": "CVE-2017-16541"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12376.html",
       "ID": "CVE-2018-12376"
     },
     {
       "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2018-12377.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12377.html",
       "ID": "CVE-2018-12377"
     },
     {
       "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2018-12378.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12378.html",
       "ID": "CVE-2018-12378"
     },
     {
       "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2018-12379.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12379.html",
       "ID": "CVE-2018-12379"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2017-16541.html",
-      "ID": "CVE-2017-16541"
     }
   ],
   "Issued": {
-    "Date": "2018-09-24"
+    "Date": "2018-09-13"
   }
 }

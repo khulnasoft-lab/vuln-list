@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-3861.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-3861.html",
       "ID": "ELSA-2020-3861"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19126.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19126.html",
       "ID": "CVE-2019-19126"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "glibc-static is earlier than 0:2.17-317.0.1.el7"
+                  },
+                  {
+                    "Comment": "glibc-static is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -78,18 +90,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "glibc-static is earlier than 0:2.17-317.0.1.el7"
-                  },
-                  {
-                    "Comment": "glibc-static is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "glibc-utils is earlier than 0:2.17-317.0.1.el7"
                   },
                   {
@@ -130,7 +130,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19126.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19126.html",
       "ID": "CVE-2019-19126"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1317.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1317.html",
       "ID": "ELSA-2020-1317"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10531.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10531.html",
       "ID": "CVE-2020-10531"
     }
   ],
@@ -31,6 +31,30 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -64,30 +88,6 @@
                           },
                           {
                             "Comment": "nodejs-docs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -134,6 +134,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "nodejs is earlier than 1:10.19.0-2.module+el8.1.0+5572+a2a7be63"
                           },
                           {
@@ -162,30 +186,6 @@
                           },
                           {
                             "Comment": "nodejs-docs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -232,11 +232,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10531.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10531.html",
       "ID": "CVE-2020-10531"
     }
   ],
   "Issued": {
-    "Date": "2020-04-15"
+    "Date": "2020-04-10"
   }
 }

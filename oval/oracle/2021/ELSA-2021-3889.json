@@ -7,63 +7,63 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-3889.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-3889.html",
       "ID": "ELSA-2021-3889"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35550.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35550.html",
       "ID": "CVE-2021-35550"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35556.html",
-      "ID": "CVE-2021-35556"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35559.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35559.html",
       "ID": "CVE-2021-35559"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35567.html",
-      "ID": "CVE-2021-35567"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35578.html",
-      "ID": "CVE-2021-35578"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35588.html",
-      "ID": "CVE-2021-35588"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35561.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35561.html",
       "ID": "CVE-2021-35561"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35564.html",
-      "ID": "CVE-2021-35564"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35565.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35565.html",
       "ID": "CVE-2021-35565"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35603.html",
-      "ID": "CVE-2021-35603"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35567.html",
+      "ID": "CVE-2021-35567"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35586.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35586.html",
       "ID": "CVE-2021-35586"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35588.html",
+      "ID": "CVE-2021-35588"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35556.html",
+      "ID": "CVE-2021-35556"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35564.html",
+      "ID": "CVE-2021-35564"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35578.html",
+      "ID": "CVE-2021-35578"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-35603.html",
+      "ID": "CVE-2021-35603"
     }
   ],
   "Criteria": {
@@ -95,30 +95,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.312.b07-1.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.312.b07-1.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.312.b07-1.el7_9"
                       },
                       {
@@ -135,6 +111,30 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.312.b07-1.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.312.b07-1.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -195,18 +195,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.312.b07-1.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.312.b07-1.el7_9"
                       },
                       {
@@ -223,30 +211,6 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.312.b07-1.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.312.b07-1.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -285,6 +249,42 @@
                         "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.312.b07-1.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.312.b07-1.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.312.b07-1.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -310,58 +310,58 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35550.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35550.html",
       "ID": "CVE-2021-35550"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35556.html",
-      "ID": "CVE-2021-35556"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35559.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35559.html",
       "ID": "CVE-2021-35559"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35567.html",
-      "ID": "CVE-2021-35567"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35578.html",
-      "ID": "CVE-2021-35578"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35588.html",
-      "ID": "CVE-2021-35588"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35561.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35561.html",
       "ID": "CVE-2021-35561"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35564.html",
-      "ID": "CVE-2021-35564"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35565.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35565.html",
       "ID": "CVE-2021-35565"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35603.html",
-      "ID": "CVE-2021-35603"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35567.html",
+      "ID": "CVE-2021-35567"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35586.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35586.html",
       "ID": "CVE-2021-35586"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35588.html",
+      "ID": "CVE-2021-35588"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35556.html",
+      "ID": "CVE-2021-35556"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35564.html",
+      "ID": "CVE-2021-35564"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35578.html",
+      "ID": "CVE-2021-35578"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-35603.html",
+      "ID": "CVE-2021-35603"
     }
   ],
   "Issued": {

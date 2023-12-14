@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-2427.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-2427.html",
       "ID": "ELSA-2020-2427"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-12657.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12657.html",
       "ID": "CVE-2020-12657"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-193.6.3.el8_2"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -93,18 +105,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-193.6.3.el8_2"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-193.6.3.el8_2"
                       },
                       {
@@ -140,6 +140,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-193.6.3.el8_2"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -349,18 +361,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-193.6.3.el8_2"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-193.6.3.el8_2"
                       },
                       {
@@ -404,7 +404,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-12657.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12657.html",
       "ID": "CVE-2020-12657"
     }
   ],

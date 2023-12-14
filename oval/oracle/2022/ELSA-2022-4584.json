@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4584:  zlib security update (IMPORTANT)",
-  "Description": "[1.2.11-31.1]\n- Fix CVE-2018-25032\n  Resolves: CVE-2018-25032",
+  "Description": "[1.2.11-31.1]\n- Fix CVE-2018-25032\n  Resolves: CVE-2018-25032\n\n[1.2.11-31]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[1.2.11-30]\n- Fix for IBM CRC32 optimalization rhbz#1959423\n\n[1.2.11-29]\n- Missing RPM_OPT_FLAGS in CFLAGS (#1972057)\n\n[1.2.11-28]\n- IBM CRC32 optimalization rhbz#1959423\n- Enabled Z hardware-accelerated deflate for compression levels 1 through 6 (#1972057)\n\n[1.2.11-27]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[1.2.11-26]\n- fixed covscan issues for rhel-9\n\n[1.2.11-25]\n- Remove ancient PPC64 hack\n- Remove aarch64 optimalizations (#1936823)\n\n[1.2.11-24]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[1.2.11-23]\n- backport IBM Z updates to fedora\n\n[1.2.11-22]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-4584.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4584.html",
       "ID": "ELSA-2022-4584"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-25032.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-25032.html",
       "ID": "CVE-2018-25032"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "zlib-static is earlier than 0:1.2.11-31.el9_0.1"
-                      },
-                      {
-                        "Comment": "zlib-static is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -61,6 +49,18 @@
                       },
                       {
                         "Comment": "zlib-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "zlib-static is earlier than 0:1.2.11-31.el9_0.1"
+                      },
+                      {
+                        "Comment": "zlib-static is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-25032.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-25032.html",
       "ID": "CVE-2018-25032"
     }
   ],
   "Issued": {
-    "Date": "2022-06-30"
+    "Date": "2022-06-29"
   }
 }

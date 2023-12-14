@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2281.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2281.html",
       "ID": "ELSA-2019-2281"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-11645.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-11645.html",
       "ID": "CVE-2018-11645"
     }
   ],
@@ -57,6 +57,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libgs is earlier than 0:9.25-2.el7"
+                      },
+                      {
+                        "Comment": "libgs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ghostscript-doc is earlier than 0:9.25-2.el7"
                       },
                       {
@@ -73,18 +85,6 @@
                       },
                       {
                         "Comment": "ghostscript-gtk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libgs is earlier than 0:9.25-2.el7"
-                      },
-                      {
-                        "Comment": "libgs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -121,30 +121,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ghostscript is earlier than 0:9.25-2.el7"
-                      },
-                      {
-                        "Comment": "ghostscript is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ghostscript-cups is earlier than 0:9.25-2.el7"
-                      },
-                      {
-                        "Comment": "ghostscript-cups is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ghostscript-doc is earlier than 0:9.25-2.el7"
                       },
                       {
@@ -169,10 +145,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libgs is earlier than 0:9.25-2.el7"
+                        "Comment": "libgs-devel is earlier than 0:9.25-2.el7"
                       },
                       {
-                        "Comment": "libgs is signed with the Oracle Linux 7 key"
+                        "Comment": "libgs-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -181,10 +157,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libgs-devel is earlier than 0:9.25-2.el7"
+                        "Comment": "ghostscript is earlier than 0:9.25-2.el7"
                       },
                       {
-                        "Comment": "libgs-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "ghostscript is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ghostscript-cups is earlier than 0:9.25-2.el7"
+                      },
+                      {
+                        "Comment": "ghostscript-cups is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgs is earlier than 0:9.25-2.el7"
+                      },
+                      {
+                        "Comment": "libgs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -212,11 +212,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-11645.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-11645.html",
       "ID": "CVE-2018-11645"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

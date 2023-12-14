@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-2248.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-2248.html",
       "ID": "ELSA-2015-2248"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-8119.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8119.html",
       "ID": "CVE-2014-8119"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "netcf-libs is earlier than 0:0.2.8-1.el7"
+                  },
+                  {
+                    "Comment": "netcf-libs is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -46,18 +58,6 @@
                   },
                   {
                     "Comment": "netcf-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "netcf-libs is earlier than 0:0.2.8-1.el7"
-                  },
-                  {
-                    "Comment": "netcf-libs is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -82,11 +82,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-8119.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8119.html",
       "ID": "CVE-2014-8119"
     }
   ],
   "Issued": {
-    "Date": "2015-11-23"
+    "Date": "2015-11-22"
   }
 }

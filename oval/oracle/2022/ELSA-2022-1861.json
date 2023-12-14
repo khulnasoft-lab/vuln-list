@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-1861.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-1861.html",
       "ID": "ELSA-2022-1861"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-13956.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13956.html",
       "ID": "CVE-2020-13956"
     }
   ],
@@ -184,6 +184,18 @@
                           },
                           {
                             "Comment": "hawtjni-runtime is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "httpcomponents-client is earlier than 0:4.5.5-5.module+el8.6.0+20537+63b96daa"
+                          },
+                          {
+                            "Comment": "httpcomponents-client is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -520,18 +532,6 @@
                           },
                           {
                             "Comment": "slf4j is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "httpcomponents-client is earlier than 0:4.5.5-5.module+el8.6.0+20537+63b96daa"
-                          },
-                          {
-                            "Comment": "httpcomponents-client is signed with the Oracle Linux 8 key"
                           }
                         ]
                       }
@@ -722,6 +722,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "httpcomponents-client is earlier than 0:4.5.5-5.module+el8.6.0+20537+63b96daa"
+                          },
+                          {
+                            "Comment": "httpcomponents-client is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "httpcomponents-core is earlier than 0:4.4.10-3.module+el8+5161+5cac467c"
                           },
                           {
@@ -1052,18 +1064,6 @@
                             "Comment": "slf4j is signed with the Oracle Linux 8 key"
                           }
                         ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "httpcomponents-client is earlier than 0:4.5.5-5.module+el8.6.0+20537+63b96daa"
-                          },
-                          {
-                            "Comment": "httpcomponents-client is signed with the Oracle Linux 8 key"
-                          }
-                        ]
                       }
                     ],
                     "Criterions": null
@@ -1096,11 +1096,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-13956.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13956.html",
       "ID": "CVE-2020-13956"
     }
   ],
   "Issued": {
-    "Date": "2022-05-17"
+    "Date": "2022-05-16"
   }
 }

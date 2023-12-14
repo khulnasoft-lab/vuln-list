@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-2258.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2258.html",
       "ID": "ELSA-2017-2258"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-5885.html",
-      "ID": "CVE-2017-5885"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-5884.html",
+      "ID": "CVE-2017-5884"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-5884.html",
-      "ID": "CVE-2017-5884"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-5885.html",
+      "ID": "CVE-2017-5885"
     }
   ],
   "Criteria": {
@@ -33,6 +33,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gtk-vnc2 is earlier than 0:0.7.0-2.el7"
+                      },
+                      {
+                        "Comment": "gtk-vnc2 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gvnc is earlier than 0:0.7.0-2.el7"
+                      },
+                      {
+                        "Comment": "gvnc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -74,34 +98,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gtk-vnc2 is earlier than 0:0.7.0-2.el7"
-                      },
-                      {
-                        "Comment": "gtk-vnc2 is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gtk-vnc2-devel is earlier than 0:0.7.0-2.el7"
                       },
                       {
                         "Comment": "gtk-vnc2-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gvnc is earlier than 0:0.7.0-2.el7"
-                      },
-                      {
-                        "Comment": "gvnc is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -210,34 +210,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gtk-vnc2 is earlier than 0:0.7.0-2.el7"
-                      },
-                      {
-                        "Comment": "gtk-vnc2 is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gtk-vnc2-devel is earlier than 0:0.7.0-2.el7"
                       },
                       {
                         "Comment": "gtk-vnc2-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gvnc is earlier than 0:0.7.0-2.el7"
-                      },
-                      {
-                        "Comment": "gvnc is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -288,6 +264,30 @@
                         "Comment": "gvncpulse-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gtk-vnc2 is earlier than 0:0.7.0-2.el7"
+                      },
+                      {
+                        "Comment": "gtk-vnc2 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gvnc is earlier than 0:0.7.0-2.el7"
+                      },
+                      {
+                        "Comment": "gvnc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -313,16 +313,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-5885.html",
-      "ID": "CVE-2017-5885"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-5884.html",
+      "ID": "CVE-2017-5884"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-5884.html",
-      "ID": "CVE-2017-5884"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-5885.html",
+      "ID": "CVE-2017-5885"
     }
   ],
   "Issued": {
-    "Date": "2017-08-07"
+    "Date": "2017-08-05"
   }
 }

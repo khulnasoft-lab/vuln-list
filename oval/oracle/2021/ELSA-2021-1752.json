@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1752.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1752.html",
       "ID": "ELSA-2021-1752"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-16117.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-16117.html",
       "ID": "CVE-2020-16117"
     }
   ],
@@ -28,6 +28,54 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-data-server-doc is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-doc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-data-server-perl is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-perl is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-data-server-tests is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-tests is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-devel is earlier than 0:3.28.5-16.el8"
+                      },
+                      {
+                        "Comment": "evolution-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -81,58 +129,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "evolution-data-server-doc is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "evolution-data-server-langpacks is earlier than 0:3.28.5-15.el8"
                       },
                       {
                         "Comment": "evolution-data-server-langpacks is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-data-server-perl is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-perl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-data-server-tests is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-tests is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-devel is earlier than 0:3.28.5-16.el8"
-                      },
-                      {
-                        "Comment": "evolution-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -229,6 +229,54 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "evolution-data-server-doc is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-doc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-data-server-perl is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-perl is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-data-server-tests is earlier than 0:3.28.5-15.el8"
+                      },
+                      {
+                        "Comment": "evolution-data-server-tests is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evolution-devel is earlier than 0:3.28.5-16.el8"
+                      },
+                      {
+                        "Comment": "evolution-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "evolution is earlier than 0:3.28.5-16.el8"
                       },
                       {
@@ -277,58 +325,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "evolution-data-server-doc is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "evolution-data-server-langpacks is earlier than 0:3.28.5-15.el8"
                       },
                       {
                         "Comment": "evolution-data-server-langpacks is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-data-server-perl is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-perl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-data-server-tests is earlier than 0:3.28.5-15.el8"
-                      },
-                      {
-                        "Comment": "evolution-data-server-tests is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evolution-devel is earlier than 0:3.28.5-16.el8"
-                      },
-                      {
-                        "Comment": "evolution-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -428,11 +428,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-16117.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-16117.html",
       "ID": "CVE-2020-16117"
     }
   ],
   "Issued": {
-    "Date": "2021-05-25"
+    "Date": "2021-05-23"
   }
 }

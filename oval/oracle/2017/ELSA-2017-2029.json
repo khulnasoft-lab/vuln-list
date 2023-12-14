@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-2029.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2029.html",
       "ID": "ELSA-2017-2029"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-10009.html",
-      "ID": "CVE-2016-10009"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-6515.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-6515.html",
       "ID": "CVE-2016-6515"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-10011.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-10009.html",
+      "ID": "CVE-2016-10009"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-10011.html",
       "ID": "CVE-2016-10011"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-10012.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-10012.html",
       "ID": "CVE-2016-10012"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-6210.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-6210.html",
       "ID": "CVE-2016-6210"
     }
   ],
@@ -77,18 +77,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-cavs is earlier than 0:7.4p1-11.el7"
-                      },
-                      {
-                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openssh-clients is earlier than 0:7.4p1-11.el7"
                       },
                       {
@@ -113,10 +101,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-ldap is earlier than 0:7.4p1-11.el7"
+                        "Comment": "openssh-server is earlier than 0:7.4p1-11.el7"
                       },
                       {
-                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -125,10 +113,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-server is earlier than 0:7.4p1-11.el7"
+                        "Comment": "openssh-cavs is earlier than 0:7.4p1-11.el7"
                       },
                       {
-                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-ldap is earlier than 0:7.4p1-11.el7"
+                      },
+                      {
+                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -201,18 +201,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-cavs is earlier than 0:7.4p1-11.el7"
-                      },
-                      {
-                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openssh-clients is earlier than 0:7.4p1-11.el7"
                       },
                       {
@@ -237,10 +225,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-ldap is earlier than 0:7.4p1-11.el7"
+                        "Comment": "openssh-server is earlier than 0:7.4p1-11.el7"
                       },
                       {
-                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -249,10 +237,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-server is earlier than 0:7.4p1-11.el7"
+                        "Comment": "openssh-cavs is earlier than 0:7.4p1-11.el7"
                       },
                       {
-                        "Comment": "openssh-server is signed with the Oracle Linux 7 key"
+                        "Comment": "openssh-cavs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-ldap is earlier than 0:7.4p1-11.el7"
+                      },
+                      {
+                        "Comment": "openssh-ldap is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -304,31 +304,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-10009.html",
-      "ID": "CVE-2016-10009"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-6515.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-6515.html",
       "ID": "CVE-2016-6515"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-10011.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-10009.html",
+      "ID": "CVE-2016-10009"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-10011.html",
       "ID": "CVE-2016-10011"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-10012.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-10012.html",
       "ID": "CVE-2016-10012"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-6210.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-6210.html",
       "ID": "CVE-2016-6210"
     }
   ],
   "Issued": {
-    "Date": "2017-08-07"
+    "Date": "2017-08-05"
   }
 }

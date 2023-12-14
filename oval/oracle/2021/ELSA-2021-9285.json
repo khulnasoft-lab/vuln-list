@@ -7,28 +7,28 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-9285.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9285.html",
       "ID": "ELSA-2021-9285"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-15469.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15469.html",
       "ID": "CVE-2020-15469"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-27821.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3409.html",
+      "ID": "CVE-2021-3409"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-27821.html",
       "ID": "CVE-2020-27821"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20221.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20221.html",
       "ID": "CVE-2021-20221"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3409.html",
-      "ID": "CVE-2021-3409"
     }
   ],
   "Criteria": {
@@ -43,18 +43,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-9.el7"
-                      },
-                      {
-                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -172,6 +160,18 @@
                       },
                       {
                         "Comment": "qemu-system-aarch64-core is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-9.el7"
+                      },
+                      {
+                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -335,26 +335,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-15469.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15469.html",
       "ID": "CVE-2020-15469"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-27821.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3409.html",
+      "ID": "CVE-2021-3409"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-27821.html",
       "ID": "CVE-2020-27821"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20221.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20221.html",
       "ID": "CVE-2021-20221"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3409.html",
-      "ID": "CVE-2021-3409"
     }
   ],
   "Issued": {
-    "Date": "2021-06-06"
+    "Date": "2021-06-05"
   }
 }

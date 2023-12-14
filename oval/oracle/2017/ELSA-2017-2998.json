@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2017-2998:  java-1.8.0-openjdk security update (CRITICAL)",
-  "Description": "[1:1.8.0.151-1.b12]\n- repack policies adapted to new counts and paths\n- note that also c-j-c is needed to make this apply in next update\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Correct fix to RH1191652 root patch so existing COMMON_CCXXFLAGS_JDK is not lost.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update location of policy JAR files following 8157561.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update SystemTap tapsets to version in IcedTea 3.6.0pre02 to fix RH1492139.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Fix premature shutdown of NSS in SunEC provider.\n- Move -ffp-no-contract fix to local fixes section.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Add 8075484/PR3473/RH1490713 which is listed as being in 8u151 but not supplied by Oracle.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update to aarch64-jdk8u151-b12.\n- Update location of OpenJDK zlib system library source code in remove-intree-libraries.sh\n- Drop upstreamed patches for 8179084 and RH1367357 (part of 8183028).\n- Update RH1191652 (root) to accomodate 8151841 (GCC 6 support).\n- Update RH1163501 to accomodate 8181048 (crypto refactoring)\n- Resolves: rhbz#1499207",
+  "Description": "[1:1.8.0.151-1.b12]\n- Reverting to java-1.7.0-openjdk on AArch64 as rhel-7.4-z-java-unsafe-candidate using wrong suffix.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-1.b12]\n- repack policies adapted to new counts and paths\n- note that also c-j-c is needed to make this apply in next update\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update location of policy JAR files following 8157561.\n\n[1:1.8.0.151-0.b12]\n- 8188030 is not yet upstream, so it should be listed under upstreamable fixes.\n- 8181055, 8181419, 8145913, 8168318, 8170328 \u0026 8181810 all now in 8u162.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Correct fix to RH1191652 root patch so existing COMMON_CCXXFLAGS_JDK is not lost.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b01]\n- Moving patch 560 out of ppc fixes\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update SystemTap tapsets to version in IcedTea 3.6.0pre02 to fix RH1492139.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Fix premature shutdown of NSS in SunEC provider.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Add 8075484/PR3473/RH1490713 which is listed as being in 8u151 but not supplied by Oracle.\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Switch AArch64 to using java-1.8.0-openjdk to bootstrap until RH1482244 is fixed in bootstrap\n- Resolves: rhbz#1499207\n\n[1:1.8.0.151-0.b12]\n- Update to aarch64-jdk8u151-b12 and aarch64-shenandoah-jdk8u151-b12.\n- Update location of OpenJDK zlib system library source code in remove-intree-libraries.sh\n- Drop upstreamed patches for 8179084 and RH1367357 (part of 8183028).\n- Update RH1191652 (root) and PR2842 to accomodate 8151841 (GCC 6 support).\n- Update PR2964/RH1337583 to accomodate 8171319 (keytool warning output)\n- Update RH1163501 to accomodate 8181048 (crypto refactoring)\n- Resolves: rhbz#1499207\n\n[1:1.8.0.144-1.b01]\n- Add IBM-supplied Montgomery backport, backport other ppc64 fixes \u0026 add CFF fix\n- Resolves: rhbz#1499207",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,77 +8,77 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-2998.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2998.html",
       "ID": "ELSA-2017-2998"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10274.html",
-      "ID": "CVE-2017-10274"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10281.html",
-      "ID": "CVE-2017-10281"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10345.html",
-      "ID": "CVE-2017-10345"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10347.html",
-      "ID": "CVE-2017-10347"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10348.html",
-      "ID": "CVE-2017-10348"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10349.html",
-      "ID": "CVE-2017-10349"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10350.html",
-      "ID": "CVE-2017-10350"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10285.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10285.html",
       "ID": "CVE-2017-10285"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10295.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10295.html",
       "ID": "CVE-2017-10295"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10346.html",
-      "ID": "CVE-2017-10346"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10348.html",
+      "ID": "CVE-2017-10348"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10355.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10349.html",
+      "ID": "CVE-2017-10349"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10350.html",
+      "ID": "CVE-2017-10350"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10355.html",
       "ID": "CVE-2017-10355"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10356.html",
-      "ID": "CVE-2017-10356"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10357.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10357.html",
       "ID": "CVE-2017-10357"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-10388.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10274.html",
+      "ID": "CVE-2017-10274"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10281.html",
+      "ID": "CVE-2017-10281"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10345.html",
+      "ID": "CVE-2017-10345"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10346.html",
+      "ID": "CVE-2017-10346"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10347.html",
+      "ID": "CVE-2017-10347"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10356.html",
+      "ID": "CVE-2017-10356"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-10388.html",
       "ID": "CVE-2017-10388"
     }
   ],
@@ -471,18 +471,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-debug is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.151-1.b12.el7_4"
                       },
                       {
@@ -519,10 +507,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-devel-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.151-1.b12.el7_4"
                       },
                       {
-                        "Comment": "java-1.8.0-openjdk-devel-debug is signed with the Oracle Linux 7 key"
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -531,10 +519,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.151-1.b12.el7_4"
+                        "Comment": "java-1.8.0-openjdk-src is earlier than 1:1.8.0.151-1.b12.el7_4"
                       },
                       {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                        "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel-debug is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -597,30 +621,6 @@
                         "Comment": "java-1.8.0-openjdk-javadoc-zip-debug is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src is earlier than 1:1.8.0.151-1.b12.el7_4"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-debug is earlier than 1:1.8.0.151-1.b12.el7_4"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-debug is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -646,72 +646,72 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10274.html",
-      "ID": "CVE-2017-10274"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10281.html",
-      "ID": "CVE-2017-10281"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10345.html",
-      "ID": "CVE-2017-10345"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10347.html",
-      "ID": "CVE-2017-10347"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10348.html",
-      "ID": "CVE-2017-10348"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10349.html",
-      "ID": "CVE-2017-10349"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10350.html",
-      "ID": "CVE-2017-10350"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10285.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10285.html",
       "ID": "CVE-2017-10285"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10295.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10295.html",
       "ID": "CVE-2017-10295"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10346.html",
-      "ID": "CVE-2017-10346"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10348.html",
+      "ID": "CVE-2017-10348"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10355.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10349.html",
+      "ID": "CVE-2017-10349"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10350.html",
+      "ID": "CVE-2017-10350"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10355.html",
       "ID": "CVE-2017-10355"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10356.html",
-      "ID": "CVE-2017-10356"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10357.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10357.html",
       "ID": "CVE-2017-10357"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-10388.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10274.html",
+      "ID": "CVE-2017-10274"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10281.html",
+      "ID": "CVE-2017-10281"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10345.html",
+      "ID": "CVE-2017-10345"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10346.html",
+      "ID": "CVE-2017-10346"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10347.html",
+      "ID": "CVE-2017-10347"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10356.html",
+      "ID": "CVE-2017-10356"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-10388.html",
       "ID": "CVE-2017-10388"
     }
   ],

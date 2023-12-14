@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1050.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1050.html",
       "ID": "ELSA-2020-1050"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-4180.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-4180.html",
       "ID": "CVE-2018-4180"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-4181.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-4181.html",
       "ID": "CVE-2018-4181"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-4700.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-4700.html",
       "ID": "CVE-2018-4700"
     }
   ],
@@ -91,18 +91,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-ipptool is earlier than 1:1.6.3-43.el7"
-                      },
-                      {
-                        "Comment": "cups-ipptool is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "cups-libs is earlier than 1:1.6.3-43.el7"
                       },
                       {
@@ -119,6 +107,18 @@
                       },
                       {
                         "Comment": "cups-lpd is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-ipptool is earlier than 1:1.6.3-43.el7"
+                      },
+                      {
+                        "Comment": "cups-ipptool is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -138,6 +138,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-ipptool is earlier than 1:1.6.3-43.el7"
+                      },
+                      {
+                        "Comment": "cups-ipptool is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -191,18 +203,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-ipptool is earlier than 1:1.6.3-43.el7"
-                      },
-                      {
-                        "Comment": "cups-ipptool is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "cups-libs is earlier than 1:1.6.3-43.el7"
                       },
                       {
@@ -246,21 +246,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-4180.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-4180.html",
       "ID": "CVE-2018-4180"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-4181.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-4181.html",
       "ID": "CVE-2018-4181"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-4700.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-4700.html",
       "ID": "CVE-2018-4700"
     }
   ],
   "Issued": {
-    "Date": "2020-04-06"
+    "Date": "2020-04-08"
   }
 }

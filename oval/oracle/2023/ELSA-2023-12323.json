@@ -8,33 +8,33 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-12323.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12323.html",
       "ID": "ELSA-2023-12323"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-26545.html",
-      "ID": "CVE-2023-26545"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-28772.html",
-      "ID": "CVE-2023-28772"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-4095.html",
-      "ID": "CVE-2022-4095"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-23559.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-23559.html",
       "ID": "CVE-2023-23559"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-1513.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-28772.html",
+      "ID": "CVE-2023-28772"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-1513.html",
       "ID": "CVE-2023-1513"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4095.html",
+      "ID": "CVE-2022-4095"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-26545.html",
+      "ID": "CVE-2023-26545"
     }
   ],
   "Criteria": {
@@ -206,6 +206,18 @@
                         "Comment": "kernel-uek-doc is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-firmware is earlier than 0:4.1.12-124.74.2.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-firmware is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -231,31 +243,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-26545.html",
-      "ID": "CVE-2023-26545"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-28772.html",
-      "ID": "CVE-2023-28772"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-4095.html",
-      "ID": "CVE-2022-4095"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-23559.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-23559.html",
       "ID": "CVE-2023-23559"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-1513.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-28772.html",
+      "ID": "CVE-2023-28772"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-1513.html",
       "ID": "CVE-2023-1513"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4095.html",
+      "ID": "CVE-2022-4095"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-26545.html",
+      "ID": "CVE-2023-26545"
     }
   ],
   "Issued": {
-    "Date": "2023-05-02"
+    "Date": "2023-04-28"
   }
 }

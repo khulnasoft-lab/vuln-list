@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2016-1626:  python security update (MODERATE)",
-  "Description": "[2.6.6-66.0.1]\n- Add Oracle Linux distribution in platform.py [orabug 21288328] (Keshav Sharma)\n\n[2.6.6-66]\n- Fix for CVE-2016-1000110 HTTPoxy attack\nResolves: rhbz#1359161\n\n[2.6.6-65]\n- Fix for CVE-2016-0772 python: smtplib StartTLS stripping attack (rhbz#1303647)\n  Raise an error when STARTTLS fails (upstream patch)\n- Fix for CVE-2016-5699 python: http protocol steam injection attack (rhbz#1303699)\n  Disabled HTTP header injections in httplib (upstream patch)\nResolves: rhbz#1346354",
+  "Description": "[2.7.5-38.0.1]\n- Add Oracle Linux distribution in platform.py [orabug 20812544]\n\n[2.7.5-38]\n- Fix for CVE-2016-1000110 HTTPoxy attack\nResolves: rhbz#1359163\n\n[2.7.5-37]\n- Force all child threads to terminate in TestForkInThread\nResolves: rhbz#1365200\n\n[2.7.5-36]\n- Fix for CVE-2016-0772 python: smtplib StartTLS stripping attack (rhbz#1303647)\n  Raise an error when STARTTLS fails (upstream patch)\n- Fix for CVE-2016-5699 python: http protocol steam injection attack (rhbz#1303699)\n  Disabled HTTP header injections in httplib (upstream patch)\nResolves: rhbz#1346356\n\n[2.7.5-35]\n- Adjusted tests to acknowledge lack of SSLv2 support\nResolves: rhbz#1351584",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,23 +8,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-1626.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-1626.html",
       "ID": "ELSA-2016-1626"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1000110.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1000110.html",
       "ID": "CVE-2016-1000110"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-0772.html",
-      "ID": "CVE-2016-0772"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5699.html",
+      "ID": "CVE-2016-5699"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-5699.html",
-      "ID": "CVE-2016-5699"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-0772.html",
+      "ID": "CVE-2016-0772"
     }
   ],
   "Criteria": {
@@ -248,18 +248,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python-debug is earlier than 0:2.7.5-38.0.1.el7_2"
-                      },
-                      {
-                        "Comment": "python-debug is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "python-devel is earlier than 0:2.7.5-38.0.1.el7_2"
                       },
                       {
@@ -276,6 +264,18 @@
                       },
                       {
                         "Comment": "python-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python-debug is earlier than 0:2.7.5-38.0.1.el7_2"
+                      },
+                      {
+                        "Comment": "python-debug is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -339,18 +339,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1000110.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1000110.html",
       "ID": "CVE-2016-1000110"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-0772.html",
-      "ID": "CVE-2016-0772"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5699.html",
+      "ID": "CVE-2016-5699"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-5699.html",
-      "ID": "CVE-2016-5699"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-0772.html",
+      "ID": "CVE-2016-0772"
     }
   ],
   "Issued": {

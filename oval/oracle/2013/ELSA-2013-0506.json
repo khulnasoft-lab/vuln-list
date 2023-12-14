@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0506.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0506.html",
       "ID": "ELSA-2013-0506"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-1182.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-1182.html",
       "ID": "CVE-2012-1182"
     }
   ],
@@ -389,6 +389,58 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba4 is earlier than 0:4.0.0-55.el6.rc4"
+                      },
+                      {
+                        "Comment": "samba4 is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba4-common is earlier than 0:4.0.0-55.el6.rc4"
+                      },
+                      {
+                        "Comment": "samba4-common is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba4-libs is earlier than 0:4.0.0-55.el6.rc4"
+                      },
+                      {
+                        "Comment": "samba4-libs is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -404,11 +456,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-1182.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-1182.html",
       "ID": "CVE-2012-1182"
     }
   ],
   "Issued": {
-    "Date": "2013-02-27"
+    "Date": "2013-02-22"
   }
 }

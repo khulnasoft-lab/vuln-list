@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-3390.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3390.html",
       "ID": "ELSA-2019-3390"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-15518.html",
-      "ID": "CVE-2018-15518"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-19873.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-19873.html",
       "ID": "CVE-2018-19873"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-19870.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15518.html",
+      "ID": "CVE-2018-15518"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-19870.html",
       "ID": "CVE-2018-19870"
     }
   ],
@@ -38,6 +38,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.11.1-7.el8"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qttools-static is earlier than 0:5.11.1-9.el8"
+                      },
+                      {
+                        "Comment": "qt5-qttools-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -199,18 +223,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.11.1-7.el8"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-qttools is earlier than 0:5.11.1-9.el8"
                       },
                       {
@@ -287,18 +299,6 @@
                       },
                       {
                         "Comment": "qt5-qttools-libs-help is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qt5-qttools-static is earlier than 0:5.11.1-9.el8"
-                      },
-                      {
-                        "Comment": "qt5-qttools-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -323,6 +323,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.11.1-7.el8"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qttools-static is earlier than 0:5.11.1-9.el8"
+                      },
+                      {
+                        "Comment": "qt5-qttools-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "qt5-assistant is earlier than 0:5.11.1-9.el8"
                       },
                       {
@@ -479,18 +503,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.11.1-7.el8"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-qttools is earlier than 0:5.11.1-9.el8"
                       },
                       {
@@ -567,18 +579,6 @@
                       },
                       {
                         "Comment": "qt5-qttools-libs-help is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qt5-qttools-static is earlier than 0:5.11.1-9.el8"
-                      },
-                      {
-                        "Comment": "qt5-qttools-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -606,17 +606,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-15518.html",
-      "ID": "CVE-2018-15518"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-19873.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-19873.html",
       "ID": "CVE-2018-19873"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-19870.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15518.html",
+      "ID": "CVE-2018-15518"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-19870.html",
       "ID": "CVE-2018-19870"
     }
   ],

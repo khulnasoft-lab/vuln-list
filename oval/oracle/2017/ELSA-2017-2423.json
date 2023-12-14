@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-2423.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2423.html",
       "ID": "ELSA-2017-2423"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-5645.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-5645.html",
       "ID": "CVE-2017-5645"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "log4j is earlier than 0:1.2.17-16.el7_4"
-                      },
-                      {
-                        "Comment": "log4j is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -61,6 +49,18 @@
                       },
                       {
                         "Comment": "log4j-manual is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "log4j is earlier than 0:1.2.17-16.el7_4"
+                      },
+                      {
+                        "Comment": "log4j is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "log4j is earlier than 0:1.2.17-16.el7_4"
-                      },
-                      {
-                        "Comment": "log4j is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "log4j-javadoc is earlier than 0:1.2.17-16.el7_4"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "log4j-manual is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "log4j is earlier than 0:1.2.17-16.el7_4"
+                      },
+                      {
+                        "Comment": "log4j is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-5645.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-5645.html",
       "ID": "CVE-2017-5645"
     }
   ],
   "Issued": {
-    "Date": "2017-08-09"
+    "Date": "2017-08-08"
   }
 }

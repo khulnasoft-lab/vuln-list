@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-9564:  libgcrypt security update (IMPORTANT)",
-  "Description": "[ 1.8.5-7_fips]\n- Add API to provide hash calculation in RSA/DSA/ECDSA signature\n  operations [Orabug: 33081130]\n- Change Epoch from 1 to 10\n\n[1.8.5-7]\n- Fix CVE-2021-33560 (#2018525)",
+  "Description": "",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-9564.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9564.html",
       "ID": "ELSA-2022-9564"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-40528.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-40528.html",
       "ID": "CVE-2021-40528"
     }
   ],
@@ -33,6 +33,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libgcrypt is earlier than 0:1.8.5-7.el8_6"
+                      },
+                      {
+                        "Comment": "libgcrypt is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libgcrypt is earlier than 10:1.8.5-7.el8_6_fips"
                       },
                       {
@@ -40,6 +52,18 @@
                       },
                       {
                         "Comment": "libgcrypt is fips patched"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgcrypt-devel is earlier than 0:1.8.5-7.el8_6"
+                      },
+                      {
+                        "Comment": "libgcrypt-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -79,6 +103,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libgcrypt is earlier than 0:1.8.5-7.el8_6"
+                      },
+                      {
+                        "Comment": "libgcrypt is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libgcrypt is earlier than 10:1.8.5-7.el8_6_fips"
                       },
                       {
@@ -86,6 +122,18 @@
                       },
                       {
                         "Comment": "libgcrypt is fips patched"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgcrypt-devel is earlier than 0:1.8.5-7.el8_6"
+                      },
+                      {
+                        "Comment": "libgcrypt-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -128,11 +176,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-40528.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-40528.html",
       "ID": "CVE-2021-40528"
     }
   ],
   "Issued": {
-    "Date": "2022-07-07"
+    "Date": "2022-07-06"
   }
 }

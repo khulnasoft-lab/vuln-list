@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-4408.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4408.html",
       "ID": "ELSA-2021-4408"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3200.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3200.html",
       "ID": "CVE-2021-3200"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsolv is earlier than 0:0.7.19-1.el8"
+                      },
+                      {
+                        "Comment": "libsolv is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -49,18 +61,6 @@
                       },
                       {
                         "Comment": "libsolv-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsolv is earlier than 0:0.7.19-1.el8"
-                      },
-                      {
-                        "Comment": "libsolv is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -97,6 +97,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsolv is earlier than 0:0.7.19-1.el8"
+                      },
+                      {
+                        "Comment": "libsolv is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsolv-devel is earlier than 0:0.7.19-1.el8"
                       },
                       {
@@ -113,18 +125,6 @@
                       },
                       {
                         "Comment": "libsolv-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsolv is earlier than 0:0.7.19-1.el8"
-                      },
-                      {
-                        "Comment": "libsolv is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -164,11 +164,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3200.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3200.html",
       "ID": "CVE-2021-3200"
     }
   ],
   "Issued": {
-    "Date": "2021-11-16"
+    "Date": "2021-11-14"
   }
 }

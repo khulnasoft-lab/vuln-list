@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-2570.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-2570.html",
       "ID": "ELSA-2021-2570"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-26541.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-26541.html",
       "ID": "CVE-2020-26541"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-33034.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-33034.html",
       "ID": "CVE-2021-33034"
     }
   ],
@@ -33,6 +33,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.7.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -98,18 +110,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.7.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.7.1.el8_4"
                       },
                       {
@@ -145,6 +145,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.7.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -354,18 +366,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.7.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.7.1.el8_4"
                       },
                       {
@@ -409,16 +409,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-26541.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-26541.html",
       "ID": "CVE-2020-26541"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-33034.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-33034.html",
       "ID": "CVE-2021-33034"
     }
   ],
   "Issued": {
-    "Date": "2021-07-01"
+    "Date": "2021-06-30"
   }
 }

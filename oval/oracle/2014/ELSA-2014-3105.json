@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2014-3105: Unbreakable Enterprise kernel security update (IMPORTANT)",
-  "Description": "kernel-uek\n[2.6.32-400.36.12]\n- HID: fix a couple of off-by-ones (Jiri Kosina)  [Orabug: 19849320]  {CVE-2014-3184}\n- ALSA: control: Protect user controls against concurrent access (Lars-Peter Clausen)  [Orabug: 20192545]  {CVE-2014-4652}\n- udf: Avoid infinite loop when processing indirect ICBs (Jan Kara)  [Orabug: 20192451]  {CVE-2014-6410}\n- ALSA: control: Make sure that id-\u003eindex does not overflow (Lars-Peter Clausen)  [Orabug: 20192420]  {CVE-2014-4656}\n- ALSA: control: Handle numid overflow (Lars-Peter Clausen)  [Orabug: 20192379]  {CVE-2014-4656}\n- net: sctp: fix remote memory pressure from excessive queueing (Daniel Borkmann)  [Orabug: 20192060]  {CVE-2014-3688}",
+  "Description": "kernel-uek\n[2.6.32-400.36.12uek]\n- HID: fix a couple of off-by-ones (Jiri Kosina)  [Orabug: 19849320]  {CVE-2014-3184}\n- ALSA: control: Protect user controls against concurrent access (Lars-Peter Clausen)  [Orabug: 20192545]  {CVE-2014-4652}\n- udf: Avoid infinite loop when processing indirect ICBs (Jan Kara)  [Orabug: 20192451]  {CVE-2014-6410}\n- ALSA: control: Make sure that id-\u003eindex does not overflow (Lars-Peter Clausen)  [Orabug: 20192420]  {CVE-2014-4656}\n- ALSA: control: Handle numid overflow (Lars-Peter Clausen)  [Orabug: 20192379]  {CVE-2014-4656}\n- net: sctp: fix remote memory pressure from excessive queueing (Daniel Borkmann)  [Orabug: 20192060]  {CVE-2014-3688}",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6"
@@ -8,32 +8,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-3105.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3105.html",
       "ID": "ELSA-2014-3105"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3184.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3184.html",
       "ID": "CVE-2014-3184"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3688.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-4652.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-4656.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-6410.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],
@@ -129,18 +129,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.12.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "mlnx_en-2.6.32-400.36.12.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -181,6 +169,18 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.36.12.el5uekdebug is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.12.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -277,18 +277,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.12.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "mlnx_en-2.6.32-400.36.12.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -329,6 +317,18 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.36.12.el5uekdebug is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.12.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -671,27 +671,27 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3184.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3184.html",
       "ID": "CVE-2014-3184"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3688.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-4652.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-4656.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-6410.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],

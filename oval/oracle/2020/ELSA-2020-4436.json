@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4436.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4436.html",
       "ID": "ELSA-2020-4436"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10759.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10759.html",
       "ID": "CVE-2020-10759"
     }
   ],
@@ -57,10 +57,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gnome-software is earlier than 0:3.36.1-4.el8"
+                        "Comment": "libxmlb is earlier than 0:0.1.15-1.el8"
                       },
                       {
-                        "Comment": "gnome-software is signed with the Oracle Linux 8 key"
+                        "Comment": "libxmlb is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -69,10 +69,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libxmlb is earlier than 0:0.1.15-1.el8"
+                        "Comment": "gnome-software is earlier than 0:3.36.1-4.el8"
                       },
                       {
-                        "Comment": "libxmlb is signed with the Oracle Linux 8 key"
+                        "Comment": "gnome-software is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -92,6 +92,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libxmlb is earlier than 0:0.1.15-1.el8"
+                      },
+                      {
+                        "Comment": "libxmlb is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -127,18 +139,6 @@
                         "Comment": "gnome-software is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libxmlb is earlier than 0:0.1.15-1.el8"
-                      },
-                      {
-                        "Comment": "libxmlb is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -164,7 +164,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10759.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10759.html",
       "ID": "CVE-2020-10759"
     }
   ],

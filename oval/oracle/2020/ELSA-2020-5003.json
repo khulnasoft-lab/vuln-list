@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5003.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5003.html",
       "ID": "ELSA-2020-5003"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-11078.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11078.html",
       "ID": "CVE-2020-11078"
     }
   ],
@@ -345,18 +345,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "fence-agents-lpar is earlier than 0:4.2.1-41.el7_9.2"
-                      },
-                      {
-                        "Comment": "fence-agents-lpar is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "fence-agents-mpath is earlier than 0:4.2.1-41.el7_9.2"
                       },
                       {
@@ -441,18 +429,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "fence-agents-virsh is earlier than 0:4.2.1-41.el7_9.2"
-                      },
-                      {
-                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "fence-agents-vmware-rest is earlier than 0:4.2.1-41.el7_9.2"
                       },
                       {
@@ -483,6 +459,30 @@
                         "Comment": "fence-agents-wti is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-lpar is earlier than 0:4.2.1-41.el7_9.2"
+                      },
+                      {
+                        "Comment": "fence-agents-lpar is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-virsh is earlier than 0:4.2.1-41.el7_9.2"
+                      },
+                      {
+                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -500,6 +500,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-virsh is earlier than 0:4.2.1-41.el7_9.2"
+                      },
+                      {
+                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -913,18 +925,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "fence-agents-virsh is earlier than 0:4.2.1-41.el7_9.2"
-                      },
-                      {
-                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "fence-agents-vmware-rest is earlier than 0:4.2.1-41.el7_9.2"
                       },
                       {
@@ -980,11 +980,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-11078.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11078.html",
       "ID": "CVE-2020-11078"
     }
   ],
   "Issued": {
-    "Date": "2020-11-13"
+    "Date": "2020-11-12"
   }
 }

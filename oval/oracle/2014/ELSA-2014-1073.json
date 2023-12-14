@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-1073.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1073.html",
       "ID": "ELSA-2014-1073"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-1492.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-1492.html",
       "ID": "CVE-2014-1492"
     }
   ],
@@ -46,18 +46,6 @@
                   },
                   {
                     "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "nss-pkcs11-devel is earlier than 0:3.16.2-2.0.1.el7_0"
-                  },
-                  {
-                    "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -156,6 +144,18 @@
                     "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "nss-pkcs11-devel is earlier than 0:3.16.2-2.0.1.el7_0"
+                  },
+                  {
+                    "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -178,7 +178,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-1492.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-1492.html",
       "ID": "CVE-2014-1492"
     }
   ],

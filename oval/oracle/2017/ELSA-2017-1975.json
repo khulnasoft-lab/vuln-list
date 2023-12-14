@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-1975.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-1975.html",
       "ID": "ELSA-2017-1975"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-7870.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-7870.html",
       "ID": "CVE-2017-7870"
     }
   ],
@@ -1621,6 +1621,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libreofficekit is earlier than 1:5.0.6.2-14.0.1.el7"
+                      },
+                      {
+                        "Comment": "libreofficekit is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreofficekit-devel is earlier than 1:5.0.6.2-14.0.1.el7"
+                      },
+                      {
+                        "Comment": "libreofficekit-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "autocorr-af is earlier than 1:5.0.6.2-14.0.1.el7"
                       },
                       {
@@ -3163,30 +3187,6 @@
                         "Comment": "libreoffice-xsltfilter is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreofficekit is earlier than 1:5.0.6.2-14.0.1.el7"
-                      },
-                      {
-                        "Comment": "libreofficekit is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreofficekit-devel is earlier than 1:5.0.6.2-14.0.1.el7"
-                      },
-                      {
-                        "Comment": "libreofficekit-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -3212,11 +3212,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-7870.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-7870.html",
       "ID": "CVE-2017-7870"
     }
   ],
   "Issued": {
-    "Date": "2017-08-07"
+    "Date": "2017-08-06"
   }
 }

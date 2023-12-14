@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1765.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1765.html",
       "ID": "ELSA-2020-1765"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-8675.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-8675.html",
       "ID": "CVE-2019-8675"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-8696.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-8696.html",
       "ID": "CVE-2019-8696"
     }
   ],
@@ -33,6 +33,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-libs is earlier than 1:2.2.6-33.el8"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -90,18 +102,6 @@
                       },
                       {
                         "Comment": "cups-ipptool is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cups-libs is earlier than 1:2.2.6-33.el8"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -138,6 +138,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "cups-libs is earlier than 1:2.2.6-33.el8"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "cups is earlier than 1:2.2.6-33.el8"
                       },
                       {
@@ -190,18 +202,6 @@
                       },
                       {
                         "Comment": "cups-ipptool is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cups-libs is earlier than 1:2.2.6-33.el8"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -241,12 +241,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-8675.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-8675.html",
       "ID": "CVE-2019-8675"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-8696.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-8696.html",
       "ID": "CVE-2019-8696"
     }
   ],

@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2343.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2343.html",
       "ID": "ELSA-2019-2343"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-0217.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-0217.html",
       "ID": "CVE-2019-0217"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-0220.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-0220.html",
       "ID": "CVE-2019-0220"
     }
   ],
@@ -86,30 +86,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mod_ldap is earlier than 0:2.4.6-90.0.1.el7"
-                      },
-                      {
-                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-90.0.1.el7"
-                      },
-                      {
-                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "mod_session is earlier than 0:2.4.6-90.0.1.el7"
                       },
                       {
@@ -126,6 +102,30 @@
                       },
                       {
                         "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_ldap is earlier than 0:2.4.6-90.0.1.el7"
+                      },
+                      {
+                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-90.0.1.el7"
+                      },
+                      {
+                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -145,6 +145,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_ldap is earlier than 0:2.4.6-90.0.1.el7"
+                      },
+                      {
+                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-90.0.1.el7"
+                      },
+                      {
+                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -198,30 +222,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mod_ldap is earlier than 0:2.4.6-90.0.1.el7"
-                      },
-                      {
-                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-90.0.1.el7"
-                      },
-                      {
-                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "mod_session is earlier than 0:2.4.6-90.0.1.el7"
                       },
                       {
@@ -265,16 +265,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-0217.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-0217.html",
       "ID": "CVE-2019-0217"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-0220.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-0220.html",
       "ID": "CVE-2019-0220"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

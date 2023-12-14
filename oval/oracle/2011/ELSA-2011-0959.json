@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2011-0959.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-0959.html",
       "ID": "ELSA-2011-0959"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-1429.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-1429.html",
       "ID": "CVE-2011-1429"
     }
   ],
@@ -65,6 +65,28 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "mutt is earlier than 5:1.5.20-2.20091214hg736b6a.el6_1.1"
+                  },
+                  {
+                    "Comment": "mutt is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -80,7 +102,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-1429.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-1429.html",
       "ID": "CVE-2011-1429"
     }
   ],

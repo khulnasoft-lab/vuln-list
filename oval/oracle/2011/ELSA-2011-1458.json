@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2011-1458:  bind security update (IMPORTANT)",
-  "Description": "[32:9.7.3-2.3.P3]\n- fix DOS against recursive servers (#754398)\n\n[32:9.7.3-2.2.P3]\n- update to 9.7.3-P3 (CVE-2011-2464)\n\n[32:9.7.3-2.1.P1]\n- update to 9.7.3-P1 (CVE-2011-1910)",
+  "Description": "[32:9.7.3-2.3.P3]\n- fix DOS against recursive servers (#754398)\n\n[32:9.7.3-2.2.P3]\n- update to 9.7.3-P3 (CVE-2011-2464)\n\n[32:9.7.3-2.1.P1]\n- update to 9.7.3-P1 (CVE-2011-1910",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6"
@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2011-1458.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-1458.html",
       "ID": "ELSA-2011-1458"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-4313.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-4313.html",
       "ID": "CVE-2011-4313"
     }
   ],
@@ -149,6 +149,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "bind-libs is earlier than 30:9.3.6-16.P1.el5_7.1"
+                          },
+                          {
+                            "Comment": "bind-libs is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "bind-utils is earlier than 30:9.3.6-16.P1.el5_7.1"
+                          },
+                          {
+                            "Comment": "bind-utils is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "bind is earlier than 30:9.3.6-16.P1.el5_7.1"
                           },
                           {
@@ -197,34 +221,10 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "bind-libs is earlier than 30:9.3.6-16.P1.el5_7.1"
-                          },
-                          {
-                            "Comment": "bind-libs is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "bind-sdb is earlier than 30:9.3.6-16.P1.el5_7.1"
                           },
                           {
                             "Comment": "bind-sdb is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "bind-utils is earlier than 30:9.3.6-16.P1.el5_7.1"
-                          },
-                          {
-                            "Comment": "bind-utils is signed with the Oracle Linux 5 key"
                           }
                         ]
                       },
@@ -571,7 +571,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-4313.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-4313.html",
       "ID": "CVE-2011-4313"
     }
   ],

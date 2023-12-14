@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1574.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1574.html",
       "ID": "ELSA-2021-1574"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20297.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20297.html",
       "ID": "CVE-2021-20297"
     }
   ],
@@ -28,6 +28,42 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.30.0-7.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnma-devel is earlier than 0:1.8.30-2.el8"
+                      },
+                      {
+                        "Comment": "libnma-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnma is earlier than 0:1.8.30-2.el8"
+                      },
+                      {
+                        "Comment": "libnma is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -69,30 +105,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-config-connectivity-oracle is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-config-connectivity-oracle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "NetworkManager-config-server is earlier than 1:1.30.0-7.0.1.el8"
                       },
                       {
@@ -121,18 +133,6 @@
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -213,22 +213,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libnma is earlier than 0:1.8.30-2.el8"
+                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.30.0-7.0.1.el8"
                       },
                       {
-                        "Comment": "libnma is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libnma-devel is earlier than 0:1.8.30-2.el8"
-                      },
-                      {
-                        "Comment": "libnma-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -253,6 +241,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.30.0-7.0.1.el8"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnma-devel is earlier than 0:1.8.30-2.el8"
+                      },
+                      {
+                        "Comment": "libnma-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libnma is earlier than 0:1.8.30-2.el8"
+                      },
+                      {
+                        "Comment": "libnma is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "NetworkManager is earlier than 1:1.30.0-7.0.1.el8"
                       },
                       {
@@ -289,30 +313,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-config-connectivity-oracle is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-config-connectivity-oracle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "NetworkManager-config-server is earlier than 1:1.30.0-7.0.1.el8"
                       },
                       {
@@ -341,18 +341,6 @@
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.30.0-7.0.1.el8"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -433,22 +421,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libnma is earlier than 0:1.8.30-2.el8"
+                        "Comment": "NetworkManager-cloud-setup is earlier than 1:1.30.0-7.0.1.el8"
                       },
                       {
-                        "Comment": "libnma is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libnma-devel is earlier than 0:1.8.30-2.el8"
-                      },
-                      {
-                        "Comment": "libnma-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "NetworkManager-cloud-setup is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -476,11 +452,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20297.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20297.html",
       "ID": "CVE-2021-20297"
     }
   ],
   "Issued": {
-    "Date": "2021-05-25"
+    "Date": "2021-05-23"
   }
 }

@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-0855.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-0855.html",
       "ID": "ELSA-2018-0855"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-6462.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-6463.html",
+      "ID": "CVE-2017-6463"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-6462.html",
       "ID": "CVE-2017-6462"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-6464.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-6464.html",
       "ID": "CVE-2017-6464"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-6463.html",
-      "ID": "CVE-2017-6463"
     }
   ],
   "Criteria": {
@@ -38,18 +38,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ntp is earlier than 0:4.2.6p5-28.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -79,10 +67,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ntpdate is earlier than 0:4.2.6p5-28.0.1.el7"
+                        "Comment": "sntp is earlier than 0:4.2.6p5-28.0.1.el7"
                       },
                       {
-                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
+                        "Comment": "sntp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -91,10 +79,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "sntp is earlier than 0:4.2.6p5-28.0.1.el7"
+                        "Comment": "ntp is earlier than 0:4.2.6p5-28.0.1.el7"
                       },
                       {
-                        "Comment": "sntp is signed with the Oracle Linux 7 key"
+                        "Comment": "ntp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ntpdate is earlier than 0:4.2.6p5-28.0.1.el7"
+                      },
+                      {
+                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -119,18 +119,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ntp is earlier than 0:4.2.6p5-28.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ntp-doc is earlier than 0:4.2.6p5-28.0.1.el7"
                       },
                       {
@@ -155,10 +143,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ntpdate is earlier than 0:4.2.6p5-28.0.1.el7"
+                        "Comment": "sntp is earlier than 0:4.2.6p5-28.0.1.el7"
                       },
                       {
-                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
+                        "Comment": "sntp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -167,10 +155,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "sntp is earlier than 0:4.2.6p5-28.0.1.el7"
+                        "Comment": "ntp is earlier than 0:4.2.6p5-28.0.1.el7"
                       },
                       {
-                        "Comment": "sntp is signed with the Oracle Linux 7 key"
+                        "Comment": "ntp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ntpdate is earlier than 0:4.2.6p5-28.0.1.el7"
+                      },
+                      {
+                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -198,21 +198,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-6462.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-6463.html",
+      "ID": "CVE-2017-6463"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-6462.html",
       "ID": "CVE-2017-6462"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-6464.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-6464.html",
       "ID": "CVE-2017-6464"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-6463.html",
-      "ID": "CVE-2017-6463"
     }
   ],
   "Issued": {
-    "Date": "2018-04-16"
+    "Date": "2018-04-12"
   }
 }

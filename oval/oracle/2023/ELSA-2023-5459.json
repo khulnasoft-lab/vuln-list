@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5459.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5459.html",
       "ID": "ELSA-2023-5459"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-36664.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-36664.html",
       "ID": "CVE-2023-36664"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libgs-devel is earlier than 0:9.54.0-10.el9_2"
-                      },
-                      {
-                        "Comment": "libgs-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -121,6 +109,18 @@
                       },
                       {
                         "Comment": "libgs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgs-devel is earlier than 0:9.54.0-10.el9_2"
+                      },
+                      {
+                        "Comment": "libgs-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -260,7 +260,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-36664.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-36664.html",
       "ID": "CVE-2023-36664"
     }
   ],

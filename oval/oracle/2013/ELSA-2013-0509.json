@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0509.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0509.html",
       "ID": "ELSA-2013-0509"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-4517.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4517.html",
       "ID": "CVE-2012-4517"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-4518.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4518.html",
       "ID": "CVE-2012-4518"
     }
   ],
@@ -33,6 +33,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ibsim is earlier than 0:0.5-7.el6"
+                      },
+                      {
+                        "Comment": "ibsim is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -54,18 +66,6 @@
                       },
                       {
                         "Comment": "ibacm-devel is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ibsim is earlier than 0:0.5-7.el6"
-                      },
-                      {
-                        "Comment": "ibsim is signed with the Oracle Linux 6 key"
                       }
                     ]
                   },
@@ -438,6 +438,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "ibsim is earlier than 0:0.5-7.el6"
+                      },
+                      {
+                        "Comment": "ibsim is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ibacm is earlier than 0:1.0.8-0.git7a3adb7.el6"
                       },
                       {
@@ -454,18 +466,6 @@
                       },
                       {
                         "Comment": "ibacm-devel is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ibsim is earlier than 0:0.5-7.el6"
-                      },
-                      {
-                        "Comment": "ibsim is signed with the Oracle Linux 6 key"
                       }
                     ]
                   },
@@ -802,6 +802,106 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libibmad is earlier than 0:1.3.9-1.el6"
+                      },
+                      {
+                        "Comment": "libibmad is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libibumad is earlier than 0:1.3.8-1.el6"
+                      },
+                      {
+                        "Comment": "libibumad is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "librdmacm is earlier than 0:1.0.17-0.git4b5c1aa.el6"
+                      },
+                      {
+                        "Comment": "librdmacm is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "librdmacm-utils is earlier than 0:1.0.17-0.git4b5c1aa.el6"
+                      },
+                      {
+                        "Comment": "librdmacm-utils is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "opensm is earlier than 0:3.3.15-1.el6"
+                      },
+                      {
+                        "Comment": "opensm is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "opensm-libs is earlier than 0:3.3.15-1.el6"
+                      },
+                      {
+                        "Comment": "opensm-libs is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rdma is earlier than 0:3.6-1.0.2.el6"
+                      },
+                      {
+                        "Comment": "rdma is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -817,12 +917,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-4517.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4517.html",
       "ID": "CVE-2012-4517"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-4518.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4518.html",
       "ID": "CVE-2012-4518"
     }
   ],

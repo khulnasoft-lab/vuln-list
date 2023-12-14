@@ -7,37 +7,37 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-7008.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-7008.html",
       "ID": "ELSA-2022-7008"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21618.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21618.html",
       "ID": "CVE-2022-21618"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21628.html",
-      "ID": "CVE-2022-21628"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21619.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21619.html",
       "ID": "CVE-2022-21619"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21624.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21624.html",
       "ID": "CVE-2022-21624"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21626.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21626.html",
       "ID": "CVE-2022-21626"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-39399.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21628.html",
+      "ID": "CVE-2022-21628"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-39399.html",
       "ID": "CVE-2022-39399"
     }
   ],
@@ -170,54 +170,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-demo is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
                       },
                       {
@@ -272,6 +224,54 @@
                         "Comment": "java-11-openjdk-src is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.17.0.8-2.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -297,36 +297,36 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21618.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21618.html",
       "ID": "CVE-2022-21618"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21628.html",
-      "ID": "CVE-2022-21628"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21619.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21619.html",
       "ID": "CVE-2022-21619"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21624.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21624.html",
       "ID": "CVE-2022-21624"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21626.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21626.html",
       "ID": "CVE-2022-21626"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-39399.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21628.html",
+      "ID": "CVE-2022-21628"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-39399.html",
       "ID": "CVE-2022-39399"
     }
   ],
   "Issued": {
-    "Date": "2022-10-21"
+    "Date": "2022-10-20"
   }
 }

@@ -2,342 +2,54 @@
   "Title": "ELSA-2014-0211:  postgresql84 and postgresql security update (IMPORTANT)",
   "Description": "[8.4.20-1]\n- Update to PostgreSQL 8.4.20 (#1065843) for fixes described at\n  http://www.postgresql.org/docs/8.4/static/release-8-4-19.html\n  http://www.postgresql.org/docs/8.4/static/release-8-4-20.html",
   "Platform": [
-    "Oracle Linux 6",
-    "Oracle Linux 5"
+    "Oracle Linux 5",
+    "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-0211.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-0211.html",
       "ID": "ELSA-2014-0211"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0060.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0060.html",
       "ID": "CVE-2014-0060"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0061.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0061.html",
       "ID": "CVE-2014-0061"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0062.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0062.html",
       "ID": "CVE-2014-0062"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0063.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0063.html",
       "ID": "CVE-2014-0063"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0064.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0064.html",
       "ID": "CVE-2014-0064"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0065.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0065.html",
       "ID": "CVE-2014-0065"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0066.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0066.html",
       "ID": "CVE-2014-0066"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "OR",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-contrib is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-contrib is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-devel is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-devel is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-docs is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-docs is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-libs is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-libs is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-plperl is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-plperl is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-plpython is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-plpython is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-pltcl is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-pltcl is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-server is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-server is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-test is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-test is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is x86_64"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-contrib is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-contrib is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-devel is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-devel is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-docs is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-docs is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-libs is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-libs is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-plperl is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-plperl is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-plpython is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-plpython is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-pltcl is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-pltcl is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-server is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-server is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "postgresql-test is earlier than 0:8.4.20-1.el6_5"
-                          },
-                          {
-                            "Comment": "postgresql-test is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is i686"
-                  }
-                ]
-              }
-            ],
-            "Criterions": null
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 6 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -833,6 +545,294 @@
             "Comment": "Oracle Linux 5 is installed"
           }
         ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-contrib is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-contrib is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-devel is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-devel is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-docs is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-docs is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-libs is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-libs is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-plperl is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-plperl is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-plpython is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-plpython is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-pltcl is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-pltcl is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-server is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-server is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-test is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-test is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is x86_64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-contrib is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-contrib is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-devel is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-devel is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-docs is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-docs is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-libs is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-libs is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-plperl is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-plperl is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-plpython is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-plpython is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-pltcl is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-pltcl is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-server is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-server is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "postgresql-test is earlier than 0:8.4.20-1.el6_5"
+                          },
+                          {
+                            "Comment": "postgresql-test is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is i686"
+                  }
+                ]
+              }
+            ],
+            "Criterions": null
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 6 is installed"
+          }
+        ]
       }
     ],
     "Criterions": null
@@ -841,37 +841,37 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0060.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0060.html",
       "ID": "CVE-2014-0060"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0061.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0061.html",
       "ID": "CVE-2014-0061"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0062.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0062.html",
       "ID": "CVE-2014-0062"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0063.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0063.html",
       "ID": "CVE-2014-0063"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0064.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0064.html",
       "ID": "CVE-2014-0064"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0065.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0065.html",
       "ID": "CVE-2014-0065"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0066.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0066.html",
       "ID": "CVE-2014-0066"
     }
   ],

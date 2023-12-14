@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-0029.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-0029.html",
       "ID": "ELSA-2018-0029"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-5715.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-5715.html",
       "ID": "CVE-2017-5715"
     }
   ],
@@ -306,18 +306,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "libvirt-daemon-lxc is earlier than 0:3.2.0-14.0.1.el7_4.7"
-                  },
-                  {
-                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "libvirt-devel is earlier than 0:3.2.0-14.0.1.el7_4.7"
                   },
                   {
@@ -346,6 +334,18 @@
                   },
                   {
                     "Comment": "libvirt-libs is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-daemon-lxc is earlier than 0:3.2.0-14.0.1.el7_4.7"
+                  },
+                  {
+                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -406,11 +406,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-5715.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-5715.html",
       "ID": "CVE-2017-5715"
     }
   ],
   "Issued": {
-    "Date": "2018-01-05"
+    "Date": "2018-01-04"
   }
 }

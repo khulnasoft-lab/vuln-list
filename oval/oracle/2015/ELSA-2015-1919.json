@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2015-1919:  java-1.8.0-openjdk security update (IMPORTANT)",
-  "Description": "[1:1.8.0.65-0.b17]\n- October 2015 security update to u65b17.\n- Add script for generating OpenJDK tarballs from a local Mercurial tree.\n- Update RH1191652 patch to build against current AArch64 tree.\n- Use appropriate source ID to avoid unpacking both tarballs on AArch64.\n- Fix library removal script so jpeg, giflib and png sources are removed.\n- Update system-lcms.patch to regenerated upstream (8042159) version.\n- Drop LCMS update from rhel6-built.patch\n- Resolves: rhbz#1257654\n\n[1:1.8.0.51-4.b16]\n- bumped release to do an build, so test whether 1251560 was really fixed\n- Resolves: rhbz#1254197\n\n[1:1.8.0.60-4.b27]\n- updated to u60 (1255352)\n- Resolves: rhbz#1257654",
+  "Description": "[1:1.8.0.65-2.b17]\n- fixd dual \\ to single - Resolves: rhbz#1257656\n\n[1:1.8.0.65-1.b17]\n- moved to bundled lcms\n- Resolves: rhbz#1257656\n\n[1:1.8.0.65-0.b17]\n- October 2015 security update to u65b17.\n- Add script for generating OpenJDK tarballs from a local Mercurial tree.\n- Update RH1191652 patch to build against current AArch64 tree.\n- Use appropriate source ID to avoid unpacking both tarballs on AArch64.\n- Add MD5 checksums for java.security from 8u51 and 8u60 RPMs.\n- Resolves: rhbz#1257656\n\n[1:1.8.0.60-3.b27]\n- removed link to soundfont. Unused in rhel7 and will be fixed upstream\n- Resolves: rhbz#1257653",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,97 +8,97 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-1919.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-1919.html",
       "ID": "ELSA-2015-1919"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4734.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4734.html",
       "ID": "CVE-2015-4734"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4803.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4803.html",
       "ID": "CVE-2015-4803"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4805.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4805.html",
       "ID": "CVE-2015-4805"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4806.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4806.html",
       "ID": "CVE-2015-4806"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4835.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4835.html",
       "ID": "CVE-2015-4835"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4840.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4840.html",
       "ID": "CVE-2015-4840"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4842.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4842.html",
       "ID": "CVE-2015-4842"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4843.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4843.html",
       "ID": "CVE-2015-4843"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4844.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4844.html",
       "ID": "CVE-2015-4844"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4860.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4860.html",
       "ID": "CVE-2015-4860"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4868.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4868.html",
       "ID": "CVE-2015-4868"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4872.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4872.html",
       "ID": "CVE-2015-4872"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4881.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4881.html",
       "ID": "CVE-2015-4881"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4882.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4882.html",
       "ID": "CVE-2015-4882"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4883.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4883.html",
       "ID": "CVE-2015-4883"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4893.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4893.html",
       "ID": "CVE-2015-4893"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4903.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4903.html",
       "ID": "CVE-2015-4903"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-4911.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-4911.html",
       "ID": "CVE-2015-4911"
     }
   ],
@@ -467,30 +467,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.65-2.b17.el7_1"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.65-2.b17.el7_1"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.65-2.b17.el7_1"
                       },
                       {
@@ -507,6 +483,30 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.65-2.b17.el7_1"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.65-2.b17.el7_1"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -558,92 +558,92 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4734.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4734.html",
       "ID": "CVE-2015-4734"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4803.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4803.html",
       "ID": "CVE-2015-4803"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4805.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4805.html",
       "ID": "CVE-2015-4805"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4806.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4806.html",
       "ID": "CVE-2015-4806"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4835.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4835.html",
       "ID": "CVE-2015-4835"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4840.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4840.html",
       "ID": "CVE-2015-4840"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4842.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4842.html",
       "ID": "CVE-2015-4842"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4843.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4843.html",
       "ID": "CVE-2015-4843"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4844.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4844.html",
       "ID": "CVE-2015-4844"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4860.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4860.html",
       "ID": "CVE-2015-4860"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4868.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4868.html",
       "ID": "CVE-2015-4868"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4872.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4872.html",
       "ID": "CVE-2015-4872"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4881.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4881.html",
       "ID": "CVE-2015-4881"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4882.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4882.html",
       "ID": "CVE-2015-4882"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4883.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4883.html",
       "ID": "CVE-2015-4883"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4893.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4893.html",
       "ID": "CVE-2015-4893"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4903.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4903.html",
       "ID": "CVE-2015-4903"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-4911.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-4911.html",
       "ID": "CVE-2015-4911"
     }
   ],

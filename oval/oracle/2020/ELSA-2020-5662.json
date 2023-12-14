@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5662.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5662.html",
       "ID": "ELSA-2020-5662"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-14468.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14468.html",
       "ID": "CVE-2018-14468"
     }
   ],
@@ -65,6 +65,28 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "tcpdump is earlier than 14:4.9.2-4.0.1.el7_7.1"
+                  },
+                  {
+                    "Comment": "tcpdump is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -80,7 +102,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-14468.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14468.html",
       "ID": "CVE-2018-14468"
     }
   ],

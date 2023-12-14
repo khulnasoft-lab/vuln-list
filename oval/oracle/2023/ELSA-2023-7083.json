@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-7083.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-7083.html",
       "ID": "ELSA-2023-7083"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-48339.html",
-      "ID": "CVE-2022-48339"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-48337.html",
+      "ID": "CVE-2022-48337"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-48337.html",
-      "ID": "CVE-2022-48337"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-48339.html",
+      "ID": "CVE-2022-48339"
     }
   ],
   "Criteria": {
@@ -33,6 +33,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "emacs-filesystem is earlier than 1:26.1-11.el8"
+                      },
+                      {
+                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -90,18 +102,6 @@
                       },
                       {
                         "Comment": "emacs-terminal is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "emacs-filesystem is earlier than 1:26.1-11.el8"
-                      },
-                      {
-                        "Comment": "emacs-filesystem is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -217,13 +217,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-48339.html",
-      "ID": "CVE-2022-48339"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-48337.html",
+      "ID": "CVE-2022-48337"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-48337.html",
-      "ID": "CVE-2022-48337"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-48339.html",
+      "ID": "CVE-2022-48339"
     }
   ],
   "Issued": {

@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-0377.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-0377.html",
       "ID": "ELSA-2015-0377"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0247.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0247.html",
       "ID": "CVE-2014-0247"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3575.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3575.html",
       "ID": "CVE-2014-3575"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3693.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3693.html",
       "ID": "CVE-2014-3693"
     }
   ],
@@ -103,18 +103,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "liblangtag-doc is earlier than 0:0.5.4-8.el7"
-                      },
-                      {
-                        "Comment": "liblangtag-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "liblangtag-gobject is earlier than 0:0.5.4-8.el7"
                       },
                       {
@@ -138,6 +126,90 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mdds-devel is earlier than 0:0.10.3-1.el7"
+                      },
+                      {
+                        "Comment": "mdds-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libcmis is earlier than 0:0.4.1-5.el7"
+                      },
+                      {
+                        "Comment": "libcmis is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libcmis-devel is earlier than 0:0.4.1-5.el7"
+                      },
+                      {
+                        "Comment": "libcmis-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libcmis-tools is earlier than 0:0.4.1-5.el7"
+                      },
+                      {
+                        "Comment": "libcmis-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblangtag is earlier than 0:0.5.4-8.el7"
+                      },
+                      {
+                        "Comment": "liblangtag is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblangtag-devel is earlier than 0:0.5.4-8.el7"
+                      },
+                      {
+                        "Comment": "liblangtag-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblangtag-gobject is earlier than 0:0.5.4-8.el7"
+                      },
+                      {
+                        "Comment": "liblangtag-gobject is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -587,42 +659,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libcmis is earlier than 0:0.4.1-5.el7"
-                      },
-                      {
-                        "Comment": "libcmis is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libcmis-devel is earlier than 0:0.4.1-5.el7"
-                      },
-                      {
-                        "Comment": "libcmis-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libcmis-tools is earlier than 0:0.4.1-5.el7"
-                      },
-                      {
-                        "Comment": "libcmis-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libetonyek is earlier than 0:0.0.4-2.el7"
                       },
                       {
@@ -711,54 +747,6 @@
                       },
                       {
                         "Comment": "libfreehand-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblangtag is earlier than 0:0.5.4-8.el7"
-                      },
-                      {
-                        "Comment": "liblangtag is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblangtag-devel is earlier than 0:0.5.4-8.el7"
-                      },
-                      {
-                        "Comment": "liblangtag-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblangtag-doc is earlier than 0:0.5.4-8.el7"
-                      },
-                      {
-                        "Comment": "liblangtag-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblangtag-gobject is earlier than 0:0.5.4-8.el7"
-                      },
-                      {
-                        "Comment": "liblangtag-gobject is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -1997,18 +1985,6 @@
                         "Comment": "libreoffice-xsltfilter is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mdds-devel is earlier than 0:0.10.3-1.el7"
-                      },
-                      {
-                        "Comment": "mdds-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -2034,21 +2010,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0247.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0247.html",
       "ID": "CVE-2014-0247"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3575.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3575.html",
       "ID": "CVE-2014-3575"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3693.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3693.html",
       "ID": "CVE-2014-3693"
     }
   ],
   "Issued": {
-    "Date": "2015-03-11"
+    "Date": "2015-03-08"
   }
 }

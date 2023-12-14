@@ -1,34 +1,34 @@
 {
   "Title": "ELSA-2023-3577: 18 security update (IMPORTANT)",
-  "Description": "nodejs\n[1:18.14.2-3]\n- Update bundled c-ares to 1.19.1\n  Resolves: CVE-2023-31124 CVE-2023-31130 CVE-2023-31147 CVE-2023-32067",
+  "Description": "nodejs\n[1:18.14.2-3]\n- Update bundled c-ares to 1.19.1\n  Resolves: CVE-2023-31124 CVE-2023-31130 CVE-2023-31147 CVE-2023-32067\n\n[1:18.14.2-2]\n- Provide simduft\n- Resolves: #2159389\n\n[1:18.14.2-1]\n- Rebase to 18.14.2\n- Resolves: #2159389\n- Resolves: CVE-2022-25881, CVE-2022-4904, CVE-2023-23936, CVE-2023-24807\n- Resolves: CVE-2023-23918, CVE-2023-23919, CVE-2023-23920\n\n[1:18.12.1-1]\n- Rebase + CVEs\n- Resolves: #2142809\n- Resolves: #2142830, #2142856\n\n[1:18.10.0-3]\n- Resolves: #2111861\n- Add proper sources for undici\n\n[1:18.10.0-2]\n- Resolves: #2130565\n- Add missing file\n\n[1:18.10.0-1]\n- Update to latest release\n- Resolves: #2130565\n- Resolves #2111009, #2111861, #2132732\n\n[1:18.8.0-1]\n- Update to latest release\n- Resolves: RHBZ#2111009\n- Provide undici and cjs-module-lexer + wasi-sdk sources\n- Resolves: RBHZ#2111861\n\n[1:18.7.0-1]\n- Update to latest release\n- Resolves CVE-2022-32212 CVE-2022-32213 CVE-2022-32214 CVE-2022-32215\n- Resolves CVE-2022-29244\n- Resolves: RHBZ#2111009\n\n[1:18.2.0-2]\n- Disable LTO\n- Related: #1990096\n- Build without python3 fixup by default\n\n[1:18.2.0-1]\n- Rebase to version 18.2.0\n\n[1:16.14.0-5]\n- Unify configure calls into single command\n- Refactor bootstrap-related parts\n- Decouple dependency bundling from bootstrapping\n\n[1:16.14.0-4]\n- Apply lock file validation fixes\n- Resolves: CVE-2021-43616\n- Resolves: RHBZ#2070013\n\n[1:16.13.1-3]\n- Resolves: RHBZ#2026329\n- Add corepack to spec\n\n[1:16.13.1-2]\n- Resolves: RHBZ#2026329\n- Update npm version test\n\n[1:16.13.1-1]\n- Resolves: RHBZ#2014132, RHBZ#2014126, RHBZ#2013828, RHBZ#2024920\n- Resolves: RHBZ#2026329\n- Rebase to LTS release and to fix multiple low and medium CVEs\n\n[1:16.8.0-1]\n- Resolves CVE-2021-32803, CVE-2021-32804, CVE-2021-37701, CVE-2021-37712\n- Resolves: RHBZ#1993948, RHBZ#1993941, RHBZ#2000151, RHBZ#2002176\n\n[1:16.7.0-2]\n- Resolves CVE-2021-22930, CVE-2021-22931, CVE-2021-22939,\n- CVE-2021-22940, CVE-2021-32803, CVE-2021-32804, CVE-2021-3672\n- Resolves: RHBZ#1988608, RHBZ#1993816, RHBZ#1993810\n- Resolves: RHBZ#1993097, RHBZ#1993948, RHBZ#1993941, RHBZ#1994963\n- fix python3 in gyp\n\n[1:16.7.0-1]\n- Resolves CVE-2021-22930, CVE-2021-22931, CVE-2021-22939,\n- CVE-2021-22940, CVE-2021-32803, CVE-2021-32804, CVE-2021-3672\n- Resolves: RHBZ#1988608, RHBZ#1993816, RHBZ#1993810\n- Resolves: RHBZ#1993097, RHBZ#1993948, RHBZ#1993941, RHBZ#1994963\n\n[1:16.4.2-1]\n- Resolves: RHBZ#1979847\n- Resolves CVE-2021-22918(libuv)\n- Use system cipher list(1842826, 1952915)\n\nnodejs-nodemon\n[2.0.20-2]\n- Patch bundled glob-parent\n- Resolves: CVE-2021-35065\n\n[2.0.20-1]\n- Rebase to 2.0.20\n  Resolves: CVE-2022-3517\n\n[2.0.15-1]\n- Resolves: RHBZ#2005419\n- Resolves CVE-2020-28469\n- Rebase to newest version\n- Change source to npmjs.com\n\n[2.0.7-1]\n- Resolves: RHBZ#1953991\n- Update to 2.0.7 to resolve CVE-2020-28469\n\nnodejs-packaging\n[2021.06-4]\n- NPM bundler: also find namespaced bundled dependencies\n\n[2021.06-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild\n\n[2021.06-2]\n- Fix hard-coded output directory in the bundler\n\n[2021.06-1]\n- Update to 2021.06-1\n- bundler: Handle archaic license metadata\n- bundler: Warn about bundled dependencies with no license metadata\n\n[2021.01-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[2021.01-2]\n- nodejs-packaging-bundler improvements to handle uncommon characters\n\n[2021.01]\n- Add nodejs-packaging-bundler and update README.md\n\n[2020.09-1]\n- Move to dist-git as the upstream\n\n[25-1]\n- Fix incorrect bundled library detection for Requires\n\n[24-1]\n- Check node_modules_prod for bundled dependencies\n\n[23-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[23-3]\n- Drop Requires: nodejs(engine)\n\n[23-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-3577.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-3577.html",
       "ID": "ELSA-2023-3577"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-31130.html",
-      "ID": "CVE-2023-31130"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-32067.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-32067.html",
       "ID": "CVE-2023-32067"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-31147.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-31124.html",
+      "ID": "CVE-2023-31124"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-31147.html",
       "ID": "CVE-2023-31147"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-31124.html",
-      "ID": "CVE-2023-31124"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-31130.html",
+      "ID": "CVE-2023-31130"
     }
   ],
   "Criteria": {
@@ -114,10 +114,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nodejs-packaging-bundler is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
+                                "Comment": "nodejs-packaging is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
                               },
                               {
-                                "Comment": "nodejs-packaging-bundler is signed with the Oracle Linux 9 key"
+                                "Comment": "nodejs-packaging is signed with the Oracle Linux 9 key"
                               }
                             ]
                           },
@@ -126,10 +126,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nodejs-packaging is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
+                                "Comment": "nodejs-packaging-bundler is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
                               },
                               {
-                                "Comment": "nodejs-packaging is signed with the Oracle Linux 9 key"
+                                "Comment": "nodejs-packaging-bundler is signed with the Oracle Linux 9 key"
                               }
                             ]
                           },
@@ -242,6 +242,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "nodejs-nodemon is earlier than 0:2.0.20-2.module+el9.2.0+21038+115df6a2"
+                              },
+                              {
+                                "Comment": "nodejs-nodemon is signed with the Oracle Linux 9 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "nodejs-packaging is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
                               },
                               {
@@ -258,18 +270,6 @@
                               },
                               {
                                 "Comment": "nodejs-packaging-bundler is signed with the Oracle Linux 9 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "nodejs-nodemon is earlier than 0:2.0.20-2.module+el9.2.0+21038+115df6a2"
-                              },
-                              {
-                                "Comment": "nodejs-nodemon is signed with the Oracle Linux 9 key"
                               }
                             ]
                           }
@@ -307,23 +307,23 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-31130.html",
-      "ID": "CVE-2023-31130"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-32067.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-32067.html",
       "ID": "CVE-2023-32067"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-31147.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-31124.html",
+      "ID": "CVE-2023-31124"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-31147.html",
       "ID": "CVE-2023-31147"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-31124.html",
-      "ID": "CVE-2023-31124"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-31130.html",
+      "ID": "CVE-2023-31130"
     }
   ],
   "Issued": {

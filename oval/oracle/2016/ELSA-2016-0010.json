@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-0010.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0010.html",
       "ID": "ELSA-2016-0010"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-3223.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3223.html",
       "ID": "CVE-2015-3223"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-5252.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5252.html",
       "ID": "CVE-2015-5252"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-5296.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5296.html",
       "ID": "CVE-2015-5296"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-5299.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5299.html",
       "ID": "CVE-2015-5299"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-7540.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-7540.html",
       "ID": "CVE-2015-7540"
     }
   ],
@@ -230,6 +230,28 @@
             "Operator": "AND",
             "Criterias": [
               {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "samba4-swat is earlier than 0:4.0.0-67.el6_7.rc4"
+                  },
+                  {
+                    "Comment": "samba4-swat is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
                 "Operator": "OR",
                 "Criterias": [
                   {
@@ -409,28 +431,6 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba4-swat is earlier than 0:4.0.0-67.el6_7.rc4"
-                  },
-                  {
-                    "Comment": "samba4-swat is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
-              }
-            ]
           }
         ],
         "Criterions": null
@@ -446,27 +446,27 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-3223.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3223.html",
       "ID": "CVE-2015-3223"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-5252.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5252.html",
       "ID": "CVE-2015-5252"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-5296.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5296.html",
       "ID": "CVE-2015-5296"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-5299.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5299.html",
       "ID": "CVE-2015-5299"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-7540.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-7540.html",
       "ID": "CVE-2015-7540"
     }
   ],

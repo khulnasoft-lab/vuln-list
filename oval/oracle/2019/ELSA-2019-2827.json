@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2827.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2827.html",
       "ID": "ELSA-2019-2827"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-14835.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14835.html",
       "ID": "CVE-2019-14835"
     }
   ],
@@ -259,18 +259,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-80.11.2.el8_0"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perf is earlier than 0:4.18.0-80.11.2.el8_0"
                       },
                       {
@@ -287,6 +275,18 @@
                       },
                       {
                         "Comment": "python3-perf is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-80.11.2.el8_0"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -314,11 +314,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-14835.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14835.html",
       "ID": "CVE-2019-14835"
     }
   ],
   "Issued": {
-    "Date": "2019-09-22"
+    "Date": "2019-09-20"
   }
 }

@@ -7,88 +7,88 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-5676.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5676.html",
       "ID": "ELSA-2020-5676"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-1798.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-1798.html",
       "ID": "CVE-2013-1798"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-19854.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-19854.html",
       "ID": "CVE-2018-19854"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-14816.html",
-      "ID": "CVE-2019-14816"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-14815.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14815.html",
       "ID": "CVE-2019-14815"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-14814.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14816.html",
+      "ID": "CVE-2019-14816"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14814.html",
       "ID": "CVE-2019-14814"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19527.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19527.html",
       "ID": "CVE-2019-19527"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19768.html",
-      "ID": "CVE-2019-19768"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-9383.html",
-      "ID": "CVE-2020-9383"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-11494.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11494.html",
       "ID": "CVE-2020-11494"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19532.html",
-      "ID": "CVE-2019-19532"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-9383.html",
+      "ID": "CVE-2020-9383"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8648.html",
-      "ID": "CVE-2020-8648"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19768.html",
+      "ID": "CVE-2019-19768"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8647.html",
-      "ID": "CVE-2020-8647"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8649.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8649.html",
       "ID": "CVE-2020-8649"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19462.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19532.html",
+      "ID": "CVE-2019-19532"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8647.html",
+      "ID": "CVE-2020-8647"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8648.html",
+      "ID": "CVE-2020-8648"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-20096.html",
+      "ID": "CVE-2019-20096"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19462.html",
       "ID": "CVE-2019-19462"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-19965.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19965.html",
       "ID": "CVE-2019-19965"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-20096.html",
-      "ID": "CVE-2019-20096"
     }
   ],
   "Criteria": {
@@ -256,6 +256,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-uek-devel is earlier than 0:4.14.35-1902.302.2.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-uek-debug is earlier than 0:4.14.35-1902.302.2.el7uek"
                       },
                       {
@@ -272,18 +284,6 @@
                       },
                       {
                         "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-uek-devel is earlier than 0:4.14.35-1902.302.2.el7uek"
-                      },
-                      {
-                        "Comment": "kernel-uek-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -335,86 +335,86 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-1798.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-1798.html",
       "ID": "CVE-2013-1798"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-19854.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-19854.html",
       "ID": "CVE-2018-19854"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-14816.html",
-      "ID": "CVE-2019-14816"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-14815.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14815.html",
       "ID": "CVE-2019-14815"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-14814.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14816.html",
+      "ID": "CVE-2019-14816"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14814.html",
       "ID": "CVE-2019-14814"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19527.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19527.html",
       "ID": "CVE-2019-19527"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19768.html",
-      "ID": "CVE-2019-19768"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-9383.html",
-      "ID": "CVE-2020-9383"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-11494.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11494.html",
       "ID": "CVE-2020-11494"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19532.html",
-      "ID": "CVE-2019-19532"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-9383.html",
+      "ID": "CVE-2020-9383"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8648.html",
-      "ID": "CVE-2020-8648"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19768.html",
+      "ID": "CVE-2019-19768"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8647.html",
-      "ID": "CVE-2020-8647"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8649.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8649.html",
       "ID": "CVE-2020-8649"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19462.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19532.html",
+      "ID": "CVE-2019-19532"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8647.html",
+      "ID": "CVE-2020-8647"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8648.html",
+      "ID": "CVE-2020-8648"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-20096.html",
+      "ID": "CVE-2019-20096"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19462.html",
       "ID": "CVE-2019-19462"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-19965.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19965.html",
       "ID": "CVE-2019-19965"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-20096.html",
-      "ID": "CVE-2019-20096"
     }
   ],
   "Issued": {
-    "Date": "2020-05-11"
+    "Date": "2020-05-08"
   }
 }

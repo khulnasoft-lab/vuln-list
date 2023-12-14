@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2010-0999.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2010-0999.html",
       "ID": "ELSA-2010-0999"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2010-4203.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-4203.html",
       "ID": "CVE-2010-4203"
     }
   ],
@@ -125,6 +125,58 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvpx is earlier than 0:0.9.0-8.el6_0"
+                      },
+                      {
+                        "Comment": "libvpx is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvpx-devel is earlier than 0:0.9.0-8.el6_0"
+                      },
+                      {
+                        "Comment": "libvpx-devel is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvpx-utils is earlier than 0:0.9.0-8.el6_0"
+                      },
+                      {
+                        "Comment": "libvpx-utils is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -140,7 +192,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2010-4203.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-4203.html",
       "ID": "CVE-2010-4203"
     }
   ],

@@ -1,28 +1,28 @@
 {
   "Title": "ELSA-2023-12579: aardvark-dns security update (IMPORTANT)",
-  "Description": "runc\n[1:1.1.4-1.0.1]\n- rootless: fix /sys/fs/cgroup mounts to prevent CVE-2023-25809\n- rootfs: prohibit symlinks that conflicts with readonlyPaths\n          and/or maskedPaths to prevent CVE-2023-27561\n- Prohibit /proc and /sys to be symlinks to prevent CVE-2023-28642\n- JIRA: OLDIS-25589",
+  "Description": "aardvark-dns\n[2:1.5.0-2]\n- always stay offline during build\n- Related: #2123641\n\n[2:1.5.0-1]\n- update to https://github.com/containers/aardvark-dns/releases/tag/v1.5.0\n- Related: #2123641\n\n[2:1.4.0-1]\n- update to https://github.com/containers/aardvark-dns/releases/tag/v1.4.0\n- Related: #2123641\n\n[2:1.3.0-1]\n- update to https://github.com/containers/aardvark-dns/releases/tag/v1.3.0\n- Related: #2123641\n\n[2:1.2.0-1]\n- update to https://github.com/containers/aardvark-dns/releases/tag/v1.2.0\n- Related: #2116481\n\n[2:1.1.0-4]\n- remove windows binaries and regenerate vendor tarball\n- Related: #2061390\n\n[2:1.1.0-3]\n- add gating.yaml\n- Related: #2061390\n\n[2:1.1.0-2]\n- bump Epoch to preserve upgrade path\n- Related: #2061390\n\n[1.1.0-1]\n- initial import\n- Related: #2061390\n\nbuildah\n[1:1.29.1-2]\n- update to the latest content of https://github.com/containers/buildah/tree/release-1.29\n  (https://github.com/containers/buildah/commit/f07d2c9)\n- Resolves: #2166195\n\ncockpit-podman\n[63.1-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/63.1\n- Related: #2123641\n\n[63-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/63\n- Related: #2123641\n\n[62-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/62\n- Related: #2123641\n\n[61-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/61\n- Related: #2123641\n\n[60-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/60\n- Related: #2123641\n\n[59-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/59\n- Related: #2123641\n\n[58-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/58\n- Related: #2123641\n\n[57-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/57\n- Related: #2123641\n\n[56-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/56\n- Related: #2123641\n\n[55-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/55\n- Related: #2123641\n\n[54-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/54\n- Related: #2123641\n\n[53-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/53\n- Related: #2123641\n\n[52-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/52\n- Related: #2061390\n\n[51.1-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/51.1\n- Related: #2061390\n\n[50-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/50\n- Related: #2061390\n\n[49.1-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/49.1\n- Related: #2061390\n\n[48-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/48\n- Related: #2061390\n\n[47-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/47\n- Related: #2061390\n\nconmon\n[3:2.1.6-1]\n- update to https://github.com/containers/conmon/releases/tag/v2.1.6\n- Related: #2123641\n\n[3:2.1.5-1]\n- update to https://github.com/containers/conmon/releases/tag/v2.1.5\n- Related: #2123641\n\ncontainernetworking-plugins\n[1:1.2.0-1]\n- update to https://github.com/containernetworking/plugins/releases/tag/v1.2.0\n- Related: #2123641\n\n[1:1.1.1-3]\n- BuildRequires: /usr/bin/go-md2man\n- Related: #2061390\n\ncontainers-common\n[2:1-64.0.1]\n- Updated removed references [Orabug: 33473101] (Alex Burmashev)\n- Adjust registries.conf (Nikita Gerasimov)\n- remove references to RedHat registry (Nikita Gerasimov)\n\n[2:1-64]\n- be sure SYS_CHROOT is in containers.conf + update vendored components\n- Resolves: #2183667\n\ncontainer-selinux\n[2:2.205.0-2]\n- remove watch statements breaking the build on RHEL8.8\n- Related: #2179466\n\n[2:2.205.0-1]\n- update to https://github.com/containers/container-selinux/releases/tag/v2.205.0\n- remove user_namespace class, thanks to Lokesh Mandvekar\n- Resolves: #2179466\n\n[2:2.199.0-2]\n- revert back to https://github.com/containers/container-selinux/releases/tag/v2.199.0\n  (2.200.0 fails to build as it relies on the new selinux-policy which is not there yet)\n- Related: #2123641\n\n[2:2.200.0-1]\n- update to https://github.com/containers/container-selinux/releases/tag/v2.200.0\n- Related: #2123641\n\ncriu\ncrun\n[1.8.4-2]\n- Apply additional criu fix\n- Resolves: #2184221\n\n[1.8.4-1]\n- update to https://github.com/containers/crun/releases/tag/1.8.4\n- Resolves: #2184221\n\n[1.8.1-3]\n- fix could not find symbol criu_set_lsm_mount_context in libcriu.so\n- Resolves: #2184221\n\nfuse-overlayfs\n[1.11-1]\n- update to https://github.com/containers/fuse-overlayfs/releases/tag/v1.11\n- Resolves: #2185132\n\nlibslirp\nnetavark\n[2:1.5.0-5]\n- fix --dns-add command is not functioning\n- Resolves: #2182897\n\noci-seccomp-bpf-hook\n[1.2.8-1]\n- update to https://github.com/containers/oci-seccomp-bpf-hook/releases/tag/v1.2.8\n- Related: #2123641\n\n[1.2.7-1]\n- update to https://github.com/containers/oci-seccomp-bpf-hook/releases/tag/v1.2.7\n- Related: #2123641\n\n[1.2.6-1]\n- update to https://github.com/containers/oci-seccomp-bpf-hook/releases/tag/v1.2.6\n- Related: #2061390\n\npodman\n[3:4.4.1-12]\n- update to the latest content of https://github.com/containers/podman/tree/v4.4.1-rhel\n  (https://github.com/containers/podman/commit/aa5db47)\n- Resolves: #2189593\n\n[3:4.4.1-11]\n- update to the latest content of https://github.com/containers/podman/tree/v4.4.1-rhel\n  (https://github.com/containers/podman/commit/fd0ea3b)\n- Resolves: #2176833\n\n[3:4.4.1-10]\n- update to the latest content of https://github.com/containers/podman/tree/v4.4.1-rhel\n  (https://github.com/containers/podman/commit/05037d3)\n- Resolves: #2183601\n\n[3:4.4.1-9]\n- update to the latest content of https://github.com/containers/podman/tree/v4.4.1-rhel\n  (https://github.com/containers/podman/commit/67f7e1e)\n- Resolves: #2182491\n\npython-podman\n[4.4.1-1]\n- update to https://github.com/containers/podman-py/releases/tag/v4.4.1\n- Related: #2123641\n\n[4.4.0-1]\n- update to python-podman-4.4.0\n- Related: #2123641\n\n[4.3.0-2]\n- upload new source tarball\n- Related: #2123641\n\n[4.3.0-1]\n- update to https://github.com/containers/podman-py/releases/tag/v4.3.0\n- Related: #2123641\n\n[4.2.0-1]\n- update to https://github.com/containers/podman-py/releases/tag/v4.2.0\n- Related: #2061390\n\nrunc\n[1:1.1.4-1.0.1]\n- rootless: fix /sys/fs/cgroup mounts to prevent CVE-2023-25809\n- rootfs: prohibit symlinks that conflicts with readonlyPaths\n          and/or maskedPaths to prevent CVE-2023-27561\n- Prohibit /proc and /sys to be symlinks to prevent CVE-2023-28642\n- JIRA: OLDIS-25589\n\nskopeo\n[2:1.11.2-0.2]\n- fix build\n- Related: #2123641\n\n[2:1.11.2-0.1]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.11\n  (https://github.com/containers/skopeo/commit/3f98753)\n- Related: #2123641\n\n[2:1.11.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.11.1\n- Related: #2123641\n\n[2:1.11.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.11.0\n  (https://github.com/containers/skopeo/commit/968670116c56023d37e9e98b48346478599c6801)\n- Related: #2123641\n\n[2:1.11.0-0.3]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/fe15a36)\n- Related: #2123641\n\n[2:1.11.0-0.2]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/8e09e64)\n- Related: #2123641\n\n[2:1.11.0-0.1]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/2817510)\n- Related: #2123641\n\n[2:1.10.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.10.0\n- Related: #2123641\n\n[2:1.9.2-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.9.2\n- Related: #2061390\n\n[2:1.9.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.9.1\n- Related: #2061390\n\n[2:1.9.0-2]\n- update to skopeo-1.9.0 - thanks to Lokesh Mandvekar for fixing build issues\n- Related: #2061390\n\n[2:1.8.0-2]\n- BuildRequires: /usr/bin/go-md2man\n- Related: #2061390\n\n[2:1.8.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.8.0\n- Related: #2061390\n\n[2:1.7.0-2]\n- Related: #2061390\n\n[2:1.7.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.7.0\n- Related: #2061390\n\n[2:1.6.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.6.1\n- Related: #2001445\n\n[2:1.6.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.6.0\n- Related: #2001445\n\n[2:1.5.2-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.5.2\n- Related: #2001445\n\n[2:1.5.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.5.1\n- Related: #2001445\n\n[2:1.5.0-2]\n- bump Epoch to preserve upgrade path\n- Related: #2001445\n\n[1:1.5.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.5.0\n- Related: #2001445\n\n[1:1.5.1-0.3]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/9c9a9f3)\n- Related: #2001445\n\n[1:1.5.1-0.2]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/116e75f)\n- Related: #2001445\n\n[1:1.5.1-0.1]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/fc81803)\n- Related: #2001445\n\n[1:1.4.1-0.12]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/ff88d3f)\n- Related: #2001445\n\n[1:1.4.1-0.11]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/a95b0cc)\n- Related: #2001445\n\n[1:1.4.1-0.10]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/53cf287)\n- Related: #2001445\n\n[1:1.4.1-0.9]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/86fa758)\n- Related: #2001445\n\n[1:1.4.1-0.8]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/4d3588e)\n- Related: #2001445\n\n[1:1.4.1-0.7]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/25d3e7b)\n- Related: #2001445\n\n[1:1.4.1-0.6]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/c5a5199)\n- Related: #2001445\n\n[1:1.4.1-0.5]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/db1e814)\n- Related: #2001445\n\n[1:1.4.1-0.4]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/31b8981)\n- Related: #2001445\n\n[1:1.4.1-0.3]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/177443f)\n- Related: #2001445\n\n[1:1.4.1-0.2]\n- update to the latest content of https://github.com/containers/skopeo/tree/main\n  (https://github.com/containers/skopeo/commit/47b8082)\n- Related: #2001445\n\n[1:1.4.2-0.1]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.4\n  (https://github.com/containers/skopeo/commit/01e51ce)\n- Related: #1934415\n\n[1:1.4.1-2]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.4\n  (https://github.com/containers/skopeo/commit/130f32f)\n- Related: #1934415\n\n[1:1.4.1-1]\n- update to v1.4.1\n- Related: #1934415\n\n[1:1.4.0-7]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.4\n  (https://github.com/containers/skopeo/commit/ea32394)\n- Related: #1934415\n\n[1:1.4.0-6]\n- carve away containers-common - it's now a separate package\n- Related: #1934415\n\n[1:1.4.0-5]\n- be sure short-name-mode is permissive in RHEL8\n- Related: #1934415\n\n[1:1.4.0-4]\n- don't define short-name-mode in RHEL8\n- Related: #1934415\n\n[1:1.4.0-3]\n- re-add Requires: runc\n- Related: #1934415\n\n[1:1.4.0-2]\n- update to 1.4.0 release and switch to the release-1.4 maint branch\n- Related: #1934415\n\n[1:1.4.0-1]\n- update vendored components\n- ship /etc/pki/rpm-gpg/RPM-GPG-KEY-redhat-release only on non-RHEL and\n  CentOS distros\n- Related: #1934415\n\n[1:1.3.1-7]\n- switch to 'main' branch of podman\n- Related: #1934415\n\n[1:1.3.1-6]\n- move unqualified-search-registries to [registries.search]\n- Resolves: #1977280\n\n[1:1.3.1-5]\n- update shortnames from Pyxis\n- Related: #1934415\n\n[1:1.3.1-4]\n- add direct runc dependency to avoid situation when runc is listed\n  as default runtime but only crun is present in RHEL8\n- Related: #1934415\n\n[1:1.3.1-3]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.3\n  (https://github.com/containers/skopeo/commit/038f70e)\n- Related: #1934415\n\n[1:1.3.1-2]\n- use v3.2 branch for podman and update vendored branches\n- Related: #1934415\n\n[1:1.3.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.3.1\n- Related: #1934415\n\n[1:1.3.0-5]\n- update shortname overrides\n- Related: #1952204\n\n[1:1.3.0-4]\n- sync with Pyxis\n- use containers-mounts.conf.5.md from containers/common\n- Related: #1934415\n\n[1:1.3.0-3]\n- update to new versions of vendored components\n- fail is there is an issue in communication with Pyxis API\n- understand devel branch in update.sh script\n- Related: #1934415\n\n[1:1.3.0-2]\n- fix filelist with the new upstream release\n- Related: #1934415\n\n[1:1.3.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.3.0\n- Related: #1934415\n\n[1:1.2.3-3]\n- update vendored components versions\n- sync shortnames with pyxis\n- Related: #1934415\n\n[1:1.2.3-2]\n- assure runc is set as default runtime in RHEL8\n- update shortnames from upstream\n- sync vendored component versions with upstream\n- Related: #1934415\n\n[1:1.2.3-1]\n- update to skopeo-1.2.3\n- sync with Fedora deps\n- fix typo in upstream Makefile\n- Related: #1934415\n\n[1:1.2.2-6]\n- add update-vendored.sh, pyxis.sh and amend the shortname generation\n- Related: #1934415\n\n[1:1.2.2-5]\n- require crun \u003e= 0.19 and set it as default OCI runtime\n- add ensure() function to update.sh so that configuration statements\n  can be easily amended/reviewed\n- Related: #1934415\n\n[1:1.2.2-4]\n- use infra_image = 'registry.redhat.io/ubi8/pause' in containers.conf\n  (unlike previous one ubi8/pause doesn't require authentication)\n- Related: #1934415\n\n[1:1.2.2-3]\n- use infra_image = 'registry.redhat.io/rhel8/pause' in contiainers.conf\n- add update-vendored.sh script which will always assure we ship\n  documentation/configs for versions vendored in podman, buildah and\n  skopeo\n- Related: #1934415\n\n[1:1.2.2-2]\n- use rhel-shortnames only from trusted registries\n- sync with config files from current versions of vendored projects\n- Resolves: #1933775\n- Resolves: #1933776\n\n[1:1.2.2-1]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/e72dd9c)\n- Related: #1883490\n\n[1:1.2.1-14]\n- rename shortnames.conf to 000-shortnames.conf to assure evaluation order\n- Related: #1883490\n\n[1:1.2.1-13]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/3abb778)\n- Related: #1883490\n\n[1:1.2.1-12]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/b4210c0)\n- Resolves: #1914884\n\n[1:1.2.1-11]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/6c0e35a)\n- Related: #1883490\n\n[1:1.2.1-10]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/a05ddb8)\n- Related: #1883490\n\n[1:1.2.1-9]\n- define 8.4.0 branch for podman (v3.0)\n- remove redundant source file\n- Related: #1883490\n\n[1:1.2.1-8]\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/2e90a8a)\n- Related: #1883490\n\n[1:1.2.1-7]\n- convert subscription-manager from weak dep to a hint\n- Related: #1883490\n\n[1:1.2.1-6]\n- fix rhel-shortnames.conf generation (avoid duplicates and records\n  with invalid URL)\n- Related: #1883490\n\n[1:1.2.1-5]\n- assure 'NET_RAW' is always defined\n- support rhel-shortnames.conf with generated shortname/registry aliases\n- Related: #1883490\n\n[1:1.2.1-4]\n- add 'NET_RAW' default capability\n- Related: #1883490\n\n[1:1.2.1-3]\n- ship preconfigured /etc/containers/registries.d/ files with containers-common\n- Related: #1883490\n\n[1:1.2.1-2]\n- add shortnames from https://github.com/containers/shortnames\n- Related: #1883490\n\n[1:1.2.1-1]\n- update vendored component versions\n- update to the latest content of https://github.com/containers/skopeo/tree/release-1.2\n  (https://github.com/containers/skopeo/commit/2e90a8a)\n- Related: #1883490\n\n[1:1.2.0-6]\n- gating tests fixes and bump podman branch\n- Related: #1883490\n\n[1:1.2.0-5]\n- still use arch exclude as the go_arches macro is broken for 8.4\n- Related: #1883490\n\n[1:1.2.0-4]\n- unify vendored branches\n- add validation script\n- Related: #1883490\n\n[1:1.2.0-3]\n- simplify spec file\n- use short commit ID in tarball name\n- Related: #1883490\n\n[1:1.2.0-2]\n- synchronize with stream-container-tools-rhel8\n- Related: #1883490\n\n[1:1.2.0-1]\n- synchronize with stream-container-tools-rhel8\n- Related: #1883490\n\n[1:1.1.1-3]\n- propagate proper CFLAGS to CGO_CFLAGS to assure code hardening and optimization\n- Related: #1821193\n\n[1:1.1.1-2]\n- drop applied patches\n- Related: #1821193\n\n[1:1.1.1-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.1.1\n- Related: #1821193\n\n[1:1.1.0-3]\n- fix broken gating tests: docker unexpectedly removed htpasswd from\n  their 'registry:2' image, so we now use htpasswd from httpd-tools on host.\n\n[1:1.1.0-2]\n- fix 'CVE-2020-14040 skopeo: golang.org/x/text: possibility to trigger an infinite loop in encoding/unicode could lead to crash [rhel-8]'\n- Resolves: #1854719\n\n[1:1.1.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.1.0\n- Related: #1821193\n\n[1:1.0.0-2]\n- exclude i686 arch\n- Related: #1821193\n\n[1:1.0.0-1]\n- update to https://github.com/containers/skopeo/releases/tag/v1.0.0\n- Related: #1821193\n\n[1:0.2.0-6]\n- synchronize containter-tools 8.3.0 with 8.2.1\n- Related: #1821193\n\n[1:0.1.41-1]\n- update to 0.1.41\n- Related: #1821193\n\n[1:0.1.40-10]\n- modify registries.conf default configuration to be more secure by default\n- Resolves: #1810053\n\n[1:0.1.40-9]\n- Fix CVE-2020-1702.\n- Resolves: #1801922\n\n[1:0.1.40-8]\n- change the search order of registries and remove quay.io (#1784267)\n\n[1:0.1.40-7]\n- compile in FIPS mode\n- Related: RHELPLAN-25139\n\n[1:0.1.40-6]\n- be sure to use golang \u003e= 1.12.12-4\n- Related: RHELPLAN-25139\n\n[1:0.1.40-5]\n- fix file list\n- Related: RHELPLAN-25139\n\n[1:0.1.40-4]\n- fix symlinks in /usr/share/rhel/secrets and make\n  subscription-manager soft dependency to make them work\n- Related: RHELPLAN-25139\n\n[1:0.1.40-3]\n- rebuild because of CVE-2019-9512 and CVE-2019-9514\n- Resolves: #1772132, #1772137\n\n[1:0.1.40-2]\n- comment out mountopt option in order to fix gating tests\n  see bug 1769769\n- Related: RHELPLAN-25139\n\n[1:0.1.40-1]\n- update to 0.1.40\n- Related: RHELPLAN-25139\n\n[1:0.1.37-5]\n- Fix CVE-2019-10214 (#1734651).\n\n[1:0.1.37-4]\n- fix permissions of rhel/secrets\n  Resolves: #1691543\n\n[1:0.1.37-3]\n- Resolves: #1719994 - add registry.access.redhat.com to registries.conf\n\n[1:0.1.37-2]\n- Resolves: #1721247 - enable fips mode\n\n[1:0.1.37-1]\n- Resolves: #1720654 - rebase to v0.1.37\n\n[1:0.1.36-1.git6307635]\n- built upstream tag v0.1.36, including system tests\n\n[1:0.1.32-4.git1715c90]\n- Fixes @openshift/machine-config-operator#669\n- install /etc/containers/oci/hooks.d and /etc/containers/certs.d\n\n[1:0.1.32-3.git1715c90]\n- rebase\n\n[1:0.1.32-2.git1715c90]\n- re-enable debuginfo\n\n[1:0.1.31-12.gitb0b750d]\n- go tools not in scl anymore\n\n[1:0.1.31-11.gitb0b750d]\n- Resolves: #1615609\n- built upstream tag v0.1.31\n\n[1:0.1.31-10.git0144aa8]\n- Resolves: #1616069 - correct order of registries\n\n[1:0.1.31-9.git0144aa8]\n- Resolves: #1615609 - rebuild with gobuild tag 'no_openssl'\n\n[1:0.1.31-8.git0144aa8]\n- Resolves: #1614934 - containers-common soft dep on slirp4netns and\nfuse-overlayfs\n\n[1:0.1.31-7.git0144aa8]\n- build with %gobuild\n- use scl-ized go-toolset as dep\n- disable i686 builds temporarily because of go-toolset issues\n\n[1:0.1.31-6.git0144aa8]\n- add statx to seccomp.json to containers-config\n- add seccomp.json to containers-config\n\n[1:0.1.31-4.git0144aa8]\n- Resolves: #1597629 - handle dependency issue for skopeo-containers\n- rename skopeo-containers to containers-common as in Fedora\n\n[1:0.1.31-3.git0144aa8]\n- Resolves: #1583762 - btrfs dep removal needs exclude_graphdriver_btrfs\nbuildtag\n\n[1:0.1.31-2.git0144aa8]\n- correct bz in previous changelog\n\n[1:0.1.31-1.git0144aa8]\n- Resolves: #1580938 - resolve FTBFS\n- Resolves: #1583762 - remove dependency on btrfs-progs-devel\n- bump to v0.1.31 (from master)\n- built commit ca3bff6\n- use go-toolset deps for rhel8\n\n[0.1.29-5.git7add6fc]\n- Fix small typo in registries.conf\n\n[0.1.29-4.git]\n- Add policy.json.5\n\n[0.1.29-3.git]\n- Add registries.conf\n\n[0.1.29-2.git]\n- Add registries.conf man page\n\n[0.1.29-1.git]\n- bump to 0.1.29-1\n- Updated containers/image\n    docker-archive generates docker legacy compatible images\n    Do not create  subdirectories for layers with no configs\n    Ensure the layer IDs in legacy docker/tarfile metadata are unique\n    docker-archive: repeated layers are symlinked in the tar file\n    sysregistries: remove all trailing slashes\n    Improve docker/* error messages\n    Fix failure to make auth directory\n    Create a new slice in Schema1.UpdateLayerInfos\n    Drop unused storageImageDestination.{image,systemContext}\n    Load a *storage.Image only once in storageImageSource\n    Support gzip for docker-archive files\n    Remove .tar extension from blob and config file names\n    ostree, src: support copy of compressed layers\n    ostree: re-pull layer if it misses uncompressed_digest|uncompressed_size\n    image: fix docker schema v1 -\u003e OCI conversion\n    Add /etc/containers/certs.d as default certs directory\n\n[0.1.28-2.git0270e56]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[0.1.28-1.git]\n- Vendor in fixed libraries in containers/image and containers/storage\n\n[0.1.27-1.git]\n- Fix Conflicts to Obsoletes\n- Add better docs to man pages.\n- Use credentials from authfile for skopeo commands\n- Support storage='' in /etc/containers/storage.conf\n- Add global --override-arch and --override-os options\n\n[0.1.25-2.git2e8377a7]\n-  Add manifest type conversion to skopeo copy\n-  User can select from 3 manifest types: oci, v2s1, or v2s2\n-   e.g skopeo copy --format v2s1 --compress-blobs docker-archive:alp.tar dir:my-directory\n\n[0.1.25-2.git7fd6f66b]\n- Force storage.conf to default to overlay\n\n[0.1.25-1.git7fd6f66b]\n-   Fix CVE in tar-split\n-   copy: add shared blob directory support for OCI sources/destinations\n-   Aligning Docker version between containers/image and skopeo\n-   Update image-tools, and remove the duplicate Sirupsen/logrus vendor\n-   makefile: use -buildmode=pie\n\n[0.1.24-8.git28d4e08a]\n- Add /usr/share/containers/mounts.conf\n\n[0.1.24-7.git28d4e08a]\n- Bug fixes\n- Update to release\n\n[0.1.24-6.dev.git28d4e08]\n- skopeo-containers conflicts with docker-rhsubscription \u003c= 2:1.13.1-31\n\n[0.1.24-5.dev.git28d4e08]\n- Add rhel subscription secrets data to skopeo-containers\n\n[0.1.24-4.dev.git28d4e08]\n- Update container/storage.conf and containers-storage.conf man page\n- Default override to true so it is consistent with RHEL.\n\n[0.1.24-3.dev.git28d4e08]\n- built commit 28d4e08\n\n[0.1.24-2.dev.git875dd2e]\n- built commit 875dd2e\n- Resolves: gh#416\n\n[0.1.24-1.dev.gita41cd0]\n- bump to 0.1.24-dev\n- correct a prior bogus date\n- fix macro in comment warning\n\n[0.1.23-6.dev.git1bbd87]\n- Change name of storage.conf.5 man page to containers-storage.conf.5, since\nit conflicts with inn package\n- Also remove default to 'overalay' in the configuration, since we should\n- allow containers storage to pick the best default for the platform.\n\n[0.1.23-5.git1bbd87f]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[0.1.23-4.git1bbd87f]\n- Rebuild with binutils fix for ppc64le (#1475636)\n\n[0.1.23-3.git1bbd87f]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[0.1.23-2.dev.git1bbd87]\n- Fix storage.conf man page to be storage.conf.5.gz so that it works.\n\n[0.1.23-1.dev.git1bbd87]\n- Support for OCI V1.0 Images\n- Update to image-spec v1.0.0 and revendor\n- Fixes for authentication\n\n[0.1.22-2.dev.git5d24b67]\n- Epoch: 1 for CentOS as CentOS Extras' build already has epoch set to 1\n\n[0.1.22-1.dev.git5d24b67]\n-  Give more useful help when explaining usage\n-  Also specify container-storage as a valid transport\n-  Remove docker reference wherever possible\n-  vendor in ostree fixes\n\n[0.1.21-1.dev.git0b73154]\n- Add support for storage.conf and storage-config.5.md from github container storage package\n- Bump to the latest version of skopeo\n- vendor.conf: add ostree-go\n- it is used by containers/image for pulling images to the OSTree storage.\n- fail early when image os does not match host os\n- Improve documentation on what to do with containers/image failures in test-skopeo\n-   We now have the docker-archive: transport\n-   Integration tests with built registries also exist\n- Support /etc/docker/certs.d\n- update image-spec to v1.0.0-rc6\n\n[0.1.20-1.dev.git0224d8c]\n- BZ #1380078 - New release\n\n[0.1.19-2.dev.git0224d8c]\n- No golang support for ppc64.  Adding exclude arch. BZ #1445490\n\n[0.1.19-1.dev.git0224d8c]\n- bump to v0.1.19-dev\n- built commit 0224d8c\n\n[0.1.17-3.dev.git2b3af4a]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[0.1.17-2.dev.git2b3af4a]\n- Rebuild for gpgme 1.18\n\n[0.1.17-1.dev.git2b3af4a]\n- bump to 0.1.17-dev\n\n[0.1.14-6.git550a480]\n- Fix BZ#1391932\n\n[0.1.14-5.git550a480]\n- Conflicts with atomic in skopeo-containers\n\n[0.1.14-4.git550a480]\n- built skopeo-containers\n\n[0.1.14-3.gitd830391]\n- built mtrmac/integrate-all-the-things commit d830391\n\n[0.1.14-2.git362bfc5]\n- built commit 362bfc5\n\n[0.1.14-1.gitffe92ed]\n- build origin/master commit ffe92ed\n\n[0.1.13-6]\n- https://fedoraproject.org/wiki/Changes/golang1.7\n\n[0.1.13-5]\n- include go-srpm-macros and compiler(go-compiler) in fedora conditionals\n- define %gobuild if not already\n- add patch to build with older version of golang\n\n[0.1.13-4]\n- update to v0.1.12\n\n[0.1.12-3]\n- fix go build source path\n\n[0.1.12-2]\n- update to v0.1.12\n\n[0.1.11-1]\n- update to v0.1.11\n\n[0.1.10-1]\n- update to v0.1.10\n- change runcom -\u003e projectatomic\n\n[0.1.9-1]\n- update to v0.1.9\n\n[0.1.8-1]\n- update to v0.1.8\n\n[0.1.4-2]\n- https://fedoraproject.org/wiki/Changes/golang1.6\n\n[0.1.4]\n- First package for Fedora\n\nslirp4netns\n[1.2.0-2]\n- BuildRequires: /usr/bin/go-md2man\n- Related: #2061390\n\n[1.2.0-1]\n- update to https://github.com/rootless-containers/slirp4netns/releases/tag/v1.2.0\n- Related: #2061390\n\nudica\n[0.2.6-20]\n- bump release to preserve update path\n- Related: #2139052\n\n[0.2.6-4]\n- Bump release to match latest release available in rhel-8.6.1\n- Resolves: #2139052",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-12579.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12579.html",
       "ID": "ELSA-2023-12579"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-25809.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-25809.html",
       "ID": "CVE-2023-25809"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-27561.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-27561.html",
       "ID": "CVE-2023-27561"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-28642.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-28642.html",
       "ID": "CVE-2023-28642"
     }
   ],
@@ -169,6 +169,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "criu-devel is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "criu-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "criu-libs is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
                               },
                               {
@@ -337,58 +349,22 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "python3-podman is earlier than 0:4.4.1-1.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "python3-podman is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "slirp4netns is earlier than 0:1.2.0-2.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "slirp4netns is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "udica is earlier than 0:0.2.6-20.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "udica is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "criu-devel is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "criu-devel is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "python3-criu is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
                               },
                               {
                                 "Comment": "python3-criu is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python3-podman is earlier than 0:4.4.1-1.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "python3-podman is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -413,6 +389,30 @@
                               },
                               {
                                 "Comment": "skopeo-tests is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "slirp4netns is earlier than 0:1.2.0-2.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "slirp4netns is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "udica is earlier than 0:0.2.6-20.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "udica is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -513,6 +513,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "conmon is earlier than 3:2.1.6-1.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "conmon is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "container-selinux is earlier than 2:2.205.0-2.module+el8.8.0+21045+adcb6a64"
                               },
                               {
@@ -525,10 +537,46 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "containernetworking-plugins is earlier than 1:1.2.0-1.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "containernetworking-plugins is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "containers-common is earlier than 2:1-64.0.1.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "containers-common is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "crit is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
                               },
                               {
                                 "Comment": "crit is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "criu is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "criu is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -553,6 +601,42 @@
                               },
                               {
                                 "Comment": "criu-libs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "crun is earlier than 0:1.8.4-2.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "crun is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "fuse-overlayfs is earlier than 0:1.11-1.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "fuse-overlayfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libslirp is earlier than 0:4.4.0-1.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "libslirp is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -589,6 +673,42 @@
                               },
                               {
                                 "Comment": "oci-seccomp-bpf-hook is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "podman is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "podman is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "podman-catatonit is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "podman-catatonit is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "podman-docker is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
+                              },
+                              {
+                                "Comment": "podman-docker is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -657,6 +777,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "python3-podman is earlier than 0:4.4.1-1.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "python3-podman is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "skopeo is earlier than 2:1.11.2-0.2.module+el8.8.0+21045+adcb6a64"
+                              },
+                              {
+                                "Comment": "skopeo is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "skopeo-tests is earlier than 2:1.11.2-0.2.module+el8.8.0+21045+adcb6a64"
                               },
                               {
@@ -685,150 +829,6 @@
                               },
                               {
                                 "Comment": "udica is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "containers-common is earlier than 2:1-64.0.1.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "containers-common is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "crun is earlier than 0:1.8.4-2.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "crun is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "fuse-overlayfs is earlier than 0:1.11-1.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "fuse-overlayfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "podman is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "podman is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "podman-catatonit is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "podman-catatonit is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "podman-docker is earlier than 3:4.4.1-12.module+el8.8.0+21056+d98a0860"
-                              },
-                              {
-                                "Comment": "podman-docker is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "conmon is earlier than 3:2.1.6-1.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "conmon is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "containernetworking-plugins is earlier than 1:1.2.0-1.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "containernetworking-plugins is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "criu is earlier than 0:3.15-3.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "criu is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "libslirp is earlier than 0:4.4.0-1.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "libslirp is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python3-podman is earlier than 0:4.4.1-1.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "python3-podman is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "skopeo is earlier than 2:1.11.2-0.2.module+el8.8.0+21045+adcb6a64"
-                              },
-                              {
-                                "Comment": "skopeo is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -878,21 +878,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-25809.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-25809.html",
       "ID": "CVE-2023-25809"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-27561.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-27561.html",
       "ID": "CVE-2023-27561"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-28642.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-28642.html",
       "ID": "CVE-2023-28642"
     }
   ],
   "Issued": {
-    "Date": "2023-07-19"
+    "Date": "2023-07-10"
   }
 }

@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2237.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2237.html",
       "ID": "ELSA-2019-2237"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-0495.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0495.html",
       "ID": "CVE-2018-0495"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-12404.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12404.html",
       "ID": "CVE-2018-12404"
     }
   ],
@@ -78,18 +78,6 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.44.0-4.el7"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -188,6 +176,18 @@
                         "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.44.0-4.el7"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -205,6 +205,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.44.0-4.el7"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -250,18 +262,6 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.44.0-4.el7"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -370,6 +370,28 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "nspr is earlier than 0:4.21.0-1.el7"
+                  },
+                  {
+                    "Comment": "nspr is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -385,16 +407,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-0495.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0495.html",
       "ID": "CVE-2018-0495"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-12404.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12404.html",
       "ID": "CVE-2018-12404"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0276.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0276.html",
       "ID": "ELSA-2013-0276"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3411.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3411.html",
       "ID": "CVE-2012-3411"
     }
   ],
@@ -161,6 +161,46 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvirt-client is earlier than 0:0.10.2-18.0.1.el6"
+                      },
+                      {
+                        "Comment": "libvirt-client is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvirt-python is earlier than 0:0.10.2-18.0.1.el6"
+                      },
+                      {
+                        "Comment": "libvirt-python is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -176,11 +216,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3411.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3411.html",
       "ID": "CVE-2012-3411"
     }
   ],
   "Issued": {
-    "Date": "2013-02-27"
+    "Date": "2013-02-22"
   }
 }

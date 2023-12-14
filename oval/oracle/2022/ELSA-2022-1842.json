@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-1842.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-1842.html",
       "ID": "ELSA-2022-1842"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-18898.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-18898.html",
       "ID": "CVE-2020-18898"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "exiv2 is earlier than 0:0.27.5-2.el8"
+                      },
+                      {
+                        "Comment": "exiv2 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -49,18 +61,6 @@
                       },
                       {
                         "Comment": "exiv2-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "exiv2 is earlier than 0:0.27.5-2.el8"
-                      },
-                      {
-                        "Comment": "exiv2 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -97,6 +97,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "exiv2 is earlier than 0:0.27.5-2.el8"
+                      },
+                      {
+                        "Comment": "exiv2 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "exiv2-devel is earlier than 0:0.27.5-2.el8"
                       },
                       {
@@ -113,18 +125,6 @@
                       },
                       {
                         "Comment": "exiv2-doc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "exiv2 is earlier than 0:0.27.5-2.el8"
-                      },
-                      {
-                        "Comment": "exiv2 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -164,11 +164,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-18898.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-18898.html",
       "ID": "CVE-2020-18898"
     }
   ],
   "Issued": {
-    "Date": "2022-05-17"
+    "Date": "2022-05-15"
   }
 }

@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-0685.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0685.html",
       "ID": "ELSA-2016-0685"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1978.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1978.html",
       "ID": "CVE-2016-1978"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1979.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1979.html",
       "ID": "CVE-2016-1979"
     }
   ],
@@ -75,18 +75,6 @@
                   },
                   {
                     "Comment": "nss-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "nss-pkcs11-devel is earlier than 0:3.21.0-9.0.1.el7_2"
-                  },
-                  {
-                    "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -185,6 +173,18 @@
                     "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "nss-pkcs11-devel is earlier than 0:3.21.0-9.0.1.el7_2"
+                  },
+                  {
+                    "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -207,12 +207,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1978.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1978.html",
       "ID": "CVE-2016-1978"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1979.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1979.html",
       "ID": "CVE-2016-1979"
     }
   ],

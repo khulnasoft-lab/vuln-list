@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-5250:  libxml2 security update (MODERATE)",
-  "Description": "[2.9.13-1.1]\n- Fix CVE-2022-29824 (#2082299)",
+  "Description": "[2.9.13-1.1]\n- Fix CVE-2022-29824 (#2082299)\n\n[2.9.13-1]\n- Update to 2.9.13 (#2057665)\n\n[2.9.12-4]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[2.9.12-3]\n- Fix xmlNodeDumpOutputInternal regression (#1969892)\n\n[2.9.12-2]\n- Fix multiarch conflict in devel subpackage (#1964346)\n\n[2.9.12-1]\n- Rebase to 2.9.12 (#1960623)\n\n[2.9.10-12]\n- Fix CVE-2021-3516 (#1956969)\n- Fix CVE-2021-3517 (#1957002)\n- Fix CVE-2021-3518 (#1957029)\n- Fix CVE-2021-3537 (#1957285)\n\n[2.9.10-11]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[2.9.10-10]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[2.9.10-9]\n- Build the Python extension with the PY_SSIZE_T_CLEAN macro to make it\n  compatible with Python 3.10.\n- Fixes: rhbz#1890878.\n\n[2.9.10-8]\n- Add correct fix for CVE-2020-24977 (RHBZ#1877788), thanks: Jan de Groot.\n\n[2.9.10-7]\n- Add fix for CVE-2020-24977 (RHBZ#1877788).\n\n[2.9.10-6]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[2.9.10-5]\n- Rebuilt for Python 3.9",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-5250.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-5250.html",
       "ID": "ELSA-2022-5250"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-29824.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-29824.html",
       "ID": "CVE-2022-29824"
     }
   ],
@@ -45,10 +45,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-libxml2 is earlier than 0:2.9.13-1.el9_0.1"
+                        "Comment": "libxml2-devel is earlier than 0:2.9.13-1.el9_0.1"
                       },
                       {
-                        "Comment": "python3-libxml2 is signed with the Oracle Linux 9 key"
+                        "Comment": "libxml2-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -57,10 +57,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libxml2-devel is earlier than 0:2.9.13-1.el9_0.1"
+                        "Comment": "python3-libxml2 is earlier than 0:2.9.13-1.el9_0.1"
                       },
                       {
-                        "Comment": "libxml2-devel is signed with the Oracle Linux 9 key"
+                        "Comment": "python3-libxml2 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -97,10 +97,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-libxml2 is earlier than 0:2.9.13-1.el9_0.1"
+                        "Comment": "libxml2-devel is earlier than 0:2.9.13-1.el9_0.1"
                       },
                       {
-                        "Comment": "python3-libxml2 is signed with the Oracle Linux 9 key"
+                        "Comment": "libxml2-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -109,10 +109,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libxml2-devel is earlier than 0:2.9.13-1.el9_0.1"
+                        "Comment": "python3-libxml2 is earlier than 0:2.9.13-1.el9_0.1"
                       },
                       {
-                        "Comment": "libxml2-devel is signed with the Oracle Linux 9 key"
+                        "Comment": "python3-libxml2 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-29824.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-29824.html",
       "ID": "CVE-2022-29824"
     }
   ],
   "Issued": {
-    "Date": "2022-06-30"
+    "Date": "2022-06-29"
   }
 }

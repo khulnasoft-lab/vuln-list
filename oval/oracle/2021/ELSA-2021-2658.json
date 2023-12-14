@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2021-2658:  linuxptp security update (IMPORTANT)",
-  "Description": "[2.0-2.el7_9.1]\n- validate length of forwarded messages (CVE-2021-3570)",
+  "Description": "[2.0-2.el7_9.1]\n- validate length of forwarded messages (CVE-2021-3570)\n\n[2.0-2]\n- fix comparing of unicast addresses\n- don't leak memory when allocation fails\n\n[2.0-1]\n- update to 2.0 (#1623919)\n- add support for more accurate synchronization to phc2sys (#1643977)\n- add support for active-backup team interface (#1650672)\n- limit unicast message rate per address and grant duration\n\n[1.8-6]\n- add support for bonding to timemaster (#1549015)\n- improve timemaster to restart terminated processes (#1527170)\n- start ptp4l, timemaster and phc2sys after network-online target (#1541991)\n- don't forward management requests to UDS port (#1520366)\n\n[1.8-5]\n- add support for active-backup bonding (#1002657)\n- add support for IP over InfiniBand (#1472880)\n- fix handling of unknown/invalid management TLVs in pmc (#1459446 #1459449)\n\n[1.8-4]\n- Resolves: #1487522 - Race condition in phc2sys\n\n[1.8-3]\n- fix backport of linkdown patch\n\n[1.8-2]\n- force BMC election when link goes down\n\n[1.8-1]\n- update to 1.8 (#1359311 #1353336)\n\n[1.4-3.20140718gitbdb6a3]\n- fix resetting of linreg servo (#1165045)\n- fix phc2sys automatic mode with multiple interfaces (#1108795)\n\n[1.4-2.20140718gitbdb6a3]\n- add timemaster (#1085580)\n- send peer messages to correct address\n- make NTP SHM segment number configurable\n- update UDS handling to allow running multiple ptp4l/phc2sys instances\n- fix warnings from static analysis\n\n[1.4-1.20140718gitbdb6a3]\n- update to 20140718gitbdb6a3 (#1108795, #1059039)\n- fix PIE linking (#1092537)\n- replace hardening build flags with _hardened_build\n- include simulation test suite\n\n[1.3-3]\n- Mass rebuild 2014-01-24\n\n[1.3-2]\n- Mass rebuild 2013-12-27\n\n[1.3-1]\n- update to 1.3\n\n[1.2-3.20130730git7789f0]\n- update to 20130730git7789f0\n\n[1.2-2.20130719git46db40]\n- update to 20130719git46db40\n- drop old systemd scriptlets\n- add man page link for ptp4l.conf\n\n[1.2-1]\n- update to 1.2\n\n[1.1-1]\n- update to 1.1\n- log phc2sys output\n\n[1.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild\n\n[1.0-1]\n- update to 1.0\n\n[0-0.3.20121109git4e8107]\n- update to 20121109git4e8107\n- install unchanged default.cfg as ptp4l.conf\n- drop conflicts from phc2sys service\n\n[0-0.2.20120920git6ce135]\n- fix issues found in package review (#859193)\n\n[0-0.1.20120920git6ce135]\n- initial release",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-2658.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-2658.html",
       "ID": "ELSA-2021-2658"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3570.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3570.html",
       "ID": "CVE-2021-3570"
     }
   ],
@@ -80,11 +80,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3570.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3570.html",
       "ID": "CVE-2021-3570"
     }
   ],
   "Issued": {
-    "Date": "2021-07-07"
+    "Date": "2021-07-06"
   }
 }

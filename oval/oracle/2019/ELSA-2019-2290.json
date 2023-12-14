@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2290.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2290.html",
       "ID": "ELSA-2019-2290"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-20533.html",
-      "ID": "CVE-2018-20533"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20534.html",
+      "ID": "CVE-2018-20534"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-20532.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20532.html",
       "ID": "CVE-2018-20532"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-20534.html",
-      "ID": "CVE-2018-20534"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20533.html",
+      "ID": "CVE-2018-20533"
     }
   ],
   "Criteria": {
@@ -119,18 +119,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libsolv is earlier than 0:0.6.34-4.el7"
-                      },
-                      {
-                        "Comment": "libsolv is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libsolv-demo is earlier than 0:0.6.34-4.el7"
                       },
                       {
@@ -173,6 +161,18 @@
                         "Comment": "python2-solv is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsolv is earlier than 0:0.6.34-4.el7"
+                      },
+                      {
+                        "Comment": "libsolv is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -198,21 +198,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-20533.html",
-      "ID": "CVE-2018-20533"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20534.html",
+      "ID": "CVE-2018-20534"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-20532.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20532.html",
       "ID": "CVE-2018-20532"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-20534.html",
-      "ID": "CVE-2018-20534"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20533.html",
+      "ID": "CVE-2018-20533"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-0863.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-0863.html",
       "ID": "ELSA-2015-0863"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-7423.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-7423.html",
       "ID": "CVE-2013-7423"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-1781.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-1781.html",
       "ID": "CVE-2015-1781"
     }
   ],
@@ -86,6 +86,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nscd is earlier than 0:2.12-1.149.el6_6.7"
+                      },
+                      {
+                        "Comment": "nscd is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "glibc-static is earlier than 0:2.12-1.149.el6_6.7"
                       },
                       {
@@ -102,18 +114,6 @@
                       },
                       {
                         "Comment": "glibc-utils is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nscd is earlier than 0:2.12-1.149.el6_6.7"
-                      },
-                      {
-                        "Comment": "nscd is signed with the Oracle Linux 6 key"
                       }
                     ]
                   }
@@ -241,12 +241,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-7423.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-7423.html",
       "ID": "CVE-2013-7423"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-1781.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-1781.html",
       "ID": "CVE-2015-1781"
     }
   ],

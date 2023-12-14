@@ -7,82 +7,82 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-0927.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-0927.html",
       "ID": "ELSA-2014-0927"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4148.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4148.html",
       "ID": "CVE-2013-4148"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4151.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4151.html",
       "ID": "CVE-2013-4151"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4535.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4535.html",
       "ID": "CVE-2013-4535"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4536.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4536.html",
       "ID": "CVE-2013-4536"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4541.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4541.html",
       "ID": "CVE-2013-4541"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4542.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4542.html",
       "ID": "CVE-2013-4542"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-6399.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-6399.html",
       "ID": "CVE-2013-6399"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0182.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0182.html",
       "ID": "CVE-2014-0182"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-3461.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3461.html",
       "ID": "CVE-2014-3461"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4149.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4149.html",
       "ID": "CVE-2013-4149"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4150.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4150.html",
       "ID": "CVE-2013-4150"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4527.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4527.html",
       "ID": "CVE-2013-4527"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4529.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4529.html",
       "ID": "CVE-2013-4529"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0222.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0222.html",
       "ID": "CVE-2014-0222"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-0223.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0223.html",
       "ID": "CVE-2014-0223"
     }
   ],
@@ -104,30 +104,6 @@
                   },
                   {
                     "Comment": "libcacard is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-devel is earlier than 10:1.5.3-60.el7_0.5"
-                  },
-                  {
-                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-tools is earlier than 10:1.5.3-60.el7_0.5"
-                  },
-                  {
-                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -190,6 +166,30 @@
                     "Comment": "qemu-kvm-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-devel is earlier than 10:1.5.3-60.el7_0.5"
+                  },
+                  {
+                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-tools is earlier than 10:1.5.3-60.el7_0.5"
+                  },
+                  {
+                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -212,77 +212,77 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4148.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4148.html",
       "ID": "CVE-2013-4148"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4151.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4151.html",
       "ID": "CVE-2013-4151"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4535.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4535.html",
       "ID": "CVE-2013-4535"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4536.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4536.html",
       "ID": "CVE-2013-4536"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4541.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4541.html",
       "ID": "CVE-2013-4541"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4542.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4542.html",
       "ID": "CVE-2013-4542"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-6399.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-6399.html",
       "ID": "CVE-2013-6399"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0182.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0182.html",
       "ID": "CVE-2014-0182"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-3461.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3461.html",
       "ID": "CVE-2014-3461"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4149.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4149.html",
       "ID": "CVE-2013-4149"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4150.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4150.html",
       "ID": "CVE-2013-4150"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4527.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4527.html",
       "ID": "CVE-2013-4527"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4529.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4529.html",
       "ID": "CVE-2013-4529"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0222.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0222.html",
       "ID": "CVE-2014-0222"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-0223.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0223.html",
       "ID": "CVE-2014-0223"
     }
   ],

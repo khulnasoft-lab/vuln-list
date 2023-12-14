@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0528.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0528.html",
       "ID": "ELSA-2013-0528"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-4546.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4546.html",
       "ID": "CVE-2012-4546"
     }
   ],
@@ -197,6 +197,58 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ipa-admintools is earlier than 0:3.0.0-25.el6"
+                      },
+                      {
+                        "Comment": "ipa-admintools is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ipa-client is earlier than 0:3.0.0-25.el6"
+                      },
+                      {
+                        "Comment": "ipa-client is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ipa-python is earlier than 0:3.0.0-25.el6"
+                      },
+                      {
+                        "Comment": "ipa-python is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -212,11 +264,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-4546.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4546.html",
       "ID": "CVE-2012-4546"
     }
   ],
   "Issued": {
-    "Date": "2013-02-27"
+    "Date": "2013-02-22"
   }
 }

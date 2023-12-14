@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-1093:  pesign security update (IMPORTANT)",
-  "Description": "[0.109-11.0.1]\n- RPM macro fix (Petr Benes)\n- updates for Oracle Linux test certificate (Alexey Petrenko)\n- update Oracle Linux certificates (Alexey Petrenko)\n\n[0.109-11]\n- Backport newer, deprecated pesign-authorize\n- Resolves: CVE-2022-3560",
+  "Description": "[0.109-11.0.1]\n- RPM macro fix (Petr Benes)\n- updates for Oracle Linux test certificate (Alexey Petrenko)\n- update Oracle Linux certificates (Alexey Petrenko)\n\n[0.109-11]\n- Backport newer, deprecated pesign-authorize\n- Resolves: CVE-2022-3560\n\n[- 0.109-10]\n- Add support for /etc/pesign/users and /etc/pesign/groups\n  Resolves: rhbz#1141263\n\n[0.109-9]\n- Fix man page errors.\n  Resolves: rhbz#948850\n\n[0.109-9]\n- Build as PIE+RELRO binaries.\n  Resolves: rhbz#1092542\n\n[0.109-8]\n- Include aarch64 in the rpm macro\n  Related: rhbz#1100042\n\n[0.109-7]\n- Add aarch64.\n  Resolves: rhbz#1100042\n\n[0.109-6]\n- Make sure CFLAGS is inherited properly for -fstack-protector-strong.\n  Resolves: rhbz#1070782\n\n[0.109-5]\n- Mass rebuild 2013-12-27\n\n[0.109-4]\n- Tweak the signing rules just a bit more.\n  Related: rhbz1017857\n\n[0.109-3]\n- Update to fix a bug coverity found.\n  Related: rhbz1017857\n\n[0.109-2]\n- Fix the pesign macro for RHEL packages.\n  Related: rhbz1017857\n\n[0.109-1]\n- Update to 0.109\n  Related: rhbz#893260\n\n[0.106-6]\n- Don't create a new certificate database when signing on RHEL.\n\n[0.106-5]\n- Use --force with sattrs blob from mktemp()\n- Error if we get a zero-sized signed file result\n\n[0.106-4]\n- Don't require ascii mode for RHEL CA/signer cert import.\n\n[0.106-3]\n- More work on the RHEL %pesign macro\n\n[0.106-2]\n- Add rhel %pesign macro definitions.\n\n[0.106-1]\n- Update to 0.106\n- Hopefully fix the segfault dgilmore was seeing.\n\n[0.105-1]\n- Various bug fixes.\n\n[0.104-1]\n- Make sure alignment is correct on signature list entries\n  Resolves: rhbz#963361\n- Make sure section alignment is correct if we have to extend the file\n\n[0.103-2]\n- Conditionalize systemd bits so they don't show up in RHEL 6 builds\n\n[0.103-1]\n- One more compiler problem.  Let's expect a few more, shall we?\n\n[0.102-1]\n- Don't use --std=gnu11 because we have to work on RHEL 6 builders.\n\n[0.101-1]\n- Update to 0.101 to fix more 'pesign -E' issues.\n\n[0.100-1]\n- Fix insertion of signatures from a file.\n\n[0.99-9]\n- Add a patch needed for new shim builds\n\n[0.99-8]\n- Get the Fedora signing token name right.\n\n* Fri Oct 19 2012 Peter Jones \u003cpjones@redhat.com\u003e\n- Add coolkey and opensc modules to pki database during %install.\n\n[0.99-7]\n- setfacl u:kojibuilder:rw /var/run/pesign/socket\n- Fix command line checking in client\n- Add client stdin pin reading.\n\n[0.99-6]\n- Automatically select daemon as signer when using rpm macros.\n\n[0.99-5]\n- Make it work on the -el6 branch as well.\n\n[0.99-4]\n- Fix some more bugs found by valgrind and coverity.\n- Don't build utils/ ; we're not using them and they're not ready anyway.\n\n[0.99-3]\n- Fix daemon startup bug from 0.99-2\n\n[0.99-2]\n- Fix various bugs from 0.99-1\n- Don't make the database unreadable just yet.\n\n[0.99-1]\n- Update to 0.99\n- Add documentation for client/server mode.\n- Add --pinfd and --pinfile to server mode.\n\n[0.98-1]\n- Update to 0.98\n- Add client/server mode.\n\n[0.10-5]\n- Fix missing section address fixup.\n\n[0.10-4]\n- Make macros.pesign even better (and make it work right for i686 packages)\n\n[0.10-3]\n- Only sign things on x86_64; all else ignore gracefully.\n\n[0.10-2]\n- Make macros.pesign more reliable\n\n[0.10-1]\n- Update to 0.10\n- Include rpm macros to support easy custom signing of signed packages.\n\n[0.9-1]\n- Update to 0.9\n- Bug fix from Gary Ching-Pang Lin\n- Support NSS Token selection for use with smart cards.\n\n[0.8-1]\n- Update to 0.8\n- Don't open the db read-write\n- Fix permissions on keystore (everybody can sign with test keys)\n\n[0.7-2]\n- Include test keys.\n\n[0.7-1]\n- Update to 0.7\n- Better fix for MS compatibility.\n\n[0.6-1]\n- Update to 0.6\n- Bug-for-bug compatibility with signtool.exe .\n\n[0.5-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild\n\n[0.5-1]\n- Rebase to 0.5\n- Do more rigorous bounds checking when hashing a new binary.\n\n[0.3-2]\n- Rebase to 0.4\n\n[0.3-2]\n- Move man page to a more reasonable place.\n\n[0.3-1]\n- Update to upstream's 0.3 .\n\n[0.2-4]\n- Do not build with smp flags.\n\n[0.2-3]\n- Make it build on i686, though it's unclear it'll ever be necessary.\n\n[0.2-2]\n- Fix compile problem with f18's compiler.\n\n[0.2-1]\n- Fix some rpmlint complaints nirik pointed out\n- Add popt-devel build dep\n\n[0.1-1]\n- First version of SRPM.",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-1093.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-1093.html",
       "ID": "ELSA-2023-1093"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-3560.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3560.html",
       "ID": "CVE-2022-3560"
     }
   ],
@@ -80,11 +80,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-3560.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3560.html",
       "ID": "CVE-2022-3560"
     }
   ],
   "Issued": {
-    "Date": "2023-03-08"
+    "Date": "2023-03-07"
   }
 }

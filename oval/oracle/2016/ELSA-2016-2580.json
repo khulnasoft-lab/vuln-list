@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-2580.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2580.html",
       "ID": "ELSA-2016-2580"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-8868.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-8868.html",
       "ID": "CVE-2015-8868"
     }
   ],
@@ -45,6 +45,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-glib is earlier than 0:0.26.5-16.el7"
+                      },
+                      {
+                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-qt is earlier than 0:0.26.5-16.el7"
+                      },
+                      {
+                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-utils is earlier than 0:0.26.5-16.el7"
+                      },
+                      {
+                        "Comment": "poppler-utils is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler-cpp is earlier than 0:0.26.5-16.el7"
                       },
                       {
@@ -93,18 +129,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-glib is earlier than 0:0.26.5-16.el7"
-                      },
-                      {
-                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "poppler-glib-devel is earlier than 0:0.26.5-16.el7"
                       },
                       {
@@ -117,34 +141,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-qt is earlier than 0:0.26.5-16.el7"
-                      },
-                      {
-                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "poppler-qt-devel is earlier than 0:0.26.5-16.el7"
                       },
                       {
                         "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-utils is earlier than 0:0.26.5-16.el7"
-                      },
-                      {
-                        "Comment": "poppler-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -169,18 +169,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler is earlier than 0:0.26.5-16.el7"
-                      },
-                      {
-                        "Comment": "poppler is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "poppler-cpp is earlier than 0:0.26.5-16.el7"
                       },
                       {
@@ -229,18 +217,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-glib is earlier than 0:0.26.5-16.el7"
-                      },
-                      {
-                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "poppler-glib-devel is earlier than 0:0.26.5-16.el7"
                       },
                       {
@@ -253,10 +229,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-qt is earlier than 0:0.26.5-16.el7"
+                        "Comment": "poppler-qt-devel is earlier than 0:0.26.5-16.el7"
                       },
                       {
-                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
+                        "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -265,10 +241,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-qt-devel is earlier than 0:0.26.5-16.el7"
+                        "Comment": "poppler is earlier than 0:0.26.5-16.el7"
                       },
                       {
-                        "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "poppler is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-glib is earlier than 0:0.26.5-16.el7"
+                      },
+                      {
+                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-qt is earlier than 0:0.26.5-16.el7"
+                      },
+                      {
+                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -308,11 +308,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-8868.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-8868.html",
       "ID": "CVE-2015-8868"
     }
   ],
   "Issued": {
-    "Date": "2016-11-09"
+    "Date": "2016-11-04"
   }
 }

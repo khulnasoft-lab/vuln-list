@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1051.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1051.html",
       "ID": "ELSA-2020-1051"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-13313.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-13313.html",
       "ID": "CVE-2019-13313"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libosinfo is earlier than 0:1.1.0-5.el7"
-                      },
-                      {
-                        "Comment": "libosinfo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libosinfo-devel is earlier than 0:1.1.0-5.el7"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "libosinfo-vala is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libosinfo is earlier than 0:1.1.0-5.el7"
+                      },
+                      {
+                        "Comment": "libosinfo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-13313.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-13313.html",
       "ID": "CVE-2019-13313"
     }
   ],
   "Issued": {
-    "Date": "2020-04-06"
+    "Date": "2020-04-08"
   }
 }

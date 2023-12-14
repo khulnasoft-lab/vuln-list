@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-28766:  cross-gcc security update (LOW)",
-  "Description": "[11.2.1-5.0.2]\n- CVE-2023-4039 mitigation.\n  Orabug 35752004.\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e",
+  "Description": "[11.2.1-5.0.2]\n- CVE-2023-4039 mitigation.\n  Orabug 35752004.\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[11.2.1-4.0.1]\n- Sync with gcc-toolset-11-gcc version 11.2.1-9.1.0.3\n- Backport PR debug/105089 CTF for a defined extern variable is ambiguous\n  using the following upstream commits (Indu Bhagat):\n    613a6fca75156aadc2e79d78a23e547d39762c1e,\n    d0b00e74bf59c73b79471bbe9de19373b8661e20, and\n    d634c5d7c78c6ec0fa39d96984460475564519c8\n- Reviewed-by: Indu Bhagat \u003cindu.bhagat@oracle.com\u003e\n\n[11.2.1-3.0.1]\n- Add two more fixes for -ftrivial-auto-var-init bogus warnings from GCC12\n  PR104550 and PR102276.\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[11.2.1-2.0.1]\n- Add the following from gcc-toolset-11-gcc:\n  Tue Jan 18 2022 Qing Zhao \u003cqing.zhao@oracle.com\u003e\n  + Add more fixes for -ftrivial-auto-var-init support from GCC12\n- Reviewed-by: Qing Zhao  \u003cqing.zhao@oracle.com\u003e\n\n[11.2.1-1.0.1]\n- New cross based on GCC 11\n- Add BPF CO-RE support\n- Enable building aarch64 cross\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[8.4.1-1.0.3]\n- Backport the following fixes from upstream:\n  + 1848fbf0546 ctfc: Free CTF container elements in ctfc_delete_container ()\n  + ae2df1a347f ctf: Do not warn for CTF not supported for GNU GIMPLE\n  + d6a87d96d74 debug/102507: ICE in btf_finalize when compiling with -gbtf\n- Remove BPF CO-RE support.\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[8.4.1-1.0.2]\n- Add BPF atomic instructions\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[8.4.1-1.0.1]\n- Forward-port to gcc 8.4.1\n- Fix ICE reported in Orabug 33249606 by backporting fix for upstream PR85401\n- Add CTF/BTF support to match OL8 GCC\n- Backport the following BPF bug-fixes from upstream:\n  + 0a662e103e9 bpf: align function entry point to 64 bits\n  + 886b6c1e8af bpf: allow BSS symbols to be global symbols\n  + c3a0f537391 bpf: generate indirect calls for xBPF\n  + 7c8ba5da80d bpf: use xBPF signed div,mod insns when available\n  + 4f0f696fea1 bpf: correct zero_extend output_templates\n- Add BPF CO-RE support\n- Add BPF -mcpu and related feature options\n- Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\n[8.3.1-1.0.7]\n- Backport of upstream patch:\n  5bcc0fa05ef713594f6c6d55d5c837e13a9c9803 - Use expected insn for BPFNOP.\n- Reviewed-by: David Faust \u003cdavid.faust@oracle.com\u003e\n\n[8.3.1-1.0.6]\n- Backports of upstream patches:\n  + c9d44022359 bpf: use elfos.h\n  + e87c540fe43 bpf: remove trailing whitespaces from source files\n  + af30b83b509 bpf: more flexible support for kernel helpers\n- Reviewed-by: Qing Zhao \u003cqing.zhao@oracle.com\u003e\n\n[8.3.1-1.0.5]\n- Support for the -mxbpf command line option.\n- Do not save/restore callee-saved registers in function\n  prologues/epilogues unless generating xBPF.\n- Reviewed-by: Elena Zannoni \u003celena.zannoni@oracle.com\u003e\n\n[8.3.1-1.0.4]\n- Avoid generation of funcalls for one_cmpl{si,di}2 insns in BPF.\n- Reviewed-by: Egeyar Bagcioglu \u003cegeyar.bagcioglu@oracle.com\u003e\n\n[8.3.1-1.0.3]\n- Fix changelog format.\n- Ready for errata release.\n- OraBug 30640260.\n- Reviewed-by: Elena Zannoni \u003celena.zannoni@oracle.com\u003e\n\n* Wed Nov 20 2019 Jose E. marchesi \u003cjose.marchesi@oracle.com - 8.3.1-1.0.2\n- Updated to match OL8 gcc.\n- Support for bpf-unknown-none targets.\n\n[8.2.1-1.2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild\n\n[8.2.1-1]\n- update to 8.2.1\n\n[8.1.1-3.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild\n\n[8.1.1-3]\n- Change ARC to multilib (#1600183).\n- Fix arc700 cpu type (#1600183).\n\n[8.1.1-3]\n- Switch ARC to arc-linux-gnu and use hs38 not arc700 (#1600183).\n\n[8.1.1-2]\n- Sync with gcc-8.1.1-4.\n- Add support for the ARC arch (#1599744).\n\n[8.1.1-1]\n- Sync with gcc-8.1.1-1.\n\n[8.0.1-0.1]\n- Move to gcc-8 (#1580076).",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-28766.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-28766.html",
       "ID": "ELSA-2023-28766"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-4039.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-4039.html",
       "ID": "CVE-2023-4039"
     }
   ],
@@ -284,7 +284,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-4039.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-4039.html",
       "ID": "CVE-2023-4039"
     }
   ],

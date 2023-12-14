@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-3145.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-3145.html",
       "ID": "ELSA-2023-3145"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-25147.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-25147.html",
       "ID": "CVE-2022-25147"
     }
   ],
@@ -157,30 +157,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "apr-util is earlier than 0:1.5.2-6.0.1.el7_9.1"
-                      },
-                      {
-                        "Comment": "apr-util is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "apr-util-devel is earlier than 0:1.5.2-6.0.1.el7_9.1"
-                      },
-                      {
-                        "Comment": "apr-util-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "apr-util-ldap is earlier than 0:1.5.2-6.0.1.el7_9.1"
                       },
                       {
@@ -259,6 +235,30 @@
                         "Comment": "apr-util-sqlite is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "apr-util is earlier than 0:1.5.2-6.0.1.el7_9.1"
+                      },
+                      {
+                        "Comment": "apr-util is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "apr-util-devel is earlier than 0:1.5.2-6.0.1.el7_9.1"
+                      },
+                      {
+                        "Comment": "apr-util-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -284,11 +284,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-25147.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-25147.html",
       "ID": "CVE-2022-25147"
     }
   ],
   "Issued": {
-    "Date": "2023-05-19"
+    "Date": "2023-05-18"
   }
 }

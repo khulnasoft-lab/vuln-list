@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2011-1815.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-1815.html",
       "ID": "ELSA-2011-1815"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-4599.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-4599.html",
       "ID": "CVE-2011-4599"
     }
   ],
@@ -361,6 +361,46 @@
                     "Comment": "Oracle Linux arch is i686"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "icu is earlier than 0:4.2.1-9.1.el6_2"
+                          },
+                          {
+                            "Comment": "icu is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libicu is earlier than 0:4.2.1-9.1.el6_2"
+                          },
+                          {
+                            "Comment": "libicu is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is sparc64"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -379,7 +419,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-4599.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-4599.html",
       "ID": "CVE-2011-4599"
     }
   ],

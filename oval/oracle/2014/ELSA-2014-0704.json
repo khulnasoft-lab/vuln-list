@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-0704.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-0704.html",
       "ID": "ELSA-2014-0704"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-2894.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-2894.html",
       "ID": "CVE-2014-2894"
     }
   ],
@@ -34,30 +34,6 @@
                   },
                   {
                     "Comment": "libcacard is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-devel is earlier than 10:1.5.3-60.el7_0.2"
-                  },
-                  {
-                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-tools is earlier than 10:1.5.3-60.el7_0.2"
-                  },
-                  {
-                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -120,6 +96,30 @@
                     "Comment": "qemu-kvm-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-devel is earlier than 10:1.5.3-60.el7_0.2"
+                  },
+                  {
+                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-tools is earlier than 10:1.5.3-60.el7_0.2"
+                  },
+                  {
+                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -142,11 +142,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-2894.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-2894.html",
       "ID": "CVE-2014-2894"
     }
   ],
   "Issued": {
-    "Date": "2014-07-23"
+    "Date": "2014-07-20"
   }
 }

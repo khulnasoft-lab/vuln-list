@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-0074.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-0074.html",
       "ID": "ELSA-2015-0074"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-8157.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8157.html",
       "ID": "CVE-2014-8157"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2014-8158.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8158.html",
       "ID": "CVE-2014-8158"
     }
   ],
@@ -247,6 +247,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "jasper-libs is earlier than 0:1.900.1-26.el7_0.3"
+                      },
+                      {
+                        "Comment": "jasper-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "jasper is earlier than 0:1.900.1-26.el7_0.3"
                       },
                       {
@@ -263,18 +275,6 @@
                       },
                       {
                         "Comment": "jasper-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "jasper-libs is earlier than 0:1.900.1-26.el7_0.3"
-                      },
-                      {
-                        "Comment": "jasper-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -314,12 +314,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-8157.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8157.html",
       "ID": "CVE-2014-8157"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2014-8158.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8158.html",
       "ID": "CVE-2014-8158"
     }
   ],

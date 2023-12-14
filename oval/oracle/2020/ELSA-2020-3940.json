@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-3940.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-3940.html",
       "ID": "ELSA-2020-3940"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-3833.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-3833.html",
       "ID": "CVE-2019-3833"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwsman-devel is earlier than 0:2.6.3-7.git4391e5c.el7"
-                      },
-                      {
-                        "Comment": "libwsman-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -69,18 +57,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openwsman-perl is earlier than 0:2.6.3-7.git4391e5c.el7"
-                      },
-                      {
-                        "Comment": "openwsman-perl is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openwsman-python is earlier than 0:2.6.3-7.git4391e5c.el7"
                       },
                       {
@@ -93,10 +69,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openwsman-ruby is earlier than 0:2.6.3-7.git4391e5c.el7"
+                        "Comment": "openwsman-server is earlier than 0:2.6.3-7.git4391e5c.el7"
                       },
                       {
-                        "Comment": "openwsman-ruby is signed with the Oracle Linux 7 key"
+                        "Comment": "openwsman-server is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -105,10 +81,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openwsman-server is earlier than 0:2.6.3-7.git4391e5c.el7"
+                        "Comment": "libwsman-devel is earlier than 0:2.6.3-7.git4391e5c.el7"
                       },
                       {
-                        "Comment": "openwsman-server is signed with the Oracle Linux 7 key"
+                        "Comment": "libwsman-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openwsman-perl is earlier than 0:2.6.3-7.git4391e5c.el7"
+                      },
+                      {
+                        "Comment": "openwsman-perl is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openwsman-ruby is earlier than 0:2.6.3-7.git4391e5c.el7"
+                      },
+                      {
+                        "Comment": "openwsman-ruby is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -145,6 +145,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "openwsman-perl is earlier than 0:2.6.3-7.git4391e5c.el7"
+                      },
+                      {
+                        "Comment": "openwsman-perl is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openwsman-ruby is earlier than 0:2.6.3-7.git4391e5c.el7"
+                      },
+                      {
+                        "Comment": "openwsman-ruby is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwsman1 is earlier than 0:2.6.3-7.git4391e5c.el7"
                       },
                       {
@@ -169,34 +193,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openwsman-perl is earlier than 0:2.6.3-7.git4391e5c.el7"
-                      },
-                      {
-                        "Comment": "openwsman-perl is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openwsman-python is earlier than 0:2.6.3-7.git4391e5c.el7"
                       },
                       {
                         "Comment": "openwsman-python is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openwsman-ruby is earlier than 0:2.6.3-7.git4391e5c.el7"
-                      },
-                      {
-                        "Comment": "openwsman-ruby is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -236,7 +236,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-3833.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-3833.html",
       "ID": "CVE-2019-3833"
     }
   ],

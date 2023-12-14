@@ -2,144 +2,24 @@
   "Title": "ELSA-2014-1319:  xerces-j2 security update (MODERATE)",
   "Description": "[2.11.0-17]\n- Fix XML parsing bug (JAXP, 8017298)\n- Resolves: CVE-2013-4002",
   "Platform": [
-    "Oracle Linux 7",
-    "Oracle Linux 6"
+    "Oracle Linux 6",
+    "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2014-1319.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1319.html",
       "ID": "ELSA-2014-1319"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2013-4002.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4002.html",
       "ID": "CVE-2013-4002"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "OR",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2 is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2 is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2-demo is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2-demo is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2-javadoc is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2-javadoc is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is aarch64"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2 is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2 is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2-demo is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2-demo is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "xerces-j2-javadoc is earlier than 0:2.11.0-17.el7_0"
-                          },
-                          {
-                            "Comment": "xerces-j2-javadoc is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is x86_64"
-                  }
-                ]
-              }
-            ],
-            "Criterions": null
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 7 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -455,6 +335,126 @@
             "Comment": "Oracle Linux 6 is installed"
           }
         ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2-demo is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2-demo is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2-javadoc is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2-javadoc is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2 is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2 is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is aarch64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2 is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2 is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2-demo is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2-demo is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "xerces-j2-javadoc is earlier than 0:2.11.0-17.el7_0"
+                          },
+                          {
+                            "Comment": "xerces-j2-javadoc is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is x86_64"
+                  }
+                ]
+              }
+            ],
+            "Criterions": null
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 7 is installed"
+          }
+        ]
       }
     ],
     "Criterions": null
@@ -463,7 +463,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2013-4002.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4002.html",
       "ID": "CVE-2013-4002"
     }
   ],

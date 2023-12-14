@@ -7,43 +7,43 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4082.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4082.html",
       "ID": "ELSA-2020-4082"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-15810.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15810.html",
       "ID": "CVE-2020-15810"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-15811.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15811.html",
       "ID": "CVE-2020-15811"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-12528.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-12528.html",
       "ID": "CVE-2019-12528"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8450.html",
-      "ID": "CVE-2020-8450"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-15049.html",
-      "ID": "CVE-2020-15049"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-24606.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-24606.html",
       "ID": "CVE-2020-24606"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-8449.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8449.html",
       "ID": "CVE-2020-8449"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8450.html",
+      "ID": "CVE-2020-8450"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15049.html",
+      "ID": "CVE-2020-15049"
     }
   ],
   "Criteria": {
@@ -115,6 +115,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-17.el7_9.4"
+                      },
+                      {
+                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "squid is earlier than 7:3.5.20-17.el7_9.4"
                       },
                       {
@@ -131,18 +143,6 @@
                       },
                       {
                         "Comment": "squid-migration-script is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-17.el7_9.4"
-                      },
-                      {
-                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -170,41 +170,41 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-15810.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15810.html",
       "ID": "CVE-2020-15810"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-15811.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15811.html",
       "ID": "CVE-2020-15811"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-12528.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-12528.html",
       "ID": "CVE-2019-12528"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8450.html",
-      "ID": "CVE-2020-8450"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-15049.html",
-      "ID": "CVE-2020-15049"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-24606.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-24606.html",
       "ID": "CVE-2020-24606"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-8449.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8449.html",
       "ID": "CVE-2020-8449"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8450.html",
+      "ID": "CVE-2020-8450"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15049.html",
+      "ID": "CVE-2020-15049"
     }
   ],
   "Issued": {
-    "Date": "2020-10-08"
+    "Date": "2020-10-07"
   }
 }

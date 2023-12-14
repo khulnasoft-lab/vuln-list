@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-3651.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3651.html",
       "ID": "ELSA-2019-3651"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-16838.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-16838.html",
       "ID": "CVE-2018-16838"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsss_nss_idmap-devel is earlier than 0:2.2.0-19.el8"
+                      },
+                      {
+                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "libsss_nss_idmap is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_nss_idmap-devel is earlier than 0:2.2.0-19.el8"
-                      },
-                      {
-                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -409,6 +409,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsss_nss_idmap-devel is earlier than 0:2.2.0-19.el8"
+                      },
+                      {
+                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libipa_hbac is earlier than 0:2.2.0-19.el8"
                       },
                       {
@@ -461,18 +473,6 @@
                       },
                       {
                         "Comment": "libsss_nss_idmap is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_nss_idmap-devel is earlier than 0:2.2.0-19.el8"
-                      },
-                      {
-                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -788,7 +788,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-16838.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-16838.html",
       "ID": "CVE-2018-16838"
     }
   ],

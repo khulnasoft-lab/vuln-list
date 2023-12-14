@@ -1,94 +1,94 @@
 {
   "Title": "ELSA-2023-6938:  container-tools:4.0 security and bug fix update (MODERATE)",
-  "Description": "buildah\n[1:1.24.6-7]\n- rebuild for CVE-2023-29406\n- Related: #2176055\n\n[1:1.24.6-6]\n- rebuild for following CVEs:\nCVE-2022-41724 CVE-2022-41725 CVE-2023-24538 CVE-2023-24534 CVE-2023-24536 CVE-2022-41723 CVE-2023-24539 CVE-2023-24540 CVE-2023-29400\n- Resolves: #2179943\n- Resolves: #2187341\n- Resolves: #2187359\n- Resolves: #2203677\n- Resolves: #2207505\n\ncockpit-podman\n[46-1]\n- update to https://github.com/cockpit-project/cockpit-podman/releases/tag/46\n- Related: #2061390\n\nconmon\n[2:2.1.4-2]\n- update to https://github.com/containers/conmon/releases/tag/v2.1.4\n- Related: #2176055\n\ncontainernetworking-plugins\n[1:1.1.1-5]\n- add Epoch in Provides\n- Related: #2176055\n\n[1:1.1.1-4]\n- rebuild for following CVEs:\nCVE-2022-41724 CVE-2022-41725 CVE-2023-24538 CVE-2023-24534 CVE-2023-24536 CVE-2022-41723 CVE-2023-24539 CVE-2023-24540 CVE-2023-29400\n- Resolves: #2179944\n- Resolves: #2187342\n- Resolves: #2187360\n- Resolves: #2203693\n- Resolves: #2207506\n\ncontainers-common\n[1-38.0.1]\n- Updated removed references [Orabug: 33473101] (Alex Burmashev)\n- Adjust registries.conf (Nikita Gerasimov)\n- remove references to RedHat registry (Nikita Gerasimov)\n\ncontainer-selinux\n[2:2.205.0-3]\n- fix build for stable module\n- Related: #2176055\n\ncriu\ncrun\n[1.8.3-1]\n- fix could not find symbol criu_set_lsm_mount_context in libcriu.so\n- Related: #2176055\n\nfuse-overlayfs\n[1.9-2]\n- update to https://github.com/containers/fuse-overlayfs/releases/tag/v1.9\n- Related: #2176055\n\nlibslirp\noci-seccomp-bpf-hook\n[1.2.5-2]\n- fix compatibility with the new bcc\n- Related: #2176055\n\npodman\n[2:4.0.2-24]\n- rebuild for CVE-2023-29406\n- Related: #2176055\n\n[2:4.0.2-23]\n- rebuild for following CVEs:\nCVE-2022-41724 CVE-2022-41725 CVE-2023-24537 CVE-2023-24538 CVE-2023-24534 CVE-2023-24536 CVE-2022-41723 CVE-2023-24539 CVE-2023-24540 CVE-2023-29400\n- Resolves: #2179945\n- Resolves: #2187315\n- Resolves: #2187361\n- Resolves: #2203678\n- Resolves: #2207507\n\npython-podman\n[4.0.0-2]\n- bump to v4.0.0\n- Related: #2176055\n\nrunc\n[1:1.1.5-2]\n- rebuild for following CVEs:\nCVE-2022-41724\n- Resolves: #2179971\n\nskopeo\n[2:1.6.2-8]\n- rebuild for following CVEs:\nCVE-2022-41724 CVE-2022-41725 CVE-2023-24537 CVE-2023-24538 CVE-2023-24534 CVE-2023-24536 CVE-2022-41723 CVE-2023-24539 CVE-2023-24540 CVE-2023-29400\n- Resolves: #2179946\n- Resolves: #2187316\n- Resolves: #2187362\n- Resolves: #2203679\n- Resolves: #2207508",
+  "Description": "",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-6938.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-6938.html",
       "ID": "ELSA-2023-6938"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-29406.html",
-      "ID": "CVE-2023-29406"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-41723.html",
-      "ID": "CVE-2022-41723"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3978.html",
-      "ID": "CVE-2023-3978"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-25809.html",
-      "ID": "CVE-2023-25809"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-29400.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-29400.html",
       "ID": "CVE-2023-29400"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-3064.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-25809.html",
+      "ID": "CVE-2023-25809"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3064.html",
       "ID": "CVE-2022-3064"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24534.html",
-      "ID": "CVE-2023-24534"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3978.html",
+      "ID": "CVE-2023-3978"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24536.html",
-      "ID": "CVE-2023-24536"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24538.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24538.html",
       "ID": "CVE-2023-24538"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-41724.html",
-      "ID": "CVE-2022-41724"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-41725.html",
-      "ID": "CVE-2022-41725"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24540.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24540.html",
       "ID": "CVE-2023-24540"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-27561.html",
-      "ID": "CVE-2023-27561"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-41723.html",
+      "ID": "CVE-2022-41723"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24537.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24534.html",
+      "ID": "CVE-2023-24534"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-28642.html",
+      "ID": "CVE-2023-28642"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24537.html",
       "ID": "CVE-2023-24537"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-24539.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-27561.html",
+      "ID": "CVE-2023-27561"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-41724.html",
+      "ID": "CVE-2022-41724"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24536.html",
+      "ID": "CVE-2023-24536"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-24539.html",
       "ID": "CVE-2023-24539"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-28642.html",
-      "ID": "CVE-2023-28642"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-29406.html",
+      "ID": "CVE-2023-29406"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-41725.html",
+      "ID": "CVE-2022-41725"
     }
   ],
   "Criteria": {
@@ -931,83 +931,83 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-29406.html",
-      "ID": "CVE-2023-29406"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-41723.html",
-      "ID": "CVE-2022-41723"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3978.html",
-      "ID": "CVE-2023-3978"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-25809.html",
-      "ID": "CVE-2023-25809"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-29400.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-29400.html",
       "ID": "CVE-2023-29400"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-3064.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-25809.html",
+      "ID": "CVE-2023-25809"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3064.html",
       "ID": "CVE-2022-3064"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24534.html",
-      "ID": "CVE-2023-24534"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3978.html",
+      "ID": "CVE-2023-3978"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24536.html",
-      "ID": "CVE-2023-24536"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24538.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24538.html",
       "ID": "CVE-2023-24538"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-41724.html",
-      "ID": "CVE-2022-41724"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-41725.html",
-      "ID": "CVE-2022-41725"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24540.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24540.html",
       "ID": "CVE-2023-24540"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-27561.html",
-      "ID": "CVE-2023-27561"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-41723.html",
+      "ID": "CVE-2022-41723"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24537.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24534.html",
+      "ID": "CVE-2023-24534"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-28642.html",
+      "ID": "CVE-2023-28642"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24537.html",
       "ID": "CVE-2023-24537"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-24539.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-27561.html",
+      "ID": "CVE-2023-27561"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-41724.html",
+      "ID": "CVE-2022-41724"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24536.html",
+      "ID": "CVE-2023-24536"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-24539.html",
       "ID": "CVE-2023-24539"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-28642.html",
-      "ID": "CVE-2023-28642"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-29406.html",
+      "ID": "CVE-2023-29406"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-41725.html",
+      "ID": "CVE-2022-41725"
     }
   ],
   "Issued": {

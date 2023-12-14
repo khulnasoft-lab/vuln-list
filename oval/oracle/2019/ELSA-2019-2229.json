@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2229.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2229.html",
       "ID": "ELSA-2019-2229"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-10893.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-10893.html",
       "ID": "CVE-2018-10893"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libgovirt-devel is earlier than 0:0.3.4-3.el7"
-                      },
-                      {
-                        "Comment": "libgovirt-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "spice-glib is earlier than 0:0.35-4.el7"
                       },
                       {
@@ -69,58 +57,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-glib-devel is earlier than 0:0.35-4.el7"
-                      },
-                      {
-                        "Comment": "spice-glib-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-gtk-tools is earlier than 0:0.35-4.el7"
-                      },
-                      {
-                        "Comment": "spice-gtk-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "spice-gtk3 is earlier than 0:0.35-4.el7"
                       },
                       {
                         "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-gtk3-devel is earlier than 0:0.35-4.el7"
-                      },
-                      {
-                        "Comment": "spice-gtk3-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-gtk3-vala is earlier than 0:0.35-4.el7"
-                      },
-                      {
-                        "Comment": "spice-gtk3-vala is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -147,34 +87,6 @@
                         "Comment": "virt-viewer is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is aarch64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libgovirt is earlier than 0:0.3.4-3.el7"
-                      },
-                      {
-                        "Comment": "libgovirt is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   },
                   {
                     "Operator": "AND",
@@ -185,18 +97,6 @@
                       },
                       {
                         "Comment": "libgovirt-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "spice-glib is earlier than 0:0.35-4.el7"
-                      },
-                      {
-                        "Comment": "spice-glib is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -229,10 +129,74 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "spice-gtk3 is earlier than 0:0.35-4.el7"
+                        "Comment": "spice-gtk3-devel is earlier than 0:0.35-4.el7"
                       },
                       {
-                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
+                        "Comment": "spice-gtk3-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-gtk3-vala is earlier than 0:0.35-4.el7"
+                      },
+                      {
+                        "Comment": "spice-gtk3-vala is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgovirt-devel is earlier than 0:0.3.4-3.el7"
+                      },
+                      {
+                        "Comment": "libgovirt-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-glib-devel is earlier than 0:0.35-4.el7"
+                      },
+                      {
+                        "Comment": "spice-glib-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-gtk-tools is earlier than 0:0.35-4.el7"
+                      },
+                      {
+                        "Comment": "spice-gtk-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -257,6 +221,42 @@
                       },
                       {
                         "Comment": "spice-gtk3-vala is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgovirt is earlier than 0:0.3.4-3.el7"
+                      },
+                      {
+                        "Comment": "libgovirt is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-glib is earlier than 0:0.35-4.el7"
+                      },
+                      {
+                        "Comment": "spice-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "spice-gtk3 is earlier than 0:0.35-4.el7"
+                      },
+                      {
+                        "Comment": "spice-gtk3 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -308,11 +308,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-10893.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-10893.html",
       "ID": "CVE-2018-10893"
     }
   ],
   "Issued": {
-    "Date": "2019-08-13"
+    "Date": "2019-08-11"
   }
 }

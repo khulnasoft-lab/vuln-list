@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4005.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4005.html",
       "ID": "ELSA-2020-4005"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-11068.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11068.html",
       "ID": "CVE-2019-11068"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-18197.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-18197.html",
       "ID": "CVE-2019-18197"
     }
   ],
@@ -90,6 +90,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libxslt-python is earlier than 0:1.1.28-6.0.1.el7"
+                      },
+                      {
+                        "Comment": "libxslt-python is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libxslt is earlier than 0:1.1.28-6.0.1.el7"
                       },
                       {
@@ -108,18 +120,6 @@
                         "Comment": "libxslt-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libxslt-python is earlier than 0:1.1.28-6.0.1.el7"
-                      },
-                      {
-                        "Comment": "libxslt-python is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -128,6 +128,28 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libxslt is earlier than 0:1.1.28-6.0.1.el7"
+                  },
+                  {
+                    "Comment": "libxslt is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -145,12 +167,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-11068.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11068.html",
       "ID": "CVE-2019-11068"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-18197.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-18197.html",
       "ID": "CVE-2019-18197"
     }
   ],

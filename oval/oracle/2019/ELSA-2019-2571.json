@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-2571.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2571.html",
       "ID": "ELSA-2019-2571"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-1010238.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-1010238.html",
       "ID": "CVE-2019-1010238"
     }
   ],
@@ -85,6 +85,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "pango-tests is earlier than 0:1.42.4-4.el7_7"
+                      },
+                      {
+                        "Comment": "pango-tests is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "pango is earlier than 0:1.42.4-4.el7_7"
                       },
                       {
@@ -101,18 +113,6 @@
                       },
                       {
                         "Comment": "pango-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "pango-tests is earlier than 0:1.42.4-4.el7_7"
-                      },
-                      {
-                        "Comment": "pango-tests is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,7 +140,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-1010238.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-1010238.html",
       "ID": "CVE-2019-1010238"
     }
   ],

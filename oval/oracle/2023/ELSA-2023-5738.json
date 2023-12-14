@@ -1,28 +1,28 @@
 {
   "Title": "ELSA-2023-5738:  go-toolset and golang security and bug fix update (IMPORTANT)",
-  "Description": "golang\n[1.19.13-1]\n- Update to go 1.19.13\n  [CVE-2023-44487]\n  [CVE-2023-39325]\n  [CVE-2023-29409]\n\ngo-toolset\n[1.19.13-1]\n- Update to Go version 1.19.13",
+  "Description": "golang\n[1.19.13-1]\n- Update to go 1.19.13\n  [CVE-2023-44487]\n  [CVE-2023-39325]\n  [CVE-2023-29409]\n\n[1.19.10-1.0.1]\n- New Go version 1.19.10\n  [CVE-2023-29402]\n  [CVE-2023-29403]\n  [CVE-2023-29404]\n  [CVE-2023-29405]\n\n[1.19.9-2]\n- Fix TestEncryptOAEP and TLS failures in FIPS mode\n- Resolves: rhbz#2204476\n\n[1.19.9-1]\n- Rebase to Go 1.19.9\n- Resolves: rhbz#2204476\n\n[1.19.6-2]\n- Rebuild without changes\n- Related: rhbz#2175174\n\n[1.19.6-1]\n- Rebase to Go 1.19.6\n- Resolves: rhbz#2174429\n- Fix memory leak\n- Resolves: rhbz#2157602\n- Enable tests in check phase\n\n[1.19.4-1]\n- Rebase to Go 1.19.4\n- Fix ppc64le linker issue\n- Remove defunct patches\n- Remove downstream generated FIPS mode patches\n- Add golang-fips/go as the source for FIPS mode patches\n- Resolves: rhbz#2144539\n\n[1.19.2-2]\n- Fix endian issue in FIPS mode\n- Resolves: rhbz#1966992\n\n[1.19.2-1]\n- Update go to version 1.19.2\n- Resolves: rhbz#2134407\n\n[1.19.1-2]\n- Rebase to Go 1.19.1\n- Temporarily disable crypto tests\n- Resolves: rhbz#2131028\n\n[1.18.4-2]\n- Update to Go 1.18.4\n- Resolves: rhbz#2109180\n- Deprecates keys smaller than 2048 bits in TestDecryptOAEP in boring mode\n\n[1.18.4-1]\n- Update to Go 1.18.4\n- Resolves: rhbz#2109180\n\n[1.18.2-2]\n- Update deprecated openssl algorithms patch\n- Rebuild against openssl-3.0.1-33\n- Resolves: rhbz#2092136\n- Related: rhbz#2092016\n\n[1.18.2-1]\n- Rebase to Go 1.18.2\n- Move to github.com/golang-fips/go\n- Resolves: rhbz#2075169\n- Resolves: rhbz#2060769\n- Resolves: rhbz#2067531\n- Resolves: rhbz#2067536\n- Resolves: rhbz#2067552\n- Resolves: rhbz#2025637\n\n[1.17.5-1]\n- Rebase to Go 1.17.5\n- Add remove_waitgroup_misuse_tests patch\n- Add remove_ed25519vectors_test.patch\n- Remove FIPS checks to avoid issues in the CI\n- Related: rhbz#2031116\n- Resolves: rhbz#2022829\n- Resolves: rhbz#2024687\n- Resolves: rhbz#2030851\n- Resolves: rhbz#2031253\n\n[1.17.2-1]\n- Rebase to Go 1.17.2\n- Related: rhbz#2014087\n- Remove favicon.ico and robots.txt references\n- Exclude TestEd25519Vectors test\n- Update patch rhbz1952381\n- Remove rhbz1904567 patch\n- Remove rhbz1939923 patch\n\ngo-toolset\n[1.19.13-1]\n- Update to Go version 1.19.13\n\n[1.19.10-1.0.1]\n- New Go version 1.19.10\n  [CVE-2023-29402]\n  [CVE-2023-29403]\n  [CVE-2023-29404]\n  [CVE-2023-29405]\n\n[1.19.9-1]\n- Update to Go 1.19.9\n- Related: rhbz#2204476\n\n[1.19.6-2]\n- Rebuild without changes\n- Related: rhbz#2175174\n\n[1.19.6-1]\n- Rebase to Go 1.19.6\n- Resolves: rhbz#2174429\n- Fix memory leak\n- Resolves: rhbz#2157602\n- Enable tests in check phase\n\n[1.19.4-1]\n- Rebase to Go 1.19.4\n- Fix ppc64le linker issue\n- Remove defunct patches\n- Remove downstream generated FIPS mode patches\n- Add golang-fips/go as the source for FIPS mode patches\n- Resolves: rhbz#2144539\n\n[1.19.2-1]\n- Rebase to Go 1.19.2\n- Resolves: rhbz#2134407\n\n[1.19.1-1]\n- Rebase to Go 1.19.1\n- Related: rhbz#2131028\n\n[1.18.4-1]\n- Rebase to Go 1.18.4\n\n[1.18.2-1]\n- Rebase to Go 1.18.2\n- Resolves: rhbz#2075169\n\n[1.17.5-1]\n- Rebase to Go 1.17.5\n- Related: rhbz#2031116\n\n[1.17.2-1]\n- Rebase to Go 1.17.2 and to Delve 1.7.2\n- Related: rhbz#2014087",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5738.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5738.html",
       "ID": "ELSA-2023-5738"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-39325.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-39325.html",
       "ID": "CVE-2023-39325"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-29409.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-29409.html",
       "ID": "CVE-2023-29409"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-44487.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-44487.html",
       "ID": "CVE-2023-44487"
     }
   ],
@@ -258,17 +258,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-39325.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-39325.html",
       "ID": "CVE-2023-39325"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-29409.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-29409.html",
       "ID": "CVE-2023-29409"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-44487.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-44487.html",
       "ID": "CVE-2023-44487"
     }
   ],

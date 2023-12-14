@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0123.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0123.html",
       "ID": "ELSA-2013-0123"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-4339.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-4339.html",
       "ID": "CVE-2011-4339"
     }
   ],
@@ -145,6 +145,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "OpenIPMI-libs is earlier than 0:2.0.16-16.el5"
+                      },
+                      {
+                        "Comment": "OpenIPMI-libs is signed with the Oracle Linux 5 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "OpenIPMI-tools is earlier than 0:2.0.16-16.el5"
+                      },
+                      {
+                        "Comment": "OpenIPMI-tools is signed with the Oracle Linux 5 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "OpenIPMI-devel is earlier than 0:2.0.16-16.el5"
                       },
                       {
@@ -169,18 +193,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "OpenIPMI-libs is earlier than 0:2.0.16-16.el5"
-                      },
-                      {
-                        "Comment": "OpenIPMI-libs is signed with the Oracle Linux 5 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "OpenIPMI-perl is earlier than 0:2.0.16-16.el5"
                       },
                       {
@@ -197,18 +209,6 @@
                       },
                       {
                         "Comment": "OpenIPMI-python is signed with the Oracle Linux 5 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "OpenIPMI-tools is earlier than 0:2.0.16-16.el5"
-                      },
-                      {
-                        "Comment": "OpenIPMI-tools is signed with the Oracle Linux 5 key"
                       }
                     ]
                   }
@@ -336,11 +336,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-4339.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-4339.html",
       "ID": "CVE-2011-4339"
     }
   ],
   "Issued": {
-    "Date": "2013-01-11"
+    "Date": "2013-01-08"
   }
 }

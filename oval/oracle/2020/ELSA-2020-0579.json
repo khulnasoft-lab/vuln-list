@@ -7,37 +7,37 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-0579.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-0579.html",
       "ID": "ELSA-2020-0579"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-15606.html",
-      "ID": "CVE-2019-15606"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-16775.html",
-      "ID": "CVE-2019-16775"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-16777.html",
-      "ID": "CVE-2019-16777"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-15604.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-15604.html",
       "ID": "CVE-2019-15604"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-15605.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-15605.html",
       "ID": "CVE-2019-15605"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-16776.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-15606.html",
+      "ID": "CVE-2019-15606"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-16777.html",
+      "ID": "CVE-2019-16777"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-16775.html",
+      "ID": "CVE-2019-16775"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-16776.html",
       "ID": "CVE-2019-16776"
     }
   ],
@@ -56,6 +56,30 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -89,30 +113,6 @@
                           },
                           {
                             "Comment": "nodejs-docs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -159,6 +159,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "nodejs is earlier than 1:10.19.0-1.module+el8.1.0+5552+3cab52c0"
                           },
                           {
@@ -187,30 +211,6 @@
                           },
                           {
                             "Comment": "nodejs-docs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-nodemon is earlier than 0:1.18.3-1.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5392+4d6b561f"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -257,32 +257,32 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-15606.html",
-      "ID": "CVE-2019-15606"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-16775.html",
-      "ID": "CVE-2019-16775"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-16777.html",
-      "ID": "CVE-2019-16777"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-15604.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-15604.html",
       "ID": "CVE-2019-15604"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-15605.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-15605.html",
       "ID": "CVE-2019-15605"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-16776.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-15606.html",
+      "ID": "CVE-2019-15606"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-16777.html",
+      "ID": "CVE-2019-16777"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-16775.html",
+      "ID": "CVE-2019-16775"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-16776.html",
       "ID": "CVE-2019-16776"
     }
   ],

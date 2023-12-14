@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2015-1667.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-1667.html",
       "ID": "ELSA-2015-1667"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-3183.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3183.html",
       "ID": "CVE-2015-3183"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-3185.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3185.html",
       "ID": "CVE-2015-3185"
     }
   ],
@@ -83,6 +83,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "mod_ssl is earlier than 1:2.4.6-31.0.1.el7_1.1"
+                  },
+                  {
+                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "mod_ldap is earlier than 0:2.4.6-31.0.1.el7_1.1"
                   },
                   {
@@ -113,18 +125,6 @@
                     "Comment": "mod_session is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "mod_ssl is earlier than 1:2.4.6-31.0.1.el7_1.1"
-                  },
-                  {
-                    "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -147,12 +147,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-3183.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3183.html",
       "ID": "CVE-2015-3183"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-3185.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3185.html",
       "ID": "CVE-2015-3185"
     }
   ],

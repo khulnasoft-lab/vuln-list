@@ -1,24 +1,24 @@
 {
   "Title": "ELSA-2023-5264:  virt:ol and virt-devel:rhel security and bug fix update (IMPORTANT)",
-  "Description": "hivex\nlibguestfs\nlibguestfs-winsupport\n[8.8-2]\n- Rebase to ntfs-3g 2022.10.3\n- Fixes: CVE-2022-40284\n- resolves: rhbz#2236373\n\nlibiscsi\nlibnbd\nlibtpms\nlibvirt\nlibvirt-dbus\nlibvirt-python\nnbdkit\nnetcf\nperl-Sys-Virt\nqemu-kvm\n[6.2.0-33]\n- CVE-2023-3354 QEMU: VNC: improper I/O watch removal in TLS handshake can lead to remote unauthenticated denial of service\n\nseabios\n[1.16.0-4]\n- seabios-malloc-use-variable-for-ZoneHigh-size.patch [bz#2227373]\n- seabios-malloc-use-large-ZoneHigh-when-there-is-enough-memor.patch [bz#2227373]\n- Resolves: bz#2227373\n  (\"No bootable device\" with OS boot disk interface VirtIO-SCSI and with more than 9 VirtIO disks.)\n\nsgabios\nsupermin\nswtpm\nvirt-v2v",
+  "Description": "hivex\nlibguestfs\n[1.44.0-9.0.2]\n- libguestfs.spec: Add btrfs-progs RPM to appliance [Orabug: 35634755]\n\n[1.44.0-9.0.1]\n- Replace upstream references from description tag\n- Config supermin to use host yum.conf in ol8 [Orabug: 29319324]\n- Set DISTRO_ORACLE_LINUX correspeonding to ol\n\n[1:1.44.0-9]\n- Fix CVE-2022-2211 Denial of Service in --key parameter\n  resolves: rhbz#2101280\n\n[1:1.44.0-8]\n- Obsolete old libguestfs-benchmarking subpackage\n  resolves: rhbz#2091597\n\n[1:1.44.0-7]\n- Disable 5-level page tables when using -cpu max\n  resolves: rhbz#2084566\n  related: rhbz#2075424\n\n[1:1.44.0-6]\n- Backport support for -cpu max to allow RHEL 9 guests to be modified\n  resolves: rhbz#2075424\n\n[1:1.44.0-5]\n- Fix libguestfs failure with qemu 6.2, libvirt 7.10\n  resolves: rhbz#2035177\n\n[1:1.44.0-4]\n- Autodetect backing format for qemu-img create -b\n- Move appliance to separate subpackage\n- Read rpm database through librpm\n  resolves: rhbz#2013916, rhbz#1989520, rhbz#1836094\n\n[1.44.0-3.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\nlibguestfs-winsupport\n[8.8-2]\n- Rebase to ntfs-3g 2022.10.3\n- Fixes: CVE-2022-40284\n- resolves: rhbz#2236373\n\nlibiscsi\nlibnbd\n[1.6.0-5.el8]\n- Fix CVE-2022-0485: Fail nbdcopy if NBD read or write fails\n  resolves: rhbz#2045718\n\n[1.6.0-4.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[1.2.2]\n- Resolves: bz#1844296\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[1.2.2-1]\n- New stable release 1.2.2.\n\n[1.2.1-1]\n- New stable release 1.2.1.\n\n[1.2.0-1]\n- New stable release 1.2.0.\n\n[1.0.3-1]\n- New upstream version 1.0.3.\n- Contains fix for remote code execution vulnerability.\n- Add new libnbd-security(3) man page.\n\n[1.0.2-1]\n- New upstream version 1.0.2.\n- Remove patches which are upstream.\n- Contains fix for NBD Protocol Downgrade Attack (CVE-2019-14842).\n- Fix previous commit message.\n\n[1.0.1-2]\n- Add upstream patch to fix nbdsh (for nbdkit tests).\n- Fix interop tests on slow machines.\n\n[1.0.1-1]\n- New stable version 1.0.1.\n\n[1.0.0-1]\n- New upstream version 1.0.0.\n\n[0.9.9-2]\n- Rebuilt for Python 3.8\n\n[0.9.9-1]\n- New upstream version 0.9.9.\n\n[0.9.8-4]\n- Fix nbdkit dependencies so we're actually running the tests.\n- Add glib2-devel BR so we build the glib main loop example.\n- Add upstream patch to fix test error:\n  nbd_connect_unix: getlogin: No such device or address\n- Fix test failure on 32 bit.\n\n[0.9.8-3]\n- Bump and rebuild to fix releng brokenness.\n  https://lists.fedoraproject.org/archives/list/devel@lists.fedoraproject.org/message/2LIDI33G3IEIPYSCCIP6WWKNHY7XZJGQ/\n\n[0.9.8-2]\n- Rebuilt for Python 3.8\n\n[0.9.8-1]\n- New upstream version 0.9.8.\n- Package the new nbd_*(3) man pages.\n\n[0.9.7-1]\n- New upstream version 0.9.7.\n- Add libnbd-ocaml(3) man page.\n\n[0.9.6-2]\n- Add all upstream patches since 0.9.6 was released.\n- Package the ocaml bindings into a subpackage.\n\n[0.9.6-1]\n- New upstream verison 0.9.6.\n\n[0.1.9-1]\n- New upstream version 0.1.9.\n\n[0.1.8-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild\n\n[0.1.8-1]\n- New upstream version 0.1.8.\n\n[0.1.7-1]\n- New upstream version 0.1.7.\n\n[0.1.6-1]\n- New upstream version 0.1.6.\n\n[0.1.5-1]\n- New upstream version 0.1.5.\n\n[0.1.4-1]\n- New upstream version 0.1.4.\n\n[0.1.2-2]\n- Enable libxml2 for NBD URI support.\n\n[0.1.2-1]\n- New upstream version 0.1.2.\n\n[0.1.1-1]\n- Fix license in man pages and examples.\n- Add nbdsh(1) man page.\n- Include the signature and keyring even if validation is disabled.\n- Update devel subpackage license.\n- Fix old FSF address in Python tests.\n- Filter Python provides.\n- Remove executable permission on the tar.gz.sig file.\n- Initial release.\n\nlibtpms\n[0.9.1-2.20211126git1ff6fe1f43]\n- Backport 'tpm2: Check size of buffer before accessing it' (CVE-2023-1017 \u0026 CVE-2023-1018)\n  Resolves: rhbz#2173964\n  Resolves: rhbz#2173970\n\nlibvirt\n[8.0.0-19.0.2]\n- qemu: monitor: Drop old monitor fields from 'struct _qemuMonitorMessage'\n- qemu: Make 'struct _qemuMonitorMessage' private\n- qemu: monitor: Move declaration of struct _qemuMonitor to qemu_monitor_priv.h\n- qemu: qemuBlockGetNamedNodeData: Remove pointless error path\n- qemu: monitor: Store whether 'query-named-block-nodes' supports 'flat' parameter\n- qemuMonitorJSONBlockStatsUpdateCapacityBlockdev: Use 'flat' mode of query-named-block-nodes\n- virpci: Resolve leak in virPCIVirtualFunctionList cleanup [CVE-2023-2700]\n- node_device_conf: Avoid memleak in virNodeDeviceGetPCIVPDDynamicCap() [CVE-2023-2700]\n\n-[8.0.0-19.0.1\n-- Set SOURCE_DATE_EPOCH from changelog [Orabug: 32019554]\n-- Add runtime deps for pkg librbd1 \u003e= 1:10.2.5 (Keshav Sharma)\n\n[8.0.0-19]\n- qemu: domain: Fix logic when tainting domain (rhbz#2174447)\n- qemu: agent: Make fetching of 'can-offline' member from 'guest-query-vcpus' optional (rhbz#2174447)\n\n[8.0.0-18]\n- conf: Make VIR_DOMAIN_NET_TYPE_ETHERNET not share 'host view' (rhbz#2172578)\n\n[8.0.0-17]\n- vircpi: Add PCIe 5.0 and 6.0 link speeds (rhbz#2168116)\n\n[8.0.0-16]\n- qemu_namespace: Don't leak memory in qemuDomainGetPreservedMounts() (rhbz#2166573)\n\n[8.0.0-15]\n- nodedev: fix reported error msg in css cap XML parsing (rhbz#2165011)\n- util: refactor virDomainDeviceCCWAddress into virccw.h (rhbz#2165011)\n- util: refactor virDomainCCWAddressAsString into virccw (rhbz#2165011)\n- util: make reuse of ccw device address format constant (rhbz#2165011)\n- util: refactor ccw address constants into virccw (rhbz#2165011)\n- util: refactor virDomainCCWAddressIncrement into virccw (rhbz#2165011)\n- util: refactor virDomainDeviceCCWAddressIsValid into virccw (rhbz#2165011)\n- util: refactor virDomainDeviceCCWAddressEqual into virccw (rhbz#2165011)\n- conf: adjust method name virDomainDeviceCCWAddressParseXML (rhbz#2165011)\n- util: add ccw device address parsing into virccw (rhbz#2165011)\n- util: add virCCWDeviceAddressFromString to virccw (rhbz#2165011)\n- nodedev: refactor css format from ccw format method (rhbz#2165011)\n- nodedev: refactor ccw device address parsing from XML (rhbz#2165011)\n- nodedev: refactor css XML parsing from ccw XML parsing (rhbz#2165011)\n- schemas: refactor out nodedev ccw address schema (rhbz#2165011)\n- nodedev: add optional device address of channel device to css device (rhbz#2165011)\n- nodedev: add tests for optional device address to css device (rhbz#2165011)\n- nodedev: prevent internal error on dev_busid parse (rhbz#2165011)\n- rpc: Fix memory leak of fds (rhbz#2165428)\n\n[8.0.0-14]\n- qemu: Ignore missing vm.unprivileged_userfaultfd sysctl (rhbz#2148578)\n\n[8.0.0-13]\n- build: Only install libvirt-guests when building libvirtd (rhbz#2153688)\n- tools: Fix install_mode for some scripts (rhbz#2153688)\n\n[8.0.0-12]\n- util: json: Split out array-\u003estrinlist conversion from virJSONValueObjectGetStringArray (rhbz#2149752)\n- qemuAgentGetDisks: Don't use virJSONValueObjectGetStringArray for optional data (rhbz#2149752)\n- virpidfile: Add virPidFileReadPathIfLocked func (rhbz#2152188)\n- qemu: tpm: Get swtpm pid without binary validation (rhbz#2152188)\n- qemu_tpm: Do async IO when starting swtpm emulator (rhbz#2152188)\n- qemu: gpu: Get pid without binary validation (rhbz#2152188)\n- spec: libvirt-daemon: Add optional dependency on *-client (rhbz#2136591)\n\n[8.0.0-11]\n- qemu_process: Don't require a hugetlbfs mount for memfd (rhbz#2123196)\n- qemu_namespace: Tolerate missing ACLs when creating a path in namespace (rhbz#2123196)\n- qemu_namespace: Fix a corner case in qemuDomainGetPreservedMounts() (rhbz#2123196)\n- qemu_namespace: Introduce qemuDomainNamespaceSetupPath() (rhbz#2123196)\n- qemu_process.c: Propagate hugetlbfs mounts on reconnect (rhbz#2123196)\n- qemuProcessReconnect: Don't build memory paths (rhbz#2123196)\n\n[8.0.0-10]\n- security_selinux.c: Relabel existing mode='bind' UNIX sockets (rhbz#2101575)\n- RHEL: qemu_migration: Fix restoring memlock limit on destination (rhbz#2107954)\n\n[8.0.0-9]\n- conf: virtiofs: add thread_pool element (rhbz#2079582)\n- qemu: virtiofs: format --thread-pool-size (rhbz#2079582)\n- conf: Move virDomainObj::originalMemlock into qemuDomainObjPrivate (rhbz#2089433)\n- qemu_domain: Format qemuDomainObjPrivate::originalMemlock (rhbz#2089433)\n- qemu: Add qemuDomainSetMaxMemLock helper (rhbz#2089433)\n- qemu_migration: Use qemuDomainSetMaxMemLock (rhbz#2089433)\n- qemu_migration: Restore original memory locking limit (rhbz#2089433)\n- Add VIR_MIGRATE_ZEROCOPY flag (rhbz#2089433)\n- virsh: Add support for VIR_MIGRATE_ZEROCOPY flag (rhbz#2089433)\n- qemu_migration: Implement VIR_MIGRATE_ZEROCOPY flag (rhbz#2089433)\n\n[8.0.0-8]\n- nwfilter: fix crash when counting number of network filters (CVE-2022-0897, rhbz#2063902)\n- virDomainDiskDefValidate: Improve error messages for 'startupPolicy' checks (rhbz#2095758)\n- domain_validate: Split out validation of disk startup policy (rhbz#2095758)\n- virDomainDiskDefValidateStartupPolicy: Validate disk type better (rhbz#2095758)\n- virDomainDiskTranslateSourcePool: Fix check of 'startupPolicy' definition (rhbz#2095758)\n\n[8.0.0-7]\n- cpu_map: Disable cpu64-rhel* for host-model and baseline (rhbz#1851227)\n- cputest: Drop some old artificial baseline tests (rhbz#1851227)\n- cputest: Give better names to baseline tests (rhbz#1851227)\n- cputest: Add some real world baseline tests (rhbz#1851227)\n- cpu_x86: Consolidate signature match in x86DecodeUseCandidate (rhbz#1851227)\n- cpu_x86: Refactor feature list comparison in x86DecodeUseCandidate (rhbz#1851227)\n- cpu_x86: Penalize disabled features when computing CPU model (rhbz#1851227)\n- cpu_x86: Ignore enabled features for input models in x86DecodeUseCandidate (rhbz#1851227)\n\n[8.0.0-6]\n- conf: Introduce memory allocation threads (rhbz#2067126)\n- qemu_capabilities: Detect memory-backend-*.prealloc-threads property (rhbz#2067126)\n- qemu_validate: Validate prealloc threads against qemuCpas (rhbz#2067126)\n- qemu_command: Generate prealloc-threads property (rhbz#2067126)\n\n[8.0.0-5]\n- node_device: Rework udevKludgeStorageType() (rhbz#2056673)\n- node_device: Treat NVMe disks as regular disks (rhbz#2056673)\n\n[8.0.0-4]\n- qemu_command: Generate memory only after controllers (rhbz#2050697)\n- qemu: Validate domain definition even on migration (rhbz#2050702)\n\n[8.0.0-3]\n- qemuDomainSetupDisk: Initialize 'targetPaths' (rhbz#2046172)\n- RHEL: Remove \u003cglib-2.64.0 workaround for GSource race (rhbz#2045879)\n\n[8.0.0-2]\n- Revert 'report error when virProcessGetStatInfo() is unable to parse data' (rhbz#2041610)\n- qemu: fix inactive snapshot revert (rhbz#2043584)\n\n[8.0.0-1]\n- Rebased to libvirt-8.0.0 (rhbz#2012802)\n\n[8.0.0-0rc1.1]\n- Rebased to libvirt-8.0.0-rc1 (rhbz#2012802)\n- The rebase also fixes the following bugs:\n    rhbz#1689202, rhbz#2014369, rhbz#2030119, rhbz#2029380, rhbz#2035237\n    rhbz#2035714, rhbz#2034180\n\n[7.10.0-1]\n- Rebased to libvirt-7.10.0 (rhbz#2012802)\n- The rebase also fixes the following bugs:\n    rhbz#1845468, rhbz#2017928, rhbz#2024419, rhbz#1953389, rhbz#1510237\n\n[7.9.0-1]\n- Rebased to libvirt-7.9.0 (rhbz#2012802)\n- The rebase also fixes the following bugs:\n    rhbz#2011731, rhbz#2012385, rhbz#2013539\n\n[7.8.0-1]\n- Rebased to libvirt-7.8.0 (rhbz#2012802)\n- The rebase also fixes the following bugs:\n    rhbz#1839070, rhbz#1942275, rhbz#1995865, rhbz#1806857, rhbz#1924616\n    rhbz#1978574, rhbz#1989457, rhbz#1965589, rhbz#1677608, rhbz#1926508\n    rhbz#1810863, rhbz#1845468, rhbz#1738392, rhbz#1965140\n\n[7.6.0-2.fc34]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[6.0.0-37]\n- security: fix SELinux label generation logic (CVE-2021-3631)\n- storage_driver: Unlock object on ACL fail in storagePoolLookupByTargetPath (CVE-2021-3667)\n\n[6.0.0-36]\n- network: make it safe to call networkSetupPrivateChains() multiple times (rhbz#1942805)\n- network: force re-creation of iptables private chains on firewalld restart (rhbz#1942805)\n- hostdev: Update mdev pointer reference after checking device type (rhbz#1940449)\n- hostdev: mdev: Lookup mdevs by sysfs path rather than mdev struct (rhbz#1940449)\n- qemu_firmware: don't error out for unknown firmware features (rhbz#1961562)\n- docs: improve description of secure attribute for loader element (rhbz#1929357)\n- conf: introduce virDomainDefParseBootInitOptions (rhbz#1929357)\n- conf: introduce virDomainDefParseBootKernelOptions (rhbz#1929357)\n- conf: introduce virDomainDefParseBootFirmwareOptions (rhbz#1929357)\n- conf: introduce virDomainDefParseBootLoaderOptions (rhbz#1929357)\n- conf: introduce virDomainDefParseBootAcpiOptions (rhbz#1929357)\n- conf: use switch in virDomainDefParseBootOptions (rhbz#1929357)\n- conf: introduce support for firmware auto-selection feature filtering (rhbz#1929357)\n- qemu: implement support for firmware auto-selection feature filtering (rhbz#1929357)\n- domain_conf: Don't leak def-\u003eos.firmwareFeatures (rhbz#1929357)\n- conf: remove duplicated firmware type attribute (rhbz#1929357)\n\n[6.0.0-35]\n- vircgroupv2: properly detect placement of running VM (rhbz#1798463)\n- virsystemd: export virSystemdHasMachined (rhbz#1798463)\n- virsystemd: introduce virSystemdGetMachineByPID (rhbz#1798463)\n- virsystemd: introduce virSystemdGetMachineUnitByPID (rhbz#1798463)\n- vircgroup: use DBus call to systemd for some APIs (rhbz#1798463)\n- vircgroupv1: refactor virCgroupV1DetectPlacement (rhbz#1798463)\n- vircgroupv2: move task into cgroup before enabling controllers (rhbz#1798463)\n- vircgroup: introduce virCgroupV1Exists and virCgroupV2Exists (rhbz#1798463)\n- vircgroup: introduce nested cgroup to properly work with systemd (rhbz#1798463)\n- tests: add cgroup nested tests (rhbz#1798463)\n- vircgroup: correctly free nested virCgroupPtr (rhbz#1798463)\n- qemu: Add virtio related options to vsock (rhbz#1931548)\n- domain_validate: use defines for cpu period and quota limits (rhbz#1798463)\n- docs: use proper cpu quota value in our documentation (rhbz#1798463)\n- vircgroup: enforce range limit for cpu.shares (rhbz#1798463)\n- cgroup: use virCgroupSetCpuShares instead of virCgroupSetupCpuShares (rhbz#1798463)\n- cpumap: Add support for ibrs CPU feature (rhbz#1926864)\n- cpumap: Add support for svme-addr-check CPU feature (rhbz#1926864)\n- cpu_map: Add EPYC-Milan x86 CPU model (rhbz#1926864)\n- cpu_map: Install x86_EPYC-Milan.xml (rhbz#1926864)\n- cpu_map: Fix spelling of svme-addr-chk feature (rhbz#1926864)\n\n[6.0.0-34]\n- qemu: move cgroup cpu period and quota defines to vircgroup.h (rhbz#1915733)\n- vircgroupv1: use defines for cpu period and quota limits (rhbz#1915733)\n- vircgroupv2: use defines for cpu period and quota limits (rhbz#1915733)\n- vircgroup: fix cpu quota maximum limit (rhbz#1915733)\n- util: add virNetDevGetPhysPortName (rhbz#1918708)\n- util: avoid manual VIR_FREE of a g_autofree pointer in virPCIGetName() (rhbz#1918708)\n- util: Add phys_port_name support on virPCIGetNetName (rhbz#1918708)\n\n[6.0.0-33]\n- cpu_map: Fix Icelake Server model number (rhbz#1537734)\n- cputestdata: Add test data for Snowridge (rhbz#1537734)\n- cpu_map: Add support for fsrm CPU feature (rhbz#1537734)\n- cpu_map: Add support for core-capability CPU feature (rhbz#1537734)\n- cpu_map: Add support for split-lock-detect CPU feature (rhbz#1537734)\n- cpu_map: Define and enable Snowridge model (rhbz#1537734)\n- util: fix typo in VIR_MOCK_WRAP_RET_ARGS() (rhbz#1607929)\n- util/tests: enable locking on iptables/ebtables commandlines in unit tests (rhbz#1607929)\n- util/tests: enable locking on iptables/ebtables commandlines by default (rhbz#1607929)\n- tests: fix iptables test case commandline options in virfirewalltest.c (rhbz#1607929)\n- network: be more verbose about the reason for a firewall reload (rhbz#1607929)\n- util: always check for ebtables/iptables binaries, even when using firewalld (rhbz#1607929)\n- util: synchronize with firewalld before we start calling iptables directly (rhbz#1607929)\n- util: call iptables directly rather than via firewalld (rhbz#1607929)\n- util: virhostcpu: Fail when fetching CPU Stats for invalid cpu (rhbz#1915183)\n\n[6.0.0-32]\n- util: replace macvtap name reservation bitmap with a simple counter (rhbz#1874304)\n- util: assign tap device names using a monotonically increasing integer (rhbz#1874304)\n- util: virNetDevTapCreate: initialize fd to -1 (rhbz#1874304)\n\n[6.0.0-31]\n- conf: properly clear out autogenerated macvtap names when formatting/parsing (rhbz#1872610)\n- qemu: format 'ramfb' attribute for mediated devices (rhbz#1876297)\n\n[6.0.0-30]\n- cpu_map: Add missing x86 features in 0x7 CPUID leaf (rhbz#1861506)\n- cpu_map: Add missing x86 features in 0x80000008 CPUID leaf (rhbz#1861506)\n- cpu_map: Add missing AMD SVM features (rhbz#1861506)\n- Add testdata for AMD EPYC 7502 (rhbz#1861506)\n- cpu_map: Defined and enable EPYC-Rome model (rhbz#1861506)\n- cpu_map: Remove monitor feature from EPYC-Rome (rhbz#1861506)\n- tests: qemuxml2argv: Use existing machine type for 'numatune-distances' case (rhbz#1749518)\n- qemuxml2xmltest: Add 'numatune-distance' test case (rhbz#1749518)\n- conf: Move and rename virDomainParseScaledValue() (rhbz#1749518)\n- numa_conf: Drop CPU from name of two functions (rhbz#1749518)\n- qemu_command: Rename qemuBuildNumaArgStr() (rhbz#1749518)\n- qemuBuildMachineCommandLine: Drop needless check (rhbz#1749518)\n- numa_conf: Make virDomainNumaSetNodeCpumask() return void (rhbz#1749518)\n- Allow NUMA nodes without vCPUs (rhbz#1749518)\n- conf: Parse and format HMAT (rhbz#1749518)\n- conf: Validate NUMA HMAT configuration (rhbz#1749518)\n- numa: expose HMAT APIs (rhbz#1749518)\n- qemu: Introduce QEMU_CAPS_NUMA_HMAT capability (rhbz#1749518)\n- qemu: Build HMAT command line (rhbz#1749518)\n- qemuBuildNumaCommandLine: Fix @masterInitiator check (rhbz#1749518)\n- numa_conf: Properly check for caches in virDomainNumaDefValidate() (rhbz#1749518)\n- RNG: Allow interleaving of /domain/cpu/numa/cell children (rhbz#1749518)\n\n[6.0.0-29]\n- qemu: substitute missing model name for host-passthrough (rhbz#1850680)\n- rpc: gendispatch: handle empty flags (CVE-2020-25637)\n- rpc: add support for filtering @acls by uint params (CVE-2020-25637)\n- rpc: require write acl for guest agent in virDomainInterfaceAddresses (CVE-2020-25637)\n- qemu: agent: set ifname to NULL after freeing (CVE-2020-25637)\n- qemu: Fix domfsinfo for non-PCI device information from guest agent (rhbz#1858771)\n- virDomainNetFindIdx: add support for CCW addresses (rhbz#1837495)\n- check for NULL before calling g_regex_unref (rhbz#1861176)\n- virhostcpu.c: fix 'die_id' parsing for Power hosts (rhbz#1876742)\n- qemuFirmwareFillDomain: Fill NVRAM template on migration too (rhbz#1880418)\n- node_device: refactor udevProcessCCW (rhbz#1853289, rhbz#1865932)\n- node_device: detect CSS devices (rhbz#1853289, rhbz#1865932)\n- virsh: nodedev: ability to filter CSS capabilities (rhbz#1853289, rhbz#1865932)\n- node_device: detect DASD devices (rhbz#1853289, rhbz#1865932)\n- udevProcessCSS: Check if def-\u003edriver is non-NULL (rhbz#1853289, rhbz#1865932)\n\n[6.0.0-28]\n- virdevmapper: Don't cache device-mapper major (rhbz#1860421)\n- virdevmapper: Handle kernel without device-mapper support (rhbz#1860421)\n- virdevmapper: Ignore all errors when opening /dev/mapper/control (rhbz#1860421)\n\n[6.0.0-27]\n- src: assume sys/sysmacros.h always exists on Linux (rhbz#1860421)\n- virdevmapper.c: Join two WITH_DEVMAPPER sections together (rhbz#1860421)\n- virDevMapperGetTargetsImpl: Use VIR_AUTOSTRINGLIST (rhbz#1860421)\n- virdevmapper: Don't use libdevmapper to obtain dependencies (CVE-2020-14339, rhbz#1860421)\n- virDevMapperGetTargets: Don't ignore EBADF (rhbz#1860421)\n\n[6.0.0-26]\n- qemu: blockjob: Don't base bitmap handling of active-layer block commit on QEMU_CAPS_BLOCKDEV_REOPEN (rhbz#1857779)\n- qemu: blockjob: Actually delete temporary bitmap on failed active commit (rhbz#1857779)\n- qemu: block: Remove 'active-write' bitmap even if there are no bitmaps to merge (rhbz#1857779)\n- qemuDomainBlockPivot: Rename 'actions' to 'bitmapactions' (rhbz#1857779)\n- qemuDomainBlockPivot: Ignore failures of creating active layer bitmap (rhbz#1857779)\n\n[6.0.0-25]\n- Upgrade components in virt:rhel module:stream for RHEL-8.3 release (rhbz#1828317)\n- conf: Don't format http cookies unless VIR_DOMAIN_DEF_FORMAT_SECURE is used (CVE-2020-14301)\n- util: Introduce a parser for kernel cmdline arguments (rhbz#1848997)\n- qemu: Check if s390 secure guest support is enabled (rhbz#1848997)\n- qemu: Check if AMD secure guest support is enabled (rhbz#1848997)\n- tools: Secure guest check on s390 in virt-host-validate (rhbz#1848997)\n- tools: Secure guest check for AMD in virt-host-validate (rhbz#1848997)\n- docs: Update AMD launch secure description (rhbz#1848997)\n- docs: Describe protected virtualization guest setup (rhbz#1848997)\n\n[6.0.0]\n- Resolves: bz#1828317\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[6.0.0]\n- Resolves: bz#1810193\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[6.0.0]\n- Resolves: bz#1810193\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[6.0.0]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[4.5.0-42]\n- RHEL: virscsi: Check device type before getting it's /dev node name (rhbz#1808388)\n- RHEL: virscsi: Support TAPEs in virSCSIDeviceGetDevName() (rhbz#1808388)\n- RHEL: virscsi: Introduce and use virSCSIDeviceGetUnprivSGIOSysfsPath() (rhbz#1808388)\n- RHEL: virutil: Accept non-block devices in virGetDeviceID() (rhbz#1808388)\n- RHEL: qemuSetUnprivSGIO: Actually use calculated @sysfs_path to set unpriv_sgio (rhbz#1808388)\n- RHEL: qemuCheckUnprivSGIO: use @sysfs_path to get unpriv_sgio (rhbz#1808399)\n\n[4.5.0-41]\n- qemu: Translate features in virQEMUCapsGetCPUFeatures (rhbz#1804224)\n\n[4.5.0-40]\n- process: wait longer on kill per assigned Hostdev (rhbz#1785338)\n- process: wait longer 5-\u003e30s on hard shutdown (rhbz#1785338)\n\n[4.5.0-39]\n- selinux: Do not report an error when not returning -1 (rhbz#1788096)\n- qemu: Fix hyperv features with QEMU 4.1 (rhbz#1794868)\n- qemu: Prefer dashes for hyperv features (rhbz#1794868)\n- cpu: Drop KVM_ from hyperv feature macros (rhbz#1794868)\n- cpu: Drop unused KVM features (rhbz#1794868)\n- qemu: Fix KVM features with QEMU 4.1 (rhbz#1794868)\n- cpu: Drop CPUID definition for hv-spinlocks (rhbz#1794868)\n\n[4.5.0-38]\n- cpu_map/x86: Add support for BFLOAT16 data type (rhbz#1749516)\n\n[4.5.0-37]\n- cpu_map: Add TAA_NO bit for IA32_ARCH_CAPABILITIES MSR (CVE-2019-11135)\n- cpu_map: Add TSX_CTRL bit for IA32_ARCH_CAPABILITIES MSR (CVE-2019-11135)\n\n[4.5.0-36]\n- cpu_conf: Pass policy to CPU feature filtering callbacks (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n- qemuxml2*test: Add tests for Icelake-Server, -pconfig (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n- qemu: Drop disabled CPU features unknown to QEMU (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n- cputest: Add data for Ice Lake Server CPU (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n- cpu_map: Drop pconfig from Icelake-Server CPU model (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n- qemu: Fix NULL ptr dereference caused by qemuDomainDefFormatBufInternal (rhbz#1749672, rhbz#1756156, rhbz#1721608)\n\n[4.5.0-35]\n- vircgroupv2: fix setting cpu.max period (rhbz#1749227)\n\n[4.5.0-34]\n- vircgroupv2: fix abort in VIR_AUTOFREE (rhbz#1747440)\n\n[4.5.0-33]\n- vircgroupv2: fix parsing multiple values in single file (rhbz#1741825)\n- vircgroupv2: fix virCgroupV2GetCpuCfsQuota for 'max' value (rhbz#1741837)\n\n[4.5.0-32]\n- virDomainObjListAddLocked: Produce better error message than 'Duplicate key' (rhbz#1737790)\n- virdbus: Grab a ref as long as the while loop is executed (rhbz#1741900)\n\n[4.5.0-31]\n- virDomainObjListAddLocked: fix double free (rhbz#1728530)\n- docs: schemas: Decouple the virtio options from each other (rhbz#1729675)\n- util: command: use VIR_AUTOFREE instead of VIR_FREE for scalar types (rhbz#1721434)\n- util: command: define cleanup function using VIR_DEFINE_AUTOPTR_FUNC (rhbz#1721434)\n- util: netdevopenvswitch: use VIR_AUTOFREE instead of VIR_FREE for scalar types (rhbz#1721434)\n- util: virnetdevopenvswitch: Drop an unused variable @ovs_timeout (rhbz#1721434)\n- util: netdevopenvswitch: use VIR_AUTOPTR for aggregate types (rhbz#1721434)\n- util: suppress unimportant ovs-vsctl errors when getting interface stats (rhbz#1721434)\n- virNetDevOpenvswitchInterfaceStats: Optimize for speed (rhbz#1721434)\n- test: Introduce virnetdevopenvswitchtest (rhbz#1721434)\n- vircommand: Separate mass FD closing into a function (rhbz#1721434)\n- virCommand: use procfs to learn opened FDs (rhbz#1721434)\n- util: command: Ignore bitmap errors when enumerating file descriptors to close (rhbz#1721434)\n- util: Avoid possible error in virCommandMassClose (rhbz#1721434)\n- vircgroup: fix cgroups v2 controllers detection (rhbz#1689297)\n- vircgroupv2: store enabled controllers (rhbz#1689297)\n\n[4.5.0-30]\n- virWaitForDevices: Drop confusing part of comment (rhbz#1710575)\n- lib: Drop UDEVSETTLE (rhbz#1710575)\n- m4: Provide default value fore UDEVADM (rhbz#1710575)\n- m4: Drop needless string checks (rhbz#1710575)\n- util: vircgroup: introduce virCgroup(Get|Set)ValueRaw (rhbz#1658890)\n- util: vircgroup: move virCgroupGetValueStr out of virCgroupGetValueForBlkDev (rhbz#1658890)\n- util: vircgroupv1: add support for BFQ blkio files (rhbz#1658890)\n- util: vircgroupv2: add support for BFQ files (rhbz#1658890)\n- Handle copying bitmaps to larger data buffers (rhbz#1703160)\n\n[4.5.0-29]\n- cpu: allow include files for CPU definition (rhbz#1686895)\n- cpu: fix cleanup when signature parsing fails (rhbz#1686895)\n- cpu: push more parsing logic into common code (rhbz#1686895)\n- cpu: simplify failure cleanup paths (rhbz#1686895)\n- cpu_map: Add support for arch-capabilities feature (rhbz#1693433)\n- cputest: Add data for Intel(R) Xeon(R) CPU E5-2630 v4 (rhbz#1686895)\n- cputest: Add data for Intel(R) Core(TM) i7-7600U (rhbz#1686895)\n- cputest: Add data for Intel(R) Xeon(R) CPU E7540 (rhbz#1686895)\n- cputest: Add data for Intel(R) Xeon(R) CPU E5-2650 (rhbz#1686895)\n- cputest: Add data for Intel(R) Core(TM) i7-8700 (rhbz#1686895)\n- cpu_x86: Separate ancestor model parsing from x86ModelParse (rhbz#1686895)\n- cpu_x86: Separate signature parsing from x86ModelParse (rhbz#1686895)\n- cpu_x86: Separate vendor parsing from x86ModelParse (rhbz#1686895)\n- cpu_x86: Separate feature list parsing from x86ModelParse (rhbz#1686895)\n- cpu_x86: Make sure CPU model names are unique in cpu_map (rhbz#1686895)\n- cpu_x86: Add x86ModelCopySignatures helper (rhbz#1686895)\n- cpu_x86: Store CPU signature in an array (rhbz#1686895)\n- cpu_x86: Allow multiple signatures for a CPU model (rhbz#1686895)\n- cpu_x86: Log decoded CPU model and signatures (rhbz#1686895)\n- qemu_capabilities: Inroduce virQEMUCapsGetCPUModelX86Data (rhbz#1686895)\n- qemu_capabilities: Introduce virQEMUCapsGetCPUModelInfo (rhbz#1686895)\n- qemu_capabilities: Use virQEMUCapsGetCPUModelInfo (rhbz#1686895)\n- cpu_x86: Add virCPUx86DataGetSignature for tests (rhbz#1686895)\n- cpu_map: Add hex representation of signatures (rhbz#1686895)\n- cputest: Test CPU signatures (rhbz#1686895)\n- cpu_map: Add more signatures for Conroe CPU model (rhbz#1686895)\n- cpu_map: Add more signatures for Penryn CPU model (rhbz#1686895)\n- cpu_map: Add more signatures for Nehalem CPU models (rhbz#1686895)\n- cpu_map: Add more signatures for Westmere CPU model (rhbz#1686895)\n- cpu_map: Add more signatures for SandyBridge CPU models (rhbz#1686895)\n- cpu_map: Add more signatures for IvyBridge CPU models (rhbz#1686895)\n- cpu_map: Add more signatures for Haswell CPU models (rhbz#1686895)\n- cpu_map: Add more signatures for Broadwell CPU models (rhbz#1686895)\n- cpu_map: Add more signatures for Skylake-Client CPU models (rhbz#1686895)\n- cpu: Don't access invalid memory in virCPUx86Translate (rhbz#1686895)\n- cpu_x86: Require \u003ccpuid\u003e within \u003cfeature\u003e in CPU map (rhbz#1697627)\n- cputest: Add data for Intel(R) Xeon(R) Platinum 8268 CPU (rhbz#1693433)\n- cpu_map: Add Cascadelake-Server CPU model (rhbz#1693433)\n- cpu_x86: Introduce virCPUx86DataItem container struct (rhbz#1697627)\n- cpu_x86: Rename virCPUx86Vendor.cpuid (rhbz#1697627)\n- cpu_x86: Rename virCPUx86DataItem variables (rhbz#1697627)\n- cpu_x86: Rename x86DataCpuidNext function (rhbz#1697627)\n- cpu_x86: Rename x86DataCpuid (rhbz#1697627)\n- cpu_x86: Rename virCPUx86CPUIDSorter (rhbz#1697627)\n- cpu_x86: Rename virCPUx86DataAddCPUIDInt (rhbz#1697627)\n- cpu_x86: Rename virCPUx86DataAddCPUID (rhbz#1697627)\n- cpu_x86: Rename virCPUx86VendorToCPUID (rhbz#1697627)\n- cpu_x86: Simplify x86DataAdd (rhbz#1697627)\n- cpu_x86: Introduce virCPUx86DataCmp (rhbz#1697627)\n- cpu_x86: Make x86cpuidSetBits more general (rhbz#1697627)\n- cpu_x86: Make x86cpuidClearBits more general (rhbz#1697627)\n- cpu_x86: Make x86cpuidAndBits more general (rhbz#1697627)\n- cpu_x86: Make x86cpuidMatchMasked more general (rhbz#1697627)\n- cpu_x86: Make x86cpuidMatch more general (rhbz#1697627)\n- cpu_x86: Store virCPUx86DataItem content in union (rhbz#1697627)\n- cpu_x86: Add support for storing MSR features in CPU map (rhbz#1697627)\n- cpu_x86: Move *CheckFeature functions (rhbz#1697627)\n- cputest: Add support for MSR features to cpu-parse.sh (rhbz#1697627)\n- util: file: introduce VIR_AUTOCLOSE macro to close fd of the file automatically (rhbz#1697627)\n- vircpuhost: Add support for reading MSRs (rhbz#1697627)\n- virhostcpu: Make virHostCPUGetMSR() work only on x86 (rhbz#1697627)\n- cpu_x86: Fix placement of *CheckFeature functions (rhbz#1697627)\n- cpu_conf: Introduce virCPUDefFilterFeatures (rhbz#1697627)\n- qemu_command: Use consistent syntax for CPU features (rhbz#1697627)\n- tests: Add QEMU caps data for future 4.1.0 (rhbz#1697627)\n- tests: Add domain capabilities case for QEMU 4.1.0 (rhbz#1697627)\n- qemuxml2argvtest: Add test for CPU features translation (rhbz#1697627)\n- qemu: Add APIs for translating CPU features (rhbz#1697627)\n- qemu: Probe for max-x86_64-cpu type (rhbz#1697627)\n- qemu: Probe for 'unavailable-features' CPU property (rhbz#1697627)\n- qemu: Probe host CPU after capabilities (rhbz#1697627)\n- qemu_command: Use canonical names of CPU features (rhbz#1697627)\n- qemu: Translate feature names from query-cpu-model-expansion (rhbz#1697627)\n- qemu: Don't use full CPU model expansion (rhbz#1697627)\n- qemu: Make qemuMonitorGetGuestCPU usable on x86 only (rhbz#1697627)\n- cpu: Introduce virCPUDataAddFeature (rhbz#1697627)\n- qemu: Add type filter to qemuMonitorJSONParsePropsList (rhbz#1697627)\n- util: string: Introduce macro for automatic string lists (rhbz#1697627)\n- util: json: define cleanup function using VIR_DEFINE_AUTOPTR_FUNC (rhbz#1697627)\n- qemu: Introduce generic qemuMonitorGetGuestCPU (rhbz#1697627)\n- qemu_process: Prefer generic qemuMonitorGetGuestCPU (rhbz#1697627)\n- util: Rework virStringListAdd (rhbz#1697627)\n- conf: Introduce virCPUDefCheckFeatures (rhbz#1697627)\n- cpu_x86: Turn virCPUx86DataIteratorInit into a function (rhbz#1697627)\n- cpu_x86: Introduce virCPUx86FeatureFilter*MSR (rhbz#1697627)\n- cpu_x86: Read CPU features from IA32_ARCH_CAPABILITIES MSR (rhbz#1697627)\n- cpu_map: Introduce IA32_ARCH_CAPABILITIES MSR features (rhbz#1697627)\n- qemu: Forbid MSR features with old QEMU (rhbz#1697627)\n- qemu: Drop MSR features from host-model with old QEMU (rhbz#1697627)\n- cpu_x86: Fix memory leak - virCPUx86GetHost (rhbz#1697627)\n- qemu: Use @tmpChr in qemuDomainDetachChrDevice to build device string (rhbz#1624204)\n- qemu: Drop 'user-' prefix for guestfwd netdev (rhbz#1624204)\n- qemu_hotplug: Attach guestfwd using netdev_add (rhbz#1624204)\n- qemu_hotplug: Detach guestfwd using netdev_del (rhbz#1624204)\n- qemuhotplugtest: Test guestfwd attach and detach (rhbz#1624204)\n- daemon: Register secret driver before storage driver (rhbz#1685151)\n- bhyve: Move autostarting of domains into bhyveStateInitialize (rhbz#1685151)\n- Revert 'virStateDriver - Separate AutoStart from Initialize' (rhbz#1685151)\n- Revert 'Separate out StateAutoStart from StateInitialize' (rhbz#1685151)\n- util: moving 'type' argument to avoid issues with mount() syscall. (rhbz#1689297)\n- util: cgroup: use VIR_AUTOFREE instead of VIR_FREE for scalar types (rhbz#1689297)\n- vircgroup: Rename structs to start with underscore (rhbz#1689297)\n- vircgroup: Introduce standard set of typedefs and use them (rhbz#1689297)\n- vircgroup: Extract file link resolving into separate function (rhbz#1689297)\n- vircgroup: Remove unused function virCgroupKill() (rhbz#1689297)\n- vircgroup: Unexport unused function virCgroupAddTaskController() (rhbz#1689297)\n- vircgroup: Unexport unused function virCgroupRemoveRecursively (rhbz#1689297)\n- vircgroup: Move function used in tests into vircgrouppriv.h (rhbz#1689297)\n- vircgroup: Remove pointless bool parameter (rhbz#1689297)\n- vircgroup: Extract mount options matching into function (rhbz#1689297)\n- vircgroup: Use virCgroupMountOptsMatchController in virCgroupDetectPlacement (rhbz#1689297)\n- vircgroup: Introduce virCgroupEnableMissingControllers (rhbz#1689297)\n- vircgroup: machinename will never be NULL (rhbz#1689297)\n- vircgroup: Remove virCgroupAddTaskController (rhbz#1689297)\n- vircgroup: Introduce virCgroupGetMemoryStat (rhbz#1689297)\n- lxc: Use virCgroupGetMemoryStat (rhbz#1689297)\n- vircgroup: fix MinGW build (rhbz#1689297)\n- vircgroup: Duplicate string before modifying (rhbz#1689297)\n- vircgroup: Extract controller detection into function (rhbz#1689297)\n- vircgroup: Extract placement validation into function (rhbz#1689297)\n- vircgroup: Split virCgroupPathOfController into two functions (rhbz#1689297)\n- vircgroup: Call virCgroupRemove inside virCgroupMakeGroup (rhbz#1689297)\n- vircgroup: Simplify if conditions in virCgroupMakeGroup (rhbz#1689297)\n- vircgroup: Remove obsolete sa_assert (rhbz#1689297)\n- tests: Resolve possible overrun (rhbz#1689297)\n- vircgroup: cleanup controllers not managed by systemd on error (rhbz#1689297)\n- vircgroup: fix bug in virCgroupEnableMissingControllers (rhbz#1689297)\n- vircgroup: rename virCgroupAdd.*Task to virCgroupAdd.*Process (rhbz#1689297)\n- vircgroup: introduce virCgroupTaskFlags (rhbz#1689297)\n- vircgroup: introduce virCgroupAddThread (rhbz#1689297)\n- vircgroupmock: cleanup unused cgroup files (rhbz#1689297)\n- vircgroupmock: rewrite cgroup fopen mocking (rhbz#1689297)\n- vircgrouptest: call virCgroupDetectMounts directly (rhbz#1689297)\n- vircgrouptest: call virCgroupNewSelf instead virCgroupDetectMounts (rhbz#1689297)\n- util: introduce vircgroupbackend files (rhbz#1689297)\n- vircgroup: introduce cgroup v1 backend files (rhbz#1689297)\n- vircgroup: extract virCgroupV1Available (rhbz#1689297)\n- vircgroup: detect available backend for cgroup (rhbz#1689297)\n- vircgroup: extract virCgroupV1ValidateMachineGroup (rhbz#1689297)\n- vircgroup: extract virCgroupV1CopyMounts (rhbz#1689297)\n- vircgroup: extract v1 detect functions (rhbz#1689297)\n- vircgroup: extract virCgroupV1CopyPlacement (rhbz#1689297)\n- vircgroup: extract virCgroupV1ValidatePlacement (rhbz#1689297)\n- vircgroup: extract virCgroupV1StealPlacement (rhbz#1689297)\n- vircgroup: extract virCgroupV1DetectControllers (rhbz#1689297)\n- vircgroup: extract virCgroupV1HasController (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetAnyController (rhbz#1689297)\n- vircgroup: extract virCgroupV1PathOfController (rhbz#1689297)\n- vircgroup: extract virCgroupV1MakeGroup (rhbz#1689297)\n- vircgroup: extract virCgroupV1Remove (rhbz#1689297)\n- vircgroup: extract virCgroupV1AddTask (rhbz#1689297)\n- vircgroup: extract virCgroupV1HasEmptyTasks (rhbz#1689297)\n- vircgroup: extract virCgroupV1BindMount (rhbz#1689297)\n- vircgroup: extract virCgroupV1SetOwner (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioWeight (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetBlkioIoServiced (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetBlkioIoDeviceServiced (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioDeviceWeight (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioDeviceReadIops (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioDeviceWriteIops (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioDeviceReadBps (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)BlkioDeviceWriteBps (rhbz#1689297)\n- vircgroup: extract virCgroupV1SetMemory (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetMemoryStat (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetMemoryUsage (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)Memory*Limit (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetMemSwapUsage (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Allow|Deny)Device (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Allow|Deny)AllDevices (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpuShares (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpuCfsPeriod (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpuCfsQuota (rhbz#1689297)\n- vircgroup: extract virCgroupV1SupportsCpuBW (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetCpuacct*Usage (rhbz#1689297)\n- vircgroup: extract virCgroupV1GetCpuacctStat (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)FreezerState (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpusetMems (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpusetMemoryMigrate (rhbz#1689297)\n- vircgroup: extract virCgroupV1(Set|Get)CpusetCpus (rhbz#1689297)\n- vircgroup: rename virCgroupController into virCgroupV1Controller (rhbz#1689297)\n- vircgroup: rename controllers to legacy (rhbz#1689297)\n- vircgroup: remove VIR_CGROUP_SUPPORTED (rhbz#1689297)\n- vircgroup: include system headers only on linux (rhbz#1689297)\n- vircgroupv1: fix build on non-linux OSes (rhbz#1689297)\n- Revert 'vircgroup: cleanup controllers not managed by systemd on error' (rhbz#1689297)\n- util: introduce cgroup v2 files (rhbz#1689297)\n- vircgroup: introduce virCgroupV2Available (rhbz#1689297)\n- vircgroup: introduce virCgroupV2ValidateMachineGroup (rhbz#1689297)\n- vircgroup: introduce virCgroupV2CopyMounts (rhbz#1689297)\n- vircgroup: introduce virCgroupV2CopyPlacement (rhbz#1689297)\n- vircgroup: introduce virCgroupV2DetectMounts (rhbz#1689297)\n- vircgroup: introduce virCgroupV2DetectPlacement (rhbz#1689297)\n- vircgroup: introduce virCgroupV2ValidatePlacement (rhbz#1689297)\n- vircgroup: introduce virCgroupV2StealPlacement (rhbz#1689297)\n- vircgroup: introduce virCgroupV2DetectControllers (rhbz#1689297)\n- vircgroup: introduce virCgroupV2HasController (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetAnyController (rhbz#1689297)\n- vircgroup: introduce virCgroupV2PathOfController (rhbz#1689297)\n- vircgroup: introduce virCgroupV2MakeGroup (rhbz#1689297)\n- vircgroup: introduce virCgroupV2Remove (rhbz#1689297)\n- vircgroup: introduce virCgroupV2AddTask (rhbz#1689297)\n- vircgroup: introduce virCgroupV2HasEmptyTasks (rhbz#1689297)\n- vircgroup: introduce virCgroupV2BindMount (rhbz#1689297)\n- vircgroup: introduce virCgroupV2SetOwner (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioWeight (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetBlkioIoServiced (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetBlkioIoDeviceServiced (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioDeviceWeight (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioDeviceReadIops (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioDeviceWriteIops (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioDeviceReadBps (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)BlkioDeviceWriteBps (rhbz#1689297)\n- vircgroup: introduce virCgroupV2SetMemory (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetMemoryStat (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetMemoryUsage (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)MemoryHardLimit (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)MemorySoftLimit (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)MemSwapHardLimit (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetMemSwapUsage (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)CpuShares (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)CpuCfsPeriod (rhbz#1689297)\n- vircgroup: introduce virCgroupV2(Set|Get)CpuCfsQuota (rhbz#1689297)\n- vircgroup: introduce virCgroupV2SupportsCpuBW (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetCpuacctUsage (rhbz#1689297)\n- vircgroup: introduce virCgroupV2GetCpuacctStat (rhbz#1689297)\n- vircgroup: register cgroup v2 backend (rhbz#1689297)\n- vircgroup: add support for hybrid configuration (rhbz#1689297)\n- vircgroupmock: change cgroup prefix (rhbz#1689297)\n- vircgroupmock: add support to test cgroup v2 (rhbz#1689297)\n- vircgrouptest: introduce initFakeFS and cleanupFakeFS helpers (rhbz#1689297)\n- vircgrouptest: prepare testCgroupDetectMounts for cgroup v2 (rhbz#1689297)\n- vircgrouptest: add detect mounts test for cgroup v2 (rhbz#1689297)\n- vircgrouptest: add detect mounts test for hybrid cgroups (rhbz#1689297)\n- vircgrouptest: prepare validateCgroup for cgroupv2 (rhbz#1689297)\n- vircgrouptest: add cgroup v2 tests (rhbz#1689297)\n- vircgrouptest: add hybrid tests (rhbz#1689297)\n- virt-host-validate: rewrite cgroup detection to use util/vircgroup (rhbz#1689297)\n- virt-host-validate: require freezer for LXC (rhbz#1689297)\n- virt-host-validate: Fix build on non-Linux (rhbz#1689297)\n- tests: Use correct function name in error path (rhbz#1689297)\n- util: Fix virCgroupGetMemoryStat (rhbz#1689297)\n- tests: Augment vcgrouptest to add virCgroupGetMemoryStat (rhbz#1689297)\n- vircgroup: introduce virCgroupKillRecursiveCB (rhbz#1689297)\n- vircgroupv2: fix virCgroupV2ValidateMachineGroup (rhbz#1689297)\n- util: implement virCgroupV2(Set|Get)CpusetMems (rhbz#1689297)\n- util: implement virCgroupV2(Set|Get)CpusetMemoryMigrate (rhbz#1689297)\n- util: implement virCgroupV2(Set|Get)CpusetCpus (rhbz#1689297)\n- util: enable cgroups v2 cpuset controller for threads (rhbz#1689297)\n- util: vircgroup: pass parent cgroup into virCgroupDetectControllersCB (rhbz#1689297)\n- internal: introduce a family of NULLSTR macros (rhbz#1689297)\n- util: vircgroup: improve controller detection (rhbz#1689297)\n- util: vircgroupv2: use any controller to create thread directory (rhbz#1689297)\n- util: vircgroupv2: enable CPU controller only if it's available (rhbz#1689297)\n- util: vircgroupv2: separate return values of virCgroupV2EnableController (rhbz#1689297)\n- util: vircgroupv2: don't error out if enabling controller fails (rhbz#1689297)\n- util: vircgroupv2: mark only requested controllers as available (rhbz#1689297)\n- Revert 'util: vircgroup: pass parent cgroup into virCgroupDetectControllersCB' (rhbz#1689297)\n- util: vircgroupv2: stop enabling missing controllers with systemd (rhbz#1689297)\n\n[4.5.0-28]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[4.5.0-27]\n- RHEL: spec: Disable gluster on i686 (rhbz#1722668)\n- rpc: virnetlibsshsession: update deprecated functions (rhbz#1722735)\n\n[4.5.0-26]\n- api: disallow virDomainSaveImageGetXMLDesc on read-only connections (CVE-2019-10161)\n- api: disallow virDomainManagedSaveDefineXML on read-only connections (CVE-2019-10166)\n- api: disallow virConnectGetDomainCapabilities on read-only connections (CVE-2019-10167)\n- api: disallow virConnect*HypervisorCPU on read-only connections (CVE-2019-10168)\n\n[4.5.0-25]\n- admin: reject clients unless their UID matches the current UID (CVE-2019-10132)\n- locking: restrict sockets to mode 0600 (CVE-2019-10132)\n- logging: restrict sockets to mode 0600 (CVE-2019-10132)\n- util: skip RDMA detection for non-PCI network devices (rhbz#1693299)\n- virfile: Detect ceph as shared FS (rhbz#1698133)\n- virfile: added GPFS as shared fs (rhbz#1698133)\n- util: bitmap: define cleanup function using VIR_DEFINE_AUTOPTR_FUNC (rhbz#1716943)\n- qemu: Rework setting process affinity (rhbz#1716943)\n- qemu: Set up EMULATOR thread and cpuset.mems before exec()-ing qemu (rhbz#1716943)\n- conf: Add definitions for 'uid' and 'fid' PCI address attributes (rhbz#1508149)\n- qemu: Introduce zPCI capability (rhbz#1508149)\n- qemu: Enable PCI multi bus for S390 guests (rhbz#1508149)\n- conf: Introduce extension flag and zPCI member for PCI address (rhbz#1508149)\n- conf: Introduce address caching for PCI extensions (rhbz#1508149)\n- qemu: Auto add pci-root for s390/s390x guests (rhbz#1508149)\n- conf: use virXMLFormatElement() in virDomainDeviceInfoFormat() (rhbz#1508149)\n- conf: Introduce parser, formatter for uid and fid (rhbz#1508149)\n- qemu: Add zPCI address definition check (rhbz#1508149)\n- conf: Allocate/release 'uid' and 'fid' in PCI address (rhbz#1508149)\n- qemu: Generate and use zPCI device in QEMU command line (rhbz#1508149)\n- qemu: Add hotpluging support for PCI devices on S390 guests (rhbz#1508149)\n- qemuDomainRemoveRNGDevice: Remove associated chardev too (rhbz#1508149)\n- qemu_hotplug: remove erroneous call to qemuDomainDetachExtensionDevice() (rhbz#1508149)\n- qemu_hotplug: remove another erroneous qemuDomainDetachExtensionDevice() call (rhbz#1508149)\n- util: Propagate numad failures correctly (rhbz#1716907)\n- util: Introduce virBitmapUnion() (rhbz#1716908)\n- util: Introduce virNumaNodesetToCPUset() (rhbz#1716908)\n- qemu: Fix qemuProcessInitCpuAffinity() (rhbz#1716908)\n- qemu: Fix leak in qemuProcessInitCpuAffinity() (rhbz#1716908)\n- qemu: Drop cleanup label from qemuProcessInitCpuAffinity() (rhbz#1716908)\n- qemu: Fix NULL pointer access in qemuProcessInitCpuAffinity() (rhbz#1716908)\n- qemuBuildMemoryBackendProps: Pass @priv instead of its individual members (rhbz#1624223)\n- qemu: Don't use -mem-prealloc among with .prealloc=yes (rhbz#1624223)\n- nwfilter: fix adding std MAC and IP values to filter binding (rhbz#1691356)\n- qemuProcessBuildDestroyMemoryPathsImpl: Don't overwrite error (rhbz#1658112)\n- qemu_security: Fully implement qemuSecurityDomainSetPathLabel (rhbz#1658112)\n- qemu: process: SEV: Assume libDir to be the directory to create files in (rhbz#1658112)\n- qemu: process: SEV: Relabel guest owner's SEV files created before start (rhbz#1658112)\n\n[4.5.0-24]\n- tests: qemuxml2argv: add CAPS_ARCH_LATEST macro (rhbz#1698855)\n- qemu: Add ccw support for vhost-vsock (rhbz#1698855)\n- qemu: Allow creating ppc64 guests with graphics and no USB mouse (rhbz#1683681)\n- conf: Expose virDomainSCSIDriveAddressIsUsed (rhbz#1692354)\n- qemuhotplugtest: Don't plug a SCSI disk at unit 7 (rhbz#1692354)\n- qemu_hotplug: Check for duplicate drive addresses (rhbz#1692354)\n- cpu_map: Add support for cldemote CPU feature (rhbz#1537731)\n- util: alloc: add macros for implementing automatic cleanup functionality (rhbz#1505998)\n- qemu: domain: Simplify non-VFIO memLockLimit calculation for PPC64 (rhbz#1505998)\n- qemu_domain: add a PPC64 memLockLimit helper (rhbz#1505998)\n- qemu_domain: NVLink2 bridge detection function for PPC64 (rhbz#1505998)\n- PPC64 support for NVIDIA V100 GPU with NVLink2 passthrough (rhbz#1505998)\n- cpu_x86: Do not cache microcode version (CVE-2018-12127, CVE-2019-11091, CVE-2018-12126, CVE-2018-12130)\n- qemu: Don't cache microcode version (CVE-2018-12127, CVE-2019-11091, CVE-2018-12126, CVE-2018-12130)\n- cputest: Add data for Intel(R) Xeon(R) CPU E3-1225 v5 (CVE-2018-12127, CVE-2019-11091, CVE-2018-12126, CVE-2018-12130)\n- cpu_map: Define md-clear CPUID bit (CVE-2018-12127, CVE-2019-11091, CVE-2018-12126, CVE-2018-12130)\n\n[4.5.0-23]\n- network: explicitly allow icmp/icmpv6 in libvirt zonefile (rhbz#1650320)\n\n[4.5.0-22]\n- util: fix memory leak in virFirewallDInterfaceSetZone() (rhbz#1650320)\n\n[4.5.0-21]\n- docs: Drop /dev/net/tun from the list of shared devices (rhbz#1665400)\n- qemu: conf: Remove /dev/sev from the default cgroup device acl list (rhbz#1665400)\n- qemu: cgroup: Expose /dev/sev/ only to domains that require SEV (rhbz#1665400)\n- qemu: domain: Add /dev/sev into the domain mount namespace selectively (rhbz#1665400)\n- security: dac: Relabel /dev/sev in the namespace (rhbz#1665400)\n- qemu: caps: Use CAP_DAC_OVERRIDE for probing to avoid permission issues (rhbz#1665400)\n- qemu: caps: Don't try to ask for CAP_DAC_OVERRIDE if non-root (rhbz#1665400)\n- Revert 'RHEL: Require firewalld-filesystem for firewalld rpm macros' (rhbz#1650320)\n- Revert 'RHEL: network: regain guest network connectivity after firewalld switch to nftables' (rhbz#1650320)\n- configure: change HAVE_FIREWALLD to WITH_FIREWALLD (rhbz#1650320)\n- util: move all firewalld-specific stuff into its own files (rhbz#1650320)\n- util: new virFirewallD APIs + docs (rhbz#1650320)\n- configure: selectively install a firewalld 'libvirt' zone (rhbz#1650320)\n- network: set firewalld zone of bridges to 'libvirt' zone when appropriate (rhbz#1650320)\n- network: allow configuring firewalld zone for virtual network bridge device (rhbz#1650320)\n- util: remove test code accidentally committed to virFirewallDZoneExists (rhbz#1650320)\n- qemu: command: Don't skip 'readonly' and throttling info for empty drive (rhbz#1670337)\n\n[4.5.0-20]\n- RHEL: qemu: Fix crash trying to use iSCSI hostdev (rhbz#1669424)\n\n[4.5.0-19]\n- qemu: Fix logic error in qemuSetUnprivSGIO (rhbz#1666605)\n- tests: qemuxml2argv: Add test case for empty CDROM with cache mode (rhbz#1553255)\n- qemu: command: Don't format image properties for empty -drive (rhbz#1553255)\n\n[4.5.0-18]\n- conf: correct false boot order error during domain parse (rhbz#1630393)\n- qemu: Remove duplicated qemuAgentCheckError (rhbz#1665000)\n- qemu: require reply from guest agent in qemuAgentGetInterfaces (rhbz#1665000)\n- qemu: Filter non SCSI hostdevs in qemuHostdevPrepareSCSIDevices (rhbz#1665244)\n- util: remove const specifier from nlmsghdr arg to virNetlinkDumpCallback() (rhbz#1583131)\n- util: add a function to insert new interfaces to IPv6CheckForwarding list (rhbz#1583131)\n- util: use nlmsg_find_attr() instead of an open-coded loop (rhbz#1583131)\n- util: check accept_ra for all nexthop interfaces of multipath routes (rhbz#1583131)\n- util: make forgotten changes suggested during review of commit d40b820c (rhbz#1583131)\n\n[4.5.0-17]\n- virsh: Strip XML declaration when extracting CPU XMLs (rhbz#1659048)\n- RHEL: qemu: Add ability to set sgio values for hostdev (rhbz#1582424)\n- RHEL: qemu: Add check for unpriv sgio for SCSI generic host device (rhbz#1582424)\n- qemu: Alter @val usage in qemuSetUnprivSGIO (rhbz#1656362)\n- qemu: Alter qemuSetUnprivSGIO hostdev shareable logic (rhbz#1656362)\n\n[4.5.0-16]\n- util: Don't overflow in virRandomBits (rhbz#1655586)\n- virrandom: Avoid undefined behaviour in virRandomBits (rhbz#1655586)\n- spec: remove libcgroup and cgconfig (rhbz#1602407)\n- qemu: Drop duplicated code from qemuDomainDefValidateFeatures() (rhbz#1647822)\n- tests: Add capabilities data for QEMU 3.1.0 on ppc64 (rhbz#1647822)\n- qemu: Introduce QEMU_CAPS_MACHINE_PSERIES_CAP_NESTED_HV (rhbz#1647822)\n- conf: Parse and format nested-hv feature (rhbz#1647822)\n- qemu: Format nested-hv feature on the command line (rhbz#1647822)\n- qemu: Add check for whether KVM nesting is enabled (rhbz#1645139)\n- secret: Add check/validation for correct usage when LookupByUUID (rhbz#1656255)\n- cpu: Add support for 'stibp' x86_64 feature (rhbz#1655032)\n\n[4.5.0-15]\n- virfile: Take symlink into account in virFileIsSharedFixFUSE (rhbz#1634782)\n- qemu: Ignore nwfilter binding instantiation issues during reconnect (rhbz#1648544)\n- qemu: Set identity for the reconnect all thread (rhbz#1648546)\n- Revert 'access: Modify the VIR_ERR_ACCESS_DENIED to include driverName' (rhbz#1631608)\n- access: Modify the VIR_ERR_ACCESS_DENIED to include driverName (rhbz#1631608)\n- qemu: add vfio-ap capability (rhbz#1508146)\n- qemu: vfio-ap device support (rhbz#1508146)\n- qemu: Extract MDEV VFIO PCI validation code into a separate helper (rhbz#1508146)\n- conf: Move VFIO AP validation from post parse to QEMU validation code (rhbz#1508146)\n- qemu: Fix post-copy migration on the source (rhbz#1649169)\n\n[4.5.0-14]\n- storage: Remove secretPath from _virStorageBackendQemuImgInfo (rhbz#1645459)\n- storage: Allow for inputvol to have any format for encryption (rhbz#1645459)\n- storage: Allow inputvol to be encrypted (rhbz#1645459)\n- access: Modify the VIR_ERR_ACCESS_DENIED to include driverName (rhbz#1631608)\n- docs: Enhance polkit documentation to describe secondary connection (rhbz#1631608)\n- qemu: Don't ignore resume events (rhbz#1634758, rhbz#1643338)\n\n[4.5.0-13]\n- Revert 'spec: Temporarily drop gluster support' (rhbz#1599339)\n\n[4.5.0-12]\n- RHEL: Require firewalld-filesystem for firewalld rpm macros (rhbz#1639932)\n\n[4.5.0-11]\n- virfile: fix cast-align error (rhbz#1634782)\n- virfiletest: Fix test name prefix for virFileInData test (rhbz#1634782)\n- virfiletst: Test virFileIsSharedFS (rhbz#1634782)\n- virFileIsSharedFSType: Detect direct mount points (rhbz#1634782)\n- virfile: Rework virFileIsSharedFixFUSE (rhbz#1634782)\n- RHEL: network: regain guest network connectivity after firewalld switch to nftables (rhbz#1638864)\n\n[4.5.0-10]\n- conf: Fix check for chardev source path (rhbz#1609723)\n- tests: Reuse qemucapabilities data for qemucaps2xml (rhbz#1629862)\n- tests: Add more tests to qemucaps2xml (rhbz#1629862)\n- qemu: Drop QEMU_CAPS_ENABLE_KVM (rhbz#1629862)\n- qemu: Avoid probing non-native binaries all the time (rhbz#1629862)\n- qemu: Clarify QEMU_CAPS_KVM (rhbz#1629862)\n- qemu: Don't check for /dev/kvm presence (rhbz#1629862)\n- tests: Follow up on qemucaps2xmldata rename (rhbz#1629862)\n- security: dac: also label listen UNIX sockets (rhbz#1634775)\n- spec: Set correct TLS priority (rhbz#1632269)\n- spec: Build ceph and gluster support everywhere (rhbz#1599546)\n- virsh: Require explicit --domain for domxml-to-native (rhbz#1634769)\n- virFileIsSharedFSType: Check for fuse.glusterfs too (rhbz#1634782)\n- qemu: fix up permissions for pre-created UNIX sockets (rhbz#1634775)\n- cpu_map: Add features for Icelake CPUs (rhbz#1527657, rhbz#1526625)\n- cpu_map: Add Icelake CPU models (rhbz#1526625)\n- qemu: Properly report VIR_DOMAIN_EVENT_RESUMED_FROM_SNAPSHOT (rhbz#1634758)\n- qemu: Report more appropriate running reasons (rhbz#1634758)\n- qemu: Pass running reason to RESUME event handler (rhbz#1634758)\n- qemu: Map running reason to resume event detail (rhbz#1634758)\n- qemu: Avoid duplicate resume events and state changes (rhbz#1634758)\n- conf: qemu: add support for Hyper-V frequency MSRs (rhbz#1589702)\n- conf: qemu: add support for Hyper-V reenlightenment notifications (rhbz#1589702)\n- conf: qemu: add support for Hyper-V PV TLB flush (rhbz#1589702)\n\n[4.5.0-9]\n- RHEL: Fix virConnectGetMaxVcpus output (rhbz#1582222)\n- storage: Add --shrink to qemu-img command when shrinking vol (rhbz#1622534)\n- access: Fix nwfilter-binding ACL access API name generation (rhbz#1622540)\n- conf: Add validation of input devices (rhbz#1591240)\n- tests: qemu: Remove disk from graphics-vnc-tls (rhbz#1598167)\n- tests: qemu: test more versions for graphics-vnc-tls (rhbz#1598167)\n- qemu: vnc: switch to tls-creds-x509 (rhbz#1598167)\n- qemu: mdev: Use vfio-pci 'display' property only with vfio-pci mdevs (rhbz#1624740)\n- virDomainDefCompatibleDevice: Relax alias change check (rhbz#1603133)\n- virDomainDetachDeviceFlags: Clarify update semantics (rhbz#1603133)\n- virDomainNetDefCheckABIStability: Check for MTU change too (rhbz#1623158)\n- RHEL: spec: Require python3-devel on RHEL-8 (rhbz#1518446)\n- qemu: monitor: Remove qemuMonitorJSONExtractCPUArchInfo wrapper (rhbz#1598829)\n- qemu: monitor: Use 'target' instead of 'arch' in reply of 'query-cpus-fast' (rhbz#1598829)\n\n[4.5.0-8]\n- tests: Add missing thread_siblings_list files (rhbz#1608479)\n- util: Rewrite virHostCPUCountThreadSiblings() (rhbz#1608479)\n- utils: Remove arbitrary limit on socket_id/core_id (rhbz#1608479)\n- tests: Add linux-high-ids test (rhbz#1608479)\n- qemu: hotplug: Fix asynchronous unplug of 'shmem' (rhbz#1618680)\n- tests: rename hugepages to hugepages-default (rhbz#1615461)\n- tests: extract hugepages-numa-default-dimm out of hugepages-numa (rhbz#1615461)\n- tests: rename hugepages-numa into hugepages-numa-default (rhbz#1615461)\n- tests: remove unnecessary XML elements from hugepages-numa-default (rhbz#1615461)\n- tests: extract pages-discard out of hugepages-pages (rhbz#1615461)\n- tests: rename hugepages-pages into hugepages-numa-nodeset (rhbz#1615461)\n- tests: rename hugepages-pages2 into hugepages-numa-default-2M (rhbz#1615461)\n- tests: extract pages-discard-hugepages out of hugepages-pages3 (rhbz#1615461)\n- tests: rename hugepages-pages3 into hugepages-numa-nodeset-part (rhbz#1615461)\n- tests: rename hugepages-pages4 into hugepages-numa-nodeset-nonexist (rhbz#1615461)\n- tests: rename hugepages-pages5 into hugepages-default-2M (rhbz#1615461)\n- tests: rename hugepages-pages6 into hugepages-default-system-size (rhbz#1615461)\n- tests: rename hugepages-pages7 into pages-dimm-discard (rhbz#1615461)\n- tests: rename hugepages-pages8 into hugepages-nodeset-nonexist (rhbz#1615461)\n- tests: introduce hugepages-default-1G-nodeset-2M (rhbz#1615461)\n- tests: introduce hugepages-nodeset (rhbz#1615461)\n- conf: Move hugepage XML validation check out of qemu_command (rhbz#1615461)\n- conf: Move hugepages validation out of XML parser (rhbz#1615461)\n- conf: Introduce virDomainDefPostParseMemtune (rhbz#1615461)\n- tests: sev: Test launch-security with specific QEMU version (rhbz#1619150)\n- qemu: Fix probing of AMD SEV support (rhbz#1619150)\n- qemu: caps: Format SEV platform data into qemuCaps cache (rhbz#1619150)\n- conf: Parse guestfwd channel device info again (rhbz#1610072)\n\n[4.5.0-7]\n- qemu_migration: Avoid writing to freed memory (rhbz#1615854)\n\n[4.5.0-6]\n- qemu: Exempt video model 'none' from getting a PCI address on Q35\n- conf: Fix a error msg typo in virDomainVideoDefValidate\n\n[4.5.0-5]\n- esx storage: Fix typo lsilogic -\u003e lsiLogic\n- networkGetDHCPLeases: Don't always report error if unable to read leases file\n- nwfilter: Resolve SEGV for NWFilter Snoop processing\n- qemu: Remove unused bypassSecurityDriver from qemuOpenFileAs\n- qemuDomainSaveMemory: Don't enforce dynamicOwnership\n- domain_nwfilter: Return early if net has no name in virDomainConfNWFilterTeardownImpl\n- examples: Add clean-traffic-gateway into nwfilters\n\n[4.5.0-4]\n- qemu: hotplug: don't overwrite error message in qemuDomainAttachNetDevice\n- qemu: hotplug: report error when changing rom enabled attr for net iface\n- qemu: Fix setting global_period cputune element\n- tests: qemucaps: Add test data for upcoming qemu 3.0.0\n- qemu: capabilities: Add capability for werror/rerror for 'usb-device' frontend\n- qemu: command: Move graphics iteration to its own function\n- qemu: address: Handle all the video devices within a single loop\n- conf: Introduce virDomainVideoDefClear helper\n- conf: Introduce virDomainDefPostParseVideo helper\n- qemu: validate: Enforce compile time switch type checking for videos\n- tests: Add capabilities data for QEMU 2.11 x86_64\n- tests: Update capabilities data for QEMU 3.0.0 x86_64\n- qemu: qemuBuildHostdevCommandLine: Use a helper variable mdevsrc\n- qemu: caps: Introduce a capability for egl-headless\n- qemu: Introduce a new graphics display type 'headless'\n- qemu: caps: Add vfio-pci.display capability\n- conf: Introduce virDomainGraphicsDefHasOpenGL helper\n- conf: Replace 'error' with 'cleanup' in virDomainHostdevDefParseXMLSubsys\n- conf: Introduce new \u003chostdev\u003e attribute 'display'\n- qemu: command: Enable formatting vfio-pci.display option onto cmdline\n- docs: Rephrase the mediated devices hostdev section a bit\n- conf: Introduce new video type 'none'\n- virt-xml-validate: Add schema for nwfilterbinding\n- tools: Fix typo generating adapter_wwpn field\n- src: Fix memory leak in virNWFilterBindingDispose\n\n[4.5.0-3]\n- qemu: hotplug: Do not try to add secret object for TLS if it does not exist\n- qemu: monitor: Make qemuMonitorAddObject more robust against programming errors\n- spec: Explicitly require matching libvirt-libs\n- virDomainConfNWFilterInstantiate: initialize @xml to avoid random crash\n- qemuProcessStartPRDaemonHook: Try to set NS iff domain was started with one\n- qemuDomainValidateStorageSource: Relax PR validation\n- virStoragePRDefFormat: Suppress path formatting for migratable XML\n- qemu: Wire up PR_MANAGER_STATUS_CHANGED event\n- qemu_monitor: Introduce qemuMonitorJSONGetPRManagerInfo\n- qemu: Fetch pr-helper process info on reconnect\n- qemu: Fix ATTRIBUTE_NONNULL for qemuMonitorAddObject\n- virsh.pod: Fix a command name typo in nwfilter-binding-undefine\n- docs: schema: Add missing \u003calias\u003e to vsock device\n- virnetdevtap: Don't crash on !ifname in virNetDevTapInterfaceStats\n- tests: fix TLS handshake failure with TLS 1.3\n\n[4.5.0-2]\n- qemu: Add capability for the HTM pSeries feature\n- conf: Parse and format the HTM pSeries feature\n- qemu: Format the HTM pSeries feature\n- qemu: hotplug: Don't access srcPriv when it's not allocated\n- qemuDomainNestedJobAllowed: Allow QEMU_JOB_NONE\n- src: Mention DEVICE_REMOVAL_FAILED event in virDomainDetachDeviceAlias docs\n- virsh.pod: Drop --persistent for detach-device-alias\n- qemu: don't use chardev FD passing with standalone args\n- qemu: remove chardevStdioLogd param from vhostuser code path\n- qemu: consolidate parameters of qemuBuildChrChardevStr into flags\n- qemu: don't use chardev FD passing for vhostuser backend\n- qemu: fix UNIX socket chardevs operating in client mode\n- qemuDomainDeviceDefValidateNetwork: Check for range only if IP prefix set\n- spec: Temporarily drop gluster support\n\n[4.5.0-1]\n- Rebased to libvirt-4.5.0\n\n[4.3.0-1]\n- Rebased to libvirt-4.3.0\n\n[4.1.0-2]\n- Fix systemd macro argument with line continuations (rhbz#1558648)\n\n[4.1.0-1]\n- Rebase to version 4.1.0\n\n[4.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[4.0.0-1]\n- Rebase to version 4.0.0\n\n[3.10.0-2]\n- Rebuild for xen 4.10\n\n[3.10.0-1]\n- Rebase to version 3.10.0\n\n[3.9.0-1]\n- Rebase to version 3.9.0\n\n[3.8.0-1]\n- Rebase to version 3.8.0\n\n[3.7.0-1]\n- Rebase to version 3.7.0\n\n[3.6.0-1]\n- Rebase to version 3.6.0\n\n[3.5.0-4]\n- Rebuild with binutils fix for ppc64le (#1475636)\n\n[3.5.0-3]\n- Disabled RBD on i386, arm, ppc64 (rhbz #1474743)\n\n[3.5.0-2]\n- Rebuild for xen 4.9\n\n[3.5.0-1]\n- Rebase to version 3.5.0\n\n[3.4.0-1]\n- Rebase to version 3.4.0\n\n[3.3.0-1]\n- Rebase to version 3.3.0\n\n[3.2.0-1]\n- Rebase to version 3.2.0\n\n[3.1.0-1]\n- Rebase to version 3.1.0\n\n[3.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[3.0.0-1]\n- Rebase to version 3.0.0\n\nlibvirt-dbus\n[1.3.0-2.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[1.3.0]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[1.2.0-3]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[1.2.0-2]\n- util: fix virtDBusUtilDecodeUUID (rhbz#1647823)\n\n[1.2.0-1]\n- Rebased to libvirt-dbus-1.2.0 (rhbz#1630196)\n\n[1.0.0-1]\n- Rebase from Fedora\n\nlibvirt-python\nnbdkit\n[1.24.0-5]\n- vddk: Add support for VDDK 8.0.0\n  resolves: rhbz#2143907\n\nnetcf\nperl-Sys-Virt\nqemu-kvm\n[6.2.0-33]\n- CVE-2023-3354 QEMU: VNC: improper I/O watch removal in TLS handshake can lead to remote unauthenticated denial of service\n\n[6.2.0-32.el8_8]\n- kvm-aio_wait_kick-add-missing-memory-barrier.patch [bz#2168472]\n- kvm-qatomic-add-smp_mb__before-after_rmw.patch [bz#2168472]\n- kvm-qemu-thread-posix-cleanup-fix-document-QemuEvent.patch [bz#2168472]\n- kvm-qemu-thread-win32-cleanup-fix-document-QemuEvent.patch [bz#2168472]\n- kvm-edu-add-smp_mb__after_rmw.patch [bz#2168472]\n- kvm-aio-wait-switch-to-smp_mb__after_rmw.patch [bz#2168472]\n- kvm-qemu-coroutine-lock-add-smp_mb__after_rmw.patch [bz#2168472]\n- kvm-physmem-add-missing-memory-barrier.patch [bz#2168472]\n- kvm-async-update-documentation-of-the-memory-barriers.patch [bz#2168472]\n- kvm-async-clarify-usage-of-barriers-in-the-polling-case.patch [bz#2168472]\n- kvm-scsi-protect-req-aiocb-with-AioContext-lock.patch [bz#2090990]\n- kvm-dma-helpers-prevent-dma_blk_cb-vs-dma_aio_cancel-rac.patch [bz#2090990]\n- kvm-virtio-scsi-reset-SCSI-devices-from-main-loop-thread.patch [bz#2090990]\n- Resolves: bz#2168472\n  (Guest hangs when starting or rebooting)\n- Resolves: bz#2090990\n  (qemu crash with error scsi_req_unref(SCSIRequest *): Assertion req-\u003erefcount \u003e 0' failed or scsi_dma_complete(void *, int): Assertion r-\u003ereq.aiocb != NULL' failed [8.7.0])\n\n[6.2.0-31]\n- kvm-io-Add-support-for-MSG_PEEK-for-socket-channel.patch [bz#2137740]\n- kvm-migration-check-magic-value-for-deciding-the-mapping.patch [bz#2137740]\n- kvm-target-s390x-arch_dump-Fix-memory-corruption-in-s390.patch [bz#2168187]\n- Resolves: bz#2137740\n  (Multifd migration fails under a weak network/socket ordering race)\n- Resolves: bz#2168187\n  ([s390x] qemu-kvm coredumps when SE crashes)\n\n[6.2.0-30]\n- kvm-qcow2-Fix-theoretical-corruption-in-store_bitmap-err.patch [bz#2147617]\n- kvm-qemu-img-commit-Report-errors-while-closing-the-imag.patch [bz#2147617]\n- kvm-qemu-img-bitmap-Report-errors-while-closing-the-imag.patch [bz#2147617]\n- kvm-qemu-iotests-Test-qemu-img-bitmap-commit-exit-code-o.patch [bz#2147617]\n- Resolves: bz#2147617\n  (qemu-img finishes successfully while having errors in commit or bitmaps operations)\n\n[6.2.0-29]\n- kvm-block-mirror-Do-not-wait-for-active-writes.patch [bz#2125119]\n- kvm-block-mirror-Drop-mirror_wait_for_any_operation.patch [bz#2125119]\n- kvm-block-mirror-Fix-NULL-s-job-in-active-writes.patch [bz#2125119]\n- kvm-accel-introduce-accelerator-blocker-API.patch [bz#2161188]\n- kvm-KVM-keep-track-of-running-ioctls.patch [bz#2161188]\n- kvm-kvm-Atomic-memslot-updates.patch [bz#2161188]\n- kvm-migration-Read-state-once.patch [bz#2074205]\n- kvm-s390x-pci-RPCIT-second-pass-when-mappings-exhausted.patch [bz#2163713]\n- kvm-s390x-pci-coalesce-unmap-operations.patch [bz#2163713]\n- kvm-s390x-pci-shrink-DMA-aperture-to-be-bound-by-vfio-DM.patch [bz#2163713]\n- kvm-s390x-pci-reset-ISM-passthrough-devices-on-shutdown-.patch [bz#2163713]\n- Resolves: bz#2125119\n  (Mirror job with 'copy-mode':'write-blocking' that used for storage migration can't converge under heavy I/O)\n- Resolves: bz#2161188\n  (SVM: non atomic memslot updates cause boot failure with seabios and cpu-pm=on)\n- Resolves: bz#2074205\n  (while live-migrating many instances concurrently, libvirt sometimes return internal error: migration was active, but no RAM info was set)\n- Resolves: bz#2163713\n  ([s390x] VM fails to start with ISM passed through)\n\n[6.2.0-28]\n- kvm-s390x-tod-kvm-don-t-save-restore-the-TOD-in-PV-guest.patch [bz#2155448]\n- Resolves: bz#2155448\n  (RHEL8.8 - KVM: s390: pv: don't allow userspace to set the clock under PV - QEMU part)\n\n[6.2.0-27]\n- kvm-hw-display-qxl-Have-qxl_log_command-Return-early-if-.patch [bz#2148545]\n- kvm-hw-display-qxl-Document-qxl_phys2virt.patch [bz#2148545]\n- kvm-hw-display-qxl-Pass-requested-buffer-size-to-qxl_phy.patch [bz#2148545]\n- kvm-hw-display-qxl-Avoid-buffer-overrun-in-qxl_phys2virt.patch [bz#2148545]\n- kvm-hw-display-qxl-Assert-memory-slot-fits-in-preallocat.patch [bz#2148545]\n- Resolves: bz#2148545\n  (CVE-2022-4144 virt:rhel/qemu-kvm: QEMU: QXL: qxl_phys2virt unsafe address translation can lead to out-of-bounds read [rhel-8])\n\n[6.2.0-26]\n- kvm-docs-system-s390x-Document-the-loadparm-machine-prop.patch [bz#2128225]\n- kvm-s390x-Register-TYPE_S390_CCW_MACHINE-properties-as-c.patch [bz#2128225]\n- kvm-ui-vnc.c-Fixed-a-deadlock-bug.patch [bz#2141896]\n- Resolves: bz#2128225\n  ([s390x] [RHEL8][s390x-ccw bios] lacking document about parameter loadparm in qemu)\n- Resolves: bz#2141896\n  (VMs hung on vnc_clipboard_send)\n\n[6.2.0-25]\n- kvm-hw-acpi-Add-ospm_status-hook-implementation-for-acpi.patch [bz#2132609]\n- kvm-target-arm-kvm-Retry-KVM_CREATE_VM-call-if-it-fails-.patch [bz#2132609]\n- Resolves: bz#2132609\n  (qemu-kvm: backport some aarch64 fixes)\n\n[6.2.0-24]\n- kvm-s390x-pci-use-a-reserved-ID-for-the-default-PCI-grou.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-don-t-use-hard-coded-dma-range-in-reg_ioat.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-use-the-passthrough-measurement-update-int.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-add-supported-DT-information-to-clp-respon.patch [bz#1664378 bz#2043909]\n- kvm-Update-linux-headers-to-v6.0-rc4.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-add-routine-to-get-host-function-handle-fr.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-enable-for-load-store-interpretation.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-don-t-fence-interpreted-devices-without-MS.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-enable-adapter-event-notification-for-inte.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-let-intercept-devices-have-separate-PCI-gr.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pci-reflect-proper-maxstbl-for-groups-of-inter.patch [bz#1664378 bz#2043909]\n- kvm-s390x-s390-virtio-ccw-Switch-off-zPCI-enhancements-o.patch [bz#1664378 bz#2043909]\n- kvm-dump-Use-ERRP_GUARD.patch [bz#1664378 bz#2043909]\n- kvm-dump-Remove-the-sh_info-variable.patch [bz#1664378 bz#2043909]\n- kvm-dump-Introduce-shdr_num-to-decrease-complexity.patch [bz#1664378 bz#2043909]\n- kvm-dump-Remove-the-section-if-when-calculating-the-memo.patch [bz#1664378 bz#2043909]\n- kvm-dump-Add-more-offset-variables.patch [bz#1664378 bz#2043909]\n- kvm-dump-Introduce-dump_is_64bit-helper-function.patch [bz#1664378 bz#2043909]\n- kvm-dump-Consolidate-phdr-note-writes.patch [bz#1664378 bz#2043909]\n- kvm-dump-Cleanup-dump_begin-write-functions.patch [bz#1664378 bz#2043909]\n- kvm-dump-Consolidate-elf-note-function.patch [bz#1664378 bz#2043909]\n- kvm-dump-Replace-opaque-DumpState-pointer-with-a-typed-o.patch [bz#1664378 bz#2043909]\n- kvm-dump-Rename-write_elf_loads-to-write_elf_phdr_loads.patch [bz#1664378 bz#2043909]\n- kvm-dump-Refactor-dump_iterate-and-introduce-dump_filter.patch [bz#1664378 bz#2043909]\n- kvm-dump-Rework-get_start_block.patch [bz#1664378 bz#2043909]\n- kvm-dump-Rework-filter-area-variables.patch [bz#1664378 bz#2043909]\n- kvm-dump-Rework-dump_calculate_size-function.patch [bz#1664378 bz#2043909]\n- kvm-dump-Split-elf-header-functions-into-prepare-and-wri.patch [bz#1664378 bz#2043909]\n- kvm-dump-Rename-write_elf-_phdr_note-to-prepare_elf-_phd.patch [bz#1664378 bz#2043909]\n- kvm-dump-simplify-a-bit-kdump-get_next_page.patch [bz#1664378 bz#2043909]\n- kvm-dump-fix-kdump-to-work-over-non-aligned-blocks.patch [bz#1664378 bz#2043909]\n- kvm-dump-Use-a-buffer-for-ELF-section-data-and-headers.patch [bz#1664378 bz#2043909]\n- kvm-dump-Write-ELF-section-headers-right-after-ELF-heade.patch [bz#1664378 bz#2043909]\n- kvm-dump-Reorder-struct-DumpState.patch [bz#1664378 bz#2043909]\n- kvm-dump-Reintroduce-memory_offset-and-section_offset.patch [bz#1664378 bz#2043909]\n- kvm-dump-Add-architecture-section-and-section-string-tab.patch [bz#1664378 bz#2043909]\n- kvm-s390x-Add-protected-dump-cap.patch [bz#1664378 bz#2043909]\n- kvm-s390x-Introduce-PV-query-interface.patch [bz#1664378 bz#2043909]\n- kvm-include-elf.h-add-s390x-note-types.patch [bz#1664378 bz#2043909]\n- kvm-s390x-Add-KVM-PV-dump-interface.patch [bz#1664378 bz#2043909]\n- kvm-s390x-pv-Add-dump-support.patch [bz#1664378 bz#2043909]\n- kvm-ui-vnc-clipboard-fix-integer-underflow-in-vnc_client.patch [bz#2129760]\n- Resolves: bz#1664378\n  ([IBM 8.8 FEAT] Enhanced Interpretation for PCI Functions (kvm) - qemu part)\n- Resolves: bz#2043909\n  ([IBM 8.8 FEAT] KVM: Secure Execution guest dump encryption with customer keys - qemu part)\n- Resolves: bz#2129760\n  (CVE-2022-3165 virt:rhel/qemu-kvm: QEMU: VNC: integer underflow in vnc_client_cut_text_ext leads to CPU exhaustion [rhel-8])\n\n[6.2.0-23]\n- kvm-virtio-fix-the-condition-for-iommu_platform-not-supp.patch [bz#2116302]\n- kvm-virtio-fix-feature-negotiation-for-ACCESS_PLATFORM.patch [bz#2116302]\n- Resolves: bz#2116302\n  (RHEL8.6 - virtiofs will not mount fs on secure execution guest)\n\n[6.2.0-22]\n- kvm-redhat-Update-linux-headers-linux-kvm.h-to-v5.18-rc6.patch [bz#2124757]\n- kvm-target-s390x-kvm-Honor-storage-keys-during-emulation.patch [bz#2124757]\n- kvm-virtiofsd-use-g_date_time_get_microsecond-to-get-sub.patch [bz#2018885]\n- Resolves: bz#2124757\n  (RHEL8: skey test in kvm_unit_test got failed)\n- Resolves: bz#2018885\n  ([virtiofs] virtiofsd debug log's timestamp is NULL)\n\n[6.2.0-21]\n- kvm-backends-hostmem-Fix-support-of-memory-backend-memfd.patch [bz#2117149]\n- kvm-i386-reset-KVM-nested-state-upon-CPU-reset.patch [bz#2125271]\n- kvm-i386-do-kvm_put_msr_feature_control-first-thing-when.patch [bz#2125271]\n- Resolves: bz#2117149\n  (Can't run when memory backing with hugepages and backend type memfd)\n- Resolves: bz#2125271\n  ([RHEL8.7] Guests in VMX root operation fail to reboot with QEMU's 'system_reset' command [rhel-8.8.0])\n\n[6.2.0-20]\n- kvm-scsi-generic-Fix-emulated-block-limits-VPD-page.patch [bz#2120279]\n- Resolves: bz#2120279\n  (Wrong max_sectors_kb and Maximum transfer length on the pass-through device [rhel-8.7])\n\n[6.2.0-19]\n- kvm-migration-Introduce-ram_transferred_add.patch [bz#2110203]\n- kvm-migration-Tally-pre-copy-downtime-and-post-copy-byte.patch [bz#2110203]\n- kvm-QIOChannelSocket-Fix-zero-copy-flush-returning-code-.patch [bz#2110203]\n- kvm-Add-dirty-sync-missed-zero-copy-migration-stat.patch [bz#2110203]\n- kvm-migration-multifd-Report-to-user-when-zerocopy-not-w.patch [bz#2110203]\n- kvm-migration-Avoid-false-positive-on-non-supported-scen.patch [bz#2110203]\n- kvm-migration-add-remaining-params-has_-true-in-migratio.patch [bz#2110203]\n- kvm-QIOChannelSocket-Add-support-for-MSG_ZEROCOPY-IPV6.patch [bz#2110203]\n- kvm-pc-bios-s390-ccw-Fix-booting-with-logical-block-size.patch [bz#2112296]\n- Resolves: bz#2110203\n  (zerocopy capability can be enabled when set migrate capabilities with multifd and compress/xbzrle together)\n- Resolves: bz#2112296\n  (virtio-blk: Can't boot fresh installation from used 512 cluster_size image under certain conditions)\n\n[6.2.0-18]\n- kvm-linux-aio-fix-unbalanced-plugged-counter-in-laio_io_.patch [bz#2105410]\n- kvm-linux-aio-explain-why-max-batch-is-checked-in-laio_i.patch [bz#2105410]\n- Resolves: bz#2105410\n  (Stalled IO Operations in VM)\n\n[6.2.0-17]\n- kvm-migration-Never-call-twice-qemu_target_page_size.patch [bz#2072049]\n- kvm-multifd-Rename-used-field-to-num.patch [bz#2072049]\n- kvm-multifd-Add-missing-documentation.patch [bz#2072049]\n- kvm-multifd-The-variable-is-only-used-inside-the-loop.patch [bz#2072049]\n- kvm-multifd-remove-used-parameter-from-send_prepare-meth.patch [bz#2072049]\n- kvm-multifd-remove-used-parameter-from-send_recv_pages-m.patch [bz#2072049]\n- kvm-multifd-Fill-offset-and-block-for-reception.patch [bz#2072049]\n- kvm-multifd-Make-zstd-compression-method-not-use-iovs.patch [bz#2072049]\n- kvm-multifd-Make-zlib-compression-method-not-use-iovs.patch [bz#2072049]\n- kvm-migration-All-this-fields-are-unsigned.patch [bz#2072049]\n- kvm-multifd-Move-iov-from-pages-to-params.patch [bz#2072049]\n- kvm-multifd-Make-zlib-use-iov-s.patch [bz#2072049]\n- kvm-multifd-Make-zstd-use-iov-s.patch [bz#2072049]\n- kvm-multifd-Remove-send_write-method.patch [bz#2072049]\n- kvm-multifd-Use-a-single-writev-on-the-send-side.patch [bz#2072049]\n- kvm-multifd-Use-normal-pages-array-on-the-send-side.patch [bz#2072049]\n- kvm-QIOChannel-Add-flags-on-io_writev-and-introduce-io_f.patch [bz#2072049]\n- kvm-QIOChannelSocket-Implement-io_writev-zero-copy-flag-.patch [bz#2072049]\n- kvm-migration-Add-zero-copy-send-parameter-for-QMP-HMP-f.patch [bz#2072049]\n- kvm-migration-Add-migrate_use_tls-helper.patch [bz#2072049]\n- kvm-multifd-multifd_send_sync_main-now-returns-negative-.patch [bz#2072049]\n- kvm-multifd-Send-header-packet-without-flags-if-zero-cop.patch [bz#2072049]\n- kvm-multifd-Implement-zero-copy-write-in-multifd-migrati.patch [bz#2072049]\n- kvm-QIOChannelSocket-Introduce-assert-and-reduce-ifdefs-.patch [bz#2072049]\n- kvm-QIOChannelSocket-Fix-zero-copy-send-so-socket-flush-.patch [bz#2072049]\n- kvm-migration-Change-zero_copy_send-from-migration-param.patch [bz#2072049]\n- kvm-migration-Add-migration_incoming_transport_cleanup.patch [bz#2097652]\n- kvm-migration-Allow-migrate-recover-to-run-multiple-time.patch [bz#2097652]\n- kvm-pc-bios-s390-ccw-virtio-Introduce-a-macro-for-the-DA.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-bootmap-Improve-the-guessing-logic-.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-blkdev-Simplify-fix-virtio_i.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-blkdev-Remove-virtio_assume_.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-Set-missing-status-bits-whil.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-Read-device-config-after-fea.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-Beautify-the-code-for-readin.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-Split-virtio-scsi-code-from-virtio_.patch [bz#2098076]\n- kvm-pc-bios-s390-ccw-virtio-blkdev-Request-the-right-fea.patch [bz#2098076]\n- Resolves: bz#2072049\n  (Pull  MSG_ZEROCOPY on QEMU Live Migration Patches into RHEL 8)\n- Resolves: bz#2097652\n  (The migration port is not released if use it again for recovering postcopy migration)\n- Resolves: bz#2098076\n  (virtio-blk: Can't boot fresh installation from used virtio-blk dasd disk under certain conditions)\n\n[6.2.0-16]\n- kvm-virtiofsd-Fix-breakage-due-to-fuse_init_in-size-chan.patch [bz#2097209]\n- kvm-hw-block-fdc-Prevent-end-of-track-overrun-CVE-2021-3.patch [bz#1951521]\n- kvm-tests-qtest-fdc-test-Add-a-regression-test-for-CVE-2.patch [bz#1951521]\n- Resolves: bz#2097209\n  ([virtiofs] mount virtiofs failed: SELinux: (dev virtiofs, type virtiofs) getxattr errno 111)\n- Resolves: bz#1951521\n  (CVE-2021-3507 virt:rhel/qemu-kvm: QEMU: fdc: heap buffer overflow in DMA read data transfers [rhel-8])\n\n[6.2.0-15]\n- kvm-virtio-gpu-do-not-byteswap-padding.patch [bz#1916415]\n- kvm-linux-headers-update-to-5.16-rc1.patch [bz#1916415]\n- kvm-linux-headers-Update-headers-to-v5.17-rc1.patch [bz#1916415]\n- kvm-linux-headers-include-missing-changes-from-5.17.patch [bz#1916415]\n- kvm-x86-Fix-the-64-byte-boundary-enumeration-for-extende.patch [bz#1916415]\n- kvm-x86-Add-AMX-XTILECFG-and-XTILEDATA-components.patch [bz#1916415]\n- kvm-x86-Grant-AMX-permission-for-guest.patch [bz#1916415]\n- kvm-x86-Add-XFD-faulting-bit-for-state-components.patch [bz#1916415]\n- kvm-x86-Add-AMX-CPUIDs-enumeration.patch [bz#1916415]\n- kvm-x86-add-support-for-KVM_CAP_XSAVE2-and-AMX-state-mig.patch [bz#1916415]\n- kvm-x86-Support-XFD-and-AMX-xsave-data-migration.patch [bz#1916415]\n- kvm-target-i386-kvm-do-not-access-uninitialized-variable.patch [bz#1916415]\n- kvm-KVM-x86-workaround-invalid-CPUID-0xD-9-info-on-some-.patch [bz#1916415]\n- kvm-virtio-net-setup-vhost_dev-and-notifiers-for-cvq-onl.patch [bz#2069946]\n- kvm-virtio-net-align-ctrl_vq-index-for-non-mq-guest-for-.patch [bz#2069946]\n- kvm-vhost-vdpa-fix-improper-cleanup-in-net_init_vhost_vd.patch [bz#2069946]\n- kvm-vhost-net-fix-improper-cleanup-in-vhost_net_start.patch [bz#2069946]\n- kvm-vhost-vdpa-backend-feature-should-set-only-once.patch [bz#2069946]\n- kvm-vhost-vdpa-change-name-and-polarity-for-vhost_vdpa_o.patch [bz#2069946]\n- kvm-virtio-net-don-t-handle-mq-request-in-userspace-hand.patch [bz#2069946]\n- kvm-ide-Increment-BB-in-flight-counter-for-TRIM-BH.patch [bz#2029980]\n- kvm-block-Make-bdrv_refresh_limits-non-recursive.patch [bz#2072932]\n- kvm-iotests-Allow-using-QMP-with-the-QSD.patch [bz#2072932]\n- kvm-iotests-graph-changes-while-io-New-test.patch [bz#2072932]\n- Resolves: bz#1916415\n  ([Intel 8.7 FEAT] qemu-kvm Sapphire Rapids (SPR) AMX Instructions)\n- Resolves: bz#2069946\n  (PXE boot crash qemu when using multiqueue vDPA)\n- Resolves: bz#2029980\n  (Failed assertion in IDE emulation with Ceph backend)\n- Resolves: bz#2072932\n  (Qemu coredump when refreshing block limits on an actively used iothread block device [rhel.8.7])\n\n[6.2.0-14]\n- kvm-Revert-redhat-Add-some-devices-for-exporting-upstrea.patch [bz#2065043]\n- kvm-target-i386-properly-reset-TSC-on-reset.patch [bz#2070417]\n- kvm-ui-cursor-fix-integer-overflow-in-cursor_alloc-CVE-2.patch [bz#2040734]\n- Resolves: bz#2065043\n  (Remove upstream-only devices from the qemu-kvm binary)\n- Resolves: bz#2070417\n  (Windows guest hangs after updating and restarting from the guest OS [rhel-8.7.0])\n- Resolves: bz#2040734\n  (CVE-2021-4206 virt:rhel/qemu-kvm: QEMU: QXL: integer overflow in cursor_alloc() can lead to heap buffer overflow [rhel-8.7])\n\n[6.2.0-13]\n- kvm-s390x-ipl-support-extended-kernel-command-line-size.patch [bz#2043830]\n- kvm-virtio-net-fix-map-leaking-on-error-during-receive.patch [bz#2063206]\n- kvm-qcow2-Improve-refcount-structure-rebuilding.patch [bz#1519071]\n- kvm-iotests-108-Test-new-refcount-rebuild-algorithm.patch [bz#1519071]\n- kvm-qcow2-Add-errp-to-rebuild_refcount_structure.patch [bz#1519071]\n- kvm-iotests-108-Fix-when-missing-user_allow_other.patch [bz#1519071]\n- Resolves: bz#2043830\n  ([IBM 8.7 FEAT] KVM: Allow long kernel command lines for QEMU)\n- Resolves: bz#2063206\n  (CVE-2022-26353 virt:rhel/qemu-kvm: QEMU: virtio-net: map leaking on error during receive [rhel-8])\n- Resolves: bz#1519071\n  (Fail to rebuild the reference count tables of qcow2 image on host block devices (e.g. LVs))\n\n[6.2.0-12]\n- kvm-display-qxl-render-fix-race-condition-in-qxl_cursor-.patch [bz#2040738]\n- kvm-vhost-vsock-detach-the-virqueue-element-in-case-of-e.patch [bz#2063262]\n- Resolves: bz#2040738\n  (CVE-2021-4207 virt:rhel/qemu-kvm: QEMU: QXL: double fetch in qxl_cursor() can lead to heap buffer overflow [rhel-8])\n- Resolves: bz#2063262\n  (CVE-2022-26354 virt:rhel/qemu-kvm: QEMU: vhost-vsock: missing virtqueue detach on error can lead to memory leak [rhel-8])\n\n[6.2.0-11]\n- kvm-hw-intc-arm_gicv3-Check-for-MEMTX_OK-instead-of-MEMT.patch [bz#1999236]\n- kvm-softmmu-physmem-Simplify-flatview_write-and-address_.patch [bz#1999236]\n- kvm-softmmu-physmem-Introduce-MemTxAttrs-memory-field-an.patch [bz#1999236]\n- Resolves: bz#1999236\n  (CVE-2021-3750 virt:rhel/qemu-kvm: QEMU: hcd-ehci: DMA reentrancy issue leads to use-after-free [rhel-8])\n\n[6.2.0-10]\n- kvm-RHEL-disable-seqpacket-for-vhost-vsock-device-in-rhe.patch [bz#2068202]\n- kvm-block-Lock-AioContext-for-drain_end-in-blockdev-reop.patch [bz#2067118]\n- kvm-iotests-Test-blockdev-reopen-with-iothreads-and-thro.patch [bz#2067118]\n- kvm-s390x-css-fix-PMCW-invalid-mask.patch [bz#2071070]\n- kvm-Set-permission-on-installing-files.patch [bz#2072377]\n- Resolves: bz#2068202\n  (RHEL 9.0 guest with vsock device migration failed from RHEL 9.0 \u003e RHEL 8.6 [rhel-8.7.0])\n- Resolves: bz#2067118\n  (qemu crash after execute blockdev-reopen with  iothread)\n- Resolves: bz#2071070\n  (s390x/css: fix PMCW invalid mask)\n- Resolves: bz#2072377\n  (Fix build warnings that occur when installing the keymap files)\n\n[6.2.0-9]\n- kvm-Revert-redhat-Add-hw_compat_4_2_extra-and-apply-to-u.patch [bz#2062613]\n- kvm-Revert-redhat-Enable-FDC-device-for-upstream-machine.patch [bz#2062613]\n- kvm-Revert-redhat-Expose-upstream-machines-pc-4.2-and-pc.patch [bz#2062613]\n- kvm-hw-virtio-vdpa-Fix-leak-of-host-notifier-memory-regi.patch [bz#2060843]\n- kvm-pci-expose-TYPE_XIO3130_DOWNSTREAM-name.patch [bz#2062610]\n- kvm-acpi-pcihp-pcie-set-power-on-cap-on-parent-slot.patch [bz#2062610]\n- kvm-vmxcap-Add-5-level-EPT-bit.patch [bz#2065207]\n- kvm-i386-Add-Icelake-Server-v6-CPU-model-with-5-level-EP.patch [bz#2065207]\n- kvm-acpi-fix-QEMU-crash-when-started-with-SLIC-table.patch [bz#2062611]\n- kvm-tests-acpi-whitelist-expected-blobs-before-changing-.patch [bz#2062611]\n- kvm-tests-acpi-add-SLIC-table-test.patch [bz#2062611]\n- kvm-tests-acpi-SLIC-update-expected-blobs.patch [bz#2062611]\n- kvm-tests-acpi-manually-pad-OEM_ID-OEM_TABLE_ID-for-test.patch [bz#2062611]\n- kvm-tests-acpi-whitelist-nvdimm-s-SSDT-and-FACP.slic-exp.patch [bz#2062611]\n- kvm-acpi-fix-OEM-ID-OEM-Table-ID-padding.patch [bz#2062611]\n- kvm-tests-acpi-update-expected-blobs.patch [bz#2062611]\n- kvm-tests-acpi-test-short-OEM_ID-OEM_TABLE_ID-values-in-.patch [bz#2062611]\n- kvm-rhel-workaround-for-lack-of-binary-patches-in-SRPM.patch [bz#2062611]\n- Resolves: bz#2062613\n  (Revert IBM-specific Ubuntu-compatibility machine type for 8.6-AV GA [rhel-8.7.0])\n- Resolves: bz#2060843\n  ([virtual network][vDPA] qemu crash after hot unplug vdpa device [rhel-8.7.0])\n- Resolves: bz#2062610\n  (Do operation to disk will hang in the guest of target host after hotplugging and migrating [rhel-8.7.0])\n- Resolves: bz#2065207\n  (Win11 (q35+edk2) guest broke after install wsl2 through 'wsl --install -d Ubuntu-20.04' [rhel-8.7.0])\n- Resolves: bz#2062611\n  (Guest can not start with SLIC acpi table [rhel-8.7.0])\n\n[6.2.0-8]\n- kvm-block-nbd-Delete-reconnect-delay-timer-when-done.patch [bz#2035185]\n- kvm-block-nbd-Assert-there-are-no-timers-when-closed.patch [bz#2035185]\n- kvm-iotests.py-Add-QemuStorageDaemon-class.patch [bz#2035185]\n- kvm-iotests-281-Test-lingering-timers.patch [bz#2035185]\n- kvm-block-nbd-Move-s-ioc-on-AioContext-change.patch [bz#2035185]\n- kvm-iotests-281-Let-NBD-connection-yield-in-iothread.patch [bz#2035185]\n- Resolves: bz#2035185\n  (Qemu core dump when start guest with nbd node or do block jobs to nbd node)\n\n[6.2.0-7]\n- kvm-numa-Enable-numa-for-SGX-EPC-sections.patch [bz#1518984]\n- kvm-numa-Support-SGX-numa-in-the-monitor-and-Libvirt-int.patch [bz#1518984]\n- kvm-doc-Add-the-SGX-numa-description.patch [bz#1518984]\n- kvm-Enable-SGX-RH-Only.patch [bz#1518984]\n- kvm-qapi-Cleanup-SGX-related-comments-and-restore-sectio.patch [bz#1518984]\n- kvm-block-io-Update-BSC-only-if-want_zero-is-true.patch [bz#2041480]\n- kvm-iotests-block-status-cache-New-test.patch [bz#2041480]\n- Resolves: bz#1518984\n  ([Intel 8.6 Feat] qemu-kvm: SGX 1.5 (SGX1 + Flexible Launch Control) support)\n- Resolves: bz#2041480\n  ([incremental_backup] Inconsistent block status reply in qemu-nbd)\n\n[6.2.0-6]\n- kvm-virtiofsd-Drop-membership-of-all-supplementary-group.patch [bz#2046198]\n- kvm-softmmu-fix-device-deletion-events-with-device-JSON-.patch [bz#2033279]\n- kvm-block-backend-prevent-dangling-BDS-pointers-across-a.patch [bz#2021778 bz#2036178]\n- kvm-iotests-stream-error-on-reset-New-test.patch [bz#2021778 bz#2036178]\n- kvm-block-rbd-fix-handling-of-holes-in-.bdrv_co_block_st.patch [bz#2037135]\n- kvm-block-rbd-workaround-for-ceph-issue-53784.patch [bz#2037135]\n- Resolves: bz#2046198\n  (CVE-2022-0358 virt:av/qemu-kvm: QEMU: virtiofsd: potential privilege escalation via CVE-2018-13405 [rhel-8.6])\n- Resolves: bz#2033279\n  ([wrb][qemu-kvm 6.2] The hot-unplugged device can not be hot-plugged back)\n- Resolves: bz#2021778\n  (Qemu core dump when do full backup during system reset)\n- Resolves: bz#2036178\n  (Qemu core dumped when do block-stream to a snapshot node on non-enough space storage)\n- Resolves: bz#2037135\n  (Booting from Local Snapshot Core Dumped Whose Backing File Is Based on RBD)\n\n[6.2.0-5]\n- kvm-acpi-validate-hotplug-selector-on-access.patch [bz#2036580]\n- kvm-x86-Add-q35-RHEL-8.6.0-machine-type.patch [bz#2031035]\n- Resolves: bz#2036580\n  (CVE-2021-4158 virt:rhel/qemu-kvm: QEMU: NULL pointer dereference in pci_write() in hw/acpi/pcihp.c [rhel-8])\n- Resolves: bz#2031035\n  (Add rhel-8.6.0 machine types for RHEL 8.6 [x86])\n\n[6.2.0-4]\n- kvm-hw-arm-virt-Register-iommu-as-a-class-property.patch [bz#2031039]\n- kvm-hw-arm-virt-Register-its-as-a-class-property.patch [bz#2031039]\n- kvm-hw-arm-virt-Rename-default_bus_bypass_iommu.patch [bz#2031039]\n- kvm-hw-arm-virt-Add-8.6-machine-type.patch [bz#2031039]\n- kvm-hw-arm-virt-Check-no_tcg_its-and-minor-style-changes.patch [bz#2031039]\n- kvm-rhel-machine-types-x86-set-prefer_sockets.patch [bz#2029582]\n- Resolves: bz#2031039\n  (Add rhel-8.6.0 machine types for RHEL 8.6 [aarch64])\n- Resolves: bz#2029582\n  ([8.6] machine types: 6.2: Fix prefer_sockets)\n\n[6.2.0-2]\n- kvm-redhat-Add-rhel8.6.0-machine-type-for-s390x.patch [bz#2005325]\n- kvm-redhat-Define-pseries-rhel8.6.0-machine-type.patch [bz#2031041]\n- Resolves: bz#2005325\n  (Fix CPU Model for new IBM Z Hardware - qemu part)\n- Resolves: bz#2031041\n  (Add rhel-8.6.0 machine types for RHEL 8.6 [ppc64le])\n\n[6.2.0-1.el8]\n- Rebase to qemu-kvm 6.2.0\n- Resolves bz#2027716\n\n[6.1.0-5]\n- kvm-e1000-fix-tx-re-entrancy-problem.patch [bz#1930092]\n- kvm-hw-scsi-scsi-disk-MODE_PAGE_ALLS-not-allowed-in-MODE.patch [bz#2020720]\n- Resolves: bz#1930092\n  (CVE-2021-20257 virt:rhel/qemu-kvm: QEMU: net: e1000: infinite loop while processing transmit descriptors [rhel-8.5.0])\n- Resolves: bz#2020720\n  (CVE-2021-3930 virt:rhel/qemu-kvm: QEMU: off-by-one error in mode_sense_page() in hw/scsi/scsi-disk.c [rhel-8])\n\n[6.1.0-4]\n- kvm-spec-Remove-qemu-kiwi-build.patch [bz#2002694]\n- kvm-hw-arm-virt-Add-hw_compat_rhel_8_5-to-8.5-machine-ty.patch [bz#1998947]\n- Resolves: bz#2002694\n  (remove qemu-kiwi rpm from qemu-kvm sources in rhel-8.6)\n- Resolves: bz#1998947\n  (Add machine type compatibility update for 6.1 rebase [aarch64])\n\n[6.1.0-3]\n- kvm-virtio-net-fix-use-after-unmap-free-for-sg.patch [bz#1999221]\n- Resolves: bz#1999221\n  (CVE-2021-3748 virt:rhel/qemu-kvm: QEMU: virtio-net: heap use-after-free in virtio_net_receive_rcu [rhel-8])\n\n[6.1.0-2]\n- kvm-qxl-fix-pre-save-logic.patch [bz#2002907]\n- kvm-redhat-Define-hw_compat_rhel_8_5.patch [bz#1998949]\n- kvm-redhat-Update-pseries-rhel8.5.0.patch [bz#1998949]\n- kvm-redhat-Add-s390x-machine-type-compatibility-update-f.patch [bz#1998950]\n- Resolves: bz#2002907\n  (Unexpectedly failed when managedsave the guest which has qxl video device)\n- Resolves: bz#1998949\n  (Add machine type compatibility update for 6.1 rebase [ppc64le])\n- Resolves: bz#1998950\n  (Add machine type compatibility update for 6.1 rebase [s390x])\n\n[6.0.0-29.el8]\n- kvm-file-posix-Cap-max_iov-at-IOV_MAX.patch [bz#1994494]\n- kvm-migration-Move-yank-outside-qemu_start_incoming_migr.patch [bz#1974366]\n- Resolves: bz#1994494\n  (VM remains in paused state when trying to write on a resized disk resides on iscsi)\n- Resolves: bz#1974366\n  (Fail to set migrate incoming for 2nd time after the first time failed)\n\n[6.0.0-28.el8]\n- kvm-iotests-Improve-and-rename-test-291-to-qemu-img-bitm.patch [bz#1946084]\n- kvm-qemu-img-Fail-fast-on-convert-bitmaps-with-inconsist.patch [bz#1946084]\n- kvm-qemu-img-Add-skip-broken-bitmaps-for-convert-bitmaps.patch [bz#1946084]\n- kvm-audio-Never-send-migration-section.patch [bz#1991671]\n- Resolves: bz#1946084\n  (qemu-img convert --bitmaps fail if a bitmap is inconsistent)\n- Resolves: bz#1991671\n  (vmstate differs between -audiodev and QEMU_AUDIO_DRV when no sound frontends devs present.)\n\n[6.0.0-27]\n- kvm-migration-move-wait-unplug-loop-to-its-own-function.patch [bz#1976852]\n- kvm-migration-failover-continue-to-wait-card-unplug-on-e.patch [bz#1976852]\n- kvm-aarch64-Add-USB-storage-devices.patch [bz#1974579]\n- Resolves: bz#1976852\n  ([failover vf migration]  The failover vf will be unregistered  if canceling the migration whose status is 'wait-unplug')\n- Resolves: bz#1974579\n  (It's not possible to start installation from a virtual USB device on aarch64)\n\n[6.0.0-26]\n- kvm-acpi-pc-revert-back-to-v5.2-PCI-slot-enumeration.patch [bz#1977798]\n- kvm-migration-failover-reset-partially_hotplugged.patch [bz#1787194]\n- kvm-hmp-Fix-loadvm-to-resume-the-VM-on-success-instead-o.patch [bz#1959676]\n- kvm-migration-Move-bitmap_mutex-out-of-migration_bitmap_.patch [bz#1959729]\n- kvm-i386-cpu-Expose-AVX_VNNI-instruction-to-guest.patch [bz#1924822]\n- kvm-ratelimit-protect-with-a-mutex.patch [bz#1838221]\n- kvm-Update-Linux-headers-to-5.13-rc4.patch [bz#1838221]\n- kvm-i386-Add-ratelimit-for-bus-locks-acquired-in-guest.patch [bz#1838221]\n- kvm-iothread-generalize-iothread_set_param-iothread_get_.patch [bz#1930286]\n- kvm-iothread-add-aio-max-batch-parameter.patch [bz#1930286]\n- kvm-linux-aio-limit-the-batch-size-using-aio-max-batch-p.patch [bz#1930286]\n- kvm-block-nvme-Fix-VFIO_MAP_DMA-failed-No-space-left-on-.patch [bz#1848881]\n- Resolves: bz#1977798\n  (RHEL8.5 guest network interface name changed after upgrade to qemu-6.0)\n- Resolves: bz#1787194\n  (After canceling the migration of a vm with VF which enables failover, using 'migrate -d tcp:invalid uri' to re-migrating the vm will cause the VF in vm to be hot-unplug.)\n- Resolves: bz#1959676\n  (guest status is paused after loadvm on rhel8.5.0)\n- Resolves: bz#1959729\n  (SAP/3TB VM migration slowness [idle db])\n- Resolves: bz#1924822\n  ([Intel 8.5 FEAT] qemu-kvm AVX2 VNNI - Fast Train)\n- Resolves: bz#1838221\n  ([Intel 8.5 FEAT]  qemu-kvm Bus Lock VM Exit - Fast Train)\n- Resolves: bz#1930286\n  (randread and randrw regression with virtio-blk multi-queue)\n- Resolves: bz#1848881\n  (nvme:// block driver can exhaust IOMMU DMAs, hanging the VM, possible data loss)\n\n[6.0.0-25.el8]\n- kvm-s390x-cpumodel-add-3931-and-3932.patch [bz#1976171]\n- kvm-file-posix-fix-max_iov-for-dev-sg-devices.patch [bz#1943653]\n- kvm-scsi-generic-pass-max_segments-via-max_iov-field-in-.patch [bz#1943653]\n- kvm-osdep-provide-ROUND_DOWN-macro.patch [bz#1943653]\n- kvm-block-backend-align-max_transfer-to-request-alignmen.patch [bz#1943653]\n- kvm-block-add-max_hw_transfer-to-BlockLimits.patch [bz#1943653]\n- kvm-file-posix-try-BLKSECTGET-on-block-devices-too-do-no.patch [bz#1943653]\n- Resolves: bz#1976171\n  ([IBM 8.5 FEAT] CPU Model for new IBM Z Hardware - qemu part)\n- Resolves: bz#1943653\n  (RHV VM pauses due to 'qemu-kvm' getting EINVAL on i/o to a direct lun with scsi passthrough enabled)\n\n[6.0.0-24.el8]\n- kvm-s390x-css-Introduce-an-ESW-struct.patch [bz#1968326]\n- kvm-s390x-css-Split-out-the-IRB-sense-data.patch [bz#1968326]\n- kvm-s390x-css-Refactor-IRB-construction.patch [bz#1968326]\n- kvm-s390x-css-Add-passthrough-IRB.patch [bz#1968326]\n- kvm-vhost-user-blk-Fail-gracefully-on-too-large-queue-si.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-blk-Make-sure-to-set-Error-on-realize-fai.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-blk-Don-t-reconnect-during-initialisation.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-blk-Improve-error-reporting-in-realize.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-blk-Get-more-feature-flags-from-vhost-dev.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-virtio-Fail-if-iommu_platform-is-requested-but-unsup.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-blk-Check-that-num-queues-is-supported-by.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- kvm-vhost-user-Fix-backends-without-multiqueue-support.patch [bz#1935014 bz#1935019 bz#1935020 bz#1935031]\n- Resolves: bz#1968326\n  ([vfio_ccw] I/O error when checking format - dasdfmt requires --force in quick mode when passed through)\n- Resolves: bz#1935014\n  (qemu crash when attach vhost-user-blk-pci with option queue-size=4096)\n- Resolves: bz#1935019\n  (qemu guest failed boot when attach vhost-user-blk-pci with option iommu_platform=on)\n- Resolves: bz#1935020\n  (qemu guest failed boot when attach vhost-user-blk-pci with option packed=on)\n- Resolves: bz#1935031\n  (qemu guest failed boot when attach vhost-user-blk-pci with unmatched num-queues with qsd)\n\n[6.0.0-23.el8]\n- kvm-Add-mtod_check.patch [bz#1970823 bz#1970842 bz#1970850 bz#1970858]\n- kvm-bootp-limit-vendor-specific-area-to-input-packet-mem.patch [bz#1970823 bz#1970842 bz#1970850 bz#1970858]\n- kvm-bootp-check-bootp_input-buffer-size.patch [bz#1970823]\n- kvm-upd6-check-udp6_input-buffer-size.patch [bz#1970842]\n- kvm-tftp-check-tftp_input-buffer-size.patch [bz#1970850]\n- kvm-tftp-introduce-a-header-structure.patch [bz#1970823 bz#1970842 bz#1970850 bz#1970858]\n- kvm-udp-check-upd_input-buffer-size.patch [bz#1970858]\n- kvm-Fix-DHCP-broken-in-libslirp-v4.6.0.patch [bz#1970823 bz#1970842 bz#1970850 bz#1970858]\n- kvm-redhat-use-the-standard-vhost-user-JSON-path.patch [bz#1804196]\n- Resolves: bz#1970823\n  (CVE-2021-3592 virt:av/qemu-kvm: QEMU: slirp: invalid pointer initialization may lead to information disclosure (bootp) [rhel-av-8])\n- Resolves: bz#1970842\n  (CVE-2021-3593 virt:av/qemu-kvm: QEMU: slirp: invalid pointer initialization may lead to information disclosure (udp6) [rhel-av-8])\n- Resolves: bz#1970850\n  (CVE-2021-3595 virt:av/qemu-kvm: QEMU: slirp: invalid pointer initialization may lead to information disclosure (tftp) [rhel-av-8])\n- Resolves: bz#1970858\n  (CVE-2021-3594 virt:av/qemu-kvm: QEMU: slirp: invalid pointer initialization may lead to information disclosure (udp) [rhel-av-8])\n- Resolves: bz#1804196\n  (inconsistent paths for interop json files)\n\n[6.0.0-22.el8]\n- kvm-redhat-Expose-upstream-machines-pc-4.2-and-pc-2.11.patch [bz#1897923]\n- kvm-redhat-Enable-FDC-device-for-upstream-machines-too.patch [bz#1897923]\n- kvm-redhat-Add-hw_compat_4_2_extra-and-apply-to-upstream.patch [bz#1897923]\n- kvm-ppc-pef.c-initialize-cgs-ready-in-kvmppc_svm_init.patch [bz#1789757]\n- kvm-virtio-gpu-handle-partial-maps-properly.patch [bz#1932279]\n- kvm-redhat-Fix-unversioned-Obsoletes-warning.patch [bz#1950405 bz#1967330]\n- kvm-redhat-Move-qemu-kvm-docs-dependency-to-qemu-kvm.patch [bz#1950405 bz#1967330]\n- kvm-redhat-introducting-qemu-kvm-hw-usbredir.patch [bz#1950405 bz#1967330]\n- kvm-spapr-Fix-EEH-capability-issue-on-KVM-guest-for-PCI-.patch [bz#1976015]\n- Resolves: bz#1897923\n  (support Live Migration from Ubuntu 18.04 i440fx to RHEL)\n- Resolves: bz#1789757\n  ([IBM 8.5 FEAT] Add machine option to enable secure VM support)\n- Resolves: bz#1932279\n  ([aarch64] qemu core dumped when using smmuv3 and iommu_platform enabling at virtio-gpu-pci)\n- Resolves: bz#1950405\n  (review qemu-kvm-core dependencies)\n- Resolves: bz#1967330\n  (Make qemu-kvm use versioned obsoletes for qemu-kvm-ma and qemu-kvm-rhev)\n- Resolves: bz#1976015\n  (spapr: Fix EEH capability issue on KVM guest for PCI passthru)\n\n[6.0.0-21.el8]\n- kvm-block-backend-add-drained_poll.patch [bz#1960137]\n- kvm-nbd-server-Use-drained-block-ops-to-quiesce-the-serv.patch [bz#1960137]\n- kvm-disable-CONFIG_USB_STORAGE_BOT.patch [bz#1866133]\n- kvm-doc-Fix-some-mistakes-in-the-SEV-documentation.patch [bz#1954750]\n- kvm-docs-Add-SEV-ES-documentation-to-amd-memory-encrypti.patch [bz#1954750]\n- kvm-docs-interop-firmware.json-Add-SEV-ES-support.patch [bz#1954750]\n- Resolves: bz#1960137\n  ([incremental backup] qemu-kvm hangs when Rebooting the VM during full backup)\n- Resolves: bz#1866133\n  (Disable usb-bot device in QEMU (unsupported))\n- Resolves: bz#1954750\n  (firmware scheme for sev-es)\n\n[6.0.0-20.el8]\n- kvm-x86-Add-x86-rhel8.5-machine-types.patch [bz#1957838]\n- kvm-redhat-x86-Enable-kvm-asyncpf-int-by-default.patch [bz#1967603]\n- kvm-yank-Unregister-function-when-using-TLS-migration.patch [bz#1964326]\n- Resolves: bz#1957838\n  (8.5 machine types for x86)\n- Resolves: bz#1967603\n  (Enable interrupt based asynchronous page fault mechanism by default)\n- Resolves: bz#1964326\n  (Qemu core dump when do tls migration via tcp protocol)\n\n[6.0.0-19.el8]\n- kvm-pc-bios-s390-ccw-don-t-try-to-read-the-next-block-if.patch [bz#1965626]\n- kvm-redhat-Install-the-s390-netboot.img-that-we-ve-built.patch [bz#1966463]\n- kvm-sockets-update-SOCKET_ADDRESS_TYPE_FD-listen-2-backl.patch [bz#1967177]\n- kvm-target-i386-sev-add-support-to-query-the-attestation.patch [bz#1957022]\n- kvm-spapr-Don-t-hijack-current_machine-boot_order.patch [bz#1960119]\n- kvm-target-i386-Add-CPU-model-versions-supporting-xsaves.patch [bz#1942914]\n- kvm-spapr-Remove-stale-comment-about-power-saving-LPCR-b.patch [bz#1940731]\n- kvm-spapr-Set-LPCR-to-current-AIL-mode-when-starting-a-n.patch [bz#1940731]\n- Resolves: bz#1965626\n  (RHEL8.2 - QEMU BIOS fails to read stage2 loader (kvm))\n- Resolves: bz#1966463\n  (Rebuild the s390-netboot.img for downstream instead of shipping the upstream image)\n- Resolves: bz#1967177\n  (QEMU 6.0.0 socket_get_fd() fails with the error 'socket_get_fd: too many connections')\n- Resolves: bz#1957022\n  (SEV: Add support to query the attestation report)\n- Resolves: bz#1960119\n  ([regression]Failed to reset guest)\n- Resolves: bz#1942914\n  ([Hyper-V][RHEL8.4]Nested Hyper-V on KVM: On Intel CPU L1 2016 can not start with cpu model Skylake-Server-noTSX-IBRS or Skylake-Client-noTSX-IBRS)\n- Resolves: bz#1940731\n  ([ppc64le] Hotplug vcpu device hit call trace:[qemu output] KVM: unknown exit, hardware reason 7fff9ce87ed8)\n\n[6.0.0-18.el8]\n- kvm-virtio-net-failover-add-missing-remove_migration_sta.patch [bz#1953045]\n- kvm-hw-arm-virt-Add-8.5-machine-type.patch [bz#1957667]\n- kvm-hw-arm-virt-Disable-PL011-clock-migration-through-hw.patch [bz#1957667]\n- kvm-arm-virt-Register-highmem-and-gic-version-as-class-p.patch [bz#1957667]\n- kvm-virtio-blk-Fix-rollback-path-in-virtio_blk_data_plan.patch [bz#1927108]\n- kvm-virtio-blk-Configure-all-host-notifiers-in-a-single-.patch [bz#1927108]\n- kvm-virtio-scsi-Set-host-notifiers-and-callbacks-separat.patch [bz#1927108]\n- kvm-virtio-scsi-Configure-all-host-notifiers-in-a-single.patch [bz#1927108]\n- kvm-hw-arm-smmuv3-Another-range-invalidation-fix.patch [bz#1929720]\n- Resolves: bz#1953045\n  (qemu-kvm NULL pointer de-reference  during migration at migrate_fd_connect -\u003e...-\u003e notifier_list_notify)\n- Resolves: bz#1957667\n  ([aarch64] Add 8.5 machine type)\n- Resolves: bz#1927108\n  (It's too slow to load scsi  disk when use 384 vcpus)\n- Resolves: bz#1929720\n  ([aarch64] Handle vsmmuv3 IOTLB invalidation with non power of 2 size)\n\n[6.0.0-17.el8]\n- kvm-redhat-s390x-add-rhel-8.5.0-compat-machine.patch [bz#1951476]\n- kvm-redhat-add-missing-entries-in-hw_compat_rhel_8_4.patch [bz#1957834]\n- kvm-redhat-Define-pseries-rhel8.5.0-machine-type.patch [bz#1957834]\n- Resolves: bz#1951476\n  ([s390x] RHEL AV 8.5 new machine type for s390x)\n- Resolves: bz#1957834\n  ([ppc64le] RHEL AV 8.5 new machine type for ppc64le)\n\n[6.0.0-16.el8]\n- Rebase to qemu-kvm 6.0.0\n\n[5.2.0-16.el8]\n- kvm-virtio-pci-compat-page-aligned-ATS.patch [bz#1942362]\n- Resolves: bz#1942362\n  (Live migration with iommu from rhel8.3.1 to rhel8.4 fails: qemu-kvm: get_pci_config_device: Bad config data)\n\n[5.2.0-15.el8_4]\n- kvm-block-Simplify-qmp_block_resize-error-paths.patch [bz#1903511]\n- kvm-block-Fix-locking-in-qmp_block_resize.patch [bz#1903511]\n- kvm-block-Fix-deadlock-in-bdrv_co_yield_to_drain.patch [bz#1903511]\n- Resolves: bz#1903511\n  (no response on  QMP command 'block_resize')\n\n[5.2.0-14.el8]\n- kvm-vhost-user-blk-fix-blkcfg-num_queues-endianness.patch [bz#1937004]\n- kvm-block-export-fix-blk_size-double-byteswap.patch [bz#1937004]\n- kvm-block-export-use-VIRTIO_BLK_SECTOR_BITS.patch [bz#1937004]\n- kvm-block-export-fix-vhost-user-blk-export-sector-number.patch [bz#1937004]\n- kvm-block-export-port-virtio-blk-discard-write-zeroes-in.patch [bz#1937004]\n- kvm-block-export-port-virtio-blk-read-write-range-check.patch [bz#1937004]\n- kvm-spec-ui-spice-sub-package.patch [bz#1936373]\n- kvm-spec-ui-opengl-sub-package.patch [bz#1936373]\n- Resolves: bz#1937004\n  (vhost-user-blk server endianness and input validation fixes)\n- Resolves: bz#1936373\n  (move spice \u0026 opengl modules to rpm subpackages)\n\n[5.2.0-13.el8]\n- kvm-i386-acpi-restore-device-paths-for-pre-5.1-vms.patch [bz#1934158]\n- Resolves: bz#1934158\n  (Windows guest looses network connectivity when NIC was configured with static IP)\n\n[5.2.0-12.el8]\n- kvm-scsi-disk-move-scsi_handle_rw_error-earlier.patch [bz#1927530]\n- kvm-scsi-disk-do-not-complete-requests-early-for-rerror-.patch [bz#1927530]\n- kvm-scsi-introduce-scsi_sense_from_errno.patch [bz#1927530]\n- kvm-scsi-disk-pass-SCSI-status-to-scsi_handle_rw_error.patch [bz#1927530]\n- kvm-scsi-disk-pass-guest-recoverable-errors-through-even.patch [bz#1927530]\n- kvm-hw-intc-arm_gic-Fix-interrupt-ID-in-GICD_SGIR-regist.patch [bz#1936948]\n- Resolves: bz#1927530\n  (RHEL8 Hypervisor - OVIRT  - Issues seen on a virtualization guest with direct passthrough LUNS  pausing when a host gets a Thin threshold warning)\n- Resolves: bz#1936948\n  (CVE-2021-20221 virt:av/qemu-kvm: qemu: out-of-bound heap buffer access via an interrupt ID field [rhel-av-8.4.0])\n\n[5.2.0-11.el8]\n- kvm-qxl-set-qxl.ssd.dcl.con-on-secondary-devices.patch [bz#1932190]\n- kvm-qxl-also-notify-the-rendering-is-done-when-skipping-.patch [bz#1932190]\n- kvm-virtiofsd-Save-error-code-early-at-the-failure-calls.patch [bz#1935071]\n- kvm-virtiofs-drop-remapped-security.capability-xattr-as-.patch [bz#1935071]\n- Resolves: bz#1932190\n  (Timeout when dump the screen from 2nd VGA)\n- Resolves: bz#1935071\n  (CVE-2021-20263 virt:8.4/qemu-kvm: QEMU: virtiofsd: 'security.capabilities' is not dropped with xattrmap option [rhel-av-8])\n\n[5.2.0-10.el8]\n- kvm-migration-dirty-bitmap-Use-struct-for-alias-map-inne.patch [bz#1930757]\n- kvm-migration-dirty-bitmap-Allow-control-of-bitmap-persi.patch [bz#1930757]\n- kvm-qemu-iotests-300-Add-test-case-for-modifying-persist.patch [bz#1930757]\n- kvm-failover-fix-indentantion.patch [bz#1819991]\n- kvm-failover-Use-always-atomics-for-primary_should_be_hi.patch [bz#1819991]\n- kvm-failover-primary-bus-is-only-used-once-and-where-it-.patch [bz#1819991]\n- kvm-failover-Remove-unused-parameter.patch [bz#1819991]\n- kvm-failover-Remove-external-partially_hotplugged-proper.patch [bz#1819991]\n- kvm-failover-qdev_device_add-returns-err-or-dev-set.patch [bz#1819991]\n- kvm-failover-Rename-bool-to-failover_primary_hidden.patch [bz#1819991]\n- kvm-failover-g_strcmp0-knows-how-to-handle-NULL.patch [bz#1819991]\n- kvm-failover-Remove-primary_device_opts.patch [bz#1819991]\n- kvm-failover-remove-standby_id-variable.patch [bz#1819991]\n- kvm-failover-Remove-primary_device_dict.patch [bz#1819991]\n- kvm-failover-Remove-memory-leak.patch [bz#1819991]\n- kvm-failover-simplify-virtio_net_find_primary.patch [bz#1819991]\n- kvm-failover-should_be_hidden-should-take-a-bool.patch [bz#1819991]\n- kvm-failover-Rename-function-to-hide_device.patch [bz#1819991]\n- kvm-failover-virtio_net_connect_failover_devices-does-no.patch [bz#1819991]\n- kvm-failover-Rename-to-failover_find_primary_device.patch [bz#1819991]\n- kvm-failover-simplify-qdev_device_add-failover-case.patch [bz#1819991]\n- kvm-failover-simplify-qdev_device_add.patch [bz#1819991]\n- kvm-failover-make-sure-that-id-always-exist.patch [bz#1819991]\n- kvm-failover-remove-failover_find_primary_device-error-p.patch [bz#1819991]\n- kvm-failover-split-failover_find_primary_device_id.patch [bz#1819991]\n- kvm-failover-We-don-t-need-to-cache-primary_device_id-an.patch [bz#1819991]\n- kvm-failover-Caller-of-this-two-functions-already-have-p.patch [bz#1819991]\n- kvm-failover-simplify-failover_unplug_primary.patch [bz#1819991]\n- kvm-failover-Remove-primary_dev-member.patch [bz#1819991]\n- kvm-virtio-net-add-missing-object_unref.patch [bz#1819991]\n- kvm-x86-cpu-Populate-SVM-CPUID-feature-bits.patch [bz#1926785]\n- kvm-i386-Add-the-support-for-AMD-EPYC-3rd-generation-pro.patch [bz#1926785]\n- Resolves: bz#1930757\n  (Allow control of block-dirty-bitmap persistence via 'block-bitmap-mapping')\n- Resolves: bz#1819991\n  (Hostdev type interface with net failover enabled exists in domain xml and doesn't reattach to host after hot-unplug)\n- Resolves: bz#1926785\n  ([RFE] AMD Milan - Add KVM/support for EPYC-Milan CPU Model - Fast Train)\n\n[5.2.0-9.el8]\n- kvm-docs-generate-qemu-storage-daemon-qmp-ref-7-man-page.patch [bz#1901323]\n- kvm-docs-add-qemu-storage-daemon-1-man-page.patch [bz#1901323]\n- kvm-docs-Add-qemu-storage-daemon-1-manpage-to-meson.buil.patch [bz#1901323]\n- kvm-qemu-storage-daemon-Enable-object-add.patch [bz#1901323]\n- kvm-spec-Package-qemu-storage-daemon.patch [bz#1901323]\n- kvm-default-configs-Enable-vhost-user-blk.patch [bz#1930033]\n- kvm-qemu-nbd-Use-SOMAXCONN-for-socket-listen-backlog.patch [bz#1925345]\n- kvm-pcie-don-t-set-link-state-active-if-the-slot-is-empt.patch [bz#1917654]\n- Resolves: bz#1901323\n  (QSD (QEMU Storage Daemon): basic support - TechPreview)\n- Resolves: bz#1930033\n  (enable vhost-user-blk device)\n- Resolves: bz#1925345\n  (qemu-nbd needs larger backlog for Unix socket listen())\n- Resolves: bz#1917654\n  ([failover vf migration][RHEL84 vm] After start a vm with a failover vf + a failover virtio net device, the failvoer vf do not exist in the vm)\n\n[5.2.0-8.el8]\n- kvm-block-nbd-only-detach-existing-iochannel-from-aio_co.patch [bz#1887883]\n- kvm-block-nbd-only-enter-connection-coroutine-if-it-s-pr.patch [bz#1887883]\n- kvm-nbd-make-nbd_read-return-EIO-on-error.patch [bz#1887883]\n- kvm-virtio-move-use-disabled-flag-property-to-hw_compat_.patch [bz#1907255]\n- kvm-virtiofsd-extract-lo_do_open-from-lo_open.patch [bz#1920740]\n- kvm-virtiofsd-optionally-return-inode-pointer-from-lo_do.patch [bz#1920740]\n- kvm-virtiofsd-prevent-opening-of-special-files-CVE-2020-.patch [bz#1920740]\n- kvm-spapr-Adjust-firmware-path-of-PCI-devices.patch [bz#1920941]\n- kvm-pci-reject-too-large-ROMs.patch [bz#1917830]\n- kvm-pci-add-romsize-property.patch [bz#1917830]\n- kvm-redhat-Add-some-devices-for-exporting-upstream-machi.patch [bz#1917826]\n- kvm-vhost-Check-for-valid-vdev-in-vhost_backend_handle_i.patch [bz#1880299]\n- Resolves: bz#1887883\n  (qemu blocks client progress with various NBD actions)\n- Resolves: bz#1907255\n  (Migrate failed with vhost-vsock-pci from RHEL-AV 8.3.1 to RHEL-AV 8.2.1)\n- Resolves: bz#1920740\n  (CVE-2020-35517 virt:8.4/qemu-kvm: QEMU: virtiofsd: potential privileged host device access from guest [rhel-av-8.4.0])\n- Resolves: bz#1920941\n  ([ppc64le] [AV]--disk cdimage.iso,bus=usb fails to boot)\n- Resolves: bz#1917830\n  (Add romsize property to qemu-kvm)\n- Resolves: bz#1917826\n  (Add extra device support to qemu-kvm, but not to rhel machine types)\n- Resolves: bz#1880299\n  (vhost-user mq connection fails to restart after kill host testpmd which acts as vhost-user client)\n\n[5.2.0-7.el8]\n- kvm-virtio-Add-corresponding-memory_listener_unregister-.patch [bz#1903521]\n- kvm-block-Honor-blk_set_aio_context-context-requirements.patch [bz#1918966 bz#1918968]\n- kvm-nbd-server-Quiesce-coroutines-on-context-switch.patch [bz#1918966 bz#1918968]\n- kvm-block-Avoid-processing-BDS-twice-in-bdrv_set_aio_con.patch [bz#1918966 bz#1918968]\n- kvm-storage-daemon-Call-bdrv_close_all-on-exit.patch [bz#1918966 bz#1918968]\n- kvm-block-move-blk_exp_close_all-to-qemu_cleanup.patch [bz#1918966 bz#1918968]\n- Resolves: bz#1903521\n  (hot unplug vhost-user cause qemu crash: qemu-kvm: ../softmmu/memory.c:2818: do_address_space_destroy: Assertion QTAILQ_EMPTY(\u0026as-\u003elisteners)' failed.)\n- Resolves: bz#1918966\n  ([incremental_backup] qemu aborts if guest reboot during backup when using virtio-blk: 'aio_co_schedule: Co-routine was already scheduled in 'aio_co_schedule'')\n- Resolves: bz#1918968\n  ([incremental_backup] qemu deadlock after poweroff in guest during backup in nbd_export_close_all())\n\n[5.2.0-6.el8]\n- kvm-scsi-fix-device-removal-race-vs-IO-restart-callback-.patch [bz#1854811]\n- kvm-tracetool-also-strip-l-and-ll-from-systemtap-format-.patch [bz#1907264]\n- kvm-redhat-moving-all-documentation-files-to-qemu-kvm-do.patch [bz#1881170 bz#1924766]\n- kvm-hw-arm-smmuv3-Fix-addr_mask-for-range-based-invalida.patch [bz#1834152]\n- kvm-redhat-makes-qemu-respect-system-s-crypto-profile.patch [bz#1902219]\n- kvm-vhost-Unbreak-SMMU-and-virtio-iommu-on-dev-iotlb-sup.patch [bz#1925028]\n- kvm-docs-set-CONFDIR-when-running-sphinx.patch [bz#1902537]\n- Resolves: bz#1854811\n  (scsi-bus.c: use-after-free due to race between device unplug and I/O operation causes guest crash)\n- Resolves: bz#1907264\n  (systemtap: invalid or missing conversion specifier at the trace event vhost_vdpa_set_log_base)\n- Resolves: bz#1881170\n  (split documentation from the qemu-kvm-core package to its own subpackage)\n- Resolves: bz#1924766\n  (split documentation from the qemu-kvm-core package to its own subpackage [av-8.4.0])\n- Resolves: bz#1834152\n  ([aarch64] QEMU SMMUv3 device: Support range invalidation)\n- Resolves: bz#1902219\n  (QEMU doesn't honour system crypto policies)\n- Resolves: bz#1925028\n  (vsmmuv3/vhost and virtio-iommu/vhost regression)\n- Resolves: bz#1902537\n  (The default fsfreeze-hook path from man page and qemu-ga --help command are different)\n\n[5.2.0-5.el8]\n- kvm-spapr-Allow-memory-unplug-to-always-succeed.patch [bz#1914069]\n- kvm-spapr-Improve-handling-of-memory-unplug-with-old-gue.patch [bz#1914069]\n- kvm-x86-cpu-Add-AVX512_FP16-cpu-feature.patch [bz#1838738]\n- kvm-q35-Increase-max_cpus-to-710-on-pc-q35-rhel8-machine.patch [bz#1904268]\n- kvm-config-enable-VFIO_CCW.patch [bz#1922170]\n- Resolves: bz#1914069\n  ([ppc64le] have this fix for rhel8.4 av (spapr: Allow memory unplug to always succeed))\n- Resolves: bz#1838738\n  ([Intel 8.4 FEAT] qemu-kvm Sapphire Rapids (SPR) New Instructions (NIs) - Fast Train)\n- Resolves: bz#1904268\n  ([RFE] [HPEMC] qemu-kvm: support up to 710 VCPUs)\n- Resolves: bz#1922170\n  (Enable vfio-ccw in AV)\n\n[5.2.0-4.el8]\n- kvm-Drop-bogus-IPv6-messages.patch [bz#1918061]\n- Resolves: bz#1918061\n  (CVE-2020-10756 virt:rhel/qemu-kvm: QEMU: slirp: networking out-of-bounds read information disclosure vulnerability [rhel-av-8])\n\n[5.2.0-3.el8]\n- kvm-block-nvme-Implement-fake-truncate-coroutine.patch [bz#1848834]\n- kvm-spec-find-system-python-via-meson.patch [bz#1899619]\n- kvm-build-system-use-b_staticpic-false.patch [bz#1899619]\n- kvm-spapr-Fix-buffer-overflow-in-spapr_numa_associativit.patch [bz#1908693]\n- kvm-usb-hcd-xhci-pci-Fixup-capabilities-ordering-again.patch [bz#1912846]\n- kvm-qga-commands-posix-Send-CCW-address-on-s390x-with-th.patch [bz#1755075]\n- kvm-AArch64-machine-types-cleanup.patch [bz#1895276]\n- kvm-hw-arm-virt-Add-8.4-Machine-type.patch [bz#1895276]\n- kvm-udev-kvm-check-remove-the-exceeded-subscription-limi.patch [bz#1914463]\n- kvm-memory-Rename-memory_region_notify_one-to-memory_reg.patch [bz#1845758]\n- kvm-memory-Add-IOMMUTLBEvent.patch [bz#1845758]\n- kvm-memory-Add-IOMMU_NOTIFIER_DEVIOTLB_UNMAP-IOMMUTLBNot.patch [bz#1845758]\n- kvm-intel_iommu-Skip-page-walking-on-device-iotlb-invali.patch [bz#1845758]\n- kvm-memory-Skip-bad-range-assertion-if-notifier-is-DEVIO.patch [bz#1845758]\n- kvm-RHEL-Switch-pvpanic-test-to-q35.patch [bz#1885555]\n- kvm-8.4-x86-machine-type.patch [bz#1885555]\n- kvm-memory-clamp-cached-translation-in-case-it-points-to.patch [bz#1904392]\n- Resolves: bz#1848834\n  (Failed to create luks format image on NVMe device)\n- Resolves: bz#1899619\n  (QEMU 5.2 is built with PIC objects instead of PIE)\n- Resolves: bz#1908693\n  ([ppc64le]boot up a guest with 128 numa nodes ,qemu got coredump)\n- Resolves: bz#1912846\n  (qemu-kvm: Failed to load xhci:parent_obj during migration)\n- Resolves: bz#1755075\n  ([qemu-guest-agent] fsinfo doesn't return disk info on s390x)\n- Resolves: bz#1895276\n  (Machine types update for aarch64 for QEMU 5.2.0)\n- Resolves: bz#1914463\n  (Remove KVM guest count and limit info message)\n- Resolves: bz#1845758\n  (qemu core dumped: qemu-kvm: /builddir/build/BUILD/qemu-4.2.0/memory.c:1928: memory_region_notify_one: Assertion entry-\u003eiova \u003e= notifier-\u003estart \u0026\u0026 entry_end \u003c= notifier-\u003eend' failed.)\n- Resolves: bz#1885555\n  (8.4 machine types for x86)\n- Resolves: bz#1904392\n  (CVE-2020-27821 virt:8.4/qemu-kvm: QEMU: heap buffer overflow in msix_table_mmio_write() in hw/pci/msix.c [rhel-av-8])\n\n[5.2.0-2.el8]\n- kvm-redhat-Define-hw_compat_8_3.patch [bz#1893935]\n- kvm-redhat-Add-spapr_machine_rhel_default_class_options.patch [bz#1893935]\n- kvm-redhat-Define-pseries-rhel8.4.0-machine-type.patch [bz#1893935]\n- kvm-redhat-s390x-add-rhel-8.4.0-compat-machine.patch [bz#1836282]\n- Resolves: bz#1836282\n  (New machine type for qemu-kvm on s390x in RHEL-AV)\n- Resolves: bz#1893935\n  (New machine type on RHEL-AV 8.4 for ppc64le)\n\n[5.2.0-1.el8]\n- Rebase to QEMU 5.2.0 [bz#1905933]\n- Resolves: bz#1905933\n  (Rebase qemu-kvm to version 5.2.0)\n\n[5.1.0-16.el8]\n- kvm-redhat-introduces-disable_everything-macro-into-the-.patch [bz#1884611]\n- kvm-redhat-scripts-extract_build_cmd.py-Avoid-listing-em.patch [bz#1884611]\n- kvm-redhat-Removing-unecessary-configurations.patch [bz#1884611]\n- kvm-redhat-Fixing-rh-local-build.patch [bz#1884611]\n- kvm-redhat-allow-Makefile-rh-prep-builddep-to-fail.patch [bz#1884611]\n- kvm-redhat-adding-rh-rpm-target.patch [bz#1884611]\n- kvm-redhat-move-shareable-files-from-qemu-kvm-core-to-qe.patch [bz#1884611]\n- kvm-redhat-Add-qemu-kiwi-subpackage.patch [bz#1884611]\n- Resolves: bz#1884611\n  (Build kata-specific version of qemu)\n\n[5.1.0-15.el8]\n- kvm-redhat-add-un-pre-install-systemd-hooks-for-qemu-ga.patch [bz#1882719]\n- kvm-rcu-Implement-drain_call_rcu.patch [bz#1812399 bz#1866707]\n- kvm-libqtest-Rename-qmp_assert_error_class-to-qmp_expect.patch [bz#1812399 bz#1866707]\n- kvm-qtest-rename-qtest_qmp_receive-to-qtest_qmp_receive_.patch [bz#1812399 bz#1866707]\n- kvm-qtest-Reintroduce-qtest_qmp_receive-with-QMP-event-b.patch [bz#1812399 bz#1866707]\n- kvm-qtest-remove-qtest_qmp_receive_success.patch [bz#1812399 bz#1866707]\n- kvm-device-plug-test-use-qtest_qmp-to-send-the-device_de.patch [bz#1812399 bz#1866707]\n- kvm-qtest-switch-users-back-to-qtest_qmp_receive.patch [bz#1812399 bz#1866707]\n- kvm-qtest-check-that-drives-are-really-appearing-and-dis.patch [bz#1812399 bz#1866707]\n- kvm-qemu-iotests-qtest-rewrite-test-067-as-a-qtest.patch [bz#1812399 bz#1866707]\n- kvm-qdev-add-check-if-address-free-callback-for-buses.patch [bz#1812399 bz#1866707]\n- kvm-scsi-scsi_bus-switch-search-direction-in-scsi_device.patch [bz#1812399 bz#1866707]\n- kvm-device_core-use-drain_call_rcu-in-in-qmp_device_add.patch [bz#1812399 bz#1866707]\n- kvm-device-core-use-RCU-for-list-of-children-of-a-bus.patch [bz#1812399 bz#1866707]\n- kvm-scsi-switch-to-bus-check_address.patch [bz#1812399 bz#1866707]\n- kvm-device-core-use-atomic_set-on-.realized-property.patch [bz#1812399 bz#1866707]\n- kvm-scsi-scsi-bus-scsi_device_find-don-t-return-unrealiz.patch [bz#1812399]\n- kvm-scsi-scsi_bus-Add-scsi_device_get.patch [bz#1812399 bz#1866707]\n- kvm-virtio-scsi-use-scsi_device_get.patch [bz#1812399 bz#1866707]\n- kvm-scsi-scsi_bus-fix-races-in-REPORT-LUNS.patch [bz#1812399 bz#1866707]\n- kvm-tests-migration-fix-memleak-in-wait_command-wait_com.patch [bz#1812399 bz#1866707]\n- kvm-libqtest-fix-the-order-of-buffered-events.patch [bz#1812399 bz#1866707]\n- kvm-libqtest-fix-memory-leak-in-the-qtest_qmp_event_ref.patch [bz#1812399 bz#1866707]\n- kvm-iotests-add-filter_qmp_virtio_scsi-function.patch [bz#1812399 bz#1866707]\n- kvm-iotests-rewrite-iotest-240-in-python.patch [bz#1812399 bz#1866707]\n- Resolves: bz#1812399\n  (Qemu crash when detach disk with cache='none' discard='ignore' io='native')\n- Resolves: bz#1866707\n  (qemu-kvm is crashing with error 'scsi_target_emulate_report_luns: Assertion i == n + 8' failed')\n- Resolves: bz#1882719\n  (qemu-ga service still active and can work after qemu-guest-agent been removed)\n\n[5.1.0-14.el8_3]\n- kvm-virtiofsd-avoid-proc-self-fd-tempdir.patch [bz#1884276]\n- Resolves: bz#1884276\n  (Pod with kata-runtime won't start, QEMU: 'vhost_user_dev init failed, Operation not permitted' [mkdtemp failing in sandboxing])\n\n[5.1.0-13.el8_3]\n- kvm-x86-lpc9-let-firmware-negotiate-CPU-hotplug-with-SMI.patch [bz#1846886]\n- kvm-x86-cpuhp-prevent-guest-crash-on-CPU-hotplug-when-br.patch [bz#1846886]\n- kvm-x86-cpuhp-refuse-cpu-hot-unplug-request-earlier-if-n.patch [bz#1846886]\n- Resolves: bz#1846886\n  (Guest hit soft lockup or reboots if hotplug vcpu under ovmf)\n\n[5.1.0-12.el8_3]\n- kvm-virtio-skip-legacy-support-check-on-machine-types-le.patch [bz#1868449]\n- kvm-vhost-vsock-pci-force-virtio-version-1.patch [bz#1868449]\n- kvm-vhost-user-vsock-pci-force-virtio-version-1.patch [bz#1868449]\n- kvm-vhost-vsock-ccw-force-virtio-version-1.patch [bz#1868449]\n- Resolves: bz#1868449\n  (vhost_vsock error: device is modern-only, use disable-legacy=on)\n\n[5.1.0-11.el8_3]\n- kvm-migration-increase-max-bandwidth-to-128-MiB-s-1-Gib-.patch [bz#1874004]\n- kvm-redhat-Make-all-generated-so-files-executable-not-on.patch [bz#1876635]\n- Resolves: bz#1874004\n  (Live migration performance is poor during guest installation process on power host)\n- Resolves: bz#1876635\n  (VM fails to start with a passthrough smartcard)\n\n[5.1.0-10.el8]\n- kvm-qemu-img-Support-bitmap-merge-into-backing-image.patch [bz#1877209]\n- Resolves: bz#1877209\n  ('qemu-img bitmaps --merge' failed when trying to merge top volume bitmap to base volume bitmap)\n\n[5.1.0-9.el8]\n- kvm-hw-nvram-fw_cfg-fix-FWCfgDataGeneratorClass-get_data.patch [bz#1688978]\n- Resolves: bz#1688978\n  (RFE: forward host preferences for cipher suites and CA certs to guest firmware)\n\n[5.1.0-8.el8]\n- kvm-redhat-link-etc-qemu-ga-fsfreeze-hook-to-etc-qemu-kv.patch [bz#1738820]\n- kvm-seccomp-fix-killing-of-whole-process-instead-of-thre.patch [bz#1752376]\n- kvm-Revert-Drop-bogus-IPv6-messages.patch [bz#1867075]\n- kvm-block-rbd-add-namespace-to-qemu_rbd_strong_runtime_o.patch [bz#1821528]\n- Resolves: bz#1738820\n  ('-F' option of qemu-ga command  cause the guest-fsfreeze-freeze command doesn't work)\n- Resolves: bz#1752376\n  (qemu use SCMP_ACT_TRAP even SCMP_ACT_KILL_PROCESS is available)\n- Resolves: bz#1821528\n  (missing namespace attribute when access the rbd image with namespace)\n- Resolves: bz#1867075\n  (CVE-2020-10756 virt:8.3/qemu-kvm: QEMU: slirp: networking out-of-bounds read information disclosure vulnerability [rhel-av-8])\n\n[5.1.0-7.el8]\n- kvm-target-ppc-Add-experimental-option-for-enabling-secu.patch [bz#1789757 bz#1870384]\n- kvm-target-arm-Move-start-powered-off-property-to-generi.patch [bz#1849483]\n- kvm-target-arm-Move-setting-of-CPU-halted-state-to-gener.patch [bz#1849483]\n- kvm-ppc-spapr-Use-start-powered-off-CPUState-property.patch [bz#1849483]\n- Resolves: bz#1789757\n  ([IBM 8.4 FEAT] Add machine option to enable secure VM support)\n- Resolves: bz#1849483\n  (Failed to boot up guest when hotplugging vcpus on bios stage)\n- Resolves: bz#1870384\n  ([IBM 8.3 FEAT] Add interim/unsupported machine option to enable secure VM support for testing purposes)\n\n[5.1.0-6.el8]\n- kvm-spec-Move-qemu-pr-helper-back-to-usr-bin.patch [bz#1869635]\n- kvm-Bump-required-libusbx-version.patch [bz#1856591]\n- Resolves: bz#1856591\n  (libusbx isn't updated with qemu-kvm)\n- Resolves: bz#1869635\n  ('/usr/bin/qemu-pr-helper' is not a suitable pr helper: No such file or directory)\n\n[5.1.0-5.el8]\n- kvm-Revert-i386-Fix-pkg_id-offset-for-EPYC-cpu-models.patch [bz#1873417]\n- kvm-Revert-target-i386-Enable-new-apic-id-encoding-for-E.patch [bz#1873417]\n- kvm-Revert-hw-i386-Move-arch_id-decode-inside-x86_cpus_i.patch [bz#1873417]\n- kvm-Revert-i386-Introduce-use_epyc_apic_id_encoding-in-X.patch [bz#1873417]\n- kvm-Revert-hw-i386-Introduce-apicid-functions-inside-X86.patch [bz#1873417]\n- kvm-Revert-target-i386-Cleanup-and-use-the-EPYC-mode-top.patch [bz#1873417]\n- kvm-Revert-hw-386-Add-EPYC-mode-topology-decoding-functi.patch [bz#1873417]\n- kvm-nvram-Exit-QEMU-if-NVRAM-cannot-contain-all-prom-env.patch [bz#1867739]\n- kvm-usb-fix-setup_len-init-CVE-2020-14364.patch [bz#1869715]\n- kvm-Remove-explicit-glusterfs-api-dependency.patch [bz#1872853]\n- kvm-disable-virgl.patch [bz#1831271]\n- Resolves: bz#1831271\n  (Drop virgil acceleration support and remove virglrenderer dependency)\n- Resolves: bz#1867739\n  (-prom-env does not validate input)\n- Resolves: bz#1869715\n  (CVE-2020-14364 qemu-kvm: QEMU: usb: out-of-bounds r/w access issue while processing usb packets [rhel-av-8.3.0])\n- Resolves: bz#1872853\n  (move the glusterfs dependency out of qemu-kvm-core to the glusterfs module)\n- Resolves: bz#1873417\n  (AMD/NUMA topology - revert 5.1 changes)\n\n[5.1.0-4.el8]\n- kvm-Drop-bogus-IPv6-messages.patch [bz#1867075]\n- kvm-machine-types-numa-set-numa_mem_supported-on-old-mac.patch [bz#1849707]\n- kvm-machine_types-numa-compatibility-for-auto_enable_num.patch [bz#1849707]\n- kvm-migration-Add-block-bitmap-mapping-parameter.patch [bz#1790492]\n- kvm-iotests.py-Let-wait_migration-return-on-failure.patch [bz#1790492]\n- kvm-iotests-Test-node-bitmap-aliases-during-migration.patch [bz#1790492]\n- Resolves: bz#1790492\n  ('dirty-bitmaps' migration capability should allow configuring target nodenames)\n- Resolves: bz#1849707\n  (8.3 machine types for x86 - 5.1 update)\n- Resolves: bz#1867075\n  (CVE-2020-10756 virt:8.3/qemu-kvm: QEMU: slirp: networking out-of-bounds read information disclosure vulnerability [rhel-av-8])\n\n[5.1.0-3.el8]\n- kvm-redhat-Update-hw_compat_8_2.patch [bz#1843348]\n- kvm-redhat-update-pseries-rhel8.2.0-machine-type.patch [bz#1843348]\n- kvm-Disable-TPM-passthrough-backend-on-ARM.patch [bz#1801242]\n- kvm-Require-libfdt-1.6.0.patch [bz#1867847]\n- Resolves: bz#1801242\n  ([aarch64] vTPM support in machvirt)\n- Resolves: bz#1843348\n  (8.3 machine types for POWER)\n- Resolves: bz#1867847\n  ([ppc] virt module 7629: /usr/libexec/qemu-kvm: undefined symbol: fdt_check_full, version LIBFDT_1.2)\n\n[5.1.0-2.el8]\n- kvm-redhat-define-hw_compat_8_2.patch [bz#1853265]\n- Resolves: bz#1853265\n  (Forward and backward migration from rhel-av-8.3.0(qemu-kvm-5.0.0) to rhel-av-8.2.1(qemu-kvm-4.2.0) failed with 'qemu-kvm: error while loading state for instance 0x0 of device 'spapr'')\n\n[5.1.0-1.el8]\n- Quick changelog fix to reflect the current fixes:\n- Resolve: bz#1781911\n- Resolve: bz#1841529\n- Resolve: bz#1842902\n- Resolve: bz#1818843\n- Resolve: bz#1819292\n- Resolve: bz#1801242\n\n[5.1.0-0.el8]\n- Rebase to 5.1.0\n- Resolves: bz#1809650\n\n[4.2.0-29.el8]\n- kvm-virtio-net-fix-removal-of-failover-device.patch [bz#1820120]\n- Resolves: bz#1820120\n  (After hotunplugging the vitrio device and netdev, hotunpluging the failover VF will cause qemu core dump)\n\n[4.2.0-28.el8]\n- kvm-virtio-blk-Refactor-the-code-that-processes-queued-r.patch [bz#1812765]\n- kvm-virtio-blk-On-restart-process-queued-requests-in-the.patch [bz#1812765]\n- kvm-Fix-use-afte-free-in-ip_reass-CVE-2020-1983.patch [bz#1838082]\n- Resolves: bz#1812765\n  (qemu with iothreads enabled crashes on resume after enospc pause for disk extension)\n- Resolves: bz#1838082\n  (CVE-2020-1983 virt:8.2/qemu-kvm: QEMU: slirp: use-after-free in ip_reass() function in ip_input.c [rhel-av-8])\n\n[4.2.0-27.el8]\n- kvm-hw-pci-pcie-Move-hot-plug-capability-check-to-pre_pl.patch [bz#1820531]\n- kvm-spec-Fix-python-shenigans-for-tests.patch [bz#1845779]\n- kvm-target-i386-Add-ARCH_CAPABILITIES-related-bits-into-.patch [bz#1840342]\n- Resolves: bz#1820531\n  (qmp command query-pci get wrong result after hotplug device under hotplug=off controller)\n- Resolves: bz#1840342\n  ([Intel 8.2.1 Bug] qemu-kvm Add ARCH_CAPABILITIES to Icelake-Server cpu model - Fast Train)\n- Resolves: bz#1845779\n  (Install 'qemu-kvm-tests' failed as nothing provides /usr/libexec/platform-python3 - virt module 6972)\n\n[4.2.0-26.el8]\n- kvm-nbd-server-Avoid-long-error-message-assertions-CVE-2.patch [bz#1845384]\n- kvm-block-Call-attention-to-truncation-of-long-NBD-expor.patch [bz#1845384]\n- Resolves: bz#1845384\n  (CVE-2020-10761 virt:8.2/qemu-kvm: QEMU: nbd: reachable assertion failure in nbd_negotiate_send_rep_verr via remote client [rhel-av-8])\n\n[4.2.0-25.el8]\n- kvm-enable-ramfb.patch [bz#1841068]\n- kvm-block-Add-flags-to-BlockDriver.bdrv_co_truncate.patch [bz#1780574]\n- kvm-block-Add-flags-to-bdrv-_co-_truncate.patch [bz#1780574]\n- kvm-block-backend-Add-flags-to-blk_truncate.patch [bz#1780574]\n- kvm-qcow2-Support-BDRV_REQ_ZERO_WRITE-for-truncate.patch [bz#1780574]\n- kvm-raw-format-Support-BDRV_REQ_ZERO_WRITE-for-truncate.patch [bz#1780574]\n- kvm-file-posix-Support-BDRV_REQ_ZERO_WRITE-for-truncate.patch [bz#1780574]\n- kvm-block-truncate-Don-t-make-backing-file-data-visible.patch [bz#1780574]\n- kvm-iotests-Add-qemu_io_log.patch [bz#1780574]\n- kvm-iotests-Filter-testfiles-out-in-filter_img_info.patch [bz#1780574]\n- kvm-iotests-Test-committing-to-short-backing-file.patch [bz#1780574]\n- kvm-qcow2-Forward-ZERO_WRITE-flag-for-full-preallocation.patch [bz#1780574]\n- kvm-i386-Add-MSR-feature-bit-for-MDS-NO.patch [bz#1769912]\n- kvm-i386-Add-macro-for-stibp.patch [bz#1769912]\n- kvm-target-i386-Add-new-bit-definitions-of-MSR_IA32_ARCH.patch [bz#1769912]\n- kvm-i386-Add-new-CPU-model-Cooperlake.patch [bz#1769912]\n- kvm-target-i386-Add-missed-features-to-Cooperlake-CPU-mo.patch [bz#1769912]\n- Resolves: bz#1769912\n  ([Intel 8.2.1 Feature] introduce Cooper Lake cpu model - qemu-kvm Fast Train)\n- Resolves: bz#1780574\n  (Data corruption with resizing short overlay over longer backing files)\n- Resolves: bz#1841068\n  (RFE: please support the 'ramfb' display device model)\n\n[4.2.0-24.el8]\n- kvm-target-i386-set-the-CPUID-level-to-0x14-on-old-machi.patch [bz#1513681]\n- kvm-block-curl-HTTP-header-fields-allow-whitespace-aroun.patch [bz#1841038]\n- kvm-block-curl-HTTP-header-field-names-are-case-insensit.patch [bz#1841038]\n- kvm-MAINTAINERS-fix-qcow2-bitmap.c-under-Dirty-Bitmaps-h.patch [bz#1779893 bz#1779904]\n- kvm-iotests-Let-_make_test_img-parse-its-parameters.patch [bz#1779893 bz#1779904]\n- kvm-qemu_img-add-cvtnum_full-to-print-error-reports.patch [bz#1779893 bz#1779904]\n- kvm-block-Make-it-easier-to-learn-which-BDS-support-bitm.patch [bz#1779893 bz#1779904]\n- kvm-blockdev-Promote-several-bitmap-functions-to-non-sta.patch [bz#1779893 bz#1779904]\n- kvm-blockdev-Split-off-basic-bitmap-operations-for-qemu-.patch [bz#1779893 bz#1779904]\n- kvm-qemu-img-Add-bitmap-sub-command.patch [bz#1779893 bz#1779904]\n- kvm-iotests-Fix-test-178.patch [bz#1779893 bz#1779904]\n- kvm-qcow2-Expose-bitmaps-size-during-measure.patch [bz#1779893 bz#1779904]\n- kvm-qemu-img-Factor-out-code-for-merging-bitmaps.patch [bz#1779893 bz#1779904]\n- kvm-qemu-img-Add-convert-bitmaps-option.patch [bz#1779893 bz#1779904]\n- kvm-iotests-Add-test-291-to-for-qemu-img-bitmap-coverage.patch [bz#1779893 bz#1779904]\n- kvm-iotests-Add-more-skip_if_unsupported-statements-to-t.patch [bz#1778593]\n- kvm-iotests-don-t-use-format-for-drive_add.patch [bz#1778593]\n- kvm-iotests-055-refactor-compressed-backup-to-vmdk.patch [bz#1778593]\n- kvm-iotests-055-skip-vmdk-target-tests-if-vmdk-is-not-wh.patch [bz#1778593]\n- kvm-backup-Improve-error-for-bdrv_getlength-failure.patch [bz#1778593]\n- kvm-backup-Make-sure-that-source-and-target-size-match.patch [bz#1778593]\n- kvm-iotests-Backup-with-different-source-target-size.patch [bz#1778593]\n- kvm-iotests-109-Don-t-mirror-with-mismatched-size.patch [bz#1778593]\n- kvm-iotests-229-Use-blkdebug-to-inject-an-error.patch [bz#1778593]\n- kvm-mirror-Make-sure-that-source-and-target-size-match.patch [bz#1778593]\n- kvm-iotests-Mirror-with-different-source-target-size.patch [bz#1778593]\n- Resolves: bz#1513681\n  ([Intel 8.2.1 Feat] qemu-kvm PT VMX -- Fast Train)\n- Resolves: bz#1778593\n  (Qemu coredump when backup to a existing small size image)\n- Resolves: bz#1779893\n  (RFE: Copy bitmaps with qemu-img convert)\n- Resolves: bz#1779904\n  (RFE: ability to estimate bitmap space utilization for qcow2)\n- Resolves: bz#1841038\n  (qemu-img: /var/tmp/v2vovl56bced.qcow2: CURL: Error opening file: Server does not support 'range' (byte ranges) with HTTP/2 server in VMware ESXi 7)\n\n[4.2.0-23.el8]\n- kvm-target-arm-Fix-PAuth-sbox-functions.patch [bz#1813940]\n- kvm-Don-t-leak-memory-when-reallocation-fails.patch [bz#1749737]\n- kvm-Replace-remaining-malloc-free-user-with-glib.patch [bz#1749737]\n- kvm-Revert-RHEL-disable-hostmem-memfd.patch [bz#1839030]\n- kvm-block-introducing-bdrv_co_delete_file-interface.patch [bz#1827630]\n- kvm-block.c-adding-bdrv_co_delete_file.patch [bz#1827630]\n- kvm-crypto.c-cleanup-created-file-when-block_crypto_co_c.patch [bz#1827630]\n- Resolves: bz#1749737\n  (CVE-2019-15890 qemu-kvm: QEMU: Slirp: use-after-free during packet reassembly [rhel-av-8])\n- Resolves: bz#1813940\n  (CVE-2020-10702 virt:8.1/qemu-kvm: qemu: weak signature generation in Pointer Authentication support for ARM [rhel-av-8])\n- Resolves: bz#1827630\n  (volume creation leaving uncleaned stuff behind on error (vol-clone/libvirt/qemu-kvm))\n- Resolves: bz#1839030\n  (RFE: enable the 'memfd' memory backend)\n\n[4.2.0-22.el8]\n- kvm-block-always-fill-entire-LUKS-header-space-with-zero.patch [bz#1775462]\n- kvm-numa-remove-not-needed-check.patch [bz#1600217]\n- kvm-numa-properly-check-if-numa-is-supported.patch [bz#1600217]\n- kvm-numa-Extend-CLI-to-provide-initiator-information-for.patch [bz#1600217]\n- kvm-numa-Extend-CLI-to-provide-memory-latency-and-bandwi.patch [bz#1600217]\n...",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5264.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5264.html",
       "ID": "ELSA-2023-5264"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-3354.html",
-      "ID": "CVE-2023-3354"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-40284.html",
+      "ID": "CVE-2022-40284"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-40284.html",
-      "ID": "CVE-2022-40284"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3354.html",
+      "ID": "CVE-2023-3354"
     }
   ],
   "Criteria": {
@@ -252,6 +252,30 @@
                               },
                               {
                                 "Comment": "libguestfs-xfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libnbd-bash-completion is earlier than 0:1.6.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "libnbd-bash-completion is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libtpms is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                              },
+                              {
+                                "Comment": "libtpms is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -620,90 +644,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "perl-Sys-Guestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "perl-Sys-Guestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python3-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "python3-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ruby-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ruby-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "supermin is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
-                              },
-                              {
-                                "Comment": "supermin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "supermin-devel is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
-                              },
-                              {
-                                "Comment": "supermin-devel is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-dib is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "virt-dib is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "libnbd-bash-completion is earlier than 0:1.6.0-5.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "libnbd-bash-completion is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "nbdkit is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -920,6 +860,66 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "perl-Sys-Guestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "perl-Sys-Guestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python3-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "python3-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ruby-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ruby-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "supermin is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
+                              },
+                              {
+                                "Comment": "supermin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "supermin-devel is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
+                              },
+                              {
+                                "Comment": "supermin-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "swtpm is earlier than 0:0.7.0-4.20211109gitb79fd91.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -980,10 +980,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "libtpms is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                                "Comment": "virt-dib is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
                               },
                               {
-                                "Comment": "libtpms is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-dib is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -1152,30 +1152,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "ocaml-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ocaml-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ocaml-libguestfs-devel is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ocaml-libguestfs-devel is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "ocaml-hivex is earlier than 0:1.3.18-23.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -1192,6 +1168,30 @@
                               },
                               {
                                 "Comment": "ocaml-hivex-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ocaml-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ocaml-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ocaml-libguestfs-devel is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ocaml-libguestfs-devel is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1964,6 +1964,42 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "libnbd-bash-completion is earlier than 0:1.6.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "libnbd-bash-completion is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libtpms is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                              },
+                              {
+                                "Comment": "libtpms is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libtpms-devel is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                              },
+                              {
+                                "Comment": "libtpms-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "libvirt-daemon-driver-qemu is earlier than 0:8.0.0-19.0.2.module+el8.8.0+21112+1cc1a24b"
                               },
                               {
@@ -2036,126 +2072,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "perl-Sys-Guestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "perl-Sys-Guestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "python3-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "python3-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ruby-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ruby-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "supermin is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
-                              },
-                              {
-                                "Comment": "supermin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "supermin-devel is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
-                              },
-                              {
-                                "Comment": "supermin-devel is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-dib is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "virt-dib is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-v2v is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
-                              },
-                              {
-                                "Comment": "virt-v2v is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-v2v-bash-completion is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
-                              },
-                              {
-                                "Comment": "virt-v2v-bash-completion is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-v2v-man-pages-ja is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
-                              },
-                              {
-                                "Comment": "virt-v2v-man-pages-ja is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "virt-v2v-man-pages-uk is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
-                              },
-                              {
-                                "Comment": "virt-v2v-man-pages-uk is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "nbdkit is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -2172,6 +2088,18 @@
                               },
                               {
                                 "Comment": "nbdkit-bash-completion is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "nbdkit-basic-filters is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-basic-filters is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2228,10 +2156,34 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "nbdkit-gzip-filter is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-gzip-filter is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "nbdkit-gzip-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
                               },
                               {
                                 "Comment": "nbdkit-gzip-plugin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "nbdkit-linuxdisk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-linuxdisk-plugin is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2300,6 +2252,42 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "nbdkit-tar-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-tar-plugin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "nbdkit-tmpdisk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-tmpdisk-plugin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "nbdkit-vddk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "nbdkit-vddk-plugin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "nbdkit-xz-filter is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -2312,10 +2300,94 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "perl-Sys-Guestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "perl-Sys-Guestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "python3-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "python3-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ruby-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ruby-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "sgabios-bin is earlier than 1:0.20170427git-3.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "sgabios-bin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "supermin is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
+                              },
+                              {
+                                "Comment": "supermin is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "supermin-devel is earlier than 0:5.2.1-2.0.1.module+el8.8.0+21149+63104b48"
+                              },
+                              {
+                                "Comment": "supermin-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "swtpm is earlier than 0:0.7.0-4.20211109gitb79fd91.module+el8.8.0+20990+60c1530a"
                               },
                               {
                                 "Comment": "swtpm is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "swtpm-devel is earlier than 0:0.7.0-4.20211109gitb79fd91.module+el8.8.0+20990+60c1530a"
+                              },
+                              {
+                                "Comment": "swtpm-devel is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2360,10 +2432,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "libnbd-bash-completion is earlier than 0:1.6.0-5.module+el8.8.0+20990+60c1530a"
+                                "Comment": "virt-dib is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
                               },
                               {
-                                "Comment": "libnbd-bash-completion is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-dib is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2372,10 +2444,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "libtpms is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                                "Comment": "virt-v2v is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
                               },
                               {
-                                "Comment": "libtpms is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-v2v is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2384,10 +2456,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "libtpms-devel is earlier than 0:0.9.1-2.20211126git1ff6fe1f43.module+el8.8.0+21044+01700444"
+                                "Comment": "virt-v2v-bash-completion is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
                               },
                               {
-                                "Comment": "libtpms-devel is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-v2v-bash-completion is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2396,10 +2468,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nbdkit-basic-filters is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                                "Comment": "virt-v2v-man-pages-ja is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
                               },
                               {
-                                "Comment": "nbdkit-basic-filters is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-v2v-man-pages-ja is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -2408,82 +2480,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nbdkit-gzip-filter is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
+                                "Comment": "virt-v2v-man-pages-uk is earlier than 1:1.42.0-22.module+el8.8.0+21112+1cc1a24b"
                               },
                               {
-                                "Comment": "nbdkit-gzip-filter is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "nbdkit-linuxdisk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "nbdkit-linuxdisk-plugin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "nbdkit-tar-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "nbdkit-tar-plugin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "nbdkit-tmpdisk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "nbdkit-tmpdisk-plugin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "nbdkit-vddk-plugin is earlier than 0:1.24.0-5.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "nbdkit-vddk-plugin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "sgabios-bin is earlier than 1:0.20170427git-3.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "sgabios-bin is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "swtpm-devel is earlier than 0:0.7.0-4.20211109gitb79fd91.module+el8.8.0+20990+60c1530a"
-                              },
-                              {
-                                "Comment": "swtpm-devel is signed with the Oracle Linux 8 key"
+                                "Comment": "virt-v2v-man-pages-uk is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -2502,10 +2502,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-33.module+el8.8.0+21164+ed375313"
+                        "Comment": "libguestfs-winsupport is earlier than 0:8.8-2.module+el8.8.0+21164+ed375313"
                       },
                       {
-                        "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
+                        "Comment": "libguestfs-winsupport is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2514,10 +2514,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libguestfs-winsupport is earlier than 0:8.8-2.module+el8.8.0+21164+ed375313"
+                        "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-33.module+el8.8.0+21164+ed375313"
                       },
                       {
-                        "Comment": "libguestfs-winsupport is signed with the Oracle Linux 8 key"
+                        "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2736,30 +2736,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "ocaml-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ocaml-libguestfs is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ocaml-libguestfs-devel is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
-                              },
-                              {
-                                "Comment": "ocaml-libguestfs-devel is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "hivex is earlier than 0:1.3.18-23.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -2928,6 +2904,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "ocaml-libguestfs is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ocaml-libguestfs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ocaml-libguestfs-devel is earlier than 1:1.44.0-9.0.2.module+el8.8.0+21153+75c20b54"
+                              },
+                              {
+                                "Comment": "ocaml-libguestfs-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "ocaml-libnbd is earlier than 0:1.6.0-5.module+el8.8.0+20990+60c1530a"
                               },
                               {
@@ -3065,13 +3065,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-3354.html",
-      "ID": "CVE-2023-3354"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-40284.html",
+      "ID": "CVE-2022-40284"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-40284.html",
-      "ID": "CVE-2022-40284"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3354.html",
+      "ID": "CVE-2023-3354"
     }
   ],
   "Issued": {

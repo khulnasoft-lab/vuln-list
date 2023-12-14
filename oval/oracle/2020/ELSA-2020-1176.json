@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-1176.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1176.html",
       "ID": "ELSA-2020-1176"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-6519.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-6519.html",
       "ID": "CVE-2017-6519"
     }
   ],
@@ -57,6 +57,54 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "avahi-glib is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-gobject is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-gobject is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-libs is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-ui-gtk3 is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-ui-gtk3 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "avahi-compat-howl is earlier than 0:0.6.31-20.el7"
                       },
                       {
@@ -129,18 +177,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-glib is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "avahi-glib-devel is earlier than 0:0.6.31-20.el7"
                       },
                       {
@@ -153,34 +189,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-gobject is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-gobject is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "avahi-gobject-devel is earlier than 0:0.6.31-20.el7"
                       },
                       {
                         "Comment": "avahi-gobject-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "avahi-libs is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -265,18 +277,6 @@
                       },
                       {
                         "Comment": "avahi-ui-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "avahi-ui-gtk3 is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-ui-gtk3 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -313,30 +313,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "avahi-autoipd is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-autoipd is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "avahi-compat-howl is earlier than 0:0.6.31-20.el7"
                       },
                       {
@@ -409,18 +385,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-glib is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "avahi-glib-devel is earlier than 0:0.6.31-20.el7"
                       },
                       {
@@ -433,34 +397,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-gobject is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-gobject is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "avahi-gobject-devel is earlier than 0:0.6.31-20.el7"
                       },
                       {
                         "Comment": "avahi-gobject-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "avahi-libs is earlier than 0:0.6.31-20.el7"
-                      },
-                      {
-                        "Comment": "avahi-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -553,10 +493,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-ui-gtk3 is earlier than 0:0.6.31-20.el7"
+                        "Comment": "avahi-ui-tools is earlier than 0:0.6.31-20.el7"
                       },
                       {
-                        "Comment": "avahi-ui-gtk3 is signed with the Oracle Linux 7 key"
+                        "Comment": "avahi-ui-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -565,10 +505,70 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "avahi-ui-tools is earlier than 0:0.6.31-20.el7"
+                        "Comment": "avahi is earlier than 0:0.6.31-20.el7"
                       },
                       {
-                        "Comment": "avahi-ui-tools is signed with the Oracle Linux 7 key"
+                        "Comment": "avahi is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-autoipd is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-autoipd is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-glib is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-gobject is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-gobject is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-libs is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "avahi-ui-gtk3 is earlier than 0:0.6.31-20.el7"
+                      },
+                      {
+                        "Comment": "avahi-ui-gtk3 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -596,11 +596,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-6519.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-6519.html",
       "ID": "CVE-2017-6519"
     }
   ],
   "Issued": {
-    "Date": "2020-04-06"
+    "Date": "2020-04-08"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0550.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0550.html",
       "ID": "ELSA-2013-0550"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-5689.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5689.html",
       "ID": "CVE-2012-5689"
     }
   ],
@@ -145,6 +145,70 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-libs is earlier than 32:9.8.2-0.17.rc1.0.2.el6.3"
+                      },
+                      {
+                        "Comment": "bind-libs is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-utils is earlier than 32:9.8.2-0.17.rc1.0.2.el6.3"
+                      },
+                      {
+                        "Comment": "bind-utils is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind is earlier than 32:9.8.2-0.17.rc1.0.2.el6.3"
+                      },
+                      {
+                        "Comment": "bind is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-chroot is earlier than 32:9.8.2-0.17.rc1.0.2.el6.3"
+                      },
+                      {
+                        "Comment": "bind-chroot is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-devel is earlier than 32:9.8.2-0.17.rc1.0.2.el6.3"
                       },
                       {
@@ -212,7 +276,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-5689.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5689.html",
       "ID": "CVE-2012-5689"
     }
   ],

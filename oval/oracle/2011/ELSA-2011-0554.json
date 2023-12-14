@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2011-0554.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-0554.html",
       "ID": "ELSA-2011-0554"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2010-3493.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-3493.html",
       "ID": "CVE-2010-3493"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-1015.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-1015.html",
       "ID": "CVE-2011-1015"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2011-1521.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-1521.html",
       "ID": "CVE-2011-1521"
     }
   ],
@@ -38,6 +38,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python-docs is earlier than 0:2.6.6-2.el6"
+                      },
+                      {
+                        "Comment": "python-docs is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -59,18 +71,6 @@
                       },
                       {
                         "Comment": "python-devel is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python-docs is earlier than 0:2.6.6-2.el6"
-                      },
-                      {
-                        "Comment": "python-docs is signed with the Oracle Linux 6 key"
                       }
                     ]
                   },
@@ -268,17 +268,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2010-3493.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-3493.html",
       "ID": "CVE-2010-3493"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-1015.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-1015.html",
       "ID": "CVE-2011-1015"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2011-1521.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-1521.html",
       "ID": "CVE-2011-1521"
     }
   ],

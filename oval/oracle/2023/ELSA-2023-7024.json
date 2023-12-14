@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-7024.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-7024.html",
       "ID": "ELSA-2023-7024"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2007-4559.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2007-4559.html",
       "ID": "CVE-2007-4559"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-41105.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-41105.html",
       "ID": "CVE-2023-41105"
     }
   ],
@@ -38,18 +38,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3.11 is earlier than 0:3.11.5-1.el8_9"
-                      },
-                      {
-                        "Comment": "python3.11 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "python3.11-debug is earlier than 0:3.11.5-1.el8_9"
                       },
                       {
@@ -62,10 +50,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3.11-devel is earlier than 0:3.11.5-1.el8_9"
+                        "Comment": "python3.11-idle is earlier than 0:3.11.5-1.el8_9"
                       },
                       {
-                        "Comment": "python3.11-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "python3.11-idle is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -74,10 +62,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3.11-idle is earlier than 0:3.11.5-1.el8_9"
+                        "Comment": "python3.11-test is earlier than 0:3.11.5-1.el8_9"
                       },
                       {
-                        "Comment": "python3.11-idle is signed with the Oracle Linux 8 key"
+                        "Comment": "python3.11-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3.11 is earlier than 0:3.11.5-1.el8_9"
+                      },
+                      {
+                        "Comment": "python3.11 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3.11-devel is earlier than 0:3.11.5-1.el8_9"
+                      },
+                      {
+                        "Comment": "python3.11-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -102,18 +114,6 @@
                       },
                       {
                         "Comment": "python3.11-rpm-macros is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3.11-test is earlier than 0:3.11.5-1.el8_9"
-                      },
-                      {
-                        "Comment": "python3.11-test is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -174,46 +174,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3.11-devel is earlier than 0:3.11.5-1.el8_9"
-                      },
-                      {
-                        "Comment": "python3.11-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "python3.11-idle is earlier than 0:3.11.5-1.el8_9"
                       },
                       {
                         "Comment": "python3.11-idle is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3.11-libs is earlier than 0:3.11.5-1.el8_9"
-                      },
-                      {
-                        "Comment": "python3.11-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3.11-rpm-macros is earlier than 0:3.11.5-1.el8_9"
-                      },
-                      {
-                        "Comment": "python3.11-rpm-macros is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -238,6 +202,42 @@
                       },
                       {
                         "Comment": "python3.11-tkinter is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3.11-devel is earlier than 0:3.11.5-1.el8_9"
+                      },
+                      {
+                        "Comment": "python3.11-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3.11-libs is earlier than 0:3.11.5-1.el8_9"
+                      },
+                      {
+                        "Comment": "python3.11-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3.11-rpm-macros is earlier than 0:3.11.5-1.el8_9"
+                      },
+                      {
+                        "Comment": "python3.11-rpm-macros is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -265,12 +265,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2007-4559.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2007-4559.html",
       "ID": "CVE-2007-4559"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-41105.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-41105.html",
       "ID": "CVE-2023-41105"
     }
   ],

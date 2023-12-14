@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-4099.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-4099.html",
       "ID": "ELSA-2023-4099"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-2828.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-2828.html",
       "ID": "CVE-2023-2828"
     }
   ],
@@ -28,6 +28,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-devel is earlier than 32:9.16.23-11.el9_2.1"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-doc is earlier than 32:9.16.23-11.el9_2.1"
+                      },
+                      {
+                        "Comment": "bind-doc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -57,18 +81,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bind-devel is earlier than 32:9.16.23-11.el9_2.1"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind-dnssec-doc is earlier than 32:9.16.23-11.el9_2.1"
                       },
                       {
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "bind-dnssec-utils is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-doc is earlier than 32:9.16.23-11.el9_2.1"
-                      },
-                      {
-                        "Comment": "bind-doc is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -193,18 +193,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bind-devel is earlier than 32:9.16.23-11.el9_2.1"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind-dnssec-doc is earlier than 32:9.16.23-11.el9_2.1"
                       },
                       {
@@ -221,18 +209,6 @@
                       },
                       {
                         "Comment": "bind-dnssec-utils is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-doc is earlier than 32:9.16.23-11.el9_2.1"
-                      },
-                      {
-                        "Comment": "bind-doc is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -283,6 +259,30 @@
                         "Comment": "python3-bind is signed with the Oracle Linux 9 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-devel is earlier than 32:9.16.23-11.el9_2.1"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-doc is earlier than 32:9.16.23-11.el9_2.1"
+                      },
+                      {
+                        "Comment": "bind-doc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -308,7 +308,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-2828.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-2828.html",
       "ID": "CVE-2023-2828"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2013-0504.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0504.html",
       "ID": "ELSA-2013-0504"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2012-3955.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3955.html",
       "ID": "CVE-2012-3955"
     }
   ],
@@ -149,6 +149,58 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dhclient is earlier than 12:4.1.1-34.P1.0.1.el6"
+                      },
+                      {
+                        "Comment": "dhclient is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dhcp is earlier than 12:4.1.1-34.P1.0.1.el6"
+                      },
+                      {
+                        "Comment": "dhcp is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dhcp-common is earlier than 12:4.1.1-34.P1.0.1.el6"
+                      },
+                      {
+                        "Comment": "dhcp-common is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
           }
         ],
         "Criterions": null
@@ -164,7 +216,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2012-3955.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3955.html",
       "ID": "CVE-2012-3955"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2017-1484.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-1484.html",
       "ID": "ELSA-2017-1484"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2017-1000364.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-1000364.html",
       "ID": "CVE-2017-1000364"
     }
   ],
@@ -138,18 +138,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-514.21.2.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-514.21.2.el7"
                   },
                   {
@@ -166,6 +154,18 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-514.21.2.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -190,7 +190,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2017-1000364.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-1000364.html",
       "ID": "CVE-2017-1000364"
     }
   ],

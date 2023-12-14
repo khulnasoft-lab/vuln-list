@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-0343.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0343.html",
       "ID": "ELSA-2021-0343"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10543.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10543.html",
       "ID": "CVE-2020-10543"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10878.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10878.html",
       "ID": "CVE-2020-10878"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-12723.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12723.html",
       "ID": "CVE-2020-12723"
     }
   ],
@@ -275,6 +275,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "perl-tests is earlier than 4:5.16.3-299.el7_9"
+                      },
+                      {
+                        "Comment": "perl-tests is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "perl is earlier than 4:5.16.3-299.el7_9"
                       },
                       {
@@ -473,18 +485,6 @@
                         "Comment": "perl-macros is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "perl-tests is earlier than 4:5.16.3-299.el7_9"
-                      },
-                      {
-                        "Comment": "perl-tests is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -510,17 +510,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10543.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10543.html",
       "ID": "CVE-2020-10543"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10878.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10878.html",
       "ID": "CVE-2020-10878"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-12723.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12723.html",
       "ID": "CVE-2020-12723"
     }
   ],

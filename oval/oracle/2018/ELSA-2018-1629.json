@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-1629.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-1629.html",
       "ID": "ELSA-2018-1629"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3639.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3639.html",
       "ID": "CVE-2018-3639"
     }
   ],
@@ -138,18 +138,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-862.3.2.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-862.3.2.el7"
                   },
                   {
@@ -166,6 +154,18 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-862.3.2.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -190,11 +190,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3639.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3639.html",
       "ID": "CVE-2018-3639"
     }
   ],
   "Issued": {
-    "Date": "2018-05-22"
+    "Date": "2018-05-21"
   }
 }

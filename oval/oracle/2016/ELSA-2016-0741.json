@@ -7,27 +7,27 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-0741.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0741.html",
       "ID": "ELSA-2016-0741"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-6563.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-6563.html",
       "ID": "CVE-2015-6563"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-6564.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-6564.html",
       "ID": "CVE-2015-6564"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1908.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1908.html",
       "ID": "CVE-2016-1908"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2015-5352.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5352.html",
       "ID": "CVE-2015-5352"
     }
   ],
@@ -209,7 +209,7 @@
             ],
             "Criterions": [
               {
-                "Comment": "Oracle Linux arch is i686"
+                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           },
@@ -219,6 +219,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-ldap is earlier than 0:5.3p1-117.el6"
+                      },
+                      {
+                        "Comment": "openssh-ldap is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "pam_ssh_agent_auth is earlier than 0:0.9.3-117.el6"
+                      },
+                      {
+                        "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -260,34 +284,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "openssh-ldap is earlier than 0:5.3p1-117.el6"
-                      },
-                      {
-                        "Comment": "openssh-ldap is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "openssh-server is earlier than 0:5.3p1-117.el6"
                       },
                       {
                         "Comment": "openssh-server is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "pam_ssh_agent_auth is earlier than 0:0.9.3-117.el6"
-                      },
-                      {
-                        "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 6 key"
                       }
                     ]
                   }
@@ -297,7 +297,7 @@
             ],
             "Criterions": [
               {
-                "Comment": "Oracle Linux arch is sparc64"
+                "Comment": "Oracle Linux arch is i686"
               }
             ]
           }
@@ -315,26 +315,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-6563.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-6563.html",
       "ID": "CVE-2015-6563"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-6564.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-6564.html",
       "ID": "CVE-2015-6564"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1908.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1908.html",
       "ID": "CVE-2016-1908"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2015-5352.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5352.html",
       "ID": "CVE-2015-5352"
     }
   ],
   "Issued": {
-    "Date": "2016-05-12"
+    "Date": "2016-05-10"
   }
 }

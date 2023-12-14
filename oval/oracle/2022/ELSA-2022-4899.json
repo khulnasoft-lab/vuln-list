@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4899:  compat-openssl11 security and bug fix update (IMPORTANT)",
-  "Description": "[1:1.1.1k-4.0.1]\n- Backport upstream PRs 18446 and 18481 which update\n  certificates used for the self-tests [Orabug: 34326055]\n\n[1:1.1.1k-4]\n- Fixes CVE-2022-0778 openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates\n  Resolves: rhbz#2063147\n- Disable FIPS mode; it does not work and will not be certified\n  Resolves: rhbz#2091968",
+  "Description": "[1:1.1.1k-4.0.1]\n- Backport upstream PRs 18446 and 18481 which update\n  certificates used for the self-tests [Orabug: 34326055]\n\n[1:1.1.1k-4]\n- Fixes CVE-2022-0778 openssl: Infinite loop in BN_mod_sqrt() reachable when parsing certificates\n  Resolves: rhbz#2063147\n- Disable FIPS mode; it does not work and will not be certified\n  Resolves: rhbz#2091968\n\n[1:1.1.1k-3]\n- updates OPENSSL_CONF to openssl11.cnf.\n- Related: rhbz#1947584, rhbz#2003123\n\n[1:1.1.1k-2]\n- Remove support for building FIPS mode binaries for the\n  compat libraries\n- Ships openssl11.cnf as the configuration file.\n- Resolves: rhbz#1993795\n- Related: rhbz#1947584\n\n[1:1.1.1k-1]\n- Repackage old openssl 1.1.1k package into compat-openssl11\n  Resolves: bz#1947584",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-4899.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4899.html",
       "ID": "ELSA-2022-4899"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-0778.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-0778.html",
       "ID": "CVE-2022-0778"
     }
   ],
@@ -80,11 +80,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-0778.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-0778.html",
       "ID": "CVE-2022-0778"
     }
   ],
   "Issued": {
-    "Date": "2022-06-30"
+    "Date": "2022-06-29"
   }
 }

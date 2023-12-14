@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-4733.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-4733.html",
       "ID": "ELSA-2019-4733"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-1125.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-1125.html",
       "ID": "CVE-2019-1125"
     }
   ],
@@ -81,18 +81,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-uek-headers is earlier than 0:4.14.35-1902.3.2.el7uek"
-                      },
-                      {
-                        "Comment": "kernel-uek-headers is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "kernel-uek-tools is earlier than 0:4.14.35-1902.3.2.el7uek"
                       },
                       {
@@ -145,6 +133,18 @@
                       },
                       {
                         "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-headers is earlier than 0:4.14.35-1902.3.2.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-headers is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -260,11 +260,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-1125.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-1125.html",
       "ID": "CVE-2019-1125"
     }
   ],
   "Issued": {
-    "Date": "2019-08-06"
+    "Date": "2019-08-03"
   }
 }

@@ -7,42 +7,42 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2018-3521.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3521.html",
       "ID": "ELSA-2018-3521"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3136.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3136.html",
       "ID": "CVE-2018-3136"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3180.html",
-      "ID": "CVE-2018-3180"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3139.html",
-      "ID": "CVE-2018-3139"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3149.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3149.html",
       "ID": "CVE-2018-3149"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3169.html",
-      "ID": "CVE-2018-3169"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3183.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3183.html",
       "ID": "CVE-2018-3183"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2018-3150.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3139.html",
+      "ID": "CVE-2018-3139"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3169.html",
+      "ID": "CVE-2018-3169"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3180.html",
+      "ID": "CVE-2018-3180"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-3150.html",
       "ID": "CVE-2018-3150"
     }
   ],
@@ -67,6 +67,30 @@
                       },
                       {
                         "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.1.13-3.0.1.el7_6"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.1.13-3.0.1.el7_6"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -111,34 +135,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.1.13-3.0.1.el7_6"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-devel-debug is earlier than 1:11.0.1.13-3.0.1.el7_6"
                       },
                       {
                         "Comment": "java-11-openjdk-devel-debug is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.1.13-3.0.1.el7_6"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -271,18 +271,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk is earlier than 1:11.0.1.13-3.0.1.el7_6"
-                      },
-                      {
-                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-debug is earlier than 1:11.0.1.13-3.0.1.el7_6"
                       },
                       {
@@ -319,34 +307,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.1.13-3.0.1.el7_6"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-devel-debug is earlier than 1:11.0.1.13-3.0.1.el7_6"
                       },
                       {
                         "Comment": "java-11-openjdk-devel-debug is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.1.13-3.0.1.el7_6"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -457,6 +421,42 @@
                         "Comment": "java-11-openjdk-src-debug is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk is earlier than 1:11.0.1.13-3.0.1.el7_6"
+                      },
+                      {
+                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.1.13-3.0.1.el7_6"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.1.13-3.0.1.el7_6"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -482,37 +482,37 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3136.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3136.html",
       "ID": "CVE-2018-3136"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3180.html",
-      "ID": "CVE-2018-3180"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3139.html",
-      "ID": "CVE-2018-3139"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3149.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3149.html",
       "ID": "CVE-2018-3149"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3169.html",
-      "ID": "CVE-2018-3169"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3183.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3183.html",
       "ID": "CVE-2018-3183"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2018-3150.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3139.html",
+      "ID": "CVE-2018-3139"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3169.html",
+      "ID": "CVE-2018-3169"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3180.html",
+      "ID": "CVE-2018-3180"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-3150.html",
       "ID": "CVE-2018-3150"
     }
   ],

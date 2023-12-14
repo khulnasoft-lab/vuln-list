@@ -7,42 +7,42 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-0699.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0699.html",
       "ID": "ELSA-2021-0699"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-14372.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14372.html",
       "ID": "CVE-2020-14372"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-25632.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25632.html",
       "ID": "CVE-2020-25632"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-25647.html",
-      "ID": "CVE-2020-25647"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-27749.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-27749.html",
       "ID": "CVE-2020-27749"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-27779.html",
-      "ID": "CVE-2020-27779"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20225.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20225.html",
       "ID": "CVE-2021-20225"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20233.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25647.html",
+      "ID": "CVE-2020-25647"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-27779.html",
+      "ID": "CVE-2020-27779"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20233.html",
       "ID": "CVE-2021-20233"
     }
   ],
@@ -151,6 +151,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "grub2-efi-ia32-cdboot is earlier than 1:2.02-0.87.0.7.el7_9.2"
+                      },
+                      {
+                        "Comment": "grub2-efi-ia32-cdboot is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "grub2-efi-x64-cdboot is earlier than 1:2.02-0.87.0.7.el7_9.2"
+                      },
+                      {
+                        "Comment": "grub2-efi-x64-cdboot is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "grub2 is earlier than 1:2.02-0.87.0.7.el7_9.2"
                       },
                       {
@@ -187,18 +211,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "grub2-efi-ia32-cdboot is earlier than 1:2.02-0.87.0.7.el7_9.2"
-                      },
-                      {
-                        "Comment": "grub2-efi-ia32-cdboot is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "grub2-efi-ia32-modules is earlier than 1:2.02-0.87.0.7.el7_9.2"
                       },
                       {
@@ -215,18 +227,6 @@
                       },
                       {
                         "Comment": "grub2-efi-x64 is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "grub2-efi-x64-cdboot is earlier than 1:2.02-0.87.0.7.el7_9.2"
-                      },
-                      {
-                        "Comment": "grub2-efi-x64-cdboot is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -326,41 +326,41 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-14372.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14372.html",
       "ID": "CVE-2020-14372"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-25632.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25632.html",
       "ID": "CVE-2020-25632"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-25647.html",
-      "ID": "CVE-2020-25647"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-27749.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-27749.html",
       "ID": "CVE-2020-27749"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-27779.html",
-      "ID": "CVE-2020-27779"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20225.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20225.html",
       "ID": "CVE-2021-20225"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20233.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25647.html",
+      "ID": "CVE-2020-25647"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-27779.html",
+      "ID": "CVE-2020-27779"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20233.html",
       "ID": "CVE-2021-20233"
     }
   ],
   "Issued": {
-    "Date": "2021-03-05"
+    "Date": "2021-03-04"
   }
 }

@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-4444.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4444.html",
       "ID": "ELSA-2020-4444"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-1752.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1752.html",
       "ID": "CVE-2020-1752"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-1751.html",
-      "ID": "CVE-2020-1751"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10029.html",
+      "ID": "CVE-2020-10029"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-10029.html",
-      "ID": "CVE-2020-10029"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1751.html",
+      "ID": "CVE-2020-1751"
     }
   ],
   "Criteria": {
@@ -43,10 +43,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-127.0.1.el8"
+                        "Comment": "glibc-benchtests is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
-                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
+                        "Comment": "glibc-benchtests is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-nss-devel is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-nss-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-static is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss_hesiod is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "nss_hesiod is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -71,18 +107,6 @@
                       },
                       {
                         "Comment": "glibc-all-langpacks is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-benchtests is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-benchtests is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2503,42 +2527,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "glibc-nss-devel is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-nss-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-static is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-utils is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libnsl is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
@@ -2575,10 +2563,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nss_hesiod is earlier than 0:2.28-127.0.1.el8"
+                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
-                        "Comment": "nss_hesiod is signed with the Oracle Linux 8 key"
+                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-utils is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -2603,10 +2603,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-127.0.1.el8"
+                        "Comment": "glibc-benchtests is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
-                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
+                        "Comment": "glibc-benchtests is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-nss-devel is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-nss-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-static is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss_hesiod is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "nss_hesiod is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2631,18 +2667,6 @@
                       },
                       {
                         "Comment": "glibc-all-langpacks is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-benchtests is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-benchtests is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -5063,42 +5087,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "glibc-nss-devel is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-nss-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-static is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-utils is earlier than 0:2.28-127.0.1.el8"
-                      },
-                      {
-                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libnsl is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
@@ -5135,10 +5123,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "nss_hesiod is earlier than 0:2.28-127.0.1.el8"
+                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-127.0.1.el8"
                       },
                       {
-                        "Comment": "nss_hesiod is signed with the Oracle Linux 8 key"
+                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-utils is earlier than 0:2.28-127.0.1.el8"
+                      },
+                      {
+                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -5166,18 +5166,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-1752.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1752.html",
       "ID": "CVE-2020-1752"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-1751.html",
-      "ID": "CVE-2020-1751"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10029.html",
+      "ID": "CVE-2020-10029"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-10029.html",
-      "ID": "CVE-2020-10029"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1751.html",
+      "ID": "CVE-2020-1751"
     }
   ],
   "Issued": {

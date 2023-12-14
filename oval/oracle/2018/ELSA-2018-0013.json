@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "http://linux.oracle.com/errata/ELSA-2018-0013.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-0013.html",
       "ID": "ELSA-2018-0013"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux.oracle.com/cve/CVE-2017-5715.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-5715.html",
       "ID": "CVE-2017-5715"
     }
   ],
@@ -20,16 +20,54 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
-        "Criterias": null,
-        "Criterions": [
+        "Operator": "OR",
+        "Criterias": [
           {
-            "Comment": "microcode_ctl is earlier than 1:1.17-25.2.el6_9"
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "microcode_ctl is earlier than 1:1.17-25.2.el6_9"
+                  },
+                  {
+                    "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           },
           {
-            "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "microcode_ctl is earlier than 1:1.17-25.2.el6_9"
+                  },
+                  {
+                    "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is i686"
+              }
+            ]
           }
-        ]
+        ],
+        "Criterions": null
       }
     ],
     "Criterions": [
@@ -42,11 +80,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "http://linux.oracle.com/cve/CVE-2017-5715.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-5715.html",
       "ID": "CVE-2017-5715"
     }
   ],
   "Issued": {
-    "Date": "2018-01-04"
+    "Date": "2018-01-03"
   }
 }

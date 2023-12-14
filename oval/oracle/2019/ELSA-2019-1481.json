@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2019-1481.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-1481.html",
       "ID": "ELSA-2019-1481"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-11477.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11477.html",
       "ID": "CVE-2019-11477"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-11479.html",
-      "ID": "CVE-2019-11479"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11478.html",
+      "ID": "CVE-2019-11478"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2019-11478.html",
-      "ID": "CVE-2019-11478"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11479.html",
+      "ID": "CVE-2019-11479"
     }
   ],
   "Criteria": {
@@ -160,18 +160,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.21.3.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "perf is earlier than 0:3.10.0-957.21.3.el7"
                   },
                   {
@@ -188,6 +176,18 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-957.21.3.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -212,21 +212,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-11477.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11477.html",
       "ID": "CVE-2019-11477"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-11479.html",
-      "ID": "CVE-2019-11479"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11478.html",
+      "ID": "CVE-2019-11478"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2019-11478.html",
-      "ID": "CVE-2019-11478"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11479.html",
+      "ID": "CVE-2019-11479"
     }
   ],
   "Issued": {
-    "Date": "2019-06-18"
+    "Date": "2019-06-17"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2021-1297.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1297.html",
       "ID": "ELSA-2021-1297"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-2163.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-2163.html",
       "ID": "CVE-2021-2163"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-devel is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -145,46 +145,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-demo is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
                       },
                       {
                         "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -241,6 +205,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.11.0.9-1.0.1.el7_9"
                       },
                       {
@@ -272,7 +272,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-2163.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-2163.html",
       "ID": "CVE-2021-2163"
     }
   ],

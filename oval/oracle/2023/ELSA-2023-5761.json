@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2023-5761.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5761.html",
       "ID": "ELSA-2023-5761"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-22067.html",
-      "ID": "CVE-2023-22067"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-22081.html",
+      "ID": "CVE-2023-22081"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-22081.html",
-      "ID": "CVE-2023-22081"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-22067.html",
+      "ID": "CVE-2023-22067"
     }
   ],
   "Criteria": {
@@ -74,6 +74,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.392.b08-2.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.392.b08-2.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-javadoc is earlier than 1:1.8.0.392.b08-2.el7_9"
                       },
                       {
@@ -102,30 +126,6 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.392.b08-2.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.392.b08-2.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -162,30 +162,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.392.b08-2.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.392.b08-2.el7_9"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.392.b08-2.el7_9"
                       },
                       {
@@ -202,6 +178,30 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.392.b08-2.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.392.b08-2.el7_9"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -265,13 +265,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-22067.html",
-      "ID": "CVE-2023-22067"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-22081.html",
+      "ID": "CVE-2023-22081"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-22081.html",
-      "ID": "CVE-2023-22081"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-22067.html",
+      "ID": "CVE-2023-22067"
     }
   ],
   "Issued": {

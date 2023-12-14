@@ -1,33 +1,33 @@
 {
   "Title": "ELSA-2022-5821:  virt:ol and virt-devel:ol security, bug fix, and enhancement update (MODERATE)",
-  "Description": "libvirt\n[8.0.0-5.2.0.1]\n- Set SOURCE_DATE_EPOCH from changelog [Orabug: 32019554]\n- Add runtime deps for pkg librbd1 \u003e= 1:10.2.5 (Keshav Sharma)\n\n[8.0.0-5.2.el8]\n- cpu_map: Disable cpu64-rhel* for host-model and baseline (rhbz#2084030)\n- cputest: Drop some old artificial baseline tests (rhbz#2084030)\n- cputest: Give better names to baseline tests (rhbz#2084030)\n- cputest: Add some real world baseline tests (rhbz#2084030)\n- cpu_x86: Consolidate signature match in x86DecodeUseCandidate (rhbz#2084030)\n- cpu_x86: Refactor feature list comparison in x86DecodeUseCandidate (rhbz#2084030)\n- cpu_x86: Penalize disabled features when computing CPU model (rhbz#2084030)\n- cpu_x86: Ignore enabled features for input models in x86DecodeUseCandidate (rhbz#2084030)\n\n[8.0.0-5.1.el8]\n- conf: Introduce memory allocation threads (rhbz#2075569)\n- qemu_capabilities: Detect memory-backend-*.prealloc-threads property (rhbz#2075569)\n- qemu_validate: Validate prealloc threads against qemuCpas (rhbz#2075569)\n- qemu_command: Generate prealloc-threads property (rhbz#2075569)\n\nvirt-v2v\n[1:1.42.0-19.0.1]\n- replaced upstream references [Orabug:34095529]\n\n[1:1.42.0-19]\n- If listing RPM applications fails, rebuild DB and retry\n  resolves: rhbz#2093415",
+  "Description": "hivex\n[1.3.18-23]\n- Limit recursion in ri-records (CVE-2021-3622)\n  resolves: rhbz#1976194\n\n[1.3.18-22.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\nlibguestfs\n[1.44.0-5.0.1]\n- Replace upstream references from description tag\n- Config supermin to use host yum.conf in ol8 [Orabug: 29319324]\n- Set DISTRO_ORACLE_LINUX correspeonding to ol\n\n[1:1.44.0-5]\n- Fix libguestfs failure with qemu 6.2, libvirt 7.10\n  resolves: rhbz#2035177\n\n[1:1.44.0-4]\n- Autodetect backing format for qemu-img create -b\n- Move appliance to separate subpackage\n- Read rpm database through librpm\n  resolves: rhbz#2013916, rhbz#1989520, rhbz#1836094\n\n[1.44.0-3.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\nlibguestfs-winsupport\n[8.6-1]\n- Rebase to ntfs-3g 2021.8.22\n- Fixes: CVE-2021-33285, CVE-2021-33286, CVE-2021-33287, CVE-2021-33289,\n  CVE-2021-35266, CVE-2021-35267, CVE-2021-35268, CVE-2021-35269,\n  CVE-2021-39251, CVE-2021-39252, CVE-2021-39253, CVE-2021-39254\n  resolves: rhbz#2004490\n\n[8.2-1.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[8.2]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[8.0-4]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[8.0-3]\n- Fix for CVE-2019-9755\n  (heap-based buffer overflow leads to local root privilege escalation)\n  resolves: rhbz#1698503\n\n[8.0-2]\n- Fix for ntfsclone crash (RHBZ#1601146).\n\n[8.0-1]\n- Rebase to 2017.3.23.\n- Remove patches which are now upstream.\n- Resynch with Fedora package.\n- Enable all architectures for RHEL 8.\n\n[7.2-2]\n- Fix for handling guest filenames with invalid or incomplete\n  multibyte or wide characters\n  resolves: rhbz#1301593\n\n[7.2-1]\n- Rebase and rebuild for RHEL 7.2\n  resolves: rhbz#1240278\n\n[7.1-6]\n- Bump version and rebuild.\n  related: rhbz#1221583\n\n[7.1-5]\n- Enable aarch64 architecture.\n  resolves: rhbz#1221583\n\n[7.1-4]\n- Enable debuginfo support and stripping.\n  resolves: rhbz#1100319\n\n[7.1-3]\n- Add patches from Fedora package which add fstrim support.\n  resolves: rhbz#1100319\n\n[7.1-2]\n- New package for RHEL 7.1\n- Rebase to ntfs-3g 2014.2.15\n  resolves: rhbz#1100319\n- Change the package so it works with supermin5.\n- Remove dependency on external FUSE.\n\n[7.0-2]\n- Resync against Rawhide package (ntfs-3g 2013.1.13).\n- Drop HAL file since HAL is dead.\n  resolves: rhbz#819939\n\n[7.0-1]\n- New package for RHEL 7\n  resolves: rhbz#819939\n- Resync against Rawhide package.\n\n[1.0-7]\n- Disable debuginfo package.\n  resolves: RHBZ#691555.\n\n[1.0-6]\n- Require libguestfs 1.7.17 (newer version in RHEL 6.1).\n- Require febootstrap-supermin-helper instead of febootstrap\n  resolves: RHBZ#670299.\n\n[1.0-5]\n- Make sure intermediate lib* directories are created in hostfiles (RHBZ#603429)\n\n[1.0-4]\n- Requires fuse-libs (RHBZ#599300).\n\n[1.0-3]\n- ExclusiveArch x86_64.\n\n[1.0-2]\n- Package Windows support for libguestfs.\n\nlibiscsi\nlibnbd\n[1.6.0-5.el8]\n- Fix CVE-2022-0485: Fail nbdcopy if NBD read or write fails\n  resolves: rhbz#2045718\n\n[1.6.0-4.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[1.2.2]\n- Resolves: bz#1844296\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\nlibvirt\n[8.0.0-5.2.0.1]\n- Set SOURCE_DATE_EPOCH from changelog [Orabug: 32019554]\n- Add runtime deps for pkg librbd1 \u003e= 1:10.2.5 (Keshav Sharma)\n\n[8.0.0-5.2.el8]\n- cpu_map: Disable cpu64-rhel* for host-model and baseline (rhbz#2084030)\n- cputest: Drop some old artificial baseline tests (rhbz#2084030)\n- cputest: Give better names to baseline tests (rhbz#2084030)\n- cputest: Add some real world baseline tests (rhbz#2084030)\n- cpu_x86: Consolidate signature match in x86DecodeUseCandidate (rhbz#2084030)\n- cpu_x86: Refactor feature list comparison in x86DecodeUseCandidate (rhbz#2084030)\n- cpu_x86: Penalize disabled features when computing CPU model (rhbz#2084030)\n- cpu_x86: Ignore enabled features for input models in x86DecodeUseCandidate (rhbz#2084030)\n\n[8.0.0-5.1.el8]\n- conf: Introduce memory allocation threads (rhbz#2075569)\n- qemu_capabilities: Detect memory-backend-*.prealloc-threads property (rhbz#2075569)\n- qemu_validate: Validate prealloc threads against qemuCpas (rhbz#2075569)\n- qemu_command: Generate prealloc-threads property (rhbz#2075569)\n\nlibvirt-dbus\n[1.3.0-2.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[1.3.0]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[1.2.0-3]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[1.2.0-2]\n- util: fix virtDBusUtilDecodeUUID (rhbz#1647823)\n\n[1.2.0-1]\n- Rebased to libvirt-dbus-1.2.0 (rhbz#1630196)\n\n[1.0.0-1]\n- Rebase from Fedora\n\nlibvirt-python\n[8.0.0-1]\n- Rebased to libvirt-python-8.0.0 (rhbz#2012806)\n\n[7.10.0-1]\n- Rebased to libvirt-python-7.10.0 (rhbz#2012806)\n\n[7.9.0-1]\n- Rebased to libvirt-python-7.9.0 (rhbz#2012806)\n\n[7.8.0-1]\n- Rebased to libvirt-python-7.8.0 (rhbz#2012806)\n\n[7.6.0-1.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[6.0.0]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[4.5.0-2]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[4.5.0-1]\n- Rebased to libvirt-python-4.5.0\n\n[4.3.0-1]\n- Rebased to libvirt-python-4.3.0\n\n[4.1.0-1]\n- Update to 4.1.0 release\n\n[4.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[4.0.0-1]\n- Update to 4.0.0 release\n\n[3.10.0-1]\n- Update to 3.10.0 release\n\n[3.9.0-1]\n- Update to 3.9.0 release\n\n[3.8.0-1]\n- Update to 3.8.0 release\n\n[3.7.0-1]\n- Update to 3.7.0 release\n\n[3.6.0-2]\n- Rename sub-RPMs to python2-libvirt \u0026 python3-libvirt\n- Re-add py3 conditionals for benefit of RHEL/CentOS builds\n\n[3.6.0-1]\n- Update to 3.6.0 release\n- Always build py3 package\n\n[3.5.0-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[3.5.0-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[3.5.0-2]\n- Rebuild due to bug in RPM (RHBZ #1468476)\n\n[3.5.0-1]\n- Update to 3.5.0 release\n\n[3.4.0-1]\n- Update to 3.4.0 release\n\n[3.3.0-1]\n- Update to 3.3.0 release\n\n[3.2.0-1]\n- Update to 3.2.0 release\n\n[3.1.0-1]\n- Update to 3.1.0 release\n\n[3.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[3.0.0-1]\n- Update to 3.0.0 release\n\nnetcf\nperl-Sys-Virt\n[8.0.0-1]\n- Rebase to 8.0.0 release\n- Resolves: rhbz#2012813\n\n[7.10.0-1]\n- Rebase to 7.10.0 release\n- Resolves: rhbz#2012813\n\n[7.8.0-2]\n- Fix bug passing flags when creating NWFilterBinding\n- Resolves: rhbz#2029647\n\n[7.8.0-1]\n- Rebase to 7.8.0 release\n- Resolves: rhbz#2012813\n\n[7.4.0-1.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[6.0.0]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[4.5.0-5]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[4.5.0-4]\n- Fix typed parameter memory handling (rhbz #1602346)\n- Fix missing NWFilterBinding module (rhbz #1615841)\n\n[4.5.0-3]\n- Included BuildRequire: git to fix a building issue\n\n[4.5.0-2]\n- Fix typed parameter memory handling (rhbz#1602346)\n\n[4.5.0-1]\n- Update to 4.5.0 release\n\n[4.4.0-2]\n- Perl 5.28 rebuild\n\n[4.2.0-1]\n- Update to 4.2.0 release\n\n[4.1.0-1]\n- Update to 4.1.0 release\n\n[4.0.0-3]\n- Add build-require gcc\n\n[4.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[4.0.0-1]\n- Update to 4.0.0 release\n\n[3.9.1-1]\n- Update to 3.9.1 release\n\n[3.9.0-1]\n- Update to 3.9.0 release\n\n[3.8.0-1]\n- Update to 3.8.0 release\n\n[3.7.0-1]\n- Update to 3.7.0 release\n\n[3.5.0-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[3.5.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[3.5.0-1]\n- Update to 3.5.0 release\n\n[3.4.0-2]\n- Perl 5.26 rebuild\n\n[3.4.0-1]\n- Update to 3.4.0 release\n\n[3.3.0-1]\n- Update to 3.3.0 release\n\n[3.2.0-1]\n- Update to 3.2.0 release\n\n[3.1.0-1]\n- Update to 3.1.0 release\n\n[3.0.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[3.0.0-1]\n- Update to 3.0.0 release\n\n[2.5.0-1]\n- Update to 2.5.0 release\n\n[2.4.0-1]\n- Update to 2.4.0 release\n\n[2.3.0-1]\n- Update to 2.3.0 release\n\n[2.2.0-1]\n- Update to 2.2.0 release\n\n[2.1.0-1]\n- Update to 2.1.0 release\n\n[2.0.0-1]\n- Update to 2.0.0 release\n\n[1.3.5-1]\n- Update to 1.3.5 release\n\n[1.3.4-2]\n- Perl 5.24 rebuild\n\n[1.3.4-1]\n- Update to 1.3.4 release\n\n[1.3.3-1]\n- Update to 1.3.3 release\n\n[1.3.2-1]\n- Update to 1.3.2 release\n\n[1.3.1-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild\n\n[1.3.1-1]\n- Update to 1.3.1 release\n\nqemu-kvm\n[6.2.0-11.el8_6.2]\n- kvm-Revert-redhat-Add-some-devices-for-exporting-upstrea.patch [bz#2077928]\n- kvm-ui-cursor-fix-integer-overflow-in-cursor_alloc-CVE-2.patch [bz#2082622]\n- Resolves: bz#2077928\n  (Remove upstream-only devices from the qemu-kvm binary [rhel-8.6.0.z])\n- Resolves: bz#2082622\n  (CVE-2021-4206 virt:rhel/qemu-kvm: QEMU: QXL: integer overflow in cursor_alloc() can lead to heap buffer overflow [rhel-8.6.0.z])\n\n[6.2.0-11.el8_6.1]\n- kvm-RHEL-disable-seqpacket-for-vhost-vsock-device-in-rhe.patch [bz#2071103]\n- kvm-hw-intc-arm_gicv3-Check-for-MEMTX_OK-instead-of-MEMT.patch [bz#2075686]\n- kvm-softmmu-physmem-Simplify-flatview_write-and-address_.patch [bz#2075686]\n- kvm-softmmu-physmem-Introduce-MemTxAttrs-memory-field-an.patch [bz#2075686]\n- kvm-display-qxl-render-fix-race-condition-in-qxl_cursor-.patch [bz#2075683]\n- kvm-virtio-net-fix-map-leaking-on-error-during-receive.patch [bz#2075637]\n- kvm-vhost-vsock-detach-the-virqueue-element-in-case-of-e.patch [bz#2075639]\n- kvm-qcow2-Improve-refcount-structure-rebuilding.patch [bz#2072242]\n- kvm-iotests-108-Test-new-refcount-rebuild-algorithm.patch [bz#2072242]\n- kvm-qcow2-Add-errp-to-rebuild_refcount_structure.patch [bz#2072242]\n- kvm-iotests-108-Fix-when-missing-user_allow_other.patch [bz#2072242]\n- Resolves: bz#2071103\n  (RHEL 9.0 guest with vsock device migration failed from RHEL 9.0 \u003e RHEL 8.6 [rhel-8.6.0.z])\n- Resolves: bz#2075686\n  (CVE-2021-3750 virt:rhel/qemu-kvm: QEMU: hcd-ehci: DMA reentrancy issue leads to use-after-free [rhel-8] [rhel-8.6.0.z])\n- Resolves: bz#2075683\n  (CVE-2021-4207 virt:rhel/qemu-kvm: QEMU: QXL: double fetch in qxl_cursor() can lead to heap buffer overflow [rhel-8] [rhel-8.6.0.z])\n- Resolves: bz#2075637\n  (CVE-2022-26353 virt:rhel/qemu-kvm: QEMU: virtio-net: map leaking on error during receive [rhel-8] [rhel-8.6.0.z])\n- Resolves: bz#2075639\n  (CVE-2022-26354 virt:rhel/qemu-kvm: QEMU: vhost-vsock: missing virtqueue detach on error can lead to memory leak [rhel-8] [rhel-8.6.0.z])\n- Resolves: bz#2072242\n  (Fail to rebuild the reference count tables of qcow2 image on host block devices (e.g. LVs) [rhel-8.6.0.z])\n\nsgabios\nlibtpms\n[0.9.1-0.20211126git1ff6fe1f43]\n- Rebase to 0.9.1 (sync with RHEL9)\n  Resolves: rhbz#2029355\n\n[0.7.4-6.20201106git2452a24dab]\n- Fix CVE-2021-3746 libtpms: out-of-bounds access via specially crafted TPM 2 command packets\n  Resolves: rhbz#1999307\n\n[0.7.4-5.20201106git2452a24dab]\n- Fix CVE-2021-3623: out-of-bounds access when trying to resume the state of the vTPM\n  Fixes: rhbz#1976816\n\n[0.7.4-4.20201106git2452a24dab]\n- tpm2: CryptSym: fix AES output IV\n  Fixes: rhbz#1942904\n\n[0.7.4-3.20201106git2452a24dab]\n- Add git as build dependency\n  Related: rhbz#1858821\n\n[0.7.4-2.20201106git2452a24dab]\n- tpm2: Return properly sized array for b parameter for NIST P521 (HLK) #180\n  Fixes: rhbz#1858821\n\n[0.7.4-1.20201106git2452a24dab]\n- Follow stable-0.7.0 branch to v0.7.4 with security-related fixes.\n  Fixes: rhbz#1893444\n\n[0.7.3-1.20200818git1d392d466a]\n- Update to v0.7.3 stable, fixes rhbz#1868447\n- (includes 'tpm2: fix PCRBelongsTCBGroup for PCClient')\n\n[0.7.2-1.20200527git7325acb477]\n- Update to v0.7.2 stable snapshot, fixes rhbz#1809676\n- exclude i686 build\n- Following stable-0.7.0 branch for TPM 2 related fixes: RSA decryption,\n  PSS salt length, symmetric decryption (padding)\n- Under certain circumstances an RSA decryption could cause a buffer overflow causing\n  termination of the program (swtpm)\n- Following stable-0.7.0 branch for TPM 2 related fixes; v0.7.1 + gcc related patch\n- elliptic curve fixes\n- MANUFACTURER changed from 'IBM ' to 'IBM'\n- gcc 10 related fix\n- Following stable-0.7.0 branch for TPM 1.2 related bugfix\n\n[0.7.0-1.20191018gitdc116933b7]\n- RHEL8.1.1 update\n- Update to v0.7.0 stable snapshot\n\n[0.6.1-0.20190121git9dc915572b.2]\n- RHEL8.1 build\n\n[0.6.1-0.20190121git9dc915572b.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild\n\n[0.6.1-0.20190121git9dc915572b]\n- Libtpms was updated to rev. 150 of TPM 2.0 code\n- following branch stable-0.6.0\n\n[0.6.0-0.20181211gitba56737b93]\n- Following bugfixes in libtpms\n\n[0.6.0-0.20181031git0466fcf6a4]\n- Following improvements in libtpms\n\n* Tue Sep 18 2018 Stefan Berger \u003cstefanb@linux.vnet.ibm.com - 0.6.0-0.20180918gite8e8633089\n- Fixed changelog\n\n* Mon Sep 17 2018 Stefan Berger \u003cstefanb@linux.vnet.ibm.com - 0.6.0-0.20180917gite8e8633089\n- Build snapshot from git after libtpms fix.\n\n[0.6.0-0.20180914git4111bd1bcf]\n- Build snapshot from git, simplify spec\n\n[0.5.2-12]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild\n\n[0.5.2-11]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[0.5.2-10]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[0.5.2-9]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[0.5.2-8]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[0.5.2-7]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild\n\n[0.5.2-6]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild\n\n[0.5.2-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild\n\n* Sat Aug 16 2014 Stefan Berger - 0.5.2-3\n- do not include libtpms.la in rpm\n\n* Mon Jul 14 2014 Stefan Berger - 0.5.2-2\n- Added patches\n\n* Mon Jun 30 2014 Stefan Berger - 0.5.2-1\n- Updated to version 0.5.2\n- coverity fixes\n- fixes for ARM64 using __aarch64__\n\n[0.5.1-20.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild\n\n[0.5.1-19]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild\n\n* Mon Mar 25 2013 Stefan Berger - 0.5.1-18\n- Ran autoreconf for support of aarch64\n- Checking for __arm64__ in code\n\n[0.5.1-17]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild\n\n[0.5.1-16]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild\n\n[0.5.1-15]\n- Add dist tag as required by package guidelines\n\n* Fri Jan 27 2012 Stefan Berger - 0.5.1-14\n- fix gcc-4.7 compilation problem\n\n[0.5.1-13]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild\n\n[0.5.1-12]\n- fix build on secondary arches\n\n* Wed Nov 02 2011 Stefan Berger - 0.5.1-11\n- added (lib)gmp as runtime dependency\n\n* Sat Oct 08 2011 Stefan Berger - 0.5.1-10\n- internal fixes; callback fixes\n\n* Tue Aug 30 2011 Stefan Berger - 0.5.1-9\n- new directory structure and build process\n\n* Tue Jul 12 2011 Stefan Berger - 0.5.1-8\n- added pkgconfig as build dependency\n- enabling __powerpc__ build following Bz 728220\n\n* Wed May 25 2011 Stefan Berger - 0.5.1-7\n- increasing NVRAM area space to have enough room for certificates\n\n* Wed May 25 2011 Stefan Berger - 0.5.1-6\n- adding libtpms.pc pkg-config file\n\n* Wed Apr 13 2011 Stefan Berger - 0.5.1-5\n- adding BuildRequires for nss-softokn-freebl-static\n- several libtpms-internal changes around state serialization and\n  deserialization\n- fixes to libtpms makefile (makefile-libtpms)\n- adding build_type to generate a debug or production build\n- need nss-devel to have nss-config\n\n* Tue Mar 08 2011 Stefan Berger - 0.5.1-4\n- small fixes to libtpms makefile\n\n* Fri Feb 25 2011 Stefan Berger - 0.5.1-3\n- removing release from tar ball name\n- Use {?_smp_mflags} for make rather than hardcoding it\n- Fixing post and postun scripts; removing the scripts for devel package\n- Fixing usage of defattr\n- Adding version information into the changelog headers and spaces between the changelog entries\n- Adding LICENSE, README and CHANGELOG file into tar ball and main rpm\n- Removing clean section\n- removed command to clean the build root\n- adding library version to the libries required for building and during\n  runtime\n- Extended Requires in devel package with {?_isa}\n\n* Fri Feb 18 2011 Stefan Berger - 0.5.1-2\n- make rpmlint happy by replacing tabs with spaces\n- providing a valid URL for the tgz file\n- release is now 2 -\u003e 0.5.1-2\n\n* Mon Jan 17 2011 Stefan Berger - 0.5.1-1\n- Update version to 0.5.1\n\n* Fri Jan 14 2011 Stefan Berger - 0.5.0-1\n- Changes following Fedora review comments\n\n* Thu Dec 02 2010 Stefan Berger\n- Small tweaks after reading the FedoreCore packaging requirements\n\n* Tue Nov 16 2010 Stefan Berger\n- Created initial version of rpm spec files\n- Version of library is now 0.5.0\n- Debuginfo rpm is built but empty -- seems to be a known problem\n  Check https://bugzilla.redhat.com/show_bug.cgi?id=209316\n\nnbdkit\n[1.24.0-4]\n- Fix build on RHEL 8.6 with qemu \u003e= 6.1\n  resolves: rhbz#2045945\n\n[1.24.0-3]\n- Fix CVE-2021-3716 NBD_OPT_STRUCTURED_REPLY injection on STARTTLS\n  resolves: rhbz#1994915\n\n[1.24.0-2]\n- Fix data corruption in zero and trim on unaligned tail\n  resolves: rhbz#1990135\n\n[1.24.0-1.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[1.16.2]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[1.16.2]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[1.4.2-5]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[1.4.2-4]\n- Remove misguided LDFLAGS hack which removed server hardening.\n  https://bugzilla.redhat.com/show_bug.cgi?id=1624149#c6\n  resolves: rhbz#1624149\n\n[1.4.2-3]\n- Use platform-python\n  resolves: rhbz#1659159\n\n[1.4.2-2]\n- Add Enhanced Python error reporting\n  resolves: rhbz#1614750.\n- Use copy-patches.sh script.\n\n[1.4.2-1]\n- New stable version 1.4.2.\n\n[1.4.1-3]\n- Enable VDDK plugin on x86-64 only.\n\n[1.4.1-1]\n- New upstream version 1.4.1.\n- Small refactorings in the spec file.\n\n[1.4.0-1]\n- New upstream version 1.4.0.\n- New plugins: random, zero.\n- New bash tab completion subpackage.\n- Remove unused build dependencies.\n\n[1.2.4-3]\n- Add all upstream patches since 1.2.4 was released.\n\n[1.2.4-2]\n- Add all upstream patches since 1.2.4 was released.\n\n[1.2.4-2]\n- Disable plugins and filters that we do not want to ship in RHEL 8.\n\n[1.2.4-1]\n- New stable version 1.2.4.\n- Remove upstream patches.\n- Enable tarball signatures.\n- Add upstream patch to fix tests when guestfish not available.\n\n[1.2.3-1]\n- New stable version 1.2.3.\n- Add patch to work around libvirt problem with relative socket paths.\n- Add patch to fix the xz plugin test with recent guestfish.\n\n[1.2.2-1]\n- New stable version 1.2.2.\n\n[1.2.1-1]\n- New stable version 1.2.1.\n\n[1.2.0-1]\n- Move to stable branch version 1.2.0.\n\n[1.1.28-5]\n- Escape macros in %changelog\n\n[1.1.28-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[1.1.28-3]\n- Switch to %ldconfig_scriptlets\n\n[1.1.28-2]\n- Run a simplified test suite on all arches.\n\n[1.1.28-1]\n- New upstream version 1.1.28.\n- Add two new filters to nbdkit-basic-filters.\n\n[1.1.27-2]\n- Rebuilt for switch to libxcrypt\n\n[1.1.27-1]\n- New upstream version 1.1.27.\n- Add new subpackage nbdkit-basic-filters containing new filters.\n\n[1.1.26-2]\n- Rebuild against updated Ruby.\n\n[1.1.26-1]\n- New upstream version 1.1.26.\n- Add new pkg-config file and dependency.\n\n[1.1.25-1]\n- New upstream version 1.1.25.\n\n[1.1.24-1]\n- New upstream version 1.1.24.\n- Add tar plugin (new subpackage nbdkit-plugin-tar).\n\n[1.1.23-1]\n- New upstream version 1.1.23.\n- Add example4 plugin.\n- Python3 tests require libguestfs so disable on s390x.\n\n[1.1.22-1]\n- New upstream version 1.1.22.\n- Enable tests on Fedora.\n\n[1.1.20-1]\n- New upstream version 1.1.20.\n- Add nbdkit-split-plugin to basic plugins.\n\n[1.1.19-2]\n- OCaml 4.06.0 rebuild.\n\n[1.1.19-1]\n- New upstream version 1.1.19.\n- Combine all the simple plugins in %{name}-basic-plugins.\n- Add memory and null plugins.\n- Rename the example plugins subpackage.\n- Use %license instead of %doc for license file.\n- Remove patches now upstream.\n\n[1.1.18-4]\n- Fix Python 3 builds / RHEL macros (RHBZ#1404631).\n\n[1.1.18-3]\n- New upstream version 1.1.18.\n- Add NBD forwarding plugin.\n- Add libselinux-devel so that SELinux support is enabled in the daemon.\n- Apply all patches from upstream since 1.1.18.\n\n[1.1.16-2]\n- New upstream version 1.1.16.\n- Disable python3 plugin on RHEL/EPEL \u003c= 7.\n- Only ship on x86_64 in RHEL/EPEL \u003c= 7.\n\n[1.1.15-1]\n- New upstream version 1.1.15.\n- Enable TLS support.\n\n[1.1.14-1]\n- New upstream version 1.1.14.\n\n[1.1.13-1]\n- New upstream version 1.1.13.\n- Remove patches which are all upstream.\n- Remove grubby hack, should not be needed with modern supermin.\n\n[1.1.12-13]\n- Rebuild for OCaml 4.05.0.\n\n[1.1.12-12]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[1.1.12-11]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[1.1.12-10]\n- Rebuild for OCaml 4.04.2.\n\n[1.1.12-9]\n- Perl 5.26 rebuild\n\n[1.1.12-8]\n- Rebuild for OCaml 4.04.1.\n\n[1.1.12-7]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[1.1.12-6]\n- Rebuilt for https://fedoraproject.org/wiki/Changes/Ruby_2.4\n\n[1.1.12-5]\n- Rebuild for Python 3.6 update.\n\n[1.1.12-4]\n- Fix python3 subpackage so it really uses python3 (RHBZ#1404631).\n\n[1.1.12-3]\n- Rebuild for OCaml 4.04.0.\n\n[1.1.12-2]\n- Compile Python 2 and Python 3 versions of the plugin.\n\n[1.1.12-1]\n- New upstream version 1.1.12\n- Enable Ruby plugin.\n- Disable tests on Rawhide because libvirt is broken again (RHBZ#1344016).\n\n[1.1.11-10]\n- Add another upstream patch since 1.1.11.\n\n[1.1.11-9]\n- Add all patches upstream since 1.1.11 (fixes RHBZ#1336758).\n\n[1.1.11-7]\n- Perl 5.24 rebuild\n\n[1.1.11-6]\n- When tests fail, dump out test-suite.log so we can debug it.\n\n[1.1.11-5]\n- Don't run tests on x86, because kernel is broken there\n  (https://bugzilla.redhat.com/show_bug.cgi?id=1302071)\n\n[1.1.11-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild\n\n[1.1.11-3]\n- Add support for newstyle NBD protocol (RHBZ#1297100).\n\n[1.1.11-1]\n- New upstream version 1.1.11.\n\n[1.1.10-3]\n- OCaml 4.02.3 rebuild.\n\n[1.1.10-2]\n- Enable libguestfs plugin on aarch64.\n\n[1.1.10-1]\n- New upstream version.\n- Enable now working OCaml plugin (requires OCaml \u003e= 4.02.2).\n\n[1.1.9-6]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild\n\n[1.1.9-5]\n- Perl 5.22 rebuild\n\n[1.1.9-4]\n- Enable debugging messages when running make check.\n\n[1.1.9-3]\n- Perl 5.22 rebuild\n\n[1.1.9-2]\n- New upstream version 1.1.9.\n- Add the streaming plugin.\n- Include fix for streaming plugin in 1.1.9.\n\n[1.1.8-4]\n- Rebuild for updated Perl in Rawhide.\n- Workaround for broken libvirt (RHBZ#1138604).\n\n[1.1.8-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild\n\n[1.1.8-1]\n- New upstream version 1.1.8.\n- Add support for cURL, and new nbdkit-plugin-curl package.\n\n[1.1.7-1]\n- New upstream version 1.1.7.\n- Remove patches which are now all upstream.\n\n[1.1.6-5]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild\n\n[1.1.6-4]\n- libguestfs is available only on selected arches\n\n[1.1.6-3]\n- Backport some upstream patches, fixing a minor bug and adding more tests.\n- Enable the tests since kernel bug is fixed.\n\n[1.1.6-1]\n- New upstream version 1.1.6.\n\n[1.1.5-2]\n- New upstream version 1.1.5.\n- Enable the new Python plugin.\n- Perl plugin man page moved to section 3.\n- Perl now requires ExtUtils::Embed.\n\n[1.1.4-1]\n- New upstream version 1.1.4.\n- Enable the new Perl plugin.\n\n[1.1.3-1]\n- New upstream version 1.1.3 which fixes some test problems.\n- Disable tests because Rawhide kernel is broken (RHBZ#991808).\n- Remove a single quote from description which confused emacs.\n- Remove patch, now upstream.\n\n[1.1.2-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild\n\n[1.1.2-3]\n- Fix segfault when IPv6 client is used (RHBZ#986601).\n\n[1.1.2-2]\n- New development version 1.1.2.\n- Disable the tests on Fedora \u003c= 18.\n\n[1.1.1-1]\n- New development version 1.1.1.\n- Add libguestfs plugin.\n- Run the test suite.\n\n[1.0.0-4]\n- Initial release.\n\nseabios\n[1.15.0-2]\n- seabios-shortcut-skip-unbootable-disks-optimitation.patch [bz#1924972]\n- Resolves: bz#1924972\n  (Guest whose os is installed multiple disks but boot partition is installed on single disk can't boot into OS on RHEL 8)\n\n[1.15.0-1.el8]\n- Rebase to 1.15 (bz#2018392)\n- Resolves: bz#2018392\n\n[1.15.0-1.el8]\n- pci-reserve-resources-for-pcie-pci-bridge-to-fix-reg.patch [bz#2001921]\n- pci: let firmware reserve IO for pcie-pci-bridge.patch [bz#2001921]\n- Resolves: bz#2001921\n\n[1.14.0-1.el8]\n- Rebase to 1.14 (bz#1809772)\n- Resolves: bz#1809772\n  (rebase seabios for RHEL AV-8.3.0)\n\n[1.13.0-1.el8]\n- Rebase to 1.13 (bz#1793377)\n- Resolves: bz#1793377\n  (rebase seabios to 1.13)\n\n[1.12.0-5.el8]\n- seabios-add-get_keystroke_full-helper.patch [bz#1693031]\n- seabios-bootmenu-add-support-for-more-than-9-entries.patch [bz#1693031]\n- Resolves: bz#1693031\n  (On systems with more than 10 available boot devices, keys are uninintuitive)\n\n[1.12.0-4.el8]\n- seabios-tpm-Check-for-TPM-related-ACPI-tables-before-attempt.patch [bz#1705212]\n- seabios-usb-ehci-Clear-pipe-token-on-pipe-reallocate.patch [bz#1705212]\n- Resolves: bz#1705212\n  (Backport 1.12.1 patches to RHEL-AV 8.1.0)\n\n[1.12.0-3.el8]\n- seabios-rh-add-configs-for-ramfb-and-bochs-display.patch [bz#1724098]\n- Resolves: bz#1724098\n  (enable device: bochs-display (seabios))\n\n[1.12.0-1.el8]\n- Rebase to 1.12.0 [bz#1666134]\n- Resolves: bz#1666134\n  (Rebase seabios for RHEL-AV release in virt:8.0.0 stream)\n\n[1.11.1-3.el8]\n- Resolves: bz#1613465\n  (Fix seabios package)\n\n[1.11.1-2.el8]\n- Resolves: bz#1607349\n  (Serial Graphics Adapter show error seabios version)\n\n[1.11.1-1.el8]\n- Rebasing seabios 1.11.1\n\n[1.11.0-2.el8]\n- Syncronizing exploded tree with dist-git\n\n[1.11.0-1.el8]\n- Creating RHEL-8.0 initial branch based on 1.11.0\n- Resolves: bz#1515300\n- (Prepare seabios for RHEL-8.0)\n\n[1.11.0-1]\n- Rebased to version 1.11.0\n- Add three patches from RHEL\n\n[1.10.2-3]\n- Disable cross-compilation on RHEL\n\n[1.10.2-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[1.10.2-1]\n- Rebased to version 1.10.2\n\n[1.10.1-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[1.10.1-1]\n- Rebased to version 1.10.1\n\n[1.9.3-1]\n- Rebased to version 1.9.3\n\n[1.9.1-3]\n- Include MPT Fusion driver, in preparation for QEMU 2.6\n- Include XHCI and SD in 128k ROM, sacrifice bootsplash instead\n\n[1.9.1-1]\n- Rebased to version 1.9.1\n- Fix incorrect UUID format in boot output (bz #1284259)\n\n[1.9.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild\n\n[1.9.0-1]\n- Rebased to version 1.9.0\n\n[1.8.2-1]\n- Rebased to version 1.8.2\n\n[1.8.1-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild\n\n[1.8.1-1]\n- Rebased to version 1.8.1\n\n[1.8.0-1]\n- Rebased to version 1.8.0\n- Initial support for USB3 hubs\n- Initial support for SD cards (on QEMU only)\n- Initial support for transitioning to 32bit mode using SMIs (on QEMU TCG\n  only)\n- SeaVGABIOS improvements\n\n[1.7.5.1-1]\n- Update to seabios-1.7.5.1\n\n[1.7.5-3]\n- Fix PCI-e hotplug (bz #1115598)\n\n[1.7.5-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild\n\n[1.7.5-1]\n- Rebased to version 1.7.5\n- Support for obtaining SMBIOS tables directly from QEMU.\n- XHCI USB controller fixes for real hardware\n- seavgabios: New driver for 'coreboot native vga' support\n- seavgabios: Improved detection of x86emu versions with incorrect\n  emulation.\n- Several bug fixes and code cleanups\n\n[1.7.4-5]\n- Fix booting FreeBSD VMs in virt-manager\n\n[1.7.4-3]\n- Build 256k bios images for qemu 2.0\n\n[1.7.4-2]\n- Fix kvm migration with empty virtio-scsi controller (bz #1032208)\n\n[1.7.4-1]\n- Rebased to version 1.7.4\n- Support for obtaining ACPI tables directly from QEMU.\n- Initial support for XHCI USB controllers (initially for QEMU only).\n- Support for booting from 'pvscsi' devices on QEMU.\n- Enhanced floppy driver - improved support for real hardware.\n- coreboot cbmem console support.\n\n[1.7.3.2-1]\n- Update to 1.7.3.2 for qemu 1.7\n\n[1.7.3.1-3]\n- Fix pasto in CONFIG_DEBUG_LEVEL.\n\n[1.7.3.1-2]\n- Compile as all three of BIOS, CSM and CoreBoot payload.\n\n[1.7.3.1-1]\n- Rebased to version 1.7.3.1\n- Fix USB EHCI detection that was broken in hlist conversion of\n  PCIDevices.\n- Fix bug in CBFS file walking with compressed files.\n- acpi: sync FADT flags from PIIX4 to Q35\n\n[1.7.3-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild\n\n[1.7.3-2]\n- Install aml files for use by qemu\n\n[1.7.3-1]\n- Rebased to version 1.7.3\n- Initial support for using SeaBIOS as a UEFI CSM\n- Support for detecting and using ACPI reboot ports.\n- Non-standard floppy sizes now work again with recent QEMU versions.\n- Several bug fixes and code cleanups\n- Again fix vgabios obsoletes (bz #981147)\n\n[1.7.2.2-1]\n- Update to seabios stable 1.7.2.2\n- Obsolete vgabios (bz #967315)\n\n[1.7.2-1]\n- Rebased to version 1.7.2\n- Support for ICH9 host chipset ('q35') on emulators\n- Support for booting from LSI MegaRAID SAS controllers\n- Support for using the ACPI PM timer on emulators\n- Improved Geode VGA BIOS support.\n- Several bug fixes\n\n[1.7.1-4]\n- Root seabios package is noarch too because it only contains docs\n\n[1.7.1-3]\n- Add seavgabios subpackage\n\n[1.7.1-2]\n- Build with cross compiler.  Resolves: #866664.\n\n[1.7.1-1]\n- Rebased to version 1.7.1\n- Initial support for booting from USB attached scsi (USB UAS) drives\n- USB EHCI 64bit controller support\n- USB MSC multi-LUN device support\n- Support for booting from LSI SCSI controllers on emulators\n- Support for booting from AMD PCscsi controllers on emulators\n\n[1.7.0-4]\n- Modernise and tidy up the RPM.\n- Allow debug versions of SeaBIOS to be built easily.\n\n[1.7.0-3]\n- Enable S3/S4 support for guests (it's an F18 feature after all)\n\n[1.7.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild\n\n[1.7.0-1]\n- Rebased to version 1.7.0\n- Support for virtio-scsi\n- Improved USB drive support\n- Several USB controller bug fixes and improvements\n\n[1.6.3-2]\n- Fix bugs in booting from host (or redirected) USB pen drives\n\n[1.6.3-1]\n- Update to 1.6.3 upstream\n- Add virtio-scsi\n\n[0.6.2-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild\n\n[0.6.2-3]\n- Stop advertising S3 and S4 in DSDT (bz#741375)\n- incdule iasl buildreq\n\n[0.6.2-2]\n- Fix QXL bug in 0.6.2\n\n[0.6.2-1]\n- Update to 0.6.2 upstream for a number of bugfixes\n\n[0.6.1-1]\n- Update to 0.6.1 upstream for a number of bugfixes\n\n[0.6.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild\n\n[0.6.0-1]\n- Update seabios to latest stable so we can drop patches.\n\n[0.5.1-2]\n- Ugly hacks to make package noarch and available for arch that cannot build it.\n- Disable useless debuginfo\n\n[0.5.1-1]\n- Update to 0.5.1 stable release\n- Pick up patches required for current qemu\n\n[0.5.1-0.1.20100108git669c991]\n- Created initial package\n\nsupermin\n[5.2.1-1.el8]\n- Resolves: bz#2000225\n  (Rebase virt:rhel module:stream based on AV-8.6)\n\n[5.1.19]\n- Resolves: bz#1810193\n  (Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\n[5.1.19-9]\n- Rebuild all virt packages to fix RHEL's upgrade path\n- Resolves: rhbz#1695587\n  (Ensure modular RPM upgrade path)\n\n[5.1.19-8]\n- Pass CFLAGS \u0026 LDFLAGS to final supermin link\n  resolves: rhbz#1624175\n\n[5.1.19-7]\n- Rebuild for OCaml 4.07.0.\n\n[5.1.19-6]\n- Drop dietlibc in RHEL 8\n  resolves: rhbz#1588067\n\n[5.1.19-5]\n- Bump release and rebuild.\n\n[5.1.19-4]\n- Reenable hardened build\n\n[5.1.19-3]\n- Fix bytes/string problems.\n\n[5.1.19-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_28_Mass_Rebuild\n\n[5.1.19-1]\n- New upstream version 5.1.19.\n- Remove all patches, now upstream.\n\n[5.1.18-5]\n- Rebuilt for RPM soname bump\n\n[5.1.18-4]\n- Fix supermin crash with truncated vmlinuz file (RHBZ#1477758).\n- Include all upstream patches since 5.1.18.\n\n[5.1.18-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[5.1.18-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[5.1.18-1]\n- New upstream release 5.1.18.\n- Fixes problem with creating incorrect symlinks (RHBZ#1470157).\n\n[5.1.17-5]\n- Enable dietlibc on aarch64 and POWER.\n\n[5.1.17-4]\n- Drop dependency on hawkey and versioned dependencies on dnf.\n\n[5.1.17-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild\n\n[5.1.17-2]\n- Rebuild for OCaml 4.04.0.\n\n[5.1.17-1]\n- New upstream release 5.1.17.\n- Check signature on the tarball before unpacking it.\n- Remove patches, all upstream.\n\n[5.1.16-6]\n- Switch to dietlibc on s390x\n\n[5.1.16-5]\n- Do not break the binary on interpreted builds (#1375213)\n\n[5.1.16-4]\n- Add all upstream patches since 5.1.16 was released.\n\n[5.1.16-3]\n- Add upstream patch for DAX / vNVDIMM support.\n\n[5.1.16-2]\n- New upstream version 5.1.16.\n- Drop all patches since they are upstream.\n- Depend on systemd-udev to work around RHBZ#1331012.\n\n[5.1.15-2]\n- Add all upstream patches since 5.1.15 was released.\n- These should improve boot performance and initrd size.\n\n[5.1.15-1]\n- New upstream version 5.1.15.\n- Remove all patches, since they are now included in this version.\n- Enable dietlibc, remove glibc-static, xz-static, zlib-static.\n\n[5.1.14-4]\n- Add more patches since 5.1.14.\n\n[5.1.14-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild\n\n[5.1.14-2]\n- Add all patches since 5.1.14.\n\n[5.1.14-1]\n- New upstream version 5.1.14.\n- Remove all patches - now upstream.\n\n[5.1.13-4]\n- Pull in all upstream patches since 5.1.13.\n- Choose providers better (RHBZ#1266918).\n- Use autopatch.\n- Explicitly depend on pod2html.\n\n[5.1.13-3]\n- Bump version to rebuild against new RPM in Rawhide.\n\n[5.1.13-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild\n\n[5.1.13-1]\n- New upstream version 5.1.13.\n- Remove patch, now upstream.\n\n[5.1.12-11]\n- Prefer 'dnf download' over 'yumdownloader' (again).\n- BR grubby for the tests to work.\n\n[5.1.12-9]\n- Revert back to yumdownloader (RHBZ#1186948).\n\n[5.1.12-8]\n- Prefer 'dnf download' over 'yumdownloader'.\n\n[5.1.12-7]\n- Disable hardened build again.  See RHBZ#1202091 RHBZ#1204162.\n\n[5.1.12-6]\n- Enable hardening flags by building the static 'init' specially\n  before the main build.\n- Use _smp_mflags.\n\n[5.1.12-4]\n- Add a -devel subpackage containing automated RPM dependency generator\n  for supermin appliances.\n\n[5.1.12-2]\n- Disable hardened build as it breaks building the static 'init' binary.\n\n[5.1.12-1]\n- New upstream version 5.1.12.\n- Includes ARM fix: lpae kernels can now be booted (RHBZ#1199733).\n\n[5.1.11-2]\n- Rebuild for xz-5.2.0 in Rawhide (RHBZ#1179252).\n\n[5.1.11-1]\n- New upstream version 5.1.11.\n\n[5.1.10-2]\n- Update to upstream commit d78c898c7e2bc5f12cbebef98b95a7908d9120f1.\n- BR rpm-devel, since it is now used instead of invoking rpm.\n- BR automake and autoconf, and run autoreconf (configure.ac is modified by\n  the patches).\n\n[5.1.10-1]\n- New upstream version 5.1.10.\n- Remove patch which is now included upstream.\n\n[5.1.9-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_22_Mass_Rebuild\n\n[5.1.9-2]\n- Add upstream patch to avoid endless loop in Rawhide.\n\n[5.1.9-1]\n- New upstream version 5.1.9.\n- Remove patches which are now upstream.\n\n[5.1.8-9]\n- Add Requires findutils (RHBZ#1113029).\n\n[5.1.8-8]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild\n\n[5.1.8-7]\n- Add patch to fix RPM handler when filenames may contain spaces.\n\n[5.1.8-4]\n- Skip execstack test on Fedora 20 (ARM only).\n\n[5.1.8-3]\n- BR xz-static \u0026 xz-devel packages, to support xz-compressed kernel modules.\n\n[5.1.8-1]\n- New upstream version 5.1.8.\n- Remove patches which are now upstream.\n\n[5.1.7-3]\n- Add upstream patch which removes need to run execstack (RHBZ#1093261).\n\n[5.1.7-2]\n- Add patch to fix quoting around mke2fs parameter (RHBZ#1084960).\n\n[5.1.7-1]\n- New upstream version 5.1.7.\n- Remove ppc64p7 patch which is now upstream.\n\n[5.1.6-5]\n- Requires tar, which is not installed in an @Core installation.\n\n[5.1.6-4]\n- Add upstream patch to fix supermin on ppc64p7.\n\n[5.1.6-3]\n- New upstream version 5.1.6.\n- Fix tests.\n\n[5.1.5-2]\n- Disable execstack on aarch64.\n  It comes from prelink which does not exist on aarch64.\n\n[5.1.5-1]\n- New upstream version 5.1.5.\n\n[5.1.3-1]\n- New upstream version 5.1.3.\n\n[5.1.2-1]\n- New upstream version 5.1.2.\n- Fixes a serious bug in --build mode.\n\n[5.1.1-1]\n- New upstream version 5.1.1.\n- Remove patch which is now upstream.\n\n[5.1.0-3]\n- Add BR yum-utils (for yumdownloader).\n- Add upstream patch which stops duplicate packages appearing.\n\n[5.1.0-2]\n- New upstream version 5.1.0.\n- Note this is effectively a rewrite, and is not completely compatible.\n- There is no separate 'supermin-helper' subpackage any more.\n- Requires rpm instead of yum.\n\n[4.1.6-2]\n- New upstream version 4.1.6.\n- Should fix all autotools brokenness.\n- Man pages are now all in section 1.\n- Remove patch which is now upstream.\n- +BR /usr/bin/execstack (from prelink).\n\n[4.1.5-5]\n- Rerun autoreconf to fix autotools brokenness.\n\n[4.1.5-4]\n- Why was prelink required?  Remove it.\n\n[4.1.5-3]\n- correct Obsoletes version for febootstrap and febootstrap-supermin-helper\n\n[4.1.5-2]\n- (For ARM) Don't crash if SUPERMIN_DTB is set and --dtb not specified.\n\n[4.1.5-1]\n- New upstream version 4.1.5.\n- Has (optionally) a new command line syntax.\n- Supports device trees for ARM.\n\n[4.1.4-1]\n- New upstream version 4.1.4.\n- Supports compressed cpio image files, experimentally.\n\n[4.1.3-1]\n- New upstream version 4.1.3.\n- Remove patch which is now upstream.\n- Add examples directory to documentation.\n\n[4.1.2-2]\n- Include upstream patch to get correct directory setgid/sticky bits in\n  the appliance.\n\n[4.1.2-1]\n- New upstream version 4.1.2.\n- Remove patch which is now upstream.\n\n[4.1.1-2]\n- Add upstream patch to ignore ghost non-regular files.\n- This fixes builds on Fedora 20 because the filesystem package has\n  been changed so /var/lock and /var/run are marked as ghost.\n\n[4.1.1-1]\n- New upstream version 4.1.1.\n- The program has been renamed 'supermin' from 'febootstrap'.\n- Obsolete, but don't Provide because supermin is not a compatible replacement.\n- Use '_isa' to specify architecture of supermin-helper subpackage.\n\n[1:3.21-2]\n- Add upstream patch to drop supplemental groups (RHBZ#902476).\n- Remove 'Group:' RPM headers which are no longer necessary.\n- Remove some commented-out requirements.\n\n[1:3.21-1]\n- New upstream version 3.21.\n\n[1:3.20-1]\n- New upstream version 3.20.\n\n[1:3.19-2]\n- Work around brokenness in yum (RHBZ#850913).\n- Remove defattr, no longer required.\n\n[1:3.19-1]\n- New upstream version 3.19.\n\n[3.18-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild\n\n[3.18-1]\n- New upstream version 3.18.\n- This adds support for EPEL 5.\n\n[3.17-1]\n- New upstream version 3.17.\n\n[3.16-1]\n- New upstream version 3.16.\n\n[3.15-1]\n- New upstream version 3.15.\n- This version includes root=\u003cdevice\u003e support, needed for libguestfs\n  with virtio-scsi.\n- Remove upstream patch.\n\n[3.14-6]\n- For RHEL 7 only, add ExclusiveArch x86-64.\n\n[3.14-5]\n- Bundled gnulib (RHBZ#821752).\n\n[3.14-4]\n- Add back explicit dependencies for external programs.\n\n[3.14-3]\n- Drop ExclusiveArch as it's supported on all primary \u0026 secondary arches\n- Cleanup spec and deps\n\n[3.14-2]\n- New upstream version 3.14.\n- Add upstream patch to fix RHBZ#808421.\n\n[3.13-4]\n- e2fsprogs moved /sbin/mke2fs to /usr/sbin (thanks Eric Sandeen).\n\n[3.13-2]\n- Missing BR zlib-static.\n\n[3.13-1]\n- New upstream version 3.13.\n- Remove upstream patch which is included in this version.\n\n[3.12-5]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild\n\n[3.12-4]\n- Depend on latest e2fsprogs (RHBZ#771310).\n\n[3.12-2]\n- Include upstream patch to work around Python stupidity.\n\n[3.12-1]\n- New upstream version 3.12.\n- Remove upstream patch which is included in this version.\n\n[3.11-2]\n- Add upstream patch to fix febootstrap on non-Debian.\n\n[3.11-1]\n- New upstream version 3.11.\n\n[3.10-1]\n- New upstream version 3.10.\n\n[3.9-1]\n- New upstream version 3.9.\n\n[3.8-1]\n- New upstream version 3.8.\n\n[3.7-1]\n- New upstream version 3.7.\n\n[3.6-1]\n- New upstream version 3.6.\n- This version no longer needs external insmod.static.\n\n[3.5-1]\n- New upstream version 3.5.\n- Remove patch which is now upstream.\n\n[3.4-2]\n- Don't fail if objects are created in a symlinked dir (RHBZ#698089).\n\n[3.4-1]\n- New upstream version 3.4.\n- febootstrap-supermin-helper Obsoletes older versions of febootstrap.\n\n[3.3-5]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild\n\n[3.3-4]\n- Split package into febootstrap (for building) and febootstrap-supermin-helper\n  (for running).  Note that febootstrap depends on febootstrap-supermin-helper,\n  but you can install febootstrap-supermin-helper on its own.\n\n[3.3-3]\n- Clear executable stack flag on febootstrap-supermin-helper.\n\n[3.3-2]\n- add the ocaml's ExclusiveArch\n\n[3.3-1]\n- New upstream version 3.3.\n\n[3.2-1]\n- New upstream version 3.2.\n- Remove upstream patches.\n\n[3.1-5]\n- Previous fix for RHBZ#654638 didn't work, fix it correctly.\n\n[3.1-4]\n- Properly ignore .*.hmac files (accidental reopening of RHBZ#654638).\n\n[3.1-3]\n- Uses yumdownloader at runtime, so require yum-utils.\n\n[3.1-2]\n- New upstream version 3.1.\n- BR insmod.static.\n\n[3.0-2]\n- New upstream version 3.0 (note this is incompatible with 2.x).\n- Fix upstream URLs.\n- fakeroot, fakechroot no longer required.\n- insmod.static is required at runtime (missing dependency from earlier).\n- The only programs are 'febootstrap' and 'febootstrap-supermin-helper'.\n- BR ocaml, ocaml-findlib-devel.\n- No examples are provided with this version of febootstrap.\n\n[2.11-1]\n- New upstream version 2.11.\n- Fixes 'ext2fs_mkdir .. No free space in directory' bug which affects\n  libguestfs on rawhide.\n\n[2.10-1]\n- New upstream version 2.10.\n- Adds -u and -g options to febootstrap-supermin-helper which are\n  required by virt-v2v.\n\n[2.9-1]\n- New upstream version 2.9.\n- Fixes directory ordering problem in febootstrap-supermin-helper.\n\n[2.8-1]\n- New upstream version 2.8.\n\n[2.8-0.2]\n- New pre-release version of 2.8.\n  + Note this is based on 2.7 + mailing list patches.\n- New BRs on mke2fs, libext2fs, glibc-static.\n\n[2.7-2]\n- New upstream version 2.7.\n- febootstrap-supermin-helper shell script rewritten in C for speed.\n- This package contains C code so it is no longer 'noarch'.\n- MAKEDEV isn't required.\n\n[2.6-1]\n- New upstream release 2.6.\n- Recheck package in rpmlint.\n\n[2.5-2]\n- New upstream release 2.5.\n- Remove BR upx (not needed by upstream).\n- Two more scripts / manpages.\n\n[2.4-1]\n- New upstream release 2.4.\n\n[2.3-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild\n\n[2.3-1]\n- New upstream release 2.3.\n\n[2.2-1]\n- New upstream release 2.2.\n\n[2.0-1]\n- New upstream release 2.0.\n\n[1.9-1]\n- New upstream release 1.9.\n\n[1.8-1]\n- New upstream release 1.8.\n\n[1.7-1]\n- New upstream release 1.7.\n\n[1.5-3]\n- Configure script has (unnecessary) BuildRequires on fakeroot,\n  fakechroot, yum.\n\n[1.5-2]\n- Initial build for Fedora.\n\nswtpm\n[0.7.0-1.20211109gitb79fd91]\n- Rebase to 0.7.0, disable TPM 1.2.\n  Resovles: rhbz#2029612\n\n[0.6.0-2.20210607gitea627b3]\n- rebuilt with missing CFLAGS fix.\n\n[0.6.0-1.20210607gitea627b3]\n- Update to 0.6.0.\n  Resolves: rhbz#1972783\n\n[0.4.2-1.20201201git2df14e3]\n- Update to 0.4.2, to address potential symlink vulnerabilities (CVE-2020-28407).\n  Resolves: rhbz#1906043\n\n[0.4.0-3.20200828git0c238a2]\n- swtpm_setup: Add missing .config path when using /home/opc. Resolves: rhbz#1881418\n\n[0.4.0-2.20200828git0c238a2]\n- Backport fixes from 0.4.0 stable branch. Resolves: rhbz#1868375\n  (fixes usage of swtpm-localca with passwords when signing keys)\n\n[0.4.0-1.20200828git0c238a2]\n- Update to v0.4.0. Resolves: rhbz#1868375\n\n[0.3.0-1.20200218git74ae43b]\n- Update to v0.3.0. Fixes rhbz#1809778\n- exclude i686 build\n\n[0.2.0-2.20200127gitff5a83b]\n- Update to latest 0.2-stable branch, fix random test failure. rhbz#1782451\n\n[0.2.0-1.20191018git9227cf4]\n- rebuilt\n\n[0.1.0-1.20190425gitca85606.1]\n- Fix SELinux labels on /usr/bin/swtpm installation rhbz#1739994\n\n[0.1.0-0.20190425gitca85606]\n- pick up bug fixes\n\n[0.1.0-0.20190204git2c25d13.1]\n- v0.1.0 release of swtpm\n\n[0.1.0-0.20181212git8b9484a.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild\n\n[0.1.0-0.20181212git8b9484a]\n- Follow improvements in swtpm repo primarily related to fixes for 'ubsan'\n\n[0.1.0-0.20181106git05d8160]\n- Follow improvements in swtpm repo\n- Remove ownership change of swtpm_setup.sh; have root own the file as required\n\n[0.1.0-0.20181031gitc782a85]\n- Follow improvements and fixes in swtpm\n\n[0.1.0-0.20181002git0143c41]\n- Fixes to SELinux policy\n- Improvements on various other parts\n\n[0.1.0-0.20180924gitce13edf]\n- Initial Fedora build\n\n[0.1.0-0.20180918git67d7ea3]\n- Created initial version of rpm spec files\n- Version is now 0.1.0\n- Bugzilla for this spec: https://bugzilla.redhat.com/show_bug.cgi?id=1611829\n\nvirt-v2v\n[1:1.42.0-19.0.1]\n- replaced upstream references [Orabug:34095529]\n\n[1:1.42.0-19]\n- If listing RPM applications fails, rebuild DB and retry\n  resolves: rhbz#2093415",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-5821.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-5821.html",
       "ID": "ELSA-2022-5821"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-4206.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4206.html",
       "ID": "CVE-2021-4206"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-4207.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4207.html",
       "ID": "CVE-2021-4207"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-26353.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26353.html",
       "ID": "CVE-2022-26353"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-26354.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26354.html",
       "ID": "CVE-2022-26354"
     }
   ],
@@ -306,6 +306,66 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "libvirt-daemon-driver-qemu is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-qemu is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-gluster is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-gluster is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-rbd is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-rbd is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-kvm is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-kvm is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-lock-sanlock is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "lua-guestfs is earlier than 1:1.44.0-5.0.1.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
@@ -558,6 +618,126 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "qemu-guest-agent is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-guest-agent is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-img is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-img is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-curl is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-curl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-iscsi is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-iscsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-rbd is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-rbd is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-ssh is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-ssh is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-common is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-common is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-core is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-core is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-docs is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-docs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "ruby-libguestfs is earlier than 1:1.44.0-5.0.1.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
@@ -673,474 +853,6 @@
                   },
                   {
                     "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-client is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-client is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-config-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-config-network is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-config-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-config-nwfilter is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-interface is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-interface is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-network is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-nodedev is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-nodedev is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-nwfilter is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-qemu is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-qemu is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-secret is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-secret is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-core is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-core is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-disk is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-disk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-gluster is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-gluster is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi-direct is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi-direct is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-logical is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-logical is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-mpath is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-mpath is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-rbd is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-rbd is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-scsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-scsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-kvm is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-kvm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-devel is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-docs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-docs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-libs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-lock-sanlock is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-nss is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-nss is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-wireshark is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-wireshark is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-guest-agent is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-guest-agent is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-img is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-img is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-curl is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-curl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-iscsi is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-iscsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-rbd is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-rbd is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-ssh is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-ssh is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-common is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-core is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-core is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-docs is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-docs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
                     "Criterias": [
                       {
                         "Operator": "OR",
@@ -1214,6 +926,18 @@
                               },
                               {
                                 "Comment": "ocaml-libnbd-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1318,10 +1042,286 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "libvirt is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-client is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-client is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-config-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-config-network is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-config-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-config-nwfilter is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-interface is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-interface is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-network is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-nodedev is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-nodedev is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-nwfilter is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-secret is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-secret is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-core is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-core is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-disk is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-disk is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi-direct is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi-direct is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-logical is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-logical is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-mpath is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-mpath is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-scsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-scsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "libvirt-dbus is earlier than 0:1.3.0-2.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
                                 "Comment": "libvirt-dbus is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-devel is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-docs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-docs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-libs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-libs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-nss is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-nss is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-wireshark is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-wireshark is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1734,6 +1734,66 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "libvirt-daemon-driver-qemu is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-qemu is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-gluster is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-gluster is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-rbd is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-rbd is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-kvm is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-kvm is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-lock-sanlock is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "lua-guestfs is earlier than 1:1.44.0-5.0.1.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
@@ -1998,6 +2058,126 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "qemu-guest-agent is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-guest-agent is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-img is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-img is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-curl is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-curl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-iscsi is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-iscsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-rbd is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-rbd is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-block-ssh is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-block-ssh is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-common is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-common is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-core is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-core is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "qemu-kvm-docs is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-docs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "ruby-libguestfs is earlier than 1:1.44.0-5.0.1.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
@@ -2164,478 +2344,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libvirt is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-client is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-client is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-config-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-config-network is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-config-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-config-nwfilter is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-interface is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-interface is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-network is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-nodedev is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-nodedev is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-nwfilter is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-secret is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-secret is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-core is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-core is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-disk is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-disk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi-direct is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-iscsi-direct is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-logical is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-logical is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-mpath is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-mpath is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-scsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-scsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-devel is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-docs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-docs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-libs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-nss is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-nss is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-wireshark is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-wireshark is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-qemu is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-qemu is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-gluster is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-gluster is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-rbd is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-driver-storage-rbd is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-kvm is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-kvm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-lock-sanlock is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
-                      },
-                      {
-                        "Comment": "libvirt-lock-sanlock is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-guest-agent is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-guest-agent is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-img is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-img is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-curl is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-curl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qemu-kvm-block-gluster is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
                       },
                       {
                         "Comment": "qemu-kvm-block-gluster is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-iscsi is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-iscsi is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-rbd is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-rbd is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-block-ssh is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-block-ssh is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-common is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-core is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-core is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qemu-kvm-docs is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
-                      },
-                      {
-                        "Comment": "qemu-kvm-docs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2830,10 +2542,286 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "libvirt is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-client is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-client is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-config-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-config-network is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-config-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-config-nwfilter is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-interface is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-interface is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-network is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-network is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-nodedev is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-nodedev is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-nwfilter is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-nwfilter is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-secret is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-secret is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-core is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-core is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-disk is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-disk is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi-direct is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-iscsi-direct is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-logical is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-logical is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-mpath is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-mpath is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-scsi is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-daemon-driver-storage-scsi is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "libvirt-dbus is earlier than 0:1.3.0-2.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
                                 "Comment": "libvirt-dbus is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-devel is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-docs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-docs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-libs is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-libs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-nss is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-nss is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "libvirt-wireshark is earlier than 0:8.0.0-5.2.0.1.module+el8.6.0+20722+b0f1ae3c"
+                              },
+                              {
+                                "Comment": "libvirt-wireshark is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -3022,6 +3010,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "qemu-kvm-tests is earlier than 15:6.2.0-11.module+el8.6.0+20722+b0f1ae3c.2"
+                              },
+                              {
+                                "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "ruby-hivex is earlier than 0:1.3.18-23.module+el8.6.0+20659+3dcf7c70"
                               },
                               {
@@ -3075,26 +3075,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-4206.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4206.html",
       "ID": "CVE-2021-4206"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-4207.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4207.html",
       "ID": "CVE-2021-4207"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-26353.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26353.html",
       "ID": "CVE-2022-26353"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-26354.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26354.html",
       "ID": "CVE-2022-26354"
     }
   ],
   "Issued": {
-    "Date": "2022-08-05"
+    "Date": "2022-08-04"
   }
 }

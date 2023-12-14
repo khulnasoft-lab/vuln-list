@@ -1,24 +1,24 @@
 {
   "Title": "ELSA-2022-6765:  bind security update (IMPORTANT)",
-  "Description": "[32:9.11.4-26.P2.10]\n- Fix memory leak in ECDSA verify processing (CVE-2022-38177)\n- Fix memory leak in EdDSA verify processing (CVE-2022-38178)",
+  "Description": "[32:9.11.4-26.P2.10]\n- Fix memory leak in ECDSA verify processing (CVE-2022-38177)\n- Fix memory leak in EdDSA verify processing (CVE-2022-38178)\n\n[32:9.11.4-26.P2.9]\n- Fix possible assertion failure isc_refcount_current == 0 in free_rbtdb\n  (#1935152)\n\n[32:9.11.4-26.P2.8]\n- Prevent a race after zone load (#2011220)\n\n[32:9.11.4-26.P2.7]\n- Apply again patch 172, got removed by mistake\n\n[32:9.11.4-26.P2.6]\n- Insufficient IXFR checks could lead to assertion failure (CVE-2021-25214)\n\n[32:9.11.4-26.P2.5]\n- Possible assertion failure on DNAME processing (CVE-2021-25215)\n\n[32:9.11.4-26.P2.4]\n- Fix off-by-one bug in ISC SPNEGO implementation (CVE-2020-8625)\n\n[32:9.11.4-26.P2.3]\n- Fix inline re-signing (#rh1889902)\n\n[32:9.11.4-26.P2.2]\n- Fix unsupported algorithms validation (#rh1769876)\n\n[32:9.11.4-26.P2.1]\n- Fix tsig-request verify (CVE-2020-8622)\n- Prevent PKCS11 daemon crash on crafted packet (CVE-2020-8623)\n- Correct update-policy type subdomain to match documentation (CVE-2020-8624)",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2022-6765.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-6765.html",
       "ID": "ELSA-2022-6765"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-38177.html",
-      "ID": "CVE-2022-38177"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38178.html",
+      "ID": "CVE-2022-38178"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-38178.html",
-      "ID": "CVE-2022-38178"
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38177.html",
+      "ID": "CVE-2022-38177"
     }
   ],
   "Criteria": {
@@ -246,6 +246,78 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-export-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-sdb is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-sdb is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-sdb-chroot is earlier than 32:9.11.4-26.P2.el7_9.10"
+                      },
+                      {
+                        "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind is earlier than 32:9.11.4-26.P2.el7_9.10"
                       },
                       {
@@ -360,78 +432,6 @@
                         "Comment": "bind-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-export-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-sdb is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-sdb is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-sdb-chroot is earlier than 32:9.11.4-26.P2.el7_9.10"
-                      },
-                      {
-                        "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -457,13 +457,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-38177.html",
-      "ID": "CVE-2022-38177"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38178.html",
+      "ID": "CVE-2022-38178"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-38178.html",
-      "ID": "CVE-2022-38178"
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38177.html",
+      "ID": "CVE-2022-38177"
     }
   ],
   "Issued": {

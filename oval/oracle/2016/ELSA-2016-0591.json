@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2016-0591.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0591.html",
       "ID": "ELSA-2016-0591"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1978.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1978.html",
       "ID": "CVE-2016-1978"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2016-1979.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-1979.html",
       "ID": "CVE-2016-1979"
     }
   ],
@@ -162,6 +162,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nss is earlier than 0:3.21.0-0.3.0.1.el6_7"
+                      },
+                      {
+                        "Comment": "nss is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-sysinit is earlier than 0:3.21.0-0.3.0.1.el6_7"
+                      },
+                      {
+                        "Comment": "nss-sysinit is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-tools is earlier than 0:3.21.0-0.3.0.1.el6_7"
+                      },
+                      {
+                        "Comment": "nss-tools is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is sparc64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "nspr is earlier than 0:4.11.0-0.1.el6_7"
                       },
                       {
@@ -274,58 +326,6 @@
                 "Comment": "Oracle Linux arch is i686"
               }
             ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss is earlier than 0:3.21.0-0.3.0.1.el6_7"
-                      },
-                      {
-                        "Comment": "nss is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-sysinit is earlier than 0:3.21.0-0.3.0.1.el6_7"
-                      },
-                      {
-                        "Comment": "nss-sysinit is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-tools is earlier than 0:3.21.0-0.3.0.1.el6_7"
-                      },
-                      {
-                        "Comment": "nss-tools is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
-              }
-            ]
           }
         ],
         "Criterions": null
@@ -341,12 +341,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1978.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1978.html",
       "ID": "CVE-2016-1978"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2016-1979.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-1979.html",
       "ID": "CVE-2016-1979"
     }
   ],

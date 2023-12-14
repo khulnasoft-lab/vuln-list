@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux.oracle.com/errata/ELSA-2020-0984.html",
+      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-0984.html",
       "ID": "ELSA-2020-0984"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-5208.html",
+      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-5208.html",
       "ID": "CVE-2020-5208"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ipmitool is earlier than 0:1.8.18-9.el7_7"
+                      },
+                      {
+                        "Comment": "ipmitool is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -49,18 +61,6 @@
                       },
                       {
                         "Comment": "exchange-bmc-os-info is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ipmitool is earlier than 0:1.8.18-9.el7_7"
-                      },
-                      {
-                        "Comment": "ipmitool is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-5208.html",
+      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-5208.html",
       "ID": "CVE-2020-5208"
     }
   ],
   "Issued": {
-    "Date": "2020-03-27"
+    "Date": "2020-03-26"
   }
 }
