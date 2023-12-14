@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4011.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4011.html",
       "ID": "ELSA-2020-4011"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-5094.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-5094.html",
       "ID": "CVE-2019-5094"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-5188.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-5188.html",
       "ID": "CVE-2019-5188"
     }
   ],
@@ -30,30 +30,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "e2fsprogs-static is earlier than 0:1.42.9-19.el7"
-                  },
-                  {
-                    "Comment": "e2fsprogs-static is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libss-devel is earlier than 0:1.42.9-19.el7"
-                  },
-                  {
-                    "Comment": "libss-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -95,6 +71,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "e2fsprogs-static is earlier than 0:1.42.9-19.el7"
+                  },
+                  {
+                    "Comment": "e2fsprogs-static is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "libcom_err is earlier than 0:1.42.9-19.el7"
                   },
                   {
@@ -125,6 +113,18 @@
                     "Comment": "libss is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libss-devel is earlier than 0:1.42.9-19.el7"
+                  },
+                  {
+                    "Comment": "libss-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -147,12 +147,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-5094.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-5094.html",
       "ID": "CVE-2019-5094"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-5188.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-5188.html",
       "ID": "CVE-2019-5188"
     }
   ],

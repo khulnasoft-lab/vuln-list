@@ -1,39 +1,39 @@
 {
   "Title": "ELSA-2022-2137:  java-1.8.0-openjdk security update (IMPORTANT)",
-  "Description": "[1:1.8.0.332.b09-1]\n- Update to shenandoah-jdk8u332-b09 (GA)\n- Update release notes for 8u332-b09.\n- Resolves: rhbz#2074649\n\n[1:1.8.0.322.b06-9]\n- Remove 'java --version' test as this is not supported on java-1.8.0-openjdk\n- Resolves: rhbz#2058487\n\n[1:1.8.0.322.b06-8]\n- Add JDK-8275535 patch to fix LDAP authentication issue.\n- Resolves: rhbz#2053525\n\n[1:1.8.0.322.b06-7]\n- Detect NSS at runtime for FIPS detection\n- Turn off build-time NSS linking and go back to an explicit Requires on NSS\n- Resolves: rhbz#2052833\n\n[1:1.8.0.322.b06-6]\n- Storing and restoring alternatives during update manually\n- Family extracted to globals\n- Fixing Bug 2001567 - update of JDK/JRE is removing its manually selected alterantives and select (as auto) system JDK/JRE\n-- The move of alternatives creation to posttrans to fix:\n-- Bug 1200302 - dnf reinstall breaks alternatives\n-- Had caused the alternatives to be removed, and then created again,\n-- instead of being added, and then removing the old, and thus persisting\n-- the selection in family\n-- Thus this fix, is storing the family of manually selected master, and if\n-- stored, then it is restoring the family of the master\n- Resolves: rhbz#2008202\n\n[1:1.8.0.322.b06-5]\n- Introduce tests/tests.yml, based on the one in RHEL 8\n- Resolves: rhbz#2058487\n\n[1:1.8.0.322.b06-4]\n- Separate crypto policy initialisation from FIPS initialisation, now they are no longer interdependent\n- Resolves: rhbz#2052821\n\n[1:1.8.0.322.b06-3]\n- Fix FIPS issues in native code and with initialisation of java.security.Security\n- Resolves: rhbz#2023387\n\n[1:1.8.0.322.b06-2]\n- Refactor build functions so we can build just HotSpot without any attempt at installation.\n- Introduce architecture restriction logic for the gdb test. (RH2041970)\n- Replace GCC 11 patch to remove use of the register keyword with correct fix to ADLC build (JDK-8281098)\n- Adjust JDK8199936/PR3533 -mstackrealign patch to instead pass -mincoming-stack-boundary=2 -mpreferred-stack-boundary=4\n- Explicitly list JIT architectures rather than relying on those with slowdebug builds\n- Disable the serviceability agent on Zero architectures even when the architecture itself is supported\n- Add backport of JDK-8257794 to fix bogus assert on slowdebug x86-32 Zero builds\n- Related: rhbz#2022823\n\n[1:1.8.0.322.b06-1]\n- Update to aarch64-shenandoah-jdk8u322-b06 (GA)\n- Update release notes for 8u322-b06.\n- Switch to GA mode for final release.\n- Resolves: rhbz#2039398\n\n[1:1.8.0.322.b05-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u322-b05 (EA)\n- Update release notes for 8u322-b05.\n- Switch to EA mode.\n- Require tzdata 2021c as of JDK-8274407.\n- Require tzdata 2021e as of JDK-8275766.\n- Update tarball generation script to use git following shenandoah-jdk8u's move to github\n- Resolves: rhbz#2022823\n\n[1:1.8.0.312.b07-3]\n- Turn off bootstrapping for slow debug builds, which are particularly slow on ppc64le.\n- Related: rhbz#2022823\n\n[1:1.8.0.312.b07-2]\n- Use 'sql:' prefix in nss.fips.cfg as F35+ no longer ship the legacy\n  secmod.db file as part of nss\n- Resolves: rhbz#2023533\n\n[1:1.8.0.312.b07-1]\n- Update to aarch64-shenandoah-jdk8u312-b07 (GA)\n- Update release notes for 8u312-b07.\n- Switch to GA mode for final release.\n- Resolves: rhbz#2013844\n\n[1:1.8.0.312.b05-0.3.ea]\n- alternatives creation moved to posttrans\n- Thus fixing the old reisntall issue:\n- https://bugzilla.redhat.com/show_bug.cgi?id=1200302\n- https://bugzilla.redhat.com/show_bug.cgi?id=1976053\n- Resolves: rhbz#2008202\n\n[1:1.8.0.312.b05-0.2.ea]\n- Allow plain key import to be disabled with -Dcom.redhat.fips.plainKeySupport=false\n- Resolves: rhbz#1994676\n\n[1:1.8.0.312.b05-0.2.ea]\n- Add patch to allow plain key import.\n- Resolves: rhbz#1994676\n\n[1:1.8.0.312.b05-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u312-b05 (EA)\n- Update release notes for 8u312-b05.\n- Resolves: rhbz#1999939\n\n[1:1.8.0.312.b04-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u312-b04 (EA)\n- Update release notes for 8u312-b04.\n- Related: rhbz#1999939\n\n[1:1.8.0.312.b03-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u312-b03 (EA)\n- Update release notes for 8u312-b03.\n- Related: rhbz#1999939\n\n[1:1.8.0.312.b02-0.2.ea]\n- Reduce disk footprint by removing build artifacts by default.\n- Related: rhbz#1999939\n\n[1:1.8.0.312.b02-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u312-b02 (EA)\n- Update release notes for 8u312-b02.\n- Related: rhbz#1999939\n\n[1:1.8.0.312.b01-0.1.ea]\n- Update to aarch64-shenandoah-jdk8u312-b01 (EA)\n- Update release notes for 8u312-b01.\n- Switch to EA mode.\n- Remove '-clean' suffix as no 8u312 builds are unclean.\n- Related: rhbz#1999939\n\n[1:1.8.0.302.b08-3]\n- Add patch to login to the NSS software token when in FIPS mode.\n- Resolves: rhbz#1997363\n\n[1:1.8.0.302.b08-2]\n- Port FIPS system detection support to OpenJDK 8u\n- Minor code cleanups on FIPS detection patch and check for SECMOD_GetSystemFIPSEnabled in configure.\n- Remove unneeded Requires on NSS as it will now be dynamically linked and detected by RPM.\n- Resolves: rhbz#1971696\n\n[1:1.8.0.302.b08-2]\n- Detect FIPS using SECMOD_GetSystemFIPSEnabled in the new libsystemconf JDK library.\n- Resolves: rhbz#1971696\n\n[1:1.8.0.302.b08-1]\n- Rebuild for libffi transition (#1891914)\n\n[1:1.8.0.302.b08-0.1]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[1:1.8.0.302.b08-0]\n- Update to aarch64-shenandoah-jdk8u302-b08 (GA)\n- Update release notes for 8u302-b08.\n- Switch to GA mode for final release.\n- Remove non-Free test and demo files from source tarball.\n- Resolves: rhbz#1967813\n\n[1:1.8.0.302.b07-0.0.ea]\n- Update to aarch64-shenandoah-jdk8u302-b07 (EA)\n- Update release notes for 8u302-b07.\n- Switch to EA mode.\n- Use the 'reverse' build loop (debug first) as the main and only build loop to get more diagnostics.\n- Resolves: rhbz#1967813\n\n[1:1.8.0.292.b10-4]\n- Backport FIPS mode patch (RH1655466) to java-1.8.0-openjdk, simplifying provider removal.\n- nss.fips.cfg needs to be moved to %{etcjavadir} and symlinked into the JDK, like nss.cfg\n- SunPKCS11 runtime provider name is a concatenation of 'SunPKCS11-' and the name in the config file.\n- Change nss.fips.cfg config name to 'NSS-FIPS' to avoid confusion with nss.cfg.\n- Disable FIPS mode support unless com.redhat.fips is set to 'true'.\n- Add JDK-8195607/PR3776 to support NSS SQLite databases.\n- Enable alignment with FIPS crypto policy by default (-Dcom.redhat.fips=false to disable).\n- Move setup of JavaSecuritySystemConfiguratorAccess to Security class so it always occurs (RH1906862)\n- Add explicit runtime dependency on NSS for the PKCS11 provider in FIPS mode\n- Resolves: rhbz#1971696\n\n[1:1.8.0.292.b10-4]\n- Support the FIPS mode crypto policy on RHEL 8 (RH1655466)\n- Use appropriate keystore types when in FIPS mode (RH1760838)\n- Disable TLSv1.3 when using the NSS-FIPS provider (RH1860986)\n- Resolves: rhbz#1971696\n\n[1:1.8.0.292.b10-3]\n- Remove OpenJFX support as OpenJFX is not in RHEL.\n- Resolves: rhbz#1973522\n\n[1:1.8.0.292.b10-2]\n- Removed cjc backward compatiblity, to fix when both rpm 4.16 and 4.17 are in transaction\n- Resolves: rhbz#1967813\n\n[1:1.8.0.292.b10-1]\n- Adapted to newst cjc to fix issue with rpm 4.17\n- Resolves: rhbz#1967813",
+  "Description": "[1:1.8.0.332.b09-1]\n- Update to shenandoah-jdk8u332-b09 (GA)\n- Update release notes for 8u332-b09.\n- Resolves: rhbz#2074649",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-2137.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-2137.html",
       "ID": "ELSA-2022-2137"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21426.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21426.html",
       "ID": "CVE-2022-21426"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21443.html",
-      "ID": "CVE-2022-21443"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21434.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21434.html",
       "ID": "CVE-2022-21434"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21476.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21476.html",
       "ID": "CVE-2022-21476"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21496.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21496.html",
       "ID": "CVE-2022-21496"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21443.html",
+      "ID": "CVE-2022-21443"
     }
   ],
   "Criteria": {
@@ -496,31 +496,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21426.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21426.html",
       "ID": "CVE-2022-21426"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21443.html",
-      "ID": "CVE-2022-21443"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21434.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21434.html",
       "ID": "CVE-2022-21434"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21476.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21476.html",
       "ID": "CVE-2022-21476"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21496.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21496.html",
       "ID": "CVE-2022-21496"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21443.html",
+      "ID": "CVE-2022-21443"
     }
   ],
   "Issued": {
-    "Date": "2022-06-29"
+    "Date": "2022-06-30"
   }
 }

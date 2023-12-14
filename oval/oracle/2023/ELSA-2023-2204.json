@@ -7,33 +7,33 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2204.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2204.html",
       "ID": "ELSA-2023-2204"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2879.html",
-      "ID": "CVE-2022-2879"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2880.html",
-      "ID": "CVE-2022-2880"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-27664.html",
-      "ID": "CVE-2022-27664"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-41715.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-41715.html",
       "ID": "CVE-2022-41715"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-41717.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-27664.html",
+      "ID": "CVE-2022-27664"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-41717.html",
       "ID": "CVE-2022-41717"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2879.html",
+      "ID": "CVE-2022-2879"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2880.html",
+      "ID": "CVE-2022-2880"
     }
   ],
   "Criteria": {
@@ -53,10 +53,70 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "cockpit-composer is earlier than 0:45-1.0.1.el9_2"
+                      },
+                      {
+                        "Comment": "cockpit-composer is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "osbuild is earlier than 0:81-1.el9"
                       },
                       {
                         "Comment": "osbuild is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "osbuild-composer is earlier than 0:76-2.el9_2"
+                      },
+                      {
+                        "Comment": "osbuild-composer is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "osbuild-composer-core is earlier than 0:76-2.el9_2"
+                      },
+                      {
+                        "Comment": "osbuild-composer-core is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "osbuild-composer-dnf-json is earlier than 0:76-2.el9_2"
+                      },
+                      {
+                        "Comment": "osbuild-composer-dnf-json is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "osbuild-composer-worker is earlier than 0:76-2.el9_2"
+                      },
+                      {
+                        "Comment": "osbuild-composer-worker is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -129,66 +189,6 @@
                       },
                       {
                         "Comment": "weldr-client is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cockpit-composer is earlier than 0:45-1.0.1.el9_2"
-                      },
-                      {
-                        "Comment": "cockpit-composer is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "osbuild-composer is earlier than 0:76-2.el9_2"
-                      },
-                      {
-                        "Comment": "osbuild-composer is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "osbuild-composer-core is earlier than 0:76-2.el9_2"
-                      },
-                      {
-                        "Comment": "osbuild-composer-core is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "osbuild-composer-dnf-json is earlier than 0:76-2.el9_2"
-                      },
-                      {
-                        "Comment": "osbuild-composer-dnf-json is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "osbuild-composer-worker is earlier than 0:76-2.el9_2"
-                      },
-                      {
-                        "Comment": "osbuild-composer-worker is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -376,31 +376,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2879.html",
-      "ID": "CVE-2022-2879"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2880.html",
-      "ID": "CVE-2022-2880"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-27664.html",
-      "ID": "CVE-2022-27664"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-41715.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-41715.html",
       "ID": "CVE-2022-41715"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-41717.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-27664.html",
+      "ID": "CVE-2022-27664"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-41717.html",
       "ID": "CVE-2022-41717"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2879.html",
+      "ID": "CVE-2022-2879"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2880.html",
+      "ID": "CVE-2022-2880"
     }
   ],
   "Issued": {
-    "Date": "2023-05-12"
+    "Date": "2023-05-15"
   }
 }

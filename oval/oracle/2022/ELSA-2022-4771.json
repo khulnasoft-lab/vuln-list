@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4771:  postgresql security update (IMPORTANT)",
-  "Description": "[13.7-1]\n- Resolves: CVE-2022-1552\n- Update to 13.7\n- Release notes: https://www.postgresql.org/docs/release/13.7/\n\n[13.5-1]\n- Update to 13.5 (#2023301)\n  Remove patch postgresql-pgcrypto-openssl3-init.patch - Already in upstream\n\n[13.3-11]\n- Update postgresql-setup to 8.6 (#2027278)\n\n[13.3-10]\n- Release bum due to gating configuration\n\n[13.3-9]\n- Remove tests failing with openssl3, now pgp is tested only with\n  supported ciphers\n  Add postgresql-pgcrypto-openssl3-init.patch - Correctly init ciphers\n  Add postgresql-pgcrypto-openssl3-tests.patch - disable unsupported\n  ciphers in the test suite\n  Related discussion: #2008773\n  Resolves: #1964848\n\n* Tue Aug 10 2021 Mohan Boddu \u003cmboddu@redhat.com\u003e\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[13.3-7]\n- Rebuild to pick up new build flags from redhat-rpm-config (#1984652)\n\n[13.3-6]\n- Do not provide pkgconfig(libpq) to not trick packages that actually require\n  libpq-devel\n  Resolves: #1980992\n\n[13.3-5]\n- Add explicit conflict between private-devel and libpq-devel\n\n[13.3-4]\n- Fix multilib header files path\n  Resolves: #1984374\n\n[13.3-3]",
+  "Description": "[13.7-1]\n- Resolves: CVE-2022-1552\n- Update to 13.7\n- Release notes: https://www.postgresql.org/docs/release/13.7/",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4771.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-4771.html",
       "ID": "ELSA-2022-4771"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-1552.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-1552.html",
       "ID": "CVE-2022-1552"
     }
   ],
@@ -28,6 +28,42 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "postgresql-private-devel is earlier than 0:13.7-1.el9_0"
+                      },
+                      {
+                        "Comment": "postgresql-private-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "postgresql-server-devel is earlier than 0:13.7-1.el9_0"
+                      },
+                      {
+                        "Comment": "postgresql-server-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "postgresql-test is earlier than 0:13.7-1.el9_0"
+                      },
+                      {
+                        "Comment": "postgresql-test is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -93,18 +129,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "postgresql-private-devel is earlier than 0:13.7-1.el9_0"
-                      },
-                      {
-                        "Comment": "postgresql-private-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "postgresql-private-libs is earlier than 0:13.7-1.el9_0"
                       },
                       {
@@ -121,30 +145,6 @@
                       },
                       {
                         "Comment": "postgresql-server is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "postgresql-server-devel is earlier than 0:13.7-1.el9_0"
-                      },
-                      {
-                        "Comment": "postgresql-server-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "postgresql-test is earlier than 0:13.7-1.el9_0"
-                      },
-                      {
-                        "Comment": "postgresql-test is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -241,18 +241,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "postgresql-private-devel is earlier than 0:13.7-1.el9_0"
-                      },
-                      {
-                        "Comment": "postgresql-private-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "postgresql-private-libs is earlier than 0:13.7-1.el9_0"
                       },
                       {
@@ -277,6 +265,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "postgresql-upgrade is earlier than 0:13.7-1.el9_0"
+                      },
+                      {
+                        "Comment": "postgresql-upgrade is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "postgresql-private-devel is earlier than 0:13.7-1.el9_0"
+                      },
+                      {
+                        "Comment": "postgresql-private-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "postgresql-server-devel is earlier than 0:13.7-1.el9_0"
                       },
                       {
@@ -293,18 +305,6 @@
                       },
                       {
                         "Comment": "postgresql-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "postgresql-upgrade is earlier than 0:13.7-1.el9_0"
-                      },
-                      {
-                        "Comment": "postgresql-upgrade is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -332,11 +332,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-1552.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-1552.html",
       "ID": "CVE-2022-1552"
     }
   ],
   "Issued": {
-    "Date": "2022-06-29"
+    "Date": "2022-06-30"
   }
 }

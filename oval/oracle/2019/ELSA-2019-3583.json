@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3583.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-3583.html",
       "ID": "ELSA-2019-3583"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20534.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-20534.html",
       "ID": "CVE-2018-20534"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-3817.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-3817.html",
       "ID": "CVE-2019-3817"
     }
   ],
@@ -33,6 +33,42 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "createrepo_c is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "createrepo_c is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "createrepo_c-devel is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "createrepo_c-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "createrepo_c-libs is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "createrepo_c-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -170,6 +206,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-createrepo_c is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "python3-createrepo_c is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "python3-dnf is earlier than 0:4.2.7-6.el8"
                       },
                       {
@@ -270,54 +318,6 @@
                       },
                       {
                         "Comment": "yum-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c-devel is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c-libs is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-createrepo_c is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "python3-createrepo_c is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -342,10 +342,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "librhsm is earlier than 0:0.0.3-3.el8"
+                        "Comment": "createrepo_c is earlier than 0:0.11.0-3.el8"
                       },
                       {
-                        "Comment": "librhsm is signed with the Oracle Linux 8 key"
+                        "Comment": "createrepo_c is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "createrepo_c-devel is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "createrepo_c-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "createrepo_c-libs is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "createrepo_c-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -450,6 +474,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "librhsm is earlier than 0:0.0.3-3.el8"
+                      },
+                      {
+                        "Comment": "librhsm is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsolv is earlier than 0:0.7.4-3.el8"
                       },
                       {
@@ -466,6 +502,18 @@
                       },
                       {
                         "Comment": "microdnf is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-createrepo_c is earlier than 0:0.11.0-3.el8"
+                      },
+                      {
+                        "Comment": "python3-createrepo_c is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -574,54 +622,6 @@
                       },
                       {
                         "Comment": "yum-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c-devel is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "createrepo_c-libs is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "createrepo_c-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-createrepo_c is earlier than 0:0.11.0-3.el8"
-                      },
-                      {
-                        "Comment": "python3-createrepo_c is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -649,12 +649,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20534.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-20534.html",
       "ID": "CVE-2018-20534"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-3817.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-3817.html",
       "ID": "CVE-2019-3817"
     }
   ],

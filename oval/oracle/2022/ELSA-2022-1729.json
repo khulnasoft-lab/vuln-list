@@ -1,43 +1,43 @@
 {
   "Title": "ELSA-2022-1729:  java-17-openjdk security update (IMPORTANT)",
-  "Description": "[1:17.0.3.0.7-1]\n- April 2022 security update to jdk 17.0.3+7\n- Update to jdk-17.0.3.0+7 tarball\n- Update release notes to 17.0.3.0+7\n- Add missing README.md and generate_source_tarball.sh\n- Resolves: rhbz#2073578\n\n[1:17.0.2.0.8-13]\n- Enable AlgorithmParameters and AlgorithmParameterGenerator services in FIPS mode\n- Resolves: rhbz#2055383\n\n[1:17.0.2.0.8-12]\n- Add rpminspect.yaml to turn off Java bytecode inspections\n- java-17-openjdk deliberately produces Java 17 bytecode, not the default Java 11 bytecode\n- Resolves: rhbz#2023540\n\n[1:17.0.2.0.8-11]\n- Introduce tests/tests.yml, based on the one in java-11-openjdk\n- Resolves: rhbz#2058490\n\n[1:17.0.2.0.8-10]\n- Storing and restoring alterntives during update manually\n- Fixing Bug 2001567 - update of JDK/JRE is removing its manually selected alterantives and select (as auto) system JDK/JRE\n-- The move of alternatives creation to posttrans to fix:\n-- Bug 1200302 - dnf reinstall breaks alternatives\n-- Had caused the alternatives to be removed, and then created again,\n-- instead of being added, and then removing the old, and thus persisting\n-- the selection in family\n-- Thus this fix, is storing the family of manually selected master, and if\n-- stored, then it is restoring the family of the master\n- Resolves: rhbz#2008206\n\n[1:17.0.2.0.8-9]\n- Family extracted to globals\n- Related: rhbz#2008206\n\n[1:17.0.2.0.8-8]\n- Detect NSS at runtime for FIPS detection\n- Turn off build-time NSS linking and go back to an explicit Requires on NSS\n- Resolves: rhbz#2052829\n\n[1:17.0.2.0.8-7]\n- Add JDK-8275535 patch to fix LDAP authentication issue.\n- Resolves: rhbz#2053521\n\n[1:17.0.2.0.8-6]\n- Separate crypto policy initialisation from FIPS initialisation, now they are no longer interdependent\n- Resolves: rhbz#2052819\n\n[1:17.0.2.0.8-5]\n- Fix FIPS issues in native code and with initialisation of java.security.Security\n- Resolves: rhbz#2023531\n\n[1:17.0.2.0.8-4]\n- Restructure the build so a minimal initial build is then used for the final build (with docs)\n- This reduces pressure on the system JDK and ensures the JDK being built can do a full build\n- Turn off bootstrapping for slow debug builds, which are particularly slow on ppc64le.\n- Handle Fedora in distro conditionals that currently only pertain to RHEL.\n- Run OpenJDK normalizer script on the spec file to fix further rogue whitespace\n- Sync gdb test with java-1.8.0-openjdk and improve architecture restrictions.\n- Introduce stapinstall variable to set SystemTap arch directory correctly (e.g. arm64 on aarch64)\n- Need to support noarch for creating source RPMs for non-scratch builds.\n- Replace -mstackrealign with -mincoming-stack-boundary=2 -mpreferred-stack-boundary=4 on x86_32 for stack alignment\n- Support a HotSpot-only build so a freshly built libjvm.so can then be used in the bootstrap JDK.\n- Explicitly list JIT architectures rather than relying on those with slowdebug builds\n- Disable the serviceability agent on Zero architectures even when the architecture itself is supported\n- Resolves: rhbz#2022826\n\n[1:17.0.2.0.8-4]\n- Replaced tabs by sets of spaces to make rpmlint happy\n- javadoc-zip gets its own provides next to plain javadoc ones\n- Resolves: rhbz#2022826\n\n[1:17.0.2.0.8-3]\n- Minor cosmetic improvements to make spec more comparable between variants\n- Related: rhbz#2022826\n\n[1:17.0.2.0.8-2]\n- Update tapsets from IcedTea 6.x repository with fix for JDK-8015774 changes (_heap-\u003e_heaps) and @JAVA_SPEC_VER@\n- Update icedtea_sync.sh with a VCS mode that retrieves sources from a Mercurial repository\n- Related: rhbz#2022826\n\n[1:17.0.2.0.8-1]\n- January 2022 security update to jdk 17.0.2+8\n- Rebase RH1995150 \u0026 RH1996182 patches following JDK-8275863 addition to module-info.java\n- Rename libsvml.so to libjsvml.so following JDK-8276025\n- Drop JDK-8276572 patch which is now upstream\n- Resolves: rhbz#2039392\n\n[1:17.0.1.0.12-3]\n- Sync desktop files with upstream IcedTea release 3.15.0 using new script\n- Related: rhbz#2022826\n\n[1:17.0.1.0.12-2]\n- Use 'sql:' prefix in nss.fips.cfg as F35+ no longer ship the legacy\n  secmod.db file as part of nss\n- Resolves: rhbz#2023537\n\n[1:17.0.1.0.12-1]\n- Drop JDK-8272332 patch now included upstream.\n- Resolves: rhbz#2013846\n\n[1:17.0.1.0.12-1]\n- October CPU update to jdk 17.0.1+12\n- Dropped commented-out source line\n- Resolves: rhbz#2013846\n\n[1:17.0.0.0.35-8]\n- Extend LTS check to exclude EPEL.\n- Related: rhbz#2013846\n\n[1:17.0.0.0.35-8]\n- Set LTS designator.\n- Related: rhbz#2013846\n\n[1:17.0.0.0.35-7]\n- alternatives creation moved to posttrans\n- Thus fixing the old reinstall issue:\n- https://bugzilla.redhat.com/show_bug.cgi?id=1200302\n- https://bugzilla.redhat.com/show_bug.cgi?id=1976053\n- Resolves: rhbz#2008206\n\n[1:17.0.0.0.35-6]\n- Patch syslookup.c so it actually has some code to be compiled into libsyslookup\n- Related: rhbz#2013846\n\n[1:17.0.0.0.35-5]\n- Allow plain key import to be disabled with -Dcom.redhat.fips.plainKeySupport=false\n- Resolves: rhbz#1994682\n\n[1:17.0.0.0.35-5]\n- Add patch to allow plain key import.\n- Resolves: rhbz#1994682\n\n[1:17.0.0.0.35-4]\n- Update release notes to document the major changes between OpenJDK 11 \u0026 17.\n- Resolves: rhbz#2000925\n\n[1:17.0.0.0.35-3]\n- Update to jdk-17+35, also known as jdk-17-ga.\n- Switch to GA mode.\n- Add JDK-8272332 fix so we actually link against HarfBuzz.\n- Resolves: rhbz#2000925\n\n[1:17.0.0.0.33-0.5.ea]\n- Extend the default security policy to accomodate PKCS11 accessing jdk.internal.access.\n- Resolves: rhbz#1997359\n\n[1:17.0.0.0.33-0.4.ea]\n- Fix unused function compiler warning found in systemconf.c\n- Related: rhbz#1995889\n\n[1:17.0.0.0.33-0.4.ea]\n- Add patch to login to the NSS software token when in FIPS mode.\n- Resolves: rhbz#1997359\n\n[1:17.0.0.0.33-0.3.ea]\n- Add patch to disable non-FIPS crypto in the SUN and SunEC security providers.\n- Resolves: rhbz#1995889\n\n[1:17.0.0.0.33-0.2.ea]\n- Minor code cleanups on FIPS detection patch and check for SECMOD_GetSystemFIPSEnabled in configure.\n- Remove unneeded Requires on NSS as it will now be dynamically linked and detected by RPM.\n- Related: rhbz#1995889\n\n[1:17.0.0.0.33-0.2.ea]\n- Detect FIPS using SECMOD_GetSystemFIPSEnabled in the new libsystemconf JDK library.\n- Related: rhbz#1995889\n\n[1:17.0.0.0.33-0.1.ea]\n- Update RH1655466 FIPS patch with changes in OpenJDK 8 version.\n- SunPKCS11 runtime provider name is a concatenation of 'SunPKCS11-' and the name in the config file.\n- Change nss.fips.cfg config name to 'NSS-FIPS' to avoid confusion with nss.cfg.\n- No need to substitute path to nss.fips.cfg as java.security file supports a java.home variable.\n- Disable FIPS mode support unless com.redhat.fips is set to 'true'.\n- Enable alignment with FIPS crypto policy by default (-Dcom.redhat.fips=false to disable).\n- Add explicit runtime dependency on NSS for the PKCS11 provider in FIPS mode\n- Move setup of JavaSecuritySystemConfiguratorAccess to Security class so it always occurs (RH1915071)\n- Related: rhbz#1995889\n\n[1:17.0.0.0.33-0.1.ea]\n- Support the FIPS mode crypto policy (RH1655466)\n- Use appropriate keystore types when in FIPS mode (RH1818909)\n- Disable TLSv1.3 when the FIPS crypto policy and the NSS-FIPS provider are in use (RH1860986)\n- Related: rhbz#1995889\n\n[1:17.0.0.0.33-0.0.ea]\n- Update to jdk-17+33, including JDWP fix and July 2021 CPU\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.5.ea]\n- Use the 'reverse' build loop (debug first) as the main and only build loop to get more diagnostics.\n- Remove restriction on disabling product build, as debug packages no longer have javadoc packages.\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.4.ea.1]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[1:17.0.0.0.26-0.4.ea]\n- Fix patch rh1648249-add_commented_out_nss_cfg_provider_to_java_security.patch which made the SunPKCS provider show up again\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.3.ea]\n- Add gating support\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.2.ea]\n- Re-enable TestSecurityProperties after inclusion of PR3695\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.2.ea]\n- Add PR3695 to allow the system crypto policy to be turned off\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.1.ea]\n- Remove boot JDKs in favour of OpenJDK 17 build now in the buildroot.\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.1.ea]\n- Update buildjdkver to 17 so as to build with itself\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.0.ea]\n- Rename to java-17-openjdk and bootstrap using boot JDK in local sources\n- Exclude x86 as this is not supported by OpenJDK 17\n- Use unzip to test src.zip to avoid looking for jar on path\n- Resolves: rhbz#1870625\n\n[1:17.0.0.0.26-0.0.ea.rolling]\n- update sources to jdk 17.0.0+26\n- set is_ga to 0, as this is early access build\n- change vendor_version_string\n- change path to the version-numbers.conf\n- removed rmid binary from files and from slaves\n- removed JAVAC_FLAGS=-g from make command, as it breaks the build since JDK-8258407\n- add lib/libsyslookup.so to files\n- renamed lib/security/blacklisted.certs to lib/security/blocked.certs\n- add lib/libsvml.so for intel\n- skip debuginfo check for libsyslookup.so on s390x\n\n[1:16.0.1.0.9-2.rolling]\n- removed cjc backward comaptiblity, to fix when both rpm 4.16 and 4.17 are in transaction\n\n[ 1:16.0.1.0.9-2.rolling]\n- adapted to debug handling  in newer cjc\n- The rest of the 'rpm 4.17' patch must NOT be backported, as on rpm 4.16 and down, it would casue double execution\n- Disable copy-jdk-configs for Flatpak builds\n\n[1:16.0.1.0.9-1.rolling]\n- update to 16.0.1+9 april cpu tag\n- dropped jdk8259949-allow_cf-protection_on_x86.patch\n\n[1:16.0.0.0.36-2.rolling]\n- Perform static library build on a separate source tree with bundled image libraries\n- Make static library build optional\n- Based on initial work by Severin Gehwolf\n\n[1:16.0.0.0.36-1.rolling]\n- fixed suggests of wrong pcsc-lite-devel(x86-64) to correct pcsc-lite-libs(x86-64)\n- bumped buildjdkver to build by itself - 16\n\n[1:16.0.0.0.36-0.rolling]\n- Update to jdk-16.0.0.0+36\n- Update tarball generation script to use git following OpenJDK's move to github\n- Update tarball generation script to use PR3823 which handles JDK-8235710 changes\n- Use upstream default for version-pre rather than setting it to 'ea' or ''\n- Drop libsunec.so which is no longer generated, thanks to JDK-8235710\n- Drop unnecessary compiler flags, dating back to work on GCC 6 \u0026 10\n- Adapt RH1750419 alt-java patch to still apply after some variable re-naming in the makefiles\n- Update filever to remove any trailing zeros, as in the OpenJDK build, and use for source filename\n- Use system harfbuzz now this is supported.\n- Pass SOURCE_DATE_EPOCH to build for reproducible builds\n\n[1:15.0.2.0.7-1.rolling]\n- Hardcode /usr/sbin/alternatives for Flatpak builds\n\n[1:15.0.2.0.7-0.rolling.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[1:15.0.2.0.7-0.rolling]\n- Update to jdk-15.0.2.0+7\n- Add release notes for 15.0.1.0 \u0026 15.0.2.0\n- Use JEP-322 Time-Based Versioning so we can handle a future 11.0.9.1-like release correctly.\n- Still use 15.0.x rather than 15.0.x.0 for file naming, as the trailing zero is omitted from tags.\n- Cleanup debug package descriptions and version number placement.\n- Remove unused patch files.\n\n[1:15.0.1.9-10.rolling]\n- Use -march=i686 for x86 builds if -fcf-protection is detected (needs CMOV)\n\n[1:15.0.1.9-9.rolling]\n- fixed missing condition for fastdebug packages being counted as debug ones\n\n[1:15.0.1.9-8.rolling]\n- removed lib-style provides for fastdebug_suffix_unquoted\n\n[1:15.0.1.9-6.rolling]\n- many cosmetic changes taken from more maintained jdk11\n- introduced debug_arches, bootstrap_arches, systemtap_arches, fastdebug_arches, sa_arches, share_arches, shenandoah_arches, zgc_arches\n  instead of various hardcoded ifarches\n- updated systemtap\n- added requires excludes for debug pkgs\n- removed redundant logic around jsa files\n- added runtime requires of lksctp-tools and libXcomposite%\n- added and used Source15 TestSecurityProperties.java, but is made always positive as jdk15 now does not honor system policies\n- s390x excluded form fastdebug build\n\n[1:15.0.1.9-5.rolling]\n- introduced nm based check to verify alt-java on x86_64 is patched, and no other alt-java or java is patched\n- patch600 rh1750419-redhat_alt_java.patch amended to die, if it is used wrongly\n- introduced ssbd_arches with currently only valid arch of x86_64 to separate real alt-java architectures\n\n[1:15.0.1.9-4.rolling]\n- moved wrongly placed licenses to accompany other ones\n- this bad placement was killng parallel-installability and thus having bad impact to leapp if used\n\n[1:15.0.1.9-3.rolling]\n- added patch600, rh1750419-redhat_alt_java.patch, suprassing removed patch\n- no longer copying of java-\u003ealt-java as it is created by  patch600\n\n[1:15.0.1.9-2.rolling]\n- Create a copy of java as alt-java with alternatives and man pages\n- java-11-openjdk doesn't have a JRE tree, so don't try and copy alt-java there...\n\n[1:15.0.1.9-1.rolling]\n- updated to October CPU 2020 sources\n\n[1:15.0.0.36-4.rolling]\n- Fix directory ownership of -static-libs sub-package.\n\n[1:15.0.0.36-3.rolling]\n- Build static-libs-image and add resulting files via -static-libs sub-package.\n- Disable stripping of debug symbols for static libraries part of the -static-libs sub-package.\n- JDK-8245832 increases the set of static libraries, so try and include them all with a wildcard.\n- Update static-libs packaging to new layout\n\n[1:15.0.0.36-2.rolling]\n- Add support for fastdebug builds on 64 bit architectures\n\n[1:15.0.0.36-1.rolling]\n- Remove EA designation\n- Re-generate sources with PR3803 patch\n\n[1:15.0.0.36-0.1.ea.rolling]\n- Update to jdk 15.0.0.36 tag\n- Modify rh1648249-add_commented_out_nss_cfg_provider_to_java_security.patch\n- Update vendor version string to 20.9\n- jjs removed from packaging after JEP 372: Nashorn removal\n- rmic removed from packaging after JDK-8225319\n\n[1:14.0.2.12-2.rolling]\n- Disable LTO so as to pass debuginfo check\n\n[1:14.0.2.12-1.rolling]\n- update to jdk 14.0.2.12 CPU version\n- remove upstreamed patch jdk8237879-make_4_3_build_fixes.patch\n- remove upstreamed patch jdk8235833-posixplatform_cpp_should_not_include_sysctl_h.patch\n- remove upstreamed patch jdk8243059-build_fails_when_with_vendor_contains_comma.patch\n\n[1:14.0.1.7-4.rolling]\n- Re-introduce java-openjdk-src \u0026 java-openjdk-demo for system_jdk builds.\n- Fix accidental renaming of java-openjdk-devel to java-devel-openjdk.\n\n[ 1:14.0.1.7-3.rolling]\n- introduce patch jdk8235833-posixplatform_cpp_should_not_include_sysctl_h to fix build issues in rawhide\n- rename and reorganize patch sections\n\n[1:14.0.1.7-2.rolling]\n- Fix vendor version to 20.3 (from 19.9)",
+  "Description": "[1:17.0.3.0.7-1]\n- April 2022 security update to jdk 17.0.3+7\n- Update to jdk-17.0.3.0+7 tarball\n- Update release notes to 17.0.3.0+7\n- Add missing README.md and generate_source_tarball.sh\n- Resolves: rhbz#2073578",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-1729.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-1729.html",
       "ID": "ELSA-2022-1729"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21426.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21426.html",
       "ID": "CVE-2022-21426"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21443.html",
-      "ID": "CVE-2022-21443"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21434.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21434.html",
       "ID": "CVE-2022-21434"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21476.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21476.html",
       "ID": "CVE-2022-21476"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21496.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21496.html",
       "ID": "CVE-2022-21496"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21449.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21443.html",
+      "ID": "CVE-2022-21443"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21449.html",
       "ID": "CVE-2022-21449"
     }
   ],
@@ -645,36 +645,36 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21426.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21426.html",
       "ID": "CVE-2022-21426"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21443.html",
-      "ID": "CVE-2022-21443"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21434.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21434.html",
       "ID": "CVE-2022-21434"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21476.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21476.html",
       "ID": "CVE-2022-21476"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21496.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21496.html",
       "ID": "CVE-2022-21496"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21449.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21443.html",
+      "ID": "CVE-2022-21443"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21449.html",
       "ID": "CVE-2022-21449"
     }
   ],
   "Issued": {
-    "Date": "2022-06-29"
+    "Date": "2022-06-30"
   }
 }

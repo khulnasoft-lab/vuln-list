@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-6781.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-6781.html",
       "ID": "ELSA-2022-6781"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3080.html",
-      "ID": "CVE-2022-3080"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-38177.html",
+      "ID": "CVE-2022-38177"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38178.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-38178.html",
       "ID": "CVE-2022-38178"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38177.html",
-      "ID": "CVE-2022-38177"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3080.html",
+      "ID": "CVE-2022-3080"
     }
   ],
   "Criteria": {
@@ -38,6 +38,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -79,42 +103,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "python3-bind9.16 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind9.16-libs is earlier than 32:9.16.23-0.7.el8_6.1"
                       },
                       {
@@ -143,6 +131,18 @@
                       },
                       {
                         "Comment": "bind9.16-utils is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "python3-bind9.16 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -167,6 +167,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind9.16-devel is earlier than 32:9.16.23-0.7.el8_6.1"
                       },
                       {
@@ -215,42 +239,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "python3-bind9.16 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "bind9.16 is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind9.16-chroot is earlier than 32:9.16.23-0.7.el8_6.1"
-                      },
-                      {
-                        "Comment": "bind9.16-chroot is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind9.16-license is earlier than 32:9.16.23-0.7.el8_6.1"
                       },
                       {
@@ -267,6 +255,18 @@
                       },
                       {
                         "Comment": "bind9.16-utils is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-bind9.16 is earlier than 32:9.16.23-0.7.el8_6.1"
+                      },
+                      {
+                        "Comment": "python3-bind9.16 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -294,21 +294,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3080.html",
-      "ID": "CVE-2022-3080"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-38177.html",
+      "ID": "CVE-2022-38177"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38178.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-38178.html",
       "ID": "CVE-2022-38178"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38177.html",
-      "ID": "CVE-2022-38177"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3080.html",
+      "ID": "CVE-2022-3080"
     }
   ],
   "Issued": {
-    "Date": "2022-10-04"
+    "Date": "2022-10-05"
   }
 }

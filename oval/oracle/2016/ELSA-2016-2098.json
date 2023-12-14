@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2098.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2016-2098.html",
       "ID": "ELSA-2016-2098"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5195.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5195.html",
       "ID": "CVE-2016-5195"
     }
   ],
@@ -90,6 +90,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kernel-doc is earlier than 0:3.10.0-327.36.3.el7"
+                  },
+                  {
+                    "Comment": "kernel-doc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "kernel-headers is earlier than 0:3.10.0-327.36.3.el7"
                   },
                   {
@@ -126,6 +138,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-327.36.3.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "perf is earlier than 0:3.10.0-327.36.3.el7"
                   },
                   {
@@ -142,30 +166,6 @@
                   },
                   {
                     "Comment": "python-perf is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-doc is earlier than 0:3.10.0-327.36.3.el7"
-                  },
-                  {
-                    "Comment": "kernel-doc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-327.36.3.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -190,7 +190,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5195.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5195.html",
       "ID": "CVE-2016-5195"
     }
   ],

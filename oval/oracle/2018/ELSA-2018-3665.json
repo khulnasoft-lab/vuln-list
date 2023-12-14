@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3665.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-3665.html",
       "ID": "ELSA-2018-3665"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15688.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15688.html",
       "ID": "CVE-2018-15688"
     }
   ],
@@ -81,6 +81,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "NetworkManager-dispatcher-routing-rules is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-dispatcher-routing-rules is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "NetworkManager-glib is earlier than 1:1.12.0-8.el7_6"
                       },
                       {
@@ -93,10 +105,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "NetworkManager-glib-devel is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-glib-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "NetworkManager-libnm is earlier than 1:1.12.0-8.el7_6"
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-ovs is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-ovs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -159,54 +207,6 @@
                         "Comment": "NetworkManager-wwan is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-dispatcher-routing-rules is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-dispatcher-routing-rules is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-glib-devel is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-glib-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-ovs is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-ovs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -224,54 +224,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-dispatcher-routing-rules is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-dispatcher-routing-rules is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-glib-devel is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-glib-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "NetworkManager-ovs is earlier than 1:1.12.0-8.el7_6"
-                      },
-                      {
-                        "Comment": "NetworkManager-ovs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -325,6 +277,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "NetworkManager-dispatcher-routing-rules is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-dispatcher-routing-rules is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "NetworkManager-glib is earlier than 1:1.12.0-8.el7_6"
                       },
                       {
@@ -337,10 +301,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "NetworkManager-glib-devel is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-glib-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "NetworkManager-libnm is earlier than 1:1.12.0-8.el7_6"
                       },
                       {
                         "Comment": "NetworkManager-libnm is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-libnm-devel is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-libnm-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "NetworkManager-ovs is earlier than 1:1.12.0-8.el7_6"
+                      },
+                      {
+                        "Comment": "NetworkManager-ovs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -428,7 +428,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15688.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15688.html",
       "ID": "CVE-2018-15688"
     }
   ],

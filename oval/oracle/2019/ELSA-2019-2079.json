@@ -7,73 +7,73 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2079.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2079.html",
       "ID": "ELSA-2019-2079"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14598.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14598.html",
       "ID": "CVE-2018-14598"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14599.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14599.html",
       "ID": "CVE-2018-14599"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15853.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15853.html",
       "ID": "CVE-2018-15853"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14600.html",
-      "ID": "CVE-2018-14600"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15854.html",
-      "ID": "CVE-2018-15854"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15862.html",
-      "ID": "CVE-2018-15862"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15864.html",
-      "ID": "CVE-2018-15864"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15855.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15855.html",
       "ID": "CVE-2018-15855"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15856.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14600.html",
+      "ID": "CVE-2018-14600"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15854.html",
+      "ID": "CVE-2018-15854"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15856.html",
       "ID": "CVE-2018-15856"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15857.html",
-      "ID": "CVE-2018-15857"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15859.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15859.html",
       "ID": "CVE-2018-15859"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15861.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15863.html",
+      "ID": "CVE-2018-15863"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15857.html",
+      "ID": "CVE-2018-15857"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15861.html",
       "ID": "CVE-2018-15861"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15863.html",
-      "ID": "CVE-2018-15863"
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15862.html",
+      "ID": "CVE-2018-15862"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15864.html",
+      "ID": "CVE-2018-15864"
     }
   ],
   "Criteria": {
@@ -97,6 +97,30 @@
                       },
                       {
                         "Comment": "gdm is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gdm-devel is earlier than 1:3.28.2-16.el7"
+                      },
+                      {
+                        "Comment": "gdm-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gdm-pam-extensions-devel is earlier than 1:3.28.2-16.el7"
+                      },
+                      {
+                        "Comment": "gdm-pam-extensions-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -169,6 +193,18 @@
                       },
                       {
                         "Comment": "libxkbcommon-x11 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libxkbcommon-x11-devel is earlier than 0:0.7.1-3.el7"
+                      },
+                      {
+                        "Comment": "libxkbcommon-x11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -225,78 +261,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gdm-devel is earlier than 1:3.28.2-16.el7"
-                      },
-                      {
-                        "Comment": "gdm-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gdm-pam-extensions-devel is earlier than 1:3.28.2-16.el7"
-                      },
-                      {
-                        "Comment": "gdm-pam-extensions-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libxkbcommon-x11-devel is earlier than 0:0.7.1-3.el7"
-                      },
-                      {
-                        "Comment": "libxkbcommon-x11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "xorg-x11-drv-wacom-devel is earlier than 0:0.36.1-3.el7"
                       },
                       {
@@ -321,10 +285,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.4-7.el7"
                       },
                       {
                         "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -349,6 +337,18 @@
                       },
                       {
                         "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -397,6 +397,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "gdm is earlier than 1:3.28.2-16.el7"
+                      },
+                      {
+                        "Comment": "gdm is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "gdm-devel is earlier than 1:3.28.2-16.el7"
                       },
                       {
@@ -413,114 +425,6 @@
                       },
                       {
                         "Comment": "gdm-pam-extensions-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libxkbcommon-x11-devel is earlier than 0:0.7.1-3.el7"
-                      },
-                      {
-                        "Comment": "libxkbcommon-x11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-drv-wacom-devel is earlier than 0:0.36.1-3.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-drv-wacom-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xdmx is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xdmx is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xvfb is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xvfb is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xwayland is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.4-7.el7"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gdm is earlier than 1:3.28.2-16.el7"
-                      },
-                      {
-                        "Comment": "gdm is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -593,6 +497,18 @@
                       },
                       {
                         "Comment": "libxkbcommon-x11 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libxkbcommon-x11-devel is earlier than 0:0.7.1-3.el7"
+                      },
+                      {
+                        "Comment": "libxkbcommon-x11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -661,10 +577,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-drv-wacom-devel is earlier than 0:0.36.1-3.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-drv-wacom-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xdmx is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xdmx is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-7.el7"
                       },
                       {
                         "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -685,10 +637,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-server-Xvfb is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xvfb is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xwayland is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-7.el7"
                       },
                       {
                         "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-devel is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-source is earlier than 0:1.20.4-7.el7"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-source is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -716,71 +716,71 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14598.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14598.html",
       "ID": "CVE-2018-14598"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14599.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14599.html",
       "ID": "CVE-2018-14599"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15853.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15853.html",
       "ID": "CVE-2018-15853"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14600.html",
-      "ID": "CVE-2018-14600"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15854.html",
-      "ID": "CVE-2018-15854"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15862.html",
-      "ID": "CVE-2018-15862"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15864.html",
-      "ID": "CVE-2018-15864"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15855.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15855.html",
       "ID": "CVE-2018-15855"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15856.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14600.html",
+      "ID": "CVE-2018-14600"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15854.html",
+      "ID": "CVE-2018-15854"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15856.html",
       "ID": "CVE-2018-15856"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15857.html",
-      "ID": "CVE-2018-15857"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15859.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15859.html",
       "ID": "CVE-2018-15859"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15861.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15863.html",
+      "ID": "CVE-2018-15863"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15857.html",
+      "ID": "CVE-2018-15857"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15861.html",
       "ID": "CVE-2018-15861"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15863.html",
-      "ID": "CVE-2018-15863"
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15862.html",
+      "ID": "CVE-2018-15862"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15864.html",
+      "ID": "CVE-2018-15864"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

@@ -7,38 +7,38 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0851.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-0851.html",
       "ID": "ELSA-2021-0851"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10146.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10146.html",
       "ID": "CVE-2019-10146"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10179.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10179.html",
       "ID": "CVE-2019-10179"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1721.html",
-      "ID": "CVE-2020-1721"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20179.html",
-      "ID": "CVE-2021-20179"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10221.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10221.html",
       "ID": "CVE-2019-10221"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25715.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-1721.html",
+      "ID": "CVE-2020-1721"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-25715.html",
       "ID": "CVE-2020-25715"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-20179.html",
+      "ID": "CVE-2021-20179"
     }
   ],
   "Criteria": {
@@ -94,6 +94,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "pki-javadoc is earlier than 0:10.5.18-12.el7_9"
+                      },
+                      {
+                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "pki-kra is earlier than 0:10.5.18-12.el7_9"
                       },
                       {
@@ -136,18 +148,6 @@
                         "Comment": "pki-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "pki-javadoc is earlier than 0:10.5.18-12.el7_9"
-                      },
-                      {
-                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -165,18 +165,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "pki-javadoc is earlier than 0:10.5.18-12.el7_9"
-                      },
-                      {
-                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -210,6 +198,18 @@
                       },
                       {
                         "Comment": "pki-ca is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "pki-javadoc is earlier than 0:10.5.18-12.el7_9"
+                      },
+                      {
+                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -285,36 +285,36 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10146.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10146.html",
       "ID": "CVE-2019-10146"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10179.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10179.html",
       "ID": "CVE-2019-10179"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1721.html",
-      "ID": "CVE-2020-1721"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20179.html",
-      "ID": "CVE-2021-20179"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10221.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10221.html",
       "ID": "CVE-2019-10221"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25715.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-1721.html",
+      "ID": "CVE-2020-1721"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-25715.html",
       "ID": "CVE-2020-25715"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-20179.html",
+      "ID": "CVE-2021-20179"
     }
   ],
   "Issued": {
-    "Date": "2021-03-16"
+    "Date": "2021-03-17"
   }
 }

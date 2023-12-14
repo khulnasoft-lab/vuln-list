@@ -8,53 +8,53 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2011-2025.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2011-2025.html",
       "ID": "ELSA-2011-2025"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2492.html",
-      "ID": "CVE-2011-2492"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2695.html",
-      "ID": "CVE-2011-2695"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-1576.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-1576.html",
       "ID": "CVE-2011-1576"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-1898.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-1898.html",
       "ID": "CVE-2011-1898"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2183.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2183.html",
       "ID": "CVE-2011-2183"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2491.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2491.html",
       "ID": "CVE-2011-2491"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2495.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2492.html",
+      "ID": "CVE-2011-2492"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2495.html",
       "ID": "CVE-2011-2495"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2497.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2497.html",
       "ID": "CVE-2011-2497"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2011-2517.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2517.html",
       "ID": "CVE-2011-2517"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2011-2695.html",
+      "ID": "CVE-2011-2695"
     }
   ],
   "Criteria": {
@@ -149,6 +149,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-200.19.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "ofa-2.6.32-200.19.1.el5uek is earlier than 0:1.5.1-4.0.28"
                           },
                           {
@@ -165,18 +177,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-200.19.1.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-200.19.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -273,6 +273,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-200.19.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "ofa-2.6.32-200.19.1.el5uek is earlier than 0:1.5.1-4.0.28"
                           },
                           {
@@ -289,18 +301,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-200.19.1.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-200.19.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -595,48 +595,48 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2492.html",
-      "ID": "CVE-2011-2492"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2695.html",
-      "ID": "CVE-2011-2695"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-1576.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-1576.html",
       "ID": "CVE-2011-1576"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-1898.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-1898.html",
       "ID": "CVE-2011-1898"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2183.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2183.html",
       "ID": "CVE-2011-2183"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2491.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2491.html",
       "ID": "CVE-2011-2491"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2495.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2492.html",
+      "ID": "CVE-2011-2492"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2495.html",
       "ID": "CVE-2011-2495"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2497.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2497.html",
       "ID": "CVE-2011-2497"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2011-2517.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2517.html",
       "ID": "CVE-2011-2517"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2011-2695.html",
+      "ID": "CVE-2011-2695"
     }
   ],
   "Issued": {

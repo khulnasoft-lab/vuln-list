@@ -8,38 +8,38 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3083.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-3083.html",
       "ID": "ELSA-2014-3083"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2596.html",
-      "ID": "CVE-2013-2596"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3122.html",
-      "ID": "CVE-2014-3122"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4653.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4653.html",
       "ID": "CVE-2014-4653"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4654.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4654.html",
       "ID": "CVE-2014-4654"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4655.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4655.html",
       "ID": "CVE-2014-4655"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-5077.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-5077.html",
       "ID": "CVE-2014-5077"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3122.html",
+      "ID": "CVE-2014-3122"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-2596.html",
+      "ID": "CVE-2013-2596"
     }
   ],
   "Criteria": {
@@ -134,6 +134,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.9.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.36.9.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -174,18 +186,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.36.9.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.9.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -282,6 +282,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.9.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.36.9.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -322,18 +334,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.36.9.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.36.9.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -676,33 +676,33 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2596.html",
-      "ID": "CVE-2013-2596"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3122.html",
-      "ID": "CVE-2014-3122"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4653.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4653.html",
       "ID": "CVE-2014-4653"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4654.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4654.html",
       "ID": "CVE-2014-4654"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4655.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4655.html",
       "ID": "CVE-2014-4655"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-5077.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-5077.html",
       "ID": "CVE-2014-5077"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3122.html",
+      "ID": "CVE-2014-3122"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-2596.html",
+      "ID": "CVE-2013-2596"
     }
   ],
   "Issued": {

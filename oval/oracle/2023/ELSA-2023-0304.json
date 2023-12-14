@@ -7,28 +7,28 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-0304.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-0304.html",
       "ID": "ELSA-2023-0304"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26305.html",
-      "ID": "CVE-2022-26305"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3140.html",
+      "ID": "CVE-2022-3140"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26306.html",
-      "ID": "CVE-2022-26306"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-26307.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-26307.html",
       "ID": "CVE-2022-26307"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3140.html",
-      "ID": "CVE-2022-3140"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-26305.html",
+      "ID": "CVE-2022-26305"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-26306.html",
+      "ID": "CVE-2022-26306"
     }
   ],
   "Criteria": {
@@ -2704,6 +2704,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libreoffice-sdk is earlier than 1:7.1.8.1-8.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libreoffice-sdk-doc is earlier than 1:7.1.8.1-8.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libreoffice-ure is earlier than 1:7.1.8.1-8.0.1.el9_1"
                       },
                       {
@@ -2782,30 +2806,6 @@
                         "Comment": "libreofficekit is signed with the Oracle Linux 9 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreoffice-sdk is earlier than 1:7.1.8.1-8.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libreoffice-sdk-doc is earlier than 1:7.1.8.1-8.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "libreoffice-sdk-doc is signed with the Oracle Linux 9 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -2831,23 +2831,23 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26305.html",
-      "ID": "CVE-2022-26305"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3140.html",
+      "ID": "CVE-2022-3140"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26306.html",
-      "ID": "CVE-2022-26306"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-26307.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-26307.html",
       "ID": "CVE-2022-26307"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3140.html",
-      "ID": "CVE-2022-3140"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-26305.html",
+      "ID": "CVE-2022-26305"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-26306.html",
+      "ID": "CVE-2022-26306"
     }
   ],
   "Issued": {

@@ -1,49 +1,49 @@
 {
   "Title": "ELSA-2013-0747:  kernel security and bug fix update (MODERATE)",
-  "Description": "kernel\n[2.6.18-348.4.1.el5]\n- [virt] xen-netback: backports (Andrew Jones) [910884 910885] {CVE-2013-0216}\n- [virt] xen-netback: netif_schedulable should take a netif (Andrew Jones) [910884 910885] {CVE-2013-0216}\n- [virt] pciback: rate limit error mess from pciback_enable_msi() (Igor Mammedov) [910876 910877] {CVE-2013-0231}\n- [net] be2net: remove BUG_ON() in be_mcc_compl_is_new() (Ivan Vecera) [923910 907524]\n- [net] ipv4: Update MTU to all related cache entries (Amerigo Wang) [923353 905190]\n- [net] annotate rt_hash_code() users (Amerigo Wang) [923353 905190]\n- [net] xfrm_user: fix info leak in copy_to_user_state() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n- [net] xfrm_user: fix info leak in copy_to_user_policy() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n- [net] xfrm_user: fix info leak in copy_to_user_tmpl() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n - [net] atm: fix info leak in getsockopt(SO_ATMPVC) (Thomas Graf) [922384 922385] {CVE-2012-6546}\n- [net] atm: fix info leak via getsockname() (Thomas Graf) [922384 922385] {CVE-2012-6546}\n- [net] tun: fix ioctl() based info leaks (Thomas Graf) [922348 922349] {CVE-2012-6547}\n- [net] llc, zero sockaddr_llc struct (Thomas Graf) [922327 922329] {CVE-2012-6542}\n- [net] llc: fix info leak via getsockname() (Thomas Graf) [922327 922329] {CVE-2012-6542}\n- [net] xfrm_user: return error pointer instead of NULL (Thomas Graf) [919386 919387] {CVE-2013-1826}\n- [net] ixgbevf: allocate room for mailbox MSI-X interrupt's name (Laszlo Ersek) [924134 862862]\n- [fs] knfsd: allow nfsd READDIR to return 64bit cookies (Niels de Vos) [924087 918952]",
+  "Description": "kernel\n[2.6.18-348.4.1]\n- [virt] xen-netback: backports (Andrew Jones) [910884 910885] {CVE-2013-0216}\n- [virt] xen-netback: netif_schedulable should take a netif (Andrew Jones) [910884 910885] {CVE-2013-0216}\n- [virt] pciback: rate limit error mess from pciback_enable_msi() (Igor Mammedov) [910876 910877] {CVE-2013-0231}\n- [net] be2net: remove BUG_ON() in be_mcc_compl_is_new() (Ivan Vecera) [923910 907524]\n- [net] ipv4: Update MTU to all related cache entries (Amerigo Wang) [923353 905190]\n- [net] annotate rt_hash_code() users (Amerigo Wang) [923353 905190]\n- [net] xfrm_user: fix info leak in copy_to_user_state() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n- [net] xfrm_user: fix info leak in copy_to_user_policy() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n- [net] xfrm_user: fix info leak in copy_to_user_tmpl() (Thomas Graf) [922426 922427] {CVE-2012-6537}\n- [net] atm: fix info leak in getsockopt(SO_ATMPVC) (Thomas Graf) [922384 922385] {CVE-2012-6546}\n- [net] atm: fix info leak via getsockname() (Thomas Graf) [922384 922385] {CVE-2012-6546}\n- [net] tun: fix ioctl() based info leaks (Thomas Graf) [922348 922349] {CVE-2012-6547}\n- [net] llc, zero sockaddr_llc struct (Thomas Graf) [922327 922329] {CVE-2012-6542}\n- [net] llc: fix info leak via getsockname() (Thomas Graf) [922327 922329] {CVE-2012-6542}\n- [net] xfrm_user: return error pointer instead of NULL (Thomas Graf) [919386 919387] {CVE-2013-1826}\n- [net] ixgbevf: allocate room for mailbox MSI-X interrupt's name (Laszlo Ersek) [924134 862862]\n- [fs] knfsd: allow nfsd READDIR to return 64bit cookies (Niels de Vos) [924087 918952]",
   "Platform": [
     "Oracle Linux 5"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0747.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2013-0747.html",
       "ID": "ELSA-2013-0747"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-0231.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-0231.html",
       "ID": "CVE-2013-0231"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-0216.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-0216.html",
       "ID": "CVE-2013-0216"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-6542.html",
-      "ID": "CVE-2012-6542"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-6547.html",
-      "ID": "CVE-2012-6547"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-6537.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-6537.html",
       "ID": "CVE-2012-6537"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-1826.html",
-      "ID": "CVE-2013-1826"
+      "URI": "https://linux.oracle.com/cve/CVE-2012-6542.html",
+      "ID": "CVE-2012-6542"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-6546.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-6546.html",
       "ID": "CVE-2012-6546"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-6547.html",
+      "ID": "CVE-2012-6547"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-1826.html",
+      "ID": "CVE-2013-1826"
     }
   ],
   "Criteria": {
@@ -666,38 +666,38 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-0231.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-0231.html",
       "ID": "CVE-2013-0231"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-0216.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-0216.html",
       "ID": "CVE-2013-0216"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-6542.html",
-      "ID": "CVE-2012-6542"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-6547.html",
-      "ID": "CVE-2012-6547"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-6537.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-6537.html",
       "ID": "CVE-2012-6537"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-1826.html",
-      "ID": "CVE-2013-1826"
+      "Href": "https://linux.oracle.com/cve/CVE-2012-6542.html",
+      "ID": "CVE-2012-6542"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-6546.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-6546.html",
       "ID": "CVE-2012-6546"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-6547.html",
+      "ID": "CVE-2012-6547"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-1826.html",
+      "ID": "CVE-2013-1826"
     }
   ],
   "Issued": {

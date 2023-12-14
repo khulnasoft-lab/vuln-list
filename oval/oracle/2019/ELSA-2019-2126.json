@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2126.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2126.html",
       "ID": "ELSA-2019-2126"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-19208.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-19208.html",
       "ID": "CVE-2018-19208"
     }
   ],
@@ -97,6 +97,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libwpd is earlier than 0:0.10.0-2.el7"
+                      },
+                      {
+                        "Comment": "libwpd is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwpd-devel is earlier than 0:0.10.0-2.el7"
                       },
                       {
@@ -127,18 +139,6 @@
                         "Comment": "libwpd-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwpd is earlier than 0:0.10.0-2.el7"
-                      },
-                      {
-                        "Comment": "libwpd is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -164,11 +164,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-19208.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-19208.html",
       "ID": "CVE-2018-19208"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

@@ -1,24 +1,24 @@
 {
   "Title": "ELSA-2022-8832: 18 security, bug fix, and enhancement update (MODERATE)",
-  "Description": "nodejs\n[1:18.12.1-1]\n- Rebase + CVEs\n- Resolves: #2142809\n- Resolves: #2142830, #2142856\n\nnodejs-nodemon\n[2.0.20-1]\n- Rebase to 2.0.20\n  Resolves: CVE-2022-3517\n\nnodejs-packaging\n[2021.06-4]\n- NPM bundler: also find namespaced bundled dependencies\n\n[2021.06-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_35_Mass_Rebuild\n\n[2021.06-2]\n- Fix hard-coded output directory in the bundler\n\n[2021.06-1]\n- Update to 2021.06-1\n- bundler: Handle archaic license metadata\n- bundler: Warn about bundled dependencies with no license metadata\n\n[2021.01-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[2021.01-2]\n- nodejs-packaging-bundler improvements to handle uncommon characters\n\n[2021.01]\n- Add nodejs-packaging-bundler and update README.md\n\n[2020.09-1]\n- Move to dist-git as the upstream\n\n[25-1]\n- Fix incorrect bundled library detection for Requires\n\n[24-1]\n- Check node_modules_prod for bundled dependencies\n\n[23-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[23-3]\n- Drop Requires: nodejs(engine)\n\n[23-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild",
+  "Description": "nodejs\n[1:18.12.1-1]\n- Rebase + CVEs\n- Resolves: #2142809\n- Resolves: #2142830, #2142856\n\nnodejs-nodemon\n[2.0.20-1]\n- Rebase to 2.0.20\n  Resolves: CVE-2022-3517",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-8832.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-8832.html",
       "ID": "ELSA-2022-8832"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3517.html",
-      "ID": "CVE-2022-3517"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-43548.html",
+      "ID": "CVE-2022-43548"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-43548.html",
-      "ID": "CVE-2022-43548"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3517.html",
+      "ID": "CVE-2022-3517"
     }
   ],
   "Criteria": {
@@ -244,10 +244,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nodejs-packaging is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
+                                "Comment": "nodejs-packaging-bundler is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
                               },
                               {
-                                "Comment": "nodejs-packaging is signed with the Oracle Linux 9 key"
+                                "Comment": "nodejs-packaging-bundler is signed with the Oracle Linux 9 key"
                               }
                             ]
                           },
@@ -256,10 +256,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "nodejs-packaging-bundler is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
+                                "Comment": "nodejs-packaging is earlier than 0:2021.06-4.module+el9.1.0+20762+f52d7401"
                               },
                               {
-                                "Comment": "nodejs-packaging-bundler is signed with the Oracle Linux 9 key"
+                                "Comment": "nodejs-packaging is signed with the Oracle Linux 9 key"
                               }
                             ]
                           }
@@ -297,16 +297,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3517.html",
-      "ID": "CVE-2022-3517"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-43548.html",
+      "ID": "CVE-2022-43548"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-43548.html",
-      "ID": "CVE-2022-43548"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3517.html",
+      "ID": "CVE-2022-3517"
     }
   ],
   "Issued": {
-    "Date": "2022-12-07"
+    "Date": "2022-12-09"
   }
 }

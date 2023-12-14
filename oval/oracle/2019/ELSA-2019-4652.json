@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2019-4652:  curl security update (IMPORTANT)",
-  "Description": "[7.19.7-53.0.2]\n- Security Fixes [OraBug: 28939992]\n- CVE-2016-8615 cookie injection for other servers (https://curl.haxx.se/docs/CVE-2016-8615.html)\n- CVE-2016-8616 case insensitive password comparison (https://curl.haxx.se/docs/CVE-2016-8616.html)\n- CVE-2016-8617 OOB write via unchecked multiplication (https://curl.haxx.se/docs/CVE-2016-8617.html)\n- CVE-2016-8618 double-free in curl_maprintf (https://curl.haxx.se/docs/CVE-2016-8618.html)\n- CVE-2016-8619 double-free in krb5 code (https://curl.haxx.se/docs/CVE-2016-8619.html)\n- CVE-2016-8621 curl_getdate read out of bounds (https://curl.haxx.se/docs/CVE-2016-8621.html)\n- CVE-2016-8623 Use-after-free via shared cookies (https://curl.haxx.se/docs/CVE-2016-8623.html)\n- CVE-2016-8624 invalid URL parsing with # (https://curl.haxx.se/docs/CVE-2016-8624.html)\n\n* Wed Sep 19 2018 Bert Barbe \u003cbert.barbe@oracle.com\u003e\n- use PK11_CreateManagedGenericObject in libcurl to prevent memory leak [orabug 28666473]\n\n[7.19.7-53]\n- treat Negotiate authentication as connection-oriented (CVE-2017-2628)\n\n[7.19.7-52]\n- fix a bug in DNS caching code that causes a memory leak (#1302893)\n\n[7.19.7-51]\n- SSH: make CURLOPT_SSH_PUBLIC_KEYFILE treat '' as NULL (#1260742)\n\n[7.19.7-50]\n- use the default min/max TLS version provided by NSS (#1289205)\n\n[7.19.7-49]\n- prevent NSS from incorrectly re-using a session (#1269660)\n- prevent test46 from failing due to expired cookie (#1277551)\n\n[7.19.7-48]\n- SSH: do not require public key file for user authentication (#1260742)\n\n[7.19.7-47]\n- make SCP/SFTP work with --proxytunnel (#1258566)\n\n[7.19.7-46]\n- require credentials to match for NTLM re-use (CVE-2015-3143)\n- close Negotiate connections when done (CVE-2015-3148)\n\n[7.19.7-45]\n- reject CRLFs in URLs passed to proxy (CVE-2014-8150)\n\n[7.19.7-44]\n- use only full matches for hosts used as IP address in cookies (CVE-2014-3613)\n- fix handling of CURLOPT_COPYPOSTFIELDS in curl_easy_duphandle (CVE-2014-3707)\n\n[7.19.7-43]\n- fix manpage typos found using aspell (#1011101)\n- fix comments about loading CA certs with NSS in man pages (#1011083)\n- fix handling of DNS cache timeout while a transfer is in progress (#835898)\n- eliminate unnecessary inotify events on upload via file protocol (#883002)\n- use correct socket type in the examples (#997185)\n- do not crash if MD5 fingerprint is not provided by libssh2 (#1008178)\n- fix SIGSEGV of curl --retry when network is down (#1009455)\n- allow to use TLS 1.1 and TLS 1.2 (#1012136)\n- docs: update the links to cipher-suites supported by NSS (#1104160)\n- allow to use ECC ciphers if NSS implements them (#1058767)\n- make curl --trace-time print correct time (#1120196)\n- let tool call PR_Cleanup() on exit if NSPR is used (#1146528)\n- ignore CURLOPT_FORBID_REUSE during NTLM HTTP auth (#1154747)\n- allow to enable/disable new AES cipher-suites (#1156422)\n- include response headers added by proxy in CURLINFO_HEADER_SIZE (#1161163)\n- disable libcurl-level downgrade to SSLv3 (#1154059)\n\n[7.19.7-42]\n- do not force connection close after failed HEAD request (#1168137)\n- fix occasional SIGSEGV during SSL handshake (#1168668)\n\n[7.19.7-41]\n- fix a connection failure when FTPS handle is reused (#1154663)\n\n[7.19.7-40]\n- fix re-use of wrong HTTP NTLM connection (CVE-2014-0015)\n- fix connection re-use when using different log-in credentials (CVE-2014-0138)\n\n[7.19.7-39]\n- fix authentication failure when server offers multiple auth options (#799557)\n\n[7.19.7-38]\n- refresh expired cookie in test172 from upstream test-suite (#1069271)\n- fix a memory leak caused by write after close (#1078562)\n- nss: implement non-blocking SSL handshake (#1083742)\n\n[7.19.7-37]\n- fix heap-based buffer overflow in curl_easy_unescape() (CVE-2013-2174)\n\n[7.19.7-36]\n- fix cookie tailmatching to prevent cross-domain leakage (CVE-2013-1944)\n\n[7.19.7-35]\n- clear NSS session cache if a client certificate from file was used (#885058)\n\n[7.19.7-34]\n- prevent NSS from crashing on client auth hook failure (#880897)\n\n[7.19.7-33]\n- SCP: send large files properly with new enough libssh2 (#879592)\n- fix handling of errors returned from libssh2 when sending data (#873789)\n\n[7.19.7-32]\n- remove a redundant dependency on a fixed version of libssh2\n\n[7.19.7-31]\n- fix a header problem with chunked-encoding and Content-Length (#813127)\n\n[7.19.7-30]\n- print reason phrase from HTTP status line on error (#676596)\n- fix typo in curl.1 man page (#729984)\n- introduce the --delegation option of curl (#730445)\n- enforce versioned libssh2 dependency for libcurl (#741935)\n- nss: select client certificates by DER (#746629)\n- fix a build failure when building against newer libssh2-devel (#841905)\n\n[7.19.7-29]\n- initialize NSS with no database if the selected database is broken (#772642)\n- use NSS_InitContext() to avoid a collision with OpenLDAP (#738456)\n\n[7.19.7-28]\n- add a new option CURLOPT_GSSAPI_DELEGATION (#719938)\n\n[7.19.7-27]\n- do not delegate GSSAPI credentials (CVE-2011-2192)\n\n[7.19.7-26]\n- force NSS to ask for a new client certificate when connecting second time\n  to the same host (#694294)\n\n[7.19.7-25]\n- fix SIGSEGV in CERT_VerifyCert (#690273)\n\n[7.19.7-24]\n- make GSS authentication work when a curl handle is reused (#684892)\n\n[7.19.7-23]\n- do not ignore value of CURLOPT_SSL_VERIFYPEER in certain cases (#678580)\n\n[7.19.7-22]\n- do not ignore failure of SSL handshake (#669702)\n\n[7.19.7-21]\n- avoid memory leaks on SSL connection failure (#678594)\n\n[7.19.7-20]\n- avoid memory leaks and failure of NSS shutdown (#670802)\n\n[7.19.7-19]\n- fix handling of CURLOPT_CAPATH in libcurl (#669702)\n\n[7.19.7-18]\n- avoid build failure caused by a bug in libnih-devel (#669048)\n\n[7.19.7-17]\n- avoid CURLE_OUT_OF_MEMORY given a file name without any slash (#623663)\n- proxy tunnel support for LDAP requests (#655134)\n- proxy with kerberos authentication for https (#625685)\n- improve handling of FTP server session timeout (#651592)\n\n[7.19.7-16]\n- add support for NTLM authentication (#606819)\n\n[7.19.7-15]\n- improve handling of proxy related environment variables (#589132)\n\n[7.19.7-14]\n- do not ignore given timeout during SSL connection (#586355)\n\n[7.19.7-13]\n- kerberos installation prefix has been changed\n\n[7.19.7-12]\n- support for CRL loading from a PEM file (#581485)\n\n[7.19.7-11]\n- eliminated a race condition in handling of SIGALRM (#579732)\n\n[7.19.7-10]\n- throw CURLE_SSL_CERTPROBLEM in case peer rejects a certificate (#565972)\n- add change-log entries for patches applied upstream\n\n[7.19.7-9]\n- remove signal handler in case of DNS timeout (#575977)\n\n[7.19.7-8]\n- http://curl.haxx.se/docs/adv_20100209.html (#563236)\n\n[7.19.7-7]\n- mention lack of IPv6, FTPS and LDAP support while using a socks proxy\n  (#559578)\n\n[7.19.7-6]\n- fix incorrect SSL recv/send timeout handling, patch contributed\n  by Kevin Baughman\n- http://permalink.gmane.org/gmane.comp.web.curl.library/26302\n\n[7.19.7-5]\n- use different port numbers for 32bit and 64bit builds\n- replace hard wired port numbers in the test suite\n\n[7.19.7-4]\n- avoid use of uninitialized value in lib/nss.c\n- make it possible to run test241\n- suppress failure of test513 on s390\n- re-enable SCP/SFTP tests (#539444)\n\n[7.19.7-3]\n- do not require valgrind on s390 and s390x\n- temporarily disabled SCP/SFTP test-suite (#539444)\n\n[7.19.7-2]\n- workaround for broken TLS servers (#525496, #527771)\n\n[7.19.7-1]\n- new upstream release, dropped applied patches\n- fix crash on doubly closed NSPR descriptor, patch contributed\n  by Kevin Baughman (#534176)\n\n[7.19.6-10]\n- require libssh2\u003e=1.2 properly (#525002)\n\n[7.19.6-9]\n- let curl test-suite use valgrind\n- require libssh2\u003e=1.2 (#525002)\n\n[7.19.6-8]\n- rebuild for libssh2 1.2\n\n[7.19.6-7]\n- make curl test-suite more verbose\n\n[7.19.6-6]\n- update polling patch to the latest upstream version\n\n[7.19.6-5]\n- cover ssh and stunnel support by the test-suite\n\n[7.19.6-4]\n- use pkg-config to find nss and libssh2 if possible\n- better patch (not only) for SCP/SFTP polling\n- improve error message for not matching common name (#516056)\n\n[7.19.6-3]\n- avoid tight loop during a sftp upload\n- http://permalink.gmane.org/gmane.comp.web.curl.library/24744\n\n[7.19.6-2]\n- let curl package depend on the same version of libcurl\n\n[7.19.6-1]\n- new upstream release, dropped applied patches\n- changed NSS code to not ignore the value of ssl.verifyhost and produce more\n  verbose error messages (#516056)\n\n[7.19.5-10]\n- Use lzma compressed upstream tarball.\n\n[7.19.5-9]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild\n\n[7.19.5-8]\n- do not pre-login to all PKCS11 slots, it causes problems with HW tokens\n- try to select client certificate automatically when not specified, thanks\n  to Claes Jakobsson\n\n[7.19.5-7]\n- fix SIGSEGV when using NSS client certificates, thanks to Claes Jakobsson\n\n[7.19.5-6]\n- force test suite to use the just built libcurl, thanks to Paul Howarth\n\n[7.19.5-5]\n- run test suite after build\n- enable built-in manual\n\n[7.19.5-4]\n- fix bug introduced by the last build (#504857)\n\n[7.19.5-3]\n- exclude curlbuild.h content from spec (#504857)\n\n[7.19.5-2]\n- avoid unguarded comparison in the spec file, thanks to R P Herrold (#504857)\n\n[7.19.5-1]\n- update to 7.19.5, dropped applied patches\n\n[7.19.4-11]\n- fix infinite loop while loading a private key, thanks to Michael Cronenworth\n  (#453612)\n\n[7.19.4-10]\n- fix curl/nss memory leaks while using client certificate (#453612, accepted\n  by upstream)\n\n[7.19.4-9]\n- add missing BuildRequire for autoconf\n\n[7.19.4-8]\n- fix configure.ac to not discard -g in CFLAGS (#496778)\n\n[7.19.4-7]\n- Fixed configure to respect the environment's CFLAGS and CPPFLAGS settings.\n\n[7.19.4-6]\n- upstream patch fixing memory leak in lib/nss.c (#453612)\n- remove redundant dependency of libcurl-devel on libssh2-devel\n\n[7.19.4-5]\n- enable 6 additional crypto algorithms by default (#436781,\n  accepted by upstream)\n\n[7.19.4-4]\n- fix memory leak in src/main.c (accepted by upstream)\n- avoid using %ifarch\n\n[7.19.4-3]\n- make libcurl-devel multilib-ready (bug #488922)\n\n[7.19.4-2]\n- drop .easy-leak patch, causes problems in pycurl (#488791)\n- fix libcurl-devel dependencies (#488895)\n\n[7.19.4-1]\n- update to 7.19.4 (fixes CVE-2009-0037)\n- fix leak in curl_easy* functions, thanks to Kamil Dudka\n- drop nss-fix patch, applied upstream\n\n[7.19.3-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild\n\n[7.19.3-1]\n- update to 7.19.3, dropped applied nss patches\n- add patch fixing 7.19.3 curl/nss bugs\n\n[7.18.2-9]\n- rebuild for f10/rawhide cvs tag clashes\n\n[7.18.2-8]\n- use improved NSS patch, thanks to Rob Crittenden (#472489)\n\n[7.18.2-7]\n- update the thread safety patch, thanks to Rob Crittenden (#462217)\n\n[7.18.2-6]\n- add thread safety to libcurl NSS cleanup() functions (#459297)\n\n[7.18.2-5]\n- undo mini libcurl.so.3\n\n[7.18.2-4]\n- make miniature library for libcurl.so.3\n\n[7.18.2-3]\n- enable support for libssh2 (#453958)\n\n[7.18.2-2]\n- fix curl_multi_perform() over a proxy (#450140), thanks to\n  Rob Crittenden\n\n[7.18.2-1]\n- update to 7.18.2\n\n[7.18.1-2]\n- spec cleanup, thanks to Paul Howarth (#225671)\n  - drop BR: libtool\n  - convert CHANGES and README to UTF-8\n  - _GNU_SOURCE in CFLAGS is no more needed\n  - remove bogus rpath\n\n[7.18.1-1]\n- update to curl 7.18.1 (fixes #397911)\n- add ABI docs for libcurl\n- remove --static-libs from curl-config\n- drop curl-config patch, obsoleted by @SSL_ENABLED@ autoconf\n  substitution (#432667)\n\n[7.18.0-2]\n- define _GNU_SOURCE so that NI_MAXHOST gets defined from glibc\n\n[7.18.0-1]\n- update to curl-7.18.0\n- drop sslgen patch -\u003e applied upstream\n- fix typo in description\n\n[7.17.1-6]\n- fix curl-devel obsoletes so that we don't break F8-\u003eF9 upgrade\n  path (#429612)\n\n[7.17.1-5]\n- do not attempt to close a bad socket (#427966),\n  thanks to Caolan McNamara\n\n[7.17.1-4]\n- rebuild because of the openldap soname bump\n- remove old nsspem patch\n\n[7.17.1-3]\n- drop useless ldap library detection since curl doesn't\n  dlopen()s it but links to it -\u003e BR: openldap-devel\n- enable LDAPS support (#225671), thanks to Paul Howarth\n- BR: krb5-devel to reenable GSSAPI support\n- simplify build process\n- update description\n\n[7.17.1-2]\n- update description to contain complete supported servers list (#393861)\n\n[7.17.1-1]\n- update to curl 7.17.1\n- include patch to enable SSL usage in NSS when a socket is opened\n  nonblocking, thanks to Rob Crittenden (rcritten@redhat.com)\n\n[7.16.4-10]\n- correctly provide/obsolete curl-devel (#130251)\n\n[7.16.4-9]\n- create libcurl and libcurl-devel subpackages (#130251)\n\n[7.16.4-8]\n- list features correctly when curl is compiled against NSS (#316191)\n\n[7.16.4-7]\n- add zlib-devel BR to enable gzip compressed transfers in curl (#292211)\n\n[7.16.4-6]\n- provide webclient (#225671)\n\n[7.16.4-5]\n- add support for the NSS PKCS#11 pem reader so the command-line is the\n  same for both OpenSSL and NSS by Rob Crittenden (rcritten@redhat.com)\n- switch to NSS again\n\n[7.16.4-4]\n- revert back to use OpenSSL (#266021)\n\n[7.16.4-3]\n- don't use openssl, use nss instead\n\n[7.16.4-2]\n- fix anonymous ftp login (#251570), thanks to David Cantrell\n\n[7.16.4-1]\n- update to 7.16.4\n\n[7.16.3-1]\n- update to 7.16.3\n- drop .print patch, applied upstream\n- next series of merge review fixes by Paul Howarth\n- remove aclocal stuff, no more needed\n- simplify makefile arguments\n- don't reference standard library paths in libcurl.pc\n- include docs/CONTRIBUTE\n\n[7.16.2-5]\n- don't print like crazy (#236981), backported from upstream CVS\n\n[7.16.2-4]\n- another series of review fixes (#225671),\n  thanks to Paul Howarth\n- check version of ldap library automatically\n- don't use %makeinstall and preserve timestamps\n- drop useless patches\n\n[7.16.2-3]\n- add automake BR to curl-devel to fix aclocal dir. ownership,\n  thanks to Patrice Dumas\n\n[7.16.2-2]\n- package libcurl.m4 in curl-devel (#239664), thanks to Quy Tonthat\n\n[7.16.2-1]\n- update to 7.16.2\n\n[7.16.1-3]\n- don't create/ship static libraries (#225671)\n\n[7.16.1-2]\n- merge review related spec fixes (#225671)\n\n[7.16.1-1]\n- update to 7.16.1\n\n[7.16.0-5]\n- don't package generated makefiles for docs/examples to avoid\n  multilib conflicts\n\n[7.16.0-4]\n- convert spec to UTF-8\n- don't delete BuildRoot in %prep phase\n- rpmlint fixes\n\n[-7.16.0-3]\n- prevent curl from dlopen()ing missing ldap libraries so that\n  ldap:// requests work (#215928)\n\n[7.16.0-2]\n- fix BuildRoot\n- add Requires: pkgconfig for curl-devel\n- move LDFLAGS and LIBS to Libs.private in libcurl.pc.in (#213278)\n\n[7.16.0-1]\n- update to curl-7.16.0\n\n[7.15.5-1.fc6]\n- update to curl-7.15.5\n- use %{?dist}\n\n[7.15.4-1]\n- update to 7.15.4\n\n[7.15.3-1]\n- fix multilib problem using pkg-config\n- update to 7.15.3\n\n[7.15.1-2]\n- fix multilib problem - #181290 -\n  curl-devel.i386 not installable together with curl-devel.x86-64\n\n[7.15.1-1.2.1]\n- bump again for double-long bug on ppc(64)\n\n[7.15.1-1.2]\n- rebuilt for new gcc4.1 snapshot and glibc changes\n\n* Fri Dec 09 2005 Jesse Keating \u003cjkeating@redhat.com\u003e\n- rebuilt\n\n[7.15.1-1]\n- update to 7.15.1 (bug 175191)\n\n[7.15.0-3]\n- fix curl-config bug 174556 - missing vernum value\n\n[7.15.0-2]\n- rebuilt\n\n[7.15.0-1]\n- update to 7.15.0\n\n[7.14.1-1]\n- update to 7.14.1\n\n[7.14.0-1]\n- rebuild new version\n\n[7.13.1-3]\n- fix bug 150768 - curl-7.12.3-2 breaks basic authentication\n  used Daniel Stenberg patch\n\n[7.13.1-2]\n- update to use ca-bundle in /etc/pki\n- mark License as MIT not MPL\n\n[7.13.1-1]\n- rebuilt (7.13.1)\n\n[7.13.0-2]\n- rebuild with openssl-0.9.7e\n\n* Sun Feb 13 2005 Florian La Roche \u003claroche@redhat.com\u003e\n- 7.13.0\n\n[7.12.3-3]\n- don't pass /usr to --with-libidn to remove '-L/usr/lib' from\n  'curl-config --libs' output on x86_64.\n\n[7.12.3-1]\n- Upgrade to 7.12.3, which uses poll() for FDSETSIZE limit (#134794)\n- require libidn-devel for devel subpkg (#141341)\n- remove proftpd kludge; included upstream\n\n[7.12.1-1]\n- upgrade to 7.12.1\n- enable GSSAPI auth (#129353)\n- enable I18N domain names (#134595)\n- workaround for broken ProFTPD SSL auth (#134133). Thanks to\n  Aleksandar Milivojevic\n\n[7.12.0-4]\n- move new docs position so defattr gets applied\n\n[7.12.0-3]\n- remove INSTALL, move libcurl docs to -devel\n\n* Mon Jul 26 2004 Jindrich Novy \u003cjnovy@redhat.com\u003e\n- updated to 7.12.0\n- updated nousr patch\n\n* Tue Jun 15 2004 Elliot Lee \u003csopwith@redhat.com\u003e\n- rebuilt\n\n[7.11.1-1]\n- upgraded; updated nousr patch\n- added COPYING (#115956)\n-\n\n* Tue Mar 02 2004 Elliot Lee \u003csopwith@redhat.com\u003e\n- rebuilt\n\n* Fri Feb 13 2004 Elliot Lee \u003csopwith@redhat.com\u003e\n- rebuilt\n\n* Sat Jan 31 2004 Florian La Roche \u003cFlorian.LaRoche@redhat.de\u003e\n- update to 7.10.8\n- remove patch2, already upstream\n\n[7.10.6-7]\n- aclocal before libtoolize\n- move OpenLDAP license so it's present as a doc file, present in\n  both the source and binary as per conditions\n\n[7.10.6-6]\n- add OpenLDAP copyright notice for usage of code, add OpenLDAP\n  license for this code\n\n[7.10.6-5]\n- match serverAltName certs with SSL (#106168)\n\n[7.10.6-4.1]\n- bump n-v-r for RHEL\n\n[7.10.6-4]\n- restore ca cert bundle (#104400)\n- require openssl, we want to use its ca-cert bundle\n\n[7.10.6-3]\n- rebuild\n\n[7.10.6-2.2]\n- fix to include libcurl.so\n\n[7.10.6-2.1]\n- bump n-v-r for RHEL\n\n[7.10.6-2]\n- devel subpkg needs openssl-devel as a Require (#102963)\n\n[7.10.6-1]\n- bumped version\n\n[7.10.5-1]\n- bumped version\n\n* Wed Jun 04 2003 Elliot Lee \u003csopwith@redhat.com\u003e\n- rebuilt\n\n* Sat Apr 12 2003 Florian La Roche \u003cFlorian.LaRoche@redhat.de\u003e\n- update to 7.10.4\n- adapt nousr patch\n\n* Wed Jan 22 2003 Tim Powers \u003ctimp@redhat.com\u003e\n- rebuilt\n\n[7.9.8-4]\n- don't add -L/usr/lib to 'curl-config --libs' output\n\n[7.9.8-3]\n- rebuild\n\n[7.9.8-2]\n- fix  output for libdir!=/usr/lib\n- remove docs/LIBCURL from docs list; remove unpackaged libcurl.la\n- libtoolize and reconf\n\n[7.9.8-1]\n- 7.9.8 (# 69473)\n\n* Fri Jun 21 2002 Tim Powers \u003ctimp@redhat.com\u003e\n- automated rebuild\n\n* Sun May 26 2002 Tim Powers \u003ctimp@redhat.com\u003e\n- automated rebuild\n\n[7.9.7-1]\n- 7.9.7\n\n[7.9.6-1]\n- 7.9.6\n\n[7.9.5-2]\n- Stop the curl-config script from printing -I/usr/include\n  and -L/usr/lib (#59497)\n\n[7.9.5-1]\n- 7.9.5\n\n[7.9.3-2]\n- Rebuild\n\n[7.9.3-1]\n- update to 7.9.3\n\n[7.9.2-2]\n- automated rebuild\n\n[7.9.2-1]\n- 7.9.2\n\n* Fri Aug 17 2001 Nalin Dahyabhai \u003cnalin@redhat.com\u003e\n- include curl-config in curl-devel\n- update to 7.8 to fix memory leak and strlcat() symbol pollution from libcurl\n\n* Wed Jul 18 2001 Crutcher Dunnavant \u003ccrutcher@redhat.com\u003e\n- added openssl-devel build req\n\n* Mon May 21 2001 Tim Powers \u003ctimp@redhat.com\u003e\n- built for the distro\n\n* Tue Apr 24 2001 Jeff Johnson \u003cjbj@redhat.com\u003e\n- upgrade to curl-7.7.2.\n- enable IPv6.\n\n* Fri Mar 02 2001 Tim Powers \u003ctimp@redhat.com\u003e\n- rebuilt against openssl-0.9.6-1\n\n* Thu Jan 04 2001 Tim Powers \u003ctimp@redhat.com\u003e\n- fixed mising ldconfigs\n- updated to 7.5.2, bug fixes\n\n* Mon Dec 11 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- updated to 7.5.1\n\n* Mon Nov 06 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- update to 7.4.1 to fix bug #20337, problems with curl -c\n- not using patch anymore, it's included in the new source. Keeping\n  for reference\n\n* Fri Oct 20 2000 Nalin Dahyabhai \u003cnalin@redhat.com\u003e\n- fix bogus req in -devel package\n\n* Fri Oct 20 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- devel package needed defattr so that root owns the files\n\n* Mon Oct 16 2000 Nalin Dahyabhai \u003cnalin@redhat.com\u003e\n- update to 7.3\n- apply vsprintf/vsnprintf patch from Colin Phipps via Debian\n\n* Mon Aug 21 2000 Nalin Dahyabhai \u003cnalin@redhat.com\u003e\n- enable SSL support\n- fix packager tag\n- move buildroot to %{_tmppath}\n\n* Tue Aug 01 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- fixed vendor tag for bug #15028\n\n* Mon Jul 24 2000 Prospector \u003cprospector@redhat.com\u003e\n- rebuilt\n\n* Tue Jul 11 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- workaround alpha build problems with optimizations\n\n* Mon Jul 10 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- rebuilt\n\n* Mon Jun 05 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- put man pages in correct place\n- use %makeinstall\n\n* Mon Apr 24 2000 Tim Powers \u003ctimp@redhat.com\u003e\n- updated to 6.5.2\n\n* Wed Nov 03 1999 Tim Powers \u003ctimp@redhat.com\u003e\n- updated sources to 6.2\n- gzip man page\n\n* Mon Aug 30 1999 Tim Powers \u003ctimp@redhat.com\u003e\n- changed group\n\n* Thu Aug 26 1999 Tim Powers \u003ctimp@redhat.com\u003e\n- changelog started\n- general cleanups, changed prefix to /usr, added manpage to files section\n- including in Powertools",
+  "Description": "[7.29.0-51.0.1]\n- Security Fixes [OraBug: 28939992]\n- CVE-2016-8615 cookie injection for other servers (https://curl.haxx.se/docs/CVE-2016-8615.html)\n- CVE-2016-8616 case insensitive password comparison (https://curl.haxx.se/docs/CVE-2016-8616.html)\n- CVE-2016-8617 OOB write via unchecked multiplication (https://curl.haxx.se/docs/CVE-2016-8617.html)\n- CVE-2016-8618 double-free in curl_maprintf (https://curl.haxx.se/docs/CVE-2016-8618.html)\n- CVE-2016-8619 double-free in krb5 code (https://curl.haxx.se/docs/CVE-2016-8619.html)\n- CVE-2016-8621 curl_getdate read out of bounds (https://curl.haxx.se/docs/CVE-2016-8621.html)\n- CVE-2016-8622 URL unescape heap overflow via integer truncation (https://curl.haxx.se/docs/CVE-2016-8622.html)\n- CVE-2016-8623 Use-after-free via shared cookies (https://curl.haxx.se/docs/CVE-2016-8623.html)\n- CVE-2016-8624 invalid URL parsing with # (https://curl.haxx.se/docs/CVE-2016-8624.html)",
   "Platform": [
     "Oracle Linux 6",
     "Oracle Linux 7"
@@ -8,63 +8,63 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-4652.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-4652.html",
       "ID": "ELSA-2019-4652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8615.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8615.html",
       "ID": "CVE-2016-8615"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8616.html",
-      "ID": "CVE-2016-8616"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8617.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8617.html",
       "ID": "CVE-2016-8617"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8618.html",
-      "ID": "CVE-2016-8618"
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8623.html",
+      "ID": "CVE-2016-8623"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8619.html",
-      "ID": "CVE-2016-8619"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8620.html",
-      "ID": "CVE-2016-8620"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8621.html",
-      "ID": "CVE-2016-8621"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8622.html",
-      "ID": "CVE-2016-8622"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8624.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8624.html",
       "ID": "CVE-2016-8624"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8625.html",
-      "ID": "CVE-2016-8625"
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8616.html",
+      "ID": "CVE-2016-8616"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-8623.html",
-      "ID": "CVE-2016-8623"
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8618.html",
+      "ID": "CVE-2016-8618"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8619.html",
+      "ID": "CVE-2016-8619"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8620.html",
+      "ID": "CVE-2016-8620"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8621.html",
+      "ID": "CVE-2016-8621"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8622.html",
+      "ID": "CVE-2016-8622"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-8625.html",
+      "ID": "CVE-2016-8625"
     }
   ],
   "Criteria": {
@@ -311,61 +311,61 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8615.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8615.html",
       "ID": "CVE-2016-8615"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8616.html",
-      "ID": "CVE-2016-8616"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8617.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8617.html",
       "ID": "CVE-2016-8617"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8618.html",
-      "ID": "CVE-2016-8618"
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8623.html",
+      "ID": "CVE-2016-8623"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8619.html",
-      "ID": "CVE-2016-8619"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8620.html",
-      "ID": "CVE-2016-8620"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8621.html",
-      "ID": "CVE-2016-8621"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8622.html",
-      "ID": "CVE-2016-8622"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8624.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8624.html",
       "ID": "CVE-2016-8624"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8625.html",
-      "ID": "CVE-2016-8625"
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8616.html",
+      "ID": "CVE-2016-8616"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-8623.html",
-      "ID": "CVE-2016-8623"
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8618.html",
+      "ID": "CVE-2016-8618"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8619.html",
+      "ID": "CVE-2016-8619"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8620.html",
+      "ID": "CVE-2016-8620"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8621.html",
+      "ID": "CVE-2016-8621"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8622.html",
+      "ID": "CVE-2016-8622"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-8625.html",
+      "ID": "CVE-2016-8625"
     }
   ],
   "Issued": {
-    "Date": "2019-05-20"
+    "Date": "2019-05-21"
   }
 }

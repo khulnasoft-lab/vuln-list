@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-3014.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-3014.html",
       "ID": "ELSA-2020-3014"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12049.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12049.html",
       "ID": "CVE-2020-12049"
     }
   ],
@@ -69,6 +69,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "dbus-devel is earlier than 1:1.12.8-10.0.1.el8_2"
+                      },
+                      {
+                        "Comment": "dbus-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "dbus-libs is earlier than 1:1.12.8-10.0.1.el8_2"
                       },
                       {
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "dbus-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dbus-devel is earlier than 1:1.12.8-10.0.1.el8_2"
-                      },
-                      {
-                        "Comment": "dbus-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -169,6 +169,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "dbus-devel is earlier than 1:1.12.8-10.0.1.el8_2"
+                      },
+                      {
+                        "Comment": "dbus-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "dbus-libs is earlier than 1:1.12.8-10.0.1.el8_2"
                       },
                       {
@@ -185,18 +197,6 @@
                       },
                       {
                         "Comment": "dbus-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dbus-devel is earlier than 1:1.12.8-10.0.1.el8_2"
-                      },
-                      {
-                        "Comment": "dbus-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -236,11 +236,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12049.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12049.html",
       "ID": "CVE-2020-12049"
     }
   ],
   "Issued": {
-    "Date": "2020-07-22"
+    "Date": "2020-07-23"
   }
 }

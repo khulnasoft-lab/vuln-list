@@ -2,233 +2,25 @@
   "Title": "ELSA-2014-1166:  jakarta-commons-httpclient security update (IMPORTANT)",
   "Description": "[1:3.1-16]\n- Fix MITM security vulnerability\n- Resolves: CVE-2014-3577",
   "Platform": [
-    "Oracle Linux 6",
     "Oracle Linux 5",
+    "Oracle Linux 6",
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1166.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-1166.html",
       "ID": "ELSA-2014-1166"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3577.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3577.html",
       "ID": "CVE-2014-3577"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "OR",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is x86_64"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is i686"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "OR",
-                    "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
-                          }
-                        ]
-                      }
-                    ],
-                    "Criterions": null
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is sparc64"
-                  }
-                ]
-              }
-            ],
-            "Criterions": null
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 6 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -454,6 +246,226 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is x86_64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is i686"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-demo is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-javadoc is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is earlier than 1:3.1-0.9.el6_5"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 6 key"
+                          }
+                        ]
+                      }
+                    ],
+                    "Criterions": null
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is sparc64"
+                  }
+                ]
+              }
+            ],
+            "Criterions": null
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 6 is installed"
+          }
+        ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "OR",
+                    "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-16.el7_0"
+                          },
+                          {
+                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 7 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "jakarta-commons-httpclient-demo is earlier than 1:3.1-16.el7_0"
                           },
                           {
@@ -482,18 +494,6 @@
                           },
                           {
                             "Comment": "jakarta-commons-httpclient-manual is signed with the Oracle Linux 7 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "jakarta-commons-httpclient is earlier than 1:3.1-16.el7_0"
-                          },
-                          {
-                            "Comment": "jakarta-commons-httpclient is signed with the Oracle Linux 7 key"
                           }
                         ]
                       }
@@ -588,7 +588,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3577.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3577.html",
       "ID": "CVE-2014-3577"
     }
   ],

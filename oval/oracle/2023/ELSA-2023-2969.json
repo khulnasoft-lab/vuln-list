@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2969.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2969.html",
       "ID": "ELSA-2023-2969"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-44792.html",
-      "ID": "CVE-2022-44792"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-44793.html",
+      "ID": "CVE-2022-44793"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-44793.html",
-      "ID": "CVE-2022-44793"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-44792.html",
+      "ID": "CVE-2022-44792"
     }
   ],
   "Criteria": {
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "net-snmp-libs is earlier than 1:5.8-27.0.1.el8"
-                      },
-                      {
-                        "Comment": "net-snmp-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -78,6 +66,18 @@
                       },
                       {
                         "Comment": "net-snmp-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "net-snmp-libs is earlier than 1:5.8-27.0.1.el8"
+                      },
+                      {
+                        "Comment": "net-snmp-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -126,18 +126,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "net-snmp-libs is earlier than 1:5.8-27.0.1.el8"
-                      },
-                      {
-                        "Comment": "net-snmp-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "net-snmp is earlier than 1:5.8-27.0.1.el8"
                       },
                       {
@@ -166,6 +154,18 @@
                       },
                       {
                         "Comment": "net-snmp-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "net-snmp-libs is earlier than 1:5.8-27.0.1.el8"
+                      },
+                      {
+                        "Comment": "net-snmp-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -217,16 +217,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-44792.html",
-      "ID": "CVE-2022-44792"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-44793.html",
+      "ID": "CVE-2022-44793"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-44793.html",
-      "ID": "CVE-2022-44793"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-44792.html",
+      "ID": "CVE-2022-44792"
     }
   ],
   "Issued": {
-    "Date": "2023-05-20"
+    "Date": "2023-05-24"
   }
 }

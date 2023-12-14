@@ -1,24 +1,24 @@
 {
   "Title": "ELSA-2022-9793:  kernel security update (IMPORTANT)",
-  "Description": "[2.6.32-754.35.1.0.7.OL6]\n- bluetooth: eliminate the potential race condition when removing the HCI controller (Lin Ma) {CVE-2021-32399} [Orabug: 33763116]\n- RDMA/ucma: Put a lock around every call to the rdma_cm layer (Jason Gunthorpe) [Orabug: 33763116]\n- RDMA/cma: Add missing locking to rdma_accept() (Leon Romanovsky) [Orabug: 33763116]\n- RDMA/ucma: Fix the locking of ctx-\u003efile (Leon Romanovsky) [Orabug: 33763116]\n- RDMA/ucma: Rework ucma_migrate_id() to avoid races with destroy (Jason Gunthorpe) {CVE-2020-36385} [Orabug: 33763116]\n\n[2.6.32-754.35.1.0.6.OL6]\n- do_epoll_ctl(): clean the failure exits up a bit (Marc Zyngier) {CVE-2020-0466} [Orabug: 34086960]\n- epoll: Keep a reference on files added to the check list (Al Viro) {CVE-2020-0466} [Orabug: 34086960]\n- fix regression in 'epoll: Keep a reference on files added to the check list (Al Viro) {CVE-2021-1048} [Orabug: 34086960]\n- net: split out functions related to registering inflight socket files (Jens Axboe) [Orabug: 34086960]\n- af_unix: fix garbage collect vs MSG_PEEK (Miklos Szeredi) {CVE-2021-0920}  [Orabug: 34086960]\n- xfs: map unwritten blocks in XFS_IOC_{ALLOC,FREE}SP just like fallocate (Darrick J. Wong) {CVE-2021-4155} [Orabug: 34086960]\n- cgroup-v1: Require capabilities to set release_agent (Waiman Long) {CVE-2022-0492} [Orabug: 34086960]\n\n[2.6.32-754.35.1.0.5.OL6]\n- [kernel] futex: Use pi_state_update_owner() in put_pi_state() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Handle faults correctly for PI futexes (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Provide and use pi_state_update_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347}[Orabug: 33150734]\n- [kernel] futex: Replace pointless printk in fixup_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Ensure the correct return value from futex_lock_pi() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [drm] drm/i915/guc: Disable firmware loading on i915 option (Dave Airlie) [1930246] {CVE-2020-12362} [Orabug: 33150734]\n\n[2.6.32-754.35.1.0.4.OL6]\n- seq_file: disallow extremely large seq buffer allocations (CVE-2021-33909) (Eric Sandeen) [Orabug: 33137331]\n\n[2.6.32-754.35.1.0.3.OL6]\n- Fixes for RHSA-2021:1288 [Orabug: 32809880]\n\n[2.6.32-754.35.1.0.2.OL6]\n- x86_32, entry: Do syscall exit work on badsys (CVE-2014-4508) (Andy Lutomirski) [Orabug: 32148837]\n- x86_32, entry: Store badsys error code in %eax (Sven Wegener) [Orabug: 32148837]\n\n- 2.6.32-754.35.1.0.1\n- [kernel] genirq: unmask irq in try_one_irq [orabug 31649751]\n\n[2.6.32-754.35.1.OL6]\n- Update genkey [bug 25599697]",
+  "Description": "[2.6.32-754.35.1.0.7.OL6]\n- bluetooth: eliminate the potential race condition when removing the HCI controller (Lin Ma) {CVE-2021-32399} [Orabug: 33763116]\n- RDMA/ucma: Put a lock around every call to the rdma_cm layer (Jason Gunthorpe) [Orabug: 33763116]\n- RDMA/cma: Add missing locking to rdma_accept() (Leon Romanovsky) [Orabug: 33763116]\n- RDMA/ucma: Fix the locking of ctx-\u003efile (Leon Romanovsky) [Orabug: 33763116]\n- RDMA/ucma: Rework ucma_migrate_id() to avoid races with destroy (Jason Gunthorpe) {CVE-2020-36385} [Orabug: 33763116]",
   "Platform": [
     "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9793.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-9793.html",
       "ID": "ELSA-2022-9793"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-32399.html",
-      "ID": "CVE-2021-32399"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-36385.html",
+      "ID": "CVE-2020-36385"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-36385.html",
-      "ID": "CVE-2020-36385"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-32399.html",
+      "ID": "CVE-2021-32399"
     }
   ],
   "Criteria": {
@@ -313,13 +313,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-32399.html",
-      "ID": "CVE-2021-32399"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-36385.html",
+      "ID": "CVE-2020-36385"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-36385.html",
-      "ID": "CVE-2020-36385"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-32399.html",
+      "ID": "CVE-2021-32399"
     }
   ],
   "Issued": {

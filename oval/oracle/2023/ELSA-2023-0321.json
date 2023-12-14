@@ -1,33 +1,33 @@
 {
   "Title": "ELSA-2023-0321:  nodejs and nodejs-nodemon security, bug fix, and enhancement update (MODERATE)",
-  "Description": "nodejs\n[1:16.18.1-3]\n- Update sources of undici WASM blobs\n  Resolves: rhbz#2151617\n\n[1:16.18.1-2]\n- Add back libs and v8-devel subpackages\n- Related: RHBZ#2121126\n- Record previously fixed CVE\n- Resolves: CVE-2021-44906\n\n[1:16.18.1-1]\n- Rebase + CVEs\n- Resolves: #2142808\n- Resolves: #2142826, #2131745, #2142855\n\n[16.17.1-1]\n- Rebase to version 16.17.1\n  Resolves: CVE-2022-35255 CVE-2022-35256\n\n[16.16.0-1]\n- Rebase to version 16.16.0\n  Resolves: RHBZ#2106290\n  Resolves: CVE-2022-32212 CVE-2022-32213 CVE-2022-32214 CVE-2022-32215\n  Resolves: CVE-2022-29244\n\n[16.14.0-5]\n- Decouple dependency bundling from bootstrapping\n\n[16.14.0-4]\n- Apply lock file validation fixes\n  Resolves: CVE-2021-43616\n\n[16.14.0-3]\n- Refactor bootstap handling and configure script invocation\n  Resolves: rhbz#2056969\n\n[1:16.14.0-2]\n- Build with bootstrap by default due to old versions of dependencies available\n- Resolves: #2042995, #2042970, #2042981, #2042989\n- Resolves: #2029936, #2024890, #2014499, #2014135\n- Resolves: #2013834, #1945299\n\n[1:16.14.0-1]\n- Update to latest version\n- Use jinja and jq\n- Don't fix python3\n- Resolves: CVE-2022-21824, CVE-2021-44531, CVE-2021-44532, CVE-2021-44533\n- Resolves CVE-2020-15095\n- Resolves: CVE-2021-3918, CVE-2021-22959, CVE-2021-22960\n- Resolves: CVE-2021-3807, CVE-2021-27290\n\n[1:16.10.0-1]\n- Rebase to 16.10.0, add corepack, fix PowerShell dependency\n- Resolves: RHBZ#2000539, #2000548, #2000549, #2002177\n\n[1:16.6.2-1]\n- Rebase to 16.6.2\n  Resolves: CVE-2021-22931 CVE-2021-22939 CVE-2021-22940\n\n[1:16.5.0-3]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n* Thu Jul 22 2021 Zuzana Svetlikova \u003czsvetlik@redhat.com - 1:16.5.0-2\n- Bump for gating\n- Resolves: RHBZ#1979926\n\n[1:16.5.0-1]\n- Rebase to 16.5.0\n- Fixes CVE-2021-22918(libuv)\n- Resolves: RHBZ#1979926\n\n[1:16.3.0-2]\n- Rebuilt for RHEL 9 BETA for openssl 3.0\n  Related: rhbz#1971065\n\n[1:16.3.0-1]\n- Resolves: RHBZ#1953491\n- Rebase to 16.3.0\n- includes https://github.com/nodejs/node/pull/38732\n\n[1:16.2.0-1]\n- Resolves: RHBZ#1953491\n- Rebase to 16.2.0\n- includes https://github.com/nodejs/node/pull/38633 (FIPS for OpenSSL 3.0)\n\n[1:16.1.0-1]\n- Resolves: RHBZ#1953491\n- Support for OpenSSL 3.0.0\n- Rebase to v16.x\n- Update version of gcc and gcc-c++ needed\n- Bundle nghttp3 and ngtcp2\n\n* Fri Apr 16 2021 Mohan Boddu \u003cmboddu@redhat.com\u003e\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[1:14.16.0-4]\n- Rebuilt for removed libstdc++ symbol (#1937698)\n\n[1:14.16.0-3]\n- Only require nodejs-packaging on Fedora\n- remove --debug-nghttp2 (#1930775)\n- always build with systemtap\n\n[1:14.15.4-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[1:14.15.4-1]\n- Update to 14.15.4\n\nnodejs-nodemon\n[2.0.20-2]\n- Record CVE fixed in the current or previous upstream versions\n- Resolves: CVE-2021-44906",
+  "Description": "nodejs\n[1:16.18.1-3]\n- Update sources of undici WASM blobs\n  Resolves: rhbz#2151617\n\n[1:16.18.1-2]\n- Add back libs and v8-devel subpackages\n- Related: RHBZ#2121126\n- Record previously fixed CVE\n- Resolves: CVE-2021-44906\n\n[1:16.18.1-1]\n- Rebase + CVEs\n- Resolves: #2142808\n- Resolves: #2142826, #2131745, #2142855\n\nnodejs-nodemon\n[2.0.20-2]\n- Record CVE fixed in the current or previous upstream versions\n- Resolves: CVE-2021-44906",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-0321.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-0321.html",
       "ID": "ELSA-2023-0321"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-35256.html",
-      "ID": "CVE-2022-35256"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-43548.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-43548.html",
       "ID": "CVE-2022-43548"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-44906.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-35256.html",
+      "ID": "CVE-2022-35256"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-44906.html",
       "ID": "CVE-2021-44906"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3517.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3517.html",
       "ID": "CVE-2022-3517"
     }
   ],
@@ -227,26 +227,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-35256.html",
-      "ID": "CVE-2022-35256"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-43548.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-43548.html",
       "ID": "CVE-2022-43548"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-44906.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-35256.html",
+      "ID": "CVE-2022-35256"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-44906.html",
       "ID": "CVE-2021-44906"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3517.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3517.html",
       "ID": "CVE-2022-3517"
     }
   ],
   "Issued": {
-    "Date": "2023-01-23"
+    "Date": "2023-01-24"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2127.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2127.html",
       "ID": "ELSA-2023-2127"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38023.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-38023.html",
       "ID": "CVE-2022-38023"
     }
   ],
@@ -28,6 +28,78 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-devel is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-pidl is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "samba-pidl is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-test is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "samba-test is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-test-libs is earlier than 0:4.16.4-103.0.1.el9_1"
+                      },
+                      {
+                        "Comment": "samba-test-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -157,78 +229,6 @@
                       },
                       {
                         "Comment": "samba-winbind-modules is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-devel is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-pidl is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "samba-pidl is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "samba-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test-libs is earlier than 0:4.16.4-103.0.1.el9_1"
-                      },
-                      {
-                        "Comment": "samba-test-libs is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -608,7 +608,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38023.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-38023.html",
       "ID": "CVE-2022-38023"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-8493.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-8493.html",
       "ID": "ELSA-2022-8493"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-42919.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-42919.html",
       "ID": "CVE-2022-42919"
     }
   ],
@@ -33,10 +33,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3 is earlier than 0:3.9.14-1.el9_1.1"
+                        "Comment": "python-unversioned-command is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
-                        "Comment": "python3 is signed with the Oracle Linux 9 key"
+                        "Comment": "python-unversioned-command is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -45,10 +45,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-libs is earlier than 0:3.9.14-1.el9_1.1"
+                        "Comment": "python3 is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
-                        "Comment": "python3-libs is signed with the Oracle Linux 9 key"
+                        "Comment": "python3 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -69,6 +69,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-devel is earlier than 0:3.9.14-1.el9_1.1"
+                      },
+                      {
+                        "Comment": "python3-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "python3-idle is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
@@ -81,34 +93,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-libs is earlier than 0:3.9.14-1.el9_1.1"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "python3-test is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
                         "Comment": "python3-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python-unversioned-command is earlier than 0:3.9.14-1.el9_1.1"
-                      },
-                      {
-                        "Comment": "python-unversioned-command is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-devel is earlier than 0:3.9.14-1.el9_1.1"
-                      },
-                      {
-                        "Comment": "python3-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -145,30 +145,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3 is earlier than 0:3.9.14-1.el9_1.1"
-                      },
-                      {
-                        "Comment": "python3 is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-libs is earlier than 0:3.9.14-1.el9_1.1"
-                      },
-                      {
-                        "Comment": "python3-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "python-unversioned-command is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
@@ -181,22 +157,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-devel is earlier than 0:3.9.14-1.el9_1.1"
+                        "Comment": "python3 is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
-                        "Comment": "python3-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-tkinter is earlier than 0:3.9.14-1.el9_1.1"
-                      },
-                      {
-                        "Comment": "python3-tkinter is signed with the Oracle Linux 9 key"
+                        "Comment": "python3 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -217,6 +181,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-devel is earlier than 0:3.9.14-1.el9_1.1"
+                      },
+                      {
+                        "Comment": "python3-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "python3-idle is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
@@ -229,10 +205,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "python3-libs is earlier than 0:3.9.14-1.el9_1.1"
+                      },
+                      {
+                        "Comment": "python3-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "python3-test is earlier than 0:3.9.14-1.el9_1.1"
                       },
                       {
                         "Comment": "python3-test is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-tkinter is earlier than 0:3.9.14-1.el9_1.1"
+                      },
+                      {
+                        "Comment": "python3-tkinter is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -260,11 +260,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-42919.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-42919.html",
       "ID": "CVE-2022-42919"
     }
   ],
   "Issued": {
-    "Date": "2022-11-23"
+    "Date": "2022-11-24"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4393.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-4393.html",
       "ID": "ELSA-2021-4393"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10001.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-10001.html",
       "ID": "CVE-2020-10001"
     }
   ],
@@ -93,10 +93,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-libs is earlier than 1:2.2.6-40.el8"
+                        "Comment": "cups-lpd is earlier than 1:2.2.6-40.el8"
                       },
                       {
-                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
+                        "Comment": "cups-lpd is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -105,10 +105,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-lpd is earlier than 1:2.2.6-40.el8"
+                        "Comment": "cups-libs is earlier than 1:2.2.6-40.el8"
                       },
                       {
-                        "Comment": "cups-lpd is signed with the Oracle Linux 8 key"
+                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -128,6 +128,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-libs is earlier than 1:2.2.6-40.el8"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -193,18 +205,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "cups-libs is earlier than 1:2.2.6-40.el8"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "cups-lpd is earlier than 1:2.2.6-40.el8"
                       },
                       {
@@ -236,11 +236,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10001.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-10001.html",
       "ID": "CVE-2020-10001"
     }
   ],
   "Issued": {
-    "Date": "2021-11-14"
+    "Date": "2021-11-16"
   }
 }

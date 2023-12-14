@@ -1,49 +1,49 @@
 {
   "Title": "ELSA-2023-12952: grub2 security update (IMPORTANT)",
-  "Description": "[2.02-0.87.0.26.el7_9.9]\n- Enable common subpackage for aarch64\n- Do not sign aarch64 efi binaries [Orabug: 32670043]\n- Remove aarch64 deps on shim [Orabug: 32670043]\n- Restore versioned certificate provide for aarch64 package to satisfy shim [Orabug: 32670043]\n\n[2.02-0.87.0.24.el7_9.9]\n- Replace bugzilla.oracle.com reference [Orabug: 35477723]\n\n[2.02-0.87.0.23.el7_9.9]\n- Backport kernel EFI allocation pacthes [Orabug: 34301086]\n\n[2.02-0.87.0.21.el7_9.9]\n- Add CVE-2022-28736 to the list [JIRA: OLDIS-16371]\n\n[2.02-0.87.0.19.el7_9.9]\n- Fix: CVE-2021-3695, CVE-2021-3696, CVE-2021-3697,\n  CVE-2022-28733, CVE-2022-28734, CVE-2022-28735 [JIRA: OLDIS-16371]\n- Various coverity fixes [JIRA: OLDIS-16371]\n- bump SBAT generation [JIRA: OLDIS-16371]\n\n[2.02-0.87.0.17.el7_9.9]\n- Cleanup XEN shell script (Alex Burmashev) [Orabug: 33851417]\n- Update SBAT data (Alex Burmashev) [Orabug: 33851417]\n- efinet: change SNP open call (Alex Burmashev) [Orabug: 32646964]\n- disable buggy 0183-efinet-retransmit-if-our-device-is-busy.patch [Orabug: 27982684]\n- Patch multiboot2 to the recent state [Orabug: 32950597]\n- Enable multiboot2 for UEFI ( non Secureboot ) mode [Orabug: 32950597]\n- Update signing certificate [Orabug: 32670043]\n- Update shim and certificates dependencies [Orabug: 32670043]\n- xfs: Don't attempt to iterate over empty directory [Orabug: 32584717]\n- add SBAT metadata for Oracle Linux grub2\n- Use similar format for menu entry in grub environment block\n- config file. [Orabug: 32172943]\n- Fix degradation in multiboot2 code [Orabug: 32069510]\n- Update signing certificate for efi binaries\n- Update upstream references [Orabug: 30138841]\n- Restore symlink to grub environment file, that was removed during grub2-efi update\n  if grub2 package is also installed on UEFI machines [Orabug: 27345750]\n- fix symlink removal scriptlet, to be executed only on removal [Orabug: 19231481]\n- Fix comparison in patch for [Orabug: 18504756]\n- Remove symlink to grub environment file during uninstall on EFI platforms [Orabug: 19231481]\n- replace dynamic EFI boot folder path generation with predefined 'redhat' (Alex Burmashev)\n- Put 'with' in menuentry instead of 'using' [Orabug: 18504756]\n- Use different titles for UEK and RHCK kernels [Orabug: 18504756]\n\n[2.02-087.e7.9]\n- Bump for signing\n- Resolves: #1892860\n\n[2.02-0.87.e7.8]\n- Fix accidental reboot in grub_exit\n- Resolves: #1892860\n\n[2.02-0.87.e7.7]\n- Fix boot failures in ppc64le caused by storage race condition (diegodo)\n  Resolves: rhbz#1942148\n\n[2.02-0.87.e7.6]\n- Fix ppc64le performance issues (diegodo)\n  Resolves: rhbz#1759298\n\n[2.02-0.87.e7.5]\n- Add the at keyboard patches that weren't included\n  Resolves: rhbz#1892240\n\n[2.02-0.87.e7.4]\n- add keylayouts and at_keyboard modules to EFI binary\n  Resolves: rhbz#1892240\n\n[2.02-0.87.e7.3]\n- at_keyboard: use set 1 when keyboard is in Translate mode (rmetrich)\n  Resolves: rhbz#1892240\n\n[2.02-0.87.e7.2]\n- Fix another batch of CVEs\n  Resolves: CVE-2020-14372\n  Resolves: CVE-2020-25632\n  Resolves: CVE-2020-25647\n  Resolves: CVE-2020-27749\n  Resolves: CVE-2020-27779\n  Resolves: CVE-2021-20225\n  Resolves: CVE-2021-20233\n\n[2.02-0.87.e7.1]\n- Fix keyboards that report IBM PC AT scan codes\n  Resolves: rhbz#1892240",
+  "Description": "[2.02-0.87.0.26.el7_9.9]\n- Enable common subpackage for aarch64\n- Do not sign aarch64 efi binaries [Orabug: 32670043]\n- Remove aarch64 deps on shim [Orabug: 32670043]\n- Restore versioned certificate provide for aarch64 package to satisfy shim [Orabug: 32670043]\n\n[2.02-0.87.0.24.el7_9.9]\n- Replace bugzilla.oracle.com reference [Orabug: 35477723]\n\n[2.02-0.87.0.23.el7_9.9]\n- Backport kernel EFI allocation pacthes [Orabug: 34301086]\n\n[2.02-0.87.0.21.el7_9.9]\n- Add CVE-2022-28736 to the list [JIRA: OLDIS-16371]\n\n[2.02-0.87.0.19.el7_9.9]\n- Fix: CVE-2021-3695, CVE-2021-3696, CVE-2021-3697,\n  CVE-2022-28733, CVE-2022-28734, CVE-2022-28735 [JIRA: OLDIS-16371]\n- Various coverity fixes [JIRA: OLDIS-16371]\n- bump SBAT generation [JIRA: OLDIS-16371]\n\n[2.02-0.87.0.17.el7_9.9]\n- Cleanup XEN shell script (Alex Burmashev) [Orabug: 33851417]\n- Update SBAT data (Alex Burmashev) [Orabug: 33851417]\n- efinet: change SNP open call (Alex Burmashev) [Orabug: 32646964]\n- disable buggy 0183-efinet-retransmit-if-our-device-is-busy.patch [Orabug: 27982684]\n- Patch multiboot2 to the recent state [Orabug: 32950597]\n- Enable multiboot2 for UEFI ( non Secureboot ) mode [Orabug: 32950597]\n- Update signing certificate [Orabug: 32670043]\n- Update shim and certificates dependencies [Orabug: 32670043]\n- xfs: Don't attempt to iterate over empty directory [Orabug: 32584717]\n- add SBAT metadata for Oracle Linux grub2\n- Use similar format for menu entry in grub environment block\n- config file. [Orabug: 32172943]\n- Fix degradation in multiboot2 code [Orabug: 32069510]\n- Update signing certificate for efi binaries\n- Update upstream references [Orabug: 30138841]\n- Restore symlink to grub environment file, that was removed during grub2-efi update\n  if grub2 package is also installed on UEFI machines [Orabug: 27345750]\n- fix symlink removal scriptlet, to be executed only on removal [Orabug: 19231481]\n- Fix comparison in patch for [Orabug: 18504756]\n- Remove symlink to grub environment file during uninstall on EFI platforms [Orabug: 19231481]\n- replace dynamic EFI boot folder path generation with predefined 'redhat' (Alex Burmashev)\n- Put 'with' in menuentry instead of 'using' [Orabug: 18504756]\n- Use different titles for UEK and RHCK kernels [Orabug: 18504756]",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12952.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12952.html",
       "ID": "ELSA-2023-12952"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28734.html",
-      "ID": "CVE-2022-28734"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3695.html",
-      "ID": "CVE-2021-3695"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3696.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3696.html",
       "ID": "CVE-2021-3696"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28733.html",
-      "ID": "CVE-2022-28733"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28735.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28735.html",
       "ID": "CVE-2022-28735"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3697.html",
-      "ID": "CVE-2021-3697"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28734.html",
+      "ID": "CVE-2022-28734"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28736.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3695.html",
+      "ID": "CVE-2021-3695"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28733.html",
+      "ID": "CVE-2022-28733"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28736.html",
       "ID": "CVE-2022-28736"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3697.html",
+      "ID": "CVE-2021-3697"
     }
   ],
   "Criteria": {
@@ -172,38 +172,38 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28734.html",
-      "ID": "CVE-2022-28734"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3695.html",
-      "ID": "CVE-2021-3695"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3696.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3696.html",
       "ID": "CVE-2021-3696"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28733.html",
-      "ID": "CVE-2022-28733"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28735.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28735.html",
       "ID": "CVE-2022-28735"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3697.html",
-      "ID": "CVE-2021-3697"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28734.html",
+      "ID": "CVE-2022-28734"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28736.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3695.html",
+      "ID": "CVE-2021-3695"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28733.html",
+      "ID": "CVE-2022-28733"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28736.html",
       "ID": "CVE-2022-28736"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3697.html",
+      "ID": "CVE-2021-3697"
     }
   ],
   "Issued": {

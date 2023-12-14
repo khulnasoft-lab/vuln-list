@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3127.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-3127.html",
       "ID": "ELSA-2018-3127"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14648.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14648.html",
       "ID": "CVE-2018-14648"
     }
   ],
@@ -45,10 +45,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "389-ds-base-libs is earlier than 0:1.3.8.4-15.el7"
+                        "Comment": "389-ds-base-devel is earlier than 0:1.3.8.4-15.el7"
                       },
                       {
-                        "Comment": "389-ds-base-libs is signed with the Oracle Linux 7 key"
+                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -57,10 +57,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "389-ds-base-devel is earlier than 0:1.3.8.4-15.el7"
+                        "Comment": "389-ds-base-libs is earlier than 0:1.3.8.4-15.el7"
                       },
                       {
-                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "389-ds-base-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -97,30 +97,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "389-ds-base-devel is earlier than 0:1.3.8.4-15.el7"
-                      },
-                      {
-                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "389-ds-base-snmp is earlier than 0:1.3.8.4-15.el7"
-                      },
-                      {
-                        "Comment": "389-ds-base-snmp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "389-ds-base is earlier than 0:1.3.8.4-15.el7"
                       },
                       {
@@ -133,10 +109,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "389-ds-base-devel is earlier than 0:1.3.8.4-15.el7"
+                      },
+                      {
+                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "389-ds-base-libs is earlier than 0:1.3.8.4-15.el7"
                       },
                       {
                         "Comment": "389-ds-base-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-snmp is earlier than 0:1.3.8.4-15.el7"
+                      },
+                      {
+                        "Comment": "389-ds-base-snmp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -164,11 +164,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14648.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14648.html",
       "ID": "CVE-2018-14648"
     }
   ],
   "Issued": {
-    "Date": "2018-11-02"
+    "Date": "2018-11-05"
   }
 }

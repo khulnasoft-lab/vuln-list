@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1631.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1631.html",
       "ID": "ELSA-2020-1631"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-7263.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-7263.html",
       "ID": "CVE-2018-7263"
     }
   ],
@@ -28,6 +28,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "SDL is earlier than 0:1.2.15-37.el8"
+                      },
+                      {
+                        "Comment": "SDL is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "SDL-devel is earlier than 0:1.2.15-37.el8"
+                      },
+                      {
+                        "Comment": "SDL-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -61,30 +85,6 @@
                       },
                       {
                         "Comment": "SDL2-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gstreamer1-plugins-bad-free-devel is earlier than 0:1.16.1-1.el8"
-                      },
-                      {
-                        "Comment": "gstreamer1-plugins-bad-free-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libmad-devel is earlier than 0:0.15.1b-25.el8"
-                      },
-                      {
-                        "Comment": "libmad-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -129,82 +129,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gstreamer1-plugins-ugly-free is earlier than 0:1.16.1-1.el8"
+                        "Comment": "gstreamer1-plugins-bad-free-devel is earlier than 0:1.16.1-1.el8"
                       },
                       {
-                        "Comment": "gstreamer1-plugins-ugly-free is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libmad is earlier than 0:0.15.1b-25.el8"
-                      },
-                      {
-                        "Comment": "libmad is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc-compiler is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc-compiler is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc-devel is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "SDL is earlier than 0:1.2.15-37.el8"
-                      },
-                      {
-                        "Comment": "SDL is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "SDL-devel is earlier than 0:1.2.15-37.el8"
-                      },
-                      {
-                        "Comment": "SDL-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "gstreamer1-plugins-bad-free-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -253,6 +181,78 @@
                       },
                       {
                         "Comment": "gstreamer1-plugins-good-gtk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gstreamer1-plugins-ugly-free is earlier than 0:1.16.1-1.el8"
+                      },
+                      {
+                        "Comment": "gstreamer1-plugins-ugly-free is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libmad is earlier than 0:0.15.1b-25.el8"
+                      },
+                      {
+                        "Comment": "libmad is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libmad-devel is earlier than 0:0.15.1b-25.el8"
+                      },
+                      {
+                        "Comment": "libmad-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc-compiler is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc-compiler is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc-devel is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -277,6 +277,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "SDL is earlier than 0:1.2.15-37.el8"
+                      },
+                      {
+                        "Comment": "SDL is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "SDL-devel is earlier than 0:1.2.15-37.el8"
+                      },
+                      {
+                        "Comment": "SDL-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "SDL2 is earlier than 0:2.0.10-2.el8"
                       },
                       {
@@ -305,30 +329,6 @@
                       },
                       {
                         "Comment": "SDL2-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gstreamer1-plugins-bad-free-devel is earlier than 0:1.16.1-1.el8"
-                      },
-                      {
-                        "Comment": "gstreamer1-plugins-bad-free-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libmad-devel is earlier than 0:0.15.1b-25.el8"
-                      },
-                      {
-                        "Comment": "libmad-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -373,82 +373,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gstreamer1-plugins-ugly-free is earlier than 0:1.16.1-1.el8"
+                        "Comment": "gstreamer1-plugins-bad-free-devel is earlier than 0:1.16.1-1.el8"
                       },
                       {
-                        "Comment": "gstreamer1-plugins-ugly-free is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libmad is earlier than 0:0.15.1b-25.el8"
-                      },
-                      {
-                        "Comment": "libmad is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc-compiler is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc-compiler is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "orc-devel is earlier than 0:0.4.28-3.el8"
-                      },
-                      {
-                        "Comment": "orc-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "SDL is earlier than 0:1.2.15-37.el8"
-                      },
-                      {
-                        "Comment": "SDL is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "SDL-devel is earlier than 0:1.2.15-37.el8"
-                      },
-                      {
-                        "Comment": "SDL-devel is signed with the Oracle Linux 8 key"
+                        "Comment": "gstreamer1-plugins-bad-free-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -497,6 +425,78 @@
                       },
                       {
                         "Comment": "gstreamer1-plugins-good-gtk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gstreamer1-plugins-ugly-free is earlier than 0:1.16.1-1.el8"
+                      },
+                      {
+                        "Comment": "gstreamer1-plugins-ugly-free is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libmad is earlier than 0:0.15.1b-25.el8"
+                      },
+                      {
+                        "Comment": "libmad is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libmad-devel is earlier than 0:0.15.1b-25.el8"
+                      },
+                      {
+                        "Comment": "libmad-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc-compiler is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc-compiler is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "orc-devel is earlier than 0:0.4.28-3.el8"
+                      },
+                      {
+                        "Comment": "orc-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -524,7 +524,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-7263.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-7263.html",
       "ID": "CVE-2018-7263"
     }
   ],

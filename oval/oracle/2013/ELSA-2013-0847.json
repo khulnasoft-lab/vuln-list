@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2013-0847:  kernel security and bug fix update (MODERATE)",
-  "Description": "kernel\n[2.6.18-348.6.1.el5]\n- [char] ipmi: use a tasklet for handling received messages (Tony Camuso) [953435 947732]\n- [char] ipmi: do run_to_completion properly in deliver_recv_msg (Tony Camuso) [953435 947732]\n- [fs] nfs4: fix locking around cl_state_owners list (Dave Wysochanski) [954296 948317]\n- [fs] nfs: Fix bugs on short read (Sachin Prabhu) [952098 924011]\n- [xen] AMD IOMMU: spot missing IO-APIC entries in IVRS table (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: Make per-device interrupt remap table default (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: Disable IOMMU if SATA Combined mode is on (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: On creating entry clean up in remapping tables (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] ACPI: acpi_table_parse() should return handler's err code (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] introduce xzalloc() \u0026 Co (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [x86] fpu: fix CONFIG_PREEMPT=y corruption of FPU stack (Prarit Bhargava) [948187 731531]\n- [i386] add sleazy FPU optimization (Prarit Bhargava) [948187 731531]\n- [x86-64] non lazy 'sleazy' fpu implementation (Prarit Bhargava) [948187 731531]\n\n[2.6.18-348.5.1.el5]\n- [fs] nfs: handle getattr failure during nfsv4 open (David Jeffery) [947736 906909]",
+  "Description": "kernel\n[2.6.18-348.6.1]\n- [char] ipmi: use a tasklet for handling received messages (Tony Camuso) [953435 947732]\n- [char] ipmi: do run_to_completion properly in deliver_recv_msg (Tony Camuso) [953435 947732]\n- [fs] nfs4: fix locking around cl_state_owners list (Dave Wysochanski) [954296 948317]\n- [fs] nfs: Fix bugs on short read (Sachin Prabhu) [952098 924011]\n- [xen] AMD IOMMU: spot missing IO-APIC entries in IVRS table (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: Make per-device interrupt remap table default (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: Disable IOMMU if SATA Combined mode is on (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] AMD, IOMMU: On creating entry clean up in remapping tables (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] ACPI: acpi_table_parse() should return handler's err code (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [xen] introduce xzalloc() \u0026 Co (Igor Mammedov) [910912 910913] {CVE-2013-0153}\n- [x86] fpu: fix CONFIG_PREEMPT=y corruption of FPU stack (Prarit Bhargava) [948187 731531]\n- [i386] add sleazy FPU optimization (Prarit Bhargava) [948187 731531]\n- [x86-64] non lazy 'sleazy' fpu implementation (Prarit Bhargava) [948187 731531]\n\n[2.6.18-348.5.1]\n- [fs] nfs: handle getattr failure during nfsv4 open (David Jeffery) [947736 906909]",
   "Platform": [
     "Oracle Linux 5"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0847.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2013-0847.html",
       "ID": "ELSA-2013-0847"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-0153.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-0153.html",
       "ID": "CVE-2013-0153"
     }
   ],
@@ -636,7 +636,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-0153.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-0153.html",
       "ID": "CVE-2013-0153"
     }
   ],

@@ -7,37 +7,37 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-0334.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-0334.html",
       "ID": "ELSA-2023-0334"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-43945.html",
-      "ID": "CVE-2022-43945"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2959.html",
-      "ID": "CVE-2022-2959"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3077.html",
-      "ID": "CVE-2022-3077"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4139.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4139.html",
       "ID": "CVE-2022-4139"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2964.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3077.html",
+      "ID": "CVE-2022-3077"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2964.html",
       "ID": "CVE-2022-2964"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-30594.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-43945.html",
+      "ID": "CVE-2022-43945"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2959.html",
+      "ID": "CVE-2022-2959"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-30594.html",
       "ID": "CVE-2022-30594"
     }
   ],
@@ -53,6 +53,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -98,30 +122,6 @@
                       },
                       {
                         "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -194,6 +194,54 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-debug-core is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-debug-core is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-debug-modules is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-debug-modules is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-tools is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-perf is earlier than 0:5.14.0-162.12.1.el9_1"
+                      },
+                      {
+                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-abi-stablelists is earlier than 0:5.14.0-162.12.1.el9_1"
                       },
                       {
@@ -222,30 +270,6 @@
                       },
                       {
                         "Comment": "kernel-debug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-debug-core is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-debug-core is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-debug-modules is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-debug-modules is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -290,34 +314,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-tools is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "kernel-tools-libs is earlier than 0:5.14.0-162.12.1.el9_1"
                       },
                       {
                         "Comment": "kernel-tools-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-perf is earlier than 0:5.14.0-162.12.1.el9_1"
-                      },
-                      {
-                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -453,36 +453,36 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-43945.html",
-      "ID": "CVE-2022-43945"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2959.html",
-      "ID": "CVE-2022-2959"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3077.html",
-      "ID": "CVE-2022-3077"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4139.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4139.html",
       "ID": "CVE-2022-4139"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2964.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3077.html",
+      "ID": "CVE-2022-3077"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2964.html",
       "ID": "CVE-2022-2964"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-30594.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-43945.html",
+      "ID": "CVE-2022-43945"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2959.html",
+      "ID": "CVE-2022-2959"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-30594.html",
       "ID": "CVE-2022-30594"
     }
   ],
   "Issued": {
-    "Date": "2023-01-24"
+    "Date": "2023-01-25"
   }
 }

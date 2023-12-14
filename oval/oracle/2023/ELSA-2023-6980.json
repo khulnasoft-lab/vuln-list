@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-6980.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-6980.html",
       "ID": "ELSA-2023-6980"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3750.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3750.html",
       "ID": "CVE-2021-3750"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3301.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-3301.html",
       "ID": "CVE-2023-3301"
     }
   ],
@@ -2768,6 +2768,18 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "sgabios is earlier than 1:0.20170427git-3.module+el8.9.0+90052+d3bf71d8"
+                              },
+                              {
+                                "Comment": "sgabios is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "sgabios-bin is earlier than 1:0.20170427git-3.module+el8.9.0+90052+d3bf71d8"
                               },
                               {
@@ -3018,18 +3030,6 @@
                                 "Comment": "qemu-kvm-tests is signed with the Oracle Linux 8 key"
                               }
                             ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "sgabios is earlier than 1:0.20170427git-3.module+el8.9.0+90052+d3bf71d8"
-                              },
-                              {
-                                "Comment": "sgabios is signed with the Oracle Linux 8 key"
-                              }
-                            ]
                           }
                         ],
                         "Criterions": null
@@ -3065,12 +3065,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3750.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3750.html",
       "ID": "CVE-2021-3750"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3301.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-3301.html",
       "ID": "CVE-2023-3301"
     }
   ],

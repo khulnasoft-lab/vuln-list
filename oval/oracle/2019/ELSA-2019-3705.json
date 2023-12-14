@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3705.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-3705.html",
       "ID": "ELSA-2019-3705"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14498.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14498.html",
       "ID": "CVE-2018-14498"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "turbojpeg-devel is earlier than 0:1.5.3-10.el8"
-                      },
-                      {
-                        "Comment": "turbojpeg-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -85,6 +73,18 @@
                       },
                       {
                         "Comment": "turbojpeg is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "turbojpeg-devel is earlier than 0:1.5.3-10.el8"
+                      },
+                      {
+                        "Comment": "turbojpeg-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -109,18 +109,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "turbojpeg-devel is earlier than 0:1.5.3-10.el8"
-                      },
-                      {
-                        "Comment": "turbojpeg-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libjpeg-turbo is earlier than 0:1.5.3-10.el8"
                       },
                       {
@@ -161,6 +149,18 @@
                       },
                       {
                         "Comment": "turbojpeg is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "turbojpeg-devel is earlier than 0:1.5.3-10.el8"
+                      },
+                      {
+                        "Comment": "turbojpeg-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -188,7 +188,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14498.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14498.html",
       "ID": "CVE-2018-14498"
     }
   ],

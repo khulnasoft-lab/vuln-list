@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-8799.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-8799.html",
       "ID": "ELSA-2022-8799"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2414.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2414.html",
       "ID": "CVE-2022-2414"
     }
   ],
@@ -145,18 +145,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "pki-javadoc is earlier than 0:10.5.18-24.el7_9"
-                      },
-                      {
-                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "pki-base is earlier than 0:10.5.18-24.el7_9"
                       },
                       {
@@ -235,6 +223,18 @@
                         "Comment": "pki-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "pki-javadoc is earlier than 0:10.5.18-24.el7_9"
+                      },
+                      {
+                        "Comment": "pki-javadoc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -260,7 +260,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2414.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2414.html",
       "ID": "CVE-2022-2414"
     }
   ],

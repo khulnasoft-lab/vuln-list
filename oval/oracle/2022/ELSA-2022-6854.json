@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-6854.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-6854.html",
       "ID": "ELSA-2022-6854"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2509.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2509.html",
       "ID": "CVE-2022-2509"
     }
   ],
@@ -133,6 +133,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "gnutls is earlier than 0:3.7.6-12.el9_0"
+                      },
+                      {
+                        "Comment": "gnutls is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nettle is earlier than 0:3.8-3.el9_0"
+                      },
+                      {
+                        "Comment": "nettle is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "gnutls-c++ is earlier than 0:3.7.6-12.el9_0"
                       },
                       {
@@ -187,30 +211,6 @@
                         "Comment": "nettle-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gnutls is earlier than 0:3.7.6-12.el9_0"
-                      },
-                      {
-                        "Comment": "gnutls is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nettle is earlier than 0:3.8-3.el9_0"
-                      },
-                      {
-                        "Comment": "nettle is signed with the Oracle Linux 9 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -236,7 +236,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2509.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2509.html",
       "ID": "CVE-2022-2509"
     }
   ],

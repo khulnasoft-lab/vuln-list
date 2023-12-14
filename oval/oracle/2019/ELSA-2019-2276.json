@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2276.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2276.html",
       "ID": "ELSA-2019-2276"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000132.html",
-      "ID": "CVE-2018-1000132"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-13346.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-13346.html",
       "ID": "CVE-2018-13346"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-13347.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-13347.html",
       "ID": "CVE-2018-13347"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000132.html",
+      "ID": "CVE-2018-1000132"
     }
   ],
   "Criteria": {
@@ -38,18 +38,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mercurial is earlier than 0:2.6.2-10.el7"
-                      },
-                      {
-                        "Comment": "mercurial is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -71,6 +59,18 @@
                       },
                       {
                         "Comment": "emacs-mercurial-el is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mercurial is earlier than 0:2.6.2-10.el7"
+                      },
+                      {
+                        "Comment": "mercurial is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -131,10 +131,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mercurial-hgk is earlier than 0:2.6.2-10.el7"
+                        "Comment": "mercurial is earlier than 0:2.6.2-10.el7"
                       },
                       {
-                        "Comment": "mercurial-hgk is signed with the Oracle Linux 7 key"
+                        "Comment": "mercurial is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -143,10 +143,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mercurial is earlier than 0:2.6.2-10.el7"
+                        "Comment": "mercurial-hgk is earlier than 0:2.6.2-10.el7"
                       },
                       {
-                        "Comment": "mercurial is signed with the Oracle Linux 7 key"
+                        "Comment": "mercurial-hgk is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -174,21 +174,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000132.html",
-      "ID": "CVE-2018-1000132"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-13346.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-13346.html",
       "ID": "CVE-2018-13346"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-13347.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-13347.html",
       "ID": "CVE-2018-13347"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000132.html",
+      "ID": "CVE-2018-1000132"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

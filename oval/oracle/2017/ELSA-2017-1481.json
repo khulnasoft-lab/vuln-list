@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-1481.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2017-1481.html",
       "ID": "ELSA-2017-1481"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-1000366.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-1000366.html",
       "ID": "CVE-2017-1000366"
     }
   ],
@@ -78,6 +78,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "glibc-static is earlier than 0:2.17-157.el7_3.4"
+                  },
+                  {
+                    "Comment": "glibc-static is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "glibc-utils is earlier than 0:2.17-157.el7_3.4"
                   },
                   {
@@ -94,18 +106,6 @@
                   },
                   {
                     "Comment": "nscd is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "glibc-static is earlier than 0:2.17-157.el7_3.4"
-                  },
-                  {
-                    "Comment": "glibc-static is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -130,7 +130,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-1000366.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-1000366.html",
       "ID": "CVE-2017-1000366"
     }
   ],

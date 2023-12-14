@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-2417.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-2417.html",
       "ID": "ELSA-2021-2417"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-33516.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-33516.html",
       "ID": "CVE-2021-33516"
     }
   ],
@@ -85,6 +85,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "gupnp is earlier than 0:1.0.2-6.el7_9"
+                      },
+                      {
+                        "Comment": "gupnp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "gupnp-devel is earlier than 0:1.0.2-6.el7_9"
                       },
                       {
@@ -101,18 +113,6 @@
                       },
                       {
                         "Comment": "gupnp-docs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gupnp is earlier than 0:1.0.2-6.el7_9"
-                      },
-                      {
-                        "Comment": "gupnp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,7 +140,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-33516.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-33516.html",
       "ID": "CVE-2021-33516"
     }
   ],

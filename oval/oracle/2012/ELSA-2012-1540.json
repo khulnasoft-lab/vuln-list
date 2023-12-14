@@ -1,43 +1,43 @@
 {
   "Title": "ELSA-2012-1540:  kernel security, bug fix, and enhancement update (IMPORTANT)",
-  "Description": "kernel\n[2.6.18-308.24.1.el5]\n- Revert: [scsi] sg: fix races during device removal (Ewan Milne) [868950 861004]\n\n[2.6.18-308.23.1.el5]\n- [net] bnx2x: Add remote-fault link detection (Alexander Gordeev) [870120 796905]\n- [net] bnx2x: Cosmetic changes (Alexander Gordeev) [870120 796905]\n- [net] rds-ping cause kernel panic (Alexander Gordeev) [822755 822756] {CVE-2012-2372}\n- [xen] add guest address range checks to XENMEM_exchange handlers (Igor Mammedov) [878033 878034] {CVE-2012-5513}\n- [xen] x86/physmap: Prevent incorrect updates of m2p mappings (Igor Mammedov) [870148 870149] {CVE-2012-4537}\n- [xen] VCPU/timer: Dos vulnerability prev overflow in calculations (Igor Mammedov) [870150 870151] {CVE-2012-4535}\n- [scsi] sg: fix races during device removal (Ewan Milne) [868950 861004]\n\n[2.6.18-308.22.1.el5]\n- [net] bonding: fix link down handling in 802.3ad mode (Andy Gospodarek) [877943 782866]\n\n[2.6.18-308.21.1.el5]\n- [fs] ext4: race-cond protect for convert_unwritten_extents_endio (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [fs] ext4: serialize fallocate w/ ext4_convert_unwritten_extents (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [fs] ext4: flush the i_completed_io_list during ext4_truncate (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [net] WARN if struct ip_options was allocated directly by kmalloc (Jiri Pirko) [874973 872612]\n- [net] ipv4: add RCU protection to inet-\u003eopt (Jiri Pirko) [872113 855302] {CVE-2012-3552}\n- [scsi] qla2xx: Don't toggle inter bits after IRQ lines attached (Chad Dupuis) [870118 800708]",
+  "Description": "kernel\n[2.6.18-308.24.1.el5]\n- Revert: [scsi] sg: fix races during device removal (Ewan Milne) [868950 861004]\n\n[2.6.18-308.23.1.el5]\n- [net] bnx2x: Add remote-fault link detection (Alexander Gordeev) [870120 796905]\n- [net] bnx2x: Cosmetic changes (Alexander Gordeev) [870120 796905]\n- [net] rds-ping cause kernel panic (Alexander Gordeev) [822755 822756] {CVE-2012-2372}\n- [xen] add guest address range checks to XENMEM_exchange handlers (Igor Mammedov) [878033 878034] {CVE-2012-5513}\n- [xen] x86/physmap: Prevent incorrect updates of m2p mappings (Igor Mammedov) [870148 870149] {CVE-2012-4537}\n- [xen] VCPU/timer: Dos vulnerability prev overflow in calculations (Igor Mammedov) [870150 870151] {CVE-2012-4535}\n- [scsi] sg: fix races during device removal (Ewan Milne) [868950 861004]\n\n[2.6.18-308.22.1.el5]\n- [net] bonding: fix link down handling in 802.3ad mode (Andy Gospodarek) [877943 782866]\n\n[2.6.18-308.21.1.el5]\n- [fs] ext4: race-cond protect for convert_unwritten_extents_endio (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [fs] ext4: serialize fallocate w/ ext4_convert_unwritten_extents (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [fs] ext4: flush the i_completed_io_list during ext4_truncate (Lukas Czerner) [869910 869911] {CVE-2012-4508}\n- [net] WARN if struct ip_options was allocated directly by kmalloc (Jiri Pirko) [874973 872612]\n- [net] ipv4: add RCU protection to inet-\u003eopt (Jiri Pirko) [872113 855302] {CVE-2012-3552}\n- [scsi] qla2xx: Dont toggle inter bits after IRQ lines attached (Chad Dupuis) [870118 800708]",
   "Platform": [
     "Oracle Linux 5"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2012-1540.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2012-1540.html",
       "ID": "ELSA-2012-1540"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-2372.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-2372.html",
       "ID": "CVE-2012-2372"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3552.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-3552.html",
       "ID": "CVE-2012-3552"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4508.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-4508.html",
       "ID": "CVE-2012-4508"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4535.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-4535.html",
       "ID": "CVE-2012-4535"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-4537.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-4537.html",
       "ID": "CVE-2012-4537"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-5513.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-5513.html",
       "ID": "CVE-2012-5513"
     }
   ],
@@ -661,32 +661,32 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-2372.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-2372.html",
       "ID": "CVE-2012-2372"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3552.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-3552.html",
       "ID": "CVE-2012-3552"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4508.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-4508.html",
       "ID": "CVE-2012-4508"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4535.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-4535.html",
       "ID": "CVE-2012-4535"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-4537.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-4537.html",
       "ID": "CVE-2012-4537"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-5513.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-5513.html",
       "ID": "CVE-2012-5513"
     }
   ],

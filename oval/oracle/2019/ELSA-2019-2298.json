@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2298.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2298.html",
       "ID": "ELSA-2019-2298"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000877.html",
-      "ID": "CVE-2018-1000877"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-14503.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-14503.html",
       "ID": "CVE-2017-14503"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000878.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000877.html",
+      "ID": "CVE-2018-1000877"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000878.html",
       "ID": "CVE-2018-1000878"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-1000019.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-1000019.html",
       "ID": "CVE-2019-1000019"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-1000020.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-1000020.html",
       "ID": "CVE-2019-1000020"
     }
   ],
@@ -48,18 +48,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libarchive is earlier than 0:3.1.2-12.el7"
-                      },
-                      {
-                        "Comment": "libarchive is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -81,6 +69,18 @@
                       },
                       {
                         "Comment": "bsdtar is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libarchive is earlier than 0:3.1.2-12.el7"
+                      },
+                      {
+                        "Comment": "libarchive is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -141,10 +141,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libarchive-devel is earlier than 0:3.1.2-12.el7"
+                        "Comment": "libarchive is earlier than 0:3.1.2-12.el7"
                       },
                       {
-                        "Comment": "libarchive-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "libarchive is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -153,10 +153,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libarchive is earlier than 0:3.1.2-12.el7"
+                        "Comment": "libarchive-devel is earlier than 0:3.1.2-12.el7"
                       },
                       {
-                        "Comment": "libarchive is signed with the Oracle Linux 7 key"
+                        "Comment": "libarchive-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -184,31 +184,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000877.html",
-      "ID": "CVE-2018-1000877"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-14503.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-14503.html",
       "ID": "CVE-2017-14503"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000878.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000877.html",
+      "ID": "CVE-2018-1000877"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000878.html",
       "ID": "CVE-2018-1000878"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-1000019.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-1000019.html",
       "ID": "CVE-2019-1000019"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-1000020.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-1000020.html",
       "ID": "CVE-2019-1000020"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

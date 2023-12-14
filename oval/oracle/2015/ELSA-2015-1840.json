@@ -1,20 +1,20 @@
 {
   "Title": "ELSA-2015-1840:  openldap security update (IMPORTANT)",
-  "Description": "[2.4.39-7]\n- CVE-2015-6908 openldap: ber_get_next denial of service vulnerability (#1263173)",
+  "Description": "[2.3.43-29]\n- CVE-2015-6908 openldap: ber_get_next denial of service vulnerability (#1263170)",
   "Platform": [
     "Oracle Linux 5",
-    "Oracle Linux 6",
-    "Oracle Linux 7"
+    "Oracle Linux 7",
+    "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-1840.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2015-1840.html",
       "ID": "ELSA-2015-1840"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-6908.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-6908.html",
       "ID": "CVE-2015-6908"
     }
   ],
@@ -341,6 +341,92 @@
         "Operator": "AND",
         "Criterias": [
           {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openldap is earlier than 0:2.4.39-7.el7_1"
+                      },
+                      {
+                        "Comment": "openldap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openldap-clients is earlier than 0:2.4.39-7.el7_1"
+                      },
+                      {
+                        "Comment": "openldap-clients is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openldap-devel is earlier than 0:2.4.39-7.el7_1"
+                      },
+                      {
+                        "Comment": "openldap-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openldap-servers is earlier than 0:2.4.39-7.el7_1"
+                      },
+                      {
+                        "Comment": "openldap-servers is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openldap-servers-sql is earlier than 0:2.4.39-7.el7_1"
+                      },
+                      {
+                        "Comment": "openldap-servers-sql is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 7 is installed"
+          }
+        ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
             "Operator": "OR",
             "Criterias": [
               {
@@ -504,92 +590,6 @@
             "Comment": "Oracle Linux 6 is installed"
           }
         ]
-      },
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap is earlier than 0:2.4.39-7.el7_1"
-                      },
-                      {
-                        "Comment": "openldap is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap-clients is earlier than 0:2.4.39-7.el7_1"
-                      },
-                      {
-                        "Comment": "openldap-clients is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap-devel is earlier than 0:2.4.39-7.el7_1"
-                      },
-                      {
-                        "Comment": "openldap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap-servers is earlier than 0:2.4.39-7.el7_1"
-                      },
-                      {
-                        "Comment": "openldap-servers is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openldap-servers-sql is earlier than 0:2.4.39-7.el7_1"
-                      },
-                      {
-                        "Comment": "openldap-servers-sql is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 7 is installed"
-          }
-        ]
       }
     ],
     "Criterions": null
@@ -598,7 +598,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-6908.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-6908.html",
       "ID": "CVE-2015-6908"
     }
   ],

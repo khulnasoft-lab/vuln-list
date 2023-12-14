@@ -7,27 +7,27 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-0003.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-0003.html",
       "ID": "ELSA-2022-0003"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4008.html",
-      "ID": "CVE-2021-4008"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4009.html",
-      "ID": "CVE-2021-4009"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4010.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-4010.html",
       "ID": "CVE-2021-4010"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-4011.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-4008.html",
+      "ID": "CVE-2021-4008"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-4009.html",
+      "ID": "CVE-2021-4009"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-4011.html",
       "ID": "CVE-2021-4011"
     }
   ],
@@ -48,42 +48,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "xorg-x11-server-Xdmx is earlier than 0:1.20.4-17.el7_9"
                       },
                       {
@@ -96,10 +60,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.4-17.el7_9"
                       },
                       {
                         "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -124,6 +112,18 @@
                       },
                       {
                         "Comment": "xorg-x11-server-Xwayland is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -184,10 +184,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-Xnest is earlier than 0:1.20.4-17.el7_9"
                       },
                       {
                         "Comment": "xorg-x11-server-Xnest is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -220,6 +244,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-17.el7_9"
+                      },
+                      {
+                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "xorg-x11-server-devel is earlier than 0:1.20.4-17.el7_9"
                       },
                       {
@@ -236,42 +272,6 @@
                       },
                       {
                         "Comment": "xorg-x11-server-source is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xephyr is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-Xorg is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-Xorg is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "xorg-x11-server-common is earlier than 0:1.20.4-17.el7_9"
-                      },
-                      {
-                        "Comment": "xorg-x11-server-common is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -299,22 +299,22 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4008.html",
-      "ID": "CVE-2021-4008"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4009.html",
-      "ID": "CVE-2021-4009"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4010.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-4010.html",
       "ID": "CVE-2021-4010"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-4011.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-4008.html",
+      "ID": "CVE-2021-4008"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-4009.html",
+      "ID": "CVE-2021-4009"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-4011.html",
       "ID": "CVE-2021-4011"
     }
   ],

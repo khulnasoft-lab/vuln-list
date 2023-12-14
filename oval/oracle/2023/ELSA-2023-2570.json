@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2570.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2570.html",
       "ID": "ELSA-2023-2570"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-17049.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-17049.html",
       "ID": "CVE-2020-17049"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "krb5-devel is earlier than 0:1.20.1-8.0.1.el9"
+                      },
+                      {
+                        "Comment": "krb5-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -97,18 +109,6 @@
                       },
                       {
                         "Comment": "libkadm5 is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "krb5-devel is earlier than 0:1.20.1-8.0.1.el9"
-                      },
-                      {
-                        "Comment": "krb5-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -236,11 +236,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-17049.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-17049.html",
       "ID": "CVE-2020-17049"
     }
   ],
   "Issued": {
-    "Date": "2023-05-12"
+    "Date": "2023-05-15"
   }
 }

@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1647.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1647.html",
       "ID": "ELSA-2021-1647"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1472.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-1472.html",
       "ID": "CVE-2020-1472"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14318.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-14318.html",
       "ID": "CVE-2020-14318"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14323.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-14323.html",
       "ID": "CVE-2020-14323"
     }
   ],
@@ -38,54 +38,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openchange is earlier than 0:2.3-27.0.1.el8"
-                      },
-                      {
-                        "Comment": "openchange is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -127,10 +79,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwbclient is earlier than 0:4.13.3-3.el8"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openchange is earlier than 0:2.3-27.0.1.el8"
+                      },
+                      {
+                        "Comment": "openchange is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -227,6 +215,18 @@
                       },
                       {
                         "Comment": "samba-common-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -359,42 +359,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-devel is earlier than 0:4.13.3-3.el8"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ctdb is earlier than 0:4.13.3-3.el8"
                       },
                       {
@@ -431,10 +395,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwbclient is earlier than 0:4.13.3-3.el8"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openchange is earlier than 0:2.3-27.0.1.el8"
+                      },
+                      {
+                        "Comment": "openchange is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -531,6 +531,18 @@
                       },
                       {
                         "Comment": "samba-common-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-devel is earlier than 0:4.13.3-3.el8"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -653,18 +665,6 @@
                         "Comment": "samba-winexe is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openchange is earlier than 0:2.3-27.0.1.el8"
-                      },
-                      {
-                        "Comment": "openchange is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -690,21 +690,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1472.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-1472.html",
       "ID": "CVE-2020-1472"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14318.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-14318.html",
       "ID": "CVE-2020-14318"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14323.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-14323.html",
       "ID": "CVE-2020-14323"
     }
   ],
   "Issued": {
-    "Date": "2021-05-23"
+    "Date": "2021-05-25"
   }
 }

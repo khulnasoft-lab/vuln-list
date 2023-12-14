@@ -7,77 +7,77 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2028.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2028.html",
       "ID": "ELSA-2019-2028"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-8777.html",
-      "ID": "CVE-2018-8777"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-17742.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-17742.html",
       "ID": "CVE-2017-17742"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-6914.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-6914.html",
       "ID": "CVE-2018-6914"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-8778.html",
-      "ID": "CVE-2018-8778"
+      "URI": "https://linux.oracle.com/cve/CVE-2018-8777.html",
+      "ID": "CVE-2018-8777"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-8779.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-8779.html",
       "ID": "CVE-2018-8779"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-8780.html",
-      "ID": "CVE-2018-8780"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-16396.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-16396.html",
       "ID": "CVE-2018-16396"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000073.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000073.html",
       "ID": "CVE-2018-1000073"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000074.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000074.html",
       "ID": "CVE-2018-1000074"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000075.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000075.html",
       "ID": "CVE-2018-1000075"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000076.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000076.html",
       "ID": "CVE-2018-1000076"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000077.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000077.html",
       "ID": "CVE-2018-1000077"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000078.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000078.html",
       "ID": "CVE-2018-1000078"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1000079.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-8778.html",
+      "ID": "CVE-2018-8778"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-8780.html",
+      "ID": "CVE-2018-8780"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1000079.html",
       "ID": "CVE-2018-1000079"
     }
   ],
@@ -110,6 +110,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "ruby-devel is earlier than 0:2.0.0.648-36.el7"
+                      },
+                      {
+                        "Comment": "ruby-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ruby-doc is earlier than 0:2.0.0.648-36.el7"
+                      },
+                      {
+                        "Comment": "ruby-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ruby-irb is earlier than 0:2.0.0.648-36.el7"
                       },
                       {
@@ -126,6 +150,18 @@
                       },
                       {
                         "Comment": "ruby-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ruby-tcltk is earlier than 0:2.0.0.648-36.el7"
+                      },
+                      {
+                        "Comment": "ruby-tcltk is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -170,10 +206,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "rubygem-minitest is earlier than 0:4.3.2-36.el7"
+                      },
+                      {
+                        "Comment": "rubygem-minitest is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "rubygem-psych is earlier than 0:2.0.0-36.el7"
                       },
                       {
                         "Comment": "rubygem-psych is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rubygem-rake is earlier than 0:0.9.6-36.el7"
+                      },
+                      {
+                        "Comment": "rubygem-rake is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -198,66 +258,6 @@
                       },
                       {
                         "Comment": "rubygems is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ruby-devel is earlier than 0:2.0.0.648-36.el7"
-                      },
-                      {
-                        "Comment": "ruby-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ruby-doc is earlier than 0:2.0.0.648-36.el7"
-                      },
-                      {
-                        "Comment": "ruby-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ruby-tcltk is earlier than 0:2.0.0.648-36.el7"
-                      },
-                      {
-                        "Comment": "ruby-tcltk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rubygem-minitest is earlier than 0:4.3.2-36.el7"
-                      },
-                      {
-                        "Comment": "rubygem-minitest is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rubygem-rake is earlier than 0:0.9.6-36.el7"
-                      },
-                      {
-                        "Comment": "rubygem-rake is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -294,6 +294,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "ruby is earlier than 0:2.0.0.648-36.el7"
+                      },
+                      {
+                        "Comment": "ruby is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ruby-devel is earlier than 0:2.0.0.648-36.el7"
                       },
                       {
@@ -318,66 +330,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ruby-tcltk is earlier than 0:2.0.0.648-36.el7"
-                      },
-                      {
-                        "Comment": "ruby-tcltk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rubygem-minitest is earlier than 0:4.3.2-36.el7"
-                      },
-                      {
-                        "Comment": "rubygem-minitest is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rubygem-rake is earlier than 0:0.9.6-36.el7"
-                      },
-                      {
-                        "Comment": "rubygem-rake is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rubygems-devel is earlier than 0:2.0.14.1-36.el7"
-                      },
-                      {
-                        "Comment": "rubygems-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ruby is earlier than 0:2.0.0.648-36.el7"
-                      },
-                      {
-                        "Comment": "ruby is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ruby-irb is earlier than 0:2.0.0.648-36.el7"
                       },
                       {
@@ -394,6 +346,18 @@
                       },
                       {
                         "Comment": "ruby-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ruby-tcltk is earlier than 0:2.0.0.648-36.el7"
+                      },
+                      {
+                        "Comment": "ruby-tcltk is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -438,10 +402,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "rubygem-minitest is earlier than 0:4.3.2-36.el7"
+                      },
+                      {
+                        "Comment": "rubygem-minitest is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "rubygem-psych is earlier than 0:2.0.0-36.el7"
                       },
                       {
                         "Comment": "rubygem-psych is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rubygem-rake is earlier than 0:0.9.6-36.el7"
+                      },
+                      {
+                        "Comment": "rubygem-rake is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -466,6 +454,18 @@
                       },
                       {
                         "Comment": "rubygems is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rubygems-devel is earlier than 0:2.0.14.1-36.el7"
+                      },
+                      {
+                        "Comment": "rubygems-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -493,76 +493,76 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-8777.html",
-      "ID": "CVE-2018-8777"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-17742.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-17742.html",
       "ID": "CVE-2017-17742"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-6914.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-6914.html",
       "ID": "CVE-2018-6914"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-8778.html",
-      "ID": "CVE-2018-8778"
+      "Href": "https://linux.oracle.com/cve/CVE-2018-8777.html",
+      "ID": "CVE-2018-8777"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-8779.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-8779.html",
       "ID": "CVE-2018-8779"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-8780.html",
-      "ID": "CVE-2018-8780"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-16396.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-16396.html",
       "ID": "CVE-2018-16396"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000073.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000073.html",
       "ID": "CVE-2018-1000073"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000074.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000074.html",
       "ID": "CVE-2018-1000074"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000075.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000075.html",
       "ID": "CVE-2018-1000075"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000076.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000076.html",
       "ID": "CVE-2018-1000076"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000077.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000077.html",
       "ID": "CVE-2018-1000077"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000078.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000078.html",
       "ID": "CVE-2018-1000078"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1000079.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-8778.html",
+      "ID": "CVE-2018-8778"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-8780.html",
+      "ID": "CVE-2018-8780"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1000079.html",
       "ID": "CVE-2018-1000079"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

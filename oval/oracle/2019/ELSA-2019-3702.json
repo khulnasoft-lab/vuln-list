@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3702.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-3702.html",
       "ID": "ELSA-2019-3702"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20685.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-20685.html",
       "ID": "CVE-2018-20685"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-6109.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-6109.html",
       "ID": "CVE-2019-6109"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-6111.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-6111.html",
       "ID": "CVE-2019-6111"
     }
   ],
@@ -47,6 +47,18 @@
                       },
                       {
                         "Comment": "openssh is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "openssh-askpass is earlier than 0:8.0p1-3.el8"
+                      },
+                      {
+                        "Comment": "openssh-askpass is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -119,18 +131,6 @@
                       },
                       {
                         "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssh-askpass is earlier than 0:8.0p1-3.el8"
-                      },
-                      {
-                        "Comment": "openssh-askpass is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -167,6 +167,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "openssh-askpass is earlier than 0:8.0p1-3.el8"
+                      },
+                      {
+                        "Comment": "openssh-askpass is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "openssh-cavs is earlier than 0:8.0p1-3.el8"
                       },
                       {
@@ -233,18 +245,6 @@
                         "Comment": "pam_ssh_agent_auth is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "openssh-askpass is earlier than 0:8.0p1-3.el8"
-                      },
-                      {
-                        "Comment": "openssh-askpass is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -270,17 +270,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20685.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-20685.html",
       "ID": "CVE-2018-20685"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-6109.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-6109.html",
       "ID": "CVE-2019-6109"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-6111.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-6111.html",
       "ID": "CVE-2019-6111"
     }
   ],

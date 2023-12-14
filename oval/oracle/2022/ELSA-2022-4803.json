@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2022-4803:  rsyslog security update (IMPORTANT)",
-  "Description": "[8.24.0-57.0.4.el7_9.3]\n- Newer gcc complains about implicit declaration of prctl. Added header file to quiesce the compiler\n\n[8.24.0-57.3]\n- Address CVE-2022-24903, Heap-based overflow in TCP syslog server\n  resolves: rhbz#2081395\n\n[8.24.0-57.2]\nRHEL 7.9.Z ERRATUM\n- guard HUP signal processing in ompipe module\n  resolves:rhbz#2062505\n\n[8.24.0-57.1]\nRHEL 7.9.Z ERRATUM\n- added patch resolving theoretically 'too large' groups\n  resolves:rhbz#1944717\n\n[8.24.0-57]\nRHEL 7.9 ERRATUM\n- added patch resolving buffer overflows in select() function\n  resolves: rhbz#1858297\n\n[8.24.0-55]\nRHEL 7.9 ERRATUM\n- edited imfile file-id patch to not segfault on selinux block\n  resolves: rhbz#1843992\n\n[8.24.0-54]\nRHEL 7.9 ERRATUM\n- edited cert chains patch to not cause memory leaks\n  resolves: rhbz#1832087\n\n[8.24.0-53]\nRHEL 7.9 ERRATUM\n- one more fix for file ID patch to extend to offline behavior\n  resolves: rhbz#1806493\n- added patch resoving race in serialization resulting in crash\n  resolves: rhbz#1778841\n\n[8.24.0-52]\nRHEL 7.8 ERRATUM\n- edited patch file ID for imfile to not log useless errors\n  also improved file-id behavior to adress newly found problems\n  resolves: rhbz#1763746\n\n[8.24.0-49]\nRHEL 7.8 ERRATUM\n- fixed fsync patch to actually revognize the new option\n  resolves: rhbz#1696686 (failedQA)\n\n[8.24.0-48]\nRHEL 7.8 ERRATUM\n- added patch resolving crash on wrong MsgProperty\n  resolves: rhbz#1549706\n- added patch resolving CVE in pmaixforward module\n  resolves: rhbz#1768320\n- added patch resolving CVE in pmcisconames module\n  resolves: rhbz#1768323\n- added patch implementing file ID for imfile\n  resolves: rhbz#1763746\n- added patch fixing omelasticsearch with ES 6.X\n  resolves: rhbz#1600171\n\n[8.24.0-47]\nRHEL 7.8 ERRATUM\n- edited imfile truncation detection patch with reression fix\n  resolves: rhbz#1744856\n\n[8.24.0-46]\nRHEL 7.8 ERRATUM\n- Support Intermediate Certificate Chains in rsyslog\n  resolves: rhbz#1627799\n- fixed WorAroundJournalBug patch to not cause leaks\n  resolves: rhbz#1744617\n- added patch fixing possible segfault in rate-limiter\n  resolves: rhbz#1744682\n\n[8.24.0-45]\nRHEL 7.8 ERRATUM\n- fixed fsync patch according to covscan results\n  resolves: rhbz#1696686\n\n[8.24.0-44]\nRHEL 7.8 ERRATUM\n- added patch and doc-patch for new caseSensitive imUDP/TCP option\n  resolves: rhbz#1309698\n\n[8.24.0-41]\nRHEL 7.8 ERRATUM\n- added patch and doc-patch with new 'fsync' imjournal option\n  resolves: rhbz#1696686\n- added patch resolving omelasticsearch crash on 'nothing' reply\n  resolves: rhbz#1684236\n\n[8.24.0-39]\nRHEL 7.7.z ERRATUM\n- added patch resolving memory leaks in imjournal\n  resolves: rhbz#1725067\n\n[8.24.0-38]\nRHEL 7.7 ERRATUM\n- added patch increasing max path size preventing buffer overflow\n  with too long paths\n  resolves: rhbz#1656860\n\n[8.24.0-37]\nRHEL 7.7 ERRATUM\n- edited patch fixing mmkubernetes halt after pod deletition\n  (covscan found an issue in previous version)\n  resolves: rhbz#1622767\n- added patch stopping flooding logs with journald errors\n  resolves: rhbz#1632211\n- added patch stopping flooding logs with symlink false-positives\n  resolves: rhbz#1685901\n- added patch stopping memory leak when processing internal msgs\n  resolves: rhbz#1666365\n- added documentation patch with info about CRI-O to mmkubernetes\n  resolves: rhbz#1625935\n\n[8.24.0-36]\nRHEL 7.7 ERRATUM\n- added patch fixing mmkubernetes halt after pod deletition\n  resolves: rhbz#1622767\n\n[8.24.0-35]\nRHEL 7.7 ERRATUM\n- added patch fixing memory corruption in omfwd module\n  resolves: rhbz#1632659\n- added patch fixing imfile sopping monitor after rotation\n  resolves: rhbz#1649250\n- added patch addressing imptcp CVE-2018-16881\n  resolves: rhbz#1658288\n\n[8.24.0-34]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with parent name bugfix\n  resolves: rhbz#1531295\n\n[8.24.0-33]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with extended symlink watching\n  resolves: rhbz#1531295\n- updated mmkubernetes patch to accept dots in pod name\n  resolves: rhbz#1539193\n\n[8.24.0-32]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with no log on EACCES\n  resolves: rhbz#1531295\n- removed now needless build-deps\n\n[8.24.0-31]\nRHEL 7.6 ERRATUM\n- added new patch fixing ompipe dropping messages when pipe full\n  resolves: rhbz#1591819\n- updated mmkubernetes patch to accept non-kubernetes containers\n  resolves: rhbz#1539193\n  resolves: rhbz#1609023\n- removed json-parsing patches as the bug is now fixed in liblognorm\n\n[8.24.0-30]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with next bugfix\n  resolves: rhbz#1531295\n- updated imjournal duplicates patch making slower code optional\n  and added corresponding doc patch\n  resolves: rhbz#1538372\n\n[8.24.0-29]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with another bugfix\n  resolves: rhbz#1531295\n\n[8.24.0-28]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch fixing next round of regressions\n  resolves: rhbz#1531295\n  resolves: rhbz#1602156\n- updated mmkubernetes patch with NULL ret-check\n  resolves: rhbz#1539193\n\n[8.24.0-27]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch fixing last update regressions\n  resolves: rhbz#1531295\n- added patch fixing deadlock in async logging\n  resolves: rhbz#1559408\n- added patch fixing NULL access in worktable create\n  resolves: rhbz#1600462\n- now putting release number into configure to have it present\n  in error messages\n\n[8.24.0-26]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch according to early testing\n  resolves: rhbz#1531295\n- added patch fixing pid file name in manpage\n  resolves: rhbz#1597264\n- updated json-parsing patch with one more bugfix\n  resolves: rhbz#1565219\n\n[8.24.0-24]\nRHEL 7.6 ERRATUM\n- updated imfile rewrite patch with fixes from covscan\n  resolves: rhbz#1531295\n- updated mmkubernetes patch with fixes from covscan\n  resolves: rhbz#1539193\n- updated imjournal duplicates patch with fixes from covscan\n  resolves: rhbz#1538372\n- updated omelastic enhancement patch with fixes from covscan\n  resolves: rhbz#1565214\n\n[8.24.0-23]\nRHEL 7.6 ERRATUM\n- added backport of leading $ support to json-parsing patch\n  resolves: rhbz#1565219\n- The required info is already contained in rsyslog-doc package\n  so there is no patch for this one\n  resolves: rhbz#1553700\n\n[8.24.0-22]\nRHEL 7.6 ERRATUM\n- edited patch for top-level json parsing with bugfix\n  resolves: rhbz#1565219\n- renamed doc patches and added/updated new ones for mmkubernetes\n  omelasticsearch and json parsing\n- renamed patch fixing buffer overflow in parser - memcpy()\n  resolves: rhbz#1582517\n\n[8.24.0-21]\nRHEL 7.6 ERRATUM\n- fixed imfile rewrite backport patch, added few more bugfixes\n  resolves: rhbz#1531295\n- added also doc patch for omelastic client certs\n  resolves: rhbz#1507145\n- cleaned and shortened patch for omelastic error handling\n  resolves: rhbz#1565214\n- enabled patch for json top-level parsing\n  resolves: rhbz#1565219\n- merged mmkubernetes patches into one and enabled the module\n  resolves: rhbz#1539193\n  resolves: rhbz#1589924\n  resolves: rhbz#1590582\n\n[8.24.0-21]\nRHEL 7.6 ERRATUM\nresolves: rhbz#1582517 - Buffer overflow in memcpy() in parser.c\nresolves: rhbz#1539193 - RFE: Support for mm kubernetes plugin\nresolves: rhbz#1589924 - RFE: Several fixes for mmkubernetes\nresolves: rhbz#1590582 - mmkubernetes - use version=2 in rulebase files to avoid memory leak\nresolves: rhbz#1507145 - RFE: omelasticsearch support client cert authentication\nresolves: rhbz#1565214 - omelasticsearch needs better handling for bulk index rejections and other errors\nDisables Patch32: rsyslog-8.24.0-rhbz1531295-imfile-rewrite-with-symlink.patch\nDisables Patch34: rsyslog-8.24.0-rhbz1565219-parse-json-into-top-level-fields-in-mess.patch; It BuildRequires/Requires: libfastjson \u003e= 0.99.4-3\n\n[8.24.0-20]\nRHEL 7.6 ERRATUM\n- added a patch backporting imfile module rewrite and\n  adding symlink support\n\tresolves: rhbz#1531295\n\n[8.24.0-19]\nRHEL 7.6 ERRATUM\n- added new kafka sub-package with enabling of omkafka module\n  resolves: rhbz#1482819\n\n[8.24.0-18]\n- caching the whole sockaddr structure instead of sin_addr causing memory leak\n  resolves: rhbz#1512551\n\n[8.24.0-17]\nRHEL 7.6 ERRATUM\n- fixed imjournal duplicating messages on log rotation\n  resolves: rhbz#1538372\n- re-enabled 32-bit arches to not break dependent packages\n  resolves: rhbz#1571850\n\n[8.24.0-16]\nRHEL 7.5 ERRATUM\n- edited the patch to conform to latest upstream doc\n  resolves: rhbz#1459896 (failedQA)\n- disabled 32-bit builds on all arches as they are not shipped\n  anymore in RHEL7\n\n[8.24.0-15]\nRHEL 7.5 ERRATUM\n- made rsyslog-doc noarch and fixed search on doc regeneration\n  resolves: rhbz#1507028\n\n[8.24.0-14]\nRHEL 7.5 ERRATUM\n- renamed patch for undocumented recover_qi script to correct bz number\n  resolves: rhbz#1507028\n- added patch ensuring relp conneciton is active before closing it\n  resolves: rhbz#1505103\n\n[8.24.0-13]\nRHEL 7.5 ERRATUM\n- added patch to properly resolve FQDN\n  resolves: rhbz#1401456\n- added documentation patch correcting qeues default values\n  resolves: rhbz#1459896\n- added patch adjusting log level of journal reloaded msg\n  resolves: rhbz#1497985\n- added patch to prevent crash with invalid set statement\n  this also obsoletes patch2 (for 1188503)\n  resolves: rhbz#1462160\n- added patch with nullptr check to prevent ABRT\n  resolves: rhbz#1488186\n\n[8.24.0-12]\n- added BuildRequires for systemd \u003e= 219-39 depends on rhbz#1419228\n\n[8.24.0-11]\nRHEL 7.4 ERRATUM\n- added new patch that backports num2ipv4 due to rhbz#1427821\n  resolves: rhbz#1427821\n- enable pmrfc3164sd module\n  resolves: rhbz#1431616\n\n[8.24.0-10]\nRHEL 7.4 ERRATUM\n- edited patches Patch19 and Patch21\n  resolves: rhbz#1419228(coverity scan problems)\n  resolves: rhbz#1056548(failed QA, coverity scan problems)\n\n[8.24.0-9]\nRHEL 7.4 ERRATUM\n- added autoreconf call\n- added patch to replace gethostbyname with getaddrinfo call\n  resolves: rhbz#1056548(failed QA)\n\n[8.24.0-8]\nRHEL 7.4 ERRATUM\n- added dependency automake autoconf libtool due to yum-builddep\n- reenable omruleset module\n  resolves: rhbz#1431615\n  resolves: rhbz#1428403\n  resolves: rhbz#1427821(fix regression, failed QA)\n  resolves: rhbz#1432069\n- resolves: rhbz#1165236\n  resolves: rhbz#1419228\n  resolves: rhbz#1431616\n  resolves: rhbz#1196230(failed QA)\n\n[8.24.0-7]\n- reverted logrotate file that was added by mistake\n\n[8.24.0-6]\n- RHEL 7.4 ERRATUM\n- rsyslog rebase to 8.24\n- added patch to prevent segfault while setting aclResolveHostname\n  config options\n  resolves: rhbz#1422414\n- added patch to check config variable names at startup\n  resolves: rhbz#1427828\n- added patch for str2num to handle empty strings\n  resolves: rhbz#1427821\n- fixed typo in added-chdir patch\n  resolves: rhbz#1422789\n- added patch to log source process when beginning rate-limiting\n  resolves: rhbz#1196230\n- added patch to chdir after chroot\n  resolves: rhbz#1422789\n- added patch to remove 'inputname' imudp module parameter\n  deprecation warnings\n  resolves: rhbz#1403907\n- added patch which resolves situation when time goes backwards\n  and statefile is invalid\n  resolves rhbz#1088021\n- added a patch to bring back deprecated cmd-line switches and\n  remove associated warnings\n  resolves: rhbz#1403831\n- added documentation recover_qi.pl\n  resolves: rhbz#1286707\n- add another setup for doc package\n- add --enable-generate-man-pages to configure parameters;\n  the rscryutil man page isn't generated without it\n  https://github.com/rsyslog/rsyslog/pull/469\n- enable mmcount, mmexternal modules\n- remove omruleset and pmrfc3164sd modules\n\n[7.4.7-16]\n- add a patch to prevent races in libjson-c calls\n  resolves: rhbz#1222746\n\n[7.4.7-15]\n- add a patch to make state file handling in imjournal more robust\n  resolves: rhbz#1245194\n- add a patch to support wildcards in imfile\n  resolves: rhbz#1303617\n\n[7.4.7-14]\n- add a patch to prevent loss of partial messages\n  resolves: rhbz#1312459\n- add a patch to allow multiple rulesets in imrelp\n  resolves: rhbz#1223566\n- add a patch to fix a race condition during shutdown\n  resolves: rhbz#1295798\n- add a patch to backport the mmutf8fix plugin\n  resolves: rhbz#1146237\n- add a patch to order service startup after the network\n  resolves: rhbz#1263853\n\n[7.4.7-13]\n- add a patch to prevent crashes when using multiple rulesets\n  resolves: rhbz#1224336\n- add a patch to keep the imjournal state file updated\n  resolves: rhbz#1216957\n- add a patch to fix an undefined behavior caused by the maxMessageSize directive\n  resolves: rhbz#1214257\n- add a patch to prevent crashes when using rulesets with a parser\n  resolves: rhbz#1282687\n\n[7.4.7-12]\n- amend the patch for rhbz#1151041\n  resolves: rhbz#1257150\n\n[7.4.7-11]\n- add patch that resolves config.guess system-recognition on ppc64le architecture\n  resolves: rhbz:1254511\n\n[7.4.7-10]\n- add a patch to prevent field truncation in imjournal\n  resolves: rhbz#1101602\n- add a patch to enable setting a default TAG\n  resolves: rhbz#1188503\n- add a patch to fix a nonfunction hostname setting in imuxsock\n  resolves: rhbz#1184402\n\n[7.4.7-9]\n- update the patch fixing a race condition in directory creation\n  resolves: rhbz#1202489\n- improve provided documentation\n  - move documentation from all subpackages under a single directory\n  - add missing images\n  - remove doc files without content\n  - add a patch making various corrections to the HTML documentation\n  resolves: rhbz#1238713\n- add a patch to prevent division-by-zero errors\n  resolves: rhbz#1078878\n- add a patch to clarify usage of the SysSock.Use option\n  resolves: rhbz#1143846\n- add a patch to support arbitrary number of listeners in imuxsock\n  - drop patch for rhbz#1053669 as it has been merged into this one\n  resolves: rhbz#1151041\n\n[7.4.7-8]\n- modify the service file to automatically restart rsyslog on failure\n  resolves: rhbz#1061322\n- add explicitly versioned dependencies on libraries which do not have\n  correctly versioned sonames\n  resolves: rhbz#1107839\n- make logrotate tolerate missing log files\n  resolves: rhbz#1144465\n- backport the mmcount plugin\n  resolves: rhbz#1151037\n- set the default service umask to 0066\n  resolves: rhbz#1228192\n- add a patch to make imjournal sanitize messages as imuxsock does it\n  resolves: rhbz#743890\n- add a patch to fix a bug preventing certain imuxsock directives from\n  taking effect\n  resolves: rhbz#1184410\n- add a patch to fix a race condition in directory creation\n  resolves: rhbz#1202489\n\n[7.4.7-7]\n- fix CVE-2014-3634\n  resolves: #1149153\n\n[7.4.7-6]\n- disable the imklog plugin by default\n  the patch for rhbz#1038136 caused duplication of kernel messages since the\n  messages read by the imklog plugin were now also pulled in from journald\n  resolves: #1078654\n\n[7.4.7-5]\n- move the rscryutil man page to the crypto subpackage\n  resolves: #1056565\n- add a patch to prevent message loss in imjournal\n  rsyslog-7.4.7-bz1038136-imjournal-message-loss.patch\n  resolves: #1038136\n\n[7.4.7-4]\n- Mass rebuild 2014-01-24\n\n[7.4.7-3]\n- replace rsyslog-7.3.15-imuxsock-warning.patch\n  with rsyslog-7.4.7-bz1053669-imuxsock-wrn.patch\n  resolves: #1053669\n- add rsyslog-7.4.7-bz1052266-dont-link-libee.patch to prevent\n  linking the main binary with libee\n  resolves: #1052266\n- add rsyslog-7.4.7-bz1054171-omjournal-warning.patch to fix\n  a condition for issuing a warning in omjournal\n  resolves: #1054171\n- drop the 'v5' string from the conf file as it's misleading\n  resolves: #1040036\n\n[7.4.7-2]\n- Rebuild for mariadb-libs\n  Related: #1045013\n\n[7.4.7-1]\n- rebase to 7.4.7\n  add requirement on libestr \u003e= 0.1.9\n  resolves: #836485\n  resolves: #1020854\n  resolves: #1040036\n- drop patch 4; not needed anymore\n  rsyslog-7.4.2-imuxsock-rfc3339.patch\n- install the rsyslog-recover-qi.pl tool\n- fix a typo in a package description\n- add missing defattr directives\n- add a patch to remove references to Google ads in the html docs\n  rsyslog-7.4.7-bz1030044-remove-ads.patch\n  Resolves: #1030043\n- add a patch to allow numeric specification of UIDs/GUIDs\n  rsyslog-7.4.7-numeric-uid.patch\n  resolves: #1032198\n- change the installation prefix to '/usr'\n  resolves: #1032223\n- fix a bad date in the changelog\n  resolves: #1043622\n- resolve a build issue with missing mysql_config by adding\n  additional BuildRequires for the mysql package\n- add a patch to resolve build issue on ppc\n  rsyslog-7.4.7-omelasticsearch-atomic-inst.patch\n\n[7.4.2-5]\n- Mass rebuild 2013-12-27\n\n[7.4.2-4]\n- add a patch to fix issues with rfc 3339 timestamp parsing\n  resolves: #1020826\n\n[7.4.2-3]\n- Rebuilt for new net-snmp\n\n[7.4.2-2]\n- make compilation of the rabbitmq plugin optional\n  resolves: #978919\n\n[7.4.2-1]\n- rebase to 7.4.2\n  most importantly, this release fixes a potential vulnerability,\n  see http://www.lsexperts.de/advisories/lse-2013-07-03.txt\n  the impact should be low as only those using the omelasticsearch\n  plugin with a specific configuration are exposed\n\n[7.4.1-1]\n- rebase to 7.4.1\n  this release adds code that somewhat mitigates damage in cases\n  where large amounts of messages are received from systemd\n  journal (see rhbz#974132)\n- regenerate patch 0\n- drop patches merged upstream: 4..8\n- add a dependency on the version of systemd which resolves the bug\n  mentioned above\n- update option name in rsyslog.conf\n\n[7.4.0-1]\n- rebase to 7.4.0\n- drop autoconf automake libtool from BuildRequires\n- depends on systemd \u003e= 201 because of the sd_journal_get_events() api\n- add a patch to prevent a segfault in imjournal caused by a bug in\n  systemd journal\n- add a patch to prevent an endless loop in the ratelimiter\n- add a patch to prevent another endless loop in the ratelimiter\n- add a patch to prevent a segfault in imjournal for undefined state file\n- add a patch to correctly reset state in the ratelimiter\n\n[7.3.15-1.20130604git6e72fa6]\n- rebase to an upstream snapshot, effectively version 7.3.15\n  plus several more changes\n- drop patches 3, 4 - merged upstream\n- add a patch to silence warnings emitted by the imuxsock module\n- drop the imkmsg plugin\n- enable compilation of additional modules\n  imjournal, mmanon, omjournal, omrabbitmq\n- new subpackages: crypto, rabbitmq\n- add python-docutils and autoconf to global BuildRequires\n- drop the option for backwards compatibility from the\n  sysconfig file - it is no longer supported\n- call autoreconf to prepare the snapshot for building\n- switch the local message source from imuxsock to imjournal\n  the imuxsock module is left enabled so it is easy to swich back to\n  it and because systemd drops a file into /etc/rsyslog.d which only\n  imuxsock can parse\n\n[7.3.10-1]\n- rebase to 7.3.10\n- add a patch to resolve #950088 - ratelimiter segfault, merged upstream\n  rsyslog-7.3.10-ratelimit-segv.patch\n- add a patch to correct a default value, merged upstream\n  rsyslog-7.3.10-correct-def-val.patch\n- drop patch 5 - fixed upstream\n\n[7.3.9-1]\n- rebase to 7.3.9\n\n[7.2.5-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild\n\n[7.2.5-2]\n- update a line in rsyslog.conf for the new syntax\n\n[7.2.5-1]\n- upgrade to upstream version 7.2.5\n- update the compatibility mode in sysconfig file\n\n[7.2.4-2]\n- add a condition to disable several subpackages\n\n[7.2.4-1]\n- upgrade to upstream version 7.2.4\n- remove trailing whitespace\n\n[7.2.2-1]\n- upgrade to upstream version 7.2.2\n  update BuildRequires\n- remove patches merged upstream\n  rsyslog-5.8.7-sysklogd-compat-1-template.patch\n  rsyslog-5.8.7-sysklogd-compat-2-option.patch\n  rsyslog-5.8.11-close-fd1-when-forking.patch\n- add patch from Milan Bartos \u003cmbartos@redhat.com\u003e\n  rsyslog-7.2.1-msg_c_nonoverwrite_merge.patch\n- remove the rsyslog-sysvinit package\n- clean up BuildRequires, Requires\n- remove the 'BuildRoot' tag\n- split off a doc package\n- compile additional modules (some of them in separate packages):\n  elasticsearch\n  hiredis\n  mmjsonparse\n  mmnormalize\n  mmaudit\n  mmsnmptrapd\n  mongodb\n- correct impossible timestamps in older changelog entries\n- correct typos, trailing spaces, etc\n- s/RPM_BUILD_ROOT/{buildroot}/\n- remove the 'clean' section\n- replace post* scriptlets with systemd macros\n\n[5.8.11-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_18_Mass_Rebuild\n\n[5.8.11-2]\n- update systemd patch: remove the 'ExecStartPre' option\n\n[5.8.11-1]\n- upgrade to new upstream stable version 5.8.11\n- add impstats and imptcp modules\n- include new license text files\n- consider lock file in 'status' action\n- add patch to update information on debugging in the man page\n- add patch to prevent debug output to stdout after forking\n- add patch to support ssl certificates with domain names longer than 128 chars\n\n[5.8.7-2]\n- libnet rebuild.\n\n[5.8.7-1]\n- upgrade to new upstream version 5.8.7\n- change license from 'GPLv3+' to '(GPLv3+ and ASL 2.0)'\n  http://blog.gerhards.net/2012/01/rsyslog-licensing-update.html\n- use a specific version for obsoleting sysklogd\n- add patches for better sysklogd compatibility (taken from upstream)\n\n[5.8.6-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_17_Mass_Rebuild\n\n[5.8.6-1]\n- upgrade to new upstream version 5.8.6\n- obsolete sysklogd\n  Resolves: #748495\n\n[5.8.5-3]\n- modify logrotate configuration to omit boot.log\n  Resolves: #745093\n\n[5.8.5-2]\n- add systemd-units to BuildRequires for the _unitdir macro definition\n\n[5.8.5-1]\n- upgrade to new upstream version (CVE-2011-3200)\n\n[5.8.2-3]\n- move the SysV init script into a subpackage\n- Resolves: 697533\n\n[5.8.2-2]\n- rebuild for net-snmp-5.7 (soname bump in libnetsnmp)\n\n[5.8.2-1]\n- upgrade to new upstream version 5.8.2\n\n[5.8.1-2]\n- scriptlet correction\n- use macro in unit file's path\n\n[5.8.1-1]\n- upgrade to new upstream version\n- correct systemd scriptlets (#705829)\n\n[5.7.9-3]\n- combine triggers (as rpm will only execute one) - fixes upgrades (#699198)\n\n[5.7.10-1]\n- upgrade to new upstream version 5.7.10\n\n[5.7.9-2]\n- rebuilt for mysql 5.5.10 (soname bump in libmysqlclient)\n\n[5.7.9-1]\n- upgrade to new upstream version 5.7.9\n- enable compilation of several new modules,\n  create new subpackages for some of them\n- integrate changes from Lennart Poettering\n  to add support for systemd\n  - add rsyslog-5.7.9-systemd.patch to tweak the upstream\n    service file to honour configuration from /etc/sysconfig/rsyslog\n\n[5.6.2-3]\n- sparc64 needs big PIE\n\n[5.6.2-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_15_Mass_Rebuild\n\n[5.6.2-1]\n- upgrade to new upstream stable version 5.6.2\n- drop rsyslog-5.5.7-remove_include.patch; applied upstream\n- provide omsnmp module\n- use correct name for lock file (#659398)\n- enable specification of the pid file (#579411)\n- init script adjustments\n\n[5.5.7-1]\n- upgrade to upstream version 5.5.7\n- update configuration and init files for the new major version\n- add several directories for storing auxiliary data\n- add ChangeLog to documentation\n- drop unlimited-select.patch; integrated upstream\n- add rsyslog-5.5.7-remove_include.patch to fix compilation\n\n[4.6.3-2]\n- build rsyslog with PIE and RELRO\n\n[4.6.3-1]\n- upgrade to new upstream stable version 4.6.3\n\n[4.6.2-1]\n- upgrade to new upstream stable version 4.6.2\n- correct the default value of the OMFileFlushOnTXEnd directive\n\n[4.4.2-6]\n- modify rsyslog-4.4.2-unlimited-select.patch so that\n  running autoreconf is not needed\n- remove autoconf, automake, libtool from BuildRequires\n- change exec-prefix to nil\n\n[4.4.2-5]\n- remove '_smp_mflags' make argument as it seems to be\n  producing corrupted builds\n\n[4.4.2-4]\n- redefine _libdir as it doesn't use _exec_prefix\n\n[4.4.2-3]\n- change exec-prefix to /\n\n[4.4.2-2]\n- run libtoolize to avoid errors due mismatching libtool version\n\n[4.4.2-1]\n- upgrade to new upstream stable version 4.4.2\n- add support for arbitrary number of open file descriptors\n\n[4.4.1-2]\n- adjust init script according to guidelines (#522071)\n\n[4.4.1-1]\n- upgrade to new upstream stable version\n\n[4.2.0-3]\n- rebuilt with new openssl\n\n[4.2.0-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_12_Mass_Rebuild\n\n[4.2.0-1]\n- upgrade\n\n[3.21.11-1]\n- upgrade\n\n[3.21.10-4]\n- Backport HUPisRestart option\n\n[3.21.10-3]\n- fix variables' type conversion in expression-based filters (#485937)\n\n[3.21.10-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_11_Mass_Rebuild\n\n[3.21.10-1]\n- upgrade\n\n[3.21.9-3]\n- rebuild for dependencies\n\n[3.21.9-2]\n- fix several legacy options handling\n- fix internal message output (#478612)\n\n[3.21.9-1]\n- update is fixing  security issue\n\n[3.21.3-4]\n- use RPM_OPT_FLAGS\n- use same pid file and logrotate file as syslog-ng (#441664)\n- mark config files as noreplace (#428155)\n\n[3.21.3-3]\n- fix a wrong module name in the rsyslog.conf manual page (#455086)\n- expand the rsyslog.conf manual page (#456030)\n\n[3.21.3-2]\n- fix clock rollback issue (#460230)\n\n[3.21.3-1]\n- upgrade to bugfix release\n\n[3.21.0-1]\n- upgrade\n\n[3.19.9-2]\n- adjust default config file\n\n[3.19.9-1]\n- upgrade\n\n[3.19.7-3]\n- rebuild because of new gnutls\n\n[3.19.7-2]\n- do not translate Oopses (#450329)\n\n[3.19.7-1]\n- upgrade\n\n[3.19.4-1]\n- upgrade\n\n[3.19.3-1]\n- upgrade to new upstream release\n\n[3.16.1-1]\n- upgrade\n\n[3.14.1-5]\n- prevent undesired error description in legacy\n  warning messages\n\n[3.14.1-4]\n- adjust symbol lookup method to 2.6 kernel\n\n[3.14.1-3]\n- fix segfault of expression based filters\n\n[3.14.1-2]\n- init script fixes (#441170,#440968)\n\n[3.14.1-1]\n- upgrade\n\n[3.12.4-1]\n- upgrade\n\n[3.12.3-1]\n- upgrade\n- fix some significant memory leaks\n\n[3.12.1-2]\n- init script fixes (#436854)\n- fix config file parsing (#436722)\n\n[3.12.1-1]\n- upgrade\n\n[3.12.0-1]\n- upgrade\n\n[3.11.5-1]\n- upgrade\n\n[3.11.0-1]\n- upgrade to the latests development release\n- provide PostgresSQL support\n- provide GSSAPI support\n\n[2.0.0-7]\n- change from requires sysklogd to conflicts sysklogd\n\n[2.0.0-6]\n- change logrotate file\n- use rsyslog own pid file\n\n[2.0.0-5]\n- fixing bad descriptor (#428775)\n\n[2.0.0-4]\n- rename logrotate file\n\n[2.0.0-3]\n- fix post script and init file\n\n[2.0.0-2]\n- change pid filename and use logrotata script from sysklogd\n\n[2.0.0-1]\n- upgrade to stable release\n- spec file clean up\n\n[1.21.2-1]\n- new upstream release\n\n[1.19.11-2]\n- Rebuild for deps\n\n[1.19.11-1]\n- new upstream release\n- add conflicts (#400671)\n\n[1.19.10-1]\n- new upstream release\n\n[1.19.6-3]\n- remove NUL character from recieved messages\n\n[1.19.6-2]\n- fix message suppression (303341)\n\n[1.19.6-1]\n- upstream bugfix release\n\n[1.19.2-1]\n- upstream bugfix release\n- support for negative app selector, patch from\n  theinric@redhat.com\n\n[1.19.0-1]\n- new upstream release with MySQL support(as plugin)\n\n[1.18.1-1]\n- upstream bugfix release\n\n[1.18.0-1]\n- new upstream release\n\n[1.17.6-1]\n- upstream bugfix release\n\n[1.17.5-1]\n- upstream bugfix release\n- fix typo in provides\n\n[1.17.2-4]\n- rebuild for toolchain bug\n\n[1.17.2-3]\n- take care of sysklogd configuration files in %post\n\n[1.17.2-2]\n- use EVR in provides/obsoletes sysklogd\n\n[1.17.2-1]\n- upstream bug fix release\n\n[1.17.1-1]\n- upstream bug fix release\n- include html docs (#248712)\n- make '-r' option compatible with sysklogd config (248982)\n\n[1.17.0-1]\n- feature rich upstream release\n\n[1.15.1-2]\n- use obsoletes and hadle old config files\n\n[1.15.1-1]\n- new upstream bugfix release\n\n[1.15.0-1]\n- new upstream release introduce capability to generate output\n  file names based on templates\n\n[1.14.2-1]\n- new upstream bugfix release\n\n[1.14.1-1]\n- new upstream release with IPv6 support\n\n[1.13.5-3]\n- add BuildRequires for zlib compression feature\n\n[1.13.5-2]\n- some spec file adjustments.\n- fix syslog init script error codes (#245330)\n\n[1.13.5-1]\n- new upstream release\n\n[1.13.4-2]\n- some spec file adjustments.\n\n[1.13.4-1]\n- upgrade to new upstream release\n\n[1.13.2-2]\n- DB support off\n\n[1.13.2-1]\n- new upstream release based on redhat patch\n\n[1.13.1-2]\n- rsyslog package provides its own kernel log. daemon (rklogd)\n\n[1.13.1-1]\n- Initial rpm build",
+  "Description": "[8.24.0-57.0.4.el7_9.3]\n- Newer gcc complains about implicit declaration of prctl. Added header file to quiesce the compiler\n\n[8.24.0-57.3]\n- Address CVE-2022-24903, Heap-based overflow in TCP syslog server\n  resolves: rhbz#2081395",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-4803.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-4803.html",
       "ID": "ELSA-2022-4803"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-24903.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-24903.html",
       "ID": "CVE-2022-24903"
     }
   ],
@@ -265,6 +265,102 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "rsyslog is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-gnutls is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-gnutls is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-gssapi is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-gssapi is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-kafka is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-kafka is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-mmjsonparse is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-mmjsonparse is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-mysql is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-mysql is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-pgsql is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-pgsql is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rsyslog-relp is earlier than 0:8.24.0-57.0.1.el7_9.3"
+                      },
+                      {
+                        "Comment": "rsyslog-relp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "rsyslog-crypto is earlier than 0:8.24.0-57.0.1.el7_9.3"
                       },
                       {
@@ -379,102 +475,6 @@
                         "Comment": "rsyslog-udpspoof is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-gnutls is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-gnutls is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-gssapi is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-gssapi is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-kafka is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-kafka is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-mmjsonparse is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-mmjsonparse is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-mysql is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-mysql is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-pgsql is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-pgsql is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rsyslog-relp is earlier than 0:8.24.0-57.0.1.el7_9.3"
-                      },
-                      {
-                        "Comment": "rsyslog-relp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -500,11 +500,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-24903.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-24903.html",
       "ID": "CVE-2022-24903"
     }
   ],
   "Issued": {
-    "Date": "2022-05-30"
+    "Date": "2022-05-31"
   }
 }

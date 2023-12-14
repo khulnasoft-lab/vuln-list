@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1581.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1581.html",
       "ID": "ELSA-2021-1581"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13434.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-13434.html",
       "ID": "CVE-2020-13434"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15358.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-15358.html",
       "ID": "CVE-2020-15358"
     }
   ],
@@ -114,6 +114,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "lemon is earlier than 0:3.26.0-13.el8"
+                      },
+                      {
+                        "Comment": "lemon is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "sqlite is earlier than 0:3.26.0-13.el8"
                       },
                       {
@@ -156,18 +168,6 @@
                         "Comment": "sqlite-libs is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "lemon is earlier than 0:3.26.0-13.el8"
-                      },
-                      {
-                        "Comment": "lemon is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -193,16 +193,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13434.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-13434.html",
       "ID": "CVE-2020-13434"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15358.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-15358.html",
       "ID": "CVE-2020-15358"
     }
   ],
   "Issued": {
-    "Date": "2021-05-23"
+    "Date": "2021-05-25"
   }
 }

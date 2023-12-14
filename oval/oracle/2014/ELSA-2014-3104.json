@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2014-3104: Unbreakable Enterprise kernel security update (IMPORTANT)",
-  "Description": "[2.6.39-400.215.14.el6uek]\n- HID: magicmouse: sanity check report size in raw_event() callback (Jiri Kosina)  [Orabug: 19849355]  {CVE-2014-3181}\n- ALSA: control: Protect user controls against concurrent access (Lars-Peter Clausen)  [Orabug: 20192542]  {CVE-2014-4652}\n- target/rd: Refactor rd_build_device_space + rd_release_device_space (Nicholas Bellinger)  [Orabug: 20192517]  {CVE-2014-4027}\n- media-device: fix infoleak in ioctl media_enum_entities() (Salva Peiro)  [Orabug: 20192501]  {CVE-2014-1739} {CVE-2014-1739}\n- udf: Avoid infinite loop when processing indirect ICBs (Jan Kara)  [Orabug: 20192449]  {CVE-2014-6410}\n- ALSA: control: Make sure that id-\u003eindex does not overflow (Lars-Peter Clausen)  [Orabug: 20192418]  {CVE-2014-4656}\n- ALSA: control: Handle numid overflow (Lars-Peter Clausen)  [Orabug: 20192376]  {CVE-2014-465}\n- HID: picolcd: sanity check report size in raw_event() callback (Jiri Kosina)  [Orabug: 20192205]  {CVE-2014-3186}\n- net: sctp: fix remote memory pressure from excessive queueing (Daniel Borkmann)  [Orabug: 20192059]  {CVE-2014-3688}",
+  "Description": "[2.6.39-400.215.14] \n- HID: magicmouse: sanity check report size in raw_event() callback (Jiri Kosina) [Orabug: 19849355] {CVE-2014-3181} \n- ALSA: control: Protect user controls against concurrent access (Lars-Peter Clausen) [Orabug: 20192542] {CVE-2014-4652} \n- target/rd: Refactor rd_build_device_space + rd_release_device_space (Nicholas Bellinger) [Orabug: 20192517] {CVE-2014-4027} \n- media-device: fix infoleak in ioctl media_enum_entities() (Salva Peiro) [Orabug: 20192501] {CVE-2014-1739} {CVE-2014-1739} \n- udf: Avoid infinite loop when processing indirect ICBs (Jan Kara) [Orabug: 20192449] {CVE-2014-6410} \n- ALSA: control: Make sure that id-\u003eindex does not overflow (Lars-Peter Clausen) [Orabug: 20192418] {CVE-2014-4656} \n- ALSA: control: Handle numid overflow (Lars-Peter Clausen) [Orabug: 20192376] {CVE-2014-465} \n- HID: picolcd: sanity check report size in raw_event() callback (Jiri Kosina) [Orabug: 20192205] {CVE-2014-3186} \n- net: sctp: fix remote memory pressure from excessive queueing (Daniel Borkmann) [Orabug: 20192059] {CVE-2014-3688}",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6"
@@ -8,47 +8,47 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3104.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-3104.html",
       "ID": "ELSA-2014-3104"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3181.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3181.html",
       "ID": "CVE-2014-3181"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-1739.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-1739.html",
       "ID": "CVE-2014-1739"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3186.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3186.html",
       "ID": "CVE-2014-3186"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4027.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4027.html",
       "ID": "CVE-2014-4027"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],
@@ -446,42 +446,42 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3181.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3181.html",
       "ID": "CVE-2014-3181"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-1739.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-1739.html",
       "ID": "CVE-2014-1739"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3186.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3186.html",
       "ID": "CVE-2014-3186"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4027.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4027.html",
       "ID": "CVE-2014-4027"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],

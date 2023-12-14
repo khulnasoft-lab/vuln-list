@@ -1,5 +1,5 @@
 {
-  "Title": "ELSA-2021-0734: SUMM: nodejs:12 security update (IMPORTANT)",
+  "Title": "ELSA-2021-0734: nodejs:12 security update (IMPORTANT)",
   "Description": "nodejs\n[1:12.21.0-1]\n- Resolves: RHBZ#1932315, RHBZ#1932424\n- remove --debug-nghttp2 option\n- remove ini patch\n- Backport patch to use getauxval",
   "Platform": [
     "Oracle Linux 8"
@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0734.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-0734.html",
       "ID": "ELSA-2021-0734"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22883.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-22883.html",
       "ID": "CVE-2021-22883"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-22884.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-22884.html",
       "ID": "CVE-2021-22884"
     }
   ],
@@ -36,18 +36,6 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5393+aaf413e3"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -105,6 +93,18 @@
                           },
                           {
                             "Comment": "nodejs-nodemon is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5393+aaf413e3"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -151,18 +151,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5393+aaf413e3"
-                          },
-                          {
-                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "nodejs is earlier than 1:12.21.0-1.module+el8.3.0+9672+c7b0544d"
                           },
                           {
@@ -223,6 +211,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "nodejs-packaging is earlier than 0:17-3.module+el8.1.0+5393+aaf413e3"
+                          },
+                          {
+                            "Comment": "nodejs-packaging is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "npm is earlier than 1:6.14.11-1.12.21.0.1.module+el8.3.0+9672+c7b0544d"
                           },
                           {
@@ -261,12 +261,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22883.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-22883.html",
       "ID": "CVE-2021-22883"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-22884.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-22884.html",
       "ID": "CVE-2021-22884"
     }
   ],

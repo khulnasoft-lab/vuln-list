@@ -1,5 +1,5 @@
 {
-  "Title": "ELSA-2014-3016: unbreakable enterprise kernel security update (IMPORTANT)",
+  "Title": "ELSA-2014-3016: Unbreakable Enterprise kernel security update (IMPORTANT)",
   "Description": "kernel-uek\n[2.6.32-400.34.4uek]\n- netfilter: nf_conntrack_dccp: fix skb_header_pointer API usages (Daniel Borkmann)  [Orabug: 18462076]  {CVE-2014-2523}\n- net: sctp: fix sctp_sf_do_5_1D_ce to verify if we/peer is AUTH capable (Daniel Borkmann)  [Orabug: 18461091]  {CVE-2014-0101}",
   "Platform": [
     "Oracle Linux 5",
@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3016.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-3016.html",
       "ID": "ELSA-2014-3016"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0101.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-0101.html",
       "ID": "CVE-2014-0101"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-2523.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-2523.html",
       "ID": "CVE-2014-2523"
     }
   ],
@@ -114,6 +114,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.4.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.34.4.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -154,18 +166,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.34.4.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.4.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -262,6 +262,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.4.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.34.4.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -302,18 +314,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.34.4.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.4.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -656,16 +656,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0101.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-0101.html",
       "ID": "CVE-2014-0101"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-2523.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-2523.html",
       "ID": "CVE-2014-2523"
     }
   ],
   "Issued": {
-    "Date": "2014-03-26"
+    "Date": "2014-03-27"
   }
 }

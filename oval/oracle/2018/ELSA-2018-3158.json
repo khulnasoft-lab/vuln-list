@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-3158.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-3158.html",
       "ID": "ELSA-2018-3158"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-10852.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-10852.html",
       "ID": "CVE-2018-10852"
     }
   ],
@@ -45,6 +45,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libipa_hbac-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libipa_hbac-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsss_autofs is earlier than 0:1.16.2-13.el7"
                       },
                       {
@@ -69,10 +81,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsss_certmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_certmap-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsss_idmap is earlier than 0:1.16.2-13.el7"
                       },
                       {
                         "Comment": "libsss_idmap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsss_idmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_idmap-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -93,10 +129,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsss_nss_idmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsss_simpleifp is earlier than 0:1.16.2-13.el7"
                       },
                       {
                         "Comment": "libsss_simpleifp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsss_simpleifp-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_simpleifp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -313,6 +373,18 @@
                       },
                       {
                         "Comment": "sssd-libwbclient is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "sssd-libwbclient-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "sssd-libwbclient-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -363,78 +435,6 @@
                         "Comment": "sssd-winbind-idmap is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libipa_hbac-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libipa_hbac-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_certmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_certmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_idmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_idmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_nss_idmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_simpleifp-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_simpleifp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "sssd-libwbclient-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "sssd-libwbclient-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -457,82 +457,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libipa_hbac-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libipa_hbac-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_certmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_certmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_idmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_idmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_nss_idmap-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsss_simpleifp-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "libsss_simpleifp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "sssd-libwbclient-devel is earlier than 0:1.16.2-13.el7"
-                      },
-                      {
-                        "Comment": "sssd-libwbclient-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libipa_hbac is earlier than 0:1.16.2-13.el7"
                       },
                       {
                         "Comment": "libipa_hbac is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libipa_hbac-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libipa_hbac-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -565,10 +505,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsss_certmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_certmap-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsss_idmap is earlier than 0:1.16.2-13.el7"
                       },
                       {
                         "Comment": "libsss_idmap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsss_idmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_idmap-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -589,10 +553,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsss_nss_idmap-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_nss_idmap-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsss_simpleifp is earlier than 0:1.16.2-13.el7"
                       },
                       {
                         "Comment": "libsss_simpleifp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsss_simpleifp-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "libsss_simpleifp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -809,6 +797,18 @@
                       },
                       {
                         "Comment": "sssd-libwbclient is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "sssd-libwbclient-devel is earlier than 0:1.16.2-13.el7"
+                      },
+                      {
+                        "Comment": "sssd-libwbclient-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -884,11 +884,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-10852.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-10852.html",
       "ID": "CVE-2018-10852"
     }
   ],
   "Issued": {
-    "Date": "2018-11-02"
+    "Date": "2018-11-05"
   }
 }

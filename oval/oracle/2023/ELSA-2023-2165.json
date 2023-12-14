@@ -7,33 +7,33 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2165.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2165.html",
       "ID": "ELSA-2023-2165"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4304.html",
-      "ID": "CVE-2022-4304"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-0286.html",
-      "ID": "CVE-2023-0286"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-38578.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-38578.html",
       "ID": "CVE-2021-38578"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-0215.html",
-      "ID": "CVE-2023-0215"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4450.html",
+      "ID": "CVE-2022-4450"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4450.html",
-      "ID": "CVE-2022-4450"
+      "URI": "https://linux.oracle.com/cve/CVE-2023-0286.html",
+      "ID": "CVE-2023-0286"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4304.html",
+      "ID": "CVE-2022-4304"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-0215.html",
+      "ID": "CVE-2023-0215"
     }
   ],
   "Criteria": {
@@ -48,6 +48,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "edk2-aarch64 is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
+                      },
+                      {
+                        "Comment": "edk2-aarch64 is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -69,18 +81,6 @@
                       },
                       {
                         "Comment": "edk2-tools-doc is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "edk2-aarch64 is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
-                      },
-                      {
-                        "Comment": "edk2-aarch64 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -105,10 +105,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "edk2-ovmf is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
+                        "Comment": "edk2-aarch64 is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
                       },
                       {
-                        "Comment": "edk2-ovmf is signed with the Oracle Linux 9 key"
+                        "Comment": "edk2-aarch64 is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -117,10 +117,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "edk2-aarch64 is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
+                        "Comment": "edk2-ovmf is earlier than 0:20221207gitfff6d81270b5-9.el9_2"
                       },
                       {
-                        "Comment": "edk2-aarch64 is signed with the Oracle Linux 9 key"
+                        "Comment": "edk2-ovmf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -172,31 +172,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4304.html",
-      "ID": "CVE-2022-4304"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-0286.html",
-      "ID": "CVE-2023-0286"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-38578.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-38578.html",
       "ID": "CVE-2021-38578"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-0215.html",
-      "ID": "CVE-2023-0215"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4450.html",
+      "ID": "CVE-2022-4450"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4450.html",
-      "ID": "CVE-2022-4450"
+      "Href": "https://linux.oracle.com/cve/CVE-2023-0286.html",
+      "ID": "CVE-2023-0286"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4304.html",
+      "ID": "CVE-2022-4304"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-0215.html",
+      "ID": "CVE-2023-0215"
     }
   ],
   "Issued": {
-    "Date": "2023-05-12"
+    "Date": "2023-05-15"
   }
 }

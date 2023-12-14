@@ -7,58 +7,58 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4076.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4076.html",
       "ID": "ELSA-2020-4076"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11727.html",
-      "ID": "CVE-2019-11727"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11719.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11719.html",
       "ID": "CVE-2019-11719"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11756.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11727.html",
+      "ID": "CVE-2019-11727"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11756.html",
       "ID": "CVE-2019-11756"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-17006.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-17006.html",
       "ID": "CVE-2019-17006"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-17023.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-17023.html",
       "ID": "CVE-2019-17023"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12402.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12402.html",
       "ID": "CVE-2020-12402"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12401.html",
-      "ID": "CVE-2020-12401"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12403.html",
+      "ID": "CVE-2020-12403"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-6829.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-6829.html",
       "ID": "CVE-2020-6829"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12400.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12400.html",
       "ID": "CVE-2020-12400"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12403.html",
-      "ID": "CVE-2020-12403"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12401.html",
+      "ID": "CVE-2020-12401"
     }
   ],
   "Criteria": {
@@ -118,6 +118,18 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-3.el7_9"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -216,18 +228,6 @@
                         "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-3.el7_9"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -245,18 +245,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-3.el7_9"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -302,6 +290,18 @@
                       },
                       {
                         "Comment": "nss-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.53.1-3.el7_9"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -410,106 +410,6 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nspr is earlier than 0:4.25.0-2.el7_9"
-                      },
-                      {
-                        "Comment": "nspr is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss is earlier than 0:3.53.1-3.el7_9"
-                      },
-                      {
-                        "Comment": "nss is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-softokn is earlier than 0:3.53.1-6.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "nss-softokn is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-softokn-freebl is earlier than 0:3.53.1-6.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "nss-softokn-freebl is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-sysinit is earlier than 0:3.53.1-3.el7_9"
-                      },
-                      {
-                        "Comment": "nss-sysinit is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-tools is earlier than 0:3.53.1-3.el7_9"
-                      },
-                      {
-                        "Comment": "nss-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-util is earlier than 0:3.53.1-1.el7_9"
-                      },
-                      {
-                        "Comment": "nss-util is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
-              }
-            ]
           }
         ],
         "Criterions": null
@@ -525,56 +425,56 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11727.html",
-      "ID": "CVE-2019-11727"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11719.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11719.html",
       "ID": "CVE-2019-11719"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11756.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11727.html",
+      "ID": "CVE-2019-11727"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11756.html",
       "ID": "CVE-2019-11756"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-17006.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-17006.html",
       "ID": "CVE-2019-17006"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-17023.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-17023.html",
       "ID": "CVE-2019-17023"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12402.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12402.html",
       "ID": "CVE-2020-12402"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12401.html",
-      "ID": "CVE-2020-12401"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12403.html",
+      "ID": "CVE-2020-12403"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-6829.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-6829.html",
       "ID": "CVE-2020-6829"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12400.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12400.html",
       "ID": "CVE-2020-12400"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12403.html",
-      "ID": "CVE-2020-12403"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12401.html",
+      "ID": "CVE-2020-12401"
     }
   ],
   "Issued": {
-    "Date": "2020-10-07"
+    "Date": "2020-10-08"
   }
 }

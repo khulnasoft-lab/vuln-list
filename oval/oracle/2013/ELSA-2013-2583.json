@@ -1,48 +1,48 @@
 {
-  "Title": "ELSA-2013-2583: unbreakable enterprise kernel security update (IMPORTANT)",
-  "Description": "kernel-uek\n[3.8.13-16.2.2.el6uek]\n- HID: pantherlord: validate output report details (Kees Cook) [Orabug: 17841973] {CVE-2013-2892}\n- HID: zeroplus: validate output report details (Kees Cook) [Orabug: 17841968] {CVE-2013-2889}\n- HID: provide a helper for validating hid reports (Kees Cook) [Orabug: 17841968] {CVE-2013-2889}\n- KVM: Fix iommu map/unmap to handle memory slot moves (Alex Williamson) [Orabug: 17841960] {CVE-2013-4592}\n- ansi_cprng: Fix off by one error in non-block size request (Jerry Snitselaar) [Orabug: 17837997] {CVE-2013-4345}\n- HID: validate HID report id size (Kees Cook) [Orabug: 17841940] {CVE-2013-2888}\n- ipv6: remove max_addresses check from ipv6_create_tempaddr (Hannes Frederic Sowa) [Orabug: 17841911] {CVE-2013-0343}\n- ipv6: udp packets following an UFO enqueued packet need also be handled by UFO (Hannes Frederic Sowa) [Orabug: 17841928] {CVE-2013-4387}\n\ndtrace-modules-3.8.13-16.2.2.el6uek\n[0.4.1-3]\n- Fix 'errno' implementation.\n  [Orabug: 17704568]\n\n[0.4.1-2]\n- Fix lock ordering issues.\n  [Orabug: 17624236]\n\n[0.4.1-1]\n- Align with new cyclic implementation in UEK3 kernel.\n  [Orabug: 17553446]\n- Bugfix for module reference counting.\n- Fix memory leak.\n- Fix race condition in speculative tracing buffer cleaning.\n  [Orabug: 17591351]\n- Ensure safe access to userspace stack memory location.\n  [Orabug: 17591351]\n\n[0.4.0-2]\n- Bugfix for ustack() to avoid using vma data.\n\n[0.4.0-1]\n- Bugfix for module unloading.\n- Support meta-providers, USDT, and fasttrap (for USDT only).\n- Export DTrace kernel headers to userspace.\n- Improved ustack() robustness.\n  [Orabug: 17591351]\n- Reimplemented ustack().\n  (Nick Alcock) [Orabug: 17591351]\n- Bugfixes.\n\n[0.3.2]\n- Release for new kernel and CTF section layout\n\n[0.3.1]\n- Skipped version number\n\n[0.3.0-2]\n- Remove development-only providers because they should not be built/released.\n\n[0.3.0]\n- Release of the DTrace kernel modules for UEK2 2.6.39-201.0.1 (DTrace kernel).\n\n[0.2.5-2]\n- Fix typo causing unconditional depmod at postinstall time\n\n[0.2.5]\n- New kernel, new userspace: no module changes.\n\n[0.2.4]\n- Ban unloading of in-use dtrace modules while dtrace is running.\n\n[0.2.3]\n- There is one new DTrace option now, used internally by the\n  testsuite.\n\n[0.2.2]\n- Switch MUTEX_HELD() from using mutex_is_locked() to new mutex_owned().\n\n[0.2.1]\n- Ensure that allocation attempts are done in atomic fashion so that a failing\n  allocation attempt won't interfere with other allocations.\n- Surpress OOM warnings.\n\n[0.2.0]\n- Release of the DTrace kernel modules for UEK2 2.6.39-101.0.1 (DTrace kernel).\n\n[0.1.0-1.el6]\n- Disable stub-based syscalls in the release pending merging in fixes.\n\n[0.1]\n- Initial release.",
+  "Title": "ELSA-2013-2583: Unbreakable Enterprise Kernel security update (IMPORTANT)",
+  "Description": "[3.8.13-16.2.2.el6uek]\n- HID: pantherlord: validate output report details (Kees Cook) [Orabug: 17841973] {CVE-2013-2892}\n- HID: zeroplus: validate output report details (Kees Cook) [Orabug: 17841968] {CVE-2013-2889}\n- HID: provide a helper for validating hid reports (Kees Cook) [Orabug: 17841968] {CVE-2013-2889}\n- KVM: Fix iommu map/unmap to handle memory slot moves (Alex Williamson) [Orabug: 17841960] {CVE-2013-4592}\n- ansi_cprng: Fix off by one error in non-block size request (Jerry Snitselaar) [Orabug: 17837997] {CVE-2013-4345}\n- HID: validate HID report id size (Kees Cook) [Orabug: 17841940] {CVE-2013-2888}\n- ipv6: remove max_addresses check from ipv6_create_tempaddr (Hannes Frederic Sowa) [Orabug: 17841911] {CVE-2013-0343}\n- ipv6: udp packets following an UFO enqueued packet need also be handled by UFO (Hannes Frederic Sowa) [Orabug: 17841928] {CVE-2013-4387}",
   "Platform": [
     "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-2583.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2013-2583.html",
       "ID": "ELSA-2013-2583"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-0343.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-0343.html",
       "ID": "CVE-2013-0343"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4345.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-4345.html",
       "ID": "CVE-2013-4345"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2888.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-2888.html",
       "ID": "CVE-2013-2888"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2889.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-2889.html",
       "ID": "CVE-2013-2889"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2892.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-2892.html",
       "ID": "CVE-2013-2892"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4387.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-4387.html",
       "ID": "CVE-2013-4387"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4592.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-4592.html",
       "ID": "CVE-2013-4592"
     }
   ],
@@ -196,41 +196,41 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-0343.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-0343.html",
       "ID": "CVE-2013-0343"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4345.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-4345.html",
       "ID": "CVE-2013-4345"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2888.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-2888.html",
       "ID": "CVE-2013-2888"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2889.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-2889.html",
       "ID": "CVE-2013-2889"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2892.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-2892.html",
       "ID": "CVE-2013-2892"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4387.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-4387.html",
       "ID": "CVE-2013-4387"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4592.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-4592.html",
       "ID": "CVE-2013-4592"
     }
   ],
   "Issued": {
-    "Date": "2013-11-27"
+    "Date": "2013-11-28"
   }
 }

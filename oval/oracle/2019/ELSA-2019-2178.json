@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2178.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2178.html",
       "ID": "ELSA-2019-2178"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-17336.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-17336.html",
       "ID": "CVE-2018-17336"
     }
   ],
@@ -37,6 +37,18 @@
                       },
                       {
                         "Comment": "libudisks2 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libudisks2-devel is earlier than 0:2.7.3-9.el7"
+                      },
+                      {
+                        "Comment": "libudisks2-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -87,18 +99,6 @@
                         "Comment": "udisks2-lvm2 is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libudisks2-devel is earlier than 0:2.7.3-9.el7"
-                      },
-                      {
-                        "Comment": "libudisks2-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -121,10 +121,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libudisks2-devel is earlier than 0:2.7.3-9.el7"
+                        "Comment": "libudisks2 is earlier than 0:2.7.3-9.el7"
                       },
                       {
-                        "Comment": "libudisks2-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "libudisks2 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -133,10 +133,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libudisks2 is earlier than 0:2.7.3-9.el7"
+                        "Comment": "libudisks2-devel is earlier than 0:2.7.3-9.el7"
                       },
                       {
-                        "Comment": "libudisks2 is signed with the Oracle Linux 7 key"
+                        "Comment": "libudisks2-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -212,11 +212,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-17336.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-17336.html",
       "ID": "CVE-2018-17336"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

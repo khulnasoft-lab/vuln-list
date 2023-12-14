@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2091.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2091.html",
       "ID": "ELSA-2019-2091"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-16888.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-16866.html",
+      "ID": "CVE-2018-16866"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-16888.html",
       "ID": "CVE-2018-16888"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-15686.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-15686.html",
       "ID": "CVE-2018-15686"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-16866.html",
-      "ID": "CVE-2018-16866"
     }
   ],
   "Criteria": {
@@ -91,10 +91,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "systemd-journal-gateway is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "systemd-libs is earlier than 0:219-67.0.1.el7"
                       },
                       {
                         "Comment": "systemd-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "systemd-networkd is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-networkd is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -115,46 +139,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "systemd-sysv is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-sysv is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "systemd-journal-gateway is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "systemd-networkd is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-networkd is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "systemd-resolved is earlier than 0:219-67.0.1.el7"
                       },
                       {
                         "Comment": "systemd-resolved is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "systemd-sysv is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-sysv is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -174,42 +174,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "systemd-journal-gateway is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "systemd-networkd is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-networkd is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "systemd-resolved is earlier than 0:219-67.0.1.el7"
-                      },
-                      {
-                        "Comment": "systemd-resolved is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -263,6 +227,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "systemd-journal-gateway is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-journal-gateway is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "systemd-libs is earlier than 0:219-67.0.1.el7"
                       },
                       {
@@ -275,10 +251,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "systemd-networkd is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-networkd is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "systemd-python is earlier than 0:219-67.0.1.el7"
                       },
                       {
                         "Comment": "systemd-python is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "systemd-resolved is earlier than 0:219-67.0.1.el7"
+                      },
+                      {
+                        "Comment": "systemd-resolved is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -318,21 +318,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-16888.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-16866.html",
+      "ID": "CVE-2018-16866"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-16888.html",
       "ID": "CVE-2018-16888"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-15686.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-15686.html",
       "ID": "CVE-2018-15686"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-16866.html",
-      "ID": "CVE-2018-16866"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

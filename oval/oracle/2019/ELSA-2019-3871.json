@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-3871.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-3871.html",
       "ID": "ELSA-2019-3871"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-0155.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-0155.html",
       "ID": "CVE-2019-0155"
     }
   ],
@@ -50,18 +50,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-147.0.3.el8_1"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -271,6 +259,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-147.0.3.el8_1"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "perf is earlier than 0:4.18.0-147.0.3.el8_1"
                       },
                       {
@@ -314,7 +314,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-0155.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-0155.html",
       "ID": "CVE-2019-0155"
     }
   ],

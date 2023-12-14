@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1011.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1011.html",
       "ID": "ELSA-2020-1011"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-2716.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-2716.html",
       "ID": "CVE-2015-2716"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "expat-static is earlier than 0:2.1.0-11.el7"
-                      },
-                      {
-                        "Comment": "expat-static is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "expat is earlier than 0:2.1.0-11.el7"
                       },
                       {
@@ -115,6 +103,18 @@
                         "Comment": "expat-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "expat-static is earlier than 0:2.1.0-11.el7"
+                      },
+                      {
+                        "Comment": "expat-static is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -123,28 +123,6 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "expat is earlier than 0:2.1.0-11.el7"
-                  },
-                  {
-                    "Comment": "expat is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -162,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-2716.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-2716.html",
       "ID": "CVE-2015-2716"
     }
   ],
   "Issued": {
-    "Date": "2020-04-08"
+    "Date": "2020-04-06"
   }
 }

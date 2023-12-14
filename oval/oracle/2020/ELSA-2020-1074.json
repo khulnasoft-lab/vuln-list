@@ -7,32 +7,32 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1074.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1074.html",
       "ID": "ELSA-2020-1074"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-9959.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-9959.html",
       "ID": "CVE-2019-9959"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10871.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10871.html",
       "ID": "CVE-2019-10871"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-12293.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-12293.html",
       "ID": "CVE-2019-12293"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11459.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11459.html",
       "ID": "CVE-2019-11459"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-21009.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-21009.html",
       "ID": "CVE-2018-21009"
     }
   ],
@@ -65,6 +65,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "evince-browser-plugin is earlier than 0:3.28.2-9.el7"
+                      },
+                      {
+                        "Comment": "evince-browser-plugin is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "evince-devel is earlier than 0:3.28.2-9.el7"
+                      },
+                      {
+                        "Comment": "evince-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "evince-dvi is earlier than 0:3.28.2-9.el7"
                       },
                       {
@@ -105,66 +129,6 @@
                       },
                       {
                         "Comment": "poppler is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-glib is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-qt is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-utils is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evince-browser-plugin is earlier than 0:3.28.2-9.el7"
-                      },
-                      {
-                        "Comment": "evince-browser-plugin is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evince-devel is earlier than 0:3.28.2-9.el7"
-                      },
-                      {
-                        "Comment": "evince-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -221,6 +185,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-glib is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler-glib-devel is earlier than 0:0.26.5-42.el7"
                       },
                       {
@@ -233,10 +209,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-qt is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler-qt-devel is earlier than 0:0.26.5-42.el7"
                       },
                       {
                         "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-utils is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -261,6 +261,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "evince is earlier than 0:3.28.2-9.el7"
+                      },
+                      {
+                        "Comment": "evince is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "evince-browser-plugin is earlier than 0:3.28.2-9.el7"
                       },
                       {
@@ -277,90 +289,6 @@
                       },
                       {
                         "Comment": "evince-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-cpp is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-cpp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-cpp-devel is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-cpp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-demos is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-demos is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-devel is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-glib-devel is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-glib-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-qt-devel is earlier than 0:0.26.5-42.el7"
-                      },
-                      {
-                        "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "evince is earlier than 0:3.28.2-9.el7"
-                      },
-                      {
-                        "Comment": "evince is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -417,6 +345,54 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-cpp is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-cpp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-cpp-devel is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-cpp-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-demos is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-demos is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-devel is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler-glib is earlier than 0:0.26.5-42.el7"
                       },
                       {
@@ -429,10 +405,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-glib-devel is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-glib-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler-qt is earlier than 0:0.26.5-42.el7"
                       },
                       {
                         "Comment": "poppler-qt is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "poppler-qt-devel is earlier than 0:0.26.5-42.el7"
+                      },
+                      {
+                        "Comment": "poppler-qt-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -472,31 +472,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-9959.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-9959.html",
       "ID": "CVE-2019-9959"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10871.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10871.html",
       "ID": "CVE-2019-10871"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-12293.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-12293.html",
       "ID": "CVE-2019-12293"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11459.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11459.html",
       "ID": "CVE-2019-11459"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-21009.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-21009.html",
       "ID": "CVE-2018-21009"
     }
   ],
   "Issued": {
-    "Date": "2020-04-08"
+    "Date": "2020-04-06"
   }
 }

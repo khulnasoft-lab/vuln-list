@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-1470.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-1470.html",
       "ID": "ELSA-2023-1470"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4744.html",
-      "ID": "CVE-2022-4744"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4269.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4269.html",
       "ID": "CVE-2022-4269"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-0266.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4744.html",
+      "ID": "CVE-2022-4744"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-0266.html",
       "ID": "CVE-2023-0266"
     }
   ],
@@ -38,6 +38,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-162.22.2.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-162.22.2.el9_1"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -83,30 +107,6 @@
                       },
                       {
                         "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-162.22.2.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-162.22.2.el9_1"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -438,21 +438,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4744.html",
-      "ID": "CVE-2022-4744"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4269.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4269.html",
       "ID": "CVE-2022-4269"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-0266.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4744.html",
+      "ID": "CVE-2022-4744"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-0266.html",
       "ID": "CVE-2023-0266"
     }
   ],
   "Issued": {
-    "Date": "2023-03-27"
+    "Date": "2023-03-28"
   }
 }

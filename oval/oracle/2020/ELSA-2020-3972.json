@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-3972.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-3972.html",
       "ID": "ELSA-2020-3972"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-11782.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-11782.html",
       "ID": "CVE-2018-11782"
     }
   ],
@@ -57,34 +57,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "subversion-gnome is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "subversion-gnome is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-libs is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "subversion-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "subversion-devel is earlier than 0:1.7.14-16.el7"
                       },
                       {
                         "Comment": "subversion-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "subversion-gnome is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "subversion-gnome is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -109,6 +97,18 @@
                       },
                       {
                         "Comment": "subversion-kde is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "subversion-libs is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "subversion-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -181,10 +181,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "mod_dav_svn is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "mod_dav_svn is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "subversion is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "subversion is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "subversion-devel is earlier than 0:1.7.14-16.el7"
                       },
                       {
                         "Comment": "subversion-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "subversion-gnome is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "subversion-gnome is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -209,6 +245,18 @@
                       },
                       {
                         "Comment": "subversion-kde is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "subversion-libs is earlier than 0:1.7.14-16.el7"
+                      },
+                      {
+                        "Comment": "subversion-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -259,54 +307,6 @@
                         "Comment": "subversion-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mod_dav_svn is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "mod_dav_svn is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "subversion is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-gnome is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "subversion-gnome is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-libs is earlier than 0:1.7.14-16.el7"
-                      },
-                      {
-                        "Comment": "subversion-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -332,7 +332,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-11782.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-11782.html",
       "ID": "CVE-2018-11782"
     }
   ],

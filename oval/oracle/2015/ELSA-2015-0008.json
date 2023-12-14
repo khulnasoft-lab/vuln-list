@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-0008.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2015-0008.html",
       "ID": "ELSA-2015-0008"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-7823.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-7823.html",
       "ID": "CVE-2014-7823"
     }
   ],
@@ -198,6 +198,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "libvirt-daemon-lxc is earlier than 0:1.1.1-29.0.1.el7_0.4"
+                  },
+                  {
+                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "libvirt-devel is earlier than 0:1.1.1-29.0.1.el7_0.4"
                   },
                   {
@@ -214,30 +226,6 @@
                   },
                   {
                     "Comment": "libvirt-docs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-python is earlier than 0:1.1.1-29.0.1.el7_0.4"
-                  },
-                  {
-                    "Comment": "libvirt-python is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-daemon-lxc is earlier than 0:1.1.1-29.0.1.el7_0.4"
-                  },
-                  {
-                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -264,6 +252,18 @@
                     "Comment": "libvirt-login-shell is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libvirt-python is earlier than 0:1.1.1-29.0.1.el7_0.4"
+                  },
+                  {
+                    "Comment": "libvirt-python is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -286,7 +286,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-7823.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-7823.html",
       "ID": "CVE-2014-7823"
     }
   ],

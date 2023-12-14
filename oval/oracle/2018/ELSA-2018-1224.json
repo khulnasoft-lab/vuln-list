@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-1224.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-1224.html",
       "ID": "ELSA-2018-1224"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1106.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1106.html",
       "ID": "CVE-2018-1106"
     }
   ],
@@ -57,10 +57,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "PackageKit-cron is earlier than 0:1.1.5-2.0.1.el7_5"
+                      },
+                      {
+                        "Comment": "PackageKit-cron is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "PackageKit-glib is earlier than 0:1.1.5-2.0.1.el7_5"
                       },
                       {
                         "Comment": "PackageKit-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "PackageKit-glib-devel is earlier than 0:1.1.5-2.0.1.el7_5"
+                      },
+                      {
+                        "Comment": "PackageKit-glib-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -97,30 +121,6 @@
                       },
                       {
                         "Comment": "PackageKit-yum is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "PackageKit-cron is earlier than 0:1.1.5-2.0.1.el7_5"
-                      },
-                      {
-                        "Comment": "PackageKit-cron is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "PackageKit-glib-devel is earlier than 0:1.1.5-2.0.1.el7_5"
-                      },
-                      {
-                        "Comment": "PackageKit-glib-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -169,42 +169,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "PackageKit-cron is earlier than 0:1.1.5-2.0.1.el7_5"
-                      },
-                      {
-                        "Comment": "PackageKit-cron is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "PackageKit-glib-devel is earlier than 0:1.1.5-2.0.1.el7_5"
-                      },
-                      {
-                        "Comment": "PackageKit-glib-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "PackageKit-yum-plugin is earlier than 0:1.1.5-2.0.1.el7_5"
-                      },
-                      {
-                        "Comment": "PackageKit-yum-plugin is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "PackageKit-command-not-found is earlier than 0:1.1.5-2.0.1.el7_5"
                       },
                       {
@@ -217,10 +181,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "PackageKit-cron is earlier than 0:1.1.5-2.0.1.el7_5"
+                      },
+                      {
+                        "Comment": "PackageKit-cron is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "PackageKit-glib is earlier than 0:1.1.5-2.0.1.el7_5"
                       },
                       {
                         "Comment": "PackageKit-glib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "PackageKit-glib-devel is earlier than 0:1.1.5-2.0.1.el7_5"
+                      },
+                      {
+                        "Comment": "PackageKit-glib-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -259,6 +247,18 @@
                         "Comment": "PackageKit-yum is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "PackageKit-yum-plugin is earlier than 0:1.1.5-2.0.1.el7_5"
+                      },
+                      {
+                        "Comment": "PackageKit-yum-plugin is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -284,7 +284,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1106.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1106.html",
       "ID": "CVE-2018-1106"
     }
   ],

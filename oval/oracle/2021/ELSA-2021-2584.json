@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-2584.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-2584.html",
       "ID": "ELSA-2021-2584"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-28965.html",
-      "ID": "CVE-2021-28965"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-25613.html",
+      "ID": "CVE-2020-25613"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25613.html",
-      "ID": "CVE-2020-25613"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-28965.html",
+      "ID": "CVE-2021-28965"
     }
   ],
   "Criteria": {
@@ -36,126 +36,6 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-abrt is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-abrt is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-abrt-doc is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-abrt-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-bson is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-bson-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mongo is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-mongo is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mongo-doc is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-mongo-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-mysql2 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-mysql2-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-pg is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-pg-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -221,6 +101,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "rubygem-abrt is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-abrt is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-abrt-doc is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-abrt-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "rubygem-bigdecimal is earlier than 0:2.0.0-136.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
@@ -233,7 +137,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-bson is signed with the Oracle Linux 8 key"
@@ -245,7 +149,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-bson-doc is signed with the Oracle Linux 8 key"
@@ -317,7 +221,31 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-mongo is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-mongo is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-mongo-doc is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-mongo-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-mysql2 is signed with the Oracle Linux 8 key"
@@ -329,7 +257,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-mysql2-doc is signed with the Oracle Linux 8 key"
@@ -365,7 +293,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-pg is signed with the Oracle Linux 8 key"
@@ -377,7 +305,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-pg-doc is signed with the Oracle Linux 8 key"
@@ -511,126 +439,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-abrt is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-abrt is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-abrt-doc is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-abrt-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-bson is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-bson-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mongo is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-mongo is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mongo-doc is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
-                          },
-                          {
-                            "Comment": "rubygem-mongo-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-mysql2 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-mysql2-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-pg is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
-                          },
-                          {
-                            "Comment": "rubygem-pg-doc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "ruby is earlier than 0:2.7.3-136.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
@@ -691,6 +499,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "rubygem-abrt is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-abrt is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-abrt-doc is earlier than 0:0.4.0-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-abrt-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "rubygem-bigdecimal is earlier than 0:2.0.0-136.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
@@ -703,7 +535,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-bson is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-bson is signed with the Oracle Linux 8 key"
@@ -715,7 +547,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-bson-doc is earlier than 0:4.8.1-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-bson-doc is signed with the Oracle Linux 8 key"
@@ -787,7 +619,31 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-mongo is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-mongo is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-mongo-doc is earlier than 0:2.11.3-1.module+el8.3.0+7760+537395ec"
+                          },
+                          {
+                            "Comment": "rubygem-mongo-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "rubygem-mysql2 is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-mysql2 is signed with the Oracle Linux 8 key"
@@ -799,7 +655,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-mysql2-doc is earlier than 0:0.5.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-mysql2-doc is signed with the Oracle Linux 8 key"
@@ -835,7 +691,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-pg is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-pg is signed with the Oracle Linux 8 key"
@@ -847,7 +703,7 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.3.0+7760+537395ec"
+                            "Comment": "rubygem-pg-doc is earlier than 0:1.2.3-1.module+el8.4.0+20239+cbf59dc8"
                           },
                           {
                             "Comment": "rubygem-pg-doc is signed with the Oracle Linux 8 key"
@@ -981,13 +837,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-28965.html",
-      "ID": "CVE-2021-28965"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-25613.html",
+      "ID": "CVE-2020-25613"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25613.html",
-      "ID": "CVE-2020-25613"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-28965.html",
+      "ID": "CVE-2021-28965"
     }
   ],
   "Issued": {

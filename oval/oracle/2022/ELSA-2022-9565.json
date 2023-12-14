@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9565.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-9565.html",
       "ID": "ELSA-2022-9565"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-25032.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-25032.html",
       "ID": "CVE-2018-25032"
     }
   ],
@@ -133,6 +133,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "zlib-static is earlier than 0:1.2.3-29.0.1.el6"
+                      },
+                      {
+                        "Comment": "zlib-static is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "zlib is earlier than 0:1.2.3-29.0.1.el6"
                       },
                       {
@@ -149,18 +161,6 @@
                       },
                       {
                         "Comment": "zlib-devel is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "zlib-static is earlier than 0:1.2.3-29.0.1.el6"
-                      },
-                      {
-                        "Comment": "zlib-static is signed with the Oracle Linux 6 key"
                       }
                     ]
                   }
@@ -264,11 +264,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-25032.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-25032.html",
       "ID": "CVE-2018-25032"
     }
   ],
   "Issued": {
-    "Date": "2022-07-06"
+    "Date": "2022-07-07"
   }
 }

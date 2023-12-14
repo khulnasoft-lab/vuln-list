@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-7470.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-7470.html",
       "ID": "ELSA-2022-7470"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-2414.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-2414.html",
       "ID": "CVE-2022-2414"
     }
   ],
@@ -34,42 +34,6 @@
                       {
                         "Operator": "OR",
                         "Criterias": [
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ldapjdk is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
-                              },
-                              {
-                                "Comment": "ldapjdk is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ldapjdk-javadoc is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
-                              },
-                              {
-                                "Comment": "ldapjdk-javadoc is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "tomcatjss is earlier than 0:7.7.1-1.module+el8.6.0+20558+60d461b7"
-                              },
-                              {
-                                "Comment": "tomcatjss is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
                           {
                             "Operator": "AND",
                             "Criterias": null,
@@ -195,10 +159,46 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "ldapjdk is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
+                              },
+                              {
+                                "Comment": "ldapjdk is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ldapjdk-javadoc is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
+                              },
+                              {
+                                "Comment": "ldapjdk-javadoc is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python3-idm-pki is earlier than 0:10.12.0-4.0.1.module+el8.7.0+20845+c5918a27"
                               },
                               {
                                 "Comment": "python3-idm-pki is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "tomcatjss is earlier than 0:7.7.1-1.module+el8.6.0+20558+60d461b7"
+                              },
+                              {
+                                "Comment": "tomcatjss is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -439,6 +439,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
+                              },
+                              {
+                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "pki-servlet-engine is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
+                              },
+                              {
+                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python-nss-doc is earlier than 0:1.0.1-10.module+el8.3.0+7697+44932688"
                               },
                               {
@@ -599,30 +623,6 @@
                               },
                               {
                                 "Comment": "xsom is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
-                              },
-                              {
-                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-engine is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
-                              },
-                              {
-                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -663,42 +663,6 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "ldapjdk is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
-                              },
-                              {
-                                "Comment": "ldapjdk is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "ldapjdk-javadoc is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
-                              },
-                              {
-                                "Comment": "ldapjdk-javadoc is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "tomcatjss is earlier than 0:7.7.1-1.module+el8.6.0+20558+60d461b7"
-                              },
-                              {
-                                "Comment": "tomcatjss is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
                                 "Comment": "idm-pki-acme is earlier than 0:10.12.0-4.0.1.module+el8.7.0+20845+c5918a27"
                               },
                               {
@@ -819,10 +783,46 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "ldapjdk is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
+                              },
+                              {
+                                "Comment": "ldapjdk is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "ldapjdk-javadoc is earlier than 0:4.23.0-1.module+el8.5.0+20349+9cc212a8"
+                              },
+                              {
+                                "Comment": "ldapjdk-javadoc is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python3-idm-pki is earlier than 0:10.12.0-4.0.1.module+el8.7.0+20845+c5918a27"
                               },
                               {
                                 "Comment": "python3-idm-pki is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "tomcatjss is earlier than 0:7.7.1-1.module+el8.6.0+20558+60d461b7"
+                              },
+                              {
+                                "Comment": "tomcatjss is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -1063,6 +1063,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
+                              },
+                              {
+                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "pki-servlet-engine is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
+                              },
+                              {
+                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python-nss-doc is earlier than 0:1.0.1-10.module+el8.3.0+7697+44932688"
                               },
                               {
@@ -1225,30 +1249,6 @@
                                 "Comment": "xsom is signed with the Oracle Linux 8 key"
                               }
                             ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
-                              },
-                              {
-                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-engine is earlier than 1:9.0.50-1.module+el8.7.0+20772+f86c9a56"
-                              },
-                              {
-                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
-                              }
-                            ]
                           }
                         ],
                         "Criterions": null
@@ -1284,11 +1284,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-2414.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-2414.html",
       "ID": "CVE-2022-2414"
     }
   ],
   "Issued": {
-    "Date": "2022-11-14"
+    "Date": "2022-11-15"
   }
 }

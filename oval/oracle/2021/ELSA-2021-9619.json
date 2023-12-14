@@ -1,23 +1,23 @@
 {
   "Title": "ELSA-2021-9619:  httpd security update (IMPORTANT)",
-  "Description": "",
+  "Description": "[2.4.6-97.0.5.2]\n- scoreboard: fix null pointer deference [Orabug: 33561206][CVE-2021-34798]\n- fix ap_escape_quote logic [Orabug: 33617690][CVE-2021-39275]",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9619.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-9619.html",
       "ID": "ELSA-2021-9619"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-34798.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-34798.html",
       "ID": "CVE-2021-34798"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-39275.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-39275.html",
       "ID": "CVE-2021-39275"
     }
   ],
@@ -150,30 +150,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mod_ldap is earlier than 0:2.4.6-97.0.5.el7_9.2"
-                      },
-                      {
-                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-97.0.5.el7_9.2"
-                      },
-                      {
-                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "httpd is earlier than 0:2.4.6-97.0.5.el7_9.2"
                       },
                       {
@@ -240,6 +216,30 @@
                         "Comment": "mod_ssl is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_ldap is earlier than 0:2.4.6-97.0.5.el7_9.2"
+                      },
+                      {
+                        "Comment": "mod_ldap is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mod_proxy_html is earlier than 1:2.4.6-97.0.5.el7_9.2"
+                      },
+                      {
+                        "Comment": "mod_proxy_html is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -265,12 +265,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-34798.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-34798.html",
       "ID": "CVE-2021-34798"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-39275.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-39275.html",
       "ID": "CVE-2021-39275"
     }
   ],

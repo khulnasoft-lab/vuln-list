@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1789.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1789.html",
       "ID": "ELSA-2021-1789"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12695.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12695.html",
       "ID": "CVE-2020-12695"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gssdp is earlier than 0:1.0.5-1.el8"
+                      },
+                      {
+                        "Comment": "gssdp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -57,34 +69,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gupnp-devel is earlier than 0:1.0.6-1.el8"
-                      },
-                      {
-                        "Comment": "gupnp-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gssdp is earlier than 0:1.0.5-1.el8"
-                      },
-                      {
-                        "Comment": "gssdp is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gupnp is earlier than 0:1.0.6-1.el8"
                       },
                       {
                         "Comment": "gupnp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gupnp-devel is earlier than 0:1.0.6-1.el8"
+                      },
+                      {
+                        "Comment": "gupnp-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -109,6 +109,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "gssdp is earlier than 0:1.0.5-1.el8"
+                      },
+                      {
+                        "Comment": "gssdp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "gssdp-devel is earlier than 0:1.0.5-1.el8"
                       },
                       {
@@ -133,34 +145,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gupnp-devel is earlier than 0:1.0.6-1.el8"
-                      },
-                      {
-                        "Comment": "gupnp-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gssdp is earlier than 0:1.0.5-1.el8"
-                      },
-                      {
-                        "Comment": "gssdp is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gupnp is earlier than 0:1.0.6-1.el8"
                       },
                       {
                         "Comment": "gupnp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gupnp-devel is earlier than 0:1.0.6-1.el8"
+                      },
+                      {
+                        "Comment": "gupnp-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -188,11 +188,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12695.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12695.html",
       "ID": "CVE-2020-12695"
     }
   ],
   "Issued": {
-    "Date": "2021-05-23"
+    "Date": "2021-05-25"
   }
 }

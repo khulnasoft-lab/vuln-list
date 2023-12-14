@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-0706.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2016-0706.html",
       "ID": "ELSA-2016-0706"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-3068.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-3068.html",
       "ID": "CVE-2016-3068"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-3069.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-3069.html",
       "ID": "CVE-2016-3069"
     }
   ],
@@ -30,18 +30,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "mercurial is earlier than 0:2.6.2-6.el7_2"
-                  },
-                  {
-                    "Comment": "mercurial is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -63,6 +51,18 @@
                   },
                   {
                     "Comment": "emacs-mercurial-el is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "mercurial is earlier than 0:2.6.2-6.el7_2"
+                  },
+                  {
+                    "Comment": "mercurial is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -99,12 +99,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-3068.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-3068.html",
       "ID": "CVE-2016-3068"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-3069.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-3069.html",
       "ID": "CVE-2016-3069"
     }
   ],

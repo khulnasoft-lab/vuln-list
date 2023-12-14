@@ -7,38 +7,38 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4040.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4040.html",
       "ID": "ELSA-2020-4040"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12767.html",
-      "ID": "CVE-2020-12767"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13114.html",
-      "ID": "CVE-2020-13114"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-9278.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-9278.html",
       "ID": "CVE-2019-9278"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0093.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-0093.html",
       "ID": "CVE-2020-0093"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-0182.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-13113.html",
+      "ID": "CVE-2020-13113"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-0182.html",
       "ID": "CVE-2020-0182"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-13113.html",
-      "ID": "CVE-2020-13113"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12767.html",
+      "ID": "CVE-2020-12767"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-13114.html",
+      "ID": "CVE-2020-13114"
     }
   ],
   "Criteria": {
@@ -110,6 +110,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libexif is earlier than 0:0.6.22-1.el7"
+                      },
+                      {
+                        "Comment": "libexif is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libexif-devel is earlier than 0:0.6.22-1.el7"
                       },
                       {
@@ -126,18 +138,6 @@
                       },
                       {
                         "Comment": "libexif-doc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libexif is earlier than 0:0.6.22-1.el7"
-                      },
-                      {
-                        "Comment": "libexif is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -165,33 +165,33 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12767.html",
-      "ID": "CVE-2020-12767"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13114.html",
-      "ID": "CVE-2020-13114"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-9278.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-9278.html",
       "ID": "CVE-2019-9278"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0093.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-0093.html",
       "ID": "CVE-2020-0093"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-0182.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-13113.html",
+      "ID": "CVE-2020-13113"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-0182.html",
       "ID": "CVE-2020-0182"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-13113.html",
-      "ID": "CVE-2020-13113"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12767.html",
+      "ID": "CVE-2020-12767"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-13114.html",
+      "ID": "CVE-2020-13114"
     }
   ],
   "Issued": {

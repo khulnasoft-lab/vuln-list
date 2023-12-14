@@ -1,39 +1,39 @@
 {
-  "Title": "ELSA-2023-12108: kvm_utils security update (IMPORTANT)",
-  "Description": "",
+  "Title": "ELSA-2023-12108: virt:kvm_utils security update (IMPORTANT)",
+  "Description": "libvirt\n[5.7.0-38.el8]\n- qemu: Don't report spurious errors from vCPU tid validation on hotunplug timeout (Shaleen Bathla) [Orabug: 34826758]\n- security: fix SELinux label generation logic (Daniel P. Berrange) [Orabug: 34773029] {CVE-2021-3631}\n- qemu: Set default qdisc before setting bandwidth (Michal Privoznik) [Orabug: 34724925]\n- qemu: Taint cpu host-passthrough only after migration (Cole Robinson) [Orabug: 34724925]\n\nlibvirt-python\n[5.7.0-38.el8]\n- Bump version number to 5.7.0-38 to match libvirt (Karl Heubaum)\n\nqemu-kvm\n[4.2.1-24.el8]\n- hw/display/ati_2d: Fix buffer overflow in ati_2d_blt (CVE-2021-3638) (Philippe Mathieu-Daude) [Orabug: 33930374] {CVE-2021-3638}\n- tests/acpi: virt: update ACPI MADT and FADT binaries (Miguel Luis)\n- acpi: arm/virt: madt: bump to revision 4 accordingly to ACPI 6.0 Errata A (Miguel Luis)\n- acpi: arm/virt: madt: use build_append_int_noprefix() API to compose MADT table (Igor Mammedov)\n- acpi: madt: arm/x86: use acpi_table_begin()/acpi_table_end() instead of build_header() (Igor Mammedov)\n- hw/arm/virt-acpi-build:Remove dead assignment in build_madt() (Chen Qun)\n- acpi: build_fadt: adapt FADT table names (Miguel Luis)\n- acpi: fadt: support revision 6.0 of the ACPI specification (Miguel Luis)\n- tests/acpi: virt: allow acpi MADT and FADT changes (Miguel Luis)\n- Document CVE-2022-3165 as not applicable (Mark Kanda) [Orabug: 34713999] {CVE-2022-3165}\n- Document CVE-2022-1050 as not applicable (Mark Kanda) [Orabug: 34132133] {CVE-2022-1050}\n- hw/acpi/erst.c: Fix memory handling issues (Christian A. Ehrhardt) [Orabug: 34779472] {CVE-2022-4172}\n- vhost-vdpa: fix assert !virtio_net_get_subqueue(nc)-\u003easync_tx.elem in virtio_net_reset (Si-Wei Liu)\n- net/vhost-vdpa.c: Fix clang compilation failure (Peter Maydell)\n- vhost-vdpa: allow passing opened vhostfd to vhost-vdpa (Si-Wei Liu)\n- hw/acpi/aml-build: Improve scalability of PPTT generation (Yanan Wang)\n- tests/data/acpi/virt: update empty file for PPTT (Miguel Luis)\n- hw/arm/virt-acpi-build: Generate PPTT table (Yanan Wang)\n- tests/data/acpi/virt: Add an empty expected file for PPTT (Yanan Wang)\n- hw/acpi/aml-build: Add PPTT table (Andrew Jones)\n- hw/acpi/aml-build: Add Processor hierarchy node structure (Yanan Wang)\n- machine: Add SMP Sockets in CpuTopology (Babu Moger)\n- bios-tables-test: generate table for virt/DBG2 (Miguel Luis)\n- hw/arm/virt_acpi_build: Generate DBG2 table (Eric Auger)\n- tests/acpi: Add void table for virt/DBG2 bios-tables-test (Eric Auger)\n- tests/acpi: virt: update ACPI GTDT binaries (Miguel Luis) [Orabug: 34711916]\n- acpi: arm/virt: build_gtdt: fix invalid 64-bit physical addresses (Miguel Luis) [Orabug: 34711916]\n- tests/acpi: virt: allow acpi GTDT changes (Miguel Luis) [Orabug: 34711916]\n- acpi: fix OEM ID/OEM Table ID padding (Igor Mammedov) [Orabug: 34711916]\n- acpi: arm/virt: build_gtdt: use acpi_table_begin()/acpi_table_end() instead of build_header() (Igor Mammedov) [Orabug: 34711916]\n- acpi: add helper routines to initialize ACPI tables (Igor Mammedov) [Orabug: 34711916]\n- acpi: declare the default assignable value for the ACPI table header (Miguel Luis) [Orabug: 34711916]\n\n[4.2.1-22.el8]\n- Revert 'block: Set the name of BlockBackend if possible' (Joe Jin) [Orabug: 34841102]\n- Revert 'iotests: Adjust 186.out to account for 'null' node-name' (Joe Jin) [Orabug: 34841102]",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12108.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12108.html",
       "ID": "ELSA-2023-12108"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-1050.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-1050.html",
       "ID": "CVE-2022-1050"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-4172.html",
-      "ID": "CVE-2022-4172"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3631.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3631.html",
       "ID": "CVE-2021-3631"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3638.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3638.html",
       "ID": "CVE-2021-3638"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3165.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3165.html",
       "ID": "CVE-2022-3165"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-4172.html",
+      "ID": "CVE-2022-4172"
     }
   ],
   "Criteria": {
@@ -2476,31 +2476,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-1050.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-1050.html",
       "ID": "CVE-2022-1050"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-4172.html",
-      "ID": "CVE-2022-4172"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3631.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3631.html",
       "ID": "CVE-2021-3631"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3638.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3638.html",
       "ID": "CVE-2021-3638"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3165.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3165.html",
       "ID": "CVE-2022-3165"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-4172.html",
+      "ID": "CVE-2022-4172"
     }
   ],
   "Issued": {
-    "Date": "2023-02-06"
+    "Date": "2023-02-08"
   }
 }

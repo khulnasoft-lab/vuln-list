@@ -7,77 +7,77 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-2155.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2015-2155.html",
       "ID": "ELSA-2015-2155"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0207.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-0207.html",
       "ID": "CVE-2014-0207"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0237.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-0237.html",
       "ID": "CVE-2014-0237"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0238.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-0238.html",
       "ID": "CVE-2014-0238"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3479.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3479.html",
       "ID": "CVE-2014-3479"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3480.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3480.html",
       "ID": "CVE-2014-3480"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3487.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3487.html",
       "ID": "CVE-2014-3487"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3587.html",
-      "ID": "CVE-2014-3587"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3478.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3478.html",
       "ID": "CVE-2014-3478"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3538.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3538.html",
       "ID": "CVE-2014-3538"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3710.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3587.html",
+      "ID": "CVE-2014-3587"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3710.html",
       "ID": "CVE-2014-3710"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-9652.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-9652.html",
       "ID": "CVE-2014-9652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8116.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-8116.html",
       "ID": "CVE-2014-8116"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8117.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-8117.html",
       "ID": "CVE-2014-8117"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-9653.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-9653.html",
       "ID": "CVE-2014-9653"
     }
   ],
@@ -107,30 +107,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "file-libs is earlier than 0:5.11-31.el7"
-                  },
-                  {
-                    "Comment": "file-libs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "python-magic is earlier than 0:5.11-31.el7"
-                  },
-                  {
-                    "Comment": "python-magic is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "file-devel is earlier than 0:5.11-31.el7"
                   },
                   {
@@ -143,10 +119,34 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "file-libs is earlier than 0:5.11-31.el7"
+                  },
+                  {
+                    "Comment": "file-libs is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "file-static is earlier than 0:5.11-31.el7"
                   },
                   {
                     "Comment": "file-static is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "python-magic is earlier than 0:5.11-31.el7"
+                  },
+                  {
+                    "Comment": "python-magic is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -171,76 +171,76 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0207.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-0207.html",
       "ID": "CVE-2014-0207"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0237.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-0237.html",
       "ID": "CVE-2014-0237"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0238.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-0238.html",
       "ID": "CVE-2014-0238"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3479.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3479.html",
       "ID": "CVE-2014-3479"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3480.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3480.html",
       "ID": "CVE-2014-3480"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3487.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3487.html",
       "ID": "CVE-2014-3487"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3587.html",
-      "ID": "CVE-2014-3587"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3478.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3478.html",
       "ID": "CVE-2014-3478"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3538.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3538.html",
       "ID": "CVE-2014-3538"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3710.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3587.html",
+      "ID": "CVE-2014-3587"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3710.html",
       "ID": "CVE-2014-3710"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-9652.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-9652.html",
       "ID": "CVE-2014-9652"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8116.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-8116.html",
       "ID": "CVE-2014-8116"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8117.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-8117.html",
       "ID": "CVE-2014-8117"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-9653.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-9653.html",
       "ID": "CVE-2014-9653"
     }
   ],
   "Issued": {
-    "Date": "2015-11-22"
+    "Date": "2015-11-23"
   }
 }

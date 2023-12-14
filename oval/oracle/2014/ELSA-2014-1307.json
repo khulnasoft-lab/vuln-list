@@ -9,12 +9,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1307.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-1307.html",
       "ID": "ELSA-2014-1307"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-1568.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-1568.html",
       "ID": "CVE-2014-1568"
     }
   ],
@@ -579,6 +579,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "nss-pkcs11-devel is earlier than 0:3.16.2-7.0.1.el7_0"
+                      },
+                      {
+                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "nss-softokn is earlier than 0:3.16.2-2.el7_0"
                       },
                       {
@@ -669,18 +681,6 @@
                         "Comment": "nss-util-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "nss-pkcs11-devel is earlier than 0:3.16.2-7.0.1.el7_0"
-                      },
-                      {
-                        "Comment": "nss-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -706,7 +706,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-1568.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-1568.html",
       "ID": "CVE-2014-1568"
     }
   ],

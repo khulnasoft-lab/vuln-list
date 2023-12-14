@@ -8,63 +8,63 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-0180.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2017-0180.html",
       "ID": "ELSA-2017-0180"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5546.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5546.html",
       "ID": "CVE-2016-5546"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3231.html",
-      "ID": "CVE-2017-3231"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3253.html",
-      "ID": "CVE-2017-3253"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3289.html",
-      "ID": "CVE-2017-3289"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5547.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5547.html",
       "ID": "CVE-2016-5547"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5552.html",
-      "ID": "CVE-2016-5552"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3241.html",
-      "ID": "CVE-2017-3241"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3252.html",
-      "ID": "CVE-2017-3252"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3272.html",
-      "ID": "CVE-2017-3272"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5548.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5548.html",
       "ID": "CVE-2016-5548"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-3261.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3241.html",
+      "ID": "CVE-2017-3241"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3252.html",
+      "ID": "CVE-2017-3252"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3253.html",
+      "ID": "CVE-2017-3253"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3272.html",
+      "ID": "CVE-2017-3272"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5552.html",
+      "ID": "CVE-2016-5552"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3231.html",
+      "ID": "CVE-2017-3231"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3261.html",
       "ID": "CVE-2017-3261"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-3289.html",
+      "ID": "CVE-2017-3289"
     }
   ],
   "Criteria": {
@@ -432,30 +432,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.121-0.b13.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.121-0.b13.el7_3"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.121-0.b13.el7_3"
                       },
                       {
@@ -516,10 +492,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.121-0.b13.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-devel-debug is earlier than 1:1.8.0.121-0.b13.el7_3"
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-devel-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.121-0.b13.el7_3"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -631,58 +631,58 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5546.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5546.html",
       "ID": "CVE-2016-5546"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3231.html",
-      "ID": "CVE-2017-3231"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3253.html",
-      "ID": "CVE-2017-3253"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3289.html",
-      "ID": "CVE-2017-3289"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5547.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5547.html",
       "ID": "CVE-2016-5547"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5552.html",
-      "ID": "CVE-2016-5552"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3241.html",
-      "ID": "CVE-2017-3241"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3252.html",
-      "ID": "CVE-2017-3252"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3272.html",
-      "ID": "CVE-2017-3272"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5548.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5548.html",
       "ID": "CVE-2016-5548"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-3261.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3241.html",
+      "ID": "CVE-2017-3241"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3252.html",
+      "ID": "CVE-2017-3252"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3253.html",
+      "ID": "CVE-2017-3253"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3272.html",
+      "ID": "CVE-2017-3272"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5552.html",
+      "ID": "CVE-2016-5552"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3231.html",
+      "ID": "CVE-2017-3231"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3261.html",
       "ID": "CVE-2017-3261"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-3289.html",
+      "ID": "CVE-2017-3289"
     }
   ],
   "Issued": {

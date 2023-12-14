@@ -7,28 +7,28 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4513.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-4513.html",
       "ID": "ELSA-2021-4513"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-36084.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-36084.html",
       "ID": "CVE-2021-36084"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-36085.html",
-      "ID": "CVE-2021-36085"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-36086.html",
+      "ID": "CVE-2021-36086"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-36087.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-36087.html",
       "ID": "CVE-2021-36087"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-36086.html",
-      "ID": "CVE-2021-36086"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-36085.html",
+      "ID": "CVE-2021-36085"
     }
   ],
   "Criteria": {
@@ -43,6 +43,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libsepol-static is earlier than 0:2.9-3.el8"
+                      },
+                      {
+                        "Comment": "libsepol-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -64,18 +76,6 @@
                       },
                       {
                         "Comment": "libsepol-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsepol-static is earlier than 0:2.9-3.el8"
-                      },
-                      {
-                        "Comment": "libsepol-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -100,6 +100,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsepol-static is earlier than 0:2.9-3.el8"
+                      },
+                      {
+                        "Comment": "libsepol-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libsepol is earlier than 0:2.9-3.el8"
                       },
                       {
@@ -116,18 +128,6 @@
                       },
                       {
                         "Comment": "libsepol-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsepol-static is earlier than 0:2.9-3.el8"
-                      },
-                      {
-                        "Comment": "libsepol-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -155,26 +155,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-36084.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-36084.html",
       "ID": "CVE-2021-36084"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-36085.html",
-      "ID": "CVE-2021-36085"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-36086.html",
+      "ID": "CVE-2021-36086"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-36087.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-36087.html",
       "ID": "CVE-2021-36087"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-36086.html",
-      "ID": "CVE-2021-36086"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-36085.html",
+      "ID": "CVE-2021-36085"
     }
   ],
   "Issued": {
-    "Date": "2021-11-14"
+    "Date": "2021-11-16"
   }
 }

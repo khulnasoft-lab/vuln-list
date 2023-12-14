@@ -7,97 +7,97 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1971.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-1971.html",
       "ID": "ELSA-2014-1971"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-2929.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-2929.html",
       "ID": "CVE-2013-2929"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4654.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4654.html",
       "ID": "CVE-2014-4654"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4655.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4655.html",
       "ID": "CVE-2014-4655"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-5045.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-5045.html",
       "ID": "CVE-2014-5045"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3185.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3185.html",
       "ID": "CVE-2014-3185"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3181.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3181.html",
       "ID": "CVE-2014-3181"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3687.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3687.html",
       "ID": "CVE-2014-3687"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3673.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3673.html",
       "ID": "CVE-2014-3673"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3184.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3184.html",
       "ID": "CVE-2014-3184"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-1739.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-1739.html",
       "ID": "CVE-2014-1739"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3182.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3182.html",
       "ID": "CVE-2014-3182"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3186.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3186.html",
       "ID": "CVE-2014-3186"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3631.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3631.html",
       "ID": "CVE-2014-3631"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4027.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4027.html",
       "ID": "CVE-2014-4027"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],
@@ -175,6 +175,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kernel-doc is earlier than 0:3.10.0-123.13.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-doc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "kernel-headers is earlier than 0:3.10.0-123.13.1.el7"
                   },
                   {
@@ -211,34 +223,22 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "perf is earlier than 0:3.10.0-123.13.1.el7"
-                  },
-                  {
-                    "Comment": "perf is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-doc is earlier than 0:3.10.0-123.13.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-doc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-123.13.1.el7"
                   },
                   {
                     "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "perf is earlier than 0:3.10.0-123.13.1.el7"
+                  },
+                  {
+                    "Comment": "perf is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -275,92 +275,92 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-2929.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-2929.html",
       "ID": "CVE-2013-2929"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4654.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4654.html",
       "ID": "CVE-2014-4654"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4655.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4655.html",
       "ID": "CVE-2014-4655"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-5045.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-5045.html",
       "ID": "CVE-2014-5045"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3185.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3185.html",
       "ID": "CVE-2014-3185"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3181.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3181.html",
       "ID": "CVE-2014-3181"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3687.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3687.html",
       "ID": "CVE-2014-3687"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3673.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3673.html",
       "ID": "CVE-2014-3673"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3184.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3184.html",
       "ID": "CVE-2014-3184"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-1739.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-1739.html",
       "ID": "CVE-2014-1739"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3182.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3182.html",
       "ID": "CVE-2014-3182"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3186.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3186.html",
       "ID": "CVE-2014-3186"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3631.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3631.html",
       "ID": "CVE-2014-3631"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3688.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3688.html",
       "ID": "CVE-2014-3688"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4027.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4027.html",
       "ID": "CVE-2014-4027"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4652.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4652.html",
       "ID": "CVE-2014-4652"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-4656.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-4656.html",
       "ID": "CVE-2014-4656"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-6410.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-6410.html",
       "ID": "CVE-2014-6410"
     }
   ],

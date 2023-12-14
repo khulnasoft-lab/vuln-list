@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4587.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-4587.html",
       "ID": "ELSA-2021-4587"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-42574.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-42574.html",
       "ID": "CVE-2021-42574"
     }
   ],
@@ -49,6 +49,102 @@
                       },
                       {
                         "Comment": "libstdc++-static is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cpp is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "cpp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gcc is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "gcc is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gcc-c++ is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "gcc-c++ is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gcc-gdb-plugin is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "gcc-gdb-plugin is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gcc-gfortran is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "gcc-gfortran is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libitm-devel is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "libitm-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libstdc++-devel is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "libstdc++-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libstdc++-docs is earlier than 0:8.5.0-4.0.1.el8_5"
+                      },
+                      {
+                        "Comment": "libstdc++-docs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -181,102 +277,6 @@
                       },
                       {
                         "Comment": "libubsan is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cpp is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "cpp is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gcc is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "gcc is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gcc-c++ is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "gcc-c++ is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gcc-gdb-plugin is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "gcc-gdb-plugin is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "gcc-gfortran is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "gcc-gfortran is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libitm-devel is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "libitm-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libstdc++-devel is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "libstdc++-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libstdc++-docs is earlier than 0:8.5.0-4.0.1.el8_5"
-                      },
-                      {
-                        "Comment": "libstdc++-docs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -620,7 +620,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-42574.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-42574.html",
       "ID": "CVE-2021-42574"
     }
   ],

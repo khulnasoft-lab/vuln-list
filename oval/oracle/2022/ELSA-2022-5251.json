@@ -1,23 +1,23 @@
 {
   "Title": "ELSA-2022-5251:  pcre2 security update (MODERATE)",
-  "Description": "[10.37-5]\n- Explicitly require uft subpackages in tools subpackage\n\n[10.37-4]\n- Resolves: CVE-2022-1586 CVE-2022-1587\n\n[10.37-3.1]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[10.37-3]\n- Revert commit 244afd92965bc8df652c2c1711641649b5884fdc.\n\n[10.37-2]\n- Fix invalid single character repetition in JIT\n- Resolves: BZ#1985484\n\n[10.37-1]\n- Rebase to the 10.37\n- libpcre2-posix.so.2* SONAME bump to libpcre2-posix.so.3*\n- Enable JIT for s390x arch\n- Patches upstreamed: Patch 1,2,3,4\n- Resolves: rhbz#1970765, BZ#1965025\n\n[10.36-4.1]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[10.36-4]\n- Fix a mismatch if \\K was involved in a recursion\n- Restore single character repetition optimization in JIT (upstream bug #2698)\n\n[10.36-3]\n- Fix misparsing long numbers as a backreference and a number without\n  a closing bracket as a quantifier (upstream bug #2690)\n\n[10.36-2.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[10.36-2]\n- Fix a possible NULL pointer dereference in auto_possessify()\n  (upstream bug #2686)\n\n[10.36-1]\n- 10.36 bump\n\n[10.36-0.1.RC1]\n- 10.36-RC1 bump\n\n[10.35-8]\n- Fix a partial matching for a word boundary in JIT mode (upstream bug #2663)\n\n[10.35-7]\n- Fix matching a character set when JIT is enabled and both Unicode script and\n  Unicode class are present (upstream bug #2644)\n\n[10.35-6]\n- Fix escaping test data and only allow slash delimiter after perltest pragma\n  (upstream bug #2641)\n- Fix a mismatch when caselessly searching in an invalid UTF-8 text and a start\n  optimization is enabled (upstream bug #2642)\n\n[10.35-5]\n- Fix escaping test data (upstream bug #2641)\n\n[10.35-4.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[10.35-4]\n- Fix a buffer overread when parsing an unterminated VERSION condition with\n  a single-digit minor number at the end of a regular expression\n  (ClusterFuzz #23779)\n- Fix an early fail optimization with character ranges and a buffer overread\n  in JIT (upstream bug #2621)\n\n[10.35-3]\n- Fix an infinite loop when a single-byte newline is search in JIT if an\n  invalid UTF-8 mode is enabled (upstream bug #2581)\n\n[10.35-2]\n- Enable shadow stack built-in functions if -fcf-protection compiler flag is\n  used by patching a build script (upstream bug #2578)",
+  "Description": "[10.37-5]\n- Explicitly require uft subpackages in tools subpackage\n\n[10.37-4]\n- Resolves: CVE-2022-1586 CVE-2022-1587",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-5251.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-5251.html",
       "ID": "ELSA-2022-5251"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-1586.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-1586.html",
       "ID": "CVE-2022-1586"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-1587.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-1587.html",
       "ID": "CVE-2022-1587"
     }
   ],
@@ -193,16 +193,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-1586.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-1586.html",
       "ID": "CVE-2022-1586"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-1587.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-1587.html",
       "ID": "CVE-2022-1587"
     }
   ],
   "Issued": {
-    "Date": "2022-06-29"
+    "Date": "2022-06-30"
   }
 }

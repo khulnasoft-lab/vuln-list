@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2020-1932:  container-tools:ol8 security update (IMPORTANT)",
-  "Description": "buildah\n[1.11.6-8.0.1]\n- Fixes troubles with oracle registry login [Orabug: 29937283]\n\n[1.11.6-8]\n- fix 'CVE-2020-10696 buildah: crafted input tar file may lead to local file overwriting during image build process'\n- Resolves: #1817742\n\n[1.11.6-7]\n- fix 'COPY command takes long time with buildah'\n- Resolves: #1806120\n\ncockpit-podman\n[12-1]\n- Configure CPU share for system containers\n- Translation updates\n\nconmon\n[2:2.0.6-1.0.1]\n- Remove upstream references [Orabug: 30871880]\n\n[2:2.0.6-1]\n- update to 2.0.6\n- Related: RHELPLAN-25139\n\ncontainernetworking-plugins\n[0.8.3-5.0.1]\n- Disable debuginfo\n\n[0.8.3-5]\n- compile with no_openssl\n- Related: RHELPLAN-25139\n\npodman\n[1.6.4-11.0.1]\n- delivering fix for [Orabug: 29874238] by Nikita Gerasimov \u003cnikita.gerasimov@oracle.com\u003e\n\n[1.6.4-11]\n- fix 'CVE-2020-10696 buildah: crafted input tar file may lead to local file overwriting during image build process'\n- Resolves: #1817747\n\npython-podman-api\n[1.2.0-0.2.gitd0a45fe]\n- revert update to 1.6.0 due to new python3-pbr dependency which\n  is not in RHEL\n- Related: RHELPLAN-25139\n\nrunc\n[1.0.0-65.rc10]\n- address CVE-2019-19921 by updating to rc10",
+  "Description": "buildah\n[1.11.6-8.0.1]\n- Fixes troubles with oracle registry login [Orabug: 29937283]\n\n[1.11.6-8]\n- fix 'CVE-2020-10696 buildah: crafted input tar file may lead to local file overwriting during image build process'\n- Resolves: #1817742\n\n[1.11.6-7]\n- fix 'COPY command takes long time with buildah'\n- Resolves: #1806120\n\ncockpit-podman\n[12-1]\n- Configure CPU share for system containers\n- Translation updates\n\nconmon\n[2:2.0.6-1.0.1]\n- Remove upstream references [Orabug: 30871880]\n\n[2:2.0.6-1]\n- update to 2.0.6\n- Related: RHELPLAN-25139\n\ncontainernetworking-plugins\n[0.8.3-5.0.1]\n- Disable debuginfo\n\n[0.8.3-5]\n- compile with no_openssl\n- Related: RHELPLAN-25139\n\npodman\n[1.6.4-11.0.1]\n- delivering fix for [Orabug: 29874238] by Nikita Gerasimov \u003cnikita.gerasimov@oracle.com\u003e\n\n[1.6.4-11]\n- fix 'CVE-2020-10696 buildah: crafted input tar file may lead to local file overwriting during image build process'\n- Resolves: #1817747\n\npython-podman-api\n[1.2.0-0.2.gitd0a45fe]\n- revert update to 1.6.0 due to new python3-pbr dependency which\n  is not in RHEL\n- Related: RHELPLAN-25139\n\nrunc\n[1.0.0-65.rc10]\n- address CVE-2019-19921 by updating to rc10\n- Resolves: #1801887\n\nskopeo\n[0.1.40-11.0.1]\n- Add oracle registry into the conf file [Orabug: 29845934 31306708]\n- Fix oracle registry login issues [Orabug: 29937192]\n\n[1:0.1.40-11]\n- add docker.io into the default registry list\n- Related: #1810053",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1932.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1932.html",
       "ID": "ELSA-2020-1932"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10696.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-10696.html",
       "ID": "CVE-2020-10696"
     }
   ],
@@ -592,7 +592,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10696.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-10696.html",
       "ID": "CVE-2020-10696"
     }
   ],

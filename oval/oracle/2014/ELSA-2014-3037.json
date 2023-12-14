@@ -1,18 +1,18 @@
 {
-  "Title": "ELSA-2014-3037: unbreakable enterprise kernel security update (IMPORTANT)",
-  "Description": "kernel-uek\n[3.8.13-35.1.1.el6uek]\n- futex: Make lookup_pi_state more robust (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Always cleanup owner tid in unlock_pi (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Validate atomic acquisition in futex_lock_pi_atomic() (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Forbid uaddr == uaddr2 in futex_requeue(..., requeue_pi=1) (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153} {CVE-2014-3153}\n\ndtrace-modules-3.8.13-35.1.1.el6uek\n[0.4.3-4]\n- Updated NEWS file: test stress/buffering/tst.resize1.d is XFAIL for now.\n- Align with kernel header file change: FOLL_NOFAULT -\u003e FOLL_IMMED.\n  [Orabug: 18653713]\n\n[0.4.3-3]\n- Rebuild with cleaned up source tree.\n\n[0.4.3-2]\n- Various fixes to handle multi-threaded processes.\n  [Orabug: 18412802]\n\n[0.4.3-1]\n- Implmentation of profile-* probes in the profile provider.\n  [Orabug: 18323513]\n\n[0.4.2-3]\n- Obsolete the old provider headers package.\n  [Orabug: 18061595]\n\n[0.4.2-2]\n- Change name of provider headers package, to avoid conflicts on yum update.\n  [Orabug: 18061595]\n\n[0.4.2-1]\n- Fix 'vtimestamp' implementation.\n  [Orabug: 17741477]\n- Support SDT probes points in kernel modules.\n  [Orabug: 17851716]\n\n[0.4.1-3]\n- Fix 'errno' implementation.\n  [Orabug: 17704568]\n\n[0.4.1-2]\n- Fix lock ordering issues.\n  [Orabug: 17624236]\n\n[0.4.1-1]\n- Align with new cyclic implementation in UEK3 kernel.\n  [Orabug: 17553446]\n- Bugfix for module reference counting.\n- Fix memory leak.\n- Fix race condition in speculative tracing buffer cleaning.\n  [Orabug: 17591351]\n- Ensure safe access to userspace stack memory location.\n  [Orabug: 17591351]\n\n[0.4.0-2]\n- Bugfix for ustack() to avoid using vma data.\n\n[0.4.0-1]\n- Bugfix for module unloading.\n- Support meta-providers, USDT, and fasttrap (for USDT only).\n- Export DTrace kernel headers to userspace.\n- Improved ustack() robustness.\n  [Orabug: 17591351]\n- Reimplemented ustack().\n  (Nick Alcock) [Orabug: 17591351]\n- Bugfixes.\n\n[0.3.2]\n- Release for new kernel and CTF section layout\n\n[0.3.1]\n- Skipped version number\n\n[0.3.0-2]\n- Remove development-only providers because they should not be built/released.\n\n[0.3.0]\n- Release of the DTrace kernel modules for UEK2 2.6.39-201.0.1 (DTrace kernel).\n\n[0.2.5-2]\n- Fix typo causing unconditional depmod at postinstall time\n\n[0.2.5]\n- New kernel, new userspace: no module changes.\n\n[0.2.4]\n- Ban unloading of in-use dtrace modules while dtrace is running.\n\n[0.2.3]\n- There is one new DTrace option now, used internally by the\n  testsuite.\n\n[0.2.2]\n- Switch MUTEX_HELD() from using mutex_is_locked() to new mutex_owned().\n\n[0.2.1]\n- Ensure that allocation attempts are done in atomic fashion so that a failing\n  allocation attempt won't interfere with other allocations.\n- Surpress OOM warnings.\n\n[0.2.0]\n- Release of the DTrace kernel modules for UEK2 2.6.39-101.0.1 (DTrace kernel).\n\n[0.1.0-1.el6]\n- Disable stub-based syscalls in the release pending merging in fixes.\n\n[0.1]\n- Initial release.",
+  "Title": "ELSA-2014-3037: Unbreakable Enterprise kernel security update (IMPORTANT)",
+  "Description": "kernel-uek\n[3.8.13-35.1.1.el6uek]\n- futex: Make lookup_pi_state more robust (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Always cleanup owner tid in unlock_pi (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Validate atomic acquisition in futex_lock_pi_atomic() (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153}\n- futex: Forbid uaddr == uaddr2 in futex_requeue(..., requeue_pi=1) (Thomas Gleixner)  [Orabug: 18918552]  {CVE-2014-3153} {CVE-2014-3153}",
   "Platform": [
     "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3037.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-3037.html",
       "ID": "ELSA-2014-3037"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3153.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3153.html",
       "ID": "CVE-2014-3153"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "dtrace-modules-3.8.13-35.1.1.el6uek is earlier than 0:0.4.3-4.el6"
+                  },
+                  {
+                    "Comment": "dtrace-modules-3.8.13-35.1.1.el6uek is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -46,18 +58,6 @@
                   },
                   {
                     "Comment": "dtrace-modules-provider-headers is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "dtrace-modules-3.8.13-35.1.1.el6uek is earlier than 0:0.4.3-4.el6"
-                  },
-                  {
-                    "Comment": "dtrace-modules-3.8.13-35.1.1.el6uek is signed with the Oracle Linux 6 key"
                   }
                 ]
               },
@@ -154,7 +154,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3153.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3153.html",
       "ID": "CVE-2014-3153"
     }
   ],

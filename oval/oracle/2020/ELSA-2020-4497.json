@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4497.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4497.html",
       "ID": "ELSA-2020-4497"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19906.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19906.html",
       "ID": "CVE-2019-19906"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cyrus-sasl-sql is earlier than 0:2.1.27-5.el8"
-                      },
-                      {
-                        "Comment": "cyrus-sasl-sql is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -157,6 +145,18 @@
                       },
                       {
                         "Comment": "cyrus-sasl-scram is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cyrus-sasl-sql is earlier than 0:2.1.27-5.el8"
+                      },
+                      {
+                        "Comment": "cyrus-sasl-sql is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -332,7 +332,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19906.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19906.html",
       "ID": "CVE-2019-19906"
     }
   ],

@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2014-1984:  bind security update (IMPORTANT)",
-  "Description": "[32:9.8.2-0.30.rc1.1]\n- Fix CVE-2014-8500 (#1171973)",
+  "Description": "[32:9.9.4-14.0.1.el7_0.1]\n- Rebuild to fix libmysqlclient dependency\n\n[32:9.9.4-14.1]\n- Fix CVE-2014-8500 (#1171975)",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6",
@@ -9,12 +9,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1984.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-1984.html",
       "ID": "ELSA-2014-1984"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-8500.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-8500.html",
       "ID": "CVE-2014-8500"
     }
   ],
@@ -603,6 +603,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-devel is earlier than 32:9.9.4-14.0.1.el7_0.1"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-libs is earlier than 32:9.9.4-14.0.1.el7_0.1"
                       },
                       {
@@ -631,30 +643,6 @@
                       },
                       {
                         "Comment": "bind-license is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-utils is earlier than 32:9.9.4-14.0.1.el7_0.1"
-                      },
-                      {
-                        "Comment": "bind-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-devel is earlier than 32:9.9.4-14.0.1.el7_0.1"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -693,6 +681,18 @@
                         "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-utils is earlier than 32:9.9.4-14.0.1.el7_0.1"
+                      },
+                      {
+                        "Comment": "bind-utils is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -718,11 +718,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-8500.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-8500.html",
       "ID": "CVE-2014-8500"
     }
   ],
   "Issued": {
-    "Date": "2014-12-11"
+    "Date": "2014-12-12"
   }
 }

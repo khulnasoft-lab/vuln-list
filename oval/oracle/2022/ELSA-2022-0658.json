@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-0658.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-0658.html",
       "ID": "ELSA-2022-0658"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-24407.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-24407.html",
       "ID": "CVE-2022-24407"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cyrus-sasl-sql is earlier than 0:2.1.27-6.el8_5"
+                      },
+                      {
+                        "Comment": "cyrus-sasl-sql is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -145,18 +157,6 @@
                       },
                       {
                         "Comment": "cyrus-sasl-scram is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cyrus-sasl-sql is earlier than 0:2.1.27-6.el8_5"
-                      },
-                      {
-                        "Comment": "cyrus-sasl-sql is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -332,11 +332,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-24407.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-24407.html",
       "ID": "CVE-2022-24407"
     }
   ],
   "Issued": {
-    "Date": "2022-02-23"
+    "Date": "2022-02-24"
   }
 }

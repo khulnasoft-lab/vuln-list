@@ -7,58 +7,58 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-1191.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-1191.html",
       "ID": "ELSA-2018-1191"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2790.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2790.html",
       "ID": "CVE-2018-2790"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2798.html",
-      "ID": "CVE-2018-2798"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2799.html",
-      "ID": "CVE-2018-2799"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2800.html",
-      "ID": "CVE-2018-2800"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2814.html",
-      "ID": "CVE-2018-2814"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2815.html",
-      "ID": "CVE-2018-2815"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2794.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2794.html",
       "ID": "CVE-2018-2794"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2795.html",
-      "ID": "CVE-2018-2795"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2796.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2796.html",
       "ID": "CVE-2018-2796"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-2797.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2798.html",
+      "ID": "CVE-2018-2798"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2814.html",
+      "ID": "CVE-2018-2814"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2795.html",
+      "ID": "CVE-2018-2795"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2797.html",
       "ID": "CVE-2018-2797"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2799.html",
+      "ID": "CVE-2018-2799"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2800.html",
+      "ID": "CVE-2018-2800"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-2815.html",
+      "ID": "CVE-2018-2815"
     }
   ],
   "Criteria": {
@@ -82,30 +82,6 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.171-7.b10.el7"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.171-7.b10.el7"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -174,10 +150,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.171-7.b10.el7"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-devel-debug is earlier than 1:1.8.0.171-7.b10.el7"
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-devel-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.171-7.b10.el7"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -286,6 +286,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.171-7.b10.el7"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.171-7.b10.el7"
                       },
                       {
@@ -346,10 +358,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.171-7.b10.el7"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-devel-debug is earlier than 1:1.8.0.171-7.b10.el7"
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-devel-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.171-7.b10.el7"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -436,42 +472,6 @@
                         "Comment": "java-1.8.0-openjdk-src-debug is signed with the Oracle Linux 7 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.171-7.b10.el7"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.171-7.b10.el7"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.171-7.b10.el7"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 7 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -497,53 +497,53 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2790.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2790.html",
       "ID": "CVE-2018-2790"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2798.html",
-      "ID": "CVE-2018-2798"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2799.html",
-      "ID": "CVE-2018-2799"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2800.html",
-      "ID": "CVE-2018-2800"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2814.html",
-      "ID": "CVE-2018-2814"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2815.html",
-      "ID": "CVE-2018-2815"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2794.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2794.html",
       "ID": "CVE-2018-2794"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2795.html",
-      "ID": "CVE-2018-2795"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2796.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2796.html",
       "ID": "CVE-2018-2796"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-2797.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2798.html",
+      "ID": "CVE-2018-2798"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2814.html",
+      "ID": "CVE-2018-2814"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2795.html",
+      "ID": "CVE-2018-2795"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2797.html",
       "ID": "CVE-2018-2797"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2799.html",
+      "ID": "CVE-2018-2799"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2800.html",
+      "ID": "CVE-2018-2800"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-2815.html",
+      "ID": "CVE-2018-2815"
     }
   ],
   "Issued": {

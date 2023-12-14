@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-1884.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-1884.html",
       "ID": "ELSA-2019-1884"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-3862.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-3862.html",
       "ID": "CVE-2019-3862"
     }
   ],
@@ -85,6 +85,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libssh2 is earlier than 0:1.4.3-12.0.1.el7_6.3"
+                      },
+                      {
+                        "Comment": "libssh2 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libssh2-devel is earlier than 0:1.4.3-12.0.1.el7_6.3"
                       },
                       {
@@ -101,18 +113,6 @@
                       },
                       {
                         "Comment": "libssh2-docs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libssh2 is earlier than 0:1.4.3-12.0.1.el7_6.3"
-                      },
-                      {
-                        "Comment": "libssh2 is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-3862.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-3862.html",
       "ID": "CVE-2019-3862"
     }
   ],
   "Issued": {
-    "Date": "2019-07-29"
+    "Date": "2019-07-30"
   }
 }

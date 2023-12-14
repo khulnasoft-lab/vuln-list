@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-2790.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2017-2790.html",
       "ID": "ELSA-2017-2790"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-12150.html",
-      "ID": "CVE-2017-12150"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-12163.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-12163.html",
       "ID": "CVE-2017-12163"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-12151.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-12150.html",
+      "ID": "CVE-2017-12150"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-12151.html",
       "ID": "CVE-2017-12151"
     }
   ],
@@ -76,10 +76,34 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "libsmbclient-devel is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "libsmbclient-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "libwbclient is earlier than 0:4.6.2-11.el7_4"
                   },
                   {
                     "Comment": "libwbclient is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libwbclient-devel is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "libwbclient-devel is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -160,102 +184,6 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "samba-krb5-printing is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-krb5-printing is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba-libs is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-libs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba-python is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-python is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba-winbind is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-winbind is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba-winbind-clients is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-winbind-clients is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "samba-winbind-modules is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "samba-winbind-modules is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libsmbclient-devel is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "libsmbclient-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libwbclient-devel is earlier than 0:4.6.2-11.el7_4"
-                  },
-                  {
-                    "Comment": "libwbclient-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "samba-dc is earlier than 0:4.6.2-11.el7_4"
                   },
                   {
@@ -292,10 +220,46 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "samba-krb5-printing is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-krb5-printing is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "samba-libs is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-libs is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "samba-pidl is earlier than 0:4.6.2-11.el7_4"
                   },
                   {
                     "Comment": "samba-pidl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "samba-python is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-python is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -340,10 +304,46 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "samba-winbind is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-winbind is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "samba-winbind-clients is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-winbind-clients is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "samba-winbind-krb5-locator is earlier than 0:4.6.2-11.el7_4"
                   },
                   {
                     "Comment": "samba-winbind-krb5-locator is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "samba-winbind-modules is earlier than 0:4.6.2-11.el7_4"
+                  },
+                  {
+                    "Comment": "samba-winbind-modules is signed with the Oracle Linux 7 key"
                   }
                 ]
               }
@@ -368,17 +368,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-12150.html",
-      "ID": "CVE-2017-12150"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-12163.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-12163.html",
       "ID": "CVE-2017-12163"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-12151.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-12150.html",
+      "ID": "CVE-2017-12150"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-12151.html",
       "ID": "CVE-2017-12151"
     }
   ],

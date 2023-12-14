@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-12143:  sudo security update (IMPORTANT)",
-  "Description": "[1.8.6p3-29.0.4.el6_10.3]\n- Fixed Privilege escalation CVE-2023-22809 for sudoedit [Orabug: 35037922]\n\n[1.8.6p3-29.0.3.el6_10.3]\n- Fix a bug on CVE-2021-3156.patch backported from ol7 [Orabug: 32717065]\n\n[1.8.6p3-29.0.2.el6_10.3]\n- backport the fix CVE-2021-3156.patch from ol7.\n\n[1.8.6p3-29.0.1.el6_10.3]\n- Fixes [OraBug: 28747380]\n  sudo does not honor env_keep-='KRB5CCNAME' after 'sudo -k' (isaac.chen@oracle.com)\n\n[1.8.6p3-29.3]\n- RHEL-6.10.z ERRATUM\n- fixed CVE-2019-18634\n  Resolves: rhbz#1799018\n\n[1.8.6p3-29.2]\n- RHEL-6.10.z ERRATUM\n- fixed CVE-2019-14287\n  Resolves: rhbz#1760684\n\n[1.8.6p3-29]\n- Fixes CVE-2017-1000368\n  Resolves: rhbz#1459409\n\n[1.8.6p3-28]\n- Fixes CVE-2017-1000367\n  Resolves: rhbz#1455400\n\n[1.8.6p3-27]\n- Update noexec syscall blacklist\n- Fixes CVE-2016-7032 and CVE-2016-7076\n  Resolves: rhbz#1391938\n\n[1.8.6p3-26]\n- RHEL-6.9 erratum\n  - Fix race condition when creating /var/log/sudo-io direcotry\n  Resolves: rhbz#1365156\n\n[1.8.6p3-25]\n- RHEL-6.9 erratum\n  - Fix 'sudo -l command' in the LDAP and SSS backends when the command\n    is not allowed.\n  Resolves: rhbz#1374410\n  - Fix sudo log file wrong group ownership\n  Resolves: rhbz#1330001\n  - Fix sudo parsing sudoers with user's locale\n  Resolves: rhbz#1318374\n\n[1.8.6p3-24]\n- RHEL-6.8 erratum\n  - fixed a bug causing that non-root users can list privileges of\n    other users\n  Resolves: rhbz#1312481\n\n[1.8.6p3-23]\n- RHEL-6.8 erratum\n  - fixed handling of closefrom_override defaults option\n  Resolves: rhbz#1309976\n\n[1.8.6p3-22]\n- RHEL-6.8 erratum\n  - fixed potential getcwd failure, resulting in Null pointer exception\n  Resolves: rhbz#1284886\n\n[1.8.6p3-21]\n- RHEL-6.8 erratum\n  - fixed sssd's detection of user with zero rules\n  Resolves: rhbz#1220480\n\n[1.8.6p3-21]\n- RHEL-6.8 erratum\n  - search also by user id when fetching rules from LDAP\n  Resolves: rhbz#1135531\n\n[1.8.6p3-21]\n- RHEL-6.8 erratum\n  - fixed ldap's and sssd's sudoOption value and remove quotes\n  - fixed ldap's and sssd's sudoOption whitespaces parse problem\n  Resolves: rhbz#1144422\n  Resolves: rhbz#1279447\n\n[1.8.6p3-21]\n- RHEL-6.8 erratum\n  - removed defaults option requiretty from /etc/sudoers\n  - backported pam_service and pam_login_service defaults options\n  - implemented a new defaults option for changing netgroup processing\n    semantics\n  - fixed visudo's quiet cli option\n  Resolves: rhbz#1248695\n  Resolves: rhbz#1247231\n  Resolves: rhbz#1241896\n  Resolves: rhbz#1197885\n  Resolves: rhbz#1233205\n\n[1.8.6p3-20]\n- added patch to re-introduce old group processing behaviour\n  Resolves: rhbz#1075836\n\n[1.8.6p3-19]\n- RHEL-6.7 erratum\n  - modified the authlogicfix patch to fix #1144448\n  - fixed a bug in the ldapusermatchfix patch\n  Resolves: rhbz#1144448\n  Resolves: rhbz#1142122\n\n[1.8.6p3-18]\n- RHEL-6.7 erratum\n  - fixed the mantypos-ldap.patch\n  Resolves: rhbz#1138267\n\n[1.8.6p3-17]\n- RHEL-6.7 erratum\n  - added patch for CVE-2014-9680\n  - added BuildRequires for tzdata\n  Resolves: rhbz#1200253\n\n[1.8.6p3-16]\n- RHEL-6.7 erratum\n  - added zlib-devel build required to enable zlib compression support\n  - fixed two typos in the sudoers.ldap man page\n  - fixed a hang when duplicate nss entries are specified in nsswitch.conf\n  - SSSD: implemented sorting of the result entries according to the\n          sudoOrder attribute\n  - LDAP: fixed logic handling the computation of the 'user matched' flag\n  - fixed restoring of the SIGPIPE signal in the tgetpass function\n  - fixed listpw, verifypw + authenticate option logic in LDAP/SSSD\n  Resolves: rhbz#1106433\n  Resolves: rhbz#1138267\n  Resolves: rhbz#1147498\n  Resolves: rhbz#1138581\n  Resolves: rhbz#1142122\n  Resolves: rhbz#1094548\n  Resolves: rhbz#1144448\n\n[1.8.6p3-15]\n- RHEL-6.6 erratum\n  - SSSD: dropped the ipahostnameshort patch, as it is not\n    needed. rhbz#1033703 is a configuration issue.\n  Related: rhbz#1033703\n\n[1.8.6p3-14]\n- RHEL-6.6 erratum\n  - SSSD: fixed netgroup filter patch\n  - SSSD: dropped serparate patch for #1006463, the fix is now part\n    of the netgroup filter patch\n  Resolves: rhbz#1006463\n  Resolves: rhbz#1083064\n\n[1.8.6p3-13]\n- RHEL-6.6 erratum\n  - don't retry authentication when ctrl-c pressed\n  - fix double-quote processing in Defaults options\n  - fix sesh login shell argv[0]\n  - handle the '(none)' hostname correctly\n  - SSSD: fix ipa_hostname handling\n  - SSSD: fix sudoUser netgroup specification filtering\n  - SSSD: list correct user when -U \u003cuser\u003e -l specified\n  - SSSD: show rule names on long listing (-ll)\n  Resolves: rhbz#1065415\n  Resolves: rhbz#1078338\n  Resolves: rhbz#1052940\n  Resolves: rhbz#1083064\n  Resolves: rhbz#1033703\n  Resolves: rhbz#1006447\n  Resolves: rhbz#1006463\n  Resolves: rhbz#1070952\n\n[1.8.6p3-12]\n- added patches for CVE-2013-1775 CVE-2013-2777 CVE-2013-2776\n  Resolves: rhbz#1015355\n\n[1.8.6p3-11]\n- sssd: fixed a bug in ipa_hostname processing\n  Resolves: rhbz#853542\n\n[1.8.6p3-10]\n- sssd: fixed buffer size for the ipa_hostname value\n  Resolves: rhbz#853542\n\n[1.8.6p3-9]\n- sssd: match against ipa_hostname from sssd.conf too when\n  checking sudoHost\n  Resolves: rhbz#853542\n\n[1.8.6p3-8]\n- updated man-page\n- fixed handling of RLIMIT_NPROC resource limit\n- fixed alias cycle detection code\n- added debug messages for tracing of netgroup matching\n- fixed aborting on realloc when displaying allowed commands\n- show the SUDO_USER in logs, if running commands as root\n- sssd: filter netgroups in the sudoUser attribute\n  Resolves: rhbz#856901\n  Resolves: rhbz#947276\n  Resolves: rhbz#886648\n  Resolves: rhbz#994563\n  Resolves: rhbz#848111\n  Resolves: rhbz#994626\n  Resolves: rhbz#973228\n  Resolves: rhbz#880150\n\n[1.8.6p3-7]\n- fixed potential stack overflow in visudo",
+  "Description": "[1.8.6p3-29.0.4.el6_10.3]\n- Fixed Privilege escalation CVE-2023-22809 for sudoedit [Orabug: 35037922]",
   "Platform": [
     "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12143.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12143.html",
       "ID": "ELSA-2023-12143"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-22809.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-22809.html",
       "ID": "CVE-2023-22809"
     }
   ],
@@ -116,11 +116,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-22809.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-22809.html",
       "ID": "CVE-2023-22809"
     }
   ],
   "Issued": {
-    "Date": "2023-02-27"
+    "Date": "2023-02-28"
   }
 }

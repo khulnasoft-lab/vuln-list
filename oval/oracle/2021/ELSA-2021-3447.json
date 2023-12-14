@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-3447.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-3447.html",
       "ID": "ELSA-2021-3447"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-38201.html",
-      "ID": "CVE-2021-38201"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-37576.html",
+      "ID": "CVE-2021-37576"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-37576.html",
-      "ID": "CVE-2021-37576"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-38201.html",
+      "ID": "CVE-2021-38201"
     }
   ],
   "Criteria": {
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.17.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -98,6 +86,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.17.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.17.1.el8_4"
                       },
                       {
@@ -133,18 +133,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.17.1.el8_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -354,6 +342,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-305.17.1.el8_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "perf is earlier than 0:4.18.0-305.17.1.el8_4"
                       },
                       {
@@ -397,13 +397,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-38201.html",
-      "ID": "CVE-2021-38201"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-37576.html",
+      "ID": "CVE-2021-37576"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-37576.html",
-      "ID": "CVE-2021-37576"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-38201.html",
+      "ID": "CVE-2021-38201"
     }
   ],
   "Issued": {

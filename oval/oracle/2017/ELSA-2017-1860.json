@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-1860.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2017-1860.html",
       "ID": "ELSA-2017-1860"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-2806.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-2806.html",
       "ID": "CVE-2015-2806"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3622.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-3622.html",
       "ID": "CVE-2015-3622"
     }
   ],
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libtasn1-tools is earlier than 0:4.10-1.el7"
-                      },
-                      {
-                        "Comment": "libtasn1-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -66,6 +54,18 @@
                       },
                       {
                         "Comment": "libtasn1-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libtasn1-tools is earlier than 0:4.10-1.el7"
+                      },
+                      {
+                        "Comment": "libtasn1-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -90,18 +90,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libtasn1-tools is earlier than 0:4.10-1.el7"
-                      },
-                      {
-                        "Comment": "libtasn1-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libtasn1 is earlier than 0:4.10-1.el7"
                       },
                       {
@@ -120,6 +108,18 @@
                         "Comment": "libtasn1-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libtasn1-tools is earlier than 0:4.10-1.el7"
+                      },
+                      {
+                        "Comment": "libtasn1-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -128,28 +128,6 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libtasn1 is earlier than 0:4.10-1.el7"
-                  },
-                  {
-                    "Comment": "libtasn1 is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -167,16 +145,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-2806.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-2806.html",
       "ID": "CVE-2015-2806"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3622.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-3622.html",
       "ID": "CVE-2015-3622"
     }
   ],
   "Issued": {
-    "Date": "2017-08-05"
+    "Date": "2017-08-07"
   }
 }

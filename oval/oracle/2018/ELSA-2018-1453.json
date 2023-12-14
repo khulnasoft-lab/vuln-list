@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-1453.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-1453.html",
       "ID": "ELSA-2018-1453"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1111.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1111.html",
       "ID": "CVE-2018-1111"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dhcp-devel is earlier than 12:4.2.5-68.0.1.el7_5.1"
-                      },
-                      {
-                        "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "dhcp-common is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dhcp-devel is earlier than 12:4.2.5-68.0.1.el7_5.1"
+                      },
+                      {
+                        "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -109,18 +109,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "dhcp-devel is earlier than 12:4.2.5-68.0.1.el7_5.1"
-                      },
-                      {
-                        "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "dhclient is earlier than 12:4.2.5-68.0.1.el7_5.1"
                       },
                       {
@@ -149,6 +137,18 @@
                       },
                       {
                         "Comment": "dhcp-common is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dhcp-devel is earlier than 12:4.2.5-68.0.1.el7_5.1"
+                      },
+                      {
+                        "Comment": "dhcp-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -188,7 +188,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1111.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1111.html",
       "ID": "CVE-2018-1111"
     }
   ],

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-1049.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-1049.html",
       "ID": "ELSA-2022-1049"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-22720.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-22720.html",
       "ID": "CVE-2022-22720"
     }
   ],
@@ -31,18 +31,6 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
-                          },
-                          {
-                            "Comment": "mod_md is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -124,6 +112,18 @@
                           },
                           {
                             "Comment": "mod_ldap is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
+                          },
+                          {
+                            "Comment": "mod_md is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -194,18 +194,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
-                          },
-                          {
-                            "Comment": "mod_md is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "httpd is earlier than 0:2.4.37-43.0.2.module+el8.5.0+20524+6e75a975.3"
                           },
                           {
@@ -290,6 +278,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
+                          },
+                          {
+                            "Comment": "mod_md is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mod_proxy_html is earlier than 1:2.4.37-43.0.2.module+el8.5.0+20524+6e75a975.3"
                           },
                           {
@@ -352,11 +352,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-22720.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-22720.html",
       "ID": "CVE-2022-22720"
     }
   ],
   "Issued": {
-    "Date": "2022-03-24"
+    "Date": "2022-03-25"
   }
 }

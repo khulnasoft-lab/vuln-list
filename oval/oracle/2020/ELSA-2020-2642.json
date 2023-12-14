@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-2642.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-2642.html",
       "ID": "ELSA-2020-2642"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10772.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-10772.html",
       "ID": "CVE-2020-10772"
     }
   ],
@@ -45,10 +45,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "unbound-libs is earlier than 0:1.6.6-5.el7_8"
+                        "Comment": "unbound-devel is earlier than 0:1.6.6-5.el7_8"
                       },
                       {
-                        "Comment": "unbound-libs is signed with the Oracle Linux 7 key"
+                        "Comment": "unbound-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -57,10 +57,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "unbound-devel is earlier than 0:1.6.6-5.el7_8"
+                        "Comment": "unbound-libs is earlier than 0:1.6.6-5.el7_8"
                       },
                       {
-                        "Comment": "unbound-devel is signed with the Oracle Linux 7 key"
+                        "Comment": "unbound-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -97,30 +97,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "unbound-devel is earlier than 0:1.6.6-5.el7_8"
-                      },
-                      {
-                        "Comment": "unbound-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "unbound-python is earlier than 0:1.6.6-5.el7_8"
-                      },
-                      {
-                        "Comment": "unbound-python is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "unbound is earlier than 0:1.6.6-5.el7_8"
                       },
                       {
@@ -133,10 +109,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "unbound-devel is earlier than 0:1.6.6-5.el7_8"
+                      },
+                      {
+                        "Comment": "unbound-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "unbound-libs is earlier than 0:1.6.6-5.el7_8"
                       },
                       {
                         "Comment": "unbound-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "unbound-python is earlier than 0:1.6.6-5.el7_8"
+                      },
+                      {
+                        "Comment": "unbound-python is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -164,7 +164,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10772.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-10772.html",
       "ID": "CVE-2020-10772"
     }
   ],

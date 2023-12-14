@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2023-12788: gcc security update (LOW)",
-  "Description": "gcc\n[8.5.0-18.0.5]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751743.\n  Includes removal of aarch64-preserve-args.patch. \n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751810.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  with major adjustment.\n  gcc11-downfall-disable-gather-in-vec.patch\n  gcc11-downfall-support-mno-gather.patch\nReviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\ngcc-toolset-11-gcc\n[11.2.1-9.1.0.6]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751885.\n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751901.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  gcc11-downfall-disable-gather-in-vec.patch\n  gcc11-downfall-support-mno-gather.patch\n  Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\ngcc-toolset-12-gcc\n[12.2.1-7.4.0.2]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751931.\n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751938.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  gcc12-downfall-disable-gather-in-vec.patch\n  gcc12-downfall-support-mno-gather.patch\n- Introduce 'oracle_release' into .spec file. Echo it to gcc/DEV-PHASE.",
+  "Description": "gcc [el8]\n[8.5.0-18.0.5]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751743.\n  Includes removal of aarch64-preserve-args.patch. \n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751810.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  with major adjustment.\n  gcc11-downfall-disable-gather-in-vec.patch\n  gcc11-downfall-support-mno-gather.patch\n  Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\ngcc [el9]\n[11.3.1-4.3.0.4]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751837.\n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751842.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  gcc11-downfall-disable-gather-in-vec.patch\n  gcc11-downfall-support-mno-gather.patch\nReviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\ngcc-toolset-11-gcc [el8]\n[11.2.1-9.1.0.6]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751885.\n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751901.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  gcc11-downfall-disable-gather-in-vec.patch\n  gcc11-downfall-support-mno-gather.patch\n  Reviewed-by: Jose E. Marchesi \u003cjose.marchesi@oracle.com\u003e\n\ngcc-toolset-12-gcc [el8/el9]\n[12.2.1-7.4.0.2]\n- CVE-2023-4039 GCC mitigation.\n  Orabug 35751931.\n- CVE-2022-40982 'Intel Downfall' mitigation.\n  Orabug 35751938.\n  Add two patches originally from GCC upstream releases/gcc-11 branch.\n  gcc12-downfall-disable-gather-in-vec.patch\n  gcc12-downfall-support-mno-gather.patch\n- Introduce 'oracle_release' into .spec file. Echo it to gcc/DEV-PHASE.",
   "Platform": [
     "Oracle Linux 8",
     "Oracle Linux 9"
@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12788.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12788.html",
       "ID": "ELSA-2023-12788"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-4039.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-4039.html",
       "ID": "CVE-2023-4039"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-40982.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-40982.html",
       "ID": "CVE-2022-40982"
     }
   ],
@@ -58,138 +58,6 @@
                           },
                           {
                             "Comment": "libstdc++-static is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libasan is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libasan is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libatomic is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libatomic is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libatomic-static is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libatomic-static is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgcc is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libgcc is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgfortran is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libgfortran is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgomp is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libgomp is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libitm is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libitm is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "liblsan is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "liblsan is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libstdc++ is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libstdc++ is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libtsan is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libtsan is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libubsan is earlier than 0:8.5.0-18.0.5.el8"
-                          },
-                          {
-                            "Comment": "libubsan is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -718,6 +586,138 @@
                           },
                           {
                             "Comment": "libtsan2 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libasan is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libasan is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libatomic is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libatomic is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libatomic-static is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libatomic-static is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgcc is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libgcc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgfortran is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libgfortran is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgomp is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libgomp is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libitm is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libitm is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "liblsan is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "liblsan is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libstdc++ is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libstdc++ is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libtsan is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libtsan is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libubsan is earlier than 0:8.5.0-18.0.5.el8"
+                          },
+                          {
+                            "Comment": "libubsan is signed with the Oracle Linux 8 key"
                           }
                         ]
                       }
@@ -1542,66 +1542,6 @@
                         "Criterias": null,
                         "Criterions": [
                           {
-                            "Comment": "libatomic is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libatomic is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgcc is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgcc is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgfortran is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgfortran is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgomp is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgomp is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libstdc++ is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libstdc++ is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
                             "Comment": "gcc-plugin-devel is earlier than 0:11.3.1-4.3.0.4.el9"
                           },
                           {
@@ -2016,6 +1956,66 @@
                             "Comment": "libubsan is signed with the Oracle Linux 9 key"
                           }
                         ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libatomic is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libatomic is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgcc is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgcc is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgfortran is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgfortran is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgomp is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgomp is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libstdc++ is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libstdc++ is signed with the Oracle Linux 9 key"
+                          }
+                        ]
                       }
                     ],
                     "Criterions": null
@@ -2033,6 +2033,78 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libatomic is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libatomic is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgcc is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgcc is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgfortran is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgfortran is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libgomp is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libgomp is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libquadmath is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libquadmath is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "libstdc++ is earlier than 0:11.3.1-4.3.0.4.el9"
+                          },
+                          {
+                            "Comment": "libstdc++ is signed with the Oracle Linux 9 key"
+                          }
+                        ]
+                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -2512,78 +2584,6 @@
                             "Comment": "libstdc++-static is signed with the Oracle Linux 9 key"
                           }
                         ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libatomic is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libatomic is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgcc is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgcc is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgfortran is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgfortran is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libgomp is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libgomp is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libquadmath is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libquadmath is signed with the Oracle Linux 9 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "libstdc++ is earlier than 0:11.3.1-4.3.0.4.el9"
-                          },
-                          {
-                            "Comment": "libstdc++ is signed with the Oracle Linux 9 key"
-                          }
-                        ]
                       }
                     ],
                     "Criterions": null
@@ -2612,12 +2612,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-4039.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-4039.html",
       "ID": "CVE-2023-4039"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-40982.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-40982.html",
       "ID": "CVE-2022-40982"
     }
   ],

@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2021-1135:  squid security update (IMPORTANT)",
-  "Description": "[7:3.5.20-17.6]\n- Resolves: #1944256 - CVE-2020-25097 squid: improper input validation may allow\n  a trusted client to perform HTTP Request Smuggling\n\n[7:3.5.20-17.5]\n- Resolves: #1890581 - Fix for CVE 2019-13345 breaks authentication in\n  cachemgr.cgi\n\n[7:3.5.20-17.4]\n- Resolves: #1872349 - CVE-2020-24606 squid: Improper Input Validation could\n  result in a DoS\n- Resolves: #1872327 - CVE-2020-15810 squid: HTTP Request Smuggling could\n  result in cache poisoning\n- Resolves: #1872342 - CVE-2020-15811 squid: HTTP Request Splitting could\n  result in cache poisoning\n\n[7:3.5.20-17.2]\n- Resolves: #1802516 - CVE-2020-8449 squid: Improper input validation issues\n  in HTTP Request processing\n- Resolves: #1802515 - CVE-2020-8450 squid: Buffer overflow in a Squid acting\n  as reverse-proxy\n- Resolves: #1853129 - CVE-2020-15049 squid: request smuggling and poisoning\n  attack against the HTTP cache\n- Resolves: #1802517 - CVE-2019-12528 squid: Information Disclosure issue in\n  FTP Gateway",
+  "Description": "[7:3.5.20-17.6]\n- Resolves: #1944256 - CVE-2020-25097 squid: improper input validation may allow\n  a trusted client to perform HTTP Request Smuggling",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1135.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1135.html",
       "ID": "ELSA-2021-1135"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25097.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-25097.html",
       "ID": "CVE-2020-25097"
     }
   ],
@@ -85,18 +85,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-17.el7_9.6"
-                      },
-                      {
-                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "squid is earlier than 7:3.5.20-17.el7_9.6"
                       },
                       {
@@ -113,6 +101,18 @@
                       },
                       {
                         "Comment": "squid-migration-script is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "squid-sysvinit is earlier than 7:3.5.20-17.el7_9.6"
+                      },
+                      {
+                        "Comment": "squid-sysvinit is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25097.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-25097.html",
       "ID": "CVE-2020-25097"
     }
   ],
   "Issued": {
-    "Date": "2021-04-08"
+    "Date": "2021-04-09"
   }
 }

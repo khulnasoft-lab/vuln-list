@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2012-2001:  Unbreakable Enterprise kernel security and bug fix update (IMPORTANT)",
-  "Description": "[2.6.32-300.7.1.el6uek]\n- Revert 'proc: enable writing to /proc/pid/mem' [orabug 13619701] {CVE-2012-0056}\n- [PATCH] x86, tsc: Skip TSC synchronization checks for tsc=reliable (Suresh Siddha)\n\n[2.6.32-300.6.1.el6uek]\n- tracing: Fix null pointer deref with SEND_SIG_FORCED (Oleg Nesterov) [orabug 13611655]\n\n[2.6.32-300.5.1.el6uek]\n- sched, x86: Avoid unnecessary overflow in sched_clock (Salman Qazi) [orabug 13604567]\n- [x86]: Don't resume/restore cpu if not of the expected cpu (Joe Jin) [orabug 13492670]\n- drm/i915: Rephrase pwrite bounds checking to avoid any potential overflow (Chris Wilson) [CVE-2010-296]\n- x2apic: Enable the bios request for x2apic optout (Suresh Siddha) [orabug 13565303]\n- fuse: split queues to scale I/O throughput (Srinivas Eeda) [orabug 10004611]\n- fuse: break fc spinlock (Srinivas Eeda) [orabug 10004611]",
+  "Description": "[2.6.32-300.7.1.el6uek]\n- Revert \"proc: enable writing to /proc/pid/mem\" [orabug 13619701] {CVE-2012-0056}\n- [PATCH] x86, tsc: Skip TSC synchronization checks for tsc=reliable (Suresh Siddha)\n\n[2.6.32-300.6.1.el6uek]\n- tracing: Fix null pointer deref with SEND_SIG_FORCED (Oleg Nesterov) [orabug 13611655]\n\n[2.6.32-300.5.1.el6uek]\n- sched, x86: Avoid unnecessary overflow in sched_clock (Salman Qazi) [orabug 13604567]\n- [x86]: Don't resume/restore cpu if not of the expected cpu (Joe Jin) [orabug 13492670]\n- drm/i915: Rephrase pwrite bounds checking to avoid any potential overflow (Chris Wilson) [CVE-2010-296]\n- x2apic: Enable the bios request for x2apic optout (Suresh Siddha) [orabug 13565303]\n- fuse: split queues to scale I/O throughput (Srinivas Eeda) [orabug 10004611]\n- fuse: break fc spinlock (Srinivas Eeda) [orabug 10004611]",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6"
@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2012-2001.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2012-2001.html",
       "ID": "ELSA-2012-2001"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2010-2962.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2010-2962.html",
       "ID": "CVE-2010-2962"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-0056.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-0056.html",
       "ID": "CVE-2012-0056"
     }
   ],
@@ -114,6 +114,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.7.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "ofa-2.6.32-300.7.1.el5uek is earlier than 0:1.5.1-4.0.53"
                           },
                           {
@@ -130,18 +142,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-300.7.1.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.7.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -238,6 +238,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.7.1.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "ofa-2.6.32-300.7.1.el5uek is earlier than 0:1.5.1-4.0.53"
                           },
                           {
@@ -254,18 +266,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-300.7.1.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-300.7.1.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -608,12 +608,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2010-2962.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2010-2962.html",
       "ID": "CVE-2010-2962"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-0056.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-0056.html",
       "ID": "CVE-2012-0056"
     }
   ],

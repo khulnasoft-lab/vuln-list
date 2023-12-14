@@ -1,39 +1,39 @@
 {
   "Title": "ELSA-2022-6448:  nodejs:14 security and bug fix update (MODERATE)",
-  "Description": "nodejs\n* Tue Aug 02 2022 Zuzana Svetlikova \u003czsvetlik@redhat.com - 1:14.20.0-2\n- Replace with_* macros with RPM confitionals\n- Unify configure calls into single command\n- Refactor bootstrap-related parts\n- Decouple dependency bundling from bootstrapping\n- Resolves: RHBZ#2111417\n\n[1:14.20.0-1]\n- Rebase to latest version\n- Resolves: RHBZ#2106367\n- CVE fixes for CVE-2022-32212/3/4/5\n- Resolves: #2109576, #2109579, #2109582, #2109585\n\n[1:14.18.2-3]\n- Resolves: RHBZ#2029519\n- Add missing BZ to changelog\n\n[1:14.18.2-2]\n- Add missing fixes\n- Resolves: RHBZ#2027641, RHBZ#2027634\n\n[1:14.18.2-1]\n- Resolves: RHBZ#2026325\n- Resolves: RHBZ#2014130, RHBZ#2014124, RHBZ#2013826, RHBZ#2024921\n- Rebase to new version to fix CVEs\n\n[1:14.17.5-1]\n- Resolves CVE-2021-22930, CVE-2021-22931, CVE-2021-22939, CVE-2021-22940,\n- CVE-2021-23343, CVE-2021-32803, CVE-2021-32804, CVE-2021-3672\n- Resolves RHBZ#1847529 (make FIPS always available)\n- Resolves: RHBZ#1988600, RHBZ#1993815, RHBZ#1993809, RHBZ#1993096\n- Resolves: RHBZ#1986743, RHBZ#1993947, RHBZ#1993940, RHBZ#1989427\n- Resolves: RHBZ#1951620 (make FIPS always available)\n\n[1:14.17.3-3]\n- Resolves: RHBZ#1945513, RHBZ#1945287\n- Resolves CVE-2021-23362 CVE-2021-27290\n- Bump for missing mentions of CVEs\n\n[1:14.17.3-2]\n- Resolves: RHBZ#1979844, RHBZ#1977829\n- Resolves: RHBZ#1842826\n- Don't use patch3\n\n[1:14.17.3-1]\n- Resolves: RHBZ#1979844, RHBZ#1977829\n- Resolves: RHBZ#1842826\n- Resolves CVE-2021-22918(libuv), use system cipher list\n\n[1:14.16.0-3]\n- Resolves: RHBZ#1930775\n- Always build with systemtap\n\n[1:14.16.0-2]\n- Resolves RHBZ#1930775\n- remove --debug-nghttp2 option\n\n[1:14.16.0-1]\n- Resolves CVE-2021-22883 CVE-2021-22884\n- Resolves: RHBZ#1934566, RHBZ#1934599\n- Rebase, remove ini patch\n\n[1:14.15.4-2]\n- Add patch for yarn crash\n- Resolves: RHBZ#1915296\n\n[1:14.15.4-1]\n- Security rebase to 14.15.4\n- https://nodejs.org/en/blog/vulnerability/january-2021-security-releases/\n- Resolves: RHBZ#1913001, RHBZ#1912953\n- Resolves: RHBZ#1912636, RHBZ#1898602, RHBZ#1898768, RHBZ#1893987, RHBZ#1893184\n\n[1:14.15.0-1]\n- Resolves: RHBZ#1858864\n- Update to LTS release\n\n[1:14.11.0-1]\n- Security update to 14.11.0\n\n[1:14.4.0-1]\n- Security update to 14.4.0\n- Resolves: RHBZ#1815402\n\n[1:14.3.0-1]\n- Update to 14.3.0\n- Fix optflags to save memory\n- Resolves: RHBZ#1815402\n\n[1:14.2.0-1]\n- Update to 14.2.0\n- build with python3 only\n- some clean up\n\n[1:12.16.1-2]\n- Fix CVE-2020-10531\n\n[1:12.16.1-1]\n- Rebase to 12.16.1\n\n[1:12.14.1-1]\n- Rebase to 12.14.1\n\n[1:12.13.1-1]\n- Resolves: RHBZ# 1773503, update to 12.13.1\n- minor clean up and sync with Fedora spec\n- turn off debug builds\n\n[1:12.4.0-2]\n- Add condition to libs\n\n[1:12.4.0-1]\n- Update to v12.x\n- Add v8-devel and libs subpackages from fedora\n\n[1:10.14.1-2]\n- move nodejs-packaging BR out of conditional\n\n[1:10.14.1-1]\n- Resolves RHBZ#1644207\n- fixes node-gyp permissions\n- rebase\n\n[1:10.11.0-2]\n- BuildRequire nodejs-packaging for proper npm dependency generation\n- Resolves: rhbz#1615947\n\n[1:10.11.0-1]\n- Rebase to 10.11.0\n- Import changes from fedora\n- Resolves: rhbz#1621766\n\n[1:10.7.0-5]\n- Import sources from fedora\n- Allow using python2 at %build and %install\n- turn off debug for aarch64\n\n[1:10.7.0-4]\n- Fix npm upgrade scriptlet\n- Fix unexpected trailing .1 in npm release field\n\n[1:10.7.0-3]\n- Restore annotations to binaries\n- Fix unexpected trailing .1 in release field\n\n[1:10.7.0-2]\n- Update to 10.7.0\n- https://nodejs.org/en/blog/release/v10.7.0/\n- https://nodejs.org/en/blog/release/v10.6.0/\n\n[1:10.5.0-1.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_29_Mass_Rebuild\n\n[1:10.5.0-1]\n- Update to 10.5.0\n- https://nodejs.org/en/blog/release/v10.5.0/\n\n[1:10.4.1-1]\n- Update to 10.4.1 to address security issues\n- https://nodejs.org/en/blog/release/v10.4.1/\n- Resolves: rhbz#1590801\n- Resolves: rhbz#1591014\n- Resolves: rhbz#1591019\n\n[1:10.4.0-1]\n- Update to 10.4.0\n- https://nodejs.org/en/blog/release/v10.4.0/\n\n[1:10.3.0-1]\n- Update to 10.3.0\n- Update npm to 6.1.0\n- https://nodejs.org/en/blog/release/v10.3.0/\n\n[1:10.2.1-2]\n- Fix up bare 'python' to be python2\n- Drop redundant entry in docs section\n\n[1:10.2.1-1]\n- Update to 10.2.1\n- https://nodejs.org/en/blog/release/v10.2.1/\n\n[1:10.2.0-1]\n- Update to 10.2.0\n- https://nodejs.org/en/blog/release/v10.2.0/\n\n[1:10.1.0-3]\n- Fix incorrect rpm macro\n\n[1:10.1.0-2]\n- Include upstream v8 fix for ppc64[le]\n- Disable debug build on ppc64[le] and s390x\n\n[1:10.1.0-1]\n- Update to 10.1.0\n- https://nodejs.org/en/blog/release/v10.1.0/\n- Reenable node_g binary\n\n[1:10.0.0-1]\n- Update to 10.0.0\n- https://nodejs.org/en/blog/release/v10.0.0/\n- Drop workaround patch\n- Temporarily drop node_g binary due to\n  https://gcc.gnu.org/bugzilla/show_bug.cgi?id=85587\n\n[1:9.11.1-2]\n- Use standard Fedora linker flags (bug #1543859)\n\n[1:9.11.1-1]\n- Update to 9.11.1\n- https://nodejs.org/en/blog/release/v9.11.0/\n- https://nodejs.org/en/blog/release/v9.11.1/\n\n[1:9.10.0-1]\n- Update to 9.10.0\n- https://nodejs.org/en/blog/release/v9.10.0/\n\n[1:9.9.0-1]\n- Update to 9.9.0\n- https://nodejs.org/en/blog/release/v9.9.0/\n\n[1:9.8.0-1]\n- Update to 9.8.0\n- https://nodejs.org/en/blog/release/v9.8.0/\n\n[1:9.7.0-1]\n- Update to 9.7.0\n- https://nodejs.org/en/blog/release/v9.7.0/\n- Work around F28 build issue\n\n[1:9.6.1-1]\n- Update to 9.6.1\n- https://nodejs.org/en/blog/release/v9.6.1/\n- https://nodejs.org/en/blog/release/v9.6.0/\n\n[1:9.5.0-1]\n- Package Node.js 9.5.0\n\n[1:8.9.4-2]\n- Fix incorrect Requires:\n\n[1:8.9.4-1]\n- Update to 8.9.4\n- https://nodejs.org/en/blog/release/v8.9.4/\n- Switch to system copy of nghttp2\n\n[1:8.9.3-2]\n- Update to 8.9.3\n- https://nodejs.org/en/blog/release/v8.9.3/\n- https://nodejs.org/en/blog/release/v8.9.2/\n\n[1:8.9.1-2]\n- Rebuild for ICU 60.1\n\n[1:8.9.1-1]\n- Update to 8.9.1\n\n[1:8.9.0-1]\n- Update to 8.9.0\n- Drop upstreamed patch\n\n[1:8.8.1-1]\n- Update to 8.8.1 to fix a regression\n\n[1:8.8.0-1]\n- Security update to 8.8.0\n- https://nodejs.org/en/blog/release/v8.8.0/\n\n[1:8.7.0-1]\n- Update to 8.7.0\n- https://nodejs.org/en/blog/release/v8.7.0/\n\n[1:8.6.0-2]\n- Use bcond macro instead of bootstrap conditional\n\n[1:8.6.0-1]\n- Fix nghttp2 version\n- Update to 8.6.0\n- https://nodejs.org/en/blog/release/v8.6.0/\n\n[1:8.5.0-3]\n- Build with bootstrap + bundle libuv for modularity\n- backport patch for aarch64 debug build\n\n[1:8.5.0-2]\n- Disable debug builds on aarch64 due to https://github.com/nodejs/node/issues/15395\n\n[1:8.5.0-1]\n- Update to v8.5.0\n- https://nodejs.org/en/blog/release/v8.5.0/\n\n[1:8.4.0-2]\n- Refactor openssl BR\n\n[1:8.4.0-1]\n- Update to v8.4.0\n- https://nodejs.org/en/blog/release/v8.4.0/\n- http2 is now supported, add bundled nghttp2\n- remove openssl 1.0.1 patches, we won't be using them in fedora\n\n[1:8.3.0-1]\n- Update to v8.3.0\n- https://nodejs.org/en/blog/release/v8.3.0/\n- update V8 to 6.0\n- update minimal gcc and g++ requirements to 4.9.4\n\n[1:8.2.1-2]\n- Bump release to fix broken dependencies\n\n[1:8.2.1-1.2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Binutils_Mass_Rebuild\n\n[1:8.2.1-1.1]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_27_Mass_Rebuild\n\n[1:8.2.1-1]\n- Update to v8.2.1\n- https://nodejs.org/en/blog/release/v8.2.1/\n\n[1:8.2.0-1]\n- Update to v8.2.0\n- https://nodejs.org/en/blog/release/v8.2.0/\n- Update npm to 5.3.0\n- Adds npx command\n\n[1:8.1.4-3]\n- s/BuildRequires/Requires/ for http-parser-devel%{?_isa}\n\n[1:8.1.4-2]\n- Rename python-devel to python2-devel\n- own %{_pkgdocdir}/npm\n\n[1:8.1.4-1]\n- Update to v8.1.4\n- https://nodejs.org/en/blog/release/v8.1.4/\n- Drop upstreamed c-ares patch\n\n[1:8.1.3-1]\n- Update to v8.1.3\n- https://nodejs.org/en/blog/release/v8.1.3/\n\n[1:8.1.2-1]\n- Update to v8.1.2\n- remove GCC 7 patch, as it is now fixed in node \u003e= 6.12\n\nnodejs-nodemon\n[2.0.19-2]\n- Switched from autosetup\n- Removed CODE_OF_CONDUCT.md and faq.md which is not present in npmjs package, might switch to GH sources in the future\n- Resolves: RHBZ#2109919\n\n[2.0.19-1]\n- Rebase to 2.0.19\n- Resolves CVE-2022-33987\n- Resolves: RHBZ#2109919\n\nnodejs-packaging\n[23-3]\n- Updated\n- Removed pathfix.py\n\n[23-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_32_Mass_Rebuild\n\n[23-1]\n- Ensure nodejs(engine) is required for packages with no dependencies\n\n[22-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_31_Mass_Rebuild\n\n[22-1]\n- Refactor nodejs.req in more idiomatic Python\n- Treat only external dependency links as un-bundled\n\n[21-1]\n- Refactor nodejs.prov in more idiomatic Python\n\n[20-2]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_30_Mass_Rebuild\n\n[20-1]\n- Fix handling of ^ dependencies for multiversion modules\n\n[18-1]\n- Handle =, \u003e= and \u003c= dependencies for multiversion modules",
+  "Description": "nodejs\n[1:14.20.0-2]\n- Replace with_* macros with RPM confitionals\n- Unify configure calls into single command\n- Refactor bootstrap-related parts\n- Decouple dependency bundling from bootstrapping\n- Resolves: RHBZ#2111417\n\n[1:14.20.0-1]\n- Rebase to latest version\n- Resolves: RHBZ#2106367\n- CVE fixes for CVE-2022-32212/3/4/5\n- Resolves: #2109576, #2109579, #2109582, #2109585\n\n[1:14.18.2-3]\n- Resolves: RHBZ#2029519\n- Add missing BZ to changelog\n\nnodejs-nodemon\n[2.0.19-2]\n- Switched from autosetup\n- Removed CODE_OF_CONDUCT.md and faq.md which is not present in npmjs package, might switch to GH sources in the future\n- Resolves: RHBZ#2109919\n\n[2.0.19-1]\n- Rebase to 2.0.19\n- Resolves CVE-2022-33987\n- Resolves: RHBZ#2109919",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-6448.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-6448.html",
       "ID": "ELSA-2022-6448"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-32213.html",
-      "ID": "CVE-2022-32213"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-32214.html",
-      "ID": "CVE-2022-32214"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-32212.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32212.html",
       "ID": "CVE-2022-32212"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-32215.html",
-      "ID": "CVE-2022-32215"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32213.html",
+      "ID": "CVE-2022-32213"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-33987.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-33987.html",
       "ID": "CVE-2022-33987"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32214.html",
+      "ID": "CVE-2022-32214"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32215.html",
+      "ID": "CVE-2022-32215"
     }
   ],
   "Criteria": {
@@ -276,31 +276,31 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-32213.html",
-      "ID": "CVE-2022-32213"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-32214.html",
-      "ID": "CVE-2022-32214"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-32212.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32212.html",
       "ID": "CVE-2022-32212"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-32215.html",
-      "ID": "CVE-2022-32215"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32213.html",
+      "ID": "CVE-2022-32213"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-33987.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-33987.html",
       "ID": "CVE-2022-33987"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32214.html",
+      "ID": "CVE-2022-32214"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32215.html",
+      "ID": "CVE-2022-32215"
     }
   ],
   "Issued": {
-    "Date": "2022-09-14"
+    "Date": "2022-09-15"
   }
 }

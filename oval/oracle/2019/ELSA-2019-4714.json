@@ -7,48 +7,48 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-4714.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-4714.html",
       "ID": "ELSA-2019-4714"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12126.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-12126.html",
       "ID": "CVE-2018-12126"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12127.html",
-      "ID": "CVE-2018-12127"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12130.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-12130.html",
       "ID": "CVE-2018-12130"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11091.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-12127.html",
+      "ID": "CVE-2018-12127"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11091.html",
       "ID": "CVE-2019-11091"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10161.html",
-      "ID": "CVE-2019-10161"
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10167.html",
+      "ID": "CVE-2019-10167"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10168.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10168.html",
       "ID": "CVE-2019-10168"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10166.html",
-      "ID": "CVE-2019-10166"
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10161.html",
+      "ID": "CVE-2019-10161"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10167.html",
-      "ID": "CVE-2019-10167"
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10166.html",
+      "ID": "CVE-2019-10166"
     }
   ],
   "Criteria": {
@@ -72,6 +72,18 @@
                       },
                       {
                         "Comment": "libvirt is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libvirt-admin is earlier than 0:5.0.0-9.el7"
+                      },
+                      {
+                        "Comment": "libvirt-admin is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -344,6 +356,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libvirt-daemon-lxc is earlier than 0:5.0.0-9.el7"
+                      },
+                      {
+                        "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libvirt-daemon-qemu is earlier than 0:5.0.0-9.el7"
                       },
                       {
@@ -384,30 +408,6 @@
                       },
                       {
                         "Comment": "libvirt-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-admin is earlier than 0:5.0.0-9.el7"
-                      },
-                      {
-                        "Comment": "libvirt-admin is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libvirt-daemon-lxc is earlier than 0:5.0.0-9.el7"
-                      },
-                      {
-                        "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -871,43 +871,43 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12126.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-12126.html",
       "ID": "CVE-2018-12126"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12127.html",
-      "ID": "CVE-2018-12127"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12130.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-12130.html",
       "ID": "CVE-2018-12130"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11091.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-12127.html",
+      "ID": "CVE-2018-12127"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11091.html",
       "ID": "CVE-2019-11091"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10161.html",
-      "ID": "CVE-2019-10161"
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10167.html",
+      "ID": "CVE-2019-10167"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10168.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10168.html",
       "ID": "CVE-2019-10168"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10166.html",
-      "ID": "CVE-2019-10166"
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10161.html",
+      "ID": "CVE-2019-10161"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10167.html",
-      "ID": "CVE-2019-10167"
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10166.html",
+      "ID": "CVE-2019-10166"
     }
   ],
   "Issued": {

@@ -1,24 +1,24 @@
 {
   "Title": "ELSA-2021-9434:  kernel security update (IMPORTANT)",
-  "Description": "[2.6.32-754.35.1.0.5.OL6]\n- [kernel] futex: Use pi_state_update_owner() in put_pi_state() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Handle faults correctly for PI futexes (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Provide and use pi_state_update_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347}[Orabug: 33150734]\n- [kernel] futex: Replace pointless printk in fixup_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Ensure the correct return value from futex_lock_pi() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [drm] drm/i915/guc: Disable firmware loading on i915 option (Dave Airlie) [1930246] {CVE-2020-12362} [Orabug: 33150734]\n\n[2.6.32-754.35.1.0.4.OL6]\n- seq_file: disallow extremely large seq buffer allocations (CVE-2021-33909) (Eric Sandeen) [Orabug: 33137331]\n\n[2.6.32-754.35.1.0.3.OL6]\n- Fixes for RHSA-2021:1288 [Orabug: 32809880]\n\n[2.6.32-754.35.1.0.2.OL6]\n- x86_32, entry: Do syscall exit work on badsys (CVE-2014-4508) (Andy Lutomirski) [Orabug: 32148837]\n- x86_32, entry: Store badsys error code in %eax (Sven Wegener) [Orabug: 32148837]\n\n- 2.6.32-754.35.1.0.1\n- [kernel] genirq: unmask irq in try_one_irq [orabug 31649751]\n\n[2.6.32-754.35.1.OL6]\n- Update genkey [bug 25599697]",
+  "Description": "[2.6.32-754.35.1.0.5.OL6]\n- [kernel] futex: Use pi_state_update_owner() in put_pi_state() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Handle faults correctly for PI futexes (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Provide and use pi_state_update_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347}[Orabug: 33150734]\n- [kernel] futex: Replace pointless printk in fixup_owner() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [kernel] futex: Ensure the correct return value from futex_lock_pi() (Thomas Gleixner) [1922249] {CVE-2021-3347} [Orabug: 33150734]\n- [drm] drm/i915/guc: Disable firmware loading on i915 option (Dave Airlie) [1930246] {CVE-2020-12362} [Orabug: 33150734]",
   "Platform": [
     "Oracle Linux 6"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9434.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-9434.html",
       "ID": "ELSA-2021-9434"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3347.html",
-      "ID": "CVE-2021-3347"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12362.html",
+      "ID": "CVE-2020-12362"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12362.html",
-      "ID": "CVE-2020-12362"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3347.html",
+      "ID": "CVE-2021-3347"
     }
   ],
   "Criteria": {
@@ -313,16 +313,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3347.html",
-      "ID": "CVE-2021-3347"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12362.html",
+      "ID": "CVE-2020-12362"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12362.html",
-      "ID": "CVE-2020-12362"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3347.html",
+      "ID": "CVE-2021-3347"
     }
   ],
   "Issued": {
-    "Date": "2021-08-28"
+    "Date": "2021-08-30"
   }
 }

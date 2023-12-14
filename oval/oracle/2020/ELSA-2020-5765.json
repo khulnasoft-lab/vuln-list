@@ -7,53 +7,53 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-5765.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-5765.html",
       "ID": "ELSA-2020-5765"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11080.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-11080.html",
       "ID": "CVE-2020-11080"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-2024.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-2024.html",
       "ID": "CVE-2020-2024"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-2025.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-2025.html",
       "ID": "CVE-2020-2025"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8559.html",
-      "ID": "CVE-2020-8559"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10739.html",
-      "ID": "CVE-2020-10739"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15104.html",
-      "ID": "CVE-2020-15104"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-2026.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-2026.html",
       "ID": "CVE-2020-2026"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8557.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-8557.html",
       "ID": "CVE-2020-8557"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1764.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-1764.html",
       "ID": "CVE-2020-1764"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-8559.html",
+      "ID": "CVE-2020-8559"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-10739.html",
+      "ID": "CVE-2020-10739"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-15104.html",
+      "ID": "CVE-2020-15104"
     }
   ],
   "Criteria": {
@@ -65,90 +65,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kata is earlier than 0:1.7.3-1.0.7.el7"
-                  },
-                  {
-                    "Comment": "kata is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kata-image is earlier than 0:1.7.3-1.0.5.1.ol7_202007011859"
-                  },
-                  {
-                    "Comment": "kata-image is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kata-runtime is earlier than 0:1.7.3-1.0.5.el7"
-                  },
-                  {
-                    "Comment": "kata-runtime is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-container is earlier than 0:4.14.35-1902.303.5.3.el7"
-                  },
-                  {
-                    "Comment": "kernel-uek-container is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubeadm is earlier than 0:1.14.9-1.0.6.el7"
-                  },
-                  {
-                    "Comment": "kubeadm is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubectl is earlier than 0:1.14.9-1.0.6.el7"
-                  },
-                  {
-                    "Comment": "kubectl is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kubelet is earlier than 0:1.14.9-1.0.6.el7"
-                  },
-                  {
-                    "Comment": "kubelet is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -286,6 +202,66 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kata is earlier than 0:1.7.3-1.0.7.el7"
+                  },
+                  {
+                    "Comment": "kata is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kata-image is earlier than 0:1.7.3-1.0.5.1.ol7_202007011859"
+                  },
+                  {
+                    "Comment": "kata-image is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kata-runtime is earlier than 0:1.7.3-1.0.5.el7"
+                  },
+                  {
+                    "Comment": "kata-runtime is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kernel-uek-container is earlier than 0:4.14.35-1902.303.5.3.el7"
+                  },
+                  {
+                    "Comment": "kernel-uek-container is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kubeadm is earlier than 0:1.14.9-1.0.6.el7"
+                  },
+                  {
+                    "Comment": "kubeadm is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "kubeadm is earlier than 0:1.17.9-1.0.1.el7"
                   },
                   {
@@ -298,10 +274,34 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kubectl is earlier than 0:1.14.9-1.0.6.el7"
+                  },
+                  {
+                    "Comment": "kubectl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "kubectl is earlier than 0:1.17.9-1.0.1.el7"
                   },
                   {
                     "Comment": "kubectl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "kubelet is earlier than 0:1.14.9-1.0.6.el7"
+                  },
+                  {
+                    "Comment": "kubelet is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -422,48 +422,48 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11080.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-11080.html",
       "ID": "CVE-2020-11080"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-2024.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-2024.html",
       "ID": "CVE-2020-2024"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-2025.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-2025.html",
       "ID": "CVE-2020-2025"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8559.html",
-      "ID": "CVE-2020-8559"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10739.html",
-      "ID": "CVE-2020-10739"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15104.html",
-      "ID": "CVE-2020-15104"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-2026.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-2026.html",
       "ID": "CVE-2020-2026"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8557.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-8557.html",
       "ID": "CVE-2020-8557"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1764.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-1764.html",
       "ID": "CVE-2020-1764"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-8559.html",
+      "ID": "CVE-2020-8559"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-10739.html",
+      "ID": "CVE-2020-10739"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-15104.html",
+      "ID": "CVE-2020-15104"
     }
   ],
   "Issued": {

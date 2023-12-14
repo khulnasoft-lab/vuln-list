@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-0686.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-0686.html",
       "ID": "ELSA-2014-0686"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4286.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-4286.html",
       "ID": "CVE-2013-4286"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-4322.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-4322.html",
       "ID": "CVE-2013-4322"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-0186.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-0186.html",
       "ID": "CVE-2014-0186"
     }
   ],
@@ -64,6 +64,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "tomcat-docs-webapp is earlier than 0:7.0.42-5.el7_0"
+                  },
+                  {
+                    "Comment": "tomcat-docs-webapp is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "tomcat-el-2.2-api is earlier than 0:7.0.42-5.el7_0"
                   },
                   {
@@ -76,10 +88,34 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "tomcat-javadoc is earlier than 0:7.0.42-5.el7_0"
+                  },
+                  {
+                    "Comment": "tomcat-javadoc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "tomcat-jsp-2.2-api is earlier than 0:7.0.42-5.el7_0"
                   },
                   {
                     "Comment": "tomcat-jsp-2.2-api is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "tomcat-jsvc is earlier than 0:7.0.42-5.el7_0"
+                  },
+                  {
+                    "Comment": "tomcat-jsvc is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -118,42 +154,6 @@
                     "Comment": "tomcat-webapps is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "tomcat-docs-webapp is earlier than 0:7.0.42-5.el7_0"
-                  },
-                  {
-                    "Comment": "tomcat-docs-webapp is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "tomcat-javadoc is earlier than 0:7.0.42-5.el7_0"
-                  },
-                  {
-                    "Comment": "tomcat-javadoc is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "tomcat-jsvc is earlier than 0:7.0.42-5.el7_0"
-                  },
-                  {
-                    "Comment": "tomcat-jsvc is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -176,17 +176,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4286.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-4286.html",
       "ID": "CVE-2013-4286"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-4322.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-4322.html",
       "ID": "CVE-2013-4322"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-0186.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-0186.html",
       "ID": "CVE-2014-0186"
     }
   ],

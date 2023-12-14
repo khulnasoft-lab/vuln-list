@@ -7,83 +7,83 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-0161.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-0161.html",
       "ID": "ELSA-2022-0161"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21248.html",
-      "ID": "CVE-2022-21248"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21282.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21282.html",
       "ID": "CVE-2022-21282"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21283.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21283.html",
       "ID": "CVE-2022-21283"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21293.html",
-      "ID": "CVE-2022-21293"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21296.html",
-      "ID": "CVE-2022-21296"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21305.html",
-      "ID": "CVE-2022-21305"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21341.html",
-      "ID": "CVE-2022-21341"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21360.html",
-      "ID": "CVE-2022-21360"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21366.html",
-      "ID": "CVE-2022-21366"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21277.html",
-      "ID": "CVE-2022-21277"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21291.html",
-      "ID": "CVE-2022-21291"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21294.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21294.html",
       "ID": "CVE-2022-21294"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21299.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21296.html",
+      "ID": "CVE-2022-21296"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21299.html",
       "ID": "CVE-2022-21299"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21340.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21305.html",
+      "ID": "CVE-2022-21305"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21340.html",
       "ID": "CVE-2022-21340"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21365.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21360.html",
+      "ID": "CVE-2022-21360"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21248.html",
+      "ID": "CVE-2022-21248"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21277.html",
+      "ID": "CVE-2022-21277"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21291.html",
+      "ID": "CVE-2022-21291"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21293.html",
+      "ID": "CVE-2022-21293"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21341.html",
+      "ID": "CVE-2022-21341"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21365.html",
       "ID": "CVE-2022-21365"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21366.html",
+      "ID": "CVE-2022-21366"
     }
   ],
   "Criteria": {
@@ -98,6 +98,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-demo is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-demo is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -119,6 +143,18 @@
                       },
                       {
                         "Comment": "java-17-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-devel is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -163,6 +199,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-headless is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-headless-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
@@ -179,138 +227,6 @@
                       },
                       {
                         "Comment": "java-17-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-jmods-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-jmods-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-src-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-src-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-static-libs-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-static-libs-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-demo is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-demo is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-devel is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-headless is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-headless is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -355,6 +271,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-jmods-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-jmods-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-src is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
@@ -367,10 +319,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-src-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-src-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-static-libs is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
                         "Comment": "java-17-openjdk-static-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-static-libs-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-static-libs-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -395,6 +395,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-demo is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-demo is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-demo-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
@@ -411,6 +435,18 @@
                       },
                       {
                         "Comment": "java-17-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-devel is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -455,6 +491,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-headless is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-headless-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
@@ -471,138 +519,6 @@
                       },
                       {
                         "Comment": "java-17-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-jmods-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-jmods-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-src-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-src-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-static-libs-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-static-libs-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-demo is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-demo is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-devel is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-17-openjdk-headless is earlier than 1:17.0.2.0.8-4.el8_5"
-                      },
-                      {
-                        "Comment": "java-17-openjdk-headless is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -647,6 +563,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-jmods-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-jmods-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-src is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
@@ -659,10 +611,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-17-openjdk-src-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-src-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-17-openjdk-static-libs is earlier than 1:17.0.2.0.8-4.el8_5"
                       },
                       {
                         "Comment": "java-17-openjdk-static-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-static-libs-fastdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-17-openjdk-static-libs-slowdebug is earlier than 1:17.0.2.0.8-4.el8_5"
+                      },
+                      {
+                        "Comment": "java-17-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -690,78 +690,78 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21248.html",
-      "ID": "CVE-2022-21248"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21282.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21282.html",
       "ID": "CVE-2022-21282"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21283.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21283.html",
       "ID": "CVE-2022-21283"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21293.html",
-      "ID": "CVE-2022-21293"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21296.html",
-      "ID": "CVE-2022-21296"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21305.html",
-      "ID": "CVE-2022-21305"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21341.html",
-      "ID": "CVE-2022-21341"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21360.html",
-      "ID": "CVE-2022-21360"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21366.html",
-      "ID": "CVE-2022-21366"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21277.html",
-      "ID": "CVE-2022-21277"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21291.html",
-      "ID": "CVE-2022-21291"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21294.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21294.html",
       "ID": "CVE-2022-21294"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21299.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21296.html",
+      "ID": "CVE-2022-21296"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21299.html",
       "ID": "CVE-2022-21299"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21340.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21305.html",
+      "ID": "CVE-2022-21305"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21340.html",
       "ID": "CVE-2022-21340"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21365.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21360.html",
+      "ID": "CVE-2022-21360"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21248.html",
+      "ID": "CVE-2022-21248"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21277.html",
+      "ID": "CVE-2022-21277"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21291.html",
+      "ID": "CVE-2022-21291"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21293.html",
+      "ID": "CVE-2022-21293"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21341.html",
+      "ID": "CVE-2022-21341"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21365.html",
       "ID": "CVE-2022-21365"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21366.html",
+      "ID": "CVE-2022-21366"
     }
   ],
   "Issued": {

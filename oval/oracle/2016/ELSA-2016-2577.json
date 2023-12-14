@@ -7,23 +7,23 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2577.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2016-2577.html",
       "ID": "ELSA-2016-2577"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5313.html",
-      "ID": "CVE-2015-5313"
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5008.html",
+      "ID": "CVE-2016-5008"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5160.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-5160.html",
       "ID": "CVE-2015-5160"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5008.html",
-      "ID": "CVE-2016-5008"
+      "URI": "https://linux.oracle.com/cve/CVE-2015-5313.html",
+      "ID": "CVE-2015-5313"
     }
   ],
   "Criteria": {
@@ -208,6 +208,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "libvirt-daemon-lxc is earlier than 0:2.0.0-10.el7"
+                  },
+                  {
+                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "libvirt-devel is earlier than 0:2.0.0-10.el7"
                   },
                   {
@@ -224,18 +236,6 @@
                   },
                   {
                     "Comment": "libvirt-docs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libvirt-daemon-lxc is earlier than 0:2.0.0-10.el7"
-                  },
-                  {
-                    "Comment": "libvirt-daemon-lxc is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -296,21 +296,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5313.html",
-      "ID": "CVE-2015-5313"
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5008.html",
+      "ID": "CVE-2016-5008"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5160.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-5160.html",
       "ID": "CVE-2015-5160"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5008.html",
-      "ID": "CVE-2016-5008"
+      "Href": "https://linux.oracle.com/cve/CVE-2015-5313.html",
+      "ID": "CVE-2015-5313"
     }
   ],
   "Issued": {
-    "Date": "2016-11-06"
+    "Date": "2016-11-09"
   }
 }

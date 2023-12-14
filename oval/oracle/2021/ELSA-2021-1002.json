@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1002.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1002.html",
       "ID": "ELSA-2021-1002"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-21381.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-21381.html",
       "ID": "CVE-2021-21381"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flatpak-libs is earlier than 0:1.0.9-11.el7_9"
-                      },
-                      {
-                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "flatpak-builder is earlier than 0:1.0.0-11.el7_9"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-libs is earlier than 0:1.0.9-11.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -97,6 +97,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "flatpak is earlier than 0:1.0.9-11.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "flatpak-builder is earlier than 0:1.0.0-11.el7_9"
                       },
                       {
@@ -113,18 +125,6 @@
                       },
                       {
                         "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "flatpak is earlier than 0:1.0.9-11.el7_9"
-                      },
-                      {
-                        "Comment": "flatpak is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -164,7 +164,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-21381.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-21381.html",
       "ID": "CVE-2021-21381"
     }
   ],

@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9335.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-9335.html",
       "ID": "ELSA-2021-9335"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20257.html",
-      "ID": "CVE-2021-20257"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-27661.html",
+      "ID": "CVE-2020-27661"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-27661.html",
-      "ID": "CVE-2020-27661"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-20257.html",
+      "ID": "CVE-2021-20257"
     }
   ],
   "Criteria": {
@@ -33,6 +33,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-10.el7"
+                      },
+                      {
+                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -150,18 +162,6 @@
                       },
                       {
                         "Comment": "qemu-system-aarch64-core is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ivshmem-tools is earlier than 15:4.2.1-10.el7"
-                      },
-                      {
-                        "Comment": "ivshmem-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -325,13 +325,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20257.html",
-      "ID": "CVE-2021-20257"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-27661.html",
+      "ID": "CVE-2020-27661"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-27661.html",
-      "ID": "CVE-2020-27661"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-20257.html",
+      "ID": "CVE-2021-20257"
     }
   ],
   "Issued": {

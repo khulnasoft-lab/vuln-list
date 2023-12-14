@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-7467.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-7467.html",
       "ID": "ELSA-2023-7467"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-4091.html",
-      "ID": "CVE-2023-4091"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-42669.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-42669.html",
       "ID": "CVE-2023-42669"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-3961.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-4091.html",
+      "ID": "CVE-2023-4091"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-3961.html",
       "ID": "CVE-2023-3961"
     }
   ],
@@ -95,6 +95,30 @@
                       },
                       {
                         "Comment": "samba-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-test is earlier than 0:4.18.6-2.0.1.el8_9"
+                      },
+                      {
+                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-iouring is earlier than 0:4.18.6-2.0.1.el8_9"
+                      },
+                      {
+                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -407,30 +431,6 @@
                       },
                       {
                         "Comment": "samba-winbind-modules is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test is earlier than 0:4.18.6-2.0.1.el8_9"
-                      },
-                      {
-                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-iouring is earlier than 0:4.18.6-2.0.1.el8_9"
-                      },
-                      {
-                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -906,17 +906,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-4091.html",
-      "ID": "CVE-2023-4091"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-42669.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-42669.html",
       "ID": "CVE-2023-42669"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-3961.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-4091.html",
+      "ID": "CVE-2023-4091"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-3961.html",
       "ID": "CVE-2023-3961"
     }
   ],

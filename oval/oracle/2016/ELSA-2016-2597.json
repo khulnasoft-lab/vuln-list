@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2016-2597.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2016-2597.html",
       "ID": "ELSA-2016-2597"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-5410.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-5410.html",
       "ID": "CVE-2016-5410"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "firewall-applet is earlier than 0:0.4.3.2-8.el7"
+                  },
+                  {
+                    "Comment": "firewall-applet is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -72,18 +84,6 @@
                     "Comment": "python-firewall is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "firewall-applet is earlier than 0:0.4.3.2-8.el7"
-                  },
-                  {
-                    "Comment": "firewall-applet is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -106,11 +106,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-5410.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-5410.html",
       "ID": "CVE-2016-5410"
     }
   ],
   "Issued": {
-    "Date": "2016-11-04"
+    "Date": "2016-11-09"
   }
 }

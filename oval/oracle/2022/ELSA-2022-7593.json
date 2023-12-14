@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-7593.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-7593.html",
       "ID": "ELSA-2022-7593"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-20107.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-20107.html",
       "ID": "CVE-2015-20107"
     }
   ],
@@ -76,6 +76,18 @@
                           },
                           {
                             "Comment": "python-sqlalchemy-doc is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2 is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2 is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -192,6 +204,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "python2-debug is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-debug is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-devel is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "python2-dns is earlier than 0:1.15.0-10.module+el8.3.0+7833+4aaf98ce"
                           },
                           {
@@ -280,6 +316,18 @@
                           },
                           {
                             "Comment": "python2-jinja2 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-libs is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-libs is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -648,6 +696,42 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "python2-test is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-test is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-tkinter is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-tkinter is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-tools is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-tools is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "python2-urllib3 is earlier than 0:1.24.2-3.module+el8.4.0+20050+79c7b4ee"
                           },
                           {
@@ -688,90 +772,6 @@
                           },
                           {
                             "Comment": "python2-wheel-wheel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2 is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-debug is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-debug is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-devel is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-libs is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-libs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-test is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-test is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-tkinter is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-tkinter is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-tools is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-tools is signed with the Oracle Linux 8 key"
                           }
                         ]
                       }
@@ -854,6 +854,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "python2 is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "python2-Cython is earlier than 0:0.28.1-7.module+el8.3.0+7833+4aaf98ce"
                           },
                           {
@@ -962,6 +974,30 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "python2-debug is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-debug is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-devel is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "python2-dns is earlier than 0:1.15.0-10.module+el8.3.0+7833+4aaf98ce"
                           },
                           {
@@ -1050,6 +1086,18 @@
                           },
                           {
                             "Comment": "python2-jinja2 is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-libs is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-libs is signed with the Oracle Linux 8 key"
                           }
                         ]
                       },
@@ -1418,6 +1466,42 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "python2-test is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-test is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-tkinter is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-tkinter is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "python2-tools is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
+                          },
+                          {
+                            "Comment": "python2-tools is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "python2-urllib3 is earlier than 0:1.24.2-3.module+el8.4.0+20050+79c7b4ee"
                           },
                           {
@@ -1460,90 +1544,6 @@
                             "Comment": "python2-wheel-wheel is signed with the Oracle Linux 8 key"
                           }
                         ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2 is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-debug is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-debug is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-devel is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-libs is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-libs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-test is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-test is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-tkinter is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-tkinter is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python2-tools is earlier than 0:2.7.18-11.0.1.module+el8.7.0+20809+34912fc4"
-                          },
-                          {
-                            "Comment": "python2-tools is signed with the Oracle Linux 8 key"
-                          }
-                        ]
                       }
                     ],
                     "Criterions": null
@@ -1576,11 +1576,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-20107.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-20107.html",
       "ID": "CVE-2015-20107"
     }
   ],
   "Issued": {
-    "Date": "2022-11-14"
+    "Date": "2022-11-15"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2077.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2077.html",
       "ID": "ELSA-2019-2077"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-12327.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-12327.html",
       "ID": "CVE-2018-12327"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "ntpdate is earlier than 0:4.2.6p5-29.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ntp-doc is earlier than 0:4.2.6p5-29.0.1.el7"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "ntp-perl is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ntpdate is earlier than 0:4.2.6p5-29.0.1.el7"
+                      },
+                      {
+                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -109,6 +109,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "ntp is earlier than 0:4.2.6p5-29.0.1.el7"
+                      },
+                      {
+                        "Comment": "ntp is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ntp-doc is earlier than 0:4.2.6p5-29.0.1.el7"
                       },
                       {
@@ -133,34 +145,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "sntp is earlier than 0:4.2.6p5-29.0.1.el7"
-                      },
-                      {
-                        "Comment": "sntp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ntp is earlier than 0:4.2.6p5-29.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ntpdate is earlier than 0:4.2.6p5-29.0.1.el7"
                       },
                       {
                         "Comment": "ntpdate is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "sntp is earlier than 0:4.2.6p5-29.0.1.el7"
+                      },
+                      {
+                        "Comment": "sntp is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -171,46 +171,6 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ntp is earlier than 0:4.2.6p5-29.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntp is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ntpdate is earlier than 0:4.2.6p5-29.0.1.el7"
-                      },
-                      {
-                        "Comment": "ntpdate is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -228,11 +188,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-12327.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-12327.html",
       "ID": "CVE-2018-12327"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

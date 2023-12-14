@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2145.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2145.html",
       "ID": "ELSA-2019-2145"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-3827.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-3827.html",
       "ID": "CVE-2019-3827"
     }
   ],
@@ -193,18 +193,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "gvfs-tests is earlier than 0:1.36.2-3.el7"
-                      },
-                      {
-                        "Comment": "gvfs-tests is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "gvfs is earlier than 0:1.36.2-3.el7"
                       },
                       {
@@ -331,6 +319,18 @@
                         "Comment": "gvfs-smb is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "gvfs-tests is earlier than 0:1.36.2-3.el7"
+                      },
+                      {
+                        "Comment": "gvfs-tests is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -356,11 +356,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-3827.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-3827.html",
       "ID": "CVE-2019-3827"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

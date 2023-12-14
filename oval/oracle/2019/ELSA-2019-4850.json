@@ -8,88 +8,88 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "http://linux-qa.oracle.com/errata/ELSA-2019-4850.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-4850.html",
       "ID": "ELSA-2019-4850"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-11478.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11478.html",
       "ID": "CVE-2019-11478"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-14835.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14835.html",
       "ID": "CVE-2019-14835"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-17055.html",
-      "ID": "CVE-2019-17055"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2018-12207.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-12207.html",
       "ID": "CVE-2018-12207"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-15916.html",
-      "ID": "CVE-2019-15916"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-11135.html",
-      "ID": "CVE-2019-11135"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-14284.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14284.html",
       "ID": "CVE-2019-14284"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2017-15102.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-15916.html",
+      "ID": "CVE-2019-15916"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11135.html",
+      "ID": "CVE-2019-11135"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-15102.html",
       "ID": "CVE-2017-15102"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-16994.html",
-      "ID": "CVE-2019-16994"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2017-15128.html",
-      "ID": "CVE-2017-15128"
-    },
-    {
-      "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2017-18551.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-18551.html",
       "ID": "CVE-2017-18551"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-15213.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-15213.html",
       "ID": "CVE-2019-15213"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-17053.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-17053.html",
       "ID": "CVE-2019-17053"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-15215.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-15128.html",
+      "ID": "CVE-2017-15128"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-15215.html",
       "ID": "CVE-2019-15215"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-15217.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-15217.html",
       "ID": "CVE-2019-15217"
     },
     {
       "Source": "CVE",
-      "URI": "http://linux-qa.oracle.com/cve/CVE-2019-16995.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-16994.html",
+      "ID": "CVE-2019-16994"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-16995.html",
       "ID": "CVE-2019-16995"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-17055.html",
+      "ID": "CVE-2019-17055"
     }
   ],
   "Criteria": {
@@ -99,82 +99,92 @@
         "Operator": "AND",
         "Criterias": [
           {
-            "Operator": "OR",
+            "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
+                "Operator": "OR",
+                "Criterias": [
                   {
-                    "Comment": "kernel-uek is earlier than 0:4.1.12-124.33.4.el6uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-debug is earlier than 0:4.1.12-124.33.4.el6uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-debug is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-debug is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-debug is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-debug-devel is earlier than 0:4.1.12-124.33.4.el6uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-debug-devel is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-devel is earlier than 0:4.1.12-124.33.4.el6uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-devel is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-devel is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-devel is signed with the Oracle Linux 6 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-doc is earlier than 0:4.1.12-124.33.4.el6uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-doc is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-doc is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-doc is signed with the Oracle Linux 6 key"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-firmware is earlier than 0:4.1.12-124.33.4.el6uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-firmware is signed with the Oracle Linux 6 key"
+                      }
+                    ]
                   }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-firmware is earlier than 0:4.1.12-124.33.4.el6uek"
-                  },
-                  {
-                    "Comment": "kernel-uek-firmware is signed with the Oracle Linux 6 key"
-                  }
-                ]
+                ],
+                "Criterions": null
               }
             ],
-            "Criterions": null
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           }
         ],
         "Criterions": [
@@ -187,82 +197,92 @@
         "Operator": "AND",
         "Criterias": [
           {
-            "Operator": "OR",
+            "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
+                "Operator": "OR",
+                "Criterias": [
                   {
-                    "Comment": "kernel-uek is earlier than 0:4.1.12-124.33.4.el7uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-debug is earlier than 0:4.1.12-124.33.4.el7uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-debug is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-debug is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-debug is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-debug-devel is earlier than 0:4.1.12-124.33.4.el7uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-debug-devel is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-debug-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-devel is earlier than 0:4.1.12-124.33.4.el7uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-devel is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-doc is earlier than 0:4.1.12-124.33.4.el7uek"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-doc is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-doc is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "kernel-uek-doc is signed with the Oracle Linux 7 key"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-firmware is earlier than 0:4.1.12-124.33.4.el7uek"
+                      },
+                      {
+                        "Comment": "kernel-uek-firmware is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-uek-firmware is earlier than 0:4.1.12-124.33.4.el7uek"
-                  },
-                  {
-                    "Comment": "kernel-uek-firmware is signed with the Oracle Linux 7 key"
-                  }
-                ]
+                ],
+                "Criterions": null
               }
             ],
-            "Criterions": null
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           }
         ],
         "Criterions": [
@@ -278,86 +298,86 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-11478.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11478.html",
       "ID": "CVE-2019-11478"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-14835.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14835.html",
       "ID": "CVE-2019-14835"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-17055.html",
-      "ID": "CVE-2019-17055"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2018-12207.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-12207.html",
       "ID": "CVE-2018-12207"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-15916.html",
-      "ID": "CVE-2019-15916"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-11135.html",
-      "ID": "CVE-2019-11135"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-14284.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14284.html",
       "ID": "CVE-2019-14284"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2017-15102.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-15916.html",
+      "ID": "CVE-2019-15916"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11135.html",
+      "ID": "CVE-2019-11135"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-15102.html",
       "ID": "CVE-2017-15102"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-16994.html",
-      "ID": "CVE-2019-16994"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2017-15128.html",
-      "ID": "CVE-2017-15128"
-    },
-    {
-      "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2017-18551.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-18551.html",
       "ID": "CVE-2017-18551"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-15213.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-15213.html",
       "ID": "CVE-2019-15213"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-17053.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-17053.html",
       "ID": "CVE-2019-17053"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-15215.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-15128.html",
+      "ID": "CVE-2017-15128"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-15215.html",
       "ID": "CVE-2019-15215"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-15217.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-15217.html",
       "ID": "CVE-2019-15217"
     },
     {
       "Impact": "",
-      "Href": "http://linux-qa.oracle.com/cve/CVE-2019-16995.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-16994.html",
+      "ID": "CVE-2019-16994"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-16995.html",
       "ID": "CVE-2019-16995"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-17055.html",
+      "ID": "CVE-2019-17055"
     }
   ],
   "Issued": {
-    "Date": "2019-11-19"
+    "Date": "2019-11-20"
   }
 }

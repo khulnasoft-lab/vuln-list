@@ -1,29 +1,29 @@
 {
   "Title": "ELSA-2021-5082:  samba security update (IMPORTANT)",
-  "Description": "",
+  "Description": "[4.14.5-7]\n- related: rhbz#2021171 - Fix CVE-2020-25717\n- Fix running ktest (selftest)\n\n[4.14.5-6]\n- related: rhbz#2021171 - Fix CVE-2020-25717\n- Add missing checks for IPA DC server role\n\n[4.14.5-5]\n- resolves: rhbz#2021493 - Add missing PAC buffer types to krb5pac.idl\n- related: rbhz#2021171 - Fix regression with 'allow trusted domains = no'",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-5082.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-5082.html",
       "ID": "ELSA-2021-5082"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-2124.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-2124.html",
       "ID": "CVE-2016-2124"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-25717.html",
-      "ID": "CVE-2020-25717"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-23192.html",
+      "ID": "CVE-2021-23192"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-23192.html",
-      "ID": "CVE-2021-23192"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-25717.html",
+      "ID": "CVE-2020-25717"
     }
   ],
   "Criteria": {
@@ -71,6 +71,30 @@
                       },
                       {
                         "Comment": "samba-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-test is earlier than 0:4.14.5-7.el8_5"
+                      },
+                      {
+                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-iouring is earlier than 0:4.14.5-7.el8_5"
+                      },
+                      {
+                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -299,30 +323,6 @@
                       },
                       {
                         "Comment": "samba-winbind-modules is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test is earlier than 0:4.14.5-7.el8_5"
-                      },
-                      {
-                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-iouring is earlier than 0:4.14.5-7.el8_5"
-                      },
-                      {
-                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -666,18 +666,18 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-2124.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-2124.html",
       "ID": "CVE-2016-2124"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-25717.html",
-      "ID": "CVE-2020-25717"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-23192.html",
+      "ID": "CVE-2021-23192"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-23192.html",
-      "ID": "CVE-2021-23192"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-25717.html",
+      "ID": "CVE-2020-25717"
     }
   ],
   "Issued": {

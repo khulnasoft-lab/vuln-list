@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-1756.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-1756.html",
       "ID": "ELSA-2021-1756"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-17507.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-17507.html",
       "ID": "CVE-2020-17507"
     }
   ],
@@ -28,18 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.12.5-8.el8"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -145,6 +133,18 @@
                       },
                       {
                         "Comment": "qt5-qtbase-private-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.12.5-8.el8"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -169,18 +169,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "qt5-qtbase-static is earlier than 0:5.12.5-8.el8"
-                      },
-                      {
-                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "qt5-qtbase is earlier than 0:5.12.5-8.el8"
                       },
                       {
@@ -281,6 +269,18 @@
                       },
                       {
                         "Comment": "qt5-qtbase-private-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "qt5-qtbase-static is earlier than 0:5.12.5-8.el8"
+                      },
+                      {
+                        "Comment": "qt5-qtbase-static is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -308,11 +308,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-17507.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-17507.html",
       "ID": "CVE-2020-17507"
     }
   ],
   "Issued": {
-    "Date": "2021-05-23"
+    "Date": "2021-05-25"
   }
 }

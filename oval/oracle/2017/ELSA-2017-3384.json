@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2017-3384.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2017-3384.html",
       "ID": "ELSA-2017-3384"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2017-15101.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2017-15101.html",
       "ID": "CVE-2017-15101"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblouis is earlier than 0:2.5.2-12.el7_4"
+                      },
+                      {
+                        "Comment": "liblouis is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -57,34 +69,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "liblouis-utils is earlier than 0:2.5.2-12.el7_4"
-                      },
-                      {
-                        "Comment": "liblouis-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblouis is earlier than 0:2.5.2-12.el7_4"
-                      },
-                      {
-                        "Comment": "liblouis is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "liblouis-python is earlier than 0:2.5.2-12.el7_4"
                       },
                       {
                         "Comment": "liblouis-python is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblouis-utils is earlier than 0:2.5.2-12.el7_4"
+                      },
+                      {
+                        "Comment": "liblouis-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -109,6 +109,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "liblouis is earlier than 0:2.5.2-12.el7_4"
+                      },
+                      {
+                        "Comment": "liblouis is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "liblouis-devel is earlier than 0:2.5.2-12.el7_4"
                       },
                       {
@@ -133,34 +145,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "liblouis-utils is earlier than 0:2.5.2-12.el7_4"
-                      },
-                      {
-                        "Comment": "liblouis-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "liblouis is earlier than 0:2.5.2-12.el7_4"
-                      },
-                      {
-                        "Comment": "liblouis is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "liblouis-python is earlier than 0:2.5.2-12.el7_4"
                       },
                       {
                         "Comment": "liblouis-python is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "liblouis-utils is earlier than 0:2.5.2-12.el7_4"
+                      },
+                      {
+                        "Comment": "liblouis-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -188,7 +188,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2017-15101.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2017-15101.html",
       "ID": "CVE-2017-15101"
     }
   ],

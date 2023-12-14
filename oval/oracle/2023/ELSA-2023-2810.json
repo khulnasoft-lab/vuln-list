@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2810.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2810.html",
       "ID": "ELSA-2023-2810"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38784.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-38784.html",
       "ID": "CVE-2022-38784"
     }
   ],
@@ -105,10 +105,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-glib is earlier than 0:20.11.0-6.el8"
+                        "Comment": "poppler-qt5 is earlier than 0:20.11.0-6.el8"
                       },
                       {
-                        "Comment": "poppler-glib is signed with the Oracle Linux 8 key"
+                        "Comment": "poppler-qt5 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -117,10 +117,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "poppler-qt5 is earlier than 0:20.11.0-6.el8"
+                        "Comment": "poppler-glib is earlier than 0:20.11.0-6.el8"
                       },
                       {
-                        "Comment": "poppler-qt5 is signed with the Oracle Linux 8 key"
+                        "Comment": "poppler-glib is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -217,6 +217,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "poppler-qt5 is earlier than 0:20.11.0-6.el8"
+                      },
+                      {
+                        "Comment": "poppler-qt5 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "poppler is earlier than 0:20.11.0-6.el8"
                       },
                       {
@@ -233,18 +245,6 @@
                       },
                       {
                         "Comment": "poppler-glib is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "poppler-qt5 is earlier than 0:20.11.0-6.el8"
-                      },
-                      {
-                        "Comment": "poppler-qt5 is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -284,11 +284,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38784.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-38784.html",
       "ID": "CVE-2022-38784"
     }
   ],
   "Issued": {
-    "Date": "2023-05-20"
+    "Date": "2023-05-24"
   }
 }

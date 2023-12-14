@@ -2,107 +2,25 @@
   "Title": "ELSA-2014-1172:  procmail security update (IMPORTANT)",
   "Description": "[3.22-34.1]\n- Fixed buffer overflow in formail\n  Resolves: CVE-2014-3618",
   "Platform": [
-    "Oracle Linux 6",
     "Oracle Linux 5",
+    "Oracle Linux 6",
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-1172.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-1172.html",
       "ID": "ELSA-2014-1172"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3618.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3618.html",
       "ID": "CVE-2014-3618"
     }
   ],
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "OR",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
-                      },
-                      {
-                        "Comment": "procmail is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is x86_64"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
-                      },
-                      {
-                        "Comment": "procmail is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is i686"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
-                      },
-                      {
-                        "Comment": "procmail is signed with the Oracle Linux 6 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": [
-                  {
-                    "Comment": "Oracle Linux arch is sparc64"
-                  }
-                ]
-              }
-            ],
-            "Criterions": null
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 6 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -189,6 +107,88 @@
         "Operator": "AND",
         "Criterias": [
           {
+            "Operator": "OR",
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
+                      },
+                      {
+                        "Comment": "procmail is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is x86_64"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
+                      },
+                      {
+                        "Comment": "procmail is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is i686"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "procmail is earlier than 0:3.22-25.1.el6_5.1"
+                      },
+                      {
+                        "Comment": "procmail is signed with the Oracle Linux 6 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": [
+                  {
+                    "Comment": "Oracle Linux arch is sparc64"
+                  }
+                ]
+              }
+            ],
+            "Criterions": null
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 6 is installed"
+          }
+        ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
             "Operator": "AND",
             "Criterias": [
               {
@@ -224,7 +224,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3618.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3618.html",
       "ID": "CVE-2014-3618"
     }
   ],

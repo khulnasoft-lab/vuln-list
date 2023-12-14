@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-2883.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-2883.html",
       "ID": "ELSA-2023-2883"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3627.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3627.html",
       "ID": "CVE-2022-3627"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-3970.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-3970.html",
       "ID": "CVE-2022-3970"
     }
   ],
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libtiff-tools is earlier than 0:4.0.9-27.el8"
-                      },
-                      {
-                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -66,6 +54,18 @@
                       },
                       {
                         "Comment": "libtiff-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libtiff-tools is earlier than 0:4.0.9-27.el8"
+                      },
+                      {
+                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -90,18 +90,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libtiff-tools is earlier than 0:4.0.9-27.el8"
-                      },
-                      {
-                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libtiff is earlier than 0:4.0.9-27.el8"
                       },
                       {
@@ -118,6 +106,18 @@
                       },
                       {
                         "Comment": "libtiff-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libtiff-tools is earlier than 0:4.0.9-27.el8"
+                      },
+                      {
+                        "Comment": "libtiff-tools is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -145,16 +145,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3627.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3627.html",
       "ID": "CVE-2022-3627"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-3970.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-3970.html",
       "ID": "CVE-2022-3970"
     }
   ],
   "Issued": {
-    "Date": "2023-05-20"
+    "Date": "2023-05-24"
   }
 }

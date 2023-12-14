@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2196.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2196.html",
       "ID": "ELSA-2019-2196"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-6541.html",
-      "ID": "CVE-2018-6541"
+      "URI": "https://linux.oracle.com/cve/CVE-2018-16548.html",
+      "ID": "CVE-2018-16548"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-16548.html",
-      "ID": "CVE-2018-16548"
+      "URI": "https://linux.oracle.com/cve/CVE-2018-6541.html",
+      "ID": "CVE-2018-6541"
     }
   ],
   "Criteria": {
@@ -90,6 +90,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "zziplib is earlier than 0:0.13.62-11.el7"
+                      },
+                      {
+                        "Comment": "zziplib is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "zziplib-devel is earlier than 0:0.13.62-11.el7"
                       },
                       {
@@ -106,18 +118,6 @@
                       },
                       {
                         "Comment": "zziplib-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "zziplib is earlier than 0:0.13.62-11.el7"
-                      },
-                      {
-                        "Comment": "zziplib is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -145,16 +145,16 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-6541.html",
-      "ID": "CVE-2018-6541"
+      "Href": "https://linux.oracle.com/cve/CVE-2018-16548.html",
+      "ID": "CVE-2018-16548"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-16548.html",
-      "ID": "CVE-2018-16548"
+      "Href": "https://linux.oracle.com/cve/CVE-2018-6541.html",
+      "ID": "CVE-2018-6541"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

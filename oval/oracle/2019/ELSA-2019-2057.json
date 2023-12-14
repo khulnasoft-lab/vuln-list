@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2057.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2057.html",
       "ID": "ELSA-2019-2057"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-5741.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-5741.html",
       "ID": "CVE-2018-5741"
     }
   ],
@@ -57,6 +57,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-export-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-export-libs is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
@@ -105,10 +129,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-pkcs11 is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
                         "Comment": "bind-pkcs11 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -141,66 +189,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "bind-utils is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-export-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "bind-sdb is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
@@ -217,6 +205,18 @@
                       },
                       {
                         "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-utils is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-utils is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -236,78 +236,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-export-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-sdb is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-sdb is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-sdb-chroot is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -337,6 +265,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-export-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-export-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-export-libs is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
@@ -385,10 +337,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-lite-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-lite-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-pkcs11 is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
                         "Comment": "bind-pkcs11 is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-pkcs11-devel is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-pkcs11-devel is signed with the Oracle Linux 7 key"
                       }
                     ]
                   },
@@ -421,6 +397,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bind-sdb is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-sdb is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "bind-sdb-chroot is earlier than 32:9.11.4-9.P2.el7"
+                      },
+                      {
+                        "Comment": "bind-sdb-chroot is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "bind-utils is earlier than 32:9.11.4-9.P2.el7"
                       },
                       {
@@ -435,94 +435,6 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-export-libs is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-export-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-libs is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-libs-lite is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-libs-lite is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-license is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-license is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bind-utils is earlier than 32:9.11.4-9.P2.el7"
-                      },
-                      {
-                        "Comment": "bind-utils is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -540,11 +452,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-5741.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-5741.html",
       "ID": "CVE-2018-5741"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

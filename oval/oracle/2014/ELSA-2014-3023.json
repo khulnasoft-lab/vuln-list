@@ -1,5 +1,5 @@
 {
-  "Title": "ELSA-2014-3023: unbreakable enterprise kernel security update (IMPORTANT)",
+  "Title": "ELSA-2014-3023: Unbreakable Enterprise kernel security update (IMPORTANT)",
   "Description": "kernel-uek\n[2.6.32-400.34.5uek]\n- aacraid: missing capable() check in compat ioctl (Dan Carpenter)  [Orabug: 18723276]  {CVE-2013-6383}",
   "Platform": [
     "Oracle Linux 5",
@@ -8,12 +8,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2014-3023.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2014-3023.html",
       "ID": "ELSA-2014-3023"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-6383.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-6383.html",
       "ID": "CVE-2013-6383"
     }
   ],
@@ -109,6 +109,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.5.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.34.5.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -149,18 +161,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.34.5.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.5.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -257,6 +257,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.5.el5uek"
+                          },
+                          {
+                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "mlnx_en-2.6.32-400.34.5.el5uek is earlier than 0:1.5.7-2"
                           },
                           {
@@ -297,18 +309,6 @@
                           },
                           {
                             "Comment": "ofa-2.6.32-400.34.5.el5uekdebug is signed with the Oracle Linux 5 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "kernel-uek-headers is earlier than 0:2.6.32-400.34.5.el5uek"
-                          },
-                          {
-                            "Comment": "kernel-uek-headers is signed with the Oracle Linux 5 key"
                           }
                         ]
                       }
@@ -651,7 +651,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-6383.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-6383.html",
       "ID": "CVE-2013-6383"
     }
   ],

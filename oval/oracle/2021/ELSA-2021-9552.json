@@ -1,23 +1,23 @@
 {
   "Title": "ELSA-2021-9552:  pcs security update (LOW)",
-  "Description": "[0.10.10-4.0.1]\n- Replace HAM-logo.png with a generic one\n\n[0.10.10-4]\n- Fixed unfencing in \n- Resolves: rhbz#bz1991654\n\n[0.10.10-3]\n- Added add/remove syntax for command \n- Resolves: rhbz#1992668\n\n[0.10.10-2]\n- Fixed create resources with depth operation attribute\n- Resolves: rhbz#1998454\n\n[0.10.10-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Updated pcs-web-ui\n- Resolves: rhbz#1885293 rhbz#1847102 rhbz#1935594\n\n[0.10.9-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Resolves: rhbz#1432097 rhbz#1847102 rhbz#1935594 rhbz#1984901\n\n[0.10.8-4]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Resolves: rhbz#1759995 rhbz#1872378 rhbz#1935594\n\n[0.10.8-3]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Gating changes\n- Resolves: rhbz#1678273 rhbz#1690419 rhbz#1750240 rhbz#1759995 rhbz#1872378 rhbz#1909901 rhbz#1935594\n\n[0.10.8-2]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Updated pcs-web-ui\n- Resolves: rhbz#1285269 rhbz#1290830 rhbz#1720221 rhbz#1841019 rhbz#1854238 rhbz#1882291 rhbz#1885302 rhbz#1886342 rhbz#1896458 rhbz#1922996 rhbz#1927384 rhbz#1927394 rhbz#1930886 rhbz#1935594\n\n[0.10.8-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Updated pcs-web-ui\n- Updated python bundled dependencies: dacite, dataclasses\n- Resolves: rhbz#1457314 rhbz#1619818 rhbz#1667066 rhbz#1762816 rhbz#1794062 rhbz#1845470 rhbz#1856397 rhbz#1877762 rhbz#1917286\n\n[0.10.7-3]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Add BuildRequires: make\n- Resolves: rhbz#1667061 rhbz#1667066 rhbz#1774143 rhbz#1885658\n\n[0.10.7-2]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Changed BuildRequires from git to git-core\n- Resolves: rhbz#1869399 rhbz#1885658 rhbz#1896379\n\n[0.10.7-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Added python bundled dependency dateutil\n- Fixed virtual bundle provides for ember, handelbars, jquery and jquery-ui\n- Resolves: rhbz#1222691 rhbz#1741056 rhbz#1851335 rhbz#1862966 rhbz#1869399 rhbz#1873691 rhbz#1875301 rhbz#1883445 rhbz#1885658 rhbz#1885841\n\n[0.10.6-4]\n- Fixed invalid CIB error caused by resource and operation defaults with mixed and-or rules\n- Updated pcs-web-ui\n- Resolves: rhbz#1867516\n\n[0.10.6-3]\n- Added Upgrade CIB if user specifies on-fail=demote\n- Fixed rpmdiff issue with binary stripping checker\n- Fixed removing non-empty tag by removing tagged resource group or clone\n- Resolves: rhbz#1843079 rhbz#1857295\n\n[0.10.6-2]\n- Added resource and operation defaults that apply to specific resource/operation types\n- Added Requires/BuildRequires: python3-pyparsing\n- Added Requires: logrotate\n- Fixed resource and stonith documentation\n- Fixed rubygem licenses\n- Fixed update_times()\n- Updated rubygem rack to version 2.2.3\n- Removed BuildRequires execstack (it is not needed)\n- Resolves: rhbz#1805082 rhbz#1817547\n\n[0.10.6-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Added python bundled dependencies: dacite, dataclasses\n- Added new bundled rubygem ruby2_keywords\n- Updated rubygem bundled packages: backports, ethon, ffi, json, mustermann, rack, rack_protection, rack_test, sinatra, tilt\n- Updated pcs-web-ui\n- Updated test run, only tier0 tests are running during build\n- Removed BuildRequires needed for tier1 tests which were removed for build (pacemaker-cli, fence_agents-*, fence_virt, booth-site)\n- Resolves: rhbz#1387358 rhbz#1684676 rhbz#1722970 rhbz#1778672 rhbz#1782553 rhbz#1790460 rhbz#1805082 rhbz#1810017 rhbz#1817547 rhbz#1830552 rhbz#1832973 rhbz#1833114 rhbz#1833506 rhbz#1838853 rhbz#1839637\n\n[0.10.4-6]\n- Fixed communication between python and ruby daemons\n- Resolves: rhbz#1783106\n\n[0.10.4-5]\n- Fixed link to sbd man page from  doc\n- Fixed safe-disabling clones, groups, bundles\n- Fixed sinatra wrapper performance issue\n- Fixed detecting fence history support\n- Fixed cookie options\n- Updated hint for 'resource create ... master'\n- Updated gating tests execution, smoke tests run from upstream sources\n- Resolves: rhbz#1750427 rhbz#1781303 rhbz#1783106 rhbz#1793574\n\n[0.10.4-4]\n- Fix testsuite for pacemaker-2.0.3-4\n- Resolves: rhbz#1792946\n\n[0.10.4-3]\n- Added basic resource views in new webUI",
+  "Description": "[0.10.10-4.0.1]\n- Replace HAM-logo.png with a generic one\n\n[0.10.10-4]\n- Fixed unfencing in \n- Resolves: rhbz#bz1991654\n\n[0.10.10-3]\n- Added add/remove syntax for command \n- Resolves: rhbz#1992668\n\n[0.10.10-2]\n- Fixed create resources with depth operation attribute\n- Resolves: rhbz#1998454\n\n[0.10.10-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Updated pcs-web-ui\n- Resolves: rhbz#1885293 rhbz#1847102 rhbz#1935594\n\n[0.10.9-1]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Resolves: rhbz#1432097 rhbz#1847102 rhbz#1935594 rhbz#1984901\n\n[0.10.8-4]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Resolves: rhbz#1759995 rhbz#1872378 rhbz#1935594\n\n[0.10.8-3]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Gating changes\n- Resolves: rhbz#1678273 rhbz#1690419 rhbz#1750240 rhbz#1759995 rhbz#1872378 rhbz#1909901 rhbz#1935594\n\n[0.10.8-2]\n- Rebased to latest upstream sources (see CHANGELOG.md)\n- Updated pcs-web-ui\n- Resolves: rhbz#1285269 rhbz#1290830 rhbz#1720221 rhbz#1841019 rhbz#1854238 rhbz#1882291 rhbz#1885302 rhbz#1886342 rhbz#1896458 rhbz#1922996 rhbz#1927384 rhbz#1927394 rhbz#1930886 rhbz#1935594",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-9552.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-9552.html",
       "ID": "ELSA-2021-9552"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11023.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-11023.html",
       "ID": "CVE-2020-11023"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-7656.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-7656.html",
       "ID": "CVE-2020-7656"
     }
   ],
@@ -75,12 +75,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11023.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-11023.html",
       "ID": "CVE-2020-11023"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-7656.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-7656.html",
       "ID": "CVE-2020-7656"
     }
   ],

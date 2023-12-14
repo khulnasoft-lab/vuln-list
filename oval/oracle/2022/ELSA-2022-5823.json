@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-5823.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-5823.html",
       "ID": "ELSA-2022-5823"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-0996.html",
-      "ID": "CVE-2022-0996"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-0918.html",
+      "ID": "CVE-2022-0918"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-0918.html",
-      "ID": "CVE-2022-0918"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-0996.html",
+      "ID": "CVE-2022-0996"
     }
   ],
   "Criteria": {
@@ -31,92 +31,82 @@
             "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
+                "Operator": "OR",
                 "Criterias": [
                   {
-                    "Operator": "OR",
-                    "Criterias": [
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
                       {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base is signed with the Oracle Linux 8 key"
-                          }
-                        ]
+                        "Comment": "389-ds-base is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
                       },
                       {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-devel is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-legacy-tools is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-legacy-tools is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-libs is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-libs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-snmp is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-snmp is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python3-lib389 is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "python3-lib389 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
+                        "Comment": "389-ds-base is signed with the Oracle Linux 8 key"
                       }
-                    ],
-                    "Criterions": null
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-devel is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-legacy-tools is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-legacy-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-libs is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-snmp is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-snmp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-lib389 is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "python3-lib389 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   }
                 ],
-                "Criterions": [
-                  {
-                    "Comment": "Module 389-ds:1.4 is enabled"
-                  }
-                ]
+                "Criterions": null
               }
             ],
             "Criterions": [
@@ -129,92 +119,82 @@
             "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
+                "Operator": "OR",
                 "Criterias": [
                   {
-                    "Operator": "OR",
-                    "Criterias": [
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
                       {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base is signed with the Oracle Linux 8 key"
-                          }
-                        ]
+                        "Comment": "389-ds-base is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
                       },
                       {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-devel is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-devel is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-legacy-tools is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-legacy-tools is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-libs is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-libs is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "389-ds-base-snmp is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "389-ds-base-snmp is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "python3-lib389 is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
-                          },
-                          {
-                            "Comment": "python3-lib389 is signed with the Oracle Linux 8 key"
-                          }
-                        ]
+                        "Comment": "389-ds-base is signed with the Oracle Linux 8 key"
                       }
-                    ],
-                    "Criterions": null
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-devel is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-legacy-tools is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-legacy-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-libs is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "389-ds-base-snmp is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "389-ds-base-snmp is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-lib389 is earlier than 0:1.4.3.28-7.module+el8.6.0+20716+53f13155"
+                      },
+                      {
+                        "Comment": "python3-lib389 is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   }
                 ],
-                "Criterions": [
-                  {
-                    "Comment": "Module 389-ds:1.4 is enabled"
-                  }
-                ]
+                "Criterions": null
               }
             ],
             "Criterions": [
@@ -237,13 +217,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-0996.html",
-      "ID": "CVE-2022-0996"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-0918.html",
+      "ID": "CVE-2022-0918"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-0918.html",
-      "ID": "CVE-2022-0918"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-0996.html",
+      "ID": "CVE-2022-0996"
     }
   ],
   "Issued": {

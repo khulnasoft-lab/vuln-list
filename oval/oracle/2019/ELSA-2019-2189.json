@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2189.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2189.html",
       "ID": "ELSA-2019-2189"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-1122.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-1122.html",
       "ID": "CVE-2018-1122"
     }
   ],
@@ -85,6 +85,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "procps-ng is earlier than 0:3.3.10-26.el7"
+                      },
+                      {
+                        "Comment": "procps-ng is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "procps-ng-devel is earlier than 0:3.3.10-26.el7"
                       },
                       {
@@ -101,18 +113,6 @@
                       },
                       {
                         "Comment": "procps-ng-i18n is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "procps-ng is earlier than 0:3.3.10-26.el7"
-                      },
-                      {
-                        "Comment": "procps-ng is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -140,11 +140,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-1122.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-1122.html",
       "ID": "CVE-2018-1122"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

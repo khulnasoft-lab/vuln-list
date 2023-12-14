@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-0838:  samba security update (IMPORTANT)",
-  "Description": "",
+  "Description": "[4.16.4-4.0.1]\n- Gluster volumes not accessible via Samba due to missing samba-vfs-glusterfs\n  in OL8 [Orabug: 30205755]\n\n[4.16.4-4]\n- related: rhbz#2154369 - Add additional patch for CVE-2022-38023\n\n[4.16.4-3]\n- resolves: rhbz#2154369 - Fix CVE-2022-38023\n\n[4.16.4-2]\n- resolves: rhbz#2120956 - Do not require samba package in python3-samba\n\n[4.16.4-1]\n- Rebase to version 4.16.4\n- resolves: rhbz#2108331 - Fix CVE-2022-32742\n\n[4.16.3-0]\n- related: rhbz#2077468 - Rebase Samba to 4.16.3\n- resolves: rhbz#2106672 - The pcap background queue process should not be stopped\n- resolves: rhbz#2106263 - Fix crash in rpcd_classic\n- resolves: rhbz#2100093 - Fix net ads info returns LDAP server and LDAP server name\n\n[4.16.2-1]\n- resolves: rhbz#2084162 - Fix printer displays only after 300 seconds timeout\n\n[4.16.2-0]\n- Fix rpminspect abidiff\n- related: rhbz#2077468 - Rebase Samba to 4.16.2\n\n[4.16.1-0]\n- Update to Samba 4.16.1\n- resolves: rhbz#2077468 Rebase Samba to the the latest 4.16.x release",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-0838.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-0838.html",
       "ID": "ELSA-2023-0838"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-38023.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-38023.html",
       "ID": "CVE-2022-38023"
     }
   ],
@@ -28,42 +28,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -93,10 +57,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwbclient is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -201,6 +189,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "samba-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "samba-krb5-printing is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
@@ -237,10 +237,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "samba-test is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "samba-test-libs is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
                         "Comment": "samba-test-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-glusterfs is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-vfs-glusterfs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-iouring is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -289,42 +325,6 @@
                       },
                       {
                         "Comment": "samba-winbind-modules is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-iouring is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-glusterfs is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-vfs-glusterfs is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -349,54 +349,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "samba-vfs-glusterfs is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-vfs-glusterfs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-devel is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "ctdb is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
@@ -421,10 +373,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libsmbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "libsmbclient-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libwbclient is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
                         "Comment": "libwbclient is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libwbclient-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "libwbclient-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -529,6 +505,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "samba-devel is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "samba-krb5-printing is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
@@ -565,10 +553,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "samba-test is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "samba-test-libs is earlier than 0:4.16.4-4.0.1.el8_7"
                       },
                       {
                         "Comment": "samba-test-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-glusterfs is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-vfs-glusterfs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "samba-vfs-iouring is earlier than 0:4.16.4-4.0.1.el8_7"
+                      },
+                      {
+                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -617,30 +641,6 @@
                       },
                       {
                         "Comment": "samba-winbind-modules is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-test is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "samba-vfs-iouring is earlier than 0:4.16.4-4.0.1.el8_7"
-                      },
-                      {
-                        "Comment": "samba-vfs-iouring is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -680,11 +680,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-38023.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-38023.html",
       "ID": "CVE-2022-38023"
     }
   ],
   "Issued": {
-    "Date": "2023-02-21"
+    "Date": "2023-02-22"
   }
 }

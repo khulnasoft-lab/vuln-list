@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-12989: microcode_ctl security update (IMPORTANT)",
-  "Description": "[2:2.1-73.19.0.3]\n- update 06-6a-06 to 0xd0003b9 {CVE-2023-23583}\n\n[2:2.1-73.19.0.1]\n- don't bother calling dracut if virtualized [Orabug: 35702409]\n- also rebuild initramfs for kernel-ueknano [Orabug: 35698043]\n- ensure UEK also rebuilds initramfs [Orabug: 34280052]\n- for Intel, do not trigger load if on-disk microcode is not an update [Orabug: 30634727]\n- set early_microcode='no' in virtualized guests to avoid early load bugs [Orabug: 30618736]\n- ensure late loading fixes are present on 4.1.12-* and 4.14.35-*\n- enable early and late load for 5.4.17-*\n- enable early loading for 06-4f-01 caveat\n- remove no longer appropriate caveats for 06-2d-07 and 06-55-04",
+  "Description": "[2:2.1-73.19.0.3]\n- update 06-6a-06 to 0xd0003b9 {CVE-2023-23583}",
   "Platform": [
     "Oracle Linux 7"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12989.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12989.html",
       "ID": "ELSA-2023-12989"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-23583.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-23583.html",
       "ID": "CVE-2023-23583"
     }
   ],
@@ -52,7 +52,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-23583.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-23583.html",
       "ID": "CVE-2023-23583"
     }
   ],

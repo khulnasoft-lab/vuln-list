@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-4838.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-4838.html",
       "ID": "ELSA-2023-4838"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-32360.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-32360.html",
       "ID": "CVE-2023-32360"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cups-libs is earlier than 1:2.3.3op2-16.el9_2.1"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "cups-ipptool is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cups-libs is earlier than 1:2.3.3op2-16.el9_2.1"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -145,6 +145,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "cups-libs is earlier than 1:2.3.3op2-16.el9_2.1"
+                      },
+                      {
+                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "cups is earlier than 1:2.3.3op2-16.el9_2.1"
                       },
                       {
@@ -197,18 +209,6 @@
                       },
                       {
                         "Comment": "cups-ipptool is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cups-libs is earlier than 1:2.3.3op2-16.el9_2.1"
-                      },
-                      {
-                        "Comment": "cups-libs is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -260,7 +260,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-32360.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-32360.html",
       "ID": "CVE-2023-32360"
     }
   ],

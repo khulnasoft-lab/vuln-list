@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4489.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-4489.html",
       "ID": "ELSA-2021-4489"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-20266.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-20266.html",
       "ID": "CVE-2021-20266"
     }
   ],
@@ -28,6 +28,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rpm-build is earlier than 0:4.14.3-19.el8"
+                      },
+                      {
+                        "Comment": "rpm-build is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rpm-plugin-fapolicyd is earlier than 0:4.14.3-19.el8"
+                      },
+                      {
+                        "Comment": "rpm-plugin-fapolicyd is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -61,18 +85,6 @@
                       },
                       {
                         "Comment": "rpm-apidocs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rpm-build is earlier than 0:4.14.3-19.el8"
-                      },
-                      {
-                        "Comment": "rpm-build is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -121,18 +133,6 @@
                       },
                       {
                         "Comment": "rpm-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rpm-plugin-fapolicyd is earlier than 0:4.14.3-19.el8"
-                      },
-                      {
-                        "Comment": "rpm-plugin-fapolicyd is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -265,18 +265,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "rpm-build is earlier than 0:4.14.3-19.el8"
-                      },
-                      {
-                        "Comment": "rpm-build is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "rpm-build-libs is earlier than 0:4.14.3-19.el8"
                       },
                       {
@@ -317,18 +305,6 @@
                       },
                       {
                         "Comment": "rpm-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "rpm-plugin-fapolicyd is earlier than 0:4.14.3-19.el8"
-                      },
-                      {
-                        "Comment": "rpm-plugin-fapolicyd is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -403,6 +379,30 @@
                         "Comment": "rpm-sign is signed with the Oracle Linux 8 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rpm-build is earlier than 0:4.14.3-19.el8"
+                      },
+                      {
+                        "Comment": "rpm-build is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "rpm-plugin-fapolicyd is earlier than 0:4.14.3-19.el8"
+                      },
+                      {
+                        "Comment": "rpm-plugin-fapolicyd is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -428,11 +428,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-20266.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-20266.html",
       "ID": "CVE-2021-20266"
     }
   ],
   "Issued": {
-    "Date": "2021-11-14"
+    "Date": "2021-11-16"
   }
 }

@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2047.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2047.html",
       "ID": "ELSA-2019-2047"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14348.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14348.html",
       "ID": "CVE-2018-14348"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libcgroup-tools is earlier than 0:0.41-21.el7"
-                      },
-                      {
-                        "Comment": "libcgroup-tools is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libcgroup-devel is earlier than 0:0.41-21.el7"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "libcgroup-pam is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libcgroup-tools is earlier than 0:0.41-21.el7"
+                      },
+                      {
+                        "Comment": "libcgroup-tools is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -97,6 +97,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libcgroup is earlier than 0:0.41-21.el7"
+                      },
+                      {
+                        "Comment": "libcgroup is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "libcgroup-devel is earlier than 0:0.41-21.el7"
                       },
                       {
@@ -121,18 +133,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libcgroup is earlier than 0:0.41-21.el7"
-                      },
-                      {
-                        "Comment": "libcgroup is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libcgroup-tools is earlier than 0:0.41-21.el7"
                       },
                       {
@@ -147,28 +147,6 @@
             "Criterions": [
               {
                 "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcgroup is earlier than 0:0.41-21.el7"
-                  },
-                  {
-                    "Comment": "libcgroup is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
               }
             ]
           }
@@ -186,11 +164,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14348.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14348.html",
       "ID": "CVE-2018-14348"
     }
   ],
   "Issued": {
-    "Date": "2019-08-11"
+    "Date": "2019-08-13"
   }
 }

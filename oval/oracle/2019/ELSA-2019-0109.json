@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-0109.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-0109.html",
       "ID": "ELSA-2019-0109"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-18311.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-18311.html",
       "ID": "CVE-2018-18311"
     }
   ],
@@ -265,18 +265,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "perl-tests is earlier than 4:5.16.3-294.el7_6"
-                      },
-                      {
-                        "Comment": "perl-tests is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "perl is earlier than 4:5.16.3-294.el7_6"
                       },
                       {
@@ -475,6 +463,18 @@
                         "Comment": "perl-macros is signed with the Oracle Linux 7 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "perl-tests is earlier than 4:5.16.3-294.el7_6"
+                      },
+                      {
+                        "Comment": "perl-tests is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -500,7 +500,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-18311.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-18311.html",
       "ID": "CVE-2018-18311"
     }
   ],

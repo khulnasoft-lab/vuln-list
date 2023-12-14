@@ -7,43 +7,43 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1810.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1810.html",
       "ID": "ELSA-2020-1810"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-13752.html",
-      "ID": "CVE-2019-13752"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-13753.html",
-      "ID": "CVE-2019-13753"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19925.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19925.html",
       "ID": "CVE-2019-19925"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-8457.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19959.html",
+      "ID": "CVE-2019-19959"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-8457.html",
       "ID": "CVE-2019-8457"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19923.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-13752.html",
+      "ID": "CVE-2019-13752"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-13753.html",
+      "ID": "CVE-2019-13753"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19923.html",
       "ID": "CVE-2019-19923"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19924.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19924.html",
       "ID": "CVE-2019-19924"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19959.html",
-      "ID": "CVE-2019-19959"
     }
   ],
   "Criteria": {
@@ -58,6 +58,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "lemon is earlier than 0:3.26.0-6.el8"
+                      },
+                      {
+                        "Comment": "lemon is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -103,18 +115,6 @@
                       },
                       {
                         "Comment": "sqlite-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "lemon is earlier than 0:3.26.0-6.el8"
-                      },
-                      {
-                        "Comment": "lemon is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -139,6 +139,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "lemon is earlier than 0:3.26.0-6.el8"
+                      },
+                      {
+                        "Comment": "lemon is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "sqlite is earlier than 0:3.26.0-6.el8"
                       },
                       {
@@ -179,18 +191,6 @@
                       },
                       {
                         "Comment": "sqlite-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "lemon is earlier than 0:3.26.0-6.el8"
-                      },
-                      {
-                        "Comment": "lemon is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -218,38 +218,38 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-13752.html",
-      "ID": "CVE-2019-13752"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-13753.html",
-      "ID": "CVE-2019-13753"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19925.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19925.html",
       "ID": "CVE-2019-19925"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-8457.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19959.html",
+      "ID": "CVE-2019-19959"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-8457.html",
       "ID": "CVE-2019-8457"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19923.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-13752.html",
+      "ID": "CVE-2019-13752"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-13753.html",
+      "ID": "CVE-2019-13753"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19923.html",
       "ID": "CVE-2019-19923"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19924.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19924.html",
       "ID": "CVE-2019-19924"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19959.html",
-      "ID": "CVE-2019-19959"
     }
   ],
   "Issued": {

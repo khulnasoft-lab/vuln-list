@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-0834.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-0834.html",
       "ID": "ELSA-2020-0834"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11487.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11487.html",
       "ID": "CVE-2019-11487"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-17666.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-17666.html",
       "ID": "CVE-2019-17666"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-19338.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-19338.html",
       "ID": "CVE-2019-19338"
     }
   ],
@@ -35,18 +35,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1062.18.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -172,6 +160,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1062.18.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "perf is earlier than 0:3.10.0-1062.18.1.el7"
                   },
                   {
@@ -212,17 +212,17 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11487.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11487.html",
       "ID": "CVE-2019-11487"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-17666.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-17666.html",
       "ID": "CVE-2019-17666"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-19338.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-19338.html",
       "ID": "CVE-2019-19338"
     }
   ],

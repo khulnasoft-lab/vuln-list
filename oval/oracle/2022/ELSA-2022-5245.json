@@ -1,34 +1,34 @@
 {
   "Title": "ELSA-2022-5245:  curl security update (MODERATE)",
-  "Description": "[7.76.1-14.el9_0.4]\n- fix too eager reuse of TLS and SSH connections (CVE-2022-27782)\n\n[7.76.1-14.el9_0.3]\n- fix leak of SRP credentials in redirects (CVE-2022-27774)\n\n[7.76.1-14.el9_0.2]\n- add missing tests to Makefile\n\n[7.76.1-14.el9_0.1]\n- fix credential leak on redirect (CVE-2022-27774)\n- fix auth/cookie leak on redirect (CVE-2022-27776)\n- fix OAUTH2 bearer bypass in connection re-use (CVE-2022-22576)\n\n[7.76.1-14]\n- re-disable HSTS in libcurl as an experimental feature (#2005874)\n\n[7.76.1-13]\n- disable more protocols and features in libcurl-minimal (#2005874)\n\n[7.76.1-12]\n- fix STARTTLS protocol injection via MITM (CVE-2021-22947)\n- fix protocol downgrade required TLS bypass (CVE-2021-22946)\n- fix use-after-free and double-free in MQTT sending (CVE-2021-22945)\n\n[7.76.1-11]\n- Rebuilt for IMA sigs, glibc 2.34, aarch64 flags\n  Related: rhbz#1991688\n\n[7.76.1-10]\n- Rebuild to pick up OpenSSL 3.0 Beta ABI (#1984097)\n\n[7.76.1-9]\n- make explicit dependency on openssl work with alpha/beta builds of openssl\n\n[7.76.1-8]\n- fix TELNET stack contents disclosure again (CVE-2021-22925)\n- fix bad connection reuse due to flawed path name checks (CVE-2021-22924)\n\n[7.76.1-6]\n- Rebuilt for RHEL 9 BETA for openssl 3.0 Related: rhbz#1971065\n\n[7.77.0-5]\n- build the curl tool without metalink support (#1967213)\n\n[7.76.1-4]\n- fix SIGSEGV upon disconnect of a ldaps:// transfer (#1941925)\n\n[7.76.1-3]\n- fix TLS session caching disaster (CVE-2021-22901)\n- fix TELNET stack contents disclosure (CVE-2021-22898)\n\n[7.76.1-2]\n- http2: fix resource leaks detected by Coverity\n\n[7.76.1-1]\n- new upstream release\n\n[7.76.0-1]\n- new upstream release, which fixes the following vulnerabilities\n    CVE-2021-22890 - TLS 1.3 session ticket proxy host mixup\n    CVE-2021-22876 - Automatic referer leaks credentials\n\n[7.75.0-4]\n- Rebuilt for RHEL 9 BETA on Apr 15th 2021. Related: rhbz#1947937\n\n[7.75.0-3]\n- fix SIGSEGV upon disconnect of a ldaps:// transfer (#1941925)\n\n[7.75.0-2]\n- build-require python3-impacket only on Fedora\n\n[7.75.0-1]\n- new upstream release\n\n[7.74.0-4]\n- do not use stunnel for tests on s390x builds to avoid spurious failures\n\n[7.74.0-3]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_34_Mass_Rebuild\n\n[7.74.0-2]\n- do not rewrite shebangs in test-suite to use python3 explicitly\n\n[7.74.0-1]\n- new upstream release, which fixes the following vulnerabilities\n    CVE-2020-8286 - curl: Inferior OCSP verification\n    CVE-2020-8285 - libcurl: FTP wildcard stack overflow\n    CVE-2020-8284 - curl: trusting FTP PASV responses\n\n[7.73.0-2]\n- prevent upstream test 1451 from being skipped\n\n[7.73.0-1]\n- new upstream release\n\n[7.72.0-2]\n- fix multiarch conflicts in libcurl-minimal (#1877671)\n\n[7.72.0-1]\n- new upstream release, which fixes the following vulnerability\n    CVE-2020-8231 - libcurl: wrong connect-only connection\n\n[7.71.1-5]\n- setopt: unset NOBODY switches to GET if still HEAD\n\n[7.71.1-4]\n- Rebuilt for https://fedoraproject.org/wiki/Fedora_33_Mass_Rebuild\n\n[7.71.1-3]\n- Use make macros\n- https://fedoraproject.org/wiki/Changes/UseMakeBuildInstallMacro\n\n[7.71.1-2]\n- curl: make the --krb option work again (#1833193)\n\n[7.71.1-1]\n- new upstream release\n\n[7.71.0-1]\n- new upstream release, which fixes the following vulnerabilities\n    CVE-2020-8169 - curl: Partial password leak over DNS on HTTP redirect\n    CVE-2020-8177 - curl: overwrite local file with -J",
+  "Description": "[7.76.1-14.el9_0.4]\n- fix too eager reuse of TLS and SSH connections (CVE-2022-27782)\n\n[7.76.1-14.el9_0.3]\n- fix leak of SRP credentials in redirects (CVE-2022-27774)\n\n[7.76.1-14.el9_0.2]\n- add missing tests to Makefile\n\n[7.76.1-14.el9_0.1]\n- fix credential leak on redirect (CVE-2022-27774)\n- fix auth/cookie leak on redirect (CVE-2022-27776)\n- fix OAUTH2 bearer bypass in connection re-use (CVE-2022-22576)",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-5245.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-5245.html",
       "ID": "ELSA-2022-5245"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-22576.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-22576.html",
       "ID": "CVE-2022-22576"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-27782.html",
-      "ID": "CVE-2022-27782"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-27774.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-27774.html",
       "ID": "CVE-2022-27774"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-27776.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-27776.html",
       "ID": "CVE-2022-27776"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-27782.html",
+      "ID": "CVE-2022-27782"
     }
   ],
   "Criteria": {
@@ -203,26 +203,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-22576.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-22576.html",
       "ID": "CVE-2022-22576"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-27782.html",
-      "ID": "CVE-2022-27782"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-27774.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-27774.html",
       "ID": "CVE-2022-27774"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-27776.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-27776.html",
       "ID": "CVE-2022-27776"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-27782.html",
+      "ID": "CVE-2022-27782"
     }
   ],
   "Issued": {
-    "Date": "2022-06-29"
+    "Date": "2022-06-30"
   }
 }

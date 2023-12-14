@@ -1,53 +1,53 @@
 {
   "Title": "ELSA-2022-9596:  grub2 security update (IMPORTANT)",
-  "Description": "[2.06-27.0.6.el9_0.7]\n- Enable back btrfs grub module for EFI pre-built image [Orabug: 34360986]\n\n[2.06-27.0.5.el9_0.7]\n- Replaced bugzilla.oracle.com references [Orabug: 34202300]\n- Update provided certificate version to 202204 [JIRA: OLDIS-16371]\n- Various coverity fixes [JIRA: OLDIS-16371]\n- bump SBAT generation\n- Update bug url [Orabug: 34202300]\n- Revert provided certificate version back to 202102 [JIRA: OLDIS-16371]\n- Update signing certificate [JIRA: OLDIS-16371]\n- fix SBAT data [JIRA: OLDIS-16371]\n- Update requires [JIRA: OLDIS-16371]\n- Rebuild for SecureBoot signatures [Orabug: 33801813]\n- Do not add shim and grub certificate deps for aarch64 packages [Orabug: 32670033]\n- Update Oracle SBAT data [Orabug: 32670033]\n- Use new signing certificate [Orabug: 32670033]\n- honor /etc/sysconfig/kernel DEFAULTKERNEL setting for BLS [Orabug: 30643497]\n- set EFIDIR as redhat for additional grub2 tools [Orabug: 29875597]\n- Update upstream references [Orabug: 26388226]\n- Insert Unbreakable Enterprise Kernel text into BLS config file [Orabug: 29417955]\n- Put 'with' in menuentry instead of 'using' [Orabug: 18504756]\n- Use different titles for UEK and RHCK kernels [Orabug: 18504756]\n\n[2.06-27.el9_0.7]\n- CVE fixes for 2022-06-07\n- CVE-2022-28736 CVE-2022-28735 CVE-2022-28734 CVE-2022-28733\n- CVE-2021-3697 CVE-2021-3696 CVE-2021-3695\n- Resolves: #2089810\n\n[2.06-27]\n- Fix initialization on efidisk patch\n- Resolves: #2060948\n\n[2.06-26]\n- Re-run signing with updated redhat-release\n- Resolves: #1873860\n\n[2.06-25]\n- Enable connectefi module\n- Resolves: #2049219\n\n[2.06-24]\n- Add efidisk/connectefi patches\n- Resolves: #2049219\n- Resolves: #2049220\n\n[2.06-23]\n- Re-arm GRUB_ENABLE_BLSCFG=false\n- Resolves: #2018331\n\n[2.06-22]\n- Stop building unsupported 32-bit UEFI stuff\n- Resolves: #2038401\n\n[2.06-21]\n- Require Secure Boot certs based on architecture\n- Resolves: #2049214\n\n[2.06-20]\n- Conditionalize Secure Boot settings per architecture\n- Resolves: #2049214\n\n[2.06-19]\n- Attempt to fix ppc64le signing bugs in previous change\n- Resolves: #2049214\n\n[2.06-18]\n- Switch to single-signing and use certs from package (bstinson)\n- Resolves: #2049214\n\n[2.06-17]\n- CVE-2021-3981 (Incorrect read permission in grub.cfg)\n- Resolves: rhbz#2030724\n\n[2.06-16]\n- Stop having this problem and just copy over the beta tree\n- Resolves: rhbz#2006784\n\n* Mon Oct 25 2021 Robbie Harwood \u003crharwood@redhat.com\u003e\n- powerpc-ieee1275: load grub at 4MB, not 2MB\n  Related: rhbz#1873860\n\n* Tue Oct 12 2021 Robbie Harwood \u003crharwood@redhat.com\u003e\n- Print out module name on license check failure\n  Related: rhbz#1873860\n\n* Thu Oct 07 2021 pjones \u003cpjones@redhat.com\u003e\n- Hopefully make 'grub2-mkimage --appended-signature-size=' actually work.\n  Related: rhbz#1873860\n\n[2.06-8]\n- Attempt once more to fix signatures on ppc64le\n  Related: rhbz#1873860\n\n[2.06-7]\n- Fix signatures on ppc64le\n  Related: rhbz#1951104\n\n[2.06-6]\n- Fix booting with XFSv4 partitions\n  Resolves: rhbz#2006993\n\n[2.06-5]\n- Rebuild for correct signatures once more.\n  Resolves: rhbz#1976771\n\n[2.06-4]\n- Rebuild for correct signatures\n  Resolves: rhbz#1976771\n\n[2.06-3]\n- Rebuild for gating + rpminspect\n  Resolves: rhbz#1976771\n\n[2.06-2]\n- Rebuild because our CI infrastructure doesn't work right\n  Resolves: rhbz#1976771\n\n[2.06-1]\n- Update to 2.06 final release and ton of fixes\n  Resolves: rhbz#1976771\n\n[2.06~rc1-9]\n- Fix kernel cmdline params getting overwritten on ppc64le\n  Resolves: rhbz#1973564\n\n[2.06~rc1-8]\n- Add XFS needsrepair support\n  Resolves: rhbz#1940165\n\n[2.06~rc1-7]\n- Find and claim more memory for ieee1275 (dja)\n  Resolves: rhbz#1873860\n\n[2.06~rc1-6]\n- Add XFS bigtime support (cmaiolino)\n  Resolves: rhbz#1940165\n\n[2.06~rc1-5]\n- Use RHEL distro SBAT data also for CentOS Stream\n  Related: rhbz#1947696\n\n[2.06~rc1-4]\n- Update distro SBAT entry to contain information about CentOS Stream\n  Related: rhbz#1947696\n\n[2.06~rc1-3]\n- Prevent %posttrans scriptlet to fail if grubenv isn't present in the ESP\n\n[2.06~rc1-2]\n- Fix a couple of merge mistakes made when rebasing to 2.06~rc1\n  Resolves: rhbz#1940524\n\n[2.06~rc1-1]\n- Update to 2.06~rc1 to fix a bunch of CVEs\n  Resolves: CVE-2020-14372\n  Resolves: CVE-2020-25632\n  Resolves: CVE-2020-25647\n  Resolves: CVE-2020-27749\n  Resolves: CVE-2020-27779\n  Resolves: CVE-2021-20225\n  Resolves: CVE-2021-20233\n\n[2.04-39]\n- Fix config file generation failing due invalid petitboot version value\n  Resolves: rhbz#1921479\n\n[2.04-38]\n- Fix keyboards that report IBM PC AT scan codes (rmetrich)\n\n[2.04-37]\n- Don't attempt to unify if there is no grub.cfg on EFI (gicmo)\n  Resolves: rhbz#1933085\n\n[2.04-36]\n- Switch EFI users to new unified config\n  Resolves: rhbz#1918817\n- Fix ESC key no longer showing the menu\n  Resolves: rhbz#1928595\n\n[2.04-35]\n- Remove -fcf-protection compiler flag to allow i386 builds (law)\n  Related: rhbz#1915452\n- Unify GRUB configuration file location across all platforms\n  Related: rhbz#1918817\n- Add 'at_keyboard_fallback_set' var to force the set manually (rmetrich)\n- Add appended signatures support for ppc64le LPAR Secure Boot (daxtens)\n\n[2.04-34]\n- at_keyboard: use set 1 when keyboard is in Translate mode (rmetrich)\n\n[2.04-33]\n- Add DNF protected.d fragments for GRUB packages\n  Resolves: rhbz#1874541\n - Include keylayouts and at_keyboard modules in EFI builds\n - Add GRUB enhanced debugging features\n - ieee1275: Avoiding many unecessary open/close\n - ieee1275: device mapper and fibre channel discovery support\n - Fix tps-rpmtest failing due /boot/grub2/grubenv attributes mismatch\n\n[2.04-32]\n- Fixed some typos in grub-install.8 man page\n\n[2.04-31]\n- Roll over TFTP block counter to prevent timeouts with data packets\n  Resolves: rhbz#1869335\n\n[2.04-30]\n- Set TFTP blocksize to 1428 instead of 2048 to avoid IP fragmentation\n  Resolves: rhbz#1869335\n\n[2.04-29]\n- Fix TFTP timeouts when trying to fetch files larger than 65535 KiB\n  Resolves: rhbz#1869335\n\n[2.04-28]\n- Add support for 'systemctl reboot --boot-loader-menu=xx' (hdegoede)\n  Related: rhbz#1857389\n\n[2.04-27]\n- Attempt to enable dual-signing in f33\n- 'Minor' bug fixes.  For f33:\n  Resolves: CVE-2020-10713\n  Resolves: CVE-2020-14308\n  Resolves: CVE-2020-14309\n  Resolves: CVE-2020-14310\n  Resolves: CVE-2020-14311\n  Resolves: CVE-2020-15705\n  Resolves: CVE-2020-15706\n  Resolves: CVE-2020-15707",
+  "Description": "[2.06-27.0.6.el9_0.7]\n- Enable back btrfs grub module for EFI pre-built image [Orabug: 34360986]\n\n[2.06-27.0.5.el9_0.7]\n- Replaced bugzilla.oracle.com references [Orabug: 34202300]\n- Update provided certificate version to 202204 [JIRA: OLDIS-16371]\n- Various coverity fixes [JIRA: OLDIS-16371]\n- bump SBAT generation\n- Update bug url [Orabug: 34202300]\n- Revert provided certificate version back to 202102 [JIRA: OLDIS-16371]\n- Update signing certificate [JIRA: OLDIS-16371]\n- fix SBAT data [JIRA: OLDIS-16371]\n- Update requires [JIRA: OLDIS-16371]\n- Rebuild for SecureBoot signatures [Orabug: 33801813]\n- Do not add shim and grub certificate deps for aarch64 packages [Orabug: 32670033]\n- Update Oracle SBAT data [Orabug: 32670033]\n- Use new signing certificate [Orabug: 32670033]\n- honor /etc/sysconfig/kernel DEFAULTKERNEL setting for BLS [Orabug: 30643497]\n- set EFIDIR as redhat for additional grub2 tools [Orabug: 29875597]\n- Update upstream references [Orabug: 26388226]\n- Insert Unbreakable Enterprise Kernel text into BLS config file [Orabug: 29417955]\n- Put 'with' in menuentry instead of 'using' [Orabug: 18504756]\n- Use different titles for UEK and RHCK kernels [Orabug: 18504756]\n\n[2.06-27.el9_0.7]\n- CVE fixes for 2022-06-07\n- CVE-2022-28736 CVE-2022-28735 CVE-2022-28734 CVE-2022-28733\n- CVE-2021-3697 CVE-2021-3696 CVE-2021-3695\n- Resolves: #2089810",
   "Platform": [
     "Oracle Linux 9"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9596.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-9596.html",
       "ID": "ELSA-2022-9596"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28737.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28737.html",
       "ID": "CVE-2022-28737"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3697.html",
-      "ID": "CVE-2021-3697"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28734.html",
-      "ID": "CVE-2022-28734"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28735.html",
-      "ID": "CVE-2022-28735"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3695.html",
-      "ID": "CVE-2021-3695"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3696.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3696.html",
       "ID": "CVE-2021-3696"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28733.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28734.html",
+      "ID": "CVE-2022-28734"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3695.html",
+      "ID": "CVE-2021-3695"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3697.html",
+      "ID": "CVE-2021-3697"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28733.html",
       "ID": "CVE-2022-28733"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-28736.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28735.html",
+      "ID": "CVE-2022-28735"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-28736.html",
       "ID": "CVE-2022-28736"
     }
   ],
@@ -331,46 +331,46 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28737.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28737.html",
       "ID": "CVE-2022-28737"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3697.html",
-      "ID": "CVE-2021-3697"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28734.html",
-      "ID": "CVE-2022-28734"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28735.html",
-      "ID": "CVE-2022-28735"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3695.html",
-      "ID": "CVE-2021-3695"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3696.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3696.html",
       "ID": "CVE-2021-3696"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28733.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28734.html",
+      "ID": "CVE-2022-28734"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3695.html",
+      "ID": "CVE-2021-3695"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3697.html",
+      "ID": "CVE-2021-3697"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28733.html",
       "ID": "CVE-2022-28733"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-28736.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28735.html",
+      "ID": "CVE-2022-28735"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-28736.html",
       "ID": "CVE-2022-28736"
     }
   ],
   "Issued": {
-    "Date": "2022-07-13"
+    "Date": "2022-07-14"
   }
 }

@@ -7,22 +7,22 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-0348.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-0348.html",
       "ID": "ELSA-2021-0348"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-10029.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-10029.html",
       "ID": "CVE-2020-10029"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-29573.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-29573.html",
       "ID": "CVE-2020-29573"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-25013.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-25013.html",
       "ID": "CVE-2019-25013"
     }
   ],
@@ -91,6 +91,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "glibc-static is earlier than 0:2.17-322.0.2.el7_9"
+                      },
+                      {
+                        "Comment": "glibc-static is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "glibc-utils is earlier than 0:2.17-322.0.2.el7_9"
                       },
                       {
@@ -107,18 +119,6 @@
                       },
                       {
                         "Comment": "nscd is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-static is earlier than 0:2.17-322.0.2.el7_9"
-                      },
-                      {
-                        "Comment": "glibc-static is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -138,18 +138,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-static is earlier than 0:2.17-322.0.1.el7_9"
-                      },
-                      {
-                        "Comment": "glibc-static is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -203,6 +191,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "glibc-static is earlier than 0:2.17-322.0.1.el7_9"
+                      },
+                      {
+                        "Comment": "glibc-static is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "glibc-utils is earlier than 0:2.17-322.0.1.el7_9"
                       },
                       {
@@ -231,46 +231,6 @@
                 "Comment": "Oracle Linux arch is x86_64"
               }
             ]
-          },
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc is earlier than 0:2.17-322.0.2.el7_9"
-                      },
-                      {
-                        "Comment": "glibc is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-common is earlier than 0:2.17-322.0.2.el7_9"
-                      },
-                      {
-                        "Comment": "glibc-common is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is sparc64"
-              }
-            ]
           }
         ],
         "Criterions": null
@@ -286,21 +246,21 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-10029.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-10029.html",
       "ID": "CVE-2020-10029"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-29573.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-29573.html",
       "ID": "CVE-2020-29573"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-25013.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-25013.html",
       "ID": "CVE-2019-25013"
     }
   ],
   "Issued": {
-    "Date": "2021-02-03"
+    "Date": "2021-02-05"
   }
 }

@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-1507.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2015-1507.html",
       "ID": "ELSA-2015-1507"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-5154.html",
-      "ID": "CVE-2015-5154"
+      "URI": "https://linux.oracle.com/cve/CVE-2015-3214.html",
+      "ID": "CVE-2015-3214"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-3214.html",
-      "ID": "CVE-2015-3214"
+      "URI": "https://linux.oracle.com/cve/CVE-2015-5154.html",
+      "ID": "CVE-2015-5154"
     }
   ],
   "Criteria": {
@@ -39,6 +39,30 @@
                   },
                   {
                     "Comment": "libcacard is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-devel is earlier than 10:1.5.3-86.el7_1.5"
+                  },
+                  {
+                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "libcacard-tools is earlier than 10:1.5.3-86.el7_1.5"
+                  },
+                  {
+                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -89,30 +113,6 @@
                     "Comment": "qemu-kvm-tools is signed with the Oracle Linux 7 key"
                   }
                 ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-devel is earlier than 10:1.5.3-86.el7_1.5"
-                  },
-                  {
-                    "Comment": "libcacard-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "libcacard-tools is earlier than 10:1.5.3-86.el7_1.5"
-                  },
-                  {
-                    "Comment": "libcacard-tools is signed with the Oracle Linux 7 key"
-                  }
-                ]
               }
             ],
             "Criterions": null
@@ -135,13 +135,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-5154.html",
-      "ID": "CVE-2015-5154"
+      "Href": "https://linux.oracle.com/cve/CVE-2015-3214.html",
+      "ID": "CVE-2015-3214"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-3214.html",
-      "ID": "CVE-2015-3214"
+      "Href": "https://linux.oracle.com/cve/CVE-2015-5154.html",
+      "ID": "CVE-2015-5154"
     }
   ],
   "Issued": {

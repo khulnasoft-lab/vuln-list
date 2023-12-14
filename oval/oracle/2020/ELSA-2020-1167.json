@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-1167.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-1167.html",
       "ID": "ELSA-2020-1167"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14850.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14850.html",
       "ID": "CVE-2019-14850"
     }
   ],
@@ -25,6 +25,18 @@
           {
             "Operator": "OR",
             "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "nbdkit is earlier than 0:1.8.0-3.el7"
+                  },
+                  {
+                    "Comment": "nbdkit is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -58,18 +70,6 @@
                   },
                   {
                     "Comment": "nbdkit-example-plugins is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "nbdkit is earlier than 0:1.8.0-3.el7"
-                  },
-                  {
-                    "Comment": "nbdkit is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -130,11 +130,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14850.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14850.html",
       "ID": "CVE-2019-14850"
     }
   ],
   "Issued": {
-    "Date": "2020-04-08"
+    "Date": "2020-04-06"
   }
 }

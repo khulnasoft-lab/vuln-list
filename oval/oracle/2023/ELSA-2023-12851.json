@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-12851.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-12851.html",
       "ID": "ELSA-2023-12851"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-4911.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-4911.html",
       "ID": "CVE-2023-4911"
     }
   ],
@@ -73,6 +73,30 @@
                       },
                       {
                         "Comment": "nss_hesiod is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-225.0.4.el8"
+                      },
+                      {
+                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "glibc-utils is earlier than 0:2.28-225.0.4.el8"
+                      },
+                      {
+                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -2569,30 +2593,6 @@
                       },
                       {
                         "Comment": "nss_db is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "compat-libpthread-nonshared is earlier than 0:2.28-225.0.4.el8"
-                      },
-                      {
-                        "Comment": "compat-libpthread-nonshared is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "glibc-utils is earlier than 0:2.28-225.0.4.el8"
-                      },
-                      {
-                        "Comment": "glibc-utils is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -5204,7 +5204,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-4911.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-4911.html",
       "ID": "CVE-2023-4911"
     }
   ],

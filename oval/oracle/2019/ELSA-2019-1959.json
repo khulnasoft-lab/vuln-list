@@ -7,27 +7,27 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-1959.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-1959.html",
       "ID": "ELSA-2019-1959"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11810.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11810.html",
       "ID": "CVE-2019-11810"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11811.html",
-      "ID": "CVE-2019-11811"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11085.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11085.html",
       "ID": "CVE-2019-11085"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-20784.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11811.html",
+      "ID": "CVE-2019-11811"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-20784.html",
       "ID": "CVE-2018-20784"
     }
   ],
@@ -274,6 +274,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-80.7.1.el8_0"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "perf is earlier than 0:4.18.0-80.7.1.el8_0"
                       },
                       {
@@ -290,18 +302,6 @@
                       },
                       {
                         "Comment": "python3-perf is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:4.18.0-80.7.1.el8_0"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -329,26 +329,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11810.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11810.html",
       "ID": "CVE-2019-11810"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11811.html",
-      "ID": "CVE-2019-11811"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11085.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11085.html",
       "ID": "CVE-2019-11085"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-20784.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11811.html",
+      "ID": "CVE-2019-11811"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-20784.html",
       "ID": "CVE-2018-20784"
     }
   ],
   "Issued": {
-    "Date": "2019-07-31"
+    "Date": "2019-08-19"
   }
 }

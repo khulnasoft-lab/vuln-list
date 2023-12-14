@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2015-2345.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2015-2345.html",
       "ID": "ELSA-2015-2345"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2014-3565.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2014-3565.html",
       "ID": "CVE-2014-3565"
     }
   ],
@@ -66,34 +66,22 @@
                 "Criterias": null,
                 "Criterions": [
                   {
-                    "Comment": "net-snmp-libs is earlier than 1:5.7.2-24.el7"
-                  },
-                  {
-                    "Comment": "net-snmp-libs is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "net-snmp-utils is earlier than 1:5.7.2-24.el7"
-                  },
-                  {
-                    "Comment": "net-snmp-utils is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
                     "Comment": "net-snmp-gui is earlier than 1:5.7.2-24.el7"
                   },
                   {
                     "Comment": "net-snmp-gui is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "net-snmp-libs is earlier than 1:5.7.2-24.el7"
+                  },
+                  {
+                    "Comment": "net-snmp-libs is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -132,6 +120,18 @@
                     "Comment": "net-snmp-sysvinit is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "net-snmp-utils is earlier than 1:5.7.2-24.el7"
+                  },
+                  {
+                    "Comment": "net-snmp-utils is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -154,11 +154,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2014-3565.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2014-3565.html",
       "ID": "CVE-2014-3565"
     }
   ],
   "Issued": {
-    "Date": "2015-11-22"
+    "Date": "2015-11-23"
   }
 }

@@ -7,28 +7,28 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2019-2591.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2019-2591.html",
       "ID": "ELSA-2019-2591"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14811.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14811.html",
       "ID": "CVE-2019-14811"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14813.html",
-      "ID": "CVE-2019-14813"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14812.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14812.html",
       "ID": "CVE-2019-14812"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14817.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14817.html",
       "ID": "CVE-2019-14817"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14813.html",
+      "ID": "CVE-2019-14813"
     }
   ],
   "Criteria": {
@@ -43,6 +43,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "ghostscript is earlier than 0:9.25-2.el8_0.3"
+                      },
+                      {
+                        "Comment": "ghostscript is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -108,34 +120,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libgs-devel is earlier than 0:9.25-2.el8_0.3"
-                      },
-                      {
-                        "Comment": "libgs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ghostscript is earlier than 0:9.25-2.el8_0.3"
-                      },
-                      {
-                        "Comment": "ghostscript is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libgs is earlier than 0:9.25-2.el8_0.3"
                       },
                       {
                         "Comment": "libgs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgs-devel is earlier than 0:9.25-2.el8_0.3"
+                      },
+                      {
+                        "Comment": "libgs-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -160,6 +160,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "ghostscript is earlier than 0:9.25-2.el8_0.3"
+                      },
+                      {
+                        "Comment": "ghostscript is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "ghostscript-doc is earlier than 0:9.25-2.el8_0.3"
                       },
                       {
@@ -220,34 +232,22 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "libgs-devel is earlier than 0:9.25-2.el8_0.3"
-                      },
-                      {
-                        "Comment": "libgs-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "ghostscript is earlier than 0:9.25-2.el8_0.3"
-                      },
-                      {
-                        "Comment": "ghostscript is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "libgs is earlier than 0:9.25-2.el8_0.3"
                       },
                       {
                         "Comment": "libgs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libgs-devel is earlier than 0:9.25-2.el8_0.3"
+                      },
+                      {
+                        "Comment": "libgs-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -275,26 +275,26 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14811.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14811.html",
       "ID": "CVE-2019-14811"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14813.html",
-      "ID": "CVE-2019-14813"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14812.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14812.html",
       "ID": "CVE-2019-14812"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14817.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14817.html",
       "ID": "CVE-2019-14817"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14813.html",
+      "ID": "CVE-2019-14813"
     }
   ],
   "Issued": {
-    "Date": "2019-09-05"
+    "Date": "2019-09-06"
   }
 }

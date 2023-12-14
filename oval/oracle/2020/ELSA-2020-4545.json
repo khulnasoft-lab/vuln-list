@@ -7,18 +7,18 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4545.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4545.html",
       "ID": "ELSA-2020-4545"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-14889.html",
-      "ID": "CVE-2019-14889"
+      "URI": "https://linux.oracle.com/cve/CVE-2020-1730.html",
+      "ID": "CVE-2020-1730"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1730.html",
-      "ID": "CVE-2020-1730"
+      "URI": "https://linux.oracle.com/cve/CVE-2019-14889.html",
+      "ID": "CVE-2019-14889"
     }
   ],
   "Criteria": {
@@ -33,18 +33,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libssh-devel is earlier than 0:0.9.4-2.el8"
-                      },
-                      {
-                        "Comment": "libssh-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -66,6 +54,18 @@
                       },
                       {
                         "Comment": "libssh-config is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libssh-devel is earlier than 0:0.9.4-2.el8"
+                      },
+                      {
+                        "Comment": "libssh-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -145,13 +145,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-14889.html",
-      "ID": "CVE-2019-14889"
+      "Href": "https://linux.oracle.com/cve/CVE-2020-1730.html",
+      "ID": "CVE-2020-1730"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1730.html",
-      "ID": "CVE-2020-1730"
+      "Href": "https://linux.oracle.com/cve/CVE-2019-14889.html",
+      "ID": "CVE-2019-14889"
     }
   ],
   "Issued": {

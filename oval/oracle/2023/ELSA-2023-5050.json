@@ -1,18 +1,18 @@
 {
   "Title": "ELSA-2023-5050:  httpd:2.4 security update (MODERATE)",
-  "Description": "",
+  "Description": "httpd\n[2.4.37-56.0.1.7]\n- Resolves: #2176723 - CVE-2023-27522 httpd:2.4/httpd: mod_proxy_uwsgi HTTP\n  response splitting\n\n[2.4.37-56.0.1.6]\n- Set vstring per ORACLE_SUPPORT_PRODUCT [Orabug: 29892262]\n- Replace index.html with Oracle's index page oracle_index.html\n\n[2.4.37-56.6]\n- Resolves: #2190133 - mod_rewrite regression with CVE-2023-25690\n\n[2.4.37-56.4]\n- Resolves: #2177748 - CVE-2023-25690 httpd:2.4/httpd: HTTP request splitting\n  with mod_rewrite and mod_proxy\n\n[2.4.37-56]\n- Resolves: #2162499 - CVE-2006-20001 httpd: mod_dav: out-of-bounds read/write\n  of zero byte\n- Resolves: #2162485 - CVE-2022-37436 httpd: mod_proxy: HTTP response splitting\n- Resolves: #2162509 - CVE-2022-36760 httpd: mod_proxy_ajp: Possible request\n  smuggling\n\n[2.4.37-55]\n- Resolves: #2155961 - prevent sscg creating /dhparams.pem\n\n[2.4.37-54]\n- Resolves: #2095650 - Dependency from mod_http2 on httpd broken\n\n[2.4.37-53]\n- Resolves: #2050888 - httpd with SSL fails to start unless hostname command\n  was installed\n\n[2.4.37-52]\n- Add the SNI support in mod_proxy_wstunnel module for Apache httpd\n- Resolves: rhbz#2017543\n\nmod_http2\n[1.15.7-8.3]\n- Resolves: #2177748 - CVE-2023-25690 httpd:2.4/httpd: HTTP request splitting\n  with mod_rewrite and mod_proxy\n\n[1.15.7-7]\n- Resolves: #2095650 - Dependency from mod_http2 on httpd broken\n\n[1.15.7-6]\n- Backport SNI feature refactor\n- Resolves: rhbz#2137257\n  \nmod_md",
   "Platform": [
     "Oracle Linux 8"
   ],
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2023-5050.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2023-5050.html",
       "ID": "ELSA-2023-5050"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2023-27522.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-27522.html",
       "ID": "CVE-2023-27522"
     }
   ],
@@ -39,10 +39,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
+                                "Comment": "mod_http2 is earlier than 0:1.15.7-8.module+el8.8.0+21057+13668aee.3"
                               },
                               {
-                                "Comment": "mod_md is signed with the Oracle Linux 8 key"
+                                "Comment": "mod_http2 is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -51,10 +51,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "mod_http2 is earlier than 0:1.15.7-8.module+el8.8.0+21057+13668aee.3"
+                                "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
                               },
                               {
-                                "Comment": "mod_http2 is signed with the Oracle Linux 8 key"
+                                "Comment": "mod_md is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -203,10 +203,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
+                                "Comment": "mod_http2 is earlier than 0:1.15.7-8.module+el8.8.0+21057+13668aee.3"
                               },
                               {
-                                "Comment": "mod_md is signed with the Oracle Linux 8 key"
+                                "Comment": "mod_http2 is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -215,10 +215,10 @@
                             "Criterias": null,
                             "Criterions": [
                               {
-                                "Comment": "mod_http2 is earlier than 0:1.15.7-8.module+el8.8.0+21057+13668aee.3"
+                                "Comment": "mod_md is earlier than 1:2.0.8-8.module+el8.5.0+20475+4f6a8fd5"
                               },
                               {
-                                "Comment": "mod_http2 is signed with the Oracle Linux 8 key"
+                                "Comment": "mod_md is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -364,7 +364,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2023-27522.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-27522.html",
       "ID": "CVE-2023-27522"
     }
   ],

@@ -7,54 +7,82 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2022-9670.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2022-9670.html",
       "ID": "ELSA-2022-9670"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21125.html",
-      "ID": "CVE-2022-21125"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21127.html",
-      "ID": "CVE-2022-21127"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21123.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21123.html",
       "ID": "CVE-2022-21123"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2022-21166.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21125.html",
+      "ID": "CVE-2022-21125"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21166.html",
       "ID": "CVE-2022-21166"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21127.html",
+      "ID": "CVE-2022-21127"
     }
   ],
   "Criteria": {
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
             "Operator": "AND",
-            "Criterias": null,
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "microcode_ctl is earlier than 3:1.17-33.31.0.3.el6_10"
+                  },
+                  {
+                    "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
             "Criterions": [
               {
-                "Comment": "microcode_ctl is earlier than 3:1.17-33.31.0.3.el6_10"
-              },
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
               {
-                "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "microcode_ctl is earlier than 3:1.17-33.31.0.3.el6_10"
+                  },
+                  {
+                    "Comment": "microcode_ctl is signed with the Oracle Linux 6 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is i686"
               }
             ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is x86_64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [
@@ -67,23 +95,23 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21125.html",
-      "ID": "CVE-2022-21125"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21127.html",
-      "ID": "CVE-2022-21127"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21123.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21123.html",
       "ID": "CVE-2022-21123"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2022-21166.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21125.html",
+      "ID": "CVE-2022-21125"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21166.html",
       "ID": "CVE-2022-21166"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21127.html",
+      "ID": "CVE-2022-21127"
     }
   ],
   "Issued": {

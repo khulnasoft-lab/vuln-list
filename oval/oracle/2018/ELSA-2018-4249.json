@@ -7,17 +7,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-4249.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-4249.html",
       "ID": "ELSA-2018-4249"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0732.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-0732.html",
       "ID": "CVE-2018-0732"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-0737.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-0737.html",
       "ID": "CVE-2018-0737"
     }
   ],
@@ -30,30 +30,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "openssl-perl is earlier than 1:1.0.2k-12.0.3.el7"
-                  },
-                  {
-                    "Comment": "openssl-perl is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "openssl-static is earlier than 1:1.0.2k-12.0.3.el7"
-                  },
-                  {
-                    "Comment": "openssl-static is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -89,6 +65,30 @@
                     "Comment": "openssl-libs is signed with the Oracle Linux 7 key"
                   }
                 ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "openssl-perl is earlier than 1:1.0.2k-12.0.3.el7"
+                  },
+                  {
+                    "Comment": "openssl-perl is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "openssl-static is earlier than 1:1.0.2k-12.0.3.el7"
+                  },
+                  {
+                    "Comment": "openssl-static is signed with the Oracle Linux 7 key"
+                  }
+                ]
               }
             ],
             "Criterions": null
@@ -111,12 +111,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0732.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-0732.html",
       "ID": "CVE-2018-0732"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-0737.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-0737.html",
       "ID": "CVE-2018-0737"
     }
   ],

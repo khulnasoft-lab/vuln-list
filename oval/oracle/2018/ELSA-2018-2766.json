@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2018-2766.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2018-2766.html",
       "ID": "ELSA-2018-2766"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-6560.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-6560.html",
       "ID": "CVE-2018-6560"
     }
   ],
@@ -45,18 +45,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flatpak-libs is earlier than 0:0.8.8-4.el7_5"
-                      },
-                      {
-                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "flatpak-builder is earlier than 0:0.8.8-4.el7_5"
                       },
                       {
@@ -73,6 +61,18 @@
                       },
                       {
                         "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-libs is earlier than 0:0.8.8-4.el7_5"
+                      },
+                      {
+                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
                       }
                     ]
                   }
@@ -164,7 +164,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-6560.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-6560.html",
       "ID": "CVE-2018-6560"
     }
   ],

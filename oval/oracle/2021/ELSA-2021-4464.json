@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-4464.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-4464.html",
       "ID": "ELSA-2021-4464"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3445.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3445.html",
       "ID": "CVE-2021-3445"
     }
   ],
@@ -28,6 +28,18 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "libdnf-devel is earlier than 0:0.63.0-3.0.1.el8"
+                      },
+                      {
+                        "Comment": "libdnf-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "libdnf is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libdnf-devel is earlier than 0:0.63.0-3.0.1.el8"
-                      },
-                      {
-                        "Comment": "libdnf-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -217,6 +217,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "libdnf-devel is earlier than 0:0.63.0-3.0.1.el8"
+                      },
+                      {
+                        "Comment": "libdnf-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "dnf is earlier than 0:4.7.0-4.0.1.el8"
                       },
                       {
@@ -269,18 +281,6 @@
                       },
                       {
                         "Comment": "libdnf is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libdnf-devel is earlier than 0:0.63.0-3.0.1.el8"
-                      },
-                      {
-                        "Comment": "libdnf-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -404,11 +404,11 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3445.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3445.html",
       "ID": "CVE-2021-3445"
     }
   ],
   "Issued": {
-    "Date": "2021-11-14"
+    "Date": "2021-11-16"
   }
 }

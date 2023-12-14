@@ -7,12 +7,12 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4542.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4542.html",
       "ID": "ELSA-2020-4542"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-14382.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-14382.html",
       "ID": "CVE-2020-14382"
     }
   ],
@@ -37,6 +37,18 @@
                       },
                       {
                         "Comment": "cryptsetup is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cryptsetup-devel is earlier than 0:2.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "cryptsetup-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -85,18 +97,6 @@
                       },
                       {
                         "Comment": "veritysetup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cryptsetup-devel is earlier than 0:2.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "cryptsetup-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -133,6 +133,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "cryptsetup-devel is earlier than 0:2.3.3-2.el8"
+                      },
+                      {
+                        "Comment": "cryptsetup-devel is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "cryptsetup-libs is earlier than 0:2.3.3-2.el8"
                       },
                       {
@@ -175,18 +187,6 @@
                         "Comment": "veritysetup is signed with the Oracle Linux 8 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cryptsetup-devel is earlier than 0:2.3.3-2.el8"
-                      },
-                      {
-                        "Comment": "cryptsetup-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -212,7 +212,7 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-14382.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-14382.html",
       "ID": "CVE-2020-14382"
     }
   ],

@@ -7,73 +7,73 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2020-4847.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2020-4847.html",
       "ID": "ELSA-2020-4847"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14040.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14040.html",
       "ID": "CVE-2018-14040"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2018-14042.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2018-14042.html",
       "ID": "CVE-2018-14042"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11022.html",
-      "ID": "CVE-2020-11022"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2016-10735.html",
-      "ID": "CVE-2016-10735"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-8331.html",
-      "ID": "CVE-2019-8331"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10146.html",
-      "ID": "CVE-2019-10146"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-15720.html",
-      "ID": "CVE-2020-15720"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2015-9251.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2015-9251.html",
       "ID": "CVE-2015-9251"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-11358.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2016-10735.html",
+      "ID": "CVE-2016-10735"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-8331.html",
+      "ID": "CVE-2019-8331"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-11022.html",
+      "ID": "CVE-2020-11022"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-11358.html",
       "ID": "CVE-2019-11358"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10179.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10146.html",
+      "ID": "CVE-2019-10146"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10179.html",
       "ID": "CVE-2019-10179"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-1721.html",
-      "ID": "CVE-2020-1721"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2019-10221.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2019-10221.html",
       "ID": "CVE-2019-10221"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-11023.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-1721.html",
+      "ID": "CVE-2020-1721"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-11023.html",
       "ID": "CVE-2020-11023"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-15720.html",
+      "ID": "CVE-2020-15720"
     }
   ],
   "Criteria": {
@@ -487,6 +487,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "pki-servlet-engine is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python-nss-doc is earlier than 0:1.0.1-10.module+el8.3.0+7697+44932688"
                               },
                               {
@@ -515,6 +539,18 @@
                               },
                               {
                                 "Comment": "relaxngDatatype is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "resteasy is earlier than 0:3.0.26-3.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "resteasy is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -635,42 +671,6 @@
                               },
                               {
                                 "Comment": "xsom is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-engine is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "resteasy is earlier than 0:3.0.26-3.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "resteasy is signed with the Oracle Linux 8 key"
                               }
                             ]
                           }
@@ -1099,6 +1099,30 @@
                             "Criterias": null,
                             "Criterions": [
                               {
+                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "pki-servlet-engine is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
                                 "Comment": "python-nss-doc is earlier than 0:1.0.1-10.module+el8.3.0+7697+44932688"
                               },
                               {
@@ -1127,6 +1151,18 @@
                               },
                               {
                                 "Comment": "relaxngDatatype is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "resteasy is earlier than 0:3.0.26-3.module+el8.3.0+7697+44932688"
+                              },
+                              {
+                                "Comment": "resteasy is signed with the Oracle Linux 8 key"
                               }
                             ]
                           },
@@ -1249,42 +1285,6 @@
                                 "Comment": "xsom is signed with the Oracle Linux 8 key"
                               }
                             ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-4.0-api is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "pki-servlet-4.0-api is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "pki-servlet-engine is earlier than 1:9.0.30-1.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "pki-servlet-engine is signed with the Oracle Linux 8 key"
-                              }
-                            ]
-                          },
-                          {
-                            "Operator": "AND",
-                            "Criterias": null,
-                            "Criterions": [
-                              {
-                                "Comment": "resteasy is earlier than 0:3.0.26-3.module+el8.3.0+7697+44932688"
-                              },
-                              {
-                                "Comment": "resteasy is signed with the Oracle Linux 8 key"
-                              }
-                            ]
                           }
                         ],
                         "Criterions": null
@@ -1320,68 +1320,68 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14040.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14040.html",
       "ID": "CVE-2018-14040"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2018-14042.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2018-14042.html",
       "ID": "CVE-2018-14042"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11022.html",
-      "ID": "CVE-2020-11022"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2016-10735.html",
-      "ID": "CVE-2016-10735"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-8331.html",
-      "ID": "CVE-2019-8331"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10146.html",
-      "ID": "CVE-2019-10146"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-15720.html",
-      "ID": "CVE-2020-15720"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2015-9251.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2015-9251.html",
       "ID": "CVE-2015-9251"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-11358.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2016-10735.html",
+      "ID": "CVE-2016-10735"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-8331.html",
+      "ID": "CVE-2019-8331"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-11022.html",
+      "ID": "CVE-2020-11022"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-11358.html",
       "ID": "CVE-2019-11358"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10179.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10146.html",
+      "ID": "CVE-2019-10146"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10179.html",
       "ID": "CVE-2019-10179"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-1721.html",
-      "ID": "CVE-2020-1721"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2019-10221.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2019-10221.html",
       "ID": "CVE-2019-10221"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-11023.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-1721.html",
+      "ID": "CVE-2020-1721"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-11023.html",
       "ID": "CVE-2020-11023"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-15720.html",
+      "ID": "CVE-2020-15720"
     }
   ],
   "Issued": {

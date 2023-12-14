@@ -1,6 +1,6 @@
 {
   "Title": "ELSA-2013-0165:  java-1.7.0-openjdk security update (IMPORTANT)",
-  "Description": "[1.7.0.9-2.3.4.0.1.el5_9.1]\n- Add oracle-enterprise.patch\n- Fix DISTRO_NAME to 'Enterprise Linux'\n\n[1.7.0.9-2.3.4.el6.1]\n- Rewerted to IcedTea 2.3\n  - Rewerted patch105: java-1.7.0-openjdk-disable-system-lcms.patch\n  - Removed jcmd and idlj to alternatives\n  - make NOT executed with   DISABLE_INTREE_EC=true and UNLIMITED_CRYPTO=true\n  - Reapplied patch302 and deleted systemtap.patch\n  - buildver set to 9\n  - icedtea_version set to 2.3.4\n  - Unapplied patch112 java-1.7.openjdk-doNotUseDisabledEcc.patch\n  - removed /lib/security/US_export_policy.jar and lib/security/local_policy.jar\n  - java-1.7.0-openjdk-java-access-bridge-security.patch's path moved from\n    java.security-linux back to java.security\n- Resolves: rhbz#895031\n\n[1.7.0.11-2.4.0.el6.1]\n- Rewritten patch105: java-1.7.0-openjdk-disable-system-lcms.patch\n- Added jxmd and idlj to alternatives\n- make executed with   DISABLE_INTREE_EC=true and UNLIMITED_CRYPTO=true\n- Unapplied patch302 and deleted systemtap.patch\n- buildver increased to 11\n- icedtea_version set to 2.4.0\n- Added and applied patch112 java-1.7.openjdk-doNotUseDisabledEcc.patch\n- Added /lib/security/US_export_policy.jar and lib/security/local_policy.jar\n- Resolves: rhbz#895031",
+  "Description": "[1.7.0.9-2.3.4.1.0.1.el6_3]\n- Update DISTRO_NAME in specfile\n\n[1.7.0.9-2.3.4.1.el6]\n- Rewerted to IcedTea 2.3.4\n  - rewerted patch105: java-1.7.0-openjdk-disable-system-lcms.patch\n  - removed jxmd and idlj to alternatives\n  - make NOT executed with   DISABLE_INTREE_EC=true and UNLIMITED_CRYPTO=true\n  - re-applied patch302 and restored systemtap.patch\n  - buildver set to 9\n  - icedtea_version set to 2.3.4\n  - unapplied patch112 java-1.7.openjdk-doNotUseDisabledEcc.patch\n  - restored tmp-patches source tarball\n  - removed /lib/security/US_export_policy.jar and lib/security/local_policy.jar\n  - java-1.7.0-openjdk-java-access-bridge-security.patch's path moved from\n    java.security-linux back to java.security\n- Resolves: rhbz#895033\n\n[1.7.0.11-2.4.0.1.el6]\n- Rewritten patch105: java-1.7.0-openjdk-disable-system-lcms.patch\n- Added jxmd and idlj to alternatives\n- make executed with   DISABLE_INTREE_EC=true and UNLIMITED_CRYPTO=true\n- Unapplied patch302 and deleted systemtap.patch\n- buildver increased to 11\n- icedtea_version set to 2.4.0\n- Added and applied patch112 java-1.7.openjdk-doNotUseDisabledEcc.patch\n- removed tmp-patches source tarball\n- Added /lib/security/US_export_policy.jar and lib/security/local_policy.jar\n- Resolves: rhbz#895033",
   "Platform": [
     "Oracle Linux 5",
     "Oracle Linux 6"
@@ -8,17 +8,17 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2013-0165.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2013-0165.html",
       "ID": "ELSA-2013-0165"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2012-3174.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2012-3174.html",
       "ID": "CVE-2012-3174"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2013-0422.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2013-0422.html",
       "ID": "CVE-2013-0422"
     }
   ],
@@ -368,12 +368,12 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2012-3174.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2012-3174.html",
       "ID": "CVE-2012-3174"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2013-0422.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2013-0422.html",
       "ID": "CVE-2013-0422"
     }
   ],

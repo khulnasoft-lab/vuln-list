@@ -7,38 +7,38 @@
   "References": [
     {
       "Source": "elsa",
-      "URI": "https://linux-qa.oracle.com/errata/ELSA-2021-2314.html",
+      "URI": "https://linux.oracle.com/errata/ELSA-2021-2314.html",
       "ID": "ELSA-2021-2314"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-8648.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-8648.html",
       "ID": "CVE-2020-8648"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2021-3347.html",
-      "ID": "CVE-2021-3347"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-27170.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-27170.html",
       "ID": "CVE-2020-27170"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12363.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12362.html",
+      "ID": "CVE-2020-12362"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3347.html",
+      "ID": "CVE-2021-3347"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12363.html",
       "ID": "CVE-2020-12363"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12364.html",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-12364.html",
       "ID": "CVE-2020-12364"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux-qa.oracle.com/cve/CVE-2020-12362.html",
-      "ID": "CVE-2020-12362"
     }
   ],
   "Criteria": {
@@ -50,18 +50,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1160.31.1.el7"
-                  },
-                  {
-                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -187,6 +175,18 @@
                 "Criterias": null,
                 "Criterions": [
                   {
+                    "Comment": "kernel-tools-libs-devel is earlier than 0:3.10.0-1160.31.1.el7"
+                  },
+                  {
+                    "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
                     "Comment": "perf is earlier than 0:3.10.0-1160.31.1.el7"
                   },
                   {
@@ -227,36 +227,36 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-8648.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-8648.html",
       "ID": "CVE-2020-8648"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2021-3347.html",
-      "ID": "CVE-2021-3347"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-27170.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-27170.html",
       "ID": "CVE-2020-27170"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12363.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12362.html",
+      "ID": "CVE-2020-12362"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3347.html",
+      "ID": "CVE-2021-3347"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12363.html",
       "ID": "CVE-2020-12363"
     },
     {
       "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12364.html",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-12364.html",
       "ID": "CVE-2020-12364"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux-qa.oracle.com/cve/CVE-2020-12362.html",
-      "ID": "CVE-2020-12362"
     }
   ],
   "Issued": {
-    "Date": "2021-06-09"
+    "Date": "2021-06-10"
   }
 }
