@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2018-09-13T15:49:45Z",
+  "UpdatedAt": "2024-01-23T16:04:49Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "bootstrap"
@@ -74,6 +74,9 @@
         "Url": "https://www.tenable.com/security/tns-2021-14"
       },
       {
+        "Url": "https://github.com/twbs/bootstrap/commit/2a5ba23ce8f041f3548317acc992ed8a736b609d"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-7mvr-5x2g-wfc8"
       }
     ],
@@ -87,12 +90,12 @@
         "Value": "CVE-2018-14042"
       }
     ],
-    "Description": "In Bootstrap before 4.1.2, XSS is possible in the data-container property of tooltip.  This is similar to CVE-2018-14041.",
+    "Description": "In Bootstrap starting in version 2.3.0 and prior to versions 3.4.0 and 4.1.2, XSS is possible in the data-container property of tooltip.  This is similar to CVE-2018-14041.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-09-13T15:50:32Z",
     "Severity": "MODERATE",
     "Summary": "Bootstrap Cross-site Scripting vulnerability",
-    "UpdatedAt": "2023-05-22T16:07:37Z",
+    "UpdatedAt": "2024-01-23T16:04:49Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -102,9 +105,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "3.4.0"
+      },
+      "VulnerableVersionRange": "\u003e= 2.3.0, \u003c 3.4.0"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "4.1.2"
       },
-      "VulnerableVersionRange": "\u003c 4.1.2"
+      "VulnerableVersionRange": "\u003e= 4.0.0, \u003c 4.1.2"
     }
   ]
 }
