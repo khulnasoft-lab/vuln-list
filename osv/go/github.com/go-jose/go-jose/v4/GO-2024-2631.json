@@ -1,7 +1,11 @@
 {
   "id": "GO-2024-2631",
-  "modified": "2024-03-15T18:16:11Z",
+  "modified": "2024-03-15T18:41:36.441692Z",
   "published": "2024-03-15T18:16:11Z",
+  "aliases": [
+    "CVE-2024-28180",
+    "GHSA-c5q2-7r4c-mv6g"
+  ],
   "summary": "Decompression bomb vulnerability in github.com/go-jose/go-jose",
   "details": "An attacker could send a JWE containing compressed data that used large amounts of memory and CPU when decompressed by Decrypt or DecryptMulti.",
   "affected": [
