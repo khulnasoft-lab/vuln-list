@@ -1,0 +1,143 @@
+{
+  "Title": "Security update for xen",
+  "Tracking": {
+    "ID": "SUSE-SU-2024:0934-1",
+    "Status": "Final",
+    "Version": "1",
+    "InitialReleaseDate": "2024-03-19T12:03:39Z",
+    "CurrentReleaseDate": "2024-03-19T12:03:39Z",
+    "RevisionHistory": [
+      {
+        "Number": "1",
+        "Date": "2024-03-19T12:03:39Z",
+        "Description": "current"
+      }
+    ]
+  },
+  "Notes": [
+    {
+      "Text": "Security update for xen",
+      "Title": "Topic",
+      "Type": "Summary"
+    },
+    {
+      "Text": "This update for xen fixes the following issues:\n\n- CVE-2023-46841: Fixed shadow stack vs exceptions from emulation stubs (XSA-451) (bsc#1219885).\n",
+      "Title": "Details",
+      "Type": "General"
+    },
+    {
+      "Text": "The CVRF data is provided by SUSE under the Creative Commons License 4.0 with Attribution (CC-BY-4.0).",
+      "Title": "Terms of Use",
+      "Type": "Legal Disclaimer"
+    },
+    {
+      "Text": "Image SLES15-SP4-Micro-5-3-2024-934,Image SLES15-SP4-Micro-5-3-EC2-2024-934,SUSE-2024-934,SUSE-SLE-Micro-5.3-2024-934,SUSE-SLE-Micro-5.4-2024-934,openSUSE-Leap-Micro-5.3-2024-934,openSUSE-Leap-Micro-5.4-2024-934",
+      "Title": "Patchnames",
+      "Type": "Details"
+    }
+  ],
+  "ProductTree": {
+    "Relationships": [
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-tools-domU-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-tools-domU-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "Image SLES15-SP4-Micro-5-3-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "SUSE Linux Enterprise Micro 5.4",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "openSUSE Leap Micro 5.3",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "xen-libs-4.16.5_14-150400.4.49.1",
+        "RelatesToProductReference": "openSUSE Leap Micro 5.4",
+        "RelationType": "Default Component Of"
+      }
+    ]
+  },
+  "References": [
+    {
+      "URL": "https://www.suse.com/support/update/announcement/2024/suse-su-20240934-1/",
+      "Description": "Link for SUSE-SU-2024:0934-1"
+    },
+    {
+      "URL": "https://lists.suse.com/pipermail/sle-security-updates/2024-March/018203.html",
+      "Description": "E-Mail link for SUSE-SU-2024:0934-1"
+    },
+    {
+      "URL": "https://www.suse.com/support/security/rating/",
+      "Description": "SUSE Security Ratings"
+    },
+    {
+      "URL": "https://bugzilla.suse.com/1219885",
+      "Description": "SUSE Bug 1219885"
+    },
+    {
+      "URL": "https://www.suse.com/security/cve/CVE-2023-46841/",
+      "Description": "SUSE CVE CVE-2023-46841 page"
+    }
+  ],
+  "Vulnerabilities": [
+    {
+      "CVE": "CVE-2023-46841",
+      "Description": "Recent x86 CPUs offer functionality named Control-flow Enforcement\nTechnology (CET).  A sub-feature of this are Shadow Stacks (CET-SS).\nCET-SS is a hardware feature designed to protect against Return Oriented\nProgramming attacks. When enabled, traditional stacks holding both data\nand return addresses are accompanied by so called \"shadow stacks\",\nholding little more than return addresses.  Shadow stacks aren't\nwritable by normal instructions, and upon function returns their\ncontents are used to check for possible manipulation of a return address\ncoming from the traditional stack.\n\nIn particular certain memory accesses need intercepting by Xen.  In\nvarious cases the necessary emulation involves kind of replaying of\nthe instruction.  Such replaying typically involves filling and then\ninvoking of a stub.  Such a replayed instruction may raise an\nexceptions, which is expected and dealt with accordingly.\n\nUnfortunately the interaction of both of the above wasn't right:\nRecovery involves removal of a call frame from the (traditional) stack.\nThe counterpart of this operation for the shadow stack was missing.\n",
+      "Threats": [
+        {
+          "Type": "Impact",
+          "Severity": "moderate"
+        }
+      ],
+      "References": [
+        {
+          "URL": "https://www.suse.com/security/cve/CVE-2023-46841.html",
+          "Description": "CVE-2023-46841"
+        },
+        {
+          "URL": "https://bugzilla.suse.com/1219885",
+          "Description": "SUSE Bug 1219885"
+        }
+      ],
+      "ProductStatuses": [
+        {
+          "Type": "Fixed",
+          "ProductID": [
+            "Image SLES15-SP4-Micro-5-3-EC2:xen-libs-4.16.5_14-150400.4.49.1",
+            "Image SLES15-SP4-Micro-5-3-EC2:xen-tools-domU-4.16.5_14-150400.4.49.1",
+            "Image SLES15-SP4-Micro-5-3:xen-libs-4.16.5_14-150400.4.49.1",
+            "Image SLES15-SP4-Micro-5-3:xen-tools-domU-4.16.5_14-150400.4.49.1",
+            "SUSE Linux Enterprise Micro 5.3:xen-libs-4.16.5_14-150400.4.49.1",
+            "SUSE Linux Enterprise Micro 5.4:xen-libs-4.16.5_14-150400.4.49.1",
+            "openSUSE Leap Micro 5.3:xen-libs-4.16.5_14-150400.4.49.1",
+            "openSUSE Leap Micro 5.4:xen-libs-4.16.5_14-150400.4.49.1"
+          ]
+        }
+      ],
+      "CVSSScoreSets": {}
+    }
+  ]
+}
