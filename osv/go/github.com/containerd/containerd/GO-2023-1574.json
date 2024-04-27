@@ -1,6 +1,6 @@
 {
   "id": "GO-2023-1574",
-  "modified": "2023-11-08T04:09:15.359127Z",
+  "modified": "2024-04-26T21:22:31Z",
   "published": "2023-02-17T20:52:58Z",
   "aliases": [
     "CVE-2022-2989",
@@ -14,6 +14,16 @@
     "GHSA-phjr-8j92-w5v7",
     "GHSA-rc4r-wh2q-q6c4",
     "GO-2022-1008"
+  ],
+  "related": [
+    "CVE-2022-2989",
+    "CVE-2022-2990",
+    "CVE-2022-2995",
+    "CVE-2022-36109",
+    "GHSA-4wjj-jwc9-2x96",
+    "GHSA-fjm8-m7m6-2fjp",
+    "GHSA-phjr-8j92-w5v7",
+    "GHSA-rc4r-wh2q-q6c4"
   ],
   "summary": "Privilege escalation via supplementary groups in github.com/containerd/containerd",
   "details": "Supplementary groups are not set up properly inside a container. If an attacker has direct access to a container and manipulates their supplementary group access, they may be able to use supplementary group access to bypass primary group restrictions in some cases and potentially escalate privileges in the container. Uses of the containerd client library may also have improperly setup supplementary groups.",
