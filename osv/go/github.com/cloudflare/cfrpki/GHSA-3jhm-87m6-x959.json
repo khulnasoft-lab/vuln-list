@@ -8,6 +8,9 @@
     "GHSA-cqh2-vc2f-q4fh",
     "GO-2022-0248"
   ],
+  "related": [
+    "GO-2022-0248"
+  ],
   "summary": "Path traversal mitigation bypass in OctoRPKI",
   "details": "### Impact\nThe existing URI path filters in OctoRPKI (version \u003c 1.4.3) mitigating Path traversal vulnerability could be bypassed by an attacker. In case a malicious TAL file is parsed, it was possible to write files outside the base cache folder.\n\n### Specific Go Packages Affected\ngithub.com/cloudflare/cfrpki/cmd/octorpki\n\n### Patches\nThe issue was fixed in version 1.4.3\n\n### References\n[CVE-2021-3907](https://www.cvedetails.com/cve/CVE-2021-3907/)\n\n",
   "affected": [
