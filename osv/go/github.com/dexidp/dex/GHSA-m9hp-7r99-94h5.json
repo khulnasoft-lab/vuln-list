@@ -12,6 +12,9 @@
     "GO-2021-0056",
     "GO-2022-0409"
   ],
+  "related": [
+    "GO-2020-0050"
+  ],
   "summary": "Critical security issues in XML encoding in github.com/dexidp/dex",
   "details": "### Impact\n\nThe following vulnerabilities have been disclosed, which impact users leveraging the SAML connector:\n\nSignature Validation Bypass (CVE-2020-15216): https://github.com/russellhaering/goxmldsig/security/advisories/GHSA-q547-gmf8-8jr7\n\n`encoding/xml` instabilities:\n - [Element namespace prefix instability (CVE-2020-29511)](https://github.com/mattermost/xml-roundtrip-validator/blob/master/advisories/unstable-elements.md)\n - [Attribute namespace prefix instability (CVE-2020-29509)](https://github.com/mattermost/xml-roundtrip-validator/blob/master/advisories/unstable-attributes.md)\n - [Directive comment instability (CVE-2020-29510)](https://github.com/mattermost/xml-roundtrip-validator/blob/master/advisories/unstable-directives.md)\n\n### Patches\n\nImmediately update to [Dex v2.27.0](https://github.com/dexidp/dex/releases/tag/v2.27.0).\n\n### Workarounds\n\nThere are no known workarounds.",
   "affected": [
