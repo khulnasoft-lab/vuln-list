@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2020-55",
-  "modified": "2023-11-08T04:02:11.287010Z",
+  "modified": "2024-04-29T10:43:29.243088Z",
   "published": "2020-05-07T00:15:00Z",
   "aliases": [
-    "CVE-2020-12691"
+    "CVE-2020-12691",
+    "GHSA-4427-7f3w-mqv6"
   ],
   "details": "An issue was discovered in OpenStack Keystone before 15.0.1, and 16.0.0. Any authenticated user can create an EC2 credential for themselves for a project that they have a specified role on, and then perform an update to the credential user and project, allowing them to masquerade as another user. This potentially allows a malicious user to act as the admin on a project another user has the admin role on, which can effectively grant that user global admin privileges.",
   "affected": [
