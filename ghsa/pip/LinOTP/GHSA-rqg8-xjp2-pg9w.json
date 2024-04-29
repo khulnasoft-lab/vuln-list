@@ -1,0 +1,59 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-04-29T09:47:35Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "LinOTP"
+  },
+  "Advisory": {
+    "DatabaseId": 135557,
+    "Id": "GSA_kwCzR0hTQS1ycWc4LXhqcDItcGc5d84AAhGF",
+    "GhsaId": "GHSA-rqg8-xjp2-pg9w",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2019-12887"
+      },
+      {
+        "Url": "https://www.linotp.org/CVE-2019-12887.txt"
+      },
+      {
+        "Url": "https://github.com/LinOTP/LinOTP/commit/6d28d93af59d2ce0d844a6a3282148064efc6ad8"
+      },
+      {
+        "Url": "https://linotp.org/linotp-hotfix-autoresync.html"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-rqg8-xjp2-pg9w"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-rqg8-xjp2-pg9w"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2019-12887"
+      }
+    ],
+    "Description": "LinOTP is prone to a replay attack with activated automatic resynchronization. This vulnerability may allow an attacker to successfully log in with OTP values recorded at a previous point in time.\n\nThis attack is only possible if automatic resynchronization is enabled for the TOTP token type. The automatic resynchronization  is deactivated by default. All other tokens are unaffected.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-05-24T16:48:44Z",
+    "Severity": "HIGH",
+    "Summary": "LinOTP replay vulnerability with auto resynchronization enabled for TOTP token",
+    "UpdatedAt": "2024-04-29T09:47:35Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 8.1,
+      "VectorString": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.10.5.3"
+      },
+      "VulnerableVersionRange": "\u003c 2.10.5.3"
+    }
+  ]
+}
