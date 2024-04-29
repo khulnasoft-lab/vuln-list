@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2018-92",
-  "modified": "2023-11-08T04:00:01.860690Z",
+  "modified": "2024-04-29T14:56:54.654758Z",
   "published": "2018-11-02T21:29:00Z",
   "aliases": [
-    "CVE-2018-16849"
+    "CVE-2018-16849",
+    "GHSA-fqw7-c6vr-q29m"
   ],
   "details": "A flaw was found in openstack-mistral. By manipulating the SSH private key filename, the std.ssh action can be used to disclose the presence of arbitrary files within the filesystem of the executor running the action. Since std.ssh private_key_filename can take an absolute path, it can be used to assess whether or not a file exists on the executor's filesystem.",
   "affected": [
