@@ -1,0 +1,61 @@
+{
+  "id": "GHSA-3x76-j3jj-439j",
+  "modified": "2024-04-29T17:11:23.900603Z",
+  "published": "2022-05-17T03:02:29Z",
+  "aliases": [
+    "CVE-2016-7148",
+    "PYSEC-2016-31"
+  ],
+  "summary": "MoinMoin Cross-site Scripting (XSS) vulnerability",
+  "details": "MoinMoin 1.9.8 allows remote attackers to conduct \"JavaScript injection\" attacks by using the \"page creation\" approach, related to a \"Cross Site Scripting (XSS)\" issue affecting the action=AttachFile (via page name) component.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "moin",
+        "purl": "pkg:pypi/moin"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.9.8"
+            },
+            {
+              "fixed": "1.9.9"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.9.8"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-3x76-j3jj-439j/GHSA-3x76-j3jj-439j.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-7148"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200227212542/http://www.securityfocus.com/bid/94259"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20230601130846/https://www.curesec.com/blog/article/blog/MoinMoin-198-XSS-175.html"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.debian.org/security/2016/dsa-3715"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.ubuntu.com/usn/USN-3137-1"
+    }
+  ]
+}

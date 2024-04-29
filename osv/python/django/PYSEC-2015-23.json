@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2015-23",
-  "modified": "2023-11-08T03:57:58.900490Z",
+  "modified": "2024-04-29T16:56:34.919877Z",
   "published": "2015-08-24T14:59:00Z",
   "aliases": [
-    "CVE-2015-5964"
+    "CVE-2015-5964",
+    "GHSA-x38m-486c-2wr9"
   ],
   "details": "The (1) contrib.sessions.backends.base.SessionBase.flush and (2) cache_db.SessionStore.flush functions in Django 1.7.x before 1.7.10, 1.4.x before 1.4.22, and possibly other versions create empty sessions in certain circumstances, which allows remote attackers to cause a denial of service (session store consumption) via unspecified vectors.",
   "affected": [

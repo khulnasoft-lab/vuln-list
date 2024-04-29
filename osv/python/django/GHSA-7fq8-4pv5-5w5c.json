@@ -1,7 +1,11 @@
 {
   "id": "GHSA-7fq8-4pv5-5w5c",
-  "modified": "2024-04-29T12:28:15.047974Z",
+  "modified": "2024-04-29T12:41:29.240564Z",
   "published": "2022-05-14T02:06:51Z",
+  "aliases": [
+    "CVE-2015-2317",
+    "PYSEC-2015-9"
+  ],
   "summary": "Django cross-site scripting (XSS) attack via user-supplied redirect URLs",
   "details": "The utils.http.is_safe_url function in Django before 1.4.20, 1.5.x, 1.6.x before 1.6.11, 1.7.x before 1.7.7, and 1.8.x before 1.8c1 does not properly validate URLs, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a control character in a URL, as demonstrated by a \\x08javascript: URL.",
   "affected": [
