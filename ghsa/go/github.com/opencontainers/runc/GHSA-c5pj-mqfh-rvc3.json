@@ -39,19 +39,15 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-c5pj-mqfh-rvc3"
-      },
-      {
-        "Type": "CVE",
-        "Value": "CVE-2024-3154"
       }
     ],
-    "Description": "A flaw was found in cri-o, where an arbitrary systemd property can be injected via a Pod annotation. Any user who can create a pod with an arbitrary annotation may perform an arbitrary action on the host system. This issue has its root in how runc handles Config Annotations lists.",
+    "Description": "## Withdrawn Advisory\n\nThis advisory has been withdrawn because it was incorrectly attributed to runc. Please see the issue [here](https://github.com/opencontainers/runc/issues/4263) for more information.\n\n## Original Description\n\nA flaw was found in cri-o, where an arbitrary systemd property can be injected via a Pod annotation. Any user who can create a pod with an arbitrary annotation may perform an arbitrary action on the host system. This issue has its root in how runc handles Config Annotations lists.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-04-26T06:30:34Z",
     "Severity": "HIGH",
-    "Summary": "Runc allows an arbitrary systemd property to be injected",
-    "UpdatedAt": "2024-04-26T22:46:06Z",
-    "WithdrawnAt": "",
+    "Summary": "Withdrawn: Runc allows an arbitrary systemd property to be injected",
+    "UpdatedAt": "2024-04-30T09:37:24Z",
+    "WithdrawnAt": "2024-04-30T09:37:23Z",
     "CVSS": {
       "Score": 7.2,
       "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H"
