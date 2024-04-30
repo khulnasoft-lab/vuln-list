@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2012-16",
+  "id": "GHSA-v367-p58w-98h5",
   "modified": "2024-04-30T15:11:46.919052Z",
-  "published": "2012-06-17T03:41:00Z",
+  "published": "2022-05-17T01:46:08Z",
   "aliases": [
     "CVE-2012-2417",
-    "GHSA-v367-p58w-98h5"
+    "PYSEC-2012-16"
   ],
+  "summary": "PyCrypto makes Use of Insufficiently Random Values",
   "details": "PyCrypto before 2.6 does not produce appropriate prime numbers when using an ElGamal scheme to generate a key, which reduces the signature space or public key space and makes it easier for attackers to conduct brute force attacks to obtain the private key.",
   "affected": [
     {
@@ -15,18 +16,6 @@
         "purl": "pkg:pypi/pycrypto"
       },
       "ranges": [
-        {
-          "type": "GIT",
-          "repo": "https://github.com/Legrandin/pycrypto",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "9f912f13df99ad3421eff360d6a62d7dbec755c2"
-            }
-          ]
-        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -53,13 +42,17 @@
         "2.5"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/pycrypto/PYSEC-2012-16.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-v367-p58w-98h5/GHSA-v367-p58w-98h5.json"
       }
     }
   ],
   "references": [
     {
-      "type": "FIX",
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2012-2417"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/Legrandin/pycrypto/commit/9f912f13df99ad3421eff360d6a62d7dbec755c2"
     },
     {
@@ -68,23 +61,27 @@
     },
     {
       "type": "WEB",
-      "url": "http://www.openwall.com/lists/oss-security/2012/05/25/1"
+      "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/75871"
     },
     {
-      "type": "WEB",
-      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081789.html"
+      "type": "PACKAGE",
+      "url": "https://github.com/Legrandin/pycrypto"
     },
     {
       "type": "WEB",
       "url": "https://github.com/dlitz/pycrypto/blob/373ea760f21701b162e8c4912a66928ee30d401a/ChangeLog"
     },
     {
-      "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/49263"
+      "type": "WEB",
+      "url": "https://hermes.opensuse.org/messages/15083589"
     },
     {
       "type": "WEB",
-      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081759.html"
+      "url": "https://web.archive.org/web/20140724111917/http://secunia.com/advisories/49263"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200228184120/http://www.securityfocus.com/bid/53687"
     },
     {
       "type": "WEB",
@@ -92,27 +89,23 @@
     },
     {
       "type": "WEB",
-      "url": "http://www.osvdb.org/82279"
+      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081759.html"
     },
     {
       "type": "WEB",
-      "url": "http://www.securityfocus.com/bid/53687"
+      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2012-June/081789.html"
     },
     {
       "type": "WEB",
-      "url": "https://hermes.opensuse.org/messages/15083589"
-    },
-    {
-      "type": "ADVISORY",
       "url": "http://www.debian.org/security/2012/dsa-2502"
     },
     {
-      "type": "ADVISORY",
+      "type": "WEB",
       "url": "http://www.mandriva.com/security/advisories?name=MDVSA-2012:117"
     },
     {
       "type": "WEB",
-      "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/75871"
+      "url": "http://www.openwall.com/lists/oss-security/2012/05/25/1"
     }
   ]
 }
