@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2013-10",
+  "id": "GHSA-f594-f3v3-g649",
   "modified": "2024-04-30T15:11:51.575998Z",
-  "published": "2013-08-06T02:52:00Z",
+  "published": "2022-05-17T05:03:06Z",
   "aliases": [
     "CVE-2013-1630",
-    "GHSA-f594-f3v3-g649"
+    "PYSEC-2013-10"
   ],
+  "summary": "pyshop vulnerable to man-in-the-middle attacks due to using HTTP to retrieve packages from the PyPI repository",
   "details": "pyshop before 0.7.1 uses HTTP to retrieve packages from the PyPI repository, and does not perform integrity checks on package contents, which allows man-in-the-middle attackers to execute arbitrary code via a crafted response to a download operation.",
   "affected": [
     {
@@ -15,18 +16,6 @@
         "purl": "pkg:pypi/pyshop"
       },
       "ranges": [
-        {
-          "type": "GIT",
-          "repo": "https://github.com/mardiros/pyshop",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "ffadb0bcdef1e385884571670210cfd6ba351784"
-            }
-          ]
-        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -49,22 +38,30 @@
         "0.7"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/pyshop/PYSEC-2013-10.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-f594-f3v3-g649/GHSA-f594-f3v3-g649.json"
       }
     }
   ],
   "references": [
     {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-1630"
+    },
+    {
       "type": "WEB",
-      "url": "http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a/"
+      "url": "https://github.com/mardiros/pyshop/commit/ffadb0bcdef1e385884571670210cfd6ba351784"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/mardiros/pyshop"
     },
     {
       "type": "WEB",
       "url": "https://github.com/mardiros/pyshop/blob/master/CHANGES.txt"
     },
     {
-      "type": "FIX",
-      "url": "https://github.com/mardiros/pyshop/commit/ffadb0bcdef1e385884571670210cfd6ba351784"
+      "type": "WEB",
+      "url": "http://www.reddit.com/r/Python/comments/17rfh7/warning_dont_use_pip_in_an_untrusted_network_a"
     }
   ]
 }
