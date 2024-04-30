@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2013-15",
+  "id": "GHSA-7wx3-vr2f-6p29",
   "modified": "2024-04-30T09:11:55.104863Z",
-  "published": "2013-11-05T18:55:00Z",
+  "published": "2022-05-17T04:58:31Z",
   "aliases": [
     "CVE-2013-6617",
-    "GHSA-7wx3-vr2f-6p29"
+    "PYSEC-2013-15"
   ],
+  "summary": "SaltStack Privilege Escalation vulnerability",
   "details": "The salt master in Salt (aka SaltStack) 0.11.0 through 0.17.0 does not properly drop group privileges, which makes it easier for remote attackers to gain privileges.",
   "affected": [
     {
@@ -52,11 +53,19 @@
         "0.17.0rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/salt/PYSEC-2013-15.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-7wx3-vr2f-6p29/GHSA-7wx3-vr2f-6p29.json"
       }
     }
   ],
   "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-6617"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/saltstack/salt"
+    },
     {
       "type": "WEB",
       "url": "http://docs.saltstack.com/topics/releases/0.17.1.html"
