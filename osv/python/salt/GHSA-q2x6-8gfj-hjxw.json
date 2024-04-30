@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2017-70",
+  "id": "GHSA-q2x6-8gfj-hjxw",
   "modified": "2024-04-30T15:11:47.776167Z",
-  "published": "2017-10-10T16:29:00Z",
+  "published": "2022-05-17T00:26:26Z",
   "aliases": [
     "CVE-2015-6918",
-    "GHSA-q2x6-8gfj-hjxw"
+    "PYSEC-2017-70"
   ],
+  "summary": "salt leaks git usernames and passwords to the log",
   "details": "salt before 2015.5.5 leaks git usernames and passwords to the log.",
   "affected": [
     {
@@ -15,18 +16,6 @@
         "purl": "pkg:pypi/salt"
       },
       "ranges": [
-        {
-          "type": "GIT",
-          "repo": "https://github.com/saltstack/salt",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "28aa9b105804ff433d8f663b2f9b804f2b75495a"
-            }
-          ]
-        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -127,18 +116,34 @@
         "2015.5.4"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/salt/PYSEC-2017-70.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-q2x6-8gfj-hjxw/GHSA-q2x6-8gfj-hjxw.json"
       }
     }
   ],
   "references": [
     {
-      "type": "FIX",
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2015-6918"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/saltstack/salt/issues/26484"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/saltstack/salt/pull/26486"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/saltstack/salt/commit/28aa9b105804ff433d8f663b2f9b804f2b75495a"
     },
     {
-      "type": "REPORT",
+      "type": "WEB",
       "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1257154"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/saltstack/salt"
     }
   ]
 }
