@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2018-87",
-  "modified": "2024-05-01T17:28:27.973210Z",
-  "published": "2018-03-14T13:29:00Z",
+  "id": "GHSA-6v56-cpg6-3rpx",
+  "modified": "2024-05-01T17:28:15.496979Z",
+  "published": "2022-05-13T01:24:56Z",
   "aliases": [
-    "CVE-2018-1000132",
-    "GHSA-4mr4-7vjv-9hm6"
+    "CVE-2017-17458",
+    "PYSEC-2017-90"
   ],
-  "details": "Mercurial version 4.5 and earlier contains a Incorrect Access Control (CWE-285) vulnerability in Protocol server that can result in Unauthorized data access. This attack appear to be exploitable via network connectivity. This vulnerability appears to have been fixed in 4.5.1.",
+  "summary": "Mercurial vulnerable to arbitrary code injection",
+  "details": "In Mercurial before 4.4.1, it is possible that a specially malformed repository can cause Git subrepositories to run arbitrary code in the form of a `.git/hooks/post-update` script checked into the repository. Typical use of Mercurial prevents construction of such repositories, but they can be created programmatically.",
   "affected": [
     {
       "package": {
@@ -22,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "4.5.1"
+              "fixed": "4.4.1"
             }
           ]
         }
@@ -163,38 +164,57 @@
         "4.3rc0",
         "4.4",
         "4.4-rc",
-        "4.4.1",
-        "4.4.2",
-        "4.4rc0",
-        "4.5",
-        "4.5-rc",
-        "4.5rc0"
+        "4.4rc0"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/mercurial/PYSEC-2018-87.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-6v56-cpg6-3rpx/GHSA-6v56-cpg6-3rpx.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.5.1_.2F_4.5.2_.282018-03-06.29"
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-17458"
     },
     {
       "type": "WEB",
-      "url": "https://lists.debian.org/debian-lts-announce/2018/03/msg00034.html"
+      "url": "https://bz.mercurial-scm.org/show_bug.cgi?id=5730"
+    },
+    {
+      "type": "WEB",
+      "url": "https://confluence.atlassian.com/sourcetreekb/sourcetree-security-advisory-2018-01-24-942834324.html"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/dscho/hg"
+    },
+    {
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2017/12/msg00027.html"
     },
     {
       "type": "WEB",
       "url": "https://lists.debian.org/debian-lts-announce/2018/07/msg00005.html"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://access.redhat.com/errata/RHSA-2019:2276"
+      "type": "WEB",
+      "url": "https://lists.debian.org/debian-lts-announce/2018/07/msg00041.html"
     },
     {
       "type": "WEB",
       "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00032.html"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200227132808/http://www.securityfocus.com/bid/102926"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.mercurial-scm.org/pipermail/mercurial-devel/2017-November/107333.html"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.4.1_.282017-11-07.29"
     }
   ]
 }
