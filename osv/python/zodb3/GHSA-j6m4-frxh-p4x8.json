@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2010-27",
+  "id": "GHSA-j6m4-frxh-p4x8",
   "modified": "2024-05-01T16:58:37.142621Z",
-  "published": "2010-10-19T20:00:00Z",
+  "published": "2022-05-17T05:44:11Z",
   "aliases": [
     "CVE-2010-3495",
-    "GHSA-j6m4-frxh-p4x8"
+    "PYSEC-2010-27"
   ],
-  "details": "Race condition in ZEO/StorageServer.py in Zope Object Database (ZODB) before 3.10.0 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected return value of None, an unexpected value of None for the address, or an ECONNABORTED, EAGAIN, or EWOULDBLOCK error, a related issue to CVE-2010-3492.",
+  "summary": "Zope Object Database Denial of Service vulnerability",
+  "details": "Race condition in `ZEO/StorageServer.py` in Zope Object Database (ZODB) before 3.10.0a2 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected return value of None, an unexpected value of None for the address, or an ECONNABORTED, EAGAIN, or EWOULDBLOCK error, a related issue to CVE-2010-3492.",
   "affected": [
     {
       "package": {
@@ -22,13 +23,14 @@
               "introduced": "0"
             },
             {
-              "fixed": "3.10.0a1"
+              "fixed": "3.10.0a2"
             }
           ]
         }
       ],
       "versions": [
         "3.1.5",
+        "3.10.0a1",
         "3.2.10",
         "3.3.1",
         "3.4.2",
@@ -89,22 +91,46 @@
         "3.9.7"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/zodb3/PYSEC-2010-27.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-j6m4-frxh-p4x8/GHSA-j6m4-frxh-p4x8.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "http://www.openwall.com/lists/oss-security/2010/09/11/2"
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-3495"
     },
     {
-      "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/41755"
+      "type": "WEB",
+      "url": "https://bugs.launchpad.net/zodb/+bug/135108"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pypi.org/project/ZODB3/3.10.0a2/#a2-2010-05-04"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20111225005929/http://secunia.com/advisories/41755"
+    },
+    {
+      "type": "WEB",
+      "url": "http://bugs.python.org/issue6706"
+    },
+    {
+      "type": "WEB",
+      "url": "http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00006.html"
     },
     {
       "type": "WEB",
       "url": "http://pypi.python.org/pypi/ZODB3/3.10.0#id1"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.openwall.com/lists/oss-security/2010/09/09/6"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.openwall.com/lists/oss-security/2010/09/11/2"
     },
     {
       "type": "WEB",
@@ -113,22 +139,6 @@
     {
       "type": "WEB",
       "url": "http://www.openwall.com/lists/oss-security/2010/09/24/3"
-    },
-    {
-      "type": "WEB",
-      "url": "http://bugs.python.org/issue6706"
-    },
-    {
-      "type": "WEB",
-      "url": "http://www.openwall.com/lists/oss-security/2010/09/09/6"
-    },
-    {
-      "type": "WEB",
-      "url": "https://bugs.launchpad.net/zodb/+bug/135108"
-    },
-    {
-      "type": "WEB",
-      "url": "http://lists.opensuse.org/opensuse-security-announce/2010-12/msg00006.html"
     }
   ]
 }

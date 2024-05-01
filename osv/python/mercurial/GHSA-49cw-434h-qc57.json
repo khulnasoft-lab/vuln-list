@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2018-87",
-  "modified": "2024-05-01T17:28:27.973210Z",
-  "published": "2018-03-14T13:29:00Z",
+  "id": "GHSA-49cw-434h-qc57",
+  "modified": "2024-05-01T17:28:15.570672Z",
+  "published": "2022-05-17T02:37:31Z",
   "aliases": [
-    "CVE-2018-1000132",
-    "GHSA-4mr4-7vjv-9hm6"
+    "CVE-2016-3105",
+    "PYSEC-2016-28"
   ],
-  "details": "Mercurial version 4.5 and earlier contains a Incorrect Access Control (CWE-285) vulnerability in Protocol server that can result in Unauthorized data access. This attack appear to be exploitable via network connectivity. This vulnerability appears to have been fixed in 4.5.1.",
+  "summary": "Mercurial vulnerable to arbitrary code execution when converting Git repos",
+  "details": "The convert extension in Mercurial before 3.8 might allow context-dependent attackers to execute arbitrary code via a crafted git repository name.",
   "affected": [
     {
       "package": {
@@ -22,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "4.5.1"
+              "fixed": "3.8"
             }
           ]
         }
@@ -131,70 +132,45 @@
         "3.7.1",
         "3.7.2",
         "3.7.3",
-        "3.8",
-        "3.8-rc",
-        "3.8.1",
-        "3.8.2",
-        "3.8.3",
-        "3.8.4",
-        "3.9",
-        "3.9-rc",
-        "3.9.1",
-        "3.9.2",
-        "4.0",
-        "4.0-rc",
-        "4.0.1",
-        "4.0.2",
-        "4.1",
-        "4.1-rc",
-        "4.1.1",
-        "4.1.2",
-        "4.1.3",
-        "4.2",
-        "4.2-rc",
-        "4.2.1",
-        "4.2.2",
-        "4.2.3",
-        "4.3",
-        "4.3-rc",
-        "4.3.1",
-        "4.3.2",
-        "4.3.3",
-        "4.3rc0",
-        "4.4",
-        "4.4-rc",
-        "4.4.1",
-        "4.4.2",
-        "4.4rc0",
-        "4.5",
-        "4.5-rc",
-        "4.5rc0"
+        "3.8-rc"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/mercurial/PYSEC-2018-87.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-49cw-434h-qc57/GHSA-49cw-434h-qc57.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_4.5.1_.2F_4.5.2_.282018-03-06.29"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.debian.org/debian-lts-announce/2018/03/msg00034.html"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.debian.org/debian-lts-announce/2018/07/msg00005.html"
-    },
-    {
       "type": "ADVISORY",
-      "url": "https://access.redhat.com/errata/RHSA-2019:2276"
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3105"
     },
     {
       "type": "WEB",
-      "url": "https://lists.debian.org/debian-lts-announce/2020/07/msg00032.html"
+      "url": "https://security.gentoo.org/glsa/201612-19"
+    },
+    {
+      "type": "WEB",
+      "url": "https://selenic.com/hg/rev/a56296f55a5e"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200228012056/http://www.securityfocus.com/bid/90536"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.mercurial-scm.org/wiki/WhatsNew#Mercurial_3.8_.2F_3.8.1_.282016-5-1.29"
+    },
+    {
+      "type": "WEB",
+      "url": "http://lists.opensuse.org/opensuse-updates/2016-05/msg00082.html"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.debian.org/security/2016/dsa-3570"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.slackware.com/security/viewer.php?l=slackware-security\u0026y=2016\u0026m=slackware-security.533255"
     }
   ]
 }
