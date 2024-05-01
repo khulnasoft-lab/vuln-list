@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2014-98",
+  "id": "GHSA-9crx-p357-5vw8",
   "modified": "2024-05-01T11:11:29.643507Z",
-  "published": "2014-04-30T23:58:00Z",
+  "published": "2022-05-17T04:45:18Z",
   "aliases": [
     "CVE-2014-2260",
-    "GHSA-9crx-p357-5vw8"
+    "PYSEC-2014-98"
   ],
-  "details": "Cross-site scripting (XSS) vulnerability in plugins/main/content/js/ajenti.coffee in Eugene Pankov Ajenti 1.2.13 allows remote authenticated users to inject arbitrary web script or HTML via the command field in the Cron functionality.",
+  "summary": "Ajenti Cross-site scripting (XSS) vulnerability",
+  "details": "Cross-site scripting (XSS) vulnerability in `plugins/main/content/js/ajenti.coffee` in Ajenti before 1.2.15 allows remote authenticated users to inject arbitrary web script or HTML via the command field in the Cron functionality.",
   "affected": [
     {
       "package": {
@@ -16,25 +17,13 @@
       },
       "ranges": [
         {
-          "type": "GIT",
-          "repo": "https://github.com/Eugeny/ajenti",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "3270fd1d78391bb847b4c9ce37cf921f485b1310"
-            }
-          ]
-        },
-        {
           "type": "ECOSYSTEM",
           "events": [
             {
               "introduced": "0"
             },
             {
-              "fixed": "1.2.14"
+              "fixed": "1.2.15"
             }
           ]
         }
@@ -91,6 +80,8 @@
         "1.2.13",
         "1.2.13.1",
         "1.2.13.2",
+        "1.2.14",
+        "1.2.14.1",
         "1.2.2",
         "1.2.3",
         "1.2.4",
@@ -103,30 +94,34 @@
         "1.2.9"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/ajenti/PYSEC-2014-98.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-9crx-p357-5vw8/GHSA-9crx-p357-5vw8.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "http://www.securityfocus.com/bid/64982"
-    },
-    {
-      "type": "FIX",
-      "url": "https://github.com/Eugeny/ajenti/commit/3270fd1d78391bb847b4c9ce37cf921f485b1310"
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2014-2260"
     },
     {
       "type": "WEB",
-      "url": "http://www.osvdb.org/102174"
+      "url": "https://github.com/ajenti/ajenti/issues/233"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ajenti/ajenti/commit/3270fd1d78391bb847b4c9ce37cf921f485b1310"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/ajenti/ajenti"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200229062920/http://www.securityfocus.com/bid/64982"
     },
     {
       "type": "WEB",
       "url": "http://packetstormsecurity.com/files/124804/Ajenti-1.2.13-Cross-Site-Scripting.html"
-    },
-    {
-      "type": "REPORT",
-      "url": "https://github.com/Eugeny/ajenti/issues/233"
     }
   ]
 }
