@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2011-13",
+  "id": "GHSA-3v28-9jjp-4g5w",
   "modified": "2024-05-01T11:11:35.159724Z",
-  "published": "2011-02-03T17:00:00Z",
+  "published": "2022-05-17T02:01:56Z",
   "aliases": [
     "CVE-2011-0720",
-    "GHSA-3v28-9jjp-4g5w"
+    "PYSEC-2011-13"
   ],
+  "summary": "Plone Privilege Escalation Vulnerability",
   "details": "Unspecified vulnerability in Plone 2.5 through 4.0, as used in Conga, luci, and possibly other products, allows remote attackers to obtain administrative access, read or create arbitrary content, and change the site skin via unknown vectors.",
   "affected": [
     {
@@ -19,10 +20,10 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "0"
+              "introduced": "2.5"
             },
             {
-              "fixed": "4.0.1"
+              "fixed": "4.0.4"
             }
           ]
         }
@@ -48,6 +49,9 @@
         "3.3rc4",
         "3.3rc5",
         "4.0",
+        "4.0.1",
+        "4.0.2",
+        "4.0.3",
         "4.0a1",
         "4.0a2",
         "4.0a3",
@@ -61,50 +65,54 @@
         "4.0rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/plone/PYSEC-2011-13.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-3v28-9jjp-4g5w/GHSA-3v28-9jjp-4g5w.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/43146"
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2011-0720"
     },
     {
       "type": "WEB",
-      "url": "http://www.securityfocus.com/bid/46102"
+      "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/65099"
     },
     {
-      "type": "ADVISORY",
+      "type": "PACKAGE",
+      "url": "https://github.com/plone/Plone"
+    },
+    {
+      "type": "WEB",
+      "url": "https://plone.org/products/plone-hotfix/releases/CVE-2011-0720/logchecker.py"
+    },
+    {
+      "type": "WEB",
+      "url": "https://seclists.org/fulldisclosure/2011/Apr/293"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20110505051314/http://secunia.com/advisories/43914"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20110826134658/http://secunia.com/advisories/43146"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200229153953/http://www.securityfocus.com/bid/46102"
+    },
+    {
+      "type": "WEB",
       "url": "http://plone.org/products/plone/security/advisories/cve-2011-0720"
-    },
-    {
-      "type": "WEB",
-      "url": "http://osvdb.org/70753"
-    },
-    {
-      "type": "WEB",
-      "url": "http://www.redhat.com/support/errata/RHSA-2011-0394.html"
     },
     {
       "type": "WEB",
       "url": "http://www.redhat.com/support/errata/RHSA-2011-0393.html"
     },
     {
-      "type": "ADVISORY",
-      "url": "http://www.vupen.com/english/advisories/2011/0796"
-    },
-    {
-      "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/43914"
-    },
-    {
       "type": "WEB",
-      "url": "http://www.securitytracker.com/id?1025258"
-    },
-    {
-      "type": "WEB",
-      "url": "https://exchange.xforce.ibmcloud.com/vulnerabilities/65099"
+      "url": "http://www.redhat.com/support/errata/RHSA-2011-0394.html"
     }
   ]
 }

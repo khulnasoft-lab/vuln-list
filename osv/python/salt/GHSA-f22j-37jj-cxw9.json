@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2013-26",
+  "id": "GHSA-f22j-37jj-cxw9",
   "modified": "2024-05-01T11:41:33.131860Z",
-  "published": "2013-11-05T18:55:00Z",
+  "published": "2022-05-17T04:58:29Z",
   "aliases": [
     "CVE-2013-4436",
-    "GHSA-f22j-37jj-cxw9"
+    "PYSEC-2013-26"
   ],
+  "summary": "SaltStack MITM SSH attack in salt-ssh",
   "details": "The default configuration for salt-ssh in Salt (aka SaltStack) 0.17.0 does not validate the SSH host key of requests, which allows remote attackers to have unspecified impact via a man-in-the-middle (MITM) attack.",
   "affected": [
     {
@@ -31,11 +32,19 @@
         "0.17.0"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/salt/PYSEC-2013-26.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-f22j-37jj-cxw9/GHSA-f22j-37jj-cxw9.json"
       }
     }
   ],
   "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4436"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/saltstack/salt"
+    },
     {
       "type": "WEB",
       "url": "http://docs.saltstack.com/topics/releases/0.17.1.html"
