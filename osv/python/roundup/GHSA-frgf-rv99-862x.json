@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2010-31",
+  "id": "GHSA-frgf-rv99-862x",
   "modified": "2024-05-01T11:41:42.252596Z",
-  "published": "2010-09-24T19:00:00Z",
+  "published": "2022-05-17T05:28:58Z",
   "aliases": [
     "CVE-2010-2491",
-    "GHSA-frgf-rv99-862x"
+    "PYSEC-2010-31"
   ],
-  "details": "Cross-site scripting (XSS) vulnerability in cgi/client.py in Roundup before 1.4.14 allows remote attackers to inject arbitrary web script or HTML via the template argument to the /issue program.",
+  "summary": "Roundup Cross-site Scripting (XSS) vulnerability",
+  "details": "Cross-site scripting (XSS) vulnerability in `cgi/client.py` in Roundup before 1.4.14 allows remote attackers to inject arbitrary web script or HTML via the template argument to the /issue program.",
   "affected": [
     {
       "package": {
@@ -80,34 +81,42 @@
         "1.4.9"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/roundup/PYSEC-2010-31.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-frgf-rv99-862x/GHSA-frgf-rv99-862x.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2010-September/048221.html"
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2010-2491"
     },
     {
       "type": "WEB",
-      "url": "http://www.securityfocus.com/bid/41326"
+      "url": "https://github.com/roundup-tracker/roundup/commit/dcef024bae8f63d290454250767a377eb0e1647b"
+    },
+    {
+      "type": "WEB",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=610861"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/roundup-tracker/roundup"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20111225190151/http://secunia.com/advisories/41585"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20140725071254/http://secunia.com/advisories/40433"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20200228183400/http://www.securityfocus.com/bid/41326"
     },
     {
       "type": "WEB",
       "url": "http://bugs.gentoo.org/show_bug.cgi?id=326395"
-    },
-    {
-      "type": "REPORT",
-      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=610861"
-    },
-    {
-      "type": "WEB",
-      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2010-September/048018.html"
-    },
-    {
-      "type": "WEB",
-      "url": "http://roundup.svn.sourceforge.net/viewvc/roundup?view=revision\u0026revision=4486"
     },
     {
       "type": "WEB",
@@ -115,15 +124,7 @@
     },
     {
       "type": "WEB",
-      "url": "http://sourceforge.net/mailarchive/message.php?msg_name=AANLkTimIYtyRzTAReGmTSCEqPYBvwkkxrP6YKrdVm_nU%40mail.gmail.com"
-    },
-    {
-      "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/41585"
-    },
-    {
-      "type": "WEB",
-      "url": "http://www.openwall.com/lists/oss-security/2010/07/02/12"
+      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2010-September/048018.html"
     },
     {
       "type": "WEB",
@@ -131,15 +132,27 @@
     },
     {
       "type": "WEB",
-      "url": "http://www.openwall.com/lists/oss-security/2010/07/02/3"
+      "url": "http://lists.fedoraproject.org/pipermail/package-announce/2010-September/048221.html"
     },
     {
       "type": "WEB",
       "url": "http://roundup.svn.sourceforge.net/viewvc/roundup/roundup/trunk/roundup/cgi/client.py?r1=4486\u0026r2=4485\u0026pathrev=4486"
     },
     {
-      "type": "ADVISORY",
-      "url": "http://secunia.com/advisories/40433"
+      "type": "WEB",
+      "url": "http://roundup.svn.sourceforge.net/viewvc/roundup?view=revision\u0026revision=4486"
+    },
+    {
+      "type": "WEB",
+      "url": "http://sourceforge.net/mailarchive/message.php?msg_name=AANLkTimIYtyRzTAReGmTSCEqPYBvwkkxrP6YKrdVm_nU%40mail.gmail.com"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.openwall.com/lists/oss-security/2010/07/02/12"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.openwall.com/lists/oss-security/2010/07/02/3"
     }
   ]
 }
