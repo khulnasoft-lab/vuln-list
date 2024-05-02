@@ -1,12 +1,12 @@
 {
   "id": "GHSA-pf3p-v9xp-mrvf",
-  "modified": "2024-04-22T22:56:23.269458Z",
+  "modified": "2024-05-02T05:15:57.893375Z",
   "published": "2022-05-24T22:00:30Z",
   "aliases": [
     "CVE-2019-16227",
     "PYSEC-2019-239"
   ],
-  "summary": "py_lmdb Invalid write operation",
+  "summary": "py-lmdb Invalid write operation",
   "details": "An issue was discovered in py-lmdb 0.97. For certain values of `mn_flags`, `mdb_cursor_set` triggers a memcpy with an invalid write operation within `mdb_xcursor_init1`. NOTE: this outcome occurs when accessing a `data.mdb` file supplied by an attacker.",
   "affected": [
     {
