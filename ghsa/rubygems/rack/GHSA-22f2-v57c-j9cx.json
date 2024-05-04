@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-02-28T22:57:27Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
@@ -29,6 +29,9 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-25126"
       },
       {
+        "Url": "https://lists.debian.org/debian-lts-announce/2024/04/msg00022.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-22f2-v57c-j9cx"
       }
     ],
@@ -42,16 +45,16 @@
         "Value": "CVE-2024-25126"
       }
     ],
-    "Description": "### Summary\n\n```ruby\nmodule Rack\n  class MediaType\n    SPLIT_PATTERN = %r{\\s*[;,]\\s*}\n```\n\nThe above regexp is subject to ReDos. 50K blank characters as a prefix to the header will take over 10s to split.\n\n### PoC\n\nA simple HTTP request with lots of blank characters in the content-type header:\n\n```ruby\nrequest[\"Content-Type\"] = (\" \" * 50_000) + \"a,\"\n```\n\n### Impact\n\nIt's a very easy to craft ReDoS. Like all ReDoS the impact is debatable.",
+    "Description": "### Summary\n\n```ruby\nmodule Rack\n  class MediaType\n    SPLIT_PATTERN = %r{\\s*[;,]\\s*}\n```\nThe above regexp is subject to ReDos. 50K blank characters as a prefix to the header will take over 10s to split.\n\n### PoC\n\nA simple HTTP request with lots of blank characters in the content-type header:\n\n```ruby\nrequest[\"Content-Type\"] = (\" \" * 50_000) + \"a,\"\n```\n\n### Impact\n\nIt's a very easy to craft ReDoS. Like all ReDoS the impact is debatable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-02-28T22:57:26Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Rack vulnerable to ReDoS in content type parsing (2nd degree polynomial)",
-    "UpdatedAt": "2024-02-29T02:30:31Z",
+    "UpdatedAt": "2024-05-03T20:15:05Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 5.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L"
     }
   },
   "Versions": [
