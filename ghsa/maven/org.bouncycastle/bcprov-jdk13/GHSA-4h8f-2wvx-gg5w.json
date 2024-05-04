@@ -1,0 +1,53 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2024-05-03T20:34:33Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "org.bouncycastle:bcprov-jdk13"
+  },
+  "Advisory": {
+    "DatabaseId": 244704,
+    "Id": "GSA_kwCzR0hTQS00aDhmLTJ3dngtZ2c1d84AA7vg",
+    "GhsaId": "GHSA-4h8f-2wvx-gg5w",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34447"
+      },
+      {
+        "Url": "https://www.bouncycastle.org/latest_releases.html"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-4h8f-2wvx-gg5w"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-4h8f-2wvx-gg5w"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-34447"
+      }
+    ],
+    "Description": "An issue was discovered in Bouncy Castle Java Cryptography APIs before BC 1.78. When endpoint identification is enabled in the BCJSSE and an SSL socket is created without an explicit hostname (as happens with HttpsURLConnection), hostname verification could be performed against a DNS-resolved IP address in some situations, opening up a possibility of DNS poisoning.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-05-03T18:30:37Z",
+    "Severity": "LOW",
+    "Summary": "Bouncy Castle Java Cryptography API vulnerable to DNS poisoning",
+    "UpdatedAt": "2024-05-03T20:34:33Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.78"
+      },
+      "VulnerableVersionRange": "\u003c 1.78"
+    }
+  ]
+}
