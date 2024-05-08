@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-04-24T17:02:36Z",
+  "UpdatedAt": "2024-05-08T14:01:03Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "pimcore/pimcore"
@@ -23,12 +23,12 @@
         "Value": "GHSA-vjwg-28gv-pm8h"
       }
     ],
-    "Description": "### Impact\nThe TineMCE Bundle uses tinymce version 6.7.3. CVEs for this version exists for \u003c6.8.1:\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29203\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29881\n\n### Patches\nThe package should be updated to at least 6.8.1 to avoid XSS vulnerability.\n\n### Workarounds\nUpgrade pimcore to release 11.2.3.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29203\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29881\n",
+    "Description": "### Impact\nThe TineMCE Bundle uses tinymce version 6.7.3. CVEs for this version exists for \u003c6.8.1:\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29203\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29881\n\n### Patches\nThe package should be updated to at least 6.8.1 to avoid XSS vulnerability.\n\n### Workarounds\nUpgrade pimcore to release 11.2.3 or 11.1.6.5.\n\n### References\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29203\nhttps://nvd.nist.gov/vuln/detail/CVE-2024-29881\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-04-24T17:02:33Z",
     "Severity": "MODERATE",
     "Summary": "Pimcore TinyMCE Bundle - tinymce CVE-2024-29203, CVE-2024-29881",
-    "UpdatedAt": "2024-04-24T17:02:36Z",
+    "UpdatedAt": "2024-05-08T14:01:03Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -38,9 +38,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "11.1.6.5"
+      },
+      "VulnerableVersionRange": "\u003e= 11.0.0-ALPHA1, \u003c 11.1.6.5"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "11.2.3"
       },
-      "VulnerableVersionRange": "\u003e= 11.0.0-ALPHA1, \u003c 11.2.3"
+      "VulnerableVersionRange": "\u003e= 11.2.0, \u003c 11.2.3"
     }
   ]
 }
