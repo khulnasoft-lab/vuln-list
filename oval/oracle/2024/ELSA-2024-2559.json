@@ -20,26 +20,54 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
             "Operator": "AND",
-            "Criterias": null,
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "python3-jwcrypto is earlier than 0:0.8-5.el9_4"
+                  },
+                  {
+                    "Comment": "python3-jwcrypto is signed with the Oracle Linux 9 key"
+                  }
+                ]
+              }
+            ],
             "Criterions": [
               {
-                "Comment": "python3-jwcrypto is earlier than 0:0.8-5.el9_4"
-              },
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
               {
-                "Comment": "python3-jwcrypto is signed with the Oracle Linux 9 key"
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "python3-jwcrypto is earlier than 0:0.8-5.el9_4"
+                  },
+                  {
+                    "Comment": "python3-jwcrypto is signed with the Oracle Linux 9 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
               }
             ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is aarch64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [
