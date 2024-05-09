@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3jgf-r68h-xfqm",
-  "modified": "2024-05-06T14:41:47.221901Z",
+  "modified": "2024-05-08T18:42:40Z",
   "published": "2024-05-05T03:30:47Z",
   "aliases": [
-    "CVE-2024-34478"
+    "CVE-2024-34478",
+    "GO-2024-2818"
   ],
   "summary": "btcd susceptible to consensus failures",
   "details": "btcd before 0.24.0 does not correctly implement the consensus rules outlined in BIP 68 and BIP 112, making it susceptible to consensus failures. Specifically, it uses the transaction version as a signed integer when it is supposed to be treated as unsigned. There can be a chain split and loss of funds.",
@@ -36,6 +37,14 @@
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34478"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/btcsuite/btcd/pull/1981"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/btcsuite/btcd/commit/253b688c68b89eca7eb75d4d5443dbdbc928db3c"
     },
     {
       "type": "WEB",
