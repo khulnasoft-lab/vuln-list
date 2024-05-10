@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-c5rv-hjjc-jv7m",
+  "id": "GO-2024-2721",
   "modified": "2024-05-09T22:26:47.672062Z",
-  "published": "2024-04-12T15:37:21Z",
+  "published": "2024-05-09T22:01:10Z",
   "aliases": [
     "CVE-2024-31839",
-    "GO-2024-2721"
+    "GHSA-c5rv-hjjc-jv7m"
   ],
-  "summary": "tiagorlampert CHAOS vulnerable to Cross Site Scripting",
-  "details": "Cross Site Scripting vulnerability in tiagorlampert CHAOS v.5.0.1 allows a remote attacker to escalate privileges via the sendCommandHandler function in the handler.go component.",
+  "summary": "Cross site scripting in github.com/tiagorlampert/CHAOS",
+  "details": "A malicious actor may be able to extract a JWT token via malicious \"/command\" request. This is a form of cross site scripting (XSS).",
   "affected": [
     {
       "package": {
@@ -21,15 +21,23 @@
           "events": [
             {
               "introduced": "0"
-            },
-            {
-              "last_affected": "5.01"
             }
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/tiagorlampert/CHAOS/presentation/http",
+            "symbols": [
+              "NewServer",
+              "httpController.sendCommandHandler"
+            ]
+          }
+        ]
+      },
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-c5rv-hjjc-jv7m/GHSA-c5rv-hjjc-jv7m.json"
+        "source": "https://vuln.go.dev/ID/GO-2024-2721.json"
       }
     }
   ],
@@ -41,10 +49,6 @@
     {
       "type": "WEB",
       "url": "https://blog.chebuya.com/posts/remote-code-execution-on-chaos-rat-via-spoofed-agents"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/tiagorlampert/CHAOS"
     }
   ]
 }
