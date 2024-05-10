@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-03-04T20:42:23Z",
+  "UpdatedAt": "2024-05-10T14:29:20Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "phpseclib/phpseclib"
@@ -29,6 +29,9 @@
         "Url": "https://lists.debian.org/debian-lts-announce/2024/03/msg00003.html"
       },
       {
+        "Url": "https://github.com/FriendsOfPHP/security-advisories/blob/master/phpseclib/phpseclib/CVE-2024-27355.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-jr22-8qgm-4q87"
       }
     ],
@@ -47,7 +50,7 @@
     "PublishedAt": "2024-03-02T00:31:33Z",
     "Severity": "HIGH",
     "Summary": "phpseclib does not properly limit the ASN1 OID length",
-    "UpdatedAt": "2024-03-21T03:36:37Z",
+    "UpdatedAt": "2024-05-10T14:29:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -55,6 +58,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.0.23"
+      },
+      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 1.0.23"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.0.47"
@@ -66,12 +75,6 @@
         "Identifier": "3.0.36"
       },
       "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.0.36"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "1.0.23"
-      },
-      "VulnerableVersionRange": "\u003c 1.0.23"
     }
   ]
 }
