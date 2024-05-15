@@ -1,6 +1,6 @@
 {
   "id": "GHSA-3fwx-pjgw-3558",
-  "modified": "2024-01-31T23:28:58Z",
+  "modified": "2024-05-14T22:00:30Z",
   "published": "2024-01-31T23:28:58Z",
   "aliases": [
     "CVE-2021-41091"
@@ -13,6 +13,29 @@
         "ecosystem": "Go",
         "name": "github.com/moby/moby",
         "purl": "pkg:golang/github.com/moby/moby"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "20.10.9"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/01/GHSA-3fwx-pjgw-3558/GHSA-3fwx-pjgw-3558.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/docker/docker",
+        "purl": "pkg:golang/github.com/docker/docker"
       },
       "ranges": [
         {
@@ -48,6 +71,10 @@
     {
       "type": "WEB",
       "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-222547.pdf"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/moby/moby"
     },
     {
       "type": "WEB",
