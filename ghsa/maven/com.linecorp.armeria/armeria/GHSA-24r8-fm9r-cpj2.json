@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2019-12-05T18:40:31Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-05-15T06:34:24Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "com.linecorp.armeria:armeria"
@@ -39,9 +39,9 @@
     "Description": "## Multiple timing attack vulnerabilities leading to the recovery of secrets based on the use of non-constant time compare function\n\n### Impact\n\nString comparison method in multiple authentication validation in Armeria were known to be vulnerable to timing attacks. This vulnerability is caused by the insecure implementation of `equals` method from `java.lang.String`. While this attack is not practically possible, an attacker still has a potential to attack if the victim's server validates user by using `equals` method.\n\nWe would like to thank @chrsow for pointing out the issue.\n\n## Potentially vulnerable codes\n\nhttps://github.com/line/armeria/blob/f0d870fde1088114070be31b67f7df0a21e835c6/core/src/main/java/com/linecorp/armeria/server/auth/OAuth2Token.java#L54\nhttps://github.com/line/armeria/blob/f0d870fde1088114070be31b67f7df0a21e835c6/core/src/main/java/com/linecorp/armeria/server/auth/BasicToken.java#L64\n\n### Patches\n\nThere are two options to patch this issue.\n\n1. Remove `equals` method; it has been exclusively used for test cases and was never used in any OSS projects that are using Armeria. (But it is worth noting that there are possibilities of closed projects authenticating users by utilizing `equals` method)\n\n2. Use `MessageDigest.isEqual` to compare the credential instead.\n\n### Workarounds\n\n1. Update to the latest version (TBD)\n\n2-1. Users can prevent these vulnerabilities by modifying and implementing timing attack preventions by themselves.\n\n2-2. Precisely speaking, it is possible to compare credentials by securely comparing them after calling methods to directly return the input (namely `Object. accessToken()`, `Object.username()` and `Object.password()`).\n\n### References\n- https://cwe.mitre.org/data/definitions/208.html\n- https://security.stackexchange.com/questions/111040/should-i-worry-about-remote-timing-attacks-on-string-comparison\n\n### Side Note\n\nSince it is a theoretical attack, there is no PoC available from neither the vendor nor the security team.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-12-05T18:40:51Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Low severity vulnerability that affects com.linecorp.armeria:armeria",
-    "UpdatedAt": "2023-01-09T05:02:37Z",
+    "UpdatedAt": "2024-05-15T06:34:24Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.8,
@@ -53,7 +53,7 @@
       "FirstPatchedVersion": {
         "Identifier": "0.97.0"
       },
-      "VulnerableVersionRange": "\u003c 0.97.0"
+      "VulnerableVersionRange": "\u003e= 0.50.0, \u003c 0.97.0"
     }
   ]
 }
