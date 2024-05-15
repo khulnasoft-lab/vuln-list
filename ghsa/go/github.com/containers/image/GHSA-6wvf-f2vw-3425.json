@@ -1,0 +1,59 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-05-14T21:38:30Z",
+  "Package": {
+    "Ecosystem": "GO",
+    "Name": "github.com/containers/image"
+  },
+  "Advisory": {
+    "DatabaseId": 245549,
+    "Id": "GSA_kwCzR0hTQS02d3ZmLWYydnctMzQyNc4AA78t",
+    "GhsaId": "GHSA-6wvf-f2vw-3425",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3727"
+      },
+      {
+        "Url": "https://access.redhat.com/security/cve/CVE-2024-3727"
+      },
+      {
+        "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2274767"
+      },
+      {
+        "Url": "https://github.com/containers/image/releases/tag/v5.30.1"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-6wvf-f2vw-3425"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-6wvf-f2vw-3425"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-3727"
+      }
+    ],
+    "Description": "A flaw was found in the github.com/containers/image library. This flaw allows attackers to trigger unexpected authenticated registry accesses on behalf of a victim user, causing resource exhaustion, local path traversal, and other attacks.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-05-14T18:30:52Z",
+    "Severity": "HIGH",
+    "Summary": "github.com/containers/image allows unexpected authenticated registry accesses",
+    "UpdatedAt": "2024-05-14T21:38:30Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 8.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:H/I:H/A:H"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.30.1"
+      },
+      "VulnerableVersionRange": "\u003c 5.30.1"
+    }
+  ]
+}
