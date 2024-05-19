@@ -1,7 +1,10 @@
 {
   "id": "GHSA-jv34-xvjq-ppch",
-  "modified": "2024-05-14T21:13:56Z",
+  "modified": "2024-05-19T02:24:39.164248Z",
   "published": "2022-05-17T04:48:26Z",
+  "aliases": [
+    "CVE-2014-2573"
+  ],
   "summary": "OpenStack Nova VMWare driver leaks rescued images",
   "details": "The VMWare driver in OpenStack Compute (Nova) 2013.2 through 2013.2.2 does not properly put VMs into RESCUE status, which allows remote authenticated users to bypass the quota limit and cause a denial of service (resource consumption) by requesting the VM be put into rescue and then deleting the image.",
   "affected": [

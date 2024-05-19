@@ -1,11 +1,10 @@
 {
   "id": "GO-2021-0223",
-  "modified": "2023-12-06T01:00:13.452468Z",
+  "modified": "2024-05-19T02:24:27.218489Z",
   "published": "2022-02-17T17:46:03Z",
   "aliases": [
     "BIT-golang-2020-14039",
-    "CVE-2020-14039",
-    "GO-2021-0140"
+    "CVE-2020-14039"
   ],
   "summary": "Certificate verification error on Windows in crypto/x509",
   "details": "On Windows, if VerifyOptions.Roots is nil, Certificate.Verify does not check the EKU requirements specified in VerifyOptions.KeyUsages. This may allow a certificate to be used for an unintended purpose.",

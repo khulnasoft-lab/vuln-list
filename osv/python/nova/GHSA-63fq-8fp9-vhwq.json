@@ -1,7 +1,10 @@
 {
   "id": "GHSA-63fq-8fp9-vhwq",
-  "modified": "2024-05-14T21:12:15Z",
+  "modified": "2024-05-19T02:24:37.718194Z",
   "published": "2022-05-17T01:36:29Z",
+  "aliases": [
+    "CVE-2013-1838"
+  ],
   "summary": "OpenStack Compute (Nova) Denial of service via a large number of calls to the addFixedIp function",
   "details": "OpenStack Compute (Nova) Grizzly, Folsom (2012.2), and Essex (2012.1) does not properly implement a quota for fixed IPs, which allows remote authenticated users to cause a denial of service (resource exhaustion and failure to spawn new instances) via a large number of calls to the addFixedIp function.",
   "affected": [
