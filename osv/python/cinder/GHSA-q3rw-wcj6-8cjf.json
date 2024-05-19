@@ -1,7 +1,10 @@
 {
   "id": "GHSA-q3rw-wcj6-8cjf",
-  "modified": "2024-05-14T21:25:51Z",
+  "modified": "2024-05-19T02:24:38.200618Z",
   "published": "2022-05-17T04:58:58Z",
+  "aliases": [
+    "CVE-2013-4183"
+  ],
   "summary": "OpenStack Cinder LVMVolumeDriver does not zero deleted snapshots",
   "details": "The clear_volume function in LVMVolumeDriver driver in OpenStack Cinder 2013.1.1 through 2013.1.2 does not properly clear data when deleting a snapshot, which allows local users to obtain sensitive information via unspecified vectors.",
   "affected": [
