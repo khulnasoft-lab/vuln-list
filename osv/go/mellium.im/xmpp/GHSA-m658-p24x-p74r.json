@@ -1,13 +1,11 @@
 {
   "id": "GHSA-m658-p24x-p74r",
-  "modified": "2023-11-08T04:08:40.707315Z",
+  "modified": "2024-05-19T02:24:05.517855Z",
   "published": "2022-02-12T00:00:36Z",
   "aliases": [
     "CVE-2022-24968",
     "GHSA-h289-x5wc-xcv8",
-    "GO-2021-0321",
-    "GO-2022-0370",
-    "GO-2022-0947"
+    "GO-2022-0370"
   ],
   "summary": "TLS certificate validation error in mellium.im/xmpp",
   "details": "In Mellium mellium.im/xmpp through 0.21.0, an attacker capable of spoofing DNS TXT records can redirect a WebSocket connection request to a server under their control without causing TLS certificate verification to fail. This occurs because the wrong host name is selected during this verification.",

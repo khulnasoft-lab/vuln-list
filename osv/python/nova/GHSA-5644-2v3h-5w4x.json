@@ -1,7 +1,10 @@
 {
   "id": "GHSA-5644-2v3h-5w4x",
-  "modified": "2024-05-14T21:13:58Z",
+  "modified": "2024-05-19T02:24:38.443579Z",
   "published": "2022-05-17T04:41:48Z",
+  "aliases": [
+    "CVE-2013-4463"
+  ],
   "summary": "OpenStack Nova denial of service through compressed disk images",
   "details": "OpenStack Compute (Nova) Folsom, Grizzly, and Havana does not properly verify the virtual size of a QCOW2 image, which allows local users to cause a denial of service (host file system disk consumption) via a compressed QCOW2 image.  NOTE: this issue is due to an incomplete fix for CVE-2013-2096.",
   "affected": [
