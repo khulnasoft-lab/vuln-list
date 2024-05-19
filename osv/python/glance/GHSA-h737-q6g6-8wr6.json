@@ -1,7 +1,10 @@
 {
   "id": "GHSA-h737-q6g6-8wr6",
-  "modified": "2024-05-14T21:32:19Z",
+  "modified": "2024-05-19T02:24:40.009632Z",
   "published": "2022-05-17T03:10:45Z",
+  "aliases": [
+    "CVE-2014-9684"
+  ],
   "summary": "OpenStack Glance Denial of service by creating a large number of images",
   "details": "OpenStack Image Registry and Delivery Service (Glance) 2014.2 through 2014.2.2 does not properly remove images, which allows remote authenticated users to cause a denial of service (disk consumption) by creating a large number of images using the task v2 API and then deleting them before the uploads finish, a different vulnerability than CVE-2015-1881.",
   "affected": [

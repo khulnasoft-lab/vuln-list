@@ -1,7 +1,10 @@
 {
   "id": "GHSA-49jv-37hm-6gfp",
-  "modified": "2024-05-14T21:13:54Z",
+  "modified": "2024-05-19T02:24:40.748284Z",
   "published": "2022-05-14T01:58:44Z",
+  "aliases": [
+    "CVE-2016-2140"
+  ],
   "summary": "OpenStack Nova host data access through resize/migration",
   "details": "The libvirt driver in OpenStack Compute (Nova) before 2015.1.4 (kilo) and 12.0.x before 12.0.3 (liberty), when using raw storage and use_cow_images is set to false, allows remote authenticated users to read arbitrary files via a crafted qcow2 header in an ephemeral or root disk.",
   "affected": [

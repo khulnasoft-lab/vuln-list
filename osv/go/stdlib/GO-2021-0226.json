@@ -1,11 +1,10 @@
 {
   "id": "GO-2021-0226",
-  "modified": "2023-12-06T01:00:24.011160Z",
+  "modified": "2024-05-19T02:24:00.450724Z",
   "published": "2022-01-13T03:44:58Z",
   "aliases": [
     "BIT-golang-2020-24553",
-    "CVE-2020-24553",
-    "GO-2021-0143"
+    "CVE-2020-24553"
   ],
   "summary": "Cross-site scripting in net/http/cgi and net/http/fcgi",
   "details": "When a Handler does not explicitly set the Content-Type header, the the package would default to “text/html”, which could cause a Cross-Site Scripting vulnerability if an attacker can control any part of the contents of a response.\n\nThe Content-Type header is now set based on the contents of the first Write using http.DetectContentType, which is consistent with the behavior of the net/http package.\n\nAlthough this protects some applications that validate the contents of uploaded files, not setting the Content-Type header explicitly on any attacker-controlled file is unsafe and should be avoided.",
