@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-09-21T17:00:19Z",
+  "UpdatedAt": "2024-05-21T18:21:30Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/schollz/croc"
@@ -23,6 +23,12 @@
         "Url": "http://www.openwall.com/lists/oss-security/2023/09/21/5"
       },
       {
+        "Url": "https://github.com/schollz/croc/pull/698"
+      },
+      {
+        "Url": "https://github.com/schollz/croc/commit/4929635eb875d2304e9415b8f4aa62af9e1a2339"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-8c8w-f7wp-2jr2"
       }
     ],
@@ -36,12 +42,12 @@
         "Value": "CVE-2023-43616"
       }
     ],
-    "Description": "An issue was discovered in Croc through 9.6.5. A sender can cause a receiver to overwrite files during ZIP extraction.",
+    "Description": "An issue was discovered in Croc before 9.6.16. A sender can cause a receiver to overwrite files during ZIP extraction.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-09-20T06:30:50Z",
     "Severity": "MODERATE",
     "Summary": "Sender can cause a receiver to overwrite files during ZIP extraction in Croc",
-    "UpdatedAt": "2023-11-04T05:04:36Z",
+    "UpdatedAt": "2024-05-21T18:21:30Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -51,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "9.6.16"
       },
-      "VulnerableVersionRange": "\u003c= 9.6.5"
+      "VulnerableVersionRange": "\u003c 9.6.16"
     }
   ]
 }
