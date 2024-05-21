@@ -33,13 +33,13 @@
         "Value": "CVE-2024-4642"
       }
     ],
-    "Description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the wandb/wandb repository due to improper handling of HTTP 302 redirects. This issue allows team members with access to the 'User settings -\u003e Webhooks' function to exploit this vulnerability to access internal HTTP(s) servers. In severe cases, such as on AWS instances, this could potentially be abused to achieve remote code execution on the victim's machine. The vulnerability is present in the latest version of the repository.",
+    "Description": "## Withdrawn Advisory\nThis advisory has been withdrawn because the underlying issue existed in Weights and Biases's backend server code, not the software development kit included in the `wandb` PyPI package, as originally reported. This link is maintained to preserve external references.\n\n## Original Description\nA Server-Side Request Forgery (SSRF) vulnerability exists in the wandb/wandb repository due to improper handling of HTTP 302 redirects. This issue allows team members with access to the 'User settings -\u003e Webhooks' function to exploit this vulnerability to access internal HTTP(s) servers. In severe cases, such as on AWS instances, this could potentially be abused to achieve remote code execution on the victim's machine. The vulnerability is present in the latest version of the repository.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-05-16T09:33:09Z",
     "Severity": "HIGH",
-    "Summary": "Weights and Biases (wandb) has a Server-Side Request Forgery (SSRF) vulnerability",
-    "UpdatedAt": "2024-05-16T17:46:18Z",
-    "WithdrawnAt": "",
+    "Summary": "Withdrawn Advisory: Weights and Biases (wandb) has a Server-Side Request Forgery (SSRF) vulnerability",
+    "UpdatedAt": "2024-05-20T20:20:23Z",
+    "WithdrawnAt": "2024-05-20T20:20:22Z",
     "CVSS": {
       "Score": 7.7,
       "VectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N"
