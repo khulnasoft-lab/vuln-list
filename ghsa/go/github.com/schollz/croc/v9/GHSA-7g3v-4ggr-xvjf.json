@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-09-21T16:59:53Z",
+  "UpdatedAt": "2024-05-21T18:18:33Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/schollz/croc/v9"
@@ -23,6 +23,12 @@
         "Url": "http://www.openwall.com/lists/oss-security/2023/09/21/5"
       },
       {
+        "Url": "https://github.com/schollz/croc/pull/701"
+      },
+      {
+        "Url": "https://github.com/schollz/croc/commit/863dabb93a271f41b3431c4384357e1856a69533"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-7g3v-4ggr-xvjf"
       }
     ],
@@ -36,12 +42,12 @@
         "Value": "CVE-2023-43621"
       }
     ],
-    "Description": "An issue was discovered in Croc through 9.6.5. The shared secret, located on a command line, can be read by local users who list all processes and their arguments.",
+    "Description": "An issue was discovered in Croc before 9.6.16. The shared secret, located on a command line, can be read by local users who list all processes and their arguments.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-09-20T06:30:50Z",
     "Severity": "MODERATE",
     "Summary": "Croc may expose secret to local users",
-    "UpdatedAt": "2023-11-04T05:05:08Z",
+    "UpdatedAt": "2024-05-21T18:18:33Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.7,
@@ -51,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "9.6.16"
       },
-      "VulnerableVersionRange": "\u003c= 9.6.5"
+      "VulnerableVersionRange": "\u003c 9.6.16"
     }
   ]
 }
