@@ -1,6 +1,6 @@
 {
   "id": "GHSA-927h-x4qj-r242",
-  "modified": "2023-11-08T04:00:12.649901Z",
+  "modified": "2024-05-20T21:53:21Z",
   "published": "2022-05-14T01:33:06Z",
   "aliases": [
     "CVE-2018-20744",
@@ -31,6 +31,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-927h-x4qj-r242/GHSA-927h-x4qj-r242.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/rs/cors",
+        "purl": "pkg:golang/github.com/rs/cors"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.5.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-927h-x4qj-r242/GHSA-927h-x4qj-r242.json"
+      }
     }
   ],
   "references": [
@@ -49,6 +72,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/gofiber/fiber/pull/2339"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/rs/cors/pull/57"
     },
     {
       "type": "PACKAGE",

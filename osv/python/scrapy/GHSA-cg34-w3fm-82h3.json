@@ -1,12 +1,10 @@
 {
-  "id": "GHSA-4qqq-9vqf-3h3f",
-  "modified": "2024-05-20T20:41:58.709463Z",
-  "published": "2024-05-14T20:14:33Z",
-  "aliases": [
-    "CVE-2024-1968"
-  ],
-  "summary": "Scrapy leaks the authorization header on same-domain but cross-origin redirects",
-  "details": "### Impact\n\nSince version 2.11.1, Scrapy drops the `Authorization` header when a request is redirected to a different domain. However, it keeps the header if the domain remains the same but the scheme (http/https) or the port change, all scenarios where the header should also be dropped.\n\nIn the context of a man-in-the-middle attack, this could be used to get access to the value of that `Authorization` header\n\n### Patches\n\nUpgrade to Scrapy 2.11.2.\n\n### Workarounds\n\nThere is no easy workaround for unpatched versions of Scrapy. You can replace the built-in redirect middlewares with custom ones patched for this issue, but you have to patch them yourself, manually.\n\n### References\n\nThis security issue was reported and fixed by @szarny at https://huntr.com/bounties/27f6a021-a891-446a-ada5-0226d619dd1a/.\n",
+  "id": "GHSA-cg34-w3fm-82h3",
+  "modified": "2024-05-20T20:30:54.145625Z",
+  "published": "2024-05-20T09:30:50Z",
+  "withdrawn": "2024-05-20T20:17:03Z",
+  "summary": "Duplicate Advisory: Scrapy leaks the authorization header on same-domain but cross-origin redirects ",
+  "details": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-4qqq-9vqf-3h3f. This link is maintained to preserve external references.\n\n## Original Description\nIn scrapy/scrapy, an issue was identified where the Authorization header is not removed during redirects that only change the scheme (e.g., HTTPS to HTTP) but remain within the same domain. This behavior contravenes the Fetch standard, which mandates the removal of Authorization headers in cross-origin requests when the scheme, host, or port changes. Consequently, when a redirect downgrades from HTTPS to HTTP, the Authorization header may be inadvertently exposed in plaintext, leading to potential sensitive information disclosure to unauthorized actors. The flaw is located in the _build_redirect_request function of the redirect middleware.",
   "affected": [
     {
       "package": {
@@ -128,22 +126,18 @@
         "2.9.0"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/05/GHSA-4qqq-9vqf-3h3f/GHSA-4qqq-9vqf-3h3f.json"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/05/GHSA-cg34-w3fm-82h3/GHSA-cg34-w3fm-82h3.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "https://github.com/scrapy/scrapy/security/advisories/GHSA-4qqq-9vqf-3h3f"
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-1968"
     },
     {
       "type": "WEB",
       "url": "https://github.com/scrapy/scrapy/commit/1d0502f25bbe55a22899af915623fda1aaeb9dd8"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/scrapy/scrapy"
     },
     {
       "type": "WEB",
