@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-09-21T17:00:14Z",
+  "UpdatedAt": "2024-05-21T18:19:31Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/schollz/croc/v9"
@@ -23,6 +23,12 @@
         "Url": "http://www.openwall.com/lists/oss-security/2023/09/21/5"
       },
       {
+        "Url": "https://github.com/schollz/croc/pull/699"
+      },
+      {
+        "Url": "https://github.com/schollz/croc/commit/0f1ca436cd8e608738da0b23bf594537cfbe6213"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-hp56-xvf4-g6wr"
       }
     ],
@@ -36,12 +42,12 @@
         "Value": "CVE-2023-43617"
       }
     ],
-    "Description": "An issue was discovered in Croc through 9.6.5. When a custom shared secret is used, the sender and receiver may divulge parts of this secret to an untrusted Relay, as part of composing a room name.",
+    "Description": "An issue was discovered in Croc before 9.6.16. When a custom shared secret is used, the sender and receiver may divulge parts of this secret to an untrusted Relay, as part of composing a room name.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-09-20T06:30:50Z",
     "Severity": "MODERATE",
     "Summary": "Cros secrets may be disclosed to untrusted relay",
-    "UpdatedAt": "2023-11-04T05:04:50Z",
+    "UpdatedAt": "2024-05-21T18:19:31Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -51,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "9.6.16"
       },
-      "VulnerableVersionRange": "\u003c= 9.6.5"
+      "VulnerableVersionRange": "\u003c 9.6.16"
     }
   ]
 }
