@@ -1,12 +1,12 @@
 {
   "id": "GHSA-8c8w-f7wp-2jr2",
-  "modified": "2023-11-08T04:13:31.167588Z",
+  "modified": "2024-05-21T18:21:29Z",
   "published": "2023-09-20T06:30:50Z",
   "aliases": [
     "CVE-2023-43616"
   ],
   "summary": "Sender can cause a receiver to overwrite files during ZIP extraction in Croc",
-  "details": "An issue was discovered in Croc through 9.6.5. A sender can cause a receiver to overwrite files during ZIP extraction.",
+  "details": "An issue was discovered in Croc before 9.6.16. A sender can cause a receiver to overwrite files during ZIP extraction.",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "9.6.5"
+              "fixed": "9.6.16"
             }
           ]
         }
@@ -40,6 +40,14 @@
     {
       "type": "WEB",
       "url": "https://github.com/schollz/croc/issues/594"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/schollz/croc/pull/698"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/schollz/croc/commit/4929635eb875d2304e9415b8f4aa62af9e1a2339"
     },
     {
       "type": "PACKAGE",
