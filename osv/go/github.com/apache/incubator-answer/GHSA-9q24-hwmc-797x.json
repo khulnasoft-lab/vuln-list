@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9q24-hwmc-797x",
-  "modified": "2024-02-22T22:11:34.342365Z",
+  "modified": "2024-06-04T16:56:36.020744Z",
   "published": "2024-02-22T12:30:56Z",
   "aliases": [
-    "CVE-2024-26578"
+    "CVE-2024-26578",
+    "GO-2024-2580"
   ],
   "summary": "Apache Answer Race Condition vulnerability",
   "details": "Concurrent Execution using Shared Resource with Improper Synchronization ('Race Condition') vulnerability in Apache Answer. This issue affects Apache Answer through 1.2.1.\n\nRepeated submission during registration resulted in the registration of the same user. When users register, if they rapidly submit multiple registrations using scripts, it can result in the creation of multiple user accounts simultaneously with the same name.\n\nUsers are recommended to upgrade to version 1.2.5, which fixes the issue.",
