@@ -1,0 +1,66 @@
+{
+  "id": "GO-2024-2785",
+  "modified": "2024-06-04T16:56:44.846735Z",
+  "published": "2024-06-04T15:19:21Z",
+  "aliases": [
+    "CVE-2024-0874",
+    "GHSA-m9w6-wp3h-vq8g"
+  ],
+  "summary": "CoreDNS may return invalid cache entries in github.com/coredns/coredns",
+  "details": "CoreDNS may return invalid cache entries in github.com/coredns/coredns",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/coredns/coredns",
+        "purl": "pkg:golang/github.com/coredns/coredns"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.11.2"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2785.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-m9w6-wp3h-vq8g"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-0874"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/coredns/coredns/commit/997c7f953962d47c242273f0e41398fdfb5b0151"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/coredns/coredns/pull/6354"
+    },
+    {
+      "type": "REPORT",
+      "url": "https://github.com/coredns/coredns/issues/6186"
+    },
+    {
+      "type": "WEB",
+      "url": "https://access.redhat.com/security/cve/CVE-2024-0874"
+    },
+    {
+      "type": "WEB",
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2219234"
+    }
+  ]
+}

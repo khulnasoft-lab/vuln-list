@@ -1,9 +1,10 @@
 {
   "id": "GHSA-c3wv-qmjj-45r6",
-  "modified": "2024-04-24T21:57:33.440976Z",
+  "modified": "2024-06-04T16:56:43.819001Z",
   "published": "2024-04-24T21:42:22Z",
   "aliases": [
-    "CVE-2020-14370"
+    "CVE-2020-14370",
+    "GO-2024-2766"
   ],
   "summary": "Information disclosure in podman",
   "details": "An information disclosure vulnerability was found in containers/podman in versions before 2.0.5. When using the deprecated Varlink API or the Docker-compatible REST API, if multiple containers are created in a short duration, the environment variables from the first container will get leaked into subsequent containers. An attacker who has control over the subsequent containers could use this flaw to gain access to sensitive information stored in such variables.",
