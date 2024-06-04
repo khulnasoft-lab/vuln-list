@@ -1,9 +1,10 @@
 {
   "id": "GHSA-x2vg-5wrf-vj6v",
-  "modified": "2024-03-11T14:58:22.287654Z",
+  "modified": "2024-06-04T16:56:41.720865Z",
   "published": "2024-03-10T03:30:45Z",
   "aliases": [
-    "CVE-2024-2352"
+    "CVE-2024-2352",
+    "GO-2024-2636"
   ],
   "summary": "1Panel is vulnerable to command injection ",
   "details": "1Panel is vulnerable to command injection. This vulnerability has been classified as critical, has been found in 1Panel up to 1.10.1-lts. Affected by this issue is the function baseApi.UpdateDeviceSwap of the file /api/v1/toolbox/device/update/swap. The manipulation of the argument Path with the input 123123123\\nopen -a Calculator leads to command injection. The attack may be launched remotely. The exploit has been disclosed to the public and may be used. It is recommended to apply a patch to fix this issue. The identifier of this vulnerability is VDB-256304.",
