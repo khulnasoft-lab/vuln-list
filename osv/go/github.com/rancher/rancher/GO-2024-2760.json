@@ -1,0 +1,47 @@
+{
+  "id": "GO-2024-2760",
+  "modified": "2024-06-05T16:43:11.346037Z",
+  "published": "2024-06-05T15:10:52Z",
+  "aliases": [
+    "CVE-2021-36775",
+    "GHSA-28g7-896h-695v"
+  ],
+  "summary": "Rancher's Failure to delete orphaned role bindings does not revoke project level access from group based authentication in github.com/rancher/rancher",
+  "details": "Rancher's Failure to delete orphaned role bindings does not revoke project level access from group based authentication in github.com/rancher/rancher",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/rancher/rancher",
+        "purl": "pkg:golang/github.com/rancher/rancher"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2760.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/rancher/rancher/security/advisories/GHSA-28g7-896h-695v"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-36775"
+    },
+    {
+      "type": "WEB",
+      "url": "https://bugzilla.suse.com/show_bug.cgi?id=1189120"
+    }
+  ]
+}
