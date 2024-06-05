@@ -1,0 +1,51 @@
+{
+  "id": "GO-2024-2717",
+  "modified": "2024-06-05T16:43:23.798292Z",
+  "published": "2024-06-05T15:10:52Z",
+  "aliases": [
+    "CVE-2024-2029",
+    "GHSA-wx43-g55g-2jf4"
+  ],
+  "summary": "LocalAI Command Injection in audioToWav in github.com/go-skynet/LocalAI",
+  "details": "LocalAI Command Injection in audioToWav in github.com/go-skynet/LocalAI",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/go-skynet/LocalAI",
+        "purl": "pkg:golang/github.com/go-skynet/LocalAI"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2717.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-wx43-g55g-2jf4"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2029"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mudler/localai/commit/31a4c9c9d3abc58de2bdc5305419181c8b33eb1c"
+    },
+    {
+      "type": "WEB",
+      "url": "https://huntr.com/bounties/e092528a-ce3b-4e66-9b98-3f56d6b276b0"
+    }
+  ]
+}
