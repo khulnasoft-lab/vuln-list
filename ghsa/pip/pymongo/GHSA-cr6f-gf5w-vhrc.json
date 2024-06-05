@@ -32,13 +32,13 @@
         "Value": "GHSA-cr6f-gf5w-vhrc"
       }
     ],
-    "Description": "Versions of the package pymongo before 4.6.3 are vulnerable to Out-of-bounds Read in the bson module. Using the crafted payload the attacker could force the parser to deserialize unmanaged memory. The parser tries to interpret bytes next to buffer and throws an exception with string. If the following bytes are not printable UTF-8 the parser throws an exception with a single byte.\n\nThis advisory was initially published as CVE-2024-21506, which has since been rejected as a duplicate. The underlying vulnerability is valid and so this advisory has not been withdrawn.",
+    "Description": "Versions of the package pymongo before 4.6.3 are vulnerable to Out-of-bounds Read in the bson module. Using the crafted payload the attacker could force the parser to deserialize unmanaged memory. The parser tries to interpret bytes next to buffer and throws an exception with string. If the following bytes are not printable UTF-8 the parser throws an exception with a single byte.\n\nThis advisory was initially published as CVE-2024-21506, which has since been rejected as a duplicate of CVE-2024-5629.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-04-06T06:31:08Z",
     "Severity": "MODERATE",
     "Summary": "PyMongo Out-of-bounds Read in the bson module ",
-    "UpdatedAt": "2024-06-03T20:38:42Z",
-    "WithdrawnAt": "",
+    "UpdatedAt": "2024-06-05T17:12:00Z",
+    "WithdrawnAt": "2024-06-05T17:11:58Z",
     "CVSS": {
       "Score": 5.2,
       "VectorString": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:L"
