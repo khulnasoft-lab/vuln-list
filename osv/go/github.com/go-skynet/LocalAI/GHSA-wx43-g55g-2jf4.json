@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wx43-g55g-2jf4",
-  "modified": "2024-04-10T22:42:14.774950Z",
+  "modified": "2024-06-05T16:43:23.798292Z",
   "published": "2024-04-10T18:30:48Z",
   "aliases": [
-    "CVE-2024-2029"
+    "CVE-2024-2029",
+    "GO-2024-2717"
   ],
   "summary": "LocalAI Command Injection in audioToWav",
   "details": "A command injection vulnerability exists in the `TranscriptEndpoint` of mudler/localai, specifically within the `audioToWav` function used for converting audio files to WAV format for transcription. The vulnerability arises due to the lack of sanitization of user-supplied filenames before passing them to ffmpeg via a shell command, allowing an attacker to execute arbitrary commands on the host system. Successful exploitation could lead to unauthorized access, data breaches, or other detrimental impacts, depending on the privileges of the process executing the code.",
