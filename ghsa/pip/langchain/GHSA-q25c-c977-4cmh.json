@@ -1,0 +1,53 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-06-06T22:41:07Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "langchain"
+  },
+  "Advisory": {
+    "DatabaseId": 248896,
+    "Id": "GSA_kwCzR0hTQS1xMjVjLWM5NzctNGNtaM4AA8xA",
+    "GhsaId": "GHSA-q25c-c977-4cmh",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3095"
+      },
+      {
+        "Url": "https://huntr.com/bounties/e62d4895-2901-405b-9559-38276b6a5273"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-q25c-c977-4cmh"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-q25c-c977-4cmh"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-3095"
+      }
+    ],
+    "Description": "A Server-Side Request Forgery (SSRF) vulnerability exists in the Web Research Retriever component of langchain-ai/langchain version 0.1.5. The vulnerability arises because the Web Research Retriever does not restrict requests to remote internet addresses, allowing it to reach local addresses. This flaw enables attackers to execute port scans, access local services, and in some scenarios, read instance metadata from cloud environments. The vulnerability is particularly concerning as it can be exploited to abuse the Web Explorer server as a proxy for web attacks on third parties and interact with servers in the local network, including reading their response data. This could potentially lead to arbitrary code execution, depending on the nature of the local services. The vulnerability is limited to GET requests, as POST requests are not possible, but the impact on confidentiality, integrity, and availability is significant due to the potential for stolen credentials and state-changing interactions with internal APIs.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-06-06T21:30:36Z",
+    "Severity": "MODERATE",
+    "Summary": "Server-Side Request Forgery in langchain",
+    "UpdatedAt": "2024-06-06T22:41:07Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 4.8,
+      "VectorString": "CVSS:3.0/AV:P/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 0.1.5"
+    }
+  ]
+}
