@@ -17,6 +17,9 @@
         "Url": "https://github.com/IdoPesok/zsa/commit/86b86b282bde6780963f62406cc8bc65f2c86f3a"
       },
       {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37162"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-wjmj-h3xc-hxp8"
       }
     ],
@@ -24,6 +27,10 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-wjmj-h3xc-hxp8"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-37162"
       }
     ],
     "Description": "### Impact\nAll users are impacted. The zsa application transfers the parse error stack from the server to the client in production build mode. This can potentially reveal sensitive information about the server environment, such as the machine username and directory paths. An attacker could exploit this vulnerability to gain unauthorized access to sensitive server information. This information could be used to plan further attacks or gain a deeper understanding of the server infrastructure.\n\n### Patches\nYes, this has been pathed on `0.3.3`\n\n### Workarounds\nNo way to fix other than the patch.\n",
@@ -31,7 +38,7 @@
     "PublishedAt": "2024-06-06T22:58:46Z",
     "Severity": "MODERATE",
     "Summary": "Generation of Error Message Containing Sensitive Information in zsa",
-    "UpdatedAt": "2024-06-06T22:58:48Z",
+    "UpdatedAt": "2024-06-07T15:49:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
