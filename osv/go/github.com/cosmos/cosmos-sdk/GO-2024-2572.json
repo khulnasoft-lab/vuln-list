@@ -1,0 +1,59 @@
+{
+  "id": "GO-2024-2572",
+  "modified": "2024-06-10T16:19:29Z",
+  "published": "2024-05-28T16:10:17Z",
+  "aliases": [
+    "GHSA-4j93-fm92-rp4m"
+  ],
+  "summary": "ASA-2024-003: Missing `BlockedAddressed` Validation in Vesting Module in github.com/cosmos/cosmos-sdk",
+  "details": "ASA-2024-003: Missing `BlockedAddressed` Validation in Vesting Module in github.com/cosmos/cosmos-sdk",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/cosmos/cosmos-sdk",
+        "purl": "pkg:golang/github.com/cosmos/cosmos-sdk"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "0.47.9"
+            },
+            {
+              "introduced": "0.50.0"
+            },
+            {
+              "fixed": "0.50.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2572.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-4j93-fm92-rp4m"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cosmos/cosmos-sdk/commit/c05850241e2d615721e3492d15fee4e1deec082b"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.47.9"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/cosmos/cosmos-sdk/releases/tag/v0.50.4"
+    }
+  ]
+}

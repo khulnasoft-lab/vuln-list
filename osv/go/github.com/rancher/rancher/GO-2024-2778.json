@@ -1,0 +1,47 @@
+{
+  "id": "GO-2024-2778",
+  "modified": "2024-06-10T17:13:46.139621Z",
+  "published": "2024-06-10T16:39:03Z",
+  "aliases": [
+    "CVE-2021-31999",
+    "GHSA-pvxj-25m6-7vqr"
+  ],
+  "summary": "Rancher Privilege escalation vulnerability via malicious \"Connection\" header in github.com/rancher/rancher",
+  "details": "Rancher Privilege escalation vulnerability via malicious \"Connection\" header in github.com/rancher/rancher",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/rancher/rancher",
+        "purl": "pkg:golang/github.com/rancher/rancher"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "2.0.0+incompatible"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2778.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-pvxj-25m6-7vqr"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-31999"
+    },
+    {
+      "type": "WEB",
+      "url": "https://bugzilla.suse.com/show_bug.cgi?id=1187084"
+    }
+  ]
+}
