@@ -1,0 +1,63 @@
+{
+  "id": "GO-2024-2801",
+  "modified": "2024-06-10T17:13:54.732753Z",
+  "published": "2024-06-10T16:39:03Z",
+  "aliases": [
+    "CVE-2024-33522"
+  ],
+  "summary": "Privilege escalation in Calico CNI install binary in github.com/projectcalico/calico",
+  "details": "Privilege escalation in Calico CNI install binary in github.com/projectcalico/calico",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/projectcalico/calico",
+        "purl": "pkg:golang/github.com/projectcalico/calico"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "3.17.4+incompatible"
+            },
+            {
+              "introduced": "3.18.0+incompatible"
+            },
+            {
+              "fixed": "3.18.2+incompatible"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2801.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-33522"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/projectcalico/calico/pull/8447"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/projectcalico/calico/pull/8517"
+    },
+    {
+      "type": "REPORT",
+      "url": "https://github.com/projectcalico/calico/issues/7981"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.tigera.io/security-bulletins-tta-2024-001/"
+    }
+  ]
+}

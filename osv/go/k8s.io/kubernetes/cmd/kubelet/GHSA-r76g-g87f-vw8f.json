@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r76g-g87f-vw8f",
-  "modified": "2024-04-24T20:28:39.256277Z",
+  "modified": "2024-06-10T17:13:45.101900Z",
   "published": "2024-04-24T20:03:48Z",
   "aliases": [
-    "CVE-2019-11245"
+    "CVE-2019-11245",
+    "GO-2024-2780"
   ],
   "summary": "Kubelet Incorrect Privilege Assignment",
   "details": "In kubelet v1.13.6 and v1.14.2, containers for pods that do not specify an explicit `runAsUser` attempt to run as uid 0 (root) on container restart, or if the image was previously pulled to the node. If the pod specified `mustRunAsNonRoot: true`, the kubelet will refuse to start the container as root. If the pod did not specify `mustRunAsNonRoot: true`, the kubelet will run the container as uid 0.",
