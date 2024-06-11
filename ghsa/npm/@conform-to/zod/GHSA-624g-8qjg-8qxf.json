@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-04-23T21:15:57Z",
+  "UpdatedAt": "2024-06-10T20:13:00Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@conform-to/zod"
@@ -23,6 +23,9 @@
         "Url": "https://github.com/edmundhung/conform/blob/59156d7115a7207fa3b6f8a70a4342a9b24c2501/packages/conform-dom/formdata.ts#L117"
       },
       {
+        "Url": "https://github.com/edmundhung/conform/commit/cb604dd58b99e2d12716d901a23bfca724e741ef"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-624g-8qjg-8qxf"
       }
     ],
@@ -41,7 +44,7 @@
     "PublishedAt": "2024-04-23T21:15:55Z",
     "Severity": "HIGH",
     "Summary": "Conform contains a Prototype Pollution Vulnerability in `parseWith...` function",
-    "UpdatedAt": "2024-05-31T20:33:47Z",
+    "UpdatedAt": "2024-06-10T20:13:00Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.6,
@@ -51,9 +54,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "0.9.2"
+      },
+      "VulnerableVersionRange": "\u003c 0.9.2"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "1.1.1"
       },
-      "VulnerableVersionRange": "\u003c= 1.1.0"
+      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c= 1.1.0"
     }
   ]
 }
