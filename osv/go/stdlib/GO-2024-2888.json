@@ -1,10 +1,13 @@
 {
   "id": "GO-2024-2888",
-  "modified": "2024-06-07T08:12:09.127242Z",
+  "modified": "2024-06-12T22:14:24.461552Z",
   "published": "2024-06-04T22:48:55Z",
   "aliases": [
     "BIT-golang-2024-24789",
-    "CVE-2024-24789"
+    "CGA-7f84-mfh5-cf8w",
+    "CGA-vqjp-4qph-3wpv",
+    "CVE-2024-24789",
+    "GHSA-236w-p7wf-5ph8"
   ],
   "summary": "Mishandling of corrupt central directory record in archive/zip",
   "details": "The archive/zip package's handling of certain types of invalid zip files differs from the behavior of most zip implementations. This misalignment could be exploited to create an zip file with contents that vary depending on the implementation reading the file. The archive/zip package now rejects files containing these errors.",
