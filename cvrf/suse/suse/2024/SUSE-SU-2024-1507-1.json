@@ -31,7 +31,7 @@
       "Type": "Legal Disclaimer"
     },
     {
-      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2024-1507,Image SLES15-SP4-Manager-Server-4-3-2024-1507,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2024-1507,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2024-1507,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2024-1507,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2024-1507,SUSE-2024-1507,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2024-1507,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2024-1507",
+      "Text": "Container suse/manager/4.3/proxy-httpd:latest-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2-2024-1507,Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE-2024-1507,Image SLES15-SP4-Manager-Server-4-3-2024-1507,Image SLES15-SP4-Manager-Server-4-3-Azure-llc-2024-1507,Image SLES15-SP4-Manager-Server-4-3-Azure-ltd-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-Azure-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-EC2-2024-1507,Image SLES15-SP4-Manager-Server-4-3-BYOS-GCE-2024-1507,Image SLES15-SP4-Manager-Server-4-3-EC2-llc-2024-1507,Image SLES15-SP4-Manager-Server-4-3-EC2-ltd-2024-1507,SUSE-2024-1507,SUSE-SLE-Module-SUSE-Manager-Proxy-4.3-2024-1507,SUSE-SLE-Module-SUSE-Manager-Server-4.3-2024-1507",
       "Title": "Patchnames",
       "Type": "Details"
     }
@@ -136,6 +136,86 @@
       {
         "ProductReference": "spacewalk-client-tools-4.3.19-150400.3.27.5",
         "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-spacewalk-certs-tools-4.3.23-150400.3.28.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-spacewalk-client-tools-4.3.19-150400.3.27.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-uyuni-common-libs-4.3.10-150400.3.18.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-backend-4.3.28-150400.3.41.7",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-base-minimal-4.3.38-150400.3.42.6",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-base-minimal-config-4.3.38-150400.3.42.6",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-certs-tools-4.3.23-150400.3.28.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-client-tools-4.3.19-150400.3.27.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-spacewalk-certs-tools-4.3.23-150400.3.28.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-spacewalk-client-tools-4.3.19-150400.3.27.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "python3-uyuni-common-libs-4.3.10-150400.3.18.4",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-backend-4.3.28-150400.3.41.7",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-base-minimal-4.3.38-150400.3.42.6",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-base-minimal-config-4.3.38-150400.3.42.6",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-certs-tools-4.3.23-150400.3.28.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
+        "RelationType": "Default Component Of"
+      },
+      {
+        "ProductReference": "spacewalk-client-tools-4.3.19-150400.3.27.5",
+        "RelatesToProductReference": "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE",
         "RelationType": "Default Component Of"
       },
       {
@@ -2661,6 +2741,22 @@
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure:spacewalk-base-minimal-config-4.3.38-150400.3.42.6",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure:spacewalk-certs-tools-4.3.23-150400.3.28.5",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-Azure:spacewalk-client-tools-4.3.19-150400.3.27.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:python3-spacewalk-certs-tools-4.3.23-150400.3.28.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:python3-spacewalk-client-tools-4.3.19-150400.3.27.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:python3-uyuni-common-libs-4.3.10-150400.3.18.4",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:spacewalk-backend-4.3.28-150400.3.41.7",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:spacewalk-base-minimal-4.3.38-150400.3.42.6",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:spacewalk-base-minimal-config-4.3.38-150400.3.42.6",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:spacewalk-certs-tools-4.3.23-150400.3.28.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-EC2:spacewalk-client-tools-4.3.19-150400.3.27.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:python3-spacewalk-certs-tools-4.3.23-150400.3.28.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:python3-spacewalk-client-tools-4.3.19-150400.3.27.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:python3-uyuni-common-libs-4.3.10-150400.3.18.4",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:spacewalk-backend-4.3.28-150400.3.41.7",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:spacewalk-base-minimal-4.3.38-150400.3.42.6",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:spacewalk-base-minimal-config-4.3.38-150400.3.42.6",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:spacewalk-certs-tools-4.3.23-150400.3.28.5",
+            "Image SLES15-SP4-Manager-Proxy-4-3-BYOS-GCE:spacewalk-client-tools-4.3.19-150400.3.27.5",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:python3-spacewalk-certs-tools-4.3.23-150400.3.28.5",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:python3-spacewalk-client-tools-4.3.19-150400.3.27.5",
             "Image SLES15-SP4-Manager-Proxy-4-3-BYOS:python3-uyuni-common-libs-4.3.10-150400.3.18.4",
