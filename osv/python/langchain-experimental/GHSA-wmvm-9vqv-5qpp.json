@@ -1,11 +1,12 @@
 {
-  "id": "PYSEC-2024-53",
+  "id": "GHSA-wmvm-9vqv-5qpp",
   "modified": "2024-06-17T21:42:16.561407Z",
-  "published": "2024-06-16T15:15:00Z",
+  "published": "2024-06-16T15:30:44Z",
   "aliases": [
     "CVE-2024-38459",
-    "GHSA-wmvm-9vqv-5qpp"
+    "PYSEC-2024-53"
   ],
+  "summary": "langchain_experimental Code Execution via Python REPL access",
   "details": "langchain_experimental (aka LangChain Experimental) before 0.0.61 for LangChain provides Python REPL access without an opt-in step. NOTE; this issue exists because of an incomplete fix for CVE-2024-27444.",
   "affected": [
     {
@@ -15,18 +16,6 @@
         "purl": "pkg:pypi/langchain-experimental"
       },
       "ranges": [
-        {
-          "type": "GIT",
-          "repo": "https://github.com/langchain-ai/langchain",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "ce0b0f22a175139df8f41cdcfb4d2af411112009"
-            }
-          ]
-        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -105,22 +94,34 @@
         "0.0.9"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/langchain-experimental/PYSEC-2024-53.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-wmvm-9vqv-5qpp/GHSA-wmvm-9vqv-5qpp.json"
       }
     }
   ],
   "references": [
     {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-38459"
+    },
+    {
       "type": "WEB",
       "url": "https://github.com/langchain-ai/langchain/pull/22860"
     },
     {
-      "type": "FIX",
+      "type": "WEB",
       "url": "https://github.com/langchain-ai/langchain/commit/ce0b0f22a175139df8f41cdcfb4d2af411112009"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/langchain-ai/langchain"
     },
     {
       "type": "WEB",
       "url": "https://github.com/langchain-ai/langchain/compare/langchain-experimental==0.0.60...langchain-experimental==0.0.61"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/langchain-experimental/PYSEC-2024-53.yaml"
     }
   ]
 }
