@@ -1,6 +1,6 @@
 {
   "id": "GHSA-m5vv-6r4h-3vj9",
-  "modified": "2024-06-13T19:05:32.369266Z",
+  "modified": "2024-06-19T17:45:47.900587Z",
   "published": "2024-06-11T18:30:50Z",
   "summary": "Azure Identity Libraries and Microsoft Authentication Library Elevation of Privilege Vulnerability",
   "details": "Azure Identity Libraries and Microsoft Authentication Library Elevation of Privilege Vulnerability.",
@@ -272,7 +272,7 @@
               "introduced": "4.49.1"
             },
             {
-              "fixed": "4.61.3"
+              "fixed": "4.60.4"
             }
           ]
         }
@@ -297,10 +297,7 @@
         "4.60.0-netonly",
         "4.60.1",
         "4.60.2",
-        "4.60.3",
-        "4.61.0",
-        "4.61.1",
-        "4.61.2"
+        "4.60.3"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-m5vv-6r4h-3vj9/GHSA-m5vv-6r4h-3vj9.json"
@@ -407,12 +404,44 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-m5vv-6r4h-3vj9/GHSA-m5vv-6r4h-3vj9.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "NuGet",
+        "name": "Microsoft.Identity.Client",
+        "purl": "pkg:nuget/Microsoft.Identity.Client"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "4.61.0"
+            },
+            {
+              "fixed": "4.61.3"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "4.61.0",
+        "4.61.1",
+        "4.61.2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-m5vv-6r4h-3vj9/GHSA-m5vv-6r4h-3vj9.json"
+      }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-35255"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/issues/4806#issuecomment-2178960340"
     },
     {
       "type": "WEB",
