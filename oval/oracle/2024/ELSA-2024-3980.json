@@ -20,68 +20,138 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
-            "Operator": "OR",
+            "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
+                "Operator": "OR",
+                "Criterias": [
                   {
-                    "Comment": "flatpak is earlier than 0:1.0.9-13.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "flatpak is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "flatpak-builder is earlier than 0:1.0.0-13.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-builder is earlier than 0:1.0.0-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-builder is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "flatpak-builder is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "flatpak-devel is earlier than 0:1.0.9-13.el7_9"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-devel is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-libs is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
                   }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "flatpak-libs is earlier than 0:1.0.9-13.el7_9"
-                  },
-                  {
-                    "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
-                  }
-                ]
+                ],
+                "Criterions": null
               }
             ],
-            "Criterions": null
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-builder is earlier than 0:1.0.0-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-builder is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-devel is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-devel is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flatpak-libs is earlier than 0:1.0.9-13.el7_9"
+                      },
+                      {
+                        "Comment": "flatpak-libs is signed with the Oracle Linux 7 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is x86_64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [
