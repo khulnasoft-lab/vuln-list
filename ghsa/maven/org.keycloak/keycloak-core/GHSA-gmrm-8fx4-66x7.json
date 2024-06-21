@@ -27,19 +27,15 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-gmrm-8fx4-66x7"
-      },
-      {
-        "Type": "CVE",
-        "Value": "CVE-2024-5967"
       }
     ],
-    "Description": "A vulnerability was found in Keycloak. The LDAP testing endpoint allows changing the Connection URL  independently without re-entering the currently configured LDAP bind credentials. This flaw allows an attacker with admin access (permission manage-realm) to change the LDAP host URL (\"Connection URL\") to a machine they control. The Keycloak server will connect to the attacker's host and try to authenticate with the configured credentials, thus leaking them to the attacker. As a consequence, an attacker who has compromised the admin console or compromised a user with sufficient privileges can leak domain credentials and attack the domain.",
+    "Description": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-c25h-c27q-5qpv. This link is maintained to preserve external references.\n\n## Original Description\n\nA vulnerability was found in Keycloak. The LDAP testing endpoint allows changing the Connection URL  independently without re-entering the currently configured LDAP bind credentials. This flaw allows an attacker with admin access (permission manage-realm) to change the LDAP host URL (\"Connection URL\") to a machine they control. The Keycloak server will connect to the attacker's host and try to authenticate with the configured credentials, thus leaking them to the attacker. As a consequence, an attacker who has compromised the admin console or compromised a user with sufficient privileges can leak domain credentials and attack the domain.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-18T12:30:42Z",
     "Severity": "LOW",
-    "Summary": "Keycloak: Leak of configured LDAP bind credentials",
-    "UpdatedAt": "2024-06-18T16:34:47Z",
-    "WithdrawnAt": "",
+    "Summary": "Duplicate Advisory: Keycloak: Leak of configured LDAP bind credentials",
+    "UpdatedAt": "2024-06-21T15:52:30Z",
+    "WithdrawnAt": "2024-06-21T15:51:43Z",
     "CVSS": {
       "Score": 2.7,
       "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N"
