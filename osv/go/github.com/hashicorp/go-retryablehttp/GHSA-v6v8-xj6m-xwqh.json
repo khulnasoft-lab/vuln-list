@@ -1,11 +1,7 @@
 {
   "id": "GHSA-v6v8-xj6m-xwqh",
-  "modified": "2024-06-25T09:59:12.449647Z",
+  "modified": "2024-06-24T21:32:07Z",
   "published": "2024-06-24T18:31:37Z",
-  "aliases": [
-    "CGA-96qq-mr6v-8845",
-    "CVE-2024-6104"
-  ],
   "summary": "go-retryablehttp can leak basic auth credentials to log files",
   "details": "go-retryablehttp prior to 0.7.7 did not sanitize urls when writing them to its log file. This could lead to go-retryablehttp writing sensitive HTTP basic auth credentials to its log file. This vulnerability, CVE-2024-6104, was fixed in go-retryablehttp 0.7.7.",
   "affected": [
