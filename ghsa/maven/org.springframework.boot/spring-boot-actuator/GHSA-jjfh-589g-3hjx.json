@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-11-28T20:53:48Z",
+  "UpdatedAt": "2024-06-27T16:35:04Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.springframework.boot:spring-boot"
+    "Name": "org.springframework.boot:spring-boot-actuator"
   },
   "Advisory": {
     "DatabaseId": 226904,
@@ -17,7 +17,13 @@
         "Url": "https://spring.io/security/cve-2023-34055"
       },
       {
-        "Url": "https://security.netapp.com/advisory/ntap-20231221-0010/"
+        "Url": "https://github.com/spring-projects/spring-boot/commit/5490e73922b37a7f0bdde43eb318cb1038b45d60"
+      },
+      {
+        "Url": "https://security.netapp.com/advisory/ntap-20231221-0010"
+      },
+      {
+        "Url": "https://security.snyk.io/vuln/SNYK-JAVA-ORGSPRINGFRAMEWORKBOOT-6226862"
       },
       {
         "Url": "https://github.com/advisories/GHSA-jjfh-589g-3hjx"
@@ -33,12 +39,12 @@
         "Value": "CVE-2023-34055"
       }
     ],
-    "Description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  org.springframework.boot:spring-boot-actuator is on the classpath",
+    "Description": "In Spring Boot versions 2.7.0 - 2.7.17, 3.0.0-3.0.12 and 3.1.0-3.1.5, it is possible for a user to provide specially crafted HTTP requests that may cause a denial-of-service (DoS) condition.\n\nSpecifically, an application is vulnerable when all of the following are true:\n\n  *  the application uses Spring MVC or Spring WebFlux\n  *  `org.springframework.boot:spring-boot-actuator` is on the classpath",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-11-28T09:30:27Z",
     "Severity": "MODERATE",
-    "Summary": "Spring Boot denial of service vulnerability",
-    "UpdatedAt": "2023-12-22T00:30:31Z",
+    "Summary": "Spring Boot Actuator denial of service vulnerability",
+    "UpdatedAt": "2024-06-27T16:35:04Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
