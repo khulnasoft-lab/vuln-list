@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2024-02-20T18:30:41Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -48,9 +48,9 @@
     "Description": "The `isPublic()` function in the NPM package `ip` doesn't correctly identify certain private IP addresses in uncommon formats such as `0x7F.1` as private. Instead, it reports them as public by returning `true`. This can lead to security issues such as Server-Side Request Forgery (SSRF) if `isPublic()` is used to protect sensitive code paths when passed user input. Versions 1.1.9 and 2.0.1 fix the issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-02-08T18:30:39Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "NPM IP package incorrectly identifies some private IP addresses as public",
-    "UpdatedAt": "2024-02-20T18:30:41Z",
+    "UpdatedAt": "2024-06-28T16:49:28Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
