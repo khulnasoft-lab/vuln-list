@@ -1,0 +1,51 @@
+{
+  "id": "GO-2024-2938",
+  "modified": "2024-06-28T15:58:30.127544Z",
+  "published": "2024-06-28T15:28:30Z",
+  "aliases": [
+    "CVE-2024-5182",
+    "GHSA-cpcx-r2gq-x893"
+  ],
+  "summary": "LocalAI path traversal vulnerability in github.com/go-skynet/LocalAI",
+  "details": "LocalAI path traversal vulnerability in github.com/go-skynet/LocalAI",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/go-skynet/LocalAI",
+        "purl": "pkg:golang/github.com/go-skynet/LocalAI"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2938.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-cpcx-r2gq-x893"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-5182"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/mudler/localai/commit/1a3dedece06cab1acc3332055d285ac540a47f0e"
+    },
+    {
+      "type": "WEB",
+      "url": "https://huntr.com/bounties/f7a87f29-c22a-48e8-9fce-b6d5a273e545"
+    }
+  ]
+}

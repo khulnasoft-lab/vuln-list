@@ -1,0 +1,51 @@
+{
+  "id": "GO-2024-2556",
+  "modified": "2024-06-28T15:58:25.846229Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "CVE-2024-23448",
+    "GHSA-8r33-q5j5-rh7g"
+  ],
+  "summary": "APM Server vulnerable to Insertion of Sensitive Information into Log File in github.com/elastic/apm-server",
+  "details": "APM Server vulnerable to Insertion of Sensitive Information into Log File in github.com/elastic/apm-server",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/elastic/apm-server",
+        "purl": "pkg:golang/github.com/elastic/apm-server"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2556.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-8r33-q5j5-rh7g"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23448"
+    },
+    {
+      "type": "WEB",
+      "url": "https://discuss.elastic.co/t/apm-server-8-12-1-security-update-esa-2024-03/352688"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.elastic.co/community/security"
+    }
+  ]
+}

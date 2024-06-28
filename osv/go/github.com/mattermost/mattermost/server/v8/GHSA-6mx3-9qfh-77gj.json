@@ -1,10 +1,11 @@
 {
   "id": "GHSA-6mx3-9qfh-77gj",
-  "modified": "2024-06-24T14:42:09.502181Z",
+  "modified": "2024-06-28T15:58:31.317562Z",
   "published": "2024-02-29T09:30:34Z",
   "aliases": [
     "CGA-hxgx-rg66-hvqr",
-    "CVE-2024-24988"
+    "CVE-2024-24988",
+    "GO-2024-2589"
   ],
   "summary": "Mattermost denial of service through long emoji value",
   "details": "Mattermost fails to properly validate the length of the emoji value in the custom user status, allowing an attacker to send multiple times a very long string as an emoji value causing high resource consumption and possibly crashing the server.\n\n",

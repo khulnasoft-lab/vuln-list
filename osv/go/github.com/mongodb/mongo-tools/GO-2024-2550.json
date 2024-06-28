@@ -1,0 +1,51 @@
+{
+  "id": "GO-2024-2550",
+  "modified": "2024-06-28T15:58:25.000141Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "CVE-2020-7924",
+    "GHSA-6cwm-wm82-hgrw"
+  ],
+  "summary": "MongoDB Tools Improper Certificate Validation vulnerability in github.com/mongodb/mongo-tools",
+  "details": "MongoDB Tools Improper Certificate Validation vulnerability in github.com/mongodb/mongo-tools",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/mongodb/mongo-tools",
+        "purl": "pkg:golang/github.com/mongodb/mongo-tools"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2550.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-6cwm-wm82-hgrw"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-7924"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/mongodb/mongo-tools/commit/8c1800b5155084f954a39a1f2f259efac3bb86de"
+    },
+    {
+      "type": "WEB",
+      "url": "https://jira.mongodb.org/browse/TOOLS-2587"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "GO-2024-2527",
+  "modified": "2024-06-28T15:58:45.198925Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "GHSA-5x4g-q5rc-36jp"
+  ],
+  "summary": "Etcd pkg Insecure ciphers are allowed by default in go.etcd.io/etcd/client/pkg/v3",
+  "details": "Etcd pkg Insecure ciphers are allowed by default in go.etcd.io/etcd/client/pkg/v3",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "go.etcd.io/etcd/client/pkg/v3",
+        "purl": "pkg:golang/go.etcd.io/etcd/client/pkg/v3"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2527.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/etcd-io/etcd/security/advisories/GHSA-5x4g-q5rc-36jp"
+    }
+  ]
+}
