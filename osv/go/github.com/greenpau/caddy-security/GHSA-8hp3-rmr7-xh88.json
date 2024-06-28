@@ -1,9 +1,10 @@
 {
   "id": "GHSA-8hp3-rmr7-xh88",
-  "modified": "2024-02-21T00:12:59.035102Z",
+  "modified": "2024-06-28T15:58:25.424271Z",
   "published": "2024-02-17T06:30:35Z",
   "aliases": [
-    "CVE-2024-21497"
+    "CVE-2024-21497",
+    "GO-2024-2560"
   ],
   "summary": "Open Redirect in github.com/greenpau/caddy-security",
   "details": "All versions of the package github.com/greenpau/caddy-security are vulnerable to Open Redirect via the redirect_url parameter. An attacker could perform a phishing attack and trick users into visiting a malicious website by crafting a convincing URL with this parameter. To exploit this vulnerability, the user must take an action, such as clicking on a portal button or using the browser’s back button, to trigger the redirection.",

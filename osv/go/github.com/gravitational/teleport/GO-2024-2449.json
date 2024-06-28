@@ -1,0 +1,46 @@
+{
+  "id": "GO-2024-2449",
+  "modified": "2024-06-28T15:58:45.688945Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "GHSA-vfxf-76hv-v4w4"
+  ],
+  "summary": "User-provided environment values allow execution on macOS agents in github.com/gravitational/teleport",
+  "details": "User-provided environment values allow execution on macOS agents in github.com/gravitational/teleport",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/gravitational/teleport",
+        "purl": "pkg:golang/github.com/gravitational/teleport"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2449.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/gravitational/teleport/security/advisories/GHSA-vfxf-76hv-v4w4"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/commit/fcc97de9f99dfec8696ecfd620672a26f29cf9ac"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/pull/36132"
+    }
+  ]
+}

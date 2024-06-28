@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qcjq-7f7v-pvc8",
-  "modified": "2024-01-29T22:58:34.361661Z",
+  "modified": "2024-06-28T15:58:34.674729Z",
   "published": "2024-01-29T22:30:24Z",
   "aliases": [
-    "CVE-2024-23828"
+    "CVE-2024-23828",
+    "GO-2024-2480"
   ],
   "summary": "Nginx-UI vulnerable to authenticated RCE through injecting into the application config via CRLF",
   "details": "### Summary\n\nFix bypass to the following bugs\n\n- https://github.com/0xJacky/nginx-ui/security/advisories/GHSA-pxmr-q2x3-9x9m\n- https://github.com/0xJacky/nginx-ui/security/advisories/GHSA-8r25-68wm-jw35\n\nAllowing to inject directly in the `app.ini` via CRLF to change the value of `test_config_cmd` and `start_cmd` resulting in an Authenticated RCE\n\n### Impact\nAuthenticated Remote execution on the host",

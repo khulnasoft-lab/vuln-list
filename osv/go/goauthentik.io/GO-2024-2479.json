@@ -1,0 +1,47 @@
+{
+  "id": "GO-2024-2479",
+  "modified": "2024-06-28T15:58:30.679961Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "CVE-2024-23647",
+    "GHSA-mrx3-gxjx-hjqj"
+  ],
+  "summary": "Authentik vulnerable to PKCE downgrade attack in goauthentik.io",
+  "details": "Authentik vulnerable to PKCE downgrade attack in goauthentik.io",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "goauthentik.io",
+        "purl": "pkg:golang/goauthentik.io"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2479.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/goauthentik/authentik/security/advisories/GHSA-mrx3-gxjx-hjqj"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-23647"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/goauthentik/authentik/commit/38e04ae12720e5d81b4f7ac77997eb8d1275d31a"
+    }
+  ]
+}
