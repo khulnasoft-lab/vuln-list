@@ -1,0 +1,46 @@
+{
+  "id": "GO-2024-2447",
+  "modified": "2024-06-28T15:58:45.482816Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "GHSA-hw4x-mcx5-9q36"
+  ],
+  "summary": "Teleport Proxy and Teleport Agents: SSRF to arbitrary hosts is possible from low privileged users in github.com/gravitational/teleport",
+  "details": "Teleport Proxy and Teleport Agents: SSRF to arbitrary hosts is possible from low privileged users in github.com/gravitational/teleport",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/gravitational/teleport",
+        "purl": "pkg:golang/github.com/gravitational/teleport"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2447.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/gravitational/teleport/security/advisories/GHSA-hw4x-mcx5-9q36"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/commit/bb2d67d357e868254a21ed7cb132030d7bf9fcbc"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/pull/36127"
+    }
+  ]
+}
