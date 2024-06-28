@@ -1,0 +1,39 @@
+{
+  "id": "GO-2024-2929",
+  "modified": "2024-06-28T15:58:31.530924Z",
+  "published": "2024-06-28T15:28:30Z",
+  "aliases": [
+    "CVE-2023-32196",
+    "GHSA-64jq-m7rq-768h"
+  ],
+  "summary": "Rancher's External RoleTemplates can lead to privilege escalation in github.com/rancher/rancher",
+  "details": "Rancher's External RoleTemplates can lead to privilege escalation in github.com/rancher/rancher",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/rancher/rancher",
+        "purl": "pkg:golang/github.com/rancher/rancher"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2929.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/rancher/rancher/security/advisories/GHSA-64jq-m7rq-768h"
+    }
+  ]
+}

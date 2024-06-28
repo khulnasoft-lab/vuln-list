@@ -1,0 +1,39 @@
+{
+  "id": "GO-2024-2535",
+  "modified": "2024-06-28T15:58:30.203845Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "CVE-2023-32194",
+    "GHSA-c85r-fwc7-45vc"
+  ],
+  "summary": "Rancher permissions on 'namespaces' in any API group grants 'edit' permissions on namespaces in 'core' in github.com/rancher/rancher",
+  "details": "Rancher permissions on 'namespaces' in any API group grants 'edit' permissions on namespaces in 'core' in github.com/rancher/rancher",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/rancher/rancher",
+        "purl": "pkg:golang/github.com/rancher/rancher"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2535.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/rancher/rancher/security/advisories/GHSA-c85r-fwc7-45vc"
+    }
+  ]
+}

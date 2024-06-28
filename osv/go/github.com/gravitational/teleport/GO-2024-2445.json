@@ -1,0 +1,46 @@
+{
+  "id": "GO-2024-2445",
+  "modified": "2024-06-28T15:58:45.410056Z",
+  "published": "2024-06-28T15:28:53Z",
+  "aliases": [
+    "GHSA-c9v7-wmwj-vf6x"
+  ],
+  "summary": "SFTP is possible on the Proxy server for any user with SFTP access in github.com/gravitational/teleport",
+  "details": "SFTP is possible on the Proxy server for any user with SFTP access in github.com/gravitational/teleport",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/gravitational/teleport",
+        "purl": "pkg:golang/github.com/gravitational/teleport"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2445.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/gravitational/teleport/security/advisories/GHSA-c9v7-wmwj-vf6x"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/commit/1c77fc49944ebcded32bbdd77c3e1f4f8a1c130d"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/gravitational/teleport/pull/36136"
+    }
+  ]
+}
