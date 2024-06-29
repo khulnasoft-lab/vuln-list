@@ -1,0 +1,56 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-06-28T21:11:27Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "nltk"
+  },
+  "Advisory": {
+    "DatabaseId": 251530,
+    "Id": "GSA_kwCzR0hTQS1jZ3Z4LTk0NDctdmNjaM4AA9aK",
+    "GhsaId": "GHSA-cgvx-9447-vcch",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-39705"
+      },
+      {
+        "Url": "https://github.com/nltk/nltk/issues/2522"
+      },
+      {
+        "Url": "https://github.com/nltk/nltk/issues/3266"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-cgvx-9447-vcch"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-cgvx-9447-vcch"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-39705"
+      }
+    ],
+    "Description": "NLTK through 3.8.1 allows remote code execution if untrusted packages have pickled Python code, and the integrated data package download functionality is used. This affects, for example, averaged_perceptron_tagger and punkt.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-06-28T00:33:31Z",
+    "Severity": "HIGH",
+    "Summary": "ntlk unsafe deserialization vulnerability",
+    "UpdatedAt": "2024-06-28T21:11:27Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 3.8.1"
+    }
+  ]
+}
