@@ -1,13 +1,13 @@
 {
   "id": "GO-2024-2913",
-  "modified": "2024-06-14T14:14:17.499490Z",
+  "modified": "2024-07-01T19:59:51Z",
   "published": "2024-06-14T13:41:08Z",
   "aliases": [
     "CVE-2021-41089",
     "GHSA-v994-f8vw-g7j4"
   ],
-  "summary": "`docker cp` allows unexpected chmod of host files in Moby Docker Engine in github.com/docker/docker",
-  "details": "`docker cp` allows unexpected chmod of host files in Moby Docker Engine in github.com/docker/docker",
+  "summary": "Unexpected chmod of host files via 'docker cp' in Moby Docker Engine in github.com/docker/docker",
+  "details": "Unexpected chmod of host files via 'docker cp' in Moby Docker Engine in github.com/docker/docker",
   "affected": [
     {
       "package": {
@@ -28,6 +28,49 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/docker/docker/pkg/chrootarchive",
+            "symbols": [
+              "untarHandler"
+            ]
+          }
+        ]
+      },
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2913.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/moby/moby",
+        "purl": "pkg:golang/github.com/moby/moby"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "20.10.9+incompatible"
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/moby/moby/pkg/chrootarchive",
+            "symbols": [
+              "untarHandler"
+            ]
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-2913.json"
       }
@@ -39,24 +82,8 @@
       "url": "https://github.com/moby/moby/security/advisories/GHSA-v994-f8vw-g7j4"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2021-41089"
-    },
-    {
-      "type": "WEB",
-      "url": "https://cert-portal.siemens.com/productcert/pdf/ssa-222547.pdf"
-    },
-    {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/moby/moby/commit/bce32e5c93be4caf1a592582155b9cb837fc129a"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/B5Q6G6I4W5COQE25QMC7FJY3I3PAYFBB"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/ZNFADTCHHYWVM6W4NJ6CB4FNFM2VMBIB"
     }
   ]
 }
