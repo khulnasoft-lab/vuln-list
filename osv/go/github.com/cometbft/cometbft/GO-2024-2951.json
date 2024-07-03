@@ -1,7 +1,10 @@
 {
   "id": "GO-2024-2951",
-  "modified": "2024-07-02T17:39:03Z",
+  "modified": "2024-07-02T18:12:57.188147Z",
   "published": "2024-07-02T17:39:03Z",
+  "aliases": [
+    "GHSA-hg58-rf2h-6rr7"
+  ],
   "summary": "Denial of service when syncing with a malicious peer in github.com/cometbft/cometbft",
   "details": "A malicious peer can cause a syncing node to panic during blocksync. The syncing node may enter into a catastrophic invalid syncing state or get stuck in blocksync mode, never switching to consensus. Nodes that are vulnerable to this state may experience a Denial of Service condition in which syncing will not work as expected when joining a network as a client.",
   "affected": [
