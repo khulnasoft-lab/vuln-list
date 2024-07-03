@@ -1,11 +1,13 @@
 {
   "id": "GO-2023-2409",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2024-07-02T18:27:54.108480Z",
   "published": "2023-12-20T17:35:00Z",
   "aliases": [
+    "CVE-2023-50658",
+    "GHSA-6294-6rgp-fr7r",
     "GHSA-mhpq-9638-x6pw"
   ],
-  "summary": "Denial of service when decrypting attack controlled input in github.com/dvsekhvalnov/jose2go",
+  "summary": "Denial of service when decrypting attacker controlled input in github.com/dvsekhvalnov/jose2go",
   "details": "An attacker controlled input of a PBES2 encrypted JWE blob can have a very large p2c value that, when decrypted, produces a denial-of-service.",
   "affected": [
     {
