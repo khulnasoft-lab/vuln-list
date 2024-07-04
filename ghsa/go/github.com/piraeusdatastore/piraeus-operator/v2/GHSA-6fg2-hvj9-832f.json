@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-03T20:31:40Z",
   "Package": {
     "Ecosystem": "GO",
@@ -23,6 +23,9 @@
         "Url": "https://piraeus.io"
       },
       {
+        "Url": "https://github.com/piraeusdatastore/piraeus-operator"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6fg2-hvj9-832f"
       }
     ],
@@ -39,13 +42,13 @@
     "Description": "There is a ClusterRole in piraeus-operator v2.5.0 and earlier which has been granted list secrets permission, which allows an attacker to impersonate the service account bound to this ClusterRole and use its high-risk privileges to list confidential information across the cluster.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-05-03T18:30:36Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "piraeus-operator allows attacker to impersonate service account",
-    "UpdatedAt": "2024-05-03T20:31:40Z",
+    "UpdatedAt": "2024-07-03T22:06:28Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
