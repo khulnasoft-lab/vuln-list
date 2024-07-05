@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package openssh is earlier than 8.9p1-6, affected by CVE-2024-6387",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:43030000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:43030001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:43030002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package openssl is earlier than 1.1.1k-28, affected by CVE-2023-3446",
       "ID": "oval:com.microsoft.cbl-mariner:tst:42955000",
       "Version": "1",
