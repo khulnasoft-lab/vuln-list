@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2022-05-25T20:20:37Z",
+  "UpdatedAt": "2024-07-05T14:16:53Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.springframework.security:spring-security-core"
@@ -17,13 +17,13 @@
         "Url": "https://tanzu.vmware.com/security/cve-2022-22978"
       },
       {
-        "Url": "https://security.netapp.com/advisory/ntap-20220707-0003/"
-      },
-      {
         "Url": "https://www.oracle.com/security-alerts/cpujul2022.html"
       },
       {
         "Url": "https://spring.io/security/cve-2022-22978"
+      },
+      {
+        "Url": "https://security.netapp.com/advisory/ntap-20220707-0003"
       },
       {
         "Url": "https://github.com/advisories/GHSA-hh32-7344-cg2f"
@@ -44,7 +44,7 @@
     "PublishedAt": "2022-05-20T00:00:39Z",
     "Severity": "CRITICAL",
     "Summary": "Authorization bypass in Spring Security",
-    "UpdatedAt": "2023-04-12T13:11:37Z",
+    "UpdatedAt": "2024-07-05T14:16:53Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -54,15 +54,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "5.6.4"
+        "Identifier": "5.4.11"
       },
-      "VulnerableVersionRange": "\u003e= 5.6.0, \u003c 5.6.4"
+      "VulnerableVersionRange": "\u003c 5.4.11"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "5.5.7"
       },
-      "VulnerableVersionRange": "\u003c 5.5.7"
+      "VulnerableVersionRange": "\u003e= 5.5.0, \u003c 5.5.7"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.6.4"
+      },
+      "VulnerableVersionRange": "\u003e= 5.6.0, \u003c 5.6.4"
     }
   ]
 }
