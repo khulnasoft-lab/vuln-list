@@ -1,0 +1,46 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2024-07-05T20:07:02Z",
+  "Package": {
+    "Ecosystem": "GO",
+    "Name": "github.com/grpc/grpc-go"
+  },
+  "Advisory": {
+    "DatabaseId": 252344,
+    "Id": "GSA_kwCzR0hTQS14cjdxLWp4NG0teDU1bc4AA9m4",
+    "GhsaId": "GHSA-xr7q-jx4m-x55m",
+    "References": [
+      {
+        "Url": "https://github.com/grpc/grpc-go/security/advisories/GHSA-xr7q-jx4m-x55m"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-xr7q-jx4m-x55m"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-xr7q-jx4m-x55m"
+      }
+    ],
+    "Description": "### Impact\nThis issue represents a potential PII concern.  If applications were printing or logging a context containing gRPC metadata, the affected versions will contain all the metadata, which may include private information.\n\n### Patches\nThe issue first appeared in 1.64.0 and is patched in 1.64.1 and 1.65.0\n\n### Workarounds\nIf using an affected version and upgrading is not possible, ensuring you do not log or print contexts will avoid the problem.\n",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-07-05T20:07:01Z",
+    "Severity": "LOW",
+    "Summary": "Private tokens could appear in logs if context containing gRPC metadata is logged in github.com/grpc/grpc-go",
+    "UpdatedAt": "2024-07-05T20:07:02Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.64.1"
+      },
+      "VulnerableVersionRange": "= 1.64.0"
+    }
+  ]
+}
