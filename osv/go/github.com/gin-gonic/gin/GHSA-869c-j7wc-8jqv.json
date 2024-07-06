@@ -1,6 +1,6 @@
 {
   "id": "GHSA-869c-j7wc-8jqv",
-  "modified": "2024-07-02T19:57:15.180688Z",
+  "modified": "2024-07-05T21:27:41Z",
   "published": "2024-06-29T06:31:40Z",
   "aliases": [
     "CVE-2019-25211",
@@ -14,6 +14,29 @@
         "ecosystem": "Go",
         "name": "github.com/gin-gonic/gin",
         "purl": "pkg:golang/github.com/gin-gonic/gin"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.6.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-869c-j7wc-8jqv/GHSA-869c-j7wc-8jqv.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/gin-contrib/cors",
+        "purl": "pkg:golang/github.com/gin-contrib/cors"
       },
       "ranges": [
         {
@@ -49,6 +72,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/gin-contrib/cors/commit/27b723a473efd80d5a498fa9f5933c80204c850d"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-869c-j7wc-8jqv"
     },
     {
       "type": "WEB",
