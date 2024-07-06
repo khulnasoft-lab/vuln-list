@@ -1,0 +1,53 @@
+{
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-07-05T20:04:47Z",
+  "Package": {
+    "Ecosystem": "GO",
+    "Name": "github.com/gogs/gogs"
+  },
+  "Advisory": {
+    "DatabaseId": 252275,
+    "Id": "GSA_kwCzR0hTQS1oZjI5LTloZmgtdzYzas4AA9lz",
+    "GhsaId": "GHSA-hf29-9hfh-w63j",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-39932"
+      },
+      {
+        "Url": "https://www.sonarsource.com/blog/securing-developer-tools-unpatched-code-vulnerabilities-in-gogs-1"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-hf29-9hfh-w63j"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-hf29-9hfh-w63j"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-39932"
+      }
+    ],
+    "Description": "Gogs through 0.13.0 allows argument injection during the previewing of changes.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-07-04T18:31:11Z",
+    "Severity": "CRITICAL",
+    "Summary": "Gogs allows argument injection during the previewing of changes",
+    "UpdatedAt": "2024-07-05T20:04:47Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 10,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 0.13.0"
+    }
+  ]
+}
