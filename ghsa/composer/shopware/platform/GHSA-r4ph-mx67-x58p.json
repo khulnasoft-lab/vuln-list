@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-04-24T22:41:48Z",
+  "UpdatedAt": "2024-07-08T18:34:14Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "shopware/platform"
@@ -33,12 +33,12 @@
         "Value": "CVE-2020-13997"
       }
     ],
-    "Description": "In Shopware before 6.2.3, the database password is leaked to an unauthenticated user when a DriverException occurs and verbose error handling is enabled.",
+    "Description": "In Shopware 6 before 6.2.3, the database password is leaked to an unauthenticated user when a DriverException occurs and verbose error handling is enabled. This vulnerability does not affect the shopware 5 release branch (`shopware/shopware` on packagist).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T17:24:28Z",
     "Severity": "HIGH",
     "Summary": "Shopware database password is leaked to an unauthenticated users",
-    "UpdatedAt": "2024-04-24T22:41:48Z",
+    "UpdatedAt": "2024-07-08T18:34:14Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -50,7 +50,7 @@
       "FirstPatchedVersion": {
         "Identifier": "6.2.3"
       },
-      "VulnerableVersionRange": "\u003c 6.2.3"
+      "VulnerableVersionRange": "\u003e= 6.0.0, \u003c 6.2.3"
     }
   ]
 }
