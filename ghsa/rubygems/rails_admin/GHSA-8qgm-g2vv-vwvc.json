@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-07-08T14:14:44Z",
+  "UpdatedAt": "2024-07-09T13:56:22Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "rails_admin"
@@ -45,12 +45,12 @@
         "Value": "CVE-2024-39308"
       }
     ],
-    "Description": "### Impact\nRailsAdmin list view has the XSS vulnerability, caused by improperly-escaped HTML title attribute.\nThe issue was originally reported in https://github.com/railsadminteam/rails_admin/issues/3686.\n\n### Patches\nUpgrade to [3.1.3](https://rubygems.org/gems/rails_admin/versions/3.1.3) or [2.3.0](https://rubygems.org/gems/rails_admin/versions/2.3.0).\n\n### Workarounds\n1. Copy the index view (located under the path `app/views/rails_admin/main/index.html.erb`) from the RailsAdmin version you use, and place it into your application by using the same path.\n2. Open the view file by an editor, and remove `strip_tags` from the title attribute:\n\n```diff\n               \u003c% properties.map{ |property| property.bind(:object, object) }.each do |property| %\u003e\n                 \u003c% value = property.pretty_value %\u003e\n-                \u003ctd class=\"\u003c%= [property.sticky? \u0026\u0026 'sticky', property.css_class, property.type_css_class].select(\u0026:present?).join(' ') %\u003e\" title=\"\u003c%= strip_tags(value.to_s) %\u003e\"\u003e\n+                \u003ctd class=\"\u003c%= [property.sticky? \u0026\u0026 'sticky', property.css_class, property.type_css_class].select(\u0026:present?).join(' ') %\u003e\" title=\"\u003c%= value %\u003e\"\u003e\n                   \u003c%= value %\u003e\n                 \u003c/td\u003e\n               \u003c% end %\u003e\n```\n\n**Note:** The view file created by this needs to be removed after upgrading RailsAdmin afterwards, unless this old view continue to be used. Only do this if you can't upgrade RailsAdmin now for a reason.\n\n### References\nhttps://owasp.org/www-community/attacks/xss/\nhttps://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#method-i-strip_tags",
+    "Description": "### Impact\nRailsAdmin list view has the XSS vulnerability, caused by improperly-escaped HTML title attribute.\nThe issue was originally reported in https://github.com/railsadminteam/rails_admin/issues/3686.\n\n### Patches\n~Upgrade to [3.1.3](https://rubygems.org/gems/rails_admin/versions/3.1.3) or [2.3.0](https://rubygems.org/gems/rails_admin/versions/2.3.0)~.\n**Edit: Patched versions 3.1.3 and 2.3.0 has an functionality issue. 3.x users should upgrade to [3.1.4](https://rubygems.org/gems/rails_admin/versions/3.1.4).\n2.x users can stay on 2.2.1, as it was found out that only 3.x versions are affected by this vulnerability.**\n\n### Workarounds\n1. Copy the index view (located under the path `app/views/rails_admin/main/index.html.erb`) from the RailsAdmin version you use, and place it into your application by using the same path.\n2. Open the view file by an editor, and change the way to populate the td tag:\n\n```diff\n               \u003c% properties.map{ |property| property.bind(:object, object) }.each do |property| %\u003e\n                 \u003c% value = property.pretty_value %\u003e\n-                \u003ctd class=\"\u003c%= [property.sticky? \u0026\u0026 'sticky', property.css_class, property.type_css_class].select(\u0026:present?).join(' ') %\u003e\" title=\"\u003c%= value %\u003e\"\u003e\n+                \u003c%= content_tag(:td, class: [property.sticky? \u0026\u0026 'sticky', property.css_class, property.type_css_class].select(\u0026:present?), title: strip_tags(value.to_s)) do %\u003e\n                   \u003c%= value %\u003e\n-                \u003c/td\u003e\n+                \u003c% end %\u003e\n               \u003c% end %\u003e\n```\n\n**Note:** The view file created by this needs to be removed after upgrading RailsAdmin afterwards, unless this old view continue to be used. Only do this if you can't upgrade RailsAdmin now for a reason.\n\n### References\nhttps://owasp.org/www-community/attacks/xss/\nhttps://api.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html#method-i-strip_tags",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-08T14:14:43Z",
     "Severity": "MODERATE",
     "Summary": "RailsAdmin Cross-site Scripting vulnerability in the list view",
-    "UpdatedAt": "2024-07-08T16:18:41Z",
+    "UpdatedAt": "2024-07-09T13:56:22Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.8,
@@ -60,15 +60,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.3.0"
+        "Identifier": "3.1.3"
       },
-      "VulnerableVersionRange": "\u003c 2.3.0"
+      "VulnerableVersionRange": "\u003e= 3.0.0.beta, \u003c 3.1.3"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "3.1.3"
+        "Identifier": "2.3.0"
       },
-      "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.1.3"
+      "VulnerableVersionRange": "\u003c 2.3.0"
     }
   ]
 }
