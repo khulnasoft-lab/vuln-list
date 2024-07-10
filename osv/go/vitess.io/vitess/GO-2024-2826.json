@@ -1,6 +1,6 @@
 {
   "id": "GO-2024-2826",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2024-07-09T19:33:56Z",
   "published": "2024-05-10T20:07:17Z",
   "aliases": [
     "CVE-2024-32886",
@@ -41,6 +41,31 @@
         }
       ],
       "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "17.0.7"
+              },
+              {
+                "introduced": "18.0.0"
+              },
+              {
+                "fixed": "18.0.5"
+              },
+              {
+                "introduced": "19.0.0"
+              },
+              {
+                "fixed": "19.0.4"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ],
         "imports": [
           {
             "path": "vitess.io/vitess/go/mysql/collations/charset",
