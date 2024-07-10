@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-07-08T15:00:37Z",
   "Package": {
     "Ecosystem": "COMPOSER",
@@ -29,6 +29,12 @@
         "Url": "https://syss.de"
       },
       {
+        "Url": "https://www.syss.de/fileadmin/dokumente/Publikationen/Advisories/SYSS-2024-047.txt"
+      },
+      {
+        "Url": "https://www.syss.de/pentest-blog/sql-injection-schwachstelle-in-egroupware-syss-2024-047"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-phg7-8mm9-gj88"
       }
     ],
@@ -42,16 +48,16 @@
         "Value": "CVE-2024-40614"
       }
     ],
-    "Description": "EGroupware before 23.1.20240624 mishandles an ORDER BY clause.",
+    "Description": "EGroupware before 23.1.20240624 mishandles an ORDER BY clause. This leads to json.php menuaction=EGroupware\\Api\\Etemplate\\Widget\\Nextmatch::ajax_get_rows sort.id SQL injection by authenticated users for Address Book or InfoLog sorting.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-07T15:31:12Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "EGroupware mishandles an ORDER BY clause",
-    "UpdatedAt": "2024-07-08T15:00:37Z",
+    "UpdatedAt": "2024-07-10T17:28:14Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 7.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
