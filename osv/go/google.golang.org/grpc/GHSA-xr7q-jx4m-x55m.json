@@ -11,12 +11,16 @@
     "CGA-548p-xvm2-g4c4",
     "CGA-5c6w-f3f5-h8hc",
     "CGA-834x-fjv5-9wv4",
+    "CGA-cj58-vwv8-34fq",
+    "CGA-fxj9-r43f-w6vj",
     "CGA-g92c-7vf8-q734",
     "CGA-gcc6-q5x2-gf8v",
     "CGA-gp55-948j-c47g",
+    "CGA-j2cg-qf2g-h9mx",
     "CGA-j2hj-q455-936c",
     "CGA-v6hr-9cg9-7xfj",
-    "CGA-x283-2x9f-2f52"
+    "CGA-x283-2x9f-2f52",
+    "CGA-xv6v-pw7m-f246"
   ],
   "summary": "Private tokens could appear in logs if context containing gRPC metadata is logged in github.com/grpc/grpc-go",
   "details": "### Impact\nThis issue represents a potential PII concern.  If applications were printing or logging a context containing gRPC metadata, the affected versions will contain all the metadata, which may include private information.\n\n### Patches\nThe issue first appeared in 1.64.0 and is patched in 1.64.1 and 1.65.0\n\n### Workarounds\nIf using an affected version and upgrading is not possible, ensuring you do not log or print contexts will avoid the problem.\n",
