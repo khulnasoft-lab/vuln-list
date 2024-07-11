@@ -13,15 +13,16 @@
       "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-3847",
       "Source": "CVE"
     },
-    "Patchable": "false",
+    "Patchable": "true",
+    "AdvisoryDate": "2024-07-10T19:52:59Z",
     "AdvisoryID": "9301",
     "Severity": "High",
-    "Description": "CVE-2021-3847 affecting package kernel for versions less than 5.15.160.1-1. No patch is available currently."
+    "Description": "CVE-2021-3847 affecting package kernel for versions less than 5.15.160.1-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": {
-      "Comment": "Package kernel is installed with version 5.15.160.1-1 or earlier",
+      "Comment": "Package kernel is earlier than 5.15.160.1-1, affected by CVE-2021-3847",
       "TestRef": "oval:com.microsoft.cbl-mariner:tst:9301000"
     }
   }
