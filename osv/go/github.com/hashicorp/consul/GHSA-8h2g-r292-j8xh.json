@@ -1,11 +1,17 @@
 {
   "id": "GHSA-8h2g-r292-j8xh",
-  "modified": "2024-06-21T08:12:29.337613Z",
+  "modified": "2024-07-15T21:59:50.688289Z",
   "published": "2021-07-19T21:21:12Z",
   "aliases": [
     "BIT-consul-2021-36213",
-    "CGA-4qv7-4gh9-g2pj",
     "CVE-2021-36213"
+  ],
+  "related": [
+    "CGA-26gc-cj92-r884",
+    "CGA-4qv7-4gh9-g2pj",
+    "CGA-m5qm-crfq-qm8r",
+    "CGA-q8x7-9g2j-xvj5",
+    "CGA-w85g-gmh5-6p65"
   ],
   "summary": "HashiCorp Consul L7 deny intention results in an allow action",
   "details": "In HashiCorp Consul before 1.10.1 (and Consul Enterprise), xds can generate a situation where a single L7 deny intention (with a default deny policy) results in an allow action.",

@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2018-1002101"
   ],
+  "related": [
+    "CGA-vcfc-378w-j2p8"
+  ],
   "summary": "Kubernetes Arbitrary Command Injection",
   "details": "In Kubernetes versions 1.9.0-1.9.9, 1.10.0-1.10.5, and 1.11.0-1.11.1, user input was handled insecurely while setting up volume mounts on Windows nodes, which could lead to command line argument injection.\n\n### Specific Go Packages Affected\nk8s.io/kubernetes/pkg/util/mount",
   "affected": [

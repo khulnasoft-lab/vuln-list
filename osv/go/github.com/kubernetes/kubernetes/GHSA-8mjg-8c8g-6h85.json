@@ -6,6 +6,12 @@
     "CVE-2020-8564",
     "GO-2021-0066"
   ],
+  "related": [
+    "CGA-3cjr-rp79-f9gx",
+    "CGA-f5rg-h936-hh73",
+    "CGA-q5r9-p48p-pvgj",
+    "CGA-x43j-pmh4-w4c6"
+  ],
   "summary": "Kubernetes Sensitive Information leak via Log File",
   "details": "In Kubernetes clusters using a logging level of at least 4, processing a malformed docker config file will result in the contents of the docker config file being leaked, which can include pull secrets or other registry credentials. This affects \u003c v1.19.3, \u003c v1.18.10, \u003c v1.17.13.",
   "affected": [

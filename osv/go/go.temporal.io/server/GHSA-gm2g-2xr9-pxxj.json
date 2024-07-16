@@ -5,6 +5,13 @@
   "aliases": [
     "CVE-2023-3485"
   ],
+  "related": [
+    "CGA-3w3g-g537-q2jr",
+    "CGA-4crw-2jgj-34w7",
+    "CGA-69fw-h3q7-3gg4",
+    "CGA-9vvh-xx5f-27x2",
+    "CGA-rwv5-qm57-h664"
+  ],
   "summary": "Temporal Server vulnerable to Incorrect Authorization and Insecure Default Initialization of Resource",
   "details": "Insecure defaults in open-source Temporal Server before version 1.20 on all platforms allows an attacker to craft a task token with access to a namespace other than the one specified in the request. Creation of this task token must be done outside of the normal Temporal server flow. It requires the namespace UUID and information from the workflow history for the target namespace. Under these conditions, it is possible to interfere with pending tasks in other namespaces, such as marking a task failed or completed.\nIf a task is targeted for completion by the attacker, the targeted namespace must also be using the same data converter configuration as the initial, valid, namespace for the task completion payload to be decoded by workers in the target namespace.",
   "affected": [

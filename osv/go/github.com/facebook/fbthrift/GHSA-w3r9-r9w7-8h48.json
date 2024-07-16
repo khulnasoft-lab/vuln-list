@@ -6,6 +6,9 @@
     "CVE-2019-11939",
     "GO-2021-0082"
   ],
+  "related": [
+    "CGA-ccj3-f4c8-28h3"
+  ],
   "summary": "Golang Facebook Thrift servers vulnerable to denial of service",
   "details": "Golang Facebook Thrift servers would not error upon receiving messages declaring containers of sizes larger than the payload. As a result, malicious clients could send short messages which would result in a large memory allocation, potentially leading to denial of service. This issue affects Facebook Thrift prior to v2020.03.16.00.\n\n### Specific Go Packages Affected\ngithub.com/facebook/fbthrift/thrift/lib/go/thrift",
   "affected": [

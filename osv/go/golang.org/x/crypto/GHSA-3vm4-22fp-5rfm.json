@@ -6,6 +6,9 @@
     "CVE-2020-29652",
     "GO-2021-0227"
   ],
+  "related": [
+    "CGA-28f7-9mwr-qjvg"
+  ],
   "summary": "golang.org/x/crypto/ssh NULL Pointer Dereference vulnerability",
   "details": "A nil pointer dereference in the golang.org/x/crypto/ssh component through v0.0.0-20201203163018-be400aefbc4c for Go allows remote attackers to cause a denial of service against SSH servers. An attacker can craft an authentication request message for the `gssapi-with-mic` method which will cause NewServerConn to panic via a nil pointer dereference if ServerConfig.GSSAPIWithMICConfig is nil.",
   "affected": [

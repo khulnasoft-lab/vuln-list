@@ -5,6 +5,12 @@
   "aliases": [
     "CVE-2019-19316"
   ],
+  "related": [
+    "CGA-224v-j292-29fc",
+    "CGA-7hjf-wfrp-789v",
+    "CGA-8cmc-f9rv-4m8w",
+    "CGA-8f8p-9hrp-c8xm"
+  ],
   "summary": "Use of a Broken or Risky Cryptographic Algorithm in Terraform",
   "details": "When using the Azure backend with a shared access signature (SAS), Terraform versions prior to 0.12.17 may transmit the token and state snapshot using cleartext HTTP.\n\n### Specific Go Packages Affected\ngithub.com/hashicorp/terraform/backend/remote-state/azure",
   "affected": [

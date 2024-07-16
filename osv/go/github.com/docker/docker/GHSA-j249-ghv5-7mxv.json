@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2019-13509"
   ],
+  "related": [
+    "CGA-j48m-6766-vf95",
+    "CGA-vpvg-5mcq-5hm2"
+  ],
   "summary": "Secret insertion into debug log in Docker",
   "details": "In Docker CE and EE before 18.09.8 (as well as Docker EE before 17.06.2-ee-23 and 18.x before 18.03.1-ee-10), Docker Engine in debug mode may sometimes add secrets to the debug log. This applies to a scenario where docker stack deploy is run to redeploy a stack that includes (non external) secrets. It potentially applies to other API users of the stack API if they resend the secret.",
   "affected": [

@@ -6,6 +6,13 @@
     "CVE-2021-43565",
     "GO-2022-0968"
   ],
+  "related": [
+    "CGA-2ppg-47v6-f439",
+    "CGA-42c5-p2f2-h5g8",
+    "CGA-594w-mv7g-h3x7",
+    "CGA-7x84-j4gp-wx87",
+    "CGA-r8cw-3rv5-559v"
+  ],
   "summary": "x/crypto/ssh vulnerable to panic via malformed packets",
   "details": "The x/crypto/ssh package before 0.0.0-20211202192323-5770296d904e of golang.org/x/crypto allows an unauthenticated attacker to panic an SSH server. When using AES-GCM or ChaCha20Poly1305, consuming a malformed packet which contains an empty plaintext causes a panic.",
   "affected": [

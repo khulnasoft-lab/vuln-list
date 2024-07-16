@@ -6,6 +6,20 @@
     "CVE-2022-32149",
     "GO-2022-1059"
   ],
+  "related": [
+    "CGA-3274-pmxq-pw2c",
+    "CGA-35qf-fwq2-m7m5",
+    "CGA-3xgc-4vf7-vgr6",
+    "CGA-47v2-6jxh-6cxf",
+    "CGA-6j6m-6xg4-4f34",
+    "CGA-87mj-wfr7-vpvw",
+    "CGA-f5cv-26r6-rcf6",
+    "CGA-g685-527p-mpmm",
+    "CGA-g7mx-gf88-9654",
+    "CGA-mqcr-97rx-gfq2",
+    "CGA-xqf9-w4hf-5982",
+    "CGA-xvqc-gw49-f87c"
+  ],
   "summary": "golang.org/x/text/language Denial of service via crafted Accept-Language header",
   "details": "The BCP 47 tag parser has quadratic time complexity due to inherent aspects of its design. Since the parser is, by design, exposed to untrusted user input, this can be leveraged to force a program to consume significant time parsing Accept-Language headers. The parser cannot be easily rewritten to fix this behavior for various reasons. Instead the solution implemented in this CL is to limit the total complexity of tags passed into ParseAcceptLanguage by limiting the number of dashes in the string to 1000. This should be more than enough for the majority of real world use cases, where the number of tags being sent is likely to be in the single digits.\n\n### Specific Go Packages Affected\ngolang.org/x/text/language",
   "affected": [

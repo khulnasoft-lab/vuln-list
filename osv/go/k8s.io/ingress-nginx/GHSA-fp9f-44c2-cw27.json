@@ -7,6 +7,12 @@
     "CVE-2023-5044",
     "GO-2024-2428"
   ],
+  "related": [
+    "CGA-9grq-m57x-qjr3",
+    "CGA-cprx-mhr8-fxm2",
+    "CGA-pcmp-frhj-hxv6",
+    "CGA-v5m7-9q6p-wcpr"
+  ],
   "summary": "Ingress-nginx code injection via nginx.ingress.kubernetes.io/permanent-redirect annotation",
   "details": "A security issue was identified in [ingress-nginx](https://github.com/kubernetes/ingress-nginx) where the nginx.ingress.kubernetes.io/permanent-redirect annotation on an Ingress object (in the networking.k8s.io or extensions API group) can be used to inject arbitrary commands, and obtain the credentials of the ingress-nginx controller. In the default configuration, that credential has access to all secrets in the cluster.\n\n",
   "affected": [
