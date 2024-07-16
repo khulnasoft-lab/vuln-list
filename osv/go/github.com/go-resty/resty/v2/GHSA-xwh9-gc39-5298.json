@@ -6,6 +6,9 @@
     "CVE-2023-45286",
     "GO-2023-2328"
   ],
+  "related": [
+    "CGA-x2m3-8vxr-vhhv"
+  ],
   "summary": "github.com/go-resty/resty/v2 HTTP request body disclosure",
   "details": "A race condition in go-resty can result in HTTP request body disclosure across requests.\n\nThis condition can be triggered by calling sync.Pool.Put with the same *bytes.Buffer more than once, when request retries are enabled and a retry occurs. The call to sync.Pool.Get will then return a bytes.Buffer that hasn't had bytes.Buffer.Reset called on it. This dirty buffer will contain the HTTP request body from an unrelated request, and go-resty will append the current HTTP request body to it, sending two bodies in one request.\n\nThe sync.Pool in question is defined at package level scope, so a completely unrelated server could receive the request body.",
   "affected": [

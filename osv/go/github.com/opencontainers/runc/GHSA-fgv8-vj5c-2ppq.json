@@ -6,6 +6,10 @@
     "CVE-2019-16884",
     "GO-2021-0085"
   ],
+  "related": [
+    "CGA-wm7q-q3pw-mv7c",
+    "CGA-wqv7-w84w-3758"
+  ],
   "summary": "Incorrect Authorization in runc",
   "details": "runc through 1.0.0-rc8, as used in Docker through 19.03.2-ce and other products, allows AppArmor restriction bypass because libcontainer/rootfs_linux.go incorrectly checks mount targets, and thus a malicious Docker image can mount over a /proc directory.",
   "affected": [

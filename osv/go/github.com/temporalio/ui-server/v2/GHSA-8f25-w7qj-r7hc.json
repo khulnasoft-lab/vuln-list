@@ -6,6 +6,12 @@
     "CVE-2024-2435",
     "GO-2024-2675"
   ],
+  "related": [
+    "CGA-cgg2-xqxc-6cqm",
+    "CGA-gw54-5q73-9mv4",
+    "CGA-rjfg-rfqq-xvm8",
+    "CGA-xvx5-g2jf-gwwh"
+  ],
   "summary": "Temporal UI Server cross-site scripting vulnerability",
   "details": "For an attacker with pre-existing access to send a signal to a workflow, the attacker can make the signal name a script that executes when a victim views that signal. The XSS is in the timeline page displaying the workflow execution details of the workflow that was sent the crafted signal.\nAccess to send a signal to a workflow is determined by how you configured the authorizer on your server. This includes any entity with permission to directly call SignalWorkflowExecution or SignalWithStartWorkflowExecution, or any entity can deploy a worker that has access to call workflow progress APIs (specifically RespondWorkflowTaskCompleted).\n",
   "affected": [

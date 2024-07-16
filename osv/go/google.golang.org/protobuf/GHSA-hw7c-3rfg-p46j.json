@@ -6,6 +6,9 @@
     "CVE-2023-24535",
     "GO-2023-1631"
   ],
+  "related": [
+    "CGA-2v9j-v6h7-jm2h"
+  ],
   "summary": "google.golang.org/protobuf vulnerable to panic leading to denial of service",
   "details": "Parsing invalid messages can panic.\n\nParsing a text-format message which contains a potential number consisting of a minus sign, one or more characters of whitespace, and no further input will cause a panic.",
   "affected": [

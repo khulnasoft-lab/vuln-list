@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2022-28224"
   ],
+  "related": [
+    "CGA-9g26-x9q7-w8vh",
+    "CGA-9hfx-wj82-qwmc"
+  ],
   "summary": "Calico vulnerable to pod route hijacking",
   "details": "Clusters using Calico (version 3.22.1 and below), Calico Enterprise (version 3.12.0 and below), may be vulnerable to route hijacking with the floating IP feature. Due to insufficient validation, a privileged attacker may be able to set a floating IP annotation to a pod even if the feature is not enabled. This may allow the attacker to intercept and reroute traffic to their compromised pod.",
   "affected": [

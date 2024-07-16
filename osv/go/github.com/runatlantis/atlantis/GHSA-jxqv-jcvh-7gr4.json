@@ -6,6 +6,10 @@
     "CVE-2022-24912",
     "GO-2022-0534"
   ],
+  "related": [
+    "CGA-4j9q-52f5-f8r4",
+    "CGA-x5w5-gxv4-7j4p"
+  ],
   "summary": "Atlantis Events vulnerable to Timing Attack",
   "details": "The package github.com/runatlantis/atlantis/server/controllers/events before 0.19.7 is vulnerable to Timing Attack in the webhook event validator code, which does not use a constant-time comparison function to validate the webhook secret. It can allow an attacker to recover this secret as an attacker and then forge webhook events.",
   "affected": [

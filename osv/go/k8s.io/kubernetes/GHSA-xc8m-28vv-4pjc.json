@@ -5,6 +5,14 @@
   "aliases": [
     "CVE-2023-2431"
   ],
+  "related": [
+    "CGA-5qp3-x3j5-5p7p",
+    "CGA-7h8q-392w-4mp5",
+    "CGA-9jrg-7hv4-xf3q",
+    "CGA-hvww-vpr8-9vp5",
+    "CGA-ph7j-j629-pq93",
+    "CGA-rg46-5c79-8phf"
+  ],
   "summary": "Kubelet vulnerable to bypass of seccomp profile enforcement",
   "details": "A security issue was discovered in Kubelet that allows pods to bypass the seccomp profile enforcement. Pods that use localhost type for seccomp profile but specify an empty profile field, are affected by this issue. In this scenario, this vulnerability allows the pod to run in unconfined (seccomp disabled) mode. This bug affects Kubelet.",
   "affected": [

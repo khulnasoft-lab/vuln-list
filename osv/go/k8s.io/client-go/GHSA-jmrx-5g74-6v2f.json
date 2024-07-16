@@ -6,6 +6,10 @@
     "CVE-2019-11250",
     "GO-2021-0065"
   ],
+  "related": [
+    "CGA-3qf3-94gx-766h",
+    "CGA-6mg3-2vfw-38x4"
+  ],
   "summary": "Kubernetes client-go library logs may disclose credentials to unauthorized users",
   "details": "The Kubernetes client-go library logs request headers at verbosity levels of 7 or higher. This can disclose credentials to unauthorized users via logs or command output. Kubernetes components (such as kube-apiserver) prior to v1.16.0, which make use of basic or bearer token authentication, and run at high verbosity levels, are affected.",
   "affected": [

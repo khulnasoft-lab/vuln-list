@@ -1,11 +1,14 @@
 {
   "id": "GHSA-63cv-4pc2-4fcf",
-  "modified": "2024-06-24T14:42:03.572916Z",
+  "modified": "2024-07-15T22:11:50.510371Z",
   "published": "2023-12-06T09:30:17Z",
   "aliases": [
     "BIT-mattermost-2023-6459",
-    "CGA-wm9x-r8p7-p6qr",
     "CVE-2023-6459"
+  ],
+  "related": [
+    "CGA-r879-mx58-2c24",
+    "CGA-wm9x-r8p7-p6qr"
   ],
   "summary": "Mattermost Exposure of Sensitive Information to an Unauthorized Actor vulnerability",
   "details": "Mattermost is grouping calls in the /metrics endpoint by id and reports that id in the response. Since this id is the channelID, the public /metrics endpoint is revealing channelIDs.\n\n",

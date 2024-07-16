@@ -2,6 +2,10 @@
   "id": "GHSA-v8gr-m533-ghj9",
   "modified": "2024-02-16T08:16:58.201718Z",
   "published": "2023-09-21T17:07:01Z",
+  "related": [
+    "CGA-8rxx-wm78-wf5w",
+    "CGA-f746-6gw8-pmg3"
+  ],
   "summary": "Vulnerable OpenSSL included in cryptography wheels",
   "details": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 2.5-41.0.3 are vulnerable to several security issues. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20230908.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
   "affected": [
