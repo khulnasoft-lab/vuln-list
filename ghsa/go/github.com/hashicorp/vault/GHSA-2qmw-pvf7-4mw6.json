@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-07-12T14:02:33Z",
+  "UpdatedAt": "2024-07-16T17:33:40Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/hashicorp/vault"
@@ -35,7 +35,7 @@
     "PublishedAt": "2024-07-11T21:31:13Z",
     "Severity": "HIGH",
     "Summary": "Hashicorp Vault vulnerable to Improper Check or Handling of Exceptional Conditions ",
-    "UpdatedAt": "2024-07-12T19:20:38Z",
+    "UpdatedAt": "2024-07-16T17:33:40Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -43,6 +43,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.15.12"
+      },
+      "VulnerableVersionRange": "\u003e= 1.10.0, \u003c 1.15.12"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.17.2"
@@ -54,12 +60,6 @@
         "Identifier": "1.16.3"
       },
       "VulnerableVersionRange": "\u003e= 1.16.0-rc1, \u003c 1.16.3"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "1.15.12"
-      },
-      "VulnerableVersionRange": "\u003c 1.15.12"
     }
   ]
 }
