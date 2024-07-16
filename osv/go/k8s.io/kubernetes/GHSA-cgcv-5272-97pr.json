@@ -5,6 +5,14 @@
   "aliases": [
     "CVE-2023-2728"
   ],
+  "related": [
+    "CGA-25jf-8vf4-pcm7",
+    "CGA-55gm-2q49-wrmm",
+    "CGA-8wxf-pvcw-7xgp",
+    "CGA-jcj4-x372-mj8p",
+    "CGA-p9r6-jf8v-6m4w",
+    "CGA-r373-fxmg-p78x"
+  ],
   "summary": "Kubernetes mountable secrets policy bypass",
   "details": "Users may be able to launch containers that bypass the mountable secrets policy enforced by the ServiceAccount admission plugin when using ephemeral containers. The policy ensures pods running with a service account may only reference secrets specified in the service account’s secrets field. Kubernetes clusters are only affected if the ServiceAccount admission plugin and the `kubernetes.io/enforce-mountable-secrets` annotation are used together with ephemeral containers.\n\n",
   "affected": [

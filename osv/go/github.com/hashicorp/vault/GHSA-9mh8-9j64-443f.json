@@ -6,6 +6,13 @@
     "BIT-vault-2022-41316",
     "CVE-2022-41316"
   ],
+  "related": [
+    "CGA-86rw-mm4f-xrwh",
+    "CGA-fmpj-p2jh-q7cx",
+    "CGA-h294-q892-26hh",
+    "CGA-h6m8-jc6p-m646",
+    "CGA-w6xc-fcxp-47c3"
+  ],
   "summary": "HashiCorp Vault's revocation list not respected",
   "details": "HashiCorp Vault and Vault Enterprise’s TLS certificate auth method did not initially load the optionally configured CRL issued by the role's CA into memory on startup, resulting in the revocation list not being checked if the CRL has not yet been retrieved. Fixed in 1.12.0, 1.11.4, 1.10.7, and 1.9.10.",
   "affected": [

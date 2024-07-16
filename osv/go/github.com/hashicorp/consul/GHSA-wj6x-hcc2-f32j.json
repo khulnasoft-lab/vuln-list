@@ -6,6 +6,9 @@
     "BIT-consul-2023-0845",
     "CVE-2023-0845"
   ],
+  "related": [
+    "CGA-mj73-2rr9-gr45"
+  ],
   "summary": "Consul Server Panic when Ingress and API Gateways Configured with Peering Connections",
   "details": "A vulnerability was identified in Consul and Consul Enterprise (“Consul”) an authenticated user with service:write permissions could trigger a workflow that causes Consul server and client agents to crash under certain circumstances. To exploit this vulnerability, an attacker requires access to an ACL token with service:write permissions, and there needs to be at least one running ingress or API gateway that is configured to route traffic to an upstream service.",
   "affected": [

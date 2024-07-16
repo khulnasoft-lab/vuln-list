@@ -1,11 +1,14 @@
 {
   "id": "GHSA-r4fm-g65h-cr54",
-  "modified": "2024-07-08T20:31:16Z",
+  "modified": "2024-07-15T22:27:04.509767Z",
   "published": "2024-02-29T12:31:06Z",
   "aliases": [
-    "CGA-xmgp-mf9v-pph8",
     "CVE-2024-1952",
     "GO-2024-2635"
+  ],
+  "related": [
+    "CGA-23qf-2h2j-rqx2",
+    "CGA-xmgp-mf9v-pph8"
   ],
   "summary": "Mattermost incorrectly allows access individual posts",
   "details": "Mattermost version 8.1.x before 8.1.9 fails to sanitize data associated with permalinks when a plugin updates an ephemeral post, allowing an authenticated attacker who can control the ephemeral post update to access individual posts' contents in channels they are not a member of.\n\n",

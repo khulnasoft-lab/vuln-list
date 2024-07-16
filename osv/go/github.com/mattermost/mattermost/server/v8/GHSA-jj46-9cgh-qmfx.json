@@ -1,10 +1,13 @@
 {
   "id": "GHSA-jj46-9cgh-qmfx",
-  "modified": "2024-06-24T14:42:08.565442Z",
+  "modified": "2024-07-15T22:12:26.616789Z",
   "published": "2023-11-27T12:30:54Z",
   "aliases": [
-    "CGA-hhh7-pj87-q6qw",
     "CVE-2023-47865"
+  ],
+  "related": [
+    "CGA-hhh7-pj87-q6qw",
+    "CGA-j9gv-2c87-fw96"
   ],
   "summary": "Mattermost Improper Access Control vulnerability",
   "details": "Mattermost fails to check if hardened mode is enabled when overriding the username and/or the icon when posting a post. If settings allowed integrations to override the username and profile picture when posting, a member could also override the username and icon when making a post even if the Hardened Mode setting was enabled\n\n",

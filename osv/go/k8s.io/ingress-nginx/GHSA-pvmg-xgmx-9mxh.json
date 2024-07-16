@@ -6,6 +6,12 @@
     "BIT-nginx-ingress-controller-2021-25745",
     "CVE-2021-25745"
   ],
+  "related": [
+    "CGA-3w2p-qrxr-xvc2",
+    "CGA-5q84-r6pv-m4q2",
+    "CGA-q93f-r479-x2rj",
+    "CGA-r566-v89x-h5p2"
+  ],
   "summary": "Improper Input Validation in k8s.io/ingress-nginx",
   "details": "A security issue was discovered in ingress-nginx where a user that can create or update ingress objects can use the spec.rules[].http.paths[].path field of an Ingress object (in the networking.k8s.io or extensions API group) to obtain the credentials of the ingress-nginx controller. In the default configuration, that credential has access to all secrets in the cluster.",
   "affected": [

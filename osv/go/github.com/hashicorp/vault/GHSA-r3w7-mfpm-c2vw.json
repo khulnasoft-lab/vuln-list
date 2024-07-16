@@ -7,6 +7,13 @@
     "CVE-2024-2048",
     "GO-2024-2617"
   ],
+  "related": [
+    "CGA-3jcq-jxvm-wwqq",
+    "CGA-4832-gcg9-6mhj",
+    "CGA-4q5p-5wg2-x27j",
+    "CGA-p735-8wc2-m9h8",
+    "CGA-rrg3-2x63-27xf"
+  ],
   "summary": "Incorrect TLS certificate auth method in Vault",
   "details": "Vault and Vault Enterprise (“Vault”) TLS certificate auth method did not correctly validate client certificates when configured with a non-CA certificate as trusted certificate. In this configuration, an attacker may be able to craft a malicious certificate that could be used to bypass authentication. Fixed in Vault 1.15.5 and 1.14.10. ",
   "affected": [

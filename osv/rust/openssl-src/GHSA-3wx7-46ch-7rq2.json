@@ -6,6 +6,9 @@
     "CVE-2022-2097",
     "RUSTSEC-2022-0032"
   ],
+  "related": [
+    "CGA-34cr-x5f5-q4cf"
+  ],
   "summary": "AES OCB fails to encrypt some bytes",
   "details": "AES OCB mode for 32-bit x86 platforms using the AES-NI assembly optimized implementation will not encrypt the entirety of the data under some circumstances.  This could reveal sixteen bytes of data that was pre-existing in the memory that wasn't written.  In the special case of \"in place\" encryption, sixteen bytes of the plaintext would be revealed.\n\nSince OpenSSL does not support OCB based cipher suites for TLS and DTLS, they are both unaffected.",
   "affected": [
