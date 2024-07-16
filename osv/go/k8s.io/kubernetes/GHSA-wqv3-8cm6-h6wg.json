@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2020-8558"
   ],
+  "related": [
+    "CGA-f9g2-cc8c-9pcp",
+    "CGA-m59h-qcfx-q4jq"
+  ],
   "summary": "Improper Authentication in Kubernetes",
   "details": "A security issue was discovered in the Kubelet and kube-proxy components of Kubernetes which allows adjacent hosts to reach TCP and UDP services bound to 127.0.0.1 running on the node or in the node's network namespace. For example, if a cluster administrator runs a TCP service on a node that listens on 127.0.0.1:1234, because of this bug, that service would be potentially reachable by other hosts on the same LAN as the node, or by containers running on the same node as the service. If the example service on port 1234 required no additional authentication (because it assumed that only other localhost processes could reach it), then it could be vulnerable to attacks that make use of this bug.",
   "affected": [

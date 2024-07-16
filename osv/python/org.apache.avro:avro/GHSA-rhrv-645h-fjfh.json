@@ -6,6 +6,9 @@
     "CVE-2023-39410",
     "PYSEC-2023-188"
   ],
+  "related": [
+    "CGA-8q34-h6rx-rrwj"
+  ],
   "summary": "Apache Avro Java SDK vulnerable to Improper Input Validation",
   "details": "When deserializing untrusted or corrupted data, it is possible for a reader to consume memory beyond the allowed constraints and thus lead to out of memory on the system.\n\nThis issue affects Java applications using Apache Avro Java SDK up to and including 1.11.2.  Users should update to apache-avro version 1.11.3 which addresses this issue.\n\n",
   "affected": [

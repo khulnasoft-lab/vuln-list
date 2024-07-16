@@ -7,6 +7,12 @@
     "CVE-2020-29509",
     "GO-2021-0060"
   ],
+  "related": [
+    "CGA-42fw-c8vq-58fc",
+    "CGA-6wxm-rfxx-8mcj",
+    "CGA-7q43-g6q5-hmqj",
+    "CGA-8qmm-6vmh-mj3g"
+  ],
   "summary": "Authentication Bypass in github.com/russellhaering/gosaml2",
   "details": "### Impact\nGiven a valid SAML Response, it may be possible for an attacker to mutate the XML document in such a way that gosaml2 will trust a different portion of the document than was signed.\n\nDepending on the implementation of the Service Provider this enables a variety of attacks, including users accessing accounts other than the one to which they authenticated in the Identity Provider, or full authentication bypass.\n\n### Patches\nService Providers utilizing gosaml2 should upgrade to v0.6.0 or greater.",
   "affected": [

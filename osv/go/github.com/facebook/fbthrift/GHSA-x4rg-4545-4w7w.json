@@ -6,6 +6,9 @@
     "CVE-2019-3564",
     "GO-2021-0088"
   ],
+  "related": [
+    "CGA-j582-pw46-x4f4"
+  ],
   "summary": "Improper Input Validation and Excessive Iteration in Go Facebook Thrift",
   "details": "Go Facebook Thrift servers would not error upon receiving messages with containers of fields of unknown type. As a result, malicious clients could send short messages which would take a long time for the server to parse, potentially leading to denial of service. This issue affects Facebook Thrift prior to v2019.03.04.00.",
   "affected": [

@@ -8,6 +8,10 @@
     "GHSA-39qc-96h7-956f",
     "GO-2022-0536"
   ],
+  "related": [
+    "CGA-6874-g337-m4xh",
+    "CGA-xfqc-g97r-3g88"
+  ],
   "summary": "golang.org/x/net/http vulnerable to ping floods",
   "details": "Some HTTP/2 implementations are vulnerable to ping floods, potentially leading to a denial of service. The attacker sends continual pings to an HTTP/2 peer, causing the peer to build an internal queue of responses. Depending on how efficiently this data is queued, this can consume excess CPU, memory, or both.\n\n### Specific Go Packages Affected\ngolang.org/x/net/http2",
   "affected": [

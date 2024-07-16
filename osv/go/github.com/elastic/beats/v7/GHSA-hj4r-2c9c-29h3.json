@@ -6,6 +6,12 @@
     "CVE-2023-49922",
     "GO-2023-2413"
   ],
+  "related": [
+    "CGA-62gx-677x-r642",
+    "CGA-764j-x7r4-wx77",
+    "CGA-95g9-mv6q-r5ch",
+    "CGA-jm2h-mxw3-q66w"
+  ],
   "summary": "Elastic Beats inserts sensitive information into log file",
   "details": "An issue was discovered by Elastic whereby Beats and Elastic Agent would log a raw event in its own logs at the WARN or ERROR level if ingesting that event to Elasticsearch failed with any 4xx HTTP status code except 409 or 429. Depending on the nature of the event that Beats or Elastic Agent attempted to ingest, this could lead to the insertion of sensitive or private information in the Beats or Elastic Agent logs. Elastic has released 8.11.3 and 7.17.16 that prevents this issue by limiting these types of logs to DEBUG level logging, which is disabled by default.",
   "affected": [

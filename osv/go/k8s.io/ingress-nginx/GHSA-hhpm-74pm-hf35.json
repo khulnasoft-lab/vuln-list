@@ -6,6 +6,12 @@
     "BIT-nginx-ingress-controller-2020-8553",
     "CVE-2020-8553"
   ],
+  "related": [
+    "CGA-5rf5-j2cr-3544",
+    "CGA-86cq-3rjw-r5hq",
+    "CGA-mcvr-94pv-mc3j",
+    "CGA-pxq4-pfr6-fqjw"
+  ],
   "summary": "ingress-nginx component for Kubernetes allows file overwrite",
   "details": "The Kubernetes ingress-nginx component prior to version 0.28.0 allows a user with the ability to create namespaces and to read and create ingress objects to overwrite the password file of another ingress which uses nginx.ingress.kubernetes.io/auth-type: basic and which has a hyphenated namespace or secret name.",
   "affected": [

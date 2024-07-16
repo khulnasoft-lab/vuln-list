@@ -5,6 +5,12 @@
   "aliases": [
     "CVE-2021-25736"
   ],
+  "related": [
+    "CGA-gxx3-3mwr-6q27",
+    "CGA-h5cj-jfjv-735q",
+    "CGA-mcfq-mmgc-qfmh",
+    "CGA-mhjf-45w8-8626"
+  ],
   "summary": "Kube-proxy may unintentionally forward traffic",
   "details": "Kube-proxy on Windows can unintentionally forward traffic to local processes listening on the same port (`spec.ports[*].port`) as a LoadBalancer Service when the LoadBalancer controller does not set the `status.loadBalancer.ingress[].ip` field. Clusters \nwhere the LoadBalancer controller sets the `status.loadBalancer.ingress[].ip` field are unaffected.\n\n",
   "affected": [

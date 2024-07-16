@@ -1,11 +1,14 @@
 {
   "id": "GHSA-fx48-xv6q-6gp3",
-  "modified": "2024-07-08T20:24:36Z",
+  "modified": "2024-07-15T22:00:20.611593Z",
   "published": "2024-02-29T09:30:34Z",
   "aliases": [
-    "CGA-9c85-rg9h-4w8m",
     "CVE-2024-1887",
     "GO-2024-2591"
+  ],
+  "related": [
+    "CGA-9c85-rg9h-4w8m",
+    "CGA-chh8-v546-m72w"
   ],
   "summary": "Mattermost post fetching without auditing in compliance export ",
   "details": "Mattermost fails to check if compliance export is enabled when fetching posts of public channels allowing a user that is not a member of the public channel to fetch the posts, which will not be audited in the compliance export. \n\n",

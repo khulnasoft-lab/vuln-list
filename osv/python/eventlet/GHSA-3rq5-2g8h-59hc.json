@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2023-29483"
   ],
+  "related": [
+    "CGA-2pv2-w6q3-fxxh",
+    "CGA-w2c7-rcgx-6fmq"
+  ],
   "summary": "Potential DoS via the Tudoor mechanism in eventlet and dnspython",
   "details": "eventlet before 0.35.2, as used in dnspython before 2.6.0, allows remote attackers to interfere with DNS name resolution by quickly sending an invalid packet from the expected IP address and source port, aka a \"TuDoor\" attack. In other words, dnspython does not have the preferred behavior in which the DNS name resolution algorithm would proceed, within the full time window, in order to wait for a valid packet. NOTE: dnspython 2.6.0 is unusable for a different reason that was addressed in 2.6.1.",
   "affected": [

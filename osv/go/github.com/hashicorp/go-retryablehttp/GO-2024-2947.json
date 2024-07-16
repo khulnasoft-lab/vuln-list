@@ -1,7 +1,11 @@
 {
   "id": "GO-2024-2947",
-  "modified": "2024-06-25T19:47:45Z",
+  "modified": "2024-07-15T22:12:28.927250Z",
   "published": "2024-06-25T19:47:45Z",
+  "aliases": [
+    "CVE-2024-6104",
+    "GHSA-v6v8-xj6m-xwqh"
+  ],
   "summary": "Leak of sensitive information to log files in github.com/hashicorp/go-retryablehttp",
   "details": "URLs were not sanitized when writing them to log files. This could lead to writing sensitive HTTP basic auth credentials to the log file.",
   "affected": [

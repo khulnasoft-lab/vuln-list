@@ -6,6 +6,10 @@
     "BIT-grafana-2023-3128",
     "CVE-2023-3128"
   ],
+  "related": [
+    "CGA-45h5-g96m-f6r7",
+    "CGA-phm9-29c6-x5rm"
+  ],
   "summary": "Grafana vulnerable to Authentication Bypass by Spoofing",
   "details": "Grafana is validating Azure AD accounts based on the email claim. \n\nOn Azure AD, the profile email field is not unique and can be easily modified. \n\nThis leads to account takeover and authentication bypass when Azure AD OAuth is configured with a multi-tenant app. \n\n",
   "affected": [
