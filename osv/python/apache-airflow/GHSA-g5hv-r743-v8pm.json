@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-39877"
   ],
+  "related": [
+    "CGA-h5gv-qmmr-9r2w"
+  ],
   "summary": "Apache Airflow has DAG Author Code Execution possibility in airflow-scheduler",
   "details": "Apache Airflow 2.4.0, and versions before 2.9.3, has a vulnerability that allows authenticated DAG authors to craft a doc_md parameter in a way that could execute arbitrary code in the scheduler context, which should be forbidden according to the Airflow Security model. Users should upgrade to version 2.9.3 or later which has removed the vulnerability.",
   "affected": [
