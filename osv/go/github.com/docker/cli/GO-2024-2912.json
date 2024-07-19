@@ -1,6 +1,6 @@
 {
   "id": "GO-2024-2912",
-  "modified": "2024-07-15T22:00:20.127809Z",
+  "modified": "2024-07-19T16:04:58Z",
   "published": "2024-07-01T21:50:42Z",
   "aliases": [
     "CVE-2021-41092",
@@ -31,14 +31,14 @@
       "ecosystem_specific": {
         "imports": [
           {
-            "path": "github.com/docker/cli/command",
+            "path": "github.com/docker/cli/cli/command",
             "symbols": [
               "GetDefaultAuthConfig",
               "RegistryAuthenticationPrivilegedFunc"
             ]
           },
           {
-            "path": "github.com/docker/cli/command/registry",
+            "path": "github.com/docker/cli/cli/command/registry",
             "symbols": [
               "runLogin"
             ]
