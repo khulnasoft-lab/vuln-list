@@ -1,6 +1,6 @@
 {
   "id": "GO-2021-0064",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2024-07-19T16:04:58Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
     "CVE-2020-8565",
@@ -39,39 +39,6 @@
               "impersonatingRoundTripper.RoundTrip",
               "requestInfo.toCurl",
               "userAgentRoundTripper.RoundTrip"
-            ]
-          }
-        ]
-      },
-      "database_specific": {
-        "source": "https://vuln.go.dev/ID/GO-2021-0064.json"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Go",
-        "name": "k8s.io/kubernetes",
-        "purl": "pkg:golang/k8s.io/kubernetes"
-      },
-      "ranges": [
-        {
-          "type": "SEMVER",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "1.20.0-alpha.2"
-            }
-          ]
-        }
-      ],
-      "ecosystem_specific": {
-        "imports": [
-          {
-            "path": "k8s.io/kubernetes/staging/src/k8s.io/client-go/transport",
-            "symbols": [
-              "requestInfo.toCurl"
             ]
           }
         ]
