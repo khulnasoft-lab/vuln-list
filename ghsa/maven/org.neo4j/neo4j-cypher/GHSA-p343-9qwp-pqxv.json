@@ -1,6 +1,6 @@
 {
-  "Severity": "CRITICAL",
-  "UpdatedAt": "2024-05-07T19:59:42Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-07-25T15:34:04Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.neo4j:neo4j-cypher"
@@ -36,16 +36,16 @@
         "Value": "CVE-2024-34517"
       }
     ],
-    "Description": "The Cypher component in Neo4j before 5.19.0 mishandles IMMUTABLE privileges.",
+    "Description": "The Cypher component in Neo4j between v.5.0.0 and v.5.19.0 mishandles IMMUTABLE.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-05-07T18:30:34Z",
-    "Severity": "CRITICAL",
+    "Severity": "MODERATE",
     "Summary": "Neo4j Cypher component mishandles IMMUTABLE privileges",
-    "UpdatedAt": "2024-07-05T20:53:15Z",
+    "UpdatedAt": "2024-07-25T15:34:04Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 9.8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [
@@ -53,7 +53,7 @@
       "FirstPatchedVersion": {
         "Identifier": "5.19.0"
       },
-      "VulnerableVersionRange": "\u003c 5.19.0"
+      "VulnerableVersionRange": "\u003e= 5.0.0, \u003c 5.19.0"
     }
   ]
 }
