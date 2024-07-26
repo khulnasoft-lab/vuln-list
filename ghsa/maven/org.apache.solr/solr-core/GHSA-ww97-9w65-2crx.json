@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2020-02-11T19:43:13Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-07-25T20:19:27Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.solr:solr-core"
@@ -201,9 +201,9 @@
     "Description": "Apache Solr 5.0.0 to Apache Solr 8.3.1 are vulnerable to a Remote Code Execution through the VelocityResponseWriter. A Velocity template can be provided through Velocity templates in a configset `velocity/` directory or as a parameter. A user defined configset could contain renderable, potentially malicious, templates. Parameter provided templates are disabled by default, but can be enabled by setting `params.resource.loader.enabled` by defining a response writer with that setting set to `true`. Defining a response writer requires configuration API access. Solr 8.4 removed the params resource loader entirely, and only enables the configset-provided template rendering when the configset is `trusted` (has been uploaded by an authenticated user).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2020-02-12T18:45:28Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Improper Input Validation in Apache Solr",
-    "UpdatedAt": "2024-07-25T15:31:38Z",
+    "UpdatedAt": "2024-07-25T20:19:27Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
