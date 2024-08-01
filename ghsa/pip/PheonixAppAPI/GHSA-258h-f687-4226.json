@@ -1,0 +1,56 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-07-31T21:04:31Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "PheonixAppAPI"
+  },
+  "Advisory": {
+    "DatabaseId": 255174,
+    "Id": "GSA_kwCzR0hTQS0yNThoLWY2ODctNDIyNs4AA-TG",
+    "GhsaId": "GHSA-258h-f687-4226",
+    "References": [
+      {
+        "Url": "https://github.com/AkshuDev/PheonixAppAPI/security/advisories/GHSA-258h-f687-4226"
+      },
+      {
+        "Url": "https://github.com/AkshuDev/PheonixAppAPI/commit/0937419e323f5ea9013d43dc1b82fef9d7e05044"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-41951"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-258h-f687-4226"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-258h-f687-4226"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-41951"
+      }
+    ],
+    "Description": "### Impact\nThe issue is that the map of encoding/decoding languages are visible in code. \n\n### Patches\nThe problem was patched in 0.2.4.\n\n### Workarounds\nThe only known workaround is apply the fix to the code manually.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-07-31T21:04:28Z",
+    "Severity": "MODERATE",
+    "Summary": "PheonixAppAPI has visible Encoding Maps",
+    "UpdatedAt": "2024-07-31T22:03:15Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 4.4,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.2.4"
+      },
+      "VulnerableVersionRange": "\u003c 0.2.4"
+    }
+  ]
+}
