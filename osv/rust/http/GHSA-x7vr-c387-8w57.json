@@ -8,6 +8,9 @@
     "GHSA-xvc9-xwgj-4cq9",
     "RUSTSEC-2019-0033"
   ],
+  "related": [
+    "CGA-mq25-568g-hr6q"
+  ],
   "summary": "Integer Overflow/Infinite Loop in the http crate",
   "details": "HeaderMap::reserve() used usize::next_power_of_two() to calculate the increased capacity. However, next_power_of_two() silently overflows to 0 if given a sufficiently large number in release mode.\n\nIf the map was not empty when the overflow happens, the library will invoke self.grow(0) and start infinite probing. This allows an attacker who controls the argument to reserve() to cause a potential denial of service (DoS).\n\nThe flaw was corrected in 0.1.20 release of http crate.",
   "affected": [

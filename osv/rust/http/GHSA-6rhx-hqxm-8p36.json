@@ -6,6 +6,9 @@
     "CVE-2019-25009",
     "RUSTSEC-2019-0034"
   ],
+  "related": [
+    "CGA-6427-pq22-fhv9"
+  ],
   "summary": "Double free in http",
   "details": "An issue was discovered in the http crate before 0.1.20 for Rust. The HeaderMap::Drain API can use a raw pointer, defeating soundness.",
   "affected": [
