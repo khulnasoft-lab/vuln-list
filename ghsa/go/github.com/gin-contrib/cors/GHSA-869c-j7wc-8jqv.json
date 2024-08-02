@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-07-05T21:27:43Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-08-02T15:51:40Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/gin-contrib/cors"
@@ -45,13 +45,13 @@
     "Description": "parseWildcardRules in Gin-Gonic CORS middleware before 1.6.0 mishandles a wildcard at the end of an origin string, e.g., https://example.community/* is allowed when the intention is that only https://example.com/* should be allowed, and http://localhost.example.com/* is allowed when the intention is that only http://localhost/* should be allowed.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-29T06:31:40Z",
-    "Severity": "MODERATE",
+    "Severity": "CRITICAL",
     "Summary": "Gin mishandles a wildcard at the end of an origin string",
-    "UpdatedAt": "2024-07-05T21:27:43Z",
+    "UpdatedAt": "2024-08-02T15:51:40Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [
