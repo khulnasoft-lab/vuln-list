@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vg6q-84p8-qvqh",
-  "modified": "2024-08-02T01:42:01.580468Z",
+  "modified": "2024-08-06T23:11:52.167504Z",
   "published": "2024-08-01T15:32:23Z",
   "aliases": [
-    "CVE-2024-39839"
+    "CVE-2024-39839",
+    "GO-2024-3024"
   ],
   "summary": "Mattermost allows a user on a remote to set their remote username prop to an arbitrary string",
   "details": "Mattermost versions 9.9.x \u003c= 9.9.0, 9.5.x \u003c= 9.5.6, 9.7.x \u003c= 9.7.5, 9.8.x \u003c= 9.8.1 fail to disallow users to set their own remote username, when shared channels were enabled, which allows a user on a remote to set their remote username prop to an arbitrary string, which would be then synced to the local server as long as the user hadn't been synced before.",

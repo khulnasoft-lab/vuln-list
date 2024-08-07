@@ -1,9 +1,10 @@
 {
   "id": "GHSA-cmc8-222c-vqp9",
-  "modified": "2024-08-02T13:56:59.822524Z",
+  "modified": "2024-08-06T22:27:07.829107Z",
   "published": "2024-08-01T15:32:21Z",
   "aliases": [
-    "CVE-2024-39274"
+    "CVE-2024-39274",
+    "GO-2024-3028"
   ],
   "summary": "Mattermost failed to properly validate that the channel that comes from the sync message is a shared channel",
   "details": "Mattermost versions 9.9.x \u003c= 9.9.0, 9.5.x \u003c= 9.5.6, 9.7.x \u003c= 9.7.5 and 9.8.x \u003c= 9.8.1 fail to properly validate that the channel that comes from the sync message is a shared channel, when shared channels are enabled, which allows a malicious remote to add users to arbitrary teams and channels",

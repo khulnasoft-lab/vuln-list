@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mpvx-whpp-99xj",
-  "modified": "2024-08-02T16:56:58.196090Z",
+  "modified": "2024-08-06T22:27:13.109983Z",
   "published": "2024-07-31T21:32:38Z",
   "aliases": [
-    "CVE-2024-41256"
+    "CVE-2024-41256",
+    "GO-2024-3035"
   ],
   "summary": "Filestash skips TLS certificate verification process when sending out email verification codes",
   "details": "Default configurations in the ShareProofVerifier function of filestash v0.4 causes the application to skip the TLS certificate verification process when sending out email verification codes, possibly allowing attackers to access sensitive data via a man-in-the-middle attack.",

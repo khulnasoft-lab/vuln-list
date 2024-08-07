@@ -1,9 +1,10 @@
 {
   "id": "GHSA-f6cj-4h3g-hwq4",
-  "modified": "2024-08-05T15:11:47.965952Z",
+  "modified": "2024-08-06T22:27:05.585655Z",
   "published": "2024-08-03T18:30:33Z",
   "aliases": [
-    "CVE-2024-37286"
+    "CVE-2024-37286",
+    "GO-2024-3037"
   ],
   "summary": "APM Server vulnerable to Insertion of Sensitive Information into Log File",
   "details": "APM server logs contain document body from a partially failed bulk index request. For example, in case of unavailable_shards_exception for a specific document, since the ES response line contains the document body, and that APM server logs the ES response line on error, the document is effectively logged.",

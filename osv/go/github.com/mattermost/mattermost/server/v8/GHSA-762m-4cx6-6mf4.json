@@ -1,9 +1,10 @@
 {
   "id": "GHSA-762m-4cx6-6mf4",
-  "modified": "2024-08-01T23:26:52.452740Z",
+  "modified": "2024-08-06T23:12:08.256285Z",
   "published": "2024-08-01T15:32:23Z",
   "aliases": [
-    "CVE-2024-39832"
+    "CVE-2024-39832",
+    "GO-2024-3020"
   ],
   "summary": "Mattermost allows a remote actor to permanently delete local data by abusing dangerous error handling",
   "details": "Mattermost versions 9.9.x \u003c= 9.9.0, 9.5.x \u003c= 9.5.6, 9.7.x \u003c= 9.7.5, 9.8.x \u003c= 9.8.1 fail to properly safeguard an error handling which allows a malicious remote to permanently delete local data by abusing dangerous error handling, when share channels were enabled.",

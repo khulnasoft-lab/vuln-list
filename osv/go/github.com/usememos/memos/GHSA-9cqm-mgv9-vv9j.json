@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9cqm-mgv9-vv9j",
-  "modified": "2024-08-05T21:58:57.170961Z",
+  "modified": "2024-08-06T23:11:56.461948Z",
   "published": "2024-08-05T21:29:24Z",
   "aliases": [
-    "CVE-2024-29029"
+    "CVE-2024-29029",
+    "GO-2024-3049"
   ],
   "summary": "memos vulnerable to Server-Side Request Forgery and Cross-site Scripting",
   "details": "memos is a privacy-first, lightweight note-taking service. In memos 0.13.2, an SSRF vulnerability exists at the `/o/get/image` that allows unauthenticated users to enumerate the internal network and retrieve images. The response from the image request is then copied into the response of the current server request, causing a reflected XSS vulnerability. Version 0.22.0 of memos removes the vulnerable file.",

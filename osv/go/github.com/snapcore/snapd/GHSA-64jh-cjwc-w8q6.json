@@ -1,9 +1,10 @@
 {
   "id": "GHSA-64jh-cjwc-w8q6",
-  "modified": "2024-07-26T22:29:03.069967Z",
+  "modified": "2024-08-06T22:27:06.974159Z",
   "published": "2024-07-25T21:31:20Z",
   "aliases": [
-    "CVE-2024-29068"
+    "CVE-2024-29068",
+    "GO-2024-3008"
   ],
   "summary": "snapd failed to properly check the file type when extracting a snap",
   "details": "In snapd versions prior to 2.62, snapd failed to properly check the file type when extracting a snap. The snap format is a squashfs file-system image and so can contain files that are non-regular files (such as pipes or sockets etc). Various file entries within the snap squashfs image (such as icons etc) are directly read by snapd when it is extracted. An attacker who could convince a user to install a malicious snap which contained non-regular files at these paths could then cause snapd to block indefinitely trying to read from such files and cause a denial of service.",

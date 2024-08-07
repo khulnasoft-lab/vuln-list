@@ -1,9 +1,10 @@
 {
   "id": "GHSA-v333-7h2p-5fhv",
-  "modified": "2024-07-31T21:26:55.437634Z",
+  "modified": "2024-08-06T22:27:06.659093Z",
   "published": "2024-07-31T20:59:13Z",
   "aliases": [
-    "CVE-2024-41953"
+    "CVE-2024-41953",
+    "GO-2024-3015"
   ],
   "summary": "ZITADEL has improper HTML sanitization in emails and Console UI",
   "details": "### Impact\n\nZITADEL uses HTML for emails and renders certain information such as usernames dynamically. That information can be entered by users or administrators. Due to a missing output sanitization, these emails could include malicious code.\nThis may potentially lead to a threat where an attacker, without privileges, could send out altered notifications that are part of the registration processes. An attacker could create a malicious link, where the injected code would be rendered as part of the email.\n\nDuring investigation of this issue a related issue was found and mitigated, where on the user's detail page the username was not sanitized and would also render HTML, giving an attacker the same vulnerability.\n\nWhile it was possible to inject HTML including javascript, the execution of such scripts would be prevented by most email clients and the Content Security Policy in Console UI.\n\n### Patches\n\n2.x versions are fixed on \u003e= [2.58.1](https://github.com/zitadel/zitadel/releases/tag/v2.58.1)\n2.57.x versions are fixed on \u003e= [2.57.1](https://github.com/zitadel/zitadel/releases/tag/v2.57.1)\n2.56.x versions are fixed on \u003e= [2.56.2](https://github.com/zitadel/zitadel/releases/tag/v2.56.2)\n2.55.x versions are fixed on \u003e= [2.55.5](https://github.com/zitadel/zitadel/releases/tag/v2.55.5)\n2.54.x versions are fixed on \u003e= [2.54.8](https://github.com/zitadel/zitadel/releases/tag/v2.54.8)\n2.53.x versions are fixed on \u003e= [2.53.9](https://github.com/zitadel/zitadel/releases/tag/v2.53.9)\n2.52.x versions are fixed on \u003e= [2.52.9](https://github.com/zitadel/zitadel/releases/tag/v2.52.3)\n\n### Workarounds\n\nThere is no workaround since a patch is already available.\n\n### Questions\n\nIf you have any questions or comments about this advisory, please email us at [security@zitadel.com](mailto:security@zitadel.com)\n\n### Credits\n\nThanks to Sushmita Poudel and David Underwood for reporting this.",

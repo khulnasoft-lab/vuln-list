@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wv8x-3w6r-6h7v",
-  "modified": "2024-08-05T21:58:57.359031Z",
+  "modified": "2024-08-06T23:12:03.815141Z",
   "published": "2024-08-05T21:29:25Z",
   "aliases": [
-    "CVE-2024-29191"
+    "CVE-2024-29191",
+    "GO-2024-3055"
   ],
   "summary": "gotortc Cross-site Scripting vulnerability",
   "details": "gotortc is a camera streaming application. Versions 1.8.5 and prior are vulnerable to DOM-based cross-site scripting. The links page (`links.html`) appends the `src` GET parameter (`[0]`) in all of its links for 1-click previews. The context in which `src` is being appended is `innerHTML` (`[1]`), which will insert the text as HTML. Commit 3b3d5b033aac3a019af64f83dec84f70ed2c8aba contains a patch for the issue.",
