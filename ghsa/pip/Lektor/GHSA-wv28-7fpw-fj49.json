@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "CRITICAL",
   "UpdatedAt": "2024-04-07T05:00:47Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -54,13 +54,13 @@
     "Description": "Lektor before 3.3.11 does not sanitize DB path traversal. Thus, shell commands might be executed via a file that is added to the templates directory, if the victim's web browser accesses an untrusted website that uses JavaScript to send requests to localhost port 5000, and the web browser is running on the same machine as the \"lektor server\" command.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-03-27T06:30:33Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Lektor does not sanitize database path traversal",
-    "UpdatedAt": "2024-04-07T05:00:47Z",
+    "UpdatedAt": "2024-08-06T18:51:05Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [
