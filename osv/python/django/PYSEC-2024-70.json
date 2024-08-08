@@ -1,9 +1,10 @@
 {
   "id": "PYSEC-2024-70",
-  "modified": "2024-08-07T17:41:57.353537Z",
+  "modified": "2024-08-07T19:41:43.724278Z",
   "published": "2024-08-07T15:15:00Z",
   "aliases": [
-    "CVE-2024-42005"
+    "CVE-2024-42005",
+    "GHSA-pv4p-cwwg-4rph"
   ],
   "details": "An issue was discovered in Django 5.0 before 5.0.8 and 4.2 before 4.2.15. QuerySet.values() and values_list() methods on models with a JSONField are subject to SQL injection in column aliases via a crafted JSON object key as a passed *arg.",
   "affected": [
