@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-41942"
   ],
+  "related": [
+    "CGA-96rm-6ffx-8wm2"
+  ],
   "summary": "JupyterHub has a privilege escalation vulnerability with the `admin:users` scope",
   "details": "### Summary\n\nIf a user is granted the `admin:users` scope, they may escalate their own privileges by making themselves a full admin user.\n\n### Details\n\nThe `admin:users` scope allows a user to edit user records:\n\n\u003e admin:users\n\u003e\n\u003e Read, write, create and delete users and their authentication state, not including their servers or tokens.\n\u003e\n\u003e -- https://jupyterhub.readthedocs.io/en/stable/rbac/scopes.html#available-scopes\n\nHowever, this includes making users admins. Admin users are granted scopes beyond `admin:users` making this a mechanism by which granted scopes may be escalated.\n\n### Impact\n\nThe impact is relatively small in that `admin:users` is already an extremely privileged scope only granted to trusted users.\nIn effect, `admin:users` is equivalent to `admin=True`, which is not intended.\n\nNote that the change here only prevents escalation to the built-in JupyterHub admin role that has unrestricted permissions. It does not prevent users with e.g. `groups` permissions from granting themselves or other users permissions via group membership, which is intentional.",
   "affected": [
