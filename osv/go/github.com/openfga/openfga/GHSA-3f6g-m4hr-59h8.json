@@ -1,0 +1,45 @@
+{
+  "id": "GHSA-3f6g-m4hr-59h8",
+  "modified": "2024-08-09T22:23:27Z",
+  "published": "2024-08-09T21:23:26Z",
+  "aliases": [
+    "CVE-2024-42473"
+  ],
+  "summary": "OpenFGA Authorization Bypass",
+  "details": "## Overview\n\nOpenFGA v1.5.7 and v1.5.8 are vulnerable to authorization bypass when calling Check API with a model that uses `but not` and `from` expressions and a userset. \n\n## Fix\n\nDowngrade to v1.5.6 as soon as possible. This downgrade is backward compatible.\n\nWe are currently working on a fix which will be included in the next release.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/openfga/openfga",
+        "purl": "pkg:golang/github.com/openfga/openfga"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "1.5.7"
+            },
+            {
+              "last_affected": "1.5.8"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-3f6g-m4hr-59h8/GHSA-3f6g-m4hr-59h8.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/openfga/openfga/security/advisories/GHSA-3f6g-m4hr-59h8"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/openfga/openfga"
+    }
+  ]
+}
