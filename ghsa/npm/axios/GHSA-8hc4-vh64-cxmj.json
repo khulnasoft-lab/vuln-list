@@ -1,0 +1,62 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-08-12T17:26:46Z",
+  "Package": {
+    "Ecosystem": "NPM",
+    "Name": "axios"
+  },
+  "Advisory": {
+    "DatabaseId": 256067,
+    "Id": "GSA_kwCzR0hTQS04aGM0LXZoNjQtY3htas4AA-hD",
+    "GhsaId": "GHSA-8hc4-vh64-cxmj",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-39338"
+      },
+      {
+        "Url": "https://github.com/axios/axios/releases"
+      },
+      {
+        "Url": "https://jeffhacks.com/advisories/2024/06/24/CVE-2024-39338.html"
+      },
+      {
+        "Url": "https://github.com/axios/axios/issues/6463"
+      },
+      {
+        "Url": "https://github.com/axios/axios/pull/6539"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-8hc4-vh64-cxmj"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-8hc4-vh64-cxmj"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-39338"
+      }
+    ],
+    "Description": "axios 1.7.2 allows SSRF via unexpected behavior where requests for path relative URLs get processed as protocol relative URLs.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-08-12T15:30:49Z",
+    "Severity": "HIGH",
+    "Summary": "Server-Side Request Forgery in axios",
+    "UpdatedAt": "2024-08-12T17:26:46Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 1.3.2, \u003c= 1.7.3"
+    }
+  ]
+}
