@@ -1,6 +1,6 @@
 {
   "id": "PYSEC-2021-125",
-  "modified": "2024-08-05T16:54:05.375783Z",
+  "modified": "2024-08-13T11:20:23.965866Z",
   "published": "2021-06-09T12:15:00Z",
   "withdrawn": "2024-08-02T20:32:38Z",
   "details": "A flaw was found in Ansible where the secret information present in async_files are getting disclosed when the user changes the jobdir to a world readable directory. Any secret information in an async status file will be readable by a malicious user on that system. This flaw affects Ansible Tower 3.7 and Ansible Automation Platform 1.2.",
@@ -384,7 +384,9 @@
         "9.6.0",
         "9.6.1",
         "9.7.0",
-        "9.8.0"
+        "9.8.0",
+        "10.3.0",
+        "9.9.0"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/ansible/PYSEC-2021-125.yaml"
