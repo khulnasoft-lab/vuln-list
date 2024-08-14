@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-9v35-4xcr-w9ph",
+  "id": "GO-2024-3057",
   "modified": "2024-08-13T23:42:03.657783Z",
-  "published": "2024-08-01T18:32:50Z",
+  "published": "2024-08-13T23:22:02Z",
   "aliases": [
     "CVE-2024-41260",
-    "GO-2024-3057"
+    "GHSA-9v35-4xcr-w9ph"
   ],
-  "summary": "NetBird uses a static initialization vector (IV)",
-  "details": "A static initialization vector (IV) in the encrypt function of netbird v0.28.4 allows attackers to obtain sensitive information.",
+  "summary": "NetBird uses a static initialization vector (IV) in github.com/netbirdio/netbird",
+  "details": "NetBird uses a static initialization vector (IV) in github.com/netbirdio/netbird",
   "affected": [
     {
       "package": {
@@ -21,34 +21,31 @@
           "events": [
             {
               "introduced": "0"
-            },
-            {
-              "last_affected": "0.28.7"
             }
           ]
         }
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-9v35-4xcr-w9ph/GHSA-9v35-4xcr-w9ph.json"
+        "source": "https://vuln.go.dev/ID/GO-2024-3057.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-9v35-4xcr-w9ph"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-41260"
     },
     {
-      "type": "WEB",
+      "type": "REPORT",
       "url": "https://github.com/netbirdio/netbird/issues/2246"
     },
     {
       "type": "WEB",
       "url": "https://gist.github.com/nyxfqq/92232108ac153e95d538bb17fc5ad636"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/netbirdio/netbird"
     }
   ]
 }
