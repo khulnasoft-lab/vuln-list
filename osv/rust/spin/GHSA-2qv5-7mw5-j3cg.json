@@ -5,6 +5,9 @@
   "aliases": [
     "RUSTSEC-2023-0031"
   ],
+  "related": [
+    "CGA-463j-2hvv-w52g"
+  ],
   "summary": "spin-rs initialisation failure in `Once::try_call_once` can lead to undefined behaviour for other initialisers",
   "details": "`Once::try_call_once` is unsound if invoked more than once concurrently and any call fails to initialise successfully.\n",
   "affected": [
