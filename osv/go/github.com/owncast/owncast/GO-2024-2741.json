@@ -1,13 +1,13 @@
 {
   "id": "GO-2024-2741",
-  "modified": "2024-08-05T21:58:41.340647Z",
+  "modified": "2024-08-19T17:26:27Z",
   "published": "2024-06-04T15:19:21Z",
   "aliases": [
     "CVE-2024-31450",
     "GHSA-9355-27m8-h74v"
   ],
-  "summary": "Owncast vulnerable to arbitrary file deletion in emoji.go (GHSL-2023-277) in github.com/owncast/owncast",
-  "details": "Owncast vulnerable to arbitrary file deletion in emoji.go (GHSL-2023-277) in github.com/owncast/owncast",
+  "summary": "Owncast Path Traversal vulnerability in github.com/owncast/owncast",
+  "details": "Owncast Path Traversal vulnerability in github.com/owncast/owncast",
   "affected": [
     {
       "package": {
@@ -36,7 +36,15 @@
   "references": [
     {
       "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-9355-27m8-h74v"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-31450"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://securitylab.github.com/advisories/GHSL-2023-277_Owncast"
     },
     {
       "type": "FIX",
@@ -49,10 +57,6 @@
     {
       "type": "WEB",
       "url": "https://github.com/owncast/owncast/releases/tag/v0.1.3"
-    },
-    {
-      "type": "WEB",
-      "url": "https://securitylab.github.com/advisories/GHSL-2023-277_Owncast/"
     }
   ]
 }
