@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2024-07-19T22:39:52Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-08-19T21:03:26Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "automad/automad"
@@ -33,24 +33,24 @@
         "Value": "CVE-2024-40400"
       }
     ],
-    "Description": "An arbitrary file upload vulnerability in the image upload function of Automad v2.0.0 allows attackers to execute arbitrary code via a crafted file.",
+    "Description": "An arbitrary file upload vulnerability in the image upload function of Automad v2.0.0 allows attackers to execute arbitrary code via a crafted file.\n\nThe malicious file has to be prepared and uploaded manually by the admin. Usually there is only one admin per site and that is the owner.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-19T21:31:11Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Automad arbitrary file upload vulnerability",
-    "UpdatedAt": "2024-08-08T05:09:01Z",
+    "UpdatedAt": "2024-08-19T21:03:27Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+      "Score": 6.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.0.0-alpha.5"
       },
-      "VulnerableVersionRange": "\u003c= 2.0.0-alpha.5"
+      "VulnerableVersionRange": "\u003c 2.0.0-alpha.5"
     }
   ]
 }
