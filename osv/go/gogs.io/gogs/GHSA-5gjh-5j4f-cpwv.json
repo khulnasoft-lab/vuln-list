@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5gjh-5j4f-cpwv",
-  "modified": "2023-11-08T04:07:33.909857Z",
+  "modified": "2024-08-21T15:26:55.091749Z",
   "published": "2022-03-28T16:46:41Z",
   "aliases": [
-    "CVE-2022-0415"
+    "CVE-2022-0415",
+    "GO-2022-0554"
   ],
   "summary": "Unrestricted Upload of File with Dangerous Type in Gogs",
   "details": "### Impact\n\nThe malicious user is able to upload a crafted `config` file into repository's `.git` directory with to gain SSH access to the server. All installations with [repository upload enabled (default)](https://github.com/gogs/gogs/blob/f36eeedbf89328ee70cc3a2e239f6314f9021f58/conf/app.ini#L127-L129) are affected.\n\n### Patches\n\nRepository file uploads are prohibited to its `.git` directory. Users should upgrade to 0.12.6 or the latest 0.13.0+dev.\n\n### Workarounds\n\n[Disable repository files upload](https://github.com/gogs/gogs/blob/f36eeedbf89328ee70cc3a2e239f6314f9021f58/conf/app.ini#L128-L129).\n\n### References\n\nhttps://huntr.dev/bounties/b4928cfe-4110-462f-a180-6d5673797902/\n\n### For more information\n\nIf you have any questions or comments about this advisory, please post on #6833.\n",

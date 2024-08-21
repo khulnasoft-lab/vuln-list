@@ -1,9 +1,10 @@
 {
   "id": "GHSA-g5gj-9ggf-9vmq",
-  "modified": "2023-11-08T04:06:29.608530Z",
+  "modified": "2024-08-21T14:56:41.453704Z",
   "published": "2021-11-10T20:38:53Z",
   "aliases": [
-    "CVE-2021-3908"
+    "CVE-2021-3908",
+    "GO-2022-0249"
   ],
   "summary": "Infinite certificate chain depth results in OctoRPKI running forever",
   "details": "OctoRPKI (github.com/cloudflare/cfrpki/cmd/octorpki) does not limit the depth of a certificate chain, allowing for a CA to create children in an ad-hoc fashion, thereby making tree traversal never end.\n\n### For more information\nIf you have any questions or comments about this advisory email us at security@cloudflare.com \n",

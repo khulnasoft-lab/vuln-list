@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2rmp-fw5r-j5qv",
-  "modified": "2023-11-08T04:01:31.609029Z",
+  "modified": "2024-08-21T15:58:54.479596Z",
   "published": "2021-05-18T18:22:05Z",
   "aliases": [
-    "CVE-2019-20933"
+    "CVE-2019-20933",
+    "GO-2022-0780"
   ],
   "summary": "Improper Authentication in InfluxDB",
   "details": "InfluxDB before 1.7.6 has an authentication bypass vulnerability in the authenticate function in `services/httpd/handler.go` because a JWT token may have an empty SharedSecret (aka shared secret).",

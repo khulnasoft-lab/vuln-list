@@ -1,10 +1,11 @@
 {
   "id": "GHSA-7cgv-v83v-rr87",
-  "modified": "2023-12-06T01:02:34.223467Z",
+  "modified": "2024-08-21T16:28:49.620257Z",
   "published": "2022-09-23T00:00:46Z",
   "aliases": [
     "BIT-vault-2022-40186",
-    "CVE-2022-40186"
+    "CVE-2022-40186",
+    "GO-2022-1021"
   ],
   "summary": "HashiCorp Vault vulnerable to incorrect metadata access",
   "details": "An issue was discovered in HashiCorp Vault and Vault Enterprise before 1.11.3. A vulnerability in the Identity Engine was found where, in a deployment where an entity has multiple mount accessors with shared alias names, Vault may overwrite metadata to the wrong alias due to an issue with checking the proper alias assigned to an entity. This may allow for unintended access to key/value paths using that metadata in Vault.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mv55-23xp-3wp8",
-  "modified": "2023-11-08T04:06:08.853620Z",
+  "modified": "2024-08-21T15:41:47.495346Z",
   "published": "2021-06-08T20:09:36Z",
   "aliases": [
-    "CVE-2021-3495"
+    "CVE-2021-3495",
+    "GO-2022-0645"
   ],
   "summary": "Access control flaw in Kiali",
   "details": "An incorrect access control flaw was found in the kiali-operator in versions before 1.33.0. This flaw allows an attacker with a basic level of access to the cluster (to deploy a kiali operand) to use this vulnerability and deploy a given image to anywhere in the cluster, potentially gaining access to privileged service account tokens. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",

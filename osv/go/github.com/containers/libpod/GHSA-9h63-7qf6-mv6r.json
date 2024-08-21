@@ -1,9 +1,10 @@
 {
   "id": "GHSA-9h63-7qf6-mv6r",
-  "modified": "2023-11-08T04:04:35.222030Z",
+  "modified": "2024-08-21T15:41:50.958534Z",
   "published": "2021-05-18T18:33:12Z",
   "aliases": [
-    "CVE-2021-20188"
+    "CVE-2021-20188",
+    "GO-2022-0641"
   ],
   "summary": "Improper Authorization in github.com/containers/libpod",
   "details": "A flaw was found in podman before 1.7.0. File permissions for non-root users running in a privileged container are not correctly checked. This flaw can be abused by a low-privileged user inside the container to access any other file in the container, even if owned by the root user inside the container. It does not allow to directly escape the container, though being a privileged container means that a lot of security features are disabled when running the container. The highest threat from this vulnerability is to data confidentiality and integrity as well as system availability.",

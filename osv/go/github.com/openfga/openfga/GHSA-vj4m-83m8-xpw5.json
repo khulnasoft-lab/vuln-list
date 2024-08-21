@@ -1,9 +1,10 @@
 {
   "id": "GHSA-vj4m-83m8-xpw5",
-  "modified": "2023-11-08T04:10:19.312476Z",
+  "modified": "2024-08-21T16:28:36.412430Z",
   "published": "2022-10-25T20:21:45Z",
   "aliases": [
-    "CVE-2022-39341"
+    "CVE-2022-39341",
+    "GO-2022-1080"
   ],
   "summary": "OpenFGA Authorization Bypass via tupleset wildcard",
   "details": "### Overview\nDuring our internal security assessment, it was discovered that OpenFGA versions `v0.2.3` and prior are vulnerable to authorization bypass under certain conditions.\n\n### Am I affected?\nYou are affected by this vulnerability if you are using `openfga/openfga` version `v0.2.3` and you added a tuple with a wildcard (*) assigned to a tupleset relation (the right hand side of a ‘from’ statement).\n\n### How to fix that?\nUpgrade to version `v0.2.4`.\n\n### Backward Compatibility\nThis update is not backward compatible with any authorization model that uses wildcard on a tupleset relation.\n\n",

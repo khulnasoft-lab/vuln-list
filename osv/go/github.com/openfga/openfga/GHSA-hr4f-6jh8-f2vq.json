@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hr4f-6jh8-f2vq",
-  "modified": "2023-11-08T04:13:39.414414Z",
+  "modified": "2024-08-21T14:56:46.079008Z",
   "published": "2023-10-18T18:25:58Z",
   "aliases": [
-    "CVE-2023-45810"
+    "CVE-2023-45810",
+    "GO-2023-2121"
   ],
   "summary": "OpenFGA DoS vulnerability",
   "details": "## Overview\nOpenFGA is vulnerable to a DoS attack. When a number of ListObjects calls are executed, in some scenarios, those calls are not releasing resources even after a response has been sent, and the service as a whole becomes unresponsive.\n\n## Fix\nUpgrade to v1.3.4. This upgrade is backwards compatible.",

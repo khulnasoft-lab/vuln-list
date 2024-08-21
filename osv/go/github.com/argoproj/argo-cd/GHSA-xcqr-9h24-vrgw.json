@@ -1,10 +1,11 @@
 {
   "id": "GHSA-xcqr-9h24-vrgw",
-  "modified": "2024-08-07T19:44:00Z",
+  "modified": "2024-08-21T15:58:41.686150Z",
   "published": "2021-07-26T21:19:37Z",
   "aliases": [
     "BIT-argo-cd-2020-8827",
-    "CVE-2020-8827"
+    "CVE-2020-8827",
+    "GO-2022-0892"
   ],
   "summary": "Improper Restriction of Excessive Authentication Attempts in Argo API",
   "details": "As of v1.5.0, the Argo API does not implement anti-automation measures such as rate limiting, account lockouts, or other anti-bruteforce measures. Attackers can submit an unlimited number of authentication attempts without consequence.\n\n### Specific Go Packages Affected\ngithub.com/argoproj/argo-cd/util/cache",

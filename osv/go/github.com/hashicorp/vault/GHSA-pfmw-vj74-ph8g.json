@@ -1,10 +1,11 @@
 {
   "id": "GHSA-pfmw-vj74-ph8g",
-  "modified": "2023-12-06T01:01:40.896123Z",
+  "modified": "2024-08-21T15:41:42.790099Z",
   "published": "2021-12-02T17:48:30Z",
   "aliases": [
     "BIT-vault-2021-43998",
-    "CVE-2021-43998"
+    "CVE-2021-43998",
+    "GO-2022-0611"
   ],
   "summary": "HashiCorp Vault Incorrect Permission Assignment for Critical Resource",
   "details": "HashiCorp Vault and Vault Enterprise 0.11.0 up to 1.7.5 and 1.8.4 templated ACL policies would always match the first-created entity alias if multiple entity aliases exist for a specified entity and mount combination, potentially resulting in incorrect policy enforcement. Fixed in Vault and Vault Enterprise 1.7.6, 1.8.5, and 1.9.0.",

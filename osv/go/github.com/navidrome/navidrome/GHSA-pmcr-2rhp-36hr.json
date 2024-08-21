@@ -1,9 +1,10 @@
 {
   "id": "GHSA-pmcr-2rhp-36hr",
-  "modified": "2023-11-08T04:08:27.770122Z",
+  "modified": "2024-08-21T14:56:53.658175Z",
   "published": "2022-01-27T16:23:02Z",
   "aliases": [
-    "CVE-2022-23857"
+    "CVE-2022-23857",
+    "GO-2022-0302"
   ],
   "summary": "SQL injection in github.com/navidrome/navidrome",
   "details": "model/criteria/criteria.go in Navidrome before 0.47.5 is vulnerable to SQL injection attacks when processing crafted Smart Playlists. An authenticated user could abuse this to extract arbitrary data from the database, including the user table (which contains sensitive information such as the users' encrypted passwords).",

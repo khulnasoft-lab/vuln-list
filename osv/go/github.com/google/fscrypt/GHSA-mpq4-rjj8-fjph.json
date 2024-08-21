@@ -1,9 +1,11 @@
 {
   "id": "GHSA-mpq4-rjj8-fjph",
-  "modified": "2023-11-08T04:08:46.048889Z",
+  "modified": "2024-08-21T14:56:47.994160Z",
   "published": "2022-02-26T00:00:44Z",
   "aliases": [
-    "CVE-2022-25326"
+    "CVE-2022-25326",
+    "GHSA-chxf-fjcf-7fwp",
+    "GO-2022-0339"
   ],
   "summary": "Uncontrolled Resource Consumption in github.com/google/fscrypt",
   "details": "fscrypt through v0.3.2 creates a world-writable directory by default when setting up a filesystem, allowing unprivileged users to exhaust filesystem space. We recommend upgrading to fscrypt 0.3.3 or above and adjusting the permissions on existing fscrypt metadata directories where applicable.",

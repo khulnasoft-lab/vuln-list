@@ -1,9 +1,10 @@
 {
   "id": "GHSA-93p5-8fqw-wjx3",
-  "modified": "2023-11-08T04:05:16.312837Z",
+  "modified": "2024-08-21T15:58:40.012711Z",
   "published": "2022-02-15T01:57:18Z",
   "aliases": [
-    "CVE-2021-25834"
+    "CVE-2021-25834",
+    "GO-2022-0813"
   ],
   "summary": "Authentication bypass by capture-replay in github.com/cosmos/ethermint",
   "details": "Cosmos Network Ethermint \u003c= v0.4.0 is affected by a transaction replay vulnerability in the EVM module. If the victim sends a very large nonce transaction, the attacker can replay the transaction through the application.\n\n### Specific Go Packages Affected\ngithub.com/cosmos/ethermint/rpc/namespaces/eth",

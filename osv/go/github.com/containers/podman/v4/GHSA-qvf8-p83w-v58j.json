@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qvf8-p83w-v58j",
-  "modified": "2023-11-08T04:09:00.196569Z",
+  "modified": "2024-08-21T15:41:59.719041Z",
   "published": "2022-04-01T20:52:29Z",
   "aliases": [
-    "CVE-2022-27649"
+    "CVE-2022-27649",
+    "GO-2022-0416"
   ],
   "summary": "Podman's default inheritable capabilities for linux container not empty",
   "details": "A bug was found in Podman where containers were created with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2).\n\nThis bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set.",

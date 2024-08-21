@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mxrx-fg8p-5p5j",
-  "modified": "2023-11-08T04:10:17.249966Z",
+  "modified": "2024-08-21T16:28:39.534489Z",
   "published": "2022-10-18T19:57:50Z",
   "aliases": [
-    "CVE-2022-39267"
+    "CVE-2022-39267",
+    "GO-2022-1067"
   ],
   "summary": "Bifrost vulnerable to authentication check flaw that leads to authentication bypass",
   "details": "### Impact\nThe admin and monitor user groups need to be authenticated by username and password. If we delete the X-Requested-With: XMLHttpRequest field in the request header,the authentication will be bypassed.\n\n### Patches\nhttps://github.com/brockercap/Bifrost/pull/201\n\n### Workarounds\nUpgrade to the latest version",

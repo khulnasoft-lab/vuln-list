@@ -1,9 +1,10 @@
 {
   "id": "GHSA-pfw4-xjgm-267c",
-  "modified": "2023-11-08T04:10:14.812822Z",
+  "modified": "2024-08-21T16:28:42.702294Z",
   "published": "2022-09-15T03:28:01Z",
   "aliases": [
-    "CVE-2022-39200"
+    "CVE-2022-39200",
+    "GO-2022-0989"
   ],
   "summary": "Dendrite signature checks not applied to some retrieved missing events",
   "details": "### Impact\n\nEvents retrieved from a remote homeserver using `/get_missing_events` did not have their signatures verified correctly. This could potentially allow a remote homeserver to provide invalid/modified events to Dendrite via this endpoint.\n\nNote that this does not apply to events retrieved through other endpoints (e.g. `/event`, `/state`) as they have been correctly verified.\n\nHomeservers that have federation disabled are not vulnerable.\n\n### Patches\n\nThe problem has been fixed in Dendrite 0.9.8.\n\n### Workarounds\n\nThere are no workarounds.\n\n### Special thanks\n\nTulir Asokan, who spotted the issue originally.",
