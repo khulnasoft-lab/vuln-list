@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r34v-gqmw-qvgj",
-  "modified": "2023-11-08T04:01:25.966011Z",
+  "modified": "2024-08-20T20:59:00.946168Z",
   "published": "2022-05-24T16:59:58Z",
   "aliases": [
-    "CVE-2019-18466"
+    "CVE-2019-18466",
+    "GO-2023-1942"
   ],
   "summary": "Podman Symlink Vulnerability",
   "details": "An issue was discovered in Podman in libpod before 1.6.0. It resolves a symlink in the host context during a copy operation from the container to the host, because an undesired glob operation occurs. An attacker could create a container image containing particular symlinks that, when copied by a victim user to the host filesystem, may overwrite existing files with others from the host.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-h65h-v7fw-4p38",
-  "modified": "2023-11-08T04:01:03.380759Z",
+  "modified": "2024-08-20T20:58:45.320689Z",
   "published": "2023-06-09T23:23:42Z",
   "aliases": [
-    "CVE-2019-12291"
+    "CVE-2019-12291",
+    "GO-2023-1852"
   ],
   "summary": "HashiCorp Consul Incorrect Access Control vulnerability",
   "details": "HashiCorp Consul 1.4.0 through 1.5.0 has Incorrect Access Control. Keys not matching a specific ACL rule used for prefix matching in a policy can be deleted by a token using that policy even with default deny settings configured.\n\n### Specific Go Packages Affected\ngithub.com/hashicorp/consul/acl",

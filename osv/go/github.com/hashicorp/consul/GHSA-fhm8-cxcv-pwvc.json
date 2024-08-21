@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fhm8-cxcv-pwvc",
-  "modified": "2023-11-08T04:01:46.186092Z",
+  "modified": "2024-08-20T20:58:39.904794Z",
   "published": "2022-05-13T01:22:55Z",
   "aliases": [
-    "CVE-2019-8336"
+    "CVE-2019-8336",
+    "GO-2023-1945"
   ],
   "summary": "HashiCorp Consul Access Restriction Bypass",
   "details": "HashiCorp Consul (and Consul Enterprise) 1.4.x before 1.4.3 allows a client to bypass intended access restrictions and obtain the privileges of one other arbitrary token within secondary datacenters, because a token with literally \"\u003chidden\u003e\" as its secret is used in unusual circumstances.",

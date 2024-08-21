@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4fgv-8448-gf82",
-  "modified": "2023-11-08T04:09:34.778820Z",
+  "modified": "2024-08-20T20:58:47.987204Z",
   "published": "2023-07-06T19:24:00Z",
   "aliases": [
-    "CVE-2022-32171"
+    "CVE-2022-32171",
+    "GO-2023-1895"
   ],
   "summary": "Zinc Cross-site Scripting vulnerability",
   "details": "In Zinc, versions v0.1.9 through v0.3.1 are vulnerable to Stored Cross-Site Scripting when using the delete user functionality. When an authenticated user deletes a user having a XSS payload in the user id field, the javascript payload will be executed and allow an attacker to access the user’s credentials.",

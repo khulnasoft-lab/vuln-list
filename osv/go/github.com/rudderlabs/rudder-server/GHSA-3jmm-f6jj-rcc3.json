@@ -1,9 +1,10 @@
 {
   "id": "GHSA-3jmm-f6jj-rcc3",
-  "modified": "2024-08-05T22:11:57.731060Z",
+  "modified": "2024-08-20T20:58:51.607683Z",
   "published": "2024-08-05T21:50:03Z",
   "aliases": [
-    "CVE-2023-30625"
+    "CVE-2023-30625",
+    "GO-2023-1863"
   ],
   "summary": "rudder-server is vulnerable to SQL injection",
   "details": "rudder-server is part of RudderStack, an open source Customer Data Platform (CDP). Versions of rudder-server prior to 1.3.0-rc.1 are vulnerable to SQL injection. This issue may lead to Remote Code Execution (RCE) due to the `rudder` role in PostgresSQL having superuser permissions by default. Version 1.3.0-rc.1 contains patches for this issue.",
