@@ -1,6 +1,6 @@
 {
   "id": "GO-2023-1574",
-  "modified": "2024-08-21T16:28:43.643662Z",
+  "modified": "2024-08-21T21:16:43Z",
   "published": "2023-02-17T20:52:58Z",
   "aliases": [
     "CVE-2022-2989",
@@ -41,6 +41,12 @@
           "type": "SEMVER",
           "events": [
             {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.5.18"
+            },
+            {
               "introduced": "1.6.0"
             },
             {
@@ -75,51 +81,6 @@
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2023-1574.json"
       }
-    },
-    {
-      "package": {
-        "ecosystem": "Go",
-        "name": "github.com/containerd/containerd",
-        "purl": "pkg:golang/github.com/containerd/containerd"
-      },
-      "ranges": [
-        {
-          "type": "SEMVER",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "1.5.18"
-            }
-          ]
-        }
-      ],
-      "ecosystem_specific": {
-        "imports": [
-          {
-            "path": "github.com/containerd/containerd/oci",
-            "symbols": [
-              "WithAdditionalGIDs",
-              "WithUIDGID",
-              "WithUser",
-              "WithUserID",
-              "WithUsername"
-            ]
-          },
-          {
-            "path": "github.com/containerd/containerd/pkg/cri/server",
-            "symbols": [
-              "criService.CreateContainer",
-              "criService.containerSpecOpts",
-              "instrumentedService.CreateContainer"
-            ]
-          }
-        ]
-      },
-      "database_specific": {
-        "source": "https://vuln.go.dev/ID/GO-2023-1574.json"
-      }
     }
   ],
   "references": [
@@ -128,8 +89,8 @@
       "url": "https://github.com/containerd/containerd/security/advisories/GHSA-hmfx-3pcx-653p"
     },
     {
-      "type": "WEB",
-      "url": "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4"
+      "type": "ARTICLE",
+      "url": "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/"
     },
     {
       "type": "FIX",
@@ -148,8 +109,8 @@
       "url": "https://github.com/advisories/GHSA-phjr-8j92-w5v7"
     },
     {
-      "type": "ARTICLE",
-      "url": "https://www.benthamsgaze.org/2022/08/22/vulnerability-in-linux-containers-investigation-and-mitigation/"
+      "type": "WEB",
+      "url": "https://github.com/moby/moby/security/advisories/GHSA-rc4r-wh2q-q6c4"
     }
   ]
 }
