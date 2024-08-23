@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hh8p-374f-qgr5",
-  "modified": "2024-08-20T20:28:57.724107Z",
+  "modified": "2024-08-22T20:27:17.336542Z",
   "published": "2024-08-20T18:31:26Z",
   "aliases": [
-    "CVE-2024-6322"
+    "CVE-2024-6322",
+    "GO-2024-3079"
   ],
   "summary": "Grafana plugin data sources vulnerable to access control bypass",
   "details": "Access control for plugin data sources protected by the ReqActions json field of the plugin.json is bypassed if the user or service account is granted associated access to any other data source, as the ReqActions check was not scoped to each specific datasource. The account must have prior query access to the impacted datasource.",
