@@ -1,7 +1,10 @@
 {
   "id": "GHSA-45rp-q25w-4426",
-  "modified": "2024-08-23T19:03:09.889021Z",
+  "modified": "2024-08-23T19:12:27.344525Z",
   "published": "2024-08-23T15:30:34Z",
+  "aliases": [
+    "CVE-2024-8113"
+  ],
   "summary": "pretix Stored Cross-site Scripting vulnerability",
   "details": "Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.",
   "affected": [
