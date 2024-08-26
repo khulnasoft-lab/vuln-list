@@ -1,6 +1,6 @@
 {
   "id": "GHSA-jfq2-rj7f-9gvf",
-  "modified": "2023-11-08T04:00:23.121639Z",
+  "modified": "2024-08-26T16:20:26.603525Z",
   "published": "2019-04-24T16:11:27Z",
   "aliases": [
     "CVE-2018-7576",
@@ -9,7 +9,7 @@
     "PYSEC-2019-231"
   ],
   "summary": "Null pointer dereference in TensorFlow leads to exploitation",
-  "details": "Google TensorFlow 1.6.x and earlier is affected by: Null Pointer Dereference. The type of exploitation is: context-dependent.",
+  "details": "Google TensorFlow 1.0.0 through 1.5.1 is affected by: Null Pointer Dereference. The type of exploitation is: context-dependent.",
   "affected": [
     {
       "package": {
@@ -22,17 +22,15 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "0"
+              "introduced": "1.0.0"
             },
             {
-              "fixed": "1.7.0"
+              "fixed": "1.6.0"
             }
           ]
         }
       ],
       "versions": [
-        "0.12.0",
-        "0.12.1",
         "1.0.0",
         "1.0.1",
         "1.1.0",
@@ -42,8 +40,42 @@
         "1.4.0",
         "1.4.1",
         "1.5.0",
-        "1.5.1",
-        "1.6.0"
+        "1.5.1"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/04/GHSA-jfq2-rj7f-9gvf/GHSA-jfq2-rj7f-9gvf.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "tensorflow-gpu",
+        "purl": "pkg:pypi/tensorflow-gpu"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.0.0"
+            },
+            {
+              "fixed": "1.6.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.0.0",
+        "1.0.1",
+        "1.1.0",
+        "1.2.0",
+        "1.2.1",
+        "1.3.0",
+        "1.4.0",
+        "1.4.1",
+        "1.5.0",
+        "1.5.1"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/04/GHSA-jfq2-rj7f-9gvf/GHSA-jfq2-rj7f-9gvf.json"
@@ -54,6 +86,14 @@
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2018-7576"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/tensorflow/tensorflow/commit/c48431588e7cf8aff61d4c299231e3e925144df8"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/tensorflow/tensorflow"
     },
     {
       "type": "WEB",
