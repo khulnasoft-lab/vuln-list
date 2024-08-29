@@ -1,0 +1,53 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2024-08-29T18:05:48Z",
+  "Package": {
+    "Ecosystem": "COMPOSER",
+    "Name": "drupal/core"
+  },
+  "Advisory": {
+    "DatabaseId": 258115,
+    "Id": "GSA_kwCzR0hTQS1tZzhqLXc5M3cteGpnY84AA_BD",
+    "GhsaId": "GHSA-mg8j-w93w-xjgc",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45440"
+      },
+      {
+        "Url": "https://www.drupal.org/project/drupal/issues/3457781"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-mg8j-w93w-xjgc"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-mg8j-w93w-xjgc"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-45440"
+      }
+    ],
+    "Description": "`core/authorize.php` in Drupal 11.x-dev allows Full Path Disclosure (even when error logging is None) if the value of `hash_salt` is `file_get_contents` of a file that does not exist.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-08-29T12:31:05Z",
+    "Severity": "LOW",
+    "Summary": "Drupal Full Path Disclosure",
+    "UpdatedAt": "2024-08-29T18:05:48Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "= 11.x-dev"
+    }
+  ]
+}
