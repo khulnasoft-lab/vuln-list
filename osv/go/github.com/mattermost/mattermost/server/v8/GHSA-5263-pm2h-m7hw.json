@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5263-pm2h-m7hw",
-  "modified": "2024-08-23T21:27:28.886680Z",
+  "modified": "2024-08-30T17:42:36.698865Z",
   "published": "2024-08-22T09:30:32Z",
   "aliases": [
-    "CVE-2024-8071"
+    "CVE-2024-8071",
+    "GO-2024-3094"
   ],
   "summary": "Mattermost doesn't restrict which roles can promote a user as system admin",
   "details": "Mattermost versions 9.9.x \u003c= 9.9.1, 9.5.x \u003c= 9.5.7, 9.10.x \u003c= 9.10.0 and 9.8.x \u003c= 9.8.2 fail to restrict which roles can promote a user as system admin which allows a System Role with edit access to the permissions section of system console to update their role (e.g. member) to include the `manage_system` permission, effectively becoming a System Admin.",

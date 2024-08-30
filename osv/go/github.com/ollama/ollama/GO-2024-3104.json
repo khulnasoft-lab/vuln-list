@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-846m-99qv-67mg",
+  "id": "GO-2024-3104",
   "modified": "2024-08-30T17:42:26.645913Z",
-  "published": "2024-08-29T03:30:49Z",
+  "published": "2024-08-30T17:18:07Z",
   "aliases": [
     "CVE-2024-45436",
-    "GO-2024-3104"
+    "GHSA-846m-99qv-67mg"
   ],
-  "summary": "Ollama can extract members of a ZIP archive outside of the parent directory",
-  "details": "`extractFromZipFile` in `model.go` in Ollama before 0.1.47 can extract members of a ZIP archive outside of the parent directory.",
+  "summary": "Ollama can extract members of a ZIP archive outside of the parent directory in github.com/ollama/ollama",
+  "details": "Ollama can extract members of a ZIP archive outside of the parent directory in github.com/ollama/ollama",
   "affected": [
     {
       "package": {
@@ -29,26 +29,26 @@
         }
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-846m-99qv-67mg/GHSA-846m-99qv-67mg.json"
+        "source": "https://vuln.go.dev/ID/GO-2024-3104.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-846m-99qv-67mg"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45436"
     },
     {
-      "type": "WEB",
-      "url": "https://github.com/ollama/ollama/pull/5314"
-    },
-    {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/ollama/ollama/commit/123a722a6f541e300bc8e34297ac378ebe23f527"
     },
     {
-      "type": "PACKAGE",
-      "url": "https://github.com/ollama/ollama"
+      "type": "FIX",
+      "url": "https://github.com/ollama/ollama/pull/5314"
     },
     {
       "type": "WEB",

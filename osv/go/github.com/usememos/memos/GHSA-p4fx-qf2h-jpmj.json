@@ -1,9 +1,10 @@
 {
   "id": "GHSA-p4fx-qf2h-jpmj",
-  "modified": "2024-08-22T17:42:31.296501Z",
+  "modified": "2024-08-30T17:42:22.631869Z",
   "published": "2024-08-22T17:18:16Z",
   "aliases": [
-    "CVE-2024-41659"
+    "CVE-2024-41659",
+    "GO-2024-3088"
   ],
   "summary": "memos CORS Misconfiguration in server.go (GHSL-2024-034)",
   "details": "memos is a privacy-first, lightweight note-taking service. A CORS misconfiguration exists in memos 0.20.1 and earlier where an arbitrary origin is reflected with Access-Control-Allow-Credentials set to true. This may allow an attacking website to make a cross-origin request, allowing the attacker to read private information or make privileged changes to the system as the vulnerable user account.",

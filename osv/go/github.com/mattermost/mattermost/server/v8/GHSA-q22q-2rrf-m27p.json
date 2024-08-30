@@ -1,9 +1,10 @@
 {
   "id": "GHSA-q22q-2rrf-m27p",
-  "modified": "2024-08-23T19:12:27.136010Z",
+  "modified": "2024-08-30T17:42:24.106040Z",
   "published": "2024-08-01T15:32:23Z",
   "aliases": [
-    "CVE-2024-39777"
+    "CVE-2024-39777",
+    "GO-2024-3092"
   ],
   "summary": "Mattermost allows unsolicited invites to expose access to local channels",
   "details": "Mattermost versions 9.9.x \u003c= 9.9.0, 9.5.x \u003c= 9.5.6, 9.7.x \u003c= 9.7.5 and 9.8.x \u003c= 9.8.1 fail to disallow unsolicited invites to expose access to local channels, when shared channels are enabled, which allows a malicious remote to send an invite with the ID of an existing local channel, and that local channel will then become shared without the consent of the local admin.",
