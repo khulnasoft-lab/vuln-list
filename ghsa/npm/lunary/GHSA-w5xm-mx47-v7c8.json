@@ -33,16 +33,16 @@
         "Value": "CVE-2024-4146"
       }
     ],
-    "Description": "In lunary-ai/lunary version v1.2.13, an improper authorization vulnerability exists that allows unauthorized users to access and manipulate projects within an organization they should not have access to. Specifically, the vulnerability is located in the `checkProjectAccess` method within the authorization middleware, which fails to adequately verify if a user has the correct permissions to access a specific project. Instead, it only checks if the user is part of the organization owning the project, overlooking the necessary check against the `account_project` table for explicit project access rights. This flaw enables attackers to gain complete control over all resources within a project, including the ability to create, update, read, and delete any resource, compromising the privacy and security of sensitive information.",
+    "Description": "In lunary-ai/lunary version v1.2.13, an incorrect authorization vulnerability exists that allows unauthorized users to access and manipulate projects within an organization they should not have access to. Specifically, the vulnerability is located in the `checkProjectAccess` method within the authorization middleware, which fails to adequately verify if a user has the correct permissions to access a specific project. Instead, it only checks if the user is part of the organization owning the project, overlooking the necessary check against the `account_project` table for explicit project access rights. This flaw enables attackers to gain complete control over all resources within a project, including the ability to create, update, read, and delete any resource, compromising the privacy and security of sensitive information.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-08T21:30:38Z",
     "Severity": "CRITICAL",
     "Summary": "lunary-ai/lunary allows users unauthorized access to projects",
-    "UpdatedAt": "2024-07-22T13:15:31Z",
+    "UpdatedAt": "2024-08-30T19:55:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
-      "VectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
