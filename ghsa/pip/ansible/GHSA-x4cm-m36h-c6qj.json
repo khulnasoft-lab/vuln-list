@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2021-09-21T22:09:41Z",
+  "UpdatedAt": "2024-09-03T21:00:20Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -30,6 +30,12 @@
       },
       {
         "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2016-8647"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible-modules-core/commit/30fb384e7fb9a94ac3929e4a650877e45d8834c9"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2018-58.yaml"
       }
     ],
     "Identifiers": [
@@ -47,7 +53,7 @@
     "PublishedAt": "2018-10-10T17:23:33Z",
     "Severity": "MODERATE",
     "Summary": "Improper Input Validation in ansible",
-    "UpdatedAt": "2023-02-03T20:37:10Z",
+    "UpdatedAt": "2024-09-03T21:00:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.9,
@@ -59,7 +65,7 @@
       "FirstPatchedVersion": {
         "Identifier": "2.2.1.0"
       },
-      "VulnerableVersionRange": "\u003c= 2.2.0.0"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 2.2.1.0"
     }
   ]
 }
