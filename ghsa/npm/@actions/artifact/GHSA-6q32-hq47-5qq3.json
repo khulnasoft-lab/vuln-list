@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-09-03T20:08:31Z",
+  "UpdatedAt": "2024-09-04T18:08:35Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@actions/artifact"
@@ -26,6 +26,12 @@
         "Url": "https://snyk.io/research/zip-slip-vulnerability"
       },
       {
+        "Url": "https://github.com/actions/toolkit/pull/1602"
+      },
+      {
+        "Url": "https://github.com/actions/download-artifact/blob/v3/package.json#L31"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6q32-hq47-5qq3"
       }
     ],
@@ -44,7 +50,7 @@
     "PublishedAt": "2024-09-03T20:08:30Z",
     "Severity": "HIGH",
     "Summary": "@actions/artifact has an Arbitrary File Write via artifact extraction",
-    "UpdatedAt": "2024-09-03T20:08:31Z",
+    "UpdatedAt": "2024-09-04T18:08:35Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,
@@ -56,7 +62,7 @@
       "FirstPatchedVersion": {
         "Identifier": "2.1.7"
       },
-      "VulnerableVersionRange": "\u003c 2.1.7"
+      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c 2.1.7"
     }
   ]
 }
