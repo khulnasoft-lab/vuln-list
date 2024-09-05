@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package mariadb is earlier than 10.6.9-4, affected by CVE-2024-5991",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:48342000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:48342001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:48342002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package kernel is earlier than 5.15.164.1-1, affected by CVE-2024-41073",
       "ID": "oval:com.microsoft.cbl-mariner:tst:47997000",
       "Version": "1",
