@@ -1,6 +1,6 @@
 {
   "id": "GHSA-v735-2pp6-h86r",
-  "modified": "2024-04-22T22:26:46.390552Z",
+  "modified": "2024-09-04T19:46:25.167417Z",
   "published": "2022-05-14T01:14:00Z",
   "aliases": [
     "CVE-2018-16859",
@@ -20,10 +20,44 @@
           "type": "ECOSYSTEM",
           "events": [
             {
+              "introduced": "2.7.0a1"
+            },
+            {
+              "fixed": "2.7.3"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "2.7.0",
+        "2.7.0a1",
+        "2.7.0b1",
+        "2.7.0rc1",
+        "2.7.0rc2",
+        "2.7.0rc3",
+        "2.7.0rc4",
+        "2.7.1",
+        "2.7.2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-v735-2pp6-h86r/GHSA-v735-2pp6-h86r.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "ansible",
+        "purl": "pkg:pypi/ansible"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
               "introduced": "0"
             },
             {
-              "last_affected": "2.8"
+              "fixed": "2.5.12"
             }
           ]
         }
@@ -117,10 +151,6 @@
         "2.5.1",
         "2.5.10",
         "2.5.11",
-        "2.5.12",
-        "2.5.13",
-        "2.5.14",
-        "2.5.15",
         "2.5.2",
         "2.5.3",
         "2.5.4",
@@ -128,7 +158,32 @@
         "2.5.6",
         "2.5.7",
         "2.5.8",
-        "2.5.9",
+        "2.5.9"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-v735-2pp6-h86r/GHSA-v735-2pp6-h86r.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "ansible",
+        "purl": "pkg:pypi/ansible"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "2.6.0a1"
+            },
+            {
+              "fixed": "2.6.9"
+            }
+          ]
+        }
+      ],
+      "versions": [
         "2.6.0",
         "2.6.0a1",
         "2.6.0a2",
@@ -138,57 +193,13 @@
         "2.6.0rc4",
         "2.6.0rc5",
         "2.6.1",
-        "2.6.10",
-        "2.6.11",
-        "2.6.12",
-        "2.6.13",
-        "2.6.14",
-        "2.6.15",
-        "2.6.16",
-        "2.6.17",
-        "2.6.18",
-        "2.6.19",
         "2.6.2",
-        "2.6.20",
         "2.6.3",
         "2.6.4",
         "2.6.5",
         "2.6.6",
         "2.6.7",
-        "2.6.8",
-        "2.6.9",
-        "2.7.0",
-        "2.7.0.dev0",
-        "2.7.0a1",
-        "2.7.0b1",
-        "2.7.0rc1",
-        "2.7.0rc2",
-        "2.7.0rc3",
-        "2.7.0rc4",
-        "2.7.1",
-        "2.7.10",
-        "2.7.11",
-        "2.7.12",
-        "2.7.13",
-        "2.7.14",
-        "2.7.15",
-        "2.7.16",
-        "2.7.17",
-        "2.7.18",
-        "2.7.2",
-        "2.7.3",
-        "2.7.4",
-        "2.7.5",
-        "2.7.6",
-        "2.7.7",
-        "2.7.8",
-        "2.7.9",
-        "2.8.0",
-        "2.8.0a1",
-        "2.8.0b1",
-        "2.8.0rc1",
-        "2.8.0rc2",
-        "2.8.0rc3"
+        "2.6.8"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-v735-2pp6-h86r/GHSA-v735-2pp6-h86r.json"
@@ -203,6 +214,18 @@
     {
       "type": "WEB",
       "url": "https://github.com/ansible/ansible/pull/49142"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/0d746b4198abf84290a093b83cf02b4203d73d9f"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/2f8d3fcf41107efafc14d51ab6e14531ca8f8c87"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/4d748d34f9392aa469da00a85c8e2d5fe6cec52b"
     },
     {
       "type": "WEB",
@@ -225,8 +248,16 @@
       "url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2018-16859"
     },
     {
+      "type": "PACKAGE",
+      "url": "https://github.com/ansible/ansible"
+    },
+    {
       "type": "WEB",
       "url": "https://github.com/ansible/ansible/blob/v2.5.13/changelogs/CHANGELOG-v2.5.rst"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2018-60.yaml"
     },
     {
       "type": "WEB",

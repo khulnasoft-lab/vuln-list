@@ -1,13 +1,13 @@
 {
   "id": "GHSA-pcqv-c46v-2p4v",
-  "modified": "2024-02-16T08:00:07.179296Z",
+  "modified": "2024-09-04T20:04:43.040426Z",
   "published": "2022-05-14T02:03:36Z",
   "aliases": [
     "CVE-2013-4260",
     "PYSEC-2013-2"
   ],
   "summary": "Ansible Arbitrary File Overwrite Vulnerability",
-  "details": "lib/ansible/playbook/__init__.py in Ansible 1.2.x before 1.2.3, when playbook does not run due to an error, allows local users to overwrite arbitrary files via a symlink attack on a retry file with a predictable name in /var/tmp/ansible/.",
+  "details": "`lib/ansible/playbook/__init__.py` in Ansible 1.2.x before 1.2.3, when playbook does not run due to an error, allows local users to overwrite arbitrary files via a symlink attack on a retry file with a predictable name in `/var/tmp/ansible/`.",
   "affected": [
     {
       "package": {
@@ -58,6 +58,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/ansible/ansible"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2013-2.yaml"
     },
     {
       "type": "WEB",

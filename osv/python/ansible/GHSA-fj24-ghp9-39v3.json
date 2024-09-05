@@ -1,13 +1,13 @@
 {
   "id": "GHSA-fj24-ghp9-39v3",
-  "modified": "2024-02-16T08:12:13.082521Z",
+  "modified": "2024-09-04T20:05:01.052910Z",
   "published": "2022-05-14T02:03:36Z",
   "aliases": [
     "CVE-2013-4259",
     "PYSEC-2013-1"
   ],
   "summary": "Ansible uses a socket with predictable filename in /tmp",
-  "details": "runner/connection_plugins/ssh.py in Ansible before 1.2.3, when using ControlPersist, allows local users to redirect a ssh session via a symlink attack on a socket file with a predictable name in /tmp/.",
+  "details": "`runner/connection_plugins/ssh.py` in Ansible before 1.2.3, when using `ControlPersist`, allows local users to redirect a ssh session via a symlink attack on a socket file with a predictable name in `/tmp/`.",
   "affected": [
     {
       "package": {
@@ -52,6 +52,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/ansible/ansible"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2013-1.yaml"
     },
     {
       "type": "WEB",
