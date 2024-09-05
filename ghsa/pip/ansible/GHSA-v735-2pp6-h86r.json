@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-04-22T22:07:46Z",
+  "UpdatedAt": "2024-09-04T19:38:47Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -47,6 +47,18 @@
         "Url": "https://web.archive.org/web/20200227102121/http://www.securityfocus.com/bid/106004"
       },
       {
+        "Url": "https://github.com/ansible/ansible/commit/0d746b4198abf84290a093b83cf02b4203d73d9f"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/2f8d3fcf41107efafc14d51ab6e14531ca8f8c87"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/4d748d34f9392aa469da00a85c8e2d5fe6cec52b"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2018-60.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-v735-2pp6-h86r"
       }
     ],
@@ -65,7 +77,7 @@
     "PublishedAt": "2022-05-14T01:14:00Z",
     "Severity": "MODERATE",
     "Summary": "Ansible Logs Passwords If PowerShell ScriptBlock is Enabled",
-    "UpdatedAt": "2024-04-22T22:07:46Z",
+    "UpdatedAt": "2024-09-04T19:38:47Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.4,
@@ -75,9 +87,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.6.9"
       },
-      "VulnerableVersionRange": "\u003c= 2.8"
+      "VulnerableVersionRange": "\u003e= 2.6.0a1, \u003c 2.6.9"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.5.12"
+      },
+      "VulnerableVersionRange": "\u003e= 0, \u003c 2.5.12"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.7.3"
+      },
+      "VulnerableVersionRange": "\u003e= 2.7.0a1, \u003c 2.7.3"
     }
   ]
 }
