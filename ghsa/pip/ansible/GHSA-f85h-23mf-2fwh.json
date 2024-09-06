@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2021-04-05T18:34:03Z",
+  "Severity": "LOW",
+  "UpdatedAt": "2024-09-06T18:18:15Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -23,7 +23,13 @@
         "Url": "https://security.gentoo.org/glsa/202006-11"
       },
       {
+        "Url": "https://github.com/ansible/ansible/pull/67808"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-f85h-23mf-2fwh"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2020-10.yaml"
       }
     ],
     "Identifiers": [
@@ -39,9 +45,9 @@
     "Description": "A flaw was found in Ansible Engine when the module package or service is used and the parameter 'use' is not specified. If a previous task is executed with a malicious user, the module sent can be selected by the attacker using the ansible facts file. All versions in 2.7.x, 2.8.x and 2.9.x branches are believed to be vulnerable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-09T22:00:04Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "Argument Injection in Ansible",
-    "UpdatedAt": "2023-02-01T05:05:13Z",
+    "UpdatedAt": "2024-09-06T18:18:15Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.9,
@@ -53,7 +59,19 @@
       "FirstPatchedVersion": {
         "Identifier": ""
       },
-      "VulnerableVersionRange": "\u003c= 2.9.19"
+      "VulnerableVersionRange": "\u003e= 2.9.0a1, \u003c= 2.9.6"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 2.8.0a1, \u003c= 2.8.10"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 0, \u003c= 2.7.16"
     }
   ]
 }
