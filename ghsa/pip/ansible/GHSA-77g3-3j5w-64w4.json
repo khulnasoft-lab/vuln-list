@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2021-04-05T14:11:30Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-09-06T20:16:43Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -26,7 +26,19 @@
         "Url": "https://www.debian.org/security/2021/dsa-4950"
       },
       {
+        "Url": "https://github.com/ansible/ansible/commit/4e1fe80e681fa466626e9dea53efe6b0253ea1b2"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/51d2514753544a9d58cd7524e27e696b2c944fb5"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/e1273b6faf036ed84e4f4edee85b888a4e256aee"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-77g3-3j5w-64w4"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2020-1.yaml"
       }
     ],
     "Identifiers": [
@@ -42,9 +54,9 @@
     "Description": "A flaw was found in Ansible Engine affecting Ansible Engine versions 2.7.x before 2.7.17 and 2.8.x before 2.8.11 and 2.9.x before 2.9.7 as well as Ansible Tower before and including versions 3.4.5 and 3.5.5 and 3.6.3 when using modules which decrypts vault files such as assemble, script, unarchive, win_copy, aws_s3 or copy modules. The temporary directory is created in /tmp leaves the s ts unencrypted. On Operating Systems which /tmp is not a tmpfs but part of the root partition, the directory is only cleared on boot and the decryp emains when the host is switched off. The system will be vulnerable when the system is not running. So decrypted data must be cleared as soon as possible and the data which normally is encrypted ble.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-04-07T20:36:46Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Exposure of Resource to Wrong Sphere and Insecure Temporary File in Ansible",
-    "UpdatedAt": "2023-02-01T05:05:23Z",
+    "UpdatedAt": "2024-09-06T20:16:43Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -56,19 +68,19 @@
       "FirstPatchedVersion": {
         "Identifier": "2.9.7"
       },
-      "VulnerableVersionRange": "\u003e= 2.9.0, \u003c 2.9.7"
+      "VulnerableVersionRange": "\u003e= 2.9.0a1, \u003c 2.9.7"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.8.11"
       },
-      "VulnerableVersionRange": "\u003e= 2.8.0, \u003c 2.8.11"
+      "VulnerableVersionRange": "\u003e= 2.8.0a1, \u003c 2.8.11"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.7.17"
       },
-      "VulnerableVersionRange": "\u003e= 2.7.0, \u003c 2.7.17"
+      "VulnerableVersionRange": "\u003e= 2.7.0a1, \u003c 2.7.17"
     }
   ]
 }

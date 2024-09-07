@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-04-26T17:59:52Z",
+  "UpdatedAt": "2024-09-06T20:14:43Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -26,7 +26,19 @@
         "Url": "https://www.debian.org/security/2021/dsa-4950"
       },
       {
+        "Url": "https://github.com/ansible/ansible/commit/589a415f887b6f2bb65cd07fe6b2e9d0a8156b69"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/6a86650109b8654f5898369e45d3857624edf907"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/a1b0f72c98b4b2afaab8aafa255e82c2075049c8"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-gwr8-5j83-483c"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2020-161.yaml"
       }
     ],
     "Identifiers": [
@@ -44,7 +56,7 @@
     "PublishedAt": "2021-04-20T16:44:22Z",
     "Severity": "HIGH",
     "Summary": "OS Command Injection and Improper Input Validation in ansible",
-    "UpdatedAt": "2023-02-01T05:05:17Z",
+    "UpdatedAt": "2024-09-06T20:14:43Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,
@@ -56,7 +68,19 @@
       "FirstPatchedVersion": {
         "Identifier": "2.9.3"
       },
-      "VulnerableVersionRange": "\u003c 2.9.3"
+      "VulnerableVersionRange": "\u003e= 2.9.0a1, \u003c 2.9.3"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.8.8"
+      },
+      "VulnerableVersionRange": "\u003e= 2.8.0a1, \u003c 2.8.8"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.7.16"
+      },
+      "VulnerableVersionRange": "\u003e= 0, \u003c 2.7.16"
     }
   ]
 }

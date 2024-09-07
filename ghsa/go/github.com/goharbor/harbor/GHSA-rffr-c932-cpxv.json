@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2021-05-04T22:01:58Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-06T21:54:44Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/goharbor/harbor"
@@ -36,12 +36,12 @@
         "Value": "CVE-2019-19025"
       }
     ],
-    "Description": "Cloud Native Computing Foundation Harbor prior to 1.8.6 and 1.9.3 allows CSRF in the VMware Harbor Container Registry for the Pivotal Platform.",
+    "Description": "Cure53 has discovered that the Harbor web interface does not implement protection mechanisms against Cross-Site Request Forgery (CSRF). By luring an authenticated user onto a prepared third-party website, an attacker can execute any action on the platform in the context of the currently authenticated victim.\n\nThe vulnerability was immediately fixed by the Harbor team and all supported versions were patched.\n\nSuccessful exploitation of this issue will lead to 3rd parties executing actions on the platform of behalf of authenticated users and administrators.\n\nIf your product uses the affected releases of Harbor, update to version 1.8.6 and 1.9.3 to patch this issue immediately.\n\nhttps://github.com/goharbor/harbor/releases/tag/v1.8.6\nhttps://github.com/goharbor/harbor/releases/tag/v1.9.3",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-05-18T18:27:50Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Cross-site Request Forgery (CSRF) in Cloud Native Computing Foundation Harbor",
-    "UpdatedAt": "2023-02-01T05:05:30Z",
+    "UpdatedAt": "2024-09-06T21:54:44Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.6,
