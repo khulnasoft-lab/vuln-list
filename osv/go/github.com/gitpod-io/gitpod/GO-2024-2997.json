@@ -1,12 +1,13 @@
 {
   "id": "GO-2024-2997",
-  "modified": "2024-08-19T17:26:30Z",
+  "modified": "2024-09-06T22:27:03.944150Z",
   "published": "2024-07-22T18:24:38Z",
   "aliases": [
-    "CVE-2024-21583"
+    "CVE-2024-21583",
+    "GHSA-8pgc-65mj-53h5"
   ],
   "summary": "CVE-2024-21583 in github.com/gitpod-io/gitpod",
-  "details": "CVE-2024-21583 in github.com/gitpod-io/gitpod.\n\nNOTE: The source advisory for this report contains additional versions that could not be automatically mapped to standard Go module versions.\n\n(If this is causing false-positive reports from vulnerability scanners, please suggest an edit to the report.)\n\nThe additional affected modules and versions are: github.com/gitpod-io/gitpod before v0.1.5-main-gha.27122.",
+  "details": "CVE-2024-21583 in github.com/gitpod-io/gitpod.\n\nNOTE: The source advisory for this report contains additional versions that could not be automatically mapped to standard Go module versions.\n\n(If this is causing false-positive reports from vulnerability scanners, please suggest an edit to the report.)\n\nThe additional affected modules and versions are: github.com/gitpod-io/gitpod before v0.1.5-main-gha.27122; github.com/gitpod-io/gitpod/components/server/go before main-gha.27122; github.com/gitpod-io/gitpod/components/ws-proxy before main-gha.27122; github.com/gitpod-io/gitpod/install/installer before main-gha.27122.",
   "affected": [
     {
       "package": {
@@ -59,6 +60,21 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "main-gha.27122"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-2997.json"
       }
@@ -79,6 +95,21 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "main-gha.27122"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-2997.json"
       }
@@ -99,6 +130,21 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "main-gha.27122"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-2997.json"
       }
@@ -119,7 +165,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://app.safebase.io/portal/71ccd717-aa2d-4a1e-942e-c768d37e9e0c/preview?product=[…]942e-c768d37e9e0c\u0026tcuUid=1d505bda-9a38-4ca5-8724-052e6337f34d"
+      "url": "https://app.safebase.io/portal/71ccd717-aa2d-4a1e-942e-c768d37e9e0c/preview?product=%5B%E2%80%A6%5D942e-c768d37e9e0c\u0026tcuUid=1d505bda-9a38-4ca5-8724-052e6337f34d"
     },
     {
       "type": "WEB",

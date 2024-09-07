@@ -1,0 +1,69 @@
+{
+  "id": "GO-2024-3105",
+  "modified": "2024-09-06T19:42:10.131142Z",
+  "published": "2024-09-06T19:15:23Z",
+  "aliases": [
+    "CVE-2024-34155"
+  ],
+  "summary": "Stack exhaustion in all Parse functions in go/parser",
+  "details": "Calling any of the Parse functions on Go source code which contains deeply nested literals can cause a panic due to stack exhaustion.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "stdlib",
+        "purl": "pkg:golang/stdlib"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.22.7"
+            },
+            {
+              "introduced": "1.23.0-0"
+            },
+            {
+              "fixed": "1.23.1"
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "go/parser",
+            "symbols": [
+              "ParseDir",
+              "ParseExpr",
+              "ParseExprFrom",
+              "ParseFile",
+              "parser.parseLiteralValue"
+            ]
+          }
+        ]
+      },
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-3105.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "FIX",
+      "url": "https://go.dev/cl/611238"
+    },
+    {
+      "type": "REPORT",
+      "url": "https://go.dev/issue/69138"
+    },
+    {
+      "type": "WEB",
+      "url": "https://groups.google.com/g/golang-dev/c/S9POB9NCTdk"
+    }
+  ]
+}
