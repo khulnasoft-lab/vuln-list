@@ -1,7 +1,11 @@
 {
   "id": "RUSTSEC-2024-0373",
-  "modified": "2024-09-08T01:47:13Z",
+  "modified": "2024-09-08T02:12:03.879922Z",
   "published": "2024-09-02T12:00:00Z",
+  "aliases": [
+    "CVE-2024-45311",
+    "GHSA-vr26-jcq5-fjj8"
+  ],
   "summary": "`Endpoint::retry()` calls can lead to panicking",
   "details": "In 0.11.0, we overhauled the server-side `Endpoint` implementation to enable\nmore careful handling of incoming connection attempts. However, some of the\ncode paths that cleaned up state after connection attempts were processed\nconfused the initial destination connection ID with the destination connection\nID of a substantial package. This resulted in the internal `Endpoint` state\nbecoming inconsistent, which could then lead to a panic.\n\nhttps://github.com/quinn-rs/quinn/commit/e01609ccd8738bd438d86fa7185a0f85598cb58f\n\nThanks to [@finbear](https://github.com/finnbear) for reporting and investingating,\nand to [@BiagoFesta](https://github.com/BiagoFesta) for coordinating.",
   "affected": [
