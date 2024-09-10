@@ -1,13 +1,13 @@
 {
   "id": "GHSA-5rrg-rr89-x9mv",
-  "modified": "2024-02-16T08:19:15.253672Z",
+  "modified": "2024-09-09T21:20:55.682080Z",
   "published": "2022-05-25T19:22:34Z",
   "aliases": [
     "CVE-2021-20228",
     "PYSEC-2021-1"
   ],
   "summary": "Ansible Exposes Sensitive Information",
-  "details": "A flaw was found in the Ansible Engine 2.9.18, where sensitive info is not masked by default and is not protected by the `no_log` feature when using the sub-option feature of the basic.py module. This flaw allows an attacker to obtain sensitive information. The highest threat from this vulnerability is to confidentiality.",
+  "details": "A flaw was found in the Ansible Engine prior to 2.10.6rc1, 2.9.18rc1, and 2.8.19rc1, where sensitive info is not masked by default and is not protected by the `no_log` feature when using the sub-option feature of the basic.py module. This flaw allows an attacker to obtain sensitive information. The highest threat from this vulnerability is to confidentiality.",
   "affected": [
     {
       "package": {
@@ -20,22 +20,33 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "2.10.0"
+              "introduced": "2.10.0a1"
             },
             {
-              "fixed": "2.10.7"
+              "fixed": "2.10.6rc1"
             }
           ]
         }
       ],
       "versions": [
         "2.10.0",
+        "2.10.0a1",
+        "2.10.0a2",
+        "2.10.0a3",
+        "2.10.0a4",
+        "2.10.0a5",
+        "2.10.0a6",
+        "2.10.0a7",
+        "2.10.0a8",
+        "2.10.0a9",
+        "2.10.0b1",
+        "2.10.0b2",
+        "2.10.0rc1",
         "2.10.1",
         "2.10.2",
         "2.10.3",
         "2.10.4",
-        "2.10.5",
-        "2.10.6"
+        "2.10.5"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-5rrg-rr89-x9mv/GHSA-5rrg-rr89-x9mv.json"
@@ -52,16 +63,22 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "2.9.0"
+              "introduced": "2.9.0a1"
             },
             {
-              "fixed": "2.9.18"
+              "fixed": "2.9.18rc1"
             }
           ]
         }
       ],
       "versions": [
         "2.9.0",
+        "2.9.0b1",
+        "2.9.0rc1",
+        "2.9.0rc2",
+        "2.9.0rc3",
+        "2.9.0rc4",
+        "2.9.0rc5",
         "2.9.1",
         "2.9.10",
         "2.9.11",
@@ -75,7 +92,6 @@
         "2.9.16rc1",
         "2.9.17",
         "2.9.17rc1",
-        "2.9.18rc1",
         "2.9.2",
         "2.9.3",
         "2.9.4",
@@ -103,7 +119,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "2.8.19"
+              "fixed": "2.8.19rc1"
             }
           ]
         }
@@ -282,7 +298,6 @@
         "2.8.17rc1",
         "2.8.18",
         "2.8.18rc1",
-        "2.8.19rc1",
         "2.8.2",
         "2.8.3",
         "2.8.4",
@@ -317,6 +332,18 @@
     {
       "type": "WEB",
       "url": "https://github.com/ansible/ansible/pull/73494"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/49ebd509df9de1c1fc1bcee00e79a835dd00662c"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/e41d1f0a3fd6c466192e7e24accd3d1c6501111b"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/ansible/ansible/commit/f8ff395d817c3eddc050f809919c15dfb5796120"
     },
     {
       "type": "WEB",
