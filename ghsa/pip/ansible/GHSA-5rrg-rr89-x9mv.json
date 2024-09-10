@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-08-31T21:49:02Z",
+  "UpdatedAt": "2024-09-09T21:15:30Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -36,6 +36,15 @@
       },
       {
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2021-1.yaml"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/49ebd509df9de1c1fc1bcee00e79a835dd00662c"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/e41d1f0a3fd6c466192e7e24accd3d1c6501111b"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/f8ff395d817c3eddc050f809919c15dfb5796120"
       }
     ],
     "Identifiers": [
@@ -48,12 +57,12 @@
         "Value": "CVE-2021-20228"
       }
     ],
-    "Description": "A flaw was found in the Ansible Engine 2.9.18, where sensitive info is not masked by default and is not protected by the `no_log` feature when using the sub-option feature of the basic.py module. This flaw allows an attacker to obtain sensitive information. The highest threat from this vulnerability is to confidentiality.",
+    "Description": "A flaw was found in the Ansible Engine prior to 2.10.6rc1, 2.9.18rc1, and 2.8.19rc1, where sensitive info is not masked by default and is not protected by the `no_log` feature when using the sub-option feature of the basic.py module. This flaw allows an attacker to obtain sensitive information. The highest threat from this vulnerability is to confidentiality.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-25T19:22:34Z",
     "Severity": "HIGH",
     "Summary": "Ansible Exposes Sensitive Information",
-    "UpdatedAt": "2023-08-31T21:49:02Z",
+    "UpdatedAt": "2024-09-09T21:15:30Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -63,21 +72,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.8.19"
+        "Identifier": "2.8.19rc1"
       },
-      "VulnerableVersionRange": "\u003c 2.8.19"
+      "VulnerableVersionRange": "\u003c 2.8.19rc1"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.9.18"
+        "Identifier": "2.9.18rc1"
       },
-      "VulnerableVersionRange": "\u003e= 2.9.0, \u003c 2.9.18"
+      "VulnerableVersionRange": "\u003e= 2.9.0a1, \u003c 2.9.18rc1"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.10.7"
+        "Identifier": "2.10.6rc1"
       },
-      "VulnerableVersionRange": "\u003e= 2.10.0, \u003c 2.10.7"
+      "VulnerableVersionRange": "\u003e= 2.10.0a1, \u003c 2.10.6rc1"
     }
   ]
 }

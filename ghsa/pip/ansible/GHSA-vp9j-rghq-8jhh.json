@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2021-04-05T13:49:10Z",
+  "UpdatedAt": "2024-09-09T21:30:39Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible"
@@ -17,7 +17,22 @@
         "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=CVE-2020-10744"
       },
       {
+        "Url": "https://github.com/ansible/ansible/issues/69782"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/77d0effcc5b2da1ef23e4ba32986a9759c27c10d"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/84afa8e90cd168ff13208c8eae3e533ce7e21e1f"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/ffd3757fc35468a97791e452e7f2d14c3e3fcb80"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-vp9j-rghq-8jhh"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ansible/PYSEC-2020-208.yaml"
       }
     ],
     "Identifiers": [
@@ -35,7 +50,7 @@
     "PublishedAt": "2022-02-09T21:59:42Z",
     "Severity": "MODERATE",
     "Summary": "Exposure of Resource to Wrong Sphere and Insecure Temporary File in Ansible",
-    "UpdatedAt": "2023-02-02T05:04:02Z",
+    "UpdatedAt": "2024-09-09T21:30:39Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5,
@@ -45,9 +60,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.9.12"
       },
-      "VulnerableVersionRange": "\u003c= 2.9.9"
+      "VulnerableVersionRange": "\u003c 2.9.12"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.10.0rc1"
+      },
+      "VulnerableVersionRange": "\u003e= 2.10.0a1, \u003c 2.10.0rc1"
     }
   ]
 }
