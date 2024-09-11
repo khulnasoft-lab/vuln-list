@@ -1,6 +1,6 @@
 {
   "id": "GHSA-mjff-wv85-hmcj",
-  "modified": "2024-02-16T08:06:51.100506Z",
+  "modified": "2024-09-11T17:50:54.256019Z",
   "published": "2023-06-19T09:30:17Z",
   "aliases": [
     "BIT-airflow-2023-35005",
@@ -8,7 +8,7 @@
     "PYSEC-2023-89"
   ],
   "summary": "Apache Airflow vulnerable to exposure of sensitive information",
-  "details": "In Apache Airflow, some potentially sensitive values were being shown to the user in certain situations.\n\nThis vulnerability is mitigated by the fact configuration is not shown in the UI by default (only if `[webserver] expose_config` is set to `non-sensitive-only`), and not all uncensored values are actually sentitive.\n\nThis issue affects Apache Airflow: from 2.5.0 before 2.6.2. Users are recommended to update to version 2.6.2 or later.\n\n\n",
+  "details": "In Apache Airflow, some potentially sensitive values were being shown to the user in certain situations.\n\nThis vulnerability is mitigated by the fact configuration is not shown in the UI by default (only if `[webserver] expose_config` is set to `non-sensitive-only`), and not all uncensored values are actually sentitive.\n\nThis issue affects Apache Airflow: from 2.5.0 before 2.6.2. Users are recommended to update to version 2.6.2 or later.",
   "affected": [
     {
       "package": {
@@ -24,7 +24,7 @@
               "introduced": "2.5.0"
             },
             {
-              "fixed": "2.6.2"
+              "fixed": "2.6.2rc1"
             }
           ]
         }
@@ -50,9 +50,7 @@
         "2.6.1",
         "2.6.1rc1",
         "2.6.1rc2",
-        "2.6.1rc3",
-        "2.6.2rc1",
-        "2.6.2rc2"
+        "2.6.1rc3"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/06/GHSA-mjff-wv85-hmcj/GHSA-mjff-wv85-hmcj.json"
@@ -71,6 +69,14 @@
     {
       "type": "WEB",
       "url": "https://github.com/apache/airflow/pull/31820"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/apache/airflow/commit/5679a01919ac9d5153e858f8b1390cbc7915f148"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/apache/airflow/commit/f6cda8fb63250fc4700658999739c1c3c5f6625c"
     },
     {
       "type": "PACKAGE",
