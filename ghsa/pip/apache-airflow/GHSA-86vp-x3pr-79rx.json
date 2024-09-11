@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-03-25T15:44:15Z",
+  "UpdatedAt": "2024-09-11T17:06:12Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "apache-airflow"
@@ -62,6 +62,15 @@
         "Url": "https://github.com/apache/airflow/commit/7486153f451e4d2bb1c6fd9cbb5a63430157c99c"
       },
       {
+        "Url": "https://github.com/apache/airflow/commit/ab8c55878e3e4257d2276226cb17b047ba856686"
+      },
+      {
+        "Url": "https://github.com/apache/airflow/commit/c6369beed53d41c0a70415b0d958bf0604124ad7"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/apache-airflow/PYSEC-2020-21.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-86vp-x3pr-79rx"
       }
     ],
@@ -75,12 +84,12 @@
         "Value": "CVE-2020-17515"
       }
     ],
-    "Description": "The `origin` parameter passed to some of the endpoints like `/trigger` was vulnerable to XSS exploit. This issue affects Apache Airflow versions prior to 1.10.14. This is same as CVE-2020-13944 but the implemented fix in Airflow 1.10.13 did not fix the issue completely.",
+    "Description": "The `origin` parameter passed to some of the endpoints like `/trigger` was vulnerable to XSS exploit. This issue affects Apache Airflow versions prior to 1.10.15. This is same as CVE-2020-13944 but the implemented fix in Airflow 1.10.13 did not fix the issue completely.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-04-20T16:40:14Z",
     "Severity": "MODERATE",
-    "Summary": "Apache Airflow Cross-site scripting due to incomplete fix for CVE-2020-13944",
-    "UpdatedAt": "2024-03-25T15:44:15Z",
+    "Summary": "Apache Airflow cross-site scripting due to incomplete fix for CVE-2020-13944",
+    "UpdatedAt": "2024-09-11T17:06:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -90,15 +99,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.0.2"
+        "Identifier": "2.0.2rc1"
       },
-      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c 2.0.2"
+      "VulnerableVersionRange": "\u003e= 2.0.0b1, \u003c 2.0.2rc1"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.10.15"
+        "Identifier": "1.10.15rc1"
       },
-      "VulnerableVersionRange": "\u003c 1.10.15"
+      "VulnerableVersionRange": "\u003c 1.10.15rc1"
     }
   ]
 }
