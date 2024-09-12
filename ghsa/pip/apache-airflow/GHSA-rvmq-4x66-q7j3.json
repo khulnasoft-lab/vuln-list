@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-09-01T10:09:33Z",
+  "UpdatedAt": "2024-09-11T19:48:18Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "apache-airflow"
@@ -29,7 +29,13 @@
         "Url": "https://github.com/apache/airflow/commit/4d8599e8b0520ff4226fbad72f724afae50fdd08"
       },
       {
+        "Url": "https://github.com/apache/airflow/pull/9143"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-rvmq-4x66-q7j3"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/apache-airflow/PYSEC-2020-14.yaml"
       }
     ],
     "Identifiers": [
@@ -42,12 +48,12 @@
         "Value": "CVE-2020-11978"
       }
     ],
-    "Description": "An issue was found in Apache Airflow versions 1.10.10 and below. A remote code/command injection vulnerability was discovered in one of the example DAGs shipped with Airflow which would allow any authenticated user to run arbitrary commands as the user running airflow worker/scheduler (depending on the executor in use). If you already have examples disabled by setting load_examples=False in the config then you are not vulnerable.",
+    "Description": "An issue was found in Apache Airflow versions 1.10.10 and below. A remote code/command injection vulnerability was discovered in one of the example DAGs shipped with Airflow which would allow any authenticated user to run arbitrary commands as the user running airflow worker/scheduler (depending on the executor in use). If you already have examples disabled by setting `load_examples=False` in the config then you are not vulnerable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2020-07-27T16:57:33Z",
     "Severity": "HIGH",
     "Summary": "Remote code execution (RCE) in Apache Airflow",
-    "UpdatedAt": "2024-07-25T14:03:05Z",
+    "UpdatedAt": "2024-09-11T19:48:18Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -57,9 +63,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.10.11"
+        "Identifier": "1.10.11rc1"
       },
-      "VulnerableVersionRange": "\u003c 1.10.11"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 1.10.11rc1"
     }
   ]
 }
