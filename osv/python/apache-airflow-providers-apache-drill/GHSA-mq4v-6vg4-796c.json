@@ -1,6 +1,6 @@
 {
   "id": "GHSA-mq4v-6vg4-796c",
-  "modified": "2024-02-16T08:42:05.328618Z",
+  "modified": "2024-09-12T14:21:36.686257Z",
   "published": "2023-08-11T09:30:36Z",
   "aliases": [
     "CVE-2023-39553",
@@ -67,6 +67,11 @@
         "2.4.2rc1",
         "2.4.3rc1"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "airflow.providers.apache.drill.hooks.drill.DrillHook.get_conn"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/08/GHSA-mq4v-6vg4-796c/GHSA-mq4v-6vg4-796c.json"
       }
