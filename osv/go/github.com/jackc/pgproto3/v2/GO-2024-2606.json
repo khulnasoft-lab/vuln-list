@@ -1,6 +1,6 @@
 {
   "id": "GO-2024-2606",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2024-09-13T14:17:49Z",
   "published": "2024-03-14T17:12:43Z",
   "aliases": [
     "CVE-2024-27304",
@@ -94,6 +94,37 @@
               "PgFortuneBackend.Run",
               "PgFortuneBackend.handleStartup",
               "main"
+            ]
+          }
+        ]
+      },
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-2606.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/jackc/pgx",
+        "purl": "pkg:golang/github.com/jackc/pgx"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/jackc/pgx/internal/sanitize",
+            "symbols": [
+              "Query.Sanitize",
+              "SanitizeSQL"
             ]
           }
         ]
