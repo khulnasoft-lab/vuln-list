@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-03-06T22:40:01Z",
+  "UpdatedAt": "2024-09-12T19:18:01Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "apache-airflow"
@@ -21,6 +21,9 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-65xw-pcqw-hjrh"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/apache-airflow/PYSEC-2022-29.yaml"
       }
     ],
     "Identifiers": [
@@ -37,8 +40,8 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-26T00:00:45Z",
     "Severity": "MODERATE",
-    "Summary": "Cross site scripting in apache airflow",
-    "UpdatedAt": "2024-03-06T22:40:01Z",
+    "Summary": "Apache Airflow Cross-site Scripting Vulnerability",
+    "UpdatedAt": "2024-09-12T19:18:01Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -48,9 +51,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.2.4"
+        "Identifier": "2.2.4rc1"
       },
-      "VulnerableVersionRange": "\u003c 2.2.4"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 2.2.4rc1"
     }
   ]
 }
