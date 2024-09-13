@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-02-23T20:59:34Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-13T14:18:42Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "apache-libcloud"
@@ -35,6 +35,9 @@
         "Url": "https://bugs.python.org/issue1589"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/apache-libcloud/PYSEC-2011-24.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-w3j6-8j34-q43x"
       }
     ],
@@ -48,24 +51,24 @@
         "Value": "CVE-2010-4340"
       }
     ],
-    "Description": "libcloud before 0.4.1 does not verify SSL certificates for HTTPS connections, which allows remote attackers to spoof certificates and bypass intended access restrictions via a man-in-the-middle (MITM) attack. This is due to an upstream issue with python's SSL module rather than directly with libcloud.",
+    "Description": "libcloud before 0.4.0 does not verify SSL certificates for HTTPS connections, which allows remote attackers to spoof certificates and bypass intended access restrictions via a man-in-the-middle (MITM) attack. This is due to an upstream issue with python's SSL module rather than directly with libcloud.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T05:39:24Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Apache Libcloud does not verify SSL certificates for HTTPS connections",
-    "UpdatedAt": "2024-02-23T20:59:34Z",
+    "UpdatedAt": "2024-09-13T14:18:42Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "0.4.1"
+        "Identifier": "0.4.0"
       },
-      "VulnerableVersionRange": "\u003c= 0.4.0"
+      "VulnerableVersionRange": "\u003c 0.4.0"
     }
   ]
 }

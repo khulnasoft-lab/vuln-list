@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-03-14T21:45:19Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-13T15:36:58Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/jackc/pgx/v5"
@@ -45,13 +45,13 @@
     "Description": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v4.18.2 and v5.5.4.\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-03-04T20:43:24Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "pgx SQL Injection via Protocol Message Size Overflow",
-    "UpdatedAt": "2024-03-14T21:45:19Z",
+    "UpdatedAt": "2024-09-13T15:36:58Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-08-16T23:15:42Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -26,6 +26,12 @@
         "Url": "https://github.com/bottlepy/bottle/issues/616"
       },
       {
+        "Url": "https://github.com/defnull/bottle/issues/616"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/bottle/PYSEC-2014-77.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-873q-wpqr-xfgw"
       }
     ],
@@ -42,13 +48,13 @@
     "Description": "Bottle 0.10.x before 0.10.12, 0.11.x before 0.11.7, and 0.12.x before 0.12.6 does not properly limit content types, which allows remote attackers to bypass intended access restrictions via an accepted Content-Type followed by a `;` (semi-colon) and a Content-Type that would not be accepted, as demonstrated in YouCompleteMe to execute arbitrary code.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:19:29Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Bottle does not properly limit content-types",
-    "UpdatedAt": "2023-08-16T23:15:42Z",
+    "UpdatedAt": "2024-09-13T17:57:20Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
