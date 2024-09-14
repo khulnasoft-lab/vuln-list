@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2021-04-15T16:15:41Z",
+  "UpdatedAt": "2024-09-13T20:10:23Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "django-debug-toolbar"
@@ -17,13 +17,16 @@
         "Url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-30459"
       },
       {
-        "Url": "https://www.djangoproject.com/weblog/2021/apr/14/debug-toolbar-security-releases/"
-      },
-      {
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2021-30459"
       },
       {
         "Url": "https://github.com/jazzband/django-debug-toolbar/releases"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django-debug-toolbar/PYSEC-2021-10.yaml"
+      },
+      {
+        "Url": "https://www.djangoproject.com/weblog/2021/apr/14/debug-toolbar-security-releases"
       },
       {
         "Url": "https://github.com/advisories/GHSA-pghf-347x-c2gj"
@@ -44,31 +47,31 @@
     "PublishedAt": "2021-04-16T19:53:28Z",
     "Severity": "HIGH",
     "Summary": "SQL Injection via in django-debug-toolbar",
-    "UpdatedAt": "2023-02-01T05:05:30Z",
+    "UpdatedAt": "2024-09-13T20:10:23Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "3.2.1"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0a1, \u003c 3.2.1"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "2.2.1"
       },
-      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c 2.2.1"
+      "VulnerableVersionRange": "\u003e= 2.0a1, \u003c 2.2.1"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.11.1"
       },
       "VulnerableVersionRange": "\u003e= 0.10.0, \u003c 1.11.1"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.2.1"
-      },
-      "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.2.1"
     }
   ]
 }

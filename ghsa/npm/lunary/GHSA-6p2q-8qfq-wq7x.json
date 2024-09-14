@@ -1,0 +1,56 @@
+{
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-09-13T19:29:13Z",
+  "Package": {
+    "Ecosystem": "NPM",
+    "Name": "lunary"
+  },
+  "Advisory": {
+    "DatabaseId": 260244,
+    "Id": "GSA_kwCzR0hTQS02cDJxLThxZnEtd3E3eM4AA_iU",
+    "GhsaId": "GHSA-6p2q-8qfq-wq7x",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6087"
+      },
+      {
+        "Url": "https://github.com/lunary-ai/lunary/commit/844e8855c7a713dc7371766dba4125de4007b1cf"
+      },
+      {
+        "Url": "https://huntr.com/bounties/bd9f2301-11c7-4cbd-8d77-3e9225bd67e8"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-6p2q-8qfq-wq7x"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-6p2q-8qfq-wq7x"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-6087"
+      }
+    ],
+    "Description": "An improper access control vulnerability exists in lunary-ai/lunary prior to commit 844e8855c7a713dc7371766dba4125de4007b1cf on the main branch. The vulnerability allows an attacker to use the auth tokens issued by the 'invite user' functionality to obtain valid JWT tokens. These tokens can be used to compromise target users upon registration for their own arbitrary organizations. The attacker can invite a target email, obtain a one-time use token, retract the invite, and later use the token to reset the password of the target user, leading to full account takeover.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-09-13T18:31:48Z",
+    "Severity": "MODERATE",
+    "Summary": "Lunary improper access control vulnerability",
+    "UpdatedAt": "2024-09-13T19:29:13Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 6.5,
+      "VectorString": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.4.9"
+      },
+      "VulnerableVersionRange": "\u003c 1.4.9"
+    }
+  ]
+}
