@@ -33,12 +33,12 @@
         "Value": "CVE-2024-43376"
       }
     ],
-    "Description": "### Impact\nSome endpoints in the Management API can return stack trace information, even when Umbraco is not in debug mode.",
+    "Description": "### Impact\nSome endpoints in the Management API can return stack trace information, even when Umbraco is not in debug mode.\n\n### Explanation of the vulnerability\nManagement API endpoints leaked stack traces in case of Internal server errors, no matter if the debug setting was disabled.\n\nE.g. when paging with negative numbers in some apis\n\n\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-20T18:25:15Z",
     "Severity": "MODERATE",
     "Summary": "Umbraco CMS vulnerable to Generation of Error Message Containing Sensitive Information",
-    "UpdatedAt": "2024-08-20T18:25:16Z",
+    "UpdatedAt": "2024-09-17T16:24:36Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,

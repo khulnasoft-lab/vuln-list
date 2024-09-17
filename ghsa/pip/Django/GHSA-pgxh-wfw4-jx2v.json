@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-05-07T14:35:55Z",
+  "UpdatedAt": "2024-09-17T15:08:38Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 100191,
@@ -68,6 +68,9 @@
         "Url": "https://www.djangoproject.com/weblog/2015/aug/18/security-releases"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2015-22.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-pgxh-wfw4-jx2v"
       }
     ],
@@ -86,31 +89,31 @@
     "PublishedAt": "2022-05-17T00:36:02Z",
     "Severity": "MODERATE",
     "Summary": "Django denial of service via empty session record creation",
-    "UpdatedAt": "2024-05-08T17:38:29Z",
+    "UpdatedAt": "2024-09-17T15:08:39Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.4.22"
+      },
+      "VulnerableVersionRange": "\u003e= 1.4, \u003c 1.4.22"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "1.7.10"
       },
-      "VulnerableVersionRange": "\u003e= 1.7.0, \u003c 1.7.10"
+      "VulnerableVersionRange": "\u003e= 1.7, \u003c 1.7.10"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.8.4"
       },
-      "VulnerableVersionRange": "\u003e= 1.8.0, \u003c 1.8.4"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "1.4.22"
-      },
-      "VulnerableVersionRange": "\u003e= 1.4.0, \u003c 1.4.22"
+      "VulnerableVersionRange": "\u003e= 1.8, \u003c 1.8.4"
     }
   ]
 }

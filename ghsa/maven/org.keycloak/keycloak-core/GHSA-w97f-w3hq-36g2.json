@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-09-10T19:41:57Z",
+  "UpdatedAt": "2024-09-17T13:08:10Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.keycloak:keycloak-core"
@@ -20,6 +20,12 @@
         "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2254714"
       },
       {
+        "Url": "https://github.com/keycloak/keycloak/issues/32837"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/releases/tag/24.0.0"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-w97f-w3hq-36g2"
       }
     ],
@@ -33,12 +39,12 @@
         "Value": "CVE-2023-6841"
       }
     ],
-    "Description": "A denial of service vulnerability was found in keycloak where the amount of attributes per object is not limited,an attacker by sending repeated HTTP requests could cause a resource exhaustion when the application send back rows with long attribute values.",
+    "Description": "A denial of service vulnerability was found in keycloak where the amount of attributes per object is not limited, an attacker by sending repeated HTTP requests could cause a resource exhaustion when the application send back rows with long attribute values. The issue is fixed in Keycloak 24 with the introduction of the User Profile feature.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-10T18:30:44Z",
     "Severity": "MODERATE",
     "Summary": "Keycloak Denial of Service vulnerability",
-    "UpdatedAt": "2024-09-10T19:41:57Z",
+    "UpdatedAt": "2024-09-17T13:08:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
@@ -48,9 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "24.0.0"
       },
-      "VulnerableVersionRange": "\u003c= 25.0.5"
+      "VulnerableVersionRange": "\u003c 24.0.0"
     }
   ]
 }
