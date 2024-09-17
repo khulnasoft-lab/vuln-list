@@ -1,9 +1,9 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-05-16T18:44:20Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-16T21:30:38Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 376,
@@ -75,6 +75,9 @@
       },
       {
         "Url": "http://www.djangoproject.com/weblog/2011/feb/08/security"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2011-10.yaml"
       }
     ],
     "Identifiers": [
@@ -90,13 +93,13 @@
     "Description": "Django 1.1.x before 1.1.4 and 1.2.x before 1.2.5 does not properly validate HTTP requests that contain an X-Requested-With header, which makes it easier for remote attackers to conduct cross-site request forgery (CSRF) attacks via forged AJAX requests that leverage a \"combination of browser plugins and redirects,\" a related issue to CVE-2011-0447.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-07-23T19:51:10Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Cross-site request forgery in Django",
-    "UpdatedAt": "2024-05-16T18:44:20Z",
+    "UpdatedAt": "2024-09-16T21:30:38Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
@@ -104,13 +107,13 @@
       "FirstPatchedVersion": {
         "Identifier": "1.2.5"
       },
-      "VulnerableVersionRange": "\u003e= 1.2.0, \u003c 1.2.5"
+      "VulnerableVersionRange": "\u003e= 1.2, \u003c 1.2.5"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.1.4"
       },
-      "VulnerableVersionRange": "\u003e= 1.1.0, \u003c 1.1.4"
+      "VulnerableVersionRange": "\u003e= 1.1, \u003c 1.1.4"
     }
   ]
 }

@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-05-16T18:41:02Z",
+  "UpdatedAt": "2024-09-16T23:03:59Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 357,
@@ -29,9 +29,6 @@
         "Url": "http://openwall.com/lists/oss-security/2011/09/13/2"
       },
       {
-        "Url": "http://secunia.com/advisories/46614"
-      },
-      {
         "Url": "http://www.debian.org/security/2011/dsa-2332"
       },
       {
@@ -45,6 +42,9 @@
       },
       {
         "Url": "https://www.djangoproject.com/weblog/2011/sep/10/127"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2011-1.yaml"
       }
     ],
     "Identifiers": [
@@ -62,25 +62,25 @@
     "PublishedAt": "2018-07-23T19:52:39Z",
     "Severity": "MODERATE",
     "Summary": "Session manipulation in Django",
-    "UpdatedAt": "2024-05-16T18:41:02Z",
+    "UpdatedAt": "2024-09-16T23:04:00Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 4,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.2.7"
+        "Identifier": "1.3.1"
       },
-      "VulnerableVersionRange": "\u003e= 1.2.0, \u003c 1.2.7"
+      "VulnerableVersionRange": "\u003e= 1.3, \u003c 1.3.1"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.3.1"
+        "Identifier": "1.2.7"
       },
-      "VulnerableVersionRange": "\u003e= 1.3.0, \u003c 1.3.1"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 1.2.7"
     }
   ]
 }

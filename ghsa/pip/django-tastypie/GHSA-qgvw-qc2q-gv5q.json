@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "CRITICAL",
   "UpdatedAt": "2024-01-12T20:55:44Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -20,13 +20,16 @@
         "Url": "https://groups.google.com/forum/#!topic/django-tastypie/i2aNGDHTUBI"
       },
       {
-        "Url": "https://www.djangoproject.com/weblog/2011/nov/01/piston-and-tastypie-security-releases/"
-      },
-      {
         "Url": "http://www.openwall.com/lists/oss-security/2011/11/02/1"
       },
       {
         "Url": "http://www.openwall.com/lists/oss-security/2011/11/02/7"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django-tastypie/PYSEC-2014-25.yaml"
+      },
+      {
+        "Url": "https://www.djangoproject.com/weblog/2011/nov/01/piston-and-tastypie-security-releases"
       },
       {
         "Url": "https://github.com/advisories/GHSA-qgvw-qc2q-gv5q"
@@ -45,13 +48,13 @@
     "Description": "The `from_yaml` method in serializers.py in Django Tastypie before 0.9.10 does not properly deserialize YAML data, which allows remote attackers to execute arbitrary Python code via vectors related to the yaml.load method.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T03:08:09Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Django Tastypie Improper Deserialization of YAML Data",
-    "UpdatedAt": "2024-01-12T20:55:44Z",
+    "UpdatedAt": "2024-09-16T22:12:37Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

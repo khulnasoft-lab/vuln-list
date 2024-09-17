@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-02-08T21:27:27Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -26,9 +26,6 @@
         "Url": "http://code.djangoproject.com/changeset/11353"
       },
       {
-        "Url": "http://www.djangoproject.com/weblog/2009/jul/28/security/"
-      },
-      {
         "Url": "http://www.openwall.com/lists/oss-security/2009/07/29/2"
       },
       {
@@ -39,6 +36,12 @@
       },
       {
         "Url": "https://web.archive.org/web/20111211001428/http://www.securityfocus.com/bid/35859"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2009-3.yaml"
+      },
+      {
+        "Url": "http://www.djangoproject.com/weblog/2009/jul/28/security"
       },
       {
         "Url": "https://github.com/advisories/GHSA-9xg7-gg9m-rmq9"
@@ -57,13 +60,13 @@
     "Description": "The Admin media handler in `core/servers/basehttp.py` in Django 1.0 and 0.96 does not properly map URL requests to expected \"static media files,\" which allows remote attackers to conduct directory traversal attacks and read arbitrary files via a crafted URL.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-02T03:37:17Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Django Admin Media Handler Vulnerable to Directory Traversal",
-    "UpdatedAt": "2024-02-08T21:27:27Z",
+    "UpdatedAt": "2024-09-16T22:08:51Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

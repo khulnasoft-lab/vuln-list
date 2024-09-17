@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2020-01-24T19:56:40Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-09-16T21:59:21Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "django-user-sessions"
@@ -20,6 +20,9 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2020-5224"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django-user-sessions/PYSEC-2020-230.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-5fq8-3q2f-4m5g"
       }
     ],
@@ -36,9 +39,9 @@
     "Description": "### Impact\nThe views provided by django-user-sessions allow users to terminate specific sessions. The session key is used to identify sessions, and thus included in the rendered HTML. In itself this is not a problem. However if the website has an XSS vulnerability, the session key could be extracted by the attacker and a session takeover could happen.\n\n### Patches\nPatch is under way.\n\n### Workarounds\nRemove the session_key from the template.\n\n### References\n_None._\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [Bouke/django-user-sessions](https://github.com/Bouke/django-user-sessions/issues)\n* Email us at [bouke@haarsma.eu](mailto:bouke@haarsma.eu)",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2020-01-24T19:56:59Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Session key exposure through session list in Django User Sessions",
-    "UpdatedAt": "2023-01-09T05:02:07Z",
+    "UpdatedAt": "2024-09-16T21:59:21Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

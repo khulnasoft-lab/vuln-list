@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-03-07T21:50:31Z",
+  "UpdatedAt": "2024-09-16T22:57:34Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 356,
@@ -26,9 +26,6 @@
         "Url": "http://marc.info/?l=oss-security\u0026m=128403961700444\u0026w=2"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/43116"
-      },
-      {
         "Url": "http://www.ubuntu.com/usn/USN-1004-1"
       },
       {
@@ -36,6 +33,9 @@
       },
       {
         "Url": "http://www.djangoproject.com/weblog/2010/sep/08/security-release"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2010-12.yaml"
       }
     ],
     "Identifiers": [
@@ -53,11 +53,11 @@
     "PublishedAt": "2018-07-23T19:52:42Z",
     "Severity": "MODERATE",
     "Summary": "Cross-site scripting in django",
-    "UpdatedAt": "2024-03-07T21:50:31Z",
+    "UpdatedAt": "2024-09-16T22:57:34Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [
@@ -65,7 +65,7 @@
       "FirstPatchedVersion": {
         "Identifier": "1.2.2"
       },
-      "VulnerableVersionRange": "\u003e= 1.2.0, \u003c 1.2.2"
+      "VulnerableVersionRange": "\u003e= 1.2, \u003c 1.2.2"
     }
   ]
 }

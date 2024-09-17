@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-05-22T19:05:37Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-16T21:57:16Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "Django"
@@ -41,6 +41,15 @@
         "Url": "http://www.djangoproject.com/weblog/2009/oct/09/security"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2009-4.yaml"
+      },
+      {
+        "Url": "https://web.archive.org/web/20091013093057/http://secunia.com/advisories/36968"
+      },
+      {
+        "Url": "https://web.archive.org/web/20091017070244/http://secunia.com/advisories/36948"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-p6m5-h7pp-v2x5"
       }
     ],
@@ -57,13 +66,13 @@
     "Description": "Algorithmic complexity vulnerability in the forms library in Django 1.0 before 1.0.4 and 1.1 before 1.1.1 allows remote attackers to cause a denial of service (CPU consumption) via a crafted (1) EmailField (email address) or (2) URLField (URL) that triggers a large amount of backtracking in a regular expression.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-02T03:47:43Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Django Regex Algorithmic Complexity Causes Denial of Service",
-    "UpdatedAt": "2024-05-22T19:06:37Z",
+    "UpdatedAt": "2024-09-16T21:57:16Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
@@ -71,13 +80,13 @@
       "FirstPatchedVersion": {
         "Identifier": "1.1.1"
       },
-      "VulnerableVersionRange": "\u003e= 1.1.0, \u003c 1.1.1"
+      "VulnerableVersionRange": "\u003e= 1.1, \u003c 1.1.1"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.0.4"
       },
-      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 1.0.4"
+      "VulnerableVersionRange": "\u003e= 1.0, \u003c 1.0.4"
     }
   ]
 }
