@@ -1,6 +1,6 @@
 {
   "id": "GHSA-5hg3-6c2f-f3wr",
-  "modified": "2024-05-07T20:46:01.310604Z",
+  "modified": "2024-09-17T15:21:46.347995Z",
   "published": "2018-10-04T21:58:46Z",
   "aliases": [
     "CVE-2018-14574",
@@ -9,46 +9,6 @@
   "summary": "Django open redirect",
   "details": "`django.middleware.common.CommonMiddleware` in Django 1.11.x before 1.11.15 and 2.0.x before 2.0.8 has an Open Redirect.",
   "affected": [
-    {
-      "package": {
-        "ecosystem": "PyPI",
-        "name": "django",
-        "purl": "pkg:pypi/django"
-      },
-      "ranges": [
-        {
-          "type": "ECOSYSTEM",
-          "events": [
-            {
-              "introduced": "1.11.0"
-            },
-            {
-              "fixed": "1.11.15"
-            }
-          ]
-        }
-      ],
-      "versions": [
-        "1.11",
-        "1.11.1",
-        "1.11.10",
-        "1.11.11",
-        "1.11.12",
-        "1.11.13",
-        "1.11.14",
-        "1.11.2",
-        "1.11.3",
-        "1.11.4",
-        "1.11.5",
-        "1.11.6",
-        "1.11.7",
-        "1.11.8",
-        "1.11.9"
-      ],
-      "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/10/GHSA-5hg3-6c2f-f3wr/GHSA-5hg3-6c2f-f3wr.json"
-      }
-    },
     {
       "package": {
         "ecosystem": "PyPI",
@@ -81,6 +41,46 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/10/GHSA-5hg3-6c2f-f3wr/GHSA-5hg3-6c2f-f3wr.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "django",
+        "purl": "pkg:pypi/django"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.11"
+            },
+            {
+              "fixed": "1.11.15"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "1.11",
+        "1.11.1",
+        "1.11.10",
+        "1.11.11",
+        "1.11.12",
+        "1.11.13",
+        "1.11.14",
+        "1.11.2",
+        "1.11.3",
+        "1.11.4",
+        "1.11.5",
+        "1.11.6",
+        "1.11.7",
+        "1.11.8",
+        "1.11.9"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/10/GHSA-5hg3-6c2f-f3wr/GHSA-5hg3-6c2f-f3wr.json"
+      }
     }
   ],
   "references": [
@@ -107,6 +107,10 @@
     {
       "type": "ADVISORY",
       "url": "https://github.com/advisories/GHSA-5hg3-6c2f-f3wr"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2018-2.yaml"
     },
     {
       "type": "WEB",
