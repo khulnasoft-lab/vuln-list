@@ -1,9 +1,9 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-09-05T14:08:05Z",
+  "UpdatedAt": "2024-09-18T16:17:41Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 101396,
@@ -17,9 +17,6 @@
         "Url": "https://security.gentoo.org/glsa/201510-06"
       },
       {
-        "Url": "https://www.djangoproject.com/weblog/2015/jul/08/security-releases/"
-      },
-      {
         "Url": "https://github.com/django/django/commit/8f9a4d3a2bc42f14bb437defd30c7315adbff22c"
       },
       {
@@ -30,6 +27,12 @@
       },
       {
         "Url": "https://web.archive.org/web/20170526042302/http://www.securityfocus.com/bid/75691"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2015-21.yaml"
+      },
+      {
+        "Url": "https://www.djangoproject.com/weblog/2015/jul/08/security-releases"
       },
       {
         "Url": "https://github.com/advisories/GHSA-cqf7-ff9h-7967"
@@ -50,11 +53,11 @@
     "PublishedAt": "2022-05-17T00:48:30Z",
     "Severity": "HIGH",
     "Summary": "Django ReDoS in validators.URLValidator",
-    "UpdatedAt": "2023-09-05T14:08:05Z",
+    "UpdatedAt": "2024-09-18T16:17:41Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
@@ -62,7 +65,7 @@
       "FirstPatchedVersion": {
         "Identifier": "1.8.3"
       },
-      "VulnerableVersionRange": "\u003e= 1.8.0, \u003c 1.8.3"
+      "VulnerableVersionRange": "\u003e= 1.8a1, \u003c 1.8.3"
     }
   ]
 }

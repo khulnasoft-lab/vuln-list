@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-04-29T14:46:29Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -44,6 +44,9 @@
         "Url": "https://github.com/django/django/commit/f7c494f2506250b8cb5923714360a3642ed63e0f"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2014-7.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-rw75-m7gp-92m3"
       }
     ],
@@ -60,13 +63,13 @@
     "Description": "The administrative interface (contrib.admin) in Django before 1.4.14, 1.5.x before 1.5.9, 1.6.x before 1.6.6, and 1.7 before release candidate 3 does not check if a field represents a relationship between models, which allows remote authenticated users to obtain sensitive information via a to_field parameter in a popup action to an admin change form page, as demonstrated by a `/admin/auth/user/?pop=1\u0026t=password` URI.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T02:09:22Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Django data leakage via querystring manipulation in admin",
-    "UpdatedAt": "2024-05-16T18:02:29Z",
+    "UpdatedAt": "2024-09-18T16:07:34Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 5.3,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [

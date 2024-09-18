@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-09-03T05:05:43Z",
+  "UpdatedAt": "2024-09-18T16:09:44Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 99064,
@@ -41,16 +41,10 @@
         "Url": "http://seclists.org/oss-sec/2013/q3/411"
       },
       {
-        "Url": "http://secunia.com/advisories/54476"
-      },
-      {
         "Url": "http://www.debian.org/security/2013/dsa-2740"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/61777"
-      },
-      {
-        "Url": "http://www.securitytracker.com/id/1028915"
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2013-21.yaml"
       },
       {
         "Url": "https://github.com/advisories/GHSA-9cwg-mhxf-hh59"
@@ -70,12 +64,12 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T00:23:23Z",
     "Severity": "MODERATE",
-    "Summary": "Django Cross-site scripting (XSS) vulnerability via is_safe_url function ",
-    "UpdatedAt": "2023-09-03T05:05:43Z",
+    "Summary": "Django cross-site scripting (XSS) vulnerability via is_safe_url function ",
+    "UpdatedAt": "2024-09-18T16:09:44Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
     }
   },
   "Versions": [
@@ -83,13 +77,13 @@
       "FirstPatchedVersion": {
         "Identifier": "1.5.2"
       },
-      "VulnerableVersionRange": "\u003e= 1.5.0, \u003c 1.5.2"
+      "VulnerableVersionRange": "\u003e= 1.5, \u003c 1.5.2"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.4.6"
       },
-      "VulnerableVersionRange": "\u003e= 1.4.0, \u003c 1.4.6"
+      "VulnerableVersionRange": "\u003e= 1.4, \u003c 1.4.6"
     }
   ]
 }
