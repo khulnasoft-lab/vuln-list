@@ -1,6 +1,6 @@
 {
   "id": "GHSA-6565-fg86-6jcx",
-  "modified": "2024-02-20T05:23:06.054392Z",
+  "modified": "2024-09-18T14:45:56.594121Z",
   "published": "2022-05-17T03:34:12Z",
   "aliases": [
     "CVE-2015-2241",
@@ -109,6 +109,11 @@
         "1.7.4",
         "1.7.5"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "django.contrib.admin.helpers.AdminReadonlyField.contents"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-6565-fg86-6jcx/GHSA-6565-fg86-6jcx.json"
       }
@@ -159,6 +164,14 @@
       "url": "https://code.djangoproject.com/ticket/24461"
     },
     {
+      "type": "PACKAGE",
+      "url": "https://github.com/django/django"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2015-8.yaml"
+    },
+    {
       "type": "WEB",
       "url": "https://web.archive.org/web/20150523054951/http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2015:109/?name=MDVSA-2015:109"
     },
@@ -169,6 +182,10 @@
     {
       "type": "WEB",
       "url": "https://www.djangoproject.com/weblog/2015/mar/09/security-releases"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.mandriva.com/security/advisories?name=MDVSA-2015:109"
     }
   ]
 }

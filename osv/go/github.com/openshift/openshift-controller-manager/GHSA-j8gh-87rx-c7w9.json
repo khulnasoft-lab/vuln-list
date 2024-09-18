@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j8gh-87rx-c7w9",
-  "modified": "2024-09-17T18:27:41.295279Z",
+  "modified": "2024-09-18T15:42:08.173069Z",
   "published": "2024-09-17T00:31:06Z",
   "aliases": [
-    "CVE-2024-45496"
+    "CVE-2024-45496",
+    "GO-2024-3128"
   ],
   "summary": "OpenShift Controller Manager Improper Privilege Management",
   "details": "A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
@@ -52,6 +53,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/openshift/openshift-controller-manager"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3128"
     }
   ]
 }

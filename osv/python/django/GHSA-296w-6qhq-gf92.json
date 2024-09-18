@@ -1,6 +1,6 @@
 {
   "id": "GHSA-296w-6qhq-gf92",
-  "modified": "2024-02-22T05:33:53.368950Z",
+  "modified": "2024-09-18T16:07:34.306658Z",
   "published": "2022-05-14T02:05:08Z",
   "aliases": [
     "CVE-2014-0481",
@@ -89,7 +89,7 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "1.5.0"
+              "introduced": "1.5"
             },
             {
               "fixed": "1.5.9"
@@ -139,6 +139,11 @@
         "1.6.4",
         "1.6.5"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "django.core.files.storage.Storage.get_available_name"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-296w-6qhq-gf92/GHSA-296w-6qhq-gf92.json"
       }
@@ -160,6 +165,14 @@
     {
       "type": "WEB",
       "url": "https://github.com/django/django/commit/dd0c3f4ee1a30c1a1e6055061c6ba6e58c6b54d1"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/django/django"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2014-5.yaml"
     },
     {
       "type": "WEB",
