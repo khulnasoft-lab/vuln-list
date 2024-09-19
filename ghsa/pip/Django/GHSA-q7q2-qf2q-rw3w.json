@@ -1,9 +1,9 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-08-16T22:54:51Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-18T19:51:16Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 115283,
@@ -38,6 +38,12 @@
         "Url": "https://www.djangoproject.com/weblog/2014/may/14/security-releases-issued"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2014-19.yaml"
+      },
+      {
+        "Url": "http://ubuntu.com/usn/usn-2212-1"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-q7q2-qf2q-rw3w"
       }
     ],
@@ -54,33 +60,39 @@
     "Description": "Django 1.4 before 1.4.13, 1.5 before 1.5.8, 1.6 before 1.6.5, and 1.7 before 1.7b4 does not properly include the (1) Vary: Cookie or (2) Cache-Control header in responses, which allows remote attackers to obtain sensitive information or poison the cache via a request from certain browsers.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:07:00Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Django Vulnerable to Cache Poisoning",
-    "UpdatedAt": "2024-03-07T22:22:48Z",
+    "UpdatedAt": "2024-09-18T19:51:16Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.4,
+      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.7b4"
+      },
+      "VulnerableVersionRange": "\u003e= 1.7a1, \u003c 1.7b4"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "1.6.5"
       },
-      "VulnerableVersionRange": "\u003e= 1.6.0, \u003c 1.6.5"
+      "VulnerableVersionRange": "\u003e= 1.6, \u003c 1.6.5"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.5.8"
       },
-      "VulnerableVersionRange": "\u003e= 1.5.0, \u003c 1.5.8"
+      "VulnerableVersionRange": "\u003e= 1.5, \u003c 1.5.8"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.4.13"
       },
-      "VulnerableVersionRange": "\u003e= 1.4.0, \u003c 1.4.13"
+      "VulnerableVersionRange": "\u003e= 1.4, \u003c 1.4.13"
     }
   ]
 }

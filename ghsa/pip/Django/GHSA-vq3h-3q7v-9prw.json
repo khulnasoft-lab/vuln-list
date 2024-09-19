@@ -1,9 +1,9 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-09-07T20:42:31Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-18T19:43:08Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 86371,
@@ -12,9 +12,6 @@
     "References": [
       {
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2014-3730"
-      },
-      {
-        "Url": "https://www.djangoproject.com/weblog/2014/may/14/security-releases-issued/"
       },
       {
         "Url": "http://lists.opensuse.org/opensuse-updates/2014-09/msg00023.html"
@@ -44,6 +41,15 @@
         "Url": "https://web.archive.org/web/20200228171223/http://www.securityfocus.com/bid/67410"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2014-20.yaml"
+      },
+      {
+        "Url": "https://www.djangoproject.com/weblog/2014/may/14/security-releases-issued"
+      },
+      {
+        "Url": "http://secunia.com/advisories/61281"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-vq3h-3q7v-9prw"
       }
     ],
@@ -60,33 +66,39 @@
     "Description": "The `django.util.http.is_safe_url` function in Django 1.4 before 1.4.13, 1.5 before 1.5.8, 1.6 before 1.6.5, and 1.7 before 1.7b4 does not properly validate URLs, which allows remote attackers to conduct open redirect attacks via a malformed URL, as demonstrated by \"http:\\\\\\djangoproject.com.\"",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T02:09:43Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Django Allows Open Redirects",
-    "UpdatedAt": "2023-09-07T20:42:31Z",
+    "UpdatedAt": "2024-09-18T19:43:08Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.7b4"
+      },
+      "VulnerableVersionRange": "\u003e= 1.7a1, \u003c 1.7b4"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "1.6.5"
       },
-      "VulnerableVersionRange": "\u003e= 1.6.0, \u003c 1.6.5"
+      "VulnerableVersionRange": "\u003e= 1.6, \u003c 1.6.5"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.5.8"
       },
-      "VulnerableVersionRange": "\u003e= 1.5.0, \u003c 1.5.8"
+      "VulnerableVersionRange": "\u003e= 1.5, \u003c 1.5.8"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.4.13"
       },
-      "VulnerableVersionRange": "\u003e= 1.4.0, \u003c 1.4.13"
+      "VulnerableVersionRange": "\u003e= 1.4, \u003c 1.4.13"
     }
   ]
 }
