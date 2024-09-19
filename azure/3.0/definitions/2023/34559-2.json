@@ -1,9 +1,9 @@
 {
   "Class": "vulnerability",
   "ID": "oval:com.microsoft.azurelinux:def:34559",
-  "Version": "1",
+  "Version": "2",
   "Metadata": {
-    "Title": "CVE-2023-50387 affecting package bind for versions less than 9.19.21-1",
+    "Title": "CVE-2023-50387 affecting package bind for versions less than 9.20.0-1",
     "Affected": {
       "Family": "unix",
       "Platform": "Azure Linux"
@@ -15,14 +15,14 @@
     },
     "Patchable": "true",
     "AdvisoryDate": "2024-03-19T17:21:46Z",
-    "AdvisoryID": "34559-1",
+    "AdvisoryID": "34559-2",
     "Severity": "High",
-    "Description": "CVE-2023-50387 affecting package bind for versions less than 9.19.21-1. A patched version of the package is available."
+    "Description": "CVE-2023-50387 affecting package bind for versions less than 9.20.0-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": {
-      "Comment": "Package bind is earlier than 9.19.21-1, affected by CVE-2023-50387",
+      "Comment": "Package bind is earlier than 9.20.0-1, affected by CVE-2023-50387",
       "TestRef": "oval:com.microsoft.azurelinux:tst:34559000"
     }
   }
