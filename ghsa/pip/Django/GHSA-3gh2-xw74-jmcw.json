@@ -1,9 +1,9 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-04-01T18:27:28Z",
+  "UpdatedAt": "2024-09-20T15:03:45Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "django"
+    "Name": "Django"
   },
   "Advisory": {
     "DatabaseId": 2139,
@@ -48,6 +48,9 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-3gh2-xw74-jmcw"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2020-36.yaml"
       }
     ],
     "Identifiers": [
@@ -65,7 +68,7 @@
     "PublishedAt": "2020-06-05T14:52:07Z",
     "Severity": "HIGH",
     "Summary": "SQL injection in Django",
-    "UpdatedAt": "2024-04-01T18:27:28Z",
+    "UpdatedAt": "2024-09-20T15:03:45Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -75,21 +78,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "3.0.4"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0, \u003c 3.0.4"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "2.2.11"
       },
-      "VulnerableVersionRange": "\u003e= 2.2.0, \u003c 2.2.11"
+      "VulnerableVersionRange": "\u003e= 2.2, \u003c 2.2.11"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "1.11.29"
       },
-      "VulnerableVersionRange": "\u003e= 1.11.0, \u003c 1.11.29"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.0.4"
-      },
-      "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.0.4"
+      "VulnerableVersionRange": "\u003e= 1.11, \u003c 1.11.29"
     }
   ]
 }

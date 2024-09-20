@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2023-08-23T21:04:09Z",
+  "UpdatedAt": "2024-09-20T17:05:27Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "drf-jwt"
@@ -27,6 +27,9 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-fpjm-rp2g-3r4c"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/drf-jwt/PYSEC-2020-40.yaml"
       }
     ],
     "Identifiers": [
@@ -44,7 +47,7 @@
     "PublishedAt": "2020-06-05T16:09:34Z",
     "Severity": "CRITICAL",
     "Summary": "Django Rest Framework jwt allows obtaining new token from notionally invalidated token",
-    "UpdatedAt": "2023-08-23T21:04:09Z",
+    "UpdatedAt": "2024-09-20T17:05:27Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,
@@ -56,7 +59,7 @@
       "FirstPatchedVersion": {
         "Identifier": "1.15.1"
       },
-      "VulnerableVersionRange": "\u003c 1.15.1"
+      "VulnerableVersionRange": "\u003e= 1.15.0, \u003c 1.15.1"
     }
   ]
 }

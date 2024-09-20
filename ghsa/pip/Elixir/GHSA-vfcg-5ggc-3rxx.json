@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-01T11:17:52Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -32,6 +32,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2012/04/29/1"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/elixir/PYSEC-2012-13.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-vfcg-5ggc-3rxx"
       }
     ],
@@ -48,13 +51,13 @@
     "Description": "Elixir prior to and including 0.7.1 uses Blowfish in CFB mode without constructing a unique initialization vector (IV), which makes it easier for context-dependent users to obtain sensitive information and decrypt the database. A patch has been [attached](https://sochotni.fedorapeople.org/python-elixir-aes-encryption-addition.patch) to the initial advisory to mitigate this vulnerability.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T05:25:05Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Elixir can leak information due to weak use of crypto",
-    "UpdatedAt": "2024-05-01T11:17:52Z",
+    "UpdatedAt": "2024-09-20T16:51:45Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
