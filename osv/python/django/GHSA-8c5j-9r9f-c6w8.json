@@ -1,6 +1,6 @@
 {
   "id": "GHSA-8c5j-9r9f-c6w8",
-  "modified": "2024-02-16T08:16:17.108407Z",
+  "modified": "2024-09-20T12:32:54.884966Z",
   "published": "2022-01-12T19:21:10Z",
   "aliases": [
     "BIT-django-2021-45116",
@@ -21,7 +21,7 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "2.2.0"
+              "introduced": "2.2"
             },
             {
               "fixed": "2.2.26"
@@ -78,7 +78,7 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "3.2.0"
+              "introduced": "3.2"
             },
             {
               "fixed": "3.2.11"
@@ -120,7 +120,7 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "4.0.0"
+              "introduced": "4.0"
             },
             {
               "fixed": "4.0.1"
@@ -131,6 +131,12 @@
       "versions": [
         "4.0"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "django.template.defaultfilters.dictsort",
+          "django.template.defaultfilters.dictsortreversed"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/01/GHSA-8c5j-9r9f-c6w8/GHSA-8c5j-9r9f-c6w8.json"
       }
@@ -158,8 +164,16 @@
       "url": "https://docs.djangoproject.com/en/4.0/releases/security"
     },
     {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-8c5j-9r9f-c6w8"
+    },
+    {
       "type": "PACKAGE",
       "url": "https://github.com/django/django"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/django/PYSEC-2022-2.yaml"
     },
     {
       "type": "WEB",
