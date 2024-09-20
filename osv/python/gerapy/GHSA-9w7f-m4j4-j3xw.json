@@ -1,12 +1,12 @@
 {
   "id": "GHSA-9w7f-m4j4-j3xw",
-  "modified": "2024-02-16T08:15:19.070635Z",
+  "modified": "2024-09-20T18:01:29.964208Z",
   "published": "2022-01-06T17:36:38Z",
   "aliases": [
     "CVE-2021-43857",
     "PYSEC-2021-867"
   ],
-  "summary": "Gerapy \u003c 0.9.8 may cause remote code execution",
+  "summary": "Gerapy may cause remote code execution",
   "details": "### Impact\n\nproject_configure function exist remote code execute in Gerapy \u003c 0.9.8\n\n### Patches\n\nPatched in version 0.9.8, please install with:\n\n```\npip3 install -U gerapy\n```",
   "affected": [
     {
@@ -101,6 +101,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/Gerapy/Gerapy"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/gerapy/PYSEC-2021-867.yaml"
     },
     {
       "type": "WEB",

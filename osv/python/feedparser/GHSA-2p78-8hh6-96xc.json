@@ -1,12 +1,12 @@
 {
   "id": "GHSA-2p78-8hh6-96xc",
-  "modified": "2023-11-08T03:56:58.907561Z",
+  "modified": "2024-09-20T17:25:31.971933Z",
   "published": "2018-07-23T19:52:21Z",
   "aliases": [
     "CVE-2011-1157",
     "PYSEC-2011-20"
   ],
-  "summary": "Moderate severity vulnerability that affects feedparser",
+  "summary": "feedparser Cross-site Scripting vulnerability",
   "details": "Cross-site scripting (XSS) vulnerability in feedparser.py in Universal Feed Parser (aka feedparser or python-feedparser) 5.x before 5.0.1 allows remote attackers to inject arbitrary web script or HTML via malformed XML comments.",
   "affected": [
     {
@@ -58,6 +58,22 @@
       "url": "https://github.com/advisories/GHSA-2p78-8hh6-96xc"
     },
     {
+      "type": "PACKAGE",
+      "url": "https://github.com/kurtmckee/feedparser"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/feedparser/PYSEC-2011-20.yaml"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20210121212051/https://www.securityfocus.com/bid/46867"
+    },
+    {
+      "type": "WEB",
+      "url": "https://web.archive.org/web/20240723030532/https://tuxedo.org/mandriva/?name=MDVSA-2011:082"
+    },
+    {
       "type": "WEB",
       "url": "http://lists.opensuse.org/opensuse-updates/2011-04/msg00026.html"
     },
@@ -71,23 +87,7 @@
     },
     {
       "type": "WEB",
-      "url": "http://secunia.com/advisories/43730"
-    },
-    {
-      "type": "WEB",
-      "url": "http://secunia.com/advisories/44074"
-    },
-    {
-      "type": "WEB",
       "url": "http://support.novell.com/security/cve/CVE-2011-1157.html"
-    },
-    {
-      "type": "WEB",
-      "url": "http://www.mandriva.com/security/advisories?name=MDVSA-2011:082"
-    },
-    {
-      "type": "WEB",
-      "url": "http://www.securityfocus.com/bid/46867"
     }
   ]
 }

@@ -1,12 +1,12 @@
 {
   "id": "GHSA-624f-cqvr-3qw4",
-  "modified": "2024-02-17T05:36:29.691515Z",
+  "modified": "2024-09-20T17:48:09.758629Z",
   "published": "2021-09-08T21:11:14Z",
   "aliases": [
     "CVE-2021-32805",
     "PYSEC-2021-359"
   ],
-  "summary": "URL Redirection to Untrusted Site ('Open Redirect') in Flask-AppBuilder",
+  "summary": "Flask-AppBuilder Open Redirect vulnerability",
   "details": "### Impact\nIf using Flask-AppBuilder OAuth, an attacker can share a carefully crafted URL with a trusted domain for an application built with Flask-AppBuilder, this URL can redirect a user to a malicious site. This is an open redirect vulnerability \n\n### Patches\nInstall Flask-AppBuilder 3.2.2 or above\n\n### Workarounds\nFilter HTTP traffic containing `?next={next-site}` where the `next-site` domain is different from the application you are protecting\n",
   "affected": [
     {
@@ -297,6 +297,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/dpgaspar/Flask-AppBuilder/releases/tag/v3.3.2"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/flask-appbuilder/PYSEC-2021-359.yaml"
     },
     {
       "type": "WEB",

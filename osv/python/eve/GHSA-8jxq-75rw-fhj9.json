@@ -1,6 +1,6 @@
 {
   "id": "GHSA-8jxq-75rw-fhj9",
-  "modified": "2024-02-16T08:07:46.736716Z",
+  "modified": "2024-09-20T17:26:42.415969Z",
   "published": "2018-07-12T20:29:35Z",
   "aliases": [
     "CVE-2018-8097",
@@ -58,6 +58,11 @@
         "0.7.3",
         "0.7.4"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "eve.io.mongo.parser.MongoVisitor.visit_Call"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2018/07/GHSA-8jxq-75rw-fhj9/GHSA-8jxq-75rw-fhj9.json"
       }
@@ -83,6 +88,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/pyeve/eve"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/eve/PYSEC-2018-8.yaml"
     }
   ]
 }
