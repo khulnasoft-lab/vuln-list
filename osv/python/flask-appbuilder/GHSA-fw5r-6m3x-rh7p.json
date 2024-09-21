@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-45314"
   ],
+  "related": [
+    "CGA-2prx-f32m-4r4c"
+  ],
   "summary": "Flask-AppBuilder's login form allows browser to cache sensitive fields ",
   "details": "### Impact\nAuth DB login form default cache directives allows browser to locally store sensitive data. This can be an issue on environments using shared computer resources.\n\n### Patches\nUpgrade flask-appbuilder to version 4.5.1\n\n### Workarounds\nIf upgrading is not possible configure your web server to send the following HTTP headers for /login:\n\"Cache-Control\": \"no-store, no-cache, must-revalidate, max-age=0\"\n\"Pragma\": \"no-cache\"\n\"Expires\": \"0\" \n",
   "affected": [
