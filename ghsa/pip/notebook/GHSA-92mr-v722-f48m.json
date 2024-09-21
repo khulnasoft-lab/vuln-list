@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-06T20:09:02Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-09-20T21:54:07Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "notebook"
@@ -39,6 +39,9 @@
       },
       {
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/ipython/PYSEC-2015-25.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/notebook/PYSEC-2015-27.yaml"
       }
     ],
     "Identifiers": [
@@ -54,13 +57,13 @@
     "Description": "The editor in IPython Notebook before 3.2.2 and Jupyter Notebook 4.0.x before 4.0.5 allows remote attackers to execute arbitrary JavaScript code via a crafted file, which triggers a redirect to files/, related to MIME types.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:25:49Z",
-    "Severity": "MODERATE",
+    "Severity": "CRITICAL",
     "Summary": "Improper Input Validation in Jupyter Notebook",
-    "UpdatedAt": "2023-01-29T05:01:57Z",
+    "UpdatedAt": "2024-09-20T21:54:07Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
