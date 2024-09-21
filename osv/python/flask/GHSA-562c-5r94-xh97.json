@@ -1,6 +1,6 @@
 {
   "id": "GHSA-562c-5r94-xh97",
-  "modified": "2024-02-22T05:31:38.513919Z",
+  "modified": "2024-09-20T20:25:00.678852Z",
   "published": "2018-08-23T19:10:40Z",
   "aliases": [
     "CVE-2018-1000656",
@@ -56,7 +56,8 @@
       "ecosystem_specific": {
         "affected_functions": [
           "flask.json.loads",
-          "flask.wrappers.Request.get_json"
+          "flask.wrappers.Request.get_json",
+          "flask.json.detect_encoding"
         ]
       },
       "database_specific": {
@@ -88,6 +89,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/pallets/flask/releases/tag/0.12.3"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/flask/PYSEC-2018-66.yaml"
     },
     {
       "type": "WEB",

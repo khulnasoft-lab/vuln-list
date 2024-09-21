@@ -1,9 +1,10 @@
 {
   "id": "GHSA-c77r-fh37-x2px",
-  "modified": "2024-09-19T20:12:27.997315Z",
+  "modified": "2024-09-20T22:06:08Z",
   "published": "2024-08-30T15:31:30Z",
   "aliases": [
-    "CVE-2024-8260"
+    "CVE-2024-8260",
+    "GO-2024-3141"
   ],
   "summary": "OPA for Windows has an SMB force-authentication vulnerability",
   "details": "A SMB force-authentication vulnerability exists in all versions of OPA for Windows prior to v0.68.0. The vulnerability exists because of improper input validation, allowing a user to pass an arbitrary SMB share instead of a Rego file as an argument to OPA CLI or to one of the OPA Go library’s functions.",
@@ -48,6 +49,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/open-policy-agent/opa/releases/tag/v0.68.0"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3141"
     },
     {
       "type": "WEB",
