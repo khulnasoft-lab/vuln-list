@@ -12,13 +12,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-0494.html",
-      "ID": "CVE-2022-0494"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-1055.html",
+      "ID": "CVE-2022-1055"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-1055.html",
-      "ID": "CVE-2022-1055"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-0494.html",
+      "ID": "CVE-2022-0494"
     }
   ],
   "Criteria": {
@@ -38,6 +38,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bpftool is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "bpftool is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-cross-headers is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
@@ -50,22 +62,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                        "Comment": "kernel-headers is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bpftool is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "bpftool is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -98,22 +98,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
-                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-headers is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -126,6 +114,18 @@
                       },
                       {
                         "Comment": "perf is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -198,6 +198,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-debug is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
@@ -222,90 +234,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-debug-modules is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-debug-modules is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-debug-modules-extra is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-debug-modules-extra is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-modules is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-modules is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-modules-extra is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-modules-extra is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-tools is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "python3-perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "kernel-debug-devel is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
@@ -322,6 +250,30 @@
                       },
                       {
                         "Comment": "kernel-debug-devel-matched is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-debug-modules is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "kernel-debug-modules is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-debug-modules-extra is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "kernel-debug-modules-extra is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -378,10 +330,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                        "Comment": "kernel-modules is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
-                        "Comment": "perf is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-modules is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -390,10 +342,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                        "Comment": "kernel-modules-extra is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
                       },
                       {
-                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-modules-extra is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "kernel-tools is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-tools-libs is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -406,6 +382,30 @@
                       },
                       {
                         "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "perf is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-perf is earlier than 0:5.14.0-70.22.1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -433,13 +433,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-0494.html",
-      "ID": "CVE-2022-0494"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-1055.html",
+      "ID": "CVE-2022-1055"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-1055.html",
-      "ID": "CVE-2022-1055"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-0494.html",
+      "ID": "CVE-2022-0494"
     }
   ],
   "Issued": {

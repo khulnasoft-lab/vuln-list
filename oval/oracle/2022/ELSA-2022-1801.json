@@ -20,26 +20,54 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
             "Operator": "AND",
-            "Criterias": null,
+            "Criterias": [
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "gfbgraph is earlier than 0:0.2.4-1.el8"
+                  },
+                  {
+                    "Comment": "gfbgraph is signed with the Oracle Linux 8 key"
+                  }
+                ]
+              }
+            ],
             "Criterions": [
               {
-                "Comment": "gfbgraph is earlier than 0:0.2.4-1.el8"
-              },
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
               {
-                "Comment": "gfbgraph is signed with the Oracle Linux 8 key"
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "gfbgraph is earlier than 0:0.2.4-1.el8"
+                  },
+                  {
+                    "Comment": "gfbgraph is signed with the Oracle Linux 8 key"
+                  }
+                ]
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
               }
             ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is x86_64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [

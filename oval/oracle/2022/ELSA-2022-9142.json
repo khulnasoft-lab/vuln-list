@@ -2,8 +2,8 @@
   "Title": "ELSA-2022-9142:  Unbreakable Enterprise kernel-container security update (IMPORTANT)",
   "Description": "[5.4.17-2136.302.7.2.3]\n- cgroup-v1: Require capabilities to set release_agent (Eric W. Biederman)\n  [Orabug: 33832574]  {CVE-2022-0492}",
   "Platform": [
-    "Oracle Linux 8",
-    "Oracle Linux 7"
+    "Oracle Linux 7",
+    "Oracle Linux 8"
   ],
   "References": [
     {
@@ -20,56 +20,6 @@
   "Criteria": {
     "Operator": "OR",
     "Criterias": [
-      {
-        "Operator": "AND",
-        "Criterias": [
-          {
-            "Operator": "AND",
-            "Criterias": [
-              {
-                "Operator": "OR",
-                "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-uek-container is earlier than 0:5.4.17-2136.302.7.2.3.el8"
-                      },
-                      {
-                        "Comment": "kernel-uek-container is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-uek-container-debug is earlier than 0:5.4.17-2136.302.7.2.3.el8"
-                      },
-                      {
-                        "Comment": "kernel-uek-container-debug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  }
-                ],
-                "Criterions": null
-              }
-            ],
-            "Criterions": [
-              {
-                "Comment": "Oracle Linux arch is x86_64"
-              }
-            ]
-          }
-        ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux 8 is installed"
-          }
-        ]
-      },
       {
         "Operator": "AND",
         "Criterias": [
@@ -117,6 +67,56 @@
         "Criterions": [
           {
             "Comment": "Oracle Linux 7 is installed"
+          }
+        ]
+      },
+      {
+        "Operator": "AND",
+        "Criterias": [
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-container is earlier than 0:5.4.17-2136.302.7.2.3.el8"
+                      },
+                      {
+                        "Comment": "kernel-uek-container is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-uek-container-debug is earlier than 0:5.4.17-2136.302.7.2.3.el8"
+                      },
+                      {
+                        "Comment": "kernel-uek-container-debug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
+          }
+        ],
+        "Criterions": [
+          {
+            "Comment": "Oracle Linux 8 is installed"
           }
         ]
       }

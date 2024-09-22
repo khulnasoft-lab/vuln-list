@@ -12,28 +12,23 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-2166.html",
-      "ID": "CVE-2021-2166"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35604.html",
+      "ID": "CVE-2021-35604"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-2372.html",
-      "ID": "CVE-2021-2372"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-46662.html",
+      "ID": "CVE-2021-46662"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-2389.html",
-      "ID": "CVE-2021-2389"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-46657.html",
+      "ID": "CVE-2021-46657"
     },
     {
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-2154.html",
       "ID": "CVE-2021-2154"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35604.html",
-      "ID": "CVE-2021-35604"
     },
     {
       "Source": "CVE",
@@ -47,8 +42,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-46657.html",
-      "ID": "CVE-2021-46657"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-2372.html",
+      "ID": "CVE-2021-2372"
     },
     {
       "Source": "CVE",
@@ -57,8 +52,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-46662.html",
-      "ID": "CVE-2021-46662"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-2166.html",
+      "ID": "CVE-2021-2166"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-2389.html",
+      "ID": "CVE-2021-2389"
     }
   ],
   "Criteria": {
@@ -71,10 +71,10 @@
             "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "OR",
+                "Operator": "AND",
                 "Criterias": [
                   {
-                    "Operator": "AND",
+                    "Operator": "OR",
                     "Criterias": [
                       {
                         "Operator": "AND",
@@ -87,184 +87,184 @@
                             "Comment": "Judy is signed with the Oracle Linux 8 key"
                           }
                         ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "galera is earlier than 0:25.3.34-4.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "galera is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-backup is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-backup is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-common is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-common is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-embedded is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-embedded is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-embedded-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-errmsg is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-errmsg is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-gssapi-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-gssapi-server is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-oqgraph-engine is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-oqgraph-engine is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server-galera is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server-galera is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server-utils is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server-utils is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-test is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-test is signed with the Oracle Linux 8 key"
+                          }
+                        ]
                       }
                     ],
-                    "Criterions": [
-                      {
-                        "Comment": "Module mariadb:10.3 is enabled"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "galera is earlier than 0:25.3.34-4.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "galera is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-backup is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-backup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-common is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-embedded is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-errmsg is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-errmsg is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-gssapi-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-gssapi-server is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-oqgraph-engine is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-oqgraph-engine is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server-galera is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server-galera is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server-utils is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-test is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
+                    "Criterions": null
                   }
                 ],
-                "Criterions": null
+                "Criterions": [
+                  {
+                    "Comment": "Module mariadb:10.3 is enabled"
+                  }
+                ]
               }
             ],
             "Criterions": [
@@ -277,10 +277,10 @@
             "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "OR",
+                "Operator": "AND",
                 "Criterias": [
                   {
-                    "Operator": "AND",
+                    "Operator": "OR",
                     "Criterias": [
                       {
                         "Operator": "AND",
@@ -293,184 +293,184 @@
                             "Comment": "Judy is signed with the Oracle Linux 8 key"
                           }
                         ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "galera is earlier than 0:25.3.34-4.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "galera is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-backup is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-backup is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-common is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-common is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-embedded is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-embedded is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-embedded-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-errmsg is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-errmsg is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-gssapi-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-gssapi-server is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-oqgraph-engine is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-oqgraph-engine is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server-galera is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server-galera is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-server-utils is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-server-utils is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "mariadb-test is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
+                          },
+                          {
+                            "Comment": "mariadb-test is signed with the Oracle Linux 8 key"
+                          }
+                        ]
                       }
                     ],
-                    "Criterions": [
-                      {
-                        "Comment": "Module mariadb:10.3 is enabled"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "galera is earlier than 0:25.3.34-4.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "galera is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-backup is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-backup is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-common is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-common is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-embedded is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded-devel is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-errmsg is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-errmsg is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-gssapi-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-gssapi-server is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-oqgraph-engine is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-oqgraph-engine is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server-galera is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server-galera is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-server-utils is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-server-utils is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-test is earlier than 3:10.3.32-2.0.1.module+el8.5.0+20629+e1b20d6b"
-                      },
-                      {
-                        "Comment": "mariadb-test is signed with the Oracle Linux 8 key"
-                      }
-                    ]
+                    "Criterions": null
                   }
                 ],
-                "Criterions": null
+                "Criterions": [
+                  {
+                    "Comment": "Module mariadb:10.3 is enabled"
+                  }
+                ]
               }
             ],
             "Criterions": [
@@ -493,28 +493,23 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-2166.html",
-      "ID": "CVE-2021-2166"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35604.html",
+      "ID": "CVE-2021-35604"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-2372.html",
-      "ID": "CVE-2021-2372"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-46662.html",
+      "ID": "CVE-2021-46662"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-2389.html",
-      "ID": "CVE-2021-2389"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-46657.html",
+      "ID": "CVE-2021-46657"
     },
     {
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-2154.html",
       "ID": "CVE-2021-2154"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35604.html",
-      "ID": "CVE-2021-35604"
     },
     {
       "Impact": "",
@@ -528,8 +523,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-46657.html",
-      "ID": "CVE-2021-46657"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-2372.html",
+      "ID": "CVE-2021-2372"
     },
     {
       "Impact": "",
@@ -538,8 +533,13 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-46662.html",
-      "ID": "CVE-2021-46662"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-2166.html",
+      "ID": "CVE-2021-2166"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-2389.html",
+      "ID": "CVE-2021-2389"
     }
   ],
   "Issued": {

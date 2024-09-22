@@ -27,18 +27,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-32084.html",
-      "ID": "CVE-2022-32084"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-32091.html",
-      "ID": "CVE-2022-32091"
-    },
-    {
-      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2022-32082.html",
       "ID": "CVE-2022-32082"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-5157.html",
+      "ID": "CVE-2023-5157"
     },
     {
       "Source": "CVE",
@@ -47,8 +42,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-5157.html",
-      "ID": "CVE-2023-5157"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32084.html",
+      "ID": "CVE-2022-32084"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-32091.html",
+      "ID": "CVE-2022-32091"
     }
   ],
   "Criteria": {
@@ -63,42 +63,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-devel is earlier than 3:10.5.22-1.el9_2"
-                      },
-                      {
-                        "Comment": "mariadb-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded-devel is earlier than 3:10.5.22-1.el9_2"
-                      },
-                      {
-                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-test is earlier than 3:10.5.22-1.el9_2"
-                      },
-                      {
-                        "Comment": "mariadb-test is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -152,10 +116,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "mariadb-devel is earlier than 3:10.5.22-1.el9_2"
+                      },
+                      {
+                        "Comment": "mariadb-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "mariadb-embedded is earlier than 3:10.5.22-1.el9_2"
                       },
                       {
                         "Comment": "mariadb-embedded is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mariadb-embedded-devel is earlier than 3:10.5.22-1.el9_2"
+                      },
+                      {
+                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -240,6 +228,18 @@
                       },
                       {
                         "Comment": "mariadb-server-utils is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mariadb-test is earlier than 3:10.5.22-1.el9_2"
+                      },
+                      {
+                        "Comment": "mariadb-test is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -312,10 +312,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "mariadb-devel is earlier than 3:10.5.22-1.el9_2"
+                      },
+                      {
+                        "Comment": "mariadb-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "mariadb-embedded is earlier than 3:10.5.22-1.el9_2"
                       },
                       {
                         "Comment": "mariadb-embedded is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "mariadb-embedded-devel is earlier than 3:10.5.22-1.el9_2"
+                      },
+                      {
+                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -408,30 +432,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "mariadb-devel is earlier than 3:10.5.22-1.el9_2"
-                      },
-                      {
-                        "Comment": "mariadb-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "mariadb-embedded-devel is earlier than 3:10.5.22-1.el9_2"
-                      },
-                      {
-                        "Comment": "mariadb-embedded-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "mariadb-test is earlier than 3:10.5.22-1.el9_2"
                       },
                       {
@@ -478,18 +478,13 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-32084.html",
-      "ID": "CVE-2022-32084"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-32091.html",
-      "ID": "CVE-2022-32091"
-    },
-    {
-      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2022-32082.html",
       "ID": "CVE-2022-32082"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-5157.html",
+      "ID": "CVE-2023-5157"
     },
     {
       "Impact": "",
@@ -498,8 +493,13 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-5157.html",
-      "ID": "CVE-2023-5157"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32084.html",
+      "ID": "CVE-2022-32084"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-32091.html",
+      "ID": "CVE-2022-32091"
     }
   ],
   "Issued": {

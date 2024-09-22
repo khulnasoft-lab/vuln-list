@@ -1,5 +1,5 @@
 {
-  "Title": "ELSA-2022-9172: kvm_utils security update (IMPORTANT)",
+  "Title": "ELSA-2022-9172: virt:kvm_utils security update (IMPORTANT)",
   "Description": "hivex\n[1.3.18-21]\n- Bounds check for block exceeding page length (CVE-2021-3504)\n  resolves: rhbz#1950501\n\nlibguestfs\n[1.40.2-28.0.1]\n- Replace upstream references from description tag\n- Config supermin to use host yum.conf in ol8 [Orabug: 29319324]\n- Set DISTRO_ORACLE_LINUX correspeonding to ol\n\n[1:1.40.2-28]\n- daemon: lvm: Use lvcreate --yes to avoid interactive prompts\n  resolves: rhbz#1933640\n\n[1:1.40.2-27]\n- selinux-relabel does not work if SELINUXTYPE != targeted\n- tar-in command does not allow restoring file capabilities\n  resolves: rhbz#1384241 rhbz#1828952\n\n[1:1.40.2-26]\n- insufficient default memsize to open anaconda default RHEL 8.2 luks device\n  resolves: rhbz#1837765\n\nlibnbd\n[1.2.2]\n- Resolves: bz#1844296\n(Upgrade components in virt:rhel module:stream for RHEL-8.3 release)\n\nlibvirt\n[5.7.0-32.el8]\n- qemu: Validate config-\u003eexadata before reaping guests (Wim ten Have) [Orabug: 33763967]\n- qemu: Make vNUMA/SMT pCPU packing L3-cache aware on AMD/E4 (Wim ten Have) [Orabug: 33268059]\n- qemu: work exadataConfig flags directly from the QEMUdriver structure (Wim ten Have) [Orabug: 33268059]\n- qemu: Label restore path outside of secdriver transactions (Michal Privoznik) [Orabug: 33351242]\n- security: Introduce virSecurityManagerDomainSetPathLabelRO (Michal Privoznik) [Orabug: 33351242]\n\nlibvirt-python\n[5.7.0-1.el8]\n- libvirt-python.spec: Add a .spec file for libvirt-python\n\nqemu-kvm\n[4.2.1.15.el8]\n- qemu-kvm.spec: Add support for reading vmdk, vhdx, vpc, https, and ssh disk image formats from qemu-kvm (Karl Heubaum) [Orabug: 33741340]\n- Document CVE-2021-4158 and CVE-2021-3947 as fixed (Mark Kanda) [Orabug: 33719302] [Orabug: 33754145] {CVE-2021-4158} {CVE-2021-3947}\n- hw/block/fdc: Kludge missing floppy drive to fix CVE-2021-20196 (Philippe Mathieu-Daude) [Orabug: 32439466] {CVE-2021-20196}\n- hw/block/fdc: Extract blk_create_empty_drive() (Philippe Mathieu-Daude) [Orabug: 32439466] {CVE-2021-20196}\n- net: vmxnet3: validate configuration values during activate (CVE-2021-20203) (Prasad J Pandit) [Orabug: 32559476] {CVE-2021-20203}\n- lan9118: switch to use qemu_receive_packet() for loopback (Alexander Bulekov) [Orabug: 32560540] {CVE-2021-3416}\n- pcnet: switch to use qemu_receive_packet() for loopback (Alexander Bulekov) [Orabug: 32560540] {CVE-2021-3416}\n- rtl8139: switch to use qemu_receive_packet() for loopback (Alexander Bulekov) [Orabug: 32560540] {CVE-2021-3416}\n- tx_pkt: switch to use qemu_receive_packet_iov() for loopback (Jason Wang) [Orabug: 32560540] {CVE-2021-3416}\n- sungem: switch to use qemu_receive_packet() for loopback (Jason Wang) [Orabug: 32560540] {CVE-2021-3416}\n- dp8393x: switch to use qemu_receive_packet() for loopback packet (Jason Wang) [Orabug: 32560540] {CVE-2021-3416}\n- e1000: switch to use qemu_receive_packet() for loopback (Jason Wang) [Orabug: 32560540] {CVE-2021-3416}\n- net: introduce qemu_receive_packet() (Jason Wang) [Orabug: 32560540] {CVE-2021-3416}\n- target/i386: Populate x86_ext_save_areas offsets using cpuid where possible (Paolo Bonzini)\n- target/i386: Observe XSAVE state area offsets (Paolo Bonzini)\n- target/i386: Make x86_ext_save_areas visible outside cpu.c (Paolo Bonzini)\n- target/i386: Pass buffer and length to XSAVE helper (Paolo Bonzini)\n- target/i386: Clarify the padding requirements of X86XSaveArea (Paolo Bonzini)\n- target/i386: Consolidate the X86XSaveArea offset checks (Paolo Bonzini)\n- target/i386: Declare constants for XSAVE offsets (Paolo Bonzini)\n\n[4.2.1-14.el8]\n- scsi: fix sense code for EREMOTEIO (Paolo Bonzini) [Orabug: 33537443]\n- scsi: move host_status handling into SCSI drivers (Hannes Reinecke) [Orabug: 33537443]\n- scsi: inline sg_io_sense_from_errno() into the callers (Hannes Reinecke) [Orabug: 33537443]\n- scsi-generic: do not snoop the output of failed commands (Paolo Bonzini) [Orabug: 33537443]\n- scsi: Add mapping for generic SCSI_HOST status to sense codes (Hannes Reinecke) [Orabug: 33537443]\n- scsi: Rename linux-specific SG_ERR codes to generic SCSI_HOST error codes (Hannes Reinecke) [Orabug: 33537443]\n- scsi: drop 'result' argument from command_complete callback (Hannes Reinecke) [Orabug: 33537443]\n- scsi-disk: pass guest recoverable errors through even for rerror=stop (Paolo Bonzini) [Orabug: 33537443]\n- scsi-disk: pass SCSI status to scsi_handle_rw_error (Paolo Bonzini) [Orabug: 33537443]\n- scsi: introduce scsi_sense_from_errno() (Paolo Bonzini) [Orabug: 33537443]\n- scsi-disk: do not complete requests early for rerror/werror=ignore (Paolo Bonzini) [Orabug: 33537443]\n- scsi-disk: move scsi_handle_rw_error earlier (Paolo Bonzini) [Orabug: 33537443]\n- scsi-disk: convert more errno values back to SCSI statuses (Paolo Bonzini) [Orabug: 33537443]\n\n[4.2.1-13.el8]\n- pcie: Do not set power state for some hot-plugged devices (Annie Li) [Orabug: 33642532]\n\n[4.2.1-12.1.el8]\n- Update slirp to address various CVEs (Mark Kanda) [Orabug: 32208456] [Orabug: 33014409] [Orabug: 33014414] [Orabug: 33014417] [Orabug: 33014420] {CVE-2020-29129} {CVE-2020-29130} {CVE-2021-3592} {CVE-2021-3593} {CVE-2021-3594} {CVE-2021-3595}\n- hw/pflash_cfi01: Allow backing devices to be smaller than memory region (David Edmondson)\n- pcie: expire pending delete (Gerd Hoffmann) [Orabug: 33450706]\n- pcie: fast unplug when slot power is off (Gerd Hoffmann) [Orabug: 33450706]\n- pcie: factor out pcie_cap_slot_unplug() (Gerd Hoffmann) [Orabug: 33450706]\n- pcie: add power indicator blink check (Gerd Hoffmann) [Orabug: 33450706]\n- pcie: implement slot power control for pcie root ports (Gerd Hoffmann) [Orabug: 33450706]\n- pci: implement power state (Gerd Hoffmann) [Orabug: 33450706]\n- hw/pci/pcie: Move hot plug capability check to pre_plug callback (Julia Suvorova) [Orabug: 33450706]\n- hw/pci/pcie: Replace PCI_DEVICE() casts with existing variable (Julia Suvorova) [Orabug: 33450706]\n- hw/pci/pcie: Forbid hot-plug if it's disabled on the slot (Julia Suvorova) [Orabug: 33450706]\n- pcie_root_port: Add hotplug disabling option (Julia Suvorova) [Orabug: 33450706]\n- qdev-monitor: Forbid repeated device_del (Julia Suvorova) [Orabug: 33450706]\n- i386:acpi: Remove _HID from the SMBus ACPI entry (Corey Minyard)\n- uas: add stream number sanity checks (Gerd Hoffmann) [Orabug: 33280793] {CVE-2021-3713}\n- usbredir: fix free call (Gerd Hoffmann) [Orabug: 33198441] {CVE-2021-3682}\n- hw/scsi/scsi-disk: MODE_PAGE_ALLS not allowed in MODE SELECT commands (Mauro Matteo Cascella) [Orabug: 33548490] {CVE-2021-3930}\n- e1000: fix tx re-entrancy problem (Jon Maloy) [Orabug: 32560552] {CVE-2021-20257}\n- virtio-net-pci: Don't use 'efi-virtio.rom' on AArch64 (Mark Kanda) [Orabug: 33537594]\n- MAINTAINERS: Add ACPI/HEST/GHES entries (Dongjiu Geng)\n- target-arm: kvm64: handle SIGBUS signal from kernel or KVM (Dongjiu Geng)\n- ACPI: Record Generic Error Status Block(GESB) table (Dongjiu Geng)\n- KVM: Move hwpoison page related functions into kvm-all.c (Dongjiu Geng)\n- ACPI: Record the Generic Error Status Block address (Dongjiu Geng)\n- ACPI: Build Hardware Error Source Table (Dongjiu Geng)\n- ACPI: Build related register address fields via hardware error fw_cfg blob (Dongjiu Geng)\n- docs: APEI GHES generation and CPER record description (Dongjiu Geng)\n- hw/arm/virt: Introduce a RAS machine option (Dongjiu Geng)\n- acpi: nvdimm: change NVDIMM_UUID_LE to a common macro (Dongjiu Geng)\n- block/curl: HTTP header field names are case insensitive (David Edmondson) [Orabug: 33287589]\n- block/curl: HTTP header fields allow whitespace around values (David Edmondson) [Orabug: 33287589]\n\n[4.2.1-11.el8]\n- trace: use STAP_SDT_V2 to work around symbol visibility (Stefan Hajnoczi) [Orabug: 33272428]\n\n[4.2.1-11.el8]\n- pvrdma: Fix the ring init error flow (Marcel Apfelbaum) [Orabug: 33120142] {CVE-2021-3608}\n- pvrdma: Ensure correct input on ring init (Marcel Apfelbaum) [Orabug: 33120146] {CVE-2021-3607}\n- hw/rdma: Fix possible mremap overflow in the pvrdma device (Marcel Apfelbaum) [Orabug: 33120084] {CVE-2021-3582}\n- vhost-user-gpu: reorder free calls (Gerd Hoffmann) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: abstract vg_cleanup_mapping_iov (Li Qiang) [Orabug: 32950716] {CVE-2021-3546}\n- vhost-user-gpu: fix OOB write in 'virgl_cmd_get_capset' (Li Qiang) [Orabug: 32950716] {CVE-2021-3546}\n- vhost-user-gpu: fix memory leak in 'virgl_resource_attach_backing' (Li Qiang) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: fix memory leak in 'virgl_cmd_resource_unref' (Li Qiang) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: fix memory leak while calling 'vg_resource_unref' (Li Qiang) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: fix memory leak in vg_resource_attach_backing (Li Qiang) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: fix resource leak in 'vg_resource_create_2d' (Li Qiang) [Orabug: 32950701] {CVE-2021-3544}\n- vhost-user-gpu: fix memory disclosure in virgl_cmd_get_capset_info (Li Qiang) [Orabug: 32950708] {CVE-2021-3545}\n- usb: limit combined packets to 1 MiB (Gerd Hoffmann) [Orabug: 32842778] {CVE-2021-3527}\n- usb/redir: avoid dynamic stack allocation (Gerd Hoffmann) [Orabug: 32842778] {CVE-2021-3527}\n- mptsas: Remove unused MPTSASState 'pending' field (Michael Tokarev) [Orabug: 32470463] {CVE-2021-3392}\n- oslib-posix: initialize backend memory objects in parallel (Mark Kanda) [Orabug: 32555402]\n- oslib-posix: refactor memory prealloc threads (Mark Kanda) [Orabug: 32555402]",
   "Platform": [
     "Oracle Linux 8"
@@ -12,8 +12,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2020-29129.html",
-      "ID": "CVE-2020-29129"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3593.html",
+      "ID": "CVE-2021-3593"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3713.html",
+      "ID": "CVE-2021-3713"
     },
     {
       "Source": "CVE",
@@ -22,18 +27,18 @@
     },
     {
       "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3594.html",
+      "ID": "CVE-2021-3594"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3595.html",
+      "ID": "CVE-2021-3595"
+    },
+    {
+      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-20257.html",
       "ID": "CVE-2021-20257"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3416.html",
-      "ID": "CVE-2021-3416"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20203.html",
-      "ID": "CVE-2021-20203"
     },
     {
       "Source": "CVE",
@@ -42,33 +47,33 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-20196.html",
-      "ID": "CVE-2021-20196"
-    },
-    {
-      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-3947.html",
       "ID": "CVE-2021-3947"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3594.html",
-      "ID": "CVE-2021-3594"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-20203.html",
+      "ID": "CVE-2021-20203"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-20196.html",
+      "ID": "CVE-2021-20196"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-3416.html",
+      "ID": "CVE-2021-3416"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2020-29129.html",
+      "ID": "CVE-2020-29129"
     },
     {
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-3592.html",
       "ID": "CVE-2021-3592"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3593.html",
-      "ID": "CVE-2021-3593"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3595.html",
-      "ID": "CVE-2021-3595"
     },
     {
       "Source": "CVE",
@@ -79,11 +84,6 @@
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-3682.html",
       "ID": "CVE-2021-3682"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-3713.html",
-      "ID": "CVE-2021-3713"
     }
   ],
   "Criteria": {
@@ -2546,8 +2546,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2020-29129.html",
-      "ID": "CVE-2020-29129"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3593.html",
+      "ID": "CVE-2021-3593"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3713.html",
+      "ID": "CVE-2021-3713"
     },
     {
       "Impact": "",
@@ -2556,18 +2561,18 @@
     },
     {
       "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3594.html",
+      "ID": "CVE-2021-3594"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3595.html",
+      "ID": "CVE-2021-3595"
+    },
+    {
+      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-20257.html",
       "ID": "CVE-2021-20257"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3416.html",
-      "ID": "CVE-2021-3416"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20203.html",
-      "ID": "CVE-2021-20203"
     },
     {
       "Impact": "",
@@ -2576,33 +2581,33 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-20196.html",
-      "ID": "CVE-2021-20196"
-    },
-    {
-      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-3947.html",
       "ID": "CVE-2021-3947"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3594.html",
-      "ID": "CVE-2021-3594"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-20203.html",
+      "ID": "CVE-2021-20203"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-20196.html",
+      "ID": "CVE-2021-20196"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-3416.html",
+      "ID": "CVE-2021-3416"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2020-29129.html",
+      "ID": "CVE-2020-29129"
     },
     {
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-3592.html",
       "ID": "CVE-2021-3592"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3593.html",
-      "ID": "CVE-2021-3593"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3595.html",
-      "ID": "CVE-2021-3595"
     },
     {
       "Impact": "",
@@ -2613,11 +2618,6 @@
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-3682.html",
       "ID": "CVE-2021-3682"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-3713.html",
-      "ID": "CVE-2021-3713"
     }
   ],
   "Issued": {

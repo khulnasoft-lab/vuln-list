@@ -12,8 +12,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-29117.html",
-      "ID": "CVE-2022-29117"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-23267.html",
+      "ID": "CVE-2022-23267"
     },
     {
       "Source": "CVE",
@@ -22,8 +22,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-23267.html",
-      "ID": "CVE-2022-23267"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-29117.html",
+      "ID": "CVE-2022-29117"
     }
   ],
   "Criteria": {
@@ -38,18 +38,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is earlier than 0:6.0.105-1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -131,6 +119,18 @@
                       },
                       {
                         "Comment": "dotnet-sdk-6.0 is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is earlier than 0:6.0.105-1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -275,6 +275,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is earlier than 0:6.0.105-1.0.1.el9_0"
+                      },
+                      {
+                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "dotnet-targeting-pack-6.0 is earlier than 0:6.0.5-1.0.1.el9_0"
                       },
                       {
@@ -305,18 +317,6 @@
                         "Comment": "netstandard-targeting-pack-2.1 is signed with the Oracle Linux 9 key"
                       }
                     ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is earlier than 0:6.0.105-1.0.1.el9_0"
-                      },
-                      {
-                        "Comment": "dotnet-sdk-6.0-source-built-artifacts is signed with the Oracle Linux 9 key"
-                      }
-                    ]
                   }
                 ],
                 "Criterions": null
@@ -342,8 +342,8 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-29117.html",
-      "ID": "CVE-2022-29117"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-23267.html",
+      "ID": "CVE-2022-23267"
     },
     {
       "Impact": "",
@@ -352,8 +352,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-23267.html",
-      "ID": "CVE-2022-23267"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-29117.html",
+      "ID": "CVE-2022-29117"
     }
   ],
   "Issued": {

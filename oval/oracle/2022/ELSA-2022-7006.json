@@ -12,6 +12,11 @@
     },
     {
       "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21626.html",
+      "ID": "CVE-2022-21626"
+    },
+    {
+      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2022-21628.html",
       "ID": "CVE-2022-21628"
     },
@@ -24,11 +29,6 @@
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2022-21624.html",
       "ID": "CVE-2022-21624"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21626.html",
-      "ID": "CVE-2022-21626"
     }
   ],
   "Criteria": {
@@ -43,6 +43,30 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -72,6 +96,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-demo-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
@@ -88,6 +124,18 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -132,6 +180,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-headless-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
@@ -148,102 +208,6 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -276,10 +240,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-src is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -304,6 +304,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-accessibility-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
@@ -328,6 +352,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-demo-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
@@ -344,6 +380,18 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -388,6 +436,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-headless-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
@@ -404,102 +464,6 @@
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-accessibility is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-demo is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is earlier than 1:1.8.0.352.b08-2.el8_6"
-                      },
-                      {
-                        "Comment": "java-1.8.0-openjdk-headless is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -532,10 +496,46 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-1.8.0-openjdk-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-1.8.0-openjdk-src is earlier than 1:1.8.0.352.b08-2.el8_6"
                       },
                       {
                         "Comment": "java-1.8.0-openjdk-src is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-fastdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-slowdebug is earlier than 1:1.8.0.352.b08-2.el8_6"
+                      },
+                      {
+                        "Comment": "java-1.8.0-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -563,6 +563,11 @@
   "Cves": [
     {
       "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21626.html",
+      "ID": "CVE-2022-21626"
+    },
+    {
+      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2022-21628.html",
       "ID": "CVE-2022-21628"
     },
@@ -575,11 +580,6 @@
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2022-21624.html",
       "ID": "CVE-2022-21624"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21626.html",
-      "ID": "CVE-2022-21626"
     }
   ],
   "Issued": {

@@ -70,97 +70,113 @@
                   },
                   {
                     "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
+                    "Criterias": [
                       {
-                        "Comment": "mod_dav_svn is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "mod_dav_svn is signed with the Oracle Linux 8 key"
+                        "Operator": "OR",
+                        "Criterias": [
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "mod_dav_svn is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "mod_dav_svn is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-devel is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-gnome is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-gnome is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-javahl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-javahl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-libs is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-libs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-perl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-perl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-tools is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-tools is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          }
+                        ],
+                        "Criterions": null
                       }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
+                    ],
                     "Criterions": [
                       {
-                        "Comment": "subversion is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-devel is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-gnome is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-gnome is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-javahl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-javahl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-libs is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-perl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-perl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-tools is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-tools is signed with the Oracle Linux 8 key"
+                        "Comment": "Module subversion:1.10 is enabled"
                       }
                     ]
                   }
@@ -222,97 +238,113 @@
                   },
                   {
                     "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
+                    "Criterias": [
                       {
-                        "Comment": "mod_dav_svn is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "mod_dav_svn is signed with the Oracle Linux 8 key"
+                        "Operator": "OR",
+                        "Criterias": [
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "mod_dav_svn is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "mod_dav_svn is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-devel is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-devel is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-gnome is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-gnome is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-javahl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-javahl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-libs is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-libs is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-perl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-perl is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          },
+                          {
+                            "Operator": "AND",
+                            "Criterias": null,
+                            "Criterions": [
+                              {
+                                "Comment": "subversion-tools is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
+                              },
+                              {
+                                "Comment": "subversion-tools is signed with the Oracle Linux 8 key"
+                              }
+                            ]
+                          }
+                        ],
+                        "Criterions": null
                       }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
+                    ],
                     "Criterions": [
                       {
-                        "Comment": "subversion is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-devel is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-gnome is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-gnome is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-javahl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-javahl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-libs is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-libs is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-perl is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-perl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "subversion-tools is earlier than 0:1.10.2-5.module+el8.6.0+20670+d864ac37"
-                      },
-                      {
-                        "Comment": "subversion-tools is signed with the Oracle Linux 8 key"
+                        "Comment": "Module subversion:1.10 is enabled"
                       }
                     ]
                   }

@@ -37,23 +37,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-36019.html",
-      "ID": "CVE-2024-36019"
-    },
-    {
-      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2024-35791.html",
       "ID": "CVE-2024-35791"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-41073.html",
-      "ID": "CVE-2024-41073"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-42102.html",
-      "ID": "CVE-2024-42102"
     },
     {
       "Source": "CVE",
@@ -67,8 +52,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-35875.html",
-      "ID": "CVE-2024-35875"
+      "URI": "https://linux.oracle.com/cve/CVE-2024-36883.html",
+      "ID": "CVE-2024-36883"
     },
     {
       "Source": "CVE",
@@ -84,11 +69,6 @@
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2024-40936.html",
       "ID": "CVE-2024-40936"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-41044.html",
-      "ID": "CVE-2024-41044"
     },
     {
       "Source": "CVE",
@@ -112,8 +92,18 @@
     },
     {
       "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-26630.html",
+      "ID": "CVE-2024-26630"
+    },
+    {
+      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2024-41055.html",
       "ID": "CVE-2024-41055"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-35797.html",
+      "ID": "CVE-2024-35797"
     },
     {
       "Source": "CVE",
@@ -122,8 +112,23 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-35797.html",
-      "ID": "CVE-2024-35797"
+      "URI": "https://linux.oracle.com/cve/CVE-2024-41044.html",
+      "ID": "CVE-2024-41044"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-36019.html",
+      "ID": "CVE-2024-36019"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-41073.html",
+      "ID": "CVE-2024-41073"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2024-42102.html",
+      "ID": "CVE-2024-42102"
     },
     {
       "Source": "CVE",
@@ -137,13 +142,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-36883.html",
-      "ID": "CVE-2024-36883"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2024-26630.html",
-      "ID": "CVE-2024-26630"
+      "URI": "https://linux.oracle.com/cve/CVE-2024-35875.html",
+      "ID": "CVE-2024-35875"
     }
   ],
   "Criteria": {
@@ -163,6 +163,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "bpftool is earlier than 0:7.3.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "bpftool is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-cross-headers is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
@@ -175,22 +187,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-427.35.1.el9_4"
+                        "Comment": "kernel-headers is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "bpftool is earlier than 0:7.3.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "bpftool is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -223,22 +223,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-perf is earlier than 0:5.14.0-427.35.1.el9_4"
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
-                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-headers is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -251,6 +239,18 @@
                       },
                       {
                         "Comment": "perf is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-perf is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -323,6 +323,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-debug is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
@@ -339,6 +351,30 @@
                       },
                       {
                         "Comment": "kernel-debug-core is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-debug-devel is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-debug-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-debug-devel-matched is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-debug-devel-matched is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -387,6 +423,54 @@
                       },
                       {
                         "Comment": "kernel-debug-uki-virt is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-devel is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-devel-matched is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-devel-matched is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-doc is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-doc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kernel-headers is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -455,6 +539,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "kernel-uki-virt is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
@@ -467,82 +563,10 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "python3-perf is earlier than 0:5.14.0-427.35.1.el9_4"
+                        "Comment": "libperf is earlier than 0:5.14.0-427.35.1.el9_4"
                       },
                       {
-                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-debug-devel is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-debug-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-debug-devel-matched is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-debug-devel-matched is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-devel is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-devel-matched is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-devel-matched is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-doc is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-doc is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-headers is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-headers is signed with the Oracle Linux 9 key"
+                        "Comment": "libperf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -555,6 +579,18 @@
                       },
                       {
                         "Comment": "perf is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "python3-perf is earlier than 0:5.14.0-427.35.1.el9_4"
+                      },
+                      {
+                        "Comment": "python3-perf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -579,42 +615,6 @@
                       },
                       {
                         "Comment": "rv is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-cross-headers is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-cross-headers is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kernel-tools-libs-devel is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "kernel-tools-libs-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "libperf is earlier than 0:5.14.0-427.35.1.el9_4"
-                      },
-                      {
-                        "Comment": "libperf is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -667,23 +667,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-36019.html",
-      "ID": "CVE-2024-36019"
-    },
-    {
-      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2024-35791.html",
       "ID": "CVE-2024-35791"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-41073.html",
-      "ID": "CVE-2024-41073"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-42102.html",
-      "ID": "CVE-2024-42102"
     },
     {
       "Impact": "",
@@ -697,8 +682,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-35875.html",
-      "ID": "CVE-2024-35875"
+      "Href": "https://linux.oracle.com/cve/CVE-2024-36883.html",
+      "ID": "CVE-2024-36883"
     },
     {
       "Impact": "",
@@ -714,11 +699,6 @@
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2024-40936.html",
       "ID": "CVE-2024-40936"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-41044.html",
-      "ID": "CVE-2024-41044"
     },
     {
       "Impact": "",
@@ -742,8 +722,18 @@
     },
     {
       "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-26630.html",
+      "ID": "CVE-2024-26630"
+    },
+    {
+      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2024-41055.html",
       "ID": "CVE-2024-41055"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-35797.html",
+      "ID": "CVE-2024-35797"
     },
     {
       "Impact": "",
@@ -752,8 +742,23 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-35797.html",
-      "ID": "CVE-2024-35797"
+      "Href": "https://linux.oracle.com/cve/CVE-2024-41044.html",
+      "ID": "CVE-2024-41044"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-36019.html",
+      "ID": "CVE-2024-36019"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-41073.html",
+      "ID": "CVE-2024-41073"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2024-42102.html",
+      "ID": "CVE-2024-42102"
     },
     {
       "Impact": "",
@@ -767,13 +772,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-36883.html",
-      "ID": "CVE-2024-36883"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2024-26630.html",
-      "ID": "CVE-2024-26630"
+      "Href": "https://linux.oracle.com/cve/CVE-2024-35875.html",
+      "ID": "CVE-2024-35875"
     }
   ],
   "Issued": {

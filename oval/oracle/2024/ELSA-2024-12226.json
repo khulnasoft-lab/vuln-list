@@ -33,18 +33,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "flannel-cni-plugin is earlier than 0:1.2.0-3.el8"
-                      },
-                      {
-                        "Comment": "flannel-cni-plugin is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "conmon is earlier than 3:2.1.3-8.el8"
                       },
                       {
@@ -61,6 +49,18 @@
                       },
                       {
                         "Comment": "etcd is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "flannel-cni-plugin is earlier than 0:1.2.0-3.el8"
+                      },
+                      {
+                        "Comment": "flannel-cni-plugin is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -183,6 +183,18 @@
                         "Comment": "kubernetes-cni-plugins is signed with the Oracle Linux 8 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "yq is earlier than 0:4.34.1-4.el8"
+                      },
+                      {
+                        "Comment": "yq is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -200,6 +212,42 @@
               {
                 "Operator": "OR",
                 "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "conmon is earlier than 3:2.1.3-8.el8"
+                      },
+                      {
+                        "Comment": "conmon is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cri-o is earlier than 0:1.26.4-1.el8"
+                      },
+                      {
+                        "Comment": "cri-o is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "cri-tools is earlier than 0:1.26.1-4.el8"
+                      },
+                      {
+                        "Comment": "cri-tools is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -241,54 +289,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "kubernetes-cni is earlier than 0:1.1.2-4.el8"
-                      },
-                      {
-                        "Comment": "kubernetes-cni is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kubernetes-cni-plugins is earlier than 0:1.2.0-6.el8"
-                      },
-                      {
-                        "Comment": "kubernetes-cni-plugins is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cri-o is earlier than 0:1.26.4-1.el8"
-                      },
-                      {
-                        "Comment": "cri-o is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "cri-tools is earlier than 0:1.26.1-4.el8"
-                      },
-                      {
-                        "Comment": "cri-tools is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "istio is earlier than 0:1.17.8-2.el8"
                       },
                       {
@@ -305,6 +305,90 @@
                       },
                       {
                         "Comment": "istio-istioctl is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata is earlier than 0:1.12.1-17.el8"
+                      },
+                      {
+                        "Comment": "kata is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-agent is earlier than 0:1.12.1-11.el8"
+                      },
+                      {
+                        "Comment": "kata-agent is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-image is earlier than 0:1.12.1-11.11.ol8_202312212317"
+                      },
+                      {
+                        "Comment": "kata-image is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-ksm-throttler is earlier than 0:1.12.1-11.el8"
+                      },
+                      {
+                        "Comment": "kata-ksm-throttler is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-proxy is earlier than 0:1.12.1-11.el8"
+                      },
+                      {
+                        "Comment": "kata-proxy is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-runtime is earlier than 0:1.12.1-11.el8"
+                      },
+                      {
+                        "Comment": "kata-runtime is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kata-shim is earlier than 0:1.12.1-11.el8"
+                      },
+                      {
+                        "Comment": "kata-shim is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -341,6 +425,30 @@
                       },
                       {
                         "Comment": "kubelet is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kubernetes-cni is earlier than 0:1.1.2-4.el8"
+                      },
+                      {
+                        "Comment": "kubernetes-cni is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "kubernetes-cni-plugins is earlier than 0:1.2.0-6.el8"
+                      },
+                      {
+                        "Comment": "kubernetes-cni-plugins is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -545,102 +653,6 @@
                       },
                       {
                         "Comment": "virtctl is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "conmon is earlier than 3:2.1.3-8.el8"
-                      },
-                      {
-                        "Comment": "conmon is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata is earlier than 0:1.12.1-17.el8"
-                      },
-                      {
-                        "Comment": "kata is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-agent is earlier than 0:1.12.1-11.el8"
-                      },
-                      {
-                        "Comment": "kata-agent is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-image is earlier than 0:1.12.1-11.11.ol8_202312212317"
-                      },
-                      {
-                        "Comment": "kata-image is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-ksm-throttler is earlier than 0:1.12.1-11.el8"
-                      },
-                      {
-                        "Comment": "kata-ksm-throttler is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-proxy is earlier than 0:1.12.1-11.el8"
-                      },
-                      {
-                        "Comment": "kata-proxy is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-runtime is earlier than 0:1.12.1-11.el8"
-                      },
-                      {
-                        "Comment": "kata-runtime is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "kata-shim is earlier than 0:1.12.1-11.el8"
-                      },
-                      {
-                        "Comment": "kata-shim is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },

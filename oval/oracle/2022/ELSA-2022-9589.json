@@ -12,8 +12,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-31045.html",
-      "ID": "CVE-2022-31045"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-29228.html",
+      "ID": "CVE-2022-29228"
     },
     {
       "Source": "CVE",
@@ -27,11 +27,6 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-29228.html",
-      "ID": "CVE-2022-29228"
-    },
-    {
-      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2022-29227.html",
       "ID": "CVE-2022-29227"
     },
@@ -39,6 +34,11 @@
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2022-29226.html",
       "ID": "CVE-2022-29226"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2022-31045.html",
+      "ID": "CVE-2022-31045"
     }
   ],
   "Criteria": {
@@ -50,30 +50,6 @@
           {
             "Operator": "OR",
             "Criterias": [
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "istio is earlier than 0:1.13.5-1.el7"
-                  },
-                  {
-                    "Comment": "istio is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "istio-istioctl is earlier than 0:1.13.5-1.el7"
-                  },
-                  {
-                    "Comment": "istio-istioctl is signed with the Oracle Linux 7 key"
-                  }
-                ]
-              },
               {
                 "Operator": "AND",
                 "Criterias": null,
@@ -107,6 +83,30 @@
                   },
                   {
                     "Comment": "etcd is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "istio is earlier than 0:1.13.5-1.el7"
+                  },
+                  {
+                    "Comment": "istio is signed with the Oracle Linux 7 key"
+                  }
+                ]
+              },
+              {
+                "Operator": "AND",
+                "Criterias": null,
+                "Criterions": [
+                  {
+                    "Comment": "istio-istioctl is earlier than 0:1.13.5-1.el7"
+                  },
+                  {
+                    "Comment": "istio-istioctl is signed with the Oracle Linux 7 key"
                   }
                 ]
               },
@@ -323,8 +323,8 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-31045.html",
-      "ID": "CVE-2022-31045"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-29228.html",
+      "ID": "CVE-2022-29228"
     },
     {
       "Impact": "",
@@ -338,11 +338,6 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-29228.html",
-      "ID": "CVE-2022-29228"
-    },
-    {
-      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2022-29227.html",
       "ID": "CVE-2022-29227"
     },
@@ -350,6 +345,11 @@
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2022-29226.html",
       "ID": "CVE-2022-29226"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2022-31045.html",
+      "ID": "CVE-2022-31045"
     }
   ],
   "Issued": {

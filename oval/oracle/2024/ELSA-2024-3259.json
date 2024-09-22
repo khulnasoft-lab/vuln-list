@@ -27,11 +27,6 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2023-45290.html",
-      "ID": "CVE-2023-45290"
-    },
-    {
-      "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2024-24783.html",
       "ID": "CVE-2024-24783"
     },
@@ -39,6 +34,11 @@
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2024-24785.html",
       "ID": "CVE-2024-24785"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2023-45290.html",
+      "ID": "CVE-2023-45290"
     }
   ],
   "Criteria": {
@@ -56,6 +56,18 @@
                   {
                     "Operator": "OR",
                     "Criterias": [
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
+                            "Comment": "delve is earlier than 0:1.21.2-3.0.1.module+el8.10.0+90307+cdf2b281"
+                          },
+                          {
+                            "Comment": "delve is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
                       {
                         "Operator": "AND",
                         "Criterias": null,
@@ -137,18 +149,6 @@
                           },
                           {
                             "Comment": "golang-tests is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "delve is earlier than 0:1.21.2-3.0.1.module+el8.10.0+90307+cdf2b281"
-                          },
-                          {
-                            "Comment": "delve is signed with the Oracle Linux 8 key"
                           }
                         ]
                       }
@@ -183,6 +183,18 @@
                         "Criterias": null,
                         "Criterions": [
                           {
+                            "Comment": "delve is earlier than 0:1.21.2-3.0.1.module+el8.10.0+90307+cdf2b281"
+                          },
+                          {
+                            "Comment": "delve is signed with the Oracle Linux 8 key"
+                          }
+                        ]
+                      },
+                      {
+                        "Operator": "AND",
+                        "Criterias": null,
+                        "Criterions": [
+                          {
                             "Comment": "go-toolset is earlier than 0:1.21.9-1.module+el8.10.0+90336+233c4160"
                           },
                           {
@@ -259,18 +271,6 @@
                           },
                           {
                             "Comment": "golang-tests is signed with the Oracle Linux 8 key"
-                          }
-                        ]
-                      },
-                      {
-                        "Operator": "AND",
-                        "Criterias": null,
-                        "Criterions": [
-                          {
-                            "Comment": "delve is earlier than 0:1.21.2-3.0.1.module+el8.10.0+90307+cdf2b281"
-                          },
-                          {
-                            "Comment": "delve is signed with the Oracle Linux 8 key"
                           }
                         ]
                       }
@@ -320,11 +320,6 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2023-45290.html",
-      "ID": "CVE-2023-45290"
-    },
-    {
-      "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2024-24783.html",
       "ID": "CVE-2024-24783"
     },
@@ -332,6 +327,11 @@
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2024-24785.html",
       "ID": "CVE-2024-24785"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2023-45290.html",
+      "ID": "CVE-2023-45290"
     }
   ],
   "Issued": {

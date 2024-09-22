@@ -20,212 +20,426 @@
     "Operator": "AND",
     "Criterias": [
       {
-        "Operator": "AND",
+        "Operator": "OR",
         "Criterias": [
           {
-            "Operator": "OR",
+            "Operator": "AND",
             "Criterias": [
               {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
+                "Operator": "OR",
+                "Criterias": [
                   {
-                    "Comment": "olcne-agent is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-agent is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-agent is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-agent is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-api-server is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-api-server is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-api-server is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-api-server is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-calico-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-calico-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-calico-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-calico-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-gluster-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-gluster-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-gluster-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-gluster-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-grafana-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-grafana-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-grafana-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-grafana-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-istio-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-istio-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-istio-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-istio-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-kubevirt-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-kubevirt-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-kubevirt-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-kubevirt-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-metallb-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-metallb-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-metallb-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-metallb-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-multus-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-multus-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-multus-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-multus-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-nginx is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-nginx is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-nginx is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-nginx is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-oci-ccm-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-oci-ccm-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-oci-ccm-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-oci-ccm-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-olm-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-olm-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-olm-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-olm-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-prometheus-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-prometheus-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-prometheus-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-prometheus-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-rook-chart is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-rook-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-rook-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-rook-chart is signed with the Oracle Linux 8 key"
-                  }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcne-utils is earlier than 0:1.8.1-2.el8"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-utils is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-utils is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   },
                   {
-                    "Comment": "olcne-utils is signed with the Oracle Linux 8 key"
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcnectl is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcnectl is signed with the Oracle Linux 8 key"
+                      }
+                    ]
                   }
-                ]
-              },
-              {
-                "Operator": "AND",
-                "Criterias": null,
-                "Criterions": [
-                  {
-                    "Comment": "olcnectl is earlier than 0:1.8.1-2.el8"
-                  },
-                  {
-                    "Comment": "olcnectl is signed with the Oracle Linux 8 key"
-                  }
-                ]
+                ],
+                "Criterions": null
               }
             ],
-            "Criterions": null
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is aarch64"
+              }
+            ]
+          },
+          {
+            "Operator": "AND",
+            "Criterias": [
+              {
+                "Operator": "OR",
+                "Criterias": [
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-agent is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-agent is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-api-server is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-api-server is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-calico-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-calico-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-gluster-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-gluster-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-grafana-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-grafana-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-istio-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-istio-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-kubevirt-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-kubevirt-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-metallb-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-metallb-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-multus-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-multus-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-nginx is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-nginx is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-oci-ccm-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-oci-ccm-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-olm-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-olm-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-prometheus-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-prometheus-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-rook-chart is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-rook-chart is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcne-utils is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcne-utils is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "olcnectl is earlier than 0:1.8.1-2.el8"
+                      },
+                      {
+                        "Comment": "olcnectl is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  }
+                ],
+                "Criterions": null
+              }
+            ],
+            "Criterions": [
+              {
+                "Comment": "Oracle Linux arch is x86_64"
+              }
+            ]
           }
         ],
-        "Criterions": [
-          {
-            "Comment": "Oracle Linux arch is x86_64"
-          }
-        ]
+        "Criterions": null
       }
     ],
     "Criterions": [

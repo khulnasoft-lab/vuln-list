@@ -12,13 +12,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21426.html",
-      "ID": "CVE-2022-21426"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21434.html",
+      "ID": "CVE-2022-21434"
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21434.html",
-      "ID": "CVE-2022-21434"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21496.html",
+      "ID": "CVE-2022-21496"
     },
     {
       "Source": "CVE",
@@ -27,8 +27,8 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2022-21496.html",
-      "ID": "CVE-2022-21496"
+      "URI": "https://linux.oracle.com/cve/CVE-2022-21426.html",
+      "ID": "CVE-2022-21426"
     },
     {
       "Source": "CVE",
@@ -53,6 +53,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-demo-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -69,6 +93,18 @@
                       },
                       {
                         "Comment": "java-11-openjdk-demo-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -113,6 +149,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-headless-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -129,138 +177,6 @@
                       },
                       {
                         "Comment": "java-11-openjdk-headless-slowdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods-fastdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src-fastdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs-fastdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -305,6 +221,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-jmods-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods-fastdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-src is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -317,10 +269,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-src-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src-fastdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
                         "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs-fastdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 9 key"
                       }
                     ]
                   }
@@ -369,90 +369,6 @@
                     "Criterias": null,
                     "Criterions": [
                       {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-javadoc is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-javadoc is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-javadoc-zip is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-javadoc-zip is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.15.0.10-1.el9_0"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 9 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
                         "Comment": "java-11-openjdk-demo-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -469,6 +385,18 @@
                       },
                       {
                         "Comment": "java-11-openjdk-demo-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -513,6 +441,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-headless-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -529,6 +469,42 @@
                       },
                       {
                         "Comment": "java-11-openjdk-headless-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-javadoc is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-javadoc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-javadoc-zip is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-javadoc-zip is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-jmods is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -573,6 +549,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-src is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-src-fastdebug is earlier than 1:11.0.15.0.10-1.el9_0"
                       },
                       {
@@ -589,6 +577,18 @@
                       },
                       {
                         "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.15.0.10-1.el9_0"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 9 key"
                       }
                     ]
                   },
@@ -640,13 +640,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21426.html",
-      "ID": "CVE-2022-21426"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21434.html",
+      "ID": "CVE-2022-21434"
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21434.html",
-      "ID": "CVE-2022-21434"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21496.html",
+      "ID": "CVE-2022-21496"
     },
     {
       "Impact": "",
@@ -655,8 +655,8 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2022-21496.html",
-      "ID": "CVE-2022-21496"
+      "Href": "https://linux.oracle.com/cve/CVE-2022-21426.html",
+      "ID": "CVE-2022-21426"
     },
     {
       "Impact": "",

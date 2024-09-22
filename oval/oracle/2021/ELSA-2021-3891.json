@@ -12,33 +12,13 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35550.html",
-      "ID": "CVE-2021-35550"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35556.html",
-      "ID": "CVE-2021-35556"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35564.html",
+      "ID": "CVE-2021-35564"
     },
     {
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-35559.html",
       "ID": "CVE-2021-35559"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35567.html",
-      "ID": "CVE-2021-35567"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35578.html",
-      "ID": "CVE-2021-35578"
-    },
-    {
-      "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35586.html",
-      "ID": "CVE-2021-35586"
     },
     {
       "Source": "CVE",
@@ -52,13 +32,33 @@
     },
     {
       "Source": "CVE",
-      "URI": "https://linux.oracle.com/cve/CVE-2021-35564.html",
-      "ID": "CVE-2021-35564"
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35556.html",
+      "ID": "CVE-2021-35556"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35550.html",
+      "ID": "CVE-2021-35550"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35578.html",
+      "ID": "CVE-2021-35578"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35586.html",
+      "ID": "CVE-2021-35586"
     },
     {
       "Source": "CVE",
       "URI": "https://linux.oracle.com/cve/CVE-2021-35565.html",
       "ID": "CVE-2021-35565"
+    },
+    {
+      "Source": "CVE",
+      "URI": "https://linux.oracle.com/cve/CVE-2021-35567.html",
+      "ID": "CVE-2021-35567"
     }
   ],
   "Criteria": {
@@ -73,90 +73,6 @@
               {
                 "Operator": "OR",
                 "Criterias": [
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-demo-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-devel-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
                   {
                     "Operator": "AND",
                     "Criterias": null,
@@ -186,6 +102,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-demo-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-devel is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
@@ -198,10 +126,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-devel-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-headless is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
                         "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-headless-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -246,6 +198,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-src is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
@@ -258,10 +234,34 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
                         "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -286,6 +286,30 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-demo-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
@@ -302,6 +326,18 @@
                       },
                       {
                         "Comment": "java-11-openjdk-demo-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -346,6 +382,18 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-headless-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
@@ -362,138 +410,6 @@
                       },
                       {
                         "Comment": "java-11-openjdk-headless-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-demo is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-demo is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-devel is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-devel is signed with the Oracle Linux 8 key"
-                      }
-                    ]
-                  },
-                  {
-                    "Operator": "AND",
-                    "Criterias": null,
-                    "Criterions": [
-                      {
-                        "Comment": "java-11-openjdk-headless is earlier than 1:11.0.13.0.8-1.el8_4"
-                      },
-                      {
-                        "Comment": "java-11-openjdk-headless is signed with the Oracle Linux 8 key"
                       }
                     ]
                   },
@@ -538,6 +454,42 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-jmods-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-jmods-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-src is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
@@ -550,10 +502,58 @@
                     "Criterias": null,
                     "Criterions": [
                       {
+                        "Comment": "java-11-openjdk-src-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-src-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-src-slowdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
                         "Comment": "java-11-openjdk-static-libs is earlier than 1:11.0.13.0.8-1.el8_4"
                       },
                       {
                         "Comment": "java-11-openjdk-static-libs is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs-fastdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs-fastdebug is signed with the Oracle Linux 8 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is earlier than 1:11.0.13.0.8-1.el8_4"
+                      },
+                      {
+                        "Comment": "java-11-openjdk-static-libs-slowdebug is signed with the Oracle Linux 8 key"
                       }
                     ]
                   }
@@ -581,33 +581,13 @@
   "Cves": [
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35550.html",
-      "ID": "CVE-2021-35550"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35556.html",
-      "ID": "CVE-2021-35556"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35564.html",
+      "ID": "CVE-2021-35564"
     },
     {
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-35559.html",
       "ID": "CVE-2021-35559"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35567.html",
-      "ID": "CVE-2021-35567"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35578.html",
-      "ID": "CVE-2021-35578"
-    },
-    {
-      "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35586.html",
-      "ID": "CVE-2021-35586"
     },
     {
       "Impact": "",
@@ -621,13 +601,33 @@
     },
     {
       "Impact": "",
-      "Href": "https://linux.oracle.com/cve/CVE-2021-35564.html",
-      "ID": "CVE-2021-35564"
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35556.html",
+      "ID": "CVE-2021-35556"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35550.html",
+      "ID": "CVE-2021-35550"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35578.html",
+      "ID": "CVE-2021-35578"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35586.html",
+      "ID": "CVE-2021-35586"
     },
     {
       "Impact": "",
       "Href": "https://linux.oracle.com/cve/CVE-2021-35565.html",
       "ID": "CVE-2021-35565"
+    },
+    {
+      "Impact": "",
+      "Href": "https://linux.oracle.com/cve/CVE-2021-35567.html",
+      "ID": "CVE-2021-35567"
     }
   ],
   "Issued": {
