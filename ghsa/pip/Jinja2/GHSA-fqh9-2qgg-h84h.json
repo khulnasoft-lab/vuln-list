@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-02-14T00:58:41Z",
+  "UpdatedAt": "2024-09-23T19:26:46Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "Jinja2"
@@ -32,6 +32,21 @@
         "Url": "https://github.com/pallets/jinja/commit/acb672b6a179567632e032f547582f30fa2f4aa7"
       },
       {
+        "Url": "https://github.com/mitsuhiko/jinja2/pull/292"
+      },
+      {
+        "Url": "https://github.com/mitsuhiko/jinja2/pull/296"
+      },
+      {
+        "Url": "https://github.com/mitsuhiko/jinja2/commit/acb672b6a179567632e032f547582f30fa2f4aa7"
+      },
+      {
+        "Url": "https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=734747"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/jinja2/PYSEC-2014-82.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-fqh9-2qgg-h84h"
       }
     ],
@@ -45,16 +60,16 @@
         "Value": "CVE-2014-0012"
       }
     ],
-    "Description": "FileSystemBytecodeCache in Jinja2 2.7.2 does not properly create temporary directories, which allows local users to gain privileges by pre-creating a temporary directory with a user's uid.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-1402.",
+    "Description": "FileSystemBytecodeCache in Jinja2 prior to version 2.7.2 does not properly create temporary directories, which allows local users to gain privileges by pre-creating a temporary directory with a user's uid. NOTE: this vulnerability exists because of an incomplete fix for CVE-2014-1402.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:01:00Z",
     "Severity": "MODERATE",
     "Summary": "Insecure Temporary File in Jinja2",
-    "UpdatedAt": "2023-02-14T00:58:41Z",
+    "UpdatedAt": "2024-09-23T19:26:46Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.2,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
