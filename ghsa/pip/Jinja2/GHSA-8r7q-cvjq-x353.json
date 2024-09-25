@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-02-23T21:00:16Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -26,9 +26,6 @@
         "Url": "http://advisories.mageia.org/MGASA-2014-0028.html"
       },
       {
-        "Url": "http://jinja.pocoo.org/docs/changelog/"
-      },
-      {
         "Url": "http://openwall.com/lists/oss-security/2014/01/10/2"
       },
       {
@@ -51,6 +48,9 @@
       },
       {
         "Url": "https://web.archive.org/web/20150523060528/http://www.mandriva.com/en/support/security/advisories/advisory/MDVSA-2014:096/?name=MDVSA-2014:096"
+      },
+      {
+        "Url": "http://jinja.pocoo.org/docs/changelog"
       }
     ],
     "Identifiers": [
@@ -63,16 +63,16 @@
         "Value": "CVE-2014-1402"
       }
     ],
-    "Description": "The default configuration for bccache.FileSystemBytecodeCache in Jinja2 before 2.7.2 does not properly create temporary files, which allows local users to gain privileges via a crafted .cache file with a name starting with __jinja2_ in /tmp.",
+    "Description": "The default configuration for `bccache.FileSystemBytecodeCache` in Jinja2 before 2.7.2 does not properly create temporary files, which allows local users to gain privileges via a crafted .cache file with a name starting with `__jinja2_` in `/tmp`.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T04:04:14Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Incorrect Privilege Assignment in Jinja2",
-    "UpdatedAt": "2024-02-23T21:00:16Z",
+    "UpdatedAt": "2024-09-24T18:41:57Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 8.4,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

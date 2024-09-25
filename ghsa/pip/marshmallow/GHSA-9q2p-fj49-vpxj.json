@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-08-16T05:02:12Z",
+  "UpdatedAt": "2024-09-24T20:09:29Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "marshmallow"
@@ -23,6 +23,9 @@
         "Url": "https://github.com/marshmallow-code/marshmallow/pull/782"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/marshmallow/PYSEC-2018-67.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9q2p-fj49-vpxj"
       }
     ],
@@ -41,7 +44,7 @@
     "PublishedAt": "2018-10-10T16:10:46Z",
     "Severity": "MODERATE",
     "Summary": "In marshmallow library the schema \"only\" option treats an empty list as implying no \"only\" option",
-    "UpdatedAt": "2023-08-16T05:02:12Z",
+    "UpdatedAt": "2024-09-24T20:09:29Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -49,6 +52,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.0.0b9"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0a0, \u003c 3.0.0b9"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.15.1"
