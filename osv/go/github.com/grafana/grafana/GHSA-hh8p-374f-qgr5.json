@@ -7,6 +7,9 @@
     "CVE-2024-6322",
     "GO-2024-3079"
   ],
+  "related": [
+    "CGA-fw4g-9mf4-p6pc"
+  ],
   "summary": "Grafana plugin data sources vulnerable to access control bypass",
   "details": "Access control for plugin data sources protected by the ReqActions json field of the plugin.json is bypassed if the user or service account is granted associated access to any other data source, as the ReqActions check was not scoped to each specific datasource. The account must have prior query access to the impacted datasource.",
   "affected": [

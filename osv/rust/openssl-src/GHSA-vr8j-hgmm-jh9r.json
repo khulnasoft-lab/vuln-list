@@ -7,7 +7,8 @@
   ],
   "related": [
     "CGA-625w-vrp6-h2jj",
-    "CGA-g88v-cpc7-xxqg"
+    "CGA-g88v-cpc7-xxqg",
+    "CGA-wcjr-7x49-5hjq"
   ],
   "summary": "openssl-src subject to DoS by double-checked locking",
   "details": "If an X.509 certificate contains a malformed policy constraint and policy processing is enabled, then a write lock will be taken twice recursively. On some operating systems (most widely: Windows) this results in a denial of service when the affected process hangs. Policy processing being enabled on a publicly facing server is not considered to be a common setup. Policy processing is enabled by passing the `-policy' argument to the command line utilities or by calling either `X509_VERIFY_PARAM_add0_policy()' or `X509_VERIFY_PARAM_set1_policies()' functions.",

@@ -6,6 +6,9 @@
     "BIT-airflow-2024-45034",
     "CVE-2024-45034"
   ],
+  "related": [
+    "CGA-rr65-cfqh-j9ww"
+  ],
   "summary": "Apache Airflow vulnerable to Execution with Unnecessary Privileges",
   "details": "Apache Airflow versions before 2.10.1 have a vulnerability that allows DAG authors to add local settings to the DAG folder and get it executed by the scheduler, where the scheduler is not supposed to execute code submitted by the DAG author. \nUsers are advised to upgrade to version 2.10.1 or later, which has fixed the vulnerability.",
   "affected": [

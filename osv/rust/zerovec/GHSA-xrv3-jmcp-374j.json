@@ -2,6 +2,9 @@
   "id": "GHSA-xrv3-jmcp-374j",
   "modified": "2024-07-08T18:36:40Z",
   "published": "2024-07-08T18:36:40Z",
+  "related": [
+    "CGA-4fhf-98hv-qppq"
+  ],
   "summary": "zerovec incorrectly uses `#[repr(packed)]`",
   "details": "The affected versions make unsafe memory accesses under the assumption that `#[repr(packed)]` has a guaranteed field order. \n\nThe Rust specification does not guarantee this, and https://github.com/rust-lang/rust/pull/125360 (1.80.0-beta) starts \nreordering fields of `#[repr(packed)]` structs, leading to illegal memory accesses.\n\nThe patched versions `0.9.7` and `0.10.4` use `#[repr(C, packed)]`, which guarantees field order.\n",
   "affected": [

@@ -6,6 +6,9 @@
     "BIT-airflow-2024-45498",
     "CVE-2024-45498"
   ],
+  "related": [
+    "CGA-r95c-6w6h-wgm6"
+  ],
   "summary": "Apache Airflow vulnerable to Improper Encoding or Escaping of Output",
   "details": "Example DAG: example_inlet_event_extra.py shipped with Apache Airflow version 2.10.0 has a vulnerability that allows an authenticated attacker with only DAG trigger permission to execute arbitrary commands. If you used that example as the base of your DAGs - please review if you have not copied the dangerous example; see  https://github.com/apache/airflow/pull/41873  for more information. We recommend against exposing the example DAGs in your deployment. If you must expose the example DAGs, upgrade Airflow to version 2.10.1 or later.",
   "affected": [

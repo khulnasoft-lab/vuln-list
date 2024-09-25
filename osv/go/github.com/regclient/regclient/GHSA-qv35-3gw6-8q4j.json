@@ -6,7 +6,8 @@
     "GO-2024-3038"
   ],
   "related": [
-    "CGA-9cch-qj76-7mr9"
+    "CGA-9cch-qj76-7mr9",
+    "CGA-g59m-4p34-cj7j"
   ],
   "summary": "In regclient, pinned manifest digests may be ignored",
   "details": "### Impact\nA malicious registry could return a different digest for a pinned manifest without detection.\n\n### Patches\nThis has been fixed in the v0.7.1 release.\n\n### Workarounds\nAfter running a `regclient.ManifestGet`, the returned digest can be compared to the requested digest.\n",

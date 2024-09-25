@@ -6,8 +6,12 @@
     "CVE-2024-42367"
   ],
   "related": [
+    "CGA-4c39-3hr9-4cpw",
     "CGA-4pvr-9jgj-4vq4",
-    "CGA-hc9m-rgpj-x5m5"
+    "CGA-56r7-rm2g-8wcm",
+    "CGA-hc9m-rgpj-x5m5",
+    "CGA-qrpj-pqqw-g7wq",
+    "CGA-x335-cgg4-xc7c"
   ],
   "summary": "In aiohttp, compressed files as symlinks are not protected from path traversal",
   "details": "### Summary\nStatic routes which contain files with compressed variants (`.gz` or `.br` extension) were vulnerable to path traversal outside the root directory if those variants are symbolic links.\n\n### Details\nThe server protects static routes from path traversal outside the root directory when `follow_symlinks=False` (default).  It does this by resolving the requested URL to an absolute path and then checking that path relative to the root.  However, these checks are not performed when looking for compressed variants in the `FileResponse` class, and symbolic links are then automatically followed when performing `Path.stat()` and `Path.open()` to send the file.\n\n### Impact\nServers with static routes that contain compressed variants as symbolic links, pointing outside the root directory, or that permit users to upload or create such links, are impacted.\n\n----\n\nPatch: https://github.com/aio-libs/aiohttp/pull/8653/files",
