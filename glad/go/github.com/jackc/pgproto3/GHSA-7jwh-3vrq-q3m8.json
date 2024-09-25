@@ -2,8 +2,8 @@
   "Identifier": "GHSA-7jwh-3vrq-q3m8",
   "PackageSlug": "go/github.com/jackc/pgproto3",
   "Title": "pgproto3 SQL Injection via Protocol Message Size Overflow",
-  "Description": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",
-  "Date": "2024-03-14",
+  "Description": "SQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.",
+  "Date": "2024-09-13",
   "Pubdate": "2024-03-04",
   "AffectedRange": "\u003c2.3.3",
   "FixedVersions": [
@@ -24,6 +24,6 @@
     "https://github.com/jackc/pgproto3"
   ],
   "CvssV2": "",
-  "CvssV3": "",
+  "CvssV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
   "UUID": "642f92b2-f4ac-4cc9-b2d3-f50f7b24f919"
 }
