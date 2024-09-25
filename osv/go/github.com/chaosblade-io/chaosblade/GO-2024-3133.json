@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-723h-x37g-f8qm",
+  "id": "GO-2024-3133",
   "modified": "2024-09-25T18:12:25.367500Z",
-  "published": "2024-09-18T18:30:51Z",
+  "published": "2024-09-25T17:43:51Z",
   "aliases": [
     "CVE-2023-47105",
-    "GO-2024-3133"
+    "GHSA-723h-x37g-f8qm"
   ],
-  "summary": "Chaosblade vulnerable to OS command execution",
-  "details": "exec.CommandContext in Chaosblade 0.3 through 1.7.3, when server mode is used, allows OS command execution via the cmd parameter without authentication.",
+  "summary": "Chaosblade vulnerable to OS command execution in github.com/chaosblade-io/chaosblade",
+  "details": "Chaosblade vulnerable to OS command execution in github.com/chaosblade-io/chaosblade",
   "affected": [
     {
       "package": {
@@ -29,22 +29,22 @@
         }
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-723h-x37g-f8qm/GHSA-723h-x37g-f8qm.json"
+        "source": "https://vuln.go.dev/ID/GO-2024-3133.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-723h-x37g-f8qm"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-47105"
     },
     {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/chaosblade-io/chaosblade/commit/6bc73c31e14ea2b1bfc30f359e1fe952859d9adc"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/chaosblade-io/chaosblade"
     },
     {
       "type": "WEB",
