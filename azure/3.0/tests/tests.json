@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package cloud-hypervisor-cvm is earlier than 38.0.72.2-2, affected by CVE-2024-6119",
+      "ID": "oval:com.microsoft.azurelinux:tst:48752000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:48752001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:48752002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package mariadb is earlier than 10.6.9-6, affected by CVE-2024-5991",
       "ID": "oval:com.microsoft.azurelinux:tst:48368000",
       "Version": "0",
