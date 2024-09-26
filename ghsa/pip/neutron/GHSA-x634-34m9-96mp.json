@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-04-08T18:53:05Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-25T20:45:22Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "neutron"
@@ -38,6 +38,9 @@
         "Url": "https://github.com/openstack/neutron/commit/54aa6e81cb17b33ce4d5d469cc11dec2869c762d"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/neutron/PYSEC-2018-93.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x634-34m9-96mp"
       }
     ],
@@ -54,9 +57,9 @@
     "Description": "When using the Linux bridge ml2 driver, non-privileged tenants are able to create and attach ports without specifying an IP address, bypassing IP address validation. A potential denial of service could occur if an IP address, conflicting with existing guests or routers, is then assigned from outside of the allowed allocation pool. Versions of openstack-neutron before 13.0.0.0b2, 12.0.3 and 11.0.5 are vulnerable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-13T01:07:33Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "OpensStack Neutron Denial of Service Vulnerability",
-    "UpdatedAt": "2024-04-08T18:53:05Z",
+    "UpdatedAt": "2024-09-25T20:45:22Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
@@ -66,15 +69,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "11.0.5"
+        "Identifier": "12.0.4"
       },
-      "VulnerableVersionRange": "\u003e= 11.0.0, \u003c 11.0.5"
+      "VulnerableVersionRange": "\u003e= 12.0.0, \u003c 12.0.4"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "12.0.3"
+        "Identifier": "11.0.6"
       },
-      "VulnerableVersionRange": "\u003e= 12.0.0, \u003c 12.0.3"
+      "VulnerableVersionRange": "\u003c 11.0.6"
     },
     {
       "FirstPatchedVersion": {
