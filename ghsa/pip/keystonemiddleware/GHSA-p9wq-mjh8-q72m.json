@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-02-08T18:13:07Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-27T17:46:38Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "keystonemiddleware"
@@ -47,7 +47,10 @@
         "Url": "https://web.archive.org/web/20200228060649/http://www.securityfocus.com/bid/74187"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/74187"
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/keystonemiddleware/PYSEC-2015-30.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-keystoneclient/PYSEC-2015-31.yaml"
       },
       {
         "Url": "https://github.com/advisories/GHSA-p9wq-mjh8-q72m"
@@ -66,13 +69,13 @@
     "Description": "The s3_token middleware in OpenStack keystonemiddleware before 1.6.0 and python-keystoneclient before 1.4.0 disables certification verification when the \"insecure\" option is set in a paste configuration (paste.ini) file regardless of the value, which allows remote attackers to conduct man-in-the-middle attacks via a crafted certificate, a different vulnerability than CVE-2014-7144.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:17:26Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "OpenStack keystonemiddleware and python-keystoneclient vulnerable to man-in-the-middle attacks",
-    "UpdatedAt": "2023-02-13T20:24:16Z",
+    "UpdatedAt": "2024-09-27T17:46:38Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

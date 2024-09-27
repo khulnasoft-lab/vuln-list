@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-08-02T21:07:28Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-09-27T15:42:07Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "kallithea"
@@ -17,13 +17,16 @@
         "Url": "https://kallithea-scm.org/security/cve-2015-5285.html"
       },
       {
-        "Url": "https://www.exploit-db.com/exploits/38424/"
-      },
-      {
         "Url": "http://packetstormsecurity.com/files/133897/Kallithea-0.2.9-HTTP-Response-Splitting.html"
       },
       {
         "Url": "http://www.zeroscience.mk/en/vulnerabilities/ZSL-2015-5267.php"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/kallithea/PYSEC-2015-13.yaml"
+      },
+      {
+        "Url": "https://www.exploit-db.com/exploits/38424"
       },
       {
         "Url": "https://github.com/advisories/GHSA-vfg9-phjp-9frw"
@@ -42,13 +45,13 @@
     "Description": "CRLF injection vulnerability in Kallithea before 0.3 allows remote attackers to inject arbitrary HTTP headers and conduct HTTP response splitting attacks via the `came_from` parameter to `_admin/login`.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-13T01:26:14Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Kallithea CRLF injection vulnerability",
-    "UpdatedAt": "2023-08-02T21:07:28Z",
+    "UpdatedAt": "2024-09-27T15:42:07Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

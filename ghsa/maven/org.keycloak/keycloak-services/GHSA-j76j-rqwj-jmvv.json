@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-09-09T22:33:52Z",
+  "UpdatedAt": "2024-09-27T14:09:10Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.keycloak:keycloak-services"
@@ -47,6 +47,15 @@
         "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2302064"
       },
       {
+        "Url": "https://github.com/keycloak/keycloak/commit/2341d6ee7a3567c58fd6a04a419fe4403e13374c"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/commit/5b3de0c7e7f367103affe2f5167913a2ce021cf1"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/commit/5e06da2f6794c695051605e26a01affa3a18f66b"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-j76j-rqwj-jmvv"
       }
     ],
@@ -65,7 +74,7 @@
     "PublishedAt": "2024-09-09T21:31:22Z",
     "Severity": "HIGH",
     "Summary": "Keycloak Session Fixation vulnerability",
-    "UpdatedAt": "2024-09-09T22:33:52Z",
+    "UpdatedAt": "2024-09-27T14:09:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.1,
@@ -73,6 +82,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "25.0.5"
+      },
+      "VulnerableVersionRange": "\u003e= 25.0.0, \u003c 25.0.5"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "24.0.7"
@@ -84,12 +99,6 @@
         "Identifier": "22.0.12"
       },
       "VulnerableVersionRange": "\u003c 22.0.12"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": ""
-      },
-      "VulnerableVersionRange": "\u003e= 25.0.0, \u003c= 25.0.2"
     }
   ]
 }
