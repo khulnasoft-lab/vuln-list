@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-05-09T05:05:01Z",
+  "UpdatedAt": "2024-09-27T21:16:03Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "keystonemiddleware"
@@ -38,6 +38,9 @@
         "Url": "https://web.archive.org/web/20200228002640/http://www.securityfocus.com/bid/80498"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/keystonemiddleware/PYSEC-2016-20.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-8c4w-v65p-jvcv"
       }
     ],
@@ -56,7 +59,7 @@
     "PublishedAt": "2022-05-13T01:26:10Z",
     "Severity": "HIGH",
     "Summary": "OpenStack Identity Keystone and keystonemiddleware Insufficiently Protected Credentials",
-    "UpdatedAt": "2024-05-09T05:05:01Z",
+    "UpdatedAt": "2024-09-27T21:16:03Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -68,7 +71,13 @@
       "FirstPatchedVersion": {
         "Identifier": "2.3.3"
       },
-      "VulnerableVersionRange": "\u003c 2.3.3"
+      "VulnerableVersionRange": "\u003e= 1.6.0, \u003c 2.3.3"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.5.4"
+      },
+      "VulnerableVersionRange": "\u003e= 0, \u003c 1.5.4"
     },
     {
       "FirstPatchedVersion": {

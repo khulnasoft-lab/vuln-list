@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-07-13T17:10:17Z",
+  "UpdatedAt": "2024-09-27T21:21:48Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "keystone"
@@ -20,9 +20,6 @@
         "Url": "https://security.openstack.org/ossa/OSSA-2020-003.html"
       },
       {
-        "Url": "https://usn.ubuntu.com/4480-1/"
-      },
-      {
         "Url": "https://www.openwall.com/lists/oss-security/2020/05/06/4"
       },
       {
@@ -30,6 +27,12 @@
       },
       {
         "Url": "https://opendev.org/openstack/keystone/commit/ab89ea749013e7f2c46260f68504f5687763e019"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/keystone/PYSEC-2020-56.yaml"
+      },
+      {
+        "Url": "https://usn.ubuntu.com/4480-1"
       },
       {
         "Url": "https://github.com/advisories/GHSA-rqw2-hhrf-7936"
@@ -50,7 +53,7 @@
     "PublishedAt": "2022-05-24T17:17:23Z",
     "Severity": "MODERATE",
     "Summary": "OpenStack Keystone does not check signature TTL of the EC2 credential auth method",
-    "UpdatedAt": "2023-07-13T17:10:17Z",
+    "UpdatedAt": "2024-09-27T21:21:48Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
@@ -60,9 +63,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "15.0.1"
       },
-      "VulnerableVersionRange": "\u003c 15.0.1"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 15.0.1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "16.0.0"
+      },
+      "VulnerableVersionRange": "\u003e= 16.0.0.0rc1, \u003c 16.0.0"
     }
   ]
 }

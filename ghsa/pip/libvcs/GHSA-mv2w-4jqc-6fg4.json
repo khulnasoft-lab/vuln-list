@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2022-03-15T17:05:11Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-09-27T21:36:54Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "libvcs"
@@ -32,6 +32,9 @@
         "Url": "https://github.com/vcs-python/vcspull/blob/master/CHANGES#vcspull-1111-2022-03-12"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/libvcs/PYSEC-2022-163.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-mv2w-4jqc-6fg4"
       }
     ],
@@ -48,9 +51,9 @@
     "Description": "The package libvcs before 0.11.1 are vulnerable to Command Injection via argument injection. When calling the update_repo function (when using hg), the url parameter is passed to the hg clone command. By injecting some hg options it was possible to get arbitrary command execution.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-03-15T00:00:53Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Command injection in libvcs and vcspull",
-    "UpdatedAt": "2023-01-27T05:00:41Z",
+    "UpdatedAt": "2024-09-27T21:36:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.1,
