@@ -1,6 +1,6 @@
 {
   "id": "GHSA-8c4w-v65p-jvcv",
-  "modified": "2024-04-29T16:41:25.840061Z",
+  "modified": "2024-09-27T21:23:16.470750Z",
   "published": "2022-05-13T01:26:10Z",
   "aliases": [
     "CVE-2015-7546",
@@ -64,6 +64,29 @@
     {
       "package": {
         "ecosystem": "PyPI",
+        "name": "keystone",
+        "purl": "pkg:pypi/keystone"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "8.0"
+            },
+            {
+              "fixed": "8.1.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-8c4w-v65p-jvcv/GHSA-8c4w-v65p-jvcv.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
         "name": "keystonemiddleware",
         "purl": "pkg:pypi/keystonemiddleware"
       },
@@ -75,7 +98,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "2.3.3"
+              "fixed": "1.5.4"
             }
           ]
         }
@@ -93,15 +116,7 @@
         "1.5.0",
         "1.5.1",
         "1.5.2",
-        "1.5.3",
-        "1.6.0",
-        "1.6.1",
-        "2.0.0",
-        "2.1.0",
-        "2.2.0",
-        "2.3.0",
-        "2.3.1",
-        "2.3.2"
+        "1.5.3"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-8c4w-v65p-jvcv/GHSA-8c4w-v65p-jvcv.json"
@@ -110,21 +125,31 @@
     {
       "package": {
         "ecosystem": "PyPI",
-        "name": "keystone",
-        "purl": "pkg:pypi/keystone"
+        "name": "keystonemiddleware",
+        "purl": "pkg:pypi/keystonemiddleware"
       },
       "ranges": [
         {
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "8.0"
+              "introduced": "1.6.0"
             },
             {
-              "fixed": "8.1.0"
+              "fixed": "2.3.3"
             }
           ]
         }
+      ],
+      "versions": [
+        "1.6.0",
+        "1.6.1",
+        "2.0.0",
+        "2.1.0",
+        "2.2.0",
+        "2.3.0",
+        "2.3.1",
+        "2.3.2"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-8c4w-v65p-jvcv/GHSA-8c4w-v65p-jvcv.json"
@@ -151,6 +176,10 @@
     {
       "type": "WEB",
       "url": "https://bugs.launchpad.net/keystone/+bug/1490804"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/keystonemiddleware/PYSEC-2016-20.yaml"
     },
     {
       "type": "WEB",
