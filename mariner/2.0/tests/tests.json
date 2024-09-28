@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package mysql is earlier than 8.0.36-1, affected by CVE-2024-8096",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:49132000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:49132001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:49132002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package cloud-hypervisor-cvm is earlier than 38.0.72.2-2, affected by CVE-2024-6119",
       "ID": "oval:com.microsoft.cbl-mariner:tst:48792000",
       "Version": "0",
