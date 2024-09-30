@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2024-04-29T09:47:35Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-09-30T16:45:35Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "LinOTP"
@@ -23,6 +23,9 @@
         "Url": "https://linotp.org/linotp-hotfix-autoresync.html"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/linotp/PYSEC-2019-103.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-rqg8-xjp2-pg9w"
       }
     ],
@@ -39,9 +42,9 @@
     "Description": "LinOTP is prone to a replay attack with activated automatic resynchronization. This vulnerability may allow an attacker to successfully log in with OTP values recorded at a previous point in time.\n\nThis attack is only possible if automatic resynchronization is enabled for the TOTP token type. The automatic resynchronization  is deactivated by default. All other tokens are unaffected.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-24T16:48:44Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "LinOTP replay vulnerability with auto resynchronization enabled for TOTP token",
-    "UpdatedAt": "2024-04-29T09:47:35Z",
+    "UpdatedAt": "2024-09-30T16:45:36Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.1,
@@ -51,9 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.10.5.3"
+        "Identifier": "2.11.1"
       },
-      "VulnerableVersionRange": "\u003c 2.10.5.3"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 2.11.1"
     }
   ]
 }
