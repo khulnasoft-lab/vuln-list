@@ -1,6 +1,6 @@
 {
   "id": "GHSA-6g88-vr3v-76mf",
-  "modified": "2024-02-21T05:33:00.970071Z",
+  "modified": "2024-09-30T16:42:16.878931Z",
   "published": "2019-11-20T01:31:31Z",
   "aliases": [
     "CVE-2019-19010",
@@ -105,6 +105,12 @@
         "2019.09.08",
         "2019.10.22"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "plugins.Math.plugin.Math.calc",
+          "plugins.Math.plugin.Math.icalc"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/11/GHSA-6g88-vr3v-76mf/GHSA-6g88-vr3v-76mf.json"
       }
@@ -120,8 +126,20 @@
       "url": "https://github.com/ProgVal/Limnoria/commit/3848ae78de45b35c029cc333963d436b9d2f0a35"
     },
     {
+      "type": "PACKAGE",
+      "url": "https://github.com/ProgVal/Limnoria"
+    },
+    {
       "type": "WEB",
       "url": "https://github.com/ProgVal/Limnoria/wiki/math-eval-vulnerability"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-6g88-vr3v-76mf"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/limnoria/PYSEC-2019-102.yaml"
     },
     {
       "type": "WEB",

@@ -1,6 +1,6 @@
 {
   "id": "GHSA-v973-fxgf-6xhp",
-  "modified": "2024-02-16T08:21:44.053802Z",
+  "modified": "2024-09-30T17:24:36.124878Z",
   "published": "2022-09-16T17:20:25Z",
   "aliases": [
     "CVE-2022-40023",
@@ -93,6 +93,11 @@
         "1.2.0",
         "1.2.1"
       ],
+      "ecosystem_specific": {
+        "affected_functions": [
+          "mako.lexer.Lexer.match_tag_start"
+        ]
+      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/09/GHSA-v973-fxgf-6xhp/GHSA-v973-fxgf-6xhp.json"
       }
@@ -110,6 +115,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/sqlalchemy/mako/commit/925760291d6efec64fda6e9dd1fd9cfbd5be068c"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-v973-fxgf-6xhp"
     },
     {
       "type": "WEB",
