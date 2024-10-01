@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-07-09T21:04:45Z",
+  "UpdatedAt": "2024-09-30T19:46:28Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.undertow:undertow-core"
@@ -44,6 +44,18 @@
         "Url": "https://access.redhat.com/errata/RHSA-2024:6883"
       },
       {
+        "Url": "https://github.com/undertow-io/undertow/pull/1638"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/pull/1640"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/pull/1641"
+      },
+      {
+        "Url": "https://issues.redhat.com/browse/UNDERTOW-2413"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-xpp6-8r3j-ww43"
       }
     ],
@@ -62,7 +74,7 @@
     "PublishedAt": "2024-07-08T21:31:40Z",
     "Severity": "HIGH",
     "Summary": "Undertow Denial of Service vulnerability",
-    "UpdatedAt": "2024-09-19T21:34:30Z",
+    "UpdatedAt": "2024-09-30T19:46:28Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -72,9 +84,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.2.34.Final"
       },
-      "VulnerableVersionRange": "\u003c= 2.3.14.Final"
+      "VulnerableVersionRange": "\u003c 2.2.34.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.15.Final"
+      },
+      "VulnerableVersionRange": "\u003e= 2.3.0.Alpha1, \u003c 2.3.15.Final"
     }
   ]
 }
