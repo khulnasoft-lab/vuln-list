@@ -1,13 +1,13 @@
 {
   "id": "GHSA-9gxx-32p7-ff7m",
-  "modified": "2024-02-16T08:20:16.260454Z",
+  "modified": "2024-09-30T21:13:16.351053Z",
   "published": "2023-04-18T18:30:29Z",
   "aliases": [
     "CVE-2023-2160",
     "PYSEC-2023-34"
   ],
   "summary": "Modoboa has Weak Password Requirements",
-  "details": "Modoboa 2.0.5 and prior allows users to set unsafe passwords, such as `1` or `HACK`. This issue is fixed in commit 130257c96a2392ada795785a91178e656e27015c and anticipated to be part of version 2.1.0.",
+  "details": "Modoboa 2.0.5 and prior allows users to set unsafe passwords, such as `1` or `HACK`. This issue is fixed in commit 130257c96a2392ada795785a91178e656e27015c and is part of version 2.1.0.",
   "affected": [
     {
       "package": {
@@ -23,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "2.0.5"
+              "fixed": "2.1.0"
             }
           ]
         }
@@ -95,6 +95,7 @@
         "2.0.5"
       ],
       "database_specific": {
+        "last_known_affected_version_range": "\u003c= 2.0.5",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/04/GHSA-9gxx-32p7-ff7m/GHSA-9gxx-32p7-ff7m.json"
       }
     }
@@ -111,6 +112,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/modoboa/modoboa"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/modoboa/PYSEC-2023-34.yaml"
     },
     {
       "type": "WEB",
