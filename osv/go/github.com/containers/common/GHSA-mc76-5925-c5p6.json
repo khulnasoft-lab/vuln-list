@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-9341"
   ],
+  "related": [
+    "CGA-mcf2-5cj2-fhm7"
+  ],
   "summary": "Link Following in github.com/containers/common",
   "details": "A flaw was found in Go. When FIPS mode is enabled on a system, container runtimes may incorrectly handle certain file paths due to improper validation in the containers/common Go library. This flaw allows an attacker to exploit symbolic links and trick the system into mounting sensitive host directories inside a container. This issue also allows attackers to access critical host files, bypassing the intended isolation between containers and the host system.",
   "affected": [
