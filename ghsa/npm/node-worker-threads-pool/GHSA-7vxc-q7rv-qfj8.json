@@ -30,12 +30,12 @@
         "Value": "CVE-2021-29057"
       }
     ],
-    "Description": "An issue was discovered in StaticPool in SUCHMOKUO node-worker-threads-pool version 1.4.3 that allows attackers to cause a denial of service.",
+    "Description": "An issue was discovered in StaticPool in SUCHMOKUO node-worker-threads-pool version 1.4.3 that allows attackers to cause a denial of service.\n\nThis can be mitigated by manually creating a timeout. For example:\n\n```ts\nconst { StaticPool } = require(\\\"node-worker-threads-pool\\\");\n\t\n\tconst staticPool = new StaticPool({\n size: 1,\n task: (n) =\u003e {\n while (n) {\n console.log(\\\"a\\\");\n }\n return n;\n }\n});\n \n staticPool.createExecutor().setTimeout(10).exec(1).then((result) =\u003e {\n console.log(\\\"result from thread pool:\\\", result);\n}).catch(() =\u003e console.error('timeout'));\n```",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-08-11T15:30:46Z",
     "Severity": "MODERATE",
     "Summary": "SUCHMOKUO node-worker-threads-pool denial of service Vulnerability",
-    "UpdatedAt": "2023-11-06T05:03:11Z",
+    "UpdatedAt": "2024-10-03T17:26:27Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
