@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-04-08T18:54:15Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -32,6 +32,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2019/04/09/2"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/neutron/PYSEC-2019-189.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-jr9m-v5qh-mh2j"
       }
     ],
@@ -48,9 +51,9 @@
     "Description": "An issue was discovered in OpenStack Neutron 11.x before 11.0.7, 12.x before 12.0.6, and 13.x before 13.0.3. By creating two security groups with separate/overlapping port ranges, an authenticated user may prevent Neutron from being able to configure networks on any compute nodes where those security groups are present, because of an Open vSwitch (OVS) firewall KeyError. All Neutron deployments utilizing neutron-openvswitch-agent are affected.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-13T01:07:34Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "OpenStack Neutron overlapping security group rules prevents compute node network configuration",
-    "UpdatedAt": "2024-04-08T18:54:15Z",
+    "UpdatedAt": "2024-10-07T14:49:50Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
