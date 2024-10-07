@@ -1,13 +1,13 @@
 {
   "id": "GHSA-2ww3-fxvq-293j",
-  "modified": "2024-02-16T08:05:49.097890Z",
+  "modified": "2024-10-07T15:22:59.778054Z",
   "published": "2021-09-29T17:14:53Z",
   "aliases": [
     "CVE-2021-3828",
     "PYSEC-2021-356"
   ],
   "summary": "NLTK Vulnerable to REDoS",
-  "details": "The nltk package is vulnerable to ReDoS (regular expression denial of service). An attacker that is able to provide as an input to the [`_read_comparison_block()`](https://github.com/nltk/nltk/blob/23f4b1c4b4006b0cb3ec278e801029557cec4e82/nltk/corpus/reader/comparative_sents.py#L259) function in the file `nltk/corpus/reader/comparative_sents.py` may cause an application to consume an excessive amount of CPU.",
+  "details": "The nltk package is vulnerable to ReDoS (regular expression denial of service). An attacker that is able to provide as an input to the [`_read_comparison_block()`(https://github.com/nltk/nltk/blob/23f4b1c4b4006b0cb3ec278e801029557cec4e82/nltk/corpus/reader/comparative_sents.py#L259) function in the file `nltk/corpus/reader/comparative_sents.py` may cause an application to consume an excessive amount of CPU.",
   "affected": [
     {
       "package": {
@@ -101,8 +101,16 @@
       "url": "https://github.com/nltk/nltk/commit/277711ab1dec729e626b27aab6fa35ea5efbd7e6"
     },
     {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-2ww3-fxvq-293j"
+    },
+    {
       "type": "PACKAGE",
       "url": "https://github.com/nltk/nltk"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/nltk/PYSEC-2021-356.yaml"
     },
     {
       "type": "WEB",
