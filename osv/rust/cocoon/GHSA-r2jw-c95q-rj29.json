@@ -1,9 +1,11 @@
 {
   "id": "GHSA-r2jw-c95q-rj29",
-  "modified": "2024-10-02T18:12:20.323037Z",
+  "modified": "2024-10-08T04:11:51.783273Z",
   "published": "2024-10-02T06:30:26Z",
   "aliases": [
-    "CVE-2024-21530"
+    "CVE-2024-21530",
+    "GHSA-6878-6wc2-pf5h",
+    "RUSTSEC-2023-0068"
   ],
   "summary": "cocoon Reuses a Nonce, Key Pair in Encryption",
   "details": "Versions of the package cocoon before 0.4.0 are vulnerable to Reusing a Nonce, Key Pair in Encryption when the encrypt, wrap, and dump functions are sequentially called. An attacker can generate the same ciphertext by creating a new encrypted message with the same cocoon object.\n\n**Note:**\nThe issue does NOT affect objects created with Cocoon::new which utilizes ThreadRng.",
