@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-02-09T19:43:01Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -50,6 +50,9 @@
         "Url": "https://web.archive.org/web/20081012023428/http://www.securityfocus.com/bid/27307"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/paramiko/PYSEC-2008-8.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-wqmm-q65g-2hqr"
       }
     ],
@@ -66,13 +69,13 @@
     "Description": "common.py in Paramiko 1.7.1 and earlier, when using threads or forked processes, does not properly use RandomPool, which allows one session to obtain sensitive information from another session by predicting the state of the pool.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-01T23:28:57Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Paramiko Unsafe randomness usage may allow access to sensitive information",
-    "UpdatedAt": "2024-02-09T19:43:01Z",
+    "UpdatedAt": "2024-10-08T13:10:26Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

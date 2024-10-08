@@ -1,9 +1,9 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2024-03-26T19:13:38Z",
+  "Severity": "CRITICAL",
+  "UpdatedAt": "2024-10-08T13:11:34Z",
   "Package": {
     "Ecosystem": "PIP",
-    "Name": "Pillow"
+    "Name": "pillow"
   },
   "Advisory": {
     "DatabaseId": 3510,
@@ -27,6 +27,9 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-57h3-9rgr-c24m"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/pillow/PYSEC-2021-35.yaml"
       }
     ],
     "Identifiers": [
@@ -42,13 +45,13 @@
     "Description": "An issue was discovered in Pillow before 8.1.1. TiffDecode has a heap-based buffer overflow when decoding crafted YCbCr files because of certain interpretation conflicts with LibTIFF in RGBA mode. NOTE: this issue exists because of an incomplete fix for CVE-2020-35654.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-03-29T16:35:16Z",
-    "Severity": "HIGH",
+    "Severity": "CRITICAL",
     "Summary": "Out of bounds write in Pillow",
-    "UpdatedAt": "2024-03-26T19:13:38Z",
+    "UpdatedAt": "2024-10-08T13:11:34Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.8,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H"
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
@@ -56,7 +59,7 @@
       "FirstPatchedVersion": {
         "Identifier": "8.1.1"
       },
-      "VulnerableVersionRange": "= 8.1.0"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 8.1.1"
     }
   ]
 }
