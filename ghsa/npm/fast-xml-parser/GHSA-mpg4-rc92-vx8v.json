@@ -36,12 +36,12 @@
         "Value": "CVE-2024-41818"
       }
     ],
-    "Description": "### Summary\nA ReDOS exists on currency.js  was discovered by Gauss Security Labs R\u0026D team.\n\n### Details\nhttps://github.com/NaturalIntelligence/fast-xml-parser/blob/master/src/v5/valueParsers/currency.js#L10\ncontains a vulnerable regex \n\n### PoC\npass the following string '\\t'.repeat(13337)  + '.'\n\n### Impact\nDenial of service during currency parsing in experimental version 5 of fast-xml-parser-library\n\nhttps://gauss-security.com",
+    "Description": "### Summary\nA ReDOS that exists on currency.js was discovered by Gauss Security Labs R\u0026D team.\n\n### Details\nhttps://github.com/NaturalIntelligence/fast-xml-parser/blob/v4.4.0/src/v5/valueParsers/currency.js#L10 contains a vulnerable regex \n\n### PoC\npass the following string '\\t'.repeat(13337)  + '.'\n\n### Impact\nDenial of service during currency parsing in experimental version 5 of fast-xml-parser-library\n\nhttps://gauss-security.com",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-29T17:46:16Z",
     "Severity": "HIGH",
     "Summary": "fast-xml-parser vulnerable to ReDOS at currency parsing",
-    "UpdatedAt": "2024-09-11T18:49:13Z",
+    "UpdatedAt": "2024-10-07T19:56:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,

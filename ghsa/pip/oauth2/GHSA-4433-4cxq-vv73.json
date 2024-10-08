@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-02-23T21:12:24Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -35,6 +35,9 @@
         "Url": "https://web.archive.org/web/20200228063302/http://www.securityfocus.com/bid/62386"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/oauth2/PYSEC-2014-85.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4433-4cxq-vv73"
       }
     ],
@@ -51,13 +54,13 @@
     "Description": "The Server.verify_request function in SimpleGeo python-oauth2 does not check the nonce, which allows remote attackers to perform replay attacks via a signed URL.\nThe vulnerability does not appear to be patched according to the following [discussion](https://github.com/joestump/python-oauth2/issues/129#issuecomment-895911502).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:46:28Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "SimpleGeo python-oauth2 does not check the nonce allowing replay attacks",
-    "UpdatedAt": "2024-02-23T21:12:24Z",
+    "UpdatedAt": "2024-10-07T21:00:49Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
