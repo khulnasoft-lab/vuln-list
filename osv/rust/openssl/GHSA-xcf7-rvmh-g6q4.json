@@ -5,6 +5,9 @@
   "aliases": [
     "RUSTSEC-2023-0044"
   ],
+  "related": [
+    "CGA-8qwx-c6h4-w32c"
+  ],
   "summary": "`openssl` `X509VerifyParamRef::set_host` buffer over-read",
   "details": "When this function was passed an empty string, `openssl` would attempt to call `strlen` on it, reading arbitrary memory until it reached a NUL byte.\n",
   "affected": [
