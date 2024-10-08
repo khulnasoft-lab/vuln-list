@@ -1,12 +1,12 @@
 {
   "id": "GHSA-rfw2-x9f8-2f6m",
-  "modified": "2024-02-17T05:34:04.691492Z",
+  "modified": "2024-10-07T21:45:04.994085Z",
   "published": "2021-04-30T17:27:53Z",
   "aliases": [
     "CVE-2021-26722",
     "PYSEC-2021-33"
   ],
-  "summary": "Cross-Site Scripting",
+  "summary": "LinkedIn Oncall vulnerable to Cross-Site Scripting",
   "details": "LinkedIn Oncall through 1.4.0 allows reflected XSS via /query because of mishandling of the \"No results found for\" message in the search bar.",
   "affected": [
     {
@@ -67,6 +67,18 @@
     {
       "type": "WEB",
       "url": "https://github.com/linkedin/oncall/commit/843bc106a1c1b1699e9e52b6b0d01c7efe1d6225"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-rfw2-x9f8-2f6m"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/linkedin/oncall"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/oncall/PYSEC-2021-33.yaml"
     },
     {
       "type": "WEB",
