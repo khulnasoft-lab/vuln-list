@@ -8954,6 +8954,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package kubernetes is earlier than 1.30.1-1, affected by CVE-2024-28180",
+      "ID": "oval:com.microsoft.azurelinux:tst:35883000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:35883001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:35883002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package keda is earlier than 2.14.0-1, affected by CVE-2024-28180",
       "ID": "oval:com.microsoft.azurelinux:tst:35882000",
       "Version": "1",
@@ -13090,18 +13102,6 @@
       },
       "State": {
         "StateRef": "oval:com.microsoft.azurelinux:ste:34794002"
-      }
-    },
-    {
-      "Check": "at least one",
-      "Comment": "Package grub2 is earlier than 2.12-1, affected by CVE-2023-4001",
-      "ID": "oval:com.microsoft.azurelinux:tst:34793000",
-      "Version": "2",
-      "Object": {
-        "ObjectRef": "oval:com.microsoft.azurelinux:obj:34793001"
-      },
-      "State": {
-        "StateRef": "oval:com.microsoft.azurelinux:ste:34793002"
       }
     },
     {
