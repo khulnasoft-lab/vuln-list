@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-08-16T22:52:39Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -35,6 +35,9 @@
         "Url": "https://web.archive.org/web/20170103151725/http://www.securityfocus.com/bid/65511"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/pillow/PYSEC-2014-22.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x895-2wrm-hvp7"
       }
     ],
@@ -51,13 +54,13 @@
     "Description": "The (1) `load_djpeg` function in `JpegImagePlugin.py`, (2) `Ghostscript` function in `EpsImagePlugin.py`, (3) `load` function in `IptcImagePlugin.py`, and (4) `_copy` function in `Image.py` in Python Image Library (PIL) 1.1.7 and earlier and Pillow before 2.3.1 do not properly create temporary files, which allow local users to overwrite arbitrary files and obtain sensitive information via a symlink attack on the temporary file.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T02:39:13Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "PIL and Pillow Vulnerable to Symlink Attack on Tmpfiles",
-    "UpdatedAt": "2023-08-16T22:52:39Z",
+    "UpdatedAt": "2024-10-09T20:14:02Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.7,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
     }
   },
   "Versions": [

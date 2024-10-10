@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2022-12-06T21:13:33Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -20,7 +20,10 @@
         "Url": "https://github.com/ArjunSharda/Passeo/commit/8caa798b6bc4647dca59b2376204b6dc6176361a"
       },
       {
-        "Url": "https://peps.python.org/pep-0506/"
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/passeo/PYSEC-2022-42997.yaml"
+      },
+      {
+        "Url": "https://peps.python.org/pep-0506"
       },
       {
         "Url": "https://github.com/advisories/GHSA-mhhf-vgwh-fw9h"
@@ -39,9 +42,9 @@
     "Description": "### Impact\nEveryone below v1.0.5 is impacted by this flaw, of confidentiality being at risk due to the password(s) being easily able to be guessed with Passeo's use of the ``random`` library. It is recommended to change any passwords made with Passeo before v1.0.5 and upgrade to v1.0.5, and v1.0.5 patches this with the ``secrets`` library.\n\n### Workarounds\nNo current workaround available than updating to v1.0.5.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-12-06T21:13:32Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Passeo uses insecure random number generator",
-    "UpdatedAt": "2023-05-04T20:06:09Z",
+    "UpdatedAt": "2024-10-09T20:09:03Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.9,

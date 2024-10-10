@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2018-07-23T19:46:04Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-10-09T21:30:27Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "Plone"
@@ -20,22 +20,10 @@
         "Url": "https://github.com/advisories/GHSA-2qx8-589j-gcpx"
       },
       {
-        "Url": "http://osvdb.org/72729"
-      },
-      {
         "Url": "http://plone.org/products/plone/security/advisories/CVE-2011-1950"
       },
       {
-        "Url": "http://secunia.com/advisories/44775"
-      },
-      {
-        "Url": "http://securityreason.com/securityalert/8269"
-      },
-      {
-        "Url": "http://www.securityfocus.com/archive/1/518155/100/0/threaded"
-      },
-      {
-        "Url": "http://www.securityfocus.com/bid/48005"
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/plone/PYSEC-2011-16.yaml"
       }
     ],
     "Identifiers": [
@@ -51,16 +39,22 @@
     "Description": "plone.app.users in Plone 4.0 and 4.1 allows remote authenticated users to modify the properties of arbitrary accounts via unspecified vectors, as exploited in the wild in June 2011.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-07-23T20:26:45Z",
-    "Severity": "MODERATE",
-    "Summary": "Moderate severity vulnerability that affects Plone and plone.app.users",
-    "UpdatedAt": "2023-01-09T05:02:38Z",
+    "Severity": "HIGH",
+    "Summary": "Plone and plone.app.users allow remote authenticated users to modify the properties of arbitrary accounts",
+    "UpdatedAt": "2024-10-09T21:30:27Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "4.1.1"
+      },
+      "VulnerableVersionRange": "\u003e= 4.1.0, \u003c 4.1.1"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "4.0.6"
