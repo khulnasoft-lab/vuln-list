@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package oath-toolkit is earlier than 2.6.7-3, affected by CVE-2024-47191",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:50121000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:50121001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:50121002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package linuxptp is earlier than 3.1.1-1, affected by CVE-2024-42861",
       "ID": "oval:com.microsoft.cbl-mariner:tst:49731000",
       "Version": "0",

@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package oath-toolkit is earlier than 2.6.7-3, affected by CVE-2024-47191",
+      "ID": "oval:com.microsoft.azurelinux:tst:50124000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:50124001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:50124002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package linuxptp is earlier than 3.1.1-1, affected by CVE-2024-42861",
       "ID": "oval:com.microsoft.azurelinux:tst:49740000",
       "Version": "0",
