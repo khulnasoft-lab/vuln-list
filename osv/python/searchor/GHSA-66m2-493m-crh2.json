@@ -1,9 +1,10 @@
 {
   "id": "GHSA-66m2-493m-crh2",
-  "modified": "2024-02-16T08:17:13.321945Z",
+  "modified": "2024-10-09T23:00:52.339639Z",
   "published": "2023-09-25T18:37:51Z",
   "aliases": [
-    "CVE-2023-43364"
+    "CVE-2023-43364",
+    "PYSEC-2023-262"
   ],
   "summary": "Searchor CLI's Search vulnerable to Arbitrary Code using Eval",
   "details": " An issue in Arjun Sharda's Searchor before version v.2.4.2 allows an attacker to\n execute arbitrary code via a crafted script to the eval() function in Searchor's src/searchor/main.py file, affecting the search feature in Searchor's CLI (Command Line Interface).\n\n### Impact\nVersions equal to, or below 2.4.1 are affected.\n\n### Patches\nVersions above, or equal to 2.4.2 have patched the vulnerability.\n\n### References\nhttps://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection\nhttps://github.com/nexis-nexis/Searchor-2.4.0-POC-Exploit-\nhttps://github.com/jonnyzar/POC-Searchor-2.4.2\nhttps://github.com/ArjunSharda/Searchor/pull/130",
@@ -93,6 +94,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/nikn0laty/Exploit-for-Searchor-2.4.0-Arbitrary-CMD-Injection"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/searchor/PYSEC-2023-262.yaml"
     }
   ]
 }

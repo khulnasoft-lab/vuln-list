@@ -1,9 +1,10 @@
 {
   "id": "GHSA-fhqq-8f65-5xfc",
-  "modified": "2024-10-01T23:27:06.786563Z",
+  "modified": "2024-10-09T22:34:33Z",
   "published": "2024-10-01T21:31:35Z",
   "aliases": [
-    "CVE-2024-9407"
+    "CVE-2024-9407",
+    "GO-2024-3169"
   ],
   "summary": "Improper Input Validation in Buildah and Podman",
   "details": "A vulnerability exists in the bind-propagation option of the Dockerfile RUN --mount instruction. The system does not properly validate the input passed to this option, allowing users to pass arbitrary parameters to the mount instruction. This issue can be exploited to mount sensitive directories from the host into a container during the build process and, in some cases, modify the contents of those mounted files. Even if SELinux is used, this vulnerability can bypass its protection by allowing the source directory to be relabeled to give the container access to host files.",
@@ -22,12 +23,13 @@
               "introduced": "0"
             },
             {
-              "last_affected": "1.37.3"
+              "fixed": "1.37.4"
             }
           ]
         }
       ],
       "database_specific": {
+        "last_known_affected_version_range": "\u003c= 1.37.3",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
       }
     },
@@ -45,12 +47,109 @@
               "introduced": "0"
             },
             {
-              "last_affected": "5.2.3"
+              "fixed": "5.2.4"
             }
           ]
         }
       ],
       "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.2.3",
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/containers/podman",
+        "purl": "pkg:golang/github.com/containers/podman"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "5.2.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.2.3",
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/containers/podman/v2",
+        "purl": "pkg:golang/github.com/containers/podman/v2"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "5.2.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.2.3",
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/containers/podman/v3",
+        "purl": "pkg:golang/github.com/containers/podman/v3"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "5.2.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.2.3",
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/containers/podman/v4",
+        "purl": "pkg:golang/github.com/containers/podman/v4"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "5.2.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.2.3",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-fhqq-8f65-5xfc/GHSA-fhqq-8f65-5xfc.json"
       }
     }
@@ -62,11 +161,23 @@
     },
     {
       "type": "WEB",
+      "url": "https://github.com/containers/buildah/commit/e4e2ad5ca2088d7c388109394135ead7aaf1f4f4"
+    },
+    {
+      "type": "WEB",
       "url": "https://access.redhat.com/security/cve/CVE-2024-9407"
     },
     {
       "type": "WEB",
       "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2315887"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/containers/podman/releases/tag/v5.2.4"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3169"
     }
   ]
 }

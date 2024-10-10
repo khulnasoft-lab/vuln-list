@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4f8r-qqr9-fq8j",
-  "modified": "2024-10-01T18:42:10.919556Z",
+  "modified": "2024-10-09T22:22:45Z",
   "published": "2024-10-01T18:13:25Z",
   "aliases": [
-    "CVE-2024-47534"
+    "CVE-2024-47534",
+    "GO-2024-3166"
   ],
   "related": [
     "CGA-29m6-vcqg-gw2w"
@@ -16,6 +17,29 @@
         "ecosystem": "Go",
         "name": "github.com/theupdateframework/go-tuf/v2",
         "purl": "pkg:golang/github.com/theupdateframework/go-tuf/v2"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.0.1"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-4f8r-qqr9-fq8j/GHSA-4f8r-qqr9-fq8j.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/theupdateframework/go-tuf",
+        "purl": "pkg:golang/github.com/theupdateframework/go-tuf"
       },
       "ranges": [
         {
@@ -59,6 +83,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/theupdateframework/go-tuf/blob/f95222bdd22d2ac4e5b8ed6fe912b645e213c3b5/metadata/metadata.go#L565-L580"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3166"
     }
   ]
 }
