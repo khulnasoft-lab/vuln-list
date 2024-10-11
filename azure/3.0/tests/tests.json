@@ -2,6 +2,30 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package nvidia-container-toolkit is earlier than 1.16.2-1, affected by CVE-2024-0133",
+      "ID": "oval:com.microsoft.azurelinux:tst:50181000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:50181001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:50181002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package nvidia-container-toolkit is earlier than 1.16.2-1, affected by CVE-2024-0132",
+      "ID": "oval:com.microsoft.azurelinux:tst:50180000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:50180001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:50180002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package oath-toolkit is earlier than 2.6.7-3, affected by CVE-2024-47191",
       "ID": "oval:com.microsoft.azurelinux:tst:50124000",
       "Version": "1",
