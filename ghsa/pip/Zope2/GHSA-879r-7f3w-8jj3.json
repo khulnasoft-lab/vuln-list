@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2018-07-23T19:47:14Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -30,6 +30,12 @@
       },
       {
         "Url": "http://www.openwall.com/lists/oss-security/2012/11/10/1"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/plone/PYSEC-2014-31.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/zope2/PYSEC-2014-74.yaml"
       }
     ],
     "Identifiers": [
@@ -45,13 +51,13 @@
     "Description": "The App.Undo.UndoSupport.get_request_var_or_attr function in Zope before 2.12.21 and 3.13.x before 2.13.11, as used in Plone before 4.2.3 and 4.3 before beta 1, allows remote authenticated users to gain access to restricted attributes via unspecified vectors.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-07-23T19:52:06Z",
-    "Severity": "MODERATE",
-    "Summary": "Moderate severity vulnerability that affects Plone and Zope2",
-    "UpdatedAt": "2023-01-09T05:02:48Z",
+    "Severity": "HIGH",
+    "Summary": "Plone and Zope2 vulnerable to unauthorized access to restricted attributes",
+    "UpdatedAt": "2024-10-11T20:52:23Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
