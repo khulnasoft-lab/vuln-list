@@ -1,6 +1,6 @@
 {
   "id": "GHSA-wprr-mc54-c62q",
-  "modified": "2023-11-08T03:57:09.848590Z",
+  "modified": "2024-10-14T21:33:31.190671Z",
   "published": "2022-05-17T04:30:15Z",
   "aliases": [
     "CVE-2012-5508",
@@ -97,6 +97,33 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-wprr-mc54-c62q/GHSA-wprr-mc54-c62q.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "plone",
+        "purl": "pkg:pypi/plone"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "4.3a0"
+            },
+            {
+              "fixed": "4.3b1"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "4.3a1",
+        "4.3a2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-wprr-mc54-c62q/GHSA-wprr-mc54-c62q.json"
+      }
     }
   ],
   "references": [
@@ -115,6 +142,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/plone/Products.CMFPlone/blob/4.2.3/docs/CHANGES.txt"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/plone/PYSEC-2014-50.yaml"
     },
     {
       "type": "WEB",
