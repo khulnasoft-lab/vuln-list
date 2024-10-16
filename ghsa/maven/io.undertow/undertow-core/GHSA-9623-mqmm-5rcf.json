@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-08-21T20:08:40Z",
+  "UpdatedAt": "2024-10-16T14:07:33Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.undertow:undertow-core"
@@ -41,6 +41,12 @@
         "Url": "https://access.redhat.com/errata/RHSA-2024:7736"
       },
       {
+        "Url": "https://github.com/undertow-io/undertow/commit/80c125e09068ac52ed0a9acde266ef12f8ed7ae1"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/commit/ce5182c37376982ef0abee34fce0d8c0aab0fab8"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9623-mqmm-5rcf"
       }
     ],
@@ -59,7 +65,7 @@
     "PublishedAt": "2024-08-21T15:30:54Z",
     "Severity": "HIGH",
     "Summary": "Undertow vulnerable to Race Condition",
-    "UpdatedAt": "2024-10-07T21:34:32Z",
+    "UpdatedAt": "2024-10-16T14:07:33Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -69,9 +75,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.3.17.Final"
       },
-      "VulnerableVersionRange": "\u003c= 2.3.15.Final"
+      "VulnerableVersionRange": "\u003e= 2.3.0.Alpha1, \u003c 2.3.17.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.2.36.Final"
+      },
+      "VulnerableVersionRange": "\u003c 2.2.36.Final"
     }
   ]
 }
