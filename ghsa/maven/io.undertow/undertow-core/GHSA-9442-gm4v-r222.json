@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-06-20T16:22:34Z",
+  "UpdatedAt": "2024-10-17T14:08:20Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.undertow:undertow-core"
@@ -32,6 +32,18 @@
         "Url": "https://access.redhat.com/errata/RHSA-2024:4386"
       },
       {
+        "Url": "https://github.com/undertow-io/undertow/pull/1612"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/commit/90f202ada89b6d9883beed0f1fe10c99d470d9a8"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/commit/a28ac53076e2fa532266d25e0c0b1a01d0e9d2cf"
+      },
+      {
+        "Url": "https://issues.redhat.com/browse/UNDERTOW-2334"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9442-gm4v-r222"
       }
     ],
@@ -50,7 +62,7 @@
     "PublishedAt": "2024-06-20T15:31:19Z",
     "Severity": "HIGH",
     "Summary": "Undertow's url-encoded request path information can be broken on ajp-listener",
-    "UpdatedAt": "2024-09-09T18:31:30Z",
+    "UpdatedAt": "2024-10-17T14:08:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -62,7 +74,13 @@
       "FirstPatchedVersion": {
         "Identifier": "2.3.14.Final"
       },
-      "VulnerableVersionRange": "\u003c 2.3.14.Final"
+      "VulnerableVersionRange": "\u003c 2.2.33.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.14.Final"
+      },
+      "VulnerableVersionRange": "\u003e= 2.3.0.Alpha1, \u003c 2.3.14.Final"
     }
   ]
 }
