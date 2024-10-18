@@ -1,6 +1,6 @@
 {
-  "Severity": "LOW",
-  "UpdatedAt": "2024-10-08T18:50:10Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-10-18T15:03:41Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "slim-select"
@@ -23,6 +23,12 @@
         "Url": "https://vulncheck.com/advisories/slim-select-xss"
       },
       {
+        "Url": "https://github.com/brianvoe/slim-select/pull/572"
+      },
+      {
+        "Url": "https://github.com/brianvoe/slim-select/commit/f8534f27d6e9bab89024d139f1c4f7555f1efd5e"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-qvqv-mcxr-x8qw"
       }
     ],
@@ -36,12 +42,12 @@
         "Value": "CVE-2024-9440"
       }
     ],
-    "Description": "Slim Select 2.0 versions through 2.9.0 are affected by a potential cross-site scripting vulnerability. In select.ts:createOption(), the text variable from the user-provided Options object is assigned to an innerHTML without sanitation. Software that depends on this library to dynamically generate lists using unsanitized user-provided input may be vulnerable to cross-site scripting, resulting in attacker executed JavaScript. At this time, no patch is available.",
+    "Description": "Slim Select 2.0 versions through 2.9.0 are affected by a potential cross-site scripting vulnerability. In select.ts:createOption(), the text variable from the user-provided Options object is assigned to an innerHTML without sanitation. Software that depends on this library to dynamically generate lists using unsanitized user-provided input may be vulnerable to cross-site scripting, resulting in attacker executed JavaScript. This vulnerability is fixed in 2.9.2.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-02T21:30:34Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Slim Select has potential Cross-site Scripting issue",
-    "UpdatedAt": "2024-10-08T18:50:10Z",
+    "UpdatedAt": "2024-10-18T15:03:41Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
@@ -51,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.9.2"
       },
-      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c= 2.9.0"
+      "VulnerableVersionRange": "\u003e= 2.0.0, \u003c 2.9.2"
     }
   ]
 }

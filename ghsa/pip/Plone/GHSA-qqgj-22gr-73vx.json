@@ -1,6 +1,6 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2024-04-29T16:52:05Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-10-18T15:24:32Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "Plone"
@@ -20,6 +20,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2016/04/20/1"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/plone/PYSEC-2017-55.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-qqgj-22gr-73vx"
       }
     ],
@@ -36,9 +39,9 @@
     "Description": "Plone 4.0 through 5.1a1 does not have security declarations for Dexterity content-related WebDAV requests, which allows remote attackers to gain webdav access via unspecified vectors.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T02:57:52Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Plone vulnerable to privilege escalation in WebDAV",
-    "UpdatedAt": "2024-04-29T16:52:05Z",
+    "UpdatedAt": "2024-10-18T15:24:32Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,
@@ -46,6 +49,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.1a2"
+      },
+      "VulnerableVersionRange": "= 5.1a1"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "5.0.5"
