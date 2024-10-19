@@ -1,6 +1,6 @@
 {
   "id": "GHSA-m8xw-9x5x-6vh3",
-  "modified": "2024-02-16T08:07:09.758546Z",
+  "modified": "2024-10-18T22:22:41.281652Z",
   "published": "2022-12-06T21:30:45Z",
   "aliases": [
     "CVE-2022-44900",
@@ -176,14 +176,6 @@
         "0.9.8",
         "0.9.9"
       ],
-      "ecosystem_specific": {
-        "affected_functions": [
-          "py7zr.py7zr.SevenZipFile.extractall",
-          "py7zr.py7zr.SevenZipFile._extract",
-          "py7zr.py7zr.Worker._extract_single",
-          "py7zr.py7zr.Worker.extract"
-        ]
-      },
       "database_specific": {
         "last_known_affected_version_range": "\u003c= 0.20.0",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/12/GHSA-m8xw-9x5x-6vh3/GHSA-m8xw-9x5x-6vh3.json"
@@ -206,6 +198,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/miurahr/py7zr"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/py7zr/PYSEC-2022-42998.yaml"
     },
     {
       "type": "WEB",
