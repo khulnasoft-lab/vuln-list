@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-02T05:05:07Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -23,6 +23,9 @@
         "Url": "http://www.openwall.com/lists/oss-security/2013/10/17/3"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/pycrypto/PYSEC-2013-29.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x377-f64p-hf5j"
       }
     ],
@@ -39,13 +42,13 @@
     "Description": "The Crypto.Random.atfork function in PyCrypto before 2.6.1 does not properly reseed the pseudo-random number generator (PRNG) before allowing a child process to access it, which makes it easier for context-dependent attackers to obtain sensitive information by leveraging a race condition in which a child process is created and accesses the PRNG within the same rate-limit period as another process.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:59:18Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "PyCrypto does not properly reseed PRNG before allowing access",
-    "UpdatedAt": "2024-05-02T05:05:07Z",
+    "UpdatedAt": "2024-10-21T20:27:57Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [

@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2022-07-08T18:48:45Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -66,13 +66,13 @@
     "Description": "Race condition in the FTPHandler class in ftpserver.py in pyftpdlib before 0.5.2 allows remote attackers to cause a denial of service (daemon outage) by establishing and then immediately closing a TCP connection, leading to the accept function having an unexpected value of None for the address, or an ECONNABORTED, EAGAIN, or EWOULDBLOCK error, a related issue to CVE-2010-3492.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T05:47:39Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Concurrent Execution using Shared Resource with Improper Synchronization in pyftpdlib",
-    "UpdatedAt": "2023-01-29T05:02:01Z",
+    "UpdatedAt": "2024-10-21T20:26:57Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [
