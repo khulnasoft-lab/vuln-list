@@ -1,10 +1,14 @@
 {
   "id": "GO-2024-2599",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2024-10-22T05:29:04.026559Z",
   "published": "2024-03-05T22:15:00Z",
   "aliases": [
     "BIT-golang-2023-45290",
-    "CVE-2023-45290"
+    "CGA-63g6-wrgr-m47w",
+    "CGA-g554-cg74-8rm4",
+    "CGA-xr68-h9cg-49cj",
+    "CVE-2023-45290",
+    "GHSA-rr6r-cfgf-gc6h"
   ],
   "summary": "Memory exhaustion in multipart form parsing in net/textproto and net/http",
   "details": "When parsing a multipart form (either explicitly with Request.ParseMultipartForm or implicitly with Request.FormValue, Request.PostFormValue, or Request.FormFile), limits on the total size of the parsed form were not applied to the memory consumed while reading a single form line. This permits a maliciously crafted input containing very long lines to cause allocation of arbitrarily large amounts of memory, potentially leading to memory exhaustion.\n\nWith fix, the ParseMultipartForm function now correctly limits the maximum size of form lines.",
