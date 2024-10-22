@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-04-22T21:15:04Z",
+  "UpdatedAt": "2024-10-22T14:50:16Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "salt"
@@ -23,13 +23,13 @@
         "Url": "https://github.com/saltstack/salt/blob/8f9405cf8e6f7d7776d5000841c886dec6d96250/doc/topics/releases/3004.1.rst#L30"
       },
       {
-        "Url": "https://github.com/saltstack/salt/releases"
-      },
-      {
-        "Url": "https://saltproject.io/security_announcements/salt-security-advisory-release"
-      },
-      {
         "Url": "https://security.gentoo.org/glsa/202310-22"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/salt/PYSEC-2022-174.yaml"
+      },
+      {
+        "Url": "https://repo.saltproject.io"
       },
       {
         "Url": "https://github.com/advisories/GHSA-qcr3-hr2f-6557"
@@ -50,7 +50,7 @@
     "PublishedAt": "2022-03-30T00:00:20Z",
     "Severity": "HIGH",
     "Summary": "SaltStack Salt Permissions Bypass",
-    "UpdatedAt": "2024-04-22T21:15:04Z",
+    "UpdatedAt": "2024-10-22T14:50:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -58,6 +58,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3002.8"
+      },
+      "VulnerableVersionRange": "\u003c 3002.8"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "3004.1"
@@ -69,12 +75,6 @@
         "Identifier": "3003.4"
       },
       "VulnerableVersionRange": "\u003e= 3003, \u003c 3003.4"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3002.8"
-      },
-      "VulnerableVersionRange": "\u003e= 3002, \u003c 3002.8"
     }
   ]
 }
