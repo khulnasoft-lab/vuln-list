@@ -6,6 +6,26 @@
     "BIT-golang-2023-29409",
     "CVE-2023-29409"
   ],
+  "related": [
+    "RHSA-2023:5009",
+    "RHSA-2023:5721",
+    "RHSA-2023:5738",
+    "RHSA-2023:5805",
+    "RHSA-2023:5964",
+    "RHSA-2023:5965",
+    "RHSA-2023:5969",
+    "RHSA-2023:6298",
+    "RHSA-2023:6840",
+    "RHSA-2023:7762",
+    "RHSA-2023:7763",
+    "RHSA-2023:7764",
+    "RHSA-2023:7765",
+    "RHSA-2023:7766",
+    "RHSA-2024:0121",
+    "RHSA-2024:0292",
+    "RHSA-2024:0293",
+    "RHSA-2024:2988"
+  ],
   "summary": "Large RSA keys can cause high CPU usage in crypto/tls",
   "details": "Extremely large RSA keys in certificate chains can cause a client/server to expend significant CPU time verifying signatures.\n\nWith fix, the size of RSA keys transmitted during handshakes is restricted to \u003c= 8192 bits.\n\nBased on a survey of publicly trusted RSA keys, there are currently only three certificates in circulation with keys larger than this, and all three appear to be test certificates that are not actively deployed. It is possible there are larger keys in use in private PKIs, but we target the web PKI, so causing breakage here in the interests of increasing the default safety of users of crypto/tls seems reasonable.",
   "affected": [

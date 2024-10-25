@@ -6,6 +6,11 @@
     "BIT-golang-2023-45285",
     "CVE-2023-45285"
   ],
+  "related": [
+    "RHSA-2024:0887",
+    "RHSA-2024:1041",
+    "RHSA-2024:1131"
+  ],
   "summary": "Command 'go get' may unexpectedly fallback to insecure git in cmd/go",
   "details": "Using go get to fetch a module with the \".git\" suffix may unexpectedly fallback to the insecure \"git://\" protocol if the module is unavailable via the secure \"https://\" and \"git+ssh://\" protocols, even if GOINSECURE is not set for said module. This only affects users who are not using the module proxy and are fetching modules directly (i.e. GOPROXY=off).",
   "affected": [
