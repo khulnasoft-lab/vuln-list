@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2023-02-06T19:28:20Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -38,6 +38,9 @@
         "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=989738"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-glanceclient/PYSEC-2013-11.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-qgfg-gvff-523v"
       }
     ],
@@ -54,13 +57,13 @@
     "Description": "The Python client library for Glance (python-glanceclient) before 0.10.0 does not properly check the preverify_ok value, which prevents the server hostname from being verified with a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate and allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T02:10:39Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "python-glanceclient vulnerable to SSL server spoofing due to unverified X.509 certificate",
-    "UpdatedAt": "2023-02-13T20:44:54Z",
+    "UpdatedAt": "2024-10-25T20:44:51Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

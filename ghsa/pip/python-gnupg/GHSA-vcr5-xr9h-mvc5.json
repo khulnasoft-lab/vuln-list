@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "CRITICAL",
   "UpdatedAt": "2023-09-01T20:54:17Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -39,6 +39,9 @@
       },
       {
         "Url": "https://www.openwall.com/lists/oss-security/2014/02/04/4"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-gnupg/PYSEC-2014-92.yaml"
       }
     ],
     "Identifiers": [
@@ -54,13 +57,13 @@
     "Description": "python-gnupg 0.3.5 and 0.3.6 allow for shell injection via a failure to escape backslashes in the `shell_quote()` function. NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-7323.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-11-06T23:12:48Z",
-    "Severity": "MODERATE",
+    "Severity": "CRITICAL",
     "Summary": "python-gnupg vulnerable to shell injection",
-    "UpdatedAt": "2023-09-01T20:54:17Z",
+    "UpdatedAt": "2024-10-25T21:20:40Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 9.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [

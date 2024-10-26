@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2023-08-03T23:09:35Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -29,6 +29,9 @@
         "Url": "https://review.opendev.org/c/openstack/python-keystoneclient/+/81078"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-keystoneclient/PYSEC-2014-70.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-gwvq-rgqf-993f"
       }
     ],
@@ -45,9 +48,9 @@
     "Description": "A context confusion vulnerability was identified in Keystone auth_token middleware (shipped in python-keystoneclient) before 0.7.0. By doing repeated requests, with sufficient load on the target system, an authenticated user may in certain situations assume another authenticated user's complete identity and multi-tenant authorizations, potentially resulting in a privilege escalation. Note that it is related to a bad interaction between eventlet and python-memcached that should be avoided if the calling process already monkey-patches \"thread\" to use eventlet. Only keystone middleware setups using auth_token with memcache are vulnerable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T00:13:54Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "python-keystoneclient vulnerable to context confusion in Keystone auth_token middleware",
-    "UpdatedAt": "2023-08-03T23:09:35Z",
+    "UpdatedAt": "2024-10-25T20:47:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6,

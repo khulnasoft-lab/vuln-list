@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-04-29T11:05:30Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -35,6 +35,9 @@
         "Url": "https://web.archive.org/web/20140722194233/http://secunia.com/advisories/54137"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/qpid-python/PYSEC-2013-25.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-3g2p-7c6p-vj8c"
       }
     ],
@@ -51,13 +54,13 @@
     "Description": "The Python client in Apache Qpid before 2.2 does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-13T01:08:41Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Apache Qpid Python client Improper certificate validation",
-    "UpdatedAt": "2024-04-29T11:05:30Z",
+    "UpdatedAt": "2024-10-25T21:06:38Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

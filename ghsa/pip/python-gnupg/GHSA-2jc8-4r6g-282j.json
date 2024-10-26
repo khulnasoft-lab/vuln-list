@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2018-11-06T23:14:00Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -14,9 +14,6 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2014-1928"
       },
       {
-        "Url": "https://code.google.com/p/python-gnupg/"
-      },
-      {
         "Url": "https://code.google.com/p/python-gnupg/issues/detail?id=98"
       },
       {
@@ -29,13 +26,13 @@
         "Url": "http://seclists.org/oss-sec/2014/q1/294"
       },
       {
-        "Url": "http://secunia.com/advisories/56616"
-      },
-      {
-        "Url": "http://secunia.com/advisories/59031"
-      },
-      {
         "Url": "http://www.debian.org/security/2014/dsa-2946"
+      },
+      {
+        "Url": "https://code.google.com/p/python-gnupg"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-gnupg/PYSEC-2014-91.yaml"
       }
     ],
     "Identifiers": [
@@ -51,13 +48,13 @@
     "Description": "The shell_quote function in python-gnupg 0.3.5 does not properly escape characters, which allows context-dependent attackers to execute arbitrary code via shell metacharacters in unspecified vectors, as demonstrated using \"\\\" (backslash) characters to form multi-command sequences, a different vulnerability than CVE-2014-1927.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-7323.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-11-06T23:13:02Z",
-    "Severity": "MODERATE",
-    "Summary": "Moderate severity vulnerability that affects python-gnupg",
-    "UpdatedAt": "2023-01-09T05:02:30Z",
+    "Severity": "HIGH",
+    "Summary": "python-gnupg's shell_quote function does not properly escape characters",
+    "UpdatedAt": "2024-10-25T20:46:24Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
