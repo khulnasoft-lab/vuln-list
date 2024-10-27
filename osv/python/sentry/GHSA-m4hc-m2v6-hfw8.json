@@ -1,6 +1,6 @@
 {
   "id": "GHSA-m4hc-m2v6-hfw8",
-  "modified": "2024-02-16T08:16:00.609100Z",
+  "modified": "2024-10-26T23:00:56.931891Z",
   "published": "2023-07-25T17:19:48Z",
   "aliases": [
     "CVE-2023-36826",
@@ -87,16 +87,6 @@
         "9.1.1",
         "9.1.2"
       ],
-      "ecosystem_specific": {
-        "affected_functions": [
-          "sentry.api.endpoints.artifact_lookup.ProjectArtifactLookupEndpoint.download_file",
-          "sentry.api.endpoints.artifact_lookup.ProjectArtifactLookupEndpoint.get",
-          "sentry.api.endpoints.artifact_lookup.update_bundles",
-          "sentry.api.endpoints.artifact_lookup.get_legacy_release_bundles",
-          "sentry.api.endpoints.artifact_lookup.UrlConstructor.url_for_file_id",
-          "sentry.api.endpoints.debug_files.DebugFilesEndpoint.download"
-        ]
-      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/07/GHSA-m4hc-m2v6-hfw8/GHSA-m4hc-m2v6-hfw8.json"
       }
@@ -122,6 +112,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/getsentry/sentry"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/sentry/PYSEC-2023-130.yaml"
     }
   ]
 }
