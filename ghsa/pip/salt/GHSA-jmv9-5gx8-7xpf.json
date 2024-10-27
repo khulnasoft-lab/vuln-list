@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-15T20:57:55Z",
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-10-26T22:43:28Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "salt"
@@ -15,9 +15,6 @@
       },
       {
         "Url": "https://github.com/saltstack/salt/pull/7356"
-      },
-      {
-        "Url": "http://docs.saltstack.com/topics/releases/0.17.1.html"
       },
       {
         "Url": "http://www.openwall.com/lists/oss-security/2013/10/18/3"
@@ -42,13 +39,13 @@
     "Description": "Salt (aka SaltStack) before 0.15.0 through 0.17.0 allows remote authenticated minions to impersonate arbitrary minions via a crafted minion with a valid key.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:58:30Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Minion identity not validated in saltstack",
-    "UpdatedAt": "2023-01-29T05:01:54Z",
+    "UpdatedAt": "2024-10-26T22:43:28Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [
@@ -56,7 +53,7 @@
       "FirstPatchedVersion": {
         "Identifier": "0.17.1"
       },
-      "VulnerableVersionRange": "\u003e= 0, \u003c 0.17.1"
+      "VulnerableVersionRange": "\u003e= 0.15.0, \u003c 0.17.1"
     }
   ]
 }
