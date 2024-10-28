@@ -1,14 +1,10 @@
 {
   "id": "GHSA-3qj8-93xh-pwh2",
-  "modified": "2024-02-16T08:16:20.470122Z",
+  "modified": "2024-10-28T15:33:07.916135Z",
   "published": "2023-04-21T18:30:24Z",
-  "aliases": [
-    "CVE-2023-30798",
-    "GHSA-74m5-2c7w-9w3x",
-    "PYSEC-2023-48"
-  ],
-  "summary": "Starlette allows an unauthenticated and remote attacker to specify any number of form fields or files",
-  "details": "There MultipartParser usage in Encode's Starlette python framework before versions 0.25.0 allows an unauthenticated and remote attacker to specify any number of form fields or files which can cause excessive memory usage resulting in denial of service of the HTTP service.",
+  "withdrawn": "2024-10-28T15:22:00Z",
+  "summary": "Duplicate Advisory: Starlette allows an unauthenticated and remote attacker to specify any number of form fields or files",
+  "details": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-74m5-2c7w-9w3x. This link is maintained to preserve external references.\n\n## Original Description\nThere MultipartParser usage in Encode's Starlette python framework before versions 0.25.0 allows an unauthenticated and remote attacker to specify any number of form fields or files which can cause excessive memory usage resulting in denial of service of the HTTP service.",
   "affected": [
     {
       "package": {
@@ -159,11 +155,6 @@
         "0.9.8",
         "0.9.9"
       ],
-      "ecosystem_specific": {
-        "affected_functions": [
-          "starlette.requests.Request.form"
-        ]
-      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2023/04/GHSA-3qj8-93xh-pwh2/GHSA-3qj8-93xh-pwh2.json"
       }
