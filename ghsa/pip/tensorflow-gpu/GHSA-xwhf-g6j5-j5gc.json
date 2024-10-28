@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2020-11-13T17:17:14Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -23,6 +23,15 @@
         "Url": "https://github.com/tensorflow/tensorflow/pull/42143/commits/3ade2efec2e90c6237de32a19680caaa3ebc2845"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-cpu/PYSEC-2020-296.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-gpu/PYSEC-2020-331.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow/PYSEC-2020-139.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-xwhf-g6j5-j5gc"
       }
     ],
@@ -39,9 +48,9 @@
     "Description": "### Impact\nWhen the `boxes` argument of `tf.image.crop_and_resize` has a very large value, the CPU kernel implementation receives it as a C++ `nan` floating point value. Attempting to operate on this is undefined behavior which later produces a segmentation fault.\n\n### Patches\n\nWe have patched the issue in c0319231333f0f16e1cc75ec83660b01fedd4182 and will release TensorFlow 2.4.0 containing the patch. TensorFlow nightly packages after this commit will also have the issue resolved.\n\n### For more information\nPlease consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.\n\n### Attribution\nThis vulnerability has been reported in #42129",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2020-11-13T17:18:29Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Float cast overflow undefined behavior",
-    "UpdatedAt": "2023-02-01T05:05:02Z",
+    "UpdatedAt": "2024-10-28T14:46:33Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.7,

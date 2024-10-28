@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2022-07-08T19:12:30Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -30,6 +30,9 @@
       },
       {
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/suds/PYSEC-2013-32.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/suds-py3/PYSEC-2013-33.yaml"
       }
     ],
     "Identifiers": [
@@ -45,13 +48,13 @@
     "Description": "cache.py in Suds 0.4, when tempdir is set to None, allows local users to redirect SOAP queries and possibly have other unspecified impact via a symlink attack on a cache file with a predictable name in /tmp/suds/.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T01:08:23Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Improper Link Resolution Before File Access in Suds",
-    "UpdatedAt": "2023-01-29T05:01:53Z",
+    "UpdatedAt": "2024-10-28T14:37:29Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.2,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

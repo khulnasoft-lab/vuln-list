@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2023-08-23T21:49:40Z",
+  "UpdatedAt": "2024-10-28T14:20:16Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "SQLAlchemy"
@@ -45,6 +45,9 @@
       },
       {
         "Url": "https://github.com/sqlalchemy/sqlalchemy/commit/30307c4616ad67c01ddae2e1e8e34fabf6028414"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/sqlalchemy/PYSEC-2019-123.yaml"
       }
     ],
     "Identifiers": [
@@ -62,7 +65,7 @@
     "PublishedAt": "2019-04-16T15:50:41Z",
     "Severity": "CRITICAL",
     "Summary": "SQLAlchemy vulnerable to SQL Injection via order_by parameter",
-    "UpdatedAt": "2023-09-01T09:50:01Z",
+    "UpdatedAt": "2024-10-28T14:20:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -72,9 +75,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.3.0"
+        "Identifier": "1.2.18"
       },
-      "VulnerableVersionRange": "\u003c 1.3.0"
+      "VulnerableVersionRange": "\u003e= 0, \u003c 1.2.18"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.3.0b3"
+      },
+      "VulnerableVersionRange": "\u003e= 1.3.0b1, \u003c 1.3.0b3"
     }
   ]
 }
