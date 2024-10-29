@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2020-12-10T19:06:37Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -20,6 +20,15 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2020-26270"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-cpu/PYSEC-2020-301.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-gpu/PYSEC-2020-336.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow/PYSEC-2020-256.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-m648-33qf-v3gp"
       }
     ],
@@ -36,9 +45,9 @@
     "Description": "### Impact\nRunning an LSTM/GRU model where the LSTM/GRU layer receives an input with zero-length results in a `CHECK` failure when using the CUDA backend.\n\nThis can result in a query-of-death vulnerability, via denial of service, if users can control the input to the layer.\n\n### Patches\nWe have patched the issue in GitHub commit [14755416e364f17fb1870882fa778c7fec7f16e3](https://github.com/tensorflow/tensorflow/commit/14755416e364f17fb1870882fa778c7fec7f16e3) and will release TensorFlow 2.4.0 containing the patch. TensorFlow nightly packages after this commit will also have the issue resolved.\n\nSince this issue also impacts TF versions before 2.4, we will patch all releases between 1.15 and 2.3 inclusive.\n\n### For more information\nPlease consult [our security guide](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md) for more information regarding the security model and how to contact us with issues and questions.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2020-12-10T19:07:31Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "CHECK-fail in LSTM with zero-length input in TensorFlow",
-    "UpdatedAt": "2023-01-09T05:03:56Z",
+    "UpdatedAt": "2024-10-28T20:08:27Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.4,
