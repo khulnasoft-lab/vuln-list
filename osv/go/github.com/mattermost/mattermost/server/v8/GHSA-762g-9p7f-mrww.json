@@ -1,0 +1,49 @@
+{
+  "id": "GHSA-762g-9p7f-mrww",
+  "modified": "2024-10-29T16:29:10.338438Z",
+  "published": "2024-10-29T09:30:51Z",
+  "aliases": [
+    "CVE-2024-46872"
+  ],
+  "summary": "Mattermost Server Path Traversal vulnerability that leads to Cross-Site Request Forgery",
+  "details": "Mattermost versions 9.10.x \u003c= 9.10.2, 9.11.x \u003c= 9.11.1, 9.5.x \u003c= 9.5.9 fail to sanitize user inputs in the frontend that are used for redirection which allows for a one-click client-side path traversal that is leading to CSRF in Playbooks",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/mattermost/mattermost/server/v8",
+        "purl": "pkg:golang/github.com/mattermost/mattermost/server/v8"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "8.0.0-20240926115259-20ed58906adc"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-762g-9p7f-mrww/GHSA-762g-9p7f-mrww.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-46872"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/mattermost/mattermost"
+    },
+    {
+      "type": "WEB",
+      "url": "https://mattermost.com/security-updates"
+    }
+  ]
+}
