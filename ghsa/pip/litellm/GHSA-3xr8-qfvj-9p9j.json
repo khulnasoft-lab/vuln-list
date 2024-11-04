@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-06-06T22:55:47Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -36,9 +36,9 @@
     "Description": "BerriAI's litellm, in its latest version, is vulnerable to arbitrary file deletion due to improper input validation on the `/audio/transcriptions` endpoint. An attacker can exploit this vulnerability by sending a specially crafted request that includes a file path to the server, which then deletes the specified file without proper authorization or validation. This vulnerability is present in the code where `os.remove(file.filename)` is used to delete a file, allowing any user to delete critical files on the server such as SSH keys, SQLite databases, or configuration files. ",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-06T21:30:37Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Arbitrary file deletion in litellm",
-    "UpdatedAt": "2024-10-17T21:39:22Z",
+    "UpdatedAt": "2024-11-04T15:27:18Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

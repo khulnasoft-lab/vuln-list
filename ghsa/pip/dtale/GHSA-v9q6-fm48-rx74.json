@@ -1,5 +1,5 @@
 {
-  "Severity": "CRITICAL",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-06-06T22:47:25Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -15,6 +15,12 @@
       },
       {
         "Url": "https://huntr.com/bounties/57a06666-ff85-4577-af19-f3dfb7b02f91"
+      },
+      {
+        "Url": "https://github.com/man-group/dtale/commit/32bd6fb4a63de779ff1e51823a456865ea3cbd13"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/dtale/PYSEC-2024-117.yaml"
       },
       {
         "Url": "https://github.com/advisories/GHSA-v9q6-fm48-rx74"
@@ -33,9 +39,9 @@
     "Description": "man-group/dtale version 3.10.0 is vulnerable to an authentication bypass and remote code execution (RCE) due to improper input validation. The vulnerability arises from a hardcoded `SECRET_KEY` in the flask configuration, allowing attackers to forge a session cookie if authentication is enabled. Additionally, the application fails to properly restrict custom filter queries, enabling attackers to execute arbitrary code on the server by bypassing the restriction on the `/update-settings` endpoint, even when `enable_custom_filters` is not enabled. This vulnerability allows attackers to bypass authentication mechanisms and execute remote code on the server.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-06T21:30:37Z",
-    "Severity": "CRITICAL",
+    "Severity": "HIGH",
     "Summary": "Authentication bypass in dtale",
-    "UpdatedAt": "2024-10-15T23:34:17Z",
+    "UpdatedAt": "2024-11-04T15:28:28Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
