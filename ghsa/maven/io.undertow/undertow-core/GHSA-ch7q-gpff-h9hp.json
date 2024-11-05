@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-07-09T21:09:49Z",
+  "UpdatedAt": "2024-11-04T22:22:13Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.undertow:undertow-core"
@@ -38,6 +38,18 @@
         "Url": "https://access.redhat.com/errata/RHSA-2024:6437"
       },
       {
+        "Url": "https://github.com/undertow-io/undertow/pull/1639"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/pull/1640"
+      },
+      {
+        "Url": "https://github.com/undertow-io/undertow/pull/1641"
+      },
+      {
+        "Url": "https://issues.redhat.com/browse/UNDERTOW-2382"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-ch7q-gpff-h9hp"
       }
     ],
@@ -56,7 +68,7 @@
     "PublishedAt": "2024-07-09T00:31:40Z",
     "Severity": "MODERATE",
     "Summary": "Undertow Missing Release of Memory after Effective Lifetime vulnerability",
-    "UpdatedAt": "2024-09-23T21:30:46Z",
+    "UpdatedAt": "2024-11-04T22:22:13Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -66,9 +78,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.2.34.Final"
       },
-      "VulnerableVersionRange": "\u003c= 2.3.14.Final"
+      "VulnerableVersionRange": "\u003c 2.2.34.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.15.Final"
+      },
+      "VulnerableVersionRange": "\u003e= 2.3.0.Alpha1, \u003c 2.3.15.Final"
     }
   ]
 }
