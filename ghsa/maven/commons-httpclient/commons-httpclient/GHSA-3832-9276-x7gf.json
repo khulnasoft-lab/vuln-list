@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-03-14T21:52:45Z",
+  "UpdatedAt": "2024-11-05T22:28:06Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "commons-httpclient:commons-httpclient"
@@ -72,12 +72,12 @@
         "Value": "CVE-2012-5783"
       }
     ],
-    "Description": "Apache Commons HttpClient 3.x, as used in Amazon Flexible Payments Service (FPS) merchant Java SDK and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.",
+    "Description": "Apache Commons HttpClient 3.x, as used in Amazon Flexible Payments Service (FPS) merchant Java SDK and other products, does not verify that the server hostname matches a domain name in the subject's Common Name (CN) or subjectAltName field of the X.509 certificate, which allows man-in-the-middle attackers to spoof SSL servers via an arbitrary valid certificate.\n\nNote that the Commons HttpClient project is [end of life](https://hc.apache.org/httpclient-legacy/). It has been replaced by the Apache HttpComponents project in its [HttpClient](https://hc.apache.org/httpcomponents-client-5.4.x/) and [HttpCore](https://hc.apache.org/httpcomponents-core-5.3.x/) modules. CVE-2012-5783 has been patched in [v4.0](https://repo1.maven.org/maven2/org/apache/httpcomponents/httpclient/4.0/) of the Apache HttpComponents HttpClient module.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-13T01:10:34Z",
     "Severity": "MODERATE",
-    "Summary": "Improper Certificate Validation in apache HttpClient",
-    "UpdatedAt": "2024-03-14T21:52:45Z",
+    "Summary": "Improper Certificate Validation in Apache Commons HttpClient",
+    "UpdatedAt": "2024-11-05T22:28:06Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -87,7 +87,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "4.0"
+        "Identifier": ""
       },
       "VulnerableVersionRange": "\u003e= 3.0, \u003c 4.0"
     }
