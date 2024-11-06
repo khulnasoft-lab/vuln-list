@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-ghx4-cgxw-7h9p",
+  "id": "GO-2024-3253",
   "modified": "2024-11-06T17:57:02.971611Z",
-  "published": "2024-11-05T00:31:28Z",
+  "published": "2024-11-06T17:21:43Z",
   "aliases": [
     "CVE-2024-48057",
-    "GO-2024-3253"
+    "GHSA-ghx4-cgxw-7h9p"
   ],
-  "summary": "LocalAI Cross-site Scripting vulnerability",
-  "details": "localai \u003c=2.20.1 is vulnerable to Cross Site Scripting (XSS). When calling the delete model API and passing inappropriate parameters, it can cause a one-time storage XSS, which will trigger the payload when a user accesses the homepage.",
+  "summary": "LocalAI Cross-site Scripting vulnerability in github.com/mudler/LocalAI",
+  "details": "LocalAI Cross-site Scripting vulnerability in github.com/mudler/LocalAI",
   "affected": [
     {
       "package": {
@@ -21,19 +21,20 @@
           "events": [
             {
               "introduced": "0"
-            },
-            {
-              "last_affected": "2.20.1"
             }
           ]
         }
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-ghx4-cgxw-7h9p/GHSA-ghx4-cgxw-7h9p.json"
+        "source": "https://vuln.go.dev/ID/GO-2024-3253.json"
       }
     }
   ],
   "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-ghx4-cgxw-7h9p"
+    },
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-48057"
@@ -41,10 +42,6 @@
     {
       "type": "WEB",
       "url": "https://gist.github.com/AfterSnows/1bd7ee5a3a42dbb5f5ff67f7f9c8ccec"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/mudler/LocalAI"
     },
     {
       "type": "WEB",
