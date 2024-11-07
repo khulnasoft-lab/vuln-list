@@ -1,12 +1,12 @@
 {
   "id": "PYSEC-2024-115",
-  "modified": "2024-11-04T19:21:45.015489Z",
-  "published": "2024-10-29T13:15:00Z",
+  "modified": "2024-11-07T16:26:50.338318Z",
+  "published": "2024-11-05T16:04:14Z",
   "aliases": [
     "CVE-2024-8309",
     "GHSA-45pg-36p6-83v9"
   ],
-  "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (DoS) by deleting all data, breaches in multi-tenant security environments, and data integrity issues. Attackers can create, update, or delete nodes and relationships without proper authorization, extract sensitive data, disrupt services, access data across different tenants, and compromise the integrity of the database.",
+  "details": "A vulnerability in the GraphCypherQAChain class of langchain-ai/langchain-community version 0.2.5 allows for SQL injection through prompt injection. This vulnerability can lead to unauthorized data manipulation, data exfiltration, denial of service (DoS) by deleting all data, breaches in multi-tenant security environments, and data integrity issues. Attackers can create, update, or delete nodes and relationships without proper authorization, extract sensitive data, disrupt services, access data across different tenants, and compromise the integrity of the database.",
   "affected": [
     {
       "package": {
@@ -32,6 +32,9 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "0.2.0"
             }
           ]
         }
@@ -423,36 +426,53 @@
         "0.1.7",
         "0.1.8",
         "0.1.9",
-        "0.2.0",
         "0.2.0rc1",
-        "0.2.0rc2",
+        "0.2.0rc2"
+      ],
+      "database_specific": {
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/langchain/PYSEC-2024-115.yaml"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "langchain-community",
+        "purl": "pkg:pypi/langchain-community"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0.2.0"
+            },
+            {
+              "fixed": "0.3.0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "0.2.0",
         "0.2.1",
-        "0.2.10",
-        "0.2.11",
-        "0.2.12",
-        "0.2.13",
-        "0.2.14",
-        "0.2.15",
-        "0.2.16",
         "0.2.2",
         "0.2.3",
         "0.2.4",
         "0.2.5",
         "0.2.6",
         "0.2.7",
-        "0.2.8",
         "0.2.9",
-        "0.3.0",
+        "0.2.10",
+        "0.2.11",
+        "0.2.12",
+        "0.2.13",
+        "0.2.15",
+        "0.2.16",
+        "0.2.17",
+        "0.2.18",
+        "0.2.14",
         "0.3.0.dev1",
-        "0.3.0.dev2",
-        "0.3.1",
-        "0.3.2",
-        "0.3.3",
-        "0.3.4",
-        "0.3.5",
-        "0.3.6",
-        "0.3.7",
-        "0.2.17"
+        "0.3.0.dev2"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/langchain/PYSEC-2024-115.yaml"
