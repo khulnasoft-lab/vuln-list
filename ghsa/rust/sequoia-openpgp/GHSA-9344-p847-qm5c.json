@@ -1,0 +1,49 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2024-06-26T19:10:17Z",
+  "Package": {
+    "Ecosystem": "RUST",
+    "Name": "sequoia-openpgp"
+  },
+  "Advisory": {
+    "DatabaseId": 251378,
+    "Id": "GSA_kwCzR0hTQS05MzQ0LXA4NDctcW01Y84AA9Xy",
+    "GhsaId": "GHSA-9344-p847-qm5c",
+    "References": [
+      {
+        "Url": "https://gitlab.com/sequoia-pgp/sequoia/-/issues/1106"
+      },
+      {
+        "Url": "https://rustsec.org/advisories/RUSTSEC-2024-0345.html"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-9344-p847-qm5c"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-9344-p847-qm5c"
+      }
+    ],
+    "Description": "There is a denial-of-service vulnerability in sequoia-openpgp, our\ncrate providing a low-level interface to our OpenPGP implementation.\nWhen triggered, the process will enter an infinite loop.\n\nMany thanks to Andrew Gallagher for disclosing the issue to us.\n\n## Impact\n\nAny software directly or indirectly using the interface\n`sequoia_openpgp::cert::raw::RawCertParser`.  Notably, this includes all\nsoftware using the `sequoia_cert_store` crate.\n\n## Details\n\nThe `RawCertParser` does not advance the input stream when\nencountering unsupported cert (primary key) versions, resulting in an\ninfinite loop.\n\nThe fix introduces a new raw-cert-specific\n`cert::raw::Error::UnuspportedCert`.\n\n## Affected software\n\n- sequoia-openpgp 1.13.0\n- sequoia-openpgp 1.14.0\n- sequoia-openpgp 1.15.0\n- sequoia-openpgp 1.16.0\n- sequoia-openpgp 1.17.0\n- sequoia-openpgp 1.18.0\n- sequoia-openpgp 1.19.0\n- sequoia-openpgp 1.20.0\n- Any software built against a vulnerable version of sequoia-openpgp\n  which is directly or indirectly using the interface\n  sequoia_`openpgp::cert::raw::RawCertParser`.  Notably, this includes\n  all software using the `sequoia_cert_store` crate.\n",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-06-26T19:10:15Z",
+    "Severity": "LOW",
+    "Summary": "Low severity (DoS) vulnerability in sequoia-openpgp",
+    "UpdatedAt": "2024-06-26T19:10:17Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.21.0"
+      },
+      "VulnerableVersionRange": "\u003e= 1.13.0, \u003c 1.21.0"
+    }
+  ]
+}

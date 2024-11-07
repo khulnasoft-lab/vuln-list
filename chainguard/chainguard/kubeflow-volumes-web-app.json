@@ -1,0 +1,56 @@
+{
+  "name": "kubeflow-volumes-web-app",
+  "secfixes": {
+    "1.7.0-r5": [
+      "CVE-2023-41419",
+      "GHSA-x7m3-jprg-wc5g"
+    ],
+    "1.7.0-r6": [
+      "CVE-2023-43804",
+      "GHSA-v845-jxx5-vc9f"
+    ],
+    "1.7.0-r8": [
+      "CVE-2023-45803",
+      "CVE-2023-46136",
+      "GHSA-g4mx-q9vg-27p4",
+      "GHSA-hrfv-mqp8-q5rw"
+    ],
+    "1.8.0-r6": [
+      "CVE-2024-1681",
+      "CVE-2024-34064",
+      "CVE-2024-34069",
+      "CVE-2024-35195",
+      "CVE-2024-3651",
+      "GHSA-2g68-c3qc-8985",
+      "GHSA-84pr-m4jr-85g5",
+      "GHSA-9wx4-h78v-vm56",
+      "GHSA-h75v-3vvj-5mfj",
+      "GHSA-jjg7-2v4v-x38h"
+    ],
+    "1.8.0-r7": [
+      "CVE-2024-37891",
+      "GHSA-34jh-p97f-mpxf"
+    ],
+    "1.8.0-r8": [
+      "CVE-2024-39689",
+      "GHSA-248v-346w-9cwc"
+    ],
+    "1.9.1-r0": [
+      "CVE-2024-6221",
+      "GHSA-hxwh-jpp2-84pm"
+    ],
+    "1.9.2-r1": [
+      "CVE-2024-49766",
+      "CVE-2024-49767",
+      "GHSA-f9vj-2wh5-fj8j",
+      "GHSA-q34m-jh98-gwm2"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}

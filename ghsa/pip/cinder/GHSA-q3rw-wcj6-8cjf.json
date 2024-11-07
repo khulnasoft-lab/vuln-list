@@ -1,0 +1,65 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2024-05-14T21:25:53Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "cinder"
+  },
+  "Advisory": {
+    "DatabaseId": 126646,
+    "Id": "GSA_kwCzR0hTQS1xM3J3LXdjajYtOGNqZs4AAe62",
+    "GhsaId": "GHSA-q3rw-wcj6-8cjf",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2013-4183"
+      },
+      {
+        "Url": "https://bugs.launchpad.net/cinder/+bug/1198185"
+      },
+      {
+        "Url": "http://rhn.redhat.com/errata/RHSA-2013-1198.html"
+      },
+      {
+        "Url": "http://www.ubuntu.com/usn/USN-2005-1"
+      },
+      {
+        "Url": "https://github.com/openstack/cinder/commit/0ee31073c5cb432a9cdd2648e99aa802b0ed0a17"
+      },
+      {
+        "Url": "https://github.com/openstack/cinder/commit/68c597e26b5659a036a7a937622e539bac102308"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-q3rw-wcj6-8cjf"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-q3rw-wcj6-8cjf"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2013-4183"
+      }
+    ],
+    "Description": "The clear_volume function in LVMVolumeDriver driver in OpenStack Cinder 2013.1.1 through 2013.1.2 does not properly clear data when deleting a snapshot, which allows local users to obtain sensitive information via unspecified vectors.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2022-05-17T04:58:58Z",
+    "Severity": "LOW",
+    "Summary": "OpenStack Cinder LVMVolumeDriver does not zero deleted snapshots",
+    "UpdatedAt": "2024-05-14T21:25:53Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "7.0.0a0"
+      },
+      "VulnerableVersionRange": "\u003c 7.0.0a0"
+    }
+  ]
+}

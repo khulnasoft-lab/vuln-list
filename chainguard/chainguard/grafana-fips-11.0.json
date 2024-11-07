@@ -1,0 +1,26 @@
+{
+  "name": "grafana-fips-11.0",
+  "secfixes": {
+    "11.0.0-r2": [
+      "CVE-2024-35255",
+      "GHSA-m5vv-6r4h-3vj9"
+    ],
+    "11.0.1-r1": [
+      "CVE-2024-24791",
+      "GHSA-hw49-2p59-3mhj"
+    ],
+    "11.0.1-r2": [
+      "GHSA-mh55-gqvf-xfwm"
+    ],
+    "11.0.2-r1": [
+      "GHSA-xr7q-jx4m-x55m"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}

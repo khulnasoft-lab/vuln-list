@@ -1,0 +1,50 @@
+{
+  "id": "GHSA-rc7v-65v6-m2v3",
+  "modified": "2024-10-28T15:12:22Z",
+  "published": "2024-10-28T15:12:22Z",
+  "summary": "go-mysql affected by go.uuid's Predictable UUID Identifiers",
+  "details": "Affected by CVE-2021-3538",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/go-mysql-org/go-mysql",
+        "purl": "pkg:golang/github.com/go-mysql-org/go-mysql"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.5.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-rc7v-65v6-m2v3/GHSA-rc7v-65v6-m2v3.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/apptainer/sif/security/advisories/GHSA-33m6-q9v5-62r7"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/go-mysql-org/go-mysql/security/advisories/GHSA-rc7v-65v6-m2v3"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/hpcng/sif/security/advisories/GHSA-33m6-q9v5-62r7"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/go-mysql-org/go-mysql"
+    }
+  ]
+}
