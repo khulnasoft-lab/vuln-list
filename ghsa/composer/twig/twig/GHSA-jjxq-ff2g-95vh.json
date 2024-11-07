@@ -39,12 +39,12 @@
         "Value": "CVE-2024-51755"
       }
     ],
-    "Description": "### Description\n\nIn a sandbox, and attacker can access attributes of Array-like objects as they were not checked by the security policy.\nThey are now checked via the property policy and the `__isset()` method is now called after the security check.\n**This is a BC break.**\n\n### Resolution\n\nThe sandbox mode now ensures access to array-like's properties is allowed.\n\nThe patch for this issue is available [here](https://github.com/twigphp/twig/commit/249615d3bfc3ce1672815a265458c0bcf8f7cc61) for branch 3.11.x.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Nicolas Grekas for providing the fix.\n",
+    "Description": "### Description\n\nIn a sandbox, an attacker can access attributes of Array-like objects as they were not checked by the security policy.\nThey are now checked via the property policy and the `__isset()` method is now called after the security check.\n**This is a BC break.**\n\n### Resolution\n\nThe sandbox mode now ensures access to array-like's properties is allowed.\n\nThe patch for this issue is available [here](https://github.com/twigphp/twig/commit/249615d3bfc3ce1672815a265458c0bcf8f7cc61) for branch 3.11.x.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Nicolas Grekas for providing the fix.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-06T19:52:55Z",
     "Severity": "LOW",
     "Summary": "Twig has unguarded calls to `__isset()` and to array-accesses when the sandbox is enabled",
-    "UpdatedAt": "2024-11-06T23:32:09Z",
+    "UpdatedAt": "2024-11-07T15:12:44Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.2,

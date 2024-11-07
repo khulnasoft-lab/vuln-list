@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2023-10-24T01:41:25Z",
+  "UpdatedAt": "2024-11-07T15:24:50Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "langchain"
@@ -17,6 +17,9 @@
         "Url": "https://gist.github.com/rharang/9c58d39db8c01db5b7c888e467c0533f"
       },
       {
+        "Url": "https://github.com/langchain-ai/langchain/issues/5923#issuecomment-1696053841"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-8h5w-f6q9-wg35"
       }
     ],
@@ -30,12 +33,12 @@
         "Value": "CVE-2023-32785"
       }
     ],
-    "Description": "In Langchain through 0.0.155, prompt injection allows execution of arbitrary code against the SQL service provided by the chain. ",
+    "Description": "In Langchain before 0.0.247, prompt injection allows execution of arbitrary code against the SQL service provided by the chain. ",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-21T00:30:47Z",
     "Severity": "CRITICAL",
     "Summary": "Langchain SQL Injection vulnerability",
-    "UpdatedAt": "2023-12-29T00:13:22Z",
+    "UpdatedAt": "2024-11-07T15:24:50Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -45,9 +48,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "0.0.247"
       },
-      "VulnerableVersionRange": "\u003c= 0.0.155"
+      "VulnerableVersionRange": "\u003c 0.0.247"
     }
   ]
 }
