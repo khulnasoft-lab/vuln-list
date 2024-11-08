@@ -1,48 +1,48 @@
 {
-  "Severity": "HIGH",
-  "UpdatedAt": "2024-11-07T18:27:28Z",
+  "Severity": "MODERATE",
+  "UpdatedAt": "2024-11-07T18:30:38Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "moodle/moodle"
   },
   "Advisory": {
-    "DatabaseId": 266477,
-    "Id": "GSA_kwCzR0hTQS14ODdyLTM3cTUtbW1yOM4ABBDt",
-    "GhsaId": "GHSA-x87r-37q5-mmr8",
+    "DatabaseId": 266476,
+    "Id": "GSA_kwCzR0hTQS1xcnF2LTI2Z2YteGd3aM4ABBDs",
+    "GhsaId": "GHSA-qrqv-26gf-xgwh",
     "References": [
       {
-        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43434"
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-43440"
       },
       {
-        "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2304262"
+        "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2304269"
       },
       {
-        "Url": "https://moodle.org/mod/forum/discuss.php?d=461203"
+        "Url": "https://moodle.org/mod/forum/discuss.php?d=461210"
       },
       {
-        "Url": "https://github.com/advisories/GHSA-x87r-37q5-mmr8"
+        "Url": "https://github.com/advisories/GHSA-qrqv-26gf-xgwh"
       }
     ],
     "Identifiers": [
       {
         "Type": "GHSA",
-        "Value": "GHSA-x87r-37q5-mmr8"
+        "Value": "GHSA-qrqv-26gf-xgwh"
       },
       {
         "Type": "CVE",
-        "Value": "CVE-2024-43434"
+        "Value": "CVE-2024-43440"
       }
     ],
-    "Description": "The bulk message sending feature in Moodle's Feedback module's non-respondents report had an incorrect CSRF token check, leading to a CSRF vulnerability.",
+    "Description": "A flaw was found in moodle. A local file may include risks when restoring block backups.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-07T15:31:52Z",
-    "Severity": "HIGH",
-    "Summary": "Moodle has CSRF risk in Feedback non-respondents report",
-    "UpdatedAt": "2024-11-07T19:27:36Z",
+    "Severity": "MODERATE",
+    "Summary": "Moodle LFI vulnerability when restoring malformed block backups",
+    "UpdatedAt": "2024-11-07T18:30:38Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 8.1,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N"
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
