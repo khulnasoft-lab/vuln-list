@@ -45,12 +45,12 @@
         "Value": "CVE-2024-50345"
       }
     ],
-    "Description": "### Description\n\nThe `Request` class, does not parse URI with special characters the same way browsers do. As a result, an attacker can trick a validator relying on the `Request` class to redirect users to another domain.\n\n### Resolution\n\nThe `Request::create` methods now assert the URI does not contain invalid characters as defined by https://url.spec.whatwg.org/\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/5a9b08e5740af795854b1b639b7d45b9cbfe8819) for branch 5.4.\n\n### Credits\n\nWe would like to thank Sam Mush for reporting the issue and Nicolas Grekas for providing the fix.",
+    "Description": "### Description\n\nThe `Request` class, does not parse URI with special characters the same way browsers do. As a result, an attacker can trick a validator relying on the `Request` class to redirect users to another domain.\n\n### Resolution\n\nThe `Request::create` methods now assert the URI does not contain invalid characters as defined by https://url.spec.whatwg.org/\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/5a9b08e5740af795854b1b639b7d45b9cbfe8819) for branch 5.4.\n\n### Credits\n\nWe would like to thank Sam Mush - IPASSLab \u0026\u0026 ZGC Lab for reporting the issue and Nicolas Grekas for providing the fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-06T15:22:09Z",
     "Severity": "LOW",
     "Summary": "Symfony vulnerable to open redirect via browser-sanitized URLs",
-    "UpdatedAt": "2024-11-06T23:40:13Z",
+    "UpdatedAt": "2024-11-12T21:11:31Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.1,
