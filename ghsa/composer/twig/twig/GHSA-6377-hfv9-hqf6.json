@@ -1,6 +1,6 @@
 {
   "Severity": "LOW",
-  "UpdatedAt": "2024-11-06T23:31:51Z",
+  "UpdatedAt": "2024-11-12T19:42:26Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "twig/twig"
@@ -39,12 +39,12 @@
         "Value": "CVE-2024-51754"
       }
     ],
-    "Description": "### Description\n\nIn a sandbox, an attacker can call `__toString()` on an object even if the `__toString()` method is not allowed by the security policy when the object is part of an array or an argument list (arguments to a function or a filter for instance).\n\n### Resolution\n\nThe sandbox mode now checks the `__toString()` method call on all objects.\n\nThe patch for this issue is available [here](https://github.com/twigphp/twig/commit/407647c1036518c90b0188bb31b55f19ca84c328) for branch 3.x.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Fabien Potencier for providing the fix.\n",
+    "Description": "### Description\n\nIn a sandbox, an attacker can call `__toString()` on an object even if the `__toString()` method is not allowed by the security policy when the object is part of an array or an argument list (arguments to a function or a filter for instance).\n\n### Resolution\n\nThe sandbox mode now checks the `__toString()` method call on all objects.\n\nThe patch for this issue is available [here](https://github.com/twigphp/Twig/commit/cafc608ece310e62a35a76f17e25c04ab9ed05cc) for the 3.11.x branch, and [here](https://github.com/twigphp/Twig/commit/d4a302681bca9f7c6ce2835470d53609cdf3e23e) for the 3.x branch.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Fabien Potencier for providing the fix.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-06T19:52:31Z",
     "Severity": "LOW",
     "Summary": "Twig has unguarded calls to `__toString()` when nesting an object into an array",
-    "UpdatedAt": "2024-11-07T14:30:41Z",
+    "UpdatedAt": "2024-11-12T19:42:26Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.2,
@@ -56,13 +56,13 @@
       "FirstPatchedVersion": {
         "Identifier": "3.14.1"
       },
-      "VulnerableVersionRange": "\u003e= 3.12.0, \u003c 3.14.1"
+      "VulnerableVersionRange": "\u003e= 3.12, \u003c 3.14.1"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.11.2"
       },
-      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 3.11.2"
+      "VulnerableVersionRange": "\u003c 3.11.2"
     }
   ]
 }

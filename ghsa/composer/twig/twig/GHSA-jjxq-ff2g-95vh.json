@@ -1,6 +1,6 @@
 {
   "Severity": "LOW",
-  "UpdatedAt": "2024-11-06T23:32:09Z",
+  "UpdatedAt": "2024-11-12T19:43:03Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "twig/twig"
@@ -39,12 +39,12 @@
         "Value": "CVE-2024-51755"
       }
     ],
-    "Description": "### Description\n\nIn a sandbox, an attacker can access attributes of Array-like objects as they were not checked by the security policy.\nThey are now checked via the property policy and the `__isset()` method is now called after the security check.\n**This is a BC break.**\n\n### Resolution\n\nThe sandbox mode now ensures access to array-like's properties is allowed.\n\nThe patch for this issue is available [here](https://github.com/twigphp/twig/commit/249615d3bfc3ce1672815a265458c0bcf8f7cc61) for branch 3.11.x.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Nicolas Grekas for providing the fix.\n",
+    "Description": "### Description\n\nIn a sandbox, and attacker can access attributes of Array-like objects as they were not checked by the security policy.\nThey are now checked via the property policy and the `__isset()` method is now called after the security check.\n**This is a BC break.**\n\n### Resolution\n\nThe sandbox mode now ensures access to array-like's properties is allowed.\n\nThe patch for this issue is available [here](https://github.com/twigphp/Twig/commit/ec39a9dccc5fb4eaaba55e5d79a6f84a8dd8b69d) for the 3.11.x branch, and [here](https://github.com/twigphp/Twig/commit/b957e5a44cc0075d04ccff52f8fa9d8e6db3e3a0) for the 3.x branch.\n\n### Credits\n\nWe would like to thank Jamie Schouten for reporting the issue and Nicolas Grekas for providing the fix.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-06T19:52:55Z",
     "Severity": "LOW",
     "Summary": "Twig has unguarded calls to `__isset()` and to array-accesses when the sandbox is enabled",
-    "UpdatedAt": "2024-11-07T15:12:44Z",
+    "UpdatedAt": "2024-11-12T19:43:03Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.2,
@@ -56,13 +56,13 @@
       "FirstPatchedVersion": {
         "Identifier": "3.14.1"
       },
-      "VulnerableVersionRange": "\u003e= 3.12.0, \u003c 3.14.1"
+      "VulnerableVersionRange": "\u003e= 3.12, \u003c 3.14.1"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.11.2"
       },
-      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 3.11.2"
+      "VulnerableVersionRange": "\u003c 3.11.2"
     }
   ]
 }
