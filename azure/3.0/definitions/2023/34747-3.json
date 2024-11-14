@@ -1,7 +1,7 @@
 {
   "Class": "vulnerability",
-  "ID": "oval:com.microsoft.azurelinux:def:52741",
-  "Version": "1",
+  "ID": "oval:com.microsoft.azurelinux:def:34747",
+  "Version": "2",
   "Metadata": {
     "Title": "CVE-2023-39325 affecting package golang for versions less than 1.20.7-2",
     "Affected": {
@@ -14,15 +14,15 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryID": "52741-1",
+    "AdvisoryID": "34747-3",
     "Severity": "High",
     "Description": "CVE-2023-39325 affecting package golang for versions less than 1.20.7-2. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": {
-      "Comment": "Package golang is greater than 1.23.0, affected by CVE-2023-39325",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:52741003"
+      "Comment": "Package golang is greater than 0.0.0, affected by CVE-2023-39325",
+      "TestRef": "oval:com.microsoft.azurelinux:tst:34747003"
     }
   }
 }
