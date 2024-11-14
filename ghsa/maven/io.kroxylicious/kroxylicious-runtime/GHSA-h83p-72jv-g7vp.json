@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-03T20:17:07Z",
   "Package": {
     "Ecosystem": "MAVEN",
@@ -23,6 +23,9 @@
         "Url": "https://github.com/kroxylicious/kroxylicious/commit/8be1efcb0a2160fa3ad4cb0e5a27e60160774dce"
       },
       {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:9571"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-h83p-72jv-g7vp"
       }
     ],
@@ -39,9 +42,9 @@
     "Description": "A flaw was found in Kroxylicious. When establishing the connection with the upstream Kafka server using a TLS secured connection, Kroxylicious fails to properly verify the server's hostname, resulting in an insecure connection. For a successful attack to be performed, the attacker needs to perform a Man-in-the-Middle attack or compromise any external systems, such as DNS or network routing configuration. This issue is considered a high complexity attack, with additional high privileges required, as the attack would need access to the Kroxylicious configuration or a peer system. The result of a successful attack impacts both data integrity and confidentiality.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-31T00:31:05Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Missing hostname validation in Kroxylicious",
-    "UpdatedAt": "2024-09-03T20:17:07Z",
+    "UpdatedAt": "2024-11-13T18:52:36Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,
