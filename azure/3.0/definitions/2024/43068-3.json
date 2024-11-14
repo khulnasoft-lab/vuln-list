@@ -1,7 +1,7 @@
 {
   "Class": "vulnerability",
-  "ID": "oval:com.microsoft.azurelinux:def:52766",
-  "Version": "1",
+  "ID": "oval:com.microsoft.azurelinux:def:43068",
+  "Version": "2",
   "Metadata": {
     "Title": "CVE-2024-24791 affecting package golang for versions less than 1.22.5-1",
     "Affected": {
@@ -14,15 +14,15 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryID": "52766-1",
+    "AdvisoryID": "43068-3",
     "Severity": "High",
     "Description": "CVE-2024-24791 affecting package golang for versions less than 1.22.5-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": {
-      "Comment": "Package golang is greater than 1.23.0, affected by CVE-2024-24791",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:52766003"
+      "Comment": "Package golang is greater than 0.0.0, affected by CVE-2024-24791",
+      "TestRef": "oval:com.microsoft.azurelinux:tst:43068003"
     }
   }
 }
