@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2021-08-24T18:47:39Z",
+  "UpdatedAt": "2024-11-13T21:27:22Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "tensorflow-cpu"
@@ -23,6 +23,15 @@
         "Url": "https://github.com/tensorflow/tensorflow/commit/8721ba96e5760c229217b594f6d2ba332beedf22"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-cpu/PYSEC-2021-605.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow-gpu/PYSEC-2021-803.yaml"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tensorflow/PYSEC-2021-314.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-cmgw-8vpc-rc59"
       }
     ],
@@ -41,7 +50,7 @@
     "PublishedAt": "2021-08-25T14:38:57Z",
     "Severity": "MODERATE",
     "Summary": "Segfault on strings tensors with mistmatched dimensions, due to Go code",
-    "UpdatedAt": "2023-02-01T05:06:03Z",
+    "UpdatedAt": "2024-11-13T21:27:22Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -53,7 +62,7 @@
       "FirstPatchedVersion": {
         "Identifier": "2.5.1"
       },
-      "VulnerableVersionRange": "\u003c 2.5.1"
+      "VulnerableVersionRange": "\u003e= 2.5.0rc0, \u003c 2.5.1"
     }
   ]
 }

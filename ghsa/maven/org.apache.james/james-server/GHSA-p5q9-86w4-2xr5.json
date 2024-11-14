@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-03-04T17:26:03Z",
   "Package": {
     "Ecosystem": "MAVEN",
@@ -48,13 +48,13 @@
     "Description": "Apache James prior to versions 3.8.1 and 3.7.5 is vulnerable to SMTP smuggling.\n\nA lenient behaviour in line delimiter handling might create a difference of interpretation between the sender and the receiver which can be exploited by an attacker to forge an SMTP envelop, allowing for instance to bypass SPF checks.\n\nThe patch implies enforcement of CRLF as a line delimiter as part of the DATA transaction.\n\nWe recommend James users to upgrade to non vulnerable versions.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-02-27T15:30:31Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "SMTP smuggling in Apache James",
-    "UpdatedAt": "2024-03-04T17:26:03Z",
+    "UpdatedAt": "2024-11-13T23:26:46Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:H/A:N"
     }
   },
   "Versions": [

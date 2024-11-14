@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2018-11-29T21:28:28Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -20,6 +20,9 @@
         "Url": "https://discuss.tryton.org/t/security-release-for-issue7792/830"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/tryton/PYSEC-2018-77.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-32w7-9whp-cjp9"
       }
     ],
@@ -36,9 +39,9 @@
     "Description": "The client in Tryton 5.x before 5.0.1 tries to make a connection to the bus in cleartext instead of encrypted under certain circumstances in bus.py and jsonrpc.py. This connection attempt fails, but it contains in the header the current session of the user. This session could then be stolen by a man-in-the-middle.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-11-29T21:30:56Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Session Fixation in Tryton",
-    "UpdatedAt": "2023-01-09T05:03:31Z",
+    "UpdatedAt": "2024-11-13T22:54:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.9,
