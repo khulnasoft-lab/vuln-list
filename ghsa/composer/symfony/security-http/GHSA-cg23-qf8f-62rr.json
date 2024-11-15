@@ -42,12 +42,12 @@
         "Value": "CVE-2024-51996"
       }
     ],
-    "Description": "### Description\n\nWhan consuming a persisted remember-me cookie, symfony does not check if the username persisted in the database matches the username attached with the cookie, leading to authentication bypass.\n\n### Resolution\n\nThe `PersistentRememberMeHandler` class now ensures the submitted username is the cookie owner.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/81354d392c5f0b7a52bcbd729d6f82501e94135a) for branch 5.4.\n\n### Credits\n\nWe would like to thank Moritz Rauch - Pentryx AG for reporting the issue and Jérémy Derussé for providing the fix.",
+    "Description": "### Description\n\nWhen consuming a persisted remember-me cookie, Symfony does not check if the username persisted in the database matches the username attached with the cookie, leading to authentication bypass.\n\n### Resolution\n\nThe `PersistentRememberMeHandler` class now ensures the submitted username is the cookie owner.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/81354d392c5f0b7a52bcbd729d6f82501e94135a) for branch 5.4.\n\n### Credits\n\nWe would like to thank Moritz Rauch - Pentryx AG for reporting the issue and Jérémy Derussé for providing the fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-13T18:29:04Z",
     "Severity": "HIGH",
-    "Summary": "Symphony has an Authentication Bypass via RememberMe",
-    "UpdatedAt": "2024-11-13T18:58:41Z",
+    "Summary": "Symfony has an Authentication Bypass via RememberMe",
+    "UpdatedAt": "2024-11-14T23:55:43Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
