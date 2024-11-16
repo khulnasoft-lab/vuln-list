@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package glib is earlier than 2.71.0-3, affected by CVE-2024-52533",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:52608000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:52608001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:52608002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package rubygem-rexml is earlier than 3.2.7-3, affected by CVE-2024-49761",
       "ID": "oval:com.microsoft.cbl-mariner:tst:51894000",
       "Version": "0",
