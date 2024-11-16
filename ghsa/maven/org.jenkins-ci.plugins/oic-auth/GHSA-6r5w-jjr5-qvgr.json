@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-12-13T19:34:26Z",
+  "UpdatedAt": "2024-11-15T22:27:23Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.jenkins-ci.plugins:oic-auth"
@@ -20,6 +20,15 @@
         "Url": "http://www.openwall.com/lists/oss-security/2023/12/13/4"
       },
       {
+        "Url": "https://github.com/jenkinsci/oic-auth-plugin/issues/259"
+      },
+      {
+        "Url": "https://github.com/jenkins-infra/update-center2/pull/773"
+      },
+      {
+        "Url": "https://github.com/jenkinsci/oic-auth-plugin/pull/287"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6r5w-jjr5-qvgr"
       }
     ],
@@ -33,12 +42,12 @@
         "Value": "CVE-2023-50770"
       }
     ],
-    "Description": "Jenkins OpenId Connect Authentication Plugin 2.6 and earlier stores a password of a local user account used as an anti-lockout feature in a recoverable format, allowing attackers with access to the Jenkins controller file system to recover the plain text password of that account, likely gaining administrator access to Jenkins.",
+    "Description": "Jenkins OpenId Connect Authentication Plugin stores a password of a local user account used as an anti-lockout feature in a recoverable format, allowing attackers with access to the Jenkins controller file system to recover the plain text password of that account, likely gaining administrator access to Jenkins.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-12-13T18:31:04Z",
     "Severity": "MODERATE",
     "Summary": "Password stored in a recoverable format by Jenkins OpenId Connect Authentication Plugin ",
-    "UpdatedAt": "2023-12-18T18:39:14Z",
+    "UpdatedAt": "2024-11-15T22:27:23Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.7,
@@ -48,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "4.229.vf736b"
       },
-      "VulnerableVersionRange": "\u003c= 2.6"
+      "VulnerableVersionRange": "\u003c 4.229.vf736b"
     }
   ]
 }

