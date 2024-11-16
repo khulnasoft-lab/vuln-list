@@ -1,0 +1,53 @@
+{
+  "id": "GHSA-phm4-wf3h-pc3r",
+  "modified": "2024-11-15T21:27:25.881701Z",
+  "published": "2024-11-15T18:30:51Z",
+  "aliases": [
+    "CVE-2024-44625"
+  ],
+  "summary": "Unpatched Remote Code Execution in Gogs",
+  "details": "Gogs \u003c=0.13.0 is vulnerable to Directory Traversal via the editFilePost function of internal/route/repo/editor.go.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "gogs.io/gogs",
+        "purl": "pkg:golang/gogs.io/gogs"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "0.13.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-phm4-wf3h-pc3r/GHSA-phm4-wf3h-pc3r.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-44625"
+    },
+    {
+      "type": "WEB",
+      "url": "https://fysac.github.io/posts/2024/11/unpatched-remote-code-execution-in-gogs"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/gogs/gogs"
+    },
+    {
+      "type": "WEB",
+      "url": "https://gogs.io"
+    }
+  ]
+}
