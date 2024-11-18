@@ -1,5 +1,5 @@
 {
-  "Severity": "CRITICAL",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-17T18:31:43Z",
   "Package": {
     "Ecosystem": "GO",
@@ -57,9 +57,9 @@
     "Description": "A flaw was found in openshift/builder. This vulnerability allows command injection via path traversal, where a malicious user can execute arbitrary commands on the OpenShift node running the builder container. When using the \"Docker\" strategy, executable files inside the privileged build container can be overridden using the `spec.source.secrets.secret.destinationDir` attribute of the `BuildConfig` definition. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-17T00:31:06Z",
-    "Severity": "CRITICAL",
+    "Severity": "MODERATE",
     "Summary": "OpenShift Builder has a path traversal, allows command injection in privileged BuildContainer",
-    "UpdatedAt": "2024-09-19T21:33:29Z",
+    "UpdatedAt": "2024-11-18T16:27:14Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,

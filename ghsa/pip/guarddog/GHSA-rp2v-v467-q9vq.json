@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2024-09-20T21:38:26Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -45,9 +45,9 @@
     "Description": "### Impact\n\nRunning GuardDog against a specially-crafted package can allow an attacker to write an arbitrary file on the machine where GuardDog is executed.\n\nThis is due to a path traversal vulnerability when extracting the `.tar.gz` file of the package being scanned, which exists by design in the `tarfile.TarFile.extractall` function. See also https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractall\n\n### Remediation\n\nUpgrade to GuardDog v0.1.5 or more recent.\n\n### References\n\n* https://semgrep.dev/r?q=trailofbits.python.tarfile-extractall-traversal.tarfile-extractall-traversal\n* https://www.trellix.com/en-us/about/newsroom/stories/research/tarfile-exploiting-the-world.html\n* https://docs.python.org/3/library/tarfile.html#tarfile.TarFile.extractall\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-12-02T22:25:25Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "GuardDog vulnerable to arbitrary file write when scanning a specially-crafted PyPI package",
-    "UpdatedAt": "2024-09-20T21:38:26Z",
+    "UpdatedAt": "2024-11-18T16:26:29Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.8,

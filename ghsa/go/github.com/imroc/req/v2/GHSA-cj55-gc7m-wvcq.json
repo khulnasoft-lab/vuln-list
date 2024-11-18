@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-16T16:05:32Z",
   "Package": {
     "Ecosystem": "GO",
@@ -39,9 +39,9 @@
     "Description": "The `req` library is a widely used HTTP library in Go. However, it does not handle malformed URLs effectively. As a result, after parsing a malformed URL, the library may send HTTP requests to unexpected destinations, potentially leading to security vulnerabilities or unintended behavior in applications relying on this library for handling HTTP requests.\n\nDespite developers potentially utilizing the `net/url` library to parse malformed URLs and implement blocklists to prevent HTTP requests to listed URLs, inconsistencies exist between how the `net/url` and `req` libraries parse URLs. These discrepancies can lead to the failure of defensive strategies, resulting in potential security threats such as Server-Side Request Forgery (SSRF) and Remote Code Execution (RCE).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-26T00:30:54Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "req may send an unintended request when a malformed URL is provided",
-    "UpdatedAt": "2024-09-16T16:05:32Z",
+    "UpdatedAt": "2024-11-18T16:27:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.2,

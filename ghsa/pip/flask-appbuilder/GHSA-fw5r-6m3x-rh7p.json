@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-04T18:12:18Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -36,9 +36,9 @@
     "Description": "### Impact\nAuth DB login form default cache directives allows browser to locally store sensitive data. This can be an issue on environments using shared computer resources.\n\n### Patches\nUpgrade flask-appbuilder to version 4.5.1\n\n### Workarounds\nIf upgrading is not possible configure your web server to send the following HTTP headers for /login:\n\"Cache-Control\": \"no-store, no-cache, must-revalidate, max-age=0\"\n\"Pragma\": \"no-cache\"\n\"Expires\": \"0\" \n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-04T18:12:16Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Flask-AppBuilder's login form allows browser to cache sensitive fields ",
-    "UpdatedAt": "2024-09-04T20:24:52Z",
+    "UpdatedAt": "2024-11-18T16:27:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.6,
