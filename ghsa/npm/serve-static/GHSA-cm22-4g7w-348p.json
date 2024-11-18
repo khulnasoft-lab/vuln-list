@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2024-09-10T19:42:34Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -39,9 +39,9 @@
     "Description": "### Impact\n\npassing untrusted user input - even after sanitizing it - to `redirect()` may execute untrusted code\n\n### Patches\n\nthis issue is patched in serve-static 1.16.0\n\n### Workarounds\n\nusers are encouraged to upgrade to the patched version of express, but otherwise can workaround this issue by making sure any untrusted inputs are safe, ideally by validating them against an explicit allowlist\n\n### Details\n\nsuccessful exploitation of this vector requires the following:\n\n1. The attacker MUST control the input to response.redirect()\n1. express MUST NOT redirect before the template appears\n1. the browser MUST NOT complete redirection before:\n1. the user MUST click on the link in the template\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-10T19:42:33Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "serve-static vulnerable to template injection that can lead to XSS",
-    "UpdatedAt": "2024-09-10T19:42:34Z",
+    "UpdatedAt": "2024-11-18T16:27:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5,

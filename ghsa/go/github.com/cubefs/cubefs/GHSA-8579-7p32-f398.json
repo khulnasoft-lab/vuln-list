@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-01-03T16:13:52Z",
   "Package": {
     "Ecosystem": "GO",
@@ -39,9 +39,9 @@
     "Description": "A vulnerability was found during in the CubeFS master component that could allow an untrusted attacker to steal user passwords by carrying out a timing attack. The root case of the vulnerability was that CubeFS used raw string comparison of passwords.\n\nThe vulnerable part of CubeFS was the UserService of the master component. The UserService gets instantiated when starting the server of the master component. \n\nCubeFS has not seen any evidence of this being exploited in the wild. The vulnerability was found during a security audit conducted by [Ada Logics](https://adalogics.com/) in collaboration with [OSTIF](https://ostif.org/) and the [CNCF](https://www.cncf.io/).\n\nThe issue has been patched in v3.3.1. For impacted users, there is no other way to mitigate the issue besides upgrading. ",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-01-03T16:13:52Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "CubeFS timing attack can leak user passwords",
-    "UpdatedAt": "2024-08-07T05:01:36Z",
+    "UpdatedAt": "2024-11-18T16:26:36Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

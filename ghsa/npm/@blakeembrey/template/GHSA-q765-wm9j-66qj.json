@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-03T19:42:26Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -36,9 +36,9 @@
     "Description": "### Impact\n\nIt is possible to inject and run code within the template if the attacker has access to write the template name.\n\n```js\nconst { template } = require('@blakeembrey/template');\n\ntemplate(\"Hello {{name}}!\", \"exploit() {} \u0026\u0026 ((()=\u003e{ console.log('success'); })()) \u0026\u0026 function pwned\");\n```\n\n### Patches\n\nUpgrade to 1.2.0.\n\n### Workarounds\n\nDon't pass untrusted input as the template display name, or don't use the display name feature.\n\n### References\n\nFixed by removing in https://github.com/blakeembrey/js-template/commit/b8d9aa999e464816c6cfb14acd1ad0f5d1e335aa.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-03T19:42:25Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "@blakeembrey/template vulnerable to code injection when attacker controls template input",
-    "UpdatedAt": "2024-09-03T21:45:33Z",
+    "UpdatedAt": "2024-11-18T16:27:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.3,

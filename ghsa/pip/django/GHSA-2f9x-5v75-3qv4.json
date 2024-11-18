@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2023-09-05T14:06:10Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -60,9 +60,9 @@
     "Description": "An issue was discovered in Django 2.0 before 2.0.3, 1.11 before 1.11.11, and 1.8 before 1.8.19. If django.utils.text.Truncator's chars() and words() methods were passed the html=True argument, they were extremely slow to evaluate certain inputs due to a catastrophic backtracking vulnerability in a regular expression. The chars() and words() methods are used to implement the truncatechars_html and truncatewords_html template filters, which were thus vulnerable.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-01-04T17:50:00Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "Django Denial-of-service possibility in truncatechars_html and truncatewords_html template filters",
-    "UpdatedAt": "2024-09-17T15:09:41Z",
+    "UpdatedAt": "2024-11-18T16:26:06Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,

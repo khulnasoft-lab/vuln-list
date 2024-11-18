@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-07-31T16:53:15Z",
   "Package": {
     "Ecosystem": "GO",
@@ -36,9 +36,9 @@
     "Description": "### Impact\nHarbor fails to validate the maintainer role permissions when creating/updating/deleting project configurations - API call:\n\n- PUT /projects/{project_name_or_id}/metadatas/{meta_name}\n- POST /projects/{project_name_or_id}/metadatas/{meta_name}\n- DELETE /projects/{project_name_or_id}/metadatas/{meta_name}\n\nBy sending a request to create/update/delete a metadata with an name that belongs to a project that the currently authenticated and granted to the maintainer role user doesn’t have access to, the attacker could modify configurations in the current project.\n\nBTW: the maintainer role in Harbor was intended for individuals who closely support the project admin in maintaining the project but lack configuration management permissions. However, the maintainer role can utilize the metadata API to circumvent this limitation. It's important to note that any potential attacker must be authenticated and granted a specific project maintainer role to modify configurations, limiting their scope to only that project.\n\n\n### Patches\nWill be fixed in v2.9.5, v2.10.3 and v2.11.0\n\n### Workarounds\nThere are no workarounds available.\n\n### Credit\nThanks to Ravid Mazon(rmazon@paloaltonetworks.com), Jay Chen (jaychen@paloaltonetworks.com) Palo Alto Networks for reporting this issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-31T16:53:13Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Harbor fails to validate the user permissions when updating project configurations",
-    "UpdatedAt": "2024-08-07T15:17:45Z",
+    "UpdatedAt": "2024-11-18T16:26:59Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,

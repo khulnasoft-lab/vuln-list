@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-18T19:37:21Z",
   "Package": {
     "Ecosystem": "COMPOSER",
@@ -39,9 +39,9 @@
     "Description": "### Summary\nUnescaped entity property enables Javascript injection.\n\n### Details\nI think this is possible because %source_label% in twig macro is not escaped. Therefore script tags can be inserted and are executed.\n\n### PoC\n- clone example project https://github.com/DamienHarper/auditor-bundle-demo\n- create author with FullName \u003cscript\u003ealert()\u003c/script\u003e\n- delete author\n- view audit of authors\n- alert is displayed\n\n### Impact\npersistent XSS. JS can be injected and executed.\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-10T15:53:10Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "auditor-bundle vulnerable to Cross-site Scripting because name of entity does not get escaped",
-    "UpdatedAt": "2024-09-18T19:37:22Z",
+    "UpdatedAt": "2024-11-18T16:27:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.2,

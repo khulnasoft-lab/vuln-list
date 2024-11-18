@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-09-04T20:29:46Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -51,9 +51,9 @@
     "Description": "A flaw was found in ansible 2.8.0 before 2.8.4. Fields managing sensitive data should be set as such by no_log feature. Some of these fields in GCP modules are not set properly. service_account_contents() which is common class for all gcp modules is not setting no_log to True. Any sensitive data managed by that function would be leak as an output when running ansible playbooks.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-10-12T16:31:59Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Exposure of Sensitive Information to an Unauthorized Actor in ansible",
-    "UpdatedAt": "2024-09-04T20:29:46Z",
+    "UpdatedAt": "2024-11-18T16:26:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

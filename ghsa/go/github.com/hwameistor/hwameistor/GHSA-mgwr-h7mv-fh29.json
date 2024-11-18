@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-08-29T18:00:47Z",
   "Package": {
     "Ecosystem": "GO",
@@ -45,9 +45,9 @@
     "Description": "### Impact\n_What kind of vulnerability is it? Who is impacted?_\nThis ClusterRole has * verbs of * resources. If a malicious user can access the worker node which has hwameistor's deployment, he/she can abuse these excessive permissions to do whatever he/she likes to the whole cluster, resulting in a cluster-level privilege escalation.\n\n### Patches\n_Has the problem been patched? What versions should users upgrade to?_\n\u003e= v0.14.6\n\n### Workarounds\n_Is there a way for users to fix or remediate the vulnerability without upgrading?_\nUpdate and Limit the ClusterRole using [security-role](https://github.com/hwameistor/hwameistor/blob/main/helm/hwameistor/templates/clusterrole.yaml).\n\n### References\n_Are there any links users can visit to find out more?_\nissues:\nhttps://github.com/hwameistor/hwameistor/issues/1457\nhttps://github.com/hwameistor/hwameistor/issues/1460\n\nalso reported by users via mails: \n[sparkEchooo](https://github.com/sparkEchooo), [younaman](https://github.com/younaman)\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-29T18:00:45Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Hwameistor Potential Permission Leakage of Cluster Level ",
-    "UpdatedAt": "2024-08-29T18:00:47Z",
+    "UpdatedAt": "2024-11-18T16:27:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.3,

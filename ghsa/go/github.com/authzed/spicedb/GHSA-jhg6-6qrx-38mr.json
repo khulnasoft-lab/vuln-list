@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-18T17:42:48Z",
   "Package": {
     "Ecosystem": "GO",
@@ -39,9 +39,9 @@
     "Description": "## Background\n\nMultiple caveats over the same indirect subject type on the same relation can result in no permission being returned when permission is expected\n\nFor example, given this schema:\n\n```\ndefinition user {}\n\ncaveat somecaveat(somefield int) {\n  somefield == 42\n}\n\ndefinition group {\n  relation member: user\n}\n\ndefinition resource {\n  relation viewer: group#member with somecaveat\n  permission view = folder-\u003eview\n}\n```\n\nIf the resource has multiple groups, and each group is caveated, it is possible for the returned permission to be \"no permission\" when permission is expected.\n\n## Impact\nPermission is returned as NO_PERMISSION when PERMISSION is expected on the CheckPermission API.\n\n## Workarounds\nDo not use caveats or do not use caveats on an indirect subject type with multiple entries",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-18T17:42:46Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "SpiceDB having multiple caveats on resources of the same type may improperly result in no permission",
-    "UpdatedAt": "2024-09-19T15:11:58Z",
+    "UpdatedAt": "2024-11-18T16:27:15Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.7,

@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-09-20T14:59:28Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -60,9 +60,9 @@
     "Description": "Django 2.1 before 2.1.15 and 2.2 before 2.2.8 allows unintended model editing. A Django model admin displaying inline related models, where the user has view-only permissions to a parent model but edit permissions to the inline model, would be presented with an editing UI, allowing POST requests, for updating the inline model. Directly editing the view-only parent model was not possible, but the parent model's save() method was called, triggering potential side effects, and causing pre and post-save signal handlers to be invoked. (To resolve this, the Django admin is adjusted to require edit permissions on the parent model in order for inline models to be editable.)",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2019-12-04T21:26:28Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Django allows unintended model editing",
-    "UpdatedAt": "2024-09-20T14:59:28Z",
+    "UpdatedAt": "2024-11-18T16:26:05Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

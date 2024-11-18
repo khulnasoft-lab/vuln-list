@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-06-20T16:24:02Z",
   "Package": {
     "Ecosystem": "GO",
@@ -36,9 +36,9 @@
     "Description": "### Background\n\nUse of an exclusion under an arrow that has multiple resources may resolve to `NO_PERMISSION` when permission is expected.\n\nFor example, given this schema:\n\n```zed\ndefinition user {}\n\ndefinition folder {\n  relation member: user\n  relation banned: user\n  permission view = member - banned\n}\n\ndefinition resource {\n  relation folder: folder\n  permission view = folder-\u003eview\n}\n```\n\nIf the resource exists under *multiple* folders and the user has access to view more than a single folder, SpiceDB may report the user does not have access due to a failure in the exclusion dispatcher to request that *all* the folders in which the user is a member be returned\n\n### Impact\n\nPermission is returned as `NO_PERMISSION` when `PERMISSION` is expected on the `CheckPermission` API.\n\n### Workarounds\n\nNone\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-20T16:24:01Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "SpiceDB exclusions can result in no permission returned when permission expected",
-    "UpdatedAt": "2024-08-09T05:03:22Z",
+    "UpdatedAt": "2024-11-18T16:26:47Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.7,

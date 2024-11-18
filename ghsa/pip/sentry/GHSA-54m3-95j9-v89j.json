@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-09-17T17:55:31Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -42,9 +42,9 @@
     "Description": "### Impact\nAn authenticated user may delete user issue alert notifications for arbitrary users given a known alert ID. \n\n### Patches\nA patch was issued to ensure authorization checks are properly scoped on requests to delete user alert notifications.\n\nSentry SaaS users do not need to take any action. [Self-Hosted Sentry](https://github.com/getsentry/self-hosted) users should upgrade to version **24.9.0** or higher.\n\n### References\n- [Prevent muting user alerts](https://github.com/getsentry/sentry/pull/77093/)\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-17T17:55:29Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Sentry improperly authorizes deletion of user issue alert notifications",
-    "UpdatedAt": "2024-09-17T22:24:57Z",
+    "UpdatedAt": "2024-11-18T16:27:15Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,

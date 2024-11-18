@@ -1,5 +1,5 @@
 {
-  "Severity": "CRITICAL",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-09-17T18:14:24Z",
   "Package": {
     "Ecosystem": "GO",
@@ -57,9 +57,9 @@
     "Description": "A flaw was found in OpenShift. This issue occurs due to the misuse of elevated privileges in the OpenShift Container Platform's build process. During the build initialization step, the git-clone container is run with a privileged security context, allowing unrestricted access to the node. An attacker with developer-level access can provide a crafted .gitconfig file containing commands executed during the cloning process, leading to arbitrary command execution on the worker node. An attacker running code in a privileged container could escalate their permissions on the node running the container.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-17T00:31:06Z",
-    "Severity": "CRITICAL",
+    "Severity": "MODERATE",
     "Summary": "OpenShift Controller Manager Improper Privilege Management",
-    "UpdatedAt": "2024-09-19T21:33:29Z",
+    "UpdatedAt": "2024-11-18T16:27:14Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.9,
