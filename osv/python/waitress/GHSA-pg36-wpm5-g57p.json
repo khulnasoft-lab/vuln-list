@@ -1,6 +1,6 @@
 {
   "id": "GHSA-pg36-wpm5-g57p",
-  "modified": "2024-02-21T05:19:59.381493Z",
+  "modified": "2024-11-19T14:13:58.959728Z",
   "published": "2019-12-20T23:03:57Z",
   "aliases": [
     "CVE-2019-16785",
@@ -67,14 +67,6 @@
         "1.3.0b0",
         "1.3.1"
       ],
-      "ecosystem_specific": {
-        "affected_functions": [
-          "waitress.parser.HTTPRequestParser.parse_header",
-          "waitress.parser.get_header_lines",
-          "waitress.receiver.ChunkedReceiver",
-          "waitress.receiver.ChunkedReceiver.received"
-        ]
-      },
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2019/12/GHSA-pg36-wpm5-g57p/GHSA-pg36-wpm5-g57p.json"
       }
@@ -104,6 +96,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/Pylons/waitress"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/waitress/PYSEC-2019-136.yaml"
     },
     {
       "type": "WEB",
