@@ -1,0 +1,22 @@
+{
+  "name": "cassandra-reaper",
+  "secfixes": {
+    "3.6.0-r0": [
+      "CVE-2024-29131",
+      "CVE-2024-29133",
+      "GHSA-9w38-p64v-xpmv",
+      "GHSA-xjp4-hw94-mvp5"
+    ],
+    "3.7.0-r0": [
+      "CVE-2024-47535",
+      "GHSA-xq3w-v528-46rv"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "x86_64",
+    "aarch64"
+  ],
+  "urlprefix": "https://packages.wolfi.dev",
+  "reponame": "os"
+}

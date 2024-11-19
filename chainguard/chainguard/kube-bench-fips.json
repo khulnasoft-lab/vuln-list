@@ -1,0 +1,35 @@
+{
+  "name": "kube-bench-fips",
+  "secfixes": {
+    "0.7.2-r1": [
+      "CVE-2024-24786",
+      "CVE-2024-27304",
+      "GHSA-7jwh-3vrq-q3m8",
+      "GHSA-8r3f-844c-mc37",
+      "GHSA-mrww-27vc-gghv"
+    ],
+    "0.7.3-r0": [
+      "CVE-2023-45288",
+      "GHSA-4v7x-pqxf-cx7m"
+    ],
+    "0.7.3-r2": [
+      "CVE-2024-24787",
+      "CVE-2024-24788",
+      "GHSA-2jwv-jmq4-4j3r",
+      "GHSA-5fq7-4mxc-535h"
+    ],
+    "0.7.3-r5": [
+      "CVE-2024-24789",
+      "CVE-2024-24790",
+      "GHSA-236w-p7wf-5ph8",
+      "GHSA-49gw-vxvf-fc2g"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}
