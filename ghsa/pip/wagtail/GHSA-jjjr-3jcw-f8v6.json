@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2020-05-07T18:04:34Z",
+  "UpdatedAt": "2024-11-19T15:42:25Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "wagtail"
@@ -15,6 +15,21 @@
       },
       {
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11037"
+      },
+      {
+        "Url": "https://github.com/wagtail/wagtail/commit/3c030490ed575bb9cd01dfb3a890477dcaeb2edf"
+      },
+      {
+        "Url": "https://github.com/wagtail/wagtail/commit/b76ab57ee859732b9cf9287d380493ab24061090"
+      },
+      {
+        "Url": "https://github.com/wagtail/wagtail/commit/ba9d424bd1ca5ce1910d3de74f5cc07214fbfb11"
+      },
+      {
+        "Url": "https://github.com/wagtail/wagtail/commit/bac3cd0a26b023e595cf2959aae7da15bb5e4340"
+      },
+      {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/wagtail/PYSEC-2020-153.yaml"
       },
       {
         "Url": "https://github.com/advisories/GHSA-jjjr-3jcw-f8v6"
@@ -35,7 +50,7 @@
     "PublishedAt": "2020-05-07T18:04:53Z",
     "Severity": "MODERATE",
     "Summary": "Potential Observable Timing Discrepancy in Wagtail",
-    "UpdatedAt": "2023-01-09T05:02:15Z",
+    "UpdatedAt": "2024-11-19T15:42:25Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -45,15 +60,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.8.2"
+        "Identifier": "2.9"
       },
-      "VulnerableVersionRange": "\u003e= 2.8.0, \u003c 2.8.2"
+      "VulnerableVersionRange": "= 2.9rc1"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.7.2"
+        "Identifier": "2.8.2"
       },
-      "VulnerableVersionRange": "\u003c 2.7.2"
+      "VulnerableVersionRange": "\u003e= 2.8rc1, \u003c 2.8.2"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.7.3"
+      },
+      "VulnerableVersionRange": "\u003c 2.7.3"
     }
   ]
 }

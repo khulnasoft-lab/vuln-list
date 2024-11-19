@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2022-01-18T21:16:18Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -23,6 +23,9 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2022-21683"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/wagtail/PYSEC-2022-13.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-xqxm-2rpm-3889"
       }
     ],
@@ -39,9 +42,9 @@
     "Description": "### Impact\nWhen notifications for new replies in comment threads are sent, they are sent to all users who have replied or commented anywhere on the site, rather than only in the relevant threads. This means that a user could listen in to new comment replies on pages they have not had editing access to, as long as they have left a comment or reply somewhere on the site.\n\n### Patches\nA patched version has been released as Wagtail 2.15.2 (for the current LTS), which restores the intended behaviour - to send notifications for new replies to the participants in the active thread only (editing permissions are not considered).\n\n### Workarounds\nNew comments can be disabled by setting `WAGTAILADMIN_COMMENTS_ENABLED = False` in the Django settings file.\n\n### Acknowledgements\n\nMany thanks to Ihor Marhitych for identifying this issue.\n\n### For more information\nIf you have any questions or comments about this advisory:\n\n* Visit Wagtail's [support channels](https://docs.wagtail.io/en/stable/support.html)\n* Email us at security@wagtail.io (if you wish to send encrypted email, the public key ID is `0x6ba1e1a86e0f8ce8`)\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-01-21T23:43:50Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "Comment reply notifications sent to incorrect users",
-    "UpdatedAt": "2023-02-03T05:04:38Z",
+    "UpdatedAt": "2024-11-19T16:03:46Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.5,
