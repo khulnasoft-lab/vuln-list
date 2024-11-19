@@ -1,6 +1,6 @@
 {
   "id": "GHSA-jjjr-3jcw-f8v6",
-  "modified": "2023-11-08T04:02:03.904734Z",
+  "modified": "2024-11-19T15:50:39.423489Z",
   "published": "2020-05-07T18:04:53Z",
   "aliases": [
     "CVE-2020-11037",
@@ -23,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "2.7.2"
+              "fixed": "2.7.3"
             }
           ]
         }
@@ -140,6 +140,7 @@
         "2.6rc1",
         "2.7",
         "2.7.1",
+        "2.7.2",
         "2.7rc1",
         "2.7rc2"
       ],
@@ -158,7 +159,7 @@
           "type": "ECOSYSTEM",
           "events": [
             {
-              "introduced": "2.8.0"
+              "introduced": "2.8rc1"
             },
             {
               "fixed": "2.8.2"
@@ -168,7 +169,34 @@
       ],
       "versions": [
         "2.8",
-        "2.8.1"
+        "2.8.1",
+        "2.8rc1"
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2020/05/GHSA-jjjr-3jcw-f8v6/GHSA-jjjr-3jcw-f8v6.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "wagtail",
+        "purl": "pkg:pypi/wagtail"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "2.9rc1"
+            },
+            {
+              "fixed": "2.9"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "2.9rc1"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2020/05/GHSA-jjjr-3jcw-f8v6/GHSA-jjjr-3jcw-f8v6.json"
@@ -183,6 +211,30 @@
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2020-11037"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wagtail/wagtail/commit/3c030490ed575bb9cd01dfb3a890477dcaeb2edf"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wagtail/wagtail/commit/b76ab57ee859732b9cf9287d380493ab24061090"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wagtail/wagtail/commit/ba9d424bd1ca5ce1910d3de74f5cc07214fbfb11"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/wagtail/wagtail/commit/bac3cd0a26b023e595cf2959aae7da15bb5e4340"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/wagtail/PYSEC-2020-153.yaml"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/wagtail/wagtail"
     }
   ]
 }
