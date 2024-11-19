@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-01T11:20:17Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -26,6 +26,9 @@
         "Url": "https://github.com/transifex/transifex-client/commit/e0d1f8b38ec1a24e2999d63420554d8393206f58"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/transifex-client/PYSEC-2014-72.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-jf99-2rj4-jxrm"
       }
     ],
@@ -42,13 +45,13 @@
     "Description": "Transifex command-line client before 0.10 does not validate X.509 certificates for data transfer connections, which allows man-in-the-middle attackers to spoof a Transifex server via an arbitrary certificate.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-2073.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:45:17Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Transifex command-line client has improper certificate validation",
-    "UpdatedAt": "2024-05-01T11:20:17Z",
+    "UpdatedAt": "2024-11-18T22:04:32Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

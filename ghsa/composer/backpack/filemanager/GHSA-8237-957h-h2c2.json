@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-11-13T18:43:03Z",
+  "UpdatedAt": "2024-11-18T20:35:07Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "backpack/filemanager"
@@ -33,12 +33,12 @@
         "Value": "CVE-2024-52306"
       }
     ],
-    "Description": "### Impact\nDeserialization of untrusted data from the `mimes` parameter could lead to remote code execution.\n\n### Patches\nFixed in 3.0.9\n\n### Workarounds\nNot needed, a `composer update` will solve it in a non-breaking way.\n\n### References\nReported responsibly Vladislav Gladkiy at [Positive Technologies](https://www.ptsecurity.com/ww-en/).",
+    "Description": "### Impact\nDeserialization of untrusted data from the `mimes` parameter could lead to remote code execution.\n\n### Patches\nFixed in 3.0.9\n\n### Workarounds\nNot needed, a `composer update` will solve it in a non-breaking way.\n\n### References\nReported responsibly [Vladislav Gladkiy](https://github.com/catferq) at [Positive Technologies](https://www.ptsecurity.com/ww-en/).",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-13T18:43:02Z",
     "Severity": "HIGH",
     "Summary": "FileManager Deserialization of Untrusted Data vulnerability",
-    "UpdatedAt": "2024-11-13T18:43:03Z",
+    "UpdatedAt": "2024-11-18T20:35:07Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.7,
@@ -48,9 +48,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "2.0.2"
+      },
+      "VulnerableVersionRange": "\u003c 2.0.2"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "3.0.9"
       },
-      "VulnerableVersionRange": "\u003c 3.0.9"
+      "VulnerableVersionRange": "\u003e= 3.0.0, \u003c 3.0.9"
     }
   ]
 }
