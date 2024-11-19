@@ -1,9 +1,10 @@
 {
   "id": "GHSA-5r2g-59px-3q9w",
-  "modified": "2024-11-15T21:13:39.585209Z",
+  "modified": "2024-11-19T17:42:39.606884Z",
   "published": "2024-11-15T12:31:45Z",
   "aliases": [
-    "CVE-2023-0109"
+    "CVE-2023-0109",
+    "GO-2024-3274"
   ],
   "summary": "Stored XSS using two files in usememos/memos",
   "details": "A stored cross-site scripting (XSS) vulnerability was discovered in usememos/memos version 0.9.1. This vulnerability allows an attacker to upload a JavaScript file containing a malicious script and reference it in an HTML file. When the HTML file is accessed, the malicious script is executed. This can lead to the theft of sensitive information, such as login credentials, from users visiting the affected website. The issue has been fixed in version 0.10.0.",

@@ -6,7 +6,7 @@
     "CVE-2024-6221",
     "GHSA-hxwh-jpp2-84pm"
   ],
-  "details": "A vulnerability in corydolphin/flask-cors version 4.0.1 allows the `Access-Control-Allow-Private-Network` CORS header to be set to true by default, without any configuration option. This behavior can expose private network resources to unauthorized external access, leading to significant security risks such as data breaches, unauthorized access to sensitive information, and potential network intrusions.",
+  "details": "A vulnerability in corydolphin/flask-cors up to version 4.0.1 allows the `Access-Control-Allow-Private-Network` CORS header to be set to true by default, without any configuration option. This behavior can expose private network resources to unauthorized external access, leading to significant security risks such as data breaches, unauthorized access to sensitive information, and potential network intrusions.",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "5.0.0"
+              "fixed": "4.0.2"
             }
           ]
         }
@@ -72,8 +72,7 @@
         "3.0.9",
         "4.0.0",
         "4.0.0a0",
-        "4.0.1",
-        "4.0.2"
+        "4.0.1"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/flask-cors/PYSEC-2024-71.yaml"
@@ -84,6 +83,10 @@
     {
       "type": "WEB",
       "url": "https://huntr.com/bounties/a42935fc-6f57-4818-bca4-3d528235df4d"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/corydolphin/flask-cors/commit/7ae310c56ac30e0b94fb42129aa377bf633256ec"
     }
   ]
 }
