@@ -1,6 +1,6 @@
 {
   "id": "GHSA-p2h2-3vg9-4p87",
-  "modified": "2024-11-19T17:42:37.881185Z",
+  "modified": "2024-11-19T19:37:12Z",
   "published": "2024-11-14T17:39:01Z",
   "aliases": [
     "CVE-2024-52308",
@@ -35,6 +35,29 @@
         "last_known_affected_version_range": "\u003c= 2.61.0",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-p2h2-3vg9-4p87/GHSA-p2h2-3vg9-4p87.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/cli/cli",
+        "purl": "pkg:golang/github.com/cli/cli"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.62.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-p2h2-3vg9-4p87/GHSA-p2h2-3vg9-4p87.json"
+      }
     }
   ],
   "references": [
@@ -49,6 +72,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/cli/cli"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3269"
     }
   ]
 }
