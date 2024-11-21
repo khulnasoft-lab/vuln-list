@@ -1,10 +1,11 @@
 {
   "id": "GHSA-vc42-mgr2-w34r",
-  "modified": "2024-09-24T21:33:16.247875Z",
+  "modified": "2024-11-21T14:57:07.704963Z",
   "published": "2022-05-24T17:03:09Z",
   "aliases": [
     "CVE-2019-19702",
-    "PYSEC-2019-105"
+    "PYSEC-2019-105",
+    "PYSEC-2019-251"
   ],
   "summary": "Modoboa is vulnerable to an XML External Entity Injection (XXE)",
   "details": "The modoboa-dmarc plugin 1.1.0 for Modoboa is vulnerable to an XML External Entity Injection (XXE) attack when processing XML data. A remote attacker could exploit this to perform a denial of service against the DMARC reporting functionality, such as by referencing the /dev/random file within XML documents that are emailed to the address in the rua field of the DMARC records of a domain.",
