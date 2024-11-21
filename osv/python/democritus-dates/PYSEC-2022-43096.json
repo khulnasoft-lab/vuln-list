@@ -1,0 +1,51 @@
+{
+  "id": "PYSEC-2022-43096",
+  "modified": "2024-11-21T14:57:36.614234Z",
+  "published": "2022-11-07T15:15:00Z",
+  "aliases": [
+    "CVE-2022-43306",
+    "PYSEC-2022-43090"
+  ],
+  "details": "The d8s-timer for python, as distributed on PyPI, included a potential code-execution backdoor inserted by a third party. A potential code execution backdoor inserted by third parties is the democritus-dates package. The affected version of d8s-htm is 0.1.0.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "democritus-dates",
+        "purl": "pkg:pypi/democritus-dates"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "versions": [
+        "2021.1.21",
+        "2021.1.25",
+        "2021.2.11"
+      ],
+      "database_specific": {
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/democritus-dates/PYSEC-2022-43096.yaml"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "PACKAGE",
+      "url": "https://pypi.org/project/democritus-dates/"
+    },
+    {
+      "type": "REPORT",
+      "url": "https://github.com/dadadadada111/info/issues/11"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://pypi.org/project/d8s-timer/"
+    }
+  ]
+}
