@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xxgm-qpj5-4886",
-  "modified": "2024-01-12T20:56:35.150901Z",
+  "modified": "2024-11-21T14:57:03.052916Z",
   "published": "2022-05-17T05:25:08Z",
   "aliases": [
-    "CVE-2012-3371"
+    "CVE-2012-3371",
+    "PYSEC-2012-40"
   ],
   "summary": "OpenStack Nova Scheduler denial of service through scheduler_hints",
   "details": "The Nova scheduler in OpenStack Compute (Nova) Folsom (2012.2) and Essex (2012.1), when DifferentHostFilter or SameHostFilter is enabled, allows remote authenticated users to cause a denial of service (excessive database lookup calls and server hang) via a request with many repeated IDs in the os:scheduler_hints section.",

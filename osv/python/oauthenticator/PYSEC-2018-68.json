@@ -1,10 +1,11 @@
 {
   "id": "PYSEC-2018-68",
-  "modified": "2023-11-08T04:00:22.250024Z",
+  "modified": "2024-11-21T14:57:19.916931Z",
   "published": "2018-02-18T03:29:00Z",
   "aliases": [
     "CVE-2018-7206",
-    "GHSA-8x3m-m3x9-54fj"
+    "GHSA-8x3m-m3x9-54fj",
+    "PYSEC-2018-151"
   ],
   "details": "An issue was discovered in Project Jupyter JupyterHub OAuthenticator 0.6.x before 0.6.2 and 0.7.x before 0.7.3. When using JupyterHub with GitLab group whitelisting for access control, group membership was not checked correctly, allowing members not in the whitelisted groups to create accounts on the Hub. (Users were not allowed to access other users' accounts, but could create their own accounts on the Hub linked to their GitLab account. GitLab authentication not using gitlab_group_whitelist is unaffected. No other Authenticators are affected.)",
   "affected": [
