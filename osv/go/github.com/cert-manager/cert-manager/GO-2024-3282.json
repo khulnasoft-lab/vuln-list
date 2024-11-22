@@ -1,0 +1,73 @@
+{
+  "id": "GO-2024-3282",
+  "modified": "2024-11-21T20:12:30.288985Z",
+  "published": "2024-11-21T19:52:52Z",
+  "aliases": [
+    "GHSA-r4pg-vg54-wxx4"
+  ],
+  "summary": "cert-manager ha a potential slowdown / DoS when parsing specially crafted PEM inputs in github.com/cert-manager/cert-manager",
+  "details": "cert-manager ha a potential slowdown / DoS when parsing specially crafted PEM inputs in github.com/cert-manager/cert-manager",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/cert-manager/cert-manager",
+        "purl": "pkg:golang/github.com/cert-manager/cert-manager"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.12.14"
+            },
+            {
+              "introduced": "1.13.0-alpha.0"
+            },
+            {
+              "fixed": "1.15.4"
+            },
+            {
+              "introduced": "1.16.0-alpha.0"
+            },
+            {
+              "fixed": "1.16.2"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-3282.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/cert-manager/cert-manager/security/advisories/GHSA-r4pg-vg54-wxx4"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cert-manager/cert-manager/pull/7400"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cert-manager/cert-manager/pull/7401"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cert-manager/cert-manager/pull/7402"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cert-manager/cert-manager/pull/7403"
+    },
+    {
+      "type": "WEB",
+      "url": "https://go.dev/issue/50116"
+    }
+  ]
+}
