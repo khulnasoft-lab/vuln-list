@@ -1,11 +1,8 @@
 {
   "id": "PYSEC-2013-45",
-  "modified": "2024-11-21T14:57:17.275301Z",
+  "modified": "2024-11-21T14:22:56.793365Z",
   "published": "2013-12-27T01:55:00Z",
-  "aliases": [
-    "CVE-2013-2030",
-    "GHSA-pxxv-rv32-2qgv"
-  ],
+  "withdrawn": "2024-11-22T04:37:04Z",
   "details": "keystone/middleware/auth_token.py in OpenStack Nova Folsom, Grizzly, and Havana uses an insecure temporary directory for storing signing certificates, which allows local users to spoof servers by pre-creating this directory, which is reused by Nova, as demonstrated using /tmp/keystone-signing-nova on Fedora.",
   "affected": [
     {
