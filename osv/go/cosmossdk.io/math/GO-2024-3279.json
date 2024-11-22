@@ -1,0 +1,45 @@
+{
+  "id": "GO-2024-3279",
+  "modified": "2024-11-21T20:12:30.210478Z",
+  "published": "2024-11-21T19:52:52Z",
+  "aliases": [
+    "GHSA-7225-m954-23v7"
+  ],
+  "summary": "ASA-2024-010: cosmossdk.io/math: Mismatched bit-length validation in sdk.Int and sdk.Dec can lead to panic",
+  "details": "ASA-2024-010: cosmossdk.io/math: Mismatched bit-length validation in sdk.Int and sdk.Dec can lead to panic",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "cosmossdk.io/math",
+        "purl": "pkg:golang/cosmossdk.io/math"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.4.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-3279.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/cosmos/cosmos-sdk/security/advisories/GHSA-7225-m954-23v7"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/cosmos/cosmos-sdk/commit/c6522a72a45c34897f9fc85d438c0b74d52f8862"
+    }
+  ]
+}
