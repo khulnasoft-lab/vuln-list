@@ -1,11 +1,8 @@
 {
   "id": "PYSEC-2022-43143",
-  "modified": "2024-11-21T14:57:00.790722Z",
+  "modified": "2024-11-21T14:22:57.304802Z",
   "published": "2022-07-15T18:15:00Z",
-  "aliases": [
-    "CVE-2022-31153",
-    "GHSA-8mjr-jr5h-q2xr"
-  ],
+  "withdrawn": "2024-11-22T04:37:04Z",
   "details": "OpenZeppelin Contracts for Cairo is a library for contract development written in Cairo for StarkNet, a decentralized ZK Rollup. Version 0.2.0 is vulnerable to an error that renders account contracts unusable on live networks. This issue affects all accounts (vanilla and ethereum flavors) in the v0.2.0 release of OpenZeppelin Contracts for Cairo, which are not whitelisted on StarkNet mainnet. Only goerli deployments of v0.2.0 accounts are affected. This faulty behavior is not observed in StarkNet's testing framework. This bug has been patched in v0.2.1.",
   "affected": [
     {

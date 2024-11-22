@@ -1,11 +1,8 @@
 {
   "id": "PYSEC-2014-105",
-  "modified": "2024-11-21T14:56:57.010695Z",
+  "modified": "2024-11-21T14:22:52.681779Z",
   "published": "2014-04-01T06:35:00Z",
-  "aliases": [
-    "CVE-2014-2237",
-    "GHSA-23x9-8hxr-978c"
-  ],
+  "withdrawn": "2024-11-22T04:37:04Z",
   "details": "The memcache token backend in OpenStack Identity (Keystone) 2013.1 through 2.013.1.4, 2013.2 through 2013.2.2, and icehouse before icehouse-3, when issuing a trust token with impersonation enabled, does not include this token in the trustee's token-index-list, which prevents the token from being invalidated by bulk token revocation and allows the trustee to bypass intended access restrictions.",
   "affected": [
     {

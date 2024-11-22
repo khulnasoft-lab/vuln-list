@@ -1,11 +1,8 @@
 {
   "id": "PYSEC-2017-147",
-  "modified": "2024-11-21T14:57:07.042604Z",
+  "modified": "2024-11-21T14:23:00.007173Z",
   "published": "2017-09-13T16:29:00Z",
-  "aliases": [
-    "CVE-2017-12612",
-    "GHSA-8rhc-48pp-52gr"
-  ],
+  "withdrawn": "2024-11-22T04:37:05Z",
   "details": "In Apache Spark 1.6.0 until 2.1.1, the launcher API performs unsafe deserialization of data received by its socket. This makes applications launched programmatically using the launcher API potentially vulnerable to arbitrary code execution by an attacker with access to any user account on the local machine. It does not affect apps run by spark-submit or spark-shell. The attacker would be able to execute code as the user that ran the Spark application. Users are encouraged to update to version 2.2.0 or later.",
   "affected": [
     {
