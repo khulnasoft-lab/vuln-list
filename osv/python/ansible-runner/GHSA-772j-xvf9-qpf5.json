@@ -1,9 +1,10 @@
 {
   "id": "GHSA-772j-xvf9-qpf5",
-  "modified": "2024-11-22T05:12:46.444766Z",
+  "modified": "2024-11-25T22:42:24.318249Z",
   "published": "2022-08-24T00:00:29Z",
   "aliases": [
-    "CVE-2021-3702"
+    "CVE-2021-3702",
+    "PYSEC-2022-43068"
   ],
   "summary": "ansible-runner 2.0.0 vulnerable to Race Condition",
   "details": "A race condition flaw was found in ansible-runner, where an attacker could watch for rapid creation and deletion of a temporary directory, substitute their directory at that name, and then have access to ansible-runner's private_data_dir the next time ansible-runner made use of the private_data_dir. The highest Threat out of this flaw is to integrity and confidentiality.",

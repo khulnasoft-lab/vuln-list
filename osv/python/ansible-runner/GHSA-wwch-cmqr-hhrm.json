@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wwch-cmqr-hhrm",
-  "modified": "2024-11-22T05:12:32.749764Z",
+  "modified": "2024-11-25T22:42:15.376507Z",
   "published": "2022-08-24T00:00:29Z",
   "aliases": [
-    "CVE-2021-3701"
+    "CVE-2021-3701",
+    "PYSEC-2022-43067"
   ],
   "summary": "ansible-runner 2.0.0 default temporary files written to world R/W locations",
   "details": "A flaw was found in ansible-runner where the default temporary files configuration in ansible-2.0.0 are written to world R/W locations. This flaw allows an attacker to pre-create the directory, resulting in reading private information or forcing ansible-runner to write files as the legitimate user in a place they did not expect. The highest threat from this vulnerability is to confidentiality and integrity.",
