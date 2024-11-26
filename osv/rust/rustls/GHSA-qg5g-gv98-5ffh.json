@@ -2,6 +2,10 @@
   "id": "GHSA-qg5g-gv98-5ffh",
   "modified": "2024-11-25T16:57:34Z",
   "published": "2024-11-25T16:57:34Z",
+  "related": [
+    "CGA-3w67-q6xx-m5jq",
+    "CGA-rw93-4897-mx23"
+  ],
   "summary": "rustls network-reachable panic in `Acceptor::accept`",
   "details": "A bug introduced in rustls 0.23.13 leads to a panic if the received TLS ClientHello is fragmented.  Only servers that use `rustls::server::Acceptor::accept()` are affected.\n\nServers that use `tokio-rustls`'s `LazyConfigAcceptor` API are affected.\n\nServers that use `tokio-rustls`'s `TlsAcceptor` API are not affected.\n\nServers that use `rustls-ffi`'s `rustls_acceptor_accept` API are affected.\n",
   "affected": [
