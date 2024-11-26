@@ -1,8 +1,11 @@
 {
   "id": "PYSEC-2008-12",
-  "modified": "2024-11-21T14:22:55.213739Z",
+  "modified": "2024-11-25T22:42:14.649829Z",
   "published": "2008-04-25T06:05:00Z",
-  "withdrawn": "2024-11-22T04:37:04Z",
+  "aliases": [
+    "CVE-2008-1937",
+    "GHSA-rqxp-6926-hphr"
+  ],
   "details": "The user form processing (userform.py) in MoinMoin before 1.6.3, when using ACLs or a non-empty superusers list, does not properly manage users, which allows remote attackers to gain privileges.",
   "affected": [
     {
@@ -17,29 +20,61 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "1.6.3"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/moin/PYSEC-2008-12.yaml"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "moin",
+        "purl": "pkg:pypi/moin"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.6.3"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/moin/PYSEC-2008-12.yaml"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "PyPI",
+        "name": "moin",
+        "purl": "pkg:pypi/moin"
+      },
+      "ranges": [
+        {
+          "type": "ECOSYSTEM",
+          "events": [
+            {
+              "introduced": "1.7"
+            },
+            {
+              "fixed": "1.7.1"
             }
           ]
         }
       ],
       "versions": [
-        "1.8.4",
-        "1.8.5",
-        "1.8.6",
-        "1.8.7",
-        "1.9.0",
-        "1.9.1",
-        "1.9.10",
-        "1.9.11",
-        "1.9.2",
-        "1.9.3",
-        "1.9.4",
-        "1.9.5",
-        "1.9.6",
-        "1.9.7",
-        "1.9.8",
-        "1.9.9",
-        "2.0.0a1",
-        "2.0.0b1"
+        "1.7"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/moin/PYSEC-2008-12.yaml"

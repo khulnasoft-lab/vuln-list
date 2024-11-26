@@ -1,8 +1,11 @@
 {
   "id": "PYSEC-2009-12",
-  "modified": "2024-11-21T14:22:55.319130Z",
+  "modified": "2024-11-25T22:42:05.365810Z",
   "published": "2009-03-30T01:30:00Z",
-  "withdrawn": "2024-11-22T04:37:04Z",
+  "aliases": [
+    "CVE-2008-6549",
+    "GHSA-wjjc-m3fc-fcm8"
+  ],
   "details": "The password_checker function in config/multiconfig.py in MoinMoin 1.6.1 uses the cracklib and python-crack features even though they are not thread-safe, which allows remote attackers to cause a denial of service (segmentation fault and crash) via unknown vectors.",
   "affected": [
     {
@@ -17,29 +20,12 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "1.6.1"
             }
           ]
         }
-      ],
-      "versions": [
-        "1.8.4",
-        "1.8.5",
-        "1.8.6",
-        "1.8.7",
-        "1.9.0",
-        "1.9.1",
-        "1.9.10",
-        "1.9.11",
-        "1.9.2",
-        "1.9.3",
-        "1.9.4",
-        "1.9.5",
-        "1.9.6",
-        "1.9.7",
-        "1.9.8",
-        "1.9.9",
-        "2.0.0a1",
-        "2.0.0b1"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/moin/PYSEC-2009-12.yaml"

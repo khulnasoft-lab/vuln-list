@@ -1,9 +1,10 @@
 {
   "id": "GHSA-pvjg-jwp3-mrj5",
-  "modified": "2024-11-22T05:12:12.231266Z",
+  "modified": "2024-11-25T22:42:02.057936Z",
   "published": "2022-07-30T00:00:16Z",
   "aliases": [
-    "CVE-2022-36447"
+    "CVE-2022-36447",
+    "PYSEC-2022-43072"
   ],
   "summary": "chia-blockchain tokens can be inflated to an arbitrary extent",
   "details": "An inflation issue was discovered in Chia Network CAT1 Standard 1.0.0. Previously minted tokens minted on the Chia blockchain using the CAT1 standard can be inflated to an arbitrary extent by any holder of any amount of the token. The total amount of the token can be increased as high as the malicious actor pleases. This is true for every CAT1 on the Chia blockchain regardless of issuance rules. This attack is auditable on chain, so maliciously altered coins can potentially be marked by off-chain observers as malicious.",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-v8fq-gq9j-3v7h",
-  "modified": "2024-11-22T05:12:34.297967Z",
+  "modified": "2024-11-25T22:42:16.430795Z",
   "published": "2022-05-17T04:31:13Z",
   "aliases": [
-    "CVE-2014-5252"
+    "CVE-2014-5252",
+    "PYSEC-2014-108"
   ],
   "summary": "OpenStack Identity (Keystone) UUID v2 tokens does not expire with revocation events",
   "details": "The V3 API in OpenStack Identity (Keystone) 2014.1.x before 2014.1.2.1 and Juno before Juno-3 updates the issued_at value for UUID v2 tokens, which allows remote authenticated users to bypass the token expiration and retain access via a verification (1) GET or (2) HEAD request to v3/auth/tokens/.",
