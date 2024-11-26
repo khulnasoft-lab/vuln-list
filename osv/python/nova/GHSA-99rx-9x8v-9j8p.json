@@ -1,9 +1,10 @@
 {
   "id": "GHSA-99rx-9x8v-9j8p",
-  "modified": "2024-11-22T18:02:45Z",
+  "modified": "2024-11-25T22:42:05.941913Z",
   "published": "2022-05-17T01:29:42Z",
   "aliases": [
-    "CVE-2013-7130"
+    "CVE-2013-7130",
+    "PYSEC-2014-111"
   ],
   "summary": "OpenStack Nova Live migration can leak root disk into ephemeral storage",
   "details": "The i_create_images_and_backing (aka create_images_and_backing) method in libvirt driver in OpenStack Compute (Nova) Grizzly, Havana, and Icehouse, when using KVM live block migration, does not properly create all expected files, which allows attackers to obtain snapshot root disk contents of other users via ephemeral storage.",

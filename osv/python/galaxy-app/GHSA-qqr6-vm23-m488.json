@@ -1,9 +1,10 @@
 {
   "id": "GHSA-qqr6-vm23-m488",
-  "modified": "2024-11-22T20:42:33.492951Z",
+  "modified": "2024-11-25T22:42:06.596306Z",
   "published": "2022-05-14T03:02:50Z",
   "aliases": [
-    "CVE-2018-1000516"
+    "CVE-2018-1000516",
+    "PYSEC-2018-149"
   ],
   "summary": "Galaxy cross-site scripting (XSS)",
   "details": "The Galaxy Project Galaxy version v14.10 contains a CWE-79: Improper Neutralization of Input During Web Page Generation vulnerability in Many templates used in the Galaxy server did not properly sanitize user's input, which would allow for cross-site scripting (XSS) attacks. In this form of attack, a malicious person can create a URL which, when opened by a Galaxy user or administrator, would allow the malicious user to execute arbitrary Javascript. that can result in Arbitrary JavaScript code execution. This attack appear to be exploitable via The victim must interact with component on page witch contains injected JavaScript code.. This vulnerability appears to have been fixed in v14.10.1, v15.01.",
