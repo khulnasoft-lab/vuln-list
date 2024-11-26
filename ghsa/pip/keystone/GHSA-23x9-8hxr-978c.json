@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-14T21:10:46Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -21,9 +21,6 @@
       },
       {
         "Url": "http://www.openwall.com/lists/oss-security/2014/03/04/16"
-      },
-      {
-        "Url": "http://www.securityfocus.com/bid/65895"
       },
       {
         "Url": "https://github.com/openstack/keystone/commit/813d1254eb4f7a7d40009b23bbadbc4c5cc5daac"
@@ -54,13 +51,13 @@
     "Description": "The memcache token backend in OpenStack Identity (Keystone) 2013.1 through 2.013.1.4, 2013.2 through 2013.2.2, and icehouse before icehouse-3, when issuing a trust token with impersonation enabled, does not include this token in the trustee's token-index-list, which prevents the token from being invalidated by bulk token revocation and allows the trustee to bypass intended access restrictions.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:13:50Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "OpenStack Identity (Keystone) Trustee token revocations does not work with memcache backend",
-    "UpdatedAt": "2024-11-21T22:03:39Z",
+    "UpdatedAt": "2024-11-26T18:31:37Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N"
     }
   },
   "Versions": [

@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-05-14T21:32:20Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -21,9 +21,6 @@
       },
       {
         "Url": "http://rhn.redhat.com/errata/RHSA-2015-0938.html"
-      },
-      {
-        "Url": "http://www.securityfocus.com/bid/72692"
       },
       {
         "Url": "https://github.com/openstack/glance/commit/7858d4d95154c8596720365e465cca7858cfec5c"
@@ -51,13 +48,13 @@
     "Description": "OpenStack Image Registry and Delivery Service (Glance) 2014.2 through 2014.2.2 does not properly remove images, which allows remote authenticated users to cause a denial of service (disk consumption) by creating a large number of images using the task v2 API and then deleting them before the uploads finish, a different vulnerability than CVE-2015-1881.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T03:10:45Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "OpenStack Glance Denial of service by creating a large number of images",
-    "UpdatedAt": "2024-11-21T21:57:58Z",
+    "UpdatedAt": "2024-11-26T18:25:27Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H"
     }
   },
   "Versions": [

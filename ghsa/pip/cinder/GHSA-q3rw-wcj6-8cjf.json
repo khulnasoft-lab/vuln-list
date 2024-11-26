@@ -1,5 +1,5 @@
 {
-  "Severity": "LOW",
+  "Severity": "MODERATE",
   "UpdatedAt": "2024-05-14T21:25:53Z",
   "Package": {
     "Ecosystem": "PIP",
@@ -17,12 +17,6 @@
         "Url": "https://bugs.launchpad.net/cinder/+bug/1198185"
       },
       {
-        "Url": "http://rhn.redhat.com/errata/RHSA-2013-1198.html"
-      },
-      {
-        "Url": "http://www.ubuntu.com/usn/USN-2005-1"
-      },
-      {
         "Url": "https://github.com/openstack/cinder/commit/0ee31073c5cb432a9cdd2648e99aa802b0ed0a17"
       },
       {
@@ -30,6 +24,12 @@
       },
       {
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/cinder/PYSEC-2013-35.yaml"
+      },
+      {
+        "Url": "https://rhn.redhat.com/errata/RHSA-2013-1198.html"
+      },
+      {
+        "Url": "https://www.ubuntu.com/usn/USN-2005-1"
       },
       {
         "Url": "https://github.com/advisories/GHSA-q3rw-wcj6-8cjf"
@@ -48,13 +48,13 @@
     "Description": "The clear_volume function in LVMVolumeDriver driver in OpenStack Cinder 2013.1.1 through 2013.1.2 does not properly clear data when deleting a snapshot, which allows local users to obtain sensitive information via unspecified vectors.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:58:58Z",
-    "Severity": "LOW",
+    "Severity": "MODERATE",
     "Summary": "OpenStack Cinder LVMVolumeDriver does not zero deleted snapshots",
-    "UpdatedAt": "2024-11-21T21:38:34Z",
+    "UpdatedAt": "2024-11-26T16:09:06Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 0,
-      "VectorString": ""
+      "Score": 6.2,
+      "VectorString": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
