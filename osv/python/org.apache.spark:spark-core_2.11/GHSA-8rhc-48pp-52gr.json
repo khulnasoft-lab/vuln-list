@@ -1,12 +1,12 @@
 {
   "id": "GHSA-8rhc-48pp-52gr",
-  "modified": "2024-11-25T22:42:11.091237Z",
+  "modified": "2024-11-26T19:07:38.712373Z",
   "published": "2018-11-09T17:43:25Z",
   "aliases": [
     "CVE-2017-12612",
     "PYSEC-2017-147"
   ],
-  "summary": "High severity vulnerability that affects org.apache.spark:spark-core_2.10 and org.apache.spark:spark-core_2.11",
+  "summary": "Apache Spark Deserialization of Untrusted Data vulnerability",
   "details": "In Apache Spark 1.6.0 until 2.1.1, the launcher API performs unsafe deserialization of data received by its socket. This makes applications launched programmatically using the launcher API potentially vulnerable to arbitrary code execution by an attacker with access to any user account on the local machine. It does not affect apps run by spark-submit or spark-shell. The attacker would be able to execute code as the user that ran the Spark application. Users are encouraged to update to version 2.1.2, 2.2.0 or later.",
   "affected": [
     {
