@@ -1,9 +1,10 @@
 {
   "id": "GHSA-v3w7-g6p2-mpx7",
-  "modified": "2024-11-25T17:59:35.575037Z",
+  "modified": "2024-11-27T21:57:30Z",
   "published": "2024-11-25T09:30:58Z",
   "aliases": [
-    "CVE-2024-6538"
+    "CVE-2024-6538",
+    "GO-2024-3289"
   ],
   "summary": "OpenShift Console Server Side Request Forgery vulnerability",
   "details": "A flaw was found in OpenShift Console. A Server Side Request Forgery (SSRF) attack can happen if an attacker supplies all or part of a URL to the server to query. The server is considered to be in a privileged network position and can often reach exposed services that aren't readily available to clients due to network filtering. Leveraging such an attack vector, the attacker can have an impact on other services and potentially disclose information or have other nefarious effects on the system.\nThe /api/dev-console/proxy/internet endpoint on the OpenShit Console allows authenticated users to have the console's pod perform arbitrary and fully controlled HTTP(s) requests. The full response to these requests is returned by the endpoint.\nWhile the name of this endpoint suggests the requests are only bound to the internet, no such checks are in place. An authenticated user can therefore ask the console to perform arbitrary HTTP requests from outside the cluster to a service inside the cluster.",
