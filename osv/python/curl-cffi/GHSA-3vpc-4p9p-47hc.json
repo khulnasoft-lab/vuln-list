@@ -1,6 +1,6 @@
 {
   "id": "GHSA-3vpc-4p9p-47hc",
-  "modified": "2024-10-22T18:53:30.645632Z",
+  "modified": "2024-12-02T05:46:31.709173Z",
   "published": "2024-10-22T18:15:17Z",
   "summary": "curl_cffi bundles a version of libcurl affected by High Severity vulnerability",
   "details": "### Summary\ncurl_cffi is potentially affected by High Severity vulnerability (CVE-2023-38545) in libcurl\u003c8.4.0\n\n### Details\nHIGH severity vulnerability in curl and libcurl: [announcement](https://github.com/curl/curl/discussions/12026#discussioncomment-7195548)\nDetails are still unknown, but seems it will be a major issue as it's advertised by curl devs as \"_probably the worst curl security flaw in a long time_\".\nA patched version (8.4.0) and details will be published around 06:00 UTC on October 11.\ncurl_cffi wheels on PyPI ship with libcurl 7.84.0\n\n### PoC\n[https://inspector.pypi.io/project/curl-cffi/0.5.10b2/packages/56/ae/eb7d39ad234f1f44650b910757d5aa696feff413d327c8328223ce78cb76/curl_cffi-0.5.10b2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/curl_cffi/include/curl/curlver.h](https://inspector.pypi.io/project/curl-cffi/0.5.10b2/packages/56/ae/eb7d39ad234f1f44650b910757d5aa696feff413d327c8328223ce78cb76/curl_cffi-0.5.10b2-cp37-abi3-manylinux_2_17_aarch64.manylinux2014_aarch64.whl/curl_cffi/include/curl/curlver.h)\n\n### Resolution\n\nVersions after 0.7 bundles with `libcurl\u003e=8.5`, which is not affected by this issue.\n",
