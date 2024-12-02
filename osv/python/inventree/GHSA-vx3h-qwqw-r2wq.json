@@ -1,6 +1,6 @@
 {
   "id": "GHSA-vx3h-qwqw-r2wq",
-  "modified": "2024-10-02T18:01:13.029160Z",
+  "modified": "2024-12-02T05:45:34.487235Z",
   "published": "2024-10-02T17:58:44Z",
   "summary": "Inventree Server-Side Request Forgery vulnerability exposes server port/internal IP",
   "details": "### Impact\n\nThe \"download image from remote URL\" feature can be abused by a malicious actor to potentially extract information about server side resources. Submitting a crafted URL (in place of a valid image) can raise a server side error, which is reported back to the user. \n\nThis error message may contain sensitive information about the server side request, including information about the availability of the remote resource.\n\n### Patches\n\nThe solution to this vulnerability is to prevent the server from returning any specific information about the observed exception. Instead, a generic error message is returned to the client.\n\nThis patch has been applied to the upcoming 0.17.0 release, and also back-ported to the 0.16.5 stable release.\n\n### Workarounds\n\nTo avoid this issue with unpatched versions, the \"download image from remote URL\" feature can be disabled in InvenTree, preventing users from accessing this information. \n\n### References\n\nThanks to @febin0x10 for identifying this vulnerability and reporting it to us as per our security policy.",
