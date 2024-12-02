@@ -1,0 +1,53 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2024-12-02T17:14:31Z",
+  "Package": {
+    "Ecosystem": "COMPOSER",
+    "Name": "simplesamlphp/saml2"
+  },
+  "Advisory": {
+    "DatabaseId": 270274,
+    "Id": "GSA_kwCzR0hTQS0yeDY1LWZwY2gtMmZjbc4ABB_C",
+    "GhsaId": "GHSA-2x65-fpch-2fcm",
+    "References": [
+      {
+        "Url": "https://github.com/simplesamlphp/xml-common/security/advisories/GHSA-2x65-fpch-2fcm"
+      },
+      {
+        "Url": "https://github.com/simplesamlphp/xml-common/commit/fa4ade391c3194466acf5fbfd5d2ecdbf5e831f5"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-2x65-fpch-2fcm"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-2x65-fpch-2fcm"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-52596"
+      }
+    ],
+    "Description": "# Summary\nWhen loading an (untrusted) XML document, for example the SAMLResponse, it's possible to induce an XXE.\n\n## Mitigation:\n\nRemove the `LIBXML_DTDLOAD | LIBXML_DTDATTR` options from `$options` is in: https://github.com/simplesamlphp/saml2/blob/717c0adc4877ebd58428637e5626345e59fa0109/src/SAML2/DOMDocumentFactory.php#L41\n\n## Background / details\n\nTo be published on Dec 8.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2024-12-02T17:14:30Z",
+    "Severity": "HIGH",
+    "Summary": "SimpleSAMLphp xml-common XXE vulnerability",
+    "UpdatedAt": "2024-12-02T17:14:31Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "4.6.14"
+      },
+      "VulnerableVersionRange": "\u003c 4.6.14"
+    }
+  ]
+}
