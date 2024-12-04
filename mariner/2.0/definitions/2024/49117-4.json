@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:49117",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-45296 affecting package reaper for versions less than 3.1.1-14",
+    "Title": "CVE-2024-45296 affecting package reaper for versions less than 3.1.1-13",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-10-25T18:45:39Z",
+    "AdvisoryDate": "2024-10-15T23:32:13Z",
     "AdvisoryID": "49117-4",
     "Severity": "High",
-    "Description": "CVE-2024-45296 affecting package reaper for versions less than 3.1.1-14. A patched version of the package is available."
+    "Description": "CVE-2024-45296 affecting package reaper for versions less than 3.1.1-13. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package reaper is earlier than 3.1.1-14, affected by CVE-2024-45296",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:49117000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package reaper is earlier than 3.1.1-13, affected by CVE-2024-45296",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:49117000"
+      }
+    ]
   }
 }

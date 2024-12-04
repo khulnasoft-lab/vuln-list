@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package memcached is earlier than 1.6.27-1, affected by CVE-2023-46852",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34976000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package memcached is earlier than 1.6.27-1, affected by CVE-2023-46852",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34976000"
+      }
+    ]
   }
 }

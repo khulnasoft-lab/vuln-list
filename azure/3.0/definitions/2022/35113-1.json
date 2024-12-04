@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package prometheus is earlier than 2.45.4-1, affected by CVE-2022-41717",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35113000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package prometheus is earlier than 2.45.4-1, affected by CVE-2022-41717",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35113000"
+      }
+    ]
   }
 }

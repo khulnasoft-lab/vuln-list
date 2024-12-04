@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package docker-compose is earlier than 2.27.0-1, affected by CVE-2024-23653",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35439000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package docker-compose is earlier than 2.27.0-1, affected by CVE-2024-23653",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35439000"
+      }
+    ]
   }
 }

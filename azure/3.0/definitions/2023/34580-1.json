@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package cert-manager is earlier than 1.12.12-1, affected by CVE-2023-45142",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34580000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package cert-manager is earlier than 1.12.12-1, affected by CVE-2023-45142",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34580000"
+      }
+    ]
   }
 }

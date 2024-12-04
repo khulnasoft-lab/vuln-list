@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubernetes is earlier than 1.29.1-2, affected by CVE-2023-45142",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34900000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubernetes is earlier than 1.29.1-2, affected by CVE-2023-45142",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34900000"
+      }
+    ]
   }
 }

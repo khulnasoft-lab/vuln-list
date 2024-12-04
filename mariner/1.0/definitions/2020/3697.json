@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubernetes is earlier than 1.17.13-5, affected by CVE-2020-8565",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:3697000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubernetes is earlier than 1.17.13-5, affected by CVE-2020-8565",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:3697000"
+      }
+    ]
   }
 }

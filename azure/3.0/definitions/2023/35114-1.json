@@ -20,9 +20,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package prometheus is earlier than 2.37.0-10, affected by CVE-2023-44487",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35114000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package prometheus is earlier than 2.37.0-10, affected by CVE-2023-44487",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35114000"
+      }
+    ]
   }
 }

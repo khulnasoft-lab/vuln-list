@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:43309",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-5535 affecting package openssl for versions less than 1.1.1k-35",
+    "Title": "CVE-2024-5535 affecting package openssl for versions less than 1.1.1k-33",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-08-05T03:22:58Z",
+    "AdvisoryDate": "2024-07-26T00:46:46Z",
     "AdvisoryID": "43309-4",
     "Severity": "Critical",
-    "Description": "CVE-2024-5535 affecting package openssl for versions less than 1.1.1k-35. A patched version of the package is available."
+    "Description": "CVE-2024-5535 affecting package openssl for versions less than 1.1.1k-33. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package openssl is earlier than 1.1.1k-35, affected by CVE-2024-5535",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:43309000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package openssl is earlier than 1.1.1k-33, affected by CVE-2024-5535",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:43309000"
+      }
+    ]
   }
 }

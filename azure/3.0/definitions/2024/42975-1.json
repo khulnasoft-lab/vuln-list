@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package openssl is earlier than 3.3.0-2, affected by CVE-2024-5535",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:42975000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package openssl is earlier than 3.3.0-2, affected by CVE-2024-5535",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:42975000"
+      }
+    ]
   }
 }

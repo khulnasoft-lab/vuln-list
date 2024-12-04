@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package nginx is earlier than 1.25.4-1, affected by CVE-2023-44487",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35028000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package nginx is earlier than 1.25.4-1, affected by CVE-2023-44487",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35028000"
+      }
+    ]
   }
 }

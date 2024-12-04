@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package glibc is earlier than 2.38-6, affected by CVE-2023-5156",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34734000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package glibc is earlier than 2.38-6, affected by CVE-2023-5156",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34734000"
+      }
+    ]
   }
 }

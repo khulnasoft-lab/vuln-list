@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package dcos-cli is earlier than 1.2.0-16, affected by CVE-2024-28180",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35879000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package dcos-cli is earlier than 1.2.0-16, affected by CVE-2024-28180",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35879000"
+      }
+    ]
   }
 }

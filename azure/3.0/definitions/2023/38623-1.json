@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kube-vip-cloud-provider is earlier than 0.0.10-1, affected by CVE-2023-45288",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:38623000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kube-vip-cloud-provider is earlier than 0.0.10-1, affected by CVE-2023-45288",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:38623000"
+      }
+    ]
   }
 }

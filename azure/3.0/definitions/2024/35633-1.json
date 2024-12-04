@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package azcopy is earlier than 10.24.0-1, affected by CVE-2024-24786",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35633000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package azcopy is earlier than 10.24.0-1, affected by CVE-2024-24786",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35633000"
+      }
+    ]
   }
 }

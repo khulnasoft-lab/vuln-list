@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:40034",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-29018 affecting package moby-engine for versions less than 24.0.9-10",
+    "Title": "CVE-2024-29018 affecting package moby-engine for versions less than 24.0.9-9",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-10-12T02:07:51Z",
+    "AdvisoryDate": "2024-09-13T18:09:05Z",
     "AdvisoryID": "40034-4",
     "Severity": "Medium",
-    "Description": "CVE-2024-29018 affecting package moby-engine for versions less than 24.0.9-10. A patched version of the package is available."
+    "Description": "CVE-2024-29018 affecting package moby-engine for versions less than 24.0.9-9. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package moby-engine is earlier than 24.0.9-10, affected by CVE-2024-29018",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:40034000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package moby-engine is earlier than 24.0.9-9, affected by CVE-2024-29018",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:40034000"
+      }
+    ]
   }
 }

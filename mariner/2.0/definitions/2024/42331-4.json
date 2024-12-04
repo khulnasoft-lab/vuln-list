@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:42331",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-3727 affecting package skopeo for versions less than 1.14.2-5",
+    "Title": "CVE-2024-3727 affecting package skopeo for versions less than 1.14.2-4",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-07-10T19:52:59Z",
+    "AdvisoryDate": "2024-06-28T17:07:09Z",
     "AdvisoryID": "42331-4",
     "Severity": "High",
-    "Description": "CVE-2024-3727 affecting package skopeo for versions less than 1.14.2-5. A patched version of the package is available."
+    "Description": "CVE-2024-3727 affecting package skopeo for versions less than 1.14.2-4. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package skopeo is earlier than 1.14.2-5, affected by CVE-2024-3727",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:42331000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package skopeo is earlier than 1.14.2-4, affected by CVE-2024-3727",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:42331000"
+      }
+    ]
   }
 }

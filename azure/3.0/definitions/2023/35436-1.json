@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package docker-buildx is earlier than 0.14.0-1, affected by CVE-2023-44487",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35436000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package docker-buildx is earlier than 0.14.0-1, affected by CVE-2023-44487",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35436000"
+      }
+    ]
   }
 }

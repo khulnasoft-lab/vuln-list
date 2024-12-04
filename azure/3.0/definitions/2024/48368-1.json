@@ -20,9 +20,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package mariadb is earlier than 10.6.9-6, affected by CVE-2024-5991",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:48368000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package mariadb is earlier than 10.6.9-6, affected by CVE-2024-5991",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:48368000"
+      }
+    ]
   }
 }

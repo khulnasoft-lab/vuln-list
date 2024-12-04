@@ -20,9 +20,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kernel is earlier than 6.6.14.1-1, affected by CVE-2023-52696",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:43242000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kernel is earlier than 6.6.14.1-1, affected by CVE-2023-52696",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:43242000"
+      }
+    ]
   }
 }

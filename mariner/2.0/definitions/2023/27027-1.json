@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package helm is earlier than 3.13.2-1, affected by CVE-2023-2253",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:27027000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package helm is earlier than 3.13.2-1, affected by CVE-2023-2253",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:27027000"
+      }
+    ]
   }
 }

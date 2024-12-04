@@ -62,18 +62,6 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package fluent-bit is earlier than 3.0.6-3, affected by CVE-2024-25431",
-      "ID": "oval:com.microsoft.azurelinux:tst:53175000",
-      "Version": "0",
-      "Object": {
-        "ObjectRef": "oval:com.microsoft.azurelinux:obj:53175001"
-      },
-      "State": {
-        "StateRef": "oval:com.microsoft.azurelinux:ste:53175002"
-      }
-    },
-    {
-      "Check": "at least one",
       "Comment": "Package libsoup is earlier than 3.4.4-2, affected by CVE-2024-52530",
       "ID": "oval:com.microsoft.azurelinux:tst:53159000",
       "Version": "1",
@@ -262,6 +250,30 @@
       },
       "State": {
         "StateRef": "oval:com.microsoft.azurelinux:ste:52789002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package golang is greater than 0.0.0, affected by CVE-2024-9355",
+      "ID": "oval:com.microsoft.azurelinux:tst:52774003",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:52774004"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:52774005"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package golang is earlier than 1.22.9-1, affected by CVE-2024-9355",
+      "ID": "oval:com.microsoft.azurelinux:tst:52774000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:52774001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:52774002"
       }
     },
     {
@@ -2774,9 +2786,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21193",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21193",
       "ID": "oval:com.microsoft.azurelinux:tst:50594000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50594001"
       },
@@ -2786,9 +2798,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21194",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21194",
       "ID": "oval:com.microsoft.azurelinux:tst:50591000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50591001"
       },
@@ -2798,9 +2810,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21134",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21134",
       "ID": "oval:com.microsoft.azurelinux:tst:50577000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50577001"
       },
@@ -2810,9 +2822,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21163",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21163",
       "ID": "oval:com.microsoft.azurelinux:tst:50574000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50574001"
       },
@@ -2822,9 +2834,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21135",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21135",
       "ID": "oval:com.microsoft.azurelinux:tst:50571000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50571001"
       },
@@ -2834,9 +2846,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21127",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21127",
       "ID": "oval:com.microsoft.azurelinux:tst:50565000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50565001"
       },
@@ -2846,9 +2858,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21130",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21130",
       "ID": "oval:com.microsoft.azurelinux:tst:50559000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50559001"
       },
@@ -2858,9 +2870,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21142",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21142",
       "ID": "oval:com.microsoft.azurelinux:tst:50553000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50553001"
       },
@@ -2870,9 +2882,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21129",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21129",
       "ID": "oval:com.microsoft.azurelinux:tst:50550000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50550001"
       },
@@ -2882,9 +2894,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21157",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21157",
       "ID": "oval:com.microsoft.azurelinux:tst:50547000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50547001"
       },
@@ -2894,9 +2906,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21162",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21162",
       "ID": "oval:com.microsoft.azurelinux:tst:50544000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50544001"
       },
@@ -2906,9 +2918,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-20996",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-20996",
       "ID": "oval:com.microsoft.azurelinux:tst:50541000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50541001"
       },
@@ -2918,9 +2930,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21166",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21166",
       "ID": "oval:com.microsoft.azurelinux:tst:50538000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50538001"
       },
@@ -2930,9 +2942,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21173",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21173",
       "ID": "oval:com.microsoft.azurelinux:tst:50535000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50535001"
       },
@@ -2942,9 +2954,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21160",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21160",
       "ID": "oval:com.microsoft.azurelinux:tst:50529000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50529001"
       },
@@ -2954,9 +2966,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21125",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21125",
       "ID": "oval:com.microsoft.azurelinux:tst:50526000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50526001"
       },
@@ -2966,9 +2978,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21159",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21159",
       "ID": "oval:com.microsoft.azurelinux:tst:50520000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50520001"
       },
@@ -2978,9 +2990,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21196",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21196",
       "ID": "oval:com.microsoft.azurelinux:tst:50460000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50460001"
       },
@@ -2990,9 +3002,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21236",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21236",
       "ID": "oval:com.microsoft.azurelinux:tst:50457000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50457001"
       },
@@ -3002,9 +3014,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21231",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21231",
       "ID": "oval:com.microsoft.azurelinux:tst:50454000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50454001"
       },
@@ -3014,9 +3026,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21238",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21238",
       "ID": "oval:com.microsoft.azurelinux:tst:50453000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50453001"
       },
@@ -3026,9 +3038,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21197",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21197",
       "ID": "oval:com.microsoft.azurelinux:tst:50448000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50448001"
       },
@@ -3038,9 +3050,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21201",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21201",
       "ID": "oval:com.microsoft.azurelinux:tst:50445000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50445001"
       },
@@ -3050,9 +3062,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21203",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21203",
       "ID": "oval:com.microsoft.azurelinux:tst:50442000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50442001"
       },
@@ -3062,9 +3074,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21239",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21239",
       "ID": "oval:com.microsoft.azurelinux:tst:50441000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50441001"
       },
@@ -3074,9 +3086,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21237",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21237",
       "ID": "oval:com.microsoft.azurelinux:tst:50436000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50436001"
       },
@@ -3086,9 +3098,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21212",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21212",
       "ID": "oval:com.microsoft.azurelinux:tst:50433000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50433001"
       },
@@ -3098,9 +3110,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21218",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21218",
       "ID": "oval:com.microsoft.azurelinux:tst:50430000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50430001"
       },
@@ -3110,9 +3122,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21219",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21219",
       "ID": "oval:com.microsoft.azurelinux:tst:50427000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50427001"
       },
@@ -3122,9 +3134,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21230",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21230",
       "ID": "oval:com.microsoft.azurelinux:tst:50426000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50426001"
       },
@@ -3134,9 +3146,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21207",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21207",
       "ID": "oval:com.microsoft.azurelinux:tst:50423000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50423001"
       },
@@ -3146,9 +3158,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21198",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21198",
       "ID": "oval:com.microsoft.azurelinux:tst:50418000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50418001"
       },
@@ -3158,9 +3170,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21213",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21213",
       "ID": "oval:com.microsoft.azurelinux:tst:50417000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50417001"
       },
@@ -3170,9 +3182,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21247",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21247",
       "ID": "oval:com.microsoft.azurelinux:tst:50412000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50412001"
       },
@@ -3182,9 +3194,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21241",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21241",
       "ID": "oval:com.microsoft.azurelinux:tst:50409000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50409001"
       },
@@ -3194,9 +3206,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21199",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21199",
       "ID": "oval:com.microsoft.azurelinux:tst:50406000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:50406001"
       },
@@ -3542,9 +3554,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21096",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21096",
       "ID": "oval:com.microsoft.azurelinux:tst:49948000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:49948001"
       },
@@ -5030,9 +5042,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21171",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21171",
       "ID": "oval:com.microsoft.azurelinux:tst:49077000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:49077001"
       },
@@ -5510,9 +5522,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-21165",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-21165",
       "ID": "oval:com.microsoft.azurelinux:tst:48315000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:48315001"
       },
@@ -9986,9 +9998,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is earlier than 6.6.51.1-1, affected by CVE-2024-39472",
+      "Comment": "Package kernel is earlier than 6.6.47.1-1, affected by CVE-2024-39472",
       "ID": "oval:com.microsoft.azurelinux:tst:43251000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:43251001"
       },
@@ -10070,9 +10082,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package vte291 is earlier than 0.74.2-7, affected by CVE-2024-37535",
+      "Comment": "Package vte291 is earlier than 0.74.2-6, affected by CVE-2024-37535",
       "ID": "oval:com.microsoft.azurelinux:tst:43167000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:43167001"
       },
@@ -12890,9 +12902,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kernel is earlier than 6.6.29.1-4, affected by CVE-2024-26908",
+      "Comment": "Package kernel is earlier than 6.6.35.1-5, affected by CVE-2024-26908",
       "ID": "oval:com.microsoft.azurelinux:tst:40079000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:40079001"
       },
@@ -14558,9 +14570,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2024-2004",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2024-2004",
       "ID": "oval:com.microsoft.azurelinux:tst:37114000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:37114001"
       },
@@ -15554,9 +15566,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package cmake is earlier than 3.30.3-2, affected by CVE-2024-24806",
+      "Comment": "Package cmake is earlier than 3.28.2-6, affected by CVE-2024-24806",
       "ID": "oval:com.microsoft.azurelinux:tst:35782000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:35782001"
       },
@@ -17942,9 +17954,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2023-46219",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2023-46219",
       "ID": "oval:com.microsoft.azurelinux:tst:35020000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:35020001"
       },
@@ -17954,9 +17966,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2023-46218",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2023-46218",
       "ID": "oval:com.microsoft.azurelinux:tst:35019000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:35019001"
       },
@@ -17966,9 +17978,9 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.40-2, affected by CVE-2022-1941",
+      "Comment": "Package mysql is earlier than 8.0.40-1, affected by CVE-2022-1941",
       "ID": "oval:com.microsoft.azurelinux:tst:35018000",
-      "Version": "1",
+      "Version": "4",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:35018001"
       },
@@ -21184,7 +21196,7 @@
       "Check": "at least one",
       "Comment": "Package bind is earlier than 9.20.0-1, affected by CVE-2023-50387",
       "ID": "oval:com.microsoft.azurelinux:tst:34559000",
-      "Version": "1",
+      "Version": "3",
       "Object": {
         "ObjectRef": "oval:com.microsoft.azurelinux:obj:34559001"
       },

@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package hyperv-daemons is earlier than 6.6.22.1-2, affected by CVE-2023-52429",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35476000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package hyperv-daemons is earlier than 6.6.22.1-2, affected by CVE-2023-52429",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35476000"
+      }
+    ]
   }
 }
