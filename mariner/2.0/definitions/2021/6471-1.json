@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package helm is earlier than 3.4.1-4, affected by CVE-2021-32690",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:6471000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package helm is earlier than 3.4.1-4, affected by CVE-2021-32690",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:6471000"
+      }
+    ]
   }
 }

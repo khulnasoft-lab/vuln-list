@@ -20,9 +20,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package thrift is earlier than 0.15.0-5, affected by CVE-2024-45773",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:49728000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package thrift is earlier than 0.15.0-5, affected by CVE-2024-45773",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:49728000"
+      }
+    ]
   }
 }

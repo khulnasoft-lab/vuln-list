@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package rabbitmq-server is earlier than 3.13.7-1, affected by CVE-2023-50966",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:39719000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package rabbitmq-server is earlier than 3.13.7-1, affected by CVE-2023-50966",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:39719000"
+      }
+    ]
   }
 }

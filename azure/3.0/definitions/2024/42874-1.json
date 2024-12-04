@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package packer is earlier than 1.9.5-2, affected by CVE-2024-6104",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:42874000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package packer is earlier than 1.9.5-2, affected by CVE-2024-6104",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:42874000"
+      }
+    ]
   }
 }

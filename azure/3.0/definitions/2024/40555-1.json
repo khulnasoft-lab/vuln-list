@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package hdf5 is earlier than 1.14.4.3-1, affected by CVE-2024-29158",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:40555000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package hdf5 is earlier than 1.14.4.3-1, affected by CVE-2024-29158",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:40555000"
+      }
+    ]
   }
 }

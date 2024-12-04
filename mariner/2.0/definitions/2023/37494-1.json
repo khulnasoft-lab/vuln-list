@@ -20,9 +20,15 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package golang is greater than 1.18.0, affected by CVE-2023-39318",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:37494003"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package golang is earlier than 1.21.6-1, affected by CVE-2023-39318",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:37494000"
+      },
+      {
+        "Comment": "Package golang is greater than 1.18.0, affected by CVE-2023-39318",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:37494003"
+      }
+    ]
   }
 }

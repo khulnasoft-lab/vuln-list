@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package moby-runc is earlier than 1.1.2+azure-1, affected by CVE-2022-24769",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:9700000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package moby-runc is earlier than 1.1.2+azure-1, affected by CVE-2022-24769",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:9700000"
+      }
+    ]
   }
 }

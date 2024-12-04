@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package prometheus is earlier than 2.37.0-14, affected by CVE-2024-6104",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:42928000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package prometheus is earlier than 2.37.0-14, affected by CVE-2024-6104",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:42928000"
+      }
+    ]
   }
 }

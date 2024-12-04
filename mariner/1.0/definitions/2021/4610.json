@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package moby-containerd is earlier than 1.4.4+azure-2, affected by CVE-2021-32760",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:4610000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package moby-containerd is earlier than 1.4.4+azure-2, affected by CVE-2021-32760",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:4610000"
+      }
+    ]
   }
 }

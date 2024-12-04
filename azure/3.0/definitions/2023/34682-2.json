@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package etcd is earlier than 3.5.6-11, affected by CVE-2023-44487",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34682000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package etcd is earlier than 3.5.6-11, affected by CVE-2023-44487",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34682000"
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:47862",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-44070 affecting package frr for versions less than 8.5.5-2",
+    "Title": "CVE-2024-44070 affecting package frr for versions less than 8.5.5-1",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-08-26T16:33:47Z",
+    "AdvisoryDate": "2024-08-22T17:18:28Z",
     "AdvisoryID": "47862-4",
     "Severity": "High",
-    "Description": "CVE-2024-44070 affecting package frr for versions less than 8.5.5-2. A patched version of the package is available."
+    "Description": "CVE-2024-44070 affecting package frr for versions less than 8.5.5-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package frr is earlier than 8.5.5-2, affected by CVE-2024-44070",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:47862000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package frr is earlier than 8.5.5-1, affected by CVE-2024-44070",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:47862000"
+      }
+    ]
   }
 }

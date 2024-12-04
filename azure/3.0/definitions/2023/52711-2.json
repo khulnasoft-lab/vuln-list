@@ -20,9 +20,15 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package golang is greater than 0.0.0, affected by CVE-2023-29406",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:52711003"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package golang is earlier than 1.20.7-1, affected by CVE-2023-29406",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:52711000"
+      },
+      {
+        "Comment": "Package golang is greater than 0.0.0, affected by CVE-2023-29406",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:52711003"
+      }
+    ]
   }
 }

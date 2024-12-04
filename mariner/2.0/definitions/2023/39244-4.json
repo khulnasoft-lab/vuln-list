@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:39244",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2023-45288 affecting package kubevirt for versions less than 0.59.0-18",
+    "Title": "CVE-2023-45288 affecting package kubevirt for versions less than 0.59.0-16",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-06-12T22:23:00Z",
+    "AdvisoryDate": "2024-05-14T05:06:12Z",
     "AdvisoryID": "39244-4",
     "Severity": "High",
-    "Description": "CVE-2023-45288 affecting package kubevirt for versions less than 0.59.0-18. A patched version of the package is available."
+    "Description": "CVE-2023-45288 affecting package kubevirt for versions less than 0.59.0-16. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubevirt is earlier than 0.59.0-18, affected by CVE-2023-45288",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:39244000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubevirt is earlier than 0.59.0-16, affected by CVE-2023-45288",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:39244000"
+      }
+    ]
   }
 }

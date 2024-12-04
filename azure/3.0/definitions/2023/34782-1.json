@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package grpc is earlier than 1.62.0-2, affected by CVE-2023-32067",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34782000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package grpc is earlier than 1.62.0-2, affected by CVE-2023-32067",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34782000"
+      }
+    ]
   }
 }

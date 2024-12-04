@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package packer is earlier than 1.9.5-1, affected by CVE-2023-39325",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35096000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package packer is earlier than 1.9.5-1, affected by CVE-2023-39325",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35096000"
+      }
+    ]
   }
 }

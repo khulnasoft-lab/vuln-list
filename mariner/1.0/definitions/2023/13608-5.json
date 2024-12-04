@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package moby-containerd is earlier than 1.6.6+azure-9, affected by CVE-2023-25153",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:13608000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package moby-containerd is earlier than 1.6.6+azure-9, affected by CVE-2023-25153",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:13608000"
+      }
+    ]
   }
 }

@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package openssl is earlier than 1.1.1k-28, affected by CVE-2023-5678",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35084000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package openssl is earlier than 1.1.1k-28, affected by CVE-2023-5678",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35084000"
+      }
+    ]
   }
 }

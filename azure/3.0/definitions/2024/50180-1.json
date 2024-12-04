@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package nvidia-container-toolkit is earlier than 1.16.2-1, affected by CVE-2024-0132",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:50180000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package nvidia-container-toolkit is earlier than 1.16.2-1, affected by CVE-2024-0132",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:50180000"
+      }
+    ]
   }
 }

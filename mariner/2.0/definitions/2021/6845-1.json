@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package redis is earlier than 6.2.6-1, affected by CVE-2021-32627",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:6845000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package redis is earlier than 6.2.6-1, affected by CVE-2021-32627",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:6845000"
+      }
+    ]
   }
 }
