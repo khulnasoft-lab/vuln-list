@@ -21,9 +21,15 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubernetes is greater than 0.0.0, affected by CVE-2023-48795",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:32221003"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubernetes is earlier than 1.28.4-4, affected by CVE-2023-48795",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:32221000"
+      },
+      {
+        "Comment": "Package kubernetes is greater than 0.0.0, affected by CVE-2023-48795",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:32221003"
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:33598",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2022-32149 affecting package keda for versions less than 2.4.0-24",
+    "Title": "CVE-2022-32149 affecting package keda for versions less than 2.4.0-23",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-09-13T18:09:05Z",
+    "AdvisoryDate": "2024-09-06T19:16:47Z",
     "AdvisoryID": "33598-4",
     "Severity": "High",
-    "Description": "CVE-2022-32149 affecting package keda for versions less than 2.4.0-24. A patched version of the package is available."
+    "Description": "CVE-2022-32149 affecting package keda for versions less than 2.4.0-23. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package keda is earlier than 2.4.0-24, affected by CVE-2022-32149",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:33598000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package keda is earlier than 2.4.0-23, affected by CVE-2022-32149",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:33598000"
+      }
+    ]
   }
 }

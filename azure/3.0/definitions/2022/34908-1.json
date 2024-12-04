@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubevirt is earlier than 1.2.0-1, affected by CVE-2022-41723",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34908000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubevirt is earlier than 1.2.0-1, affected by CVE-2022-41723",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34908000"
+      }
+    ]
   }
 }

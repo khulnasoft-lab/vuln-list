@@ -20,9 +20,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package keda is earlier than 2.4.0-14, affected by CVE-2023-44487",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:34837000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package keda is earlier than 2.4.0-14, affected by CVE-2023-44487",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:34837000"
+      }
+    ]
   }
 }

@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package tensorflow is earlier than 2.16.1-6, affected by CVE-2024-7592",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:48036000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package tensorflow is earlier than 2.16.1-6, affected by CVE-2024-7592",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:48036000"
+      }
+    ]
   }
 }

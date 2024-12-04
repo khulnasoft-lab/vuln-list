@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package python-cryptography is earlier than 42.0.5-1, affected by CVE-2023-49083",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35128000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package python-cryptography is earlier than 42.0.5-1, affected by CVE-2023-49083",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35128000"
+      }
+    ]
   }
 }

@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package kubernetes is earlier than 1.21.2-7, affected by CVE-2021-25741",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:6285000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package kubernetes is earlier than 1.21.2-7, affected by CVE-2021-25741",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:6285000"
+      }
+    ]
   }
 }

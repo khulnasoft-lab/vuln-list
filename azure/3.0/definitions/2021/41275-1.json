@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package influxdb is earlier than 2.7.3-3, affected by CVE-2021-4238",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:41275000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package influxdb is earlier than 2.7.3-3, affected by CVE-2021-4238",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:41275000"
+      }
+    ]
   }
 }

@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package pytorch is earlier than 2.2.2-3, affected by CVE-2024-5187",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:50635000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package pytorch is earlier than 2.2.2-3, affected by CVE-2024-5187",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:50635000"
+      }
+    ]
   }
 }

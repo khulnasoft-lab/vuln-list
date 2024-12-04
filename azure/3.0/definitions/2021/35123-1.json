@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package prometheus-process-exporter is earlier than 0.8.2-1, affected by CVE-2021-44716",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:35123000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package prometheus-process-exporter is earlier than 0.8.2-1, affected by CVE-2021-44716",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:35123000"
+      }
+    ]
   }
 }

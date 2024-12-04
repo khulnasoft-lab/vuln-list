@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:50129",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2024-31449 affecting package redis for versions less than 6.2.16-1",
+    "Title": "CVE-2024-31449 affecting package redis for versions less than 6.2.14-3",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-11-01T16:41:44Z",
+    "AdvisoryDate": "2024-10-15T23:45:54Z",
     "AdvisoryID": "50129-4",
     "Severity": "High",
-    "Description": "CVE-2024-31449 affecting package redis for versions less than 6.2.16-1. A patched version of the package is available."
+    "Description": "CVE-2024-31449 affecting package redis for versions less than 6.2.14-3. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package redis is earlier than 6.2.16-1, affected by CVE-2024-31449",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:50129000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package redis is earlier than 6.2.14-3, affected by CVE-2024-31449",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:50129000"
+      }
+    ]
   }
 }

@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.cbl-mariner:def:33565",
   "Version": "4",
   "Metadata": {
-    "Title": "CVE-2022-32149 affecting package application-gateway-kubernetes-ingress for versions less than 1.4.0-23",
+    "Title": "CVE-2022-32149 affecting package application-gateway-kubernetes-ingress for versions less than 1.4.0-22",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -14,16 +14,18 @@
       "Source": "CVE"
     },
     "Patchable": "true",
-    "AdvisoryDate": "2024-09-13T18:09:05Z",
+    "AdvisoryDate": "2024-09-06T19:16:47Z",
     "AdvisoryID": "33565-4",
     "Severity": "High",
-    "Description": "CVE-2022-32149 affecting package application-gateway-kubernetes-ingress for versions less than 1.4.0-23. A patched version of the package is available."
+    "Description": "CVE-2022-32149 affecting package application-gateway-kubernetes-ingress for versions less than 1.4.0-22. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package application-gateway-kubernetes-ingress is earlier than 1.4.0-23, affected by CVE-2022-32149",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:33565000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package application-gateway-kubernetes-ingress is earlier than 1.4.0-22, affected by CVE-2022-32149",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:33565000"
+      }
+    ]
   }
 }

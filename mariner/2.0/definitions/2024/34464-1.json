@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package pytorch is earlier than 2.0.0-6, affected by CVE-2024-27318",
-      "TestRef": "oval:com.microsoft.cbl-mariner:tst:34464000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package pytorch is earlier than 2.0.0-6, affected by CVE-2024-27318",
+        "TestRef": "oval:com.microsoft.cbl-mariner:tst:34464000"
+      }
+    ]
   }
 }

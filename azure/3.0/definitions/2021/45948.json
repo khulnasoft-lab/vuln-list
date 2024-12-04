@@ -21,9 +21,11 @@
   },
   "Criteria": {
     "Operator": "AND",
-    "Criterion": {
-      "Comment": "Package keda is earlier than 2.14.0-1, affected by CVE-2021-38561",
-      "TestRef": "oval:com.microsoft.azurelinux:tst:45948000"
-    }
+    "Criterion": [
+      {
+        "Comment": "Package keda is earlier than 2.14.0-1, affected by CVE-2021-38561",
+        "TestRef": "oval:com.microsoft.azurelinux:tst:45948000"
+      }
+    ]
   }
 }
