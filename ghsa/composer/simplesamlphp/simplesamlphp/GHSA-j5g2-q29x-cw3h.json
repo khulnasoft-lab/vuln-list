@@ -29,13 +29,13 @@
         "Value": "GHSA-j5g2-q29x-cw3h"
       }
     ],
-    "Description": "# Summary\nWhen loading an (untrusted) XML document, for example the SAMLResponse, it's possible to induce an XXE.\n\n## Mitigation:\n\nRemove the `LIBXML_DTDLOAD | LIBXML_DTDATTR` options from `$options` is in: https://github.com/simplesamlphp/saml2/blob/717c0adc4877ebd58428637e5626345e59fa0109/src/SAML2/DOMDocumentFactory.php#L41\n\n## Background / details\n\nTo be published on Dec 8th",
+    "Description": "## Withdrawn Advisory\nThis advisory has been withdrawn because the vulnerability affects users of the SimpleSAMLphp tarball, not the SimpleSAMLphp Composer package. The underlying information about CVE-2024-52596 is still valid.\n\n## Original Description\n\n# Summary\nWhen loading an (untrusted) XML document, for example the SAMLResponse, it's possible to induce an XXE.\n\n## Mitigation:\n\nRemove the `LIBXML_DTDLOAD | LIBXML_DTDATTR` options from `$options` is in: https://github.com/simplesamlphp/saml2/blob/717c0adc4877ebd58428637e5626345e59fa0109/src/SAML2/DOMDocumentFactory.php#L41\n\n## Background / details\n\nTo be published on Dec 8th",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-12-02T20:00:29Z",
     "Severity": "HIGH",
     "Summary": "SimpleSAMLphp vulnerable to XXE in parsing SAML messages",
-    "UpdatedAt": "2024-12-02T20:00:29Z",
-    "WithdrawnAt": "",
+    "UpdatedAt": "2024-12-04T16:13:51Z",
+    "WithdrawnAt": "2024-12-04T16:13:50Z",
     "CVSS": {
       "Score": 8.3,
       "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L"
