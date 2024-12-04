@@ -1,6 +1,6 @@
 {
   "Severity": "LOW",
-  "UpdatedAt": "2024-11-12T21:35:38Z",
+  "UpdatedAt": "2024-12-03T22:00:06Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible-core"
@@ -23,6 +23,21 @@
         "Url": "https://github.com/ansible/ansible/pull/84299"
       },
       {
+        "Url": "https://github.com/ansible/ansible/pull/84339"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/2936b80dbbc7efb889934aeec80f6142c10266ce"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/70e83e72b43e05e57eb42a6d52d01a4d9768f510"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/98774d15d7748ebaaaf2e83942cc7e8d39f7280e"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/blob/v2.18.1/changelogs/CHANGELOG-v2.18.rst#security-fixes"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-99w6-3xph-cx78"
       }
     ],
@@ -41,7 +56,7 @@
     "PublishedAt": "2024-11-12T00:30:36Z",
     "Severity": "LOW",
     "Summary": "Ansible-Core vulnerable to content protections bypass",
-    "UpdatedAt": "2024-11-12T21:35:38Z",
+    "UpdatedAt": "2024-12-03T22:02:08Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -51,9 +66,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.16.14rc1"
       },
-      "VulnerableVersionRange": "\u003c= 2.18.0"
+      "VulnerableVersionRange": "\u003c 2.16.14rc1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.17.7rc1"
+      },
+      "VulnerableVersionRange": "\u003e= 2.17.0b1, \u003c 2.17.7rc1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.18.1rc1"
+      },
+      "VulnerableVersionRange": "\u003e= 2.18.0b1, \u003c 2.18.1rc1"
     }
   ]
 }
