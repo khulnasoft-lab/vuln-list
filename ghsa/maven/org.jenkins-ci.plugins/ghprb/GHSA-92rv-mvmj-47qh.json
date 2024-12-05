@@ -1,9 +1,9 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2023-12-20T13:44:01Z",
+  "Severity": "LOW",
+  "UpdatedAt": "2024-12-05T15:48:44Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.jenkins-ci.plugin:ghprb"
+    "Name": "org.jenkins-ci.plugins:ghprb"
   },
   "Advisory": {
     "DatabaseId": 92700,
@@ -18,6 +18,9 @@
       },
       {
         "Url": "https://github.com/jenkinsci/ghprb-plugin/commit/e78ee24f7056b8507992ef17a9bb74a1a31d8c11"
+      },
+      {
+        "Url": "https://mvnrepository.com/artifact/org.jenkins-ci.plugins/ghprb"
       },
       {
         "Url": "https://github.com/advisories/GHSA-92rv-mvmj-47qh"
@@ -36,9 +39,9 @@
     "Description": "A exposure of sensitive information vulnerability exists in Jenkins GitHub Pull Request Builder Plugin 1.41.0 and older in GhprbGitHubAuth.java that allows attackers with Overall/Read access to connect to an attacker-specified URL using attacker-specified credentials IDs obtained through another method, capturing credentials stored in Jenkins. Additionally, these form validation methods did not require POST requests, resulting in a CSRF vulnerability. As of version 1.42.0, these form validation methods require POST requests and Overall/Administer permissions.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-14T03:13:13Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "Jenkins GitHub Pull Request Builder Plugin credential capture vulnerability",
-    "UpdatedAt": "2023-12-20T13:44:01Z",
+    "UpdatedAt": "2024-12-05T15:48:44Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.2,
