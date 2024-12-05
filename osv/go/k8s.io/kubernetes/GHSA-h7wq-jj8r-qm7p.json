@@ -6,6 +6,9 @@
     "CVE-2024-0793",
     "GO-2024-3277"
   ],
+  "related": [
+    "CGA-w472-g2gf-79gc"
+  ],
   "summary": "Kubernetes Nil pointer dereference in KCM after v1 HPA patch request",
   "details": "A flaw was found in kube-controller-manager. This issue occurs when the initial application of a HPA config YAML lacking a .spec.behavior.scaleUp block causes a denial of service due to KCM pods going into restart churn.",
   "affected": [
