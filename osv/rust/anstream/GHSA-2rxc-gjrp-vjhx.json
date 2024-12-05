@@ -2,6 +2,9 @@
   "id": "GHSA-2rxc-gjrp-vjhx",
   "modified": "2024-12-04T18:31:31Z",
   "published": "2024-12-04T18:31:31Z",
+  "related": [
+    "CGA-m7f9-c4cx-xpg5"
+  ],
   "summary": "Unsoundness in anstream",
   "details": "When given a valid UTF8 string \"ö\\x1b😀\", the function in crates/anstream/src/adapter/strip.rs will be confused. The UTF8 bytes are \\xc3\\xb6 then \\x1b then \\xf0\\x9f\\x98\\x80.\n\nWhen looping over \"non-printable bytes\" \\x1b\\xf0 will be considered as some non-printable sequence.\n\nThis will produce a broken str from the incorrectly segmented bytes via str::from_utf8_unchecked, and that should never happen.\n\nFull credit goes to @Ralith who reviewed this code and asked @burakemir to follow up.",
   "affected": [
