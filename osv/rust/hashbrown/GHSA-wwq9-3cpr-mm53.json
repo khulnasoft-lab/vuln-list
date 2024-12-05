@@ -2,6 +2,10 @@
   "id": "GHSA-wwq9-3cpr-mm53",
   "modified": "2024-12-04T18:29:15Z",
   "published": "2024-12-04T18:29:15Z",
+  "related": [
+    "CGA-rw85-mff2-3rfh",
+    "CGA-vgh7-wv45-fc2v"
+  ],
   "summary": "Borsh serialization of HashMap is non-canonical",
   "details": "The borsh serialization of the HashMap did not follow the borsh specification. It potentially produced non-canonical encodings dependent on insertion order. It also did not perform canonicty checks on decoding.\n\nThis can result in consensus splits and cause equivalent objects to be considered distinct.\n\nThis was patched in 0.15.1.",
   "affected": [
