@@ -1,6 +1,6 @@
 {
   "id": "GHSA-564j-v29w-rqr6",
-  "modified": "2024-07-08T15:12:25.410448Z",
+  "modified": "2024-12-06T05:29:45.728140Z",
   "published": "2024-07-08T14:57:43Z",
   "summary": "Khoj Open Redirect Vulnerability in Login Page",
   "details": "### Summary\nAn attacker can use the `next` parameter on the login page to redirect a victim to a malicious page, while masking this using a legit-looking `app.khoj.dev` url.\nFor example, `https://app.khoj.dev/login?next=//example.com` will redirect to the https://example.com page.\n\n### Details\nThe problem seems to be in this method: https://github.com/khoj-ai/khoj/blob/2667ef45449eb408ce1d7c393be04845be31e15f/src/khoj/routers/auth.py#L95\n\n### PoC\nOpen the `https://app.khoj.dev/login?next=//example.com` url in a Gecko-based browser (Firefox).\n\n### Impact\nThe impact is low, and this could only be used in phishing attempts, but it's still a problem nonetheless.",
