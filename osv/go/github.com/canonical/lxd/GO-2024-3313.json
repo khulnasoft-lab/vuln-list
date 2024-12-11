@@ -1,13 +1,13 @@
 {
   "id": "GO-2024-3313",
-  "modified": "2024-12-09T23:41:59.516480Z",
+  "modified": "2024-12-11T17:13:38Z",
   "published": "2024-12-09T18:32:51Z",
   "aliases": [
     "CVE-2024-6219",
     "GHSA-jpmc-7p9c-4rxf"
   ],
-  "summary": "CVE-2024-6219 in github.com/canonical/lxd",
-  "details": "CVE-2024-6219 in github.com/canonical/lxd.\n\nNOTE: The source advisory for this report contains additional versions that could not be automatically mapped to standard Go module versions.\n\n(If this is causing false-positive reports from vulnerability scanners, please suggest an edit to the report.)\n\nThe additional affected modules and versions are: github.com/canonical/lxd before v5.21.1.",
+  "summary": "Restricted TLS certificate privilege escalation when in PKI mode in github.com/canonical/lxd",
+  "details": "Restricted TLS certificate privilege escalation when in PKI mode in github.com/canonical/lxd",
   "affected": [
     {
       "package": {
@@ -21,6 +21,9 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "0.0.0-20240403103450-0e7f2b5bf4d2"
             }
           ]
         }
@@ -38,6 +41,20 @@
             ],
             "type": "ECOSYSTEM"
           }
+        ],
+        "imports": [
+          {
+            "path": "github.com/canonical/lxd/lxd/auth",
+            "symbols": [
+              "fga.CheckPermission",
+              "fga.GetPermissionChecker",
+              "rbac.CheckPermission",
+              "rbac.GetPermissionChecker",
+              "tls.CheckPermission",
+              "tls.GetPermissionChecker",
+              "tls.certificateDetails"
+            ]
+          }
         ]
       },
       "database_specific": {
@@ -48,11 +65,11 @@
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://www.cve.org/CVERecord?id=CVE-2024-6219"
+      "url": "https://github.com/canonical/lxd/security/advisories/GHSA-jpmc-7p9c-4rxf"
     },
     {
-      "type": "WEB",
-      "url": "https://github.com/canonical/lxd/security/advisories/GHSA-jpmc-7p9c-4rxf"
+      "type": "FIX",
+      "url": "https://github.com/canonical/lxd/commit/5cdc9a35b9c51e981b1e70330bde0413ccacc7fd"
     }
   ]
 }
