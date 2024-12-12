@@ -1,11 +1,12 @@
 {
   "id": "GHSA-r864-28pw-8682",
-  "modified": "2024-11-20T07:57:11.039283Z",
+  "modified": "2024-12-12T16:12:04.744369Z",
   "published": "2024-11-14T12:31:02Z",
   "aliases": [
     "BIT-harbor-2022-31668",
     "CVE-2022-31668",
-    "GHSA-3wpx-625q-22j7"
+    "GHSA-3wpx-625q-22j7",
+    "GO-2024-3268"
   ],
   "summary": "Harbor fails to validate the user permissions when updating p2p preheat policies",
   "details": "Harbor fails to validate the user permissions when updating p2p preheat policies. By sending a request to update a p2p preheat policy with an id that belongs to a project that the currently authenticated user doesn't have access to, the attacker could modify p2p preheat policies configured in other projects.",
