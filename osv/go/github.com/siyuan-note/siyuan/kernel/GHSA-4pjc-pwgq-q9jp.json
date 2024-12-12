@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4pjc-pwgq-q9jp",
-  "modified": "2024-12-11T19:12:15.587397Z",
+  "modified": "2024-12-12T17:42:57Z",
   "published": "2024-12-11T18:44:47Z",
   "aliases": [
-    "CVE-2024-55660"
+    "CVE-2024-55660",
+    "GO-2024-3324"
   ],
   "summary": "SiYuan has an SSTI via /api/template/renderSprig",
   "details": "### Summary\nSiyuan's /api/template/renderSprig endpoint is vulnerable to Server-Side Template Injection (SSTI) through the Sprig template engine. Although the engine has limitations, it allows attackers to access environment variables\n\n### Impact\n\nInformation leakage",
@@ -36,6 +37,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/siyuan-note/siyuan/security/advisories/GHSA-4pjc-pwgq-q9jp"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-55660"
     },
     {
       "type": "WEB",

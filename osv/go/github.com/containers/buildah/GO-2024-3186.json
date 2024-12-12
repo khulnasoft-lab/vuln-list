@@ -1,6 +1,6 @@
 {
   "id": "GO-2024-3186",
-  "modified": "2024-10-11T15:12:03.987896Z",
+  "modified": "2024-12-12T15:16:55Z",
   "published": "2024-10-11T14:32:39Z",
   "aliases": [
     "CVE-2024-9675",
@@ -21,10 +21,20 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "1.37.1"
             }
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/containers/buildah/internal/volumes"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-3186.json"
       }
@@ -36,16 +46,8 @@
       "url": "https://github.com/advisories/GHSA-586p-749j-fhwp"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9675"
-    },
-    {
-      "type": "WEB",
-      "url": "https://access.redhat.com/security/cve/CVE-2024-9675"
-    },
-    {
-      "type": "WEB",
-      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=2317458"
+      "type": "FIX",
+      "url": "https://github.com/containers/buildah/commit/aa67e5d71ee7ec07122a210baa3b13966a9e086c"
     }
   ]
 }
