@@ -1,6 +1,6 @@
 {
   "id": "GHSA-55v3-xh23-96gh",
-  "modified": "2024-12-12T16:11:55.850198Z",
+  "modified": "2024-12-12T19:17:34Z",
   "published": "2024-11-27T21:43:03Z",
   "aliases": [
     "CVE-2024-53859",
@@ -30,6 +30,27 @@
       ],
       "database_specific": {
         "last_known_affected_version_range": "\u003c= 2.11.0",
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-55v3-xh23-96gh/GHSA-55v3-xh23-96gh.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/cli/go-gh",
+        "purl": "pkg:golang/github.com/cli/go-gh"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "last_known_affected_version_range": "\u003c 2.11.1",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/11/GHSA-55v3-xh23-96gh/GHSA-55v3-xh23-96gh.json"
       }
     }
@@ -66,6 +87,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/cli/go-gh/blob/71770357e0cb12867d3e3e288854c0aa09d440b7/pkg/auth/auth.go#L73-L77"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2024-3295"
     }
   ]
 }
