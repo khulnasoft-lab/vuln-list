@@ -30,16 +30,16 @@
         "Value": "CVE-2024-45119"
       }
     ],
-    "Description": "Adobe Commerce versions 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 and earlier are affected by a Server-Side Request Forgery (SSRF) vulnerability that could lead to arbitrary file system read. A low-privilege authenticated attacker can force the application to make arbitrary requests via injection of arbitrary URLs and have a low impact on both confidentiality and integrity. Exploitation of this issue does not require user interaction and scope is changed.",
+    "Description": "Adobe Commerce versions 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 (and earlier) are affected by a Server-Side Request Forgery (SSRF) vulnerability that could lead to arbitrary file system read. An admin-privilege authenticated attacker can force the application to make arbitrary requests via injection of arbitrary URLs. Exploitation of this issue does not require user interaction.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-10T12:31:12Z",
     "Severity": "MODERATE",
     "Summary": "Magento Open Source Server-Side Request Forgery (SSRF) vulnerability",
-    "UpdatedAt": "2024-10-11T18:15:49Z",
+    "UpdatedAt": "2024-12-12T19:32:07Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 5.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:L/A:N"
+      "Score": 4.9,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N"
     }
   },
   "Versions": [
