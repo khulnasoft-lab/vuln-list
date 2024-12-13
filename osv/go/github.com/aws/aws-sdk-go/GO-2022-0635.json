@@ -1,13 +1,13 @@
 {
-  "id": "GO-2022-0646",
-  "modified": "2024-12-13T16:27:02.251334Z",
-  "published": "2022-02-11T23:26:26Z",
+  "id": "GO-2022-0635",
+  "modified": "2024-12-13T16:27:23.663528Z",
+  "published": "2024-12-12T22:00:07Z",
   "aliases": [
-    "CVE-2020-8911",
-    "GHSA-f5pg-7wfw-84q9"
+    "CVE-2020-8912",
+    "GHSA-7f33-f4f5-xwgw"
   ],
-  "summary": "CBC padding oracle issue in AWS S3 Crypto SDK for golang in github.com/aws/aws-sdk-go",
-  "details": "A padding oracle vulnerability exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. The SDK allows users to encrypt files with AES-CBC without computing a Message Authentication Code (MAC), which then allows an attacker who has write access to the target's S3 bucket and can observe whether or not an endpoint with access to the key can decrypt a file, they can reconstruct the plaintext with (on average) 128*length (plaintext) queries to the endpoint, by exploiting CBC's ability to manipulate the bytes of the next block and PKCS5 padding errors. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
+  "summary": "In-band key negotiation issue in AWS S3 Crypto SDK for golang in github.com/aws/aws-sdk-go",
+  "details": "A vulnerability in the in-band key negotiation exists in the AWS S3 Crypto SDK for GoLang versions prior to V2. An attacker with write access to the targeted bucket can change the encryption algorithm of an object in the bucket, which can then allow them to change AES-GCM to AES-CTR. Using this in combination with a decryption oracle can reveal the authentication key used by AES-GCM as decrypting the GMAC tag leaves the authentication key recoverable as an algebraic equation. It is recommended to update your SDK to V2 or later, and re-encrypt your files.",
   "affected": [
     {
       "package": {
@@ -37,14 +37,14 @@
         ]
       },
       "database_specific": {
-        "source": "https://vuln.go.dev/ID/GO-2022-0646.json"
+        "source": "https://vuln.go.dev/ID/GO-2022-0635.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://github.com/google/security-research/security/advisories/GHSA-f5pg-7wfw-84q9"
+      "url": "https://github.com/google/security-research/security/advisories/GHSA-7f33-f4f5-xwgw"
     },
     {
       "type": "FIX",
@@ -64,7 +64,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1869800"
+      "url": "https://bugzilla.redhat.com/show_bug.cgi?id=1869801"
     },
     {
       "type": "WEB",

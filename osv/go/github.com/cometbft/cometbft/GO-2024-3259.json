@@ -1,6 +1,6 @@
 {
   "id": "GO-2024-3259",
-  "modified": "2024-11-20T18:12:14.350527Z",
+  "modified": "2024-12-12T21:58:41Z",
   "published": "2024-11-20T17:22:48Z",
   "aliases": [
     "GHSA-p7mv-53f2-4cwj"
@@ -27,6 +27,17 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/cometbft/cometbft/state/indexer/block/kv",
+            "symbols": [
+              "BlockerIndexer.Search",
+              "BlockerIndexer.setTmpHeights"
+            ]
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2024-3259.json"
       }
@@ -44,6 +55,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/cometbft/cometbft/releases/tag/v0.38.15"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/cometbft/cometbft/commit/17d3bb66664cab6d6798c17e27198e15bbac1905"
     }
   ]
 }
