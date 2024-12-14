@@ -6,6 +6,9 @@
     "CVE-2024-9675",
     "GO-2024-3186"
   ],
+  "related": [
+    "CGA-wfcf-wqfj-vg9w"
+  ],
   "summary": "Buildah allows arbitrary directory mount",
   "details": "A vulnerability was found in Buildah. Cache mounts do not properly validate that user-specified paths for the cache are within our cache directory, allowing a `RUN` instruction in a Container file to mount an arbitrary directory from the host (read/write) into the container as long as those files can be accessed by the user running Buildah.",
   "affected": [
