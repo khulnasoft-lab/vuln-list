@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-9902"
   ],
+  "related": [
+    "CGA-8gxq-mprg-5hj5"
+  ],
   "summary": "ansible-core Incorrect Authorization vulnerability",
   "details": "A flaw was found in Ansible. The ansible-core `user` module can allow an unprivileged user to silently create or replace the contents of any file on any system path and take ownership of it when a privileged user executes the `user` module against the unprivileged user's home directory. If the unprivileged user has traversal permissions on the directory containing the exploited target file, they retain full control over the contents of the file as its owner.",
   "affected": [
