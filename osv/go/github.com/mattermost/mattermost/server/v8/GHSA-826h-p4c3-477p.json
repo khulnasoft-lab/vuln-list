@@ -1,9 +1,10 @@
 {
   "id": "GHSA-826h-p4c3-477p",
-  "modified": "2024-12-16T19:59:26.571473Z",
+  "modified": "2024-12-18T17:12:29.670974Z",
   "published": "2024-12-16T09:31:10Z",
   "aliases": [
-    "CVE-2024-48872"
+    "CVE-2024-48872",
+    "GO-2024-3338"
   ],
   "summary": "Mattermost Race Condition vulnerability",
   "details": "Mattermost versions 10.1.x \u003c= 10.1.2, 10.0.x \u003c= 10.0.2, 9.11.x \u003c= 9.11.4, and 9.5.x \u003c= 9.5.12 fail to prevent concurrently checking and updating the failed login attempts. which allows an attacker to bypass of \"Max failed attempts\" restriction and send a big number of login attempts before being blocked via simultaneously sending multiple login requests",
