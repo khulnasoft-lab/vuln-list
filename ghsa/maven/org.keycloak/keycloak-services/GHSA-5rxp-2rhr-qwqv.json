@@ -14,6 +14,51 @@
         "Url": "https://github.com/keycloak/keycloak/security/advisories/GHSA-5rxp-2rhr-qwqv"
       },
       {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7341"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/commit/2341d6ee7a3567c58fd6a04a419fe4403e13374c"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/commit/5b3de0c7e7f367103affe2f5167913a2ce021cf1"
+      },
+      {
+        "Url": "https://github.com/keycloak/keycloak/commit/5e06da2f6794c695051605e26a01affa3a18f66b"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6493"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6494"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6495"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6497"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6499"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6500"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6501"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6502"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2024:6503"
+      },
+      {
+        "Url": "https://access.redhat.com/security/cve/CVE-2024-7341"
+      },
+      {
+        "Url": "https://bugzilla.redhat.com/show_bug.cgi?id=2302064"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-5rxp-2rhr-qwqv"
       }
     ],
@@ -21,14 +66,18 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-5rxp-2rhr-qwqv"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-7341"
       }
     ],
     "Description": "A session fixation issue was discovered in the SAML adapters provided by Keycloak. The session ID and JSESSIONID cookie are not changed at login time, even when the turnOffChangeSessionIdOnLogin option is configured. This flaw allows an attacker who hijacks the current session before authentication to trigger session fixation.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-14T20:55:49Z",
     "Severity": "HIGH",
-    "Summary": "Session fixation in Elytron SAML adapters",
-    "UpdatedAt": "2024-10-14T20:55:49Z",
+    "Summary": "Keycloak has session fixation in Elytron SAML adapters",
+    "UpdatedAt": "2024-12-20T17:50:32Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.1,
