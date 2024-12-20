@@ -1,7 +1,10 @@
 {
   "id": "GHSA-47h8-jmp3-9f28",
-  "modified": "2024-12-19T15:18:10.577189Z",
+  "modified": "2024-12-19T22:59:18.278452Z",
   "published": "2024-12-19T15:14:06Z",
+  "aliases": [
+    "CVE-2024-56327"
+  ],
   "summary": "pyrage vulnerable to malicious plugin names, recipients, or identities causing arbitrary binary execution",
   "details": "`pyrage` uses the Rust `age` crate for its underlying operations, and `age` is vulnerable to GHSA-4fg7-vxc8-qx5w.\n\nAll details of GHSA-4fg7-vxc8-qx5w are relevant to `pyrage` for the versions specified in this advisory. See GHSA-4fg7-vxc8-qx5w for full details.\n\nVersions of `pyrage` before 1.2.0 lack plugin support and are therefore **not affected**.\n\nAn equivalent issue was fixed in [the reference Go implementation of age](https://github.com/FiloSottile/age), see advisory [GHSA-32gq-x56h-299c](https://github.com/FiloSottile/age/security/advisories/GHSA-32gq-x56h-299c).\n\nThanks to ⬡-49016 for reporting this issue.",
   "affected": [
