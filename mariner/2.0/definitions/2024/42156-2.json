@@ -1,9 +1,9 @@
 {
   "Class": "vulnerability",
   "ID": "oval:com.microsoft.cbl-mariner:def:42156",
-  "Version": "1",
+  "Version": "2",
   "Metadata": {
-    "Title": "CVE-2024-27418 affecting package hyperv-daemons for versions less than 5.15.173.1-1",
+    "Title": "CVE-2024-27418 affecting package hyperv-daemons for versions less than 5.15.158.2-1",
     "Affected": {
       "Family": "unix",
       "Platform": "CBL-Mariner"
@@ -15,15 +15,15 @@
     },
     "Patchable": "true",
     "AdvisoryDate": "2024-06-12T22:23:00Z",
-    "AdvisoryID": "42156-1",
+    "AdvisoryID": "42156-2",
     "Severity": "Medium",
-    "Description": "CVE-2024-27418 affecting package hyperv-daemons for versions less than 5.15.173.1-1. An upgraded version of the package is available that resolves this issue."
+    "Description": "CVE-2024-27418 affecting package hyperv-daemons for versions less than 5.15.158.2-1. An upgraded version of the package is available that resolves this issue."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": [
       {
-        "Comment": "Package hyperv-daemons is earlier than 5.15.173.1-1, affected by CVE-2024-27418",
+        "Comment": "Package hyperv-daemons is earlier than 5.15.158.2-1, affected by CVE-2024-27418",
         "TestRef": "oval:com.microsoft.cbl-mariner:tst:42156000"
       }
     ]
