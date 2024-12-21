@@ -1,23 +1,20 @@
 {
-  "Identifier": "CVE-2024-8883",
+  "Identifier": "GHSA-vvf8-2h68-9475",
   "PackageSlug": "maven/org.keycloak/keycloak-services",
-  "Title": "Keycloak has Vulnerable Redirect URI Validation Results in Open Redirect",
-  "Description": "A misconfiguration flaw was found in Keycloak. This issue can allow an attacker to redirect users to an arbitrary URL if a 'Valid Redirect URI' is set to http://localhost/ or http://127.0.0.1/, enabling sensitive information such as authorization codes to be exposed to the attacker, potentially leading to session hijacking.",
+  "Title": "Duplicate Advisory: Keycloak Open Redirect vulnerability",
+  "Description": "# Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-w8gr-xwp4-r9f7. This link is maintained to preserve external references.\n\n# Original Description\nA misconfiguration flaw was found in Keycloak. This issue can allow an attacker to redirect users to an arbitrary URL if a 'Valid Redirect URI' is set to http://localhost or http://127.0.0.1, enabling sensitive information such as authorization codes to be exposed to the attacker, potentially leading to session hijacking.",
   "Date": "2024-12-20",
-  "Pubdate": "2024-10-14",
-  "AffectedRange": "[,22.0.13),[23.0.0,24.0.8),[25.0.0,25.0.6)",
+  "Pubdate": "2024-09-19",
+  "AffectedRange": "[,25.0.6)",
   "FixedVersions": [
-    "22.0.13",
-    "24.0.8",
     "25.0.6"
   ],
-  "AffectedVersions": "All versions before 22.0.13, all versions starting from 23.0.0 before 24.0.8, all versions starting from 25.0.0 before 25.0.6",
-  "NotImpacted": "All versions starting from 22.0.13 before 23.0.0, all versions starting from 24.0.8 before 25.0.0, all versions starting from 25.0.6",
-  "Solution": "Upgrade to versions 22.0.13, 24.0.8, 25.0.6 or above.",
+  "AffectedVersions": "All versions before 25.0.6",
+  "NotImpacted": "All versions starting from 25.0.6",
+  "Solution": "Upgrade to version 25.0.6 or above.",
   "Urls": [
+    "https://github.com/advisories/GHSA-vvf8-2h68-9475",
     "https://nvd.nist.gov/vuln/detail/CVE-2024-8883",
-    "https://github.com/advisories/GHSA-w8gr-xwp4-r9f7",
-    "https://github.com/keycloak/keycloak/security/advisories/GHSA-w8gr-xwp4-r9f7",
     "https://github.com/keycloak/keycloak/releases/tag/25.0.6",
     "https://github.com/keycloak/keycloak/blob/main/services/src/main/java/org/keycloak/protocol/oidc/utils/RedirectUtils.java",
     "https://github.com/keycloak/keycloak",
@@ -39,6 +36,6 @@
     "https://access.redhat.com/errata/RHSA-2024:10385"
   ],
   "CvssV2": "",
-  "CvssV3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
-  "UUID": "892bd3a8-f817-4c3c-88e0-2d3ce398c4b2"
+  "CvssV3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N",
+  "UUID": "ec2bc41b-904a-4ded-b3c7-a00ab6199524"
 }
