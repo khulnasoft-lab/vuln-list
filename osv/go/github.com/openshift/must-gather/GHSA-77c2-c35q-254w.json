@@ -1,9 +1,10 @@
 {
   "id": "GHSA-77c2-c35q-254w",
-  "modified": "2024-12-19T22:42:24.760722Z",
+  "modified": "2024-12-20T21:13:15.956411Z",
   "published": "2024-12-19T15:31:11Z",
   "aliases": [
-    "CVE-2024-25131"
+    "CVE-2024-25131",
+    "GO-2024-3349"
   ],
   "summary": "OpenShift Must Gather Operator Improper Input Validation vulnerability",
   "details": "A flaw was found in the MustGather.managed.openshift.io Custom Defined Resource (CRD) of OpenShift Dedicated. A non-privileged user on the cluster can create a MustGather object with a specially crafted file and set the most privileged service account to run the job. This can allow a standard developer user to escalate their privileges to a cluster administrator and pivot to the AWS environment.",
