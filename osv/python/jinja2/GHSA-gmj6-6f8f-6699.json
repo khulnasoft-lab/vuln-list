@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2024-56201"
   ],
+  "related": [
+    "CGA-gvvw-7w3r-7m54",
+    "CGA-whf8-42p9-686q"
+  ],
   "summary": "Jinja has a sandbox breakout through malicious filenames",
   "details": "A bug in the Jinja compiler allows an attacker that controls both the content and filename of a template to execute arbitrary Python code, regardless of if Jinja's sandbox is used.\n\nTo exploit the vulnerability, an attacker needs to control both the filename and the contents of a template. Whether that is the case depends on the type of application using Jinja. This vulnerability impacts users of applications which execute untrusted templates where the template author can also choose the template filename.",
   "affected": [
