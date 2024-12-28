@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package libxml2 is earlier than 2.11.5-2, affected by CVE-2024-40896",
+      "ID": "oval:com.microsoft.azurelinux:tst:54657000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:54657001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:54657002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package dpdk is earlier than 23.11.3-1, affected by CVE-2024-11614",
       "ID": "oval:com.microsoft.azurelinux:tst:54455000",
       "Version": "1",
