@@ -1,6 +1,6 @@
 {
   "id": "GHSA-q34m-jh98-gwm2",
-  "modified": "2024-11-05T22:01:42.905074Z",
+  "modified": "2024-12-27T22:09:03.996575Z",
   "published": "2024-10-25T19:44:43Z",
   "aliases": [
     "CVE-2024-49767"
@@ -11,7 +11,7 @@
     "CGA-p5gp-26hq-j5rc"
   ],
   "summary": "Werkzeug possible resource exhaustion when parsing file data in forms",
-  "details": "Applications using Werkzeug to parse `multipart/form-data` requests are vulnerable to resource exhaustion. A specially crafted form body can bypass the `Request.max_form_memory_size` setting.\n\nThe `Request.max_content_length` setting, as well as resource limits provided by deployment software and platforms, are also available to limit the resources used during a request. This vulnerability does not affect those settings. All three types of limits should be considered and set appropriately when deploying an application.",
+  "details": "Applications using Werkzeug to parse `multipart/form-data` requests are vulnerable to resource exhaustion. A specially crafted form body can bypass the `Request.max_form_memory_size` setting.\n\n\nThe `Request.max_content_length` setting, as well as resource limits provided by deployment software and platforms, are also available to limit the resources used during a request. This vulnerability does not affect those settings. All three types of limits should be considered and set appropriately when deploying an application.",
   "affected": [
     {
       "package": {
@@ -149,7 +149,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "0.19.7"
+              "fixed": "0.20.0"
             }
           ]
         }
@@ -187,6 +187,9 @@
         "0.19.4",
         "0.19.5",
         "0.19.6",
+        "0.19.7",
+        "0.19.8",
+        "0.19.9",
         "0.2.0",
         "0.3.0",
         "0.3.1",
@@ -218,7 +221,6 @@
         "0.9.1"
       ],
       "database_specific": {
-        "last_known_affected_version_range": "\u003c= 0.19.6",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-q34m-jh98-gwm2/GHSA-q34m-jh98-gwm2.json"
       }
     }
@@ -235,6 +237,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/pallets/quart/commit/5e78c4169b8eb66b91ead3e62d44721b9e1644ee"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pallets/quart/commit/abb04a512496206de279225340ed022852fbf51f"
     },
     {
       "type": "WEB",
