@@ -1,0 +1,72 @@
+{
+  "id": "GHSA-v725-9546-7q7m",
+  "modified": "2025-01-06T18:43:12Z",
+  "published": "2025-01-06T16:16:30Z",
+  "aliases": [
+    "CVE-2025-21613"
+  ],
+  "summary": "go-git has an Argument Injection via the URL field",
+  "details": "### Impact\nAn argument injection vulnerability was discovered in `go-git` versions prior to `v5.13`. \n\nSuccessful exploitation of this vulnerability could allow an attacker to set arbitrary values to [git-upload-pack flags](https://git-scm.com/docs/git-upload-pack). This only happens when the `file` transport protocol is being used, as that is the only protocol that shells out to `git` binaries.\n\n### Affected versions\nUsers running versions of `go-git` from `v4` and above are recommended to upgrade to `v5.13` in order to mitigate this vulnerability.\n\n### Workarounds\nIn cases where a bump to the latest version of `go-git` is not possible, we recommend users to enforce restrict validation rules for values passed in the URL field.\n\n## Credit\nThanks to @vin01 for responsibly disclosing this vulnerability to us.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "gopkg.in/src-d/go-git.v4",
+        "purl": "pkg:golang/gopkg.in/src-d/go-git.v4"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "4.0.0"
+            },
+            {
+              "last_affected": "4.13.1"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/01/GHSA-v725-9546-7q7m/GHSA-v725-9546-7q7m.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/go-git/go-git/v5",
+        "purl": "pkg:golang/github.com/go-git/go-git/v5"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "5.13.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/01/GHSA-v725-9546-7q7m/GHSA-v725-9546-7q7m.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/go-git/go-git/security/advisories/GHSA-v725-9546-7q7m"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-21613"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/go-git/go-git"
+    }
+  ]
+}
