@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xwx7-p63r-2rj8",
-  "modified": "2024-12-23T20:27:12.419474Z",
+  "modified": "2025-01-07T16:27:04.938853Z",
   "published": "2024-12-23T20:17:44Z",
   "aliases": [
-    "CVE-2024-56362"
+    "CVE-2024-56362",
+    "GO-2024-3357"
   ],
   "summary": "Navidrome Stores JWT Secret in Plaintext in navidrome.db",
   "details": "Navidrome stores the JWT secret in plaintext in the `navidrome.db` database file under the `property` table. This practice introduces a security risk because anyone with access to the database file can retrieve the secret.\nThe JWT secret is critical for the authentication and authorization system. If exposed, an attacker could:\n- Forge valid tokens to impersonate users, including administrative accounts.\n- Gain unauthorized access to sensitive data or perform privileged actions.\nThis vulnerability has been tested on the latest version of Navidrome and poses a significant risk in environments where the database file is not adequately secured.\n\n![image](https://github.com/user-attachments/assets/29aae867-f21f-4d70-bda0-d2bb87d754d9)\n",
