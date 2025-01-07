@@ -5,6 +5,19 @@
   "aliases": [
     "CVE-2025-21614"
   ],
+  "related": [
+    "CGA-533m-33r2-x84m",
+    "CGA-5mf4-9qx3-q7g3",
+    "CGA-659p-xcf5-v3f3",
+    "CGA-6w85-7vgh-xj58",
+    "CGA-7f4h-7ph7-8w8m",
+    "CGA-c53m-wj6m-g89q",
+    "CGA-m53m-7mr9-m2wp",
+    "CGA-pcc5-v84x-9cvx",
+    "CGA-qfxp-35rx-vp74",
+    "CGA-r4p7-5659-wj66",
+    "CGA-vrwf-vm3x-frp4"
+  ],
   "summary": "go-git clients vulnerable to DoS via maliciously crafted Git server replies",
   "details": "### Impact\nA denial of service (DoS) vulnerability was discovered in go-git versions prior to `v5.13`. This vulnerability allows an attacker to perform denial of service attacks by providing specially crafted responses from a Git server which triggers resource exhaustion in `go-git` clients. \n\nThis is a `go-git` implementation issue and does not affect the upstream `git` cli.\n\n### Patches\nUsers running versions of `go-git` from `v4` and above are recommended to upgrade to `v5.13` in order to mitigate this vulnerability.\n\n### Workarounds\nIn cases where a bump to the latest version of `go-git` is not possible, we recommend limiting its use to only trust-worthy Git servers.\n\n## Credit\nThanks to Ionut Lalu for responsibly disclosing this vulnerability to us.\n",
   "affected": [
