@@ -9,6 +9,7 @@
   "related": [
     "CGA-3jvx-c583-733j",
     "CGA-44m4-m589-h366",
+    "CGA-489m-x2wg-g49v",
     "CGA-4fww-c4xq-q3m5",
     "CGA-576g-jv9m-gr4c",
     "CGA-5xrg-m884-hm48",
@@ -43,12 +44,14 @@
     "CGA-m4f3-x9vr-m54m",
     "CGA-m7cr-h2vc-67q9",
     "CGA-p75x-8qj2-hrj6",
+    "CGA-p772-f7g3-9mf8",
     "CGA-pcc8-xh9f-57f4",
     "CGA-q8xv-qpf6-7qwh",
     "CGA-qmmh-7pp9-7h68",
     "CGA-qp62-rh46-26hw",
     "CGA-wjw3-52wx-2q53",
-    "CGA-x37r-j7w5-4xr4"
+    "CGA-x37r-j7w5-4xr4",
+    "CGA-xw2h-vxp4-vfvg"
   ],
   "summary": "go-git has an Argument Injection via the URL field",
   "details": "### Impact\nAn argument injection vulnerability was discovered in `go-git` versions prior to `v5.13`. \n\nSuccessful exploitation of this vulnerability could allow an attacker to set arbitrary values to [git-upload-pack flags](https://git-scm.com/docs/git-upload-pack). This only happens when the `file` transport protocol is being used, as that is the only protocol that shells out to `git` binaries.\n\n### Affected versions\nUsers running versions of `go-git` from `v4` and above are recommended to upgrade to `v5.13` in order to mitigate this vulnerability.\n\n### Workarounds\nIn cases where a bump to the latest version of `go-git` is not possible, we recommend users to enforce restrict validation rules for values passed in the URL field.\n\n## Credit\nThanks to @vin01 for responsibly disclosing this vulnerability to us.",
