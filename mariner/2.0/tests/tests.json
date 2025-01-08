@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package iperf3 is earlier than 3.18-1, affected by CVE-2024-53580",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:54504000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:54504001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:54504002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package iptraf-ng is earlier than 1.2.2-1, affected by CVE-2024-52949",
       "ID": "oval:com.microsoft.cbl-mariner:tst:54389000",
       "Version": "1",
