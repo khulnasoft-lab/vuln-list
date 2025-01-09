@@ -1,7 +1,10 @@
 {
   "id": "GHSA-2r2v-9pf8-6342",
-  "modified": "2025-01-07T15:52:16Z",
+  "modified": "2025-01-08T19:42:21.896344Z",
   "published": "2025-01-07T15:52:16Z",
+  "aliases": [
+    "GO-2025-3371"
+  ],
   "summary": "WireGuard Portal v2 Vulnerable to OAuth Insecure Redirect URI / Account Takeover",
   "details": "### Impact\nUsers of WireGuard Portal v2 who have OAuth (or OIDC) authentication backends enabled can be affected by an Account Takeover vulnerability if they visit a malicious website.\n\n### Patches\nThe problem was fixed in the latest alpha release, v2.0.0-alpha.3. The [docker images](https://hub.docker.com/r/wgportal/wg-portal) for the tag 'latest' built from the master branch also include the fix.\n",
   "affected": [
