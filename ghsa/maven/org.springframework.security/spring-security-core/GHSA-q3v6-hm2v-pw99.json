@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-12-02T20:04:18Z",
+  "UpdatedAt": "2025-01-10T15:59:24Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.springframework:spring-beans"
+    "Name": "org.springframework.security:spring-security-core"
   },
   "Advisory": {
     "DatabaseId": 270250,
@@ -21,6 +21,9 @@
       },
       {
         "Url": "https://github.com/spring-projects/spring-framework/commit/11d4272ff48b4a4dabc4b28dfbff0364a4204bc9"
+      },
+      {
+        "Url": "https://github.com/spring-projects/spring-framework/issues/34232"
       },
       {
         "Url": "https://github.com/advisories/GHSA-q3v6-hm2v-pw99"
@@ -41,7 +44,7 @@
     "PublishedAt": "2024-12-02T15:31:41Z",
     "Severity": "MODERATE",
     "Summary": "Spring Framework has Authorization Bypass for Case Sensitive Comparisons",
-    "UpdatedAt": "2024-12-02T20:04:18Z",
+    "UpdatedAt": "2025-01-10T15:59:24Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.8,
@@ -51,9 +54,39 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "6.1.14"
+        "Identifier": "6.3.5"
       },
-      "VulnerableVersionRange": "\u003c 6.1.14"
+      "VulnerableVersionRange": "\u003e= 6.3.0, \u003c 6.3.5"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "6.2.8"
+      },
+      "VulnerableVersionRange": "\u003e= 6.2.0, \u003c 6.2.8"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "6.1.12"
+      },
+      "VulnerableVersionRange": "\u003e= 6.1.0, \u003c 6.1.12"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "6.0.14"
+      },
+      "VulnerableVersionRange": "\u003e= 6.0.0, \u003c 6.0.14"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.8.16"
+      },
+      "VulnerableVersionRange": "\u003e= 5.8.0, \u003c 5.8.16"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.7.14"
+      },
+      "VulnerableVersionRange": "\u003c 5.7.14"
     }
   ]
 }
