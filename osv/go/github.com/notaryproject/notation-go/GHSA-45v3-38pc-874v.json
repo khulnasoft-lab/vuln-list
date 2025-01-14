@@ -1,12 +1,15 @@
 {
   "id": "GHSA-45v3-38pc-874v",
-  "modified": "2025-01-13T16:27:11.181671Z",
+  "modified": "2025-01-14T16:41:52.509569Z",
   "published": "2025-01-13T16:14:07Z",
   "aliases": [
-    "CVE-2024-56138"
+    "CVE-2024-56138",
+    "GO-2025-3381"
   ],
   "related": [
-    "CGA-c9jr-m4jg-q69c"
+    "CGA-77xj-rx2p-x275",
+    "CGA-c9jr-m4jg-q69c",
+    "CGA-hx33-2hg9-h656"
   ],
   "summary": "notation-go's timestamp signature generation lacks certificate revocation check",
   "details": "This issue was identified during Quarkslab's audit of the timestamp feature.\n\n### Summary\nDuring the timestamp signature generation, the revocation status of the certificate(s) used to generate the timestamp signature was not verified.\n\n### Details\nDuring timestamp signature generation, notation-go did not check the revocation status of the certificate chain used by the TSA. This oversight creates a vulnerability that could be exploited through a Man-in-The-Middle attack. An attacker could potentially use a compromised, intermediate, or revoked leaf certificate to generate a malicious countersignature, which would then be accepted and stored by `notation`.\n\n### Impact\nThis could lead to denial of service scenarios, particularly in CI/CD environments during signature verification processes because timestamp signature would fail due to the presence of a revoked certificate(s) potentially disrupting operations.\n",
@@ -40,6 +43,14 @@
     {
       "type": "WEB",
       "url": "https://github.com/notaryproject/notation-go/security/advisories/GHSA-45v3-38pc-874v"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-56138"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/notaryproject/notation-go/commit/e7005a6d13e5ba472d4e166fbb085152f909e102"
     },
     {
       "type": "WEB",
