@@ -6,6 +6,9 @@
     "CVE-2022-31124",
     "PYSEC-2022-233"
   ],
+  "related": [
+    "CVE-2022-31124"
+  ],
   "summary": "Possible leak of key's raw field if declared length is incorrect",
   "details": "### Impact\nIf a field of a key is shorter than it is declared to be, the parser raises an error with a message containing the raw field value. An attacker able to modify the declared length of a key's sensitive field can thus expose the raw value of that field.\n\n### Patches\nUpgrade to version 0.0.6, which no longer includes the raw field value in the error message.\n\n### Workarounds\nN/A\n\n### References\nN/A\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [openssh_key_parser](https://github.com/scottcwang/openssh_key_parser)\n",
   "affected": [

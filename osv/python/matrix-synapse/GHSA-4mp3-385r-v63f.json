@@ -6,6 +6,9 @@
     "CVE-2020-26890",
     "PYSEC-2020-237"
   ],
+  "related": [
+    "CVE-2020-26890"
+  ],
   "summary": "Denial of service attack due to invalid JSON",
   "details": "### Impact\nA denial of service attack against Matrix clients can be exploited by sending an event including invalid JSON data to Synapse. Synapse would relay the data to clients which could crash or hang. Impact is long-lasting if the event is made part of the room state.\n\n### Patches\nAt a minimum #8106 and #8291 must be applied. #7372 and #8124 include additional checks.\n\n### Workarounds\nThere are no known workarounds.\n\n### Upgrading notes\nIf an invalid event is accepted by an earlier Synapse it can become part of the room state and will not be fixed by upgrading Synapse. Redacting the invalid event should avoid clients receiving the invalid event.",
   "affected": [

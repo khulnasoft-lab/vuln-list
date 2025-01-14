@@ -6,6 +6,9 @@
     "CVE-2023-41039",
     "PYSEC-2023-159"
   ],
+  "related": [
+    "CVE-2023-41039"
+  ],
   "summary": "Sandbox escape via various forms of \"format\".",
   "details": "### Impact\nPython's \"format\" functionality allows someone controlling the format string to \"read\" all objects accessible through recursive attribute lookup and subscription from objects he can access. This can lead to critical information disclosure.\nWith `RestrictedPython`, the format functionality is available via the `format` and `format_map` methods of `str` (and `unicode`) (accessed either via the class or its instances) and via `string.Formatter`.\nAll known versions of `RestrictedPython` are vulnerable. \n\n### Patches\nThe issue will be fixed in 5.4 and 6.2.\n\n### Workarounds\nThere are no workarounds to fix the issue without upgrading.\n\n### References\n* https://docs.python.org/3/library/stdtypes.html#str.format_map\n* http://lucumr.pocoo.org/2016/12/29/careful-with-str-format/\n* https://www.exploit-db.com/exploits/51580\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open an issue in the [RestrictedPython issue tracker](https://github.com/zopefoundation/RestrictedPython/issues)\n* Email us at [security@plone.org](mailto:security@plone.org)\n\n### Credits\n\nThanks for analysing and reporting the go to:\n\n* Abhishek Govindarasu\n* Ankush Menat\n* Ward Theunisse\n\n",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2022-39267",
     "GO-2022-1067"
   ],
+  "related": [
+    "CVE-2022-39267"
+  ],
   "summary": "Bifrost vulnerable to authentication check flaw that leads to authentication bypass",
   "details": "### Impact\nThe admin and monitor user groups need to be authenticated by username and password. If we delete the X-Requested-With: XMLHttpRequest field in the request header,the authentication will be bypassed.\n\n### Patches\nhttps://github.com/brockercap/Bifrost/pull/201\n\n### Workarounds\nUpgrade to the latest version",
   "affected": [

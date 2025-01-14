@@ -6,6 +6,9 @@
     "CVE-2023-37901",
     "PYSEC-2023-129"
   ],
+  "related": [
+    "CVE-2023-37901"
+  ],
   "summary": "Indico vulnerable to Cross-Site-Scripting via confirmation prompts",
   "details": "### Impact\nThere is a Cross-Site-Scripting vulnerability in confirmation prompts commonly used when deleting content from Indico.\nExploitation requires someone with at least submission privileges (such as a speaker) and then someone else to attempt to delete this content.\n\nConsidering that event organizers may want to delete suspicious-looking content when spotting it, there is a non-negligible risk of such an attack to succeed. The risk of this could be further increased when combined with some some social engineering pointing the victim towards this content.\n\n### Patches\nYou need to update to [Indico 3.2.6](https://github.com/indico/indico/releases/tag/v3.2.6) as soon as possible.\nSee [the docs](https://docs.getindico.io/en/stable/installation/upgrade/) for instructions on how to update.\n\n### Workarounds\nOnly let trustworthy users manage categories, create events or upload materials (\"submission\" privileges on a contribution/event). This should already be the case in a properly-configured setup when it comes to category/event management.\n\nNote that a conference doing a Call for Abstracts actively invites external speakers (who the organizers may not know and thus cannot fully trust) to submit content, hence the need to update to a a fixed version ASAP in particular when using such workflows.\n\nFor more information\n\nIf you have any questions or comments about this advisory:\n\n* Open a thread in [our forum](https://talk.getindico.io/)\n* Email us privately at [indico-team@cern.ch](mailto:indico-team@cern.ch)",
   "affected": [

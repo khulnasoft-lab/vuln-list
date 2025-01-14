@@ -6,6 +6,9 @@
     "CVE-2021-41122",
     "PYSEC-2021-366"
   ],
+  "related": [
+    "CVE-2021-41122"
+  ],
   "summary": "missing clamps for decimal args in external functions",
   "details": "### Impact\n\nThe following code does not properly validate that its input is in bounds.\n\n```python\n@external\ndef foo(x: decimal) -\u003e decimal:\n    return x\n```\n\n### Patches\n0.3.0 / #2447\n\n### Workarounds\nDon't use decimal args\n\n",
   "affected": [

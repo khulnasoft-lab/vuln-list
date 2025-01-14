@@ -6,6 +6,9 @@
     "CVE-2022-39228",
     "PYSEC-2023-52"
   ],
+  "related": [
+    "CVE-2022-39228"
+  ],
   "summary": "vantage6 vulnerable to Observable Response Discrepancy",
   "details": "### Impact\nWe are incorporating the password policies listed in https://github.com/vantage6/vantage6/issues/59. One measure is that we don't let the user know in case of wrong username/password combination if the username actually exists, to prevent that bots can guess usernames. However, if a wrong password is entered a number of times, the user account is blocked temporarily. This way you could still find out which usernames exist.\n\n### Patches\nUpdate to 3.8.0+\n\n### Workarounds\nNo\n\n### References\nhttps://github.com/vantage6/vantage6/issues/59\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Email us at [vantage6@iknl.nl](mailto:vantage6@iknl.nl)\n",
   "affected": [

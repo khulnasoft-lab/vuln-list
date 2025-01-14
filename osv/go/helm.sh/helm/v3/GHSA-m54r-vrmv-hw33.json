@@ -6,6 +6,9 @@
     "BIT-helm-2020-15186",
     "CVE-2020-15186"
   ],
+  "related": [
+    "CVE-2020-15186"
+  ],
   "summary": "Improper Sanitizing of plugin names in helm",
   "details": "### Impact\n\nSecurity researchers at Trail of Bits discovered that plugin names are not sanitized properly. As a result, a malicious plugin author could use characters in a plugin name that would result in unexpected behavior, such as duplicating the name of another plugin or spoofing the output to `helm --help`.\n\n### Specific Go Packages Affected\nhelm.sh/helm/v3/pkg/plugin\n\n### Patches\n\nThis issue has been patched in Helm 3.3.2.\n\n### Workarounds\n\nDo not install untrusted Helm plugins. Examine the `name` field in the `plugin.yaml` file for a plugin, looking for characters outside of the [a-zA-Z0-9._-] range.",
   "affected": [

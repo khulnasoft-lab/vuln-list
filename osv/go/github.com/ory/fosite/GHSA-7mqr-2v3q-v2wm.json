@@ -6,6 +6,9 @@
     "CVE-2020-15223",
     "GO-2021-0109"
   ],
+  "related": [
+    "CVE-2020-15223"
+  ],
   "summary": "Ory fosite contains Improper Handling of Exceptional Conditions ",
   "details": "### Impact\nThe `TokenRevocationHandler` ignores errors coming from the storage. This can lead to unexpected 200 status codes indicating successful revocation while the token is still valid. Whether an attacker can use this for her advantage depends on the ability to trigger errors in the store.\n\n### References\n[RFC 7009](https://tools.ietf.org/html/rfc7009#section-2.2.1) states that a 503 HTTP code must be returned when the server has a problem.",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2022-21716",
     "PYSEC-2022-160"
   ],
+  "related": [
+    "CVE-2022-21716"
+  ],
   "summary": "Twisted SSH client and server deny of service during SSH handshake.",
   "details": "### Impact\n\nThe Twisted SSH client and server implementation naively accepted an infinite amount of data for the  peer's SSH version identifier.\n\nA malicious peer can trivially craft a request that uses all available memory and crash the server, resulting in denial of service. The attack is as simple as `nc -rv localhost 22 \u003c /dev/zero`.\n\n### Patches\n\nThe issue was fix in GitHub commit https://github.com/twisted/twisted/commit/98387b39e9f0b21462f6abc7a1325dc370fcdeb1\n\nA fix is available in Twisted 22.2.0.\n\n### Workarounds\n\n* Limit access to the SSH server only to trusted source IP addresses.\n* Connect over SSH only to trusted destination IP addresses.\n\n### References\n\nReported at https://twistedmatrix.com/trac/ticket/10284\nDiscussions at https://github.com/twisted/twisted/security/advisories/GHSA-rv6r-3f5q-9rgx\n\n### For more information\n\nFound by vin01",
   "affected": [

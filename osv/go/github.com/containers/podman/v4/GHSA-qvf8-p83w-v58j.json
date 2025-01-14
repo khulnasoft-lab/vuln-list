@@ -6,6 +6,9 @@
     "CVE-2022-27649",
     "GO-2022-0416"
   ],
+  "related": [
+    "CVE-2022-27649"
+  ],
   "summary": "Podman's default inheritable capabilities for linux container not empty",
   "details": "A bug was found in Podman where containers were created with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2).\n\nThis bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set.",
   "affected": [

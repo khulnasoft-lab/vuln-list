@@ -6,6 +6,9 @@
     "CVE-2022-24753",
     "GO-2022-0350"
   ],
+  "related": [
+    "CVE-2022-24753"
+  ],
   "summary": "Code injection in Stripe CLI on windows",
   "details": "### Impact\nA vulnerability in Stripe CLI exists on Windows when certain commands are run in a directory where an attacker has planted files. The commands are `stripe login`, `stripe config -e`, `stripe community`, and `stripe open`. MacOS and Linux are unaffected.\n\nAn attacker who successfully exploits the vulnerability can run arbitrary code in the context of the current user. The update addresses the vulnerability by throwing an error in these situations before the code can run.\n\nThere has been no evidence of exploitation of this vulnerability.\n\n### Recommendation\nUpgrade to Stripe CLI v1.7.13.\n\n### Acknowledgments\nThanks to [trungpabc](https://hackerone.com/trungpabc) for reporting the issue.\n\n### For more information\nEmail us at [security@stripe.com](mailto:security@stripe.com).\n",
   "affected": [

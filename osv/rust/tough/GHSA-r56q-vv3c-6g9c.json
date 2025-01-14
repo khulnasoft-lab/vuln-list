@@ -1,12 +1,12 @@
 {
   "id": "GHSA-r56q-vv3c-6g9c",
-  "modified": "2023-11-08T04:06:52.291043Z",
+  "modified": "2025-01-14T08:57:35.856086Z",
   "published": "2021-10-19T20:16:26Z",
   "aliases": [
-    "CVE-2021-41131",
-    "CVE-2021-41150",
-    "GHSA-wjw6-2cqr-j4qr",
-    "PYSEC-2021-376"
+    "CVE-2021-41150"
+  ],
+  "related": [
+    "CVE-2021-41150"
   ],
   "summary": "Improper sanitization of delegated role names",
   "details": "### Impact\nThe tough library, prior to 0.12.0, does not properly sanitize delegated role names when caching a repository, or when loading a repository from the filesystem. When the repository is cached or loaded, files ending with the .json extension could be overwritten with role metadata anywhere on the system.\n\nAWS would like to thank https://github.com/jku for reporting this issue.\n\n### Patches\nA fix is available in version 0.12.0.\n\n### Workarounds\nNo workarounds to this issue are known.\n\n### References\nhttps://github.com/theupdateframework/python-tuf/security/advisories/GHSA-wjw6-2cqr-j4qr \n",

@@ -6,6 +6,9 @@
     "CVE-2022-21646",
     "GO-2022-0295"
   ],
+  "related": [
+    "CVE-2022-21646"
+  ],
   "summary": "Lookup operations do not take into account wildcards in SpiceDB",
   "details": "### Impact\nAny user making use of a wildcard relationship under the right hand branch of an `exclusion` or within an `intersection` operation will see `Lookup`/`LookupResources` return a resource as \"accessible\" if it is *not* accessible by virtue of the inclusion of the wildcard in the intersection or the right side of the exclusion.\n\nFor example, given schema:\n\n```zed\ndefinition user {}\n\ndefinition resource {\n   relation viewer: user\n   relation banned: user | user:*\n   permission view = viewer - banned\n}\n```\n\nIf `user:*` is placed into the `banned` relation for a particular resource, `view` should return false for *all* resources. in `v1.3.0`, the wildcard is ignored entirely in lookup's dispatch, resulting in the `banned` wildcard being ignored in the exclusion.\n\n### Workarounds\nDon't make use of wildcards on the right side of intersections or within exclusions. \n\n### References\nhttps://github.com/authzed/spicedb/issues/358\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [SpiceDB](https://github.com/authzed/spicedb)\n* Ask a question in the [SpiceDB Discord](https://authzed.com/discord)\n",
   "affected": [

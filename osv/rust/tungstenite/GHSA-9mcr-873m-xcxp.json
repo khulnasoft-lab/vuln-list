@@ -7,7 +7,8 @@
     "RUSTSEC-2023-0065"
   ],
   "related": [
-    "CGA-4x9j-r2r9-x33c"
+    "CGA-4x9j-r2r9-x33c",
+    "CVE-2023-43669"
   ],
   "summary": "Tungstenite allows remote attackers to cause a denial of service",
   "details": "The Tungstenite crate through 0.20.0 for Rust allows remote attackers to cause a denial of service (minutes of CPU consumption) via an excessive length of an HTTP header in a client handshake. The length affects both how many times a parse is attempted (e.g., thousands of times) and the average amount of data for each parse attempt (e.g., millions of bytes).",

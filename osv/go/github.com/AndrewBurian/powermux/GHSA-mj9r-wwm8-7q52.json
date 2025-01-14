@@ -6,6 +6,9 @@
     "CVE-2021-32721",
     "GO-2021-0237"
   ],
+  "related": [
+    "CVE-2021-32721"
+  ],
   "summary": "Open Redirect in github.com/AndrewBurian/powermux",
   "details": "### Impact\nAttackers may be able to craft phishing links and other open redirects by exploiting the trailing slash redirection feature. This may lead to users being redirected to untrusted sites after following an attacker crafted link.\n\n### Patches\nThe issue is resolved in v1.1.1\n\n### Workarounds\nThere are no existing workarounds.\nYou may detect attempts to craft urls that exploit this feature by looking for request paths containing pairs of forward slashes in sequence combined with a trailing slash e.g. `https://example.com//foo/`\n",
   "affected": [

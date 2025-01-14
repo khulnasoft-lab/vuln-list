@@ -1,13 +1,14 @@
 {
   "id": "GHSA-8x94-hmjh-97hq",
-  "modified": "2024-12-18T22:23:36.003609Z",
+  "modified": "2025-01-14T11:27:04.205746Z",
   "published": "2022-08-11T14:49:12Z",
   "aliases": [
     "BIT-django-2022-36359",
     "CVE-2022-36359",
-    "CVE-2022-45442",
-    "GHSA-2x8x-jmrp-phxw",
     "PYSEC-2022-245"
+  ],
+  "related": [
+    "CVE-2022-45442"
   ],
   "summary": "Django vulnerable to Reflected File Download attack",
   "details": "An issue was discovered in the HTTP FileResponse class in Django 3.2 before 3.2.15 and 4.0 before 4.0.7. An application is vulnerable to a reflected file download (RFD) attack that sets the Content-Disposition header of a FileResponse when the filename is derived from user-supplied input.",

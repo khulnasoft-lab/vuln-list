@@ -6,6 +6,9 @@
     "CVE-2022-23511",
     "GO-2022-1160"
   ],
+  "related": [
+    "CVE-2022-23511"
+  ],
   "summary": "Amazon CloudWatch Agent for Windows has Privilege Escalation Vector",
   "details": "### Impact\nA privilege escalation issue exists within the Amazon CloudWatch Agent for Windows in versions up to and including v1.247354. When users trigger a repair of the Agent, a pop-up window opens with SYSTEM permissions. Users with administrative access to affected hosts may use this to create a new command prompt as NT AUTHORITY\\SYSTEM. \n \nTo trigger this issue, the third party must be able to access the affected host and elevate their privileges such that they’re able to trigger the agent repair process. They must also be able to install the tools required to trigger the issue. \n\nThis issue does not affect the CloudWatch Agent for macOS or Linux. \n\n### Patches\nMaintainers recommend that Agent users upgrade to the latest available version of the CloudWatch Agent to address this issue. \n\n### Workarounds\nThere is no recommended work around. Affected users must update the installed version of the CloudWatch Agent to address this issue.\n\n### References\nhttps://github.com/aws/amazon-cloudwatch-agent/commit/6119858864c317ff26f41f576c169148d1250837\n\n### For more information \n \nIf you have any questions or comments about this advisory, contact AWS/Amazon Security via their [vulnerability reporting page](http://aws.amazon.com/security/vulnerability-reporting/) or directly via email to [aws-security@amazon.com](mailto:aws-security@amazon.com). Please do not create a public GitHub issue.\n",
   "affected": [

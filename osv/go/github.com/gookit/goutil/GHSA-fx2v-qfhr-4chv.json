@@ -6,6 +6,9 @@
     "CVE-2023-27475",
     "GO-2023-1611"
   ],
+  "related": [
+    "CVE-2023-27475"
+  ],
   "summary": "Goutil vulnerable to path traversal when unzipping files",
   "details": "### Impact\n\nZipSlip issue when use fsutil package to unzip files.\nWhen users use fsutil.Unzip to unzip zip files from a malicious attacker, they may be vulnerable to path traversal. \n\n### Patches\n\nIt has been fixed in v0.6.0, Please upgrade version to v0.6.0 or above.\n\n### Workarounds\nNo, users have to upgrade version.",
   "affected": [

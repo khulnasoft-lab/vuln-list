@@ -6,6 +6,9 @@
     "CVE-2021-3908",
     "GO-2022-0249"
   ],
+  "related": [
+    "CVE-2021-3908"
+  ],
   "summary": "Infinite certificate chain depth results in OctoRPKI running forever",
   "details": "OctoRPKI (github.com/cloudflare/cfrpki/cmd/octorpki) does not limit the depth of a certificate chain, allowing for a CA to create children in an ad-hoc fashion, thereby making tree traversal never end.\n\n### For more information\nIf you have any questions or comments about this advisory email us at security@cloudflare.com \n",
   "affected": [

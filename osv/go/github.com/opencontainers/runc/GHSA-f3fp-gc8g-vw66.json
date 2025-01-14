@@ -8,7 +8,8 @@
   ],
   "related": [
     "CGA-m9g7-xvf3-j5vf",
-    "CGA-wqw9-3qxr-w572"
+    "CGA-wqw9-3qxr-w572",
+    "CVE-2022-29162"
   ],
   "summary": "Default inheritable capabilities for linux container should be empty",
   "details": "### Impact\n\nA bug was found in runc where `runc exec --cap` executed processes with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2).\n\nThis bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set.\n\n### Patches\nThis bug has been fixed in runc 1.1.2. Users should update to this version as soon as possible.\n\nThis fix changes `runc exec --cap` behavior such that the additional capabilities granted to the process being executed (as specified via `--cap` arguments) do not include inheritable capabilities.\n\nIn addition, `runc spec` is changed to not set any inheritable capabilities in the created example OCI spec (`config.json`) file.\n\n### Credits\nThe opencontainers project would like to thank [Andrew G. Morgan](https://github.com/AndrewGMorgan) for responsibly disclosing this issue in accordance with the [opencontainers org security policy](https://github.com/opencontainers/.github/blob/master/SECURITY.md).\n\n### For more information\nIf you have any questions or comments about this advisory:\n\n* [Open an issue](https://github.com/opencontainers/runc/issues/new)\n* Email us at [security@opencontainers.org](mailto:security@opencontainers.org) if you think you’ve found a security bug",

@@ -6,6 +6,9 @@
     "CVE-2023-45810",
     "GO-2023-2121"
   ],
+  "related": [
+    "CVE-2023-45810"
+  ],
   "summary": "OpenFGA DoS vulnerability",
   "details": "## Overview\nOpenFGA is vulnerable to a DoS attack. When a number of ListObjects calls are executed, in some scenarios, those calls are not releasing resources even after a response has been sent, and the service as a whole becomes unresponsive.\n\n## Fix\nUpgrade to v1.3.4. This upgrade is backwards compatible.",
   "affected": [

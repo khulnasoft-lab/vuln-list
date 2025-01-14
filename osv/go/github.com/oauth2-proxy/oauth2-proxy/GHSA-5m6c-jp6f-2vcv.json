@@ -6,6 +6,9 @@
     "BIT-oauth2-proxy-2020-4037",
     "CVE-2020-4037"
   ],
+  "related": [
+    "CVE-2020-4037"
+  ],
   "summary": "Open Redirect in OAuth2 Proxy",
   "details": "### Impact\nAs users can provide a redirect address for the proxy to send the authenticated user to at the end of the authentication flow. This is expected to be the original URL that the user was trying to access.\nThis redirect URL is checked within the proxy and validated before redirecting the user to prevent malicious actors providing redirects to potentially harmful sites.",
   "affected": [

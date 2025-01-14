@@ -6,6 +6,9 @@
     "CVE-2022-39340",
     "GO-2022-1079"
   ],
+  "related": [
+    "CVE-2022-39340"
+  ],
   "summary": "OpenFGA subject to Information Disclosure via streamed-list-objects endpoint",
   "details": "### Overview\nDuring our internal security assessment, it was discovered that `streamed-list-objects` endpoint was not validating the authorization header resulting in the disclosure of objects in the store.\n\n### Am I Affected?\nYou are affected by this vulnerability if you are using `openfga/openfga` version `v0.2.3` or prior and you are exposing the OpenFGA service to the internet.\n\n### How to fix that?\nUpgrade to version `v0.2.4`.\n\n### Backward Compatibility\nThis update is backward compatible.",
   "affected": [

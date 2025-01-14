@@ -6,6 +6,9 @@
     "CVE-2023-47122",
     "GO-2023-2332"
   ],
+  "related": [
+    "CVE-2023-47122"
+  ],
   "summary": "Gitsign's Rekor public keys fetched from upstream API instead of local TUF client.",
   "details": "### Impact\n\nIn certain versions of gitsign, Rekor public keys were fetched via the Rekor API, instead of through the local TUF client. If the upstream Rekor server happened to be compromised, gitsign clients could potentially be tricked into trusting incorrect signatures.\n\nThere is no known compromise the default public good instance (`rekor.sigstore.dev`) - anyone using this instance is unlikely to be affected.\n\n### Patches\n\nThis was fixed in v0.8.0 via https://github.com/sigstore/gitsign/pull/399\n\n### Workarounds\n\nn/a\n\n### References\n_Are there any links users can visit to find out more?_\n\nhttps://docs.sigstore.dev/about/threat-model/#sigstore-threat-model",
   "affected": [

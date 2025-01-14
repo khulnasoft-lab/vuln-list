@@ -7,7 +7,8 @@
     "GO-2022-0759"
   ],
   "related": [
-    "CGA-5g6r-gqx2-76cw"
+    "CGA-5g6r-gqx2-76cw",
+    "CVE-2022-35930"
   ],
   "summary": "PolicyController before 0.2.1 may bypass attestation verification",
   "details": "PolicyController will report a false positive, resulting in an admission when it should not be admitted when:\n * There is at least one attestation with a valid signature\n * There are NO attestations of the type being verified (--type defaults to \"custom\")\n\nUsers should upgrade to cosign version 0.2.1 or greater for a patch. There are no known workarounds at this time.",

@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2022-46174"
   ],
+  "related": [
+    "CVE-2022-46174"
+  ],
   "summary": "efs-utils and aws-efs-csi-driver have race condition during concurrent TLS mounts",
   "details": "### Impact\nA potential race condition issue exists within the Amazon EFS mount helper in efs-utils versions v1.34.3 and below, and aws-efs-csi-driver versions v1.4.7 and below. When using TLS to mount file systems, the mount helper allocates a local port for stunnel to receive NFS connections prior to applying the TLS tunnel. In affected versions, concurrent mount operations can allocate the same local port, leading to either failed mount operations or an inappropriate mapping from an EFS customer’s local mount points to that customer’s EFS file systems.\n\nAffected versions: efs-utils \u003c= v1.34.3, aws-efs-csi-driver \u003c= v1.4.7\n\n### Patches\nThe patches are included in efs-utils version v1.34.4 and newer, and in aws-efs-csi-driver v1.4.8 and newer.\n\n### Workarounds\nThere is no recommended work around. We recommend affected users update the installed version of efs-utils to v1.34.4+ or aws-efs-csi-driver to v1.4.8+ to address this issue.\n\n### References\nhttps://github.com/aws/efs-utils/commit/f3a8f88167d55caa2f78aeb72d4dc1987a9ed62d\nhttps://github.com/aws/efs-utils/issues/125\nhttps://github.com/kubernetes-sigs/aws-efs-csi-driver/issues/282\nhttps://github.com/kubernetes-sigs/aws-efs-csi-driver/issues/635\n",
   "affected": [

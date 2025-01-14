@@ -6,6 +6,9 @@
     "CVE-2022-23652",
     "GO-2022-0329"
   ],
+  "related": [
+    "CVE-2022-23652"
+  ],
   "summary": "Improper Authentication in Capsule Proxy",
   "details": "### Impact\n\nUsing a malicious `Connection` header, an attacker with a proper authentication mechanism could start a privilege escalation towards the Kubernetes API Server, being able to exploit the `cluster-admin` Role bound to `capsule-proxy`.\n\n### Patches\n\nPatch has been merged in the v0.2.1 release.\n\n### Workarounds\n\nUpgrading is mandatory.\n",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2023-32684",
     "GO-2023-1803"
   ],
+  "related": [
+    "CVE-2023-32684"
+  ],
   "summary": "In Lima, a malicious disk image could read a single file on the host filesystem as a qcow2/vmdk backing file",
   "details": "\u003e **Note**\n\u003e\n\u003e The official templates of Lima, and the well-known third party products (Colima, Rancher Desktop, and Finch) are *unlikely* to be affected by this issue.\n\n### Impact\nA virtual machine instance with a malicious disk image could read a single file on the host filesystem, even when no filesystem is mounted from the host.\n\nTo exploit this issue, the attacker has to embed the target file path (an absolute or a relative path from the instance directory) in a malicious disk image, as the [qcow2 (or vmdk) backing file path string](https://gitlab.com/qemu-project/qemu/-/blob/v8.0.0/docs/interop/qcow2.txt#L23-L34).\nAs Lima refuses to run as the root, it is practically impossible for the attacker to read the entire host disk via `/dev/rdiskN`.\nAlso, practically, the attacker cannot read at least the first 512 bytes (MBR) of the target file.\n\n### Patches\nPatched in Lima v0.16.0, by prohibiting using a backing file path in the VM base image.\n\n### Workarounds\nDo not use an untrusted disk image.",
   "affected": [

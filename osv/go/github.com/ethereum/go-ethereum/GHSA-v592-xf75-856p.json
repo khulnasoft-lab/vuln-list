@@ -6,6 +6,9 @@
     "CVE-2020-26240",
     "GO-2022-0775"
   ],
+  "related": [
+    "CVE-2020-26240"
+  ],
   "summary": "Erroneous Proof of Work calculation in geth",
   "details": "### Impact\nAn ethash mining DAG generation flaw in Geth could cause miners to erroneously calculate PoW in an upcoming epoch (estimated early January, 2021). This happened on the ETC chain on 2020-11-06. This issue is relevant only for miners, non-mining nodes are unaffected.\n\n### Specific Go Packages Affected\ngithub.com/ethereum/go-ethereum/consensus\n\n### Patches\nThis issue is also fixed as of 1.9.24. Thanks to @slavikus for bringing the issue to our attention and writing the fix. \n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [go-ethereum](https://github.com/ethereum/go-ethereum)\n* Email us at [security@ethereum.org](mailto:security@ethereum.org)",
   "affected": [

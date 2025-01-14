@@ -6,6 +6,9 @@
     "CVE-2022-29255",
     "PYSEC-2022-43053"
   ],
+  "related": [
+    "CVE-2022-29255"
+  ],
   "summary": "Multiple evaluation of contract address in call in vyper",
   "details": "### Impact\nwhen a calling an external contract with no return value, the contract address could be evaluated twice. this is usually only an efficiency problem, but if evaluation of the contract address has side effects, it could result in double evaluation of the side effects.\n\nin the following example, `Foo(msg.sender).bar()` is the contract address for the following call (to `.foo()`), and could get evaluated twice\n\n```vyper\ninterface Foo:\n    def foo(): nonpayable\n    def bar() -\u003e address: nonpayable\n\n@external\ndef do_stuff():\n    Foo(Foo(msg.sender).bar()).foo()\n```\n\n### Patches\n6b4d8ff185de071252feaa1c319712b2d6577f8d\n\n### Workarounds\nassign contract addresses to variables. the above example would change to\n```vyper\n@external\ndef do_stuff():\n    t: Foo = Foo(msg.sender).bar()\n    t.foo()\n```\n\n### References\n\n### For more information\n",
   "affected": [

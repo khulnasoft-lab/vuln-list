@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2020-15234"
   ],
+  "related": [
+    "CVE-2020-15234"
+  ],
   "summary": "Redirect URL matching ignores character casing",
   "details": "### Impact\n\nBefore version v0.34.1, the OAuth 2.0 Client's registered redirect URLs and the redirect URL provided at the OAuth2 Authorization Endpoint where compared using `strings.ToLower` while they should have been compared with a simple string match:\n\n1. Registering a client with allowed redirect URL `https://example.com/callback`\n2. Performing OAuth2 flow and requesting redirect URL `https://example.com/CALLBACK`\n3. Instead of an error (invalid redirect URL), the browser is redirected to `https://example.com/CALLBACK` with a potentially successful OAuth2 response, depending on the state of the overall OAuth2 flow (the user might still deny the request for example).",
   "affected": [

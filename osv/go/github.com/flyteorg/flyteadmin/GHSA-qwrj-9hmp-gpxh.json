@@ -6,6 +6,9 @@
     "CVE-2022-31145",
     "GO-2022-0519"
   ],
+  "related": [
+    "CVE-2022-31145"
+  ],
   "summary": "FlyteAdmin Insufficient AccessToken Expiration Check",
   "details": "### Impact\nAuthenticated users using an external identity provider can continue to use Access Tokens and ID Tokens even after they expire.\nUsing flyteadmin as the OAuth2 Authorization Server is unaffected by this issue.\n\n### Patches\n1.1.30\n\n### Workarounds\nRotating signing keys immediately will:\n* Invalidate all open sessions,\n* Force all users to attempt to obtain new tokens.\n\nContinue to rotate keys until flyteadmin has been upgraded,\n\nHide flyteadmin deployment ingress url from the internet.\n\n### References\nhttps://github.com/flyteorg/flyteadmin/pull/455\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in [flyte repo](https://github.com/flyteorg/flyte/issues)\n* Email us at [flyte](mailto:admin@flyte.org)\n",
   "affected": [

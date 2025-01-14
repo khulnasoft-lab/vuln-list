@@ -8,6 +8,9 @@
     "CVE-2022-24758",
     "PYSEC-2022-180"
   ],
+  "related": [
+    "CVE-2022-24758"
+  ],
   "summary": "Sensitive Auth \u0026 Cookie data stored in Jupyter server logs",
   "details": "Anytime a 5xx error is triggered, the auth cookie and other header values are recorded in Jupyter server logs by default. Considering these logs do not require root access, an attacker can monitor these logs, steal sensitive auth/cookie information, and gain access to the Jupyter server.\n\nUpgrade to notebook version 6.4.10\n\n### For more information\n\nIf you have any questions or comments about this advisory, or vulnerabilities to report, please email our security list [security@ipython.org](mailto:security@ipython.org).\n\nCredit: @3coins for reporting. Thank you!\n\n",
   "affected": [
