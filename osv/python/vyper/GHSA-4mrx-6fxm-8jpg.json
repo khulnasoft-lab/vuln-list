@@ -6,6 +6,9 @@
     "CVE-2022-24788",
     "PYSEC-2022-197"
   ],
+  "related": [
+    "CVE-2022-24788"
+  ],
   "summary": "Buffer Overflow in vyper",
   "details": "### Impact\nImporting a function from a JSON interface which returns `bytes` generates bytecode which does not clamp bytes length, potentially resulting in a buffer overrun.\n\n### Patches\n0.3.2 (as of https://github.com/vyperlang/vyper/commit/049dbdc647b2ce838fae7c188e6bb09cf16e470b)\n\n### Workarounds\nUse .vy interfaces.",
   "affected": [

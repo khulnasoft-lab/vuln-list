@@ -7,6 +7,9 @@
     "CVE-2020-27846",
     "GO-2021-0058"
   ],
+  "related": [
+    "CVE-2020-27846"
+  ],
   "summary": "XML Processing error in github.com/crewjam/saml",
   "details": "### Impact\n\nThere are three vulnerabilities in the go `encoding/xml` package that can allow an attacker to forge part of a signed XML document. For details on this vulnerability see [xml-roundtrip-validator](https://github.com/mattermost/xml-roundtrip-validator)\n\n### Patches\n\nIn version 0.4.3, all XML input is validated prior to being parsed.",
   "affected": [

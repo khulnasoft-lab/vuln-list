@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2023-49796"
   ],
+  "related": [
+    "CVE-2023-49796"
+  ],
   "summary": "Improper Input Validation in mindsdb",
   "details": "### Impact\n\nThe put method in `mindsdb/mindsdb/api/http/namespaces/file.py` does not validate the user-controlled `name` value, which is used in a temporary file name, which is afterwards opened for writing on lines 122-125, which leads to path injection. This issue may lead to arbitrary file write. This vulnerability allows for writing files anywhere on the server that the filesystem permissions that the running server has access to.\n\n### Patches\n\nUse mindsdb staging branch or v23.11.4.1\n\n\n### References\n\n* GHSL-2023-184 \n* See [CodeQL path injection prevention guidelines](https://codeql.github.com/codeql-query-help/python/py-path-injection/) and [OWASP guidelines](https://owasp.org/www-community/attacks/Path_Traversal).\n",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2022-23472",
     "PYSEC-2022-42997"
   ],
+  "related": [
+    "CVE-2022-23472"
+  ],
   "summary": "Passeo uses insecure random number generator",
   "details": "### Impact\nEveryone below v1.0.5 is impacted by this flaw, of confidentiality being at risk due to the password(s) being easily able to be guessed with Passeo's use of the ``random`` library. It is recommended to change any passwords made with Passeo before v1.0.5 and upgrade to v1.0.5, and v1.0.5 patches this with the ``secrets`` library.\n\n### Workarounds\nNo current workaround available than updating to v1.0.5.\n",
   "affected": [

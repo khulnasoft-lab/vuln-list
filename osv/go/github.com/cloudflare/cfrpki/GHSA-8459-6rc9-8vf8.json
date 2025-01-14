@@ -1,13 +1,11 @@
 {
   "id": "GHSA-8459-6rc9-8vf8",
-  "modified": "2024-08-21T15:41:41.341758Z",
+  "modified": "2025-01-14T09:41:54.827947Z",
   "published": "2022-02-14T22:52:15Z",
   "aliases": [
     "CVE-2021-3907",
-    "GHSA-3jhm-87m6-x959",
     "GHSA-cqh2-vc2f-q4fh",
-    "GO-2022-0248",
-    "GO-2022-0496"
+    "GO-2022-0248"
   ],
   "summary": "Path traversal in github.com/cloudflare/cfrpki/cmd/octorpki",
   "details": "### Impact\n\nIn the case that a malicious TAL file is parsed pointing to a repository that provides a malicious ROA file which octorpki downloads, it is possible to bypass the current directory traversal mitigation to allow writing outside of the current directory. \n\n### Patches\n\nNo patch release has been made",

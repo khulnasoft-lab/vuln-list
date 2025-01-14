@@ -1,11 +1,10 @@
 {
   "id": "GO-2020-0017",
-  "modified": "2024-08-01T08:56:46.468227Z",
+  "modified": "2025-01-14T08:42:10.467143Z",
   "published": "2021-04-14T20:04:52Z",
   "aliases": [
     "CVE-2020-26160",
-    "GHSA-w73w-5m7g-f7qc",
-    "SNYK-GOLANG-GITHUBCOMDGRIJALVAJWTGO-596515"
+    "GHSA-w73w-5m7g-f7qc"
   ],
   "summary": "Authorization bypass in github.com/dgrijalva/jwt-go",
   "details": "If a JWT contains an audience claim with an array of strings, rather than a single string, and MapClaims.VerifyAudience is called with req set to false, then audience verification will be bypassed, allowing an invalid set of audiences to be provided.",

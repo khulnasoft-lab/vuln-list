@@ -6,6 +6,9 @@
     "CVE-2022-46181",
     "GO-2022-1208"
   ],
+  "related": [
+    "CVE-2022-46181"
+  ],
   "summary": "gotify/server vulnerable to Cross-site Scripting in the application image file upload",
   "details": "### Impact\n\nThe XSS vulnerability allows authenticated users to upload .html files. With that, an attacker could execute client side scripts **if** another user opened a link, such as:\n\n```\nhttps://push.example.org/image/[alphanumeric string].html\n```\n\nAn attacker could potentially take over the account of the user that clicked the link. Keep in mind, the Gotify UI won't natively expose such a malicious link, so an attacker has to get the user to open the malicious link in a context outside of Gotify.\n\n### Patches\n\nThe vulnerability has been fixed in version 2.2.2.\n\n### Workarounds\n\nYou can block access to non image files via a reverse proxy in the `./image` directory.\n\n### References\n\nhttps://github.com/gotify/server/pull/534\nhttps://github.com/gotify/server/pull/535\n\n---\n\nThanks to rickshang (aka 无在无不在) for discovering and reporting this bug.",
   "affected": [

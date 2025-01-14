@@ -6,6 +6,9 @@
     "CVE-2022-39294",
     "RUSTSEC-2022-0066"
   ],
+  "related": [
+    "CVE-2022-39294"
+  ],
   "summary": "conduit-hyper vulnerable to Denial of Service from unchecked request length",
   "details": "Prior to version 0.4.2, `conduit-hyper` did not check any limit on a request's length before calling [`hyper::body::to_bytes`](https://docs.rs/hyper/latest/hyper/body/fn.to_bytes.html). An attacker could send a malicious request with an abnormally large `Content-Length`, which could lead to a panic if memory allocation failed for that request.\n\nIn version 0.4.2, `conduit-hyper` sets an internal limit of 128 MiB per request, otherwise returning status 400 (\"Bad Request\").\n\nThis crate is part of the implementation of Rust's [crates.io](https://crates.io/), but that service is not affected due to its existing cloud infrastructure, which already drops such malicious requests. Even with the new limit in place, `conduit-hyper` is not recommended for production use, nor to directly serve the public Internet.\n\nThe vulnerability was discovered by Ori Hollander from the JFrog Security Research team.",
   "affected": [

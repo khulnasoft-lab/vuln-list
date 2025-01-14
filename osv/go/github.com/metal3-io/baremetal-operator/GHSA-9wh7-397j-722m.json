@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2023-30841"
   ],
+  "related": [
+    "CVE-2023-30841"
+  ],
   "summary": "Ironic and ironic-inspector may expose as ConfigMaps",
   "details": "### Impact\nIronic and ironic-inspector deployed within Baremetal Operator using the included `deploy.sh` store their `.htpasswd` files as ConfigMaps instead of Secrets. This causes the plain-text username and hashed password to be readable by anyone having a cluster-wide read-access to the management cluster, or access to the management cluster's Etcd storage.\n\n### Patches\nThis issue is patched in [baremetal-operator PR#1241](https://github.com/metal3-io/baremetal-operator/pull/1241), and is included in BMO release 0.3.0 onwards.\n\n### Workarounds\nUser may modify the kustomizations and redeploy the BMO, or recreate the required ConfigMaps as Secrets per instructions in [baremetal-operator PR#1241](https://github.com/metal3-io/baremetal-operator/pull/1241)\n",
   "affected": [

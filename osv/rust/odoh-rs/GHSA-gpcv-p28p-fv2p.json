@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2023-3766"
   ],
+  "related": [
+    "CVE-2023-3766"
+  ],
   "summary": "odoh-rs's Invalid Slice Split Results in Server Panic",
   "details": "A vulnerability was discovered in the odoh-rs rust crate that stems from faulty logic during the parsing of encrypted queries. This issue specifically occurs when processing encrypted query data received from remote clients.\n\n### Impact\nAn attacker with knowledge of this vulnerability could craft and send specially designed encrypted queries to targeted ODOH servers running with odoh-rs. Upon successful exploitation, the server will crash abruptly, disrupting its normal operation and rendering the service temporarily unavailable.\n\n### Patches\nUsers are encouraged to update their odoh-rs's rust crate to v1.0.2.",
   "affected": [

@@ -11,7 +11,8 @@
     "CGA-385x-93f7-963q",
     "CGA-454f-xhff-64fq",
     "CGA-7pp4-6ggr-m3vr",
-    "CGA-vjwg-3x86-p77q"
+    "CGA-vjwg-3x86-p77q",
+    "CVE-2022-46146"
   ],
   "summary": "Prometheus Exporter-Toolkit is vulnerable to authentication bypass",
   "details": "### Impact\n\nPrometheus and its exporters can be secured by a web.yml file that specifies usernames and hashed passwords for basic authentication.\n\nPasswords are hashed with bcrypt, which means that even if you have access to the hash, it is very hard to find the original password back.\n\nHowever, a flaw in the way this mechanism was implemented in the exporter toolkit makes it possible with people who know the hashed password to authenticate against Prometheus.\n\nA request can be forged by an attacker to poison the internal cache used to cache the computation of hashes and make subsequent requests successful. This cache is used in both happy and unhappy scenarios in order to limit side channel attacks that could tell an attacker if a user is present in the file or not.\n\n### Patches\n\nThe exporter-toolkit v0.7.3 and v0.8.2 have been released to address this issue.\n\n### Workarounds\n\nThere is no workaround but attacker must have access to the hashed password, stored in disk, to bypass the authentication.\n\n### Credit\n\nWe want to thank Lei Wan reporting this security issue.\n",

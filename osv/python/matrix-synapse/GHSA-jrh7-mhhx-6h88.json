@@ -6,6 +6,9 @@
     "CVE-2021-21393",
     "PYSEC-2021-26"
   ],
+  "related": [
+    "CVE-2021-21393"
+  ],
   "summary": "Denial of service (via resource exhaustion) due to improper input validation on groups/communities endpoints",
   "details": "### Impact\nMissing input validation of some parameters on the groups (also known as communities) endpoints could cause excessive use of disk space and memory leading to resource exhaustion. Additionally clients may have issues rendering large fields.\n\n### Patches\nThis issue is fixed by #9321 and #9393.\n\n### Workarounds\nThe groups feature can be disabled (by setting `enable_group_creation` to `False`) to mitigate this issue. Note that it is disabled by default.\n\n### Other information\nNote that the groups feature is not part of the [Matrix specification](https://matrix.org/docs/spec/) and the chosen maximum lengths are arbitrary. Not all clients might abide by them.",
   "affected": [

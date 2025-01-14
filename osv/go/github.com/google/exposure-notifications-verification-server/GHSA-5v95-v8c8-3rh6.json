@@ -6,6 +6,9 @@
     "CVE-2021-22538",
     "GO-2022-0798"
   ],
+  "related": [
+    "CVE-2021-22538"
+  ],
   "summary": "Privilege escalation in rbac",
   "details": "### Impact\nUsing a carefully crafted request or malicious proxy, a user with `UserWrite` permissions could create another user with higher privileges than their own due to insufficient checks on the allowed set of permissions. The event would be captured in the Event Log.\n\n### Patches\nThe issue has been fixed in 0.24.0 and 0.23.1.\n\n### Workarounds\nFor users who are unable to upgrade, we recommend auditing users who have `UserWrite` permissions and regularly reviewing the Event Log for malicious activity.\n\n### Kudos\nThank you to Michael Mazzolini (Ethical Hacker at WHO) for finding and disclosing this vulnerability.",
   "affected": [

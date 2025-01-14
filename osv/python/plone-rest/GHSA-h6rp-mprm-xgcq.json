@@ -6,6 +6,9 @@
     "CVE-2023-42457",
     "PYSEC-2023-178"
   ],
+  "related": [
+    "CVE-2023-42457"
+  ],
   "summary": "plone.rest vulnerable to Denial of Service when ++api++ is used many times",
   "details": "### Impact\nWhen the `++api++` traverser is accidentally used multiple times in a url, handling it takes increasingly longer, making the server less responsive.\n\n### Patches\nPatches will be released in `plone.rest` 2.0.1 and 3.0.1.  Series 1.x is not affected.\n\n### Workarounds\nIn your frontend web server (nginx, Apache) you can redirect `/++api++/++api++` to `/++api++`.",
   "affected": [

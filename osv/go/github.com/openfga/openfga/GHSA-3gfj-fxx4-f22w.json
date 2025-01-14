@@ -6,6 +6,9 @@
     "CVE-2022-39352",
     "GO-2022-1099"
   ],
+  "related": [
+    "CVE-2022-39352"
+  ],
   "summary": "OpenFGA Authorization Bypass",
   "details": "### Overview\nDuring our internal security assessment, it was discovered that OpenFGA versions v0.2.4 and prior are vulnerable to authorization bypass under certain conditions.\n\n### Am I Affected?\nYou are affected by this vulnerability if you are using `openfga/openfga` version v0.2.4 or prior, and have tuples where the `user` field is set to a `userset` e.g. `folder:test#owner`, and the tuple's relation is used on the right-hand side of a `from` statement.\n\n### How to fix that?\nUpgrade to version 0.2.5.\n\n### Backward Compatibility\nThis update is not backward compatible.\nAny tuples where the `user` field is set to a `userset`, and the tuple's relation is used on the right-hand side of a `from` statement have to be rewritten.",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2021-41121",
     "PYSEC-2021-365"
   ],
+  "related": [
+    "CVE-2021-41121"
+  ],
   "summary": "Memory corruption when returning a literal struct with a private call inside of it",
   "details": "### Impact\n\nWhen performing a function call inside a literal struct, there is a memory corruption issue that occurs because of an incorrect pointer to the the top of the stack.\n\n### Patches\n0.3.0 / #2447\n\n*",
   "affected": [

@@ -1,12 +1,13 @@
 {
   "id": "GHSA-qq22-jj8x-4wwv",
-  "modified": "2024-10-08T04:26:56.457741Z",
+  "modified": "2025-01-14T12:26:54.179633Z",
   "published": "2024-05-03T20:29:59Z",
   "aliases": [
     "CVE-2024-34068",
-    "GHSA-6rg3-8h8x-5xfv",
-    "GO-2022-0389",
     "GO-2024-2815"
+  ],
+  "related": [
+    "CVE-2024-34068"
   ],
   "summary": "Pterodactyl Wings vulnerable to Server-Side Request Forgery during remote file pull",
   "details": "### Impact\n\nAn authenticated user who has access to a game server is able to bypass the previously implemented access control (https://github.com/pterodactyl/wings/security/advisories/GHSA-6rg3-8h8x-5xfv) that prevents accessing internal endpoints of the node hosting Wings in the pull endpoint. This would allow malicious users to potentially access resources on local networks that would otherwise be inaccessible.\n\n### Workarounds\n\nEnabling the `api.disable_remote_download` option or updating to the latest version of Wings are the only known workarounds.\n\n### Patches\n\nhttps://github.com/pterodactyl/wings/commit/c152e36101aba45d8868a9a0eeb890995e8934b8",

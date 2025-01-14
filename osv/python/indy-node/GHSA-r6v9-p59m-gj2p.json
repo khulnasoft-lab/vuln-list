@@ -6,6 +6,9 @@
     "CVE-2022-31020",
     "PYSEC-2022-265"
   ],
+  "related": [
+    "CVE-2022-31020"
+  ],
   "summary": "Indy's NODE_UPGRADE transaction vulnerable to remote code execution",
   "details": "### Impact\n\nThe `pool-upgrade` request handler in Indy-Node `\u003c=1.12.4` allows an improperly authenticated attacker to remotely execute code on nodes within the network.\n\nNetwork operators are strongly encouraged to upgrade to the latest Indy-Node release `\u003e=1.12.5` as soon as possible.\n\n### Patches\n\nThe `pool-upgrade` request handler in Indy-Node `\u003e=1.12.5` has been updated to properly authenticate `pool-upgrade` transactions before any processing is performed by the request handler.  The transactions are further sanitized to prevent remote code execution.\n\n### Mitigations\n\nNetwork operators are strongly encouraged to upgrade to the latest Indy-Node release `\u003e=1.12.5` as soon as possible.\n\n### Acknowledgements\nThank you to @shakreiner at CyberArk Labs for finding and responsibly disclosing this issue.",
   "affected": [

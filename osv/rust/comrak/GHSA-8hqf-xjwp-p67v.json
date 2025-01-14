@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2023-28626"
   ],
+  "related": [
+    "CVE-2023-28626"
+  ],
   "summary": "Comrak vulnerable to quadratic runtime issues when parsing Markdown (GHSL-2023-047)",
   "details": "### Impact\nA range of quadratic parsing issues from `cmark`/`cmark-gfm` are also present in Comrak. These can be used to craft denial-of-service attacks on services that use Comrak to parse Markdown.\n\n### Patches\n0.17.0 contains fixes to known quadratic parsing issues.\n\n### Workarounds\n\nn/a\n\n### References\n\n* https://github.com/commonmark/cmark/issues/255\n* https://github.com/commonmark/cmark/issues/389\n* https://github.com/commonmark/cmark/issues/373\n* https://github.com/commonmark/cmark/issues/299\n* https://github.com/commonmark/cmark/issues/388\n* https://github.com/commonmark/cmark/issues/284\n* https://github.com/commonmark/cmark/issues/218\n* https://github.com/commonmark/cmark/pull/232\n* https://github.com/github/cmark-gfm/blob/c32ef78bae851cb83b7ad52d0fbff880acdcd44a/test/pathological_tests.py#L63-L65\n* https://github.com/github/cmark-gfm/blob/c32ef78bae851cb83b7ad52d0fbff880acdcd44a/test/pathological_tests.py#L87-L89",
   "affected": [

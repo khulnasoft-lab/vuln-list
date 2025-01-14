@@ -8,7 +8,8 @@
     "RUSTSEC-2023-0071"
   ],
   "related": [
-    "CGA-g8r9-vv23-f4jf"
+    "CGA-g8r9-vv23-f4jf",
+    "CVE-2023-49092"
   ],
   "summary": "Marvin Attack: potential key recovery through timing sidechannels",
   "details": "### Impact\nDue to a non-constant-time implementation, information about the private key is leaked through timing information which is observable over the network. An attacker may be able to use that information to recover the key.\n\n### Patches\nNo patch is yet available, however work is underway to migrate to a fully constant-time implementation.\n\n### Workarounds\nThe only currently available workaround is to avoid using the `rsa` crate in settings where attackers are able to observe timing information, e.g. local use on a non-compromised computer is fine.\n\n### References\nThis vulnerability was discovered as part of the \"Marvin Attack\", which revealed several implementations of RSA including OpenSSL had not properly mitigated timing sidechannel attacks.\n\n- https://rustsec.org/advisories/RUSTSEC-2023-0071.html\n- https://people.redhat.com/~hkario/marvin/\n- https://github.com/RustCrypto/RSA/issues/19",

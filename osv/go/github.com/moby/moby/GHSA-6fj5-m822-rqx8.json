@@ -6,7 +6,8 @@
     "CVE-2021-21285"
   ],
   "related": [
-    "CGA-f36g-7w73-75hj"
+    "CGA-f36g-7w73-75hj",
+    "CVE-2021-21285"
   ],
   "summary": "moby docker daemon crash during image pull of malicious image",
   "details": "### Impact\n\nPulling an intentionally malformed Docker image manifest crashes the `dockerd` daemon.\n\n### Patches\n\nVersions 20.10.3 and 19.03.15 contain patches that prevent the daemon from crashing.\n\n### Credits\n\nMaintainers would like to thank Josh Larsen, Ian Coldwater, Duffie Cooley, Rory McCune for working on the vulnerability and Brad Geesaman for responsibly disclosing it to security@docker.com.",

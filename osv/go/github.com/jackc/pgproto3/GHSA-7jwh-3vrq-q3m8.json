@@ -38,7 +38,8 @@
     "CGA-vjr4-m4p2-r6pp",
     "CGA-vw3w-3c4g-m472",
     "CGA-wcch-896m-4q45",
-    "CGA-x2fj-66vh-qgrc"
+    "CGA-x2fj-66vh-qgrc",
+    "CVE-2024-27304"
   ],
   "summary": "pgproto3 SQL Injection via Protocol Message Size Overflow",
   "details": "### Impact\n\nSQL injection can occur if an attacker can cause a single query or bind message to exceed 4 GB in size. An integer overflow in the calculated message size can cause the one large message to be sent as multiple messages under the attacker's control.\n\n### Patches\n\nThe problem is resolved in v2.3.3\n\n### Workarounds\n\nReject user input large enough to cause a single query or bind message to exceed 4 GB in size.\n",

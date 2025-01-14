@@ -6,6 +6,9 @@
     "CVE-2022-24825",
     "GO-2022-0429"
   ],
+  "related": [
+    "CVE-2022-24825"
+  ],
   "summary": "Smokescreen SSRF via deny list bypass",
   "details": "The primary use case for Smokescreen is to prevent server-side request forgery (SSRF) attacks in which external attackers leverage the behavior of applications to connect to or scan internal infrastructure.\n\nSmokescreen also offers an option to deny access to additional (e.g., external) URLs by way of a deny list. There was an issue in Smokescreen that made it possible to bypass the deny list feature by appending a dot to the end of user-supplied URLs, or by providing input in a different letter case.\n\n### Recommendation\nUpgrade Smokescreen to version 0.0.3 or later.\n\n### Acknowledgements\nThanks to [Grzegorz Niedziela](https://twitter.com/gregxsunday) for reporting the issue.\n\n### For more information\nEmail us at security@stripe.com",
   "affected": [

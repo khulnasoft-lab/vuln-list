@@ -6,6 +6,9 @@
     "CVE-2022-3616",
     "GO-2022-1089"
   ],
+  "related": [
+    "CVE-2022-3616"
+  ],
   "summary": "OctoRPKI crashes when max iterations is reached",
   "details": "### Impact\nAttackers can create long chains of CAs that would lead to OctoRPKI exceeding its max iterations parameter. In consequence it would cause the program to crash, preventing it from finishing the validation and leading to a denial of service. Credits to Donika Mirdita and Haya Shulman - Fraunhofer SIT, ATHENE, who discovered and reported this vulnerability.\n\n### Specific Go Packages Affected\ngithub.com/cloudflare/cfrpki/cmd/octorpki\n\n### Patches\nThis issue is fixed in v1.4.4\n\n### Workarounds\nNone.",
   "affected": [

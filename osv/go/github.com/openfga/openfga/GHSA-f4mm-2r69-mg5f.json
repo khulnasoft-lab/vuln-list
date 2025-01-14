@@ -6,6 +6,9 @@
     "CVE-2022-39342",
     "GO-2022-1081"
   ],
+  "related": [
+    "CVE-2022-39342"
+  ],
   "summary": "OpenFGA Authorization Bypass",
   "details": "### Overview\nDuring our internal security assessment, it was discovered that OpenFGA versions `v0.2.3` and prior are vulnerable to authorization bypass under certain conditions.\n\n### Am I Affected?\nYou are affected by this vulnerability if you are using `openfga/openfga` version `v0.2.3` or prior, and your model has a relation defined as a tupleset (the right hand side of a ‘from’ statement) that involves anything other than a direct relationship (e.g. ‘as self’)\n\n### How to fix that?\nUpgrade to version `v0.2.4`.\n\n### Backward Compatibility\nThis update is not backward compatible.\nAny model involving rewritten tupleset relations will no longer be acceptable and has to be modified.\n  ",
   "affected": [

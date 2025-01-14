@@ -7,6 +7,9 @@
     "CVE-2022-35929",
     "GO-2022-0758"
   ],
+  "related": [
+    "CVE-2022-35929"
+  ],
   "summary": "cosign's `cosign verify-attestaton  --type` can report a false positive if any attestation exists",
   "details": "`cosign verify-attestation` used with the `--type` flag will report a false positive verification when:\n\n- There is at least one attestation with a valid signature\n- There are NO attestations of the type being verified (--type defaults to \"custom\")\n\nThis can happen when signing with a standard keypair and with \"keyless\" signing with Fulcio. Users should upgrade to cosign version 1.10.1 or greater for a patch. Currently the only workaround is to upgrade.",
   "affected": [

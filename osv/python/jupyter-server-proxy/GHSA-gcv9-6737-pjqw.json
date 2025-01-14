@@ -6,6 +6,9 @@
     "CVE-2022-21697",
     "PYSEC-2022-16"
   ],
+  "related": [
+    "CVE-2022-21697"
+  ],
   "summary": "SSRF vulnerability in jupyter-server-proxy",
   "details": "### Impact\n\n**What kind of vulnerability is it?**  Server-Side Request Forgery ( SSRF )\n\n**Who is impacted?** Any user deploying Jupyter Server or Notebook with jupyter-proxy-server extension enabled. \n\nA lack of input validation allowed authenticated clients to proxy requests to other hosts, bypassing the `allowed_hosts` check. Because authentication is required, which already grants permissions to make the same requests via kernel or terminal execution, this is considered low to moderate severity.\n\n\n### Patches\n\n_Has the problem been patched? What versions should users upgrade to?_\n\nUpgrade to 3.2.1, or apply the patch https://github.com/jupyterhub/jupyter-server-proxy/compare/v3.2.0...v3.2.1.patch\n\n### For more information\n\nIf you have any questions or comments about this advisory:\n\n* Open a topic [on our forum](https://discourse.jupyter.org)\n* Email the Jupyter security team at [security@ipython.org](mailto:security@ipython.org)\n",
   "affected": [

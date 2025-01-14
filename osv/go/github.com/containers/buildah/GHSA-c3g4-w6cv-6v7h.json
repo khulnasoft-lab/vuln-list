@@ -7,7 +7,8 @@
     "GO-2022-0417"
   ],
   "related": [
-    "CGA-gpr2-42c3-43rf"
+    "CGA-gpr2-42c3-43rf",
+    "CVE-2022-27651"
   ],
   "summary": "Non-empty default inheritable capabilities for linux container in Buildah",
   "details": "A bug was found in Buildah where containers were created with non-empty inheritable Linux process capabilities, creating an atypical Linux environment and enabling programs with inheritable file capabilities to elevate those capabilities to the permitted set during execve(2).\n\nThis bug did not affect the container security sandbox as the inheritable set never contained more capabilities than were included in the container's bounding set.\n",

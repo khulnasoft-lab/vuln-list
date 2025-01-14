@@ -6,6 +6,9 @@
     "CVE-2023-32303",
     "PYSEC-2023-71"
   ],
+  "related": [
+    "CVE-2023-32303"
+  ],
   "summary": "Planet's secret file is created with excessive permissions",
   "details": "### Impact\nThe secret file stores the user's Planet API authentication information. It should only be accessible by the user, but its permissions allowed the user's group and non-group to read the file as well. \n\n### Validation\nCheck the permissions on the secret file with `ls -l ~/.planet.json` and ensure that they read as `-rw-------`\n\n### Patches\n[d71415a8](https://github.com/planetlabs/planet-client-python/commit/d71415a83119c5e89d7b80d5f940d162376ee3b7)\n\n### Workarounds\nSet the secret file permissions to only user read/write by hand:\n```\nchmod 600 ~/.planet.json\n```\n",
   "affected": [

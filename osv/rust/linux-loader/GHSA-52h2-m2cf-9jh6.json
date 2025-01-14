@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2022-23523"
   ],
+  "related": [
+    "CVE-2022-23523"
+  ],
   "summary": "linux-loader reading beyond EOF could lead to infinite loop",
   "details": "### Impact\nThe linux-loader crate used the offsets and sizes provided in the ELF headers to determine the offsets to read from. If those offsets pointed beyond the end of the file this could lead to an infinite loop. Virtual Machine Monitors using the `linux-loader` crate could enter an infinite loop if the ELF header of the kernel they are loading was modified in a malicious manner.\n\n### Patches\nThe issue has been addressed in 0.8.1\n\n### Workarounds\nThe issue can be mitigated by ensuring that only trusted kernel images are loaded or by verifying that the headers to not point beyond the end of the file.\n\n### References\n\nSee: https://github.com/rust-vmm/linux-loader/pull/125\n",
   "affected": [

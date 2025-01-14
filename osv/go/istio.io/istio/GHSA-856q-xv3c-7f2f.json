@@ -18,7 +18,8 @@
     "CGA-r2mp-7vjh-r9fp",
     "CGA-r6hf-wcv2-fjcc",
     "CGA-r7qv-9q9v-fjh3",
-    "CGA-w3mw-45jm-rmrc"
+    "CGA-w3mw-45jm-rmrc",
+    "CVE-2022-23635"
   ],
   "summary": "Unauthenticated control plane denial of service attack in Istio",
   "details": "### Impact\nThe Istio control plane, `istiod`, is vulnerable to a request processing error, allowing a malicious attacker that sends a specially crafted message which results in the control plane crashing. This endpoint is served over TLS port 15012, but does not require any authentication from the attacker.\n\nFor simple installations, Istiod is typically only reachable from within the cluster, limiting the blast radius. However, for some deployments, especially [multicluster](https://istio.io/latest/docs/setup/install/multicluster/primary-remote/) topologies, this port is exposed over the public internet.\n\n### Patches\n\n- Istio 1.13.1 and above\n- Istio 1.12.4 and above\n- Istio 1.11.7 and above\n\n### Workarounds\nThere are no effective workarounds, beyond upgrading. Limiting network access to Istiod to the minimal set of clients can help lessen the scope of the vulnerability to some extent.\n\n### References\nMore details can be found in the [Istio Security Bulletin](https://istio.io/latest/news/security/istio-security-2022-003)\n\n### For more information\nIf you have any questions or comments about this advisory, please email us at [istio-security-vulnerability-reports@googlegroups.com](mailto:istio-security-vulnerability-reports@googlegroups.com)\n",
