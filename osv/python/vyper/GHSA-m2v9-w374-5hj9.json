@@ -1,9 +1,13 @@
 {
   "id": "GHSA-m2v9-w374-5hj9",
-  "modified": "2024-04-25T20:13:45.347154Z",
+  "modified": "2025-01-14T05:57:10.891778Z",
   "published": "2024-04-25T19:50:35Z",
   "aliases": [
-    "CVE-2024-32648"
+    "CVE-2024-32648",
+    "PYSEC-2024-163"
+  ],
+  "related": [
+    "PYSEC-2024-163"
   ],
   "summary": "vyper default functions don't respect nonreentrancy keys",
   "details": "### Summary\nPrior to v0.3.0, `__default__()` functions did not respect the `@nonreentrancy` decorator and the lock was not emitted. This is a known bug and was already visible in the issue tracker (https://github.com/vyperlang/vyper/issues/2455), but it is being re-issued as an advisory so that tools relying on the advisory publication list can incorporate it into their searches.\n\nA contract search was additionally performed and no vulnerable contracts were found in production.\n\n### PoC\n```vyper\n@external\n@payable\n@nonreentrant(\"default\")\ndef __default__():\n    pass\n```\n\nafter codegen:\n```\n[seq,\n  [if, [lt, calldatasize, 4], [goto, fallback]],\n  [mstore, 28, [calldataload, 0]],\n  [with, _func_sig, [mload, 0], seq],\n  [seq_unchecked,\n    [label, fallback],\n    [seq,\n      pass,\n      # Line 5\n      pass,\n      pass,\n      # Line 4\n      stop]]],\n```\n\n### Impact\nNo vulnerable production contracts were found. Additionally, using a lock on a `default` function is a very sparsely used pattern. As such, the impact is `low`.\n",
