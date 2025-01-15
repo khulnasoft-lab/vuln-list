@@ -36,12 +36,12 @@
         "Value": "CVE-2024-55892"
       }
     ],
-    "Description": "### Problem\nApplications that use `TYPO3\\CMS\\Core\\Http\\Uri` to parse externally provided URLs (e.g., via a query parameter) and validate the host of the parsed URL may be vulnerable to open redirect or SSRF attacks if the URL is used after passing the validation checks.\n\n### Solution\nUpdate to TYPO3 versions 9.5.49 ELTS, 10.4.48 ELTS, 11.5.42 ELTS, 12.4.25 LTS, 13.4.3 LTS that fix the problem described.\n\n### Credits\nThanks to Sam Mush who reported this issue and to TYPO3 core \u0026 security team member Benjamin Franzke who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2025-002](https://typo3.org/security/advisory/typo3-core-sa-2025-002)\n",
+    "Description": "### Problem\nApplications that use `TYPO3\\CMS\\Core\\Http\\Uri` to parse externally provided URLs (e.g., via a query parameter) and validate the host of the parsed URL may be vulnerable to open redirect or SSRF attacks if the URL is used after passing the validation checks.\n\n### Solution\nUpdate to TYPO3 versions 9.5.49 ELTS, 10.4.48 ELTS, 11.5.42 ELTS, 12.4.25 LTS, 13.4.3 LTS that fix the problem described.\n\n### Credits\nThanks to Sam Mush and Christian Eßl who reported this issue and to TYPO3 core \u0026 security team member Benjamin Franzke who fixed the issue.\n\n### References\n* [TYPO3-CORE-SA-2025-002](https://typo3.org/security/advisory/typo3-core-sa-2025-002)\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-14T15:24:20Z",
     "Severity": "MODERATE",
     "Summary": "TYPO3 Potential Open Redirect via Parsing Differences",
-    "UpdatedAt": "2025-01-14T22:00:36Z",
+    "UpdatedAt": "2025-01-15T15:26:56Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.8,
