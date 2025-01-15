@@ -1,9 +1,9 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-02-18T02:18:21Z",
+  "UpdatedAt": "2025-01-15T17:26:20Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.jboss.resteasy:resteasy-undertow"
+    "Name": "org.jboss.resteasy:resteasy-multipart-provider"
   },
   "Advisory": {
     "DatabaseId": 203672,
@@ -20,7 +20,16 @@
         "Url": "https://issues.redhat.com/browse/RESTEASY-3286"
       },
       {
-        "Url": "https://security.netapp.com/advisory/ntap-20230427-0001/"
+        "Url": "https://github.com/orgs/resteasy/discussions/3415"
+      },
+      {
+        "Url": "https://github.com/orgs/resteasy/discussions/3504"
+      },
+      {
+        "Url": "https://github.com/orgs/resteasy/discussions/3506"
+      },
+      {
+        "Url": "https://security.netapp.com/advisory/ntap-20230427-0001"
       },
       {
         "Url": "https://github.com/advisories/GHSA-jrmh-v64j-mjm9"
@@ -41,7 +50,7 @@
     "PublishedAt": "2023-02-18T00:31:59Z",
     "Severity": "MODERATE",
     "Summary": "Insecure Temporary File in RESTEasy",
-    "UpdatedAt": "2023-04-27T15:35:54Z",
+    "UpdatedAt": "2025-01-15T17:26:20Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -51,9 +60,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "6.2.3.Final"
       },
-      "VulnerableVersionRange": "\u003c= 6.2.2.Final"
+      "VulnerableVersionRange": "\u003e= 6.0.0.Beta1, \u003c 6.2.3.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.0.6.Final"
+      },
+      "VulnerableVersionRange": "\u003e= 5.0.0.Alpha1, \u003c 5.0.6.Final"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "4.7.8.Final"
+      },
+      "VulnerableVersionRange": "\u003c 4.7.8.Final"
     }
   ]
 }
