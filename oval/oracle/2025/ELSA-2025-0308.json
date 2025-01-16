@@ -1,6 +1,6 @@
 {
-  "Title": "ELSA-2025-0308: fence-agents security update (IMPORTANT)",
-  "Description": "[4.10.0-76.4]\n- bundled jinja2: fix CVE-2024-56201 and CVE-2024-56326\n  Resolves: RHEL-72070, RHEL-72063\n\n[4.10.0-76.1]\n- fence_scsi: preempt clears all devices on the mpath device, so only\n  run it for the first device\n  Resolves: RHEL-59882",
+  "Title": "ELSA-2025-0308:  fence-agents security update (IMPORTANT)",
+  "Description": "[4.10.0-76.4]\n- bundled jinja2: fix CVE-2024-56201 and CVE-2024-56326\n  Resolves: RHEL-72070, RHEL-72063",
   "Platform": [
     "Oracle Linux 9"
   ],
@@ -452,6 +452,66 @@
                         "Comment": "fence-agents-wti is signed with the Oracle Linux 9 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-common is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-common is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-ibm-powervs is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-ibm-powervs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-ibm-vpc is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-ibm-vpc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-kubevirt is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-kubevirt is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-virsh is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 9 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -888,6 +948,162 @@
                         "Comment": "fence-agents-wti is signed with the Oracle Linux 9 key"
                       }
                     ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-common is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-common is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-compute is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-compute is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-ibm-powervs is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-ibm-powervs is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-ibm-vpc is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-ibm-vpc is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-kubevirt is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-kubevirt is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-agents-virsh is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-agents-virsh is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virt is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virt is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd-cpg is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd-cpg is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd-libvirt is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd-libvirt is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd-multicast is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd-multicast is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd-serial is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd-serial is signed with the Oracle Linux 9 key"
+                      }
+                    ]
+                  },
+                  {
+                    "Operator": "AND",
+                    "Criterias": null,
+                    "Criterions": [
+                      {
+                        "Comment": "fence-virtd-tcp is earlier than 0:4.10.0-76.el9_5.4"
+                      },
+                      {
+                        "Comment": "fence-virtd-tcp is signed with the Oracle Linux 9 key"
+                      }
+                    ]
                   }
                 ],
                 "Criterions": null
@@ -923,6 +1139,6 @@
     }
   ],
   "Issued": {
-    "Date": "2025-01-15"
+    "Date": "2025-01-14"
   }
 }
