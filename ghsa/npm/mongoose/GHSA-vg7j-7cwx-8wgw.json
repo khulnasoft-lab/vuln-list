@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2025-01-16T14:02:23Z",
+  "UpdatedAt": "2025-01-17T18:02:41Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "mongoose"
@@ -26,6 +26,24 @@
         "Url": "https://www.npmjs.com/package/mongoose?activeTab=versions"
       },
       {
+        "Url": "https://github.com/Automattic/mongoose/compare/6.13.5...6.13.6"
+      },
+      {
+        "Url": "https://github.com/Automattic/mongoose/compare/7.8.3...7.8.4"
+      },
+      {
+        "Url": "https://github.com/Automattic/mongoose/compare/8.9.4...8.9.5"
+      },
+      {
+        "Url": "https://github.com/Automattic/mongoose/releases/tag/6.13.6"
+      },
+      {
+        "Url": "https://github.com/Automattic/mongoose/releases/tag/7.8.4"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-m7xq-9374-9rvx"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-vg7j-7cwx-8wgw"
       }
     ],
@@ -39,12 +57,12 @@
         "Value": "CVE-2025-23061"
       }
     ],
-    "Description": "Mongoose before 8.9.5 can improperly use a nested $where filter with a populate() match, leading to search injection. NOTE: this issue exists because of an incomplete fix for CVE-2024-53900.",
+    "Description": "Mongoose versions prior to 8.9.5, 7.8.4, and 6.13.6 are vulnerable to improper use of the `$where` operator. This vulnerability arises from the ability of the `$where` clause to execute arbitrary JavaScript code in MongoDB queries, potentially leading to code injection attacks and unauthorized access or manipulation of database data.\n\nNOTE: this issue exists because of an incomplete fix for CVE-2024-53900.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-15T06:30:49Z",
     "Severity": "CRITICAL",
     "Summary": "Mongoose search injection vulnerability",
-    "UpdatedAt": "2025-01-16T14:02:23Z",
+    "UpdatedAt": "2025-01-17T18:02:41Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,
@@ -54,9 +72,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "6.13.6"
+      },
+      "VulnerableVersionRange": "\u003c 6.13.6"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "7.8.4"
+      },
+      "VulnerableVersionRange": "\u003e= 7.0.0-rc0, \u003c 7.8.4"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "8.9.5"
       },
-      "VulnerableVersionRange": "\u003c 8.9.5"
+      "VulnerableVersionRange": "\u003e= 8.0.0-rc0, \u003c 8.9.5"
     }
   ]
 }
