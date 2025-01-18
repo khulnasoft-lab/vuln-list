@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package rsync is earlier than 3.4.1-1, affected by CVE-2024-12085",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:55649000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:55649001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:55649002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package packer is earlier than 1.9.5-7, affected by CVE-2025-21613",
       "ID": "oval:com.microsoft.cbl-mariner:tst:55094000",
       "Version": "0",
