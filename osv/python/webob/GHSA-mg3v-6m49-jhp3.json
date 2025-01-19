@@ -1,9 +1,10 @@
 {
   "id": "GHSA-mg3v-6m49-jhp3",
-  "modified": "2024-08-14T22:20:48.704572Z",
+  "modified": "2025-01-19T04:56:55.038129Z",
   "published": "2024-08-14T17:48:06Z",
   "aliases": [
-    "CVE-2024-42353"
+    "CVE-2024-42353",
+    "PYSEC-2024-188"
   ],
   "summary": "WebOb's location header normalization during redirect leads to open redirect",
   "details": "### Impact\n\nWhen WebOb normalizes the HTTP Location header to include the request hostname, it does so by parsing the URL that the user is to be redirected to with Python's urlparse, and joining it to the base URL. `urlparse` however treats a `//` at the start of a string as a URI without a scheme, and then treats the next part as the hostname. `urljoin` will then use that hostname from the second part as the hostname replacing the original one from the request.\n\n```\n\u003e\u003e\u003e parse.urlparse(\"//example.com/test/path\")\nParseResult(scheme='', netloc='example.com', path='/test/path', params='', query='', fragment='')\n```\n\nWebOb uses `urljoin` to take the request URI and joining the redirect location, so assuming the request URI is: `https://example.org//example.com/some/path`, and the URL to redirect to (for example by adding a slash automatically) is `//example.com/some/path/` that gets turned by `urljoin` into:\n\n```\n\u003e\u003e\u003e parse.urljoin(\"https://example.org//attacker.com/some/path\", \"//attacker.com/some/path/\")\n'https://attacker.com/some/path/'\n```\n\nWhich redirects from `example.org` where we want the user to stay to `attacker.com`\n\n\n### Patches\n\nThis issue is patched in WebOb 1.8.8\n\nOlder versions of WebOb continue to be vulnerable to this issue, and should be avoided.\n\n### Workarounds\n\nAny use of the `Response` class that includes a `location` can be rewritten to make sure to always pass a full URI that includes the hostname to redirect the user to.\n\n### Thanks\n\n- Sara Gao\n\nThis issue was reported via the [Pylons Project Security List](mailto:pylons-project-security@googlegroups.com)\n",

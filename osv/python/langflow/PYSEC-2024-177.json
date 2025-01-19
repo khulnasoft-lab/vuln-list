@@ -1,12 +1,11 @@
 {
-  "id": "GHSA-qg33-x2c5-6p44",
+  "id": "PYSEC-2024-177",
   "modified": "2025-01-19T02:41:56.360444Z",
-  "published": "2024-06-10T21:30:38Z",
+  "published": "2024-06-10T20:15:15Z",
   "aliases": [
     "CVE-2024-37014",
-    "PYSEC-2024-177"
+    "GHSA-qg33-x2c5-6p44"
   ],
-  "summary": "Langflow remote code execution vulnerability",
   "details": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
   "affected": [
     {
@@ -23,7 +22,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "0.6.19"
+              "fixed": "1.0.0a3"
             }
           ]
         }
@@ -190,25 +189,20 @@
         "0.6.7a3",
         "0.6.7a5",
         "0.6.8",
-        "0.6.9"
+        "0.6.9",
+        "1.0.0a0",
+        "1.0.0a1",
+        "1.0.0a2"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-qg33-x2c5-6p44/GHSA-qg33-x2c5-6p44.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/langflow/PYSEC-2024-177.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-37014"
-    },
-    {
-      "type": "WEB",
+      "type": "REPORT",
       "url": "https://github.com/langflow-ai/langflow/issues/1973"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/langflow-ai/langflow"
     }
   ]
 }

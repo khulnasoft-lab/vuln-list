@@ -1,12 +1,11 @@
 {
-  "id": "GHSA-45rp-q25w-4426",
+  "id": "PYSEC-2024-180",
   "modified": "2025-01-19T02:41:53.177843Z",
-  "published": "2024-08-23T15:30:34Z",
+  "published": "2024-08-23T15:15:17Z",
   "aliases": [
     "CVE-2024-8113",
-    "PYSEC-2024-180"
+    "GHSA-45rp-q25w-4426"
   ],
-  "summary": "pretix Stored Cross-site Scripting vulnerability",
   "details": "Stored XSS in organizer and event settings of pretix up to 2024.7.0 allows malicious event organizers to inject HTML tags into e-mail previews on settings page. The default Content Security Policy of pretix prevents execution of attacker-provided scripts, making exploitation unlikely. However, combined with a CSP bypass (which is not currently known) the vulnerability could be used to impersonate other organizers or staff users.",
   "affected": [
     {
@@ -176,26 +175,14 @@
         "4.9.1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-45rp-q25w-4426/GHSA-45rp-q25w-4426.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/pretix/PYSEC-2024-180.yaml"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-8113"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/pretix/pretix/commit/0f44a2ad4e170882dbe6b9d95dba6c36e4e181cf"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/pretix/pretix"
-    },
-    {
-      "type": "WEB",
-      "url": "https://pretix.eu/about/en/blog/20240823-release-2024-7-1"
+      "url": "https://pretix.eu/about/en/blog/20240823-release-2024-7-1/"
     }
   ]
 }

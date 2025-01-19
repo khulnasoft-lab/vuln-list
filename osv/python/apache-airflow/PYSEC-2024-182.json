@@ -1,17 +1,13 @@
 {
-  "id": "GHSA-w7cp-g8v7-r54m",
-  "modified": "2025-01-19T04:57:03.218076Z",
-  "published": "2024-08-21T18:31:27Z",
+  "id": "PYSEC-2024-182",
+  "modified": "2025-01-19T04:56:46.547863Z",
+  "published": "2024-11-15T09:15:14Z",
   "aliases": [
-    "BIT-airflow-2024-41937",
-    "CVE-2024-41937",
-    "PYSEC-2024-181"
+    "BIT-airflow-2024-45784",
+    "CVE-2024-45784",
+    "GHSA-46c3-5xc5-wwhv"
   ],
-  "related": [
-    "CGA-6h8r-33x9-cmw8"
-  ],
-  "summary": "Apache Airflow Cross-site Scripting Vulnerability",
-  "details": "Apache Airflow, versions before 2.10.0, have a vulnerability that allows the developer of a malicious provider to execute a cross-site scripting attack when clicking on a provider documentation link. This would require the provider to be installed on the web server and the user to click the provider link.\nUsers should upgrade to 2.10.0 or later, which fixes this vulnerability.",
+  "details": "Apache Airflow versions before 2.10.3 contain a vulnerability that could expose sensitive configuration variables in task logs. This vulnerability allows DAG authors to unintentionally or intentionally log sensitive configuration variables. Unauthorized users could access these logs, potentially exposing critical data that could be exploited to compromise the security of the Airflow deployment. In version 2.10.3, secrets are now masked in task logs to prevent sensitive configuration variables from being exposed in the logging output. Users should upgrade to Airflow 2.10.3 or the latest version to eliminate this vulnerability. If you suspect that DAG authors could have logged the secret values to the logs and that your logs are not additionally protected, it is also recommended that you update those secrets.",
   "affected": [
     {
       "package": {
@@ -27,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "2.10.0"
+              "fixed": "2.10.3"
             }
           ]
         }
@@ -118,9 +114,16 @@
         "2.1.4",
         "2.1.4rc1",
         "2.1.4rc2",
+        "2.10.0",
         "2.10.0b1",
         "2.10.0b2",
         "2.10.0rc1",
+        "2.10.1",
+        "2.10.1rc1",
+        "2.10.2",
+        "2.10.2rc1",
+        "2.10.3rc1",
+        "2.10.3rc2",
         "2.2.0",
         "2.2.0b1",
         "2.2.0b2",
@@ -235,30 +238,22 @@
         "2.9.3rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/08/GHSA-w7cp-g8v7-r54m/GHSA-w7cp-g8v7-r54m.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/apache-airflow/PYSEC-2024-182.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-41937"
+      "type": "WEB",
+      "url": "https://github.com/apache/airflow/pull/43040"
     },
     {
       "type": "WEB",
-      "url": "https://github.com/apache/airflow/pull/40933"
+      "url": "https://lists.apache.org/thread/k2jm55jztlbmk4zrlh10syvq3n57hl4h"
     },
     {
       "type": "WEB",
-      "url": "https://github.com/apache/airflow/commit/f1852c2ab28b155e196569780013fbb61a4a1f98"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/apache/airflow"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.apache.org/thread/lwlmgg6hqfmkpvw5py4w53hxyl37jl6d"
+      "url": "http://www.openwall.com/lists/oss-security/2024/11/15/1"
     }
   ]
 }

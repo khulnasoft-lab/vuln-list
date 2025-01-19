@@ -1,13 +1,12 @@
 {
-  "id": "GHSA-5rfv-66g4-jr8h",
+  "id": "PYSEC-2024-186",
   "modified": "2025-01-19T04:56:54.776821Z",
-  "published": "2024-09-30T17:14:00Z",
+  "published": "2024-09-30T16:15:09Z",
   "aliases": [
     "CVE-2024-47532",
-    "PYSEC-2024-186"
+    "GHSA-5rfv-66g4-jr8h"
   ],
-  "summary": "RestrictedPython information leakage via `AttributeError.obj` and the `string` module",
-  "details": "### Impact\nA user can gain access to protected (and potentially sensible) information indirectly via `AttributeError.obj` and the `string` module.\n\n### Patches\nThe problem will be fixed in version 7.3.\n\n\n### Workarounds\nIf the application does not require access to the module `string`, it can remove it from `RestrictedPython.Utilities.utility_builtins`  or otherwise do not make it available in the restricted execution environment.\n",
+  "details": "RestrictedPython is a restricted execution environment for Python to run untrusted code. A user can gain access to protected (and potentially sensible) information indirectly via AttributeError.obj and the string module. The problem will be fixed in version 7.3. As a workaround, If the application does not require access to the module string, it can remove it from RestrictedPython.Utilities.utility_builtins or otherwise do not make it available in the restricted execution environment.",
   "affected": [
     {
       "package": {
@@ -16,6 +15,18 @@
         "purl": "pkg:pypi/restrictedpython"
       },
       "ranges": [
+        {
+          "type": "GIT",
+          "repo": "https://github.com/zopefoundation/restrictedpython",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "d701cc36cccac36b21fa200f1f2d1945a9a215e6"
+            }
+          ]
+        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -68,26 +79,18 @@
         "7.2a1.dev0"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-5rfv-66g4-jr8h/GHSA-5rfv-66g4-jr8h.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/restrictedpython/PYSEC-2024-186.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
+      "type": "EVIDENCE",
       "url": "https://github.com/zopefoundation/RestrictedPython/security/advisories/GHSA-5rfv-66g4-jr8h"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47532"
-    },
-    {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/zopefoundation/RestrictedPython/commit/d701cc36cccac36b21fa200f1f2d1945a9a215e6"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/zopefoundation/RestrictedPython"
     }
   ]
 }
