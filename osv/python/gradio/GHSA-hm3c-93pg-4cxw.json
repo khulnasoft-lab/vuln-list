@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hm3c-93pg-4cxw",
-  "modified": "2024-10-14T18:27:19.206780Z",
+  "modified": "2025-01-19T16:57:00.653197Z",
   "published": "2024-10-10T22:02:30Z",
   "aliases": [
-    "CVE-2024-47168"
+    "CVE-2024-47168",
+    "PYSEC-2024-198"
   ],
   "summary": "In Gradio, the `enable_monitoring` flag set to `False` does not disable monitoring",
   "details": "### Impact\nWhat kind of vulnerability is it? Who is impacted?\n\nThis vulnerability involves data exposure due to the enable_monitoring flag not properly disabling monitoring when set to False. Even when monitoring is supposedly disabled, an attacker or unauthorized user can still access the monitoring dashboard by directly requesting the /monitoring endpoint. This means that sensitive application analytics may still be exposed, particularly in environments where monitoring is expected to be disabled. Users who set enable_monitoring=False to prevent unauthorized access to monitoring data are impacted.\n\n### Patches\nYes, please upgrade to gradio\u003e=4.44 to address this issue.\n\n",

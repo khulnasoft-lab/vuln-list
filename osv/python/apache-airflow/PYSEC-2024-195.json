@@ -1,16 +1,12 @@
 {
-  "id": "GHSA-9xpj-62mm-24h2",
+  "id": "PYSEC-2024-195",
   "modified": "2025-01-19T16:57:02.728413Z",
-  "published": "2024-06-14T09:31:17Z",
+  "published": "2024-06-14T09:15:09Z",
   "aliases": [
     "BIT-airflow-2024-25142",
     "CVE-2024-25142",
-    "PYSEC-2024-195"
+    "GHSA-9xpj-62mm-24h2"
   ],
-  "related": [
-    "CGA-33w6-99cx-72gx"
-  ],
-  "summary": "Apache Airflow does not return the \"Cache-Control\" header for dynamic content",
   "details": "Use of Web Browser Cache Containing Sensitive Information vulnerability in Apache Airflow. \n\nAirflow did not return \"Cache-Control\" header for dynamic content, which in case of some browsers could result in potentially storing sensitive data in local cache of the browser.\n\nThis issue affects Apache Airflow: before 2.9.2.\n\nUsers are recommended to upgrade to version 2.9.2, which fixes the issue.\n\n",
   "affected": [
     {
@@ -229,30 +225,22 @@
         "2.9.2rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-9xpj-62mm-24h2/GHSA-9xpj-62mm-24h2.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/apache-airflow/PYSEC-2024-195.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-25142"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/apache/airflow/pull/39550"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/apache/airflow/commit/94eb647de692a4d9555b02dce85974da5d4c04e3"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/apache/airflow"
-    },
-    {
-      "type": "WEB",
+      "type": "ARTICLE",
       "url": "https://lists.apache.org/thread/cg1j28lk0fhzthk0of1g7vy7p2n1j7nr"
+    },
+    {
+      "type": "WEB",
+      "url": "http://www.openwall.com/lists/oss-security/2024/06/13/1"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/apache/airflow/pull/39550"
     }
   ]
 }

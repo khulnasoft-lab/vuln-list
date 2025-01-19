@@ -1,13 +1,12 @@
 {
-  "id": "GHSA-37qc-qgx6-9xjv",
+  "id": "PYSEC-2024-197",
   "modified": "2025-01-19T16:57:03.769875Z",
-  "published": "2024-10-10T21:36:43Z",
+  "published": "2024-10-10T22:15:10Z",
   "aliases": [
     "CVE-2024-47166",
-    "PYSEC-2024-197"
+    "GHSA-37qc-qgx6-9xjv"
   ],
-  "summary": "Gradio has a one-level read path traversal in `/custom_component`",
-  "details": "### Impact  \n**What kind of vulnerability is it? Who is impacted?**\n\nThis vulnerability involves a **one-level read path traversal** in the `/custom_component` endpoint. Attackers can exploit this flaw to access and leak source code from custom Gradio components by manipulating the file path in the request. Although the traversal is limited to a single directory level, it could expose proprietary or sensitive code that developers intended to keep private. This impacts users who have developed custom Gradio components and are hosting them on publicly accessible servers.\n\n### Patches  \nYes, please upgrade to `gradio\u003e=4.44` to address this issue.\n\n### Workarounds  \n**Is there a way for users to fix or remediate the vulnerability without upgrading?**\n\nAs a workaround, developers can sanitize the file paths and ensure that components are not stored in publicly accessible directories.",
+  "details": "Gradio is an open-source Python package designed for quick prototyping. This vulnerability involves a **one-level read path traversal** in the `/custom_component` endpoint. Attackers can exploit this flaw to access and leak source code from custom Gradio components by manipulating the file path in the request. Although the traversal is limited to a single directory level, it could expose proprietary or sensitive code that developers intended to keep private. This impacts users who have developed custom Gradio components and are hosting them on publicly accessible servers. Users are advised to upgrade to `gradio\u003e=4.44` to address this issue. As a workaround, developers can sanitize the file paths and ensure that components are not stored in publicly accessible directories.",
   "affected": [
     {
       "package": {
@@ -472,18 +471,10 @@
         "3.44.4",
         "3.45.0",
         "3.45.0b0",
-        "3.45.0b1",
         "3.45.0b10",
         "3.45.0b11",
         "3.45.0b12",
         "3.45.0b13",
-        "3.45.0b2",
-        "3.45.0b3",
-        "3.45.0b4",
-        "3.45.0b5",
-        "3.45.0b6",
-        "3.45.0b7",
-        "3.45.0b8",
         "3.45.0b9",
         "3.45.1",
         "3.45.2",
@@ -584,22 +575,14 @@
         "4.9.1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-37qc-qgx6-9xjv/GHSA-37qc-qgx6-9xjv.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/gradio/PYSEC-2024-197.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "https://github.com/gradio-app/gradio/security/advisories/GHSA-37qc-qgx6-9xjv"
-    },
-    {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47166"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/gradio-app/gradio"
+      "url": "https://github.com/gradio-app/gradio/security/advisories/GHSA-37qc-qgx6-9xjv"
     }
   ]
 }
