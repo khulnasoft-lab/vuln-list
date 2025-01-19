@@ -1,18 +1,15 @@
 {
-  "id": "GHSA-hrw6-wg82-cm62",
+  "id": "PYSEC-2024-165",
   "modified": "2025-01-18T19:56:56.813273Z",
-  "published": "2024-06-06T21:26:53Z",
+  "published": "2024-06-06T16:15:11Z",
   "aliases": [
     "CVE-2024-35178",
-    "PYSEC-2024-165"
+    "GHSA-hrw6-wg82-cm62"
   ],
   "related": [
-    "CGA-5jx5-7fvm-2phw",
-    "CVE-2024-35178",
-    "PYSEC-2024-165"
+    "GHSA-hrw6-wg82-cm62"
   ],
-  "summary": "Jupyter server on Windows discloses Windows user password hash",
-  "details": "### Summary\n\nJupyter Server on Windows has a vulnerability that lets unauthenticated attackers leak the NTLMv2 password hash of the Windows user running the Jupyter server. An attacker can crack this password to gain access to the Windows machine hosting the Jupyter server, or access other network-accessible machines or 3rd party services using that credential. Or an attacker perform an NTLM relay attack without cracking the credential to gain access to other network-accessible machines.\n\n",
+  "details": "The Jupyter Server provides the backend for Jupyter web applications. Jupyter Server on Windows has a vulnerability that lets unauthenticated attackers leak the NTLMv2 password hash of the Windows user running the Jupyter server. An attacker can crack this password to gain access to the Windows machine hosting the Jupyter server, or access other network-accessible machines or 3rd party services using that credential. Or an attacker perform an NTLM relay attack without cracking the credential to gain access to other network-accessible machines. This vulnerability is fixed in 2.14.1.",
   "affected": [
     {
       "package": {
@@ -21,6 +18,21 @@
         "purl": "pkg:pypi/jupyter-server"
       },
       "ranges": [
+        {
+          "type": "GIT",
+          "repo": "https://github.com/jupyter-server/jupyter_server",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "79fbf801c5908f4d1d9bc90004b74cfaaeeed2df"
+            },
+            {
+              "fixed": "79fbf801c5908f4d1d9bc90004b74cfaaeeed2df"
+            }
+          ]
+        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -186,27 +198,18 @@
         "2.9.1"
       ],
       "database_specific": {
-        "last_known_affected_version_range": "\u003c= 2.14.0",
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-hrw6-wg82-cm62/GHSA-hrw6-wg82-cm62.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/jupyter-server/PYSEC-2024-165.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
+      "type": "ADVISORY",
       "url": "https://github.com/jupyter-server/jupyter_server/security/advisories/GHSA-hrw6-wg82-cm62"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-35178"
-    },
-    {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/jupyter-server/jupyter_server/commit/79fbf801c5908f4d1d9bc90004b74cfaaeeed2df"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/jupyter-server/jupyter_server"
     }
   ]
 }

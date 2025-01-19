@@ -1,13 +1,12 @@
 {
-  "id": "GHSA-79gp-q4wv-33fr",
+  "id": "PYSEC-2024-171",
   "modified": "2025-01-18T22:56:53.197639Z",
-  "published": "2024-09-25T18:21:19Z",
+  "published": "2024-09-25T18:15:05Z",
   "aliases": [
     "CVE-2024-47082",
-    "PYSEC-2024-171"
+    "GHSA-79gp-q4wv-33fr"
   ],
-  "summary": "Cross-Site Request Forgery (CSRF) in strawberry-graphql",
-  "details": "### Impact\n\nMultipart file upload support as defined in the [GraphQL multipart request specification](https://github.com/jaydenseric/graphql-multipart-request-spec) was enabled by default in all Strawberry HTTP view integrations. This made all Strawberry HTTP view integrations vulnerable to CSRF attacks if users did not explicitly enable CSRF preventing security mechanism for their servers.\nAdditionally, the Django HTTP view integration, in particular, had an exemption for Django's built-in CSRF protection (i.e., the `CsrfViewMiddleware` middleware) by default.\n\nIn affect, all Strawberry integrations were vulnerable to CSRF attacks by default.\n\n### Patches\n\nVersion `v0.243.0` is the first `strawberry-graphql` including a patch. Check out our [documentation](https://strawberry.rocks/docs/breaking-changes/0.243.0) for additional details and upgrade instructions.\n\n### References\n\n- [Strawberry upgrade guide](https://strawberry.rocks/docs/breaking-changes/0.243.0)\n- [Multipart Upload Security Implications](https://github.com/jaydenseric/graphql-multipart-request-spec/blob/master/readme.md#security)\n\n### Credits\n\n- [Thomas Grainger](https://github.com/graingert)\n- [Arthur Bayr](https://github.com/speedy1991)\n- [Jonathan Ehwald](https://github.com/DoctorJohn)",
+  "details": "Strawberry GraphQL is a library for creating GraphQL APIs. Prior to version 0.243.0, multipart file upload support as defined in the GraphQL multipart request specification was enabled by default in all Strawberry HTTP view integrations. This made all Strawberry HTTP view integrations vulnerable to cross-site request forgery (CSRF) attacks if users did not explicitly enable CSRF preventing security mechanism for their servers. Additionally, the Django HTTP view integration, in particular, had an exemption for Django's built-in CSRF protection (i.e., the `CsrfViewMiddleware` middleware) by default. In affect, all Strawberry integrations were vulnerable to CSRF attacks by default. Version `v0.243.0` is the first `strawberry-graphql` including a patch.",
   "affected": [
     {
       "package": {
@@ -16,6 +15,18 @@
         "purl": "pkg:pypi/strawberry-graphql"
       },
       "ranges": [
+        {
+          "type": "GIT",
+          "repo": "https://github.com/strawberry-graphql/strawberry",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "37265b230e511480a9ceace492f9f6a484be1387"
+            }
+          ]
+        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -904,26 +915,18 @@
         "0.99.3"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/09/GHSA-79gp-q4wv-33fr/GHSA-79gp-q4wv-33fr.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/strawberry-graphql/PYSEC-2024-171.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
+      "type": "ADVISORY",
       "url": "https://github.com/strawberry-graphql/strawberry/security/advisories/GHSA-79gp-q4wv-33fr"
     },
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-47082"
-    },
-    {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/strawberry-graphql/strawberry/commit/37265b230e511480a9ceace492f9f6a484be1387"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/strawberry-graphql/strawberry"
     },
     {
       "type": "WEB",

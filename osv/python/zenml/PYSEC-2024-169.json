@@ -1,13 +1,12 @@
 {
-  "id": "GHSA-vwgf-7f9h-h499",
-  "modified": "2025-01-18T19:56:49.753460Z",
-  "published": "2024-06-06T21:30:36Z",
+  "id": "PYSEC-2024-169",
+  "modified": "2025-01-18T19:56:45.749939Z",
+  "published": "2024-06-06T19:15:53Z",
   "aliases": [
-    "CVE-2024-2171",
-    "PYSEC-2024-170"
+    "CVE-2024-2035",
+    "GHSA-9x88-4jg8-4vf7"
   ],
-  "summary": "Cross site scripting in zenml",
-  "details": "A stored Cross-Site Scripting (XSS) vulnerability was identified in the zenml-io/zenml repository, specifically within the 'logo_url' field. By injecting malicious payloads into this field, an attacker could send harmful messages to other users, potentially compromising their accounts. The vulnerability affects version 0.55.3 and was fixed in version 0.56.2. The impact of exploiting this vulnerability could lead to user account compromise.",
+  "details": "An improper authorization vulnerability exists in the zenml-io/zenml repository, specifically within the API PUT /api/v1/users/id endpoint. This vulnerability allows any authenticated user to modify the information of other users, including changing the `active` status of user accounts to false, effectively deactivating them. This issue affects version 0.55.3 and was fixed in version 0.56.2. The impact of this vulnerability is significant as it allows for the deactivation of admin accounts, potentially disrupting the functionality and security of the application.",
   "affected": [
     {
       "package": {
@@ -16,6 +15,21 @@
         "purl": "pkg:pypi/zenml"
       },
       "ranges": [
+        {
+          "type": "GIT",
+          "repo": "https://github.com/zenml-io/zenml",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "b95f083efffa56831cd41d8ed536aeb0b6038fa3"
+            },
+            {
+              "fixed": "b95f083efffa56831cd41d8ed536aeb0b6038fa3"
+            }
+          ]
+        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -162,26 +176,18 @@
         "0.9.0"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-vwgf-7f9h-h499/GHSA-vwgf-7f9h-h499.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/zenml/PYSEC-2024-169.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-2171"
-    },
-    {
       "type": "WEB",
-      "url": "https://github.com/zenml-io/zenml/commit/68bcb3ba60cba9729c9713a49c39502d40fb945e"
+      "url": "https://huntr.com/bounties/1cfc6493-082e-4229-9f2f-496801a6557c"
     },
     {
-      "type": "PACKAGE",
-      "url": "https://github.com/zenml-io/zenml"
-    },
-    {
-      "type": "WEB",
-      "url": "https://huntr.com/bounties/cee06a28-7e3b-460b-b504-69add838ebe8"
+      "type": "FIX",
+      "url": "https://github.com/zenml-io/zenml/commit/b95f083efffa56831cd41d8ed536aeb0b6038fa3"
     }
   ]
 }
