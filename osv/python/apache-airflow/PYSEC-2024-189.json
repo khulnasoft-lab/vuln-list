@@ -1,16 +1,12 @@
 {
-  "id": "GHSA-j482-47xf-p25c",
+  "id": "PYSEC-2024-189",
   "modified": "2025-01-19T07:56:44.681970Z",
-  "published": "2024-07-17T09:30:48Z",
+  "published": "2024-07-17T08:15:01Z",
   "aliases": [
     "BIT-airflow-2024-39863",
     "CVE-2024-39863",
-    "PYSEC-2024-189"
+    "GHSA-j482-47xf-p25c"
   ],
-  "related": [
-    "CGA-45cj-mqr9-6j37"
-  ],
-  "summary": "Apache Airflow Potential Cross-site Scripting Vulnerability",
   "details": "Apache Airflow versions before 2.9.3 have a vulnerability that allows an authenticated attacker to inject a malicious link when installing a provider. Users are recommended to upgrade to version 2.9.3, which fixes this issue.\n",
   "affected": [
     {
@@ -231,30 +227,22 @@
         "2.9.3rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/07/GHSA-j482-47xf-p25c/GHSA-j482-47xf-p25c.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/apache-airflow/PYSEC-2024-189.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-39863"
+      "type": "ARTICLE",
+      "url": "https://lists.apache.org/thread/gxkvs279f1mbvckv5q65worr6how20o3"
     },
     {
-      "type": "WEB",
+      "type": "REPORT",
       "url": "https://github.com/apache/airflow/pull/40475"
     },
     {
       "type": "WEB",
-      "url": "https://github.com/apache/airflow/commit/f18f48492dc69f392e45567580b6ddb0c070ea58"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/apache/airflow"
-    },
-    {
-      "type": "WEB",
-      "url": "https://lists.apache.org/thread/gxkvs279f1mbvckv5q65worr6how20o3"
+      "url": "http://www.openwall.com/lists/oss-security/2024/07/16/6"
     }
   ]
 }
