@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j527-v579-m98h",
-  "modified": "2024-10-14T18:43:00.673699Z",
+  "modified": "2025-01-19T13:56:46.401902Z",
   "published": "2024-06-06T21:30:36Z",
   "aliases": [
-    "CVE-2024-2213"
+    "CVE-2024-2213",
+    "PYSEC-2024-193"
   ],
   "summary": "Improper authentication in zenml",
   "details": "An issue was discovered in zenml-io/zenml versions up to and including 0.55.4. Due to improper authentication mechanisms, an attacker with access to an active user session can change the account password without needing to know the current password. This vulnerability allows for unauthorized account takeover by bypassing the standard password change verification process. The issue was fixed in version 0.56.3.",
