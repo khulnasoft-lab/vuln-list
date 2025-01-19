@@ -1,12 +1,11 @@
 {
-  "id": "GHSA-vjc4-3vgx-pq9h",
+  "id": "PYSEC-2024-185",
   "modified": "2025-01-19T04:57:02.100210Z",
-  "published": "2024-05-06T00:30:52Z",
+  "published": "2024-05-06T00:15:10Z",
   "aliases": [
     "CVE-2024-34529",
-    "PYSEC-2024-185"
+    "GHSA-vjc4-3vgx-pq9h"
   ],
-  "summary": "Nebari prints temporary Keycloak root password",
   "details": "Nebari through 2024.4.1 prints the temporary Keycloak root password.",
   "affected": [
     {
@@ -23,7 +22,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "2024.4.1"
+              "fixed": "2024.6.1rc2"
             }
           ]
         }
@@ -68,25 +67,20 @@
         "2024.3.3",
         "2024.3.3rc1",
         "2024.4.1",
-        "2024.4.1rc1"
+        "2024.4.1rc1",
+        "2024.5.1",
+        "2024.5.1rc1",
+        "2024.6.1rc1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/05/GHSA-vjc4-3vgx-pq9h/GHSA-vjc4-3vgx-pq9h.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/nebari/PYSEC-2024-185.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-34529"
-    },
-    {
-      "type": "WEB",
+      "type": "REPORT",
       "url": "https://github.com/nebari-dev/nebari/issues/2282"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/nebari-dev/nebari"
     },
     {
       "type": "WEB",
