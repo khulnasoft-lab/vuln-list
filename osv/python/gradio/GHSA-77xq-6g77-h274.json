@@ -1,9 +1,10 @@
 {
   "id": "GHSA-77xq-6g77-h274",
-  "modified": "2024-10-14T18:43:23.908951Z",
+  "modified": "2025-01-19T22:56:51.678860Z",
   "published": "2024-10-10T21:27:47Z",
   "aliases": [
-    "CVE-2024-47164"
+    "CVE-2024-47164",
+    "PYSEC-2024-213"
   ],
   "summary": "Gradio's `is_in_or_equal` function may be bypassed",
   "details": "### Impact\n**What kind of vulnerability is it? Who is impacted?**\n\nThis vulnerability relates to the **bypass of directory traversal checks** within the `is_in_or_equal` function. This function, intended to check if a file resides within a given directory, can be bypassed with certain payloads that manipulate file paths using `..` (parent directory) sequences. Attackers could potentially access restricted files if they are able to exploit this flaw, although the difficulty is high. This primarily impacts users relying on Gradio’s blocklist or directory access validation, particularly when handling file uploads.\n\n### Patches\nYes, please upgrade to `gradio\u003e=5.0` to address this issue.\n\n### Workarounds\n**Is there a way for users to fix or remediate the vulnerability without upgrading?**\n\nAs a workaround, users can manually sanitize and normalize file paths in their Gradio deployment before passing them to the `is_in_or_equal` function. Ensuring that all file paths are properly resolved and absolute can help mitigate the bypass vulnerabilities caused by the improper handling of `..` sequences or malformed paths.",
