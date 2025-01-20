@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2017-10-24T18:33:38Z",
+  "UpdatedAt": "2025-01-20T16:29:12Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "actionpack"
@@ -41,6 +41,12 @@
         "Url": "https://groups.google.com/g/rubyonrails-security/c/jILZ34tAHF4/m/7x0hLH-o0-IJ"
       },
       {
+        "Url": "https://github.com/rails/rails/commit/2f3bc0467311781ac1ceb2c8c2b09002c8fe143a"
+      },
+      {
+        "Url": "https://github.com/rails/rails/commit/c202638225519b5e1a03ebe523b109c948fb0e52"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-q34c-48gc-m9g8"
       }
     ],
@@ -59,7 +65,7 @@
     "PublishedAt": "2017-10-24T18:33:38Z",
     "Severity": "MODERATE",
     "Summary": "actionpack allows remote attackers to bypass database-query restrictions, perform NULL checks via crafted request",
-    "UpdatedAt": "2023-11-10T05:02:57Z",
+    "UpdatedAt": "2025-01-20T16:29:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -67,6 +73,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.0.14"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0.13, \u003c 3.0.14"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.2.6"
@@ -78,12 +90,6 @@
         "Identifier": "3.1.6"
       },
       "VulnerableVersionRange": "\u003e= 3.1.0, \u003c 3.1.6"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.0.14"
-      },
-      "VulnerableVersionRange": "\u003c 3.0.14"
     }
   ]
 }
