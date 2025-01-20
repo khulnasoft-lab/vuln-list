@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4q3c-cj7g-jcwf",
-  "modified": "2024-10-14T18:44:00.010804Z",
+  "modified": "2025-01-19T22:56:53.294838Z",
   "published": "2024-10-10T22:03:03Z",
   "aliases": [
-    "CVE-2024-47868"
+    "CVE-2024-47868",
+    "PYSEC-2024-217"
   ],
   "summary": "Gradio has several components with post-process steps allow arbitrary file leaks",
   "details": "### Impact\n**What kind of vulnerability is it? Who is impacted?**\n\nThis is a **data validation vulnerability** affecting several Gradio components, which allows arbitrary file leaks through the post-processing step. Attackers can exploit these components by crafting requests that bypass expected input constraints. This issue could lead to sensitive files being exposed to unauthorized users, especially when combined with other vulnerabilities, such as issue TOB-GRADIO-15. The components most at risk are those that return or handle file data.\n\n### Vulnerable Components:\n1. **String to FileData:** DownloadButton, Audio, ImageEditor, Video, Model3D, File, UploadButton.\n2. **Complex data to FileData:** Chatbot, MultimodalTextbox.\n3. **Direct file read in preprocess:** Code.\n4. **Dictionary converted to FileData:** ParamViewer, Dataset.\n\n### Exploit Scenarios:\n1. A developer creates a Dropdown list that passes values to a DownloadButton. An attacker bypasses the allowed inputs, sends an arbitrary file path (like `/etc/passwd`), and downloads sensitive files.\n2. An attacker crafts a malicious payload in a ParamViewer component, leaking sensitive files from a server through the arbitrary file leak.\n\n### Patches\nYes, the issue has been resolved in `gradio\u003e5.0`. Upgrading to the latest version will mitigate this vulnerability.\n",

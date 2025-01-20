@@ -1,17 +1,15 @@
 {
-  "id": "GHSA-xchq-w5r3-4wg3",
+  "id": "PYSEC-2024-206",
   "modified": "2025-01-19T19:56:50.810967Z",
-  "published": "2024-04-25T19:53:10Z",
+  "published": "2024-04-25T18:15:08Z",
   "aliases": [
     "CVE-2024-32645",
-    "PYSEC-2024-206"
+    "GHSA-xchq-w5r3-4wg3"
   ],
   "related": [
-    "CVE-2024-32645",
-    "PYSEC-2024-206"
+    "GHSA-xchq-w5r3-4wg3"
   ],
-  "summary": "vyper performs incorrect topic logging in raw_log",
-  "details": "### Summary\nIncorrect values can be logged when `raw_log` builtin is called with memory or storage arguments to be used as topics.\n\nA contract search was performed and no vulnerable contracts were found in production. In particular, no uses of `raw_log()` were found at all in production; it is apparently not a well-known function.\n\n### Details\nThe `build_IR` function of the `RawLog` class fails to properly unwrap the variables provided as topics. Consequently, incorrect values are logged as topics.\n\n### PoC\n```vyper\nx: bytes32\n\n@external\ndef f():\n    self.x = 0x1234567890123456789012345678901234567890123456789012345678901234\n    raw_log([self.x], b\"\") # LOG1(offset:0x60, size:0x00, topic1:0x00)\n\n    y: bytes32 = 0x1234567890123456789012345678901234567890123456789012345678901234\n    raw_log([y], b\"\") # LOG1(offset:0x80, size:0x00, topic1:0x40)\n```\n### Patches\nFixed in https://github.com/vyperlang/vyper/pull/3977.\n\n### Impact\nIncorrect values can be logged which may result in unexpected behavior in client-side applications relying on these logs.\n",
+  "details": "Vyper is a pythonic Smart Contract Language for the Ethereum virtual machine. In versions 0.3.10 and prior, incorrect values can be logged when `raw_log` builtin is called with memory or storage arguments to be used as topics. A contract search was performed and no vulnerable contracts were found in production. The `build_IR` function of the `RawLog` class fails to properly unwrap the variables provided as topics. Consequently, incorrect values are logged as topics. As of time of publication, no fixed version is available.",
   "affected": [
     {
       "package": {
@@ -96,22 +94,14 @@
         "0.4.0rc6"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-xchq-w5r3-4wg3/GHSA-xchq-w5r3-4wg3.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/vyper/PYSEC-2024-206.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
-      "url": "https://github.com/vyperlang/vyper/security/advisories/GHSA-xchq-w5r3-4wg3"
-    },
-    {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-32645"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/vyperlang/vyper"
+      "url": "https://github.com/vyperlang/vyper/security/advisories/GHSA-xchq-w5r3-4wg3"
     }
   ]
 }

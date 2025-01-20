@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xh2x-3mrm-fwqm",
-  "modified": "2024-10-14T18:53:17.489214Z",
+  "modified": "2025-01-19T22:56:53.228101Z",
   "published": "2024-10-10T22:04:21Z",
   "aliases": [
-    "CVE-2024-47870"
+    "CVE-2024-47870",
+    "PYSEC-2024-218"
   ],
   "summary": "Gradio has a race condition in update_root_in_config may redirect user traffic",
   "details": "### Impact  \n**What kind of vulnerability is it? Who is impacted?**\n\nThis vulnerability involves a **race condition** in the `update_root_in_config` function, allowing an attacker to modify the `root` URL used by the Gradio frontend to communicate with the backend. By exploiting this flaw, an attacker can redirect user traffic to a malicious server. This could lead to the interception of sensitive data such as authentication credentials or uploaded files. This impacts all users who connect to a Gradio server, especially those exposed to the internet, where malicious actors could exploit this race condition.\n\n### Patches  \nYes, please upgrade to `gradio\u003e=5` to address this issue.",
