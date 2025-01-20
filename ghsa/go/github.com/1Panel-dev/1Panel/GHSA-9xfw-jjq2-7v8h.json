@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "LOW",
   "UpdatedAt": "2024-02-05T20:19:32Z",
   "Package": {
     "Ecosystem": "GO",
@@ -39,13 +39,13 @@
     "Description": "### Summary\nThe https cookie that comes with the panel does not have the Secure keyword, which may cause the cookie to be sent in plain text when accessing http accidentally.\n\nhttps://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/Set-Cookie#secure\n\n### PoC\nDirectly configure https for the panel, and then capture the packet when logging in again and find that the cookie does not have the Secure keyword\n\n### Impact\nEveryone who has configured the panel https\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-02-05T20:19:30Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "1Panel set-cookie is missing the Secure keyword",
-    "UpdatedAt": "2024-02-13T18:05:56Z",
+    "UpdatedAt": "2025-01-20T16:52:58Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 6.5,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:L"
+      "Score": 3.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:N/A:N"
     }
   },
   "Versions": [
