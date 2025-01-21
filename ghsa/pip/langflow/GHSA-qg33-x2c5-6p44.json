@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-06-11T19:29:17Z",
+  "UpdatedAt": "2025-01-21T18:18:12Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "langflow"
@@ -17,6 +17,9 @@
         "Url": "https://github.com/langflow-ai/langflow/issues/1973"
       },
       {
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/langflow/PYSEC-2024-177.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-qg33-x2c5-6p44"
       }
     ],
@@ -30,12 +33,12 @@
         "Value": "CVE-2024-37014"
       }
     ],
-    "Description": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
+    "Description": "Langflow allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-06-10T21:30:38Z",
     "Severity": "HIGH",
     "Summary": "Langflow remote code execution vulnerability",
-    "UpdatedAt": "2024-07-05T21:22:07Z",
+    "UpdatedAt": "2025-01-21T18:18:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -45,9 +48,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "1.0.15"
       },
-      "VulnerableVersionRange": "\u003c= 0.6.19"
+      "VulnerableVersionRange": "\u003c 1.0.15"
     }
   ]
 }

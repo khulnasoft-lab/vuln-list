@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2017-10-24T18:33:38Z",
+  "UpdatedAt": "2025-01-21T15:12:26Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "activerecord"
@@ -38,6 +38,9 @@
         "Url": "https://groups.google.com/g/rubyonrails-security/c/l4L0TEVAz1k/m/Vr84sD9B464J"
       },
       {
+        "Url": "https://github.com/rails/rails/commit/62f81f4d6b3ee40e9887ffd92ab14714bad93f18"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-76wq-xw4h-f8wj"
       }
     ],
@@ -51,12 +54,12 @@
         "Value": "CVE-2012-2695"
       }
     ],
-    "Description": "The Active Record component in Ruby on Rails before 3.0.14, 3.1.x before 3.1.6, and 3.2.x before 3.2.6 does not properly implement the passing of request data to a where method in an ActiveRecord class, which allows remote attackers to conduct certain SQL injection attacks via nested query parameters that leverage improper handling of nested hashes, a related issue to CVE-2012-2661.",
+    "Description": "The Active Record component in Ruby on Rails efore 2.3.15, 3.0.x before 3.0.14, 3.1.x before 3.1.6, and 3.2.x before 3.2.6 does not properly implement the passing of request data to a where method in an ActiveRecord class, which allows remote attackers to conduct certain SQL injection attacks via nested query parameters that leverage improper handling of nested hashes, a related issue to CVE-2012-2661.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2017-10-24T18:33:38Z",
     "Severity": "HIGH",
     "Summary": "activerecord vulnerable to SQL Injection",
-    "UpdatedAt": "2023-11-10T05:02:57Z",
+    "UpdatedAt": "2025-01-21T15:12:26Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -64,6 +67,18 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.15"
+      },
+      "VulnerableVersionRange": "\u003c 2.3.15"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.0.14"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0.0.beta, \u003c 3.0.14"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.2.6"
@@ -75,12 +90,6 @@
         "Identifier": "3.1.6"
       },
       "VulnerableVersionRange": "\u003e= 3.1.0, \u003c 3.1.6"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.0.14"
-      },
-      "VulnerableVersionRange": "\u003c 3.0.14"
     }
   ]
 }

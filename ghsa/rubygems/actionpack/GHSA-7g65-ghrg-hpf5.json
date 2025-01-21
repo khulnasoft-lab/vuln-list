@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2017-10-24T18:33:37Z",
+  "UpdatedAt": "2025-01-21T15:21:14Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "actionpack"
@@ -20,10 +20,13 @@
         "Url": "http://rhn.redhat.com/errata/RHSA-2013-0154.html"
       },
       {
-        "Url": "http://weblog.rubyonrails.org/2012/8/9/ann-rails-3-2-8-has-been-released/"
+        "Url": "https://github.com/rails/rails/commit/e91e4e8bbee12ce1496bf384c04da6be296b687a"
       },
       {
-        "Url": "https://github.com/rails/rails/commit/e91e4e8bbee12ce1496bf384c04da6be296b687a"
+        "Url": "https://github.com/rails/rails/commit/cf48c9c7dcbef8543171f7f7de8d3d9a16b58e77"
+      },
+      {
+        "Url": "http://weblog.rubyonrails.org/2012/8/9/ann-rails-3-2-8-has-been-released"
       },
       {
         "Url": "https://github.com/advisories/GHSA-7g65-ghrg-hpf5"
@@ -39,12 +42,12 @@
         "Value": "CVE-2012-3465"
       }
     ],
-    "Description": "Cross-site scripting (XSS) vulnerability in `actionpack/lib/action_view/helpers/sanitize_helper.rb` in the `strip_tags` helper in Ruby on Rails before 3.0.17, 3.1.x before 3.1.8, and 3.2.x before 3.2.8 allows remote attackers to inject arbitrary web script or HTML via malformed HTML markup.",
+    "Description": "Cross-site scripting (XSS) vulnerability in `actionpack/lib/action_view/helpers/sanitize_helper.rb` in the `strip_tags` helper in Ruby on Rails before 2.3.16, 3.0.x before 3.0.17, 3.1.x before 3.1.8, and 3.2.x before 3.2.8 allows remote attackers to inject arbitrary web script or HTML via malformed HTML markup.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2017-10-24T18:33:37Z",
     "Severity": "MODERATE",
     "Summary": "actionpack Cross-site Scripting vulnerability",
-    "UpdatedAt": "2023-11-10T05:05:33Z",
+    "UpdatedAt": "2025-01-21T15:21:14Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -52,6 +55,18 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.16"
+      },
+      "VulnerableVersionRange": "\u003c 2.3.16"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.0.17"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0.0.beta, \u003c 3.0.17"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.2.8"
@@ -63,12 +78,6 @@
         "Identifier": "3.1.8"
       },
       "VulnerableVersionRange": "\u003e= 3.1.0, \u003c 3.1.8"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.0.17"
-      },
-      "VulnerableVersionRange": "\u003c 3.0.17"
     }
   ]
 }
