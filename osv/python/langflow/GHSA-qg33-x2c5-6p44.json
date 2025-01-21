@@ -1,13 +1,13 @@
 {
   "id": "GHSA-qg33-x2c5-6p44",
-  "modified": "2025-01-19T02:41:56.360444Z",
+  "modified": "2025-01-21T18:26:19.321228Z",
   "published": "2024-06-10T21:30:38Z",
   "aliases": [
     "CVE-2024-37014",
     "PYSEC-2024-177"
   ],
   "summary": "Langflow remote code execution vulnerability",
-  "details": "Langflow through 0.6.19 allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
+  "details": "Langflow allows remote code execution if untrusted users are able to reach the \"POST /api/v1/custom_component\" endpoint and provide a Python script.",
   "affected": [
     {
       "package": {
@@ -23,7 +23,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "0.6.19"
+              "fixed": "1.0.15"
             }
           ]
         }
@@ -190,7 +190,84 @@
         "0.6.7a3",
         "0.6.7a5",
         "0.6.8",
-        "0.6.9"
+        "0.6.9",
+        "1.0.0",
+        "1.0.0a0",
+        "1.0.0a1",
+        "1.0.0a10",
+        "1.0.0a11",
+        "1.0.0a12",
+        "1.0.0a13",
+        "1.0.0a14",
+        "1.0.0a15",
+        "1.0.0a17",
+        "1.0.0a18",
+        "1.0.0a19",
+        "1.0.0a2",
+        "1.0.0a20",
+        "1.0.0a21",
+        "1.0.0a22",
+        "1.0.0a23",
+        "1.0.0a24",
+        "1.0.0a25",
+        "1.0.0a26",
+        "1.0.0a27",
+        "1.0.0a28",
+        "1.0.0a29",
+        "1.0.0a3",
+        "1.0.0a30",
+        "1.0.0a31",
+        "1.0.0a32",
+        "1.0.0a33",
+        "1.0.0a34",
+        "1.0.0a35",
+        "1.0.0a36",
+        "1.0.0a37",
+        "1.0.0a38",
+        "1.0.0a39",
+        "1.0.0a4",
+        "1.0.0a40",
+        "1.0.0a41",
+        "1.0.0a42",
+        "1.0.0a43",
+        "1.0.0a44",
+        "1.0.0a45",
+        "1.0.0a46",
+        "1.0.0a47",
+        "1.0.0a48",
+        "1.0.0a49",
+        "1.0.0a5",
+        "1.0.0a50",
+        "1.0.0a51",
+        "1.0.0a52",
+        "1.0.0a53",
+        "1.0.0a55",
+        "1.0.0a56",
+        "1.0.0a57",
+        "1.0.0a58",
+        "1.0.0a59",
+        "1.0.0a6",
+        "1.0.0a60",
+        "1.0.0a61",
+        "1.0.0a7",
+        "1.0.0a8",
+        "1.0.0a9",
+        "1.0.0rc0",
+        "1.0.0rc1",
+        "1.0.1",
+        "1.0.10",
+        "1.0.11",
+        "1.0.12",
+        "1.0.13",
+        "1.0.14",
+        "1.0.2",
+        "1.0.3",
+        "1.0.4",
+        "1.0.5",
+        "1.0.6",
+        "1.0.7",
+        "1.0.8",
+        "1.0.9"
       ],
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/06/GHSA-qg33-x2c5-6p44/GHSA-qg33-x2c5-6p44.json"
@@ -209,6 +286,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/langflow-ai/langflow"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/langflow/PYSEC-2024-177.yaml"
     }
   ]
 }
