@@ -1,12 +1,14 @@
 {
   "id": "GHSA-pr2m-px7j-xg65",
-  "modified": "2024-03-13T16:11:39.703245Z",
+  "modified": "2025-01-22T16:56:46.680247Z",
   "published": "2024-03-13T15:33:14Z",
   "aliases": [
-    "CVE-2024-27305"
+    "CVE-2024-27305",
+    "PYSEC-2024-221"
   ],
   "related": [
-    "CVE-2024-27305"
+    "CVE-2024-27305",
+    "PYSEC-2024-221"
   ],
   "summary": "aiosmtpd vulnerable to SMTP smuggling",
   "details": "### Summary\naiosmtpd is vulnerable to inbound SMTP smuggling. SMTP smuggling is a novel vulnerability based on not so novel interpretation differences of the SMTP protocol. By exploiting SMTP smuggling, an attacker may send smuggle/spoof e-mails with fake sender addresses, allowing advanced phishing attacks. This issue also existed in other SMTP software like Postfix (https://www.postfix.org/smtp-smuggling.html).\n\n### Details\nDetailed information on SMTP smuggling can be found in the full blog post (https://sec-consult.com/blog/detail/smtp-smuggling-spoofing-e-mails-worldwide/) or on the Postfix homepage (https://www.postfix.org/smtp-smuggling.html). (and soon on the official website https://smtpsmuggling.com/)  \n\n### Impact\nWith the right SMTP server constellation, an attacker can send spoofed e-mails to inbound/receiving aiosmtpd instances.",
