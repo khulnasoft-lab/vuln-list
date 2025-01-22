@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2017-10-24T18:33:38Z",
+  "UpdatedAt": "2025-01-22T15:09:52Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
     "Name": "actionpack"
@@ -23,7 +23,10 @@
         "Url": "http://rhn.redhat.com/errata/RHSA-2013-0154.html"
       },
       {
-        "Url": "http://weblog.rubyonrails.org/2012/7/26/ann-rails-3-2-7-has-been-released/"
+        "Url": "https://github.com/rails/rails/commit/3719bd3e95523c5518507dbe44f260f252930600"
+      },
+      {
+        "Url": "http://weblog.rubyonrails.org/2012/7/26/ann-rails-3-2-7-has-been-released"
       },
       {
         "Url": "https://github.com/advisories/GHSA-92w9-2pqw-rhjj"
@@ -44,7 +47,7 @@
     "PublishedAt": "2017-10-24T18:33:38Z",
     "Severity": "MODERATE",
     "Summary": "actionpack Improper Authentication vulnerability",
-    "UpdatedAt": "2023-11-10T05:05:33Z",
+    "UpdatedAt": "2025-01-22T15:09:52Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -52,6 +55,18 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.3.5"
+      },
+      "VulnerableVersionRange": "\u003c 2.3.5"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.0.16"
+      },
+      "VulnerableVersionRange": "\u003e= 3.0.0.beta, \u003c 3.0.16"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "3.2.7"
@@ -63,12 +78,6 @@
         "Identifier": "3.1.7"
       },
       "VulnerableVersionRange": "\u003e= 3.1.0, \u003c 3.1.7"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "3.0.16"
-      },
-      "VulnerableVersionRange": "\u003c 3.0.16"
     }
   ]
 }
