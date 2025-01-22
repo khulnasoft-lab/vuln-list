@@ -20,6 +20,9 @@
         "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-52813"
       },
       {
+        "Url": "https://rustsec.org/advisories/RUSTSEC-2024-0434.html"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-r5vf-wf4h-82gg"
       }
     ],
@@ -33,12 +36,12 @@
         "Value": "CVE-2024-52813"
       }
     ],
-    "Description": "### Impact\n\nVersions of the matrix-sdk-crypto Rust crate before 0.8.0 lack a dedicated mechanism to notify that a user's cryptographic identity has changed from a verified to an unverified one, which could cause client applications relying on the SDK to overlook such changes.\n\n### Patches\n\nmatrix-sdk-crypto 0.8.0 adds a new `VerificationLevel::VerificationViolation` enum variant which indicates that a previously verified identity has been changed.\n\n### Workarounds\n\nN/A\n\n### References\n\n- Patch: https://github.com/matrix-org/matrix-rust-sdk/pull/3795\n",
+    "Description": "### Impact\n\nVersions of the matrix-sdk-crypto Rust crate before 0.8.0 lack a dedicated mechanism to notify that a user's cryptographic identity has changed from a verified to an unverified one, which could cause client applications relying on the SDK to overlook such changes.\n\n### Patches\n\nmatrix-sdk-crypto 0.8.0 adds a new `VerificationLevel::VerificationViolation` enum variant which indicates that a previously verified identity has been changed.\n\n### References\n\n- Patch: https://github.com/matrix-org/matrix-rust-sdk/pull/3795\n",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-07T15:25:52Z",
     "Severity": "MODERATE",
     "Summary": "matrix-sdk-crypto missing facility to signal rotation of a verified cryptographic identity",
-    "UpdatedAt": "2025-01-07T18:39:25Z",
+    "UpdatedAt": "2025-01-22T17:37:51Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,
