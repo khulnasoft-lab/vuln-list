@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-05-17T20:03:57Z",
+  "UpdatedAt": "2025-01-21T21:38:10Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/submariner-io/submariner-operator"
@@ -29,10 +29,19 @@
         "Url": "https://github.com/submariner-io/submariner-operator/commit/b27a04c4270e53cbff6ff8ac6245db10c204bcab"
       },
       {
-        "Url": "https://github.com/advisories/GHSA-2rhx-qhxp-5jpw"
+        "Url": "https://access.redhat.com/errata/RHSA-2024:4591"
       },
       {
-        "Url": "https://access.redhat.com/errata/RHSA-2024:4591"
+        "Url": "https://github.com/submariner-io/submariner-operator/pull/3045"
+      },
+      {
+        "Url": "https://github.com/submariner-io/submariner-operator/pull/3046"
+      },
+      {
+        "Url": "https://github.com/submariner-io/submariner-operator/pull/3049"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-2rhx-qhxp-5jpw"
       }
     ],
     "Identifiers": [
@@ -49,8 +58,8 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-05-17T15:31:10Z",
     "Severity": "MODERATE",
-    "Summary": "Submariner Operator sets unnecessary RBAC permissions in helm charts",
-    "UpdatedAt": "2024-07-17T18:31:00Z",
+    "Summary": "Submariner Operator sets unnecessary RBAC permissions",
+    "UpdatedAt": "2025-01-21T21:38:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.6,
@@ -60,15 +69,27 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "0.18.0-rc0"
       },
-      "VulnerableVersionRange": "\u003e= 0.17.0, \u003c= 0.18.0-m3"
+      "VulnerableVersionRange": "\u003e= 0.18.0-m0, \u003c 0.18.0-rc0"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.15.4"
+      },
+      "VulnerableVersionRange": "\u003c 0.15.4"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.17.2"
+      },
+      "VulnerableVersionRange": "\u003e= 0.17.0-m0, \u003c 0.17.2"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "0.16.4"
       },
-      "VulnerableVersionRange": "\u003c 0.16.4"
+      "VulnerableVersionRange": "\u003e= 0.16.0-m0, \u003c 0.16.4"
     }
   ]
 }
