@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2024-12-05T22:40:48Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -23,6 +23,9 @@
         "Url": "https://github.com/pillarjs/path-to-regexp/commit/f01c26a013b1889f0c217c643964513acf17f6a4"
       },
       {
+        "Url": "https://security.netapp.com/advisory/ntap-20250124-0002"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-rhx6-c78j-4q9w"
       }
     ],
@@ -39,9 +42,9 @@
     "Description": "### Impact\n\nThe regular expression that is vulnerable to backtracking can be generated in the 0.1.x release of `path-to-regexp`, originally reported in CVE-2024-45296\n\n### Patches\n\nUpgrade to 0.1.12.\n\n### Workarounds\n\nAvoid using two parameters within a single path segment, when the separator is not `.` (e.g. no `/:a-:b`). Alternatively, you can define the regex used for both parameters and ensure they do not overlap to allow backtracking.\n\n### References\n\n- https://github.com/advisories/GHSA-9wv6-86v2-598j\n- https://blakeembrey.com/posts/2024-09-web-redos/",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-12-05T22:40:47Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Unpatched `path-to-regexp` ReDoS in 0.1.x",
-    "UpdatedAt": "2024-12-06T00:33:29Z",
+    "UpdatedAt": "2025-01-24T21:41:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
