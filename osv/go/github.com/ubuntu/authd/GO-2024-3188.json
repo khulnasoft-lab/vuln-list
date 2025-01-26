@@ -1,0 +1,47 @@
+{
+  "id": "GO-2024-3188",
+  "modified": "2024-10-11T14:57:12.422870Z",
+  "published": "2024-10-11T14:32:39Z",
+  "aliases": [
+    "CVE-2024-9312",
+    "GHSA-4gfw-wf7c-w6g2"
+  ],
+  "summary": "Authd allows attacker-controlled usernames to yield controllable UIDs in github.com/ubuntu/authd",
+  "details": "Authd allows attacker-controlled usernames to yield controllable UIDs in github.com/ubuntu/authd",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/ubuntu/authd",
+        "purl": "pkg:golang/github.com/ubuntu/authd"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2024-3188.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/ubuntu/authd/security/advisories/GHSA-4gfw-wf7c-w6g2"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-9312"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://www.cve.org/CVERecord?id=CVE-2024-9312"
+    }
+  ]
+}

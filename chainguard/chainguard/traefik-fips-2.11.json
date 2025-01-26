@@ -1,0 +1,40 @@
+{
+  "name": "traefik-fips-2.11",
+  "secfixes": {
+    "2.11.13-r1": [
+      "CVE-2024-51744",
+      "GHSA-29wx-vh33-7x7r"
+    ],
+    "2.11.14-r1": [
+      "CVE-2024-53259",
+      "GHSA-px8v-pp82-rcvr"
+    ],
+    "2.11.15-r1": [
+      "CVE-2024-45337",
+      "GHSA-v778-237x-gjrc"
+    ],
+    "2.11.16-r1": [
+      "CVE-2024-45338",
+      "GHSA-w32m-9786-jp63"
+    ],
+    "2.11.8-r0": [
+      "CVE-2024-41110",
+      "GHSA-v23v-6jw2-98fq"
+    ],
+    "2.11.9-r0": [
+      "CVE-2024-34155",
+      "CVE-2024-34156",
+      "CVE-2024-34158",
+      "GHSA-8xfx-rj4p-23jm",
+      "GHSA-crqm-pwhx-j97f",
+      "GHSA-j7vj-rw65-4v26"
+    ]
+  },
+  "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
+  "archs": [
+    "aarch64",
+    "x86_64"
+  ],
+  "urlprefix": "https://packages.cgr.dev",
+  "reponame": "chainguard"
+}
