@@ -1,0 +1,66 @@
+{
+  "id": "GHSA-6wxm-mpqj-6jpf",
+  "modified": "2025-01-28T17:44:13.300465Z",
+  "published": "2025-01-28T17:29:03Z",
+  "aliases": [
+    "CVE-2024-45339",
+    "GO-2025-3372"
+  ],
+  "summary": "Insecure Temporary File usage in github.com/golang/glog",
+  "details": "When logs are written to a widely-writable directory (the default), an unprivileged attacker may predict a privileged process's log file path and pre-create a symbolic link to a sensitive file in its place. When that privileged process runs, it will follow the planted symlink and overwrite that sensitive file. To fix that, glog now causes the program to exit (with status code 2) when it finds that the configured log file already exists.",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/golang/glog",
+        "purl": "pkg:golang/github.com/golang/glog"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.2.4"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/01/GHSA-6wxm-mpqj-6jpf/GHSA-6wxm-mpqj-6jpf.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-45339"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/golang/glog/pull/74"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/golang/glog/pull/74/commits/b8741656e406e66d6992bc2c9575e460ecaa0ec2"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/golang/glog"
+    },
+    {
+      "type": "WEB",
+      "url": "https://groups.google.com/g/golang-announce/c/H-Q4ouHWyKs"
+    },
+    {
+      "type": "WEB",
+      "url": "https://owasp.org/www-community/vulnerabilities/Insecure_Temporary_File"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3372"
+    }
+  ]
+}
