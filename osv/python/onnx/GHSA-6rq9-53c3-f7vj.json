@@ -1,12 +1,12 @@
 {
   "id": "GHSA-6rq9-53c3-f7vj",
-  "modified": "2024-10-23T17:57:28.590942Z",
+  "modified": "2025-01-27T23:23:24.748912Z",
   "published": "2024-06-06T21:30:37Z",
   "aliases": [
     "CVE-2024-5187"
   ],
   "summary": "onnx allows Arbitrary File Overwrite in download_model_with_test_data",
-  "details": "A vulnerability in the `download_model_with_test_data` function of the onnx/onnx framework, version 1.16.0, allows for arbitrary file overwrite due to inadequate prevention of path traversal attacks in malicious tar files. This vulnerability enables attackers to overwrite any file on the system, potentially leading to remote code execution, deletion of system, personal, or application files, thus impacting the integrity and availability of the system. The issue arises from the function's handling of tar file extraction without performing security checks on the paths within the tar file, as demonstrated by the ability to overwrite the `/home/kali/.ssh/authorized_keys` file by specifying an absolute path in the malicious tar file.",
+  "details": "A vulnerability in the `download_model_with_test_data` function of the onnx/onnx framework, versions before 1.16.2, allow for arbitrary file overwrite due to inadequate prevention of path traversal attacks in malicious tar files. This vulnerability enables attackers to overwrite any file on the system, potentially leading to remote code execution, deletion of system, personal, or application files, thus impacting the integrity and availability of the system. The issue arises from the function's handling of tar file extraction without performing security checks on the paths within the tar file, as demonstrated by the ability to overwrite the `/home/kali/.ssh/authorized_keys` file by specifying an absolute path in the malicious tar file.",
   "affected": [
     {
       "package": {
@@ -22,7 +22,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "1.17.0"
+              "fixed": "1.16.2"
             }
           ]
         }
@@ -48,7 +48,6 @@
         "1.15.0",
         "1.16.0",
         "1.16.1",
-        "1.16.2",
         "1.2.1",
         "1.2.2",
         "1.2.3",
@@ -82,6 +81,10 @@
     },
     {
       "type": "WEB",
+      "url": "https://github.com/onnx/onnx/pull/6222"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/onnx/onnx/commit/1b70f9b673259360b6a2339c4bd97db9ea6e552f"
     },
     {
@@ -91,6 +94,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/onnx/onnx"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/onnx/onnx/releases/tag/v1.16.2"
     },
     {
       "type": "WEB",
