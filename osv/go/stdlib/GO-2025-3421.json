@@ -1,7 +1,10 @@
 {
   "id": "GO-2025-3421",
-  "modified": "2025-01-28T00:47:30Z",
+  "modified": "2025-01-28T01:12:15.284483Z",
   "published": "2025-01-28T00:47:30Z",
+  "aliases": [
+    "CVE-2025-22865"
+  ],
   "summary": "ParsePKCS1PrivateKey panic with partial keys in crypto/x509",
   "details": "Using ParsePKCS1PrivateKey to parse a RSA key that is missing the CRT values would panic when verifying that the key is well formed.",
   "affected": [
