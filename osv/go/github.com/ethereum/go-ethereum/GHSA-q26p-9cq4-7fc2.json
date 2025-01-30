@@ -1,0 +1,45 @@
+{
+  "id": "GHSA-q26p-9cq4-7fc2",
+  "modified": "2025-01-30T18:27:22.765352Z",
+  "published": "2025-01-30T17:51:57Z",
+  "aliases": [
+    "CVE-2025-24883"
+  ],
+  "summary": "Go Ethereum vulnerable to DoS via malicious p2p message",
+  "details": "### Impact\n\nA vulnerable node can be forced to shutdown/crash using a specially crafted message.\n\nMore in-depth details will be released at a later time.\n\n### Patches\n\nA fix has been included in geth version 1.14.13 and onwards.\n\n### Workarounds\n\nUnfortunately, no workaround is available.\n\n### Credits\n\nThis issue was originally reported to Polygon Security by David Matosse (@iam-ned).\n",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/ethereum/go-ethereum",
+        "purl": "pkg:golang/github.com/ethereum/go-ethereum"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "1.14.0"
+            },
+            {
+              "fixed": "1.14.13"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/01/GHSA-q26p-9cq4-7fc2/GHSA-q26p-9cq4-7fc2.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/ethereum/go-ethereum/security/advisories/GHSA-q26p-9cq4-7fc2"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/ethereum/go-ethereum"
+    }
+  ]
+}
