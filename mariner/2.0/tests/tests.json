@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package libxml2 is earlier than 2.10.4-5, affected by CVE-2022-49043",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:55967000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:55967001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:55967002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package xerces-c is earlier than 3.2.4-2, affected by CVE-2024-23807",
       "ID": "oval:com.microsoft.cbl-mariner:tst:55883000",
       "Version": "0",
@@ -106,6 +118,18 @@
       },
       "State": {
         "StateRef": "oval:com.microsoft.cbl-mariner:ste:55646002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package git-lfs is earlier than 3.5.1-4, affected by CVE-2024-53263",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:55644000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:55644001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:55644002"
       }
     },
     {
@@ -13910,6 +13934,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package rook is earlier than 1.6.2-23, affected by CVE-2024-28180",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:35859000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:35859001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:35859002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package libvirt is earlier than 7.10.0-8, affected by CVE-2024-1441",
       "ID": "oval:com.microsoft.cbl-mariner:tst:35848000",
       "Version": "1",
@@ -21290,6 +21326,18 @@
     },
     {
       "Check": "at least one",
+      "Comment": "Package openmpi is earlier than 4.1.4-12, affected by CVE-2022-47022",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:28595000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:28595001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:28595002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package libssh2 is earlier than 1.9.0-3, affected by CVE-2020-22218",
       "ID": "oval:com.microsoft.cbl-mariner:tst:28594000",
       "Version": "1",
@@ -27230,7 +27278,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package postgresql is earlier than 14.11-1, affected by CVE-2022-41862",
+      "Comment": "Package postgresql is installed with version 14.10-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13777000",
       "Version": "0",
       "Object": {
@@ -27554,7 +27602,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2023-0286",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13705000",
       "Version": "1",
       "Object": {
@@ -27650,7 +27698,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package nodejs is earlier than 16.19.1-1, affected by CVE-2023-23919",
+      "Comment": "Package nodejs is installed with version 16.19.1-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13684000",
       "Version": "3",
       "Object": {
@@ -27662,7 +27710,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package nghttp2 is earlier than 1.57.0-1, affected by CVE-2021-46023",
+      "Comment": "Package nghttp2 is installed with version 1.46.0-3 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13683000",
       "Version": "1",
       "Object": {
@@ -27734,7 +27782,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2023-23914",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13659000",
       "Version": "1",
       "Object": {
@@ -27770,7 +27818,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package mysql is earlier than 8.0.33-1, affected by CVE-2023-23914",
+      "Comment": "Package mysql is installed with version 8.0.32-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13656000",
       "Version": "1",
       "Object": {
@@ -28334,7 +28382,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2022-4304",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13313000",
       "Version": "1",
       "Object": {
@@ -28346,7 +28394,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2023-0215",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13312000",
       "Version": "1",
       "Object": {
@@ -28358,7 +28406,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2022-4450",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13311000",
       "Version": "1",
       "Object": {
@@ -28694,7 +28742,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package apr is earlier than 1.7.2-1, affected by CVE-2022-24963",
+      "Comment": "Package apr is installed with version 1.7.5-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13226000",
       "Version": "5",
       "Object": {
@@ -29294,7 +29342,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package hyperv-daemons is earlier than 5.15.92.1-1, affected by CVE-2022-4379",
+      "Comment": "Package hyperv-daemons is installed with version 5.15.87.1-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13028000",
       "Version": "1",
       "Object": {
@@ -29582,7 +29630,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package rust is earlier than 1.72.0-2, affected by CVE-2023-22466",
+      "Comment": "Package rust is installed with version 1.68.2-5 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:12938000",
       "Version": "1",
       "Object": {
@@ -29654,7 +29702,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package kata-containers is earlier than 3.2.0.azl0-1, affected by CVE-2023-22466",
+      "Comment": "Package kata-containers is installed with version 3.1.0-11 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:12932000",
       "Version": "1",
       "Object": {
@@ -30218,7 +30266,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is earlier than 1.18.8-2, affected by CVE-2022-41717",
+      "Comment": "Package golang is installed with version 1.22.7-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11582000",
       "Version": "3",
       "Object": {
@@ -31394,7 +31442,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package qt5-qtsvg is earlier than 5.15.9-1, affected by CVE-2020-0569",
+      "Comment": "Package qt5-qtsvg is installed with version 5.12.11-6 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:11223000",
       "Version": "1",
       "Object": {
@@ -35186,7 +35234,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package emacs is earlier than 28.1-5, affected by CVE-2007-6109",
+      "Comment": "Package emacs is installed with version 29.4-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:9919000",
       "Version": "2",
       "Object": {
@@ -37790,7 +37838,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package dnsmasq is earlier than 2.89-1, affected by CVE-2021-45954",
+      "Comment": "Package dnsmasq is installed with version 2.86-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:8961000",
       "Version": "3",
       "Object": {
@@ -37826,7 +37874,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package dnsmasq is earlier than 2.89-1, affected by CVE-2021-45951",
+      "Comment": "Package dnsmasq is installed with version 2.86-1 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:8958000",
       "Version": "3",
       "Object": {
@@ -42446,7 +42494,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package numpy is earlier than 1.22.0-1, affected by CVE-2021-34141",
+      "Comment": "Package numpy is installed with version 1.16.6-3 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:7074000",
       "Version": "1",
       "Object": {
@@ -43490,7 +43538,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package python3 is earlier than 3.9.19-1, affected by CVE-2007-4559",
+      "Comment": "Package python3 is installed with version 3.9.14-8 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:6828000",
       "Version": "1",
       "Object": {
@@ -46622,7 +46670,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package json-c is earlier than 0.14-3, affected by CVE-2020-12762",
+      "Comment": "Package json-c is installed with version 0.15-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:6506000",
       "Version": "2",
       "Object": {
