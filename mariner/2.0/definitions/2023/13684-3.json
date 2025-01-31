@@ -13,17 +13,16 @@
       "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-23919",
       "Source": "CVE"
     },
-    "Patchable": "Not Applicable",
-    "AdvisoryDate": "2023-03-24T23:56:25Z",
+    "Patchable": "false",
     "AdvisoryID": "13684-3",
     "Severity": "High",
-    "Description": "CVE-2023-23919 affecting package nodejs for versions less than 16.19.1-1. This CVE either no longer is or was never applicable."
+    "Description": "CVE-2023-23919 affecting package nodejs for versions less than 16.19.1-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": [
       {
-        "Comment": "Package nodejs is earlier than 16.19.1-1, affected by CVE-2023-23919",
+        "Comment": "Package nodejs is installed with version 16.19.1-2 or earlier",
         "TestRef": "oval:com.microsoft.cbl-mariner:tst:13684000"
       }
     ]
