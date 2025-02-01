@@ -1,9 +1,9 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2018-10-17T20:05:54Z",
+  "UpdatedAt": "2025-01-31T18:51:12Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.springframework:spring-core"
+    "Name": "org.springframework:spring-messaging"
   },
   "Advisory": {
     "DatabaseId": 833,
@@ -15,9 +15,6 @@
       },
       {
         "Url": "https://access.redhat.com/errata/RHSA-2018:2939"
-      },
-      {
-        "Url": "https://github.com/advisories/GHSA-p5hg-3xm3-gcjg"
       },
       {
         "Url": "https://lists.apache.org/thread.html/4ed49b103f64a0cecb38064f26cbf1389afc12124653da2d35166dbe@%3Cissues.activemq.apache.org%3E"
@@ -38,9 +35,6 @@
         "Url": "https://pivotal.io/security/cve-2018-1270"
       },
       {
-        "Url": "https://www.exploit-db.com/exploits/44796/"
-      },
-      {
         "Url": "https://www.oracle.com/security-alerts/cpujul2020.html"
       },
       {
@@ -56,13 +50,25 @@
         "Url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/103696"
-      },
-      {
         "Url": "https://lists.debian.org/debian-lts-announce/2021/04/msg00022.html"
       },
       {
         "Url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
+      },
+      {
+        "Url": "https://github.com/spring-projects/spring-framework/commit/0009806debb578e884f6dc98bd1f2dc668020021"
+      },
+      {
+        "Url": "https://github.com/spring-projects/spring-framework/commit/e0de9126ed8cf25cf141d3e66420da94e350708a"
+      },
+      {
+        "Url": "https://www.exploit-db.com/exploits/44796"
+      },
+      {
+        "Url": "https://web.archive.org/web/20200227125035/https://www.securityfocus.com/bid/103696"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-p5hg-3xm3-gcjg"
       }
     ],
     "Identifiers": [
@@ -75,12 +81,12 @@
         "Value": "CVE-2018-1270"
       }
     ],
-    "Description": "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.15 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack.",
+    "Description": "Spring Framework, versions 5.0 prior to 5.0.5 and versions 4.3 prior to 4.3.16 and older unsupported versions, allow applications to expose STOMP over WebSocket endpoints with a simple, in-memory STOMP broker through the spring-messaging module. A malicious user (or attacker) can craft a message to the broker that can lead to a remote code execution attack.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-10-17T20:05:59Z",
     "Severity": "CRITICAL",
     "Summary": "Spring Framework allows applications to expose STOMP over WebSocket endpoints",
-    "UpdatedAt": "2023-02-01T05:03:53Z",
+    "UpdatedAt": "2025-01-31T18:51:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -90,15 +96,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "4.3.16"
+        "Identifier": "4.3.16.RELEASE"
       },
-      "VulnerableVersionRange": "\u003c 4.3.16"
+      "VulnerableVersionRange": "\u003c 4.3.16.RELEASE"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "5.0.5"
+        "Identifier": "5.0.5.RELEASE"
       },
-      "VulnerableVersionRange": "\u003e= 5.0.0, \u003c 5.0.5"
+      "VulnerableVersionRange": "\u003e= 5.0.0.RELEASE, \u003c 5.0.5.RELEASE"
     }
   ]
 }

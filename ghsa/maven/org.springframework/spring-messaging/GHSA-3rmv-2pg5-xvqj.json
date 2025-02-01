@@ -1,9 +1,9 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2024-03-06T21:04:38Z",
+  "UpdatedAt": "2025-01-31T19:35:37Z",
   "Package": {
     "Ecosystem": "MAVEN",
-    "Name": "org.springframework:spring-core"
+    "Name": "org.springframework:spring-messaging"
   },
   "Advisory": {
     "DatabaseId": 836,
@@ -18,9 +18,6 @@
       },
       {
         "Url": "https://access.redhat.com/errata/RHSA-2018:2939"
-      },
-      {
-        "Url": "https://github.com/advisories/GHSA-3rmv-2pg5-xvqj"
       },
       {
         "Url": "https://lists.apache.org/thread.html/4ed49b103f64a0cecb38064f26cbf1389afc12124653da2d35166dbe@%3Cissues.activemq.apache.org%3E"
@@ -50,12 +47,6 @@
         "Url": "http://www.oracle.com/technetwork/security-advisory/cpuoct2018-4428296.html"
       },
       {
-        "Url": "http://www.securityfocus.com/bid/103771"
-      },
-      {
-        "Url": "http://www.securitytracker.com/id/1041301"
-      },
-      {
         "Url": "https://www.oracle.com/security-alerts/cpuoct2021.html"
       },
       {
@@ -63,6 +54,15 @@
       },
       {
         "Url": "https://github.com/spring-projects/spring-framework/commit/e0de9126ed8cf25cf141d3e66420da94e350708a"
+      },
+      {
+        "Url": "https://web.archive.org/web/20190901081835/http://www.securitytracker.com/id/1041301"
+      },
+      {
+        "Url": "https://web.archive.org/web/20200227033125/http://www.securityfocus.com/bid/103771"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-3rmv-2pg5-xvqj"
       }
     ],
     "Identifiers": [
@@ -79,8 +79,8 @@
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2018-10-17T20:28:00Z",
     "Severity": "CRITICAL",
-    "Summary": "Improperly Implemented Security Check for Standard in org.springframework:spring-core",
-    "UpdatedAt": "2024-03-06T21:04:39Z",
+    "Summary": "Spring Framework has Improperly Implemented Security Check for Standard",
+    "UpdatedAt": "2025-01-31T19:35:37Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -90,15 +90,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "5.0.5"
+        "Identifier": "5.0.5.RELEASE"
       },
-      "VulnerableVersionRange": "\u003e= 5.0.0, \u003c 5.0.5"
+      "VulnerableVersionRange": "\u003e= 5.0.0.RELEASE, \u003c 5.0.5.RELEASE"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "4.3.16"
+        "Identifier": "4.3.16.RELEASE"
       },
-      "VulnerableVersionRange": "\u003c 4.3.16"
+      "VulnerableVersionRange": "\u003c 4.3.16.RELEASE"
     }
   ]
 }
