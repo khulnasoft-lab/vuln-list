@@ -6,6 +6,10 @@
     "CVE-2024-23448",
     "GO-2024-2556"
   ],
+  "related": [
+    "CGA-j79x-82wf-frjx",
+    "CGA-mq9v-f9rv-hmv4"
+  ],
   "summary": "APM Server vulnerable to Insertion of Sensitive Information into Log File",
   "details": "An issue was discovered whereby APM Server could log at ERROR level, a response from Elasticsearch indicating that indexing the document failed and that response would contain parts of the original document. Depending on the nature of the document that the APM Server attempted to ingest, this could lead to the insertion of sensitive or private information in the APM Server logs.",
   "affected": [
