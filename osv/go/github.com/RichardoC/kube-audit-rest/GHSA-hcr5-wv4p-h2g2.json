@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hcr5-wv4p-h2g2",
-  "modified": "2025-01-29T22:00:39Z",
+  "modified": "2025-02-04T22:42:03.550045Z",
   "published": "2025-01-29T20:47:51Z",
   "aliases": [
-    "CVE-2025-24884"
+    "CVE-2025-24884",
+    "GO-2025-3431"
   ],
   "summary": "kube-audit-rest's example logging configuration could disclose secret values in the audit log",
   "details": "### Impact\nIf the \"full-elastic-stack\" example vector configuration was used for a real cluster, the previous values of kubernetes secrets would have been disclosed in the audit messages.\n\n### Patches\nThe example has been updated to fix this in commit db1aa5b867256b0a7bf206544c6981ab068b73dc\n\n\n### Workarounds\nReplace \n```yaml\n\n          if .request.requestKind.kind == \"Secret\" {\n            del(.request.object.data)\n            .request.object.data.redacted = \"REDACTED\"\n            del(.request.oldObject.data)\n            .request.oldObject.data.redacted = \"REDACTED\"\n          }\n```\nIn the vector \"audit-files-json-parser-and-redaction\" step\nwith\n```yaml\n\n          if .request.requestKind.kind == \"Secret\" {\n            # Redact the secret data\n            del(.request.object.data)\n            .request.object.data.redacted = \"REDACTED\"\n            del(.request.oldObject.data)\n            .request.oldObject.data.redacted = \"REDACTED\"\n            # Remove the previously set secret data - Not bothering to parse it as this annotation shouldn't ever be needed\n            del(.request.object.metadata.annotations.[\"kubectl.kubernetes.io/last-applied-configuration\"])\n            del(.request.oldObject.metadata.annotations.[\"kubectl.kubernetes.io/last-applied-configuration\"])\n          }\n```",
