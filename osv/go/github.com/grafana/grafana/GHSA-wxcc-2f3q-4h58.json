@@ -1,6 +1,6 @@
 {
   "id": "GHSA-wxcc-2f3q-4h58",
-  "modified": "2025-02-04T22:42:02.888950Z",
+  "modified": "2025-02-05T16:33:44Z",
   "published": "2025-01-31T18:31:07Z",
   "aliases": [
     "BIT-grafana-2024-11741",
@@ -8,8 +8,11 @@
     "GO-2025-3438"
   ],
   "related": [
+    "CGA-2j99-fpqm-5986",
+    "CGA-6v6x-m52h-68jr",
     "CGA-7h3f-5c2r-mrrj",
-    "CGA-7xg3-3xgp-9543"
+    "CGA-7xg3-3xgp-9543",
+    "CGA-wgc9-5c6q-424x"
   ],
   "summary": "Grafana Alerting VictorOps integration could be exposed to users with Viewer permission",
   "details": "Grafana is an open-source platform for monitoring and observability. \nThe Grafana Alerting VictorOps integration was not properly protected and could be exposed to users with Viewer permission. \nFixed in versions 11.5.0, 11.4.1, 11.3.3, 11.2.6, 11.1.11, 11.0.11 and 10.4.15",
@@ -168,6 +171,10 @@
     {
       "type": "WEB",
       "url": "https://grafana.com/security/security-advisories/cve-2024-11741"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3438"
     }
   ]
 }
