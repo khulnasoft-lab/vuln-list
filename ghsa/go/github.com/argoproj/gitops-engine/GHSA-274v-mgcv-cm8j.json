@@ -23,6 +23,9 @@
         "Url": "https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca"
       },
       {
+        "Url": "https://pkg.go.dev/vuln/GO-2025-3437"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-274v-mgcv-cm8j"
       }
     ],
@@ -32,12 +35,12 @@
         "Value": "GHSA-274v-mgcv-cm8j"
       }
     ],
-    "Description": "### Impact\nA vulnerability was discovered in Argo CD that exposed secret values in error messages and the diff view when an invalid Kubernetes Secret resource was synced from a repository. \n\nThe vulnerability assumes the user has write access to the repository and can exploit it, either intentionally or unintentionally, by committing an invalid Secret to repository and triggering a Sync. Once exploited, any user with read access to Argo CD can view the exposed secret data.\n\n### Patches\nA patch for this vulnerability is available in the following Argo CD versions:\n- v2.13.4\n- v2.12.10\n- v2.11.13\n\n### Workarounds\nThere is no workaround other than upgrading.\n\n### References\nFixed with commit https://github.com/argoproj/argo-cd/commit/6f5537bdf15ddbaa0f27a1a678632ff0743e4107 \u0026 https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca\n",
+    "Description": "### Impact\nA vulnerability was discovered in Argo CD that exposed secret values in error messages and the diff view when an invalid Kubernetes Secret resource was synced from a repository. \n\nThe vulnerability assumes the user has write access to the repository and can exploit it, either intentionally or unintentionally, by committing an invalid Secret to repository and triggering a Sync. Once exploited, any user with read access to Argo CD can view the exposed secret data.\n\n### Patches\nA patch for this vulnerability is available in the following Argo CD versions:\n- v2.13.4\n- v2.12.10\n- v2.11.13\n\n### Workarounds\nThere is no workaround other than upgrading.\n\n### References\nFixed with commit https://github.com/argoproj/argo-cd/commit/6f5537bdf15ddbaa0f27a1a678632ff0743e4107 \u0026 https://github.com/argoproj/gitops-engine/commit/7e21b91e9d0f64104c8a661f3f390c5e6d73ddca",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-30T17:51:33Z",
     "Severity": "MODERATE",
     "Summary": "Argo CD GitOps Engine does not scrub secret values from patch errors",
-    "UpdatedAt": "2025-01-30T17:51:33Z",
+    "UpdatedAt": "2025-02-05T16:31:13Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.8,
