@@ -1,0 +1,56 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2025-02-06T19:01:20Z",
+  "Package": {
+    "Ecosystem": "MAVEN",
+    "Name": "net.minidev:json-smart"
+  },
+  "Advisory": {
+    "DatabaseId": 279241,
+    "Id": "GSA_kwCzR0hTQS1wcTJnLXd4NjktYzI2M84ABELJ",
+    "GhsaId": "GHSA-pq2g-wx69-c263",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-57699"
+      },
+      {
+        "Url": "https://github.com/TurtleLiu/Vul_PoC/tree/main/CVE-2024-57699"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/cve-2023-1370"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-pq2g-wx69-c263"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-pq2g-wx69-c263"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2024-57699"
+      }
+    ],
+    "Description": "A security issue was found in Netplex Json-smart 2.5.0 through 2.5.1. When loading a specially crafted JSON input, containing a large number of ’{’, a stack exhaustion can be trigger, which could allow an attacker to cause a Denial of Service (DoS). This issue exists because of an incomplete fix for CVE-2023-1370.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2025-02-06T06:31:26Z",
+    "Severity": "HIGH",
+    "Summary": "Netplex Json-smart Uncontrolled Recursion vulnerability",
+    "UpdatedAt": "2025-02-06T19:01:20Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 7.5,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 2.5.0, \u003c= 2.5.1"
+    }
+  ]
+}
