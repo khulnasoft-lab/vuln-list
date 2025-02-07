@@ -2,6 +2,30 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package golang is greater than 1.18.0, affected by CVE-2024-45341",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:56046003",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:56046004"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:56046005"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package golang is earlier than 1.18.8-5, affected by CVE-2024-45341",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:56046000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:56046001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:56046002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package libxml2 is earlier than 2.10.4-5, affected by CVE-2022-49043",
       "ID": "oval:com.microsoft.cbl-mariner:tst:55967000",
       "Version": "1",
@@ -27650,7 +27674,7 @@
     },
     {
       "Check": "at least one",
-      "Comment": "Package golang is installed with version 1.22.7-1 or earlier",
+      "Comment": "Package golang is installed with version 1.22.7-2 or earlier",
       "ID": "oval:com.microsoft.cbl-mariner:tst:13730000",
       "Version": "1",
       "Object": {
