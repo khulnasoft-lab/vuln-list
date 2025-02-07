@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2024-11-12T16:21:54Z",
+  "UpdatedAt": "2025-02-06T19:11:00Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "jsonpath-plus"
@@ -35,6 +35,12 @@
         "Url": "https://github.com/JSONPath-Plus/JSONPath/compare/v9.0.0...v10.1.0"
       },
       {
+        "Url": "https://github.com/JSONPath-Plus/JSONPath/pull/233"
+      },
+      {
+        "Url": "https://github.com/JSONPath-Plus/JSONPath/commit/73ad72e5ee788d8287dea6e8283a3f16f63c9eb8"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-pppg-cpfq-h7wr"
       }
     ],
@@ -48,12 +54,12 @@
         "Value": "CVE-2024-21534"
       }
     ],
-    "Description": "Versions of the package jsonpath-plus before 10.0.7 are vulnerable to Remote Code Execution (RCE) due to improper input sanitization. An attacker can execute aribitrary code on the system by exploiting the unsafe default usage of vm in Node.\n\n**Note:**\n\nThere was an attempt to fix it in version [10.0.0](https://github.com/JSONPath-Plus/JSONPath/commit/6b2f1b4c234292c75912b790bf7e2d7339d4ccd3) but it could still be exploited using [different payloads](https://github.com/JSONPath-Plus/JSONPath/issues/226).",
+    "Description": "Versions of the package jsonpath-plus before 10.0.7 are vulnerable to Remote Code Execution (RCE) due to improper input sanitization. An attacker can execute aribitrary code on the system by exploiting the unsafe default usage of vm in Node.\n\n**Note:**\n\nThere were several attempts to fix it in versions [10.0.0-10.1.0](https://github.com/JSONPath-Plus/JSONPath/compare/v9.0.0...v10.1.0) but it could still be exploited using [different payloads](https://github.com/JSONPath-Plus/JSONPath/issues/226)",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-11T15:30:32Z",
     "Severity": "CRITICAL",
     "Summary": "JSONPath Plus Remote Code Execution (RCE) Vulnerability",
-    "UpdatedAt": "2024-11-18T18:32:11Z",
+    "UpdatedAt": "2025-02-06T19:11:00Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -63,9 +69,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "10.0.7"
+        "Identifier": "10.2.0"
       },
-      "VulnerableVersionRange": "\u003c 10.0.7"
+      "VulnerableVersionRange": "\u003c 10.2.0"
     }
   ]
 }
