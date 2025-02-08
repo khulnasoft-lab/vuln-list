@@ -1,12 +1,12 @@
 {
   "id": "GHSA-x5rv-w9pm-8qp8",
-  "modified": "2025-01-31T14:21:39Z",
+  "modified": "2025-02-07T20:45:09Z",
   "published": "2023-03-01T19:17:17Z",
   "aliases": [
     "CVE-2023-0092"
   ],
   "summary": "Juju controller - Arbitrary file reading vulnerability",
-  "details": "### Impact\nAn authenticated user who has read access to the juju controller model, may construct a remote request to download an arbitrary file from the controller's filesystem.\n\n### Patches\nPatched in juju 2.9.38 and juju 3.0.3\n[juju/juju#ef803e2](https://github.com/juju/juju/commit/ef803e2a13692d355b784b7da8b4b1f01dab1556)\n\n### Workarounds\nLimit read access to the controller model to only trusted users.\n",
+  "details": "### Impact\nAn authenticated user who has read access to the juju controller model, may construct a remote request to download an arbitrary file from the controller's filesystem.\n\n### Patches\nPatched in juju 2.9.38 and juju 3.0.3\n[juju/juju#ef803e2](https://github.com/juju/juju/commit/ef803e2a13692d355b784b7da8b4b1f01dab1556)\n\n### Workarounds\nLimit read access to the controller model to only trusted users.",
   "affected": [
     {
       "package": {
@@ -71,6 +71,10 @@
     {
       "type": "WEB",
       "url": "https://bugs.launchpad.net/juju/+bug/1999622"
+    },
+    {
+      "type": "ADVISORY",
+      "url": "https://github.com/advisories/GHSA-x5rv-w9pm-8qp8"
     },
     {
       "type": "PACKAGE",
