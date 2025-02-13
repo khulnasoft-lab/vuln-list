@@ -24,14 +24,18 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-mm6v-68qp-f9fw"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2025-25286"
       }
     ],
-    "Description": "### Impact\n_What kind of vulnerability is it? Who is impacted?_\n\nRemote code execution may be possible in web-accessible installations of Homarus in certain configurations.\n\n### Patches\n_Has the problem been patched? What versions should users upgrade to?_\n\nThe issue has been patched in `islandora/crayfish:4.1.0`\n\n### Workarounds\n_Is there a way for users to fix or remediate the vulnerability without upgrading?_\n\nThe exploit requires making a request against the Homarus's `/convert` endpoint; therefore, the ability to exploit is much reduced if the microservice is not directly accessible from the Internet, so: Prevent general access from the Internet from hitting Homarus.\n\nConfigure auth in Crayfish to be more strongly required, such that requests with `Authorization` headers that do not validate are rejected before the problematic CLI interpolation occurs.\n\n### References\n_Are there any links users can visit to find out more?_\n\n- XBOW-024-071",
+    "Description": "### Impact\n\nRemote code execution may be possible in web-accessible installations of Homarus in certain configurations.\n\n### Patches\n\nThe issue has been patched in `islandora/crayfish:4.1.0`\n\n### Workarounds\n\nThe exploit requires making a request against the Homarus's `/convert` endpoint; therefore, the ability to exploit is much reduced if the microservice is not directly accessible from the Internet, so: Prevent general access from the Internet from hitting Homarus.\n\nConfigure auth in Crayfish to be more strongly required, such that requests with `Authorization` headers that do not validate are rejected before the problematic CLI interpolation occurs.\n\n### References\n\n- XBOW-024-071",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-15T22:04:19Z",
     "Severity": "CRITICAL",
     "Summary": "Crayfish allows Remote Code Execution via Homarus Authorization header",
-    "UpdatedAt": "2025-01-15T22:04:21Z",
+    "UpdatedAt": "2025-02-13T00:44:35Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
