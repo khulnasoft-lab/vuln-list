@@ -1,6 +1,6 @@
 {
   "id": "GHSA-x4qr-2fvf-3mr5",
-  "modified": "2024-02-16T08:08:37.328964Z",
+  "modified": "2025-02-13T19:02:36.065866Z",
   "published": "2023-02-08T22:17:06Z",
   "aliases": [
     "CVE-2023-0286",
@@ -12,7 +12,7 @@
     "CGA-qq4x-8qqj-c9mx"
   ],
   "summary": "Vulnerable OpenSSL included in cryptography wheels",
-  "details": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.\n\n",
+  "details": "pyca/cryptography's wheels include a statically linked copy of OpenSSL. The versions of OpenSSL included in cryptography 0.8.1-39.0.0  are vulnerable to a security issue. More details about the vulnerabilities themselves can be found in https://www.openssl.org/news/secadv/20221213.txt and https://www.openssl.org/news/secadv/20230207.txt.\n\nIf you are building cryptography source (\"sdist\") then you are responsible for upgrading your copy of OpenSSL. Only users installing from wheels built by the cryptography project (i.e., those distributed on PyPI) need to update their cryptography versions.",
   "affected": [
     {
       "package": {
