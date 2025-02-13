@@ -1,12 +1,13 @@
 {
-  "id": "PYSEC-2024-39",
+  "id": "GHSA-ph86-g9r3-5qw4",
   "modified": "2025-02-12T22:26:52.677512Z",
-  "published": "2024-02-24T05:15:00Z",
+  "published": "2024-02-24T06:30:17Z",
   "aliases": [
     "CVE-2024-21502",
-    "GHSA-ph86-g9r3-5qw4"
+    "PYSEC-2024-39"
   ],
-  "details": "Versions of the package fastecdsa before 2.3.2 are vulnerable to Use of Uninitialized Variable on the stack, via the curvemath_mul function in src/curveMath.c, due to being used and interpreted as user-defined type. Depending on the variable's actual value it could be arbitrary free(), arbitrary realloc(), null pointer dereference and other. Since the stack can be controlled by the attacker, the vulnerability could be used to corrupt allocator structure, leading to possible heap exploitation. The attacker could cause denial of service by exploiting this vulnerability.",
+  "summary": "Uninitialized Variable in fastecdsa",
+  "details": "Versions of the package fastecdsa before 2.3.2 use an Uninitialized Variable on the stack, via the curvemath_mul function in src/curveMath.c, due to being used and interpreted as user-defined type. Depending on the variable's actual value it could be arbitrary free(), arbitrary realloc(), null pointer dereference and other. Since the stack can be controlled by the attacker, the vulnerability could be used to corrupt allocator structure, leading to possible heap exploitation. The attacker could cause denial of service by exploiting this vulnerability.",
   "affected": [
     {
       "package": {
@@ -15,18 +16,6 @@
         "purl": "pkg:pypi/fastecdsa"
       },
       "ranges": [
-        {
-          "type": "GIT",
-          "repo": "https://github.com/AntonKueltz/fastecdsa",
-          "events": [
-            {
-              "introduced": "0"
-            },
-            {
-              "fixed": "57fc5689c95d649dab7ef60cc99ac64589f01e36"
-            }
-          ]
-        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -85,26 +74,34 @@
         "2.3.1"
       ],
       "database_specific": {
-        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/fastecdsa/PYSEC-2024-39.yaml"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/02/GHSA-ph86-g9r3-5qw4/GHSA-ph86-g9r3-5qw4.json"
       }
     }
   ],
   "references": [
     {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-21502"
+    },
+    {
       "type": "WEB",
-      "url": "https://security.snyk.io/vuln/SNYK-PYTHON-FASTECDSA-6262045"
+      "url": "https://github.com/AntonKueltz/fastecdsa/commit/57fc5689c95d649dab7ef60cc99ac64589f01e36"
     },
     {
       "type": "WEB",
       "url": "https://gist.github.com/keltecc/49da037072276f21b005a8337c15db26"
     },
     {
+      "type": "PACKAGE",
+      "url": "https://github.com/AntonKueltz/fastecdsa"
+    },
+    {
       "type": "WEB",
       "url": "https://github.com/AntonKueltz/fastecdsa/blob/v2.3.1/src/curveMath.c%23L210"
     },
     {
-      "type": "FIX",
-      "url": "https://github.com/AntonKueltz/fastecdsa/commit/57fc5689c95d649dab7ef60cc99ac64589f01e36"
+      "type": "WEB",
+      "url": "https://security.snyk.io/vuln/SNYK-PYTHON-FASTECDSA-6262045"
     }
   ]
 }
