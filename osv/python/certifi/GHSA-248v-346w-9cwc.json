@@ -1,9 +1,10 @@
 {
   "id": "GHSA-248v-346w-9cwc",
-  "modified": "2025-02-11T22:40:55.086858Z",
+  "modified": "2025-02-13T00:55:06.046060Z",
   "published": "2024-07-05T20:06:40Z",
   "aliases": [
-    "CVE-2024-39689"
+    "CVE-2024-39689",
+    "PYSEC-2024-230"
   ],
   "related": [
     "CGA-2ph7-wp75-g3rf",
@@ -27,7 +28,8 @@
     "CGA-r3c7-44cm-2pr4",
     "CGA-rvmh-6c2w-5rjp",
     "CGA-wgrc-28p5-r64q",
-    "CVE-2024-39689"
+    "CVE-2024-39689",
+    "PYSEC-2024-230"
   ],
   "summary": "Certifi removes GLOBALTRUST root certificate",
   "details": "Certifi 2024.07.04 removes root certificates from \"GLOBALTRUST\" from the root store. These are in the process of being removed from Mozilla's trust store.\n\nGLOBALTRUST's root certificates are being removed pursuant to an investigation which identified \"long-running and unresolved compliance issues\". Conclusions of Mozilla's investigation can be found [here]( https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/XpknYMPO8dI).",
@@ -89,6 +91,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/certifi/python-certifi"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/certifi/PYSEC-2024-230.yaml"
     },
     {
       "type": "WEB",
