@@ -1,14 +1,12 @@
 {
   "Identifier": "GHSA-q4h9-7rxj-7gx2",
   "PackageSlug": "maven/io.lettuce/lettuce-core",
-  "Title": "Withdrawn Advisory: Netty vulnerability included in redis lettuce",
-  "Description": "Note: i'm reporting this in this way purely because it's private and i don't want to broadcast vulnerabilities.\n\n\u003e An unsafe reading of environment file could potentially cause a denial of service in Netty. When loaded on an Windows application, Netty attempts to load a file that does not exist. If an attacker creates such a large file, the Netty application crashes. This vulnerability is fixed in 4.1.115.",
-  "Date": "2025-01-16",
+  "Title": "False Positive",
+  "Description": "This advisory has been marked as False-Positive and removed.",
+  "Date": "2025-02-13",
   "Pubdate": "2024-12-02",
-  "AffectedRange": "[,6.5.1.RELEASE)",
-  "FixedVersions": [
-    "6.5.1.RELEASE"
-  ],
+  "AffectedRange": "(,0)",
+  "FixedVersions": [],
   "AffectedVersions": "All versions before 6.5.1.RELEASE",
   "NotImpacted": "All versions starting from 6.5.1.RELEASE",
   "Solution": "Upgrade to version 6.5.1.RELEASE or above.",
