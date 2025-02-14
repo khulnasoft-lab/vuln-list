@@ -1,6 +1,6 @@
 {
   "id": "GHSA-qc2g-gmh6-95p4",
-  "modified": "2024-08-20T20:59:05.839057Z",
+  "modified": "2025-02-13T19:00:59Z",
   "published": "2023-07-03T21:30:57Z",
   "aliases": [
     "CVE-2023-2727",
@@ -16,7 +16,7 @@
     "CGA-mjrh-v33w-h9r9"
   ],
   "summary": "kube-apiserver vulnerable to policy bypass",
-  "details": "Users may be able to launch containers using images that are restricted by ImagePolicyWebhook when using ephemeral containers. Kubernetes clusters are only affected if the ImagePolicyWebhook admission plugin is used together with ephemeral containers.\n\n",
+  "details": "Users may be able to launch containers using images that are restricted by ImagePolicyWebhook when using ephemeral containers. Kubernetes clusters are only affected if the ImagePolicyWebhook admission plugin is used together with ephemeral containers.",
   "affected": [
     {
       "package": {
@@ -147,6 +147,10 @@
     {
       "type": "WEB",
       "url": "https://groups.google.com/g/kubernetes-security-announce/c/vPWYJ_L84m8"
+    },
+    {
+      "type": "WEB",
+      "url": "https://security.netapp.com/advisory/ntap-20230803-0004"
     },
     {
       "type": "WEB",
