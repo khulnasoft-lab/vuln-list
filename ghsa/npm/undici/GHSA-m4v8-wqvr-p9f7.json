@@ -48,12 +48,12 @@
         "Value": "CVE-2024-30260"
       }
     ],
-    "Description": "### Impact\n\nUndici cleared Authorization and Proxy-Authorization headers for `fetch()`, but did not clear them for `undici.request()`.\n\n### Patches\n\nThis has been patched in https://github.com/nodejs/undici/commit/6805746680d27a5369d7fb67bc05f95a28247d75.\nFixes has been released in v5.28.4 and v6.11.1.\n\n### Workarounds\n\nuse `fetch()` or disable `maxRedirections`.\n\n### References\n\nLinzi Shang reported this.\n\n* https://hackerone.com/reports/2408074\n* https://github.com/nodejs/undici/security/advisories/GHSA-3787-6prv-h9w3\n",
+    "Description": "### Impact\n\nUndici cleared Authorization and Proxy-Authorization headers for `fetch()`, but did not clear them for `undici.request()`.\n\n### Patches\n\nThis has been patched in https://github.com/nodejs/undici/commit/6805746680d27a5369d7fb67bc05f95a28247d75.\nFixes has been released in v5.28.4 and v6.11.1.\n\n### Workarounds\n\nuse `fetch()` or disable `maxRedirections`.\n\n### References\n\nLinzi Shang reported this.\n\n* https://hackerone.com/reports/2408074\n* https://github.com/nodejs/undici/security/advisories/GHSA-3787-6prv-h9w3",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-04-04T14:20:39Z",
     "Severity": "LOW",
     "Summary": "Undici's Proxy-Authorization header not cleared on cross-origin redirect for dispatch, request, stream, pipeline",
-    "UpdatedAt": "2024-12-18T21:40:19Z",
+    "UpdatedAt": "2025-02-13T19:02:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.9,

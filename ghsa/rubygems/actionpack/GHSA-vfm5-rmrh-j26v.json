@@ -45,12 +45,12 @@
         "Value": "CVE-2024-54133"
       }
     ],
-    "Description": "There is a possible Cross Site Scripting (XSS) vulnerability  in the `content_security_policy` helper in Action Pack.\n\nImpact\n------\nApplications which set Content-Security-Policy (CSP) headers dynamically from untrusted user input may be vulnerable to carefully crafted inputs being able to inject new directives into the CSP. This could lead to a bypass of the CSP and its protection against XSS and other attacks.\n\nReleases\n--------\nThe fixed releases are available at the normal locations.\n\nWorkarounds\n-----------\nApplications can avoid setting CSP headers dynamically from untrusted input, or can validate/sanitize that input.\n\nCredits\n-------\nThanks to [ryotak](https://hackerone.com/ryotak) for the report!\n",
+    "Description": "There is a possible Cross Site Scripting (XSS) vulnerability  in the `content_security_policy` helper in Action Pack.\n\nImpact\n------\nApplications which set Content-Security-Policy (CSP) headers dynamically from untrusted user input may be vulnerable to carefully crafted inputs being able to inject new directives into the CSP. This could lead to a bypass of the CSP and its protection against XSS and other attacks.\n\nReleases\n--------\nThe fixed releases are available at the normal locations.\n\nWorkarounds\n-----------\nApplications can avoid setting CSP headers dynamically from untrusted input, or can validate/sanitize that input.\n\nCredits\n-------\nThanks to [ryotak](https://hackerone.com/ryotak) for the report!",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-12-10T22:42:27Z",
     "Severity": "LOW",
     "Summary": "Possible Content Security Policy bypass in Action Dispatch",
-    "UpdatedAt": "2024-12-11T21:18:30Z",
+    "UpdatedAt": "2025-02-13T22:08:17Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
