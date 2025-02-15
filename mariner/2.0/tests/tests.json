@@ -2,6 +2,18 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package busybox is earlier than 1.35.0-13, affected by CVE-2022-48174",
+      "ID": "oval:com.microsoft.cbl-mariner:tst:56490000",
+      "Version": "0",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.cbl-mariner:obj:56490001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.cbl-mariner:ste:56490002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package nodejs18 is earlier than 18.20.3-3, affected by CVE-2025-23085",
       "ID": "oval:com.microsoft.cbl-mariner:tst:56476000",
       "Version": "0",
