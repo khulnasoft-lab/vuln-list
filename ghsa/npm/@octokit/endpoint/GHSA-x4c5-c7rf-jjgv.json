@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-02-14T17:56:19Z",
+  "UpdatedAt": "2025-02-14T22:19:52Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@octokit/endpoint"
@@ -15,6 +15,12 @@
       },
       {
         "Url": "https://github.com/octokit/endpoint.js/commit/6c9c5be033c450d436efb37de41b6470c22f7db8"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25285"
+      },
+      {
+        "Url": "https://github.com/octokit/endpoint.js/blob/main/src/parse.ts"
       },
       {
         "Url": "https://github.com/advisories/GHSA-x4c5-c7rf-jjgv"
@@ -35,7 +41,7 @@
     "PublishedAt": "2025-02-14T17:56:18Z",
     "Severity": "MODERATE",
     "Summary": "@octokit/endpoint has a Regular Expression in parse that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
-    "UpdatedAt": "2025-02-14T17:56:19Z",
+    "UpdatedAt": "2025-02-14T22:19:52Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -47,7 +53,13 @@
       "FirstPatchedVersion": {
         "Identifier": "10.1.3"
       },
-      "VulnerableVersionRange": "\u003e= 4.1.0, \u003c 10.1.3"
+      "VulnerableVersionRange": "\u003e= 10.0.0, \u003c 10.1.3"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "9.0.6"
+      },
+      "VulnerableVersionRange": "\u003e= 9.0.5, \u003c 9.0.6"
     }
   ]
 }

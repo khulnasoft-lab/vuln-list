@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-02-14T17:58:55Z",
+  "UpdatedAt": "2025-02-14T23:07:30Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@octokit/request-error"
@@ -15,6 +15,12 @@
       },
       {
         "Url": "https://github.com/octokit/request-error.js/commit/d558320874a4bc8d356babf1079e6f0056a59b9e"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25289"
+      },
+      {
+        "Url": "https://github.com/octokit/request-error.js/blob/main/src/index.ts"
       },
       {
         "Url": "https://github.com/advisories/GHSA-xx4v-prfh-6cgc"
@@ -35,7 +41,7 @@
     "PublishedAt": "2025-02-14T17:58:54Z",
     "Severity": "MODERATE",
     "Summary": "@octokit/request-error has a Regular Expression in index that Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
-    "UpdatedAt": "2025-02-14T17:58:55Z",
+    "UpdatedAt": "2025-02-14T23:07:30Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -47,7 +53,13 @@
       "FirstPatchedVersion": {
         "Identifier": "6.1.7"
       },
-      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 6.1.7"
+      "VulnerableVersionRange": "\u003e= 6.0.0, \u003c 6.1.7"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "5.1.1"
+      },
+      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 5.1.1"
     }
   ]
 }
