@@ -1,6 +1,6 @@
 {
   "id": "GHSA-32h7-7j94-8fc2",
-  "modified": "2024-11-18T16:26:36Z",
+  "modified": "2025-02-19T15:34:17Z",
   "published": "2024-02-09T18:31:07Z",
   "aliases": [
     "BIT-mattermost-2024-1402",
@@ -14,7 +14,7 @@
     "CGA-xjf7-9r4q-527v"
   ],
   "summary": "Mattermost vulnerable to denial of service via large number of emoji reactions",
-  "details": "Mattermost fails to check if a custom emoji reaction exists when sending it to a post and to limit the amount of custom emojis allowed to be added in a post, allowing an attacker sending a huge amount of non-existent custom emojis in a post to crash the mobile app of a user seeing the post. Fetching posts with huge amounts of reactions results in Uncontrolled Resource Consumption.\n",
+  "details": "Mattermost fails to check if a custom emoji reaction exists when sending it to a post and to limit the amount of custom emojis allowed to be added in a post, allowing an attacker sending a huge amount of non-existent custom emojis in a post to crash the mobile app of a user seeing the post. Fetching posts with huge amounts of reactions results in Uncontrolled Resource Consumption.",
   "affected": [
     {
       "package": {
