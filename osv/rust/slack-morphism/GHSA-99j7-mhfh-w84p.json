@@ -6,6 +6,9 @@
     "CVE-2022-31162",
     "RUSTSEC-2022-0086"
   ],
+  "related": [
+    "CVE-2022-31162"
+  ],
   "summary": "Slack Morphism for Rust before 0.41.0 can leak Slack OAuth client information in application debug logs",
   "details": "### Impact\nPotential/accidental leaking of Slack OAuth client information in application debug logs.\n\n### Patches\nMore strict and secure debug formatting was introduced in v0.41 for OAuth secret types to avoid the possibility of printing sensitive information in application logs.\n\n### Workarounds\nDon't print/output in logs request and responses for OAuth and client configurations.\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in the [repo](https://github.com/abdolence/slack-morphism-rust)\n* Email us at [me@abdolence.dev](mailto:me@abdolence.dev)\n",
   "affected": [

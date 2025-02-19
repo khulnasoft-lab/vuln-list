@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2022-31146"
   ],
+  "related": [
+    "CVE-2022-31146"
+  ],
   "summary": "Wasmtime vulnerable to Use After Free with `externref`s",
   "details": "There is a bug in Wasmtime's code generator, Cranelift, where functions using reference types may be incorrectly missing metadata required for runtime garbage collection (GC). This means that if a GC happens at runtime then the collector will mistakenly think some Wasm stack frames do not have live references to garbage collected values and therefore reclaim and deallocate them. The function can then subsequently continue to use the values, leading later to use-after-free bugs. This bug was introduced in Cranelift's migration to the `regalloc2` register allocator in the Wasmtime 0.37.0 release on 2022-05-20. This bug has been patched and users should upgrade to Wasmtime version 0.38.2.\n\nMitigations for this issue can be achieved by doing one of:\n\n* Disabling the reference types proposal by passing `false` to [`wasmtime::Config::wasm_reference_types`](https://docs.rs/wasmtime/0.38.0/wasmtime/struct.Config.html#method.wasm_reference_types).\n* Downgrading to Wasmtime 0.36.0 or prior.",
   "affected": [

@@ -6,6 +6,9 @@
     "CVE-2023-25307",
     "GO-2023-1543"
   ],
+  "related": [
+    "CVE-2023-25307"
+  ],
   "summary": "mrpack-install vulnerable to path traversal with dependency",
   "details": "### Impact\nImporting a malicious `.mrpack` file can cause path traversal while downloading files.\nThis can lead to scripts or config files being placed or replaced at arbitrary locations, without the user noticing.\n\n### Patches\nNo patches yet.\n\n### Workarounds\nAvoid importing `.mrpack` files from untrusted sources.\n\n### References\nhttps://docs.modrinth.com/docs/modpacks/format_definition/#files\n",
   "affected": [

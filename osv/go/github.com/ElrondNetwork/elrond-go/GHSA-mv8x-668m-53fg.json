@@ -6,6 +6,9 @@
     "CVE-2022-36061",
     "GO-2022-0971"
   ],
+  "related": [
+    "CVE-2022-36061"
+  ],
   "summary": "Elrond-go has improper initialization",
   "details": "### Impact\nRead only calls between contracts can generate smart contracts results. For example, if contract A calls in read only mode contract B and the called function will make changes upon the contract's B state, the state will be altered for contract B as if the call was not made in the read-only mode. This can lead to some effects not designed by the original smart contracts programmers.\n\n### Patches\nPatch v1.3.35 or higher\n\n### Workarounds\nNo workaround\n\n### References\nFor future reference and understanding of this issue, anyone can check this integration test https://github.com/ElrondNetwork/elrond-go/blob/8e402fa6d7e91e779980122d3798b2bf50892945/integrationTests/vm/txsFee/asyncESDT_test.go#L452 that proves the fix and prevents a future code regression. \n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in elrond-go ([http://github.com/ElrondNetwork/elrond-go/issues](https://github.com/ElrondNetwork/elrond-go/issues))\n",
   "affected": [
