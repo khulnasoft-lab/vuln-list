@@ -2,6 +2,30 @@
   "RpminfoTests": [
     {
       "Check": "at least one",
+      "Comment": "Package openssh is earlier than 9.8p1-3, affected by CVE-2025-26466",
+      "ID": "oval:com.microsoft.azurelinux:tst:56898000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:56898001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:56898002"
+      }
+    },
+    {
+      "Check": "at least one",
+      "Comment": "Package openssh is earlier than 9.8p1-3, affected by CVE-2025-26465",
+      "ID": "oval:com.microsoft.azurelinux:tst:56894000",
+      "Version": "1",
+      "Object": {
+        "ObjectRef": "oval:com.microsoft.azurelinux:obj:56894001"
+      },
+      "State": {
+        "StateRef": "oval:com.microsoft.azurelinux:ste:56894002"
+      }
+    },
+    {
+      "Check": "at least one",
       "Comment": "Package sriov-network-device-plugin is earlier than 3.7.0-3, affected by CVE-2024-45339",
       "ID": "oval:com.microsoft.azurelinux:tst:56078000",
       "Version": "1",
