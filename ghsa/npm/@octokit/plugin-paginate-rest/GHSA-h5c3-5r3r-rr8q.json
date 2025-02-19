@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-02-14T17:58:00Z",
+  "UpdatedAt": "2025-02-18T19:15:06Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@octokit/plugin-paginate-rest"
@@ -23,6 +23,9 @@
         "Url": "https://github.com/octokit/plugin-paginate-rest.js/blob/main/src/iterator.ts"
       },
       {
+        "Url": "https://github.com/octokit/plugin-paginate-rest.js/releases/tag/v9.2.2"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-h5c3-5r3r-rr8q"
       }
     ],
@@ -41,7 +44,7 @@
     "PublishedAt": "2025-02-14T17:57:59Z",
     "Severity": "MODERATE",
     "Summary": "@octokit/plugin-paginate-rest has a Regular Expression in iterator Leads to ReDoS Vulnerability Due to Catastrophic Backtracking",
-    "UpdatedAt": "2025-02-14T22:19:01Z",
+    "UpdatedAt": "2025-02-18T19:15:06Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -51,9 +54,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "9.2.2"
+      },
+      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 9.2.2"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "11.4.1"
       },
-      "VulnerableVersionRange": "\u003e= 1.0.0, \u003c 11.4.1"
+      "VulnerableVersionRange": "\u003e= 9.3.0-beta.1, \u003c 11.4.1"
     }
   ]
 }
