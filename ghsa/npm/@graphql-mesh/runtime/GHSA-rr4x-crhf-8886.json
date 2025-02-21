@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2023-10-10T21:29:51Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -20,6 +20,12 @@
         "Url": "https://github.com/Urigo/graphql-mesh/releases/tag/release-1696859949678"
       },
       {
+        "Url": "https://github.com/ardatan/graphql-mesh/security/advisories/GHSA-rr4x-crhf-8886"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-27097"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-rr4x-crhf-8886"
       }
     ],
@@ -27,14 +33,18 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-rr4x-crhf-8886"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2025-27097"
       }
     ],
-    "Description": "When you have transforms on the root level or single source with transforms, and the client sends the same query with different variables, the initial variables are used in all following requests until the cache evicts DocumentNode.\n\nLet's say if a token is sent via variables, the following requests will act like the same token is sent even if the following requests have different tokens.\n\nThis can cause a short memory leak but it won't grow per each request but per different operation until the cache evicts DocumentNode by LRU mechanism.\n",
+    "Description": "When you have transforms on the root level or single source with transforms, and the client sends the same query with different variables, the initial variables are used in all following requests until the cache evicts DocumentNode.\n\nLet's say if a token is sent via variables, the following requests will act like the same token is sent even if the following requests have different tokens.\n\nThis can cause a short memory leak but it won't grow per each request but per different operation until the cache evicts DocumentNode by LRU mechanism.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-10T21:29:50Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Cache variables with the operations when transforms exist on the root level even if variables change in the further requests with the same operation",
-    "UpdatedAt": "2023-10-10T21:29:51Z",
+    "UpdatedAt": "2025-02-20T22:50:53Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
