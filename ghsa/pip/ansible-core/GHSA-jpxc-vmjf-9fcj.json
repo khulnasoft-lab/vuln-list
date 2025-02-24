@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-09-16T22:55:01Z",
+  "UpdatedAt": "2025-02-24T15:15:39Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "ansible-core"
@@ -33,6 +33,15 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-jpxc-vmjf-9fcj"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/commit/8a87e1c5d37422bc99d27ad4237d185cc233e035"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/blob/v2.16.13/changelogs/CHANGELOG-v2.16.rst#security-fixes"
+      },
+      {
+        "Url": "https://github.com/ansible/ansible/blob/v2.17.6/changelogs/CHANGELOG-v2.17.rst#security-fixes"
       }
     ],
     "Identifiers": [
@@ -50,7 +59,7 @@
     "PublishedAt": "2024-09-16T14:37:26Z",
     "Severity": "HIGH",
     "Summary": "Ansible vulnerable to Insertion of Sensitive Information into Log File",
-    "UpdatedAt": "2025-02-10T21:44:56Z",
+    "UpdatedAt": "2025-02-24T15:15:39Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -60,9 +69,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "2.16.13"
       },
-      "VulnerableVersionRange": "\u003c= 2.17.4"
+      "VulnerableVersionRange": "\u003c 2.16.13"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.17.6"
+      },
+      "VulnerableVersionRange": "\u003e= 2.17.0b1, \u003c 2.17.6"
     }
   ]
 }
