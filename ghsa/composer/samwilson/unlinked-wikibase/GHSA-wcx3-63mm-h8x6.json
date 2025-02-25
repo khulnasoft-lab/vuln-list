@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-12-04T22:46:02Z",
+  "UpdatedAt": "2025-02-25T15:21:45Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "samwilson/unlinked-wikibase"
@@ -23,6 +23,9 @@
         "Url": "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/FU2FGUXXK6TMV6R52VRECLC6XCSQQISY"
       },
       {
+        "Url": "https://github.com/github/advisory-database/pull/5310"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-wcx3-63mm-h8x6"
       }
     ],
@@ -36,12 +39,12 @@
         "Value": "CVE-2024-34500"
       }
     ],
-    "Description": "An issue was discovered in the UnlinkedWikibase extension in MediaWiki before 1.39.6, 1.40.x before 1.40.2, and 1.41.x before 1.41.1. XSS can occur through an interface message. Error messages (in the $err var) are not escaped before being passed to Html::rawElement() in the getError() function in the Hooks class.",
+    "Description": "An issue was discovered in the UnlinkedWikibase extension in MediaWiki before 1.42.0. XSS can occur through an interface message. Error messages (in the $err var) are not escaped before being passed to Html::rawElement() in the getError() function in the Hooks class.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-05-05T21:30:30Z",
     "Severity": "MODERATE",
     "Summary": "MediaWiki UnlinkedWikibase Cross-site Scripting vulnerability",
-    "UpdatedAt": "2024-12-04T22:46:02Z",
+    "UpdatedAt": "2025-02-25T15:21:45Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -51,21 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.41.1"
+        "Identifier": "1.42.0"
       },
-      "VulnerableVersionRange": "\u003e= 1.41.0, \u003c 1.41.1"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "1.40.2"
-      },
-      "VulnerableVersionRange": "\u003e= 1.40.0, \u003c 1.40.2"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "1.39.6"
-      },
-      "VulnerableVersionRange": "\u003c 1.39.6"
+      "VulnerableVersionRange": "\u003c 1.42.0"
     }
   ]
 }
