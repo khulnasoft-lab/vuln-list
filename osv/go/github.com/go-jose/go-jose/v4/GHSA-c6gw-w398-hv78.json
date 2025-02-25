@@ -5,6 +5,12 @@
   "aliases": [
     "CVE-2025-27144"
   ],
+  "related": [
+    "CGA-gvgx-gw4w-qjpv",
+    "CGA-pvpr-5wr4-qq4w",
+    "CGA-r46c-fg92-xcgh",
+    "CGA-wmc3-m7r6-3vx3"
+  ],
   "summary": "DoS in go-jose Parsing",
   "details": "### Impact\nWhen parsing compact JWS or JWE input, go-jose could use excessive memory. The code used strings.Split(token, \".\") to split JWT tokens, which is vulnerable to excessive memory consumption when processing maliciously crafted tokens with a large number of '.' characters.  An attacker could exploit this by sending numerous malformed tokens, leading to memory exhaustion and a Denial of Service.\n\n### Patches\nVersion 4.0.5 fixes this issue\n\n### Workarounds\nApplications could pre-validate payloads passed to go-jose do not contain an excessive number of '.' characters.\n\n### References\nThis is the same sort of issue as in the golang.org/x/oauth2/jws package as CVE-2025-22868 and Go issue https://go.dev/issue/71490.",
   "affected": [
