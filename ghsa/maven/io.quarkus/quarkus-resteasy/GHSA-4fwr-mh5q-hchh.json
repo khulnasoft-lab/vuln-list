@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-02-26T21:06:50Z",
+  "UpdatedAt": "2025-02-27T18:50:26Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.quarkus:quarkus-resteasy"
@@ -29,6 +29,24 @@
         "Url": "https://access.redhat.com/errata/RHSA-2025:1885"
       },
       {
+        "Url": "https://github.com/quarkusio/quarkus/pull/46425"
+      },
+      {
+        "Url": "https://github.com/quarkusio/quarkus/pull/46426"
+      },
+      {
+        "Url": "https://github.com/quarkusio/quarkus/commit/291296befabf659b71acbfc6e03a12bd09a920f8"
+      },
+      {
+        "Url": "https://github.com/quarkusio/quarkus/commit/30d949a4c54ba1057738849a804d2329c09e57be"
+      },
+      {
+        "Url": "https://github.com/quarkusio/quarkus/commit/70ffbd00d71d43afa7eade32d6ed586cf927c237"
+      },
+      {
+        "Url": "https://access.redhat.com/errata/RHSA-2025:1884"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4fwr-mh5q-hchh"
       }
     ],
@@ -47,7 +65,7 @@
     "PublishedAt": "2025-02-26T18:30:39Z",
     "Severity": "HIGH",
     "Summary": "io.quarkus:quarkus-resteasy: Memory Leak in Quarkus RESTEasy Classic When Client Requests Timeout",
-    "UpdatedAt": "2025-02-27T15:32:55Z",
+    "UpdatedAt": "2025-02-27T18:50:26Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -57,9 +75,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "3.8.6.1"
       },
-      "VulnerableVersionRange": "\u003c= 3.19.0"
+      "VulnerableVersionRange": "\u003c 3.8.6.1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.15.3.1"
+      },
+      "VulnerableVersionRange": "\u003e= 3.9.0.CR1, \u003c 3.15.3.1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.19.1"
+      },
+      "VulnerableVersionRange": "\u003e= 3.16.0.CR1, \u003c 3.19.1"
     }
   ]
 }
