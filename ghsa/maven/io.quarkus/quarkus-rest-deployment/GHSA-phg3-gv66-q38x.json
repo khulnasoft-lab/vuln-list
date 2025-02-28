@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-02-13T17:36:19Z",
+  "UpdatedAt": "2025-02-28T17:20:00Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.quarkus:quarkus-rest-deployment"
@@ -32,6 +32,15 @@
         "Url": "https://access.redhat.com/errata/RHSA-2025:1884"
       },
       {
+        "Url": "https://github.com/quarkusio/quarkus/commit/d8df15cec17dc5d085efc372d77cbef1341ae071"
+      },
+      {
+        "Url": "https://github.com/quarkusio/quarkus/commit/f42166ee7041ed09b7183d5dbf3ece2439b16676"
+      },
+      {
+        "Url": "https://quarkus.io/blog/cve-fixes-feb-2025"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-phg3-gv66-q38x"
       }
     ],
@@ -50,7 +59,7 @@
     "PublishedAt": "2025-02-13T15:31:25Z",
     "Severity": "HIGH",
     "Summary": "Quarkus REST Endpoint Request Parameter Leakage Due to Shared Instance",
-    "UpdatedAt": "2025-02-27T18:31:08Z",
+    "UpdatedAt": "2025-02-28T17:20:00Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.3,
@@ -60,9 +69,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "3.8.6.1"
+      },
+      "VulnerableVersionRange": "\u003c 3.8.6.1"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.15.3.1"
+      },
+      "VulnerableVersionRange": "\u003e= 3.9.0.CR1, \u003c 3.15.3.1"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "3.18.2"
       },
-      "VulnerableVersionRange": "\u003c 3.18.2"
+      "VulnerableVersionRange": "\u003e= 3.16.0.CR1, \u003c 3.18.2"
     }
   ]
 }
