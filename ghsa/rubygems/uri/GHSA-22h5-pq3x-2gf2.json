@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "LOW",
   "UpdatedAt": "2025-03-03T22:07:56Z",
   "Package": {
     "Ecosystem": "RUBYGEMS",
@@ -54,9 +54,9 @@
     "Description": "There is a possibility for userinfo leakage by in the uri gem.\nThis vulnerability has been assigned the CVE identifier CVE-2025-27221. We recommend upgrading the uri gem.\n\n## Details\n\nThe methods `URI#join`, `URI#merge`, and `URI#+` retained userinfo, such as `user:password`, even after the host is replaced. When generating a URL to a malicious host from a URL containing secret userinfo using these methods, and having someone access that URL, an unintended userinfo leak could occur.\n\nPlease update URI gem to version 0.11.3, 0.12.4, 0.13.2, 1.0.3 or later.\n\n## Affected versions\n\nuri gem versions \u003c 0.11.3, 0.12.0 to 0.12.3, 0.13.0, 0.13.1 and 1.0.0 to 1.0.2.\n\n## Credits\n\nThanks to Tsubasa Irisawa (lambdasawa) for discovering this issue.\nAlso thanks to nobu for additional fixes of this vulnerability.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-03T22:07:53Z",
-    "Severity": "HIGH",
+    "Severity": "LOW",
     "Summary": "URI allows for userinfo Leakage in URI#join, URI#merge, and URI#+",
-    "UpdatedAt": "2025-03-04T02:44:53Z",
+    "UpdatedAt": "2025-03-04T15:47:34Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.2,
