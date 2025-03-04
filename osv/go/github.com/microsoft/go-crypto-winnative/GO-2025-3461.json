@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-29c6-3hcj-89cf",
+  "id": "GO-2025-3461",
   "modified": "2025-03-03T19:42:04.879346Z",
-  "published": "2025-02-12T19:20:24Z",
+  "published": "2025-03-03T19:22:09Z",
   "aliases": [
     "CVE-2025-25199",
-    "GO-2025-3461"
+    "GHSA-29c6-3hcj-89cf"
   ],
-  "summary": "go-crypto-winnative BCryptGenerateSymmetricKey memory leak",
-  "details": "Calls to `cng.TLS1PRF` don't release the key handle, producing a small memory leak every time.",
+  "summary": "go-crypto-winnative BCryptGenerateSymmetricKey memory leak in github.com/microsoft/go-crypto-winnative",
+  "details": "go-crypto-winnative BCryptGenerateSymmetricKey memory leak in github.com/microsoft/go-crypto-winnative",
   "affected": [
     {
       "package": {
@@ -29,13 +29,13 @@
         }
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/02/GHSA-29c6-3hcj-89cf/GHSA-29c6-3hcj-89cf.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3461.json"
       }
     }
   ],
   "references": [
     {
-      "type": "WEB",
+      "type": "ADVISORY",
       "url": "https://github.com/microsoft/go-crypto-winnative/security/advisories/GHSA-29c6-3hcj-89cf"
     },
     {
@@ -43,12 +43,8 @@
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-25199"
     },
     {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/microsoft/go-crypto-winnative/commit/f49c8e1379ea4b147d5bff1b3be5b0ff45792e41"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/microsoft/go-crypto-winnative"
     }
   ]
 }

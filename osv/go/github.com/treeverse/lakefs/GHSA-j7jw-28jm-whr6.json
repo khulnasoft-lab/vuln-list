@@ -1,9 +1,10 @@
 {
   "id": "GHSA-j7jw-28jm-whr6",
-  "modified": "2025-02-21T21:43:16Z",
+  "modified": "2025-03-03T19:42:03.187966Z",
   "published": "2025-02-21T21:43:16Z",
   "aliases": [
-    "CVE-2025-27100"
+    "CVE-2025-27100",
+    "GO-2025-3479"
   ],
   "summary": "lakeFS allows an authenticated user to cause a crash by exhausting server memory",
   "details": "### Impact\n\nAn authenticated user can crash lakeFS by exhausting server memory.  This is an authenticated denial-of-service issue.\n\n### Patches\nThis problem has been patched and exists in versions 1.49.1 and below\n\n### Workarounds\n\nOn S3 backends, configure\n```yaml\n# ...\nblockstore:\n  s3:\n    disable_pre_signed_multipart: true\n```\nor set environment variable `LAKEFS_BLOCKSTORE_S3_DISABLE_PRE_SIGNED_MULTIPART` to `true`.\n\n### References\n_Are there any links users can visit to find out more?_",
