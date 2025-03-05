@@ -1,12 +1,14 @@
 {
   "id": "GHSA-2vjq-hg5w-5gm7",
-  "modified": "2024-05-19T02:24:45.679076Z",
+  "modified": "2025-03-05T17:57:14.727995Z",
   "published": "2024-05-14T20:13:47Z",
   "aliases": [
-    "CVE-2024-32977"
+    "CVE-2024-32977",
+    "PYSEC-2024-237"
   ],
   "related": [
-    "CVE-2024-32977"
+    "CVE-2024-32977",
+    "PYSEC-2024-237"
   ],
   "summary": "OctoPrint has an Authentication Bypass via X-Forwarded-For Header when autologinLocal is enabled",
   "details": "### Impact\n\nOctoPrint versions up until and including 1.10.0 contain a vulnerability that allows an unauthenticated attacker to completely bypass the authentication **if the `autologinLocal` option is enabled** within `config.yaml`, even if they come from networks that are not configured as `localNetworks`, by spoofing their IP via the `X-Forwarded-For` header.\n\nIf autologin is not enabled, this vulnerability does not have any impact.\n\n### Patches\n\nThe vulnerability has been patched in version 1.10.1.\n\n### Workaround\n\nUntil the patch has been applied, OctoPrint administrators who have autologin enabled on their instances should disable it and/or to make the instance inaccessible from potentially hostile networks like the internet.\n\n### PoC\n\n1. Enable the `autologinAs` configuration within the `accessControl` section in the [OctoPrint yaml configuration file](https://docs.octoprint.org/en/master/configuration/config_yaml.html#access-control)\n2. Set your browser to add the `X-Forwarded-For: 127.0.0.1` header to HTTP requests. For example, this can be done using proxy software like Burp Suite. Alternatively, there are browser extensions such as https://github.com/MisterPhilip/x-forwarded-for, but I haven't tried them.\n3. Navigate to OctoPrint and note that it logs you in automatically.\n\n### Credits\n\nThis vulnerability was discovered and responsibly disclosed to OctoPrint by Jacopo Tediosi.",
