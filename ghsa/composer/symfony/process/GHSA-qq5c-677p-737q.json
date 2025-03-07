@@ -42,12 +42,12 @@
         "Value": "CVE-2024-51736"
       }
     ],
-    "Description": "### Description\n\nOn Window, when an executable file named `cmd.exe` is located in the current working directory it will be called by the `Process` class when preparing command arguments, leading to possible hijacking.\n\n### Resolution\n\nThe `Process` class now uses the absolute path to `cmd.exe`.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/18ecd03eda3917fdf901a48e72518f911c64a1c9) for branch 5.4.\n\n### Credits\n\nWe would like to thank Jordi Boggiano for reporting the issue and Nicolas Grekas for providing the fix.\n",
+    "Description": "### Description\n\nOn Windows, when an executable file named `cmd.exe` is located in the current working directory it will be called by the `Process` class when preparing command arguments, leading to possible hijacking.\n\n### Resolution\n\nThe `Process` class now uses the absolute path to `cmd.exe`.\n\nThe patch for this issue is available [here](https://github.com/symfony/symfony/commit/18ecd03eda3917fdf901a48e72518f911c64a1c9) for branch 5.4.\n\n### Credits\n\nWe would like to thank Jordi Boggiano for reporting the issue and Nicolas Grekas for providing the fix.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-11-06T15:22:55Z",
     "Severity": "HIGH",
     "Summary": "Symfony vulnerable to command execution hijack on Windows with Process class",
-    "UpdatedAt": "2024-11-06T23:39:35Z",
+    "UpdatedAt": "2025-03-07T13:28:47Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.4,
