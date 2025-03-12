@@ -1,12 +1,10 @@
 {
   "id": "GHSA-5478-v2w6-c6q7",
-  "modified": "2025-03-11T16:42:15.430597Z",
+  "modified": "2025-03-11T20:13:28.153011Z",
   "published": "2025-03-11T09:30:30Z",
-  "aliases": [
-    "CVE-2025-1550"
-  ],
-  "summary": "Keras arbitrary code execution vulnerability",
-  "details": "The Keras Model.load_model function permits arbitrary code execution, even with safe_mode=True, through a manually constructed, malicious .keras archive. By altering the config.json file within the archive, an attacker can specify arbitrary Python modules and functions, along with their arguments, to be loaded and executed during model loading.",
+  "withdrawn": "2025-03-11T20:07:23Z",
+  "summary": "Duplicate Advisory: Keras arbitrary code execution vulnerability",
+  "details": "# Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-48g7-3x6r-xfhp. This link is maintained to preserve external references.\n\n# Original Description\n\nThe Keras Model.load_model function permits arbitrary code execution, even with safe_mode=True, through a manually constructed, malicious .keras archive. By altering the config.json file within the archive, an attacker can specify arbitrary Python modules and functions, along with their arguments, to be loaded and executed during model loading.",
   "affected": [
     {
       "package": {
