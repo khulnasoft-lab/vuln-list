@@ -1,6 +1,6 @@
 {
   "id": "GHSA-44f7-5fj5-h4px",
-  "modified": "2025-03-13T15:25:54.085863Z",
+  "modified": "2025-03-14T20:00:47Z",
   "published": "2025-03-11T15:27:16Z",
   "aliases": [
     "CVE-2025-27403",
@@ -54,6 +54,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-44f7-5fj5-h4px/GHSA-44f7-5fj5-h4px.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/deislabs/ratify",
+        "purl": "pkg:golang/github.com/deislabs/ratify"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.2.3"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-44f7-5fj5-h4px/GHSA-44f7-5fj5-h4px.json"
+      }
     }
   ],
   "references": [
@@ -76,6 +99,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/ratify-project/ratify"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3511"
     }
   ]
 }
