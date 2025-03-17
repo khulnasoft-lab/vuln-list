@@ -1,0 +1,46 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2025-03-17T14:48:08Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "PostQuantum-Feldman-VSS"
+  },
+  "Advisory": {
+    "DatabaseId": 284809,
+    "Id": "GSA_kwCzR0hTQS12NDMyLTdmNDctOWc5NM4ABFiJ",
+    "GhsaId": "GHSA-v432-7f47-9g94",
+    "References": [
+      {
+        "Url": "https://github.com/DavidOsipov/PostQuantum-Feldman-VSS/security/advisories/GHSA-v432-7f47-9g94"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-v432-7f47-9g94"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-v432-7f47-9g94"
+      }
+    ],
+    "Description": "## Summary\nPostQuantum-Feldman-VSS, in versions ≤0.7.6b0, is vulnerable due to its dependency on gmpy2, which can crash the Python interpreter if memory allocation fails. This can be exploited for denial-of-service attacks, impacting the availability of systems using the library.\n\n## Description\nThe vulnerability arises from gmpy2’s behavior, as noted in its documentation: \n\n\u003e gmpy2 can crash the Python interpreter in case of memory allocation failure ([gmpy2 Overview](https://gmpy2.readthedocs.io/en/latest/overview.html))\n\nThis stems from gmpy2’s reliance on the GMP library, which terminates the program when memory allocation fails ([GMP Memory Management](https://gmplib.org/manual/Memory-Management)). An attacker can exploit this by crafting inputs that exhaust memory, causing the interpreter to crash and disrupting service for legitimate users.\n\n## Impact\n- **Availability**: High impact, as the interpreter crash leads to complete denial of service.\n- **Confidentiality and Integrity**: No direct impact, as the vulnerability does not allow unauthorized access or data modification.\n\n## Affected Versions\n- All versions of PostQuantum-Feldman-VSS ≤0.7.6b0\n\n## Patched Versions\n- Versions \u003e0.7.6b0 (e.g., 0.7.7 or later, once released with the `SafeGMPy2` implementation)\n\n## Workarounds (For Vulnerable Versions)\nFor users unable to upgrade to a patched version:\n- **Estimate Memory Usage**: Manually estimate memory requirements before operations and ensure sufficient resources.\n- **Monitor System Resources**: Implement monitoring to detect and respond to memory exhaustion attempts.\n- **Custom Memory Allocation**: Use GMP’s custom allocation functions to handle failures gracefully ([GMP Custom Allocation](https://gmplib.org/manual/Custom-Allocation)).\n\n## Mitigation Details\nThe fix introduces a `SafeGMPy2` wrapper that:\n1. Checks input sizes against configurable limits (e.g., `DEFAULT_MAX_BITS_POWMOD = 20000`).\n2. Estimates output sizes to prevent excessive memory use (e.g., in multiplication and powmod).\n3. Wraps critical gmpy2 functions (mpz, powmod, invert) with try-except blocks to raise `MemorySafetyError` instead of crashing.\n4. Monkey-patches gmpy2 to enforce these safety checks globally.\nThis has been integrated into key classes like `CyclicGroup` and `FeldmanVSS`, ensuring memory-safe cryptographic operations.\n\n## References\n- [gmpy2 Overview Documentation](https://gmpy2.readthedocs.io/en/latest/overview.html)\n- [GMP Memory Management Documentation](https://gmplib.org/manual/Memory-Management)\n- [GMP Custom Allocation Documentation](https://gmplib.org/manual/Custom-Allocation)",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2025-03-17T14:48:07Z",
+    "Severity": "HIGH",
+    "Summary": "PostQuantum-Feldman-VSS'S Dependency Vulnerability in gmpy2 Leading to Interpreter Crash",
+    "UpdatedAt": "2025-03-17T14:48:08Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.7.7b0"
+      },
+      "VulnerableVersionRange": "\u003c= 0.7.6b0"
+    }
+  ]
+}

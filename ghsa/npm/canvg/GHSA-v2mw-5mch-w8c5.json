@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-03-13T14:09:32Z",
+  "UpdatedAt": "2025-03-17T15:41:22Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "canvg"
@@ -36,12 +36,12 @@
         "Value": "CVE-2025-25977"
       }
     ],
-    "Description": "An issue in canvg v.4.0.2 can lead to prototype pollution via the Constructor of the class StyleElement.",
+    "Description": "An issue in canvg prior to v.4.0.3 and v3.0.11 can lead to prototype pollution via the Constructor of the class StyleElement.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-10T18:31:56Z",
     "Severity": "HIGH",
     "Summary": "canvg Prototype Pollution vulnerability",
-    "UpdatedAt": "2025-03-13T14:09:32Z",
+    "UpdatedAt": "2025-03-17T15:41:45Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -51,9 +51,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "3.0.11"
+      },
+      "VulnerableVersionRange": "\u003c 3.0.11"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "4.0.3"
       },
-      "VulnerableVersionRange": "\u003c 4.0.3"
+      "VulnerableVersionRange": "\u003e= 4.0.0, \u003c 4.0.3"
     }
   ]
 }
