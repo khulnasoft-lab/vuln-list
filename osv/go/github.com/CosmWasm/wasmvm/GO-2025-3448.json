@@ -1,12 +1,12 @@
 {
   "id": "GO-2025-3448",
-  "modified": "2025-02-05T23:57:17.614034Z",
+  "modified": "2025-03-18T15:14:32Z",
   "published": "2025-02-05T23:27:45Z",
   "aliases": [
     "GHSA-23qp-3c2m-xx6w"
   ],
-  "summary": "wasmvm: Malicious smart contract can crash the chain in github.com/CosmWasm/wasmvm",
-  "details": "wasmvm: Malicious smart contract can crash the chain in github.com/CosmWasm/wasmvm",
+  "summary": "Malicious smart contract can crash the chain in github.com/CosmWasm/wasmvm",
+  "details": "Malicious smart contract can crash the chain in github.com/CosmWasm/wasmvm",
   "affected": [
     {
       "package": {
@@ -27,6 +27,13 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/CosmWasm/wasmvm/internal/api"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2025-3448.json"
       }
@@ -42,19 +49,67 @@
           "type": "SEMVER",
           "events": [
             {
-              "introduced": "2.0.0"
+              "introduced": "0"
             },
             {
               "fixed": "2.0.6"
-            },
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/CosmWasm/wasmvm/v2/internal/api"
+          }
+        ]
+      },
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2025-3448.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/CosmWasm/wasmvm/v2",
+        "purl": "pkg:golang/github.com/CosmWasm/wasmvm/v2"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
             {
-              "introduced": "2.1.0"
+              "introduced": "0"
             },
             {
               "fixed": "2.1.5"
-            },
+            }
+          ]
+        }
+      ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/CosmWasm/wasmvm/v2/internal/api"
+          }
+        ]
+      },
+      "database_specific": {
+        "source": "https://vuln.go.dev/ID/GO-2025-3448.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/CosmWasm/wasmvm/v2",
+        "purl": "pkg:golang/github.com/CosmWasm/wasmvm/v2"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
             {
-              "introduced": "2.2.0"
+              "introduced": "0"
             },
             {
               "fixed": "2.2.2"
@@ -62,6 +117,13 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/CosmWasm/wasmvm/v2/internal/api"
+          }
+        ]
+      },
       "database_specific": {
         "source": "https://vuln.go.dev/ID/GO-2025-3448.json"
       }
