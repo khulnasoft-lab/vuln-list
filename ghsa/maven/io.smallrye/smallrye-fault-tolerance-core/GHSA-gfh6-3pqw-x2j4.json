@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-03-12T20:19:58Z",
+  "UpdatedAt": "2025-03-18T21:40:40Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.smallrye:smallrye-fault-tolerance-core"
@@ -23,6 +23,15 @@
         "Url": "https://github.com/smallrye/smallrye-fault-tolerance/commit/e8bcad3d5e8bbac0a3219bd5c13661adf6ed6bbb"
       },
       {
+        "Url": "https://github.com/smallrye/smallrye-fault-tolerance/pull/985"
+      },
+      {
+        "Url": "https://github.com/smallrye/smallrye-fault-tolerance/pull/985/files#diff-88c4a089e0cb88e4bdf285490e2617c29b9979a778e33957e4448260e286b91aR299"
+      },
+      {
+        "Url": "https://smallrye.io/blog/fault-tolerance-6-9-0"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-gfh6-3pqw-x2j4"
       }
     ],
@@ -41,7 +50,7 @@
     "PublishedAt": "2025-03-12T15:32:06Z",
     "Severity": "HIGH",
     "Summary": "SmallRye Fault Tolerance out-of-memory (OOM) issue",
-    "UpdatedAt": "2025-03-12T20:19:58Z",
+    "UpdatedAt": "2025-03-18T21:40:40Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -53,7 +62,13 @@
       "FirstPatchedVersion": {
         "Identifier": "6.9.0"
       },
-      "VulnerableVersionRange": "\u003c 6.9.0"
+      "VulnerableVersionRange": "\u003e= 6.5.0, \u003c 6.9.0"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "6.4.2"
+      },
+      "VulnerableVersionRange": "\u003e= 6.3.0, \u003c 6.4.2"
     }
   ]
 }
