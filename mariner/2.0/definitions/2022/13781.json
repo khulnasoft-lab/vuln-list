@@ -13,16 +13,17 @@
       "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-3162",
       "Source": "CVE"
     },
-    "Patchable": "false",
+    "Patchable": "true",
+    "AdvisoryDate": "2025-03-19T15:08:06.93Z",
     "AdvisoryID": "13781",
     "Severity": "Medium",
-    "Description": "CVE-2022-3162 affecting package keda for versions less than 2.4.0-28. No patch is available currently."
+    "Description": "CVE-2022-3162 affecting package keda for versions less than 2.4.0-28. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": [
       {
-        "Comment": "Package keda is installed with version 2.4.0-27 or earlier",
+        "Comment": "Package keda is earlier than 2.4.0-28, affected by CVE-2022-3162",
         "TestRef": "oval:com.microsoft.cbl-mariner:tst:13781000"
       }
     ]
