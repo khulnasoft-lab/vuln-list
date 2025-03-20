@@ -27,19 +27,15 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-q83v-hq3j-4pq3"
-      },
-      {
-        "Type": "CVE",
-        "Value": "CVE-2024-6534"
       }
     ],
-    "Description": "Directus v10.13.0 allows an authenticated external attacker to modify presets created by the same user to assign them to another user. This is possible because the application only validates the user parameter in the 'POST /presets' request but not in the PATCH request. When chained with CVE-2024-6533, it could result in account takeover.",
+    "Description": "## Duplicate Advisory\nThis advisory has been withdrawn because it is a duplicate of GHSA-3fff-gqw3-vj86. This link is maintained to preserve external references.\n\n## Original Description\nDirectus v10.13.0 allows an authenticated external attacker to modify presets created by the same user to assign them to another user. This is possible because the application only validates the user parameter in the 'POST /presets' request but not in the PATCH request. When chained with CVE-2024-6533, it could result in account takeover.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-15T06:32:22Z",
     "Severity": "MODERATE",
-    "Summary": "Improper access control in Directus",
-    "UpdatedAt": "2024-08-19T21:03:40Z",
-    "WithdrawnAt": "",
+    "Summary": "Duplicate Advisory: Improper access control in Directus",
+    "UpdatedAt": "2025-03-20T18:34:48Z",
+    "WithdrawnAt": "2025-03-20T18:34:46Z",
     "CVSS": {
       "Score": 4.1,
       "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:N"
