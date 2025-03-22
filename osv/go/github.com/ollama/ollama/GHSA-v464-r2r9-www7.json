@@ -1,7 +1,10 @@
 {
   "id": "GHSA-v464-r2r9-www7",
-  "modified": "2025-03-21T17:25:07Z",
+  "modified": "2025-03-21T18:03:35.305168Z",
   "published": "2025-03-20T12:32:44Z",
+  "aliases": [
+    "CVE-2024-12886"
+  ],
   "summary": "Ollama Vulnerable to Denial of Service (DoS) via Crafted GZIP",
   "details": "An Out-Of-Memory (OOM) vulnerability exists in the `ollama` server version 0.3.14. This vulnerability can be triggered when a malicious API server responds with a gzip bomb HTTP response, leading to the `ollama` server crashing. The vulnerability is present in the `makeRequestWithRetry` and `getAuthorizationToken` functions, which use `io.ReadAll` to read the response body. This can result in excessive memory usage and a Denial of Service (DoS) condition.",
   "affected": [

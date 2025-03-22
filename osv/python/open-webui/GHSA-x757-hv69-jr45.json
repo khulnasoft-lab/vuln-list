@@ -1,12 +1,12 @@
 {
-  "id": "GHSA-gv26-qw3h-8qvp",
-  "modified": "2025-03-21T18:03:35.443810Z",
+  "id": "GHSA-x757-hv69-jr45",
+  "modified": "2025-03-21T21:45:28.566403Z",
   "published": "2025-03-20T12:32:46Z",
   "aliases": [
-    "CVE-2024-7046"
+    "CVE-2024-7959"
   ],
-  "summary": "Open WebUI Allows Viewing of Admin Details",
-  "details": "An improper access control vulnerability in open-webui/open-webui v0.3.8 allows an attacker to view admin details. The application does not verify whether the attacker is an administrator, allowing the attacker to directly call the /api/v1/auths/admin/details interface to retrieve the first admin (owner) details.",
+  "summary": "Open WebUI has SSRF in /openai/models",
+  "details": "The `/openai/models` endpoint in open-webui/open-webui version 0.3.8 is vulnerable to Server-Side Request Forgery (SSRF). An attacker can change the OpenAI URL to any URL without checks, causing the endpoint to send a request to the specified URL and return the output. This vulnerability allows the attacker to access internal services and potentially gain command execution by accessing instance secrets.",
   "affected": [
     {
       "package": {
@@ -47,14 +47,14 @@
         "0.3.8"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-gv26-qw3h-8qvp/GHSA-gv26-qw3h-8qvp.json"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-x757-hv69-jr45/GHSA-x757-hv69-jr45.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7046"
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7959"
     },
     {
       "type": "PACKAGE",
@@ -62,7 +62,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://huntr.com/bounties/684185e4-6766-4638-b08a-0de9c2820aee"
+      "url": "https://huntr.com/bounties/3c8bea0a-d678-4d67-bb9c-2b5b610a2193"
     }
   ]
 }

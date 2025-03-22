@@ -1,0 +1,72 @@
+{
+  "id": "GHSA-mh63-6h87-95cp",
+  "modified": "2025-03-21T22:25:52.939106Z",
+  "published": "2025-03-21T22:04:00Z",
+  "aliases": [
+    "CVE-2025-30204"
+  ],
+  "summary": "jwt-go allows excessive memory allocation during header parsing",
+  "details": "### Summary\n\nFunction [`parse.ParseUnverified`](https://github.com/golang-jwt/jwt/blob/c035977d9e11c351f4c05dfeae193923cbab49ee/parser.go#L138-L139) currently splits (via a call to [strings.Split](https://pkg.go.dev/strings#Split)) its argument (which is untrusted data) on periods.\n\nAs a result, in the face of a malicious request whose _Authorization_ header consists of `Bearer ` followed by many period characters, a call to that function incurs allocations to the tune of O(n) bytes (where n stands for the length of the function's argument), with a constant factor of about 16. Relevant weakness: [CWE-405: Asymmetric Resource Consumption (Amplification)](https://cwe.mitre.org/data/definitions/405.html)\n\n### Details\n\nSee [`parse.ParseUnverified`](https://github.com/golang-jwt/jwt/blob/c035977d9e11c351f4c05dfeae193923cbab49ee/parser.go#L138-L139) \n\n### Impact\n\nExcessive memory allocation",
+  "affected": [
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/golang-jwt/jwt/v5",
+        "purl": "pkg:golang/github.com/golang-jwt/jwt/v5"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "5.0.0-rc.1"
+            },
+            {
+              "fixed": "5.2.2"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-mh63-6h87-95cp/GHSA-mh63-6h87-95cp.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/golang-jwt/jwt/v4",
+        "purl": "pkg:golang/github.com/golang-jwt/jwt/v4"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "4.5.2"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-mh63-6h87-95cp/GHSA-mh63-6h87-95cp.json"
+      }
+    }
+  ],
+  "references": [
+    {
+      "type": "WEB",
+      "url": "https://github.com/golang-jwt/jwt/security/advisories/GHSA-mh63-6h87-95cp"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/golang-jwt/jwt/commit/0951d184286dece21f73c85673fd308786ffe9c3"
+    },
+    {
+      "type": "PACKAGE",
+      "url": "https://github.com/golang-jwt/jwt"
+    }
+  ]
+}
