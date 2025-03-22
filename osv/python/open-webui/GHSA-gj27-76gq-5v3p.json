@@ -1,12 +1,12 @@
 {
-  "id": "GHSA-gv26-qw3h-8qvp",
-  "modified": "2025-03-21T18:03:35.443810Z",
-  "published": "2025-03-20T12:32:46Z",
+  "id": "GHSA-gj27-76gq-5v3p",
+  "modified": "2025-03-21T22:05:50.769999Z",
+  "published": "2025-03-20T12:32:47Z",
   "aliases": [
-    "CVE-2024-7046"
+    "CVE-2024-7990"
   ],
-  "summary": "Open WebUI Allows Viewing of Admin Details",
-  "details": "An improper access control vulnerability in open-webui/open-webui v0.3.8 allows an attacker to view admin details. The application does not verify whether the attacker is an administrator, allowing the attacker to directly call the /api/v1/auths/admin/details interface to retrieve the first admin (owner) details.",
+  "summary": "Open WebUI stored cross-site scripting (XSS) vulnerability",
+  "details": "A stored cross-site scripting (XSS) vulnerability exists in open-webui/open-webui version 0.3.8. The vulnerability is present in the `/api/v1/models/add` endpoint, where the model description field is improperly sanitized before being rendered in chat. This allows an attacker to inject malicious scripts that can be executed by any user, including administrators, potentially leading to arbitrary code execution.",
   "affected": [
     {
       "package": {
@@ -47,14 +47,14 @@
         "0.3.8"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-gv26-qw3h-8qvp/GHSA-gv26-qw3h-8qvp.json"
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-gj27-76gq-5v3p/GHSA-gj27-76gq-5v3p.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7046"
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7990"
     },
     {
       "type": "PACKAGE",
@@ -62,7 +62,7 @@
     },
     {
       "type": "WEB",
-      "url": "https://huntr.com/bounties/684185e4-6766-4638-b08a-0de9c2820aee"
+      "url": "https://huntr.com/bounties/2256e336-0f67-449e-a82d-7fc57081a21c"
     }
   ]
 }
