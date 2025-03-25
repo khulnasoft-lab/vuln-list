@@ -30,12 +30,12 @@
         "Value": "CVE-2025-23201"
       }
     ],
-    "Description": "XSS on the parameters:`/addhost` -\u003e param: community\n\n\nof Librenms versions 24.10.1 ([https://github.com/librenms/librenms](https://github.com/librenms/librenms)) allows remote attackers to inject malicious scripts. When a user views or interacts with the page displaying the data, the malicious script executes immediately, leading to potential unauthorized actions or data exposure.\n\n\n**Proof of Concept:**\n1. Navigate to the /addhost path.\n2. Fill in all required fields.\n3. In the Community field, enter the following payload: `\"\u003e\u003cimg src=a onerror=\"alert(1)\"\u003e`.\n![image](https://github.com/user-attachments/assets/025a7692-e730-4e3b-bca7-761ed2a60cf7)\n\n4. Submit the form to save changes.\n5 The script will execute when the error alert \"No reply with community + payload\" appears.\n![image](https://github.com/user-attachments/assets/4663e24a-4ff7-42f4-9c3d-3c5b5bf34017)\n\n\n\n**Impact:**\n\nExecution of Malicious Code\n\n",
+    "Description": "XSS on the parameters:`/addhost` -\u003e param: community\n\n\nof Librenms versions 24.10.1 ([https://github.com/librenms/librenms](https://github.com/librenms/librenms)) allows remote attackers to inject malicious scripts. When a user views or interacts with the page displaying the data, the malicious script executes immediately, leading to potential unauthorized actions or data exposure.\n\n\n**Proof of Concept:**\n1. Navigate to the /addhost path.\n2. Fill in all required fields.\n3. In the Community field, enter the following payload: `\"\u003e\u003cimg src=a onerror=\"alert(1)\"\u003e`.\n![image](https://github.com/user-attachments/assets/025a7692-e730-4e3b-bca7-761ed2a60cf7)\n\n4. Submit the form to save changes.\n5 The script will execute when the error alert \"No reply with community + payload\" appears.\n![image](https://github.com/user-attachments/assets/4663e24a-4ff7-42f4-9c3d-3c5b5bf34017)\n\n\n\n**Impact:**\n\nExecution of Malicious Code",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-01-16T17:33:10Z",
     "Severity": "MODERATE",
     "Summary": "Librenms has a reflected XSS on error alert",
-    "UpdatedAt": "2025-01-17T15:52:41Z",
+    "UpdatedAt": "2025-03-25T15:48:42Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.4,
