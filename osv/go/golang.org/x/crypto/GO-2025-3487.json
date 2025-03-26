@@ -5,6 +5,14 @@
   "aliases": [
     "CVE-2025-22869"
   ],
+  "related": [
+    "RHSA-2025:3165",
+    "RHSA-2025:3175",
+    "RHSA-2025:3184",
+    "RHSA-2025:3185",
+    "RHSA-2025:3186",
+    "RHSA-2025:3210"
+  ],
   "summary": "Potential denial of service in golang.org/x/crypto",
   "details": "SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.",
   "affected": [
