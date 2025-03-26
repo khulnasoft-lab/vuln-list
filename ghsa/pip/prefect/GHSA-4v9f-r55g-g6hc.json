@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-03-20T20:43:36Z",
+  "UpdatedAt": "2025-03-26T15:36:24Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "prefect"
@@ -26,6 +26,9 @@
         "Url": "https://github.com/PrefectHQ/prefect/commit/8f159b404126d93964a4daace7619bc553fa318c"
       },
       {
+        "Url": "https://github.com/PrefectHQ/prefect/releases/tag/2.20.17"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4v9f-r55g-g6hc"
       }
     ],
@@ -39,12 +42,12 @@
         "Value": "CVE-2024-8183"
       }
     ],
-    "Description": "A CORS (Cross-Origin Resource Sharing) misconfiguration in prefecthq/prefect prior ro version 3.0.3 allows unauthorized domains to access sensitive data. This vulnerability can lead to unauthorized access to the database, resulting in potential data leaks, loss of confidentiality, service disruption, and data integrity risks.",
+    "Description": "A CORS (Cross-Origin Resource Sharing) misconfiguration in prefecthq/prefect prior to version 3.0.3 allows unauthorized domains to access sensitive data. This vulnerability can lead to unauthorized access to the database, resulting in potential data leaks, loss of confidentiality, service disruption, and data integrity risks.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-20T12:32:47Z",
     "Severity": "HIGH",
     "Summary": "Prefect CORS (Cross-Origin Resource Sharing) misconfiguration",
-    "UpdatedAt": "2025-03-20T20:43:36Z",
+    "UpdatedAt": "2025-03-26T15:36:24Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.6,
@@ -54,9 +57,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "2.20.17"
+      },
+      "VulnerableVersionRange": "\u003c 2.20.17"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "3.0.3"
       },
-      "VulnerableVersionRange": "\u003c 3.0.3"
+      "VulnerableVersionRange": "\u003e= 3.0.0rc1, \u003c 3.0.3"
     }
   ]
 }
