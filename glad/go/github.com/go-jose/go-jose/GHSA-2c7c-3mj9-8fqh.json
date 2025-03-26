@@ -1,6 +1,6 @@
 {
   "Identifier": "GHSA-2c7c-3mj9-8fqh",
-  "PackageSlug": "go/github.com/go-jose/go-jose/v3",
+  "PackageSlug": "go/github.com/go-jose/go-jose",
   "Title": "Decryption of malicious PBES2 JWE objects can consume unbounded system resources",
   "Description": "The go-jose package is subject to a \"billion hashes attack\" causing denial-of-service when decrypting JWE inputs. This occurs when an attacker can provide a PBES2 encrypted JWE blob with a very large p2c value that, when decrypted, produces a denial-of-service.",
   "Date": "2023-11-21",
