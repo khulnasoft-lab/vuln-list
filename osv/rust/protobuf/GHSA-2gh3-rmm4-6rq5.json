@@ -2,6 +2,9 @@
   "id": "GHSA-2gh3-rmm4-6rq5",
   "modified": "2025-03-11T17:08:07Z",
   "published": "2025-03-07T20:02:37Z",
+  "related": [
+    "CGA-rq7v-hmrx-5r3h"
+  ],
   "summary": "Crash due to uncontrolled recursion in protobuf crate",
   "details": "Affected version of this crate did not properly parse unknown fields when parsing a user-supplied input.\n\nThis allows an attacker to cause a stack overflow when parsing the message on untrusted data.",
   "affected": [

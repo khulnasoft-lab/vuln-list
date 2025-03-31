@@ -5,6 +5,12 @@
   "aliases": [
     "CVE-2025-29787"
   ],
+  "related": [
+    "CGA-53wm-6fvr-fcf9",
+    "CGA-g5xh-8m57-q3f2",
+    "CGA-g69r-8m6g-x2q3",
+    "CGA-hc3v-747c-95w7"
+  ],
   "summary": "zip Incorrectly Canonicalizes Paths during Archive Extraction Leading to Arbitrary File Write",
   "details": "### Summary\n\n\nIn the archive extraction routine of affected versions of the `zip` crate, symbolic links earlier in the archive are allowed to be used for later files in the archive without validation of the final canonicalized path, allowing maliciously crafted archives to overwrite arbitrary files in the file system when extracted.\n\n### Details\n\nThis is a variant of the [zip-slip](https://github.com/snyk/zip-slip-vulnerability) vulnerability, we can make the extraction logic step outside of the target directory by creating a symlink to the parent directory and then extracting further files through that symlink.\n\nThe documentation of the [`::zip::read::ZipArchive::extract`] method is in my opinion implying this should not happen:\n\n\u003e \"Paths are sanitized with ZipFile::enclosed_name.\" ...\n\u003e [`::zip::read::FileOptions::enclosed_name`] ... is resistant to path-based exploits ... can’t resolve to a path outside the current directory.\n\n\nMost archive software either decline to extract symlinks that traverse out of the directory or defer creation of symlinks after all files have been created to prevent unexpected behavior when later entries depend on earlier symbolic link entries.\n\n### PoC\n\nhttps://gist.github.com/eternal-flame-AD/bf71ef4f6828e741eb12ce7fd47b7b85\n\n### Impact\n\nUsers who extract untrusted archive files using the following high-level API method may be affected and critical files on the system may be overwritten with arbitrary file permissions, which can potentially lead to code execution.\n\n- zip::unstable::stream::ZipStreamReader::extract\n- zip::read::ZipArchive::extract",
   "affected": [

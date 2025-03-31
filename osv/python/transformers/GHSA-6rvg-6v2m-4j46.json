@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2024-12720"
   ],
+  "related": [
+    "CGA-f2g7-x7m9-rr5v"
+  ],
   "summary": "Transformers Regular Expression Denial of Service (ReDoS) vulnerability",
   "details": "A Regular Expression Denial of Service (ReDoS) vulnerability was identified in the huggingface/transformers library, specifically in the file tokenization_nougat_fast.py. The vulnerability occurs in the post_process_single() function, where a regular expression processes specially crafted input. The issue stems from the regex exhibiting exponential time complexity under certain conditions, leading to excessive backtracking. This can result in significantly high CPU usage and potential application downtime, effectively creating a Denial of Service (DoS) scenario. The affected version is v4.46.3.",
   "affected": [

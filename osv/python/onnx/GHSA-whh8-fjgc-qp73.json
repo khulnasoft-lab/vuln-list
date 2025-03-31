@@ -6,6 +6,9 @@
     "CVE-2024-27318",
     "PYSEC-2024-222"
   ],
+  "related": [
+    "CGA-f6j2-7x2w-8224"
+  ],
   "summary": "Onnx Directory Traversal vulnerability",
   "details": "Versions of the package onnx before and including 1.15.0 are vulnerable to Directory Traversal as the external_data field of the tensor proto can have a path to the file which is outside the model current directory or user-provided directory. The vulnerability occurs as a bypass for the patch added for CVE-2022-25882.",
   "affected": [

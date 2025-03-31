@@ -5,6 +5,9 @@
   "aliases": [
     "RUSTSEC-2022-0092"
   ],
+  "related": [
+    "CGA-39vj-5pp4-rg8j"
+  ],
   "summary": "`rmp-serde` `Raw` and `RawRef` may crash when receiving invalid UTF-8",
   "details": "It was found that `Raw::from_utf8` expects valid UTF-8. If invalid UTF-8 is received it can cause the process to crash.\n",
   "affected": [

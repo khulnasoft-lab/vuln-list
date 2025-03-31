@@ -5,6 +5,10 @@
   "aliases": [
     "CVE-2024-6827"
   ],
+  "related": [
+    "CGA-fhhp-j2f9-98rf",
+    "CGA-xxgj-jh76-4j4g"
+  ],
   "summary": "Gunicorn HTTP Request/Response Smuggling vulnerability",
   "details": "Gunicorn version 21.2.0 does not properly validate the value of the 'Transfer-Encoding' header as specified in the RFC standards, which leads to the default fallback method of 'Content-Length,' making it vulnerable to TE.CL request smuggling. This vulnerability can lead to cache poisoning, data exposure, session manipulation, SSRF, XSS, DoS, data integrity compromise, security bypass, information leakage, and business logic abuse.",
   "affected": [

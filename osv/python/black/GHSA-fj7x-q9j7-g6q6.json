@@ -6,6 +6,9 @@
     "CVE-2024-21503",
     "PYSEC-2024-48"
   ],
+  "related": [
+    "CGA-h259-6cff-45xg"
+  ],
   "summary": "Black vulnerable to Regular Expression Denial of Service (ReDoS)",
   "details": "Versions of the package black before 24.3.0 are vulnerable to Regular Expression Denial of Service (ReDoS) via the lines_with_leading_tabs_expanded function in the strings.py file. An attacker could exploit this vulnerability by crafting a malicious input that causes a denial of service.\n\nExploiting this vulnerability is possible when running Black on untrusted input, or if you habitually put thousands of leading tab characters in your docstrings.",
   "affected": [

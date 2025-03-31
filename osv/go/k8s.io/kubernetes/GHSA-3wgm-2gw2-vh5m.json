@@ -6,6 +6,10 @@
     "CVE-2025-1767",
     "GO-2025-3521"
   ],
+  "related": [
+    "CGA-hqvw-h2pg-cv47",
+    "CGA-x6gq-xwg9-4mgj"
+  ],
   "summary": "Kubernetes GitRepo Volume Inadvertent Local Repository Access",
   "details": "A security vulnerability was discovered in Kubernetes that could allow a user with create pod permission to exploit gitRepo volumes to access local git repositories belonging to other pods on the same node. This CVE only affects Kubernetes clusters that utilize the in-tree gitRepo volume to clone git repositories from other pods within the same node. Since the in-tree gitRepo volume feature has been deprecated and will not receive security updates upstream, any cluster still using this feature remains vulnerable.",
   "affected": [
