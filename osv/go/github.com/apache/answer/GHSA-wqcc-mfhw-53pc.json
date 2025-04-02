@@ -1,9 +1,10 @@
 {
   "id": "GHSA-wqcc-mfhw-53pc",
-  "modified": "2025-04-01T18:42:10.848117Z",
+  "modified": "2025-04-02T16:57:01.239177Z",
   "published": "2025-04-01T09:30:20Z",
   "aliases": [
-    "CVE-2025-29868"
+    "CVE-2025-29868",
+    "GO-2025-3587"
   ],
   "summary": "Apache Answer User Using External Images Potentially Discloses User Information",
   "details": "Private Data Structure Returned From A Public Method vulnerability in Apache Answer.\n\nThis issue affects Apache Answer: through 1.4.2.\n\nIf a user uses an externally referenced image, when a user accesses this image, the provider of the image may obtain private information about the ip address of that accessing user.\nUsers are recommended to upgrade to version 1.4.5, which fixes the issue. In the new version, administrators can set whether external content can be displayed.",
