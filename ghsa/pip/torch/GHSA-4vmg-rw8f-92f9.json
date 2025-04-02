@@ -33,13 +33,13 @@
         "Value": "CVE-2024-7804"
       }
     ],
-    "Description": "A deserialization vulnerability exists in the Pytorch RPC framework (torch.distributed.rpc) in pytorch/pytorch versions \u003c=2.3.1. The vulnerability arises from the lack of security verification during the deserialization process of PythonUDF objects in pytorch/torch/distributed/rpc/internal.py. This flaw allows an attacker to execute arbitrary code remotely by sending a malicious serialized PythonUDF object, leading to remote code execution (RCE) on the master node.",
+    "Description": "## Withdrawn Advisory\nThis advisory has been withdrawn because it describes known functionality of PyTorch. This link is maintained to preserve external references.\n\n## Original Description\nA deserialization vulnerability exists in the Pytorch RPC framework (torch.distributed.rpc) in pytorch/pytorch versions \u003c=2.3.1. The vulnerability arises from the lack of security verification during the deserialization process of PythonUDF objects in pytorch/torch/distributed/rpc/internal.py. This flaw allows an attacker to execute arbitrary code remotely by sending a malicious serialized PythonUDF object, leading to remote code execution (RCE) on the master node.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-20T12:32:46Z",
     "Severity": "CRITICAL",
-    "Summary": "PyTorch deserialization vulnerability",
-    "UpdatedAt": "2025-03-21T21:55:52Z",
-    "WithdrawnAt": "",
+    "Summary": "Withdrawn Advisory: PyTorch deserialization vulnerability",
+    "UpdatedAt": "2025-04-02T13:31:16Z",
+    "WithdrawnAt": "2025-04-02T13:31:15Z",
     "CVSS": {
       "Score": 9.8,
       "VectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
