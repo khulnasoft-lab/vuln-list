@@ -1,6 +1,6 @@
 {
   "id": "PYSEC-2024-111",
-  "modified": "2025-03-31T12:45:36.286004Z",
+  "modified": "2025-04-04T14:23:06.702269Z",
   "published": "2024-10-29T13:15:00Z",
   "withdrawn": "2024-11-04T21:54:00Z",
   "details": "A path traversal vulnerability exists in the `getFullPath` method of langchain-ai/langchainjs version 0.2.5. This vulnerability allows attackers to save files anywhere in the filesystem, overwrite existing text files, read `.txt` files, and delete files. The vulnerability is exploited through the `setFileContent`, `getParsedFile`, and `mdelete` methods, which do not properly sanitize user input.",
@@ -466,7 +466,8 @@
         "0.3.19",
         "0.3.20",
         "0.3.21",
-        "0.3.22"
+        "0.3.22",
+        "0.3.23"
       ],
       "database_specific": {
         "source": "https://github.com/pypa/advisory-database/blob/main/vulns/langchain/PYSEC-2024-111.yaml"
