@@ -45,12 +45,12 @@
         "Value": "CVE-2022-46648"
       }
     ],
-    "Description": "The git gem, between versions 1.2.0 and 1.12.0, incorrectly parsed the output of the `git ls-files` command using `eval()` to unescape quoted file names. If a file name was added to the git repository contained special characters, such as `\\n`, then the `git ls-files` command would print the file name in quotes and escape any special characters. If the `Git#ls_files` method encountered a quoted file name it would use `eval()` to unquote and unescape any special characters, leading to potential remote code execution. Version 1.13.0 of the git gem was released which correctly parses any quoted file names.\n",
+    "Description": "The git gem, between versions 1.2.0 and 1.12.0, incorrectly parsed the output of the `git ls-files` command using `eval()` to unescape quoted file names. If a file name was added to the git repository contained special characters, such as `\\n`, then the `git ls-files` command would print the file name in quotes and escape any special characters. If the `Git#ls_files` method encountered a quoted file name it would use `eval()` to unquote and unescape any special characters, leading to potential remote code execution. Version 1.13.0 of the git gem was released which correctly parses any quoted file names.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-01-09T21:55:14Z",
     "Severity": "HIGH",
     "Summary": "ruby-git has potential remote code execution vulnerability",
-    "UpdatedAt": "2023-02-01T09:13:32Z",
+    "UpdatedAt": "2025-04-04T21:59:59Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8,
