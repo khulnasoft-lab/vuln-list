@@ -8,7 +8,8 @@
     "GO-2024-3164"
   ],
   "related": [
-    "CGA-g3v6-4v89-gg4c"
+    "CGA-g3v6-4v89-gg4c",
+    "CGA-jv4q-q29x-36w2"
   ],
   "summary": "Mattermost fails to strip `embeds` from `metadata` when broadcasting `posted` events",
   "details": "Mattermost does not strip `embeds` from `metadata` when broadcasting `posted` events.\n\nThis allows users to include arbitrary embeds in posts, which are then broadcasted via websockets. This can be exploited in many ways, for example to create permalinks with fully customizable content or to trigger a client Side Denial of Service (DoS) by sending a permalink with a non-string message.\n\nThe advisory metadata references the appropriate go pseudo version available from pkg.go.dev",
