@@ -2,6 +2,9 @@
   "id": "GHSA-rr8g-9fpq-6wmg",
   "modified": "2025-04-07T21:12:50Z",
   "published": "2025-04-07T21:12:50Z",
+  "related": [
+    "CGA-x8mx-8v67-25w5"
+  ],
   "summary": "Tokio broadcast channel calls clone in parallel, but does not require `Sync`",
   "details": "The broadcast channel internally calls `clone` on the stored value when receiving it, and only requires `T:Send`. This means that using the broadcast channel with values that are `Send` but not `Sync` can trigger unsoundness if the `clone` implementation makes use of the value being `!Sync`.\n\nThank you to Austin Bonander for finding and reporting this issue.",
   "affected": [
