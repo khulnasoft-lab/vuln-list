@@ -1,13 +1,12 @@
 {
-  "id": "GHSA-hq88-wg7q-gp4g",
+  "id": "PYSEC-2024-243",
   "modified": "2025-04-08T11:13:19.517922Z",
-  "published": "2024-04-16T00:30:34Z",
+  "published": "2024-04-16T00:15:12Z",
   "aliases": [
     "BIT-mlflow-2024-3573",
     "CVE-2024-3573",
-    "PYSEC-2024-243"
+    "GHSA-hq88-wg7q-gp4g"
   ],
-  "summary": "mlflow vulnerable to Path Traversal",
   "details": "mlflow/mlflow is vulnerable to Local File Inclusion (LFI) due to improper parsing of URIs, allowing attackers to bypass checks and read arbitrary files on the system. The issue arises from the 'is_local_uri' function's failure to properly handle URIs with empty or 'file' schemes, leading to the misclassification of URIs as non-local. Attackers can exploit this by crafting malicious model versions with specially crafted 'source' parameters, enabling the reading of sensitive files within at least two directory levels from the server's root.",
   "affected": [
     {
@@ -17,6 +16,21 @@
         "purl": "pkg:pypi/mlflow"
       },
       "ranges": [
+        {
+          "type": "GIT",
+          "repo": "https://github.com/mlflow/mlflow",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
+            },
+            {
+              "fixed": "438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
+            }
+          ]
+        },
         {
           "type": "ECOSYSTEM",
           "events": [
@@ -118,26 +132,18 @@
         "2.9.2"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-hq88-wg7q-gp4g/GHSA-hq88-wg7q-gp4g.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/mlflow/PYSEC-2024-243.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3573"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/mlflow/mlflow/commit/438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/mlflow/mlflow"
-    },
-    {
       "type": "WEB",
       "url": "https://huntr.com/bounties/8ea058a7-4ef8-4baf-9198-bc0147fc543c"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/mlflow/mlflow/commit/438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
     }
   ]
 }

@@ -1,14 +1,13 @@
 {
-  "id": "GHSA-hq88-wg7q-gp4g",
-  "modified": "2025-04-08T11:13:19.517922Z",
-  "published": "2024-04-16T00:30:34Z",
+  "id": "PYSEC-2024-241",
+  "modified": "2025-04-08T11:13:03.850498Z",
+  "published": "2024-02-23T22:15:55Z",
   "aliases": [
-    "BIT-mlflow-2024-3573",
-    "CVE-2024-3573",
-    "PYSEC-2024-243"
+    "BIT-mlflow-2024-27133",
+    "CVE-2024-27133",
+    "GHSA-3v79-q7ph-j75h"
   ],
-  "summary": "mlflow vulnerable to Path Traversal",
-  "details": "mlflow/mlflow is vulnerable to Local File Inclusion (LFI) due to improper parsing of URIs, allowing attackers to bypass checks and read arbitrary files on the system. The issue arises from the 'is_local_uri' function's failure to properly handle URIs with empty or 'file' schemes, leading to the misclassification of URIs as non-local. Attackers can exploit this by crafting malicious model versions with specially crafted 'source' parameters, enabling the reading of sensitive files within at least two directory levels from the server's root.",
+  "details": "Insufficient sanitization in MLflow leads to XSS when running a recipe that uses an untrusted dataset. This issue leads to a client-side RCE when running the recipe in Jupyter Notebook. The vulnerability stems from lack of sanitization over dataset table fields.",
   "affected": [
     {
       "package": {
@@ -118,26 +117,18 @@
         "2.9.2"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-hq88-wg7q-gp4g/GHSA-hq88-wg7q-gp4g.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/mlflow/PYSEC-2024-241.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3573"
-    },
-    {
       "type": "WEB",
-      "url": "https://github.com/mlflow/mlflow/commit/438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
+      "url": "https://research.jfrog.com/vulnerabilities/mlflow-untrusted-dataset-xss-jfsa-2024-000631932/"
     },
     {
-      "type": "PACKAGE",
-      "url": "https://github.com/mlflow/mlflow"
-    },
-    {
-      "type": "WEB",
-      "url": "https://huntr.com/bounties/8ea058a7-4ef8-4baf-9198-bc0147fc543c"
+      "type": "REPORT",
+      "url": "https://github.com/mlflow/mlflow/pull/10893"
     }
   ]
 }

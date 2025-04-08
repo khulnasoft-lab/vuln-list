@@ -1,9 +1,10 @@
 {
   "id": "GHSA-f3f8-vx3w-hp5q",
-  "modified": "2024-11-06T16:12:13.471547Z",
+  "modified": "2025-04-08T11:13:06.669134Z",
   "published": "2024-11-06T15:57:08Z",
   "aliases": [
-    "CVE-2024-10081"
+    "CVE-2024-10081",
+    "PYSEC-2024-238"
   ],
   "summary": "codechecker vulnerable to authentication bypass when using specifically crafted URLs",
   "details": "### Summary\nAuthentication bypass occurs when the API URL ends with Authentication, Configuration or ServerInfo. This bypass allows superuser access to all API endpoints other than Authentication. These endpoints include the ability to add, edit, and remove products, among others.\n\n### Details\nAll endpoints, apart from the /Authentication is affected by the vulnerability.\n\nThe vulnerability allows unauthenticated users to access all API functionality.\nYou can look for the following pattern in the logs to check if the vulnerabilty was exploited:\n![image](https://github.com/user-attachments/assets/6ba02231-a3d8-4832-aee6-f96462b7441e)\n\nNote that the url starts with v and contains a valid CodeChecker endpoint, but it ends in `Authentication`, `Configuration` or `ServerInfo` and it was made by an `Anonymous` user.\n\n### Impact\nThis authentication bypass allows querying, adding, changing, and deleting Products contained on the CodeChecker server, without authentication, by an anonymous user.\n",

@@ -1,14 +1,13 @@
 {
-  "id": "GHSA-hq88-wg7q-gp4g",
-  "modified": "2025-04-08T11:13:19.517922Z",
-  "published": "2024-04-16T00:30:34Z",
+  "id": "PYSEC-2024-239",
+  "modified": "2025-04-08T11:13:01.820933Z",
+  "published": "2024-06-06T19:15:51Z",
   "aliases": [
-    "BIT-mlflow-2024-3573",
-    "CVE-2024-3573",
-    "PYSEC-2024-243"
+    "BIT-mlflow-2024-0520",
+    "CVE-2024-0520",
+    "GHSA-5q6c-ffvg-xcm9"
   ],
-  "summary": "mlflow vulnerable to Path Traversal",
-  "details": "mlflow/mlflow is vulnerable to Local File Inclusion (LFI) due to improper parsing of URIs, allowing attackers to bypass checks and read arbitrary files on the system. The issue arises from the 'is_local_uri' function's failure to properly handle URIs with empty or 'file' schemes, leading to the misclassification of URIs as non-local. Attackers can exploit this by crafting malicious model versions with specially crafted 'source' parameters, enabling the reading of sensitive files within at least two directory levels from the server's root.",
+  "details": "A vulnerability in mlflow/mlflow version 8.2.1 allows for remote code execution due to improper neutralization of special elements used in an OS command ('Command Injection') within the `mlflow.data.http_dataset_source.py` module. Specifically, when loading a dataset from a source URL with an HTTP scheme, the filename extracted from the `Content-Disposition` header or the URL path is used to generate the final file path without proper sanitization. This flaw enables an attacker to control the file path fully by utilizing path traversal or absolute path techniques, such as '../../tmp/poc.txt' or '/tmp/poc.txt', leading to arbitrary file write. Exploiting this vulnerability could allow a malicious user to execute commands on the vulnerable machine, potentially gaining access to data and model information. The issue is fixed in version 2.9.0.",
   "affected": [
     {
       "package": {
@@ -18,13 +17,28 @@
       },
       "ranges": [
         {
+          "type": "GIT",
+          "repo": "https://github.com/mlflow/mlflow",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "400c226953b4568f4361bc0a0c223511652c2b9d"
+            },
+            {
+              "fixed": "400c226953b4568f4361bc0a0c223511652c2b9d"
+            }
+          ]
+        },
+        {
           "type": "ECOSYSTEM",
           "events": [
             {
               "introduced": "0"
             },
             {
-              "fixed": "2.10.0"
+              "fixed": "2.9.0"
             }
           ]
         }
@@ -112,32 +126,21 @@
         "2.7.0",
         "2.7.1",
         "2.8.0",
-        "2.8.1",
-        "2.9.0",
-        "2.9.1",
-        "2.9.2"
+        "2.8.1"
       ],
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/04/GHSA-hq88-wg7q-gp4g/GHSA-hq88-wg7q-gp4g.json"
+        "source": "https://github.com/pypa/advisory-database/blob/main/vulns/mlflow/PYSEC-2024-239.yaml"
       }
     }
   ],
   "references": [
     {
-      "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-3573"
-    },
-    {
       "type": "WEB",
-      "url": "https://github.com/mlflow/mlflow/commit/438a450714a3ca06285eeea34bdc6cf79d7f6cbc"
+      "url": "https://huntr.com/bounties/93e470d7-b6f0-409b-af63-49d3e2a26dbc"
     },
     {
-      "type": "PACKAGE",
-      "url": "https://github.com/mlflow/mlflow"
-    },
-    {
-      "type": "WEB",
-      "url": "https://huntr.com/bounties/8ea058a7-4ef8-4baf-9198-bc0147fc543c"
+      "type": "FIX",
+      "url": "https://github.com/mlflow/mlflow/commit/400c226953b4568f4361bc0a0c223511652c2b9d"
     }
   ]
 }

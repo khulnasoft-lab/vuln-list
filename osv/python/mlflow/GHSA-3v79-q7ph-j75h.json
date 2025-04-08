@@ -1,10 +1,11 @@
 {
   "id": "GHSA-3v79-q7ph-j75h",
-  "modified": "2025-01-22T17:48:16.079510Z",
+  "modified": "2025-04-08T11:13:03.850498Z",
   "published": "2024-02-24T00:30:20Z",
   "aliases": [
     "BIT-mlflow-2024-27133",
-    "CVE-2024-27133"
+    "CVE-2024-27133",
+    "PYSEC-2024-241"
   ],
   "summary": "MLFlow Cross-site Scripting vulnerability leads to client-side Remote Code Execution",
   "details": "Insufficient sanitization in MLflow leads to XSS when running a recipe that uses an untrusted dataset. This issue leads to a client-side RCE when running the recipe in Jupyter Notebook. The vulnerability stems from lack of sanitization over dataset table fields.",
