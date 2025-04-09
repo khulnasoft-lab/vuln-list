@@ -1,9 +1,10 @@
 {
   "id": "GHSA-59qh-fmm7-3g9q",
-  "modified": "2025-03-11T21:57:14.439713Z",
+  "modified": "2025-04-09T17:59:22.986651Z",
   "published": "2025-03-11T21:32:43Z",
   "aliases": [
-    "CVE-2025-25302"
+    "CVE-2025-25302",
+    "PYSEC-2025-25"
   ],
   "summary": "Rembg CORS misconfiguration",
   "details": "Rembg is a tool to remove images background. In Rembg 2.0.57 and earlier, the CORS middleware is setup incorrectly. All origins are reflected, which allows any website to send cross site requests to the rembg server and thus query any API. Even if authentication were to be enabled, allow_credentials is set to True, which would allow any website to send authenticated cross site requests.",

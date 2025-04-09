@@ -1,9 +1,10 @@
 {
   "id": "GHSA-4w26-8p97-f4jp",
-  "modified": "2025-02-24T20:36:20.984803Z",
+  "modified": "2025-04-09T17:59:24.390760Z",
   "published": "2025-02-21T22:43:33Z",
   "aliases": [
-    "CVE-2025-27105"
+    "CVE-2025-27105",
+    "PYSEC-2025-31"
   ],
   "summary": "AugAssign evaluation order causing OOB write within the object in Vyper",
   "details": "Vyper handles AugAssign statements by first caching the target location to avoid double evaluation. However, in the case when target is an access to a DynArray and the rhs modifies the array, the cached target will evaluate first, and the bounds check will not be re-evaluated during the write portion of the statement. In other words, the following code\n\n```vyper\ndef poc():\n    a: DynArray[uint256, 2] = [1, 2]\n    a[1] += a.pop()\n```\n\nis equivalent to:\n```vyper\ndef poc():\n    a: DynArray[uint256, 2] = [1, 2]\n    a[1] += a[len(a) - 1]\n    a.pop()\n```\nrather than:\n```vyper\ndef poc():\n    a: DynArray[uint256, 2] = [1, 2]\n    s: uint256 = a[1]\n    t: uint256 = a.pop()\n    a[1] = s + t  # reverts due to oob access\n```",

@@ -1,9 +1,10 @@
 {
   "id": "GHSA-r5gx-c49x-h878",
-  "modified": "2025-03-11T21:57:14.361483Z",
+  "modified": "2025-04-09T17:59:20.454660Z",
   "published": "2025-03-11T21:31:01Z",
   "aliases": [
-    "CVE-2025-25301"
+    "CVE-2025-25301",
+    "PYSEC-2025-24"
   ],
   "summary": "Rembg allows SSRF via /api/remove",
   "details": "Rembg is a tool to remove images background. In Rembg 2.0.57 and earlier, the /api/remove endpoint takes a URL query parameter that allows an image to be fetched, processed and returned. An attacker may be able to query this endpoint to view pictures hosted on the internal network of the rembg server. This issue may lead to Information Disclosure.",
