@@ -1,5 +1,5 @@
 {
-  "Severity": "MODERATE",
+  "Severity": "HIGH",
   "UpdatedAt": "2025-04-09T12:49:40Z",
   "Package": {
     "Ecosystem": "NUGET",
@@ -39,13 +39,13 @@
     "Description": "### Impact\nAuthenticated users to the Umbraco backoffice are able to craft management API request that exploit a path traversal vulnerability to upload files into a incorrect location.\n\n### Patches\nThe issue affects Umbraco 14+ and is patched in 14.3.4 and 15.3.1.\n\n### Workarounds\nUmbraco supports the configuration of [allowed](https://docs.umbraco.com/umbraco-cms/reference/configuration/contentsettings#allowed-upload-file-extensions) and [disallowed file extensions](https://docs.umbraco.com/umbraco-cms/reference/configuration/contentsettings#disallowed-upload-file-extensions).  Using these options to allow only necessary file extensions significantly reduces the scope of the vulnerability.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-04-09T12:49:38Z",
-    "Severity": "MODERATE",
+    "Severity": "HIGH",
     "Summary": "Umbraco has a Management API Vulnerability to Path Traversal With Authenticated Users",
-    "UpdatedAt": "2025-04-09T12:49:40Z",
+    "UpdatedAt": "2025-04-09T17:13:35Z",
     "WithdrawnAt": "",
     "CVSS": {
-      "Score": 4.3,
-      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L"
+      "Score": 8.8,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
     }
   },
   "Versions": [
