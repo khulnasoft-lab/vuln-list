@@ -17,6 +17,9 @@
         "Url": "https://github.com/koajs/koa/commit/ff25eb4a7f2392df46481fe86355161067687312"
       },
       {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-32379"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-x2rg-q646-7m2v"
       }
     ],
@@ -30,12 +33,12 @@
         "Value": "CVE-2025-32379"
       }
     ],
-    "Description": "### Summary\nIn koa \u003c 2.16.1 and \u003c 3.0.0-alpha.5, passing untrusted user input to ctx.redirect() even after sanitizing it, may execute javascript code on the user who use the app.\n\n### Patches\nThis issue is patched in  2.16.1 and 3.0.0-alpha.5.\n\n### PoC\nhttps://gist.github.com/linhnph05/03d677b183636af206ff781bdd19701a\n\n### Impact\n1. Redirect user to another phishing site\n2. Make request to another endpoint of the application based on user's cookie\n3. Steal user's cookie",
+    "Description": "### Summary\nIn koa \u003c 2.16.1 and \u003c 3.0.0-alpha.5, passing untrusted user input to ctx.redirect() even after sanitizing it, may execute javascript code on the user who use the app.\n\n### Patches\nThis issue is patched in  2.16.1 and 3.0.0-alpha.5.\n\n### PoC\nComing soon...\n\n### Impact\n1. Redirect user to another phishing site\n2. Make request to another endpoint of the application based on user's cookie\n3. Steal user's cookie",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-04-09T13:00:07Z",
     "Severity": "MODERATE",
     "Summary": "Koajs vulnerable to Cross-Site Scripting (XSS) at ctx.redirect() function",
-    "UpdatedAt": "2025-04-09T13:00:07Z",
+    "UpdatedAt": "2025-04-09T20:29:45Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5,
