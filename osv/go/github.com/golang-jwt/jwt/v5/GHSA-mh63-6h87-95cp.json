@@ -1,6 +1,6 @@
 {
   "id": "GHSA-mh63-6h87-95cp",
-  "modified": "2025-03-26T17:54:41.024281Z",
+  "modified": "2025-04-10T13:02:34Z",
   "published": "2025-03-21T22:04:00Z",
   "aliases": [
     "CVE-2025-30204",
@@ -487,6 +487,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-mh63-6h87-95cp/GHSA-mh63-6h87-95cp.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/golang-jwt/jwt",
+        "purl": "pkg:golang/github.com/golang-jwt/jwt"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "3.2.0"
+            },
+            {
+              "last_affected": "3.2.2"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-mh63-6h87-95cp/GHSA-mh63-6h87-95cp.json"
+      }
     }
   ],
   "references": [
@@ -503,8 +526,16 @@
       "url": "https://github.com/golang-jwt/jwt/commit/0951d184286dece21f73c85673fd308786ffe9c3"
     },
     {
+      "type": "WEB",
+      "url": "https://github.com/golang-jwt/jwt/commit/bf316c48137a1212f8d0af9288cc9ce8e59f1afb"
+    },
+    {
       "type": "PACKAGE",
       "url": "https://github.com/golang-jwt/jwt"
+    },
+    {
+      "type": "WEB",
+      "url": "https://security.netapp.com/advisory/ntap-20250404-0002"
     }
   ]
 }
