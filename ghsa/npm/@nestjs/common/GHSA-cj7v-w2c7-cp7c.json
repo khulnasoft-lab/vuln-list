@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-03-27T21:13:50Z",
+  "UpdatedAt": "2025-04-11T18:01:56Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "@nestjs/common"
@@ -23,6 +23,18 @@
         "Url": "https://github.com/nestjs/nest/blob/83a48b2c7396985144b7a6cd5d3bee1abb7c5d81/packages/common/pipes/file/file-type.validator.ts#L19"
       },
       {
+        "Url": "https://github.com/nestjs/nest/issues/14876"
+      },
+      {
+        "Url": "https://github.com/nestjs/nest/issues/14876#issuecomment-2796888038"
+      },
+      {
+        "Url": "https://github.com/nestjs/nest/pull/14881"
+      },
+      {
+        "Url": "https://github.com/nestjs/nest/releases/tag/v11.0.16"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-cj7v-w2c7-cp7c"
       }
     ],
@@ -36,12 +48,12 @@
         "Value": "CVE-2024-29409"
       }
     ],
-    "Description": "File Upload vulnerability in nestjs nest v.11.0.11 allows a remote attacker to execute arbitrary code via the Content-Type header.",
+    "Description": "File Upload vulnerability in nestjs nest prior to v.11.0.16 allows a remote attacker to execute arbitrary code via the Content-Type header.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-14T18:30:51Z",
     "Severity": "MODERATE",
     "Summary": "nest allows a remote attacker to execute arbitrary code via the Content-Type header",
-    "UpdatedAt": "2025-03-27T21:13:50Z",
+    "UpdatedAt": "2025-04-11T18:01:56Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.5,
@@ -51,9 +63,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "11.0.16"
       },
-      "VulnerableVersionRange": "\u003c= 11.0.11"
+      "VulnerableVersionRange": "\u003c 11.0.16"
     }
   ]
 }
