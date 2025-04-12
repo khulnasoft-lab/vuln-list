@@ -7,6 +7,13 @@
     "CVE-2025-32387",
     "GO-2025-3602"
   ],
+  "related": [
+    "CGA-65vg-wpmh-r9c7",
+    "CGA-ppwj-229x-3fw6",
+    "CGA-r7pr-mq97-3vvv",
+    "CGA-rpj4-4f5m-3w77",
+    "CGA-vwvh-v834-pwwc"
+  ],
   "summary": "Helm Allows A Specially Crafted JSON Schema To Cause A Stack Overflow",
   "details": "A Helm contributor discovered that a specially crafted JSON Schema within a chart can lead to a stack overflow.\n\n### Impact\nA JSON Schema file within a chart can be crafted with a deeply nested chain of references, leading to parser recursion that can exceed the stack size limit and trigger a stack overflow. \n\n### Patches\nThis issue has been resolved in Helm v3.17.3.\n\n### Workarounds\nEnsure that the JSON Schema within any charts loaded by Helm does not have a large number of nested references. These JSON Schema files are larger than 10 MiB.\n\n### For more information\nHelm's security policy is spelled out in detail in our [SECURITY](https://github.com/helm/community/blob/master/SECURITY.md) document.\n\n### Credits\nDisclosed by Jakub Ciolek at AlphaSense.",
   "affected": [
