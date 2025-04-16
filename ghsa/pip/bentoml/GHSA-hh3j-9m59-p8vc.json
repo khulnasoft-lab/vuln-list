@@ -11,10 +11,13 @@
     "GhsaId": "GHSA-hh3j-9m59-p8vc",
     "References": [
       {
-        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-12759"
+        "Url": "https://huntr.com/bounties/e467ec92-0ad1-4461-8468-1beabf701b9f"
       },
       {
-        "Url": "https://huntr.com/bounties/e467ec92-0ad1-4461-8468-1beabf701b9f"
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2024-8966"
+      },
+      {
+        "Url": "https://huntr.com/bounties/7b5932bb-58d1-4e71-b85c-43dc40522ff2"
       },
       {
         "Url": "https://github.com/advisories/GHSA-hh3j-9m59-p8vc"
@@ -24,10 +27,6 @@
       {
         "Type": "GHSA",
         "Value": "GHSA-hh3j-9m59-p8vc"
-      },
-      {
-        "Type": "CVE",
-        "Value": "CVE-2024-12759"
       }
     ],
     "Description": "In bentoml/bentoml version 1.3.9, the `/login` endpoint of the newly integrated Gradio app is vulnerable to a Denial of Service (DoS) attack. This vulnerability can be exploited by appending characters, such as dashes (-), to the end of a multipart boundary in an HTTP request. The server continuously processes each character, leading to excessive resource consumption and rendering the service unavailable. The issue is unauthenticated and does not require any user interaction.",
@@ -35,7 +34,7 @@
     "PublishedAt": "2025-03-20T12:32:43Z",
     "Severity": "HIGH",
     "Summary": "BentoML vulnerable to Uncontrolled Resource Consumption",
-    "UpdatedAt": "2025-03-21T17:52:02Z",
+    "UpdatedAt": "2025-04-15T19:35:12Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
