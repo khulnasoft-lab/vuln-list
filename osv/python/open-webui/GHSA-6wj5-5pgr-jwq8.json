@@ -1,10 +1,7 @@
 {
   "id": "GHSA-6wj5-5pgr-jwq8",
-  "modified": "2025-03-21T21:45:28.715639Z",
+  "modified": "2025-04-15T20:11:55.165496Z",
   "published": "2025-03-20T12:32:46Z",
-  "aliases": [
-    "CVE-2024-7999"
-  ],
   "summary": "Open WebUI Unauthenticated Multipart Boundary Denial of Service (DoS) Vulnerability in api/chat/file",
   "details": "A vulnerability in open-webui/open-webui version 79778fa allows an attacker to cause a Denial of Service (DoS) by uploading a file with a malformed multipart boundary. By appending a large number of characters to the end of the multipart boundary, the server continuously processes each character, rendering the application inaccessible. This issue can prevent all users from accessing the application until the server recovers.",
   "affected": [
@@ -100,8 +97,12 @@
   ],
   "references": [
     {
+      "type": "WEB",
+      "url": "https://github.com/Kludex/python-multipart/security/advisories/GHSA-59g5-xgcq-4qw3"
+    },
+    {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-7999"
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-53981"
     },
     {
       "type": "WEB",
