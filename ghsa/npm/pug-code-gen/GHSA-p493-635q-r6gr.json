@@ -1,5 +1,5 @@
 {
-  "Severity": "HIGH",
+  "Severity": "MODERATE",
   "UpdatedAt": "2021-03-03T01:49:23Z",
   "Package": {
     "Ecosystem": "NPM",
@@ -51,9 +51,9 @@
     "Description": "### Impact\n\nIf a remote attacker was able to control the `pretty` option of the pug compiler, e.g. if you spread a user provided object such as the query parameters of a request into the pug template inputs, it was possible for them to achieve remote code execution on the node.js backend.\n\n### Patches\n\nUpgrade to `pug@3.0.1` or `pug-code-gen@3.0.2` or `pug-code-gen@2.0.3`, which correctly sanitise the parameter.\n\n### Workarounds\n\nIf there is no way for un-trusted input to be passed to pug as the `pretty` option, e.g. if you compile templates in advance before applying user input to them, you do not need to upgrade.\n\n### References\n\n\nOriginal report: https://github.com/pugjs/pug/issues/3312\n\n### For more information\n\nIf you believe you have found other vulnerabilities, please **DO NOT** open an issue. Instead, you can follow the instructions in our [Security Policy](https://github.com/pugjs/pug/blob/master/SECURITY.md)",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-03-03T02:03:52Z",
-    "Severity": "HIGH",
+    "Severity": "MODERATE",
     "Summary": "Remote code execution via the `pretty` option.",
-    "UpdatedAt": "2023-02-01T05:05:12Z",
+    "UpdatedAt": "2025-04-16T22:09:48Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.8,
