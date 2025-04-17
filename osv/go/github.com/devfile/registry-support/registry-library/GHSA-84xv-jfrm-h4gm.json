@@ -6,6 +6,9 @@
     "CVE-2024-1485",
     "GO-2024-2576"
   ],
+  "related": [
+    "CVE-2024-1485"
+  ],
   "summary": "registry-support: decompress can delete files outside scope via relative paths",
   "details": "A vulnerability was found in the decompression function of registry-support. This issue can be triggered by an unauthenticated remote attacker when tricking a user into opening a specially modified .tar archive, leading to the cleanup process following relative paths to overwrite or delete files outside the intended scope.",
   "affected": [
