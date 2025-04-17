@@ -6,6 +6,11 @@
     "CVE-2025-22872",
     "GO-2025-3595"
   ],
+  "related": [
+    "CGA-8chc-cmxg-35ff",
+    "CGA-v99p-2g2h-jjpr",
+    "CGA-xvx3-724p-mh5h"
+  ],
   "summary": "golang.org/x/net vulnerable to Cross-site Scripting",
   "details": "The tokenizer incorrectly interprets tags with unquoted attribute values that end with a solidus character (/) as self-closing. When directly using Tokenizer, this can result in such tags incorrectly being marked as self-closing, and when using the Parse functions, this can result in content following such tags as being placed in the wrong scope during DOM construction, but only when tags are in foreign content (e.g. \u003cmath\u003e, \u003csvg\u003e, etc contexts).",
   "affected": [
