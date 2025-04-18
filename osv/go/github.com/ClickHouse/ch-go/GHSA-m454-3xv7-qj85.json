@@ -6,7 +6,8 @@
     "CVE-2025-1386"
   ],
   "related": [
-    "CGA-554v-v9mj-m2px"
+    "CGA-554v-v9mj-m2px",
+    "CGA-62c5-m232-w53j"
   ],
   "summary": "CVE-2025-1386- Query smuggling in ch-go library",
   "details": "### Impact\n\nWhen using the ch-go library, under a specific condition when the query includes a large, uncompressed malicious external data, it is possible for an attacker in control of such data to smuggle another query packet into the connection stream.\n\n### Patches\n\nIf you are using ch-go library, we recommend you to update to at least version 0.65.0.\n\n### Credit\n\nThis issue was found by lixts and reported through our bugcrowd program.",
