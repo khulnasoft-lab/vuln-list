@@ -1,6 +1,6 @@
 {
   "Severity": "LOW",
-  "UpdatedAt": "2025-04-11T14:09:51Z",
+  "UpdatedAt": "2025-04-23T15:06:11Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/mattermost/mattermost/server/v8"
@@ -15,6 +15,9 @@
       },
       {
         "Url": "https://mattermost.com/security-updates"
+      },
+      {
+        "Url": "https://pkg.go.dev/vuln/GO-2025-3604"
       },
       {
         "Url": "https://github.com/advisories/GHSA-xfq9-hh5x-xfq9"
@@ -35,7 +38,7 @@
     "PublishedAt": "2025-04-10T18:32:03Z",
     "Severity": "LOW",
     "Summary": "Mattermost Fails to Enforce Proper Access Controls on `/api/v4/audits` Endpoint",
-    "UpdatedAt": "2025-04-11T14:09:51Z",
+    "UpdatedAt": "2025-04-23T15:06:11Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.7,
@@ -43,6 +46,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "8.0.0-20250204211032-f52e08754c49"
+      },
+      "VulnerableVersionRange": "\u003c 8.0.0-20250204211032-f52e08754c49"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.11.9"
