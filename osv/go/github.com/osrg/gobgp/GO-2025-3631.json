@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-7m35-vw2c-696v",
+  "id": "GO-2025-3631",
   "modified": "2025-04-22T18:57:02.963035Z",
-  "published": "2025-04-21T03:30:18Z",
+  "published": "2025-04-22T18:16:40Z",
   "aliases": [
     "CVE-2025-43971",
-    "GO-2025-3631"
+    "GHSA-7m35-vw2c-696v"
   ],
-  "summary": "GoBGP panics due to a zero value for softwareVersionLen",
-  "details": "An issue was discovered in GoBGP before 3.35.0. pkg/packet/bgp/bgp.go allows attackers to cause a panic via a zero value for softwareVersionLen.",
+  "summary": "GoBGP panics due to a zero value for softwareVersionLen in github.com/osrg/gobgp",
+  "details": "GoBGP panics due to a zero value for softwareVersionLen in github.com/osrg/gobgp",
   "affected": [
     {
       "package": {
@@ -26,8 +26,7 @@
         }
       ],
       "database_specific": {
-        "last_known_affected_version_range": "\u003c 3.35.0",
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-7m35-vw2c-696v/GHSA-7m35-vw2c-696v.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3631.json"
       }
     },
     {
@@ -49,23 +48,29 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/osrg/gobgp/v3/pkg/packet/bgp",
+            "symbols": [
+              "CapSoftwareVersion.DecodeFromBytes"
+            ]
+          }
+        ]
+      },
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-7m35-vw2c-696v/GHSA-7m35-vw2c-696v.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3631.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43971"
+      "url": "https://github.com/advisories/GHSA-7m35-vw2c-696v"
     },
     {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/osrg/gobgp/commit/08a001e06d90e8bcc190084c66992f46f62c0986"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/osrg/gobgp"
     },
     {
       "type": "WEB",

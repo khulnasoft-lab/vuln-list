@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-c5jg-wr5v-2wp2",
+  "id": "GO-2025-3633",
   "modified": "2025-04-22T18:57:02.727553Z",
-  "published": "2025-04-21T03:30:19Z",
+  "published": "2025-04-22T18:16:40Z",
   "aliases": [
     "CVE-2025-43973",
-    "GO-2025-3633"
+    "GHSA-c5jg-wr5v-2wp2"
   ],
-  "summary": "GoBGP does not verify that the input length",
-  "details": "An issue was discovered in GoBGP before 3.35.0. pkg/packet/rtr/rtr.go does not verify that the input length corresponds to a situation in which all bytes are available for an RTR message.",
+  "summary": "GoBGP does not verify that the input length in github.com/osrg/gobgp",
+  "details": "GoBGP does not verify that the input length in github.com/osrg/gobgp",
   "affected": [
     {
       "package": {
@@ -26,8 +26,7 @@
         }
       ],
       "database_specific": {
-        "last_known_affected_version_range": "\u003c 3.35.0",
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-c5jg-wr5v-2wp2/GHSA-c5jg-wr5v-2wp2.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3633.json"
       }
     },
     {
@@ -49,23 +48,29 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/osrg/gobgp/v3/pkg/packet/rtr",
+            "symbols": [
+              "ParseRTR"
+            ]
+          }
+        ]
+      },
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-c5jg-wr5v-2wp2/GHSA-c5jg-wr5v-2wp2.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3633.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-43973"
+      "url": "https://github.com/advisories/GHSA-c5jg-wr5v-2wp2"
     },
     {
-      "type": "WEB",
+      "type": "FIX",
       "url": "https://github.com/osrg/gobgp/commit/5693c58a4815cc6327b8d3b6980f0e5aced28abe"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/osrg/gobgp"
     },
     {
       "type": "WEB",

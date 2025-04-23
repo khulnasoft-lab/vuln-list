@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2vp2-8m5j-4rjx",
-  "modified": "2025-04-17T18:27:11.945790Z",
+  "modified": "2025-04-22T18:57:04.164507Z",
   "published": "2022-05-24T16:53:50Z",
   "aliases": [
-    "CVE-2019-15119"
+    "CVE-2019-15119",
+    "GO-2025-3625"
   ],
   "summary": "cnlh nps vulnerable to file overwrite by local user",
   "details": "`lib/install/install.go` in cnlh nps prior to 0.23.2 uses 0777 permissions for `/usr/local/bin/nps and/or /usr/bin/nps`, leading to a file overwrite by a local user.",
