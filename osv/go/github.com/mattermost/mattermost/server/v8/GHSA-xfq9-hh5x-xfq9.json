@@ -1,6 +1,6 @@
 {
   "id": "GHSA-xfq9-hh5x-xfq9",
-  "modified": "2025-04-22T17:42:06.263358Z",
+  "modified": "2025-04-23T15:06:10Z",
   "published": "2025-04-10T18:32:03Z",
   "aliases": [
     "CVE-2025-24866",
@@ -31,6 +31,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-xfq9-hh5x-xfq9/GHSA-xfq9-hh5x-xfq9.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/mattermost/mattermost/server/v8",
+        "purl": "pkg:golang/github.com/mattermost/mattermost/server/v8"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "8.0.0-20250204211032-f52e08754c49"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/04/GHSA-xfq9-hh5x-xfq9/GHSA-xfq9-hh5x-xfq9.json"
+      }
     }
   ],
   "references": [
@@ -45,6 +68,10 @@
     {
       "type": "WEB",
       "url": "https://mattermost.com/security-updates"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3604"
     }
   ]
 }
