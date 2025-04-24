@@ -6,6 +6,9 @@
     "CVE-2025-43970",
     "GO-2025-3630"
   ],
+  "related": [
+    "CGA-m9v8-79f5-jg4v"
+  ],
   "summary": "GoBGP does not properly check the input length",
   "details": "An issue was discovered in GoBGP before 3.35.0. pkg/packet/mrt/mrt.go does not properly check the input length, e.g., by ensuring that there are 12 bytes or 36 bytes (depending on the address family).",
   "affected": [
