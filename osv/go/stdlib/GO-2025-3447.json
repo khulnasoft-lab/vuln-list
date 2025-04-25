@@ -6,6 +6,9 @@
     "BIT-golang-2025-22866",
     "CVE-2025-22866"
   ],
+  "related": [
+    "RHSA-2025:3773"
+  ],
   "summary": "Timing sidechannel for P-256 on ppc64le in crypto/internal/nistec",
   "details": "Due to the usage of a variable time instruction in the assembly implementation of an internal function, a small number of bits of secret scalars are leaked on the ppc64le architecture. Due to the way this function is used, we do not believe this leakage is enough to allow recovery of the private key when P-256 is used in any well known protocols.",
   "affected": [
