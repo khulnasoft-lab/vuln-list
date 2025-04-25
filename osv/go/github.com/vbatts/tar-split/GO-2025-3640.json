@@ -1,13 +1,13 @@
 {
-  "id": "GHSA-hqwh-8xv9-42hw",
+  "id": "GO-2025-3640",
   "modified": "2025-04-24T18:42:05.997690Z",
-  "published": "2022-05-17T00:22:00Z",
+  "published": "2025-04-24T18:14:02Z",
   "aliases": [
     "CVE-2017-14992",
-    "GO-2025-3640"
+    "GHSA-hqwh-8xv9-42hw"
   ],
-  "summary": "tar-split memory exhaustion",
-  "details": "Lack of content verification in Docker-CE (Also known as Moby) versions 1.12.6-0, 1.10.3, 17.03.0, 17.03.1, 17.03.2, 17.06.0, 17.06.1, 17.06.2, 17.09.0, and earlier allows a remote attacker to cause a Denial of Service via a crafted image layer payload, aka gzip bombing.",
+  "summary": "Memory exhaustion in github.com/vbatts/tar-split",
+  "details": "Memory exhaustion in github.com/vbatts/tar-split",
   "affected": [
     {
       "package": {
@@ -28,27 +28,33 @@
           ]
         }
       ],
+      "ecosystem_specific": {
+        "imports": [
+          {
+            "path": "github.com/vbatts/tar-split/tar/asm",
+            "symbols": [
+              "NewInputTarStream"
+            ]
+          }
+        ]
+      },
       "database_specific": {
-        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2022/05/GHSA-hqwh-8xv9-42hw/GHSA-hqwh-8xv9-42hw.json"
+        "source": "https://vuln.go.dev/ID/GO-2025-3640.json"
       }
     }
   ],
   "references": [
     {
       "type": "ADVISORY",
-      "url": "https://nvd.nist.gov/vuln/detail/CVE-2017-14992"
+      "url": "https://github.com/advisories/GHSA-hqwh-8xv9-42hw"
+    },
+    {
+      "type": "FIX",
+      "url": "https://github.com/vbatts/tar-split/pull/42"
     },
     {
       "type": "WEB",
       "url": "https://github.com/moby/moby/issues/35075"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/vbatts/tar-split/pull/42"
-    },
-    {
-      "type": "PACKAGE",
-      "url": "https://github.com/vbatts/tar-split"
     },
     {
       "type": "WEB",
