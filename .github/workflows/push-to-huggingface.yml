@@ -29,7 +29,8 @@ jobs:
           git remote add origin https://khulnasoft:${HF_TOKEN}@huggingface.co/datasets/khulnasoft/vuln-list
           git config --global user.email "security@kkhulnadoft.com"
           git config --global user.name "KhulnaSoft-bot"
+          git checkout -b "next"
 
       - name: Push to Hugging Face
         run: |
-          git push -u origin main --force
+          git push -u origin next --force
