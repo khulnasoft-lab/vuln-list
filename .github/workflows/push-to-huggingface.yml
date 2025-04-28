@@ -1,0 +1,35 @@
+# .github/workflows/push-to-huggingface.yml
+
+name: Push Dataset to Hugging Face
+
+on:
+  workflow_dispatch: # manually trigger from GitHub UI
+  push:              # or trigger when you push to this repo
+    branches:
+      - main
+
+jobs:
+  push_to_hf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Git LFS
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git-lfs
+          git lfs install
+
+      - name: Set up Hugging Face remote
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add origin https://khulnasoft:${HF_TOKEN}@huggingface.co/datasets/khulnasoft/vuln-list
+          git config --global user.email "security@kkhulnadoft.com"
+          git config --global user.name "KhulnaSoft-bot"
+
+      - name: Push to Hugging Face
+        run: |
+          git push -u origin main --force
