@@ -1,14 +1,14 @@
 {
-  "id": "RUSTSEC-2022-0075",
+  "id": "RUSTSEC-2022-0098",
   "modified": "2025-05-02T08:59:18.214282Z",
-  "published": "2022-11-10T12:00:00Z",
+  "published": "2022-11-05T12:00:00Z",
   "aliases": [
     "CVE-2022-39393",
     "GHSA-wh6w-3828-g9qf",
-    "RUSTSEC-2022-0098"
+    "RUSTSEC-2022-0075"
   ],
-  "summary": "Bug in pooling instance allocator",
-  "details": "bug in Wasmtime's implementation of its pooling instance allocator where when a linear memory is reused for another instance the initial heap snapshot of the prior instance can be visible, erroneously to the next instance.\n\nMitigations are described [here](https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf).",
+  "summary": "Data leakage between instances in the pooling allocator",
+  "details": "This is an entry in the RustSec database for the Wasmtime security advisory\nlocated at\nhttps://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf.\nFor more information see the GitHub-hosted security advisory.",
   "affected": [
     {
       "package": {
@@ -44,12 +44,10 @@
         }
       },
       "database_specific": {
-        "categories": [
-          "memory-exposure"
-        ],
-        "cvss": null,
+        "categories": [],
+        "cvss": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:N/A:N",
         "informational": null,
-        "source": "https://github.com/rustsec/advisory-db/blob/osv/crates/RUSTSEC-2022-0075.json"
+        "source": "https://github.com/rustsec/advisory-db/blob/osv/crates/RUSTSEC-2022-0098.json"
       }
     }
   ],
@@ -60,19 +58,11 @@
     },
     {
       "type": "ADVISORY",
-      "url": "https://rustsec.org/advisories/RUSTSEC-2022-0075.html"
+      "url": "https://rustsec.org/advisories/RUSTSEC-2022-0098.html"
     },
     {
       "type": "ADVISORY",
       "url": "https://github.com/bytecodealliance/wasmtime/security/advisories/GHSA-wh6w-3828-g9qf"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/bytecodealliance/wasmtime/commit/2614f2e9d2d36805ead8a8da0fa0c6e0d9e428a0"
-    },
-    {
-      "type": "WEB",
-      "url": "https://github.com/bytecodealliance/wasmtime/commit/3535acbf3be032ef1ba0b469b8ab92538a8a18a6"
     }
   ]
 }
