@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-04-08T14:50:15Z",
+  "UpdatedAt": "2025-05-05T17:45:48Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "shopware/platform"
@@ -39,12 +39,12 @@
         "Value": "CVE-2025-30150"
       }
     ],
-    "Description": "### Impact\nThrough the store-api it is possible as a attacker to check if a specific e-mail address has an account in the shop.\n\nUsing the store-api endpoint `/store-api/account/recovery-password` you get the response\n```\n{\"errors\":[{\"status\":\"404\",\"code\":\"CHECKOUT__CUSTOMER_NOT_FOUND\",\"title\":\"Not Found\",\"detail\":\"No matching customer for the email \\u0022asdasfd@asdads.de\\u0022 was found.\",\"meta\":{\"parameters\":{\"email\":\"asdasfd@asdads.de\"}}}]}\n```\n\nwhich indicates clearly that there is no account for this customer. In contrast you get a success response if the account was found.\n\n### Patches\nUpdate to Shopware 6.6.10.3 or 6.5.8.17\n\n### Workarounds\nFor older versions of 6.4, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.",
+    "Description": "### Impact\nThrough the store-api it is possible as a attacker to check if a specific e-mail address has an account in the shop.\n\nUsing the store-api endpoint `/store-api/account/recovery-password` you get the response\n```\n{\"errors\":[{\"status\":\"404\",\"code\":\"CHECKOUT__CUSTOMER_NOT_FOUND\",\"title\":\"Not Found\",\"detail\":\"No matching customer for the email \\u0022asdasfd@asdads.de\\u0022 was found.\",\"meta\":{\"parameters\":{\"email\":\"asdasfd@asdads.de\"}}}]}\n```\n\nwhich indicates clearly that there is no account for this customer. In contrast you get a success response if the account was found.\n\n### Patches\nUpdate to Shopware 6.6.10.3\n\n### Workarounds\nFor older versions of 6.5 or 6.4, corresponding security measures are also available via a plugin. For the full range of functions, we recommend updating to the latest Shopware version.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-04-08T14:50:13Z",
     "Severity": "MODERATE",
     "Summary": "Shopware 6 allows attackers to check for registered accounts through the store-api",
-    "UpdatedAt": "2025-04-08T17:49:08Z",
+    "UpdatedAt": "2025-05-05T17:45:48Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -54,21 +54,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "6.5.8.17"
-      },
-      "VulnerableVersionRange": "\u003c 6.5.8.17"
-    },
-    {
-      "FirstPatchedVersion": {
         "Identifier": "6.7.0.0-rc2"
       },
-      "VulnerableVersionRange": "\u003e= 6.7.0.0-rc1, \u003c 6.7.0.0-rc2"
+      "VulnerableVersionRange": "= 6.7.0.0-rc1"
     },
     {
       "FirstPatchedVersion": {
         "Identifier": "6.6.10.3"
       },
-      "VulnerableVersionRange": "\u003e= 6.6.0.0, \u003c 6.6.10.3"
+      "VulnerableVersionRange": "\u003c= 6.6.10.2"
     }
   ]
 }
