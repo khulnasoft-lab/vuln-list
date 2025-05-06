@@ -1,6 +1,6 @@
 {
   "id": "GHSA-6m8w-jc87-6cr7",
-  "modified": "2025-05-05T16:41:58.138762Z",
+  "modified": "2025-05-05T22:02:31Z",
   "published": "2025-05-01T17:02:58Z",
   "aliases": [
     "CVE-2025-46569",
@@ -54,6 +54,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/05/GHSA-6m8w-jc87-6cr7/GHSA-6m8w-jc87-6cr7.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/open-policy-agent/opa",
+        "purl": "pkg:golang/github.com/open-policy-agent/opa"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "1.4.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/05/GHSA-6m8w-jc87-6cr7/GHSA-6m8w-jc87-6cr7.json"
+      }
     }
   ],
   "references": [
@@ -72,6 +95,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/open-policy-agent/opa"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3660"
     }
   ]
 }
