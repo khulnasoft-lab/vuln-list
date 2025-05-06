@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-04-25T15:12:45Z",
+  "UpdatedAt": "2025-05-05T22:02:02Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/rancher/steve"
@@ -12,6 +12,9 @@
     "References": [
       {
         "Url": "https://github.com/rancher/steve/security/advisories/GHSA-95fc-g4gj-mqmx"
+      },
+      {
+        "Url": "https://pkg.go.dev/vuln/GO-2025-3648"
       },
       {
         "Url": "https://github.com/advisories/GHSA-95fc-g4gj-mqmx"
@@ -32,7 +35,7 @@
     "PublishedAt": "2025-04-25T15:12:44Z",
     "Severity": "HIGH",
     "Summary": "Steve doesn’t verify a server’s certificate and is susceptible to man-in-the-middle (MitM) attacks",
-    "UpdatedAt": "2025-04-25T15:12:45Z",
+    "UpdatedAt": "2025-05-05T22:02:02Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.1,
@@ -40,6 +43,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.3.3"
+      },
+      "VulnerableVersionRange": "\u003e= 0.3.0, \u003c 0.3.3"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "0.5.13"
