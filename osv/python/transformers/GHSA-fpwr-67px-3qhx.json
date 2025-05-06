@@ -5,6 +5,9 @@
   "aliases": [
     "CVE-2025-1194"
   ],
+  "related": [
+    "CGA-9j59-vrr3-9r8v"
+  ],
   "summary": "Transformers Regular Expression Denial of Service (ReDoS) vulnerability",
   "details": "A Regular Expression Denial of Service (ReDoS) vulnerability was identified in the huggingface/transformers library, specifically in the file `tokenization_gpt_neox_japanese.py` of the GPT-NeoX-Japanese model. The vulnerability occurs in the SubWordJapaneseTokenizer class, where regular expressions process specially crafted inputs. The issue stems from a regex exhibiting exponential complexity under certain conditions, leading to excessive backtracking. This can result in high CPU usage and potential application downtime, effectively creating a Denial of Service (DoS) scenario. The affected version is v4.48.1 (latest).",
   "affected": [

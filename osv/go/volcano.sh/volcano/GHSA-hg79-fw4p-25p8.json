@@ -1,9 +1,10 @@
 {
   "id": "GHSA-hg79-fw4p-25p8",
-  "modified": "2025-05-01T13:30:12Z",
+  "modified": "2025-05-06T16:11:54.100604Z",
   "published": "2025-04-30T16:40:03Z",
   "aliases": [
-    "CVE-2025-32777"
+    "CVE-2025-32777",
+    "GO-2025-3656"
   ],
   "summary": "Volcano Scheduler Denial of Service via Unbounded Response from Elastic Service/extender Plugin",
   "details": "### Impact\nThis issue allows an attacker who has compromised either the Elastic service or the extender plugin to cause denial of service of the scheduler. This is a privilege escalation, because Volcano users may run their Elastic service and extender plugins in separate pods or nodes from the scheduler. In the Kubernetes security model, node isolation is a security boundary, and as such an attacker is able to cross that boundary in Volcano's case if they have compromised either the vulnerable services or the pod/node in which they are deployed.  The scheduler will become unavailable to other users and workloads in the cluster. The scheduler will either crash with an unrecoverable OOM panic or freeze while consuming excessive amounts of memory.\n\n### Workarounds\nNo",
