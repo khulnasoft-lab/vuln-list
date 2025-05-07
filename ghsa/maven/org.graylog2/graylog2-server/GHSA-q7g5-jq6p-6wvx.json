@@ -33,12 +33,12 @@
         "Value": "CVE-2025-30373"
       }
     ],
-    "Description": "### Impact\nStarting with 6.1, HTTP Inputs can be configured to check if a specified header is present and has a specified value to authenticate HTTP-based ingestion. Unfortunately, even though in cases of a missing header or a wrong value the correct HTTP response (401) is returned, the message will be ingested nonetheless.\n\n### Patches\n\n### Workarounds\nDisabling http-based inputs and allow only authenticated pull-based inputs.\n\n### References",
+    "Description": "### Impact\nStarting with 6.1, HTTP Inputs can be configured to check if a specified header is present and has a specified value to authenticate HTTP-based ingestion. Unfortunately, even though in cases of a missing header or a wrong value the correct HTTP response (401) is returned, the message will be ingested nonetheless.\n\n### Patches\n\n### Workarounds\nDisabling http-based inputs and allow only authenticated pull-based inputs.\n\nAnalysis provided by Fabian Yamaguchi - Whirly Labs (Pty) Ltd",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-04-07T16:37:52Z",
     "Severity": "MODERATE",
     "Summary": "Graylog's Authenticated HTTP inputs ingest message even if Authorization header is missing or has wrong value",
-    "UpdatedAt": "2025-04-07T16:37:54Z",
+    "UpdatedAt": "2025-05-07T15:03:33Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.5,
