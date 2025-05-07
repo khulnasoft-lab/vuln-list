@@ -6,6 +6,9 @@
     "CVE-2025-22869",
     "GO-2025-3487"
   ],
+  "related": [
+    "CGA-mpfw-xvcc-gpxg"
+  ],
   "summary": "golang.org/x/crypto Vulnerable to Denial of Service (DoS) via Slow or Incomplete Key Exchange",
   "details": "SSH servers which implement file transfer protocols are vulnerable to a denial of service attack from clients which complete the key exchange slowly, or not at all, causing pending content to be read into memory, but never transmitted.",
   "affected": [
