@@ -5,6 +5,23 @@
   "aliases": [
     "CVE-2025-4432"
   ],
+  "related": [
+    "CGA-3vxh-8h2h-945c",
+    "CGA-44hx-37wq-3rj2",
+    "CGA-54fg-j725-xrwh",
+    "CGA-583v-2g7f-qpjc",
+    "CGA-66h8-v68c-gjm3",
+    "CGA-746c-hv25-cqgq",
+    "CGA-8mj8-h4cm-cgc8",
+    "CGA-98fm-755r-6vg7",
+    "CGA-g48m-j9c6-6hp4",
+    "CGA-g53v-492v-r582",
+    "CGA-jc92-x76f-j9fp",
+    "CGA-mf22-cc26-82g9",
+    "CGA-qq3w-v44c-7pxf",
+    "CGA-qwpx-47c8-7x56",
+    "CGA-wm6r-cf7j-2mq8"
+  ],
   "summary": " ring has some AES functions that may panic when overflow checking is enabled in",
   "details": "A flaw was found in Rust's Ring package. A panic may be triggered when overflow checking is enabled. In the QUIC protocol, this flaw allows an attacker to induce this panic by sending a specially crafted packet. It will likely occur unintentionally in 1 out of every 2**32 packets sent or received.",
   "affected": [
