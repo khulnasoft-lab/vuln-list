@@ -35,7 +35,7 @@
       "Type": "General"
     },
     {
-      "Text": "BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides replacements for most of the utilities you usually find in GNU fileutils, shellutils, etc. It provides a fairly complete environment for any small or embedded system.\n\nSecurity Fix(es):\n\nAn attacker-controlled pointer free in Busybox's hush applet leads to denial of service and possible code execution when processing a crafted shell command, due to the shell mishandling the \u0026\u0026\u0026 string. This may be used for remote code execution under rare conditions of filtered command input.(CVE-2021-42377)\n\nAn out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that(CVE-2021-42374)",
+      "Text": "BusyBox combines tiny versions of many common UNIX utilities into a single small executable. It provides replacements for most of the utilities you usually find in GNU fileutils, shellutils, etc. It provides a fairly complete environment for any small or embedded system.\n\nSecurity Fix(es):\n\nAn out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that(CVE-2021-42374)",
       "Title": "Description",
       "Type": "General"
     },
@@ -215,36 +215,6 @@
     }
   ],
   "Vulnerabilities": [
-    {
-      "CVE": "CVE-2021-42377",
-      "Note": "An attacker-controlled pointer free in Busybox's hush applet leads to denial of service and possible code execution when processing a crafted shell command, due to the shell mishandling the \u0026\u0026\u0026 string. This may be used for remote code execution under rare conditions of filtered command input.",
-      "ReleaseDate": "2021-11-25",
-      "Threats": [
-        {
-          "Type": "Impact",
-          "Severity": "Critical"
-        }
-      ],
-      "ProductStatuses": [
-        {
-          "Type": "Fixed",
-          "ProductID": [
-            "openEuler-20.03-LTS-SP1",
-            "openEuler-20.03-LTS-SP2"
-          ]
-        }
-      ],
-      "CVSSScoreSets": {
-        "BaseScore": "9.8",
-        "Vector": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
-      },
-      "Remediations": {
-        "Type": "Vendor Fix",
-        "Description": "busybox security update",
-        "Date": "2021-11-25",
-        "URL": "https://www.openeuler.org/en/security/safety-bulletin/detail.html?id=openEuler-SA-2021-1441"
-      }
-    },
     {
       "CVE": "CVE-2021-42374",
       "Note": "An out-of-bounds heap read in Busybox's unlzma applet leads to information leak and denial of service when crafted LZMA-compressed input is decompressed. This can be triggered by any applet/format that",
