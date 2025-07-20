@@ -1,12 +1,16 @@
 {
   "id": "GHSA-43qf-4rqw-9q2g",
-  "modified": "2025-03-21T22:45:47.647356Z",
+  "modified": "2025-05-17T19:15:25.774254Z",
   "published": "2025-03-20T12:32:45Z",
   "aliases": [
     "CVE-2024-6866"
   ],
+  "related": [
+    "CGA-3299-hg3m-2hr7",
+    "CGA-743g-2x82-4rpx"
+  ],
   "summary": "Flask-CORS vulnerable to Improper Handling of Case Sensitivity",
-  "details": "corydolphin/flask-cors version 4.0.1 contains a vulnerability where the request path matching is case-insensitive due to the use of the `try_match` function, which is originally intended for matching hosts. This results in a mismatch because paths in URLs are case-sensitive, but the regex matching treats them as case-insensitive. This misconfiguration can lead to significant security vulnerabilities, allowing unauthorized origins to access paths meant to be restricted, resulting in data exposure and potential data leaks.",
+  "details": "corydolphin/flask-cors version 5.0.1 contains a vulnerability where the request path matching is case-insensitive due to the use of the `try_match` function, which is originally intended for matching hosts. This results in a mismatch because paths in URLs are case-sensitive, but the regex matching treats them as case-insensitive. This misconfiguration can lead to significant security vulnerabilities, allowing unauthorized origins to access paths meant to be restricted, resulting in data exposure and potential data leaks.",
   "affected": [
     {
       "package": {
@@ -22,7 +26,7 @@
               "introduced": "0"
             },
             {
-              "last_affected": "4.0.1"
+              "fixed": "6.0.0"
             }
           ]
         }
@@ -74,9 +78,13 @@
         "3.0.9",
         "4.0.0",
         "4.0.0a0",
-        "4.0.1"
+        "4.0.1",
+        "4.0.2",
+        "5.0.0",
+        "5.0.1"
       ],
       "database_specific": {
+        "last_known_affected_version_range": "\u003c= 5.0.1",
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/03/GHSA-43qf-4rqw-9q2g/GHSA-43qf-4rqw-9q2g.json"
       }
     }
@@ -85,6 +93,10 @@
     {
       "type": "ADVISORY",
       "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-6866"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/corydolphin/flask-cors/commit/eb39516a3c96b90d0ae5f51293972395ec3ef358"
     },
     {
       "type": "PACKAGE",
