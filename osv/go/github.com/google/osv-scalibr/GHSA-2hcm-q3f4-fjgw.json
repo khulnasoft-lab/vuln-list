@@ -1,9 +1,10 @@
 {
   "id": "GHSA-2hcm-q3f4-fjgw",
-  "modified": "2025-06-18T19:59:40.089216Z",
+  "modified": "2025-08-07T18:21:23Z",
   "published": "2025-06-18T09:30:31Z",
   "aliases": [
-    "CVE-2025-5981"
+    "CVE-2025-5981",
+    "GO-2025-3767"
   ],
   "summary": "OSV-SCALIBR's Container Image Unpacking Vulnerable to Arbitrary File Write via Path Traversal",
   "details": "Arbitrary file write as the OSV-SCALIBR user on the host system via a path traversal vulnerability when using OSV-SCALIBR's unpack() function for container images. Particularly, when using the CLI flag --remote-image on untrusted container images.",
@@ -48,6 +49,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/google/osv-scalibr/releases/tag/v0.1.8"
+    },
+    {
+      "type": "WEB",
+      "url": "https://pkg.go.dev/vuln/GO-2025-3767"
     }
   ]
 }

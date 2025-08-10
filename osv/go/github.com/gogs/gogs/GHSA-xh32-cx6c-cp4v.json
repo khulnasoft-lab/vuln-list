@@ -1,9 +1,10 @@
 {
   "id": "GHSA-xh32-cx6c-cp4v",
-  "modified": "2025-06-26T17:42:18.325018Z",
+  "modified": "2025-07-30T17:45:37Z",
   "published": "2025-06-26T16:54:01Z",
   "aliases": [
-    "CVE-2025-47943"
+    "CVE-2025-47943",
+    "GO-2025-3778"
   ],
   "related": [
     "CVE-2025-47943"
@@ -16,6 +17,29 @@
         "ecosystem": "Go",
         "name": "github.com/gogs/gogs",
         "purl": "pkg:golang/github.com/gogs/gogs"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "0.13.3-0.20250608224432-110117b2e5e5"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/06/GHSA-xh32-cx6c-cp4v/GHSA-xh32-cx6c-cp4v.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "gogs.io/gogs",
+        "purl": "pkg:golang/gogs.io/gogs"
       },
       "ranges": [
         {
@@ -55,6 +79,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/gogs/gogs/releases/tag/v0.13.3"
+    },
+    {
+      "type": "WEB",
+      "url": "https://www.hacktivesecurity.com/blog/2025/07/15/cve-2025-47943-stored-xss-in-gogs-via-pdf"
     }
   ]
 }

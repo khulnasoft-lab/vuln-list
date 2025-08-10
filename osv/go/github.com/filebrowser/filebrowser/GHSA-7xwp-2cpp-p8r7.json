@@ -1,8 +1,12 @@
 {
   "id": "GHSA-7xwp-2cpp-p8r7",
-  "modified": "2025-07-16T14:59:49.806020Z",
+  "modified": "2025-07-29T23:17:56Z",
   "published": "2025-07-16T14:09:28Z",
   "aliases": [
+    "CVE-2025-53826",
+    "GO-2025-3812"
+  ],
+  "related": [
     "CVE-2025-53826"
   ],
   "summary": "File Browser’s insecure JWT handling can lead to session replay attacks after logout",
@@ -13,6 +17,29 @@
         "ecosystem": "Go",
         "name": "github.com/filebrowser/filebrowser",
         "purl": "pkg:golang/github.com/filebrowser/filebrowser"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "last_affected": "2.39.0"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2025/07/GHSA-7xwp-2cpp-p8r7/GHSA-7xwp-2cpp-p8r7.json"
+      }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/filebrowser/filebrowser/v2",
+        "purl": "pkg:golang/github.com/filebrowser/filebrowser/v2"
       },
       "ranges": [
         {
