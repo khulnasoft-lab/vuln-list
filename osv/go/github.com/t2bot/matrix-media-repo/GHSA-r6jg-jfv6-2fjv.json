@@ -1,13 +1,13 @@
 {
   "id": "GHSA-r6jg-jfv6-2fjv",
-  "modified": "2025-01-17T15:42:18Z",
+  "modified": "2025-08-20T17:40:09Z",
   "published": "2025-01-16T19:35:02Z",
   "aliases": [
     "CVE-2024-52602",
     "GO-2025-3399"
   ],
   "summary": "Matrix Media Repo (MMR) allows Server-Side Request Forgery (SSRF) on redirects and federation",
-  "details": "### Impact\nMatrix Media Repo (MMR) is vulnerable to server-side request forgery, serving content from a private network it can access, under certain conditions.\n\n### Patches\nThis is fixed in [MMR v1.3.8](https://github.com/t2bot/matrix-media-repo/releases/tag/v1.3.8).\n\n### Workarounds\nRestricting which hosts MMR is allowed to contact via (local) firewall rules or a transparent proxy.\n\n### References\nhttps://owasp.org/www-community/attacks/Server_Side_Request_Forgery\nhttps://learn.snyk.io/lesson/ssrf-server-side-request-forgery/\nhttps://www.agwa.name/blog/post/preventing_server_side_request_forgery_in_golang\n\n\n",
+  "details": "### Impact\nMatrix Media Repo (MMR) is vulnerable to server-side request forgery, serving content from a private network it can access, under certain conditions.\n\n### Patches\nThis is fixed in [MMR v1.3.8](https://github.com/t2bot/matrix-media-repo/releases/tag/v1.3.8).\n\n### Workarounds\nRestricting which hosts MMR is allowed to contact via (local) firewall rules or a transparent proxy.\n\n### References\nhttps://owasp.org/www-community/attacks/Server_Side_Request_Forgery\nhttps://learn.snyk.io/lesson/ssrf-server-side-request-forgery/\nhttps://www.agwa.name/blog/post/preventing_server_side_request_forgery_in_golang",
   "affected": [
     {
       "package": {
