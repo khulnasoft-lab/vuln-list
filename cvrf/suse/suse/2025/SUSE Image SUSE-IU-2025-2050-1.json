@@ -9,7 +9,7 @@
     "RevisionHistory": [
       {
         "Number": "1",
-        "Date": "2025-08-07T19:23:25Z",
+        "Date": "2025-09-16T15:46:08Z",
         "Description": "current"
       }
     ]
@@ -654,7 +654,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "important"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -2454,7 +2454,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "not set"
         }
       ],
       "References": null,
@@ -3270,7 +3270,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -3294,7 +3294,7 @@
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "low"
+          "Severity": "moderate"
         }
       ],
       "References": null,
@@ -3578,7 +3578,7 @@
     },
     {
       "CVE": "CVE-2023-53137",
-      "Description": "In the Linux kernel, the following vulnerability has been resolved:\n\next4: Fix possible corruption when moving a directory\n\nWhen we are renaming a directory to a different directory, we need to\nupdate '..' entry in the moved directory. However nothing prevents moved\ndirectory from being modified and even converted from the inline format\nto the normal format. When such race happens the rename code gets\nconfused and we crash. Fix the problem by locking the moved directory.",
+      "Description": "This CVE ID has been rejected or withdrawn by its CVE Numbering Authority.",
       "Threats": [
         {
           "Type": "Impact",
@@ -4656,7 +4656,7 @@
     },
     {
       "CVE": "CVE-2025-4877",
-      "Description": "unknown",
+      "Description": "There's a vulnerability in the libssh package where when a libssh consumer passes in an unexpectedly large input buffer to ssh_get_fingerprint_hash() function. In such cases the bin_to_base64() function can experience an integer overflow leading to a memory under allocation, when that happens it's possible that the program perform out of bounds write leading to a heap corruption.\nThis issue affects only 32-bits builds of libssh.",
       "Threats": [
         {
           "Type": "Impact",
@@ -4822,7 +4822,7 @@
     },
     {
       "CVE": "CVE-2025-5372",
-      "Description": "A flaw was found in libssh versions built with OpenSSL versions older than 3.0, specifically in the ssh_kdf() function responsible for key derivation. Due to inconsistent interpretation of return values where OpenSSL uses 0 to indicate failure and libssh uses 0 for success—the function may mistakenly return a success status even when key derivation fails. This results in uninitialized cryptographic key buffers being used in subsequent communication, potentially compromising SSH sessions' confidentiality, integrity, and availability.",
+      "Description": "A flaw was found in libssh versions built with OpenSSL versions older than 3.0, specifically in the ssh_kdf() function responsible for key derivation. Due to inconsistent interpretation of return values where OpenSSL uses 0 to indicate failure and libssh uses 0 for success-the function may mistakenly return a success status even when key derivation fails. This results in uninitialized cryptographic key buffers being used in subsequent communication, potentially compromising SSH sessions' confidentiality, integrity, and availability.",
       "Threats": [
         {
           "Type": "Impact",
