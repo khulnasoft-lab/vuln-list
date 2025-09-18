@@ -1,6 +1,10 @@
 {
   "name": "harbor-fips-2.12",
   "secfixes": {
+    "0": [
+      "CVE-2025-47909",
+      "GHSA-82ff-hg59-8x73"
+    ],
     "2.12.0-r1": [
       "CVE-2024-51744",
       "GHSA-29wx-vh33-7x7r"
@@ -67,9 +71,19 @@
       "GHSA-62jj-gr2r-5c34",
       "GHSA-6f52-wpx2-hvf2"
     ],
+    "2.12.4-r10": [
+      "CVE-2025-55198",
+      "CVE-2025-55199",
+      "GHSA-9h84-qmv7-982p",
+      "GHSA-f9f8-9pmf-xv68"
+    ],
     "2.12.4-r3": [
       "CVE-2025-53547",
       "GHSA-557j-xg8c-q2mm"
+    ],
+    "2.12.4-r7": [
+      "CVE-2025-47907",
+      "GHSA-j5pm-7495-qmr3"
     ]
   },
   "apkurl": "{{urlprefix}}/{{reponame}}/{{arch}}/{{pkg.name}}-{{pkg.ver}}.apk",
