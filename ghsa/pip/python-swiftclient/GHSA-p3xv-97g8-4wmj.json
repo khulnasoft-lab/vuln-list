@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2024-10-25T21:25:11Z",
+  "UpdatedAt": "2025-07-07T12:57:07Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "python-swiftclient"
@@ -26,6 +26,9 @@
         "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/python-swiftclient/PYSEC-2014-12.yaml"
       },
       {
+        "Url": "https://github.com/openstack/python-swiftclient/commit/b182112719ab87942472e44aa3446ea0eb19a289"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-p3xv-97g8-4wmj"
       }
     ],
@@ -39,12 +42,12 @@
         "Value": "CVE-2013-6396"
       }
     ],
-    "Description": "The OpenStack Python client library for Swift (python-swiftclient) from 1.0 before 2.0.2 does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.",
+    "Description": "The OpenStack Python client library for Swift (python-swiftclient) from 1.0 before 2.0 does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and obtain sensitive information via a crafted certificate.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-17T04:52:37Z",
     "Severity": "CRITICAL",
     "Summary": "Python Swift client is vulnerable to Missing SSL Certificate Check",
-    "UpdatedAt": "2024-10-25T21:25:11Z",
+    "UpdatedAt": "2025-07-07T12:57:07Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,
@@ -54,9 +57,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.0.2"
+        "Identifier": "2.0"
       },
-      "VulnerableVersionRange": "\u003e= 1.0, \u003c 2.0.2"
+      "VulnerableVersionRange": "\u003e= 1.0, \u003c 2.0"
     }
   ]
 }

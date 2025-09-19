@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-03-21T22:10:24Z",
+  "UpdatedAt": "2025-05-17T18:54:45Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "flask-cors"
@@ -20,6 +20,9 @@
         "Url": "https://github.com/corydolphin/flask-cors/blob/main/flask_cors/extension.py#L193"
       },
       {
+        "Url": "https://github.com/corydolphin/flask-cors/commit/35d875319621bd129a38b2b823abf4a2f6cda536"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-8vgw-p6qm-5gr7"
       }
     ],
@@ -33,12 +36,12 @@
         "Value": "CVE-2024-6844"
       }
     ],
-    "Description": "A vulnerability in corydolphin/flask-cors version 4.0.1 allows for inconsistent CORS matching due to the handling of the '+' character in URL paths. The request.path is passed through the unquote_plus function, which converts the '+' character to a space ' '. This behavior leads to incorrect path normalization, causing potential mismatches in CORS configuration. As a result, endpoints may not be matched correctly to their CORS settings, leading to unexpected CORS policy application. This can cause unauthorized cross-origin access or block valid requests, creating security vulnerabilities and usability issues.",
+    "Description": "A vulnerability in corydolphin/flask-cors version 5.0.1 allows for inconsistent CORS matching due to the handling of the '+' character in URL paths. The request.path is passed through the unquote_plus function, which converts the '+' character to a space ' '. This behavior leads to incorrect path normalization, causing potential mismatches in CORS configuration. As a result, endpoints may not be matched correctly to their CORS settings, leading to unexpected CORS policy application. This can cause unauthorized cross-origin access or block valid requests, creating security vulnerabilities and usability issues.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-20T12:32:45Z",
     "Severity": "MODERATE",
     "Summary": "Flask-CORS allows for inconsistent CORS matching",
-    "UpdatedAt": "2025-03-21T22:10:24Z",
+    "UpdatedAt": "2025-05-17T18:54:45Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -48,9 +51,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "6.0.0"
       },
-      "VulnerableVersionRange": "\u003c= 4.0.1"
+      "VulnerableVersionRange": "\u003c= 5.0.1"
     }
   ]
 }

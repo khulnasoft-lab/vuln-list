@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2025-04-08T13:15:11Z",
+  "UpdatedAt": "2025-08-29T21:08:10Z",
   "Package": {
     "Ecosystem": "COMPOSER",
     "Name": "api-platform/graphql"
@@ -26,6 +26,12 @@
         "Url": "https://github.com/api-platform/core/releases/tag/v3.4.17"
       },
       {
+        "Url": "https://github.com/FriendsOfPHP/security-advisories/blob/master/api-platform/core/CVE-2025-31485.yaml"
+      },
+      {
+        "Url": "https://github.com/FriendsOfPHP/security-advisories/blob/master/api-platform/graphql/CVE-2025-31485.yaml"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-428q-q3vv-3fq3"
       }
     ],
@@ -44,7 +50,7 @@
     "PublishedAt": "2025-04-04T14:19:42Z",
     "Severity": "HIGH",
     "Summary": "GraphQL grant on a property might be cached with different objects",
-    "UpdatedAt": "2025-04-08T13:15:11Z",
+    "UpdatedAt": "2025-08-29T21:08:10Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -52,6 +58,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "4.1.5"
+      },
+      "VulnerableVersionRange": "\u003e= 4.1.0-alpha.1, \u003c 4.1.5"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "4.0.22"

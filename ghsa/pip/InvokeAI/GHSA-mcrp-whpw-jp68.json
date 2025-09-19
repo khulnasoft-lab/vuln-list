@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2025-03-21T15:32:16Z",
+  "UpdatedAt": "2025-05-20T17:37:18Z",
   "Package": {
     "Ecosystem": "PIP",
     "Name": "InvokeAI"
@@ -23,6 +23,9 @@
         "Url": "https://huntr.com/bounties/9b790f94-1b1b-4071-bc27-78445d1a87a3"
       },
       {
+        "Url": "https://github.com/invoke-ai/InvokeAI/commit/ed46acee79460189b38c164321b14bdfbf3073c9"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-mcrp-whpw-jp68"
       }
     ],
@@ -36,12 +39,12 @@
         "Value": "CVE-2024-12029"
       }
     ],
-    "Description": "A remote code execution vulnerability exists in invoke-ai/invokeai versions 5.3.1 through 5.4.2 via the /api/v2/models/install API. The vulnerability arises from unsafe deserialization of model files using torch.load without proper validation. Attackers can exploit this by embedding malicious code in model files, which is executed upon loading. This issue is fixed in version 5.4.3.",
+    "Description": "A remote code execution vulnerability exists in invoke-ai/invokeai versions 5.3.1 through 5.4.2 via the /api/v2/models/install API. The vulnerability arises from unsafe deserialization of model files using torch.load without proper validation. Attackers can exploit this by embedding malicious code in model files, which is executed upon loading. This issue is fixed in version 5.4.3rc2.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-03-21T15:32:15Z",
     "Severity": "CRITICAL",
     "Summary": "InvokeAI Deserialization of Untrusted Data vulnerability",
-    "UpdatedAt": "2025-03-21T15:32:16Z",
+    "UpdatedAt": "2025-05-20T17:37:18Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.8,
@@ -51,9 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "5.4.3rc1"
+        "Identifier": "5.4.3rc2"
       },
-      "VulnerableVersionRange": "\u003e= 5.3.1, \u003c 5.4.3rc1"
+      "VulnerableVersionRange": "\u003e= 5.3.1, \u003c 5.4.3rc2"
     }
   ]
 }

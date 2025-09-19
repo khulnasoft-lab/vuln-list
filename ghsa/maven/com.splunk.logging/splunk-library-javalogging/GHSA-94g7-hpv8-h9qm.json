@@ -1,6 +1,6 @@
 {
   "Severity": "CRITICAL",
-  "UpdatedAt": "2021-12-14T20:00:35Z",
+  "UpdatedAt": "2025-08-07T14:10:24Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "com.splunk.logging:splunk-library-javalogging"
@@ -23,12 +23,12 @@
         "Value": "GHSA-94g7-hpv8-h9qm"
       }
     ],
-    "Description": "### Impact\nLogging untrusted or user controlled data with a vulnerable version of Log4J may result in Remote Code Execution (RCE) against your application. This includes untrusted data included in logged errors such as exception traces, authentication failures, and other unexpected vectors of user controlled input.\n\nMore Details:\nhttps://github.com/advisories/GHSA-jfh8-c2jp-5v3q\n\n### Patches\nVersion 1.11.1 of the Splunk Logging for Java library.\n\nThere is also a backport to version 1.6.2 released as a patch: 1.6.2-0-0.\n\n### Workarounds\nIf upgrading is not possible, then ensure the -Dlog4j2.formatMsgNoLookups=true system property is set on both client- and server-side components.\n\n### References\nhttps://github.com/advisories/GHSA-jfh8-c2jp-5v3q\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in https://github.com/splunk/splunk-library-javalogging/issues\n* Email us at [devinfo@splunk.com](mailto:devinfo@splunk.com)\n",
+    "Description": "### Impact\nLogging untrusted or user controlled data with a vulnerable version of Log4J may result in Remote Code Execution (RCE) against your application. This includes untrusted data included in logged errors such as exception traces, authentication failures, and other unexpected vectors of user controlled input.\n\nMore Details:\nhttps://github.com/advisories/GHSA-jfh8-c2jp-5v3q\n\n### Patches\nVersion 1.11.1 of the Splunk Logging for Java library.\n\nThere is also a backport to version 1.6.2 released as a patch: 1.6.2-0-0.\n\n### Workarounds\nIf upgrading is not possible, then ensure the -Dlog4j2.formatMsgNoLookups=true system property is set on both client- and server-side components.\n\n### References\nhttps://github.com/advisories/GHSA-jfh8-c2jp-5v3q\n\n### For more information\nIf you have any questions or comments about this advisory:\n* Open an issue in https://github.com/splunk/splunk-library-javalogging/issues\n* Email us at [devinfo@splunk.com](mailto:devinfo@splunk.com)",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2021-12-14T21:46:35Z",
     "Severity": "CRITICAL",
     "Summary": "Remote code injection in Log4j",
-    "UpdatedAt": "2023-01-09T05:05:24Z",
+    "UpdatedAt": "2025-08-07T14:10:24Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 0,
@@ -38,9 +38,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.6.2-0-0"
+      },
+      "VulnerableVersionRange": "\u003c 1.6.2-0-0"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "1.11.1"
       },
-      "VulnerableVersionRange": "\u003c 1.11.1"
+      "VulnerableVersionRange": "\u003e= 1.7.0, \u003c 1.11.1"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-12-17T16:41:32Z",
+  "UpdatedAt": "2025-08-08T18:45:09Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat:tomcat-catalina"
@@ -117,12 +117,12 @@
         "Value": "CVE-2024-54677"
       }
     ],
-    "Description": "Uncontrolled Resource Consumption vulnerability in the examples web application provided with Apache Tomcat leads to denial of service.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.1, from 10.1.0-M1 through 10.1.33, from 9.0.0.M1 through 9.9.97.\n\nUsers are recommended to upgrade to version 11.0.2, 10.1.34 or 9.0.98, which fixes the issue.",
+    "Description": "Uncontrolled Resource Consumption vulnerability in the examples web application provided with Apache Tomcat leads to denial of service.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.1, from 10.1.0-M1 through 10.1.33, from 9.0.0.M1 through 9.9.97. The following versions were EOL at the time the CVE was created but are known to be affected: 8.5.0 though 8.5.100. Other, older, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.2, 10.1.34 or 9.0.98, which fixes the issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-12-17T15:31:43Z",
     "Severity": "MODERATE",
     "Summary": "Apache Tomcat Uncontrolled Resource Consumption vulnerability",
-    "UpdatedAt": "2025-01-31T15:30:44Z",
+    "UpdatedAt": "2025-08-08T18:45:09Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -130,6 +130,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 8.5.0, \u003c= 8.5.100"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.0.98"

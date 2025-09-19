@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2022-07-06T20:13:57Z",
+  "UpdatedAt": "2025-08-28T20:16:29Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat:tomcat"
@@ -69,9 +69,6 @@
       },
       {
         "Url": "https://security.gentoo.org/glsa/201705-09"
-      },
-      {
-        "Url": "https://security.netapp.com/advisory/ntap-20180531-0001/"
       },
       {
         "Url": "http://lists.opensuse.org/opensuse-security-announce/2016-03/msg00047.html"
@@ -146,6 +143,9 @@
         "Url": "http://www.ubuntu.com/usn/USN-3024-1"
       },
       {
+        "Url": "https://security.netapp.com/advisory/ntap-20180531-0001"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-6qr6-x7jm-x2q6"
       }
     ],
@@ -164,7 +164,7 @@
     "PublishedAt": "2022-05-14T01:10:16Z",
     "Severity": "MODERATE",
     "Summary": "Improper Limitation of a Pathname to a Restricted Directory in Apache Tomcat",
-    "UpdatedAt": "2023-01-27T05:02:23Z",
+    "UpdatedAt": "2025-08-28T20:16:29Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,
@@ -172,6 +172,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "8.0.27"
+      },
+      "VulnerableVersionRange": "\u003e= 8.0.0-RC1, \u003c= 8.0.26"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "6.0.45"
@@ -183,12 +189,6 @@
         "Identifier": "7.0.65"
       },
       "VulnerableVersionRange": "\u003e= 7.0.0, \u003c= 7.0.64"
-    },
-    {
-      "FirstPatchedVersion": {
-        "Identifier": "8.0.27"
-      },
-      "VulnerableVersionRange": "\u003e= 8.0.0.RC1, \u003c= 8.0.26"
     }
   ]
 }

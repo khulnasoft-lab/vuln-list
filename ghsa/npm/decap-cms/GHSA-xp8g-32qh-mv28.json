@@ -1,0 +1,56 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2025-09-10T20:48:54Z",
+  "Package": {
+    "Ecosystem": "NPM",
+    "Name": "decap-cms"
+  },
+  "Advisory": {
+    "DatabaseId": 311031,
+    "Id": "GSA_kwCzR0hTQS14cDhnLTMycWgtbXYyOM4ABL73",
+    "GhsaId": "GHSA-xp8g-32qh-mv28",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-57520"
+      },
+      {
+        "Url": "https://github.com/decaporg/decap-cms"
+      },
+      {
+        "Url": "https://onurcangenc.com.tr/posts/cve-2025-57520--stored-xss-in-decap-cms-3-8-3"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-xp8g-32qh-mv28"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-xp8g-32qh-mv28"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2025-57520"
+      }
+    ],
+    "Description": "A Cross Site Scripting (XSS) vulnerability exists in Decap CMS thru 3.8.3. Input fields such as body, tags, title, and description are not properly sanitized before being rendered in the content preview pane. This enables an attacker to inject arbitrary JavaScript which executes whenever a user views the preview panel. The vulnerability affects multiple input vectors and does not require user interaction beyond viewing the affected content.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2025-09-10T18:30:16Z",
+    "Severity": "LOW",
+    "Summary": "Decap CMS Cross Site Scripting (XSS) vulnerability",
+    "UpdatedAt": "2025-09-13T04:45:11Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 6.1,
+      "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003c= 3.8.3"
+    }
+  ]
+}

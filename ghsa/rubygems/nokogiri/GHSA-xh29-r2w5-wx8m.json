@@ -23,9 +23,6 @@
         "Url": "https://github.com/sparklemotion/nokogiri/releases/tag/v1.13.6"
       },
       {
-        "Url": "https://securitylab.github.com/advisories/GHSL-2022-031_GHSL-2022-032_Nokogiri/"
-      },
-      {
         "Url": "https://security.gentoo.org/glsa/202208-29"
       },
       {
@@ -36,6 +33,12 @@
       },
       {
         "Url": "https://github.com/rubysec/ruby-advisory-db/blob/master/gems/nokogiri/CVE-2022-29181.yml"
+      },
+      {
+        "Url": "https://github.com/sparklemotion/nokogiri/commit/83cc451c3f29df397caa890afc3b714eae6ab8f7"
+      },
+      {
+        "Url": "https://securitylab.github.com/advisories/GHSL-2022-031_GHSL-2022-032_Nokogiri"
       },
       {
         "Url": "https://github.com/advisories/GHSA-xh29-r2w5-wx8m"
@@ -51,12 +54,12 @@
         "Value": "CVE-2022-29181"
       }
     ],
-    "Description": "### Summary\n\nNokogiri `\u003c v1.13.6` does not type-check all inputs into the XML and HTML4 SAX parsers. For CRuby users, this may allow specially crafted untrusted inputs to cause illegal memory access errors (segfault) or reads from unrelated memory.\n\n### Severity\n\nThe Nokogiri maintainers have evaluated this as **High 8.2** (CVSS3.1).\n\n\n### Mitigation\n\nCRuby users should upgrade to Nokogiri `\u003e= 1.13.6`.\n\nJRuby users are not affected.\n\n\n### Workarounds\n\nTo avoid this vulnerability in affected applications, ensure the untrusted input is a `String` by calling `#to_s` or equivalent.\n\n\n### Credit\n\nThis vulnerability was responsibly reported by @agustingianni and the Github Security Lab.\n",
+    "Description": "### Summary\n\nNokogiri `\u003c v1.13.6` does not type-check all inputs into the XML and HTML4 SAX parsers. For CRuby users, this may allow specially crafted untrusted inputs to cause illegal memory access errors (segfault) or reads from unrelated memory.\n\n### Severity\n\nThe Nokogiri maintainers have evaluated this as **High 8.2** (CVSS3.1).\n\n\n### Mitigation\n\nCRuby users should upgrade to Nokogiri `\u003e= 1.13.6`.\n\nJRuby users are not affected.\n\n\n### Workarounds\n\nTo avoid this vulnerability in affected applications, ensure the untrusted input is a `String` by calling `#to_s` or equivalent.\n\n\n### Credit\n\nThis vulnerability was responsibly reported by @agustingianni and the Github Security Lab.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-05-23T23:15:15Z",
     "Severity": "HIGH",
     "Summary": "Nokogiri Improperly Handles Unexpected Data Type",
-    "UpdatedAt": "2023-05-04T19:53:50Z",
+    "UpdatedAt": "2025-05-27T14:51:06Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.2,

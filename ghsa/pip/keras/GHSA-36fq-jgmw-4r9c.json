@@ -1,0 +1,56 @@
+{
+  "Severity": "HIGH",
+  "UpdatedAt": "2025-09-19T17:16:44Z",
+  "Package": {
+    "Ecosystem": "PIP",
+    "Name": "keras"
+  },
+  "Advisory": {
+    "DatabaseId": 312865,
+    "Id": "GSA_kwCzR0hTQS0zNmZxLWpnbXctNHI5Y84ABMYh",
+    "GhsaId": "GHSA-36fq-jgmw-4r9c",
+    "References": [
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-9906"
+      },
+      {
+        "Url": "https://github.com/keras-team/keras/pull/21429"
+      },
+      {
+        "Url": "https://github.com/keras-team/keras/commit/713172ab56b864e59e2aa79b1a51b0e728bba858"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-36fq-jgmw-4r9c"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-36fq-jgmw-4r9c"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2025-9906"
+      }
+    ],
+    "Description": "The Keras Model.load_model method can be exploited to achieve arbitrary code execution, even with safe_mode=True.\n\nOne can create a specially crafted .keras model archive that, when loaded via Model.load_model, will trigger arbitrary code to be executed. This is achieved by crafting a special config.json (a file within the .keras archive) that will invoke keras.config.enable_unsafe_deserialization() to disable safe mode. Once safe mode is disable, one can use the Lambda layer feature of keras, which allows arbitrary Python code in the form of pickled code. Both can appear in the same archive. Simply the keras.config.enable_unsafe_deserialization() needs to appear first in the archive and the Lambda with arbitrary code needs to be second.",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2025-09-19T09:31:14Z",
+    "Severity": "HIGH",
+    "Summary": "Keras is vulnerable to Deserialization of Untrusted Data",
+    "UpdatedAt": "2025-09-19T17:16:44Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 0,
+      "VectorString": ""
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "3.11.0"
+      },
+      "VulnerableVersionRange": "\u003c 3.11.0"
+    }
+  ]
+}

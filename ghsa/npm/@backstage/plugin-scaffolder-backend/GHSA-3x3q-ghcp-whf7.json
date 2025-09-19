@@ -1,0 +1,56 @@
+{
+  "Severity": "LOW",
+  "UpdatedAt": "2025-08-15T18:43:19Z",
+  "Package": {
+    "Ecosystem": "NPM",
+    "Name": "@backstage/plugin-scaffolder-backend"
+  },
+  "Advisory": {
+    "DatabaseId": 307793,
+    "Id": "GSA_kwCzR0hTQS0zeDNxLWdoY3Atd2hmN84ABLJR",
+    "GhsaId": "GHSA-3x3q-ghcp-whf7",
+    "References": [
+      {
+        "Url": "https://github.com/backstage/backstage/security/advisories/GHSA-3x3q-ghcp-whf7"
+      },
+      {
+        "Url": "https://nvd.nist.gov/vuln/detail/CVE-2025-55285"
+      },
+      {
+        "Url": "https://github.com/backstage/backstage/commit/c371f6fe12371de31dca537510e6653e287cdc2e"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-3x3q-ghcp-whf7"
+      }
+    ],
+    "Identifiers": [
+      {
+        "Type": "GHSA",
+        "Value": "GHSA-3x3q-ghcp-whf7"
+      },
+      {
+        "Type": "CVE",
+        "Value": "CVE-2025-55285"
+      }
+    ],
+    "Description": "### Impact\nDuplicate logging of the input values in the `fetch:template` action in the Scaffolder meant that some of the secrets were not properly redacted. If you're not passing through `${{ secrets.x }}` to `fetch:template` there is no impact.\n\n### Patches\nThis issue has been resolved in `2.1.1` of the `scaffolder-backend` plugin.\n\n### Workarounds\nTemplate Authors can remove the use of `${{ secrets }}` being used as an argument to `fetch:template`.\n\n### References\nIf you have any questions or comments about this advisory:\n\nOpen an issue in the [Backstage repository](https://github.com/backstage/backstage)\nVisit our Discord, linked to in [Backstage README](https://github.com/backstage/backstage)",
+    "Origin": "UNSPECIFIED",
+    "PublishedAt": "2025-08-15T18:43:16Z",
+    "Severity": "LOW",
+    "Summary": "Template Secret leakage in logs in Scaffolder when using `fetch:template`",
+    "UpdatedAt": "2025-08-15T18:43:19Z",
+    "WithdrawnAt": "",
+    "CVSS": {
+      "Score": 2.6,
+      "VectorString": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:L/I:N/A:N"
+    }
+  },
+  "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "2.1.1"
+      },
+      "VulnerableVersionRange": "\u003c= 2.1.0"
+    }
+  ]
+}

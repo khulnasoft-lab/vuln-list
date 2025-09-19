@@ -57,12 +57,12 @@
         "Value": "CVE-2023-45648"
       }
     ],
-    "Description": "Improper Input Validation vulnerability in Apache Tomcat.\n\nTomcat from 11.0.0-M1 through 11.0.0-M11, from 10.1.0-M1 through 10.1.13, from 9.0.0-M1 through 9.0.81 and from 8.5.0 through 8.5.93 did not correctly parse HTTP trailer headers. A specially crafted, invalid trailer header could cause Tomcat to treat a single \nrequest as multiple requests leading to the possibility of request smuggling when behind a reverse proxy.\n\nUsers are recommended to upgrade to version 11.0.0-M12 onwards, 10.1.14 onwards, 9.0.81 onwards or 8.5.94 onwards, which fix the issue.",
+    "Description": "Improper Input Validation vulnerability in Apache Tomcat.\n\nTomcat from 11.0.0-M1 through 11.0.0-M11, from 10.1.0-M1 through 10.1.13, from 9.0.0-M1 through 9.0.81 and from 8.5.0 through 8.5.93 did not correctly parse HTTP trailer headers. A specially crafted, invalid trailer header could cause Tomcat to treat a single \nrequest as multiple requests leading to the possibility of request smuggling when behind a reverse proxy. Older, EOL versions may also be affected.\n\nUsers are recommended to upgrade to version 11.0.0-M12 onwards, 10.1.14 onwards, 9.0.81 onwards or 8.5.94 onwards, which fix the issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-10-10T21:31:12Z",
     "Severity": "MODERATE",
     "Summary": "Apache Tomcat Improper Input Validation vulnerability",
-    "UpdatedAt": "2024-04-24T15:42:00Z",
+    "UpdatedAt": "2025-08-08T18:30:34Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,

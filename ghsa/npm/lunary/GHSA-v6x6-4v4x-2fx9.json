@@ -33,13 +33,13 @@
         "Value": "CVE-2024-6862"
       }
     ],
-    "Description": "A Cross-Site Request Forgery (CSRF) vulnerability exists in lunary-ai/lunary version 1.2.34 due to overly permissive CORS settings. This vulnerability allows an attacker to sign up for and create projects or use the instance as if they were a user with local access. The main attack vector is for instances hosted locally on personal machines, which are not publicly accessible. The CORS settings in the backend permit all origins, exposing unauthenticated endpoints to CSRF attacks.",
+    "Description": "## Withdrawn Advisory\nThis advisory has been withdrawn because the [lunary npm package](https://www.npmjs.com/package/lunary) is connected to https://github.com/lunary-ai/lunary-js, not the https://github.com/lunary-ai/lunary repo that is discussed in this advisory.\n\n**The underlying vulnerability report is still valid**, but it doesn't affect a product in a [GitHub Advisory Database supported ecosystem](https://docs.github.com/en/code-security/security-advisories/working-with-global-security-advisories-from-the-github-advisory-database/about-the-github-advisory-database#github-reviewed-advisories).\n\nThis link is maintained to preserve external references.\n\n## Original Description\nA Cross-Site Request Forgery (CSRF) vulnerability exists in lunary-ai/lunary version 1.2.34 due to overly permissive CORS settings. This vulnerability allows an attacker to sign up for and create projects or use the instance as if they were a user with local access. The main attack vector is for instances hosted locally on personal machines, which are not publicly accessible. The CORS settings in the backend permit all origins, exposing unauthenticated endpoints to CSRF attacks.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-09-13T18:31:48Z",
     "Severity": "MODERATE",
-    "Summary": "Lunary Cross-Site Request Forgery (CSRF) vulnerability",
-    "UpdatedAt": "2024-09-13T19:34:11Z",
-    "WithdrawnAt": "",
+    "Summary": "Withdrawn Advisory: Lunary Cross-Site Request Forgery (CSRF) vulnerability",
+    "UpdatedAt": "2025-06-20T20:02:29Z",
+    "WithdrawnAt": "2025-06-20T20:02:26Z",
     "CVSS": {
       "Score": 7.4,
       "VectorString": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N"

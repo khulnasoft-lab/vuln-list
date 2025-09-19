@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-08-02T01:19:51Z",
+  "UpdatedAt": "2025-07-09T16:38:23Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/mattermost/mattermost/server/v8"
@@ -18,6 +18,9 @@
       },
       {
         "Url": "https://pkg.go.dev/vuln/GO-2024-3022"
+      },
+      {
+        "Url": "https://github.com/mattermost/mattermost/commit/5114c3b7cdb84086959bf0ef8bc5afdaedf9fef6"
       },
       {
         "Url": "https://github.com/advisories/GHSA-9fpw-c9x7-cv3j"
@@ -38,7 +41,7 @@
     "PublishedAt": "2024-08-01T15:32:23Z",
     "Severity": "MODERATE",
     "Summary": "Mattermost allows remote actor to set arbitrary RemoteId values for synced users",
-    "UpdatedAt": "2024-11-18T16:26:59Z",
+    "UpdatedAt": "2025-07-09T16:41:23Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 2.7,
@@ -46,6 +49,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "8.0.0-20240604093018-5114c3b7cdb8"
+      },
+      "VulnerableVersionRange": "\u003c 8.0.0-20240604093018-5114c3b7cdb8"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.9.1"

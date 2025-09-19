@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2022-06-17T21:54:17Z",
+  "UpdatedAt": "2025-06-24T16:18:12Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/protocolbuffers/protobuf"
@@ -113,10 +113,13 @@
         "Url": "https://github.com/google/protobuf/releases/tag/v3.4.0"
       },
       {
-        "Url": "https://github.com/advisories/GHSA-jwvw-v7c5-m82h"
+        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/protobuf/PYSEC-2017-65.yaml"
       },
       {
-        "Url": "https://github.com/pypa/advisory-database/tree/main/vulns/protobuf/PYSEC-2017-65.yaml"
+        "Url": "https://github.com/github/advisory-database/issues/5796"
+      },
+      {
+        "Url": "https://github.com/advisories/GHSA-jwvw-v7c5-m82h"
       }
     ],
     "Identifiers": [
@@ -134,7 +137,7 @@
     "PublishedAt": "2022-05-13T01:06:54Z",
     "Severity": "HIGH",
     "Summary": "protobuf susceptible to buffer overflow",
-    "UpdatedAt": "2024-10-21T20:54:14Z",
+    "UpdatedAt": "2025-07-10T16:28:16Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -144,9 +147,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "0.0.0-20170815233912-80a37e0782d2"
+      },
+      "VulnerableVersionRange": "\u003c 0.0.0-20170815233912-80a37e0782d2"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "3.4.0"
       },
-      "VulnerableVersionRange": "\u003c 3.4.0"
+      "VulnerableVersionRange": "\u003e 0.0.0, \u003c 3.4.0"
     }
   ]
 }

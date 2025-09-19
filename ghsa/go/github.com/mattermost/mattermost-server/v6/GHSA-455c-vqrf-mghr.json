@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-06-27T23:07:46Z",
+  "UpdatedAt": "2025-07-25T14:50:31Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/mattermost/mattermost-server/v6"
@@ -30,12 +30,12 @@
         "Value": "CVE-2023-2783"
       }
     ],
-    "Description": "Mattermost Apps Framework fails to verify that a secret provided in the incoming webhook request allowing an attacker to modify the contents of the post sent by the Apps.\n\n",
+    "Description": "Mattermost Apps Framework fails to verify that a secret provided in the incoming webhook request allowing an attacker to modify the contents of the post sent by the Apps.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-06-16T09:30:24Z",
     "Severity": "MODERATE",
     "Summary": "Mattermost Server Missing Authorization vulnerability",
-    "UpdatedAt": "2023-11-04T05:01:57Z",
+    "UpdatedAt": "2025-07-25T14:50:31Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,
@@ -45,9 +45,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "6.0.0-20230511130429-1629a6ca7fed"
+      },
+      "VulnerableVersionRange": "\u003c 6.0.0-20230511130429-1629a6ca7fed"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "7.8.5"
       },
-      "VulnerableVersionRange": "\u003c 7.8.5"
+      "VulnerableVersionRange": "\u003e= 6.0.0, \u003c 7.8.5"
     },
     {
       "FirstPatchedVersion": {

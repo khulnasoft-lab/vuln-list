@@ -1,6 +1,6 @@
 {
-  "Severity": "MODERATE",
-  "UpdatedAt": "2024-08-02T13:29:46Z",
+  "Severity": "LOW",
+  "UpdatedAt": "2025-07-25T15:45:58Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/mattermost/mattermost/server/v8"
@@ -36,9 +36,9 @@
     "Description": "Mattermost versions 9.9.x \u003c= 9.9.0, 9.5.x \u003c= 9.5.6 fail to properly restrict channel creation which allows a malicious remote to create arbitrary channels, when shared channels were enabled.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-01T15:32:23Z",
-    "Severity": "MODERATE",
+    "Severity": "LOW",
     "Summary": "Mattermost did not properly restrict channel creation",
-    "UpdatedAt": "2024-11-18T16:26:59Z",
+    "UpdatedAt": "2025-07-25T15:45:58Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 3.8,
@@ -46,6 +46,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "8.0.0-20240626164322-c758cecaf30c"
+      },
+      "VulnerableVersionRange": "\u003c 8.0.0-20240626164322-c758cecaf30c"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.9.1"

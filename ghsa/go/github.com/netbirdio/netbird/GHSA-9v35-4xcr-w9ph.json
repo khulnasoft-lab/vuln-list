@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-08-07T14:16:59Z",
+  "UpdatedAt": "2025-06-25T19:30:54Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/netbirdio/netbird"
@@ -21,6 +21,12 @@
       },
       {
         "Url": "https://github.com/advisories/GHSA-9v35-4xcr-w9ph"
+      },
+      {
+        "Url": "https://github.com/netbirdio/netbird/pull/2569"
+      },
+      {
+        "Url": "https://github.com/netbirdio/netbird/commit/cf6210a6f42355e88c422c624376f6fcdaea6729"
       }
     ],
     "Identifiers": [
@@ -33,12 +39,12 @@
         "Value": "CVE-2024-41260"
       }
     ],
-    "Description": "A static initialization vector (IV) in the encrypt function of netbird v0.28.4 allows attackers to obtain sensitive information.",
+    "Description": "A static initialization vector (IV) in the encrypt function of netbird management's service from v0.23.2 to v0.29.1 allows attackers to obtain sensitive information (email addresses) when in possession of the audit events database.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-08-01T18:32:50Z",
     "Severity": "HIGH",
     "Summary": "NetBird uses a static initialization vector (IV)",
-    "UpdatedAt": "2024-08-14T17:18:52Z",
+    "UpdatedAt": "2025-06-25T19:30:54Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -48,9 +54,9 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": ""
+        "Identifier": "0.29.2"
       },
-      "VulnerableVersionRange": "\u003c= 0.28.7"
+      "VulnerableVersionRange": "\u003e= 0.23.2, \u003c 0.29.2"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2024-10-02T16:20:00Z",
+  "UpdatedAt": "2025-09-16T14:43:31Z",
   "Package": {
     "Ecosystem": "RUST",
     "Name": "tonic"
@@ -39,12 +39,12 @@
         "Value": "CVE-2024-47609"
       }
     ],
-    "Description": "### Impact\n\n**note:** this only affects v0.12.0 - v0.12.2\n\nWhen using `tonic::transport::Server` there is a remote DoS attack that can cause the server to exit cleanly on accepting a tcp/tls stream. This can be triggered via causing the accept call to error out with errors there were not covered correctly causing the accept loop to exit. \n\nMore information can be found [here](https://github.com/hyperium/tonic/issues/1897)\n\n### Patches\n\nUpgrading to tonic `0.12.3` and above contains the fix. \n\n### Workarounds\n\nA custom accept loop is a possible workaround.\n",
+    "Description": "### Impact\n\nWhen using `tonic::transport::Server` there is a remote DoS attack that can cause the server to exit cleanly on accepting a tcp/tls stream. This can be triggered via causing the accept call to error out with errors there were not covered correctly causing the accept loop to exit. \n\nMore information can be found [here](https://github.com/hyperium/tonic/issues/1897)\n\n### Patches\n\nUpgrading to tonic `0.12.3` and above contains the fix. \n\n### Workarounds\n\nA custom accept loop is a possible workaround.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-10-01T22:27:58Z",
     "Severity": "MODERATE",
     "Summary": "Tonic has remotely exploitable denial of service vulnerability",
-    "UpdatedAt": "2024-10-02T16:20:00Z",
+    "UpdatedAt": "2025-09-16T14:43:31Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -56,7 +56,7 @@
       "FirstPatchedVersion": {
         "Identifier": "0.12.3"
       },
-      "VulnerableVersionRange": "\u003e= 0.12.0, \u003c 0.12.3"
+      "VulnerableVersionRange": "= 0.12.2"
     }
   ]
 }

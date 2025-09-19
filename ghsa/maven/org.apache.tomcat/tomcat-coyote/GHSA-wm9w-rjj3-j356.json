@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2024-07-05T20:39:43Z",
+  "UpdatedAt": "2025-08-08T18:36:18Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "org.apache.tomcat:tomcat-coyote"
@@ -35,6 +35,9 @@
         "Url": "https://tomcat.apache.org/security-9.html"
       },
       {
+        "Url": "https://security.netapp.com/advisory/ntap-20240816-0004"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-wm9w-rjj3-j356"
       }
     ],
@@ -48,12 +51,12 @@
         "Value": "CVE-2024-34750"
       }
     ],
-    "Description": "Improper Handling of Exceptional Conditions, Uncontrolled Resource Consumption vulnerability in Apache Tomcat. When processing an HTTP/2 stream, Tomcat did not handle some cases of excessive HTTP headers correctly. This led to a miscounting of active HTTP/2 streams which in turn led to the use of an incorrect infinite timeout which allowed connections to remain open which should have been closed.\n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M20, from 10.1.0-M1 through 10.1.24, from 9.0.0-M1 through 9.0.89.\n\nUsers are recommended to upgrade to version 11.0.0-M21, 10.1.25 or 9.0.90, which fixes the issue.\n\n",
+    "Description": "Improper Handling of Exceptional Conditions, Uncontrolled Resource Consumption vulnerability in Apache Tomcat. When processing an HTTP/2 stream, Tomcat did not handle some cases of excessive HTTP headers correctly. This led to a miscounting of active HTTP/2 streams which in turn led to the use of an incorrect infinite timeout which allowed connections to remain open which should have been closed. \n\nThis issue affects Apache Tomcat: from 11.0.0-M1 through 11.0.0-M20, from 10.1.0-M1 through 10.1.24, from 9.0.0-M1 through 9.0.89. The following versions were EOL at the time the CVE was created but are known to be affected: 8.5.0 though 8.5.100.\n\nUsers are recommended to upgrade to version 11.0.0-M21, 10.1.25 or 9.0.90, which fixes the issue.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2024-07-03T21:39:44Z",
     "Severity": "HIGH",
     "Summary": "Apache Tomcat - Denial of Service",
-    "UpdatedAt": "2024-08-04T05:01:04Z",
+    "UpdatedAt": "2025-08-08T18:36:18Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.5,
@@ -61,6 +64,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": ""
+      },
+      "VulnerableVersionRange": "\u003e= 8.5.0, \u003c= 8.5.100"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "9.0.90"

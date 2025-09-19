@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-11-03T20:42:51Z",
+  "UpdatedAt": "2025-07-09T15:32:57Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/kubernetes-csi/csi-proxy"
@@ -47,7 +47,7 @@
     "PublishedAt": "2023-11-03T18:30:24Z",
     "Severity": "HIGH",
     "Summary": "Kubernetes csi-proxy vulnerable to privilege escalation due to improper input validation",
-    "UpdatedAt": "2025-02-13T19:20:59Z",
+    "UpdatedAt": "2025-07-09T15:32:57Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 8.8,
@@ -57,15 +57,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.1.3"
+        "Identifier": "1.1.3-0.20230821192013-2523e6674ded"
       },
-      "VulnerableVersionRange": "\u003c= 1.1.2"
+      "VulnerableVersionRange": "\u003e= 1.1.3-0, \u003c 1.1.3-0.20230821192013-2523e6674ded"
     },
     {
       "FirstPatchedVersion": {
-        "Identifier": "2.0.0-alpha.1"
+        "Identifier": "0.0.0-20230821192013-2523e6674ded"
       },
-      "VulnerableVersionRange": "= 2.0.0-alpha.0"
+      "VulnerableVersionRange": "\u003c 0.0.0-20230821192013-2523e6674ded"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.1.3"
+      },
+      "VulnerableVersionRange": "\u003e= 0.1.0-rc1, \u003c= 1.1.2"
     }
   ]
 }

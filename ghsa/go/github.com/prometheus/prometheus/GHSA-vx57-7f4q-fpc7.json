@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2021-05-19T17:58:52Z",
+  "UpdatedAt": "2025-06-24T16:30:36Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/prometheus/prometheus"
@@ -36,12 +36,12 @@
         "Value": "CVE-2021-29622"
       }
     ],
-    "Description": "### Impact\n\nIn 2.23.0, Prometheus changed its default UI to the New ui. To ensure a seamless transition, the URL's prefixed by /new redirect to /.\nDue to a bug in the code, it is possible for an attacker to craft an URL that can redirect to any other URL, in the /new endpoint.\n\nIf a user visits a prometheus server with a specially crafted address (e.g.: `http://127.0.0.1:9090/new/new\u003curl\u003e`), they can be redirected to an arbitrary URL.\n\ne.g. if a user visits http://127.0.0.1:9090/new/newhttp://www.google.com/, they will be redirected to http://google.com.\n\n### Patches\n\nThe issue will be patched in 2.26.1 and 2.27.1 releases.\nIn 2.28.0, the /new endpoint will be removed completely.\n\n### Workarounds\n\nThe workaround is to disable access to /new via a reverse proxy in front of Prometheus.\n\nNote: Users who use a `--web.external-url=` flag _with a path_ (e.g.  `--web.external-url=http://example.com/prometheus`) are not affected.\n\n### For more information\n\nIf you have any questions or comments about this advisory, please use our community channels (https://prometheus.io/community).\nOur security policy is available at https://prometheus.io/docs/operating/security/\n",
+    "Description": "### Impact\n\nIn 2.23.0, Prometheus changed its default UI to the New ui. To ensure a seamless transition, the URL's prefixed by /new redirect to /.\nDue to a bug in the code, it is possible for an attacker to craft an URL that can redirect to any other URL, in the /new endpoint.\n\nIf a user visits a prometheus server with a specially crafted address (e.g.: `http://127.0.0.1:9090/new/new\u003curl\u003e`), they can be redirected to an arbitrary URL.\n\ne.g. if a user visits http://127.0.0.1:9090/new/newhttp://www.google.com/, they will be redirected to http://google.com.\n\n### Patches\n\nThe issue will be patched in 2.26.1 and 2.27.1 releases.\nIn 2.28.0, the /new endpoint will be removed completely.\n\n### Workarounds\n\nThe workaround is to disable access to /new via a reverse proxy in front of Prometheus.\n\nNote: Users who use a `--web.external-url=` flag _with a path_ (e.g.  `--web.external-url=http://example.com/prometheus`) are not affected.\n\n### For more information\n\nIf you have any questions or comments about this advisory, please use our community channels (https://prometheus.io/community).\nOur security policy is available at https://prometheus.io/docs/operating/security/",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-02-15T01:57:18Z",
     "Severity": "MODERATE",
     "Summary": "Arbitrary redirects under /new endpoint",
-    "UpdatedAt": "2023-02-01T05:06:01Z",
+    "UpdatedAt": "2025-06-24T16:30:36Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 6.1,
@@ -49,6 +49,12 @@
     }
   },
   "Versions": [
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.0.0-20210518124745-db7f0bcec27b"
+      },
+      "VulnerableVersionRange": "\u003e 0.0.0-20201116123734-de1c1243f4dd, \u003c 0.0.0-20210518124745-db7f0bcec27b"
+    },
     {
       "FirstPatchedVersion": {
         "Identifier": "2.27.1"

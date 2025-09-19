@@ -1,6 +1,6 @@
 {
   "Severity": "HIGH",
-  "UpdatedAt": "2023-04-24T22:40:46Z",
+  "UpdatedAt": "2025-09-19T15:23:41Z",
   "Package": {
     "Ecosystem": "NPM",
     "Name": "xlsx"
@@ -26,6 +26,9 @@
         "Url": "https://git.sheetjs.com/sheetjs/sheetjs/issues/2986"
       },
       {
+        "Url": "https://cdn.sheetjs.com"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-4r6h-8v6p-xvw6"
       }
     ],
@@ -39,12 +42,12 @@
         "Value": "CVE-2023-30533"
       }
     ],
-    "Description": "All versions of SheetJS CE through 0.19.2 are vulnerable to \"Prototype Pollution\" when reading specially crafted files. Workflows that do not read arbitrary files (for example, exporting data to spreadsheet files) are unaffected.\n\nA non-vulnerable version cannot be found via npm, as the repository hosted on GitHub and the npm package `xlsx` are no longer maintained.",
+    "Description": "All versions of SheetJS CE through 0.19.2 are vulnerable to \"Prototype Pollution\" when reading specially crafted files. Workflows that do not read arbitrary files (for example, exporting data to spreadsheet files) are unaffected.\n\nA non-vulnerable version cannot be found via npm, as the repository hosted on GitHub and the npm package `xlsx` are no longer maintained. Version 0.19.3 can be downloaded via https://cdn.sheetjs.com/.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2023-04-24T09:30:19Z",
     "Severity": "HIGH",
     "Summary": "Prototype Pollution in sheetJS",
-    "UpdatedAt": "2023-11-06T05:04:13Z",
+    "UpdatedAt": "2025-09-19T15:23:41Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 7.8,
@@ -54,7 +57,7 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "0.19.3"
+        "Identifier": ""
       },
       "VulnerableVersionRange": "\u003c 0.19.3"
     }

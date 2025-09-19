@@ -48,13 +48,13 @@
         "Value": "CVE-2022-42969"
       }
     ],
-    "Description": "The py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.\n\nThe particular codepath in question is the regular expression at `py._path.svnurl.InfoSvnCommand.lspattern` and is only relevant when dealing with subversion (svn) projects. Notably the codepath is not used in the popular pytest project. The developers of the pytest package have released version `7.2.0` which removes their dependency on `py`. Users of `pytest` seeing alerts relating to this advisory may update to version `7.2.0` of `pytest` to resolve this issue. See https://github.com/pytest-dev/py/issues/287#issuecomment-1290407715 for additional context.",
+    "Description": "### Withdrawn Advisory\nThis advisory has been withdrawn because evidence does not suggest that CVE-2022-42969 is a valid, reproducible vulnerability. This link is maintained to preserve external references.\n\n### Original Description\nThe py library through 1.11.0 for Python allows remote attackers to conduct a ReDoS (Regular expression Denial of Service) attack via a Subversion repository with crafted info data, because the InfoSvnCommand argument is mishandled.\n\nThe particular codepath in question is the regular expression at `py._path.svnurl.InfoSvnCommand.lspattern` and is only relevant when dealing with subversion (svn) projects. Notably the codepath is not used in the popular pytest project. The developers of the pytest package have released version `7.2.0` which removes their dependency on `py`. Users of `pytest` seeing alerts relating to this advisory may update to version `7.2.0` of `pytest` to resolve this issue. See https://github.com/pytest-dev/py/issues/287#issuecomment-1290407715 for additional context.",
     "Origin": "UNSPECIFIED",
     "PublishedAt": "2022-10-16T12:00:23Z",
     "Severity": "HIGH",
-    "Summary": "ReDoS in py library when used with subversion ",
-    "UpdatedAt": "2024-10-21T19:58:29Z",
-    "WithdrawnAt": "",
+    "Summary": "Withdrawn Advisory: ReDoS in py library when used with subversion ",
+    "UpdatedAt": "2025-08-01T20:34:12Z",
+    "WithdrawnAt": "2025-08-01T20:34:11Z",
     "CVSS": {
       "Score": 7.5,
       "VectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"

@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2025-01-31T21:07:01Z",
+  "UpdatedAt": "2025-07-08T17:40:28Z",
   "Package": {
     "Ecosystem": "GO",
     "Name": "github.com/grafana/grafana"
@@ -23,6 +23,9 @@
         "Url": "https://security.netapp.com/advisory/ntap-20250509-0006"
       },
       {
+        "Url": "https://github.com/grafana/grafana/commit/70073427041e15c353e0d467b714527584765aea"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-wxcc-2f3q-4h58"
       }
     ],
@@ -41,7 +44,7 @@
     "PublishedAt": "2025-01-31T18:31:07Z",
     "Severity": "MODERATE",
     "Summary": "Grafana Alerting VictorOps integration could be exposed to users with Viewer permission",
-    "UpdatedAt": "2025-05-09T21:37:17Z",
+    "UpdatedAt": "2025-07-08T17:40:28Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 4.3,
@@ -51,9 +54,21 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
+        "Identifier": "1.9.2-0.20250129224826-70073427041e"
+      },
+      "VulnerableVersionRange": "\u003e= 0.0.0, \u003c 1.9.2-0.20250129224826-70073427041e"
+    },
+    {
+      "FirstPatchedVersion": {
         "Identifier": "10.4.15"
       },
-      "VulnerableVersionRange": "\u003c 10.4.15"
+      "VulnerableVersionRange": "\u003e= 1.9.2, \u003c 10.4.15"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "0.0.0-20250129224826-70073427041e"
+      },
+      "VulnerableVersionRange": "\u003c 0.0.0-20250129224826-70073427041e"
     },
     {
       "FirstPatchedVersion": {

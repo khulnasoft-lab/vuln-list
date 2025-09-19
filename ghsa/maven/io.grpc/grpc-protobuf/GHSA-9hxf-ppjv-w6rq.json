@@ -1,6 +1,6 @@
 {
   "Severity": "MODERATE",
-  "UpdatedAt": "2023-07-06T23:56:31Z",
+  "UpdatedAt": "2025-08-13T15:00:14Z",
   "Package": {
     "Ecosystem": "MAVEN",
     "Name": "io.grpc:grpc-protobuf"
@@ -29,6 +29,15 @@
         "Url": "https://lists.fedoraproject.org/archives/list/package-announce@lists.fedoraproject.org/message/VWE44J5FG7THHL7XVEVTNIGEYBNKJBLL"
       },
       {
+        "Url": "https://github.com/grpc/grpc/commit/29d8beee0ac2555773b2a2dda5601c74a95d6c10"
+      },
+      {
+        "Url": "https://github.com/grpc/grpc/commit/65a2a895afaf1d2072447b9baf246374b182a946"
+      },
+      {
+        "Url": "https://github.com/grpc/grpc/releases/tag/v1.54.2"
+      },
+      {
         "Url": "https://github.com/advisories/GHSA-9hxf-ppjv-w6rq"
       }
     ],
@@ -47,7 +56,7 @@
     "PublishedAt": "2023-07-06T21:15:08Z",
     "Severity": "MODERATE",
     "Summary": "gRPC connection termination issue",
-    "UpdatedAt": "2025-02-13T18:58:14Z",
+    "UpdatedAt": "2025-08-13T15:00:14Z",
     "WithdrawnAt": "",
     "CVSS": {
       "Score": 5.3,
@@ -57,9 +66,15 @@
   "Versions": [
     {
       "FirstPatchedVersion": {
-        "Identifier": "1.53.0"
+        "Identifier": "1.54.2"
       },
-      "VulnerableVersionRange": "\u003c 1.53.0"
+      "VulnerableVersionRange": "\u003e= 1.54.0, \u003c 1.54.2"
+    },
+    {
+      "FirstPatchedVersion": {
+        "Identifier": "1.53.1"
+      },
+      "VulnerableVersionRange": "\u003e= 1.53.0, \u003c 1.53.1"
     }
   ]
 }
