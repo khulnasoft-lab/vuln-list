@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.azurelinux:def:56498",
   "Version": "1",
   "Metadata": {
-    "Title": "CVE-2025-0725 affecting package mysql for versions less than 8.0.40-6",
+    "Title": "CVE-2025-0725 affecting package mysql for versions less than 8.0.42-1",
     "Affected": {
       "Family": "unix",
       "Platform": "Azure Linux"
@@ -17,13 +17,13 @@
     "AdvisoryDate": "2025-02-19T16:08:37.737Z",
     "AdvisoryID": "56498-1",
     "Severity": "High",
-    "Description": "CVE-2025-0725 affecting package mysql for versions less than 8.0.40-6. A patched version of the package is available."
+    "Description": "CVE-2025-0725 affecting package mysql for versions less than 8.0.42-1. An upgraded version of the package is available that resolves this issue."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": [
       {
-        "Comment": "Package mysql is earlier than 8.0.40-6, affected by CVE-2025-0725",
+        "Comment": "Package mysql is earlier than 8.0.42-1, affected by CVE-2025-0725",
         "TestRef": "oval:com.microsoft.azurelinux:tst:56498000"
       }
     ]

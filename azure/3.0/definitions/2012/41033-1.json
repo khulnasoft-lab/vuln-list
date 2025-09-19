@@ -3,7 +3,7 @@
   "ID": "oval:com.microsoft.azurelinux:def:41033",
   "Version": "1",
   "Metadata": {
-    "Title": "CVE-2012-0883 affecting package httpd for versions less than httpd-2.4.2",
+    "Title": "CVE-2012-0883 affecting package httpd for versions less than 2.4.2-1",
     "Affected": {
       "Family": "unix",
       "Platform": "Azure Linux"
@@ -17,13 +17,13 @@
     "AdvisoryDate": "2025-02-05T22:13:23.7666667Z",
     "AdvisoryID": "41033-1",
     "Severity": "Medium",
-    "Description": "CVE-2012-0883 affecting package httpd for versions less than httpd-2.4.2. A patched version of the package is available."
+    "Description": "CVE-2012-0883 affecting package httpd for versions less than 2.4.2-1. A patched version of the package is available."
   },
   "Criteria": {
     "Operator": "AND",
     "Criterion": [
       {
-        "Comment": "Package httpd is earlier than httpd-2.4.2, affected by CVE-2012-0883",
+        "Comment": "Package httpd is earlier than 2.4.2-1, affected by CVE-2012-0883",
         "TestRef": "oval:com.microsoft.azurelinux:tst:41033000"
       }
     ]
