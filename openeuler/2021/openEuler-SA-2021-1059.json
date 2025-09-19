@@ -35,7 +35,7 @@
       "Type": "General"
     },
     {
-      "Text": "Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards.\n\nSecurity Fix(es):\n\nIn Network Security Services (NSS) before 3.46, several cryptographic primitives had missing length checks. In cases where the application calling the library did not perform a sanity check on the inputs it could result in a crash due to a buffer overflow.(CVE-2019-17006)\n\nIn Network Security Services before 3.44, a malformed Netscape Certificate Sequence can cause NSS to crash, resulting in a denial of service.(CVE-2019-17007)\n\nA use-after-free flaw was found in Mozilla Network Security Services (NSS) related to PK11 session handling. An attacker could use this flaw to execute arbitrary code with the permissions of the user running the application compiled with NSS.(CVE-2019-11756)\n\nThe file name encoding algorithm used internally in Apache Commons Compress 1.15 to 1.18 can get into an infinite loop when faced with specially crafted inputs. This can lead to a denial of service attack if an attacker can choose the file names inside of an archive created by Compress..(CVE-2020-12402)",
+      "Text": "Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards.\n\nSecurity Fix(es):\n\nIn Network Security Services (NSS) before 3.46, several cryptographic primitives had missing length checks. In cases where the application calling the library did not perform a sanity check on the inputs it could result in a crash due to a buffer overflow.(CVE-2019-17006)\n\nIn Network Security Services before 3.44, a malformed Netscape Certificate Sequence can cause NSS to crash, resulting in a denial of service.(CVE-2019-17007)\n\nA use-after-free flaw was found in Mozilla Network Security Services (NSS) related to PK11 session handling. An attacker could use this flaw to execute arbitrary code with the permissions of the user running the application compiled with NSS.(CVE-2019-11756)\n\nA flaw was found in NSS, where it is vulnerable to RSA key generation cache timing side-channel attacks. An attacker with sufficient access to mount cache timing attacks during the RSA key generation process could recover the private key. The highest threat to this flaw is to confidentiality.(CVE-2020-12402)",
       "Title": "Description",
       "Type": "General"
     },
@@ -273,13 +273,13 @@
       }
     },
     {
-      "CVE": "CVE-2019-12402",
-      "Note": "The file name encoding algorithm used internally in Apache Commons Compress 1.15 to 1.18 can get into an infinite loop when faced with specially crafted inputs. This can lead to a denial of service attack if an attacker can choose the file names inside of an archive created by Compress.",
+      "CVE": "CVE-2020-12402",
+      "Note": "A flaw was found in NSS, where it is vulnerable to RSA key generation cache timing side-channel attacks. An attacker with sufficient access to mount cache timing attacks during the RSA key generation process could recover the private key. The highest threat to this flaw is to confidentiality.",
       "ReleaseDate": "2021-03-05",
       "Threats": [
         {
           "Type": "Impact",
-          "Severity": "High"
+          "Severity": "Medium"
         }
       ],
       "ProductStatuses": [
@@ -291,8 +291,8 @@
         }
       ],
       "CVSSScoreSets": {
-        "BaseScore": "7.5",
-        "Vector": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+        "BaseScore": "4.4",
+        "Vector": "AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:N/A:N"
       },
       "Remediations": {
         "Type": "Vendor Fix",
