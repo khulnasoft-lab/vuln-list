@@ -1,6 +1,8 @@
 # .github/workflows/push-to-huggingface.yml
 
 name: Push Dataset to Hugging Face
+permissions:
+  contents: read
 
 on:
   workflow_dispatch: # manually trigger from GitHub UI
