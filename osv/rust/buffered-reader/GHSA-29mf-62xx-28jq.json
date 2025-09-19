@@ -1,12 +1,13 @@
 {
   "id": "GHSA-29mf-62xx-28jq",
-  "modified": "2023-11-08T04:14:00.299540Z",
+  "modified": "2025-07-28T16:42:10.913519Z",
   "published": "2023-06-06T01:58:41Z",
   "aliases": [
+    "CVE-2023-53161",
     "RUSTSEC-2023-0039"
   ],
   "summary": "buffered-reader vulnerable to out-of-bounds array access leading to panic",
-  "details": "Affected versions of the crate have a bug where attacker-controlled input can result in the use of an out-of-bound array index. Rust\ndetects the use of the out-of-bound index and causes the application to panic.  An attacker may be able to use this to cause a denial-of-service.  However, it is not possible for an attacker to read from or write to the application's address space.\n",
+  "details": "Affected versions of the crate have a bug where attacker-controlled input can result in the use of an out-of-bound array index. Rust\ndetects the use of the out-of-bound index and causes the application to panic.  An attacker may be able to use this to cause a denial-of-service.  However, it is not possible for an attacker to read from or write to the application's address space.",
   "affected": [
     {
       "package": {
@@ -58,6 +59,10 @@
   "references": [
     {
       "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2023-53161"
+    },
+    {
+      "type": "ADVISORY",
       "url": "https://github.com/advisories/GHSA-25mx-8f3v-8wh7"
     },
     {
@@ -67,6 +72,14 @@
     {
       "type": "WEB",
       "url": "https://gitlab.com/sequoia-pgp/sequoia/-/blob/main/buffered-reader/NEWS"
+    },
+    {
+      "type": "WEB",
+      "url": "https://gitlab.com/sequoia-pgp/sequoia/-/tags/buffered-reader%2Fv1.0.2"
+    },
+    {
+      "type": "WEB",
+      "url": "https://gitlab.com/sequoia-pgp/sequoia/-/tags/buffered-reader%2Fv1.1.5"
     },
     {
       "type": "WEB",

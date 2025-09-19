@@ -10,9 +10,11 @@
     "CGA-25fv-ccwh-84h9",
     "CGA-47xv-jq34-598v",
     "CGA-9rph-q3jv-4jcr",
+    "CGA-j3vw-qr87-gcj3",
     "CGA-mrfx-6p3f-9c8h",
     "CGA-p24f-jqmf-xgvm",
-    "CGA-q3f7-wm9c-xpxr"
+    "CGA-q3f7-wm9c-xpxr",
+    "CGA-qfcm-5p32-77r4"
   ],
   "summary": "bep/imagemeta allows excessively large EXIF data structures",
   "details": "### Impact\nThe EXIF data format allows for defining excessively large data structures in relatively small payloads. Before `v0.10.0`, If you didn't trust the input images, this could be abused to construct denial-of-service attacks.\n\n### Patches\n`v0.10.0` added LimitNumTags (default 5000) and LimitTagSize (default 10000) options.",

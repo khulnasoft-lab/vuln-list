@@ -1,12 +1,13 @@
 {
   "id": "GHSA-rr69-rxr6-8qwf",
-  "modified": "2024-02-15T01:26:53.566975Z",
+  "modified": "2025-07-28T16:27:07.678146Z",
   "published": "2024-02-09T16:03:32Z",
   "aliases": [
+    "CVE-2024-58264",
     "RUSTSEC-2024-0012"
   ],
   "summary": "serde-json-wasm stack overflow during recursive JSON parsing",
-  "details": "When parsing untrusted, deeply nested JSON, the stack may overflow, possibly enabling a Denial of Service attack. This was fixed by adding a check for recursion depth.\n",
+  "details": "When parsing untrusted, deeply nested JSON, the stack may overflow, possibly enabling a Denial of Service attack. This was fixed by adding a check for recursion depth.",
   "affected": [
     {
       "package": {
@@ -59,6 +60,10 @@
     }
   ],
   "references": [
+    {
+      "type": "ADVISORY",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2024-58264"
+    },
     {
       "type": "WEB",
       "url": "https://github.com/CosmWasm/serde-json-wasm/commit/a9a9b9bf243862bd2afbf6853fca97f30dc4f620"

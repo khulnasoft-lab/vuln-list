@@ -1,6 +1,6 @@
 {
   "id": "GO-2023-2385",
-  "modified": "2024-05-20T16:03:47Z",
+  "modified": "2025-08-18T13:21:40Z",
   "published": "2024-01-02T18:32:37Z",
   "aliases": [
     "CVE-2023-26154",
@@ -66,6 +66,19 @@
         }
       ],
       "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "5.0.4-0.20231016150651-428517fef5b9"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ],
         "imports": [
           {
             "path": "github.com/pubnub/go/v5/utils",
@@ -106,6 +119,19 @@
         }
       ],
       "ecosystem_specific": {
+        "custom_ranges": [
+          {
+            "events": [
+              {
+                "introduced": "0"
+              },
+              {
+                "fixed": "6.1.1-0.20231016150651-428517fef5b9"
+              }
+            ],
+            "type": "ECOSYSTEM"
+          }
+        ],
         "imports": [
           {
             "path": "github.com/pubnub/go/v6/utils",
@@ -141,6 +167,9 @@
           "events": [
             {
               "introduced": "0"
+            },
+            {
+              "fixed": "7.2.0"
             }
           ]
         }
@@ -161,50 +190,6 @@
               "generateIV",
               "padWithPKCS7",
               "unpadPKCS7"
-            ]
-          }
-        ]
-      },
-      "database_specific": {
-        "source": "https://vuln.go.dev/ID/GO-2023-2385.json"
-      }
-    },
-    {
-      "package": {
-        "ecosystem": "Go",
-        "name": "github.com/pubnub/go/v7",
-        "purl": "pkg:golang/github.com/pubnub/go/v7"
-      },
-      "ranges": [
-        {
-          "type": "SEMVER",
-          "events": [
-            {
-              "introduced": "7.2.0"
-            }
-          ]
-        }
-      ],
-      "ecosystem_specific": {
-        "imports": [
-          {
-            "path": "github.com/pubnub/go/v7/crypto",
-            "symbols": [
-              "EncryptCipherKey",
-              "NewAesCbcCryptoModule",
-              "NewLegacyCryptoModule",
-              "NewLegacyCryptor",
-              "defaultExtendedCryptor.DecryptStream",
-              "defaultExtendedCryptor.EncryptStream",
-              "legacyAesCipher",
-              "legacyCryptor.Decrypt",
-              "legacyCryptor.DecryptStream",
-              "legacyCryptor.Encrypt",
-              "legacyCryptor.EncryptStream",
-              "module.Decrypt",
-              "module.DecryptStream",
-              "module.Encrypt",
-              "module.EncryptStream"
             ]
           }
         ]

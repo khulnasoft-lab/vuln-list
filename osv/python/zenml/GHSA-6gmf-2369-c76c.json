@@ -1,9 +1,10 @@
 {
   "id": "GHSA-6gmf-2369-c76c",
-  "modified": "2025-03-21T04:22:46.408679Z",
+  "modified": "2025-06-30T13:12:07.903412Z",
   "published": "2025-03-20T12:32:51Z",
   "aliases": [
-    "CVE-2024-9340"
+    "CVE-2024-9340",
+    "PYSEC-2025-57"
   ],
   "summary": "ZenML unauthenticated DoS via Multipart Boundry",
   "details": "A Denial of Service (DoS) vulnerability in zenml-io/zenml version 0.66.0 allows unauthenticated attackers to cause excessive resource consumption by sending malformed multipart requests with arbitrary characters appended to the end of multipart boundaries. This flaw in the multipart request boundary processing mechanism leads to an infinite loop, resulting in a complete denial of service for all users. Affected endpoints include `/api/v1/login` and `/api/v1/device_authorization`.",
@@ -191,6 +192,10 @@
     {
       "type": "WEB",
       "url": "https://github.com/zenml-io/zenml/commit/cba152eb9ca3071c8372b0b91c02d9d3351de48d"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/pypa/advisory-database/tree/main/vulns/zenml/PYSEC-2025-57.yaml"
     },
     {
       "type": "PACKAGE",

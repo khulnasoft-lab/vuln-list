@@ -8,7 +8,8 @@
   ],
   "related": [
     "CGA-gxhc-4frj-pvq5",
-    "CGA-jj7h-3c55-cr89"
+    "CGA-jj7h-3c55-cr89",
+    "CVE-2023-25656"
   ],
   "summary": "notation-go has excessive memory allocation on verification",
   "details": "### Impact\n\n`notation-go` users will find their application using excessive memory when verifying signatures and the application will be finally killed, and thus availability is impacted.\n\n### Patches\n\nThe problem has been patched in the release [v1.0.0-rc.3](https://github.com/notaryproject/notation-go/releases/tag/v1.0.0-rc.3). Users should upgrade their `notation-go` packages to `v1.0.0-rc.3` or above.\n\n### Workarounds\n\nUsers can review their own trust policy file and check if the identity string contains `=#`. Meanwhile, users should only put trusted certificates in their trust stores referenced by their own trust policy files, and make sure the `authenticity` validation is set to `enforce`\n\n### Credits\n\nThe `notation-go` project would like to thank Adam Korczynski (@AdamKorcz) for responsibly disclosing this issue during a security fuzzing audit sponsored by CNCF and Shiwei Zhang (@shizhMSFT) for root cause analysis and detailed vulnerability report.\n\n### References\n\n- [Resource exhaustion attacks](https://en.wikipedia.org/wiki/Resource_exhaustion_attack)\n",

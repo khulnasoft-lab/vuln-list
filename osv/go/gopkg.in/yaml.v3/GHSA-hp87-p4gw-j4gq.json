@@ -1,17 +1,19 @@
 {
   "id": "GHSA-hp87-p4gw-j4gq",
-  "modified": "2024-05-20T21:23:36Z",
+  "modified": "2025-08-27T22:58:53Z",
   "published": "2022-05-20T00:00:17Z",
   "aliases": [
     "CVE-2022-28948",
     "GO-2022-0603"
   ],
   "related": [
+    "CGA-23jm-pw7x-8mmg",
     "CGA-5ccc-hwch-chhj",
     "CGA-68j8-qfj3-4fx6",
     "CGA-6gw6-gxh7-mm95",
     "CGA-792c-ch9c-rfg7",
     "CGA-7m43-g3mc-cq7p",
+    "CGA-wxq6-23fq-f4h4",
     "CGA-xpjj-hv4w-94c5"
   ],
   "summary": "gopkg.in/yaml.v3 Denial of Service",
@@ -31,7 +33,7 @@
               "introduced": "0"
             },
             {
-              "fixed": "3.0.0-20220521103104-8f96da9f5d5e"
+              "fixed": "3.0.1"
             }
           ]
         }
@@ -48,11 +50,19 @@
     },
     {
       "type": "WEB",
+      "url": "https://github.com/go-yaml/yaml/issues/665"
+    },
+    {
+      "type": "WEB",
       "url": "https://github.com/go-yaml/yaml/issues/666"
     },
     {
       "type": "WEB",
       "url": "https://github.com/go-yaml/yaml/commit/8f96da9f5d5eff988554c1aae1784627c4bf6754"
+    },
+    {
+      "type": "WEB",
+      "url": "https://github.com/go-yaml/yaml/commit/f6f7691b1fdeb513f56608cd2c32c51f8194bf51"
     },
     {
       "type": "PACKAGE",

@@ -1,6 +1,6 @@
 {
   "id": "GHSA-g233-2p4r-3q7v",
-  "modified": "2024-11-02T07:57:20.393133Z",
+  "modified": "2025-08-04T20:59:51Z",
   "published": "2024-10-31T18:31:19Z",
   "aliases": [
     "BIT-vault-2024-8185",
@@ -32,6 +32,29 @@
       "database_specific": {
         "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-g233-2p4r-3q7v/GHSA-g233-2p4r-3q7v.json"
       }
+    },
+    {
+      "package": {
+        "ecosystem": "Go",
+        "name": "github.com/openbao/openbao",
+        "purl": "pkg:golang/github.com/openbao/openbao"
+      },
+      "ranges": [
+        {
+          "type": "SEMVER",
+          "events": [
+            {
+              "introduced": "0"
+            },
+            {
+              "fixed": "2.0.3"
+            }
+          ]
+        }
+      ],
+      "database_specific": {
+        "source": "https://github.com/github/advisory-database/blob/main/advisories/github-reviewed/2024/10/GHSA-g233-2p4r-3q7v/GHSA-g233-2p4r-3q7v.json"
+      }
     }
   ],
   "references": [
@@ -50,6 +73,10 @@
     {
       "type": "PACKAGE",
       "url": "https://github.com/hashicorp/vault"
+    },
+    {
+      "type": "WEB",
+      "url": "https://openbao.org/docs/release-notes/2-0-0/#203"
     }
   ]
 }

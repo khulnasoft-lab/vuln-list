@@ -10,7 +10,8 @@
   "related": [
     "CGA-2x78-74wr-p72f",
     "CGA-4mvv-5m7x-77gv",
-    "CGA-cqw2-v954-rhw8"
+    "CGA-cqw2-v954-rhw8",
+    "CGA-x89c-xvp8-rp65"
   ],
   "summary": "golang.org/x/net/http2 vulnerable to possible excessive memory growth",
   "details": "An attacker can cause excessive memory growth in a Go server accepting HTTP/2 requests. HTTP/2 server connections contain a cache of HTTP header keys sent by the client. While the total number of entries in this cache is capped, an attacker sending very large keys can cause the server to allocate approximately 64 MiB per open connection.",
